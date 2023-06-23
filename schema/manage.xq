@@ -12,6 +12,16 @@ import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg"
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "utils/project_metadata.xqm";
 
 (:~ 
+: INDIQUER ici le nom de la base de données BaseX
+:)
+declare variable $db_name := "";
+
+(:~ 
+: INDIQUER ici le titre que vous souhaitez donner à la base de données BaseX
+:)
+declare variable $db_title := "";
+
+(:~ 
 Cette fonction est la fonction principale de la librairie. Elle permet de:
 : - créer ou mettre à jour la base de données BaseX "config" (qui sert de poste d'aiguillage)
 : - créer le fichier de configuration (config.xml) de la base de données XML de son choix, comprenant éventuellement des métadonnées complémentaires
@@ -30,9 +40,13 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
 : - $compteur: la valeur de ce paramètre doit être 0. Ce paramètre, combiné avec l'argument $path, permet d'identifier le niveau d'une collection dans le cas d'une structure arborescente.
 : - $boolean: ce paramètre boolean permet de spécifier si la commande doit aller chercher des métadonnées supplémentaires pour compléter le fichier de configuration. Si la valeur est true(), il faut s'asurer au préalable qu'un fichier declaration.xml est présent dans la base de données $bdd
 :
-: Exemple: cc:create_config("e-NDP", "Édition des registres de Notre-Dame de Paris", "", 0, true())
+: Exemple: 
+: $db_name = "e-NDP"
+: $db_title = "Édition des registres de Notre-Dame de Paris"
+: cc:create_config($db_name, $db_title, "", 0, true())
 :)
-cc:create_config("", "", "", 0, false())
+
+cc:create_config($db_name, $db_title, "", 0, true())
 
 
 
