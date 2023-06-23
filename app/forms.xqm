@@ -4,8 +4,8 @@
  :)
 module namespace page = 'http://basex.org/examples/web-page';
 
-import module namespace cc = "https://github.com/chartes/dots/api/cc" at "../schema/create_config.xqm";
-import module namespace cc2 = "https://github.com/chartes/dots/api/cc2" at "../schema/complete_config.xqm";
+import module namespace cc = "https://github.com/chartes/dots/schema/cc" at "../schema/create_config.xqm";
+import module namespace cc2 = "https://github.com/chartes/dots/schema/cc2" at "../schema/complete_config.xqm";
 
 import module namespace functx = "http://www.functx.com";
 
