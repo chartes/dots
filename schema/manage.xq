@@ -46,7 +46,11 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
 : cc:create_config($db_name, $db_title, "", 0, true())
 :)
 
-cc:create_config($db_name, $db_title, "", 0, true())
+(: cc:create_config($db_name, $db_title, "", 0, true()) :)
+
+(: ccg:create_config("LL584") :)
+
+cc2:getCsvContent("e-NDP", "LL105")
 
 
 

@@ -10,6 +10,7 @@ xquery version "3.1";
 
 module namespace routes="https://github.com/chartes/dots/api/routes";
 
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
 
 (:~  
@@ -47,8 +48,34 @@ declare
   %output:method("xml")
   %rest:produces("application/tei+xml")
   %rest:query-param("id", "{$id}", "")
-function routes:document($id as xs:string) {
-  utils:document($id)
+  %rest:query-param("format", "{$format}", "")
+function routes:document($id as xs:string, $format as xs:string) {
+  if ($format)
+  then 
+    let $f :=
+      switch ($format)
+      case ($format[. = "html"]) return "text/html;"
+      case ($format[. = "txt"]) return "text/plain"
+      default return "xml"
+    let $style := concat($G:webapp, "static/xsl/tei2html.xsl")
+    let $project := db:get($G:config)//*:member[@xml:id = $id]/@projectPathName
+    let $doc := db:get($project)/*:TEI[@xml:id = $id]
+    let $trans := 
+      if ($format = "html")
+      then
+        xslt:transform($doc, $style)
+      else  $doc
+    return
+      (
+        <rest:response>
+          <http:response status="200">
+            <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
+          </http:response>
+        </rest:response>,
+        $trans
+      )
+  else
+    utils:document($id)
 };
 
 

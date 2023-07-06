@@ -1,25 +1,24 @@
 xquery version "3.1";
 
 (:~  
-: Ce module permet de créer un fichier de configuration général. Ce document sert ensuite pour le routeur dtsx. Spécifiquement, le rôle de ce module est de créer le document de configuration général, en intégrant toutes les collections existantes et leurs membres le lien vers le projet correspondant.
-: @author   Philippe Pons
+: Ce module permet de créer un fichier de configuration général. Ce document sert ensuite pour le routeur dtsx. Spécifiquement, le rôle de ce module est de créer le document de configuration général, en intégrant toutes les collections existantes et leurs membres avec le lien vers le projet correspondant.
+: @author École nationale des chartes - Philippe Pons
 : @since 2023-06-14
 : @version  1.0
 :)
 
 module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg";
 
+import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
 import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "project.xqm";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $ccg:config := "config";
-
 declare updating function ccg:create_config($idBdd) {
-  if (db:exists($ccg:config))
+  if (db:exists($G:config))
   then 
-    let $config := db:get($ccg:config)
+    let $config := db:get($G:config)
     let $lastUpdate := $config//dots:lastUpdate
     let $projects := $config//dots:projects
     let $members := ccg:members($idBdd, "")
@@ -55,7 +54,7 @@ declare updating function ccg:create_config($idBdd) {
         </dots:configContent>
       </dots:configuration>
     return
-      db:create($ccg:config, $content, "config.xml")
+      db:create($G:config, $content, $G:configProject)
 };
 
 (:~ 
@@ -78,7 +77,7 @@ declare function ccg:getProject($idBdd) {
 
 declare function ccg:members($idBdd as xs:string, $path as xs:string) {
   for $dir in db:dir($idBdd, $path)
-  where not(contains($dir, "metadata"))
+  where not(contains($dir, $G:metadata))
   order by $dir
   return
     if (contains($dir, ".xml"))
@@ -104,7 +103,7 @@ declare function ccg:resource($idBdd as xs:string, $resource as xs:string, $path
 declare function ccg:collection($idBdd as xs:string, $collection as xs:string, $path as xs:string) {
   let $totalItems := count(db:dir($idBdd, $collection))
   let $parent := if ($path = "") then $idBdd else $path
-  let $title := db:open($idBdd, "declaration.xml")//dots:titles/dots:title[@xml:id=$collection]
+  let $title := db:open($idBdd, $G:declaration)//dots:titles/dots:title[@xml:id=$collection]
   return
     <dots:member xml:id="{$collection}" target="#{$parent}" type="collection" projectPathName="{$idBdd}"/>
 };

@@ -9,6 +9,8 @@ xquery version "3.1";
 :)
 
 module namespace utils = "https://github.com/chartes/dots/api/utils";
+
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace routes = "https://github.com/chartes/dots/api/routes" at "routes.xqm";
 import module namespace functx = 'http://www.functx.com';
 
@@ -23,11 +25,6 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 :)
 declare variable $utils:root := "ELEC";
 
-(:~  
-: Cette variable permet de choisir le nom de la base de données avec le fichier de configuration globale. Par défaut: "config".
-:)
-declare variable $utils:globalConfig := db:get("config");
-
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 Fonctions pour le endPoint "Collections" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
@@ -39,18 +36,18 @@ Fonctions pour le endPoint "Collections" de l'API DTS
 : @see utils.xqm;utils:getContex
 :)
 declare function utils:collections() {
-  let $totalItems := xs:integer($utils:globalConfig//dots:projects/@n)
+  let $totalItems := xs:integer(db:get($G:config)//dots:projects/@n)
   let $content :=
     (
       <pair name="@id">{$utils:root}</pair>,
       <pair name="@type">collection</pair>,
-      <pair name="title">Éditions numériques de l'école nationale des chartes</pair>,
+      <pair name="title">{string("Éditions numériques de l'école nationale des chartes")}</pair>,
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="member" type="object">{
-        for $project at $pos in $utils:globalConfig//dots:member[not(@target)]
+        for $project at $pos in db:get($G:config)//dots:member[not(@target)]
         let $id := normalize-space($project/@xml:id)
         let $projectName := $project/@projectPathName
-        let $dbPrjt := db:get($projectName, "config.xml")
+        let $dbPrjt := db:get($projectName, $G:configProject)
         let $member := $dbPrjt//dots:member[@xml:id = $id]
         return
           if ($member) 
@@ -78,13 +75,11 @@ declare function utils:collections() {
 : @see utils.xqm;utils:getDublincore
 : @see utils.xqm;utils:getExtensions
 : @see utils.xqm;utils:getContext
-: @todo question: "config.xml" => le déclarer autrement?
-: @todo comment moduler cette fonction <u>SANS</u> passer par $utils:globalConfig
 :)
 declare function utils:collectionById($id as xs:string) {
   <json type="object">{
-    let $projectName := $utils:globalConfig//dots:member[@xml:id = $id]/@projectPathName
-    let $config := db:get($projectName, "config.xml")//dots:member[@xml:id = $id]
+    let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
+    let $config := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
     let $mandatory := utils:getMandatory($config)
     let $type := normalize-space($config/@type)
     let $dublincore := utils:getDublincore($config)
@@ -93,7 +88,7 @@ declare function utils:collectionById($id as xs:string) {
       if ($type = "collection")
       then
         <pair name="member" type="array">{
-          for $member in db:get($projectName, "config.xml")//dots:member[@target = concat("#", $id)]
+          for $member in db:get($projectName, $G:configProject)//dots:member[@target = concat("#", $id)]
           let $mandatoryMember := utils:getMandatory($member)
           let $dublincoreMember := utils:getDublincore($member)
           let $extensionsMember := utils:getExtensions($member)
@@ -134,7 +129,7 @@ Fonctions pour le endPoint "Document" de l'API DTS
 : @todo prévoir l'ajout de nouveaux paramètres pour accéder à un fragment de document: @ref, @start, @end...
 :)
 declare function utils:document($id as xs:string) {
-  let $project := $utils:globalConfig//dots:member[@xml:id = $id]/@projectPathName
+  let $project := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $doc := db:get($project)/tei:TEI[@xml:id = $id]
   return
     $doc
@@ -232,13 +227,13 @@ declare function utils:getExtensions($member as element(dots:member)) {
             if ($key = "")
             then ()
             else
-            <pair name="{$key}" type="array">{
-              for $meta in $metadata
-              return
-                <item type="object">
-                  <pair name="@id">{normalize-space($meta)}</pair>
-                </item>
-            }</pair>
+              <pair name="{$key}" type="array">{
+                for $meta in $metadata
+                return
+                  <item type="object">
+                    <pair name="@id">{normalize-space($meta)}</pair>
+                  </item>
+              }</pair>
       }</pair>
     else ()
 };

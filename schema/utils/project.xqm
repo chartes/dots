@@ -2,15 +2,15 @@ xquery version "3.1";
 
 (:~  
 : Ce module permet de créer un fichier de configuration d'un projet / d'une collection. Ce document sert ensuite pour le routeur dots. Spécifiquement, le rôle de ce module est de créer le document de configuration, en y intégrant toutes les collections et ressources, avec leurs métadonnées OBLIGATOIRES (title, id, type, totalItems etc.)
-: @author   Philippe Pons
+: @author École nationale des chartes - Philippe Pons
 : @since 2023-05-25
 : @version  1.0
 : @todo Mise à jour du fichier de configuration?
-: @todo Compléter ce code en ajoutant la création ou la MAJ de la base de données "config" (/!\ comment se passer de cette étape?)
 :)
 
 module namespace cc = "https://github.com/chartes/dots/schema/utils/cc";
 
+import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "root.xqm";
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "project_metadata.xqm";
 
@@ -18,24 +18,20 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $cc:config := "config.xml";
-declare variable $cc:declaration := "declaration.xml";
-declare variable $cc:metadata := "metadata";
-
 (:~  
 : Cette fonction permet de construire un document XML de configuration (servant ensuite au routeur DoTS) à ajouter à la base de données XML.
 : @return document XML
 : @param $path chaîne de caractères. Pour lancer cette fonction, la valeur de ce paramètre est vide ("") (cet argument est nécessaire pour d'autres fonctions appelés par cc:create_config)
 : @param $counter nombre entier. Par défaut, ce nombre est de 0. Il est ensuite utilisé pour définir la valeur d'attribut @level d'un <member/> (cet argument est nécessaire pour d'autres fonctions appelés par cc:create_config).
-: @see create_config.xql;cc:getMetadata
-: @see create_config.xql;cc:members
+: @see project.xql;cc:getMetadata
+: @see project.xql;cc:members
 :)
 declare updating function cc:create_config($bdd as xs:string, $title as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
   let $countChild := 
-    let $countConfig := if (db:get($bdd, $cc:config)) then 1 else 0
-    let $countDeclaration := if (db:get($bdd, $cc:declaration)) then 1 else 0
+    let $countConfig := if (db:get($bdd, $G:configProject)) then 1 else 0
+    let $countDeclaration := if (db:get($bdd, $G:declaration)) then 1 else 0
     let $countMetadata := 
-      if (db:get($bdd, $cc:metadata)) then 1 else 0
+      if (db:get($bdd, $G:metadata)) then 1 else 0
     let $countOtherContent := sum( ($countConfig, $countDeclaration, $countMetadata) )
     let $count := count(db:dir($bdd, ""))
     return
@@ -60,9 +56,9 @@ declare updating function cc:create_config($bdd as xs:string, $title as xs:strin
   return
     (
       ccg:create_config($bdd),
-      if (db:exists($bdd, "config.xml"))
+      if (db:exists($bdd, $G:configProject))
       then 
-        let $config := db:get($bdd, "config.xml")
+        let $config := db:get($bdd, $G:configProject)
         return
         (
           replace value of node $config//dots:lastUpdate with current-dateTime(),
@@ -70,7 +66,7 @@ declare updating function cc:create_config($bdd as xs:string, $title as xs:strin
         )
       else 
         (
-          db:add($bdd, $content, "config.xml")
+          db:add($bdd, $content, $G:configProject)
         )
     )
 };
@@ -99,7 +95,7 @@ declare function cc:getMetadata($bdd as xs:string) {
 :)
 declare function cc:members($bdd as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
   for $dir in db:dir($bdd, $path)
-  where not(contains($dir, "metadata"))
+  where not(contains($dir, $G:metadata))
   order by $dir
   return
     if (contains($dir, ".xml"))
@@ -136,11 +132,12 @@ declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as
 : Cette fonction permet de construire l'élément <member/> correspondant à une collection, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
+: @todo revoir l'ajout des titres d'une collection. L'info doit bien se trouver dans declaration.xml, mais il serait plus correct de fonctionner autrement: spécifier où les titres de collection sont disponibles
 :)
 declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string, $counter as xs:integer) {
   let $totalItems := count(db:dir($bdd, $collection))
   let $parent := if ($path = "") then $bdd else $path
-  let $title := db:open($bdd, "declaration.xml")//dots:titles/dots:title[@xml:id=$collection]
+  let $title := db:open($bdd, $G:declaration)//dots:titles/dots:title[@xml:id=$collection]
   return
     <dots:member xml:id="{$collection}" type="collection" target="#{$parent}" level="{$counter + 2}" n="{$totalItems}">
       <dc:title>{if ($title) then normalize-space($title) else ()}</dc:title>

@@ -4,6 +4,7 @@
  :)
 module namespace page = 'http://basex.org/examples/web-page';
 
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "../schema/utils/project.xqm";
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "../schema/utils/project_metadata.xqm";
 
@@ -108,7 +109,7 @@ function page:configuration($csv, $bdd, $check) as element(Q{http://www.w3.org/1
                   <th>Keep it?</th>
                 </tr>
                 {
-                  for $record at $pos in db:get($bdd, "/metadata/metadata.csv")//*:record/node()
+                  for $record at $pos in db:get($bdd, $G:metadata)//*:record/node()
                   let $name := $record/name()
                   group by $name
                   return
