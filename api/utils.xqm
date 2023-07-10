@@ -26,7 +26,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare variable $utils:root := "ELEC";
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-Fonctions pour le endPoint "Collections" de l'API DTS
+Fonctions d'entrée dans le endPoint "Collections" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
 (:~ 
@@ -119,7 +119,7 @@ declare function utils:collectionById($id as xs:string) {
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-Fonctions pour le endPoint "Document" de l'API DTS
+Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
 (:~ 
@@ -180,20 +180,13 @@ declare function utils:getDublincore($member as element(dots:member)) {
         group by $key
         order by $key
         return
-          if ($countKey = 1)
+          if ($countKey > 1)
           then
-            <pair name="{$key}">{
-              if ($metadata/@type) then attribute {"type"} {$metadata/@type} else (),
-              normalize-space($metadata)
-            }</pair>
+            utils:getArrayJson($key, $metadata)
           else
-            <pair name="{$key}" type="array">{
-              for $meta in $metadata
-              return
-                <item type="object">
-                  <pair name="@id">{normalize-space($meta)}</pair>
-                </item>
-            }</pair>
+            if ($key)
+            then utils:getStringJson($key, $metadata)
+            else ()
       }</pair>
     else ()
 };
@@ -213,29 +206,66 @@ declare function utils:getExtensions($member as element(dots:member)) {
       <pair name="dts:extensions" type="object">{
         for $metadata in $extensions
         let $key := $metadata/name()
+        where $key != ""
         let $countKey := count($extensions/name()[. = $key])
         group by $key
         order by $key
         return
-          if ($countKey = 1)
+          if ($countKey > 1)
           then
-            <pair name="{$key}">{
-              if ($metadata/@type) then attribute {"type"} {$metadata/@type} else (),
-              normalize-space($metadata)
-            }</pair>
+            utils:getArrayJson($key, $metadata)
           else
-            if ($key = "")
+            if ($countKey = 0)
             then ()
             else
-              <pair name="{$key}" type="array">{
-                for $meta in $metadata
-                return
-                  <item type="object">
-                    <pair name="@id">{normalize-space($meta)}</pair>
-                  </item>
-              }</pair>
+             utils:getStringJson($key, $metadata)
       }</pair>
     else ()
+};
+
+
+(:~ 
+: Cette fonction permet de construire un tableau XML de métadonnées
+: @return élément XML qui sera ensuite sérialisée en JSON selon le format "attributes" proposé par BaseX
+: @param $key chaîne de caractères qui servira de clef JSON
+: @param $metada élément XML
+:)
+declare function utils:getArrayJson($key as xs:string, $metadata) {
+  <pair name="{$key}" type="array">{
+    for $meta in $metadata
+    return
+      <item>{
+        if ($meta/@key) 
+        then (
+          attribute {"type"} {"object"},
+          utils:getStringJson($meta/@key, $meta)
+        )
+        else 
+          (
+            if ($meta/@type)
+            then
+              (
+                attribute {"type"} {$meta/@type},
+                normalize-space($meta)
+              )
+            else 
+              normalize-space($meta)
+          )
+      }</item>
+  }</pair>
+};
+
+(:~ 
+: Cette fonction permet de construire un élément XML
+: @return élément XML qui sera ensuite sérialisée en JSON selon le format "attributes" proposé par BaseX
+: @param $key chaîne de caractères qui servira de clef JSON
+: @param $metada élément XML
+:)
+declare function utils:getStringJson($key as xs:string, $metadata) {
+  <pair name="{$key}">{
+    if ($metadata/@type) then attribute {"type"} {$metadata/@type} else (),
+    normalize-space($metadata)
+  }</pair>
 };
 
 (:~  
