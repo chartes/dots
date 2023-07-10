@@ -22,5 +22,8 @@ Utiliser les routes de l'API DTS déjà disponibles:
 - http://localhost:9090/api/dts/collections
 - et http://localhost:9090/api/dts/document
 
+## Usage depuis d'autres applications
+En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut décommenter la partie CORS du fichier `basex/webapp/WEB-INF/web.xml`.
+
 ## Todo
 - pouvoir ajouter un fichier `declaration.xml` pour compléter les métadonnées
