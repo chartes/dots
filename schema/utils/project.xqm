@@ -102,7 +102,7 @@ declare function cc:members($bdd as xs:string, $path as xs:string, $counter as x
     then cc:resource($bdd, $dir, $path, $boolean)
     else
       (
-        cc:collection($bdd, $dir, $path, $counter),
+        cc:collection($bdd, $dir, $path, $counter, $boolean),
         cc:members($bdd, $dir, $counter + 1, $boolean)
       )
 };
@@ -117,7 +117,7 @@ declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as
   let $id := normalize-space($doc/@xml:id)
   let $title := normalize-space($doc//tei:titleStmt/tei:title[1])
   let $content := 
-    cc2:getContent($bdd, $id) 
+   if ($boolean) then cc2:getContent($bdd, $id) else ()
   return
     if ($doc)
     then
@@ -134,14 +134,15 @@ declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 : @todo revoir l'ajout des titres d'une collection. L'info doit bien se trouver dans declaration.xml, mais il serait plus correct de fonctionner autrement: spécifier où les titres de collection sont disponibles
 :)
-declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string, $counter as xs:integer) {
+declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
   let $totalItems := count(db:dir($bdd, $collection))
   let $parent := if ($path = "") then $bdd else $path
-  let $title := db:open($bdd, $G:declaration)//dots:titles/dots:title[@xml:id=$collection]
+  let $content := 
+   if ($boolean) then cc2:getContent($bdd, $collection) else ()
   return
-    <dots:member xml:id="{$collection}" type="collection" target="#{$parent}" level="{$counter + 2}" n="{$totalItems}">
-      <dc:title>{if ($title) then normalize-space($title) else ()}</dc:title>
-    </dots:member>
+    <dots:member xml:id="{$collection}" type="collection" target="#{$parent}" level="{$counter + 2}" n="{$totalItems}">{
+      $content
+    }</dots:member>
 };
 
 

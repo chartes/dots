@@ -38,14 +38,16 @@ declare function cc2:getContent($bdd, $id) {
 : @param $bdd chaîne de caractères qui correspond au nom d'une db BaseX
 : @param $id chaîne de caractères qui correspond à l'identifiant @xml:id d'une ressource XML dans la db identifiée ci-dessus
 : @see project_metadata.xqm;;cc2:createContent
+: @todo en toute rigueur, $G:metadata devrait être complété ou remplacé (?) ici avec l'attribut @target du document declaration.xml.
+: @todo /!\ Attention aux problèmes de namespace (notamment sur <csv/>)
 :)
 declare function cc2:getCsvContent($bdd as xs:string, $id as xs:string) {
   let $member := db:get($bdd, $G:configProject)//dots:member[@xml:id = $id]
-  let $record := db:open($bdd, $G:metadata)/csv/record[id = $id]
+  let $record := db:get($bdd, $G:metadata)/*:csv/*:record[*:id = $id]
   return
     if ($record)
     then
-      for $itemDeclaration at $pos in db:get($bdd, $G:declaration)//dots:metadatas/node()[not(@xpath)]
+      for $itemDeclaration at $pos in db:get($bdd, $G:declaration)//dots:metadatas/node()[@format="csv"]
       let $key := $itemDeclaration/name()
       order by $key
       let $data := cc2:createContent($itemDeclaration, $record)
@@ -62,7 +64,7 @@ declare function cc2:getCsvContent($bdd as xs:string, $id as xs:string) {
 :)
 declare function cc2:getTeiContent($bdd as xs:string, $id as xs:string) {
   let $member := db:get($bdd, $G:configProject)//dots:member[@xml:id = $id]
-  let $tei := db:open($bdd)/*:TEI[@xml:id = $id]
+  let $tei := db:open($bdd)/tei:TEI[@xml:id = $id]
   return
     if ($tei)
     then
@@ -102,17 +104,18 @@ declare function cc2:createContent($itemDeclaration, $record as element(record))
     then
       concat($itemDeclaration/@prefix, $record/node()[name() = $element], $itemDeclaration/@suffix)
     else ()
+  let $subKey := $itemDeclaration/@key
+  let $type := $itemDeclaration/@type
   return
-    if ($value != "") 
+    if ($value) 
     then 
-      if ($itemDeclaration/@type[. != "@id"])
-      then
-        element {$key} {
-          attribute { "type" } { $itemDeclaration/@type },
-          $value
-        } 
+      element {$key} {
+        if ($type) then attribute { "type" } { $type } else (),
+        if ($subKey) then attribute { "key" } { $subKey } else (),
+        $value
+      } 
     else 
-      element {$key} {$value}
+      ()
 };
 
 

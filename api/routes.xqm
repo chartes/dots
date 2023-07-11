@@ -78,43 +78,6 @@ function routes:document($id as xs:string, $format as xs:string) {
     utils:document($id)
 };
 
-declare
-  %rest:path("/TW")
-  %rest:GET
-  %output:method("json")
-  %rest:produces("application/ld+json")
-  %output:json("format=attributes")
-function routes:TW() {
-let $json :=
-  <json type='object'>
-    <pair name='@id'>The witcher</pair>
-    <pair name="member" type="array">
-      <item>Jaskier</item>
-      <item type="object">
-        <pair name="prof">barde</pair>
-      </item>
-      <item type="array">
-        <item>grg</item>
-      </item>
-    </pair>
-    <pair name="caractères" type="object">
-      <pair name="nom">test</pair>
-    </pair>
-    <pair name="date" type="number">2023</pair>
-    <pair name="isVersionOf" type="object">
-      <pair name="test"></pair>
-    </pair>
-    <pair name="creator" type="array">
-      <item type="object">
-        <pair name="@value">value</pair>
-      </item>
-      <item>value string</item>
-    </pair>
-  </json>
-return
- $json
-};
-
 
 
 
