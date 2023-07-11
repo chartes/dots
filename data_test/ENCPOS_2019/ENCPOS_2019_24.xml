@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_24" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Des chameaux et des hommes. Les voyages d’Odette du Puigaudeau en Mauritanie (1933-1961)</title>
+        <author>Jeanne Sébastien</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 265-274</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Des chameaux et des hommes</head>
+      <head type="sub">Les voyages d’Odette du Puigaudeau en Mauritanie (1933-1961)</head>
+      <byline>
+        <forename>Jeanne</forename>
+        <surname>Sébastien</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Il est remarquable de constater que malgré sa production éditoriale abondante (sept récits de voyage, plus de deux cents articles, des productions scientifiques conséquentes) et une répercussion médiatique relativement importante au cours de sa vie, Odette du Puigaudeau (1897-1991) ait été à peu près complètement oubliée aujourd’hui. D’autres voyageuses au parcours semblable ont, elles, gardé une certaine postérité. Pourquoi Odette du Puigaudeau a-t-elle été oubliée ?</p>
+        <p>Odette du Puigaudeau est née en 1897 à Saint-Nazaire. Fille de Ferdinand du Puigaudeau (1864-1930), peintre de l’école de Pont-Aven et ami de Gauguin, et de Blanche-Henriette du Puigaudeau, née Van den Brouke (1874-1948), artiste-portraitiste, elle vit son enfance au gré des déplacements du père, avant que la famille ne se fixe au manoir de Kervaudu, au Croisic. Elle garde de son éducation à la maison une fibre artistique très poussée. Peu à peu, une idée fixe naît cependant dans son esprit : partir, quitter d’abord la Bretagne, puis, si possible, la France, pour voyager. À vingt-six ans, elle quitte ses parents, s’installe à Paris où elle vit d’expédients, usant de ses talents de dessinatrice, se découvrant une âme de journaliste dans des articles de magazines féminins et dans des reportages sur la Bretagne, où elle revient périodiquement. Elle fait alors la connaissance d’une journaliste à <hi rend="i">Ève</hi>, Marcelle Borne-Kreutzberger (1886-1977), qu’elle rebaptisera Marion Sénones ; cette rencontre marque un véritable tournant.</p>
+        <p>Elles vivront ensemble jusqu’à la fin de leur vie et s’installent très vite sur une péniche, avant de trouver finalement le moyen, grâce au livret maritime d’Odette du Puigaudeau, de partir… au Sahara, plus précisément en Mauritanie.</p>
+        <p>Elles font successivement trois voyages en Mauritanie et dans les pays environnants : en 1933 et 1934, entre 1936 et 1938, et en 1950 et 1951. Pour chacun de ces voyages, elles réussissent à obtenir des titres de mission de plusieurs institutions, en premier lieu du Muséum d’histoire naturelle, puis du musée de l’Homme à sa création, mais aussi de différents ministères (le ministère de l’Éducation nationale, celui des Colonies et, pour leur dernier voyage, le ministère de la France d’Outre-mer). Leur collaboration avec ces institutions varie selon les voyages, mais consiste le plus souvent en un soutien financier ou en un soutien formel qui leur permet d’avoir des facilités au cours de leur expédition. C’est en effet avec des ambitions ethnographiques et archéologiques, qu’elles partent ; mais leur voyage va également plus loin, puisqu’il s’agit de vivre « l’aventure » et de la rendre sensible au public à travers des récits qui ne sont en aucun cas des écrits scientifiques. Ce qui passionne les deux voyageuses, c’est de vivre au rythme des Maures nomades, le plus souvent à chameau.</p>
+        <p>Les trois voyages ont des inflexions différentes : le premier est une grande pérégrination nomade à travers la brousse, interrompue par un panaris dont souffre Odette du Puigaudeau, mais qui reprend à sa guérison avec la visite de la <hi rend="i">guetna</hi>, la foire aux dattes qui se tient chaque année sur les plateaux de l’Adrar, puis avec la traversée du désert de l’Inchiri, prouesse sportive en plein mois d’août. Lors de leur deuxième voyage, Odette du Puigaudeau et Marion Sénones font des recherches archéologiques au Maroc puis suivent la grande caravane de sel, l’<hi rend="i">azalaï</hi>, qui rallie Tombouctou aux mines de sel de Taoudeni. Après plusieurs tentatives de départ avortées pendant la Seconde guerre mondiale, elles repartent en 1950 ; le voyage comprend surtout, là encore, des recherches archéologiques, mais aussi des temps d’arrêt très longs dans les postes de la piste Maroc-Sénégal, qui est alors en cours de construction.</p>
+        <p>Odette du Puigaudeau est l’auteur, en plus de ses sept récits de voyage, d’un grand nombre d’articles scientifiques ou de vulgarisation sur la Mauritanie et d’une thèse d’ethnographie sous la direction de Théodore Monod, <hi rend="i">Arts et coutumes des Maures</hi>, publiée de façon posthume. Elle a enfin écrit un ouvrage sur le guépard, puisqu’elle en a adopté un lors de son deuxième voyage, et un essai politique, <hi rend="i">Le Passé maghrébin de la Mauritanie</hi>, paru en 1962.</p>
+        <p>Dans les années 1950, Odette du Puigaudeau s’investit dans un grand nombre de débats politiques à propos de la décolonisation, dont elle devient une partisane au cours de la Seconde Guerre mondiale ; cependant, elle défend des positions contradictoires qui lui valent d’être peu à peu ostracisée par les milieux scientifiques et politiques, et même par ses amis maures. En 1961, après une dernière courte mission en Mauritanie pour l’exposition <hi rend="i">Sahara</hi> au musée de l’Homme, elle s’installe au Maroc avec Marion Sénones et prend la direction d’un tout jeune bureau de préhistoire marocain, échappant ainsi aux tensions qui caractérisent ses dix dernières années en France. Elle y meurt en 1991, non sans avoir rencontré à de nombreuses reprises Monique Vérité, conservateur honoraire des bibliothèques, qui a rédigé une biographie de référence à partir de ces entretiens.</p>
+        <p>L’analyse de la place qu’occupent les explorations d’Odette du Puigaudeau au sein du milieu colonial, du milieu du journalisme, du milieu scientifique et du monde du voyage permet de dépasser la dimension événementielle des études sur les voyageurs et les conclusions générales des travaux prosopographiques sur ces derniers pour replacer ces expéditions dans un contexte historique global et de contribuer ainsi à combler le vide historiographique sur les voyages postérieurs à la Seconde Guerre mondiale.</p>
+        <div>
+          <head>Sources</head>
+          <p>Odette du Puigaudeau a, sur les conseils de Monique Vérité, légué ses archives à la Société de géographie. Les fonds possédés par celle-ci sont conservés depuis 1942 au département des Cartes et Plans de la Bibliothèque nationale de France. Les fonds Puigaudeau et Sénones, donnés en même temps, portent les cotes SG MS-5389 à SG MS-5478 et SG MS-5520 à SG MS-5585. Ils comprennent notamment quelque mille pièces de correspondances personnelles et administratives, plus de sept cents coupures de presse, des agendas, des gravures, des notes personnelles, de manuscrits originaux et environ trois mille cinq cents photographies. L’étude de ce fonds est complétée par celle des dix ouvrages publiés par Odette du Puigaudeau, de ses carnets de route prêtés par Monique Vérité et de quelques sources complémentaires, notamment les objets qu’elle a rapportés de ses voyages et qui sont conservés au musée du Quai-Branly, et les échantillons lithiques et herbiers collectés par ses soins et gardés au Muséum d’histoire naturelle. Certains documents n’ont pu être consultés, notamment les films qu’Odette du Puigaudeau dit avoir réalisés pendant ses voyages mais qui restent à ce jour introuvables.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>De l’exposition coloniale à l’indépendance de la Mauritanie : le voyage politique ?</head>
+        <div>
+          <head>Chapitre premier<lb/>La protection des autorités</head>
+          <p>Pour partir, Odette du Puigaudeau et Marion Sénones obtiennent des titres de mission de la part des autorités coloniales, en métropole et dans les territoires coloniaux eux-mêmes. L’aide de celles-ci leur est vitale, tout d’abord pour obtenir d’éventuels fonds, mais également pour bénéficier de soutien pendant l’expédition elle-même ; il est impossible de voyager en territoire colonial sans l’autorisation et l’appui concret des autorités. En aval du voyage, certaines personnalités comme le général Henri Gouraud offrent aussi un soutien précieux aux voyageuses pour publier leurs ouvrages et leurs articles, pour faire des conférences dans différents organes et ainsi pour pouvoir repartir un jour. La contrepartie de ce soutien est la demande, plus ou moins explicite, qu’Odette du Puigaudeau participe, par son écriture, à la propagande coloniale ; celle-ci montre d’ailleurs une fascination certaine – bien qu’ambiguë – pour « l’aventure coloniale ».</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Images des colonisés, colonisation des images</head>
+          <p>Dans les années 1930, en particulier au moment de l’exposition coloniale de 1931, tout un flot d’images de propagande inonde les Français et construit en eux le rêve de la colonisation idéale. Odette du Puigaudeau ne fait pas exception à la règle ; dans son écriture comme dans ses photographies, l’imagerie coloniale est bien présente et les représentations mentales qu’elle se fait de la Mauritanie sont loin d’être neutres. Des poncifs exotiques aux stéréotypes négatifs sur les colonisés, les mots et l’iconographie d’Odette du Puigaudeau construisent un imaginaire paternaliste, où le colonisateur se doit d’« éduquer » les grands enfants que sont les colonisés, de leur apporter prospérité, justice et culture. Dans la lignée des travaux historiographiques actuels sur cette question, la relation d’Odette du Puigaudeau au corps des colonisés peut également être éclairée par ses productions, notamment par ses photographies.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Vers la décolonisation du voyage</head>
+          <p>Entre l’exposition coloniale et l’indépendance de la Mauritanie en 1962, un monde s’évanouit. L’anticolonialisme des années 1930 prend de plus en plus corps et annonce les premières guerres d’indépendance. Odette du Puigaudeau, après quelques conflits avant-coureurs avec les autorités coloniales lors de ses deux premiers voyages, se convertit à l’anticolonialisme après 1945. Elle est convaincue que la modernisation de la Mauritanie qu’elle observe lors de ses expéditions, notamment en 1950 et 1951, n’apporte pas la « prospérité » au pays mais l’appauvrit en déstructurant son économie et en le conduisant à la perte de sa culture propre. De ses observations de voyage Odette du Puigaudeau tire des écrits de plus en plus anticolonialistes, mais sur un mode quelquefois contradictoire : ainsi contiennent-ils toujours un relent de paternalisme colonial. Bien que la voyageuse s’engage dans des actions politiques poussées, par exemple contre l’explosion de la bombe atomique au Sahara ou contre la départementalisation de l’Afrique occidentale française, elle reste légèrement décalée par rapport aux positions anticolonialistes majoritaires. Ses études ethnographiques sur la culture maure l’amènent même à adopter une posture délicate au moment de l’indépendance de la Mauritanie : elle défend le rattachement de la Mauritanie au Maroc, ce qui lui vaut de se brouiller avec tous ses amis maures. En outre, comme son caractère fort et sa tendance à se poser en messie des Maures dans le débat politique lui ont attiré l’inimitié à la fois des autorités coloniales et des milieux anticolonialistes, Odette du Puigaudeau se retrouve au début des années 1960 bien isolée, comme entre deux mondes. Cet isolement est sans doute la cause de l’installation définitive au Maroc d’Odette du Puigaudeau en 1961 : le débat politique a conduit à la fin du voyage.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>La production du voyage, entre ethnologie et journalisme</head>
+        <div>
+          <head>Chapitre premier<lb/>Sciences et reportages, un prétexte au départ ?</head>
+          <p>Odette du Puigaudeau a fait un peu de journalisme avant son premier voyage et c’est ce qui l’amène à collaborer avec plusieurs journaux et maisons d’édition tout au long de sa vie ; ceux-ci, à la recherche d’écrits attirants pour leurs lecteurs et séduits par les talents de reporter de la voyageuse, la soutiennent et publient ses articles et ses récits de voyage. Une qualité particulière d’Odette du Puigaudeau lors de ses voyages l’ancre parfaitement dans le monde du grand reportage : l’attention à l’image (iconographie, photographies, dessins) est au cœur de ses expéditions. La voyageuse est également soutenue par plusieurs institutions et personnalités scientifiques, comme le tout jeune musée de l’Homme, le Muséum d’histoire naturelle, le Centre national de la recherche scientifique après la seconde guerre mondiale, Théodore Monod, Paul Rivet et bien d’autres. En échange d’un soutien souvent financier et de conseils précieux, ainsi que d’une aide pour publier des écrits scientifiques, celles-ci lui demandent ainsi de rapporter des objets, des pierres, des herbiers, ou de faire de l’archéologie et de l’ethnographie sur place. Odette du Puigaudeau légitime régulièrement ses voyages par ces missions scientifiques, dans une période où le voyage féminin commence tout juste à être plus répandu. Science et journalisme peuvent ainsi apparaître comme un prétexte au voyage.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Entre science et journalisme, une conception paradoxale</head>
+          <p>Odette du Puigaudeau a une conception bien à elle du rôle de transmission de connaissances attribué au « grand voyage ». Cette conception s’inscrit entre science et journalisme. Semble en effet primer chez la voyageuse une approche très matérialiste de la science : le premier souci d’Odette du Puigaudeau est de récolter par des moyens variés du matériel sur place, qu’il soit lithique ou ethnographique. L’importance quantitative des matériaux rapportés et son attention soutenue au style des objets font écho au développement de la notion de « terrain » dans l’ethnologie naissante. Mais Odette du Puigaudeau, qui n’est pas insérée dans les réseaux universitaires et n’a aucune formation scientifique réelle, semble rester limitée à ce terrain et à une démarche centrée sur les objets, sans passer à l’exploitation de ses découvertes à son retour en métropole. Cependant, son appartenance au monde du journalisme la conduit à donner souvent un tour plus littéraire, voire fantasmé, à ses écrits scientifiques, en s’attardant par exemple sur des légendes ou sur la culture « spirituelle » du Sahara sans fonder scientifiquement ses assertions. La voyageuse balance alors entre science et journalisme, dans une hésitation commune à beaucoup de grands voyageurs.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Vers une conversion à l’ethnologie ?</head>
+          <p>Après la Seconde Guerre mondiale, la part des productions scientifiques d’Odette du Puigaudeau augmente considérablement. Elle commence également une thèse d’ethnographie sous la direction de Théodore Monod, dans le contexte de la montée en puissance de l’ethnologie. Ses objectifs de voyage basculent peu à peu du champ du journalisme à celui de la science. Ce changement est perçu par ses contemporains, qui la considèrent de plus en plus comme une spécialiste de la Mauritanie. Odette du Puigaudeau mène désormais des « enquêtes » auprès des populations locales, dans une démarche qui se rapproche sur certains points de celle des ethnologues du musée de l’Homme. La voyageuse s’insère de plus en plus dans les réseaux scientifiques et ses observations ethnographiques prennent plus d’ampleur jusqu’à lui permettre de tirer des conclusions parfois novatrices. En 1961, le projet de thèse est bien avancé ; Odette du Puigaudeau apparaît désormais plus comme une scientifique que comme une voyageuse s’adonnant en amatrice à la pratique de la science.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Odette du Puigaudeau, une intermédiaire ?</head>
+          <p>Cependant plusieurs paradoxes apparaissent dans le parcours scientifique de la voyageuse. Tout d’abord, de nombreuses tensions émaillent ses rapports avec les scientifiques et les institutions auxquelles ceux-ci appartiennent. Conflits liés à la personnalité difficile de la voyageuse mais également à sa volonté d’être reconnue désormais comme une spécialiste, qualité que les scientifiques refusent de lui accorder. Dans une perspective alors courante, ceux-ci veulent en effet se servir de la voyageuse comme intermédiaire avec les terrains africains, pour qu’elle en rapporte des objets, des informations, du matériel lithique, etc., mais en aucun cas pour qu’elle devienne une de leurs pairs. Odette du Puigaudeau refuse cependant de rester cantonnée à ce rôle d’intermédiaire, ce qui est à l’origine de nombreux malentendus et incompréhensions. Là encore, la voyageuse est entre deux mondes, entre le monde profane – celui du journalisme, du récit de voyage, des amateurs d’africanisme – et le monde scientifique, et ne trouve jamais sa place. Cette position délicate peut être une autre explication à son oubli presque total par la postérité.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Les représentations de l’expérience, entre voyage et aventure</head>
+        <div>
+          <head>Chapitre premier<lb/>Pourquoi partir ? Les ingrédients de l’aventure</head>
+          <p>Les raisons qui poussent Odette du Puigaudeau à quitter la métropole sont notamment liées aux poncifs orientalistes de l’époque, qui influent sur l’imaginaire de la voyageuse et la tentent par leurs promesses d’espaces vierges et « exotiques », où elle pourrait découvrir une temporalité et un rythme de vie nouveaux, hors de la vitesse de la modernité occidentale, de son individualisme et de son luxe. Ce qu’Odette du Puigaudeau cherche avant tout, c’est donc l’évasion. Pour elle, comme pour beaucoup de voyageuses, ce désir d’évasion naît également de la sensation d’étouffer en métropole lorsque l’on est une femme et, qui plus est, lorsque l’on est homosexuelle, même si Odette du Puigaudeau ne revendique pas cette identité ouvertement. Enfin, dans un monde où la culture de masse tend à la fois à démocratiser le voyage et à valoriser de plus en plus des aventures prétendument authentiques, le voyage lui apparaît comme l’occasion de se transformer en véritable héroïne, de s’élever au-dessus des foules, tel un passeur entre deux mondes.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Vers l’affaiblissement du voyage ?</head>
+          <p>Comme le souligne Sylvain Venayre dans ses travaux sur l’établissement de la « mystique moderne de l’aventure » au tournant du <num>xix<hi rend="sup">e</hi></num> et du <num>xx<hi rend="sup">e</hi></num> siècle, cet idéal du voyage faiblit au rythme de la disparition des blancs de la carte et du nivellement des mondes « exotiques » par la civilisation européenne. Une véritable nostalgie apparaît alors dans les milieux du voyage, voire un certain désenchantement. Odette du Puigaudeau ne fait pas exception à la règle. Elle connaît des difficultés matérielles et relationnelles qui l’incitent souvent à voir le voyage comme une épreuve ; mais, bien plus que ces difficultés, c’est la modernisation de la Mauritanie qui la mène, petit à petit, à se dire déçue de l’expérience du voyage. La Mauritanie de ses rêves n’est plus ; l’imaginaire de la voyageuse prend des couleurs amères.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Vers l’aventure moderne ?</head>
+          <p>Sylvain Venayre a décrit le processus suivant lequel l’aventure se reconstruit entre les deux guerres comme valeur positive, fondée notamment sur la notion de gratuité – en quelque sorte l’aventure pour l’aventure. Odette du Puigaudeau emprunte certains chemins de « l’aventure moderne » décrite par Sylvain Venayre, en revendiquant par exemple un voyage authentique, qui suit le mode de vie des Maures sans céder aux sirènes agressives de la modernité, ou en souhaitant se lancer dans la transmission de son voyage par des moyens modernes, en particulier filmiques. Cependant elle reste toujours attachée à un idéal d’aventure qui fonde le voyage sur des valeurs de transmission que, selon Sylvain Venayre, l’aventure moderne tend à abandonner, et qui est désormais perçu comme rétrograde. La comparaison avec trois voyageuses de son temps, Alexandra David-Néel, Ella Maillart et Titaÿna, montre en outre qu’Odette du Puigaudeau n’est pas incluse dans les réseaux du monde du voyage, qu’elle ne réussit ni à médiatiser ni à internationaliser suffisamment son expérience, ni à s’intégrer de façon satisfaisante dans le pays visité, ce qui fait obstacle au succès de son aventure auprès du public. D’autres dimensions de son voyage sont en revanche plus originales, comme son appétence nouvelle, lors de son troisième voyage, pour les moyens de transport modernes ; cependant Odette du Puigaudeau reste toujours dans un entre-deux entre voyage à l’ancienne et voyage moderne, ce qui ne permet pas de la catégoriser facilement dans l’histoire de l’aventure. Cet entre-deux est sans doute aussi un facteur expliquant son oubli.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Odette du Puigaudeau semble être une aventurière inclassable, qui connaît une part d’échec dans ses voyages, en particulier à cause de son isolement. Dans ses positions politiques comme dans son rapport à la science, au journalisme, et dans ses conceptions du voyage lui-même, elle est toujours sur une ligne de crête qui la rend incompréhensible pour ses contemporains. Ses voyages se transforment, mais jamais autant qu’ils auraient pu le faire, et Odette du Puigaudeau est incapable d’effectuer un choix clair entre la profession de journaliste, celle de scientifique et celle de voyageuse. Pour un public fasciné par des aventures de plus en plus sportives et époustouflantes, cette incapacité à effectuer un choix a pu être décevante et peut expliquer, en partie, son oubli par la postérité.</p>
+        <div>
+          <head>Iconographie</head>
+          <p>Photographies prises par Odette du Puigaudeau et conservées au département des Cartes et Plans de la Bibliothèque nationale de France. — Articles de journaux rédigés par Odette du Puigaudeau. — Couvertures originales des récits de voyage d’Odette du Puigaudeau. — Planche de croquis reproduisant des gravures mauritaniennes. — Brouillon de vitrine pour l’exposition <hi rend="i">Sahara</hi> au musée de l’Homme en 1961.</p>
+        </div>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Cartes réalisées par Monique Vérité des premier et deuxième voyages d’Odette du Puigaudeau. — Rapport officiel rédigé par Odette du Puigaudeau de sa mission effectuée de 1936 à 1938 (1938). — Deux lettres du capitaine Maurel à Odette du Puigaudeau (s. d.). — Lettre du colonel de Bernède à Odette du Puigaudeau (1950).</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Tableau des échantillons lithiques rapportés par Odette du Puigaudeau. — Liste des journaux ayant publié des articles écrits par Odette du Puigaudeau ou à son sujet. — Glossaire. — Index des noms de personnes.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

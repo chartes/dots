@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2015_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Thomas d’Aquin contre Grégoire Palamas. La Réfutation de la profession de foi des Athonites de Prochoros Kydonès. Édition, traduction et commentaire</title>
+        <author ref="https://www.idref.fr/183698126">Romain Feeser</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2015 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2015</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2015"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Thomas d’Aquin contre Grégoire Palamas</head>
+      <head type="sub">La <hi rend="i">Réfutation de la profession de foi des Athonites</hi> de Prochoros Kydonès
+        <lb/>Édition, traduction et commentaire</head>
+      <byline>
+        <forename>Romain</forename>
+        <surname>Feeser</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>L’Église byzantine au <num>xiv<hi rend="sup">e</hi></num> siècle fut déchirée par une grave crise connue sous le nom de crise hésychaste ou palamite, du nom de son principal protagoniste : Grégoire Palamas. La théologie de Grégoire Palamas fut considérée par ses partisans comme la formalisation de traditions orthodoxes anciennes dans la lignée de l’hésychasme des Pères du désert des premiers siècles chrétiens, tandis que ses détracteurs la dénoncèrent pour ses formules révolutionnaires et contraires, selon eux, aux écrits des Pères de l’Église. La théologie palamite conféra en effet un fondement doctrinal à une prière mystique censée conduire à la connaissance de Dieu par la participation à ses énergies incréées. Grégoire Palamas distinguait en effet l’essence divine incréée et imparticipable et l’énergie divine incréée mais participable ; cela lui valut d’ailleurs d’être accusé de dithéisme. Pour expliquer sa doctrine, Palamas a souvent recouru à l’image du soleil – ici l’essence divine incréée et imparticipable – et de ses rayons – les énergies divines qui sont incréées car de nature divine, mais qui sont participables. Cette participation divine était rendue possible grâce à l’expérience mystique de la prière du cœur qui donne à voir à l’orant la lumière divine semblable à celle qui entoura le Christ lors de sa Transfiguration au mont Thabor. Cette insistance sur la lumière thaborique dans la théologie de Palamas en a fait un des thèmes les plus débattus au cours des différentes phases que connut la querelle palamite.</p>
+        <p>Au milieu du siècle, tout semblait réglé ; la théologie de Palamas avait été établie comme doctrine officielle de l’Église byzantine lors du synode des Blachernes de 1351. Mais c’était sans compter sur l’opposition persistante de certains moines et intellectuels, qui resurgit à l’occasion du procès de Prochoros Kydonès à la fin des années 1360. Ce procès fut certes celui de Prochoros Kydonès, savant moine athonite, auteur d’ouvrages polémiques antipalamites ; mais aussi et surtout le procès de celui dont il fut l’épigone et le zélateur : Thomas d’Aquin. Prochoros Kydonès fut en effet profondément influencé par la pensée thomiste qu’il contribua à diffuser dans le monde byzantin de langue grecque, en traduisant nombre d’œuvres du docteur angélique en collaboration avec son frère Dèmètrios, figure de premier plan de l’histoire politique et de la vie intellectuelle de Byzance au <num>xiv<hi rend="sup">e</hi></num> siècle. À la lecture de Thomas d’Aquin, Prochoros Kydonès récusa la doctrine palamite et considéra que tout effort de connaissance de Dieu était avant tout un processus intellectuel, rationnel et indirect.</p>
+        <p>La <hi rend="i">Réfutation de la profession de foi des Athonites</hi> est justement l’illustration des conceptions de Prochoros Kydonès et de sa méthode de raisonnement pour résoudre les questions soulevées par la théologie palamite. Prochoros Kydonès entreprit de réfuter de manière systématique et détaillée une profession de foi rédigée par quelques moines athonites favorables aux idées de Grégoire Palamas. Il considérait apparemment que les anathèmes prononcés lui étaient directement adressés et qu’il lui revenait donc d’y répondre ; mais c’est surtout l’occasion pour lui de démontrer les insuffisances et les erreurs de la pensée de Grégoire Palamas et de ses partisans. Les thèmes principaux de la doctrine palamite, en particulier la lumière thaborique, sont traités en détail dans cette <hi rend="i">Réfutation.</hi> L’édition de ce texte antipalamite permet de mieux apprécier l’importance de l’influence latine et plus spécialement de Thomas d’Aquin dans la querelle palamite et de prolonger les études consacrées à Prochoros Kydonès, personnage clef pour comprendre le progressif <hi rend="i">estrangement</hi> qui finit par séparer durablement les deux branches – catholique latine et orthodoxe grecque – de la chrétienté, et ce malgré les tentatives d’Union des Églises.</p>
+      </div>
+      <div>
+        <head>Sources</head>
+        <p>Cette étude est essentiellement fondée sur le texte édité et traduit de la <hi rend="i">Réfutation de la profession de foi des Athonites</hi> de Prochoros Kydonès. Cette <hi rend="i">Réfutation</hi> a été rédigée vers 1367 ou 1368, peu avant la condamnation comme hérétique de Prochoros Kydonès en avril 1368 et au plus fort du conflit qui l’opposa à ses détracteurs au mont Athos, en particulier l’higoumène du monastère de Lavra Jacob Trikanas, et au-delà de la Sainte Montagne, le patriarche de Constantinople Philothée Kokkinos. Par ailleurs, l’exposé précédant l’édition proprement dite s’appuie sur des recherches récentes qui éclairent des points jusque-là mal connus de la vie et de l’œuvre de Prochoros Kydonès. Cette thèse propose une vision détachée de toute polémique entre catholiques et orthodoxes, suivant en cela les travaux des chercheurs les plus récents comme Antonio Rigo, sans pour autant négliger par exemple l’étude fondatrice du cardinal Giovanni Mercati sur les grandes figures antipalamites du <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head>Première partie <lb/>L’auteur et l’œuvre</head>
+        <div>
+          <head>Chapitre premier <lb/>Les premiers temps de la querelle hésychaste</head>
+          <p>Il a paru bon de retracer ne serait-ce que de manière succincte les premières étapes de la crise palamite afin de mieux saisir l’originalité de Prochoros Kydonès, qui a laissé son nom à la troisième phase de cette querelle religieuse. Sont évoquées les origines supposées de la prière hésychaste : mystique indienne et tradition soufie. La diffusion de cette pratique mystique confortée par la théologie de Grégoire Palamas fut l’objet des attaques, d’abord dans les années 1330, de Barlaam le Calabrais – qui fut finalement contraint de regagner l’Occident et qui s’installa à la cour pontificale à Avignon –, puis aux cours des décennies 1340 et 1350, de Grégoire Akindynos et de Nicéphore Grégoras. Grégoire Palamas sortit vainqueur de ses affrontements grâce notamment au soutien indéfectible de l’empereur Jean VI Cantacuzène, et fut considéré comme saint à sa mort en 1359.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Biographie de Prochoros Kydonès</head>
+          <p>Prochoros Kydonès naquit vers 1333-1334 dans une famille aristocratique de Thessalonique. Très jeune, il devint moine au monastère athonite de Lavra et fut ordonné prêtre en 1364. Il traduisit en grec des œuvres de saint Augustin, Boèce, des extraits du <hi rend="i">Commentaire sur les Sentences</hi> d’Hervé Nédélec et surtout contribua à faire connaître Thomas d’Aquin aux érudits byzantins, notamment par ses traductions de la <hi rend="i">Somme théologique.</hi> Son œuvre originale est d’ailleurs profondément influencée par Thomas d’Aquin et la méthode scolastique, ce qui lui fut abondamment reproché par ses détracteurs dans la querelle palamite et qui contribua du même coup à associer durablement antipalamisme et latinophronie – courant qui était favorable à l’influence latine dans le monde byzantin, voire même partisan de l’Union des Églises latine et grecque. Dans cette biographie, l’accent est mis sur les moments essentiels pour comprendre la querelle palamite qui se focalisa alors autour de Prochoros Kydonès, chef de file des antipalamites au mont Athos. Quelques avancées récentes de la recherche sont mises en évidence, en particulier pour les origines familiales et l’enfance de Prochoros Kydonès qui restaient jusque-là assez mal connues. Toutefois, la fin tragique de Prochoros Kydonès n’a pas été délaissée, et cette biographie s’achève donc avec la condamnation de Prochoros Kydonès lors du synode d’avril 1368 puis sa mort peu de temps après dans la misère et l’isolement.</p>
+        </div>
+        <div>
+          <head>Chapitre III <lb/>La <hi rend="i">Réfutation de la profession de foi des Athonites</hi></head>
+          <p>La <hi rend="i">Réfutation de la profession de foi des Athonites</hi> est avant toute chose un ouvrage polémique, où Prochoros Kydonès cherche à démontrer de manière méthodique et rigoureuse les méprises et les erreurs commises par Grégoire Palamas et les tenants de sa doctrine, et par voie de conséquence le bien-fondé de ses propres idées. Prochoros Kydonès composa cet ouvrage au plus fort de la lutte contre ses détracteurs, partisans de Grégoire Palamas. C’est un condensé, une synthèse de la pensée antipalamite organisée de manière thématique et où chaque question débattue est résolue, citation patristique à l’appui. L’ouvrage devait être percutant et avait sans doute vocation à être facilement utilisé dans la confrontation entre palamites et antipalamites. Toutefois, la précipitation du procès instruit par le patriarche Philothée Kokkinos contre Prochoros Kydonès ne permit pas à ce dernier de mener à bien son dessein ; Prochoros Kydonès manqua apparemment de temps pour poursuivre la mise au net de la <hi rend="i">Réfutation de la profession de foi des Athonites.</hi> Néanmoins, aucun des thèmes évoqués par les Athonites dans leur profession n’est laissé sous silence par Prochoros Kydonès. L’analyse des différentes parties de la <hi rend="i">Réfutation</hi> permet justement d’en faciliter l’accès.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie <lb/>La tradition manuscrite</head>
+        <p>L’édition est fondée sur les folios autographes de Prochoros Kydonès du manuscrit composite <hi rend="i">Vaticanus graecus 1102.</hi> Le manuscrit de la Bibliothèque apostolique vaticane contient de surcroît deux versions de la <hi rend="i">Réfutation de la profession de foi des Athonites</hi>, un brouillon (fol. 251-264v) et une mise au net (fol. 123-137) ; le texte de la mise au net est brutalement interrompu, tandis que le brouillon se poursuit sur deux feuillets au moins. Il convient de signaler que l’ordre des folios a été perturbé lors de la reliure et doit être restitué pour conserver la cohérence du texte. La notice détaillée du manuscrit permet d’étudier la genèse et l’histoire du texte en lien avec les autres œuvres contenues dans ce manuscrit lié aux cercles antipalamites du <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head>Troisième partie <lb/>Édition et traduction</head>
+        <p>La version mise au net de la <hi rend="i">Réfutation de la profession de foi des Athonites</hi> a servi de référence (sigle V) pour l’édition, sauf pour la partie qui n’est livrée que par la version au brouillon ; les variantes significatives du brouillon (sigle V<hi rend="sup">1</hi>) sont signalées dans l’apparat. Comme il s’agit d’un original, l’orthographe de l’auteur a été le plus souvent respectée sans pour autant compromettre la lisibilité pour un lecteur moderne. Par ailleurs, les passages cités sont signalés dans un apparat des sources. Cette présentation a été facilitée par l’utilisation du logiciel Classical Text Editor.</p>
+      </div>
+      <div>
+        <head>Annexes</head>
+        <p>Quatre planches du <hi rend="i">Vaticanus graecus 1102.</hi> Les folios 123v, 124, 124v et 125 présentent le début du texte de la <hi rend="i">Réfutation de la profession de foi des Athonites</hi> dans la version mise au net par Prochoros Kydonès, tandis que les folios 259v, 260, 261v et 262 fournissent la fin du texte à l’état de brouillon.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

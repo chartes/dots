@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_21" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le <hi rend="i">De Partibus Ædium</hi> de Francesco Maria Grapaldo : la pierre et l’eau. Édition critique et traduction du livre I, chapitres I et II</title>
+        <author>Lemaitre Gaétan</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 233-240</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le <hi rend="i">De Partibus Aedium</hi> de Francesco Maria Grapaldo : la pierre et l’eau</head>
+      <head type="sub">Édition critique et traduction du livre I, chapitres I et II</head>
+      <byline>
+        <forename>Gaétan</forename>
+        <surname>Lemaitre</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Francesco Maria Grapaldo constitue une figure éminente du paysage humaniste de la ville de Parme, à la jonction des <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles. Image-type du notable lettré à l’antique, polygraphe et polymathe, il passa sa vie à cultiver sa connaissance des ouvrages antiques et à la partager avec ses amis au sein du cénacle humaniste de sa ville natale, l’un des plus dynamiques du temps.</p>
+        <p>Le <hi rend="i">De Partibus Aedium</hi>, ou <hi rend="i">Traité sur les parties de la maison antique</hi>, est l’œuvre de toute sa vie. Il en donnera quatre éditions successives, chacune revue et augmentée par rapport aux précédentes, de 1494 à 1516, la dernière paraissant de façon posthume. Son but : reconstituer pour son lecteur une image mentale, aussi précise, claire et détaillée que possible, de ce qu’était le mode de vie antique, au sein d’une maison imaginaire, lieu de vie aux murs rendus infiniment extensibles pour y contenir tous les objets, toutes les activités et toutes les fonctions du quotidien de Pline, Vitruve ou Cicéron. Ce lexique latin démesuré, aux allures de visite guidée, lui valut le surnom d’<hi rend="i">architectus</hi> auprès de ses pairs, lui que le pape Jules II avait déjà couronné <hi rend="i">poeta laureatus</hi> en 1512.</p>
+        <p>Une réédition intégrale de ce texte est en projet ; les fondations en sont posées à la faveur d’une édition critique des deux premiers chapitres du livre I et de l’ensemble de leur paratexte, et grâce à leur traduction française.</p>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Au sujet du <hi rend="i">De Partibus Aedium</hi>. Prémisses à l’édition</head>
+        <div>
+          <head>Chapitre premier<lb/>Grapaldo. Présentation d’une personnalité méconnue</head>
+          <p><hi rend="i">Une querelle de datation. —</hi> Si les dates de naissance et de décès de Grapaldo n’ont pas encore été évoquées, c’est que celles-ci ne sont pas connues avec une absolue certitude et ont fait l’objet de multiples conjectures au fil des siècles. S’il n’est pas possible de régler le débat de façon assertive, la comparaison des différentes hypothèses de datation permet de clarifier la situation : Grapaldo est vraisemblablement né à Parme, soit le 3 janvier 1460 soit durant l’année 1462, et mort à Parme, entre la fin du mois d’octobre et le début du mois de novembre 1515.</p>
+          <p><hi rend="i">Éléments biographiques. —</hi> Dans le même esprit de clarification de l’histoire de ce personnage hors du commun, les témoignages des différents biographes qui l’ont racontée sont rassemblés et conciliés autant que possible, permettant pour la première fois de présenter un portrait complet de Grapaldo. Durant ces cinquante-trois ou cinquante-cinq ans de vie et d’activité incessante, il a été homme de lettres, auteur d’une dizaine de textes publiés : préfaces comme celle au <hi rend="i">Philogyne</hi> de Baiardi en 1508, éditions commentées d’auteurs antiques, comme celle de Plaute en 1510, poèmes religieux et profanes qui lui ont valu d’être lauré par le pape en personne, et bien sûr son œuvre majeure, commencée dès 1487, le <hi rend="i">De Partibus</hi> et son <hi rend="i">De Verborum Explicatione</hi>. Impliqué dans la politique de son temps, il a été membre du conseil des Anciens de la ville de Parme, chargé de fonctions d’édilité et de missions d’ambassade auprès de souverains de l’importance de Louis XII et Jules II. Enfin, seuls quelques éléments de sa vie privée sont connus : fils de Catellano Grapaldo, juriste de Parme, et de la noble Beatrice Ravacaldo, et neveu de Niccolò Ravacaldo, archiprêtre de Fornoue, qui lui a permis d’accéder à une éducation de qualité auprès de Béroalde, il a épousé une jeune femme issue de la famille Garimberti, d’ascendance noble elle aussi, et dont le prénom aurait été Lucia, mais que Grapaldo surnomme <hi rend="i">Amabilia</hi> ; celle-ci lui a donné au moins un fils, Marc’Antonio, en 1487. Mais il a aussi été entouré de nombreux amis humanistes, qui l’ont encouragé dans la rédaction de son œuvre maîtresse.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Le Parme humaniste. Paysage intellectuel de l’entourage de Grapaldo</head>
+          <p>L’œuvre de Grapaldo ne se comprend véritablement qu’une fois remise dans son contexte d’écriture et face à son premier public, les autres membres du cénacle de Parme et du cercle d’amis de l’auteur, autant de représentants d’une ambiance humaniste caractéristique de l’époque. Parmi ces grands noms, on peut citer Philippe Béroalde, Taddeo Ugoleto, Giorgio Anselmi ou Andrea Baiardi. Ils ont tous fait l’objet de travaux de recherche qui, mis bout à bout, dessinent le paysage humaniste si particulier qui caractérise à la fois les contextes d’écriture et de réception de l’œuvre.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/><hi rend="i">Antiquam Marius Domum recurrens</hi>. Le projet du <hi rend="i">De Partibus Aedium</hi></head>
+          <p>Pour résumer le projet de Grapaldo, on peut entreprendre une rapide visite de sa demeure littéraire et ainsi obtenir une vision d’ensemble dans laquelle les deux premiers chapitres prennent leur sens et leur juste place. Il s’agit d’un parcours progressif et multidirectionnel : parcours d’abord périphérique et structurel, avec un premier tour des murs extérieurs et une étude de leur composition – c’est l’objet du chapitre I du <hi rend="i">De Partibus</hi> –, avant de passer dans la cour intérieure et d’y observer les différents espaces liés à l’alimentation de la demeure en eau, dans le chapitre II ; parcours ensuite horizontal et thématique pour le reste du livre I, à travers les espaces de plus en plus vastes d’un rez-de-chaussée à l’antique, c’est-à-dire un rez-de-chaussée ouvert sur l’extérieur, fait de cours, de bassins et d’espaces verts, jardins d’agrément et jardin à cultiver, et où vivent oiseaux, poissons et animaux de toutes sortes ; enfin parcours vertical dans le livre II, avec l’ascension vers les pièces à vivre, chambres et salles à manger, à l’étage prestigieux de cette demeure fictive, où l’on trouve même une armurerie et une bibliothèque dotée d’une presse d’imprimerie, avant de finir sur les toits et dans les tours de ce palais ayant finalement tous les aspects d’un château de la Renaissance.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Une œuvre vivante, composite et évolutive. Fortune éditoriale et modifications d’auteur, détail des éditions successives</head>
+          <p>L’établissement du texte repose exclusivement sur les quatre éditions de Parme imprimées sous la supervision directe de l’auteur, seules à être absolument fidèles à ses souhaits. Les variations qu’elles présentent ont une importance cruciale, puisqu’elles révèlent en partie le processus d’écriture de l’auteur, qui reprend constamment son propre texte et en supervise les éditions successives avec un soin et un rapport à son livre qui rappellent Guillaume Budé, de la même génération que lui. Ces éditions ont été siglées comme suit dans l’édition et le <hi rend="i">stemma</hi> qui les rassemble : <hi rend="i">Pa</hi>, [1494], sans page de titre, Angelus Ugoletus Parmensis Impressor, in-4o ; <hi rend="i">Pb</hi>, 1501, <hi rend="i">De partibus aedium Libellus cum additamentis emendatissimus</hi>, [Angelus Ugoletus impr.] 1501 Mai Kal., in-4o ; <hi rend="i">Pc</hi>, 1506, <hi rend="i">Francisci Marii Grapaldi de partibus aedium cum additamentis quod uides</hi> […], Franciscus Ugoletus Parmensis impressit anno M.D.VI die decimo Maii, in-4o ; <hi rend="i">Pd</hi>, 1516, <hi rend="i">Francisci Marii Grapaldi, poetae Laureati, de Partibus Aedium, Addita modo Verborum explicatione Quae in eodem libro continentur</hi>, Impressum Parmae per accuratissimos Impressores Octauianum Saladum et Franciscum Vgoletum Ciues Parmensis Impensis Antonii Quintiani qui non passus est, Labores Grapaldi Vndequaque Viri doctissimi Interire, Quem uiuentem colebat, amabat et uenerabatur, Die septimo Maii M.D.XVI, in-4º.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/><hi rend="i">Fontes antiquae</hi>. Le <hi rend="i">De Partibus Aedium</hi>, une compilation ?</head>
+          <p>Le <hi rend="i">Quellenforschung</hi> constitue l’un des principaux points focaux dans l’édition critique du <hi rend="i">De Partibus</hi>, trait typique des études portant sur l’humanisme, mais d’autant plus incontournable chez un auteur qui présente d’emblée son travail comme une recollection de passages d’auteurs <hi rend="i">probatissimi</hi>, dont les extraits illustrent mieux qu’un long discours sa demeure et lui donnent prétexte à clarifier leur lexique pour le plus grand agrément du lecteur. La comparaison systématique des passages de l’œuvre avec les textes antiques permet de mettre en évidence l’étendue de la culture classique de l’auteur, ses lectures favorites, celles auxquelles il accorde le plus de foi, et parfois mêmes les éditions spécifiques qu’il a consultées. Parmi les auteurs principaux, on peut citer Pline bien sûr, dont il possédait au moins deux éditions, dont une de 1497, et des commentaires, notamment ceux d’Ermolao Barbaro. Il puise également beaucoup chez Vitruve et Celse, auxquels il est parfois comparé : il use du premier notamment dans les chapitres portant sur l’architecture et sur les mécanismes, et il reprend au second, dont il compare les idées avec celles d’autres médecins antiques et de son temps, son anatomie et sa typologie des maladies. Il s’inspire aussi beaucoup des auteurs de lexiques, Festus Pompeius et Varron, ou de son contemporain Niccolò Perotti, dont il ne cite jamais le nom mais auquel il emprunte souvent. En poésie, ses modèles sont Virgile et Plaute, Ovide, Lucrèce et Martial. Tous ces auteurs sont prisés des humanistes, dont Grapaldo lit aussi les éditions commentées, par exemple celle des œuvres complètes de Virgile qu’a imprimée Filippo Pincio en 1490 et qui présente les commentaires de Servius, Donat, Cristoforo Landino et Antonio Mancinelli. Grapaldo lit aussi les auteurs grecs comme Aristote, Plutarque ou Diogène Laërce, lu dans la traduction latine d’Ambrogio Traversari publiée en 1472. Enfin, il s’intéresse à des auteurs plus rares et moins classiques, comme Isidore de Séville, qu’il préfère parfois à Pline et à Vitruve, Nonius Marcellus, ou encore les auteurs de l’<hi rend="i">Histoire Auguste</hi> Lampridius et Flavius Vopiscus.</p>
+        </div>
+        <div>
+          <head>Chapitre VI<lb/>Le latin de Grapaldo. Entre classicisme humaniste et « lexique néotérique »</head>
+          <p>Du fait de cette attention portée au lexique latin et à son explication, Grapaldo est généralement considéré avant tout comme un lexicographe. Son rapport au latin est donc chargé de sens, aussi bien quand il lui est fidèle, dans une logique d’explication du vocabulaire antique par le texte antique, que quand il recourt subitement à du vocabulaire anachronique, en adaptant en latin des termes qui relèvent de ce que Luigi Vignali a appelé dans son ouvrage fondamental <hi rend="i">Il Lessico neoterico del</hi> De Partibus Aedium, « le lexique néotérique », qui rompt le miroir de la représentation antique pour reconstituer le lien qui unit, à travers les siècles et même le millénaire qui les sépare, les contemporains de Vitruve et ceux de Grapaldo.</p>
+        </div>
+        <div>
+          <head>Chapitre VII<lb/>De la pomme à l’arbre. Filiations reconstituées en amont et en aval du texte de Grapaldo : études de cas</head>
+          <p>La critique des sources qui permet d’établir la liste des lectures de Grapaldo, aussi bien celles qu’il revendique, comme Pline et Vitruve, que celles qu’il ne cite jamais ouvertement, comme le <hi rend="i">Cornu copiae</hi> de son contemporain Niccolò Perotti, révèle des filiations non seulement en amont mais aussi en aval du <hi rend="i">De Partibus</hi> : si Grapaldo s’inspire de Perotti, certains passages sont parfois empruntés à Grapaldo par d’autres, comme Barthélémy de Chasseneuz, Ambrogio Calepino et à travers lui Robert Estienne, ou encore Guillaume Philandrier auprès duquel puise le mauriste Bernard de Montfaucon, qui tous contribuent à la diffusion et à la postérité de son texte, même sous forme anonyme.</p>
+        </div>
+        <div>
+          <head>Chapitre VIII<lb/>Être pertinent ou être original ? Pourquoi éditer le <hi rend="i">De Partibus Aedium</hi>, en 1494 et en 2019</head>
+          <p>L’édition du <hi rend="i">De Partibus</hi> correspond dès sa première publication à un projet emblématique de l’humanisme : le souhait de transmettre et d’éclairer les connaissances accumulées par l’humanité par le biais d’une approche à la fois lexicale et technico-culturelle, qui se combinent pour englober une civilisation dans ses aspects linguistiques et culturels. Cette approche, celle des lexiques, des glossaires et autres sommes, fondés sur des modèles éminents comme l’<hi rend="i">Histoire naturelle</hi> de Pline ou les <hi rend="i">Étymologies</hi> d’Isidore de Séville, n’a pas forcément trouvé un accueil très favorable entre la fin du <num>xviii<hi rend="sup">e</hi></num> et le début du <num>xx<hi rend="sup">e</hi></num> siècle, avides d’une valeur nouvelle, l’originalité. Cela peut d’ailleurs expliquer le relatif oubli dans lequel l’ouvrage de Grapaldo est tombé au fil des siècles, remplacé par de nombreux autres textes jugés plus nouveaux ou plus authentiques, ceux d’auteurs contemporains ou ceux des auteurs antiques eux-mêmes, en supprimant les compilateurs intermédiaires.</p>
+          <p>L’humanisme de Grapaldo, celui de Béroalde ou de Perotti, et celui qui commandait la ligne éditoriale d’Angelo Ugoleto, se font les héritiers d’une tradition tout à fait différente, à la fois celle de l’esprit médiéval, curieux de tout et moins soucieux de connaître l’auteur que de bien le comprendre, et celle de l’esprit antique redécouvert, avec sa façon d’embrasser l’ensemble des connaissances humaines et un besoin impérieux de les communiquer. C’est ce double héritage qui motive l’écriture du <hi rend="i">De Partibus</hi> et qui en fait la vraie richesse de composition. Le réflexe anthropologique de Grapaldo face à ces sommes de connaissances est caractéristique d’œuvres comme le <hi rend="i">De Partibus</hi> ou le <hi rend="i">Cornu copiae</hi> et fait tant leur succès au <num>xv<hi rend="sup">e</hi></num> siècle que leur intérêt au <num>xxi<hi rend="sup">e</hi></num> siècle. À cette qualité significative, s’ajoute enfin une réelle originalité, celle que relève Luigi Vignali et qui justifie son ouvrage sur Grapaldo, la même originalité qui a attiré l’attention de Jean-Louis Charlet dans ses travaux sur le papier ou sur le vin chez Grapaldo : le lexique « néotérique ». Grapaldo innove à la fois sur le fond et dans la forme, par la description de réalités anachroniques qu’il insère de son propre chef au sein d’un texte truffé de citations extérieures, et par les outils lexicaux qu’il utilise pour les nommer et les décrire, entre réappropriation d’un signifiant pour englober un nouveau signifié et extension du champ de la langue par relatinisation de termes vulgaires. Ces deux aspects, à la fois d’héritage reçu et retransmis et de langue adoptée et enrichie, font toute la valeur de l’œuvre et donnent son intérêt à l’édition et la lecture d’un tel texte dans un siècle qui, à bien des égards, apparaît marqué exactement par les mêmes préoccupations.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Le <hi rend="i">De Partibus Aedium</hi>. Édition et traduction</head>
+        <p>L’édition suit pour l’essentiel les principes énoncés dans les <hi rend="i">Conseils pour l’édition des textes médiévaux</hi> publiés par le Comité des travaux historiques et scientifiques et l’École nationale des chartes. Ces principes ont été combinés à ceux appliqués par Jean-Louis Charlet et Béatrice Charlet-Mesdjian dans les travaux de recherche sur Grapaldo qu’ils ont menés ou encadrés, afin de conserver une forme d’homogénéité et de continuité dans la collection de publications consacrées à l’auteur et à son texte.</p>
+        <div>
+          <head>Chapitre premier<lb/>Pièces liminaires</head>
+          <p>Afin de reconstituer le plus fidèlement possible non seulement le texte du <hi rend="i">De Partibus</hi> mais aussi l’expérience de lecture que l’œuvre propose à ses lecteurs, l’édition comporte une partie du paratexte imprimé en tête des éditions de <hi rend="i">Pa</hi> à <hi rend="i">Pd</hi>. Ces pièces liminaires ont pour vocation soit d’introduire le corps du <hi rend="i">De Partibus</hi>, comme le fait l’introduction adressée au lecteur écrite par Grapaldo, soit de vanter les mérites du texte et de son auteur, comme le fait le poème d’ouverture de Béroalde à l’édition <hi rend="i">princeps</hi> ; dans les deux cas, ces pièces sont révélatrices à la fois du projet de l’auteur, du contexte d’écriture et de sa réception dès ses premières éditions.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/><hi rend="i">Parietes, vestibulum, ianua, atrium, peristylium. Caput I</hi></head>
+          <p>Pour ouvrir le parcours initiatique, le livre I commence par un chapitre dédié aux aspects extérieurs de la demeure, des murs entourant et définissant l’espace de la maison vers les portes et vers l’entrée, en suivant plus ou moins l’itinéraire ritualisé, pour ainsi dire en forme de pèlerinage, que réalisaient chaque jour à Rome les clients se rendant auprès de leur patron.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/><hi rend="i">Cavedium et puteus. Caput II</hi></head>
+          <p>Le chapitre II du Livre I est consacré à la cour intérieure et aux installations aquifères qui s’y trouvent. C’est là, comme le fait remarquer Grapaldo, qu’ont pu se développer la vie des communautés et surtout la vie campagnarde des <hi rend="i">villae</hi>, tributaires de cette ressource essentielle qu’est l’eau et que les Romains ont su domestiquer avec un art qui fascine l’auteur presque autant que les nombreux récits de sources miraculeuses rapportés par les Anciens.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Le <hi rend="i">De verborum explicatione</hi>. Édition et traduction</head>
+        <p>Comme Grapaldo l’explique dans son introduction liminaire, le <hi rend="i">De Verborum Explicatione</hi>, écrit entre 1506 et 1515 en prévision de l’édition de 1516, est conçu comme un lexique du lexique. Celui-ci vise à développer davantage certains vocables que lui-même et peut-être certains lecteurs de ses amis ont perçus comme peu communs ou peu clairs, y compris chez leurs auteurs d’origine, ou au sujet desquels Grapaldo lui-même s’était contraint à la brièveté et sur lesquels il souhaite désormais revenir. Grapaldo propose en conséquence deux niveaux de lecture pour son œuvre, avec une gradation dans l’érudition, mais aussi dans la clarification du savoir transmis. Le lexique pertinent aux deux premiers chapitres du <hi rend="i">De Partibus Aedium</hi> a été édité et traduit. Il est présenté tel que le souhaitait Grapaldo et tel qu’il l’était dans l’édition <hi rend="i">Pd</hi> de 1516, la seule à le comporter : par ordre alphabétique, de A à X, et, au sein de chaque lettre, par ordre chronologique d’apparition des termes au fil du <hi rend="i">De Partibus</hi>.</p>
+        <div>
+          <head>Annexes</head>
+          <p>Index des <hi rend="i">lemmata</hi>. — Notes.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2017_03" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>« Aux plumes d’or ». Les maîtres écrivains à Paris, calligraphes au <hi rend="sc">xvii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/202964817">Célia Cabane</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2017 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2017</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2017"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>« Aux plumes d’or »
+        <lb/>Les maîtres écrivains à Paris, calligraphes au <num>xvii<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Célia</forename>
+        <surname>Cabane</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>À la fin du <num>xvii<hi rend="sup">e</hi></num> siècle, le <hi rend="i">Dictionnaire universel</hi> d’Antoine Furetière donne pour définition de l’écriture : « la maniere d’escrire, de former des caracteres sur le papier ». L’écriture est ainsi le geste qui permet de tracer des lettres, des pensées et des paroles afin qu’elles puissent être transmises à d’autres personnes. Elle se définit par sa lisibilité et donc par la lecture que peut en faire un autre. Elle est également un moyen d’expression, non seulement parce qu’elle est le support des pensées personnelles de celui qui écrit, mais aussi parce que le grand soin parfois apporté à sa forme la place dans le domaine de l’art. Elle devient alors calligraphie.</p>
+        <p>Au <num>xvii<hi rend="sup">e</hi></num> siècle, la calligraphie est un art enseigné comme le sont la musique ou la peinture, mais qui n’a pas la même reconnaissance institutionnelle car les calligraphes ne sont pas considérés comme des artistes. Ces professeurs d’écriture sont les maîtres écrivains jurés, constitués en communauté d’arts et métiers à Paris comme dans d’autres villes de France – Rouen, Lyon ou Amiens par exemple. Ils ont été très peu étudiés, que ce soit par les historiens du corporatisme au <num>xvii<hi rend="sup">e</hi></num> siècle ou par les historiens de l’art. Ce travail a pour but de constituer un premier jalon pour l’étude à la fois de la communauté, de la vie quotidienne des maîtres et de l’enseignement de l’écriture tel qu’il était fait à Paris au Grand Siècle.</p>
+      </div>
+      <div>
+        <head>Sources</head>
+        <p>Notre principale source est le Minutier central des notaires de Paris, conservé sur le site parisien des Archives nationales. L’enquête a été menée par l’intermédiaire de la salle des inventaires virtuelle, qui permet de consulter tous les documents déjà repérés par les archivistes. Le corpus regroupe ainsi l’ensemble des actes concernant un maître écrivain ou sa famille, qu’il s’agisse d’un contrat de mariage, d’un inventaire après décès ou d’une obligation. Une autre source primordiale pour l’étude de la communauté est le registre des réceptions à la maîtrise, copié par un des maîtres au <num>xviii<hi rend="sup">e</hi></num> siècle et conservé à la Bibliothèque historique de la Ville de Paris. Les manuscrits de compilation de Nicolas de la Mare lors de la préparation de son <hi rend="i">Traité de la police</hi>, conservés à la Bibliothèque nationale de France, comportent plusieurs sections sur la corporation et ont donné de nombreux renseignements sur l’histoire de la communauté.</p>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>La communauté des maîtres écrivains experts jurés vérificateurs à Paris</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Aux origines de la communauté</head>
+          <p>Le marché de l’enseignement de l’écriture à Paris n’a pas été créé par la mise en place de la communauté des maîtres écrivains jurés : il existait auparavant et était tenu par les maîtres des petites écoles de Paris, par les maîtres écrivains jurés de l’Université et par d’autres écrivains qui exerçaient librement dans la capitale. L’érection par lettres patentes de la corporation des maîtres écrivains jurés, en 1570, organise le marché en regroupant tous les enseignants n’appartenant pas à la communauté des maîtres des petites écoles, intégrant même les deux écrivains jurés de l’Université. Cette décision du pouvoir royal de réglementer le marché de l’enseignement de l’écriture est liée au procès de Pierre Hamon, secrétaire du roi, soupçonné d’avoir contrefait le seing royal. Neuf maîtres écrivains avaient alors été rassemblés pour déterminer s’il s’agissait d’un faux en écriture et avaient prouvé la contrefaçon de Hamon, menant à sa pendaison pour haute trahison.</p>
+          <p>Une fois les lettres patentes enregistrées par le Parlement en 1576, les maîtres écrivains jurés deviennent les seuls à pouvoir tenir une école publique d’écriture et être appelés comme experts dans les tribunaux pour opérer la vérification des écritures et signatures contestées en justice. Ces deux monopoles leur permettent notamment d’édicter des statuts qu’ils font promulguer et valider par le pouvoir royal, que ce soit par des lettres patentes confirmatives ou par des sentences du châtelet de Paris. Ils obtiennent également des exemptions qui les différencient des autres communautés d’arts et métiers ; exclus des édits royaux de création de lettres de maîtrise, ils ne peuvent exercer leur profession sans passer les examens d’entrée dans la communauté.</p>
+          <p>Ces exemptions leur confèrent un rang plutôt élevé au sein des corporations parisiennes, puisque les maîtres écrivains sont classés dans la deuxième catégorie sur les quatre définies par l’édit de 1691, fixant le droit royal à payer par tous les futurs maîtres. Ce statut est notamment la conséquence du flou qui existe autour de la classification de leur profession, entre art mécanique – puisqu’elle est organisée en communauté d’arts et métiers – et art libéral puisqu’il s’agit d’enseigner une partie de la grammaire. Les maîtres écrivains sont ainsi une communauté située professionnellement entre les autres corporations parisiennes, les enseignants que sont les maîtres des petites écoles et les professionnels de l’écriture, comme les clercs ou les greffiers des cours de justice.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>L’organisation de la corporation</head>
+          <p>La communauté des maîtres écrivains ne comporte pas de statut de compagnonnage, l’entrée se faisant directement au statut de maître. C’est pourquoi la hiérarchie diffère de celle traditionnellement établie dans les corporations parisiennes, allant des apprentis aux maîtres en passant par les compagnons. Les écrivains jurés sont divisés entre jeunes, modernes et anciens maîtres : les premiers ont moins de dix ans d’activité, les deuxièmes entre dix et vingt ans de maîtrise et les derniers plus de vingt ans dans la communauté. La hiérarchie est ainsi fondée sur l’ancienneté : les vingt-quatre anciens maîtres constituent une oligarchie, dans laquelle sont élus les jurés en charge de l’administration, qui doivent également consulter les autres anciens afin de faire valider les actions qu’ils envisagent pour la communauté. Les jurés élus par les écrivains en assemblée générale sont le syndic, seul représentant de la direction de la corporation jusqu’en 1686, date à laquelle est instaurée la charge de greffier, responsable de la rédaction des procès-verbaux des assemblées. La communauté dispose également d’un clerc, qui passe un contrat avec elle pour exercer cette fonction, consistant en la notification à tous les maîtres des horaires et lieux de réunion pour la tenue des assemblées et des épreuves d’accession à la maîtrise.</p>
+          <p>La corporation ne se résume cependant pas à une hiérarchie stricte entre ses différents membres. Elle est aussi un lieu de solidarité, qui s’exprime notamment envers les familles des maîtres écrivains. Leurs fils bénéficient en effet d’avantages lorsqu’ils désirent exercer le même métier que leur père, comme une réduction des droits à payer et des examens d’entrée moins poussés. Les filles de maîtres sont également avantagées car leur mari peut, par cette union, accéder plus facilement à la profession. Enfin les veuves, outre le fait qu’elles bénéficient des mêmes privilèges que les filles concernant leur second mari, sont autorisées à maintenir ouverte la classe d’école de leur défunt époux en la faisant tenir par un autre enseignant approuvé par le syndic.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Administrer les maîtres écrivains jurés : assemblées et conflits internes</head>
+          <p>Une fois élus, le syndic et le greffier doivent administrer la communauté. Pour ce faire, ils réunissent les maîtres dans des assemblées, générales ou seulement représentatives, afin de prendre des décisions touchant l’ensemble des membres. La présence de tous les membres convoqués par le clerc est obligatoire, les absents s’exposant au paiement d’une amende forfaitaire. Le contrôle de la présence des maîtres écrivains permet notamment au syndic de légitimer les décisions votées lors des assemblées afin que tous les respectent.</p>
+          <p>La communauté s’occupe également de régler les différents conflits qui ont parfois cours entre les maîtres. Ces querelles concernent l’exercice du syndicat, les publications de livres de calligraphie ou, le plus souvent, l’exercice du métier. Les maîtres ont ainsi des différends quant à la façon de procéder aux vérifications en justice, mais également quant aux méthodes d’enseignement ou aux tableaux de maîtres que les membres de la communauté ont le droit d’afficher sur leurs demeures.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Défendre les intérêts de la communauté</head>
+          <p>Les conflits n’ont cependant pas uniquement lieu entre les membres de la corporation : le syndic peut être amené à défendre les intérêts de toute la communauté contre des personnes extérieures qui empiètent sur les monopoles des écrivains jurés. Un différend multiséculaire les oppose notamment aux maîtres des petites écoles, qui assurent des classes primaires dans lesquelles ils enseignent le catéchisme, la lecture et les rudiments de l’écriture. L’arrivée des maîtres écrivains dans le paysage parisien perturbe le maillage mis en place par les maîtres des petites écoles depuis le début du <num>xvi<hi rend="sup">e</hi></num> siècle, notamment parce que la limite entre leurs enseignements reste floue jusqu’à un arrêt du Parlement du 2 juillet 1661. Ce dernier n’empêche pas les conflits de perdurer tout au long du <num>xvii<hi rend="sup">e</hi></num> siècle, jusqu’à l’arrivée des Frères des écoles chrétiennes, qui constituent à leur tour une menace pour les deux communautés.</p>
+          <p>La corporation des maîtres écrivains fait également face à la concurrence d’écrivains exerçant hors de la corporation, notamment ceux qui tiennent des classes dans les faubourgs de Paris, comme la communauté des maîtres écrivains jurés du faubourg Saint-Germain-des-Prés, qui ne sont sous la juridiction du Châtelet qu’à partir de l’édit royal de 1675, édit qui signe leur ralliement à la corporation parisienne. Le syndic protège alors les intérêts des membres de la communauté en portant devant la justice ces empiétements sur leur monopole.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Être calligraphe au <num>xvii<hi rend="sup">e</hi></num> siècle à Paris : une étude sociale des maîtres écrivains jurés</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les stratégies familiales : alliances matrimoniales et métiers des enfants d’écrivains jurés</head>
+          <p>Les maîtres écrivains ne doivent pas uniquement être étudiés comme les membres d’une communauté, mais également dans leur trajectoire personnelle, par une approche individuelle. Les contrats de mariage qui les impliquent apportent notamment de nombreuses informations sur leurs carrières et les origines sociales des femmes qu’ils épousent, que ce soit en premières ou secondes noces. Il s’agit majoritairement de femmes issues des milieux artisan ou marchand. Les mariages des maîtres écrivains se font en présence de témoins familiaux et amicaux, huit par cérémonie en moyenne, ce qui correspond à la norme parisienne. La communauté a une place importante dans les stratégies matrimoniales, puisque les écrivains jurés n’hésitent pas à marier leurs filles avec des membres de la corporation ou à épouser leurs veuves.</p>
+          <p>Les écrivains jurés ont également une influence sur leurs enfants, qu’ils poussent parfois à exercer le même métier qu’eux. On connaît ainsi de nombreuses dynasties de maîtres écrivains au <num>xvii<hi rend="sup">e</hi></num> siècle : les pères, devenus anciens de la communauté, présentent leur fils qui a plus de dix-huit ans à la maîtrise, dont l’accès lui est favorisé par les statuts de la corporation. Certains fils de maîtres choisissent une profession différente et peuvent devenir artisans ou marchands. Mais ils utilisent souvent l’apprentissage de l’écriture dont ils ont bénéficié auprès de leur père pour s’élever socialement et détenir des offices ou devenir avocat. Les maîtres écrivains ont enfin souvent une influence sur les mariages de leurs enfants, cherchant à leur trouver le meilleur parti possible grâce au prestige lié à leur propre condition, intermédiaire entre artisan et professionnel de l’écrit.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Prendre le titre de « maître écrivain juré » : épithètes et appellations</head>
+          <p>L’étude des trajectoires personnelles des maîtres passe également par celle des épithètes et appellations qu’ils prennent lorsqu’ils passent un acte devant le notaire. En effet, les adjectifs de qualité qui suivent les prénom et nom des parties sont révélateurs à la fois de la position sociale qu’elles entendent manifester et du rapport de force à l’œuvre dans le contrat. Le titre de maître écrivain juré n’est ainsi pas toujours pris en entier par les membres de la corporation, notamment l’adjectif « juré », qui n’est souvent pas mentionné dans les minutes des notaires, alors qu’il est parfois utilisé par des personnes n’appartenant pas à la communauté, pour se parer du prestige lié à la profession.</p>
+          <p>Les épithètes d’honneur qui accompagnent les nom et prénom des écrivains jurés sont significatives de la place sociale qu’ils occupent. Dans la plupart des cas, ils n’en revêtent aucune, ce qui les met au même niveau que la plupart des artisans des communautés parisiennes, bien que cette absence d’épithète puisse être liée au statut de minute des documents étudiés. L’expression qu’ils apposent majoritairement à leur nom est « honorable homme », ce qui les place au rang des maîtres des autres corporations parisiennes ainsi que des marchands de la ville.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Signer : entre cohésion du groupe et individualité</head>
+          <p>Les signatures sont également une source pour étudier les maîtres écrivains de façon individuelle. En effet, l’écriture du nom et le tracé du paraphe permettent au maître d’affirmer son appartenance à la communauté tout en étant un terrain d’expression personnelle. L’attention portée à l’exécution du seing et à son juste placement sur la feuille est caractéristique de l’ensemble des écrivains jurés, qui pratiquent régulièrement la signature puisqu’elle fait partie de leur métier et enseignement. Les maîtres accordent également une grande importance à la différenciation entre leurs signatures, et ce notamment entre les membres d’une même famille ou lorsqu’ils signent en groupe un acte, comme un procès-verbal d’assemblée : tous tentent alors d’apposer la plus belle signature possible.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Diversité des fortunes des membres de la communauté</head>
+          <p>Si les maîtres écrivains exercent la même profession, ils n’ont pas la même fortune dans leurs affaires. Cela est notamment dû au milieu social dont ils sont issus : être fils d’artisan ou fils d’officier ne leur donne pas les mêmes possibilités financières, au moins au début de leur pratique. Ces différences de fortune ont été étudiées à travers les contrats de mariage et la dot apportée par les épouses, qui représente une part non négligeable de l’argent mobilisable par le jeune maître. À l’autre bout de la vie de l’écrivain juré, les documents établissant la fortune au décès permettent de faire le point sur ce qu’il lègue à ses héritiers et la répartition typologique de ses biens, que ce soit du mobilier ou des créances. D’autres actes ont été pris en compte pour étudier l’enrichissement des maîtres. Les constitutions de rente et les obligations qu’ils ont contractées au cours de leur vie donnent une idée des investissements faits par les écrivains jurés ou au contraire des sommes qu’ils ont empruntées à un moment de leur vie. Enfin, les transactions immobilières font connaître un poste de dépense important des maîtres, qui sont pour une grande partie locataires de la maison où ils résident et tiennent leur classe.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>De A à etc. : l’art d’écrire</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Dans les rues de paris : adresses et répartition topographique</head>
+          <p>La répartition des maîtres dans les rues de Paris est significative de l’exercice de la profession car les élèves des écrivains jurés sont essentiellement des enfants ou des adultes résidant dans le même quartier qu’eux. Ils ne peuvent en effet attirer dans leurs classes des clients venant d’autres secteurs car ils n’ont le droit de faire de publicité pour leur école que par le biais des tableaux et montre d’écriture placardés sur leur demeure. Toute autre affiche ou distribution de billets indiquant leur profession et leur adresse est poursuivie par le syndic de la communauté, jugée comme une concurrence déloyale vis-à-vis des autres membres de la corporation.</p>
+          <p>Les maîtres écrivains habitent pour la plupart dans le quartier de la Ville, autour du Châtelet et des Halles. Une autre concentration import ante de maîtres est l’île de la Cité, notamment à cause de la proximité du Palais. Le quartier de l’Université compte également un certain nombre de maîtres, surtout autour du pont Saint-Michel et de la rue Saint-Jacques, rue historiquement investie par les imprimeurs et les graveurs en taille douce. Ces regroupements géographiques s’expliquent en partie par la présence des administrations royales, au Châtelet et au Palais, qui emploient de nombreux clercs ayant appris leur métier dans les classes, entre autres, des maîtres écrivains.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Devenir maître : apprentissage et examens</head>
+          <p>Les examens d’entrée dans la communauté des écrivains jurés sont codifiés par un arrêt du Parlement du 1<hi rend="sup">er</hi> juillet 1630. Cet arrêt apporte des précisions aux premiers statuts, qui ne prévoyaient que le passage d’épreuves contrôlées par les membres de la corporation. Les examens sont alors constitués de trois sessions : une vérification des compétences du candidat sur des exemples d’écritures qu’il a confectionnées ; des questions sur l’art d’écrire, l’arithmétique, l’orthographe et une épreuve de vérification d’écritures contestées en justice. Si l’aspirant réussit les trois épreuves, il est alors reçu au Châtelet pour prêter serment devant le lieutenant civil de Paris et inscrire son nom au registre des maîtres de la communauté. Avant néanmoins de prétendre passer et réussir les examens d’entrée, le candidat doit remplir quelques conditions : avoir au moins vingt ans, présenter son acte de baptême ainsi qu’un certificat de son curé pour assurer les examinateurs de sa religion catholique, avoir résidé au moins un an et un jour dans la capitale et avoir réalisé son apprentissage auprès d’un maître de la communauté.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>À l’enseigne de la plume d’or : le maître écrivain au travail</head>
+          <p>La principale activité des maîtres, qui leur permet de subvenir à leurs besoins, est la tenue d’une classe d’écriture, dans laquelle ils enseignent à des enfants comment bien former les différentes lettres jusqu’à réaliser des actes de la pratique, qu’ils seront amenés à exécuter dans le métier auquel ils se destinent. Deux écritures sont enseignées par les écrivains jurés, la ronde financière et l’italienne bâtarde à la française ; elles ont des utilisations différentes, en fonction de ce qui est rédigé. Le lieu où le maître tient sa classe est une chambre, qu’il aménage avec de grandes tables et des bancs ; ce sont les seules traces de son activité dans les inventaires après décès, le papier, l’encre et les plumes n’étant souvent pas prisés parce que de faible valeur.</p>
+          <p>Les écrivains jurés ne se contentent pas d’enseigner l’écriture, ils sont parfois également professeurs de musique, ce qui leur permet de diversifier leur activité et d’avoir des revenus plus substantiels. On ne trouve aucune trace du paiement des maîtres pour leur classe publique d’écriture dans les actes notariés. En revanche, on y trouve des contrats de mise en pension et de leçons données à domicile, preuve de la diversité des formes que prend leur enseignement.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Entre alphabets et actes : les manuels des maîtres écrivains et la réforme de 1633</head>
+          <p>L’une des activités des maîtres écrivains est la publication de manuels d’écriture. Ces livres sont composés d’un texte exposant les méthodes pédagogiques pour apprendre à bien écrire et de planches gravées servant de modèles d’écriture. Les planches sont parfois commercialisées seules, parce qu’elles sont considérées comme des œuvres d’art ayant une valeur indépendamment du texte. Le public qui achète les livres de calligraphie est donc composé à la fois de personnes cherchant à perfectionner leur écriture et d’amateurs d’art qui collectionnent les pièces calligraphiées. Le manuel d’écriture perd parfois de son aspect pédagogique pour devenir un chef-d’œuvre personnel du maître écrivain.</p>
+          <p>Les livres de calligraphie publiés par les écrivains jurés évoluent entre le début et la fin du <num>xvii<hi rend="sup">e</hi></num> siècle. Au début du siècle sont publiés des livres entièrement constitués de planches sur lesquelles le texte est entouré d’une multitude de décorations virtuoses au trait de plume. La réforme de l’écriture menée par le Parlement et la communauté en 1633 a une grande influence sur les publications des maîtres : elle prône un retour à la simplicité de l’écriture par la création de deux nouveaux alphabets, parce que l’écriture a perdu en lisibilité à force d’être trop ornée. Les manuels publiés après la réforme ne comportent ainsi que peu de décorations autour du texte : celles qui subsistent sont plus simples, jouant sur les pleins et les déliés plutôt que sur des entrelacs complexes. Les maîtres écrivains se libèrent ensuite de l’austérité prônée par la réforme de l’écriture dans la décennie 1660-1670, durant laquelle les dessins au trait de plume recommencent à décorer les exemples. En parallèle se développe un ensemble de manuels plus pédagogiques, dont les planches comportent de nombreux exercices de traits de plume simples avant même de former des lettres complètes. Ce modèle influence toute la production du <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>L’étude de la communauté des maîtres écrivains de Paris au <num>xvii<hi rend="sup">e</hi></num> siècle se situe ainsi au carrefour de plusieurs axes de recherche historique : histoire des corporations parisiennes et de l’organisation du travail sous l’Ancien Régime, histoire sociale et prosopographique de la population de la capitale, histoire de l’enseignement, histoire de l’écriture, du livre, de la calligraphie et, finalement, paléographie. Une attention toute particulière a été portée à la description des sources qui alimentent la réflexion, afin de mesurer les limites de leur exploitation et donc celles des conclusions proposées.</p>
+        <p>Les maîtres écrivains sont une communauté d’arts et métiers particulière dans la mesure où leur enseignement a la qualité d’art libéral, alors qu’ils ne parviennent pas véritablement, pour une grande partie d’entre eux, à s’extraire de la condition de maître de corporation. L’étude individuelle des écrivains jurés permet de voir que tous ne sont pas égaux à l’intérieur de la communauté, certains bénéficiant notamment d’héritages importants ou ayant réussi à avoir une classe plus fournie que d’autres, qui finissent leur vie dans la pauvreté. Enfin, l’enseignement de l’art d’écrire auquel ils consacrent leur vie est à la fois leur gagne-pain et ce qui les mène à leur perte. La diffusion de l’écriture dans toutes les couches de la société se fait au profit d’une écriture plus utile qu’artistique et appauvrit ce faisant les classes des écrivains jurés, l’art de la calligraphie perdant du terrain face aux rudiments qui sont également enseignés par les maîtres des petites écoles.</p>
+      </div>
+      <div>
+        <head>Pièces justificatives</head>
+        <p>Les documents édités en pièces justificatives sont les trois statuts successifs de la communauté utiles pour l’étude du <num>xvii<hi rend="sup">e</hi></num> siècle, à savoir ceux de 1570, de 1658 et de 1727. Sont également éditées deux copies de délibérations de l’assemblée de la corporation, réalisées au <num>xviii<hi rend="sup">e</hi></num> siècle, qui montrent précisément le déroulement d’une assemblée. Ces deux copies sont accompagnées d’une troisième, qui est celle de lettres de syndicat d’un maître au début du <num>xviii<hi rend="sup">e</hi></num> siècle – les seules trouvées dans les sources. Un factum imprimé prenant la défense de quatre maîtres contre le reste de la communauté a été transcrit pour donner un exemple de conflit interne. Quatre actes notariés ont été édités : le premier est une procuration des maîtres à un procureur au Parlement dans le cadre d’un procès, le deuxième un procès-verbal d’assemblée, le troisième un contrat d’apprentissage, le dernier un contrat de nomination de clerc. Enfin, un formulaire manuscrit des examens d’entrée dans la corporation au <num>xviii<hi rend="sup">e</hi></num> siècle a été édité afin de servir de comparaison avec ce qui est exprimé dans l’arrêt du Parlement de 1630.</p>
+      </div>
+      <div>
+        <head>Annexes</head>
+        <p>Les annexes comportent les 334 fiches biographiques des maîtres écrivains jurés entrés dans la communauté entre 1600 et 1701 ou entrés auparavant et qui ont eu une influence sur la corporation au <num>xvii<hi rend="sup">e</hi></num> siècle, ainsi qu’une liste des maîtres dans l’ordre de leur réception dans la communauté. Elles présentent également des photos de documents signés par un grand nombre de maîtres, une typologie des actes notariés du corpus, des tableaux détaillant les contrats de mariage et les contrats d’enseignement, des graphiques montrant les intervalles entre deux cérémonies de réception, des cartes indiquant la répartition géographique des domiciles de maîtres dans les trois quartiers de Paris et, enfin, trois exemples de manuels de maîtres écrivains.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

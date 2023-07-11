@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2018_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>« Pour leur peine et salaire d’avoir joué ensemble de leurs instruments ». Organisation et reconnaissance du métier de musicien instrumentiste dans la société urbaine de la fin du Moyen Âge (<hi rend="sc">xiv</hi><hi rend="sup">e</hi>-<hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle)</title>
+        <author>Pierre Pocard</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2018 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2018</date>, <biblScope>p. 123-134</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2018"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>« Pour leur peine et salaire d’avoir joué ensemble de leurs instruments »
+        <lb/>Organisation et reconnaissance du métier de musicien instrumentiste dans la société urbaine de la fin du Moyen Âge (<num>xiv<hi rend="sup">e</hi></num>-<num>xvi<hi rend="sup">e</hi></num> siècle)</head>
+      <byline>
+        <forename>Pierre</forename>
+        <surname>Pocard</surname>
+        <roleName>diplomé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>La performance musicale au Moyen Âge est exécutée par des jongleurs ou des ménestrels, dont on retient souvent, aujourd’hui encore, l’image romantique d’hommes à la vie dissolue et aux mœurs douteuses, errant de château en château pour divertir les seigneurs en échange du gîte pour la nuit, ou chantant dans la rue dans l’espoir d’une aumône. Cette réputation de marginalité a longtemps été entretenue par des historiens qui cherchaient à estimer l’apport de ces musiciens à la littérature médiévale. Elle tire sa source dans le discours des clercs, qui jusqu’au <num>xiii<hi rend="sup">e</hi></num> siècle, excluent presque systématiquement le jongleur de la société chrétienne, en font un être quasi diabolique, et refusent de voir dans son activité un véritable métier.</p>
+        <p>Les travaux d’histoire sociale qui ont été consacrés à la figure du musicien au Moyen Âge se sont essentiellement attachés à examiner ce discours porté par les élites culturelles, en privilégiant les sources littéraires et théologiques, et en n’utilisant les documents d’archives que ponctuellement, comme illustration ou justification des représentations sociales des clercs et des nobles. Ils ont souvent abouti à un modèle évolutionniste qui, entre le <num>xiii<hi rend="sup">e</hi></num> et le <num>xiv<hi rend="sup">e</hi></num> siècle, constate l’apparition parmi les musiciens pauvres, itinérants et débauchés, appelés « jongleurs », des « ménestrels » sédentarisés, sérieux et professionnels.</p>
+        <p>S’il y a bien une professionnalisation des musiciens à la fin du Moyen Âge, une intégration de ceux-ci dans les sociétés urbaines et curiales, il ne semble pas que ces deux phénomènes soient en étroite corrélation avec les changements dans la terminologie qui désigne le musicien. Par ailleurs, la professionnalisation des ménestrels est un processus complexe, loin d’être achevé au <num>xiv<hi rend="sup">e</hi></num> siècle, qui ne dépend pas uniquement d’une évolution du discours des clercs et des puissants, mais également d’une volonté des musiciens eux-mêmes, qui constituent des communautés professionnelles. Cette organisation communautaire, qu’on trouve à des échelles différentes, est la matrice de la reconnaissance sociale des musiciens et de leur activité professionnelle, autour d’une profonde mutation des modes de rémunération, de la création d’une identité de métier et de la réglementation du travail.</p>
+        <div>
+          <head>Sources</head>
+          <p>L’étude de la professionnalisation des musiciens à la fin du Moyen Âge nécessite un travail systématique sur des sources archivistiques dispersées, tant du point de vue institutionnel que géographique. Par ailleurs les fonds exploités sont très divers, afin de documenter les différents aspects de l’organisation professionnelle de la musique, depuis la rédaction de la norme du métier jusqu’à sa pratique et à sa rétribution. Cette diversité des fonds rend l’étude largement tributaire de l’état d’inventaire des gisements archivistiques, et influe sur son cadre géographique.</p>
+          <p>L’accroissement de la production documentaire entre le <num>xiv<hi rend="sup">e</hi></num> et le <num>xvi<hi rend="sup">e</hi></num> siècle permet, malgré la persistance de lacunes, aussi bien qualitatives que chronologiques, d’atteindre une masse critique et de mettre en série des données, en particulier pour ce qui est des rémunérations.</p>
+          <p>Les Archives nationales conservent la part la plus importante des documents consultés : on y trouve notamment les archives, saisies à la Révolution, de la corporation des ménestrels parisiens, ainsi que des contrats d’association et d’embauche de musiciens, issus des actes du Minutier central des notaires de Paris. Des lettres de rémission issues du Trésor des chartes, ainsi que quelques comptabilités royales et princières ont également complété les sources.</p>
+          <p>On a aussi eu recours aux fonds des Archives départementales de la Côte d’Or pour des actes notariés, ainsi qu’à ceux des Archives municipales de Dijon, qui conservent un bon nombre de documents relatifs à l’emploi régulier de musiciens par la ville.</p>
+          <p>Enfin, les comptabilités conservées aux Archives municipales de Douai ont apporté de précieux renseignements sur l’évolution des termes et des montants de la rémunération des joueurs d’instruments de musique à la fin du Moyen Âge.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Désigner le musicien : évolutions terminologiques et sémantiques</head>
+        <div>
+          <head>Chapitre premier<lb/>Modèles historiographiques et changements lexicaux</head>
+          <p>L’étude des communautés de musiciens professionnels à la fin du Moyen Âge réclame de se positionner par rapport à deux masses historiographiques lourdes de connotations et de préjugés. On trouve, d’un côté, l’image devenue emblématique du jongleur de rue et du ménestrel de cour et, de l’autre, la figure archaïque et liberticide des corporations artisanales. La réalité sociale semble pourtant, dans les deux cas, fort éloignée de ces modèles et l’étude des termes qui désignent le musicien à la fin du Moyen Âge permet de mettre en évidence l’intérêt d’une étude socio-économique de ce groupe et de ses structures professionnelles. On constate en effet que la distinction sociale, chronologique et institutionnelle entre jongleur et ménestrel ne se retrouve guère dans les actes de la pratique et que les deux termes cohabitent longtemps comme des synonymes. Si le terme de ménestrel tend à supplanter celui de jongleur au <num>xv<hi rend="sup">e</hi></num> siècle, ce dernier ne disparaît toutefois pas et n’a pas nécessairement une connotation péjorative. Par ailleurs, un terme nouveau apparaît au <num>xv<hi rend="sup">e</hi></num> siècle, celui de joueur d’instruments, fortement lié au système corporatif, et qui désigne explicitement la spécialisation dans la pratique musicale instrumentale, au rebours des deux autres. S’il y a bien une évolution de la jonglerie, art du divertissement généraliste, et une spécialisation dans la pratique musicale instrumentale professionnelle, elle ne se retrouve pas dans l’évolution lexicale jongleur-ménestrel et il convient de distinguer l’histoire du vocabulaire de l’histoire sociale.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Marginalité et errance</head>
+          <p>Parmi les topoï associés au jongleur, et réutilisés pour établir des critères de distinction entre jongleur et ménestrel, figurent en premier lieu l’errance et la moralité douteuse du premier. Cela tient en bonne partie à une attention portée trop exclusivement sur les textes normatifs, notamment ceux édictés par l’Église, qui utilisent très peu le terme ménestrel et érigent longtemps le jongleur et l’amuseur public en anti-modèle de comportement. Il s’agit là avant tout d’une représentation sociale, que ne confirment pas vraiment les faits. Si l’on trouve en effet des jongleurs qui jouent aux dés, boivent plus que de raison et fréquentent des prostituées, ceux-ci ne semblent pas moins bien se comporter que des ménestrels, auxquels l’historiographie donne traditionnellement plus de respectabilité. Par ailleurs, on trouve peu de musiciens entièrement marginalisés ou devenant des criminels invétérés. Ils ne paraissent pas, dans tous les cas, surreprésentés par rapport à d’autres professions dans les sources judiciaires consultées. Tout au plus les musiciens ont, dans bon nombre d’affaires et sans être ni coupables ni victimes, le rôle d’élément déclencheur du conflit, de source de trouble, pour des questions de volume sonore notamment. Cela pourrait en partie être la cause de leur exclusion.</p>
+          <p>Par ailleurs, le discours des clercs sur les musiciens n’est pas monolithique et ne recouvre pas la distinction historiographique entre jongleur et ménestrel. La condamnation des amuseurs est toutefois bien réelle et les jongleurs sont rejetés de la société chrétienne et réputés infâmes jusqu’au <num>xiii<hi rend="sup">e</hi></num> siècle. Avec la redécouverte du droit romain et le développement d’une casuistique du pêché, des clercs comme Rufin, Pierre le Chantre et Thomas de Chobham ouvrent la voie d’une distinction entre bon et mauvais jongleur, qui permet à certains de sortir de l’infamie. Ces distinctions juridiques et conceptuelles nouvelles bénéficient surtout à ceux qui jouent de la musique et chantent, mais restent avant tout théoriques et ne correspondent pas à la réalité sociale du <num>xii<hi rend="sup">e</hi></num> siècle. Thomas d’Aquin va encore plus loin dans la réhabilitation théorique du jongleur en distinguant son activité infâme de sa personne et de la rétribution qu’il en retire, ce qui débouche sur la possibilité d’une reconnaissance d’un métier du divertissement spécialisé dans la musique. Cette démarche s’inscrit dans un mouvement plus large de reconnaissance des activités artisanales par l’Église.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Professionnalisme et rétributions</head>
+          <p>Pour comprendre l’évolution sociale des musiciens à la fin du Moyen Âge et l’apparition d’un groupe professionnel cohérent, il est important de se garder d’une vision linéaire et progressiste du jongleur au ménestrel, et de se concentrer sur le phénomène communautaire qui traverse le métier à partir du <num>xiv<hi rend="sup">e</hi></num> siècle. Si ce processus de mise en communauté est général, il ne concerne cependant pas tous les jongleurs ou ménestrels. Seuls les musiciens, forts de la réhabilitation théorique des siècles précédents, s’organisent en groupes professionnels.</p>
+          <p>Ces musiciens instrumentistes organisés et reconnus comme exerçant un véritable métier voient progressivement changer leur mode de rémunération : alors qu’ils recevaient auparavant des aumônes et des dons irréguliers, ils sont désormais de plus en plus embauchés de façon contractuelle et perçoivent pour cela une rémunération de type salarial, proportionnée au travail réalisé.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Approche institutionnelle des communautés d’instrumentistes</head>
+        <div>
+          <head>Chapitre IV<lb/>Aspects méthodologiques</head>
+          <p>Diverses communautés de musiciens instrumentistes se constituent, à partir du <num>xiv<hi rend="sup">e</hi></num> siècle, autour de règles et de pratiques encadrées. Cela correspond à une période où apparaît, de façon plus globale, un ensemble de textes émanant de diverses autorités publiques pour réglementer l’organisation du travail. Ces communautés participent donc pleinement à l’intégration institutionnelle des musiciens et de leur métier, au moment même où les autorités publiques prennent des mesures strictes contre le vagabondage et le non-travail. La diversité des communautés de musiciens professionnels et l’hétérogénéité des sources qui permettent de les appréhender rendent nécessaire l’établissement d’une typologie, basée sur des critères institutionnels systématiques, afin de permettre la comparaison entre communautés, de comprendre les rapports étroits d’imbrication qui existent entre elles, et de rendre possible l’examen du dialogue permanent entre normes et pratiques professionnelles.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Les groupes de ménestrels pensionnés</head>
+          <p>Les groupes de ménestrels pensionnés constituent la forme la plus ancienne et la moins aboutie d’association de musiciens professionnels. Il s’agit de regroupements suscités à partir de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle par un puissant protecteur, souvent roi ou prince, sans réglementation professionnelle écrite. Les effectifs y sont très variables et la rémunération, qui s’effectue par le paiement de gages et de pensions, est encore fortement inscrite dans une logique de don, bien qu’elle soit régulière. Ce type de communauté professionnelle primitive offre une certaine sécurité au musicien, ainsi que la possibilité d’une carrière.</p>
+          <p>Les circulations d’une cour à l’autre sont fréquentes et la charge de roi des ménétriers, accordée par le roi de France lui-même, semble constituer le sommet d’une carrière. Elle donne à son détenteur une autorité théorique sur tous les ménestrels et toutes les communautés de ménestrels du royaume.</p>
+        </div>
+        <div>
+          <head>Chapitre VI<lb/>Associations et compagnies, des communautés contractuelles</head>
+          <p>On trouve, notamment dans les archives notariales, la trace de sociétés contractuelles à durée limitée. Ces communautés de musiciens, dont l’effectif n’excède pas une dizaine de personnes, peuvent prendre des formes variées : apprentissages, associations égalitaires, troupes dirigées par un chef. Les associations passées devant notaire sont les mieux documentées et paraissent les plus nombreuses mais on sait, de façon indirecte, que beaucoup de contrats sont conclus oralement. Elles reprennent une forme connue dès le <num>xiii<hi rend="sup">e</hi></num> siècle pour d’autres métiers et sont attestées à la fin du <num>xiv<hi rend="sup">e</hi></num> siècle. La formalisation de la rémunération des musiciens semble à l’origine de la rédaction des contrats d’association, qui portent essentiellement sur les modalités de distribution des profits. On constate une augmentation progressive du nombre de contractants entre la fin du <num>xiv<hi rend="sup">e</hi></num> et le milieu du <num>xvi<hi rend="sup">e</hi></num> siècle, qui répond probablement à une évolution de la pratique musicale et de la demande du public. La durée des contrats est assez variable mais on note l’utilisation quasi systématique de la date du début du carême comme point de repère. Les associations fondent une communauté d’égaux et insistent sur la solidarité qui doit exister entre les membres. À date ancienne, on remarque une certaine perméabilité entre les contrats d’association et les contrats d’embauche ou d’apprentissage.</p>
+        </div>
+        <div>
+          <head>Chapitre VII<lb/>Les corporations et métiers jurés</head>
+          <p>La reconnaissance de la pratique musicale comme un métier conduit certains ménestrels et jongleurs à s’organiser en « corporation » et à constituer une communauté sur la base du serment, qui règlemente la profession à l’échelle d’une ville et dispose d’une personnalité juridique. Ces corporations sont fondées avec le soutien et la protection des autorités municipales ou princières, et présentent des caractères similaires à celles des autres métiers : encadrement de l’exercice du métier, structure hiérarchique de la profession entre maître, valet et apprenti, présence d’une confrérie religieuse, tendance à la constitution d’oligarchies familiales. La première corporation est fondée en 1321 à Paris, où se concentrent l’offre et la demande de musique, sous l’égide royale. Les membres de la nouvelle « corporation des jongleurs et ménestrels demeurant en la ville de Paris », dont certains sont également ménestrels du roi, obtiennent notamment l’exclusivité de la pratique musicale instrumentale dans certaines occasions, telles que les noces. Ces prétentions monopolistiques, si elles encadrent strictement la possibilité d’exercice du métier, prévoient néanmoins des conditions d’intégration d’éléments extérieurs et ménagent des espaces et des circonstances où les non-membres peuvent toujours exercer leur métier. Il est même permis à des musiciens non-professionnels de jouer en échange de rémunération. Des corporations similaires à celle de Paris voient le jour dans d’autres villes, plus tard, notamment à Chauny, au début du <num>xv<hi rend="sup">e</hi></num> siècle, à Amiens en 1465, à Toulouse en 1492, à Tours entre 1490 et 1500, à Blois au début du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head>Chapitre VIII<lb/>Les ménestrels assermentés dans les communes</head>
+          <p>Le dernier type d’organisation communautaire connu est celui des musiciens stipendiés par une municipalité de façon régulière, en vue de l’exercice d’une fonction spécifique. Les musiciens ainsi embauchés constituent un petit corps d’officiers municipaux, qui ont prêté serment. On en trouve notamment dans les villes du Nord du royaume de France, comme à Douai et à Lille, où ils sont chargés du guet depuis le beffroi. Ces <hi rend="i">wettes</hi>, généralement recrutés parmi les bourgeois de la ville, sont des ménestrels de hauts instruments, surtout des trompettes, qui veillent jour et nuit et à tour de rôle pour avertir la population en cas de danger. Leur activité de <hi rend="i">wette</hi> n’est pas exclusive et il est fréquent de les voir jouer dans des fêtes municipales ou pour des particuliers. Au début de la période étudiée, seul un homme est chargé du guet. La constitution d’un corps est plus tardive, dans la seconde moitié du <num>xv<hi rend="sup">e</hi></num> siècle. On trouve à Dijon un cas similaire d’embauche d’un ménestrel par la ville, pour assurer le cri public à son de trompe, mais il s’agit d’un individu seul.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Règles professionnelles et exigences économiques</head>
+        <div>
+          <head>Chapitre IX<lb/>Un artisanat de la musique</head>
+          <p>Le mouvement communautaire est sous-tendu par une conception artisanale de la musique instrumentale, par opposition à une musique plus savante, enseignée à l’université et chantée à l’église. Ce métier de la musique instrumentale porte le nom de ménestrandise et constitue un véritable art mécanique, au sens où il est un savoir pratique bien qu’il ne donne pas lieu à la confection d’un produit fini. L’organisation du travail des musiciens répond dès lors à des logiques économiques plus qu’artistiques et on assiste, à la fin du Moyen Âge, au début d’un processus de marchandisation de la musique instrumentale, qui conduit à la salarisation des ménestrels. On distingue trois types de rémunération pour les musiciens à la fin du Moyen Âge : les aumônes et dons ponctuels, les gages et pensions et les revenus de type salarial. La dernière catégorie tend à se généraliser pour les musiciens professionnels qui vivent en ville et appartiennent à une communauté. L’enjeu du salaire est celui de la stabilité et de la régularité des revenus pour des hommes qui auparavant vivaient exclusivement d’aumônes. Ce changement de nature des revenus est permis par la création d’un marché du travail des musiciens, favorisée par le mouvement communautaire. Tous les ménestrels et joueurs d’instruments n’accèdent cependant pas au salariat.</p>
+        </div>
+        <div>
+          <head>Chapitre X<lb/>Qualité et montant des rémunérations</head>
+          <p>L’estimation et la comparaison des revenus sur la longue durée se heurtent à divers problèmes méthodologiques. On dispose toutefois de certains documents qui, ponctuellement, donnent un éclairage important sur quelques mois ou quelques années, pour des individus précis. Ils mettent en évidence une grande disparité des rémunérations selon les types de revenus, les époques et les aires géographiques. L’interrogatoire de Robert Wourdreton, valet du ménestrel Watier le Herpeur, accusé en 1385 d’avoir tenté d’empoisonner des membres de la famille royale sur ordre du roi de Navarre, est un document capital. Il permet en effet de suivre pendant neuf mois l’itinéraire d’un ménestrel partant en pèlerinage à Saint-Jacques de Compostelle, et d’évaluer ses revenus pendant son voyage. Ceux-ci semblent assez élevés et invitent à reconsidérer l’idée selon laquelle les musiciens mèneraient une vie de misère à la fin du Moyen Âge. L’examen de la rémunération des ménestrels assermentés à Douai met en avant une conception originale du « salaire » qui leur est payé : plutôt qu’un prix du travail, il semble être la sanction d’une qualification statutaire du travailleur, qui s’établit en dehors du marché du travail. D’autres rémunérations qualifiées de salaire correspondent à une définition plus traditionnelle du terme, où le travail est envisagé comme une marchandise. De manière générale, l’étude des montants des rémunérations confirme que certains musiciens professionnels vivent dans une relative aisance, quel que soit le type de rémunération qu’ils perçoivent.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Identité et solidarités professionnelles</head>
+        <div>
+          <head>Chapitre XI<lb/>Pratiques confraternelles et dévotion commune</head>
+          <p>Les corporations de musiciens sont doublées d’une confrérie religieuse. À Paris, elle est fondée en 1331, dix ans après la corporation, et s’articule autour d’un hôpital et d’une chapelle dédiés à Saint-Julien et Saint-Genès. Cette fondation pieuse est au cœur de la solidarité entre les membres de la corporation et des messes nombreuses et régulières y sont célébrées pour fédérer le groupe professionnel et lui donner une identité spécifique. Certaines fêtes sont ainsi particulièrement mises en avant, notamment en l’honneur des saints patrons et en mémoire des confrères morts. La fête de la Chandelle d’Arras, qui renvoie à la Confrérie des jongleurs et bourgeois d’Arras et a donc une portée professionnelle, est également célébrée à Paris et dans d’autres villes du Nord du royaume. Elle met en évidence des liens entre les communautés de différentes villes et une piété commune, à caractère professionnel.</p>
+        </div>
+        <div>
+          <head>Chapitre XII<lb/>Échanges intercommunautaires et tentatives de centralisation</head>
+          <p>Au-delà des questions religieuses, des contacts existent entre les différentes communautés. Dans une même ville, il n’est pas rare de voir les communautés s’enchevêtrer et un même individu appartenir à plusieurs d’entre elles, successivement ou simultanément. Les musiciens vivent dans le même quartier et font souvent des mariages endogamiques, ce qui donne une forte cohésion au groupe.</p>
+          <p>Les écoles de ménestrandise qui se tiennent régulièrement pendant le carême fonctionnent comme un forum du métier où les musiciens de différentes villes peuvent se retrouver pour s’apprendre mutuellement de nouvelles techniques ou morceaux. Elles demeurent cependant mal connues et si elles semblent remonter à une date ancienne, on n’en trouve plus guère après le <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>L’unification du métier semble une volonté du pouvoir royal dès le <num>xiv<hi rend="sup">e</hi></num> siècle, avec l’institution de la royauté des ménétriers. Choisi parmi les ménestrels du roi, le roi des ménétriers a autorité sur tous les ménestrels du royaume de France. Il est de plus, à partir de 1407, le chef de la corporation parisienne, dont les statuts ont vocation à s’appliquer dans l’ensemble du royaume. Mais cette autorité n’a manifestement guère de réalité avant le milieu du <num>xvi<hi rend="sup">e</hi></num> siècle, où les corporations créées sur le modèle de Paris deviennent plus nombreuses, et où une documentation nouvelle montre les efforts centralisateurs du roi des ménétriers, qui nomme des lieutenants dans diverses provinces du royaume.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le mouvement communautaire qui touche les musiciens instrumentistes en ville à la fin du Moyen Âge s’inscrit dans le cadre général d’une structuration des métiers en corps et de la mise en place d’une réglementation du travail. Il est essentiel dans la construction de la pratique instrumentale de la musique en tant que métier artisanal, et dans la reconnaissance sociale de ceux qui exercent cette activité. Un statut de professionnel du divertissement se dessine. À la faveur d’une mutation profonde de leurs modes de rémunération, les musiciens professionnels voient globalement leur condition s’améliorer entre le <num>xiv<hi rend="sup">e</hi></num> et le <num>xv<hi rend="sup">e</hi></num> siècle. Certains d’entre eux accèdent même à une certaine notabilité, ou au moins, une relative richesse. Cette évolution ne concerne cependant pas tous les jongleurs et ménestrels, dont une partie reste en marge du mouvement communautaire.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Édition d’un choix de lettres de rémission, de contrats d’association, de pièces de procédure, de quittances, de mentions de paiement dans des registres de comptes.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Carte du quartier de la chapelle Saint-Julien-des-Ménétriers. — Inventaire des contrats d’association de musiciens parisiens. — Inventaire des contrats dijonnais utilisés. — Dictionnaires prosopographiques des jongleurs, ménestrels et joueurs d’instruments de Paris (1320-1550), de Douai (1390-1550). — Index prosopographique des musiciens cités dans l’étude.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

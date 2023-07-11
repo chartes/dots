@@ -1,0 +1,37 @@
+<dots:configuration 
+  xmlns:dots="https://github.com/chartes/dots/">
+  <dots:configMetadata>
+    <dots:gitVersion/>
+    <!-- version git du fichier -->
+    <dots:creationDate>2023-05-09T14:45:55.873+02:00</dots:creationDate>
+    <!-- date de création du document -->
+    <dots:lastUpdate>2023-05-11T12:41:55.635+02:00</dots:lastUpdate>
+    <!-- date de la dernière mise à jour -->
+    <dots:publisher>École nationale des chartes</dots:publisher>
+    <dots:description>Document déclaratif pour établir une concordance entre des métadonnées utilisateurs et le format de données souhaité en DTS</dots:description>
+    <dots:licence>https://opensource.org/license/mit/</dots:licence>
+  </dots:configMetadata>
+  <dots:configContent>
+    <dots:metadatas>
+      
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" format="csv" target="titles.xml" element="title" scope="collection"/>
+      
+      <html:h1 xmlns:html="http://www.w3.org/1999/xhtml" format="csv" target="metadata.xml" element="title_rich" scope="resource"/>
+      <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/" format="csv" target="metadata.xml" element="promotion_year" scope="resource" type="number"/>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"  format="csv" target="metadata.xml" element="author_fullname_label"></dc:creator>
+      
+      <dct:creator xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="author_idref_ppn" prefix="https://www.idref.fr/" key="@id" scope="resource"/>
+      <dct:creator xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="author_bnf_ark" prefix="https://data.bnf.fr/" key="@id" scope="resource"/>
+      <dct:creator xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="author_wikidata_id" prefix="https://wikidata.org/entity/" key="@id" scope="resource"/>
+      <dct:creator xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="author_wikipedia_url" key="@id" scope="resource"/>
+      <dct:creator xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="author_dbpedia_id" prefix="https://dbpedia.org/resource/" key="@id" scope="resource"/>
+      
+      <dct:isVersionOf xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="thenca_these-record_id" prefix="http://bibnum.chartes.psl.eu/s/thenca/item/" key="@id" scope="resource"/>
+      <dct:isVersionOf xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="benc_these-record_id" prefix="https://catalogue.chartes.psl.eu/cgi-bin/koha/opac-detail.pl?biblionumber=" key="@id" scope="resource"/>
+      <dct:isVersionOf xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="sudoc_these-record_ppn" prefix="https://www.sudoc.fr/" key="@id" scope="resource"/>
+      
+      <dct:extent xmlns:dct="http://purl.org/dc/terms/" format="csv" target="metadata.xml" element="pagination" scope="resource"/>
+      
+    </dots:metadatas>
+  </dots:configContent>
+</dots:configuration>

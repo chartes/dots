@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<csv>
+    <record>
+        <id>ENCPOS</id>
+        <title>Les positions des thèses de l'Ecole nationale des chartes</title>
+    </record>
+  <record>
+    <id>ENCPOS_2015</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2015</title>
+  </record>
+  <record>
+    <id>ENCPOS_2016</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2016</title>
+  </record>
+  <record>
+    <id>ENCPOS_2017</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2017</title>
+  </record>
+  <record>
+    <id>ENCPOS_2018</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2018</title>
+  </record>
+  <record>
+    <id>ENCPOS_2019</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2019</title>
+  </record>
+  <record>
+    <id>ENCPOS_2020</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2020</title>
+  </record>
+  <record>
+    <id>ENCPOS_2021</id>
+    <title>Les positions des thèses de l'Ecole nationale des chartes de 2021</title>
+  </record>
+</csv>

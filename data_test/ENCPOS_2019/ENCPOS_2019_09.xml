@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_09" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les graffitis de la période médiévale et de la première modernité. L’exemple du château de Selles à Cambrai</title>
+        <author>Clément Dussart</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 99-106</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Les graffitis de la période médiévale et de la première modernité</head>
+      <head type="sub">L’exemple du château de Selles à Cambrai</head>
+      <byline>
+        <forename>Clément</forename>
+        <surname>Dussart</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Les graffitis, très courants au Moyen Âge et à l’époque moderne, ont pourtant été peu étudiés jusqu’ici. Ils ont fait l’objet d’études et de mentions éparses souvent caractérisées par un notable manque de rigueur, au détriment de la connaissance historique de cette forme d’écriture et de ses usages. Une rapide enquête sur l’emploi du terme « graffiti » amène à constater qu’il est souvent imprécis, excédant largement le sens premier et étymologique d’écriture « griffée », mais constituant une catégorie commode pour y ranger des manifestations écrites très diverses, échappant par la forme et la fonction aux domaines de l’écriture livresque et documentaire comme à celui des inscriptions monumentales.</p>
+        <div>
+          <head>Sources</head>
+          <p>L’étude des graffitis repose d’abord sur une bibliographie dispersée et inégale, un grand nombre d’articles, opuscules et ouvrages rédigés par des auteurs très divers : chercheurs professionnels ou amateurs, plus ou moins rigoureux, jusqu’à d’habiles mystificateurs. Ces innombrables références, bien souvent des mentions de quelques lignes, le plus souvent à prendre avec précaution, ont été recensées dans la bibliographie et ont servi à l’élaboration d’une introduction théorique aux graffitis ainsi qu’à la prospection en vue de découvrir d’importants vestiges. L’essentiel est en effet l’étude de terrain : le graffiti ne pouvant être bien compris que s’il est considéré dans son contexte, des visites et observations ont ainsi été effectuées <hi rend="i">in situ</hi>, dont plusieurs missions au château de Selles à Cambrai, qui est au cœur de l’étude. Les données, notes, photographies et numérisations en trois dimensions, réunies durant ces séjours ou communiquées par d’autres chercheurs qui s’étaient précédemment intéressés au site, ont permis de constituer un important corpus, complété par des recoupements avec les documents conservés aux archives départementales du Nord.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Introduction méthodologique à l’étude des graffitis</head>
+        <div>
+          <head>Chapitre premier<lb/>L’évolution d’un regard : historiographie</head>
+          <p>Les graffitis n’ont pas toujours été perçus de la même manière au fil des siècles. Quelques mentions contemporaines de leur réalisation durant la période médiévale montrent qu’ils ont pu être considérés, surtout dans un contexte sacré, comme un geste de piété, selon une pratique bien établie et encadrée.</p>
+          <p>Dès la période moderne, on a porté un certain intérêt aux graffitis médiévaux : la curiosité s’est attachée surtout aux vestiges du haut Moyen Âge et à des objets bien précis, les inscriptions sur tables d’autel. Les travaux se sont poursuivis dans cette perspective jusqu’au début du <num>xx<hi rend="sup">e</hi></num> siècle, traitant du graffiti médiéval essentiellement dans la mesure où il s’inscrivait dans la tradition antique. La conservation et la valorisation rencontrent à l’époque contemporaine des réticences, parce que les graffitis sont désormais facilement associés aux notions de vandalisme et de contestation ; à en faire un objet historique, certains craignent qu’on en vienne à légitimer plus généralement ce geste.</p>
+          <p>Depuis quelques années, un regain d’intérêt se manifeste, surtout en faveur des graffitis de l’époque moderne, qui ont déjà fait l’objet de deux thèses. Ceux du Moyen Âge, d’un abord plus difficile, restent les plus méconnus et la France accuse un net retard dans ce domaine par rapport à certains de ses voisins : Allemagne, Espagne, Italie ou Royaume-Uni.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Les sources pour l’étude des graffitis</head>
+          <p>La principale difficulté dans la recherche de sources qui permettraient l’accès aux graffitis tient à leur extraordinaire dispersion et hétérogénéité. Diverses catégories de chercheurs s’y sont intéressées : des archéologues, des érudits locaux et beaucoup de simples curieux, seuls ou groupés en associations, qui ont publié, avec plus ou moins de rigueur, dans des revues locales souvent difficiles d’accès. Face à cette information foisonnante, la critique voire la défiance sont de mise. Les falsifications ont été nombreuses, œuvre d’érudits locaux en quête de notoriété mais parfois aussi d’éminents savants, tel François Lenormant dont les faux furent publiés dans le recueil des <hi rend="i">Inscriptions chrétiennes de la Gaule antérieures au <num>viii<hi rend="sup">e</hi></num>siècle</hi>, dirigé par Edmond Le Blant.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Quelques hauts lieux du graffiti en France</head>
+          <p>Les graffitis de toutes époques sont omniprésents en France ; il convient toutefois de mentionner quelques édifices dont les particularités ont permis la préservation d’un nombre inhabituel de ces traces écrites, parfois même de riches gisements. Le château de Selles, forteresse médiévale de Cambrai, en conserve ainsi plusieurs centaines, des simples initiales à des textes de plusieurs dizaines de lignes, depuis le début du <num>xiii<hi rend="sup">e</hi></num> jusqu’au <num>xx<hi rend="sup">e</hi></num> siècle. Le palais des Papes d’Avignon conserve également un grand nombre de graffitis sur ses enduits peints médiévaux, qui restent à étudier. La prison du palais synodal de Sens conserve également de beaux spécimens médiévaux.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Conservation et étude des graffitis</head>
+          <p>Le graffiti, une fois découvert, mérite d’être sauvegardé et valorisé avec soin. Les conditions de conservation sont en effet rarement bonnes ; aussi est-il nécessaire de procéder à sa reproduction systématique. Au dessin, qui a souvent laissé trop de place à l’imagination, ont succédé la photographie, parfois difficile à mettre en œuvre dans l’environnement où sont conservés les graffitis, et le scanner tridimensionnel, très coûteux mais d’une précision inégalée dans le relevé.</p>
+          <p>La lecture et l’interprétation constituent ensuite des difficultés majeures, et même parfois insolubles. Quand l’exploitation d’une inscription est possible, on peut en tirer de précieuses indications qui pourront contribuer à dater un support, à documenter l’occupation ou la fonction d’un espace, parfois à en révéler des éléments disparus. L’apport documentaire potentiel des graffitis en fait, selon certains, la « dernière source historique majeure non encore utilisée », prometteuse tant par la perspective personnelle et informelle qu’elle peut donner sur des événements contemporains que comme trace de pratiques d’écriture méconnues partagées par des milieux sociaux divers. La création d’un corpus des graffitis français est souhaitable, si l’on veut les rendre aisément accessibles aux historiens.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Matérialité des graffitis</head>
+          <p>Le graffiti peut être gravé sur tout type de support susceptible de recevoir et conserver une telle trace, qu’il soit meuble ou immeuble, vertical ou horizontal ; les constatations effectuées au gré de leur découverte et de leur étude permettent de souligner quelques tendances, concernant par exemple la hauteur à laquelle ils sont placés et le cadre matériel dans lequel ils s’inscrivent.</p>
+          <p>La datation de ces inscriptions, quand elle ne peut se faire par des indices internes — que la date soit omise, incomplète ou illisible —, peut s’appuyer sur la paléographie, mais la comparaison doit être prudente avec les livres, documents ou inscriptions formelles, en raison des variations dues à des conditions matérielles particulières comme à des niveaux inégaux de maîtrise de l’écriture.</p>
+          <p>La question des instruments utilisés pour la gravure est d’autant plus épineuse qu’on possède en général très peu d’éléments éclairant le statut du scripteur et, par là, les outils qu’il pouvait avoir à sa disposition. Quelques commentaires d’érudits du <num>xvii<hi rend="sup">e</hi></num> siècle, époque à laquelle les usages et techniques médiévaux avaient encore cours, permettent néanmoins de s’en faire une idée.</p>
+          <p>La langue (picard, provençal, latin, hébreu, russe, etc.), le tracé des lettres et le système graphique, y compris les abréviations, sont de précieux indices sur l’origine des scripteurs, leur milieu, leur culture et leur usage de l’écriture. Les graffitis figuratifs, présents en bien plus grande proportion que les textes écrits, sont le sujet de nombreuses interrogations. Les rapports qu’entretiennent ces deux catégories restent jusqu’ici difficiles à interpréter. On pourrait les penser en termes de hiérarchie, ou d’interaction, ou comme deux systèmes indépendants en coexistence ; ces hypothèses sont toutes fondées et il serait sans doute erroné de vouloir systématiser dans une grille de lecture unique les relations d’objets aussi multiples que complexes.</p>
+        </div>
+        <div>
+          <head>Chapitre VI<lb/>Fonction et localisation des graffitis</head>
+          <p>L’enquête menée tant sur le terrain que dans la bibliographie montre que le graffiti embrasse une grande diversité de fonctions : laisser un souvenir de son passage, signer une œuvre, tenir ses comptes, faire part de ses sentiments, jouer, tromper le temps, garder la mémoire d’événements importants (morts, bataille, épidémie, phénomène météorologique, etc.). La conception du graffiti comme écriture marginale, phénomène occasionnel et accidentel, est donc à réviser, comme le souligne Cécile Treffort : « Entre les deux formes traditionnellement considérées comme “officielles” de l’écrit – manuscrit sur parchemin et inscription monumentale –, il faut admettre l’existence d’une troisième forme appelée par commodité “graffitée” qui relève parfois d’une pratique tout aussi officielle ». L’étude de la localisation des graffitis pose un problème de fond ; on voudrait pouvoir déterminer si certains supports, certains lieux étaient privilégiés. Or les vestiges qui nous sont parvenus trahissent sans doute une disproportion fondamentale, puisque presque tous se retrouvent dans un contexte religieux : la sacralité des lieux et surtout leur construction monumentale ont en effet favorisé la conservation de ces traces à travers les siècles. Les cavités souterraines, en général très peu fréquentées, ont de même permis à de nombreux vestiges de durer. On ne saurait en tirer de conclusions sur la préférence que les scripteurs auraient eue pour des lieux de ce type.</p>
+          <p>Au contraire, l’étude de quelques édifices profanes, notamment le château de Selles à Cambrai et le palais des Papes à Avignon, permet de constater que des édifices très différents étaient, à l’époque médiévale, littéralement couverts de graffitis. À chaque lieu, à chaque support, peuvent correspondre différentes fonctions et la même inscription peut prendre une tout autre dimension selon l’endroit où l’a gravée son auteur.</p>
+        </div>
+        <div>
+          <head>Chapitre VII<lb/>Les acteurs du graffiti</head>
+          <p>Derrière chaque inscription il convient de déceler quel a pu en être l’auteur, et à quel lecteur il s’est adressé. L’auteur, quand il s’agit d’une inscription à caractère mémoriel, révèle volontiers son nom. Sa maîtrise de l’écriture et ses habitudes graphiques, ainsi que les sources archivistiques quand on peut l’y retrouver, aident à mieux cerner qui il était ; le lecteur potentiel, quant à lui, est plus difficile à saisir car rarement évoqué par le texte.</p>
+          <p>Une distinction peut être proposée entre le « lecteur modèle » auquel le scripteur compte s’adresser, et le lecteur réel. La lisibilité de l’écriture est un indice possible de l’identité de ce lecteur modèle : un graffiti votif destiné uniquement à Dieu ou aux saints peut être illisible, tandis que le plaidoyer d’un prisonnier se plaignant d’être injustement enfermé n’est efficace qu’à condition d’être intelligible à tout lecteur futur. À ces considérations il faut ajouter une dernière sorte de lecteur en la personne du chercheur, lecteur imprévu, « accidentel », ignorant tout du contexte, des circonstances, des intentions qui ont présidé à la gravure de ces formules souvent très succinctes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Seconde partie<lb/>Édition sélective de graffitis du château de Selles</head>
+        <div>
+          <head>Introduction</head>
+          <p>Le château de Selles constitue un contexte archéologique bien particulier : cette forteresse médiévale a été enfouie au <num>xvi<hi rend="sup">e</hi></num> siècle et incluse dans le système de défense de la ville de Cambrai. Ses galeries de circulation et ses tours sont devenues des souterrains, qui restent en partie accessibles à l’heure actuelle, sans qu’on sache précisément quelle fonction a été assignée à tel ou tel espace au cours du temps. Les murs de la forteresse conservent des centaines de témoignages écrits, gravés et dessinés, laissés du <num>xiii<hi rend="sup">e</hi></num> au <num>xx<hi rend="sup">e</hi></num> siècle par les occupants, soldats de la garnison, prisonniers, geôliers et visiteurs.</p>
+          <p>Un choix a été opéré et une quarantaine d’inscriptions, pour la plupart médiévales, ont été retenues pour être éditées. Les principes d’édition ont été mûrement réfléchis et mis à l’épreuve afin de permettre l’accès le plus aisé possible à un texte clair, précis et doté d’une ample documentation contextuelle. Le catalogue propose ainsi un modèle expérimental pour l’édition de sources de ce type.</p>
+        </div>
+        <div>
+          <head>Catalogue</head>
+          <p>Chacun des graffitis retenus fait l’objet d’une fiche détaillée, conçue de manière à permettre tant l’exploitation du catalogue dans son ensemble que celle d’une notice isolée. On y trouve des plans et schémas de localisation du graffiti au sein du monument qui l’abrite puis dans son environnement immédiat ; des informations sur la nature du support, les mesures de l’inscription et sa mise en place par rapport au support ; des remarques sur le type d’écriture, la forme, le relief et la technique de gravure des lettres ; un constat sur l’état de conservation, assorti, dans la mesure du possible, de différentes vues documentant la dégradation au fil du temps ; une bibliographie des travaux mentionnant le graffiti ou fournissant des éléments de comparaison ; un relevé au trait du texte et deux transcriptions, la première imitative et la seconde interprétative, avec restitution des parties abrégées ou manquantes, puis une traduction quand elle est nécessaire ; enfin un alphabet illustrant les lettres qui ont pu être identifiées, permettant la comparaison avec d’autres graffitis.</p>
+        </div>
+        <div>
+          <head>Conclusion</head>
+          <p>L’enquête révèle la complexité de l’objet couramment désigné comme « graffiti ». On rassemble en effet sous ce terme une foule d’emplois très divers de l’écriture, dont le seul point commun est de ne pas appartenir aux domaines traditionnels du livre, du document et de l’épigraphie solennelle. L’étude de cas des graffitis conservés au château de Selles, les conclusions historiques qui s’en dégagent déjà et l’expérience d’une méthode d’édition scientifique de ces textes devraient contribuer à mieux éclairer leur nature très diverse et à en favoriser la conservation et la valorisation. Il sera possible, ainsi, de mieux mesurer la place occupée par les graffitis dans l’histoire de l’écriture et ce qu’ils révèlent de pratiques d’expression écrite méconnues mais largement répandues dans la société médiévale et de la première modernité.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Essai d’inventaire des graffitis de la France. — Catalogue de graffitis datés. — Tableau des alphabets datés du château de Selles. — Inventaire des graffitis de la gaine 1 au niveau 1 du château de Selles. — Illustrations. — Index des noms de lieux et de personnes.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

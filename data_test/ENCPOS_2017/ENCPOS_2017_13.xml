@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2017_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Regards vers le mur. Les « Graffiti » de Brassaï des années 1930 à 2016</title>
+        <author ref="https://www.idref.fr/20297216X">Laure Mendousse</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2017 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2017</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2017"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Regards vers le mur
+        <lb/>Les « Graffiti » de Brassaï des années 1930 à 2016</head>
+      <byline>
+        par
+        <forename>Laure</forename>
+        <surname>Mendousse</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Prises entre 1932 et 1960, les photographies de la série des « Graffiti » entretiennent un rapport particulier avec leur motif : les graffiti des rues parisiennes, tracés ou gravés sur le plâtre des murs par des mains anonymes. La photographie de Brassaï transmet leur image de manière directe, sans aucune modification, ce qui fait que la distinction entre les graffiti et la série des « Graffiti » est souvent mouvante et trouble, d’autant plus que la définition de ce terme connaît de grandes évolutions au cours de la période et que les clichés sont, pour la plupart, dépourvus de date précise. Les préhistoriens, archéologues et psychanalystes utilisent le mot « graffiti » depuis le milieu du <num>xix<hi rend="sup">e</hi></num> siècle pour désigner divers types d’expression, et le travail de Brassaï contribue à donner une nouvelle définition à ce mot.</p>
+        <p>La démarche de Brassaï oscille entre une approche ethnologique, scientifique des graffiti et une vision artistique et poétique de son corpus. Le nombre conséquent de photographies – presque huit cents – et le temps long dans lequel elles s’inscrivent rendent difficile l’étude particulière de chaque image. La tentation est grande de considérer les « Graffiti » au travers des publications dont ils ont fait l’objet, l’aspect littéraire et théorique de la série tendant à primer sur les photographies. Cependant, l’étude des expositions et le catalogue des photographies qui composent cette série permettent une vision plus objective de ce que Brassaï a photographié et du sens dans lequel il a voulu orienter sa réception. La subjectivité est à l’œuvre dans le choix des quartiers où il chasse les graffiti, dans les spécimens qu’il relève et dans le cadre qu’il donne à ses trophées. Un second choix apparaît au moment de la sélection des « Graffiti » qui sont exposés et publiés à côté de ses textes, contrairement à ceux qui restent bien cachés dans leur boîte. Brassaï donne une certaine vision des graffiti, soutenue par un appareil critique et des rapprochements artistiques originaux. Entre surréalisme et photographie documentaire ou humaniste, le travail de Brassaï sur les « Graffiti » est un marqueur de l’histoire de la photographie. Pourtant, l’artiste refuse toute association de son œuvre avec le surréalisme et ignore volontairement les photographes dans ses articles. C’est Picasso qui apparaît comme la clé de voûte de l’œuvre de Brassaï, surtout dans le cas des « Graffiti », comme un Zeus régnant sur le Panthéon personnel que se crée Brassaï et duquel il se réclame. Les références aux artistes connaissent une certaine évolution au fil du temps, répondant à une stratégie menée par Brassaï pour guider l’appréhension de son œuvre. Il tend à la fois à affirmer la légitimité de ses photographies par l’héritage prestigieux qui les inscrit dans une tradition et à leur assurer une pérennité par l’originalité et la fécondité qu’il leur attribue.</p>
+        <p>Entre 1930 et 1960, le contexte artistique connaît de grands bouleversements. Du surréalisme à l’abstraction de l’après-guerre en passant par l’art brut de Dubuffet, Brassaï et ses « Graffiti » naviguent entre plusieurs périodes de l’histoire de l’art et se nourrissent de ses courants les plus divers. Brassaï n’est pas le premier à saisir l’intérêt artistique des graffiti dans les années 1930. D’autres artistes s’y sont intéressés, dans le contexte dadaïste et surréaliste des années 1920-1930. George Grosz et Étienne Cournault les ont tous deux réutilisés dans leurs œuvres. Le travail de Jean Dubuffet autour de 1945 représente également un tournant dans la réception et la réinterprétation artistique des graffiti, dans lequel s’inscrit le travail de Brassaï, assez peu connu avant 1956.</p>
+        <p>Enfin, les écrits de Brassaï sur cette série ne cessent pas après la publication de <hi rend="i">Graffiti</hi> en 1960. Il continue à l’évoquer dans des ouvrages aussi divers que <hi rend="i">Conversations avec Picasso</hi> (1964), <hi rend="i">Transmutations</hi> (1967) et <hi rend="i">Les Artistes de ma vie</hi> (1982). Il y fait aussi souvent référence dans les articles et les interviews jusqu’à sa mort en 1984 et y relie la majorité de son œuvre, aussi bien photographique que dessiné, littéraire ou sculpté.</p>
+      </div>
+      <div>
+        <head>Sources</head>
+        <p>Les collections du Musée national d’Art moderne (MNAM) sont riches de nombreuses photographies de « Graffiti » mais également de planches de travail de Brassaï sur cette série qui permettent d’en faire une étude presque exhaustive, de réaliser le catalogue des photographies la composant et d’observer les différences entre ce que Brassaï a photographié, son classement et ce qu’il a choisi de montrer. Moins de 30 % des photographies de la série des « Graffiti » ont été publiées, exposées ou tirées pour être conservées dans des collections nationales. De plus, le don de la bibliothèque de Brassaï à la bibliothèque Kandinsky a dévoilé quelles pouvaient être les lectures de Brassaï au moment de la constitution de son œuvre. Et les « Graffiti » de la donation Daniel Cordier, en dépôt au musée des Abattoirs à Toulouse, s’accompagnent d’archives éclaircissant les conditions de l’exposition des photographies de Brassaï dans la galerie du donateur en 1962.</p>
+        <p>Le Musée national Picasso-Paris (MNPP) dispose d’un fonds inédit sur les « Graffiti historiques » qui a permis des découvertes concernant la construction théorique et photographique de cette série qui suit les « Graffiti ».</p>
+        <p>La Bibliothèque nationale de France conserve, quant à elle, les lettres d’Henry Miller reçues par Brassaï, entrecoupées de nombreuses copies carbones des lettres que Brassaï lui avait envoyées, riches d’informations sur les étapes de constitution des « Graffiti ». Se trouvent également à la BNF quelques maquettes d’ouvrages sur les « Graffiti » et les archives de l’exposition « Brassaï » de 1963. Les émissions de télévision et de radio consacrées à Brassaï et à ses « Graffiti » et consultables à la BNF ont permis d’approfondir l’étude de la réception de cette série, de même que l’émission télévisée allemande conservée dans les archives de la Südwestrundfunk.</p>
+        <p>Les archives du Museum of Modern Art de New York n’avaient jamais été étudiées ; elles fournissent des renseignements sur les échanges entre Brassaï et cette institution, notamment à l’occasion de la première exposition des « Graffiti » en 1956.</p>
+        <p>Enfin, divers fonds privés et étrangers ont enrichi cette thèse d’informations inédites, notamment le fonds Pierre de Fenoÿl pour les articles écrits à l’occasion de l’exposition sur les photographies de murs en couleur en 1970 à la galerie Rencontre.</p>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Genèse des « Graffiti » (1933-1953)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les années 1930, premières visions des Graffiti</head>
+          <p>Les œuvres de Brassaï contemporaines de la naissance des « Graffiti » révèlent ses convictions artistiques et sa position par rapport aux mouvements qui animent cette époque, notamment le surréalisme. « Images latentes », « Sculptures involontaires » et « Objets à grande échelle » sont trois séries des années 1930 qui partagent avec les « Graffiti » l’attention au réel banal, sans autre modification que celle de la transposition d’un objet dans le médium photographique.</p>
+          <p>Le premier article de Brassaï sur les graffiti, « Du mur des cavernes au mur d’usine », est publié dans <hi rend="i">Minotaure</hi> en 1933. Il ne s’agit pas de la première participation de Brassaï à cette revue et cette collaboration inscrit le commencement de sa série dans le contexte du mouvement surréaliste. Ce dernier n’est pas étranger aux graffiti puisque quelques artistes dadaïstes et surréalistes s’y sont intéressés avant Brassaï. Mais l’article lui-même s’inscrit dans une redéfinition du graffiti et présente pour la première fois les photographies de Brassaï.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>1939-1953 : la première mutation des « Graffiti »</head>
+          <p>La Seconde Guerre mondiale et l’immédiat après-guerre sont marqués par de grands bouleversements concernant le graffiti et la scène artistique mondiale. Le contexte historique conduit à une forte politisation des graffiti, parallèlement à un déclin du surréalisme en Europe puis aux États-Unis. Les graffiti sont alors récupérés par d’autres mouvements artistiques, notamment l’art brut et la photographie humaniste, qui lui confèrent une valeur et un rôle différents de ceux affirmés par Brassaï en 1933.</p>
+          <p>Brassaï se positionne dans ce nouveau contexte artistique et prend en compte les nouvelles formes de graffiti apparues pendant l’Occupation. Sa méthode  de travail et de recherche des graffiti se fait de plus en plus scientifique avec l’apparition des carnets et d’une première maquette d’ouvrage sur les « Graffiti ». En 1953, il écrit son deuxième article sur sa série pour la revue américaine <hi rend="i">Harper’s Bazaar</hi>. Les photographies se font de plus en plus indépendantes par rapport au texte.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+              <lb/>1936-1953 : premières visions des « Graffiti »</head>
+          <p>Jusqu’en 1956, les « Graffiti » restent relativement peu connus du grand public. Mais de 1933 à 1953, dans les vingt premières années de construction de cette série, Brassaï acquiert une reconnaissance institutionnelle et critique. Henry Miller et Jacques Prévert sont deux personnages essentiels pour la diffusion des idées et des photographies de Brassaï en France et aux États-Unis. La reconnaissance des « Graffiti » de Brassaï a d’abord lieu en France et s’inscrit dans un contexte artistique favorable à la réception de cette forme d’expression populaire murale et urbaine française. Les États-Unis, par l’intermédiaire d’Henry Miller, par l’action de Carmel Snow pour <hi rend="i">Harper’s Bazaar</hi> et d’Edward Steichen au Museum of Modern Art de New York, prennent une place importante dans la réception et la diffusion générale de l’œuvre de Brassaï.</p>
+          <p>En plus de ces acteurs incontournables de la connaissance et de la reconnaissance de l’œuvre de Brassaï dans les années 1930 à 1950, la fortune critique des photographies de la série « Images latentes », la somme hagiographique de l’œuvre de Brassaï réalisée par Robert Delpire et Pierre Faucheux ainsi que la participation de Brassaï aux expositions photographiques du Museum of Modern Art de New York préparent le public au choc des « Graffiti ». Mais cette série reste relativement confidentielle par rapport aux autres travaux de Brassaï de la même époque, sauf sur les couvertures de recueils de Prévert.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>L’apogée des « Graffiti » (1956-1964)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>L’exposition du MoMA de 1956 : révélation des « Graffiti »</head>
+          <p>« Language of the wall : Parisian graffiti photographed by Brassaï », soit « Le langage du mur : graffiti parisiens photographiés par Brassaï », tel est le titre de l’exposition consacrée aux « Graffiti » de Brassaï au MoMA à l’automne 1956. Organisé par Edward Steichen, cet événement apparaît comme une rupture à la fois dans la politique d’exposition du musée new-yorkais et dans l’histoire des « Graffiti » de Brassaï. En effet, si l’institution était familière des photographies de Brassaï, les « Graffiti » n’y avaient jamais été exposés. En montrant des tirages de cette série au public, l’artiste et le commissaire de l’exposition proposent une lecture renouvelée de l’œuvre et de la série. L’étude des étapes de préparation de l’exposition et des choix faits respectivement par Brassaï et par Edward Steichen révèle les étapes de la construction de cet ensemble, plus riche et varié que ce que laisse présumer le résultat final.</p>
+          <p>La réception institutionnelle, critique et publique des « Graffiti » croît fortement à la suite cette exposition. La publication de <hi rend="i">Graffiti</hi>, les nombreuses expositions consacrées à la série et les émissions télévisées montrent la reconnaissance publique à laquelle ont droit les photographies de Brassaï dans les années 1960. Les expositions sont pour lui l’occasion d’un travail de théorisation et de compilation de son œuvre, et les choix qu’il fait au cours de ces cinq années influencent la vision des « Graffiti » comme des graffiti jusque dans les années 1970.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>1958-1963 : achèvement de la construction théorique des « Graffiti »</head>
+          <p>Alors que les publications et les expositions s’intensifient, Brassaï prend une place croissante dans la théorisation de son œuvre de collection photographique des graffiti. Les années 1958 à 1960 sont marquées par la multiplication des articles qu’il leur consacre. Ceux-ci sont, dans l’ordre chronologique de leur publication : « Language of the wall », dans <hi rend="i">U.S. Camera</hi>, 1958 ; « Graffiti parisiens », publié dans <hi rend="i"><num>xx<hi rend="sup">e</hi></num> siècle</hi> en mars 1958 ; « The art of the wall », paru dans <hi rend="i">The Saturday Book</hi> à la fin de l’année 1958 ; et le texte de Brassaï dans le catalogue d’exposition de l’Institute of Contemporary Arts de 1958. <hi rend="i">Graffiti</hi>, publié en 1960 en Allemagne et l’année suivante en France aux Éditions du Temps, complète ce corpus. Brassaï ne se contente pas de reprendre des idées et des textes identiques d’un article à l’autre, même s’ils sont très rapprochés dans le temps. Les articles montrent des évolutions par rapport aux grands thèmes que sont l’enfance, le mur et le primitivisme. Les références et les images qui accompagnent ces publications connaissent également une évolution même si les comparaisons avec Picasso, Paul Klee, Joan Miró et Georges Rouault reviennent constamment. Les catégories fixées par Brassaï pour ses images, la mise en page des articles et le choix des photographies varient d’une publication à une autre, délivrant à chaque fois une interprétation différente des « Graffiti ».</p>
+          <p>La série apparaît comme une sorte de concrétisation matérielle de la recherche de Brassaï sur les graffiti parisiens. Les hésitations qui avaient présidé à la préparation de l’exposition du MoMA et les développements opérés par Brassaï dans ses articles ont permis la maturation du projet, qui atteint finalement un point d’achèvement en 1960. Après trente années de photographie des graffiti et de théorisation, l’ouvrage <hi rend="i">Graffiti</hi> fige cette série dans le temps, la clôt et porte l’image que Brassaï a voulu donner d’elle à cette époque.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Évolutions de la vision de Brassaï</head>
+          <p>Deux grandes innovations sont concomitantes avec l’apogée des « Graffiti » et aboutissent à deux projets extrêmement différents qui semblent reprendre chacun une part de la théorie de la série mère. Chronologiquement, le premier  de ces projets est celui, resté inachevé et inédit, des « Graffiti historiques ». Les photographies qui composent cette série ont été prises par Brassaï dans des monuments anciens et rejoignent une conception documentaire du graffiti. Le second est celui des « Graffiti en couleur ». Cette série naît dans les années 1960 et se rapproche des méditations contemplatives sur la beauté abstraite d’un vieux mur.</p>
+          <p>À partir de 1956, Brassaï semble ne jamais se détourner complètement du mur, ni du socle théorique qu’il a construit pour son <hi rend="i">magnum opus</hi> : « Graffiti ». Un système d’interprétation de son œuvre et de sa vision de la photographie ressort de la préparation des articles et des expositions dédiées aux « Graffiti ». Leur définition, émaillée des références les plus prestigieuses et les plus actuelles de l’art, a offert au monde une vision poétique et artistique des graffiti, soutenue par des photographies d’une grande qualité plastique.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Continuités des « Graffiti » (1964-2016)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Variations</head>
+          <p>Dans la continuité des évolutions qui ont touché le rapport de Brassaï aux graffiti au début des années 1960, les « Graffiti » connaissent de nouveaux développements à la fin de cette décennie et au début des années 1970. Ceux-ci passent par un renouvellement du support, que ce soit dans la technique du tirage ou par l’adaptation en tapisserie, mais aussi du motif dans le cas des « Graffiti en couleur » ou « Couleurs du mur ».</p>
+          <p>Les « Graffiti » représentent également une base théorique pour l’artiste. Ils sont l’expression de sa conception même de l’art et sont présentés comme la référence d’autres créations, photogravures ou sculptures. Une unité théorique apparaît dans la démarche artistique de Brassaï, quel que soit le médium ou la nature de la réalisation finale. Le réel objectif est toujours la base de son travail. Il en donne une vision différente par des prises de vue en gros plan ou de nuit, et n’intervient que pour rendre visibles des formes qui étaient déjà en gestation dans le réel en question. Après les années 1960, les « Graffiti » sont déclinés dans des réalisations d’apparences très différentes mais qui reposent sur le même appareil critique.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/><hi rend="i">Conversations avec Picasso</hi> et « Graffiti » : liaisons prestigieuses</head>
+          <p>Brassaï enquête pendant trente ans sur les « Graffiti », entre l’article de <hi rend="i">Minotaure</hi> et la publication de <hi rend="i">Graffiti</hi>, ce qui a une incidence sur sa conception de l’art et sa vision au moment de la rédaction des <hi rend="i">Conversations avec Picasso</hi>. Les « Graffiti » de Brassaï et les sculptures de Picasso semblent indissociables. Tout d’abord, les rencontres entre les deux artistes mettent leurs créations en contact. Ensuite, la rédaction d’affilée de <hi rend="i">Graffiti</hi> et des <hi rend="i">Conversations avec Picasso</hi>, dans un intervalle très court de trois ans, contribue à leur contamination réciproque, d’autant plus que le premier livre paraît avoir conditionné l’écriture du second.</p>
+          <p>Trois niveaux de rapprochements sont établis par Brassaï entre ses « Graffiti » et l’œuvre de Picasso. Les premières similitudes concernent surtout une vision de l’art et de la matière que Brassaï semble partager avec Picasso, rapprochant l’art de Picasso des « Graffiti ». Brassaï établit également des rapports plus explicites entre les graffiti et l’art de Picasso pour ce qui est de leurs formes communes et du rôle de la photographie à leur égard. Enfin, Brassaï va jusqu’à définir certaines créations de Picasso comme des graffiti, achevant cette entreprise d’assimilation entre son œuvre photographique et l’œuvre sculpté de Picasso.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Les « Graffiti » jusqu’à aujourd’hui</head>
+          <p>Au-delà du rapprochement de l’œuvre sculpté de Picasso avec ses photographies des « Graffiti », Brassaï semble également se servir des <hi rend="i">Conversations avec Picasso</hi> pour faire la promotion de l’ouvrage consacré aux « Graffiti », quatre ans après sa première publication. L’approbation et les éloges de Picasso tant sur les graffiti que sur leur photographie par Brassaï offre aux « Graffiti » une caution artistique indiscutable.</p>
+          <p>Dans les années 1980, il semble que Brassaï cherche à réorienter la vision publique de son œuvre, qui connaît un recul relatif dans sa réception par rapport à d’autres séries photographiques. Il refuse toute inscription de son travail dans l’orbite surréaliste, mais développe de nouveaux rapprochements artistiques : Georges Braque est présenté comme un grand amateur des « Graffiti », qui vient enrichir le Panthéon des défenseurs de ces photographies, aux côtés de Picasso. Brassaï ne peut plus ignorer la proximité de Jean Dubuffet avec sa série et l’intègre tardivement à ses références. Il y ajoute Antoni Tàpies, comme pour redonner une actualité à ses « Graffiti » en les rapprochant des jeunes artistes contemporains dans une relation qui semble être celle de la paternité.</p>
+          <p>Après la mort de Brassaï en 1984, ses « Graffiti » continuent à imprégner  la vision de son œuvre et des graffiti, influençant les artistes et les spécialistes du sujet. La vision des graffiti est fortement marquée par les travaux de Brassaï, même si les « Graffiti » n’ont rien à voir avec les nouvelles formes d’expression que désigne ce nom dans les années 1970-1980. Ces photographies dépassent largement le contexte artistique et intellectuel des années 1930 à 1960. Elles représentent un marqueur essentiel de la définition des graffiti comme de la compréhension de l’œuvre de Brassaï et de l’art de son temps.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>À partir de 1956, les « Graffiti » sont reconnus comme des œuvres dignes d’être exposées dans les plus grands musées et les plus prestigieuses galeries européennes. Ils créent une confusion entre l’art de la photographie et le caractère artistique des dessins et des gravures qui en sont le sujet. Les photographies de Brassaï permettent une vision de cette expression artistique populaire urbaine, même si les graffiti qu’il relève ne sont peut-être pas encore de l’art selon lui, ni selon les critiques, et même si les expressions murales suivantes ne s’affirment pas non plus directement comme artistiques. Ce n’est pas seulement en tant qu’œuvre photographique que les « Graffiti » acquièrent cette légitimité, le sujet même des photographies tendant lui aussi à rejoindre le monde de l’art. Le graffiti s’inscrit dans les préoccupations des artistes des années 1930 à 1950 sur le primitivisme et dans un mouvement de revalorisation du mur – support privilégié qui doit permettre à l’art de se renouveler – à partir des années 1950. Nourri de son contexte historique et artistique, l’amour de Brassaï pour les graffiti a marqué son temps. Il a aussi durablement influencé la vision de son œuvre et du sujet de ses photographies et ouvert de nouvelles perspectives sur l’art de son temps.</p>
+        <p>La réception des « Graffiti », en constante mutation, montre les évolutions marquant la compréhension de ces photographies de Brassaï. Le succès des ouvrages <hi rend="i">Paris de nuit</hi> et <hi rend="i">Paris secret des années trente</hi>, après celui de <hi rend="i">Graffiti</hi>, a généré un renversement dans la vision institutionnelle et publique. Bien que mort en 1984 et ayant réalisé des photographies jusqu’en 1970, Brassaï est étroitement associé aux années 1930, au surréalisme et au noir et blanc. Les « Graffiti » passent du statut de photographies de graffiti à celui d’œuvres de Brassaï. Le sujet, après avoir été la cause de sa gloire, est finalement relégué au second plan, derrière le nom du photographe. C’est la qualité artistique de ces photographies qui est désormais mise en avant. Malgré les liens que Brassaï a tenté d’affirmer entre ses « Graffiti » et l’œuvre sculpté de Picasso, et même si les <hi rend="i">Conversations avec Picasso</hi> apparaissent comme un élément essentiel de la reconnaissance de Brassaï par un public international, ces deux corpus ne sont que très rarement évoqués ensemble.</p>
+        <p>Avec les inscriptions situationnistes de Mai 68, c’est l’écrit qui est remis à l’honneur et sa portée politique diffère fortement des dessins relevés par Brassaï. Leur seul point commun serait leur inscription dans l’espace public et leur clandestinité, ce qui ne suffirait pas à reconnaître les photographies de Brassaï comme une source d’inspiration. L’apparition du tag comme nouvelle forme de graffiti a plusieurs conséquences. Tout d’abord, Brassaï apparaît comme un précurseur de la défense et de la reconnaissance des graffiti comme un art urbain. Ensuite, les graffiti que Brassaï a photographiés depuis les années 1930 tendent à disparaître derrière ceux réalisés à la bombe et du fait d’un grand programme d’aménagement parisien dans lequel les ruelles où Brassaï prenait ses photographies tendent à disparaître, emportant avec elles les graffiti qui les ornaient. Néanmoins, les considérations de Brassaï concernant sa série continuent de transparaître dans la littérature sur les graffiti jusqu’au début du <num>xxi<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head>Annexes</head>
+        <p>Études statistiques sur les « Graffiti ». — Carte géographique des « Graffiti ». — Chronologie des rencontres entre Brassaï et Picasso.</p>
+      </div>
+      <div>
+        <head>Catalogue des « Graffiti »</head>
+        <p>Catalogue réalisé à partir du répertoire des « Graffiti » fait par Brassaï et conservé au Musée national d’Art moderne suivant la numérotation établie par l’auteur et rassemblant sous un même numéro les photographies représentant un même graffiti.</p>
+      </div>
+      <div>
+        <head>Illustrations</head>
+        <p>Œuvres de Brassaï et d’autres artistes reliées aux « Graffiti ».</p>
+      </div>
+    </body>
+  </text>
+</TEI>

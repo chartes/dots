@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2018_05" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Au plaisir de dieu, au service de l’État. L’ambassade près le Saint-Siège de Wladimir d’Ormesson au prisme de son journal (1948-1956)</title>
+        <author>Sophie Gauthier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2018 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2018</date>, <biblScope>p. 53-65</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2018"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Au plaisir de Dieu, au service de l’État
+        <lb/>L’ambassade près le Saint-Siège de Wladimir d’Ormesson au prisme de son journal (1948-1956)</head>
+      <byline>
+        <forename>Sophie</forename>
+        <surname>Gauthier</surname>
+        <roleName>diplomée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>L’histoire diplomatique contemporaine du Saint-Siège a été beaucoup étudiée sous différents angles, dans son rapport à la guerre ou à des questions politiques telles que le Proche-Orient, la paix, les victimes de guerre ou le communisme par exemple. Des événements marquants comme la rupture des relations diplomatiques entre la France et le Saint-Siège au début du <num>xx<hi rend="sup">e</hi></num> siècle, puis leur reprise en 1921, ont aussi produit une bibliographie importante. Mais si l’ambassade de France près le Saint-Siège est bien connue des historiens, on constate, malgré quelques études, une certaine carence prosopographique en ce qui concerne les ambassadeurs de France près le Saint-Siège : l’histoire des hommes qui ont fait cette histoire diplomatique reste en grande partie à écrire. Ils ont pourtant eu, pour la plupart, une propension à rédiger leurs souvenirs, même si tous n’ont pas eu la carrière littéraire d’un Chateaubriand. Les ambassadeurs qui lui ont succédé dans la première moitié du <num>xx<hi rend="sup">e</hi></num> siècle ont eux aussi laissé des notes, des journaux, parfois des mémoires, ou publié des souvenirs sur leur mission. C’est notamment le cas de Wladimir d’Ormesson (1888-1973), qui fut ambassadeur en 1940 puis de 1948 à 1956, et a tenu quotidiennement un journal. Or, se pencher sur une mission diplomatique à travers le prisme personnel d’un ambassadeur peut offrir un regard différent sur l’histoire de cette institution et sur les relations entre la France et le Saint-Siège. Le journal de Wladimir d’Ormesson s’avère donc une source intéressante pour comprendre, du point de vue de l’ambassadeur lui-même, les liens qui ont uni la France et le Saint-Siège durant huit années ; il permet aussi une étude de l’homme et de la position qu’il adopte, dans sa fonction diplomatique comme dans sa vie personnelle à Rome.</p>
+        <div>
+          <head>Sources</head>
+          <p>Cette étude a pour objet et source principale le journal de Wladimir d’Ormesson, conservé aux Archives nationales. Ce journal court de 1919 jusqu’à sa mort. Pour la période de 1948 à 1956, il est tenu presque quotidiennement. Le temps de l’ambassade représente un peu moins de 6 000 pages, auxquelles s’ajoutent des éléments insérés par Wladimir d’Ormesson : lettres, discours, faire-part, coupures de journaux. Le journal foisonne d’informations, tant sur la vie privée des Ormesson que sur la vie professionnelle de l’ambassadeur. Il se laisse aller à de nombreuses critiques, positives ou négatives, des personnes qu’il rencontre au fil des jours. Ancien journaliste, il donne aussi souvent son avis sur la situation en France métropolitaine ou dans son empire colonial. Enfin, il y écrit ses angoisses, ses espoirs et ses prières. C’est la superposition du très factuel et des considérations personnelles de Wladimir d’Ormesson qui font tout l’intérêt de cet écrit.</p>
+          <p>D’autres sources complètent l’étude du journal : le fonds de l’ambassade de France et de son centre culturel et les archives centrales du ministère des Affaires étrangères, ou encore les archives privées des présidents de la <num>iv<hi rend="sup">e</hi></num> République, elles aussi conservées aux Archives nationales.</p>
+        </div>
+      </div>
+      <div>
+        <head>Chapitre liminaire<lb/>Biographie de Wladimir d’Ormesson</head>
+        <p>Wladimir d’Ormesson est issu d’une famille de serviteurs de l’État et notamment, à la fin du <num>xix<hi rend="sup">e</hi></num> siècle et au <num>xx<hi rend="sup">e</hi></num> siècle, de diplomates. Il se tourne pourtant d’abord vers le journalisme et collabore notamment au <hi rend="i">Figaro</hi> dont il est l’éditorialiste. En 1940, il est appelé par le gouvernement à prendre le poste d’ambassadeur près le Saint-Siège. Rappelé à la fin de l’année et radié des cadres en 1941, il vit le reste de la guerre dans la clandestinité. En 1945, le général de Gaulle l’envoie en Argentine pour renouer les liens de la France avec ce grand pays d’Amérique latine. Wladimir d’Ormesson accepte cette mission, Charles de Gaulle lui ayant promis qu’elle serait courte et qu’à son retour il serait à nouveau envoyé à Rome. Mais le général quitte le gouvernement et Wladimir d’Ormesson reste trois ans comme ambassadeur à Buenos-Aires. En 1947, il rentre en France pour faire avancer sa candidature au poste convoité. Il est nommé ambassadeur près le Saint-Siège en août 1948.</p>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Wladimir d’Ormesson, ambassadeur de France</head>
+        <div>
+          <head>Chapitre premier<lb/>La nomination à Rome</head>
+          <p>L’année 1948 marque le retour à Rome de Wladimir d’Ormesson, mais l’ambassadeur a obtenu sa nomination après presque un an de discussion avec Georges Bidault et de temporisation de la part de ce dernier. À son arrivée à la fin de septembre 1948, Wladimir d’Ormesson ne cesse de faire dans son journal des comparaisons entre sa mission de 1940 et celle qui débute alors. Les circonstances de sa première ambassade l’ont profondément marqué, ainsi que son enfermement au couvent Sainte-Marthe avec les diplomates alliés. La remise des lettres de créance se fait à Castelgondolfo de manière plutôt informelle, sans grand discours du pape, contrairement à l’habitude, en raison de l’état de fatigue de Pie XII. Les visites diplomatiques qui la suivent sont l’occasion pour Wladimir d’Ormesson de rencontrer ses « chers collègues » et pour son lecteur d’avoir un premier aperçu de la population et des usages diplomatiques. Wladimir d’Ormesson, dès son arrivée à Rome, s’inscrit dans une volonté de rupture avec l’ambassade de son prédécesseur, le philosophe Jacques Maritain.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>La chancellerie</head>
+          <p>L’aspect professionnel et matériel occupe une place capitale dans le journal de Wladimir d’Ormesson. Il montre par exemple les relations qu’entretient l’ambassadeur avec ses conseillers et secrétaires d’ambassade, ainsi qu’avec ses collègues du palais Farnèse. La ville de Rome occupe en effet une place particulière du point de vue des relations internationales car deux corps diplomatiques y cohabitent, et s’y mêlent, dans la période de l’après-guerre. Le journal de Wladimir d’Ormesson se fait le témoin des frontières poreuses qui existent entre les ambassades accréditées auprès du Saint-Siège et en Italie. Ce document renseigne également sur les frais de représentation de l’ambassadeur. Sans réécrire la comptabilité de l’ambassade, il s’agit de mettre en lumière les réformes du Quai d’Orsay d’après-guerre (réduction du personnel, traitements, parc automobile et immobilier) et de comprendre l’organisation d’une ambassade (emploi du temps, personnel, valise diplomatique, correspondance diplomatique et liens avec le Quai d’Orsay).</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>La France à Rome : place et représentation</head>
+          <p>La France entretient depuis longtemps des liens privilégiés avec le Saint-Siège, malgré des ruptures dont la plus importante remonte au début du <num>xx<hi rend="sup">e</hi></num> siècle avec la fin des relations diplomatiques entre les deux États entre 1904 et 1921. En 1948, cette interruption semble oubliée et la France catholique renaît à Rome. Elle y possède des églises et des immeubles qui sont réunis dans la fondation des Pieux Établissements de la France à Rome et à Lorette, une institution qui connaît une crise due au détournement de fonds d’un de ses membres. Le Centre d’études Saint-Louis-des-Français, créé par Jacques Maritain, se développe durant l’ambassade d’Ormesson, qui a pour lui de grandes ambitions, avec le père Darsy, conseiller culturel de l’ambassade. Wladimir d’Ormesson devient rapidement une personnalité importante dans le paysage diplomatique et culturel romain, et il rétablit des traditions françaises à Rome, à Saint-Pierre pour la messe de la Sainte-Pétronille, et à Saint-Jean-de-Latran. Wladimir d’Ormesson a laissé une trace importante dans l’histoire de l’ambassade de France près le Saint-Siège car c’est durant sa mission qu’elle a trouvé une résidence définitive après avoir erré de palais en palais. Les Ormesson s’installent à la fin de l’année 1950 à la Villa Bonaparte. La demeure est un centre d’attraction de la vie mondaine et diplomatique romaine dès son inauguration. Elle occupe une place importante dans le journal, comme lieu de vie et de réception, mais aussi parce qu’elle révèle des tensions entre les milieux français et allemands de Rome : la villa a abrité l’ambassade d’Allemagne près le Saint-Siège et fut saisie après la guerre, occupée par différents services puis rachetée par la France pour en faire le siège de son ambassade près le Saint-Siège. Wladimir d’Ormesson accorde une grande importance à cette villa et à sa gestion.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Splendeurs et misères d’une mission</head>
+          <p>Wladimir d’Ormesson occupe un poste prestigieux et convoité. Nombreux sont les diplomates qui durant sa mission cherchent à le remplacer à Rome ; il y reste cependant pendant huit années, durant lesquelles sa mission représente à la fois un grand honneur mais aussi une somme de réceptions et d’événements qui fatiguent le sexagénaire qu’il est. Wladimir d’Ormesson est toutefois convaincu de l’utilité de sa présence à Rome, parce qu’il entretient de bons rapports avec la Secrétairerie d’État du Saint-Siège et avec les évêques français. Les notes que l’ambassadeur prend dans son journal sur son travail et ses entretiens avec les interlocuteurs à Rome permettent d’avoir son regard personnel sur les affaires qu’il doit traiter, comme celle, avortée, du long projet de concordat mené dans les années 1950, et dans lequel l’ambassadeur s’était investi. Dans sa mission, nombreux sont les soutiens de Wladimir d’Ormesson, mais il a aussi des adversaires, dont Vincent Auriol, qui le considère comme un mauvais ambassadeur pour la France.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Wladimir, comte d’Ormesson</head>
+        <div>
+          <head>Chapitre V<lb/>La forteresse familiale</head>
+          <p>À Rome, Wladimir d’Ormesson installe une vie de famille pour les siens, y marie deux de ses fils et accueille souvent ses proches et parents. Le journal de l’ambassadeur permet de dresser un portrait de l’ambassadrice, son épouse Maria Concepcion d’Ormesson, surnommée Conchita par tous. Celle-ci occupe une place importante dans la mission de son époux, notamment dans l’aménagement de la Villa Bonaparte, mais aussi dans la réception des hôtes de l’ambassade. À son instar, elle occupe elle aussi un rôle de représentation. Avec l’épouse de Jacques Fouques-Duparc, ambassadeur de France en Italie, elle préside et organise des fêtes de charité. Le journal ne fournit cependant que peu d’information sur cette figure centrale de l’ambassade. Le lecteur en apprend plus sur la vie familiale que sur le rôle d’ambassadrice de l’épouse de Wladimir d’Ormesson. Ce dernier s’épanche souvent sur ses relations avec ses enfants, ainsi que sur la tenue de deux de ses principales propriétés, les châteaux d’Ormesson et de Lézignan-la-Cèbe.</p>
+        </div>
+        <div>
+          <head>Chapitre VI<lb/>Une sociabilité aristocratique</head>
+          <p>Wladimir d’Ormesson, comte, fréquente la haute société en France mais aussi en Italie. Il voit la grandeur des fêtes romaines, avec ses laquais poudrés, qui se heurte à la progression du communisme en Italie et, de l’étranger, les grandes grèves d’après la Libération en France. Le journal est un instantané de la société romaine, patriciat d’un autre âge, dans les années 1950, dans tout son faste mais aussi son ridicule. Wladimir d’Ormesson est ainsi très critique à l’égard de la noblesse pontificale et de l’Ordre de Malte, qui est alors en crise et lui demande d’être un intermédiaire entre le Saint-Siège et lui. Pourtant, il ne déroge pas à la vie sociale aristocratique et mondaine, et il s’inscrit ainsi dans plusieurs cercles, notamment le Cercle de Rome, fondé à l’occasion de l’Année sainte, qu’il préside à partir de 1954. Huit années passées à Rome permettent également à l’ambassadeur de lier des relations d’amitié avec d’autres diplomates en poste à Rome. Enfin, s’il est expatrié, Wladimir d’Ormesson rentre régulièrement en France pour ses congés, et reçoit aussi des Français en Italie. Il se dessine donc dans son journal un portrait de la société française.</p>
+        </div>
+        <div>
+          <head>Chapitre VII<lb/>Un homme de traditions</head>
+          <p>Wladimir d’Ormesson est un homme de lettres, il a le sens de la formule et ne se prive pas dans son journal de peindre des portraits piquants des personnes qu’il rencontre ou des situations qu’il vit. Enfin c’est un homme de son époque qui fustige notamment la présence trop forte à son goût de protestants et de Juifs au sein du ministère des Affaires étrangères ou dans la classe politique. Il est aussi sans pitié pour le comportement des importuns, indésirables et autres casse-pieds qu’il reçoit à l’ambassade. Ses anecdotes sont nombreuses et colorent le journal. Né en 1888 et ayant vécu la majeure partie de sa jeunesse dans des ambassades françaises en Europe, Wladimir d’Ormesson a connu le faste des cours européennes, la belle époque, les fêtes parisiennes, les deux guerres mondiales. En 1948, c’est un homme de soixante ans qui est envoyé à Rome et les temps ont changé. Dans la Ville éternelle, il est le témoin d’une époque qui finit. Il rencontre par exemple à Rome la reine d’Espagne déchue (veuve d’Alphonse XIII), la reine d’Italie déchue, le prince Napoléon, le comte de Paris, les princes de Bourbon. Pendant la guerre, le château d’Ormesson a été saccagé, il n’est plus habité que quelques semaines par an, les Ormesson ne trouvent plus de bons domestiques, ils voient les classes moyennes rouler dans les mêmes automobiles qu’eux : ils sont confrontés à la modernité, matérielle mais aussi spirituelle. Inquiet pour son avenir et celui de la ferme d’Ormesson, l’ambassadeur sait que les fastes du passé ne reviendront pas. Malgré ces notes pessimistes, Wladimir d’Ormesson assume son rôle à Rome, où il assure le décanat du corps diplomatique, une place honorifique qui le comble de fierté. C’est aussi le cas de son élection à l’Académie française, alors qu’il est toujours ambassadeur de France, une élection qui couronne sa carrière et sa vie publique.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Au plaisir de Dieu</head>
+        <div>
+          <head>Chapitre VIII<lb/>Un catholique dans la Ville Éternelle</head>
+          <p>Wladimir d’Ormesson participe à toutes les cérémonies religieuses au Vatican et à Rome. L’année sainte 1950 est à ce point de vue particulièrement importante, du fait de l’inflation du nombre de pèlerinages, de messes, de cérémonies à Rome. Wladimir d’Ormesson participe à ces rites en tant qu’ambassadeur, mais aussi en tant que catholique. Quand il arrive à Rome, il devient paroissien de Saint-Louis-des-Français, il reçoit à genoux la bénédiction du pape quand il le voit, il choisit un confesseur, communie et se confesse souvent. Il admire aussi la grandeur des rites romains. Sa foi s’affirme dans cette ville centrale pour le catholicisme et il confie à son journal ses intentions de prière et ses considérations religieuses, dans des passages qui prennent alors une tournure intime.</p>
+        </div>
+        <div>
+          <head>Chapitre IX<lb/>Un témoin de la vie de l’Église</head>
+          <p>Wladimir d’Ormesson observe à Rome les changements et les constantes de l’Église. Dans son journal, il dresse donc un portrait de cette Église, notamment du pape et de ses collaborateurs à la Secrétairerie d’État et à la Curie. L’ambassadeur a un avis partagé sur Pie XII : il le considère comme un saint, mais il reconnaît aussi qu’il a des défauts dans sa façon de gouverner l’Église, qui glisse peu à peu vers une autocratie réactionnaire. Wladimir d’Ormesson pense également que la Curie romaine devrait être réformée, et que le pape est pris entre les griffes de cardinaux « intégristes », notamment Mgr Canali et Mgr Pizarrdo. Il manque aussi un responsable à la tête de la Secrétairerie d’État, ce qui n’empêche pas l’ambassadeur de faire l’éloge de Mgr Montini, futur Paul VI, et de Mgr Tardini, les pro-secrétaires d’État du Saint-Siège. En plus de ces portraits personnels, Wladimir d’Ormesson est aussi un observateur des diverses expériences de l’époque, comme celle des prêtres-ouvriers. D’un point de vue personnel, Wladimir d’Ormesson est ouvert aux innovations quand elles respectent la tradition et les dogmes. S’il jette un regard d’abord bienveillant sur les prêtres-ouvriers, il regrette rapidement leur dérive communisante. Il n’approuve cependant pas l’attitude intégriste qu’il dénonce au Saint-Office et à la congrégation pour la Propagation de la foi, qui attaquent et condamnent certains intellectuels et théologiens français et remettent en cause l’art sacré contemporain. Dans toutes ces affaires, Wladimir d’Ormesson reste toutefois un fils obéissant de l’Église, malgré ses critiques.</p>
+        </div>
+        <div>
+          <head>Chapitre X<lb/>L’avocat de la France catholique à Rome</head>
+          <p>L’extrême respect de Wladimir d’Ormesson pour le Magistère et le Saint-Siège n’empêche pas qu’il soit à Rome en tant que Français, et défende donc ses compatriotes. Dans cette époque de bouillonnement intellectuel, il souhaite que la France ne soit plus soupçonnée de velléités progressistes à Rome. Il œuvre donc pour le rapprochement entre le Vatican et les intellectuels français catholiques en créant des rencontres informelles, avec l’accord du pape. Il considère que la France catholique a des ennemis à Rome, qu’ils soient allemands, espagnols ou même français, et il essaye de les écarter. À la Curie et dans les postes diplomatiques romains à l’étranger, il tente d’influencer le Saint-Siège en faveur de la nomination de personnel français. Lors de l’année sainte, il tente, sans succès, de faire adopter par le Saint-Siège un appareil émetteur français de télévision, une affaire qui l’occupe pendant plusieurs années et qui a pour but de renforcer la présence française au Vatican. Il se dégage du journal une idée à laquelle Wladimir d’Ormesson est attaché, celle que la France et le Saint-Siège communiquent en ne se connaissant qu’imparfaitement. Il se fait donc tantôt l’avocat de la France à Rome, tantôt l’avocat du Saint-Siège en France, aussi bien dans ses dépêches diplomatiques que dans ses discussions avec les hommes politiques, le clergé romain ou français, les Français de passage à Rome.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Un conservateur</head>
+        <div>
+          <head>Chapitre XI<lb/>L’homme d’aucun parti ?</head>
+          <p>Wladimir d’Ormesson est un monarchiste, orléaniste, de cœur. Mais son journal fait rapidement comprendre que malgré son admiration pour la royauté, et notamment celle anglaise qui est bien vivante, il accepte la forme républicaine du régime français. Son positionnement politique est celui d’un conservateur, bien qu’il s’en défende parfois. S’il appelle de ses vœux le retour du général de Gaulle, le seul digne de relever la France selon lui, il croit que son heure n’est pas encore venue car celle-ci nécessiterait des heures plus dramatiques. Il est par ailleurs déçu de l’attitude trop extrême du général de Gaulle.</p>
+        </div>
+        <div>
+          <head>Chapitre XII<lb/>Un observateur de la vie politique</head>
+          <p>Wladimir d’Ormesson est très critique envers le régime français. Il estime qu’un régime électoraliste s’est mis en place en France et a pris le pas sur le parlementarisme. Il considère que le MRP, qu’il soutient, se laisse dicter sa loi par la SFIO. En poste à Rome, il est aussi le témoin des luttes entre les partis de droite pour le vote catholique : chacun envoie des représentants à Rome prêcher pour son parti auprès des prélats, espérant des consignes de vote aux catholiques en retour. Recevant régulièrement des ministres, Wladimir d’Ormesson trouve toujours qu’ils font preuve d’orgueil et gaspillent les deniers publics, entre les avions privés et leurs chauffeurs, ce qui lui paraît d’autant plus injuste que le Quai d’Orsay diminue ses crédits. De nombreux hommes politiques comme Georges Bidault ou François Mitterrand sont la cible de ses critiques. Ces dernières ne s’adressent toutefois pas à son gendre Pierre de Chevigné qui fait plusieurs fois partie du gouvernement.</p>
+        </div>
+        <div>
+          <head>Chapitre XIII<lb/>Une certaine idée de la France et du monde</head>
+          <p>Wladimir d’Ormesson considère que la France ne tient pas son rang. Cette impression lui vient tout d’abord des hommes politiques qu’il rencontre. Pour lui, Vincent Auriol est par exemple digne d’un café du commerce de Toulouse mais pas de la présidence de la République. C’est aussi à l’occasion d’affaires comme celle de la Sarre ou de la montée des troubles coloniaux qu’il trouve que la France n’est plus ce qu’elle était et que le laxisme règne à la tête de l’État. Ces considérations sur la situation internationale se doublent souvent d’une critique envers les autres pays, les petites puissances qui prennent plus de place sur la scène mondiale. La présence au Saint-Siège d’ambassadeurs de pays tels que l’Équateur ou la République dominicaine sont pour lui un signe de cet effondrement de la hiérarchie des puissances. Il considère par ailleurs que les institutions internationales qui naissent alors sont inutiles, notamment l’ONU et ses dérivés comme l’UNESCO, ou même l’OTAN, parce qu’elles permettent à de petits États de dérégler le concert des nations. La communauté européenne trouve toutefois grâce à ses yeux, en ce qui concerne les accords économiques du pool acier-charbon ; les volontés d’union plus politique sont pour lui une perte de temps et d’argent. Après la Seconde Guerre mondiale, le communisme est très présent en Italie ainsi qu’en France. C’est un parti d’importance nationale et les élections qui se succèdent dans les deux pays durant la mission de Wladimir d’Ormesson le prouvent. Celui-ci les suit de près et s’intéresse beaucoup aux résultats qu’il commente longuement dans son journal. Cette importance accordée au communisme et à la lutte contre ce système est accentuée par la montée en puissance des troubles dans les colonies. L’ambassadeur soutient l’empire colonial de la France. La guerre en Indochine, mais aussi la guerre de Corée qui éclate en 1950 renforcent Wladimir d’Ormesson dans sa position. Il voit aussi dans les troubles au Maghreb un coup des communistes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>En 1956, Wladimir d’Ormesson apprend que sa mise à la retraite approche. Il cherche alors à intégrer un nouveau journal, <hi rend="i">Le temps de Paris</hi>, dont la publication cesse avant même son retour en France. Il quitte Rome à la fin du mois de septembre 1956, après avoir obtenu une rallonge de sa mission pour mener les discussions avec la Secrétairerie d’État sur le projet de concordat. L’ambassade de France près le Saint-Siège est un poste convoité et qui est attribué à Roland de Margerie, un successeur que Wladimir d’Ormesson connaît bien et apprécie, mais qu’il ne trouve pas le plus approprié pour prendre sa place. À soixante-sept ans, l’ambassadeur ne pouvait rester beaucoup plus longtemps en poste et avait trouvé dès le 3 mai une retraite de choix en étant élu à l’Académie française, au fauteuil de son ami Paul Claudel. Les honneurs se succèdent alors. Il devient président du conseil d’administration de l’Office de la radiodiffusion-télévision française (ORTF), reçoit la dignité de Grand-Croix de la Légion d’Honneur, est nommé par le pape Paul VI membre non résident à Rome du Conseil de l’État de la Cité du Vatican, et siège au Haut Comité pour la défense et l’expansion de la langue française. À partir de 1969 il se retire peu à peu de ses obligations et publie un dernier livre de souvenirs, <hi rend="i">De Saint-Pétersbourg à Rome</hi>. Le 15 septembre 1973, Wladimir d’Ormesson s’éteint à Ormesson-sur-Marne. Il a tenu son journal jusqu’au 14 septembre 1973.</p>
+        <p>Le journal de Wladimir d’Ormesson est un document riche de détails, d’anecdotes et de portraits qui permettent de dresser celui d’un homme passionné de politique, pieux, à la fois traditionnel, conservateur, et ouvert à certaines expériences religieuses et politiques. Si l’historien reste sur sa faim quant à certaines questions que l’ambassadeur n’évoque que peu ou pas, le journal met au jour des affaires ou des points de vue qui sont absents des archives institutionnelles. L’étude de seulement huit années de ce journal montre que ce manuscrit du for privé est une source intéressante pour l’histoire du xxe siècle et invite à étendre l’étude de ce document, mémoires d’un siècle tourmenté, à d’autres périodes.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Édition de divers discours de Pie XII, de Wladimir d’Ormesson, de René Brouillet, de Daniel-Rops. — Manifeste des prêtres-ouvriers du 2 février 1954. — Édition de vingt-deux extraits du journal de Wladimir d’Ormesson. — Rapports d’inspection des postes diplomatiques et consulaires.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Arbres généalogiques. — Tableau récapitulatif du personnel diplomatique. — Liste des ambassadeurs de France près le Saint-Siège et leurs ministres. — Les évêques français de 1948 à 1956. — Plan de Rome. — Étude codicologique du journal de Wladimir d’Ormesson. — Tableaux de concordance des cotes du journal de Wladimir d’Ormesson aux Archives nationales.</p>
+        </div>
+        <div>
+          <head>Illustrations</head>
+          <p>Photographies illustrant la mission près le Saint-Siège de Wladimir d’Ormesson et la présence française à Rome.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

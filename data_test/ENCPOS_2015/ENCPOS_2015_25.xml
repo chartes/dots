@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2015_25" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le <hi rend="i">Libellus de notitia orbis</hi> de Jean, Archevêque de Sultanieh</title>
+        <author ref="https://www.idref.fr/183701135">Nadia Tarfaoui</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2015 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2015</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2015"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le <hi rend="i">Libellus de notitia orbis</hi> de Jean, Archevêque de Sultanieh</head>
+      <byline>
+        <forename>Nadia</forename>
+        <surname>Tarfaoui</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>En 1404, Jean, archevêque dominicain de Sultanieh, ville située dans le nord de l’Iran, rédige un ouvrage général qui a pour but de faire le point sur les différentes religions qu’il est possible de trouver en Orient : le <hi rend="i">Libellus de notitia orbis.</hi></p>
+        <p>Jean de Sultanieh, né en Orient d’une famille italienne, apporte à son œuvre ce regard particulier, propre à celui qui peut observer à distance deux mondes quasiment étrangers l’un à l’autre. Son expérience personnelle emplit le <hi rend="i">Libellus de notitia orbis</hi> de tout ce qu’il a pu concevoir au cours de sa vie riche en événements. Il s’est acquitté de diverses missions diplomatiques : les cardinaux du concile de Pise en font leur ambassadeur, comme l’avait fait Tamerlan quelques années auparavant. Familier des souverains, il fréquente Tamerlan, Charles VI, roi de France, ou Henri IV, roi d’Angleterre.</p>
+        <p>Jean de Sultanieh compose le <hi rend="i">Libellus</hi> pour lutter contre l’inconscience qu’il perçoit en Europe vis-à-vis des problématiques orientales. Il décrit alors les rites et coutumes de ces chrétiens lointains ainsi que les populations qui les entourent. Des musulmans du Maghreb aux femmes poilues de Taprobane, Jean de Sultanieh esquisse le portrait d’un monde complexe où les chrétiens sont majoritaires mais dominés. Ce texte, qui appelle à l’union des Latins et à l’envoi de missionnaires en ces contrées reculées, est un des derniers textes de mission, avant que les religieux se retirent de la politique orientale pour laisser la place aux militaires.</p>
+        <p>Ce texte a déjà fait l’objet d’une édition partielle publiée par Anton Kern en 1938, dans les <hi rend="i">Archivum Fratrum Predicatorum.</hi> Celle-ci a pour base les manuscrits conservés à Leipzig et à Graz. Le présent travail propose une édition intégrale en latin, ainsi qu’une traduction et un commentaire, qui permettent de replacer le texte de Jean de Sultanieh dans toute la richesse de son contexte.</p>
+      </div>
+      <div>
+        <head>Sources</head>
+        <p>Six manuscrits sont connus à ce jour et il demeure la trace d’un autre manuscrit disparu après le <num>xvii<hi rend="sup">e</hi></num> siècle. Nous n’avons collationné pour cette étude que cinq de ces six manuscrits : le manuscrit E III 17 conservé à l’Universitätsbibliothe<hi rend="i">k</hi> de Bâle n’est pas compris dans ce travail. Quatre des manuscrits contiennent l’intégralité du <hi rend="i">Libellus de notitia orbis</hi> : Graz, Universitätsbibliothek, 1221, fol. 41-127 ; Klosterneuburg, Stiftsbibliothek, 1099, fol. 175-242v ; Leipzig, Universitätsbibliothek, 1225, fol. 183-224vb ; Sankt Pölten, Diözesanarchiv, 63, fol. 1-113. Et le cinquième ne contient que les éléments plus particulièrement liés à l’islam et aux chrétiens d’Orient : Bâle, Universitätsbibliothek, A V 25, fol. 120-157v.</p>
+      </div>
+      <div>
+        <head>Première partie <lb/>Présentation</head>
+        <div>
+          <head>Chapitre premier <lb/>Le contexte</head>
+          <p>Les contacts entre les puissances asiatiques, africaines et européennes sont déjà traditionnels au début du <num>xv<hi rend="sup">e</hi></num> siècle, époque de rédaction du <hi rend="i">Libellus de notitia orbis.</hi> Depuis l’Antiquité, les marchands, aussi bien que les chefs militaires comme Alexandre le Grand, ont établi des liens entre ces différentes régions du monde. Après une période de stagnation des échanges, ceux-ci reprennent avec encore plus d’intensité à partir de l’installation des États latins en Terre sainte et des colonies commerciales italiennes sur le pourtour de la mer Noire et de la Méditerranée. Les rapports entre les souverains orientaux et européens ne sont pas dénués d’intérêts religieux, puisque l’espoir d’une alliance de revers contre les musulmans est entretenu par des légendes comme celle du prêtre Jean ou des rumeurs de conversions de certains princes mongols entre autre.</p>
+          <p>Les différents papes appuient cet espoir de christianisation des régions orientales en envoyant des frères prêcheurs ou mineurs accomplir des missions d’apostolat. Ceux-ci installent même une hiérarchie pérenne dans ces espaces et prennent en charge aussi bien l’évangélisation des peuples païens ou musulmans que les relations avec les chrétiens présents dans ces contrées. L’archevêché de Sultanieh, dirigé presque exclusivement par des dominicains, est fondé en 1318 ; son ressort s’étend sur tout l’Empire perse contrôlé par les Mongols, à l’exception des territoires situés à l’ouest du mont Ararat, sur la Transoxiane et l’Inde.</p>
+          <p>Le dynamisme des échanges religieux et diplomatiques ainsi que les établissements présents dans les régions orientales sont cependant mis en péril par la puissance ottomane de Bayezid I<hi rend="sup">er</hi> dès le dernier tiers du <num>xiv<hi rend="sup">e</hi></num> siècle. Ce danger est réellement perçu par les souverains européens après la défaite des forces chrétiennes unies contre les troupes turques à Nicopolis. En 1404, au moment où Jean de Sultanieh rédige son œuvre, l’étau turc s’est desserré après la défaite de Bayezid face à Tamerlan, à Ankara, en 1402. L’annonce de cette victoire constitue un des éléments remarquables du voyage que Jean de Sultanieh effectue en Europe à partir de 1402.</p>
+          <p>L’aube du <num>xv<hi rend="sup">e</hi></num> siècle, époque de rédaction du <hi rend="i">Libellus</hi>, apparaît donc bien plus qu’un simple changement de siècle ; elle marque un bouleversement fondamental de la société. Alors que les <num>xiii<hi rend="sup">e</hi></num> et <num>xiv<hi rend="sup">e</hi></num> siècles avaient été favorables aux voyages de terre et aux missions, le <num>xv<hi rend="sup">e</hi></num> siècle s’annonce belliqueux.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Jean de Sultanieh</head>
+          <p>L’identité de Jean de Sultanieh, l’auteur du <hi rend="i">Libellus de notitia orbis</hi>, a longtemps été inconnue, et cela a donné lieu à de nombreuses suppositions. Celui-ci a été appelé Jean de Galonifontibus ; c’est d’ailleurs sous ce nom qu’Anton Kern édite certains passages du <hi rend="i">Libellus.</hi> Cette appellation était proposée en lien avec la ville de Gaillefontaine en Normandie, ce qui suggérait une origine française. Une autre proposition a rapproché ce nom de Greenlaw : Jean de Sultanieh aurait donc été anglais. Ces hypothèses cependant étaient contredites par deux éléments : le premier était les propos de l’auteur lui-même qui affirmait être italien ; le deuxième était que ce dernier portait une barbe à la façon des Grecs. Il est un moyen qui permet de concilier toutes ces données et qui est, par bonheur, confirmé par des sources : l’auteur du <hi rend="i">Libellus</hi> est né dans une famille italienne installée dans la ville de Kastamonu, sur les bords de la mer Noire. Outre cette information sur son lieu de naissance, nous manquons d’indications qui pourraient nous permettre de retracer les premières années de sa vie.</p>
+          <p>Jean de Sultanieh est polyglotte puisqu’il parle arabe, perse, italien et français et qu’il est permis de penser qu’il avait sans doute quelques connaissances de la langue mongole. Cette supposition est due à ses rapports privilégiés avec Tamerlan et son fils Miranshah. L’auteur du <hi rend="i">Libellus</hi> effectue deux voyages en Europe : le premier en 1398 en tant qu’évêque de Nakhichevan, au cours duquel il reçoit la bulle pontificale qui le nomme archevêque de Sultanieh ; le deuxième à partir de 1402, pendant lequel il visite de nombreuses cours européennes dont celles de Charles VI, roi de France, ou Henri IV, roi d’Angleterre. Durant ce séjour qui dure plusieurs années – puisque Jean de Sultanieh ne prend le chemin du retour qu’en 1410 –, il rédige son <hi rend="i">Libellus de notitia orbis</hi> ainsi qu’un autre ouvrage sur la cour de Tamerlan ; il participe au concile de Pise dont le but est de mettre fin au Grand Schisme ; et il prend part à la vie spirituelle de l’ordre dominicain, en encourageant une réforme de ce dernier. Il meurt certainement aux environs de 1412, car bien que la date exacte soit impossible à établir avec précision, le dernier document qui rapporte sa présence le montre en 1412 dans la ville de Lviv en Pologne.</p>
+        </div>
+        <div>
+          <head>Chapitre III <lb/>Le texte</head>
+          <p>Cette partie comprend tout d’abord une description des manuscrits contenant le <hi rend="i">Libellus de notitia orbis</hi> : Graz, Universitätsbibliothek, 1221, fol. 41-127 ; Klosterneuburg, Stiftsbibliothek, 1099, fol. 175-242v ; Leipzig, Universitätsbibliothek, 1225, fol. 183-224vb ; Sankt Pölten, Diözesanarchiv, 63, fol. 1-113 ; Bâle, Universitätsbibliothek, A V 25, fol. 120-157v et E III 17, fol. 92r-116v. Nous avons ensuite essayé de mettre en avant le processus de travail de Jean de Sultanieh par le biais de l’usage qu’il fait des sources dont il s’inspire et de la construction du texte du <hi rend="i">Libellus.</hi></p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie <lb/>Commentaire</head>
+        <div>
+          <head>Chapitre premier <lb/>L’Orient de Jean de Sultanieh</head>
+          <p>Jean de Sultanieh présente une image hautement personnelle de l’Orient. Cela se voit dans l’organisation qui est présentée, où les pays sont décrits et situés selon un schéma plus ou moins strict que l’auteur respecte tout au long de l’ouvrage. L’attention du lecteur est ensuite attirée vers deux éléments qui sont au cœur des problématiques de Jean de Sultanieh : les langues et leurs usages, ainsi que les religions.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Un Orient étonnant</head>
+          <p>Jean de Sultanieh présente plusieurs faits étonnants sur l’Orient et, bien que certains d’entre eux soient effectivement des <hi rend="i">mirabilia</hi> dans le sens de merveilles comme nous l’entendons aujourd’hui, la plupart d’entre eux relèvent uniquement de l’étonnement lié à la découverte de l’inconnu : il peut s’agir de pratiques agricoles particulières, de plantes aux vertus spécifiques ou de paysages prodigieux.</p>
+        </div>
+        <div>
+          <head>Chapitre III <lb/>Un Orient politique</head>
+          <p>Jean de Sultanieh décrit également le monde oriental comme un ensemble de puissances ou de peuples divers. Nous avons alors essayé de montrer comment l’auteur du <hi rend="i">Libellus</hi> discrimine les différentes populations et en quoi les moyens utilisés peuvent parfois faire penser que Jean de Sultanieh percevait dans certains ensembles géographiques la présence d’une nation au sens presque contemporain du terme. Dans cette partie politique ont été inclus les éléments qui concernent le commerce et qui se trouvent disséminés à différents endroits du texte.</p>
+        </div>
+        <div>
+          <head>Conclusion</head>
+          <p>Après la rédaction de ce texte, l’empire mongol s’effondre avec la mort de Tamerlan en 1405, emportant avec lui la sécurité offerte aux voyageurs sur terre ; marchands et militaires remplacent bientôt les missionnaires sur les routes orientales ; la force remplace la raison. C’est pourquoi Claudine Delacroix-Besnier qualifie le <hi rend="i">Libellus de notitia orbis</hi> de « dernier témoin littéraire de l’esprit missionnaire dominicain au Moyen Âge », dernier témoin de cet idéal mendiant, sans doute déjà tombé en désuétude, que Jean de Sultanieh défend tout au long de sa vie, avant la renaissance des échanges religieux avec les jésuites au <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie <lb/>Édition</head>
+        <div>
+          <head>Chapitre premier <lb/>Édition</head>
+          <p>Après un exposé des règles suivies pour l’édition, se trouve le texte établi à partir de cinq manuscrits.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Traduction</head>
+          <p>Après un exposé des règles suivies pour la traduction, se trouve une proposition de traduction française du texte de Jean de Sultanieh.</p>
+        </div>
+      </div>
+      <div>
+        <head>Annexes</head>
+        <p>Cartes. — Tableaux chronologiques.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

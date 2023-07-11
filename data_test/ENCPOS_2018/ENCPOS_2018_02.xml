@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2018_02" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>« Soulager l’humanité souffrante ». La bienfaisance du duc de Charost en milieu rural, 1770-1800</title>
+        <author>Anne-Claire Bourgeon</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2018 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2018</date>, <biblScope>p. 21-32</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2018"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>« Soulager l’humanité souffrante »
+        <lb/>La bienfaisance du duc de Charost en milieu rural, 1770-1800</head>
+      <byline>
+        <forename>Anne-Claire</forename>
+        <surname>Bourgeon</surname>
+        <roleName>diplomée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Le déluge d’hommages à la mort du duc de Charost contraste étrangement avec l’indifférence dont il fut victime en matière historiographique. Armand-Joseph de Béthune-Charost (1738-1800) est pourtant une personnalité marquante de son temps. Ce duc et pair en incarne les aspirations idéalistes tout autant qu’un attachement certain aux structures du passé. Comme les partisans des Lumières, il porte aux nues un nouveau concept : la philanthropie. Se détachant d’une charité trop étroitement confessionnelle, les philanthropes entendent venir au secours de tous les hommes. Ils le font non par amour de Dieu, mais par amour de l’humanité. L’assistance devient plus rationnelle et tente de disperser en amont les germes de la misère. S’attachant aux satisfactions matérielles, elle tente d’assurer aux hommes leur subsistance quotidienne. Philanthropie et agriculture se retrouvent ainsi nécessairement liées.</p>
+        <p>Si l’agronomie n’apparaît pas au <num>xviii<hi rend="sup">e</hi></num> siècle avec les ouvrages de Duhamel de Monceau, l’intérêt pour cette science prend un tout autre tournant avec le succès de la physiocratie. Cette doctrine économique, selon laquelle la terre est la première créatrice de richesses, fait des émules au sein du gouvernement.</p>
+        <p>Ces théories ne sont pas étrangères au duc de Charost, qui ambitionne, motivé par de multiples obligations, de « soulager l’humanité souffrante ». La bienfaisance qu’il entreprend s’applique à Paris, refuge de la misère, mais aussi sur les terres de son duché-pairie qui constitue le cadre de cette étude.</p>
+        <p>La thèse porte sur les manifestations de la bienfaisance ducale et en questionne les fondements. Elle entend dépasser le traitement habituellement disjoint de l’assistance telle qu’elle se pratique en ville et de l’assistance en milieu rural, qui passe entre autres par un encouragement aux modernisations agricoles. Le duc de Charost nourrit de grandes espérances sur sa seigneurie, qui ne furent pas toujours de francs succès. La Révolution modifie l’architecture de son système mais ne freine pas les ardeurs du duc, qui ne cesse de concevoir des projets à plus vaste échelle.</p>
+        <div>
+          <head>Sources</head>
+          <p>Charost étant avant tout un noble parisien, doté d’une grande fortune et à la tête d’une constellation de propriétés foncières, les dépouillements au Minutier central ont permis d’établir le contour de l’ensemble des activités notariales sur la période 1770-1800. Est également conservée aux Archives nationales, dans la sous-série F10 233, sa correspondance avec la Commission d’agriculture et des arts, allant de l’an III à l’an VII. Le duc y communique les avancées de la société d’agriculture qu’il a créée dans le Cher. Enfin, les papiers confisqués de son fils Edme, cotés T 374, ont comblé certaines lacunes sur la gestion pratique des seigneuries.</p>
+          <p>Les sources concernant directement le duché-pairie sont conservées aux Archives départementales du Cher, à Bourges. Les archives judiciaires (série B), celles de l’intendance du Berry et de l’Assemblée provinciale, où siégea le duc (série C), les minutes de notaires (série E), ainsi que les archives révolutionnaires sur l’assistance et l’agriculture (série L), ont constitué l’essentiel du corpus de cette étude. Les Archives départementales conservent également, dans le fonds coté F 215, des documents d’un des procureurs fiscaux du duc, ainsi que les copies effectuées par un érudit qui eut accès aux archives du château de Meillant. Les archives communales déposées ont pu par ailleurs éclairer le déroulé de l’époque révolutionnaire dans les paroisses du duc. Enfin, les archives communales de Saint-Amand, conservées à la bibliothèque municipale Isabel Godin, ont également été consultées.</p>
+          <p>Les sources imprimées sont nombreuses : elles incluent les publications du duc de Charost, les journaux consacrés à l’agriculture, ainsi que des ouvrages d’agronomes, de scientifiques et de philanthropes. Pour la plupart, un exemplaire en est conservé à la Bibliothèque nationale de France.</p>
+          <p>Les archives du château de Meillant, dont le contenu est imprécis, sont encore conservées en mains privées et demeurent pour l’heure inaccessibles.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Présentation du cadre de l’étude</head>
+        <div>
+          <head>Chapitre premier<lb/>Biographie du duc de Charost</head>
+          <p>Les grandes lignes de la vie du duc figurent dans la notice qui lui est consacrée par l’érudit Louis Cartier Saint-René. Elle laisse toutefois des angles morts.</p>
+          <p>Le duc de Charost est né en 1738 à Versailles. Son grand-père, Paul-François de Béthune, lui lègue son office de gouverneur des ville et citadelle de Calais. Sa carrière militaire se limite à sa participation à la guerre de Sept Ans : il se consacre bien vite à d’autres engagements. De sa famille, il hérite une fortune importante et un empire foncier éclaté, dont la baronnie d’Ancenis en Bretagne, et surtout le duché-pairie du Berry. Il y fait de longs séjours, motivé notamment par ses responsabilités au sein de l’Assemblée provinciale à partir de 1779.</p>
+          <p>À Paris, il défend activement la cause des trois grandes associations philanthropiques du siècle : la Société philanthropique, la Charité maternelle et la Société de bienfaisance judiciaire. Il en élargit les rangs et les préside par intermittence. Parallèlement, il adhère à la Société royale d’agriculture, vaste rassemblement d’agronomes, mais aussi de physiocrates. Surpris par la Révolution, Charost se montre d’abord partisan des grandes ambitions du nouveau gouvernement et continue son œuvre d’assistance dans la capitale. Il quitte Paris en 1792 et se réfugie dans ses terres du Berry. Arrêté en 1794, entre autres parce qu’il est père d’émigré, il séjourne à la prison de La Force et n’en sort qu’après la chute de Robespierre. De retour dans le Berry, il ne cesse d’encourager l’agriculture <hi rend="i">via</hi> la Société d’agriculture et d’économie rurale de Meillant, qui regroupe quelques cantons du nouveau département. Le climat idéaliste de la Révolution l’encourage également, aux côtés de confrères, à présenter des plans de réforme plus ambitieux.</p>
+          <p>Retourné à Paris pour réfréner la misère grandissante, il est nommé maire de son arrondissement et directeur des établissements de bienfaisance dans les premières années du Consulat. Il meurt en 1800 de la petite vérole, une maladie qu’il a contractée en visitant l’Institut des aveugles.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Une seigneurie au <num>xviii<hi rend="sup">e</hi></num> siècle</head>
+          <p>Le duché-pairie, érigé comme tel en 1672, gravite autour de trois localités que sont Charost, Mareuil et Meillant. L’étendue est vaste, avec plus de 9 000 hectares de terres et 6 000 hectares de forêts. Les fermages des exploitations agricoles, mais surtout les bois et les forges, garantissent des revenus conséquents. Pour assurer la gestion d’une seigneurie restée vivace, le duc s’appuie sur un personnel bien précis. Des régisseurs ont en charge l’administration des domaines et vérifient la perception des droits seigneuriaux. Quant à l’application de la justice et au respect des règlements de police, ils sont assurés par des officiers. L’institution seigneuriale demeure la première structure d’encadrement sur les terres du duché. La communauté rurale reste ainsi sous la tutelle d’un duc qui a conservé une parcelle d’autorité publique.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>L’assistance dans le cadre de la seigneurie</head>
+        <div>
+          <head>Chapitre III<lb/>La pauvreté au <num>xviii<hi rend="sup">e</hi></num> siècle</head>
+          <p>Le pauvre au <num>xviii<hi rend="sup">e</hi></num> siècle est l’objet de beaucoup d’attention. Dans une société où l’Église n’est plus capable d’assurer sa mission d’assistance, l’opinion discute à présent du problème de l’indigence. À Paris, 10 % de la population est considérée comme indigente. Les contemporains ont une conscience nette de l’amplification de la misère et suggèrent des solutions. La distinction s’opère, comme de coutume, entre le bon et le mauvais pauvre et entre le pauvre et le vagabond. Tous ne peuvent bénéficier de secours qui sont souvent prodigués dans le cadre de la paroisse. Le Berry ne fait pas exception. Sur les terres du duc, les pauvres représentent une part non négligeable de la population.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Le duc et les pauvres</head>
+          <p>Sur ses terres, le duc de Charost prend à cœur sa mission d’assistance envers ses vassaux. Conformément à une classification des pauvres, il donne pour chaque catégorie une réponse adaptée. L’aide apportée pour chacune de ces catégories est analysée et mise en contexte avec ce qui se fait ailleurs dans le royaume. Charost promulgue des règlements dans des domaines qui ressemblent fort à ceux d’un État providence : santé, chômage, personnes âgées ou en situation de faiblesse. Il ne se contente pas d’une distribution d’aumônes mais introduit une organisation rationnelle de l’assistance. Le cas des orphelins et des enfants trouvés le préoccupe particulièrement, et fait donc l’objet d’une analyse plus poussée dans ce chapitre. Les relais sur lesquels s’appuie Charost sont généralement le curé et l’agent seigneurial, qu’il soit régisseur ou procureur. Pauvretés tant structurelle que conjoncturelle sont prises en compte dans la politique ducale.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Philosophie de la bienfaisance</head>
+          <p><hi rend="i">Le monde d’hier</hi>. — La politique d’assistance de Charost conserve une part de tradition. Le roi, puis tous les seigneurs après lui, ont comme obligation d’assister leurs vassaux. Le duc de Charost perpétue ainsi l’héritage de ses aïeuls. Il n’est pas le seul à faire de l’assistance un point d’honneur et conserve un rapport de paternité qu’il a, presque <hi rend="i">de jure</hi>, avec ses sujets.</p>
+          <p><hi rend="i">Au plaisir de Dieu, au bonheur des hommes</hi>. — De même, l’inspiration chrétienne est à prendre en compte pour interpréter ses motivations. Le duc de Charost est un chrétien, ni dévot ni libre penseur, mais convaincu que la religion l’incite à aimer les hommes et à œuvrer à leur bonheur. Toutefois, à la différence de grands nobles comme le duc de Penthièvre, il le fait avec moins de gravité. Son amour des hommes plus que son amour de Dieu le caractérise.</p>
+          <p><hi rend="i">Par-delàl’assistanceseigneuriale</hi>. — Ce qui singularise Charost par-dessus tout est sa capacité à excéder le cadre de la seigneurie dans ses aspirations bienfaisantes. Il en dépasse les frontières géographiques, mais également la condition sociale qu’elle lui octroie. Charost n’est pas seulement seigneur, c’est aussi un homme comme ses semblables.</p>
+          <p><hi rend="i">Le plaidoyer de 1794.</hi> — L’incarcération du duc en 1794 le force à justifier sa conduite passée. Ainsi qu’il l’explique dans son plaidoyer, il se sent investi de plusieurs responsabilités. Seigneur, il a voulu appliquer les principes d’un gouvernement paternel ; propriétaire, il s’est attaché à « soulager les besoins individuels ». Enfin, en tant que citoyen, il entendait œuvrer à la prospérité du pays, et secourir l’humanité.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>« L’agriculture est la mère de toutes les vraies richesses »</head>
+        <div>
+          <head>Chapitre VI<lb/>La passion des champs</head>
+          <p>Comme le dit Voltaire, la nation, rassasiée de vers et de tragédies, se mit enfin à raisonner sur les blés dans la seconde moitié du siècle. Agronomes et physiocrates encouragent les innovations et l’État s’y engage avec plus d’ardeur qu’auparavant. Le duc de Charost s’intéresse de près à la question. Il s’engage dans différentes structures, s’attachant à diffuser les nouveautés.</p>
+        </div>
+        <div>
+          <head>Chapitre VII<lb/>Les bonnes paroles des théoriciens</head>
+          <p><hi rend="i">Améliorations agricoles.</hi> — L’état agricole du Berry laisse le champ libre aux propositions en matière d’améliorations agricoles. Dans une lettre à Lamoignon de Malesherbes, le duc de Charost établit ses priorités pour la province. Elles vont des modifications de l’affermage à l’introduction de nouvelles plantes, en passant par une amélioration de l’élevage ovin. Le duc abonde dans le sens des agronomes, mais aussi des physiocrates.</p>
+          <p><hi rend="i">Modifications législatives.</hi> — Comme eux, il est convaincu qu’il faut assurer à l’agriculture l’intégrité de ses bénéfices, ce qui sous-entend une réévaluation des prélèvements fiscaux et autres obstacles financiers.</p>
+        </div>
+        <div>
+          <head>Chapitre VIII<lb/>Aux champs : la difficile application des théories</head>
+          <p><hi rend="i">État de l’agriculture dans le Berry.</hi> — Mais les belles paroles ne sont pas toujours suivies d’effets. Les contemporains, comme les historiens, dressent un portrait peu flatteur de l’état de l’agriculture dans le Berry. Entre le Moyen Âge et la révolution industrielle, peu de changements. Malgré sa position centrale, la province est isolée au sein du royaume.</p>
+          <p><hi rend="i">À l’Assemblée provinciale</hi>. — Le duc de Charost ne cesse de suggérer de nouvelles entreprises et mène trois chantiers qui ne parviennent pas à se concrétiser, faute de réponse de la part du monde paysan. Une école de berger, une manufacture et une école nationale restent au stade de projet. Certains résultats sont toutefois à souligner, comme la gestion de la corvée et la mise en place d’un réseau routier. <hi rend="i">À titre de particulier.</hi> — Charost tente également quelques innovations mais</p>
+          <p>il se heurte à l’esprit de routine de cultivateurs qui craignent trop les nouveautés et ne peuvent s’appuyer sur un capital financier suffisant. À la veille de la Révolution, les progrès sont trop faibles pour que l’on puisse parler d’un réel changement sur les terres du duc. L’analyse des baux de fermiers prouve combien les clauses ont peu évolué au fil des décennies. Stabilité du matériel agricole, quasi-absence des plantes fourragères, maintien d’une importante jachère : les progrès tant souhaités dans la lettre du duc à Malesherbes ne sont pas au rendez-vous.</p>
+          <p><hi rend="i">Pourquoi un tel échec</hi> ? — La première des raisons tient à la pauvreté des locaux et peut-être aussi à un dialogue parfois inefficace pour faire évoluer les mentalités. Le bilan des activités agronomiques, à cette période, est plutôt négatif.</p>
+        </div>
+        <div>
+          <head>Chapitre IX<lb/>Seigneur, agronome et philanthrope : une difficile conciliation ?</head>
+          <p><hi rend="i">Privilèges seigneuriaux : un entre-deux.</hi> — Les discours évoqués en matière de protection des gains agricoles critiquaient ouvertement les droits féodaux. Or ces derniers représentent un revenu financier non négligeable. Le duc de Charost est ainsi confronté à la difficile conciliation entre ses aspirations altruistes et les réalités de sa seigneurie. Il atténue des prélèvements fiscaux mais ne les supprime pas tous.</p>
+          <p><hi rend="i">Une gestion capitaliste</hi> ? — Un penchant auquel succombent bien des seigneuries du <num>xviii<hi rend="sup">e</hi></num> siècle consiste en une évolution capitaliste de la gestion des terres. Elle implique une attaque des biens et droits communaux, la valorisation de la figure du fermier général ainsi qu’un abandon de la cause des plus faibles. Le duc de Charost ne tombe pas dans cet écueil. Des litiges l’opposent certes à la communauté, mais ils n’ont rien d’inhabituel et restent d’ampleur contrôlée.</p>
+          <p><hi rend="i">Un accroissement des inégalités au sein de la communauté</hi> ? — Contrairement à l’Île-de-France étudiée par Jean-Marc Moriceau, ou à la Bourgogne de Pierre de Saint-Jacob, le duché-pairie conserve une élite rurale traditionnelle, que soutient le duc. Charost maintient ainsi, en affermant ses domaines, ceux qui sont déjà privilégiés. Mais il n’oublie pas non plus les plus modestes dans la distribution de ses faveurs.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Le temps de la Révolution : rupture ou continuité ?</head>
+        <div>
+          <head>Chapitre X<lb/>La Révolution au village</head>
+          <p><hi rend="i">Les tourments révolutionnaires.</hi> — Le duc de Charost, bien que député de la noblesse à l’assemblée du Berry, n’est pas membre des États généraux à Paris. Il reste politiquement absent durant cette période. Il ne se montre pas défavorable aux évolutions du régime et continue de faire œuvre d’assistance au comité de son district parisien. Son comportement citoyen ne parvient pas à lui éviter un passage par la prison en 1794.</p>
+          <p><hi rend="i">Auvillage</hi>. — Dans les terres qui se détachent peu à peu du statut de seigneurie, les communautés villageoises ne montrent pas d’agitation particulière. On y voit une preuve des bonnes relations que le duc entretenait avec les ruraux. Plus significatif encore est le fait que, dans les localités étudiées, ce sont les régisseurs du duc qui deviennent maires. Ils se maintiennent par ailleurs sur la période.</p>
+          <p><hi rend="i">Disparition seigneuriale</hi> ? — Bien que la communauté acquière une nouvelle autonomie, le pouvoir n’a pas fondamentalement changé de mains. La Révolution a toutefois créé une rupture fondamentale par la suppression de la structure seigneuriale. L’effacement de l’obligation légale d’assistance qu’avait Charost ne supprime pas son soutien financier aux organisations municipales d’aide aux démunis.</p>
+        </div>
+        <div>
+          <head>Chapitre XI<lb/>Une période propice aux encouragements agricoles ?</head>
+          <p><hi rend="i">Les nouveaux gouvernements et l’agriculture.</hi> — La Révolution poursuit à bien des égards la politique de l’Ancien Régime en matière agricole. Beaucoup de physiocrates ou d’agronomes qui avaient eu voix au chapitre avant 1789 continuent d’influencer les politiques agricoles.</p>
+          <p><hi rend="i">La Société d’agriculture et d’économie rurale de Meillant.</hi> — Il en va de même pour le duc qui n’abandonne pas ses ambitions passées. « Conçue dès l’an II, et en pleine activité en l’an V », la Société d’agriculture et d’économie rurale de Meillant (SAER) regroupe six cantons du département du Cher. C’est probablement le plus grand accomplissement du citoyen Béthune-Charost. La SAER est une des premières sociétés d’agriculture qui prennent vie et fonctionnent à une échelle locale. Les objectifs et les grandes lignes de la Société ne se démarquent pas par leur originalité. On y trouve néanmoins des cultivateurs locaux et non plus seulement de grands propriétaires dont si peu tenaient la charrue. Le bilan est plus encourageant que celui du duc avant la Révolution. Mais, à partir de l’an VIII, l’activité semble s’affaiblir et ne se manifeste plus par des publications ou des interventions dans les journaux. Même si le nom de la SAER est évoqué dans des souscriptions en 1805, et encore en 1817, plus aucune archive émanant d’elle n’est <hi rend="i">a priori</hi> conservée après l’an VIII. Malgré cet assoupissement, la Société a ouvert les propriétaires cultivateurs aux futures évolutions du <num>xix<hi rend="sup">e</hi></num> siècle. Nombre d’entre eux se retrouvent dans les sociétés et comices agricoles.</p>
+        </div>
+        <div>
+          <head>Chapitre XII<lb/>Les grands projets du duc de Charost</head>
+          <p>C’est par sa participation aux grands projets enfin que le duc de Charost se distingue. Il y développe une vision bien particulière de l’interaction entre pouvoir public et acteurs privés.</p>
+          <p><hi rend="i">Enseignement agricole.</hi> — Le premier projet étudié, le plus personnel, concerne l’enseignement agricole. Il est publié en l’an III sous le titre <hi rend="i">Vues générales sur l’organisation de l’instruction rurale en France</hi>. Les établissements proposés se veulent une vitrine d’un enseignement tant pratique que théorique qui s’adresse à des cultivateurs déjà « pratiquants ». Les idées ne sont pas toutes de Charost, mais elles synthétisent officiellement une architecture complète des différents échelons de l’enseignement agricole. Ses apports consistent essentiellement en l’ingérence de l’autorité publique dans des établissements privés – impulsion initiale, contrôle scientifique et administratif –, et dans la volonté de voir se répandre ces institutions sur tout le territoire. Les échos de la publication restent très incertains. Ce sont les théories qui sont analysées ici.</p>
+          <p><hi rend="i">Assistance.</hi> — Les deux autres projets sont rédigés en commun avec les membres de la Société royale d’agriculture et présentés en 1789 au gouvernement. Un plan de suppression de la mendicité établit, pour chaque domaine d’intervention, les remèdes à apporter et les acteurs censés les financer. Il affirme le droit du citoyen de réclamer des secours à l’État. Les propositions de ce rapport, qui reprennent en grande partie les idées développées par les philanthropes dans les dernières décennies, ne sont toutefois pas mises en œuvre.</p>
+          <p><hi rend="i">Code rural.</hi> — Enfin, à la même période, un projet de code rural est également proposé au gouvernement par Charost et ses confrères de la Société royale d’agriculture. Les articles, rédigés par des agronomes et des physiocrates, sont ostensiblement empreints d’un libéralisme économique.</p>
+        </div>
+        <div>
+          <head>Chapitre XIII<lb/>L’œuvre des particuliers, la part de l’État : le duc de Charost est-il un libéral ?</head>
+          <p>D’inspiration philanthropique, les projets précédemment évoqués sont présentés au gouvernement dans l’espoir de modifier la législation en vigueur.</p>
+          <p><hi rend="i">Un libéralisme économique.</hi> — En matière d’agriculture, Charost distingue trois missions essentielles pour les pouvoirs publics : affranchir les campagnes d’une pression fiscale étouffante, garantir le droit de propriété et la liberté d’entreprendre et enfin soutenir financièrement les organismes favorables aux projets agricoles. À bien des égards, ce système peut être qualifié de libéral. Toutefois, s’il laisse la préséance aux particuliers, et notamment aux grands propriétaires, il n’exclut pas une intervention régulatrice de l’État.</p>
+          <p><hi rend="i">L’Étatet l’assistance.</hi> — Les mécanismes ne sont pas tout à fait les mêmes pour l’assistance. Le duc de Charost réaffirme l’existence d’une dette de la société envers les pauvres. Par la société, il entend en premier lieu les citoyens. Une redistribution des richesses doit s’effectuer, fondée sur la solidarité et la fraternité. L’État collabore parallèlement à l’assistance en assurant financièrement une politique de santé publique, une aide aux chômeurs et la gestion de ceux qui sont considérés comme des pupilles de l’État – aveugles, orphelins, etc. Les positions théoriques du duc de Charost sont ainsi colorées d’un certain libéralisme social où les responsabilités de l’État sont affirmées.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le duc de Charost se caractérise par une bienveillance qui semble avoir guidé sa vie et ses entreprises. Il a honoré avec sérieux ses obligations d’assistance envers ses vassaux. Détenteur d’une forme d’autorité publique, il s’est substitué à un État providence. Sa foi chrétienne et l’amour désintéressé qu’il portait aux hommes en ont fait un apôtre de la bienfaisance qui caractérise si bien le siècle des Lumières. Préoccupé d’éviter aux hommes une situation d’indigence, il a porté ses vues sur l’agronomie et, partageant les thèses des physiocrates, il a tenté de moderniser l’agriculture dans le Berry. Mais les succès ne furent pas toujours au rendez-vous. La Révolution ne l’a pas découragé et elle fut l’occasion de théoriser ses idées sur la place de l’État et celle des particuliers dans les domaines de l’agriculture et de l’assistance. Les grandes ambitions restèrent en partie lettre morte, le nouveau gouvernement reléguant les missions d’assistance au secteur privé.</p>
+        <p>Le duc de Charost n’en reste pas moins un personnage singulier, passé du statut de duc et pair à celui d’« ami de l’humanité ». Moins préoccupé du maintien de son autorité seigneuriale que du bonheur de ses semblables, il n’éprouva, comme il le dit lui-même, aucune révolution.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Plaidoyer du duc de Charost lors de son séjour en prison en 1794. — Lettre du duc de Charost à Malesherbes et réponse de ce dernier (1782). — Lettre de la Société d’agriculture et d’économie rurale de Meillant au Ministre de l’Intérieur (1798). — Discours du duc de Charost sur la mendicité (1791).</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Chronologie. — Minutes notariales. — Circonscriptions administratives du Berry. — Règlements sur les orphelins, 1768-1772. — Regeste des règlements, 1768-1772. — Tableau des baux des fermiers, 1770-1800. — Tableau des cultures, 1770-1790. — Liste des membres de la société rurale de Meillant. — Propositions de la Société royale d’agriculture en 1789. — Index des noms de personnes.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

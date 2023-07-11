@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2015_26" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Verre et verriers à Paris dans la seconde moitié du <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle (1547-1610)</title>
+        <author ref="https://www.idref.fr/184199328">Élise Vanriest</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2015 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2015</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2015"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Verre et verriers à Paris dans la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle (1547-1610)</head>
+      <byline>
+        <forename>Élise</forename>
+        <surname>Vanriest</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Les verres français de la Renaissance ont longtemps été ignorés des historiens. Ce n'est qu'au <num>xix<hi rend="sup">e</hi></num> siècle qu'ils furent redécouverts, après le prêt d'un verre émaillé français par Félix Slade au South Kensington Museum (actuel Victoria &amp; Albert Museum) en 1862. Plusieurs synthèses ont par la suite été consacrées au verre français de la Renaissance mais aucune ne concernait spécifiquement Paris et sa région. Pourtant, les fouilles archéologiques menées dans la capitale, telles que les impressionnantes fouilles de la cour Napoléon, ont révélé de très importants ensembles de verres des <num>xvi<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècles. Par ailleurs, un certain nombre de pièces de musée ont été attribuées à la verrerie de Saint-Germain-en-Laye, qui reçut un privilège royal en 1551. Cette célèbre verrerie reste paradoxalement fort mal connue. Il y avait donc beaucoup à dire sur le verre à Paris dans la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle. Le point de départ de cette étude correspond à l'avènement de Henri II, en 1547, qui favorisa l'art du verre, soutenu en cela par son épouse Catherine de Médicis. La mort de Henri IV, en 1610, a été prise pour terme chronologique. C'est en effet sous le règne de Henri IV que l'on passe de la suprématie italienne dans l'art du verre en région parisienne à l'émergence d'une concurrence française.</p>
+      </div>
+      <div>
+        <head>Sources</head>
+        <p>Les documents issus du Minutier central des notaires de Paris (contrats d'achat et de vente, baux, contrats de mariage, inventaires après décès) constituent la source principale de cette étude et ont notamment été utilisés pour traiter la question des métiers du verre à Paris, de même que les archives du Parlement (série X des Archives nationales de France) qui contenaient les statuts des communautés de métier aussi bien que les privilèges octroyés aux verreries de Saint-Germain-en-Laye et de Saint-Germain-des-Prés. De façon plus marginale, les archives du Châtelet (série Y), de la Chambre des comptes (série P), du Conseil du roi (série E) et la série des Monuments Historiques (série K) ont révélé quelques documents utiles pour cette étude. Des documents dignes d'intérêt concernant les métiers du verre ont en outre été trouvés dans le <hi rend="i">Traité de la police</hi> de Nicolas Delamare, conservé à la Bibliothèque nationale de France. Les rapports des fouilles de la cour Napoléon (1984-1986) et de la rue des Lombards (1997) ont pu être consultés. Le matériel archéologique issu des fouilles du Luxembourg, et plus particulièrement du chantier des Boulingrins – où a été excavé en 1974 un four de verrier du début du <num>xvii<hi rend="sup">e</hi></num> siècle –, a pu être analysé et exploité pour cette étude. Divers traités techniques de l'époque ont également été utilisés : traités sur l'art de la verrerie, mais aussi traités sur la fabrication des cosmétiques, sur la parfumerie et traités de civilité. Les témoignages littéraires de l'époque ont aussi été mis à profit. Les pièces de musée étudiées proviennent pour la plupart du musée national de la Renaissance, du musée du Louvre, de la Wallace Collection (Londres).</p>
+      </div>
+      <div>
+        <head>Première partie <lb/>Les métiers de la verrerie à Paris</head>
+        <div>
+          <head>Chapitre premier <lb/>Le cadre juridique</head>
+          <p>Il convenait de s'intéresser aux différents métiers du verre existant à Paris dans la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle. Au début de la période, il n'y a pas de verrerie dans Paris. Le terme verrier, que l'on rencontre pourtant dans les archives, ne renvoie presque jamais au souffleur de verre. Il désigne plus couramment les vitriers ou les marchands « verriers » qui ne fabriquaient pas le verre mais revendaient à Paris des produits déjà élaborés. Deux métiers dont l'activité est dévolue à l'artisanat ou la vente du verre furent créés au cours de la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle. Le premier, la communauté des patenôtriers et boutonniers d'émail, reçut des statuts en 1566. Leur rôle était de façonner et de dorer et émailler des perles de verre pour en faire de petits bijoux (patenôtres mais aussi ceintures, bracelets, chaînes, pendants d'oreilles…) sans grande valeur. Le second, la communauté des « marchands verriers couvreurs de bouteilles en osier », reçut des statuts en 1583. Les marchands verriers vendaient aux Parisiens divers types de verres importés de régions voisines. Ils pouvaient également recouvrir les bouteilles d'osier.</p>
+          <p>La vente du verre, et notamment de la bouteille couverte d'osier, devint à cette époque un enjeu important puisqu'il est le motif principal de conflits entre les deux métiers. De nombreux procès les opposèrent, de 1583 à 1599 notamment.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Le milieu du verre à Paris</head>
+          <p>Les patenôtriers d'émail et les marchands verriers formaient à bien des égards un « milieu du verre » soudé, malgré les conflits. De nombreux actes du Minutier central des notaires de Paris (plus particulièrement les inventaires après décès et les contrats de mariage) ont mis en évidence qu'ils étaient unis par divers liens. Regroupés dans un même quartier, autour de la paroisse Saint-Nicolas-des-Champs, patenôtriers et marchands verriers étaient également unis par des liens familiaux – deux frères pouvaient ainsi exercer chacun un des deux métiers –, amicaux et commerciaux. Dans les faits, les patenôtriers pouvaient débiter de la marchandise de verre, notamment des bouteilles couvertes d'osier, et les marchands verriers pouvaient débiter de la marchandise d'émail. Il n'était pas rare qu'une même personne soit qualifiée de « patenôtrier d'émail et marchand verrier ».</p>
+        </div>
+        <div>
+          <head>Chapitre III <lb/>Verreries et privilège royal</head>
+          <p>Deux centres verriers émergèrent en région parisienne au cours de la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle. Le premier est la célèbre verrerie royale de Saint-Germain-en-Laye. Fondée par un Italien originaire de Bologne, Theseo Mutio, elle reçut un privilège du roi en 1551. Il avait reçu une formation de verrier à Venise et s'était installé en France avec son collaborateur vénitien, Louis Delberetin. Cette verrerie élaborait de précieuses pièces de verre émaillé, achetées par les grands du royaume, à commencer par Catherine de Médicis. Plusieurs pièces sont attribuées à cette verrerie, notamment une bouteille bleue aux armes de Catherine de Médicis, et une coupe sur pied portant également les armes de la reine, toutes deux conservées au musée national de la Renaissance. Il semble également que cette verrerie ait pu produire des pièces plus communes, s'adressant à une clientèle différente, moins aisée. On en trouvait dans la boutique parisienne de Jean Leduc, marchand verrier fournissant la cour. On situe l'extinction des fours de Saint-Germain vers le début du règne de Henri III. C'est justement à cette époque, au milieu des années 1570, que les archives révèlent la présence au faubourg Saint-Germain-des-Prés de verriers italiens, probablement d'origine vénitienne, qui pourraient avoir travaillé auparavant à Saint-Germain-en-Laye.</p>
+          <p>C'est également à Saint-Germain-des-Prés que s'établit le verrier altarais Jacques Sarode, déjà maître des verreries de Nevers et de Lyon, après 1597. La verrerie, située rue de Vaugirard, est très active jusque 1606 et fournit Paris et la cour en verres de cristal. Cependant, pour avoir refusé d'enseigner la fabrication du cristal à des apprentis français, Sarode perdit la faveur royale au profit de Jean Maréchal. Celui-ci obtint un privilège en 1606, après avoir découvert par lui-même le « secret » de la fabrication du cristal, et s'installa également rue de Vaugirard.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie <lb/>Le commerce du verre à Paris</head>
+        <div>
+          <head>Chapitre premier <lb/>Les centres d'approvisionnement en verre</head>
+          <p>Les marchands verriers s'approvisionnaient en verre auprès de diverses verreries situées dans des régions voisines de Paris, comme l'Argonne, la Picardie ou encore la Normandie. Les pièces produites par la verrerie de Saint-Germain-en-Laye étaient pour la plupart uniques et s'adressaient à une clientèle aisée ; la verrerie ne pouvait donc fournir seule Paris. Les deux verreries de Sain-Germain-des-Prés (celle de Sarode puis celle de Jean Maréchal) ont reçurent un privilège dans le but spécifique de fournir Paris en verres de cristal. Les marchands verriers parisiens continuèrent cependant à s'approvisionner en verres en dehors de Paris, prétextant que la verrerie de Saint-Germain-des-Prés ne produisait pas suffisamment de verres et que le prix de ces derniers était trop élevé, ce qui occasionna plusieurs procès avec Jean Maréchal.</p>
+          <p>Le commerce de deux types de matières premières nécessaires au patenôtrier d'émail ou au verrier a été envisagé dans cette étude : le canon d'émail (baguette d'émail destinée à la fabrication de petites perles) et la soude. L'émail ne provenait pas des centres d'approvisionnement traditionnels des marchands verriers parisiens mais était acheté à des verreries de diverses régions. La soude était quant à elle importée d'Espagne, et plus précisément d'Alicante. Elle arrivait en France par les ports de Saint-Malo ou de Rouen où les maîtres verriers germanopratins allaient récupérer la marchandise.</p>
+          <p>Les verres de Venise n'étaient pas concernés par le monopole de Maréchal. Ils sont rarement mentionnés dans les inventaires, mais l'on sait qu'ils étaient prisés des grands du royaume, à commencer par les monarques.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Du marchand au consommateur : les systèmes de distribution du verre à Paris</head>
+          <p>Une fois la marchandise arrivée à Paris, elle était répartie entre les marchands verriers ou les patenôtriers d'émail parisiens. Ceux-ci pouvaient également négocier avec les marchands forains pour qu'ils apportent directement la marchandise au domicile du marchand verrier, comme l'attestent les contrats retrouvés dans le Minutier central. Les verres étaient ensuite vendus en boutique ou livrés au client ayant passé commande auprès du marchand. Les marchands verriers étaient par ailleurs amenés à vendre leur marchandise lors des foires, à Paris (à la foire Saint-Germain-de-Prés) mais aussi ailleurs en région parisienne (à la foire de Saint-Denis entre autres).</p>
+          <p>Le verre n'était cependant pas vendu que par les marchands verriers et patenôtriers. On en trouvait, de façon marginale, chez les merciers, chandeliers, grainiers, quoique cela fût interdit par les statuts des deux principales communautés de métier.</p>
+          <p>Les patenôtriers pouvaient exporter leur marchandise à l'étranger : perles et boutons de verre étaient vendus à des marchands portugais ou espagnols qui les envoyaient comme monnaie d'échange aux Amériques. Les verres de Saint-Germain-en-Laye ou de Saint-Germain-des-Prés ne rencontrèrent pas le succès européen que connurent les verres de Venise à la même époque.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie <lb/>Produits et production</head>
+        <div>
+          <head>Chapitre premier <lb/>L'art du patenôtrier d'émail</head>
+          <p>L'émail, ayant la même composition chimique que le verre, s'élabore comme lui à partir de sable, d'un fondant sodique de préférence, de chaux et parfois de verre brisé recyclé. On y ajoutait des oxydes métalliques (cuivre, fer, étain, cobalt, manganèse) pour colorer la matière vitreuse et éventuellement l'opacifier. L'émail était commercialisé à Paris sous forme de canons (baguettes) ou de « pains » ; on en trouve par exemple dans l'inventaire du tireur d'or Thomas Croisier, associé au verrier germanopratin d'origine vénitienne Jacques Brambille. Ces pains portaient la marque IHS, marque qui était utilisée par ailleurs par la verrerie des Miotti à Venise, qui portait l'enseigne « al Gesù ». Les canons étaient élaborés par des maîtres verriers au sein d'une verrerie, plus rarement par les patenôtriers. Ces derniers possédaient, dans le cadre de leur activité, de petits fourneaux pour recuire leurs pièces. Il existait également des fourneaux de plus grande taille, utilisés notamment pour élaborer le canon d'émail.</p>
+          <p>Le patenôtrier faisait fondre la baguette d'émail à la flamme pour former des perles, comme celles qui ont été trouvées dans les fouilles d'un atelier de patenôtrier rouennais du début du <num>xvii<hi rend="sup">e</hi></num> siècle. Le pain d'émail pouvait quant à lui être réduit en une poudre qui servait à élaborer une peinture pour émailler les verres. Les patenôtriers étaient par ailleurs autorisés à dorer leur production bien que les inventaires après décès ne mentionnent jamais les outils nécessaires à la dorure.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Les usages du verre à Paris</head>
+          <p>Les usages du verre ont été envisagés dans un cadre français plutôt que strictement parisien ; le propos a cependant été étayé par des archives parisiennes. Il fut d'abord question de la place du verre dans les repas. Il apparaît que les verres n'étaient pas posés sur la table de façon permanente, mais apportés à la demande des convives avant d'être rapportés sur une desserte. Ils étaient généralement partagés par plusieurs convives mais l'usage d'un verre unique par convive tend à se généraliser dans la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle. On utilisait de véritables services en verre, comme l'attestent les inventaires de Jean Semelle (marchand verrier patenôtrier) ou de Claude Bobie (marchand mercier). La bouteille couverte d'osier a fait l'objet d'un développement particulier, puisqu'elle était un enjeu commercial important à Paris. Elle était utilisée pour servir la boisson mais aussi pour conserver et préserver de la lumière des liquides ou préparations pharmaceutiques.</p>
+          <p>Le verre était par ailleurs un matériau particulièrement important pour les contenants utilisés par les apothicaires et les médecins. Le verre est transparent, incolore, sans odeur et inoxydable : autant de qualités très appréciées par ces professions. L'urinal, symbole de la médecine jusqu'au début du <num>xvi<hi rend="sup">e</hi></num> siècle mais qu'on trouve dans les fouilles parisiennes jusqu'au <num>xvii<hi rend="sup">e</hi></num> siècle, devait ainsi nécessairement être en verre pour faciliter l'observation des urines. Confitures et onguents étaient conservés dans des contenants de verre car ils n'altéraient pas le contenu (comme le métal ou la terre pouvaient le faire).</p>
+          <p>Il fut également question des verres précieux et de la place qu'ils occupaient dans la culture du paraître des élites. Les grands personnages de la cour possédaient tous de précieux objets en verre. La vaisselle précieuse était disposée sur des dressoirs, à la manière des pièces d'orfèvrerie, dans le but de faire voir la richesse du possesseur de ces pièces. Ce sont les objets de verre les plus représentés dans les musées.</p>
+        </div>
+        <div>
+          <head>Chapitre III <lb/>L'archéologie du verre à Paris</head>
+          <p>Les différents sites de fouilles à Paris dans lesquelles on a trouvé des objets en verre des <num>xvi<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècle ont été détaillés, en accordant une place importante aux fouilles de la cour Napoléon ou encore de la rue des Lombards, qui ont révélé d'importants ensembles de verres.</p>
+          <p>Les archéologues ont par ailleurs excavé un four de verrier daté du début du <num>xvii<hi rend="sup">e</hi></num> siècle rue de Vaugirard, qui est selon toute probabilité celui de Jean Maréchal et peut-être de Jacques Sarode avant lui, quoique cela ne soit pas attesté. Seuls quelques déchets de cuisson (pieds fondus, mors, gouttes de verre et fonds de creusets) ainsi que des pierres du four ont été retrouvés.</p>
+          <p>On observe par ailleurs pour les verres de la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle une augmentation des verres sodiques, alors qu'ils étaient plutôt à dominante potassique pour les périodes antérieures. Cela pourrait indiquer une influence des techniques italiennes. En revanche, peu de verres attribuables à Venise ont été retrouvés. On suppose que ces verres plus précieux étaient soigneusement conservés par leurs propriétaires et non jetés dans les fosses et latrines comme la plupart des verres trouvés en fouilles.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le développement de l'industrie du verre en région parisienne est en partie lié à l'intervention royale. Les derniers Valois puis Henri IV favorisèrent de diverses façons l'art du verre, tout d'abord en octroyant des statuts aux métiers du verre parisiens, patenôtriers et boutonniers d'émail et marchands verriers couvreurs de bouteilles en osier, puis en accordant des privilèges aux verreries dites primaires (à Saint-Germain-en-Laye puis à Saint-Germain-des-Prés).</p>
+        <p>La période est également marquée par une forte influence de l'art du verre italien, et plus particulièrement vénitien : la composition et le décor des verres produits et commercialisés à Paris et en région parisienne attestent de l'influence des techniques italiennes. Des typologies d'objets ont également été élaborées d'abord en Italie avant d'être reprises à Paris, telle la bouteille couverte d'osier, grand enjeu commercial de la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>        
+        <head>Annexes</head>
+        <p>Pièces justificatives : vingt-six documents. — Iconographie : soixante-neuf illustrations classées par thème : marchands verriers et verreries de Paris ; verrerie de Saint-Germain-en-Laye ; la bouteille couverte d'osier ; le verre et ses usages ; Le travail du verre et de l'émail ; l'archéologie du verre. — Index des noms de personnes.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_16" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Deux « papyri mythologiques » funéraires de la Bibliothèque nationale de France</title>
+        <author>Émil Joubert</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 173-182</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Deux « papyri mythologiques » funéraires de la Bibliothèque nationale de France</head>
+      <byline>
+        <forename>Émil</forename>
+        <surname>Joubert</surname>
+        <roleName>diplômé de master, diplômé de l’École du Louvre/</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>La culture scribale de l’Égypte ancienne s’actualise dans des documents dont l’unicité est assurée par la combinaison en un ensemble original d’emprunts à un répertoire commun. La souplesse de cette association est visible dans les « papyri mythologiques » funéraires. Ces manuscrits funéraires, véritables « miscellanées de l’au-delà », se caractérisent par la prégnance de l’image et par la réunion d’éléments divers, qu’il s’agisse de créations nouvelles ou de motifs issus de compositions antérieures. La richesse de leur iconographie illustre le profond renouveau des pratiques funéraires advenu dès le début de la Troisième Période intermédiaire (1069-664 av. J.-C.), en particulier durant la <num>xxi<hi rend="sup">e</hi></num> dynastie (1069-945 av. J.-C.), une période de division politique à l’origine d’intenses bouleversements. Si cette abondance caractéristique de l’image permet de les opposer à d’autres créations de l’époque – les Livres des morts hiératiques notamment –, elle aboutit au regroupement de manuscrits très divers, ce qui a conduit certains auteurs, notamment Andrzej Niwiński, à critiquer l’usage de l’expression « papyri mythologiques », peu évocatrice du contenu de ces documents. Le caractère consacré de celle-ci dans la littérature spécialisée contraint cependant à prendre en compte cette appellation, qui peut néanmoins être précisée par l’adjonction du qualificatif « funéraires ».</p>
+        <p>L’étude de cas de deux manuscrits de la Bibliothèque nationale de France permet de mieux comprendre la religion et l’adaptation des pratiques funéraires de cette époque d’intenses transformations culturelles. L’analyse de ces documents se concentre sur leurs aspects matériels, textuels et iconographiques afin de comprendre comment ceux-ci sont conçus d’un point de vue à la fois technique et intellectuel, en particulier comment leurs rédacteurs parviennent à y créer un programme religieux unifié et cohérent par la réunion de motifs textuels et iconographiques issus de compositions diverses.</p>
+        <div>
+          <head>Sources</head>
+          <p>Le papyrus de Tanytamon, conservé à la Bibliothèque nationale de France sous la cote manuscrits égyptiens 170 à 173, se rattache au corpus du Livre des morts mais est caractérisé par une iconographie très abondante comprenant des scènes nouvelles et rares. Le contexte funéraire dont il provient est relativement bien connu. Le papyrus de Khonsoumes (BNF, manuscrits égyptiens 153 à 155) est un « Amdouat », une catégorie de manuscrit funéraire qui apparaît à cette époque : il réunit en un ensemble très original des scènes issues notamment du Livre de l’Amdouat, du Livre des portes et du Livre de la terre dont il présente une des seules attestations sur papyrus. L’analyse de ces manuscrits est également éclairée par le matériel funéraire qui peut leur être relié et par leur comparaison avec des papyri contemporains.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Contextualisation</head>
+        <div>
+          <head>Chapitre premier<lb/>Historiographie</head>
+          <p>Les premiers manuscrits funéraires égyptiens sont entrés dans les collections françaises au <num>xviii<hi rend="sup">e</hi></num> siècle et ont fait l’objet de publications dès le début du <num>xix<hi rend="sup">e</hi></num> siècle. La découverte des cachettes de Deir el-Bahari en 1881 et en 1891 a révélé de très nombreux objets de la <num>xxi<hi rend="sup">e</hi></num> dynastie dont l’iconographie a dès lors suscité de nombreuses publications. Les plus importantes qui soient consacrées aux « papyri mythologiques » sont celles d’Alexandre Piankoff, qui reproduit un grand nombre de ces manuscrits et qui leur a donné leur appellation consacrée, et celle d’Andrzej Niwiński, qui en a dressé une typologie et un catalogue complet permettant de trouver des objets de comparaison pour une étude plus précise.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Problématiques structurantes des textes funéraires égyptiens</head>
+          <p>Les textes funéraires égyptiens livrent de l’au-delà des conceptions variées et lui donnent des localisations et des caractéristiques diverses ; l’autre monde peut avoir une localisation céleste ou souterraine et le défunt vouloir rejoindre la course des étoiles ou celle du soleil. Ces compositions ne se présentent quasiment jamais comme des livres au contenu fixe mais bien plus comme la réunion de divers extraits puisant à un fonds commun. Ceux-ci sont mis en relation afin de créer une nouvelle unité cohérente. Cet emploi des textes rappelle ce que l’on observe dans les miscellanées littéraires égyptiennes, des manuscrits caractérisés par la réunion de plusieurs compositions en un ensemble unique et étudiés notamment par Chloé Ragazzoli.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>La <num>xxi<hi rend="sup">e</hi></num> dynastie : contexte historique et social</head>
+          <p>Le début de la Troisième Période intermédiaire voit la division de l’Égypte entre le Nord, dirigé par un pharaon tanite, et le Sud, où le pouvoir est pris par le dieu Amon en la personne de son grand prêtre. Ce dernier contrôle la région thébaine en s’appuyant sur une élite familiale héréditaire dont les membres cumulent titres administratifs et religieux. Le clergé est donc omniprésent dans la société de l’époque et influe sur la création du matériel funéraire et son évolution. Par ailleurs le rôle des femmes revêt une importance croissante, comme le reflètent là encore leurs titres religieux et la richesse de leur mobilier funéraire.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Les pratiques funéraires sous la <num>xxi<hi rend="sup">e</hi></num> dynastie</head>
+          <p>Les incertitudes de cette période – récession économique et intensification des pillages de tombes notamment – contraignent les élites à renoncer à un matériel funéraire abondant. Les pratiques liées à l’inhumation demeurent un marqueur de statut social au prix d’importantes évolutions. Les sépultures décorées sont abandonnées au profit de caches collectives et les éléments ostentatoires sont pour l’essentiel restreints à la momie, aux cercueils et aux papyri, qui tous deviennent le support d’une iconographie de plus en plus riche et complexe.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Les manuscrits funéraires de la <num>xxi<hi rend="sup">e</hi></num> dynastie</head>
+          <p>La forme et le contenu des manuscrits funéraires de la <num>xxi<hi rend="sup">e</hi></num> dynastie connaissent des évolutions notables. L’importance de l’image, amorcée à l’époque ramesside, atteint un apogée. Le pontificat de Menkheperrê (vers 1044-vers 990 av. J.-C.) marque une étape décisive. Parallèlement à l’adoption du hiératique dans certains Livres des morts, la diffusion aux particuliers du Livre de l’Amdouat entraîne l’habitude d’inhumer les défunts avec deux manuscrits funéraires, un Livre des morts et un papyrus nommé « Amdouat » dont le contenu peut être inspiré non seulement du Livre de l’Amdouat mais aussi de divers livres du monde souterrain qui étaient autrefois employés dans les tombes royales. La fin de la dynastie voit par ailleurs le répertoire iconographique de ces compositions se rapprocher au sein de documents très innovants. Le papyrus de Khonsoumes est un exemple particulièrement représentatif de la création de telles miscellanées.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Le papyrus de Tanytamon</head>
+        <div>
+          <head>Chapitre premier<lb/>Présentation</head>
+          <p>Le papyrus de Tanytamon appartenait à la maîtresse de maison, chanteuse choriste d’Amon-Râ, roi des dieux (<hi rend="i">šmʿy.t n(y.t) Jmn-Rʿ (ny)sw.t nṯr.w</hi>), et grande chanteuse soliste de Mout (<hi rend="i">ḥsy.t ʿȝ.t n(y.t) pȝ ʿ n(y) Mw.t</hi>), Tanytamon (<hi rend="i">Ṯ(ȝ)-n(y).t-Jmn</hi>). Les parallèles avec des manuscrits datés comme celui de Taoudjatrâ et la typologie du mobilier qui lui est associé permettent de le dater de la deuxième moitié de la <num>xxi<hi rend="sup">e</hi></num> dynastie. Ce manuscrit se trouvait avec le reste du matériel funéraire de Tanytamon dans une cachette abritant notamment son époux et ses enfants. Il est donc possible d’étudier ce papyrus dans le contexte global de la tombe où il s’inscrit, ce qui permet notamment de comparer son programme iconographique avec celui des cercueils correspondants. La cachette en question fut découverte à l’automne 1820 dans la nécropole de Cheik Abd-el Gourna ; son emplacement exact est inconnu et les objets qu’elle contenait ont été immédiatement dispersés entre diverses collections européennes, dont celle de Sauveur-Fortuné Thédenat-Duvent, auquel le cabinet des Médailles de la Bibliothèque royale acheta le papyrus en 1822.</p>
+          <p>Une analyse matérielle permet de confirmer l’ordre de remontage du papyrus proposé par la Bibliothèque nationale de France et contesté par l’édition précédente d’Alexandre Piankoff. Elle révèle en outre que le manuscrit original a été créé par la réunion de deux rouleaux de papyrus distincts.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Description et traduction</head>
+          <p>Le manuscrit est porteur d’une riche iconographie inspirée principalement du Livre des morts et accompagnée de textes souvent succincts. Outre des figurations habituelles comme celles de la pesée du cœur, on remarque la présence de quelques scènes rares et nouvelles, notamment une représentation de la course solaire au-dessus des divinités Nout et Geb personnifiant le ciel et la terre, plusieurs scènes évoquant la renaissance solaire, par exemple une scène solaro-osirienne mystérieuse qu’Isabelle Régen a proposé de relier au « rite de bêcher la terre », ou encore des représentations de navigation de la défunte vers des villes de la pointe du Delta. Le manuscrit se clôt par une image de la vache Hathor sortant de la montagne, évoquant à la fois le lever et le coucher du soleil.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Analyse et commentaire</head>
+          <p><hi rend="i">Étude des pratiques d’atelier.</hi> — La comparaison du papyrus de Tanytamon avec des documents contemporains permet de mettre en lumière certaines des pratiques d’atelier ayant présidé à sa réalisation. Tel est le cas de la fabrication de manuscrits à partir de plusieurs rouleaux de papyrus : ces manuscrits sont souvent le fruit d’une collaboration étroite entre plusieurs scribes suivant un plan préétabli. Les parallèles offerts par les Livres des morts de Taoudjatrâ et d’Âanerou, issus d’un modèle proche de celui de Tanytamon, permettent également de mettre en évidence les phénomènes de copie et de recomposition à l’œuvre lors de leur création. La mise en relation de ces documents avec les cercueils de Tanytamon prouve par ailleurs qu’ils ont été réalisés grâce à un modèle commun à celui des papyri. Enfin, des parallèles entre ces manuscrits et celui de la « fille du roi » Nany suggèrent une circulation des modèles des Livres des morts entre la famille dirigeante et l’élite à laquelle appartenait Tanytamon, ce qui souligne son prestigieux statut social. Ces analogies permettent par ailleurs de situer la date des funérailles de Nany, encore objet de débats, dans la seconde moitié de la dynastie.</p>
+          <p><hi rend="i">Présentation du matériel funéraire de Tanytamon et de sa famille.</hi> – La connaissance du matériel de la cachette de Tanytamon permet de replacer le papyrus dans son contexte. Les cercueils de Tanytamon et de sa famille sont à ce titre révélateurs. Ils emploient en effet un répertoire iconographique en partie commun avec le papyrus. Tous figurent par exemple une « scène cosmique » avec les divinités Nout et Geb dont le sens peut ainsi être précisé par la comparaison entre les différentes attestations. Les cercueils soulignent également le lien qui existe entre les représentations de la déesse du sycomore et celles de la vache sortant de la montagne thébaine.</p>
+          <p><hi rend="i">L’univers du papyrus.</hi> — Dans ce cadre, c’est l’univers évoqué par le papyrus qu’il est possible de restituer en proposant des éléments d’interprétation d’ensemble. L’étiquette, première scène du manuscrit figurant une adoration de la défunte à Osiris, peut être comprise comme un résumé du message de l’ensemble du papyrus. Elle semble se référer à la formule 105 du Livre des morts et mettre ainsi en avant l’association de la défunte au dieu solaire qui est permise par la purification et la justification de cette dernière. Le reste du manuscrit se divise en deux ensembles principaux aux inspirations et à l’orientation distinctes. Ces deux groupes s’articulent autour de la figure centrale de la déesse du ciel Nout, représentée en particulier dans une « scène cosmique » qui synthétise la course solaire et semble servir de référence aux autres figurations du manuscrit. La première partie du papyrus montre la défunte triomphant de la pesée du cœur et atteignant ainsi le statut de justifiée qui lui permet de se présenter à plusieurs divinités dont elle obtient des offrandes. La seconde partie insiste sur la renaissance solaire à laquelle elle s’associe en participant à sa navigation. Ces épisodes mêlent des symboles associés à la fois au lever et au coucher du soleil et insistent ainsi sur la régénération de celui-ci.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Le papyrus de Khonsoumes</head>
+        <div>
+          <head>Chapitre premier<lb/>Présentation</head>
+          <p>Le papyrus de Khonsoumes provient de la collection Cailliaud et a été acquis par le cabinet des Médailles en 1819. Le contexte de découverte du manuscrit est inconnu et le nom de Khonsoumes fréquent à l’époque. Son titre d’orfèvre du domaine d’Amon est en revanche très rare dans les livres funéraires et permet de le rattacher à un Livre des morts de la Bibliothèque nationale de France acquis de la même collection et présentant des similitudes matérielles – le nom du défunt a été dans les deux cas ajouté dans un second temps de rédaction par une main semblable. Le mélange de différentes compositions dessinées au trait oriente la datation du papyrus vers la seconde moitié de la <num>xxi<hi rend="sup">e</hi></num> dynastie.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Étude matérielle</head>
+          <p><hi rend="i">Présentation matérielle du papyrus.</hi> — L’étude matérielle du papyrus de Khonsoumes révèle que les trois fragments dont il se compose appartenaient bien à un même ensemble et que le manuscrit est complet. Elle confirme également son ordre de remontage.</p>
+          <p><hi rend="i">Étude matérielle de la rédaction.</hi> — L’analyse des recharges en encre intervenues lors de la copie du papyrus apporte des informations sur les pratiques de copie. Le nom du défunt a notamment été ajouté dans une seconde phase de rédaction. La fréquence de ce phénomène dans des « Amdouats » luxueuses ou très originales, comme l’est celle-ci, permet de supposer que la personnalisation du manuscrit a pu intervenir dans un cadre rituel sur un papyrus déjà inscrit. Par ailleurs, le texte des registres médian et inférieur de la douzième heure de l’Amdouat, déstructuré par la copie à l’envers d’un modèle en écriture rétrograde, fait l’objet d’une reconstitution.</p>
+          <p><hi rend="i">Copie sur un modèle similaire : étude du papyrus de Nesmoutâatnerou.</hi> — La comparaison du papyrus de Khonsoumes avec celui de Nesmoutâatnerou (Londres, British Museum, EA 9982), copié sur modèle proche ou identique, permet de nuancer les remarques faites sur la copie de modèles rétrogrades en montrant que les pratiques peuvent différer fortement d’un scribe à l’autre, y compris au sein d’un même manuscrit.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Programme iconographique et textuel</head>
+          <p><hi rend="i">Un papyrus créant un espace tridimensionnel.</hi> — Le papyrus doit être compris comme la projection d’un espace tridimensionnel. Les différentes compositions qu’il réunit prennent leur sens et ne sont lisibles de manière cohérente que si on replie le papyrus afin de matérialiser un espace. Cette lecture permet la mise en parallèle du manuscrit avec des monuments architecturaux au décor en partie similaire, notamment les tombes de Ramsès VI, Padiaménopé, Pabasa et Horiâa.</p>
+          <p><hi rend="i">Structure des scènes.</hi> — À cette structure particulière du papyrus répond une organisation complexe des représentations. Chaque composition représente un événement unique, souvent réparti pour des raisons de lisibilité en trois registres, suivant les règles de représentation aspective de l’image égyptienne. Cette disposition, alliée au fait que les trois compositions représentent la sortie du soleil de la Douat au matin, permet de concevoir l’ensemble du papyrus comme la représentation d’une scène unique répartie en trois grands ensembles dont la complémentarité est mise en évidence par la reprise de motifs textuels et iconographiques de l’un à l’autre.</p>
+          <p><hi rend="i">Identification et analyse des scènes.</hi> — L’analyse s’attache à comprendre la répartition et le rôle des scènes au sein de chaque composition, en particulier dans le Livre de la terre, dont la structure est mal connue. La comparaison entre le papyrus et des tombes comme celle de Padiaménopé permet de suggérer que cette composition décrit la navigation du soleil sortant de la Douat entouré par des divinités qui favorisent sa régénération. Ce parcours comprend la plongée dans un espace décrit comme la « terre secrète », où la barque est reçue par le dieu Tatenen et où l’astre permet la régénération de divinités situées plus profondément dans la Douat et représentées paradoxalement au registre supérieur. On remarque parmi celles-ci un dieu momiforme qui paraît identifiable à Osiris et qui effectue par ailleurs une navigation dans le sens inverse de celui de la barque solaire avant d’être déploré par plusieurs divinités. La désignation associée à ce dieu en fait le corps du dieu solaire, avec lequel il entretient une relation comparable à celle du corps et du <hi rend="i">ba</hi>.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Description et traduction</head>
+          <p>Les scènes et textes du papyrus de Khonsoumes font l’objet d’une description, d’une identification et d’une traduction. Suivant la logique mise au jour précédemment, la lecture commence par le tableau final – et central – du Livre des portes avant de s’attacher aux parties latérales, douzième heure de l’Amdouat et scènes liées au Livre de la terre. L’ensemble du manuscrit décrit la sortie du soleil du monde souterrain et les divinités qui l’entourent, dont certaines restent dans la Douat tandis que d’autres l’accompagnent dans son parcours diurne.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Liens entre le papyrus de Khonsoumes et le Livre des morts de Khonsoumes</head>
+          <p>La comparaison du papyrus avec le Livre des morts de Khonsoumes (BNF, manuscrits égyptiens 20 à 23) révèle des similitudes matérielles, notamment l’ajout du nom dans un second temps de rédaction par une main semblable, qui montrent que les deux manuscrits appartenaient au même propriétaire. Le programme des deux papyri est donc complémentaire. Le Livre des morts emploie des formules relativement rares, qui suivent une progression menant d’une phase de régénération nocturne sur un modèle osirien vers une renaissance solaire que permet la justification exprimée par la formule de la pesée du cœur au milieu du manuscrit. Les textes des deux papyri font appel à des motifs identiques, notamment l’importance du <hi rend="i">ba</hi> et de l’ombre du défunt, ou encore la reprise de la formule du cœur (formule 26 du Livre des morts).</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>L’étude des papyri mythologiques de la Bibliothèque nationale de France offre un accès pour mieux connaître les pratiques d’atelier et la façon dont ces « miscellanées de l’au-delà », tout en unissant des compositions diverses, présentent un programme unifié et cohérent qui assure la survie du défunt dans l’au-delà au travers d’une monumentalisation du manuscrit. Leur analyse matérielle révèle une conception commune de l’ensemble du matériel funéraire, dont la création est répartie entre plusieurs artistes au style et aux pratiques semblables, quoiqu’ils divergent par quelques détails ou par une compréhension plus ou moins poussée des textes rédigés. L’étude du programme des manuscrits montre quant à elle que ceux-ci sont conçus comme des ensembles se lisant par rapport à leur scène centrale, que les figurations du manuscrit s’orientent vers cette scène comme dans le papyrus de Tanytamon ou qu’au contraire la composition tende à entraîner le défunt hors du manuscrit avec la renaissance solaire dans le papyrus de Khonsoumes. Ce dernier utilise cette mise en page particulière pour symboliser un espace monumental tridimensionnel pouvant prendre pour le défunt la fonction d’une tombe. Les manuscrits ici étudiés se révèlent donc des constructions complexes résultant de l’adaptation des pratiques funéraires sous la <num>xxi<hi rend="sup">e</hi></num> dynastie.</p>
+        <div>
+          <head>Annexes</head>
+          <p>Fac-similés des manuscrits de Tanytamon et de Khonsoumes.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

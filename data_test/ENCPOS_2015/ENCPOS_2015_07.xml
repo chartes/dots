@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2015_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les Mémoires de Philippe de Vigneulles (1471-1522). Édition critique du manuscrit BNF, nouv. acq. fr. 6720</title>
+        <author ref="https://www.idref.fr/183654013">Fanny Faltot</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2015 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2015</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2015"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Les <hi rend="i">Mémoires</hi> de Philippe de Vigneulles (1471-1522)</head>
+      <head type="sub">Édition critique du manuscrit BNF, nouv. acq. fr. 6720</head>
+      <byline>
+        <forename>Fanny</forename>
+        <surname>Faltot</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Le manuscrit de la Bibliothèque nationale de France portant le numéro 6720 dans la série des nouvelles acquisitions françaises, connu sous le titre de <hi rend="i">Journal de Philippe de Vigneulles</hi> et considéré comme autographe, a été, jusqu'ici, relativement peu pris en compte dans les études portant sur l'œuvre de ce personnage, marchand et bourgeois messin, dont on retient surtout la <hi rend="i">Chronique</hi> universelle, le recueil des <hi rend="i">Cent nouvelles nouvelles</hi> ou même la mise en prose de la <hi rend="i">Geste des Loherains.</hi> Certes, Heinrich Michelant en a établi une première édition publiée à Stuttgart en 1852, sous le titre de <hi rend="i">Gedenkbuch des Metzer Bürgers Philippe de Vigneulles aus den Jahren 1471 bis 1522, nach der Handschrift des Verfassers.</hi> Mais cette édition souffre de nombreux défauts rendant la lecture et l'étude du texte peu fructueuses : normalisation incohérente de la graphie de Philippe, texte trop compact, absence totale de notes et de prise en compte du travail de l'auteur, pourtant bien visible sur le manuscrit qui abonde en ratures et annotations.</p>
+        <p>L'idée de rééditer les <hi rend="i">Mémoires</hi> se justifie également par l'intérêt que présente, pour le philologue comme pour l'historien, la perception du monde et l'usage de la langue d'un laïc messin à la charnière du Moyen Âge et de la Renaissance, intérêt relevé par le caractère unique et autographe du manuscrit. En outre, les chercheurs qui se sont penchés sur la <hi rend="i">Chronique</hi> ont tous remarqué que cette dernière semblait entretenir un lien étroit avec les <hi rend="i">Mémoires</hi>, qui apparaissent comme une sorte de brouillon, de premier jet. Disposer d'une édition claire et précise du texte est par conséquent le préalable nécessaire d'études plus approfondies à ce sujet, dont la présente thèse ne fait qu'esquisser les prémices.</p>
+      </div>
+      <div>
+        <head>Sources manuscrites et imprimées</head>
+        <p>Cette édition a été effectuée à partir du microfilm du manuscrit nouv. acq. fr. 6720 produit par la Bibliothèque nationale de France. Le travail de Heinrich Michelant a permis de lever certaines incertitudes lors de la transcription du texte, tout en corrigeant les erreurs commises à l'occasion par Michelant. De même, l'index réalisé par celui-ci a été un point de départ d'une utilité non négligeable ; toutefois, là encore, des erreurs avaient été commises, sans compter l'évolution du découpage administratif français qui rendait obsolète la localisation précise des communes. La consultation du manuscrit original a été une étape indispensable pour compléter certaines parties du texte qui, arrivant en début ou en fin de ligne, n'étaient pas visibles sur la reproduction microfilmée ; le déchiffrement des mots raturés par Philippe a également été rendu plus facile par cette consultation.</p>
+        <p>Le peu de littérature existant au sujet des <hi rend="i">Mémoires</hi> eux-mêmes explique que les principaux outils de travail à disposition de qui aborde ce texte tendent à concerner davantage la <hi rend="i">Chronique</hi>, voire les <hi rend="i">Cent nouvelles nouvelles</hi> ou la <hi rend="i">Geste des Loherains.</hi> De fait, quatre auteurs méritent tout particulièrement d'être cités. L'édition de la <hi rend="i">Chronique</hi> par Charles Bruneau, certes datée (1927-1933), est essentielle non seulement pour son introduction, mais aussi en raison des liens étroits existant entre le contenu de cette immense œuvre historique et celui des <hi rend="i">Mémoires.</hi> Bruneau n'ayant pas eu le temps d'adjoindre un index à son travail, celui composé par Monique Paulmier-Foucart et conservé, sous forme dactylographiée, parmi les usuels de la Bibliothèque lorraine de la Bibliothèque Verlaine de Metz, est indispensable au chercheur. Quant à l'absence de glossaire, elle est en partie compensée par la thèse de doctorat de Maryse Hasselmann sur <hi rend="i">Le Vocabulaire des réalités messines dans la Chronique de Philippe de Vigneulles</hi> (1982), même si cette étude ne concerne que les domaines de la société laïque et du gouvernement, du droit et de la vie quotidienne. Enfin, les divers articles de Pierre Demarolle et son ouvrage intitulé <hi rend="i">La Chronique de Philippe de Vigneulles et la mémoire de Metz</hi> (1993) sont de précieuses sources de réflexion sur l'œuvre du marchand messin.</p>
+      </div>
+      <div>
+        <head>Première partie <lb/>Présentation et étude du texte</head>
+        <div>
+          <head>Chapitre premier <lb/>« Je, l'acripvain... » : Philippe de Vigneulles, bourgeois messin</head>
+          <p>Philippe de Vigneulles, né en juin 1471 à Vigneulles, dans le pays messin, est issu d'une famille paysanne relativement prospère et dont le statut social s'est amélioré au fil des héritages et des alliances. En une époque troublée par les assauts incessants du duc de Lorraine sur la République messine, ville libre d'Empire, le jeune homme reçoit une formation scolaire plutôt chaotique, changeant d'école et de maître au gré des aléas du temps. Ces épreuves contribuent sans doute à lui forger un caractère solide et aventureux, au point qu'il fugue de chez lui pour aller parcourir les routes de Suisse et d'Italie avec son ami Collin.</p>
+          <p>De retour chez lui, il est capturé avec son père par des brigands au service des Lorrains et passe quatorze mois en prison à Chauvency-le-Château, épisode qui occupe une part importante des <hi rend="i">Mémoires</hi> et lui donne l'occasion de composer quelques poèmes. Une fois libéré, Philippe parvient à s'établir à Metz comme marchand drapier-chaussetier et sa richesse ne cesse de s'accroître ; il fréquente les membres des paraiges – familles qui se partagent la mainmise sur les hautes charges de la République –, voyage de foire en foire, prête une oreille attentive aux faits divers et aux grands changements politiques, tout en menant une vie familiale apparemment épanouie aux côtés de sa seconde épouse, Sabellin. Il meurt à la fin de l'année 1527 ou au début de l'année 1528, soit cinq ou six ans après les derniers événements décrits dans ses <hi rend="i">Mémoires.</hi></p>
+          <p>Des œuvres qu'il nous a laissées, la <hi rend="i">Chronique</hi> est la plus imposante, et c'est généralement comme chroniqueur que Philippe de Vigneulles est connu. Depuis l'édition de celle-ci par Charles Bruneau, les rapports entre cette œuvre et les <hi rend="i">Mémoires</hi> restent peu clairs, bien qu'il soit admis que les <hi rend="i">Mémoires</hi> représenteraient un premier jet de la <hi rend="i">Chronique</hi> pour la période 1471-1522. La comparaison des passages de ces deux œuvres relatant un même épisode montre que cette hypothèse est la plus plausible, dans la mesure où le style de la <hi rend="i">Chronique</hi> est davantage travaillé et précis que celui des <hi rend="i">Mémoires.</hi></p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Présentation du manuscrit et de la <hi rend="i">scripta</hi> de l'auteur</head>
+          <p>Si le manuscrit BNF, nouv. acq. fr. 6720 présente en lui-même peu d'intérêt, il n'en va pas de même de sa composition et de la langue employée par Philippe de Vigneulles. D'une part, le manuscrit donne littéralement à voir le travail de composition de l'œuvre au travers des nombreuses annotations, corrections et autres ratures. Il importe de noter que cet aspect constitue l'un des principaux arguments faisant des <hi rend="i">Mémoires</hi> un brouillon préparatoire à la composition de la <hi rend="i">Chronique.</hi>  D'autre part, le caractère autographe du manuscrit est d'un grand intérêt pour le philologue, puisqu'il invite à lire la <hi rend="i">scripta</hi> messine de la fin du Moyen Âge telle qu'un bourgeois lettré, mais non savant, pouvait l'écrire et la parler. L'étude de cette <hi rend="i">scripta</hi> illustre à la fois les particularités du dialecte messin et celles propres au style de Philippe de Vigneulles, qui se distingue par l'absence totale de rigueur graphique et syntaxique.</p>
+        </div>
+        <div>
+          <head>Chapitre III <lb/>Principes d'édition</head>
+          <p>S'inspirant du travail d'Anne Schoysman dans son édition de la <hi rend="i">Chronique de 1507</hi> de Jean Lemaire de Belges (2001), le choix a été fait d'une édition semi-diplomatique qui conserve dans le corps du texte les ajouts interlinéaires et marginaux et les mots raturés, afin d'alléger l'apparat critique et de permettre au lecteur d'assister à la genèse des <hi rend="i">Mémoires.</hi> Il s'agit également de fournir une base solide pour une étude future de la composition des différents manuscrits de Philippe de Vigneulles qui sont considérés comme autographes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie <lb/>Édition du manuscrit BNF, nouv. acq. fr. 6720</head>
+        <p/>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Témoin privilégié non seulement de l'histoire de Metz et de la Lorraine, mais surtout de la langue et de la vie quotidienne dans la cité à la fin du Moyen Âge et au commencement de la Renaissance, le texte des <hi rend="i">Mémoires</hi> de Philippe de Vigneulles méritait de recevoir une édition de type semi-diplomatique qui le mît davantage en lumière.</p>
+        <p>Ce travail pourrait être poursuivi par l'enrichissement des notes concernant l'histoire locale aussi bien que par une confrontation exhaustive avec les tomes III et IV de la <hi rend="i">Chronique</hi> éditée par Charles Bruneau, qui correspondent à la période couverte dans les <hi rend="i">Mémoires.</hi> En outre, il y aurait lieu d'étendre l'étude de la <hi rend="i">scripta</hi> de Philippe de Vigneulles et de ses techniques de composition à l'ensemble de ses manuscrits autographes.</p>
+      </div>
+      <div>
+        <head>Annexe</head>
+        <p>Transcription des pages 335-338 (supprimées par Philippe de Vigneulles dans le manuscrit). — Glossaire. — Index des noms propres.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

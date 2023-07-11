@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2015_20" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Souvenirs et impressions du siège de Paris. Édition critique et commentaire</title>
+        <author ref="https://www.idref.fr/184197287">Louis Paris</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2015 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2015</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2015"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Souvenirs et impressions du siège de Paris</head>
+      <head type="sub">Édition critique et commentaire</head>
+      <byline>
+        <forename>Louis</forename>
+        <surname>Paris</surname>
+        <roleName>licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Tout individu ayant subi dans son existence l'annonce formidable d'un grand événement, d'un puissant cataclysme, n'a pas forcément à sa portée la consolation de l'oubli. La date, le lieu, la conjoncture des temps, le charme de sa situation ou de ses pensées au moment fatidique restent gravés dans sa mémoire. Ainsi en fut-il pour Georges Perrot, lorsque les nouvelles des premiers désastres de l'armée française lui parvinrent en ce mois d'août 1870. Jeune professeur et archéologue promis à une belle carrière universitaire, il s'est emparé de sa plume pour témoigner et garder une trace de ces événements. Le journal tenu pendant ces mois d'enfermement forcé et de garde nationale au rempart ainsi que l'ébauche interrompue de son projet d'ouvrage sont l'objet de cette présente édition. Dans les <hi rend="i">Souvenirs et impressions du siège de Paris</hi> se dessinent au fil des pages, d'août 1870 à février 1871, la personnalité d'un homme, ses valeurs morales, sa foi dans le progrès humain et la science tout autant que sa méfiance à l'égard du peuple et sa profonde désillusion envers l'Allemagne auparavant rêvée.</p>
+        <p>Les écrits de Georges Perrot durant ces quelques mois de « l'année terrible », jetés sur des feuillets volants, révèlent un homme qui cherche à prendre de la hauteur sur le drame qui se joue sous ses yeux, délaissant souvent un compte rendu factuel de la chronologie du siège pour mieux livrer ses impressions et ses observations. Un riche tissu de réflexions, témoignant de ses convictions républicaines, de sa formation historienne et de son milieu de la bourgeoisie protestante éclairée, ancre son manuscrit dans une communauté de pensées et d'individus qui prendront part à la régénération de la France défaite par la Prusse, sous les auspices de la Troisième République.</p>
+      </div>
+      <div>
+        <head>Première partie <lb/>Mise en contexte biographique et historique</head>
+        <div>
+          <head>Chapitre premier <lb/>Biographie de Georges Perrot</head>
+          <p>Georges Perrot naquit le 12 novembre 1832 à Villeneuve-Saint-Georges, dans le département du Val-de-Marne. Orphelin de père dès sa prime enfance, il fut éduqué dans une tradition protestante aux mains de trois femmes, grand-mère, mère et tante. Brillant élève au lycée Charlemagne de Paris, il entra à l'âge de vingt ans, en 1852, à l'École normale supérieure de la rue d'Ulm, avant de rejoindre l'École française d'Athènes. Sa formation classique, son goût pour l'histoire et l'Antiquité l'orientent vers la carrière d'archéologue et d'historien de l'art antiques : reçu premier à l'agrégation de lettres en 1859, il fut chargé dans un premier temps d'enseigner au lycée, puis, l'année suivante, de mener à bien une expédition archéologique en Asie mineure.</p>
+          <p>À son retour en France, il épousa Eugénie Dornès, entrant ainsi de plain-pied par ce mariage dans une aristocratie républicaine, protestante et progressiste. Docteur ès lettres en 1867, il fit une éclatante carrière universitaire : professeur au lycée Louis-le-Grand, maître de conférences en archéologie à la Sorbonne, directeur de l'École normale supérieure, jusqu'à l’apogée de son élection en tant que secrétaire perpétuel de l'Académie des inscriptions et des belles-lettres en 1904. En parallèle, il mena une intense activité scientifique, dont le point culminant fut sa vaste <hi rend="i">Histoire de l'art dans l'Antiquité</hi>, projet qu'il mena conjointement avec l'architecte Charles Chipiez de 1878 à 1901, puis seul lors de la disparition de ce dernier. La mort de Georges Perrot, survenue le 30 juin 1914, laissa inachevée son entreprise monumentale, pourtant déjà pourvue de dix tomes.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>La guerre franco-prussienne</head>
+          <p>Il a semblé salutaire, pour comprendre le contexte de rédaction des <hi rend="i">Souvenirs</hi>, de retracer la guerre entre la France du Second Empire et la Prusse, de la crise diplomatique de juillet 1870 au siège de Paris de septembre à fin janvier 1871, en passant par les opérations militaires de l'Est de la France et les tentatives de résistance du gouvernement de Tours, mené par Léon Gambetta.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie <lb/>Un voyage immobile</head>
+        <div>
+          <head>Chapitre premier <lb/>Chronique d'un témoignage</head>
+          <p>Le manuscrit de Georges Perrot s'inscrit dans la pratique du témoignage, dont l'écriture revêt, plus ou moins consciemment, une forme de crise, que ce soit une crise historique ou une crise personnelle. Dans le cas de l'archéologue, le texte autographe peut être distingué en deux grands moments ; le premier est le récit tenu au jour le jour des événements de la guerre et du siège de la capitale, où émergent ses sentiments et ses pensées, sans recul historique, tandis que le second concerne son projet de livre relatant son expérience obsidionale, recomposé à partir de ses notes journalières et destiné à un lectorat plus large. La question de l'écriture immédiate de l'histoire, l'enjeu de fournir un matériau pour les générations à venir animent cette entreprise de Georges Perrot, qu'il ne mena pourtant pas à son terme, laissant inachevé son manuscrit.</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Un historien à la plume littéraire</head>
+          <p>La formation littéraire, l'érudition classique de Georges Perrot transparaissent tout au long de son manuscrit : s'inscrivant en digne héritier des mémorialistes, il livre nombre d'anecdotes et de petits tableaux sur la vie du siège, croquant souvent non sans ironie ses contemporains, leurs états d'esprit et leurs lubies. Les fréquents récits de promenades, entreprises lors de ses moments d'oisiveté, rappellent son goût des voyages et son métier d'archéologue, fin observateur de son milieu et de son temps.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie <lb/>De la France et de l'Allemagne</head>
+        <div>
+          <head>Chapitre premier <lb/>Regards croisés entre France et Allemagne</head>
+          <p>Pour mieux comprendre les antagonismes entre la France et l'Allemagne, un état des lieux des revendications autour de la rive du Rhin est salutaire. Objet de convoitise historique depuis le <num>xvii<hi rend="sup">e</hi></num> siècle, la région rhénane fit un abrupt retour durant l'année 1870 dans les discours des belligérants, entre recours à l'histoire et révision des grilles de lectures nationales pour tenter de justifier de part et d'autre les objectifs et les limites de la guerre. Le fleuve s'intercala dans les polémiques et les débats des politiques et des intellectuels, de Renan à Mommsen, ouvrant la voie à une entreprise de définition des identités des deux nations rivales. Point de cristallisation irréductible, sa revendication par la Prusse amena, entre autres, à l'élaboration d'articles et de réflexions où se mêlèrent les mots et les thèmes de la barbarie, de la science et de son dévoiement, de la décadence et de « l'esprit national » des deux peuples. Le manuscrit de Georges Perrot est à cet égard un digne représentant de ces idées, ainsi que de l'émergence progressive de celle d'« ennemi héréditaire ».</p>
+        </div>
+        <div>
+          <head>Chapitre II <lb/>Au miroir de l'Allemagne</head>
+          <p>Dès les premières déconvenues militaires de l'été 1870, et pour de longues décennies après la défaite, la référence allemande devint une image obsédante tout autant que stimulante pour les penseurs français. D'un inventaire amer des causes de la défaite jusqu'à l'idée impérative d'une régénérescence de la France, l'Allemagne joua un rôle de miroir pour la société française. Le système militaire et éducatif prussien fut pris en exemple, commenté et discuté, ouvrant le chemin à de vastes entreprises de réformes sous la Troisième République. Georges Perrot égrena au fil de sa plume, durant les mois de siège, de multiples réflexions sur les mesures à prendre après la paix, notamment dans le domaine de l'enseignement.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie <lb/>Édition critique des <hi rend="i">Souvenirs et impressions du siège de Paris</hi></head>
+        <p>L'édition critique concerne un manuscrit inédit de Georges Perrot, conservé au département des Manuscrits de la Bibliothèque nationale de France, sous la cote NAF 19780. Le texte a été établi selon les règles habituelles d'édition contemporaine. La syntaxe et la mise en page de l'auteur ont été respectées, tandis que les rares fautes d'orthographe ou de conjugaison ont été corrigées. Deux apparats de notes accompagnent l'édition du texte : d'abord historique, pour éclairer les références, personnages et autres situations égrenées au fil de l'écriture, puis critique, pour rendre compte des biffures les plus significatives.</p>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Georges Perrot fut l'un de ces savants dont le parcours, au <num>xix<hi rend="sup">e</hi></num> siècle, se confond avec la tradition française des concours. Cette éducation et l'environnement socioculturel firent de ce jeune érudit un témoin parfois perspicace, du moins attentif du siège de Paris et des conséquences de cette guerre entre la France et la Prusse. Son manuscrit permet de retracer l'évolution intellectuelle de son rapport à l'Allemagne, d'une estime profonde envers sa culture et sa science aux germes d'une hostilité à peine voilée. Les responsabilités qui incombèrent par la suite à l'archéologue, le rôle qu'il eut à jouer en tant que professeur et pédagogue des élites à venir de la jeune République, font de cette présente édition une pièce estimable pour la compréhension de l'univers culturel et intellectuel républicain né de la défaite de 1870.</p>
+      </div>
+      <div>
+        <head>Annexes</head>
+        <p>Documents liés au manuscrit. — Chronologies de la guerre et du siège. — La défense de Paris. — Notices biographiques. — Préface de Fustel de Coulanges. — Bibliographie de Georges Perrot. — Index des noms de personnes. — Index des noms de lieux.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

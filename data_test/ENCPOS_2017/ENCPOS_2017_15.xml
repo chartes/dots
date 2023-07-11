@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2017_15" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les chansons, les jeux-partis et la poésie didactique de Ramon de Cornet. Édition critique</title>
+        <author ref="https://www.idref.fr/202966399">Marina Navàs Farré</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2017 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2017</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2017"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Les chansons, les jeux-partis et la poésie didactique de Ramon de Cornet
+        <lb/>Édition critique</head>
+      <byline>
+        par
+        <forename>Marina</forename>
+        <surname rend="uc">Navàs Farré</surname>
+        <roleName>maître ès lettres, diplômée d’études approfondies</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Ramon (ou Raimon) de Cornet est le poète occitan le plus important du <num>xiv<hi rend="sup">e</hi></num> siècle et le meilleur représentant de la dénommée École de Toulouse. Considéré par ses contemporains comme maître des troubadours, il est le meilleur représentant de la période tardive de la culture troubadouresque (ou post-troubadouresque) qui, dans le domaine d’oc, est souvent passée sous silence. C’est le poète de son époque au corpus le plus vaste, mais aussi celui qui a conservé la tradition manuscrite la plus étendue et diversifiée, dont un chansonnier conservé à Toulouse, le <hi rend="i">Registre de Cornet</hi> (ici nommé <hi rend="i">t</hi>, Toulouse, bibliothèque municipale, ms. 2885), qui nous a transmis la quasi-totalité de ses poèmes ainsi que quelques pièces de ses contemporains. Ce manuscrit a été publié en 1888 par Jean-Baptiste Noulet et Camille Chabaneau dans une édition qui reste aujourd’hui essentielle pour l’étude de Cornet. En 1915, Jaume Massó i Torrents a édité dans les <hi rend="i">Annales du Midi</hi>, dix-huit poèmes de Cornet sur la base du chansonnier appelé <hi rend="i">Sg</hi> (Barcelone, Biblioteca de Catalunya, ms. 146) ; plus tard, d’autres auteurs ont publié quelques pièces de Cornet de manière isolée (notamment le <hi rend="i">Doctrinal de trobar</hi>, un traité rhétorico-grammatical). Il manquait à ceci une vraie édition critique collationnant tous les témoins manuscrits, ainsi qu’une étude consacrée entièrement à la figure de Cornet.</p>
+        <p>L’édition critique des chansons, des jeux-partis (<hi rend="i">tensos</hi> et <hi rend="i">partimens</hi>) et de la poésie didactique de Cornet – celle-ci étant subdivisée en trois sous-sections : épîtres, proverbes et autres pièces sapientielles, pièces de comput liturgique – ainsi que de quatre autres pièces étroitement liées, en annexe – trois <hi rend="i">sirventes</hi> (dont deux de croisade) et une glose à un poème de son contemporain Bernat de Panassac – cherche à combler ce vide et à améliorer la connaissance de ce poète et de son époque. Cette thèse offre une édition partielle de l’œuvre de Cornet – trente-quatre pièces sur un corpus de cinquante-deux –, au sein d’un projet plus vaste qui envisage l’édition complète de l’œuvre cornétienne. L’édition, qui forme la dernière partie de la thèse, est introduite par une étude du poète (première partie), de sa tradition manuscrite (deuxième partie) et de son œuvre (troisième partie).</p>
+      </div>
+      <div>
+        <head>Sources</head>
+        <p>L’édition des textes présentés a été établie d’après les témoins directs conservés, des manuscrits datant du <num>xiv<hi rend="sup">e</hi></num> jusqu’au <num>xvi<hi rend="sup">e</hi></num> siècle : le <hi rend="i">Registre de Cornet</hi> (<hi rend="i">t</hi>), le chansonnier Gil (<hi rend="i">Sg</hi>), le chansonnier Vega-Aguiló (<hi rend="i">VeAg</hi>, Barcelone, Biblioteca de Catalunya, ms. 8), BMT 894 (Toulouse, bibliothèque municipale, ms. 894) et <hi rend="i">M</hi> (Palma de Majorque, Arxiu del regne de Mallorca, Fons Torroella, AT 646).</p>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>« Yeu, Ramons de Cornet »</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Ramon de Cornet : biographie</head>
+          <p>Les sources archivistiques sur la vie de Cornet étant rares, sa biographie a été pour l’essentiel reconstituée à partir des allusions fournies par son œuvre et par celles de ses contemporains. Les données tirées des poèmes ont été considérées dans leur contexte littéraire et utilisées sans jugement de valeur, tout en réfutant certaines hypothèses de travail qui tendaient à l’exagération ou à la banalisation. Une attention particulière a été portée au rapport de Cornet avec le mouvement Spirituel de l’ordre franciscain, les tensions que suscita le débat autour de la pauvreté du Christ étant explicites dans une partie de son œuvre. La biographie qui en résulte est la plus complète qui existe à ce jour et présente une chronologie différente de celle reconstituée par les biographies antérieures.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Ramon de Cornet : personnage littéraire</head>
+          <p>Certaines affirmations consignées dans les biographies antérieures sont le fruit d’une construction littéraire, la critique n’ayant jamais discerné l’auteur du personnage littéraire. Or, en fonction du type de poème, on distingue deux figures qui correspondent à deux <hi rend="i">autonominationes</hi> différentes : dans les pièces didactiques et morales, Cornet adopte le rôle du maître sage que la condition de troubadour et de clerc peut lui octroyer. En revanche, dans les compositions ludiques, parodiques ou plaisantes, il profite de sa condition de prêtre et de l’héritage goliardesque pour se déguiser en « faux clerc », glouton, buveur et luxurieux, qui abandonne les devoirs spirituels pour s’adonner pleinement aux vices charnels. Ces deux figures, exploitées par Cornet lui-même et par ses interlocuteurs dans les jeux-partis, constituent les deux faces d’une même médaille qui s’inscrit dans une tradition littéraire bien attestée.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Ramon de Cornet : son réseau</head>
+          <p>Les dédicaces de Cornet à plusieurs personnages haut placés mettent en avant un réseau remarquable, qui révèle l’intérêt que la noblesse occitane portait encore à la production lyrique en langue d’oc pendant la première moitié du <num>xiv<hi rend="sup">e</hi></num> siècle, un siècle après l’invasion française du Midi. Cornet adresse ses pièces à des nobles tels que les Albret, le comte de Foix, Gaston de Lévis, le comte d’Armagnac et de Rodez, les seigneurs de Lombers ou l’infant Pierre d’Aragon ; ces personnages sont pour la plupart issus de lignages qui avaient jadis protégé la culture troubadouresque.</p>
+          <p>Au-delà de ce réseau courtois, les destinataires de Cornet s’étendent de son entourage le plus immédiat, le <hi rend="i">Consistori</hi> toulousain, à des personnages influents, que ce soit sur le plan religieux – le ministre général des Franciscains Guiral Ot, ou l’évêque de Lavaur Roger d’Armagnac, à qui Cornet donne des conseils juste après leur prise de fonction – ou sur le plan politique – ainsi le lieutenant du Languedoc, Alphonse d’Espagne.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>« Puys sera rescritxa dins lor fuelh » : la tradition manuscrite</head>
+        <div>
+          <head>Chapitre premier
+            <lb/><hi rend="i">Recensio</hi></head>
+          <p>Une recension complète des manuscrits qui transmettent l’œuvre poétique de Cornet, jusqu’à présent jamais étudiés de façon exhaustive, a été effectuée ; celle-ci inclut autant les manuscrits conservés qui contiennent des pièces de Cornet (la tradition directe) que les notices concernant des volumes qui ne nous sont pas parvenus mais dont la description par des érudits permet d’affirmer qu’ils contenaient des œuvres de l’auteur (tradition indirecte).</p>
+          <p>Si tous les manuscrits qui contiennent des pièces de Cornet sont analysés, une attention particulière a été portée aux témoins pour lesquels, jusqu’à présent, on ne disposait pas d’une description minutieuse, établie selon les critères de la philologie matérielle : le <hi rend="i">Registre de Cornet</hi>, bien sûr, mais aussi l’autre manuscrit toulousain (BMT 894). La <hi rend="i">recensio</hi> est élargie avec un témoin inédit (<hi rend="i">M</hi>), décrit lui aussi en détail, et avec la notice d’un témoin de tradition indirecte (le chansonnier de Gérone, décrit par un érudit du <num>xviii<hi rend="sup">e</hi></num> siècle dans un manuscrit conservé à Valence, Col·legi del Patriarca, ms. 627). L’analyse de la tradition a aussi permis de présenter de nouvelles hypothèses sur la transmission de certains des témoins. Ainsi, la lecture attentive des notes faites par Angelo Colocci au sujet d’un manuscrit perdu ayant appartenu à l’humaniste Mario Equicola (chansonnier Equicola, décrit dans un volume conservé à la Biblioteca apostolica vaticana, Vat. lat. 4817) permet d’identifier un ancien possesseur de ce chansonnier, le Provençal Guilhem Féraut. À partir des notes du feuillet  de garde, on pourrait également assigner un autre propriétaire au manuscrit BMT 894, quoique dans ce cas l’attribution soit moins sûre.</p>
+          <p>Au total, le corpus s’élève à neuf témoins, sept de tradition directe – <hi rend="i">t, Sg, VeAg</hi>, BMT 894, BC 239 (Barcelone, Biblioteca de Catalunya, ms. 239), BAM D 465 inf. (Milan, Biblioteca Ambrosiana, D 465 inf.) et <hi rend="i">M</hi> – et deux de tradition indirecte (le chansonnier Equicola et celui de Gérone). Les descriptions des manuscrits ont été établies selon les critères de la philologie matérielle ; elles sont complétées par des illustrations de l’écriture et des filigranes, ainsi que par des tableaux des pièces de Cornet dans le <hi rend="i">Registre</hi> et dans le chansonnier Gil et par un tableau récapitulatif de la tradition.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Analyse de la tradition manuscrite</head>
+          <p>Le succès de Ramon de Cornet est attesté par l’étendue de sa tradition manuscrite, très supérieure à celle de ses contemporains et exceptionnelle pour plusieurs raisons. Une étude d’ensemble de cette tradition permet d’extraire des conclusions dépassant la seule figure de l’auteur.</p>
+          <p>Il convient de signaler la diversité typologique des témoins : un chansonnier d’auteur compilé en milieu bourgeois (<hi rend="i">t</hi>), qui dérive probablement d’un antigraphe établi en milieu monacal – et a peut-être été compilé par Cornet lui-même – et un chansonnier troubadouresque provençal perdu (chansonnier Equicola), tous les deux contemporains de l’auteur ou compilés peu après sa mort ; un chansonnier courtisan luxueux commandité par le comte d’Urgell dans lequel Cornet est le poète le plus représenté parmi ses contemporains (<hi rend="i">Sg</hi>) ; un grand <hi rend="i">codex</hi> d’origine catalane qui comprend tout l’héritage poétique occitano-catalan et français jusqu’à Ausiàs March et qui nourrira la production lyrique catalane postérieure (<hi rend="i">VeAg</hi>) ; un manuscrit languedocien de récits de voyages incluant en son milieu un long poème de Cornet (BMT 894) ; deux recueils consacrés aux traités poético-grammaticaux (BC 239 et le chansonnier perdu de Gérone) ; enfin, deux <hi rend="i">codex</hi> de miscellanées ayant appartenu à des érudits du <num>xvi<hi rend="sup">e</hi></num> siècle (BAM D 465 inf. et <hi rend="i">M</hi>). Des témoins, donc, qui ont peu ou rien à voir les uns avec les autres, ce qui révèle une circulation assez large et au sein de milieux très différents.</p>
+          <p>L’étude de la diffusion du corpus cornétien fait ressortir deux caractéristiques remarquables : son rayonnement au-delà de son territoire naturel, notamment dans la couronne d’Aragon – d’où proviennent six des neuf témoins –,  et la durabilité de l’intérêt qu’on lui a porté : jusqu’à deux siècles plus tard. Cet intérêt s’est focalisé sur deux aspects de son œuvre, la poétique prescriptive (grammaire et rhétorique) et la composition didactique et morale. Dans la première, il faut souligner le rôle joué dans la transmission des textes par des humanistes et des érudits de l’illustration ; et dans la seconde, considérer le rôle qu’a pu avoir dans cette transmission la confusion entre des poèmes de Cornet et des poèmes du troubadour Peire Cardenal, considéré comme le maître de la veine poétique morale.</p>
+          <p>La complexité des rimes de Cornet – rejoignant le goût de l’époque pour les artifices formels et l’hermétisme du <hi rend="i">trobar ric</hi> – a également pu jouer un rôle dans la valorisation de son œuvre et en faciliter la diffusion. Dans ce cas, c’est l’influence de Cornet chez des auteurs postérieurs qui témoigne de cet aspect, plutôt que la tradition manuscrite</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>« Coblas no leysharay o locs me·n falhiria » : édition critique</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>La poétique à l’époque de Cornet</head>
+          <p>Un bref aperçu de la poétique durant la première moitié du <num>xiv<hi rend="sup">e</hi></num> siècle, en tête de l’édition, permet de placer Cornet dans son contexte et de mieux mettre son œuvre en valeur. Tout comme ses contemporains, l’auteur élargit l’éventail des genres établis au <num>xii<hi rend="sup">e</hi></num> siècle avec les nouveautés du <num>xiii<hi rend="sup">e</hi></num> siècle. Sur le plan formel, il fait quelques expériences personnelles tout en s’inscrivant dans la lignée de ses prédécesseurs, qui constituent ce que l’on a nommé la dernière génération troubadouresque. Considéré parfois par la critique comme un poète en marge des pratiques de ses contemporains, Cornet s’avère au contraire le poète qui témoigne le mieux des usages poétiques de l’époque. Ce changement de perspective permet ainsi de caractériser certaines tendances esthétiques significatives de la poésie de son temps, qui trouvent une explication aussi bien dans le contexte historique et culturel et les courants intellectuels qui parcourent toute l’Europe que dans le déclin du <hi rend="i">Consistori</hi> de Toulouse, dont nous avons aussi redéfini le rôle. Ainsi, sa production littéraire n’est pas l’expression d’une poésie lyrique troubadouresque atavique et moribonde ; elle correspond aux goûts de son public et reflète les enjeux sociaux et politiques contemporains.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Présentation de l’édition</head>
+          <p>La plupart des poèmes de Cornet sont des <hi rend="i">unica</hi> (conservés dans <hi rend="i">t</hi>, qui s’affirme comme le manuscrit de base dans presque la totalité des pièces éditées) ; mais quand on recense plusieurs exemplaires, tous les témoins sont pris en compte dans l’édition. Un examen exhaustif des leçons est relevé en tête de l’édition, qui suit la méthode néo-lachmannienne, adoptée habituellement dans les éditions critiques des textes de troubadours.</p>
+          <p>Les critères retenus s’adaptent en fonction des textes, ceux-ci présentant des problématiques différentes qui exigent des solutions distinctes, justifiées dans la section « Tradition », en tête des textes édités, adoptant donc une solution plus propre à la philologie d’auteur. De ce fait, certaines pièces voient leur texte de base amélioré, soit à partir de la lecture du manuscrit <hi rend="i">t</hi>, soit à partir des leçons provenant d’un autre témoin, notamment <hi rend="i">Sg</hi>. La collation de l’ensemble des témoins a permis de compléter certaines compositions (la <hi rend="i">regla</hi> ou les <hi rend="i">cansos</hi>, par exemple) et d’émender <hi rend="i">ope codicum</hi> les erreurs de <hi rend="i">t</hi>. Quand le <hi rend="i">judicium</hi> s’avère indispensable, les émendations <hi rend="i">ope ingenii</hi> sont proposées sur la base de la langue de l’auteur.</p>
+        </div>
+        <div>
+          <head>L’édition</head>
+          <p>L’édition des poèmes de Cornet est organisée par genres (chansons ; jeux-partis ; poésie didactique), afin de saisir de façon plus aisée et cohérente les rapports entre les pièces et de fournir une vision d’ensemble de chaque groupe. Chaque partie est introduite par une analyse qui met en avant les traits les plus caractéristiques du corpus cornétien. À titre d’exemple, la présentation fait ressortir, dans les quatre premiers débats des jeux-partis, les reprises des moqueries, rumeurs et reproches ; ceci permet d’apprécier l’intertextualité entre ces pièces et suggère un cycle poétique qui gravite autour d’un axe commun, que nous avons identifié au <hi rend="i">Consistori</hi> de Toulouse. La révision du texte des pièces de comput permet maintenant leur lecture, quoique quelques expressions soient encore de compréhension difficile.</p>
+          <p>Chacune des pièces éditées est précédée d’une analyse métrique et d’un résumé de l’intrigue. Pour les pièces ayant deux témoins, une analyse de la tradition est livrée avant le texte, complétée par des apparats critiques à la fin du texte. Le premier apparat informe sur la mise en page, les accidents ou les corrections de copiste du manuscrit de base ; les deux suivants constituent l’apparat critique, l’un pour les variantes substantielles et l’autre pour les variantes formelles. Dans les notes sont expliqués les passages plus difficiles à comprendre, même s’il en reste encore de nombreux à résoudre. Enfin, le commentaire du texte précise les passages de Cornet que l’on retrouve chez d’autres auteurs contemporains et évoque les possibles sources de Cornet ainsi que des textes d’autres poètes dont Cornet est la source.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>La présentation revisitée de la biographie cornétienne – et de la construction de son personnage littéraire –, la mise en valeur de l’œuvre dans son contexte et l’inscription de celle-ci dans le goût de son époque, la <hi rend="i">recensio</hi> et une étude d’ensemble de la tradition manuscrite de Cornet contribuent à une meilleure connaissance et compréhension de son œuvre. Elles favorisent, en même temps, une caractérisation plus juste et plus riche de la poétique de son temps. La lecture du corpus cornétien présente de nombreuses difficultés qui l’ont rendu moins accessible ; l’édition critique d’une partie cohérente de ses poèmes, malgré certaines questions encore sans réponse, vise à le faire mieux connaître.</p>
+      </div>
+      <div>
+        <head>Annexes</head>
+        <p>Deux annexes complètent le corps de la thèse : la première présente un tableau des manuscrits cités et un tableau des concordances du corpus poétique de Cornet avec les éditions qui lui ont été consacrées. La deuxième offre un aperçu des <hi rend="i">contra- facta</hi> de l’œuvre de Cornet, accompagné d’un appendice musical sous forme de CD, dans lequel sont reproduites de façon hypothétique quatre pièces de Cornet dont on connaît le modèle musical, mises en musique <hi rend="i">ad hoc</hi> pour l’occasion.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

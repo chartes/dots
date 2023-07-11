@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le « résumé de Paris » ? Le Palais-Royal de 1780 à 1815 : commerces, logements, divertissements</title>
+        <author>Florence Köll</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 183-194</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le « résumé de Paris » ?
+        <lb/>Le Palais-Royal de 1780 à 1815 : commerces, logements, divertissements</head>
+      <byline>
+        <forename>Florence</forename>
+        <surname>Köll</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Succès esthétique et commercial, l’enceinte de Victor Louis et son jardin mercantile sont symptomatiques de l’essor progressif du divertissement comme source de revenus à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle. Prostitution, commerce de luxe, innombrables cafés, jeux d’argent et curiosités cohabitent dans cet enclos qui constitue un objet nouveau au cœur de la capitale. Dès les années 1780, de nombreuses voix s’élèvent pour condamner le Palais-Royal comme un lieu de perdition propice à la décadence des mœurs, mais c’est bien sa sulfureuse réputation, alliée à une constante course à la nouveauté pour satisfaire un public avide de surprises, qui assurent le succès de l’îlot. En conséquence, nombreuses sont les études qui adoptent cette rhétorique moralisatrice, mais il convient d’offrir au Palais-Royal de Victor Louis un nouveau portrait, esquissé à partir du dépouillement méthodique de nombreuses sources manuscrites et imprimées, textuelles et iconographiques. L’objet de cette étude se limite au jardin, ainsi qu’aux rues et lotissements conçus par Victor Louis et construits entre 1781 et 1784. Les bornes chronologiques découlent de cette limitation spatiale : l’année 1780 est celle de la pleine propriété du Palais-Royal pour Louis-Philippe-Joseph d’Orléans, tandis qu’en 1815 la parcelle, devenue Bien national après l’exécution de Philippe-Égalité le 6 novembre 1793 puis Domaine extraordinaire de la Couronne sous l’Empire, revient à la maison d’Orléans.</p>
+        <div>
+          <head>Sources</head>
+          <p>L’intérêt de cette étude réside dans le recoupement de nombreuses sources permettant de confirmer ou d’infirmer les déclarations qu’a pu susciter ce lieu clivant. Les fonds des Archives nationales retiennent d’abord l’attention, plus particulièrement la sous-série R<hi rend="sup">4</hi>, la sous-série N pour la Seine au service des cartes et plans, et la sous-série Z<hi rend="sup">1J</hi>. Les archives de Paris sont également riches en informations pour la période révolutionnaire grâce aux documents issus de l’administration des Domaines nationaux (DQ10). En complément, de nombreux documents notariés permettent de découvrir les locataires de l’enclos, notamment les minutes et répertoires de Denis André Rouen, notaire du prince, inclus dans les fonds de l’étude LXXI au Minutier central des notaires de Paris, ainsi que les documents repérés grâce à la consultation du sommier foncier, conservé aux archives de Paris sous la cote DQ18 94.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Conception, chronologie du chantier et déviation du projet initial</head>
+        <div>
+          <head>Chapitre premier<lb/>Concevoir un projet architectural au service de la spéculation</head>
+          <p><hi rend="i">Le duc de Chartres devient propriétaire du Palais-Royal.</hi> — L’obtention de la pleine propriété de la parcelle du Palais-Royal est pour Louis-Philippe-Joseph d’Orléans, lourdement endetté, le prérequis de toute restructuration et nécessite de vives négociations avec son père. L’acte de donation est accordé par le duc d’Orléans le 30 décembre 1780 mais le projet est freiné par le statut d’apanage du terrain. Le duc de Chartres obtient donc le 17 juin 1781 des lettres patentes lui permettant d’aliéner à titre d’accensement perpétuel deux mille trois cents toises de superficie (8 736 mètres carrés) à prendre dans le pourtour du jardin. Ainsi est établi le cadre légal de l’opération immobilière.</p>
+          <p><hi rend="i">Le choix de l’architecte : de Henri Piètre à Victor Louis</hi>. — Le duc de Chartres fait dans un premier temps appel à Henri Piètre, déjà employé par Louis-Philippe le Gros après l’incendie de l’Opéra en avril 1763. Toutefois, il accorde finalement sa confiance à Victor Louis, pourtant établi à Bordeaux : le rapprochement des deux hommes a sans doute lieu lors de la pose symbolique de la première pierre du Grand Théâtre par le prince le 13 avril 1776. Victor Louis rejoint Paris dès juin 1780, avant même que le duc n’obtienne la propriété du Palais-Royal ; certaines clauses de l’acte de donation, laissant entrevoir la méfiance du père envers les projets de son fils, tendent à confirmer que la restructuration se trame déjà à l’automne 1780.</p>
+          <p><hi rend="i">Les deux premiers projets d’Henri Piètre</hi>. — Henri Piètre propose deux projets au prince. Le premier, en janvier 1781, est une modification du palais princier : confronté à un tel plan, le duc dévoile son ambition de lotissement spéculatif et Piètre conçoit un deuxième projet, qui ne semble pas séduire le duc de Chartres. L’architecte est mis à l’écart tout en demeurant contrôleur des Bâtiments du duc jusqu’en 1784. Henri Piètre présente lui-même son éviction comme le fruit d’une divergence de vues quant à l’ampleur du projet à venir.</p>
+          <p><hi rend="i">Les cinq étapes de la conception du Palais-Royal par Victor Louis</hi>. — Le lotissement de Victor Louis est l’objet d’une réflexion dont on conserve aujourd’hui les traces de cinq étapes. La première proposition est conventionnelle, exclusivement commerciale et totalement indépendante du palais princier. Le deuxième plan envisage au contraire un réaménagement du palais dans le prolongement des nouvelles galeries qui engloberaient désormais le jardin. La destruction de l’Opéra le 8 juin 1781 condamne ces deux plans car le prince souhaite désormais incorporer le nouvel Opéra au sein de son complexe : cette ambition donne naissance au troisième projet de Victor Louis. L’Opéra y est inclus à l’extrémité nord de la parcelle et le système de galeries est très proche du premier projet ; il comporte également des logements. Le déménagement de l’Opéra provoque l’abandon de ce projet. Le quatrième plan, conforme à l’exécution et adjoint au marché signé avec l’entrepreneur, propose un jardin au cœur d’un centre commercial où les logements occupent une place importante. Le cinquième plan, daté de juillet 1784, traduit un dernier état de conception idéal, car jamais entièrement achevé.</p>
+          <p><hi rend="i">Les aspects financiers et spéculatifs du projet</hi>. — Les manœuvres financières semblent se faire à tâtons et une hésitation subsiste longuement entre vendre ou louer les habitations nouvellement construites. Le lotissement paraît s’autofinancer en se construisant par à-coups, selon les profits permis par les constructions déjà élevées. Les architectures éphémères venant s’adjoindre au projet initial visent ainsi toutes une rentabilité à court terme.</p>
+          <p><hi rend="i">La conception de la décoration des façades</hi>. — Les façades des nouvelles bâtisses masquent l’architecture chaotique des maisons construites avec l’approbation de Richelieu et confèrent son homogénéité et son prestige au nouveau lotissement. Louis propose un système décoratif drastiquement différent entre la façade sur rue et celle sur jardin : à l’ascétisme de l’une répond la richesse de l’autre. Il s’agit d’un apparat palatial tout superficiel.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Construction des bâtiments en pourtour du jardin : galeries et commerces</head>
+          <p><hi rend="i">Les destructions préalables aux travaux</hi>. — Terrassements et travaux débutent en octobre 1781 avec de nombreuses démolitions : galerie et chapelle de 1628, aile de la bibliothèque, aile du jardin des Princes, galerie d’Énée et salon d’Oppenord sont sacrifiés.</p>
+          <p><hi rend="i">Le paiement du maître-maçon et de l’architecte</hi>. — Le 9 novembre 1781, on convient des conditions de rémunération du maître d’œuvre et de l’architecte. Le maître-maçon Louis Berthault s’engage ainsi à avoir terminé le chantier pour le 1ᵉʳ avril 1784 moyennant un forfait correspondant au devis établi par Victor Louis. De la ponctualité de l’entrepreneur dans la livraison des bâtiments dépend la rapidité de sa rémunération. Victor Louis reçoit quant à lui 5 % du montant du devis, mais sa rémunération dépend du respect du budget accordé.</p>
+          <p><hi rend="i">Les acteurs du chantier</hi>. — Louis Berthault est accompagné dans sa tâche par des membres du bureau de Victor Louis : Pierre-Adrien Pâris, Duval, neveu de Louis, et ses associés depuis le chantier du Grand Théâtre de Bordeaux, André et Gabriel Durand.</p>
+          <p><hi rend="i">La chronologie du chantier</hi>. — Le gros œuvre s’étend sur presque trois années : la majorité des opérations est achevée en 1784. Le chantier est ralenti par des livraisons différées de matériaux, par la difficile cohabitation des opérations et par leur succession plus ou moins rationnelle. Le devis établi par Louis est largement dépassé.</p>
+          <p><hi rend="i">Les premiers contrats de location</hi>. — Le gros œuvre terminé, reste l’aménagement intérieur : il est réalisé par les premiers locataires contre une première période d’occupation gratuite. On observe trois phases de locations : tout d’abord, le duc commence la signature des baux avant même l’achèvement des constructions, en 1782. Un deuxième mouvement a lieu en 1784 et 1785, lorsque les galeries sont partiellement achevées. Enfin, un troisième mouvement de location se fait après la vente des arcades, en 1787 et 1788 ; les contrats ont alors lieu entre particuliers. Les premiers marchands qui s’installent créent déjà un centre commercial relativement cohérent et transforment les galeries en un lieu de coquetterie, de luxe et de curiosité.</p>
+          <p><hi rend="i">La vente des maisons à arcades</hi>. — Face au manque de rentabilité à court terme de la location, le duc de Chartres change de stratégie et opte pour la vente, qui se fait par arcade : les premiers baux sont signés au printemps 1787. L’opération eût été fructueuse si les sommes avaient été versées : la Révolution freine les paiements et le duc ne reçoit que le quart du profit projeté.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Les galeries de bois</head>
+          <p><hi rend="i">Nées d’un imprévu</hi> ? — Le lotissement terminé, le quatrième côté demeure à l’état de fondations qui ne peuvent être rentabilisées en tant que telles. Bien que l’aspect terminé du quadrilatère surmonté d’un dôme ne connaisse une grande publicité, le quatrième côté ne fut jamais exécuté : le terrain loué, un entrepreneur y élève des galeries de bois. Cette construction consiste en cinq nefs, dont deux exhaussées, tandis que les boutiques sont disposées en trois rangées sur une superficie de 2 250 mètres carrés. Les boutiques, de quatre à cinq mètres carrés de surface, sont couvertes en plomb et décorées par deux treillages à hauteur d’appui, sur un sol de terre battue. Elles connaissent une véritable vogue et abritent un commerce diversifié et original malgré leur exiguïté.</p>
+          <p><hi rend="i">Une destruction continuellement reportée</hi>. — Les nombreuses critiques à l’égard des galeries, tant sur le plan moral que matériel, engendrent le projet de leur destruction dès l’an VII (1798-1799). Le report permanent de cette démolition s’explique par leur grande rentabilité du fait de loyers élevés et c’est un incendie, le 31 octobre 1827, qui sonne le glas des galeries de bois.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Le projet d’aménagement urbain, un espace conçu pour être rentable</head>
+        <div>
+          <head>Chapitre premier<lb/>Le jardin, atout spéculatif ?</head>
+          <p><hi rend="i">Le jardin, atout hygiéniste dans le Paris de la fin du <num>xviii<hi rend="sup">e</hi></num>siècle</hi>. — Le maintien d’un jardin est au cœur des problématiques d’urbanisme chères aux hygiénistes, en plus d’être un atout pour la vente des logements : seules 5 % des maisons parisiennes de la fin du <num>xviii<hi rend="sup">e</hi></num> siècle bénéficient d’un jardin. Le jardin du Palais-Royal est donc attractif ; mais il est conçu comme un espace rationalisé pour assurer la rentabilité au lotissement, non comme un espace champêtre</p>
+          <p><hi rend="i">La spéculation immobilière, une initiative isolée</hi> ? — La construction de lotissements spéculatifs dans la capitale est répandue à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle, particulièrement dans les faubourgs sous l’impulsion de financiers. Plusieurs de ces opérations présentent des similitudes avec celle du Palais-Royal : échelle large, vente des terrains après construction des bâtiments, percement d’une rue intégrée au lotissement. Ce type d’opération est aussi répandu dans la noblesse : le comte d’Artois se prête à une entreprise spéculative avec sa « nouvelle Londres » et le comte de Provence tire profit de son apanage du Luxembourg en créant le quartier de l’Odéon.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Espace public et réaménagement d’un quartier</head>
+          <p><hi rend="i">L’adieu à l’ancien jardin : l’attachement sentimental des habitués</hi>. — La destruction de cette promenade parisienne prisée engendre une violente campagne à l’encontre du prince et de son projet, fustigé par des pamphlets, gravures, chansons et placards. Néanmoins, la violence même de la cabale semble profiter au duc de Chartres et lui assure le soutien de nombreuses personnes perplexes face à ce déferlement de haine.</p>
+          <p><hi rend="i">Réaction des riverains dépossédés, nouvelle campagne violente</hi>. — Il est probable qu’une partie des pamphlets soit le fait des propriétaires des anciennes maisons en pourtour du jardin : fervents opposants au nouveau lotissement, ils voient en effet leurs biens fortement dépréciés par celui-ci et opposent au projet une action légale auprès du Parlement.</p>
+          <p><hi rend="i">Un aménagement urbain</hi>. — Les trois rues nouvellement créées, de vingt-sept pieds de largeur (8,2 m), communiquent avec les anciens pourtours du jardin : celle de Valois avec la rue Saint-Honoré, celle de Montpensier, prolongée jusqu’à la rue Saint-Honoré, avec la rue de Richelieu ; la rue de Beaujolais bénéficie d’un passage vers la rue Vivienne. La toponymie du lieu est amenée à changer pendant la Révolution : les noms des enfants du duc d’Orléans sont ainsi abandonnés le 2 thermidor an VI (20 juillet 1798) au profit de noms plus républicains. De lieu de promenade, la parcelle devient une continuation du réseau viaire.</p>
+          <p><hi rend="i">La réception de l’architecture par le public</hi>. — Le complexe architectural conquiert progressivement le public et les travaux sont admirés pour leur rapidité. L’éclairage des galeries participe à ce revirement de l’opinion et concourt à la réputation féérique du lieu. Les principales critiques portent sur l’origine spéculative des travaux, les nouvelles plantations, et la forme claustrale du nouveau jardin.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Qu’est-il advenu des bâtiments pendant la Révolution et l’Empire ?</head>
+          <p><hi rend="i">Le Palais-Royal devient Bien national</hi> — Dans un premier temps, les événements révolutionnaires ne semblent pas influencer les actions du duc d’Orléans dans la gestion du lotissement et les travaux du palais princier continuent. Ce dernier est réuni au domaine de l’État après l’exécution du duc d’Orléans le 6 novembre 1793. La Convention se hâte de tirer profit du lieu par de nouvelles locations.</p>
+          <p><hi rend="i">Quelle gestion du domaine par l’État</hi> ? — L’État, désormais responsable des galeries, du jardin et du palais princier, poursuit les travaux et envisage régulièrement la vente de l’enclos. Le lieu est défiguré par de nombreux abus, sources de problèmes d’hygiène et de police ; l’entretien du jardin incombe finalement aux propriétaires. Le palais princier trouve une vocation en accueillant le Tribunat, créé par la constitution de l’an VIII, ainsi que la Bourse à partir de 1802. Après la suppression du Tribunat, de nombreux projets sont proposés pour trouver une nouvelle utilité au palais, mais ils butent tant sur l’absence d’une volonté bien définie que sur le manque de moyens.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Un objet nouveau qui réunit des formes architecturales préexistantes : habitat, commerce, divertissement</head>
+        <div>
+          <head>Chapitre premier<lb/>Lieu d’habitation, lieu de vie</head>
+          <p><hi rend="i">La conception des logements traduit la conception du lieu.</hi> — La hiérarchie sociale des logements se lit dans les dépenses allouées aux matériaux utilisés à chaque étage. En dépit de son apparence homogène, le lotissement est divisé en unités d’habitation irrégulières dont la plus commune est la maison à trois arcades, qui représente plus de la moitié du lot. La distribution, adaptable, correspond aussi à un plan-type. Néanmoins, le lotissement s’inscrit dans un marché relativement haut de gamme.</p>
+          <p><hi rend="i">Un lieu de vie réglementé</hi>. — Apanage du duc d’Orléans, la parcelle est fermée à la police royale et le prince impose un règlement propre au lieu. Il vise à maintenir l’homogénéité esthétique de l’enclos et sa propreté, et impose un contrôle de l’accès des nouveaux habitants au jardin, ainsi qu’une stricte restriction des commerces autorisés.</p>
+          <p><hi rend="i">Qui habite au Palais-Royal</hi> ? — Les propriétaires n’habitent le plus souvent pas dans le lotissement et les habitants sont surtout des sous-locataires dont le bail est perçu comme un investissement. L’habitat modeste prend progressivement le pas sur le logement bourgeois, dont les espaces originels aux premier et deuxième étages sont subdivisés par des cloisons.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Un centre commercial attractif, ou de l’art d’appâter le chaland</head>
+          <p><hi rend="i">La boutique : un nouveau type architectural à part entière</hi> ? — Les guides de voyage témoignent de l’inscription de la boutique dans l’identité urbaine des capitales européennes. Elle remplace progressivement le commerce itinérant, sectorisé ou périodique (colportage, foires, marchés). Ce succès va de pair avec l’attention portée à la circulation piétonne. Le Palais-Royal constitue donc un lieu propice à l’expérimentation commerciale.</p>
+          <p><hi rend="i">Attirer le client dans la boutique</hi>. — Les enseignes obéissent à un cadre légal relativement strict et le règlement du Palais-Royal est loin d’être la première tentative de contrôle de celles-ci. Politiques, publicitaires, objets d’admiration en tant que telles, elles envahissent les galeries. La devanture de chaque boutique, bien que partie intégrante de l’esthétique générale du lieu, contourne également toute restriction afin de démarquer le magasin de son environnement. L’éclairage nocturne constitue aussi un élément attractif, tant pour la beauté du lieu que pour l’effet flatteur de la lumière artificielle sur les matériaux ; la cherté de leurs loyers semble pousser les marchands du Palais-Royal vers diverses formes d’escroquerie.</p>
+          <p><hi rend="i">Faire face à la concurrence</hi>. — La concurrence accrue par la densité des boutiques engendre de nombreuses faillites. Malgré le renouvellement perpétuel du paysage commercial des galeries, leurs domaines de prédilection demeurent les mêmes sur l’ensemble de la période étudiée. La publicité semble avoir tenu une place prépondérante dans l’enclos sous la forme d’affiches, de tracts ou de publications.</p>
+          <p><hi rend="i">Les cafés et restaurants : différents décors pour différentes clientèles</hi> ? — La décoration des cafés et restaurants, souvent luxueuse, fait partie intégrante du produit payé par le client : lambris, peintures, glaces, bronzes et marbre sont des éléments récurrents. Le mobilier et le décor ne sont pas nécessairement assortis, bien que le café de la Régence ait pu faire l’objet d’une rénovation en ce sens. La clientèle se lasse vite et les multiples changements apportés à la rotonde ajoutée au café du Caveau sont autant de tentatives de renouveler l’intérêt du public, au même titre que les spectacles et animations organisés par les établissements.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Un lieu de divertissement parisien</head>
+          <p><hi rend="i">Palais-Royal, foires, boulevards : concurrence et continuité</hi>. — Le Palais-Royal semble prendre le relais des foires Saint-Germain et Saint-Laurent : la similarité de l’offre proposée ne fait qu’accroître leur concurrence, qui s’étend également aux boulevards. Le Palais-Royal dispose de l’avantage de l’immuabilité physique et de l’inscription dans la durée, contrairement aux périodes d’exploitation limitées auxquelles les foires sont soumises.</p>
+          <p><hi rend="i">Curtius : un parcours représentatif</hi>. — Curtius, qui tient un cabinet de figures de cire, débute sur les boulevards, s’installe ensuite à l’arcade numéro 7 du Palais-Royal et, une fois son succès assuré, étend son commerce aux foires. Adaptant son cabinet à son emplacement, son parcours permet de percevoir que le Palais-Royal présente un public différent et de nouvelles opportunités pour les entrepreneurs de divertissements. L’enceinte détient toutefois l’exclusivité quant à certains spectacles : c’est le cas des Ombres chinoises de Séraphin.</p>
+          <p><hi rend="i">Des divertissements au goût du jour</hi> — Le Palais-Royal voit ses entreprises de divertissement suivre, au même titre que les boulevards et les foires, certaines modes correspondant aux intérêts du public. Les galeries accueillent ainsi automates, curiosités naturelles, plans-reliefs et curiosités scientifiques tant sous forme de spectacles que de cabinets d’exposition.</p>
+          <p><hi rend="i">Vauxhalls et Palais-Royal : des parcs d’attraction</hi> ? — Le Palais-Royal est à comparer aux vauxhalls, qui allient amusements et commerces à des fins capitalistes. Dans ces structures, le jardin trouve un rôle nouveau et, comme au Palais-Royal, devient véritablement un lieu rentable. On y trouve les éléments qui font aussi le succès de l’enceinte princière : un éclairage spectaculaire, la présence de musique, un élément bâti en son centre et dédié au spectacle, une aire de déambulation en cas d’intempéries et la présence de commerces de bouche.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Le cirque du Palais-Royal</head>
+        <div>
+          <head>Chapitre premier<lb/>Portrait d’un édifice disparu</head>
+          <p>Les dimensions du cirque sont d’environ cent vingt mètres de long sur dix-sept mètres de largeur. L’édifice, ponctué de quatre avant-corps, est couronné d’un jardin en terrasse et d’une verrière sur toute sa longueur. Aux soixante-douze colonnes corinthiennes supportant la structure à deux niveaux de l’intérieur répondent les soixante-douze colonnes ioniques qui l’entourent à l’extérieur avec, en quinconce, des bustes d’hommes illustres. Le bâtiment est également entouré de bassins d’eau jaillissante. Il semble que le chantier, prévu dès 1786, soit mené avec lenteur jusqu’au milieu de l’année 1787 ; il est achevé au milieu de l’année 1788. Le cirque paraît conçu pour s’effacer au profit du reste du jardin : l’arène est enterrée et la terrasse est couverte de plantations. Les treillages, les bustes de marbre et la peinture verte appartiennent au vocabulaire décoratif du jardin. Le cirque du Palais-Royal est un objet atypique et sans réel équivalent.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Pourquoi construire un cirque ?</head>
+          <p><hi rend="i">Hippodrome, manège princier, vauxhall : un bâtiment sans vocation</hi> ? — Le choix du nom « cirque » inscrit l’arène dans une lignée typologique puisant sa source dans l’Antiquité et sa forme elliptique est originale. Le premier établissement de spectacle équestre portant le nom de « cirque » sous l’Ancien Régime est le <hi rend="i">Royal Circus</hi> construit en 1782 par l’écuyer Charles Hughes à Londres et le cirque du Palais-Royal fut de même conçu pour accueillir le spectacle équestre de John Philip Astley, écuyer anglais ayant présenté son art aux Parisiens en 1782. Néanmoins, cette utilisation hippique n’a jamais été concrétisée. Le spectacle est interdit avant même la fin des travaux à cause de poursuites que son installation aurait engendrées de la part des autres spectacles parisiens. Cet abandon fait perdre sa vocation au bâtiment. De manège public il est supposé devenir manège princier, mais ses proportions ne sont pas celles d’un manège typique (60 m sur 20 m). Le lieu est finalement exploité comme salle de concert, lieu de fête et arène d’événements plus sportifs ; son utilisation comme vauxhall ne s’est faite <hi rend="i">a posteriori</hi> qu’à défaut.</p>
+          <p><hi rend="i">Un centre commercial</hi>. — Le cirque accueille également vingt-quatre boutiques enterrées dont l’exploitation est similaire à celle des galeries de bois. Loué au sieur Rose de Saint-Pierre en octobre 1788, le cirque est l’objet, en avril 1792, d’un second bail à Charles-Émile Gaulard-Désaudray, ingénieur, associé à Pierre Gervais, peintre-décorateur. S’engageant à rénover l’édifice, les nouveaux entrepreneurs opèrent une nouvelle division de l’espace en transformant l’arène unique en deux amphithéâtres. L’état de délabrement du bâtiment empêche sa rentabilisation : les locataires refusent d’honorer leurs loyers pour cause de non-jouissance.</p>
+          <p><hi rend="i">Un lieu de pédagogie : le Lycée des arts</hi>. — Établissement d’instruction ouvert à toutes et à tous né de l’impulsion du locataire Charles Désaudray, le Lycée des arts connaît sa première séance le 5 avril 1793. Se réunissant dans un vaste salon de vingt-deux mètres sur trente-huit, il accueille, dans ses trois premières années d’existence, plus de cinquante séances publiques, la proclamation de plus de cinq cents inventions, ainsi qu’un ensemble de cours pour enfants qui répond à l’inaction du gouvernement révolutionnaire dans le domaine de l’instruction.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>La dégradation du cirque du Palais-Royal</head>
+          <p><hi rend="i">Les vices de forme : les infiltrations d’eau et la mauvaise conception de l’édifice</hi>. — Plus que sa construction, c’est la conception du cirque qui semble avoir été défectueuse. Le couvrement de la terrasse en cuivre est un échec et les plaques se dessoudent continuellement à cause du poids de la végétation et des visiteurs, ce qui favorise la stagnation des eaux de pluie et ruine le bois et le plâtre. De même, l’eau s’échappe des bassins décoratifs et s’infiltre le long des murs jusqu’aux boutiques.</p>
+          <p><hi rend="i">Une construction victime d’événements extérieurs</hi>. — Le délabrement du cirque est accéléré par des circonstances indépendantes de celui-ci : infiltrations d’égouts environnants, explosion de la poudrerie de Grenelle le 31 août 1794, nombreux actes de vandalisme et potentielles malversations financières de la part de Charles Désaudray accélèrent sa ruine.</p>
+          <p><hi rend="i">L’incendie</hi>. — Le cirque disparaît dans les flammes au matin du 25 frimaire an VII (15 décembre 1798). Les travaux d’excavation s’étendent jusqu’en janvier 1800 et la vente des matériaux a lieu en mars 1799. Cette disparition est accueillie avec soulagement, l’état de dégradation du bâtiment ayant porté préjudice au jardin.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>S’apparentant à un jardin dédié aux divertissements comme les tivolis ou les vauxhalls, le Palais-Royal y allie un lotissement immobilier et une galerie commerciale : le jardin constitue une plus-value pour ses alentours. Ce ne sont pas le jardin, le lotissement et les commerces en tant que tels qui assurent l’originalité et la rentabilité de l’apanage princier, mais leur association. Le nouveau Palais-Royal constitue donc un objet singulier et mouvant au cœur de la capitale : il allie la rentabilité des lotissements immobiliers, le renouveau de l’architecture commerciale et l’émergence d’une industrie de l’amusement urbain. Le cirque en est particulièrement représentatif : destiné à l’entreprise de divertissement hippique du sieur Astley, reconverti en manège princier et en vauxhall puis en lieu de pédagogie, il illustre la grande flexibilité de l’enclos. Malgré les architectures éphémères témoignant de son état d’inachèvement, l’enceinte conserve une relative cohérence tout au long de la période : un lieu dédié au luxe, à la curiosité et à l’extravagance.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Donation du Palais-Royal à Louis-Philippe-Joseph d’Orléans par son père. — Documents relatifs au cadre légal de l’opération immobilière. — Contrats de l’entrepreneur du chantier du Palais-Royal et de l’architecte. — Réglementation relative à la parcelle. — Descriptions de logements et boutiques du Palais-Royal extraites de contrats de vente et de location. — Description du cirque du Palais-Royal.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Liste des locations et des locataires des arcades du Palais-Royal jusqu’en 1815. — Liste des ventes et des propriétaires des arcades jusqu’en 1815. — Liste des anciens propriétaires des maisons en pourtour du jardin du Palais-Royal et des indemnités reçues par ceux-ci. — Noms et professions des habitants de la parcelle du Palais-Royal en 1790. — Typologie des commerces de l’enclos du Palais-Royal en 1785. — Récapitulatif des dépenses des travaux du Palais-Royal. — Catalogue iconographique de quatre cent vingt-sept figures.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

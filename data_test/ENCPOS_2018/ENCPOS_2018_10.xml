@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2018_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>« Vous estes au pays des sçavants et à la source de la science ». Le renouveau de l’abbaye Sainte-Geneviève à travers l’exemple du p. Du Molinet (1620-1687)</title>
+        <author>Catherine Koehl</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2018 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2018</date>, <biblScope>p. 105-110</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2018"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>« Vous estes au pays des sçavants et à la source de la science »
+        <lb/>Le renouveau de l’abbaye Sainte-Geneviève à travers l’exemple du P. Du Molinet (1620-1687)</head>
+      <byline>
+        <forename>Catherine</forename>
+        <surname>Koehl</surname>
+        <roleName>diplomée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>L’abbaye Sainte-Geneviève au mont de Paris, comme on l’appelle alors au <num>xvii<hi rend="sup">e</hi></num> siècle, est considérée comme l’une des abbayes les plus anciennes et les plus prestigieuses de la ville. Première abbaye royale, sa gloire est liée à celle du roi, son patron et son fondateur. Elle n’exerce pour autant aucune fonction particulière auprès du souverain : elle ne sert ni de lieu de sacre ni de sépulture et ne fournit pas plus de confesseurs et d’aumôniers au roi, du moins pas depuis le Moyen Âge. L’antiquité de ce lien, qui remonte au début de la monarchie en France, n’explique pas à lui seul la faveur royale. En effet, les relations entre le roi et les religieux de l’abbaye de Sainte-Geneviève ont connu un important renouveau au cours du <num>xvii<hi rend="sup">e</hi></num> siècle, lié aux bouleversements qui se produisent au sein de ladite abbaye à cette époque.</p>
+        <p>Depuis le concordat de Bologne signé entre François I<hi rend="sup">er</hi> et le pape en 1516, l’abbatiat de Sainte-Geneviève est dévolu en commende par le roi au candidat de son choix. Outre la présence d’un abbé commendataire et la perte du droit d’élection, les troubles des guerres de Religion placent à la fin du <num>xvi<hi rend="sup">e</hi></num> siècle l’abbaye Sainte-Geneviève dans une situation critique, au temporel comme au spirituel. Une réforme intervient au début du siècle sous la direction du cardinal François de La Rochefoucauld (1558-1645) et aboutit à la création d’un ordre des chanoines réformés autour de l’abbaye Sainte-Geneviève. Ceci explique l’apparition du terme de « Génovéfain » pour désigner les chanoines suivant la règle issue de cette réforme.</p>
+        <p>Les Génovéfains, à commencer par leur fondateur, deviennent particulièrement sensibles aux problèmes de l’étude et de la transmission des savoirs et des connaissances. Une bibliothèque est donc une nécessité absolue. L’ancienne bibliothèque de l’abbaye avait été la première à souffrir des relâchements de la vie religieuse précédant la réforme.</p>
+        <p>Dans ce contexte, refonder la bibliothèque est une priorité. Le cardinal de La Rochefoucauld lui fait don de six cents de ses livres en 1624, avant de lui léguer la totalité en 1640, afin d’en reconstituer le fonds. Ce premier embryon fut sous la garde du Père Fronteau (1614-1662) jusqu’en 1661, auquel succède au poste de bibliothécaire le Père Lallemant (1622-1673), qui y reste jusqu’à sa mort. La bibliothèque est alors riche d’un peu moins de 10 000 volumes.</p>
+        <p>Celui qui cependant en fit la renommée, et la hissa au rang des plus belles bibliothèques de Paris, doublant son importance, fut le successeur du Père Lallemant, Claude Du Molinet.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les sources utilisées ont d’abord été les manuscrits autographes de Claude Du Molinet, conservés sous des cotes diverses à la Réserve de la bibliothèque Sainte-Geneviève. Cette dernière est l’héritière directe de la bibliothèque de l’abbaye Sainte-Geneviève développée par les soins de ce savant érudit, près d’un demi-siècle après sa constitution grâce au legs du cardinal de La Rochefoucauld. La disparition à la Révolution des archives des notaires de Châlons-en-Champagne, ville d’origine de Claude Du Molinet, fait que l’on a mis à profit les généalogies imprimées et les recherches de noblesse publiées à cette époque, afin de pouvoir mieux cerner ses origines familiales. Les archives de l’abbaye conservées aux Archives nationales et au Minutier central n’ont quant à elles livré que peu d’informations. Le Catalogue général des manuscrits des bibliothèques de France et le catalogue en ligne des archives et manuscrits de l’enseignement supérieur ont en revanche permis de retrouver d’autres manuscrits concernant Claude Du Molinet.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Entre réseau savant et bibliothèque religieuse : un érudit à l’abbaye Sainte-Geneviève, Claude Du Molinet (1620-1687)</head>
+        <div>
+          <head>Chapitre premier<lb/>L’abbaye, le roi et Dieu</head>
+          <p>Haut-lieu de la faveur royale depuis sa fondation par Clovis, l’abbaye de Sainte-Geneviève peut se vanter d’être la première des abbayes du royaume de France, au moins du point de vue chronologique. Exempte de la juridiction des évêques au spirituel, elle dépend directement du roi au temporel. L’abbaye dispose également d’un important territoire foncier et, grâce à la possession des reliques de sainte Geneviève, s’attire les donations et les faveurs populaires et royales. Cependant, après la réforme de Sainte-Geneviève par le cardinal de La Rochefoucauld, les relations entre le roi et l’abbaye sont en difficulté. D’une part, le roi cherche à renforcer le pouvoir des évêques sur les abbayes, couvents et monastères du royaume. D’autre part, suite à la création de la congrégation des chanoines réformés de Saint-Augustin de l’abbaye Sainte-Geneviève, le supérieur de la congrégation étant automatiquement désigné par le titre d’abbé de Sainte-Geneviève, la commende de l’abbaye échappe au roi. Afin d’éviter l’affrontement direct avec le pouvoir royal, les supérieurs de la congrégation font alors le choix tacite de valoriser les recherches scientifiques et d’érudition qui se font à l’abbaye.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Un érudit en religion : Claude Du Molinet, formation et arrivée à l’abbaye Sainte-Geneviève (1620-1661)</head>
+          <p>Parmi les érudits et les savants qu’a produits l’abbaye Sainte-Geneviève, Claude Du Molinet est incontestablement l’un des plus fameux. Cela n’est pas lié à son origine, car si sa famille est qualifiée d’ « antique et renommée » dans le <hi rend="i">Journal des savants</hi>, la réalité est en vérité bien éloignée. En dépit de ces affirmations, on ne trouve que peu de traces de la renommée de sa famille. Hormis sa naissance en 1620, on ignore quasiment tout sur le début de son parcours, jusqu’à sa profession à l’abbaye Sainte-Geneviève en 1640, et son départ pour l’abbaye de Beaugency en 1642 où il commence sa carrière d’ecclésiastique et de savant. Il ne reste presque rien de son activité à cette époque de sa vie, car le manuscrit où il rend compte de son quotidien à Beaugency brûla par accident au <num>xix<hi rend="sup">e</hi></num> siècle, mais il fut heureusement partiellement édité avant sa destruction. En 1655, Claude Du Molinet est rappelé à Paris par ses supérieurs, sans que l’on sache exactement pourquoi.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>L’abbaye au cœur de réseaux multiples : l’érudition comme métier (1661-1675)</head>
+          <p>Après son arrivée à l’abbaye Sainte-Geneviève, Claude Du Molinet sort de son anonymat et constitue un réseau de correspondance savante. Ce réseau englobe la congrégation de Sainte-Geneviève, dont il correspond avec les membres, mais on trouve aussi des traces de correspondance et d’échange avec d’autres érudits de l’époque, comme Étienne Baluze (1630-1718) ou bien Jean Mabillon (1632-1707). C’est également à cette époque qu’il publie ses premiers ouvrages et articles scientifiques, tout en exerçant le rôle de secrétaire auprès du père supérieur de la congrégation. Ces publications, et les recherches qu’il continue à mener de front, dont nous avons les manuscrits, ont en particulier pour objet de faire mieux connaître et de glorifier l’abbaye Sainte-Geneviève.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Abbaye et cabinet de curiosités : réunir le savoir (1675-1687)</head>
+          <p>À partir de 1673, date à laquelle on suppose qu’il entre en fonction à la bibliothèque de l’abbaye suite au décès de Pierre Lallemant, Claude Du Molinet travaille davantage à l’augmentation et à l’organisation de celle-ci. Suite à la réforme, il est le premier bibliothécaire de l’abbaye qui ne cumule pas cette fonction avec celle de chancelier de l’Université de Paris, comme cela avait été le cas de Jean Fronteau et de Pierre Lallemant. Il lance en 1675 les travaux de construction de la bibliothèque, qui existe toujours et qui sert à présent de centre de documentation au Lycée Henri-IV. Parallèlement, il commence la constitution du cabinet de curiosités de l’abbaye Saint-Geneviève, tout en menant deux chantiers importants : l’acquisition de globes terrestre et céleste pour l’abbaye et la création du cabinet des médailles du roi à la demande de Colbert. Ces derniers travaux constituent son héritage au sein de l’abbaye Sainte-Geneviève.</p>
+        </div>
+        <div>
+          <head>Conclusion<lb/>Une figure d’érudition</head>
+          <p>Lorsqu’il meurt de maladie, le 2 septembre 1687, le p. Du Molinet laisse une quantité importante de travaux en cours.</p>
+          <p>Le fait qu’il ait en même temps exercé les fonctions de secrétaire et de bibliothécaire de l’abbaye, ce qui l’amenait à gérer conjointement livres et archives, modernes comme anciennes, en outre du cabinet de curiosités, lui a donné un regard particulièrement original sur les domaines dont il avait la garde. À la différence de la séparation stricte qui règne actuellement, du moins dans la théorie, le mélange des genres permet un enrichissement mutuel des différentes collections, les archives illustrant les livres qui mettent en valeur les objets. Sans cette association, on ne peut comprendre l’œuvre de Claude Du Molinet.</p>
+          <p>La renommée de Claude Du Molinet, en dépit du manque relatif d’informations et de la dispersion de ces dernières, est incontestablement liée à la volonté des supérieurs de la congrégation des chanoines de Sainte-Geneviève de mettre en avant l’activité intellectuelle de l’abbaye, et ce, avec une double intention au moins.</p>
+          <p>La première est d’accroître la renommée de l’abbaye, en mettant en valeur les ouvrages de l’esprit que produisent les génovéfains. La deuxième est plus subtile : il s’agit pour les supérieurs de la congrégation de signaler au pouvoir royal leur intention de se désengager des luttes politiques, en manifestant leur attrait pour la recherche et l’érudition, dans un contexte où le Roi-Soleil cherche à diminuer le pouvoir du clergé régulier au bénéfice du clergé séculier.</p>
+          <p>Claude Du Molinet est un excellent candidat pour servir de figure intellectuelle de l’abbaye auprès du souverain et des populations : il est issu d’une famille de petite noblesse provinciale, il ne doit son succès qu’à ses capacités, et non à ses origines. Il est en plus connu de toute la congrégation, de par son rôle de secrétaire, en particulier par la rédaction des Lettres circulaires, et par la diffusion de ses ouvrages. Il incarne ainsi l’érudit génovéfain du <num>xvii<hi rend="sup">e</hi></num> siècle, raison pour laquelle ses successeurs n’hésitent pas à utiliser le matériel qu’il leur a laissé. Des ouvrages posthumes de Claude Du Molinet sont édités et imprimés jusqu’en 1719.</p>
+          <p>Après son décès, ce rôle de savant en titre de l’abbaye Sainte-Geneviève échoit aux bibliothécaires de l’abbaye qui lui succèdent en cette fonction. Certains vont laisser leur marque, en particulier Barthélemy Mercier de Saint-Léger (17341799) et Alexandre Guy Pingré (1711-1796), qui se révèlent les dignes successeurs de Claude Du Molinet pour que l’abbaye Sainte-Geneviève reste le « pays des savants ».</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Édition et transcription des pièces justificatives</head>
+        <p><hi rend="i">Méthode de travail et constitution du corpus</hi>. — Pour réunir ce florilège de textes, il a fallu faire une sélection drastique parmi les documents restés à la bibliothèque Sainte-Geneviève. Après la saisie des archives de l’abbaye à la Révolution française, il reste néanmoins un nombre important de manuscrits, qui représentent un corpus de taille considérable. Le choix des textes comporte également deux lettres conservées à Amiens qui furent cependant envoyées à l’abbaye Sainte-Geneviève. Il s’est porté en particulier sur des pièces qui ont paru exceptionnelles et méconnues, comme la lettre du sieur de Boismourand incluse dans le Ms. 609, ou bien à l’inverse sur des documents souvent cités, sans avoir jamais fait l’objet d’une édition. On peut penser ici au Ms. 1797, <hi rend="i">Récit d’un voyage aux Pays-Bas</hi> ou au Ms. 1887, <hi rend="i">Livre IV des Mémoires du P. Beurrier</hi>. Le Ms. 610, <hi rend="i">Histoire de sainte Genevieve &amp; de son Eglise royale et Apostolique à Paris</hi>, qui représente non seulement un volume important mais livre aussi une masse d’informations, n’a quant à lui été que transcrit et commenté.</p>
+        <p>Voici la liste des documents retenus : <hi rend="i">Lettres du P. Coffin, adressées au P. Du Moline</hi>t, Amiens 1660, Ms. 521 D pièce 59-60 (fol. 176) ; <hi rend="i">Lettre du sieur de Boismourand adressée au Père Du Molinet</hi>, reliée avec le manuscrit coté BSG, Ms. 609 ; <hi rend="i">Récit d’un voyage au Pays-Bas</hi>, BSG, Ms. 1797 ; <hi rend="i">Histoire de la bibliothèque du roi</hi>, BSG, Ms. 994 ; <hi rend="i">Avertissement composé par le P. Du Molinet</hi>, BSG Ms. 290/33 (fol. 263) ; <hi rend="i">Livre IV des Mémoires du père Beurrier</hi>, BSG, Ms. 1887 ; <hi rend="i">Histoire de sainte Genevieve &amp; de son Eglise royale et Apostolique à Paris, divisée en sept livres</hi>, BSG, Ms. 610.</p>
+        <p><hi rend="i">Conventions adoptées pour l’édition</hi>. — La transcription des manuscrits a été faite selon les règles recommandées par Bernard Barbiche et Monique Chastenet, <hi rend="i">L’édition des textes anciens, <num>xvi<hi rend="sup">e</hi></num>-<num>xviii<hi rend="sup">e</hi></num> siècle</hi>, Paris, 1990, p. 17-19.</p>
+        <div>
+          <head>Annexes</head>
+          <p>Tableau généalogique de la famille Du Molinet. — Chronologie de la vie de Claude Du Molinet et des événements arrivés à l’abbaye Sainte-Geneviève.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

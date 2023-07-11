@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_15" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Charles E. Bohlen, l’homme-clé des relations franco-américaines à l’heure du grand malentendu transatlantique, 1962-1968</title>
+        <author>Anne-Sophie Grollemund</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 163-172</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Charles E. Bohlen, l’homme-clé des relations franco-américaines à l’heure du grand malentendu transatlantique, 1962-1968</head>
+      <byline>
+        <forename>Anne-Sophie</forename>
+        <surname>Grollemund</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Élever Charles Eustis Bohlen à la dignité d’ambassadeur en France constitue une démonstration de pragmatisme de la part du jeune président John Fitzgerald Kennedy. Les États-Unis d’Amérique sont alors plongés dans la tourmente de la crise des missiles cubains, le conflit nucléaire paraît inéluctable aux yeux des observateurs les plus avisés. Le diplomate conjugue <hi rend="i">cursus honorum</hi> remarquable et affinités avec le président, qui, depuis son accession au pouvoir, le sollicite sur des sujets nécessitant son expertise de soviétologue. Décrit comme avenant, il est doué d’une acuité certaine pour anticiper les réactions à adopter en situation de crise. Dans un contexte de détente encore précaire des relations internationales, le diplomate chevronné est appelé pour une mission jugée difficile, qui revient essentiellement à rendre compte des intentions du général de Gaulle quant à la politique extérieure française. Charles Eustis Bohlen est nommé ambassadeur des États-Unis à Paris en 1962 et reste à ce poste jusqu’en 1968. Il succède au général James Gavin, qui n’a pas hésité à prendre parti en faveur des thèses françaises auprès de la Maison blanche, position qui correspond de moins en moins à la ligne stratégique du Département d’État, favorable à une action diplomatique plus offensive sous la direction de Dean Rusk, secrétaire d’État. Le mandat d’ambassadeur de Bohlen couvre une période durant laquelle la France développe une politique souverainiste et recherche une place à la hauteur de ses riches heures dans le nouvel échiquier mondial. Fort de son expérience sur le terrain, le soviétologue doit interagir avec un personnage qui incarne la seconde guerre mondiale et les combats du monde libre, le général de Gaulle, afin de maintenir le dialogue malgré les <hi rend="i">a priori</hi> respectifs.</p>
+        <p>Ce conseiller de premier plan du président des États-Unis pose sur la France de la <num>v<hi rend="sup">e</hi></num> République un regard permettant d’interroger les divergences entre les deux pays et leur origine. Le rassemblement des archives relatives à son action, conservées dans les deux pays, permet de comparer les points de vue sur ces questions et de rendre compte des difficultés de communication entre France et États-Unis. De plus, une reconstitution du quotidien de Bohlen à l’ambassade est nécessaire, de manière à mettre au jour ce qui intéresse les États-Unis : les changements de programme, que l’on peut saisir dans les agendas de Bohlen, les rendez-vous particuliers de celui-ci, sont des révélateurs de ses préoccupations et de l’influence des visiteurs de l’ambassade ; les inscriptions portées en marge de ces mêmes agendas permettent également de mesurer l’importance politique des événements auxquels l’ambassadeur participe ou qu’il organise, essentiellement des réceptions officielles sous forme de dîners. Enfin, l’action de Bohlen se lit à travers les comptes rendus de réunions officielles et les échanges épistolaires relevés dans ses archives, qui révèlent la nature de son empreinte sur la représentation américaine en France.</p>
+        <div>
+          <head>Sources</head>
+          <p>Six années de l’activité d’une ambassade à l’époque contemporaine offrent une profusion de documents. Les fonds officiels laissés par Bohlen présentent une typologie documentaire attendue pour un diplomate : <hi rend="i">memoranda</hi>, correspondance officielle, notes au secrétaire d’État, lettres de créance, le tout réuni dans une trentaine de cartons conservés à la National Archives and Records Administration (College Park, Maryland). S’y ajoutent des fonds privés conservés à la Library of Congress (Washington D.C.), qui regroupent essentiellement sa correspondance et ses agendas dans une vingtaine de cartons. Ces sources sont complétées par les <hi rend="i">memoranda</hi> de la Central Intelligence Agency – trois cents sur le sujet sont accessibles en ligne –, et par les <hi rend="i">Foreign Relations of the United States</hi>, près de cinq cents pages de reproductions de documents du Département d’État des États-Unis.</p>
+          <p>En France, une vingtaine de cartons d’archives publiques aux archives du ministère des Affaires étrangères et presque autant aux Archives nationales renferment la correspondance du Quai d’Orsay, les rapports des conseillers à l’Élysée, ainsi que les notes documentant l’organisation du protocole. Le fonds Maurice Couve de Murville, conseiller puis ministre des Affaires étrangères pendant la mission de Bohlen à Paris, complète cet ensemble par des brouillons de prises de parole publiques annotés par le ministre et ses conseillers ; il est aujourd’hui conservé à la Fondation nationale des sciences politiques.</p>
+          <p>L’exploitation de ce puzzle archivistique est cependant freinée par des contraintes d’accessibilité, certains documents étant encore assujettis à des régimes dérogatoires, voire interdits à la consultation. Pour pallier ces contraintes et les lacunes ainsi créées, il est nécessaire de recourir à un large spectre de sources secondaires, composé essentiellement d’articles de journaux extraits de la revue de presse de l’ambassade des États-Unis en France et d’archives audiovisuelles, en accord avec une époque qui connaît l’essor des <hi rend="i">mass media</hi>. Cette ouverture révèle un décalage entre une presse d’information aux titres bien plus dramatiques que l’état d’esprit réel des négociateurs, de même que les sentiments d’agacement, d’incompréhension ou d’enthousiasme qui affleurent dans les comptes rendus hebdomadaires ne reflètent pas nécessairement l’opinion globale sur une personne ou une question diplomatique. Une campagne d’archives orales auprès des filles de Charles E. Bohlen complète également les données tout en montrant les limites de cet exercice : les informations y sont allusives ; seuls quelques individus y sont évoqués nominalement et leur connivence avec Bohlen ou leur appartenance à son cercle sont confirmées par la correspondance de ce dernier.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>À la naissance du « malentendu transatlantique »</head>
+        <div>
+          <head>Chapitre premier<lb/>De Gaulle, une politique étrangère volontariste</head>
+          <p>Le terme « malentendu » est pour la première fois employé par Hervé Alphand, ambassadeur de France aux États-Unis. En effet, suite à une phase de relations détendues durant laquelle le président de Gaulle a concentré ses efforts sur la gestion de la décolonisation et de la guerre d’Algérie, celui-ci entend restaurer l’aura française à l’échelle internationale et maintenir sa souveraineté dans sa politique extérieure.</p>
+          <p>La diplomatie américaine, peu habituée à composer avec des chefs d’État occidentaux récalcitrants, se sent provoquée et s’indigne d’une forme d’ingratitude face aux mesures prises par les États-Unis pour remettre à flot l’économie et l’armée françaises. Bohlen a fait partie de l’équipe qui a mis en place le plan de reconstruction militaire lorsqu’il était le numéro deux de l’ambassade, et voit avec déplaisir son travail remis en cause par les velléités de grandeur d’un homme qui, selon lui, manque de contradicteurs.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Les relations entre le président français et ses homologues américains</head>
+          <p>Entre 1961 et 1968, se succèdent deux présidents américains aux personnalités bien différentes et leur principal intermédiaire avec la France demeure l’ambassadeur des États-Unis à Paris. Par le prisme de l’analyse de ce dernier se dessine un portrait des rapports humains et politiques entre les présidents des deux pays. Les relations entre Charles de Gaulle et John F. Kennedy sont cordiales, les deux hommes faisant preuve de respect et d’admiration pour l’autre. Se dégage de cette vision un certain paternalisme du Général envers son cadet, alors que ce dernier affirme plus que jamais la puissance de son pays, que ce soit dans le domaine militaire ou par les prémices d’un <hi rend="i">soft power.</hi></p>
+          <p>Après l’assassinat de Kennedy, son vice-président Lyndon Baines Johnson accède au pouvoir. Les méthodes de travail de De Gaulle et Johnson paraissent au premier abord similaires : l’appel à des connaissances basiques des autres cultures et des institutions des pays étrangers, mais une manière personnelle de mener des politiques, marquée par un goût du secret et un souci permanent de l’intérêt national. Cependant, de Gaulle a peu d’estime pour son homologue américain, qui nourrit en retour une aversion personnelle pour la figure complexe du Général, qu’il n’hésite pas à présenter comme un autocrate dans les correspondances avec le Département d’État.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Charles E. Bohlen, ambassadeur des États-Unis en France</head>
+        <div>
+          <head>Chapitre premier<lb/>Son excellence Bohlen en fonction</head>
+          <p>Cerner la personnalité et l’éthique professionnelle de Bohlen est une étape préliminaire indispensable pour comprendre sa façon de représenter le chef d’État américain. Les documents qu’a produits Bohlen et l’ensemble des témoignages à son sujet révèlent d’emblée un personnage non-conventionnel, mais extrêmement dévoué au service du Département d’État. Il sait observer, analyser, rapporter, mais aussi rester neutre. Charles Bohlen n’a de cesse de s’opposer à la personnalisation de la vie diplomatique américaine, prônant un désengagement de ses acteurs et s’appuyant sur des méthodes proches des agences de renseignement américaines, qui consistent à tisser des contacts informels mais stratégiques dans la société mondaine parisienne.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Nommer Charles E. Bohlen à Paris</head>
+          <p>Bohlen est francophile. Il possède pour la culture française une affection particulière qui lui a été léguée par sa mère, mais son travail s’est toujours tourné vers la Russie : c’est dans l’étude de celle-ci qu’il s’est d’emblée spécialisé dans sa carrière au Foreign Service. Il est nommé ambassadeur dans un contexte troublé, celui de la fin de la crise des missiles de Cuba ; suite à cette décision surprenante de Kennedy d’envoyer un soviétologue confirmé en France, de nombreuses rumeurs font passer cette mutation pour une mesure d’éloignement. Cette affectation est en réalité une stratégie de diversion pour que le nom de Bohlen n’apparaisse pas dans les négociations liées à Cuba : ce dernier, qui a été ambassadeur des États-Unis à Moscou dans les années 1950, pourrait très bien devenir une cible facile pour d’éventuels espions glissés dans son vaste réseau de connaissances. Conscient de ce risque, le diplomate aguerri préfère conseiller lui-même à son président de l’éloigner.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>L’exercice des fonctions d’ambassadeur</head>
+          <p>Les rapports que Charles E. Bohlen entretient avec le ministre des Affaires étrangères, son principal interlocuteur protocolaire, sont essentiels à l’appréciation de son travail. Ils montrent un ambassadeur actif dans le dialogue, qui se garde d’employer un ton vindicatif sur les grands sujets et qui sollicite plutôt peu le ministre, comme s’il préférait la parole aux écrits. La reconstitution de l’emploi du temps du diplomate jusqu’à son départ en février 1968, grâce à ses agendas et aux documents émanant du ministère des Affaires étrangères, mais aussi grâce à la presse écrite et audiovisuelle, met au jour l’activité d’un ambassadeur qui évolue en immersion dans la France des années 1960. La distinction entre la vie du personnage de ministre plénipotentiaire et celle de la personne privée est souvent subtile, d’autant que le naturel affable de Bohlen l’amène à être apprécié dans de nombreux cercles, même si ces derniers regroupent essentiellement la fine fleur de l’élite culturelle, politique, économique et mondaine de Paris.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Bohlen, un regard sur la France de la <num>v<hi rend="sup">e</hi></num> République</head>
+        <div>
+          <head>Chapitre premier<lb/>De la séduction à la compréhension : Bohlen à la rencontre de la France et des Français</head>
+          <p>L’ambassadeur est résolument francophile ; plus encore que son plaisir manifeste à visiter le pays et profiter de ses agréments, l’ensemble de ses écrits officiels et privés montre qu’il est compatible avec l’« esprit français » et sa compagnie est recherchée dans le Paris mondain. Pour autant, quelle vision a Bohlen de la France ? Sa grande jovialité lui permet dans le cadre de sa mission de dépasser ponctuellement les limites imposées par le protocole et son statut, et il semble qu’il ait pu être le témoin à petite échelle des préoccupations des Français sous de Gaulle. C’est ainsi une image positive, celle d’un homme-caméléon qui sait adopter les codes des environnements qu’il fréquente – on exclura de cette affirmation les milieux populaires, que, d’après ses archives, il n’a pas eu l’occasion de côtoyer – qu’il renvoie à des interlocuteurs venus d’horizons différents. Elle dialogue ainsi avec l’image qu’il se forge de la France des années 1960, notamment au cours des visites officielles.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Bohlen et de Gaulle : le dialogue impossible ?</head>
+          <p>Dès les premiers échanges, Bohlen peine à nouer contact avec le Général, dont il analyse la personnalité complexe comme un masque destiné à dissimuler ses intentions et à se rendre imprévisible. Bohlen ne peut alors user de ses charmes habituels dans l’exercice de ses fonctions, une difficulté non négligeable qui explique la défiance du diplomate. Cependant l’antagonisme ne semble pas dépasser le cadre de la mission, les rapports entre les deux hommes étant décrits par plusieurs sources comme cordiaux. Toutefois le point de vue des observateurs fluctue au rythme de la politique étrangère des deux pays. Plus les réactions sont hostiles à une initiative politique des États-Unis, que celle-ci provienne du président, de l’Organisation des Nations unies ou du Congrès – souvent tous désignés du qualificatif générique « les Américains » –, plus la popularité de l’ambassadeur en est affectée. L’image que de Gaulle avait de Bohlen est de ce fait difficile à mettre au jour de manière absolue et figée, mais elle semble loin du mépris que lui attribuent certains.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>L’homme-clé dans un contexte international</head>
+        <div>
+          <head>Chapitre premier<lb/>La vision de Bohlen de la politique extérieure américaine</head>
+          <p>Le regard de Charles Bohlen sur la politique américaine est difficile à saisir car, contrairement à certains de ses collègues, celui-ci est très rigoureux dans l’application de la règle de neutralité des fonctionnaires du Département d’État. Cependant ses mémoires éclaircissent des positions qui résultent de ses convictions propres et qui transparaissent dans sa correspondance. Tel est le cas lors du retrait des troupes américaines en 1967 : il affiche alors un désaccord net avec la position radicale de Johnson dans la mise en œuvre de cette mesure, qu’il essaie d’adoucir. Cet exemple révèle que l’application d’une consigne n’est jamais anodine : elle fait apparaître des réticences ou des facilités d’exécution riches en renseignements sur les opinions véritables de l’exécutant, même si ce dernier ne les exprime pas explicitement.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Bohlen et la vie politique de la <num>v<hi rend="sup">e</hi></num> République</head>
+          <p>Une ligne cohérente face aux ambitions françaises de plus en plus affirmées est nécessaire pour les responsables de la politique étrangère américaine, ainsi qu’une réactivité accrue sur différents sujets en simultané. La gestion des crises par le représentant du chef d’État américain permet de rendre compte du fonctionnement de l’ambassade, qui constitue des dossiers thématiques à partir des grandes questions de l’ordre du jour international. La guerre froide met au premier plan de grandes questions militaires internationales : l’accord de Nassau, le traité d’interdiction partielle des essais nucléaires, la force multilatérale.</p>
+          <p>Le dossier relatif à l’Organisation du traité de l’Atlantique nord (OTAN), plus précisément au retrait des forces françaises des commandements intégrés et à ses conséquences après 1966, est alors le sujet-phare ; ce point de clivage révèle les antagonismes entre France et États-Unis : les acteurs américains interprètent la politique souverainiste du Général, dans le meilleur des cas, comme une lutte contre l’ingérence américaine et donc une remise en question de la capacité des États-Unis à protéger le monde occidental du péril communiste, ou bien, dans le pire des cas, comme une dérive autocratique personnelle malsaine d’un pays dont les riches heures appartiennent au passé.</p>
+          <p>Les autres grandes questions qui retiennent l’attention des diplomates américains sont l’adhésion du Royaume-Uni à la Communauté économique européenne, la reconnaissance de la Chine communiste, ainsi que les relations avec l’Allemagne, le Moyen-Orient, l’Union soviétique et le Vietnam.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Un ambassadeur est littéralement le porte-parole de son pays. Sa fonction de représentant du chef d’État absent l’amène même à s’effacer pour laisser s’exprimer les autorités politiques qui lui sont hiérarchiquement supérieures ; aussi Bohlen n’intervient-il souvent pas lors des entretiens auxquels il assiste. Pour autant, l’étude des sources révèle sa manière d’appliquer les consignes qui lui sont données ou d’interpréter la ligne politique. De plus, l’expertise de Bohlen personnalise sa mission ; celui-ci demeure toujours au cours de ces cinq années l’interlocuteur privilégié quand l’Union soviétique est évoquée.</p>
+        <p>Il faut cependant se garder de réduire Bohlen à un « M. URSS ». Son rôle politique étant par nature secret, ce sont les interventions non transcrites et la correspondance privée qui le révèlent le mieux. Il est donc nécessaire de considérer avec prudence l’image d’ambassadeur soviétologue accolée à Bohlen, d’autant que le contexte de guerre froide confère indubitablement un relief particulier à tout ce qui a trait aux rapports avec l’Est et avec le monde soviétique.</p>
+        <p>L’opposition entre de Gaulle et Bohlen ne doit également pas être exagérée : tous deux entretiennent en coulisses des relations cordiales, comme en témoignent aujourd’hui les filles de Charles E. Bohlen. Dans ses mémoires, ce dernier se dit d’ailleurs persuadé d’avoir adouci les réactions de Kennedy et de Johnson face à la fermeté gaullienne sur les sujets épineux, tels que l’OTAN. Cependant, il demeure un conseiller et ses avis ne sont pas forcément pris en compte, surtout sous le mandat du président Johnson.</p>
+        <p>Son activité diplomatique dévoile l’image d’un homme qui entretient les relations franco-américaines avec une attitude équanime face aux soubresauts de la politique extérieure volontariste française. Si Bohlen s’illustre par sa polyvalence et son dynamisme, les réactions du Général font l’objet d’une lecture souvent biaisée par le Département d’État, qui les jugent dangereuses, radicales, voire arrogantes. Sans doute l’escalade des tensions et la recomposition de l’échiquier mondial, en raison de l’émergence de concurrents à la bipolarisation Est-Ouest, rendent-elles les observateurs américains, pris dans des négociations houleuses, peu réceptifs à un interlocuteur charismatique tel que de Gaulle, qui incarne le monde libre depuis la fin de la seconde guerre mondiale et qui, après un voyage réussi en Amérique du Sud ou la reconnaissance de la Chine communiste, est surtout devenu populaire auprès de pays susceptibles d’entraver les ambitions américaines.</p>
+        <div>
+          <head>Annexes</head>
+          <p>Photographies extraites de la collection privée de la famille Bohlen (1962-1968). — Témoignages oraux de Celestine et Avis Bohlen. — Lettres de créances de l’ambassadeur (1962).</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

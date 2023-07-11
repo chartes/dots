@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2019_22" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Stratégie et politique pendant la guerre du Rif (1921-1926)</title>
+        <author>Thomas Martel</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2019 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2019</date>, <biblScope>p. 241-252</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2019"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Stratégie et politique pendant la guerre du Rif (1921-1926)</head>
+      <byline>
+        <forename>Thomas</forename>
+        <surname>Martel</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>La guerre du Rif est le plus grand conflit colonial connu par l’Espagne et la France. Elle revêt une importance jusque-là sous-estimée dans l’histoire militaire. Il s’agit en effet d’un des rares conflits de grande ampleur de l’entre-deux-guerres. Du point de vue militaire, il constitue donc une transition entre les deux conflits mondiaux, présentant des caractères communs avec chacun d’eux et offrant un mélange entre la guerre de position de la première guerre mondiale et la guerre de mouvement de la seconde. Dans le même temps, étudier ce conflit sous l’angle militaire passe nécessairement par une approche des problèmes politiques que celui-ci a posés à la fois au Maroc, en Espagne et en France.</p>
+        <p>La guerre du Rif plonge ses racines dans le processus de colonisation et de pacification du Maroc, dans lequel ont eu cours beaucoup de faux-semblants, de préjugés et d’arrière-pensées, et elle a par la suite bouleversé la vie politique des pays qu’elle a impliqués. C’est dans ce cadre que se développent la singulière expérience républicaine rifaine, ainsi que le rôle politique de l’armée espagnole, qui s’affirme dans les années 1920. Enfin, la guerre a donné lieu à des expérimentations militaires qu’il convient de souligner, en particulier les tactiques de guérilla anti-coloniale, les véritables débuts de l’aviation militaire et l’organisation du débarquement d’Al Hoceïma, sorte d’avant-première de l’opération Torch, le débarquement des Alliés en Afrique du Nord le 8 novembre 1942. En somme, il s’agit de mener une enquête globale sur tous les aspects du conflit et d’en démontrer l’importance historique à tous les points de vue.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les sources archivistiques sont extrêmement abondantes et réparties dans deux pays. En premier lieu, il s’agit de sources espagnoles, conservées à Madrid et à Melilla. Elles concernent le haut-commissariat espagnol au Maroc, le ministère de la Guerre, dont les archives sont conservées par le Servicio historico militar, les commandements généraux de Tétouan, Larache, Ceuta et Melilla, ainsi que les unités déployées dans le Rif. Une mention particulière doit être accordée au rapport Picasso, enquête gouvernementale destinée à déterminer les responsabilités dans les désastres militaires de l’été 1921 et qui regroupe diverses pièces servant à appuyer les conclusions du général Picasso. Souvent exploité par les historiens dans leurs travaux sur la guerre du Rif, le rapport Picasso est aussi, à sa manière, un témoignage sur l’époque et sur la perception qu’ont eue les Espagnols de ce conflit. Les sources françaises sont tout aussi abondantes et représentent plus de trois cents cartons au Service historique de la Défense, à Vincennes. La série 3H, concernant l’armée française au Maroc, offre divers points de vue. Les télégrammes envoyés par la résidence générale au ministère de la Guerre donnent accès au point de vue de Lyautey et quasiment à son état d’esprit jour après jour. Les archives des services de renseignement en disent long, quant à eux, sur la situation politique dans les tribus. On peut compléter ces informations grâce aux archives des commandements régionaux et, en ce qui concerne les combats, grâce aux journaux de marche et d’opérations. La confrontation de toutes ces sources permet d’alterner les perspectives, du commandant supérieur des troupes au simple combattant en première ligne.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Les origines de la guerre du Rif</head>
+        <div>
+          <head>Chapitre premier<lb/>Présentation du Rif, théâtre de la guerre</head>
+          <p>Il faut commencer par une description géographique, physique et humaine, du théâtre des opérations, en sorte de ne pas penser le conflit en termes trop généraux qui l’isoleraient de son milieu spécifique pour n’en retenir que les aspects purement militaires. Le Rif, région montagneuse et compartimentée, est une terre au climat clément par rapport au reste du Maroc. Cette géographie en vallées isolées les unes des autres le rend assez distant du pouvoir central, sans pour autant que les Rifains refusent de le reconnaître. La vision du Rif que se sont forgée à la fois les Marocains et les colonisateurs, celle d’une région farouchement autonome, avec ses mœurs propres et où règne l’anarchie, isole quelque peu schématiquement le Rif du reste du Maroc et a été accentuée par les préjugés des colonisateurs et l’absence d’informations fiables sur la région.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Comment l’Espagne hérite du Rif et la France du reste du Maroc : de la <hi rend="i">Reconquista</hi> à la conférence d’Algésiras</head>
+          <p>Pour comprendre les origines de la guerre du Rif, il faut se plonger dans l’histoire générale du Maroc et de sa confrontation multiséculaire avec l’Espagne, puis avec l’Europe. La colonisation du Maroc n’est pas allée de soit, car les Européens ont eu affaire à une entité politique ancienne et plus solide qu’on ne l’a souvent présenté. En effet, si les Espagnols ont pu prendre pied sur les côtes, ils ont été vaincus à la bataille d’Alquazarquivir en 1578 quand ils ont voulu conquérir l’intérieur du pays. C’est par la pression économique, par des traités de libre-échange et par des emprunts que le Maroc n’a pu rembourser, que les Européens se sont rendus maîtres de l’économie marocaine, avant même de se rendre maîtres du territoire.</p>
+          <p>L’histoire de la confrontation hispano-marocaine, en particulier au <num>xix<hi rend="sup">e</hi></num> siècle explique pour partie les origines de la guerre du Rif, puisque l’Espagne a mené deux guerres sur le sol marocain, en 1859-1860 et en 1893. Par ailleurs l’armée espagnole traverse une crise à la fin du <num>xix<hi rend="sup">e</hi></num> siècle, en particulier une crise morale qui va de pair avec la désaffection de l’opinion publique espagnole à son égard ; les difficultés de la guerre marocaine de 1893 et la perte de Cuba et des Philippines en 1898 remettent également en question l’efficacité d’un corps d’officiers pléthorique. C’est cette crise et ses déclinaisons multiples, au premier rang desquelles l’instabilité ministérielle, elle-même nourrie par les échecs extérieurs qu’elle contribue à aggraver, dans une sorte de cercle vicieux, qui explique que la colonisation du Maroc ne joue pas pour l’Espagne le même rôle que pour les autres puissances : l’Espagne, entraînée dans une dynamique de récession, se trouve en réalité embarrassée par le Maroc.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Le traité de protectorat et la pacification française du Maroc : le cadre juridique et militaire du drame</head>
+          <p>Les événements qui aboutissent à l’établissement du protectorat franco-espagnol au Maroc ne doivent pas être perçus comme inéluctables. Tout laisse penser que l’équilibre obtenu grâce au traité de protectorat, signé à Fès en mars 1912, est un équilibre précaire. Le régime du protectorat, cadre juridique de la colonisation du Maroc, voit se confronter deux approches antinomiques de la colonisation : d’un côté, une tentative de tutelle directe de la part de l’Espagne, de l’autre un recours au Makhzen, l’appareil d’État marocain, et aux élites musulmanes par les Français et leur résident général, Hubert Lyautey. Or l’Espagne peine à s’installer fermement au Maroc, tandis que Lyautey alterne difficultés et réussites dans son administration du Maroc. Mais surtout il existe de profondes divergences entre l’Espagne et la France, qui n’arrivent pas à s’entendre et à mener une action concertée. Cette situation résulte manifestement d’une incompréhension entre Français et Espagnols, et cette incompréhension se double d’un décalage de dynamique politique entre les deux pays : l’Espagne est déjà entrée dans un processus de décolonisation de son empire, quand la France achève sa colonisation.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Les vicissitudes de la politique espagnole dans le Rif (1906-1919)</head>
+          <p>La prise de contrôle du Nord du Maroc par l’Espagne s’effectue difficilement. La situation politique dans le Rif est alors complexe et s’y mêlent les interventions de plusieurs puissances, en particulier pendant la première guerre mondiale qui voit des menées d’agents turcs et allemands. Dans ce contexte, Abdelkrim père et ses fils, notables de la tribu Beni Ouriaghel, ambitionnent la mise en place d’une administration autonome du Rif, qui serait placée sous leur égide avec l’appui de l’Espagne. Mais les mésententes et les réconciliations entre les Abdelkrim et l’Espagne se succèdent, les premiers ne se rapprochant de la seconde que pour servir leurs ambitions et leur projet de modernisation et de développement du Rif. En définitive, l’Espagne et ses « amis » rifains ne partagent jamais les mêmes intentions, sans que les Espagnols ne voient clair dans le jeu des notables sur lesquels ils comptaient s’appuyer.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Silvestre et l’offensive espagnole dans la région de Melilla : le feu mis aux poudres</head>
+          <p>Les succès militaires du général Silvestre à l’est de la zone espagnole en 1920 et au début de l’année 1921 changent la donne pour les Rifains. Ses manœuvres et procédés tactiques consistent à isoler les blocs de tribus les uns des autres et à manœuvrer sur leurs arrières, mais ils révèlent des faiblesses militaires, des erreurs d’appréciation et diverses mésententes au sein de l’état-major espagnol au Maroc. <hi rend="i">A contrario</hi>, les Rifains sont désormais confrontés à une alternative simple : il faut soit combattre, soit se rapprocher des Espagnols pour préparer un avenir en commun. Les Abdelkrim poursuivent leurs relations avec l’Espagne par le biais de divers intermédiaires, tout en orchestrant dans leur tribu la résistance armée à l’occupation. Ils jouent sur les deux tableaux afin d’être en position de force et de se rendre incontournables sur l’échiquier politique, une attitude en apparence ambivalente mais tout à fait cohérente.</p>
+          <p>Les divergences sont donc ouvertes parmi les Rifains, tandis que celles des Espagnols sont implicites. En réalité, les Rifains, au premier chef Mohammed ben Abdelkrim, s’appuient sur des objectifs mieux définis que les Espagnols et, par-delà les frictions, leur vision se révèle unitaire, ce qui explique leur succès ultérieur et la réussite d’Abdelkrim dans l’unification des tribus et la constitution d’un nouveau type d’État.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Le conflit hispano-rifain (1921-1924)</head>
+        <div>
+          <head>Chapitre premier<lb/>Les désastres espagnols de l’été 1921</head>
+          <p>Le désastre espagnol d’Anoual en juillet 1921 constitue un coup de tonnerre. Son étude tactique montre que l’effet de surprise y joue un grand rôle, en provoquant le retournement de la police indigène contre les Espagnols. Néanmoins, cette bataille est aussi une victoire politique : c’est en jouant sur les craintes des Rifains à l’égard d’une colonisation et d’une invasion espagnoles qui se précisent qu’Abdelkrim remporte ce succès et réussit à asseoir son autorité. Il use aussi de son prestige intellectuel et religieux de juriste musulman pour fédérer les tribus autour de lui. Les répercussions des défaites de l’été 1921 sur la vie publique espagnole sont importantes : la défaite d’Anoual joue un rôle de détonateur en posant le problème de la place de l’armée dans la société, ce qui aboutit à une crise gouvernementale dont l’issue n’est autre qu’une intervention de l’armée dans la politique. Par ailleurs, comme l’affirme José Ortega y Gasset dès janvier 1921, les déconvenues de l’Espagne au Maroc font naître un esprit de revanche dans la nation, particulièrement dans l’armée, état d’esprit qui conduit l’armée à durcir son action, voire à tomber dans la brutalité.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>La reconquête et la disgrâce du général Berenguer</head>
+          <p>Le général Damaso Berenguer, haut-commissaire espagnol au Maroc depuis 1919, doit faire face à une grave crise militaire avec des moyens réduits. En dépit d’un succès relatif dans la reconquête des territoires perdus, il doit faire face à plusieurs échecs, qui, comme le conclura le rapport Picasso – résultat d’une enquête gouvernementale destinée à établir les responsabilités dans les désastres récents – résultent d’erreurs d’appréciation de Silvestre et de la trop grande confiance que lui a accordée Berenguer, sur fond d’omissions dans le dialogue entre les deux généraux. En effet, Berenguer s’est dit confiant pour l’avenir et prêt à lancer une offensive depuis Melilla, mais, alors qu’il concevait implicitement celle-ci comme réduite, il a laissé Silvestre penser qu’il pouvait mener une offensive de grande ampleur.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Les combats de 1922 et la persistance de la crise politique en Espagne</head>
+          <p>La stratégie espagnole au Maroc est conditionnée par la situation intérieure dans la péninsule Ibérique : l’Espagne cherche avant tout à faire des économies au Maroc pour pouvoir maintenir l’ordre chez elle. À ce titre elle juge pertinent l’emploi de l’aviation et de bombardements à l’ypérite (gaz moutarde) sur des cibles civiles, mais sans systématisme. L’armée espagnole conserve ainsi l’avantage, sans parvenir à prendre le dessus sur la révolte rifaine. Ce souci premier accordé aux affaires intérieures témoigne d’une profonde crise de la société espagnole, mais aussi d’une vitalité politique très forte au sein d’une nation où s’affrontent déjà de nombreuses forces. Ce dernier constat invite à prendre le contre-pied d’une vision décadentiste de l’histoire espagnole contemporaine.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>La fondation de l’État rifain : originalité d’une expérience politique</head>
+          <p>Le régime rifain est avant tout militaire et réformiste, et possède un caractère provisoire tacite. Né de la guerre et des victoires, l’État rifain est pris dans une dynamique de conquête et de fuite en avant qu’il maîtrise mal. Sa nature est aussi profondément religieuse, comme l’attestent les réformes d’Abdelkrim tendant à imposer le droit islamique aux dépens du droit coutumier. En définitive, l’État rifain est une tentative de réformisme musulman à tendance salafiste, qui s’explique par la formation intellectuelle d’Abdelkrim, son chef. Bien qu’il ait été souvent affirmé que ce dernier s’est inspiré de Mustafa Kemal, le tropisme kémaliste n’est pas satisfaisant pour expliquer et définir le système politique de la République rifaine. Une divergence profonde existe entre le scientisme et le positivisme de Kemal d’une part, le fidéisme et la religiosité d’Abdelkrim d’autre part. L’État rifain est en fait un État islamique, avec toutes les ambiguïtés que comporte le réformisme musulman, à mi-chemin entre le retour aux sources de l’islam et à la constitution de Médine, et le modernisme presque révolutionnaire qui inspirera les mouvements de décolonisation à venir.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>La poursuite de la guerre en 1923 et le directoire militaire de Primo de Rivera</head>
+          <p>Après la fondation de l’État rifain, l’Espagne se trouve face à un ennemi qui a su s’organiser et se doter d’une véritable armature politique et administrative, alors que la sienne est fragilisée. Les combats des années 1923 et 1924 rythment les soubresauts de la vie politique espagnole, de la chute du gouvernement de Garcia Prieto au <hi rend="i">pronunciamento</hi> de Primo de Rivera. L’armée se pose alors en ultime recours et en arbitre du jeu politique, ce qui aboutit au directoire militaire de Primo de Rivera. Ce régime constitue une dernière chance pour la monarchie constitutionnelle du roi Alphonse XIII. Désormais les tensions politiques exacerbées de l’Espagne atteignent un point de non retour et l’armée, réformée par Primo de Rivera, voit émerger des personnalités politiques de premier plan, à l’instar de Sanjurjo et de Francisco Franco.</p>
+        </div>
+        <div>
+          <head>Chapitre VI<lb/>La politique française dans le Rif et le basculement de la France dans la guerre</head>
+          <p>Lyautey, pendant tout le conflit, surveille de près le Rif. Son projet est de prendre le contrôle de la vallée de l’Ouergha, rivière qui sépare la zone française du Rif proprement dit. Cette vallée a la particularité d’être très fertile et par conséquent nécessaire à l’approvisionnement des Rifains en céréales. Ce point de friction est à l’origine du conflit entre Abdelkrim et la France. En occupant pacifiquement la vallée en mai 1924, Lyautey provoque sans le vouloir l’hostilité des Rifains, puisqu’il refuse de négocier avec eux un <hi rend="i">modus vivendi</hi>, arguant que seul le sultan du Maroc est souverain et qu’il ne peut reconnaître un autre État au Maroc. Les motivations psychologiques du conflit sont donc prépondérantes, au-delà des intérêts économiques et territoriaux : d’un côté, Abdelkrim se sent bafoué par les Français et décide de les attaquer ; de l’autre, Lyautey agissant au nom du sultan, entend surtout sauvegarder l’intégrité de l’empire colonial français et, par-là, l’image de marque de la France dans le concert des puissances. Aussi décide-t-il de profiter du vide juridique qui existe au sujet des frontières entre les zones espagnole et française pour intervenir.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>L’entrée en guerre de la France et la défaite d’Abdelkrim (1925-1926)</head>
+        <div>
+          <head>Chapitre premier<lb/>L’attaque rifaine</head>
+          <p>L’offensive d’Abdelkrim le 13 avril 1925 a lieu pendant un moment de flottement chez les Français, qui correspond à la chute du gouvernement Herriot et à la constitution du gouvernement Painlevé, ce qui permet aux Rifains de premiers succès. La tactique d’Abdelkrim consiste à encercler un à un les postes français établis l’année précédente le long de l’Ouergha. Face à lui, les diverses composantes du haut-commandement français – Lyautey, l’état-major à Paris, le gouvernement, la Chambre et les officiers en poste sur le front – ont des réactions diverses. Les officiers parisiens tendent à penser le conflit en l’isolant de son contexte géographique et politique, s’opposant ainsi aux conceptions de Lyautey. Celui-ci, ancré dans le terrain marocain et tenant compte de ses caractéristiques, prône de son côté une combinaison d’approche politique et d’intervention armée.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>La guerre des postes</head>
+          <p>Au cours de la période qui s’étend de mai au milieu du mois de juin 1925, l’armée française s’emploie à secourir les postes assaillis par les Rifains en envoyant des groupes mobiles pour rompre leur encerclement et les ravitailler. C’est le moment où prennent place les faits d’armes les plus fameux. C’est aussi le moment où la stratégie de Lyautey est remise en question à Paris. Les postes sont-ils bien utiles ? Comment reprendre l’initiative et surtout comment éviter les meurtrières opérations de ravitaillement ? Il est même question d’abandonner certains postes, ce qui est effectivement fait. En réalité, la stratégie de Lyautey s’avère payante, car l’ennemi, au lieu de marcher sur Fès – alors capitale du Maroc –, s’opiniâtre contre les postes et perd progressivement l’initiative.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Les atermoiements stratégiques de la France</head>
+          <p>L’état de l’opinion publique française explique les motivations et les divergences qui animent les milieux dirigeants. La France étant une démocratie, le gouvernement issu du Cartel des gauches doit tenir compte des aspirations des Français pour moduler son action au Maroc, d’autant que la coalition au pouvoir est fragile : le Cartel des gauches est menacé à tout moment d’une défection des socialistes et le gouvernement Painlevé fait face au péril constant de perdre la majorité à la Chambre. Dans ces conditions, le président du Conseil souhaite une victoire rapide et pense de plus en plus que Lyautey n’est pas l’homme de la situation. L’idée se fait jour peu à peu d’ôter à Lyautey ses fonctions militaires. Pendant ce temps, la situation s’aggrave sur le terrain : Abdelkrim menace de faire sa jonction avec les dissidents de la région de Taza et de couper de la sorte les communications marocaines des Français avec l’Algérie, d’où proviennent les renforts. L’intervention des troupes du sultan joue un rôle décisif dans le rétablissement de la situation près de Taza. Il s’agit alors de reprendre l’initiative sur le plan militaire et d’évaluer la nécessité d’envoyer tous les renforts réclamés par Lyautey. Painlevé se rend en personne au Maroc pour se forger une opinion et se trouve conforté dans l’idée de changer de stratégie pour reprendre l’initiative, conjointement avec les Espagnols. En juillet, c’est le maréchal Pétain qui est désigné pour mener à bien ce changement – même si ce dernier n’a jamais voulu évincer Lyautey et a au contraire cherché à le soutenir. En même temps, un premier rapprochement s’amorce avec les Espagnols et la France soutient leur plan d’opérations prévoyant un débarquement dans le Rif central, cœur du pouvoir d’Abdelkrim.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Le tournant de l’automne 1925 : coopération franco-espagnole, débarquement et éviction de Lyautey</head>
+          <p>Le 8 septembre 1925, l’armée espagnole débarque près d’Al Hoceïma. Ce débarquement porte un coup terrible à Abdelkrim. Les Espagnols ont soigneusement étudié l’échec du débarquement britannique dans les Dardanelles en 1915 et en ont tiré des leçons pour mener un débarquement réussi. Cette réussite montre que la guerre a changé de visage : désormais, la bataille précède les opérations et les manœuvres, alors qu’auparavant ces dernières étaient effectuées en vue d’une bataille décisive. L’affrontement qui suit le débarquement espagnol permet de disloquer le bloc rifain au cours des manœuvres qui s’ensuivent. Si le schéma de la guerre a changé, la perception de l’ennemi s’est aussi transformée. À présent, l’idée se fait jour que l’ennemi est un « système » à disloquer en s’attaquant aux liens qui unissent ses composantes. C’est bien de la guerre du Rif que datent ces changements dans la pensée militaire, ou du moins l’application des méthodes nouvelles qui aboutiront à la mise en œuvre de percées mécanisées au cours de la seconde guerre mondiale. Le Maroc sert donc de champ d’expérimentations pour les armes modernes, blindés et aviation, et la guerre du Rif de « répétition » pour les conflits suivants : en témoigne l’étude par Eisenhower du débarquement espagnol lors de la préparation de l’opération Torch en novembre 1942.</p>
+        </div>
+        <div>
+          <head>Chapitre V<lb/>Un hiver de préparatifs et de négociations</head>
+          <p>La victoire étant à portée de mains pour les Européens, ceux-ci doivent améliorer leur coopération en vue de l’offensive finale et surtout employer la méthode la plus efficace et la moins coûteuse. C’est pourquoi Aristide Briand, qui a succédé à Painlevé, maintient les choix stratégiques de celui-ci, mais est tenté de négocier avec Abdelkrim. Ces négociations entre Rifains, Français et Espagnols, qui se tiennent près d’Oujda au cours d’une conférence tripartite, sont fort mal connues. Abdelkrim y tente jusqu’au dernier moment d’obtenir la reconnaissance de son autorité par les deux puissances coloniales et cherche à retarder leur offensive finale. Après la rupture des négociations, celle-ci peut avoir lieu comme prévu.</p>
+        </div>
+        <div>
+          <head>Chapitre VI<lb/>Le baroud final et la reddition d’Abdelkrim</head>
+          <p>C’est en employant de très grands moyens et en profitant d’une supériorité écrasante que Pétain parvient à mettre fin à la rébellion. Abdelkrim se rend aux Français plutôt qu’aux Espagnols afin d’éviter des poursuites pour crimes de guerre de la part de ces derniers. Les documents relatifs à sa reddition permettent de définir l’idée que le chef rifain s’est faite de son rôle : il n’a jamais voulu prétendre au trône du Maroc, contrairement à ce que d’aucuns ont affirmé, et sa rébellion a une profonde résonance philosophique, parce qu’elle met en question la notion de civilisation telle que la conçoivent les Européens. Face à la supériorité technique et matérielle, Abdelkrim a recours à sa propre conception de la civilisation : celle de l’effort moral et spirituel, <hi rend="i">djihad</hi> en arabe, avec toute l’ambiguïté que comporte ce mot.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>La guerre du Rif trouve son origine dans la confrontation des Rifains à la modernité occidentale. Tentés par les opportunités qu’elle peut offrir, les Rifains s’opposent pourtant à toute pénétration étrangère autre qu’économique. Le cadi Abdelkrim et ses fils ont souhaité exploiter à la fois la force et la faiblesse des Espagnols, la perspective du développement économique de leur région grâce à l’Espagne et l’impossibilité pour cette dernière d’occuper militairement le Rif dans l’immédiat. Ils ont joué sur deux tableaux, en négociant avec l’Espagne tout en animant la résistance armée, afin de se poser en interlocuteurs incontournables. Quand le dialogue est devenu impossible avec les Espagnols, Mohammed ben Abdelkrim est passé à l’attaque pour éviter l’occupation militaire. Ses premiers succès s’expliquent par l’effet de surprise et le recours à des armes psychologiques. La suite des événements a conduit Abdelkrim fils à constituer un véritable État pour les besoins de la guerre et à forger un projet politique pour le Rif. Ce projet, d’inspiration salafiste, est porteur de la même ambivalence que les autres mouvements du réformisme musulman : on y retrouve à la fois l’idée d’un retour aux racines de l’islam et le désir de rattraper matériellement l’Occident pour mieux lui résister. En attaquant la zone française, Abdelkrim s’est cru en mesure de chasser les Français du Maroc, en misant là encore sur des ressources psychologiques, parmi lesquelles la sympathie des Marocains pour son combat. La France, il est vrai, s’est trouvée décontenancée et malmenée dans les premiers temps, mais a su se ressaisir en recourant à des moyens techniques écrasants, qui préfigurent déjà la seconde guerre mondiale. Au cours de la guerre du Rif, le paradigme de la guerre s’est transformé et l’on est passé à un modèle moderne grâce à l’emploi du mouvement et de la force mécanisée. Néanmoins, la ténacité de la résistance rifaine est indubitable et s’explique par des facteurs psychologiques et par le charisme d’Abdelkrim. Enfin, après le départ de Lyautey, orchestré par Painlevé et non par Pétain, la coopération franco-espagnole a pu avoir libre cours et aboutir à la victoire. L’Espagne a payé un lourd tribut dans le Rif et l’avènement de la dictature de Franco, ainsi que la guerre d’Espagne, ne peuvent s’expliquer que par l’irruption de l’armée dans la vie politique, dernier recours d’une monarchie à bout de souffle, incapable de canaliser les forces vives de la nation espagnole dont le foisonnement est indéniable.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Extraits du rapport Picasso. — Lettre de reddition d’Abdelkrim.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Tableaux statistiques des effectifs et des pertes pour les armées française et espagnole. — Carte des tribus rifaines. — Cartes des manœuvres et des batailles. — Portraits photographiques des principaux acteurs du conflit.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

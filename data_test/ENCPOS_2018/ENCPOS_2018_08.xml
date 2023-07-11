@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2018_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le <hi rend="i">Pèlerinage de l'âme</hi> en prose et la <hi rend="i">Peregrinacio anime</hi>. Édition critique des réécritures du deuxième <hi rend="i">Pèlerinage</hi> de Guillaume de Digulleville par Jean Galopes</title>
+        <author>Jean Hennet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2018 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2018</date>, <biblScope>p. 85-92</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2018"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le <hi rend="i">Pèlerinage de l’âme</hi> en prose et la <hi rend="i">Peregrinacio anime
+      </hi><lb/>Édition critique des réécritures du deuxième <hi rend="i">Pèlerinage</hi> de Guillaume de Digulleville par Jean Galopes</head>
+      <byline>
+        <forename>Jean</forename>
+        <surname>Hennet</surname>
+        <roleName>diplomé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Non content d’être le premier à mettre en prose française l’un des <hi rend="i">Pèlerinages</hi> en vers de Guillaume de Digulleville dans les années 1420 pour le duc de Bedford, l’universitaire parisien Jean Galopes a réalisé peu après la traduction latine de sa mise en prose à la demande du régent de France. Cette thèse se propose de donner une édition critique parallèle des deux textes composés par Jean Galopes. Elle se place ainsi à la confluence de l’intérêt de la recherche pour les réécritures médiévales et de celui qui a vu fleurir depuis plus d’une décennie les travaux sur Guillaume de Digulleville et sa postérité littéraire. Elle a entre autres pour but de permettre l’analyse ultérieure des processus de mise en prose et d’auto-traduction.</p>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Les réécritures de jean galopes, un témoignage de la fortune des <hi rend="i">Pèlerinages</hi> de Guillaume de Digulleville</head>
+        <div>
+          <head>Chapitre premier<lb/>Les <hi rend="i">Pèlerinages</hi> de Guillaume de Digulleville</head>
+          <p><hi rend="i">La trilogie des</hi> Pèlerinages. <hi rend="i">—</hi> Si Guillaume de Digulleville n’a probablement jamais pensé son œuvre comme une trilogie, c’est néanmoins sous la forme d’une somme sur le salut en trois volets que les songes allégoriques connus sous le nom de <hi rend="i">Pèlerinages</hi> ont majoritairement été appréhendés par la postérité. Le <hi rend="i">Pèlerinage de vie humaine</hi>, écrit à partir de 1330, est un récit à la fois personnel et universel où la vie humaine est conçue comme un pèlerinage semé d’embûches vers la Jérusalem céleste, c’est-à-dire le paradis. Guillaume de Digulleville réécrit ce premier <hi rend="i">Pèlerinage</hi> vers 1355 en y accentuant la dimension autobiographique, puis lui ajoute en 1358 un <hi rend="i">Pèlerinage de l’âme</hi>, où l’on suit le cheminement du pèlerin après sa mort dans les divers lieux de l’au-delà. Après 1358, enfin, il écrit un dernier <hi rend="i">Pèlerinage</hi> qui semble couronner les deux premiers : le <hi rend="i">Pèlerinage de Jésus-Christ</hi> offre à tout pèlerin de contempler la vie du pèlerin par excellence, le fils de Dieu incarné. Les dates de rédaction traditionnellement attribuées au <hi rend="i">Pèlerinage de l’âme</hi> et au <hi rend="i">Pèlerinage de Jésus-Christ</hi> sont ici reconsidérées.</p>
+          <p><hi rend="i">Qui était Guillaume de Digulleville</hi> ?— La quasi-totalité des éléments biographiques dont nous disposons sur Guillaume de Digulleville est tirée du récit de ses <hi rend="i">Pèlerinages</hi>. Il est souvent difficile de démêler les éléments autobiographiques de ceux qui relèvent de l’invention. Outre les <hi rend="i">Pèlerinages</hi> subsistent d’autres écrits du moine de Chaalis.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Les réécritures de Jean Galopes dans la France anglaise</head>
+          <p><hi rend="i">Le goût anglais des</hi> Pèlerinages. — Si les <hi rend="i">Pèlerinages</hi> de Guillaume de Digulleville – à vrai dire les deux premiers – ont connu une diffusion européenne, c’est auprès du public anglais qu’ils ont rencontré leur plus grand succès. Les copies des textes de Digulleville en témoignent, mais aussi les réécritures dont ils ont fait l’objet. Après les pièces autonomes tirées des <hi rend="i">Pèlerinages</hi> par Chaucer puis Hoccleve, il est notable que la première réécriture exhaustive d’un <hi rend="i">Pèlerinage</hi> soit anglaise avec la mise en prose dans cette langue du <hi rend="i">Pèlerinage de l’âme</hi> en 1413. Les réécritures ultérieures des différentes versions du premier <hi rend="i">Pèlerinage</hi> témoignent également d’un intérêt durable, dont le point d’orgue semble coïncider avec les règnes des Lancastres.</p>
+          <p><hi rend="i">Mettre en prose et traduire en latin pour le duc de Bedford.</hi> — La mise en prose française du <hi rend="i">Pèlerinage de l’âme</hi> puis sa traduction latine par Jean Galopes s’inscrivent dans le contexte de l’engouement anglais pour les <hi rend="i">Pèlerinages</hi>, puisqu’ils ont été réalisés pour le duc de Bedford, régent anglais du royaume de France au nom de son neveu, Henry VI, roi d’Angleterre, et héritier du royaume de France en vertu du traité de Troyes. La mise en prose semble avoir été réalisée à l’initiative de Jean Galopes, et elle a très probablement été offerte au duc entre l’automne 1422 et novembre 1425. La traduction latine de cette première réécriture est en revanche une commande du prince anglais. Elle a quant à elle été achevée avant l’été 1427. La promotion d’œuvres en français et en latin plutôt qu’anglaises par le pouvoir lancastrien en France témoigne d’une parfaite intégration de l’idéologie de la double monarchie dans la pratique du gouvernement des Lancastres : deux royaumes distincts sous une même tête couronnée.</p>
+          <p><hi rend="i">Jean Galopes, dit le Gallois.</hi> — Jean Galopes, plus connu en son temps sous le nom de Jean le Gallois, est né vers 1385 dans le diocèse d’Évreux, dans une famille qui ressortit à une petite élite rurale. À partir de la fin du <num>xiv<hi rend="sup">e</hi></num> siècle, il entame une carrière universitaire qui l’amène à la maîtrise en théologie en 1426. En janvier 1420, étudiant en théologie dans le Paris bourguignon, il obtient un office de clerc à la chambre des comptes. Après le traité de Troyes, il jouit de la faveur des Lancastres et est chapelain d’Henry V, pour qui il écrivit une traduction des <hi rend="i">Meditationes vite Christi</hi>, puis du duc de Bedford, à qui il offrit sa mise en prose du <hi rend="i">Pèlerinage de l’âme</hi> et pour qui il réalisa la traduction latine de cette dernière. C’est grâce à la protection anglaise qu’il devient doyen de la collégiale Saint-Louis de La Saussaye, en Normandie, auprès de laquelle il a grandi, et qu’il devient chanoine de Notre-Dame de Rouen. Il semble toutefois avoir majoritairement résidé à Paris. Conciliariste convaincu, il représente le chapitre de Rouen au concile de Bâle, où il se trouva notamment mêlé aux tentatives d’Antoine de Vaudémont pour obtenir la succession du duché de Lorraine. Il y meurt le 15 mai 1435 et est inhumé à la chartreuse de Bâle.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Introduction à l’édition</head>
+        <div>
+          <head>Chapitre premier<lb/>Tradition textuelle du <hi rend="i">Pèlerinages de l’âme</hi> en prose</head>
+          <p><hi rend="i">Les témoins de la prose française.</hi> — La mise en prose de Jean Galopes est conservée par cinq manuscrits : Chantilly, Bibliothèque du Château, 140 (<hi rend="i">C</hi>) ; Oxford, Bodleian Library, Douce 305 (<hi rend="i">O</hi>) ; Paris, Bibliothèque nationale de France, Français 602 (<hi rend="i">P</hi>) ; Soissons, Bibliothèque municipale, 208 (<hi rend="i">S</hi>) ; un manuscrit en mains privées (<hi rend="i">B</hi>), seulement connu par des catalogues de vente. Elle a également été imprimée en 1499 à Paris par Antoine Vérard (<hi rend="i">V</hi>). Tous les témoins dont la localisation est connue ont été collationnés pour réaliser cette édition. Pour l’édition de Vérard, c’est l’exemplaire de la BnF conservé sous la cote RES-Y2195 qui a été utilisé.</p>
+          <p><hi rend="i">Discussion stemmatique.</hi> — L’analyse des relations qu’entretiennent les témoins est grandement facilitée par les contrôles que permettent et le texte source en vers et la traduction latine. Le <hi rend="i">stemma</hi> qui en ressort est bifide, avec d’une part une branche formée des témoins <hi rend="i">P, C, S</hi> et <hi rend="i">V</hi>, et d’autre part une branche formée du seul manuscrit <hi rend="i">O</hi>.</p>
+          <p><hi rend="i">La question du modèle.</hi> — Se pose la question du ou des manuscrits-sources utilisés par Jean Galopes pour sa mise en prose. Le manuscrit Paris, BnF, fr.1648 fait un candidat très plausible. Le texte de ce manuscrit et celui de la mise en prose entretiennent d’étroites relations ; le manuscrit contient une riche annotation marginale latine qui a été reprise lors de la mise en prose, et il provient de la collection constituée par Charles V au Louvre, à laquelle Jean Galopes avait sans nul doute accès. Jean Galopes aurait alors travaillé à partir d’au moins deux manuscrits, car le ms. Paris, BnF, fr. 1648 ne contient pas le résumé en vers du <hi rend="i">Pèlerinage de l’âme</hi> que Jean Galopes a également mis en prose en guise de second prologue. Nous montrons toutefois que le copiste du ms. Paris, BnF, fr. 1648 n’est sans doute pas l’auteur des <hi rend="i">marginalia</hi> qui y sont accrochées. Subsiste donc la possibilité que Jean Galopes ait par exemple utilisé le modèle de ce manuscrit. Nous nous demandons si ce modèle a pu lui aussi faire partie de la bibliothèque du Louvre, rachetée par le duc de Bedford après la mort de Charles VI, et nous démontrons entre autres une erreur des inventaires anciens du Louvre, qui mentionnent un manuscrit du <hi rend="i">Pèlerinage de l’âme</hi> qui n’en était pas un. En tout état de cause, si le ms. Paris, BnF, fr. 1648 n’a pas été le principal instrument de travail de Galopes, il offre néanmoins un très bon poste d’observation sur son manuscrit-source qu’on peut alors considérer comme perdu.</p>
+        </div>
+        <div>
+          <head>Chapitre II<lb/>Tradition textuelle de la <hi rend="i">Peregrinacio anime</hi></head>
+          <p><hi rend="i">Les témoins de la prose latine.</hi> — La traduction latine que Jean Galopes a réalisée du <hi rend="i">Pèlerinage de l’âme</hi> est conservée par deux manuscrits : Lincoln, Cathedral Chapter Library, 100 et Londres, Lambeth Palace Library, 326. Les deux témoins ont été collationnés pour réaliser l’édition du texte. Si le manuscrit 507 de la bibliothèque de l’Arsenal, à Paris, contient une traduction latine des trois <hi rend="i">Pèlerinages</hi> de Guillaume de Digulleville avec à leur tête une version légèrement remaniée du prologue de dédicace de Jean Galopes au duc de Bedford, il s’avère que le <hi rend="i">Pèlerinage de l’âme</hi> en latin qu’il contient est le fruit d’une entreprise de traduction distincte de celle dont sont nés les textes des manuscrits de Lincoln et Lambeth. Il est très vraisemblable que le prologue de Jean Galopes a été interpolé pour servir d’introduction à une traduction latine des trois <hi rend="i">Pèlerinages</hi> qui n’est pas de lui.</p>
+          <p><hi rend="i">Discussion stemmatique. —</hi> L’analyse des leçons propres à chacun des deux manuscrits montre qu’aucun n’a pu être copié sur l’autre.</p>
+          <p><hi rend="i">La question du modèle.</hi> — L’analyse du texte de la prose latine montre que Jean Galopes a travaillé à partir de sa seule prose française, sans revenir à sa source initiale en vers, si ce n’est pour inclure à la suite de sa traduction les poèmes latins prononcés par le pèlerin à son réveil et placés à la suite de certains manuscrits du <hi rend="i">Pèlerinage de l’âme</hi> en vers, dont le ms. Paris, BnF, fr. 1648. Par ailleurs, Jean Galopes n’a pas travaillé à partir d’un manuscrit autographe qu’il aurait conservé par devers lui, mais à partir d’un manuscrit enluminé, qui était probablement celui offert au duc de Bedford.</p>
+        </div>
+        <div>
+          <head>Chapitre III<lb/>Les manuscrits de base</head>
+          <p><hi rend="i">Le manuscrit Oxford, Bodleian Library, Douce 305.</hi> — Le ms. Oxford, Bodleian Library, Douce 305, est le manuscrit de base de l’édition de la prose française. Il témoigne d’une bien plus grande proximité avec l’archétype que <hi rend="i">P</hi>, qui est pourtant lui aussi un bon manuscrit. Il s’agit d’un manuscrit copié par le chanoine lillois Gérard de Pacy début 1436 pour son propre usage, comme un acte de dévotion personnel. Ce manuscrit nous semble également illustrer une facette particulière de l’intérêt qu’a suscité le <hi rend="i">Pèlerinage de l’âme</hi>. Gérard de Pacy, d’une famille de serviteur de l’État bourguignon et lui-même introduit dans les milieux curiaux, a sans doute aussi été sensible au fait que le <hi rend="i">Pèlerinage de l’âme</hi> n’est pas qu’une somme sur le salut mais aussi largement un miroir du prince qui valorise en contrepoint le rôle du bon conseiller. Gérard de Pacy a lui-même exécuté 56 dessins à la plume, qui témoignent de l’illustration de l’archétype, et au-delà sans doute de l’exemplaire de dédicace au duc de Bedford.</p>
+          <p><hi rend="i">Le manuscrit Londres, Lambeth Palace Library, 326. —</hi> Sont exposées ici les raisons du choix du ms. Londres, Lambeth Palace Library, 326 comme manuscrit de base pour l’édition de la traduction latine. La possibilité qu’il ait été le manuscrit de dédicace au duc de Bedford est ensuite étudiée. Enfin, l’illustration de ce manuscrit est décrite.</p>
+        </div>
+        <div>
+          <head>Chapitre IV<lb/>Principes d’édition</head>
+          <p><hi rend="i">Une édition parallèle.</hi> — Le <hi rend="i">Pèlerinage de l’âme</hi> en prose et sa traduction latine sont éditées en parallèle, en alignant les deux textes paragraphe par paragraphe. Cette mise en regard se justifie par la volonté de faciliter l’analyse d’une rarissime auto-traduction médiévale du français vers le latin dont on conserve les deux textes. <hi rend="i">L’édition de la prose française.</hi> — Sont exposés ici les principes mis en œuvre pour la transcription et l’établissement du texte, ainsi que la façon dont est organisé l’apparat critique. Nous suivons le manuscrit de base autant que faire se peut. Un premier étage de notes contient les leçons de ce manuscrit qui ont toutefois été rejetées pour rendre le texte lisible. Un second étage de notes comporte les principales variantes des autres témoins. Sont mises en valeur en gras, le cas échéant, celles de ces variantes qui témoignent du texte de l’archétype afin de permettre l’analyse du travail de mise en prose et de traduction. Il s’agit donc de conférer une triple orientation à notre édition : vers le manuscrit copié par Gérard de Pacy, vers le lecteur et vers l’archétype. L’orientation vers le lecteur nous amène à créer consciemment un texte d’éditeur nouveau, qui diffère de celui du manuscrit de base, mais le premier étage de notes de l’apparat critique rend compte de toutes nos interventions. Au-dessus de l’apparat critique sont imprimées les notes marginales latines qui figuraient dans le manuscrit <hi rend="i">O</hi>.</p>
+          <p><hi rend="i">L’édition de la prose latine.</hi> — Sont énoncés les principes de transcription et d’établissement du texte, ainsi que la façon dont est organisé l’apparat critique. L’édition est reconstructionniste. Dans les nombreux cas indécidables, les leçons du manuscrit de base, celui de Lambeth, sont privilégiées systématiquement. De même, les graphies sont celles de ce manuscrit.</p>
+        </div>
+        <div>
+          <head>Notes critiques</head>
+          <p>Cette partie rassemble successivement les notes critiques propres au <hi rend="i">Pèlerinage de l’âme</hi> en prose, celles propres à la <hi rend="i">Peregrinacio anime</hi> et celles communes aux deux textes.</p>
+        </div>
+        <div>
+          <head>Glossaire</head>
+          <p>Il s’agit de la première partie d’un glossaire d’édition qui se veut à terme exhaustif, afin de servir d’appui à une analyse des transformations lexicales lors de la mise en prose et des choix de traduction lors du passage au latin.</p>
+        </div>
+        <div>
+          <head>Index des noms de personnes et allégories</head>
+          <p>Index des noms de personnes et allégories de la prose française et de la prose latine.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Table des concordances des <hi rend="i">Pèlerinages de l’âme</hi> en vers et en prose. — Document comptable relatif à la copie d’un manuscrit de la <hi rend="i">Peregrinacio anime</hi> par Jean Thomas en 1427. — Lettre de Jean Galopes au comte Antoine de Vaudémont. — Lettre de Philippe de Saint-Pol, duc de Brabant, au chapitre de Saint-Pierre de Lille au sujet de Gérard de Pacy.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Édition des <hi rend="i">marginalia</hi> de la prose française</head>
+        <p>Introduction aux <hi rend="i">marginalia</hi> de la mise en prose et édition critique de celles-ci prenant en compte l’annotation marginale du ms. Paris, BnF, fr. 1648.</p>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Édition</head>
+        <p>Édition parallèle du <hi rend="i">Pèlerinage de l’âme</hi> en prose et de sa traduction latine, la <hi rend="i">Peregrinacio anime</hi>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
