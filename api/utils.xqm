@@ -1,7 +1,7 @@
 xquery version "3.1";
 
 (:~ 
-: Ce module permet de construire les réponses à fournir pour les urls spécifiées dans routes.xqm
+: Ce module permet de construire les réponses à fournir pour les urls spécifiées dans routes.xqm. Il gère la communication entre 
 : @author   École nationale des chartes - Philippe Pons
 : @since 2023-05-15
 : @version  1.0
@@ -22,6 +22,8 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
 : Cette variable permet de choisir l'identifiant d'une collection "racine" (pour le endpoint Collections sans paramètre d'identifiant)
+: @todo pouvoir choisir l'identifiant de collection Route? (le title du endpoint collections sans paramètres)
+: à déplacer dans globals.xqm?
 :)
 declare variable $utils:root := "ELEC";
 
@@ -128,11 +130,33 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : @param $id chaîne de caractère permettant l'identification du document XML
 : @todo prévoir l'ajout de nouveaux paramètres pour accéder à un fragment de document: @ref, @start, @end...
 :)
-declare function utils:document($id as xs:string) {
+declare function utils:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
   let $project := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $doc := db:get($project)/tei:TEI[@xml:id = $id]
+  let $ref := $doc//node()[@xml:id = $ref]
   return
-    $doc
+    if ($ref)
+    then
+      <TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$ref}</dts:fragment>
+      </TEI>
+    else
+      if ($start and $end)
+      then
+        let $startPosition := db:get($project, $G:configProject)//dots:member[@xml:id = $id]/dts:fragment[@xml:id=$start]/@n
+        let $endPosition := db:get($project, $G:configProject)//dots:member[@xml:id = $id]/dts:fragment[@xml:id=$end]/@n 
+        let $sequence :=
+          for $identifiants in $startPosition to $endPosition
+          let $idFragment := db:get($project, $G:configProject)//dots:member[@xml:id = $id]/dts:fragment[@n = $identifiants]/@xml:id
+          let $fragment := $doc//node()[@xml:id = $idFragment]
+          return
+            $fragment
+        return
+          <TEI xmlns="http://www.tei-c.org/ns/1.0">
+            <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$sequence}</dts:fragment>
+          </TEI>
+      else
+        $doc
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 

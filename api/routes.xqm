@@ -48,8 +48,11 @@ declare
   %output:method("xml")
   %rest:produces("application/tei+xml")
   %rest:query-param("id", "{$id}", "")
+  %rest:query-param("ref", "{$ref}", "")
+  %rest:query-param("start", "{$start}", "")
+  %rest:query-param("end", "{$end}", "")
   %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $format as xs:string) {
+function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
   if ($format)
   then 
     let $f :=
@@ -75,7 +78,11 @@ function routes:document($id as xs:string, $format as xs:string) {
         $trans
       )
   else
-    utils:document($id)
+    let $ref := if ($ref) then $ref else ""
+    let $start := if ($start) then $start else ""
+    let $end := if ($end) then $end else ""
+    return
+      utils:document($id, $ref, $start, $end)
 };
 
 
