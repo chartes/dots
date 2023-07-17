@@ -128,12 +128,16 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : Cette fonction donne accès au document ou à un fragment du document identifié par le paramètre $id
 : @return document ou fragment de document XML
 : @param $id chaîne de caractère permettant l'identification du document XML
+: @param $ref chaîne de caractère indiquant un fragment à citer
+: @param $start chaîne de caractère indiquant le début d'un passage cité
+: @end $start chaîne de caractère indiquant la fin d'un passage cité
 : @todo prévoir l'ajout de nouveaux paramètres pour accéder à un fragment de document: @ref, @start, @end...
 :)
 declare function utils:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
   let $project := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $doc := db:get($project)/tei:TEI[@xml:id = $id]
-  let $ref := $doc//node()[@xml:id = $ref]
+  let $idRef := db:get($project, $G:register)//record[parent = $id][position = $ref]/id
+  let $ref := $doc//node()[@xml:id = $idRef]
   return
     if ($ref)
     then
@@ -143,11 +147,9 @@ declare function utils:document($id as xs:string, $ref as xs:string, $start as x
     else
       if ($start and $end)
       then
-        let $startPosition := db:get($project, $G:configProject)//dots:member[@xml:id = $id]/dts:fragment[@xml:id=$start]/@n
-        let $endPosition := db:get($project, $G:configProject)//dots:member[@xml:id = $id]/dts:fragment[@xml:id=$end]/@n 
         let $sequence :=
-          for $identifiants in $startPosition to $endPosition
-          let $idFragment := db:get($project, $G:configProject)//dots:member[@xml:id = $id]/dts:fragment[@n = $identifiants]/@xml:id
+          for $range in xs:integer($start) to xs:integer($end)
+          let $idFragment := db:get($project, $G:register)//record[parent = $id][position = $range]/id
           let $fragment := $doc//node()[@xml:id = $idFragment]
           return
             $fragment

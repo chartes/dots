@@ -25,3 +25,7 @@ declare variable $G:declaration := "declaration.xml";
 
 (:~ Variable pour accéder au répertoire "metadata" d'un projet :)
 declare variable $G:metadata := "metadata";
+
+(:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
+declare variable $G:register := concat($G:metadata, "/documentRegister");
+
