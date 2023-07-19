@@ -35,6 +35,24 @@ function routes:collections($id as xs:string) {
      utils:collections()
 };
 
+(:~  
+: Cette fonction dispatche vers les fonctions permettant de donner les informations du endpoint Navigation pour la collection $id
+: @return réponse JSON pour le endpoint Navigation de la spécification d'API DTS
+: @param $id chaîne de caractère qui permet d'identifier une collection DTS
+: @see https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html
+: @todo compléter les paramètres 
+:) 
+declare
+  %rest:path("/api/dts/navigation")
+  %rest:GET
+  %output:method("json")
+  %rest:produces("application/ld+json")
+  %output:json("format=attributes")
+  %rest:query-param("id", "{$id}", "")
+function routes:navigation($id as xs:string) {
+  utils:navigation($id)
+};
+
 (:~ 
 : Cette fonction permet de renvoyer un document ou un fragment du document XML identifié par le paramètre $id
 : @return réponse XML-TEI pour les endpoints Document de la spécification d'API DTS

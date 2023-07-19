@@ -121,6 +121,51 @@ declare function utils:collectionById($id as xs:string) {
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Fonctions d'entrée dans le endPoint "Navigation" de l'API DTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
+
+
+(:~ 
+: Cette fonction permet de construire la réponse pour le endpoint Navigation de l'API DTS pour la resource identifiée par le paramètre $id
+: @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
+: @param $id chaîne de caractère permettant d'identifier la collection ou resource concernée. Ce paramètre vient de routes.xqm;routes:collections
+:)
+declare function utils:navigation($id as xs:string) {
+  let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
+  let $resource := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
+  let $members :=
+    for $member in db:get($projectName, $G:register)//record[parent=$id]
+    let $ref := normalize-space($member/position)
+    let $level := normalize-space($member/level)
+    return
+      (
+        <item type="object">
+          <pair name="ref">{$ref}</pair>
+          <pair name="level" type="number">{$level}</pair>
+        </item>
+      )
+  let $levelResource :=
+    if ($members[1]/pair[@name="level"])
+    then 
+      let $nLevel := xs:integer($members[1]/pair[@name="level"]) - 1
+      return
+        <pair name="level" type="number">{$nLevel}</pair>
+    else ()
+  let $passage := <pair name="passage">{concat("/api/dts/document?id=", $id, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
+  return
+    <json type="object">{
+      <pair name="@id">{$id}</pair>,
+      $levelResource,
+      if ($members)
+      then
+        <pair name="member" type="array">{$members}</pair>
+      else (),
+      $passage,
+      utils:getContext("")
+    }</json>
+};
+
+(: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
@@ -303,7 +348,9 @@ declare function utils:getContext($response) {
   <pair name="@context" type="object">
     <pair name="dts">https://w3id.org/dts/api#</pair>
     <pair name="vocab">https://www.w3.org/ns/hydra/core#</pair>
-    {
+    {if ($response = "")
+    then ()
+    else
       for $name in $response//@name
       where contains($name, ":")
       let $namespace := substring-before($name, ":")
