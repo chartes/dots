@@ -13,6 +13,11 @@ module namespace routes="https://github.com/chartes/dots/api/routes";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
 
+(:~  
+: Cette fonction gère le point d'entrée de l'API DTS
+: @return réponse JSON pour le endpoint EntryPoint
+: @see https://distributed-text-services.github.io/specifications/Entry.html#base-api-endpoint
+:)
 declare
   %rest:path("/api/dts")
   %rest:GET
@@ -66,8 +71,9 @@ declare
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
   %rest:query-param("id", "{$id}", "")
-function routes:navigation($id as xs:string) {
-  utils:navigation($id)
+  %rest:query-param("ref", "{$ref}", "")
+function routes:navigation($id as xs:string, $ref as xs:string) {
+  utils:navigation($id, $ref)
 };
 
 (:~ 
@@ -75,7 +81,6 @@ function routes:navigation($id as xs:string) {
 : @return réponse XML-TEI pour les endpoints Document de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier le document XML (obligatoire)
 : @see https://distributed-text-services.github.io/specifications/Documents-Endpoint.html
-: @todo $ref, $start, $end, etc. (paramètre facultatif pour servir un fragment de XML)
 :)
 declare
   %rest:path("/api/dts/document")
@@ -95,7 +100,7 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
       case ($format[. = "html"]) return "text/html;"
       case ($format[. = "txt"]) return "text/plain"
       default return "xml"
-    let $style := concat($G:webapp, "static/xsl/tei2html.xsl")
+    let $style := concat($G:webapp, $G:xsl)
     let $project := db:get($G:config)//*:member[@xml:id = $id]/@projectPathName
     let $doc := db:get($project)/*:TEI[@xml:id = $id]
     let $trans := 

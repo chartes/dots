@@ -130,7 +130,7 @@ Fonctions d'entrée dans le endPoint "Navigation" de l'API DTS
 : @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
 : @param $id chaîne de caractère permettant d'identifier la collection ou resource concernée. Ce paramètre vient de routes.xqm;routes:collections
 :)
-declare function utils:navigation($id as xs:string) {
+declare function utils:navigation($id as xs:string, $ref as xs:string) {
   let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $resource := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
   let $members :=
@@ -154,14 +154,14 @@ declare function utils:navigation($id as xs:string) {
   let $passage := <pair name="passage">{concat("/api/dts/document?id=", $id, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
   return
     <json type="object">{
+      <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>,
       <pair name="@id">{$id}</pair>,
       $levelResource,
       if ($members)
       then
         <pair name="member" type="array">{$members}</pair>
       else (),
-      $passage,
-      utils:getContext("")
+      $passage
     }</json>
 };
 
@@ -176,7 +176,7 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : @param $ref chaîne de caractère indiquant un fragment à citer
 : @param $start chaîne de caractère indiquant le début d'un passage cité
 : @end $start chaîne de caractère indiquant la fin d'un passage cité
-: @todo prévoir l'ajout de nouveaux paramètres pour accéder à un fragment de document: @ref, @start, @end...
+: @todo revoir la gestion de start et end!
 :)
 declare function utils:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
   let $project := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName

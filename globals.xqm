@@ -29,3 +29,6 @@ declare variable $G:metadata := "metadata";
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:register := concat($G:metadata, "/documentRegister");
 
+(:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
+declare variable $G:xsl := "static/xsl/tei2html.xsl";
+
