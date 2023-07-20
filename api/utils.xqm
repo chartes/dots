@@ -134,14 +134,20 @@ declare function utils:navigation($id as xs:string, $ref as xs:string) {
   let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $resource := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
   let $members :=
-    for $member in db:get($projectName, $G:register)//record[parent=$id]
-    let $ref := normalize-space($member/position)
-    let $level := normalize-space($member/level)
+    for $member in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
+    let $ref := normalize-space($member/@ref)
+    let $level := normalize-space($member/@level)
+    let $dc := utils:getDublincore($member)
+    let $extensions := utils:getExtensions($member)
     return
       (
         <item type="object">
           <pair name="ref">{$ref}</pair>
           <pair name="level" type="number">{$level}</pair>
+          {
+            $dc,
+            $extensions
+          }
         </item>
       )
   let $levelResource :=
@@ -181,7 +187,7 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 declare function utils:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
   let $project := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $doc := db:get($project)/tei:TEI[@xml:id = $id]
-  let $idRef := db:get($project, $G:register)//record[parent = $id][position = $ref]/id
+  let $idRef := db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $ref]/@xml:id
   let $ref := $doc//node()[@xml:id = $idRef]
   return
     if ($ref)
@@ -194,7 +200,7 @@ declare function utils:document($id as xs:string, $ref as xs:string, $start as x
       then
         let $sequence :=
           for $range in xs:integer($start) to xs:integer($end)
-          let $idFragment := db:get($project, $G:register)//record[parent = $id][position = $range]/id
+          let $idFragment := db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $range]/@xml:id
           let $fragment := $doc//node()[@xml:id = $idFragment]
           return
             $fragment
@@ -240,7 +246,7 @@ declare function utils:getMandatory($member as element(dots:member)) {
 : @see utils.xqm;utils:collectionById (fonction qui fait appel à la fonction ici présente)
 :)
 declare function utils:getDublincore($member as element(dots:member)) {
-  let $dc := $member/node()[starts-with(name(), "dct:")]
+  let $dc := $member/node()[starts-with(name(), "dc:")]
   return
     if ($dc)
     then
@@ -270,7 +276,7 @@ declare function utils:getDublincore($member as element(dots:member)) {
 : @see utils.xqm;utils:collectionById (fonction qui fait appel à la fonction ici présente)
 :)
 declare function utils:getExtensions($member as element(dots:member)) {
-  let $extensions := $member/node()[not(starts-with(name(), "dct:"))][not(name() = "dc:title")]
+  let $extensions := $member/node()[not(starts-with(name(), "dc:"))][not(name() = "dc:title")]
   return
     if ($extensions)
     then
