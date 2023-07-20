@@ -93,36 +93,37 @@ declare
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("format", "{$format}", "")
 function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
-  if ($format)
-  then 
-    let $f :=
-      switch ($format)
-      case ($format[. = "html"]) return "text/html;"
-      case ($format[. = "txt"]) return "text/plain"
-      default return "xml"
-    let $style := concat($G:webapp, $G:xsl)
-    let $project := db:get($G:config)//*:member[@xml:id = $id]/@projectPathName
-    let $doc := db:get($project)/*:TEI[@xml:id = $id]
-    let $trans := 
-      if ($format = "html")
-      then
-        xslt:transform($doc, $style)
-      else  $doc
-    return
-      (
-        <rest:response>
-          <http:response status="200">
-            <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
-          </http:response>
-        </rest:response>,
-        $trans
-      )
-  else
-    let $ref := if ($ref) then $ref else ""
-    let $start := if ($start) then $start else ""
-    let $end := if ($end) then $end else ""
-    return
-      utils:document($id, $ref, $start, $end)
+  let $ref := if ($ref) then $ref else ""
+  let $start := if ($start) then $start else ""
+  let $end := if ($end) then $end else ""
+  let $result := utils:document($id, $ref, $start, $end)
+  return
+    if ($format)
+    then 
+      let $f :=
+        switch ($format)
+        case ($format[. = "html"]) return "text/html;"
+        case ($format[. = "txt"]) return "text/plain"
+        default return "xml"
+      let $style := concat($G:webapp, $G:xsl)
+      let $project := db:get($G:config)//*:member[@xml:id = $id]/@projectPathName
+      let $doc := db:get($project)/*:TEI[@xml:id = $id]
+      let $trans := 
+        if ($format = "html")
+        then
+          xslt:transform($result, $style)
+        else  $result
+      return
+        (
+          <rest:response>
+            <http:response status="200">
+              <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
+            </http:response>
+          </rest:response>,
+          $trans
+        )
+    else
+      $result
 };
 
 
