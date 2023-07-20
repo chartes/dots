@@ -13,6 +13,23 @@ module namespace routes="https://github.com/chartes/dots/api/routes";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
 
+declare
+  %rest:path("/api/dts")
+  %rest:GET
+  %output:method("json")
+  %rest:produces("application/ld+json")
+  %output:json("format=attributes")
+function routes:entryPoint() {
+ <json type="object">
+   <pair name="@context">/api/dts/EntryPoint.jsonld</pair>
+   <pair name="@id">/api/dts</pair>
+   <pair name="@type">EntryPoint</pair>
+   <pair name="collections">/api/dts/collections</pair>
+   <pair name="documents">/api/dts/document</pair>
+   <pair name="navigation">/api/dts/navigation</pair>
+ </json>
+};
+
 (:~  
 : Cette fonction dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
 : @return réponse JSON pour les endpoints Collections de la spécification d'API DTS
