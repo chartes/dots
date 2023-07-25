@@ -89,27 +89,33 @@ declare function utils:collectionById($id as xs:string) {
     let $members :=
       if ($type = "collection")
       then
-        <pair name="member" type="array">{
           for $member in db:get($projectName, $G:configProject)//dots:member[@target = concat("#", $id)]
           let $mandatoryMember := utils:getMandatory($member)
           let $dublincoreMember := utils:getDublincore($member)
           let $extensionsMember := utils:getExtensions($member)
           return
-            (
-              <item type="object">{
-                $mandatoryMember,
-                if ($extensionsMember/node()) then $extensionsMember else (),
-                $dublincoreMember
-              }</item>
-            )
-        }</pair>
-      else ()
+            <item type="object">{
+              $mandatoryMember,
+              if ($extensionsMember/node()) then $extensionsMember else (),
+              $dublincoreMember
+            }</item>
+      else 
+        for $fragments in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
+        let $mandatoryFragment := utils:getMandatory($fragments)
+        let $dublincoreFragment := utils:getDublincore($fragments)
+        let $extensionsFragment := utils:getExtensions($fragments)
+        return
+          <item type="object">{
+            $mandatoryFragment,
+            if ($extensionsFragment/node()) then $extensionsFragment else (),
+            $dublincoreFragment
+          }</item>
     let $response := 
       (
         $mandatory,
         if ($extensions/node()) then $extensions else (),
         $dublincore,
-        $members
+        if ($members) then <pair name="member" type="array">{$members}</pair>
       )
     let $context := utils:getContext($response)
     return
