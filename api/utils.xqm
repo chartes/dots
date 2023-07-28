@@ -99,8 +99,8 @@ declare function utils:collectionById($id as xs:string) {
               if ($extensionsMember/node()) then $extensionsMember else (),
               $dublincoreMember
             }</item>
-      else 
-        for $fragments in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
+      else ()
+        (: for $fragments in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
         let $mandatoryFragment := utils:getMandatory($fragments)
         let $dublincoreFragment := utils:getDublincore($fragments)
         let $extensionsFragment := utils:getExtensions($fragments)
@@ -109,7 +109,7 @@ declare function utils:collectionById($id as xs:string) {
             $mandatoryFragment,
             if ($extensionsFragment/node()) then $extensionsFragment else (),
             $dublincoreFragment
-          }</item>
+          }</item> :)
     let $response := 
       (
         $mandatory,
@@ -193,12 +193,20 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 declare function utils:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
   let $project := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $doc := db:get($project)/tei:TEI[@xml:id = $id]
-  let $idRef := db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $ref]/@xml:id
-  let $ref := $doc//node()[@xml:id = $idRef]
+  let $header := $doc/tei:teiHeader
+  let $idRef := 
+    if (db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $ref]/@xml:id)
+    then db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $ref]/@xml:id
+    else db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $ref]/@node-id
+  let $ref := 
+    if ($doc//node()[@xml:id = $idRef]) 
+    then $doc//node()[@xml:id = $idRef]
+    else db:get-id($project, $idRef)
   return
     if ($ref)
     then
       <TEI xmlns="http://www.tei-c.org/ns/1.0">
+        {$header}
         <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$ref}</dts:fragment>
       </TEI>
     else
@@ -206,12 +214,19 @@ declare function utils:document($id as xs:string, $ref as xs:string, $start as x
       then
         let $sequence :=
           for $range in xs:integer($start) to xs:integer($end)
-          let $idFragment := db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $range]/@xml:id
-          let $fragment := $doc//node()[@xml:id = $idFragment]
+          let $idFragment := 
+            if (db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $range]/@xml:id)
+            then db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $range]/@xml:id
+            else db:get($project, $G:register)//dots:member[@target = concat("#", $id)][@ref = $range]/@node-id
+          let $fragment := 
+            if ($doc//node()[@xml:id = $idFragment])
+            then $doc//node()[@xml:id = $idFragment]
+            else db:get-id($project, $idFragment)
           return
             $fragment
         return
           <TEI xmlns="http://www.tei-c.org/ns/1.0">
+            {$header}
             <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$sequence}</dts:fragment>
           </TEI>
       else

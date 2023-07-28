@@ -11,6 +11,8 @@ import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" a
 import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "utils/root.xqm";
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "utils/project_metadata.xqm";
 
+import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "utils/documentRegister.xqm";
+
 (:~ 
 : INDIQUER ici le nom de la base de données BaseX
 :)
@@ -43,7 +45,6 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
 :)
 
 cc:create_config($db_name, $db_title, "", 0, true())
-
 
 
 

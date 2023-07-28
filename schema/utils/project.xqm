@@ -13,6 +13,7 @@ module namespace cc = "https://github.com/chartes/dots/schema/utils/cc";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "root.xqm";
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "project_metadata.xqm";
+import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "documentRegister.xqm";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -66,8 +67,9 @@ declare updating function cc:create_config($bdd as xs:string, $title as xs:strin
         )
       else 
         (
-          db:add($bdd, $content, $G:configProject)
-        )
+          db:put($bdd, $content, $G:configProject)
+        ),
+      docR:createDocumentRegister($bdd)
     )
 };
 
