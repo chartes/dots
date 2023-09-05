@@ -72,8 +72,11 @@ declare
   %output:json("format=attributes")
   %rest:query-param("id", "{$id}", "")
   %rest:query-param("ref", "{$ref}", "")
-function routes:navigation($id as xs:string, $ref as xs:string) {
-  utils:navigation($id, $ref)
+  %rest:query-param("start", "{$start}", 0)
+  %rest:query-param("end", "{$end}", 0)
+  %rest:query-param("down", "{$down}", 0)
+function routes:navigation($id as xs:string, $ref as xs:string, $down as xs:integer, $start as xs:integer, $end as xs:integer) {
+  utils:navigation($id, $ref, $start, $end, $down)
 };
 
 (:~ 

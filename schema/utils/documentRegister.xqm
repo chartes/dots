@@ -1,11 +1,11 @@
 xquery version "3.1";
 
 (:~  
-: Ce module permet de lister tous les fragments disponibles pour une collection
+: Ce module permet de lister tous les fragments disponibles dans les documents
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-07-26
 : @version  1.0
-: @todo ajouter ici les documents eux-mêmes. (À confirmer)
+: @todo ajouter ici les documents eux-mêmes. (À confirmer) => non, je ne suis pas sûr
 :)
 
 module namespace docR = "https://github.com/chartes/dots/schema/utils/docR";
@@ -16,6 +16,11 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+(:~ 
+: Cette fonction permet de construire ou mettre à jour documentRegister.xml qui liste les fragments disponibles dans les documents
+: @return document XML à ajouter à la db $bdd
+: @param $bdd chaîne de caractères qui correspond au nom de la base de données
+:)
 declare updating function docR:createDocumentRegister($bdd) {
   if (db:exists($bdd, $G:register))
   then 
@@ -41,6 +46,9 @@ declare updating function docR:createDocumentRegister($bdd) {
       db:add($bdd, $content, $G:register)
 };
 
+(:~ 
+: Cette fonction se contente de construire l'en-tête <dots:configMetadata/> de documentRegister.xml
+:)
 declare function docR:getMetadata() {
   <dots:documentsMetadata>
     <dots:gitVersion/><!-- version git du fichier -->
@@ -52,6 +60,9 @@ declare function docR:getMetadata() {
   </dots:documentsMetadata>
 };
 
+(:~ 
+: @todo intégrer l'usage, en plus de cRefPattern, de citeStructure
+:)
 declare function docR:getFragments($bdd as xs:string) {
   for $resource in db:get($bdd)/tei:TEI
   let $path := db:path($resource)

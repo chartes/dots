@@ -16,12 +16,12 @@ import module namespace docR = "https://github.com/chartes/dots/schema/utils/doc
 (:~ 
 : INDIQUER ici le nom de la base de données BaseX
 :)
-declare variable $db_name := "data_test";
+declare variable $db_name := "e-NDP";
 
 (:~ 
 : INDIQUER ici le titre que vous souhaitez donner à la base de données BaseX
 :)
-declare variable $db_title := "Les positions des thèses de l'Ecole nationale des chartes (2015-2019)";
+declare variable $db_title := "e-Édition des registres médiévaux de Notre-Dame de Paris";
 
 (:~ 
 Cette fonction est la fonction principale de la librairie. Elle permet de:

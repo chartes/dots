@@ -8,12 +8,6 @@ module namespace G = 'https://github.com/chartes/dots/globals';
 : @author École nationale des chartes - Philippe Pons
 :)
 
-(:~ Variable pour accéder au webapp :)
-declare variable $G:webapp := file:parent(file:base-dir());
-
-(:~ Variable pour accéder au dossier /static :)
-declare variable $G:static := concat($G:webapp, "static/");
-
 (:~ Variable pour accéder au nom de la base de données config :)
 declare variable $G:config := "config";
 
@@ -28,6 +22,12 @@ declare variable $G:metadata := "metadata";
 
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:register := concat($G:metadata, "/documentRegister");
+
+(:~ Variable pour accéder au dossier /static :)
+declare variable $G:static := concat($G:webapp, "static/");
+
+(:~ Variable pour accéder au webapp :)
+declare variable $G:webapp := file:parent(file:base-dir());
 
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:xsl := "static/xsl/tei2html.xsl";

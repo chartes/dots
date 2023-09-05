@@ -113,6 +113,7 @@ declare function cc:members($bdd as xs:string, $path as xs:string, $counter as x
 : Cette fonction permet de construire l'élément <member/> correspondant à une resource, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
+: @todo comment intégrer un attribut supplémentaire @maxCiteDepth?
 :)
 declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as xs:string, $boolean) {
   let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI

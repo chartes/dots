@@ -73,11 +73,13 @@ declare function cc2:getTeiContent($bdd as xs:string, $id as xs:string) {
         where not(contains($itemDeclaration/@xpath, " "))
         let $dbPath := db:path(db:get($bdd)/tei:TEI[@xml:id= $id])
         let $key := $itemDeclaration/name()
+        let $xpath1 := replace($itemDeclaration/@xpath, "/", "/*:")
+        let $xpath2 := replace($xpath1, "*:@", "@")
         order by $key
         let $content := 
-          for $item in xquery:eval(replace($itemDeclaration/@xpath, "/", "/*:"), map {"": db:get($bdd, $dbPath)})
+          for $item in xquery:eval($xpath1, map {"": db:get($bdd, $dbPath)})
           return
-            $item
+            normalize-space($item)
         let $data := 
           if ($content)
           then
