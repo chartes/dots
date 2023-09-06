@@ -240,7 +240,31 @@ declare function utils:refNavigation($id as xs:string, $ref as xs:string, $down 
 };
 
 declare function utils:rangeNavigation($id as xs:string, $start as xs:integer, $end as xs:integer, $down as xs:integer) {
-  
+  let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
+  let $url := concat("/api/dts/navigation?id=", $id, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
+  let $members :=
+    for $range in $start to $end
+    for $member in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)][starts-with(@ref, xs:string($range))][if ($down) then @level=$down else @level="1"]
+    let $ref := normalize-space($member/@ref)
+    let $level := normalize-space($member/@level)
+    let $citeType := normalize-space($member/@citeType)
+    return
+      <item type="object">
+        <pair name="ref">{$ref}</pair>
+        <pair name="level">{$level}</pair>
+        {if ($citeType) then <pair name="citeType">{$citeType}</pair>}
+      </item>
+  let $maxCiteDepth := normalize-space(db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)][1]/@maxCiteDepth)
+  return
+    <json type="object">
+      <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>
+      <pair name="@id">{$url}</pair>
+      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>
+      <pair name="level" type="number">1</pair>
+      {if ($members) then <pair name="member" type="array">{$members}</pair> else ()}
+      <pair name="passage">{concat("/api/dts/document?id=", $id, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
+      <pair name="parent">null</pair>
+    </json>
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
