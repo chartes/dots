@@ -55,7 +55,7 @@ declare function utils:collections() {
           if ($member) 
           then 
             <pair name="{$pos}" type="object">{
-              utils:getMandatory($member)
+              utils:getMandatory($member, "")
             }</pair> 
           else ()
       }</pair>
@@ -78,19 +78,25 @@ declare function utils:collections() {
 : @see utils.xqm;utils:getExtensions
 : @see utils.xqm;utils:getContext
 :)
-declare function utils:collectionById($id as xs:string) {
-  <json type="object">{
-    let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
-    let $config := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
-    let $mandatory := utils:getMandatory($config)
-    let $type := normalize-space($config/@type)
-    let $dublincore := utils:getDublincore($config)
-    let $extensions := utils:getExtensions($config)
-    let $members :=
-      if ($type = "collection")
-      then
-          for $member in db:get($projectName, $G:configProject)//dots:member[@target = concat("#", $id)]
-          let $mandatoryMember := utils:getMandatory($member)
+declare function utils:collectionById($id as xs:string, $nav as xs:string) {
+  let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
+  let $config := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
+  return
+    <json type="object">{
+      let $mandatory := utils:getMandatory($config, $nav)
+      let $type := normalize-space($config/@type)
+      let $dublincore := utils:getDublincore($config)
+      let $extensions := utils:getExtensions($config)
+      let $members :=
+        if ($type = "collection" or $nav = "parents")
+        then
+          for $member in 
+            if ($nav = "parents")
+            then
+              let $idParent := substring-after($config/@target, "#")
+              return db:get($projectName, $G:configProject)//dots:member[@xml:id= $idParent]
+            else db:get($projectName, $G:configProject)//dots:member[@target = concat("#", $id)]
+          let $mandatoryMember := utils:getMandatory($member, "")
           let $dublincoreMember := utils:getDublincore($member)
           let $extensionsMember := utils:getExtensions($member)
           return
@@ -99,31 +105,21 @@ declare function utils:collectionById($id as xs:string) {
               if ($extensionsMember/node()) then $extensionsMember else (),
               $dublincoreMember
             }</item>
-      else ()
-        (: for $fragments in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
-        let $mandatoryFragment := utils:getMandatory($fragments)
-        let $dublincoreFragment := utils:getDublincore($fragments)
-        let $extensionsFragment := utils:getExtensions($fragments)
-        return
-          <item type="object">{
-            $mandatoryFragment,
-            if ($extensionsFragment/node()) then $extensionsFragment else (),
-            $dublincoreFragment
-          }</item> :)
-    let $response := 
-      (
-        $mandatory,
-        if ($extensions/node()) then $extensions else (),
-        $dublincore,
-        if ($members) then <pair name="member" type="array">{$members}</pair>
-      )
-    let $context := utils:getContext($response)
-    return
-      (
-        $response,
-        $context
-      )
-  }</json>
+        else ()
+      let $response := 
+        (
+          $mandatory,
+          if ($extensions/node()) then $extensions else (),
+          $dublincore,
+          if ($members) then <pair name="member" type="array">{$members}</pair>
+        )
+      let $context := utils:getContext($response)
+      return
+        (
+          $response,
+          $context
+        )
+    }</json>
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -139,6 +135,7 @@ Fonctions d'entrée dans le endPoint "Navigation" de l'API DTS
 : @remarque l'implémentation actuelle me paraît complète pour un accès à Navigation avec comme seul paramètre: $id (=resource)
 : @todo revoir le level pour la resource ($levelResource): il doit être obligatoirement à 0?
 : @todo revoir citeType
+: @todo factoriser le code avec les 3 fonctions (utils:refNavigation(), utils:rangeNavigation())
 :)
 declare function utils:navigation($id as xs:string, $ref as xs:string, $start as xs:integer, $end as xs:integer, $down as xs:integer) {
   if ($ref)
@@ -232,7 +229,7 @@ declare function utils:refNavigation($id as xs:string, $ref as xs:string, $down 
           )
         else 
           (
-            <pair name="ref" type="number">{$parent}</pair>,
+            <pair name="ref">{$parent}</pair>,
             <pair name="@type">CitableUnit</pair>
           )
       }</pair>
@@ -335,17 +332,27 @@ Fonctions "utiles"
 : @see utils.xqm;utils:collections (fonction qui fait appel à la fonction ici présente)
 : @see utils.xqm;utils:collectionById (fonction qui fait appel à la fonction ici présente)
 :)
-declare function utils:getMandatory($member as element(dots:member)) {
+declare function utils:getMandatory($member as element(dots:member), $nav as xs:string) {
   let $id := normalize-space($member/@xml:id)
   let $type := normalize-space($member/@type)
   let $title := normalize-space($member/dc:title)
-  let $totalItems := if ($member/@n) then normalize-space($member/@n) else 0
+  let $totalParents := if ($member/@target) then 1 else 0
+  let $totalItems := 
+    if ($nav = "parents")
+    then
+      $totalParents
+    else
+      if ($member/@n) 
+      then normalize-space($member/@n) 
+      else 0
   return
     (
       <pair name="@id">{$id}</pair>,
       <pair name="@type">{$type}</pair>,
       <pair name="title">{$title}</pair>,
-      <pair name="totalItems" type="number">{$totalItems}</pair>
+      <pair name="totalItems" type="number">{$totalItems}</pair>,
+      <pair name="totalChildren" type="number">{$totalItems}</pair>,
+      <pair name="totalParents" type="number">{$totalParents}</pair>
     )
 };
 

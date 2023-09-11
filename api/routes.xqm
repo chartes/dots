@@ -49,10 +49,11 @@ declare
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
   %rest:query-param("id", "{$id}", "")
-function routes:collections($id as xs:string) {
+  %rest:query-param("nav", "{$nav}", "")
+function routes:collections($id as xs:string, $nav as xs:string) {
   if ($id)
   then
-    utils:collectionById($id)
+    utils:collectionById($id, $nav)
    else
      utils:collections()
 };
