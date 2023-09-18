@@ -87,6 +87,7 @@ declare function utils:collectionById($id as xs:string, $nav as xs:string) {
       let $type := normalize-space($config/@type)
       let $dublincore := utils:getDublincore($config)
       let $extensions := utils:getExtensions($config)
+      let $maxCiteDepth := normalize-space($config/@maxCiteDepth)
       let $members :=
         if ($type = "collection" or $nav = "parents")
         then
@@ -111,7 +112,8 @@ declare function utils:collectionById($id as xs:string, $nav as xs:string) {
           $mandatory,
           if ($extensions/node()) then $extensions else (),
           $dublincore,
-          if ($members) then <pair name="member" type="array">{$members}</pair>
+          if ($members) then <pair name="member" type="array">{$members}</pair>,
+          if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair> else ()
         )
       let $context := utils:getContext($response)
       return
@@ -126,14 +128,22 @@ declare function utils:collectionById($id as xs:string, $nav as xs:string) {
 Fonctions d'entrée dans le endPoint "Navigation" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
-
 (:~ 
-: Cette fonction permet de construire la réponse pour le endpoint Navigation de l'API DTS pour la resource identifiée par le paramètre $id
+: Cette fonction permet de dispatcher vers les fonctions idoines en fonction des paramètres d'URL présents
+: - utils:refNavigation si le paramètre $ref est présent,
+: - utils:rangeNavigation si les paramètres $start et $end sont présents,
+: - utils:idNavigation si seul le paramètre $id est disponible 
+Chacune de ces fonctions permet de construire la réponse pour le endpoint Navigation de l'API DTS pour la resource identifiée par le paramètre $id
 : @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
-: @param $id chaîne de caractère permettant d'identifier la collection ou resource concernée. Ce paramètre vient de routes.xqm;routes.collections
+: @param $id chaîne de caractère permettant d'identifier la resource concernée. Ce paramètre vient de routes.xqm;routes.collections
 : @param $ref chaîne de caractère permettant d'identifier un passage précis d'une resource. Ce paramètre vient de routes.xqm;routes.collections
-: @remarque l'implémentation actuelle me paraît complète pour un accès à Navigation avec comme seul paramètre: $id (=resource)
-: @todo revoir le level pour la resource ($levelResource): il doit être obligatoirement à 0?
+: @param $start chaîne de caractère permettant de spécifier le début d'une séquence de passages d'une resource à renvoyer
+: @param $end chaîne de caractère permettant de spécifier la fin d'une séquence de passages d'une resource à renvoyer
+: @param $down châine de caractère indiquant le niveau de profondeur des membres citables à renvoyer en réponse
+: @see https://docs.basex.org/wiki/JSON_Module#Attributes
+: @see utils.xqm;utils:utils:refNavigation
+: @see utils.xqm;utils:utils:rangeNavigation
+: @see utils.xqm;utils:utils:idNavigation
 : @todo revoir citeType
 : @todo factoriser le code avec les 3 fonctions (utils:refNavigation(), utils:rangeNavigation())
 :)
@@ -143,45 +153,62 @@ declare function utils:navigation($id as xs:string, $ref as xs:string, $start as
   else
     if ($start and $end)
     then utils:rangeNavigation($id, $start, $end, $down)
-    else
-      let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
-      let $resource := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
-      let $members :=
-        for $member in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
-        let $ref := normalize-space($member/@ref)
-        let $level := normalize-space($member/@level)
-        where if ($down) then xs:integer($level) = $down else xs:integer($level) = 1
-        let $citeType := normalize-space($member/@citeType)
-        let $dc := utils:getDublincore($member)
-        let $extensions := utils:getExtensions($member)
-        return
-          <item type="object">
-            <pair name="ref">{$ref}</pair>
-            <pair name="level" type="number">{$level}</pair>
-            {
-              if ($citeType) then <pair name="citeType">{$citeType}</pair> else (),
-              $dc,
-              $extensions
-            }
-          </item>
-      let $passage := <pair name="passage">{concat("/api/dts/document?id=", $id, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
-      let $url := concat("/api/dts/navigation?id=", $id)
-      let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
-      return
-        <json type="object">{
-          <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>,
-          <pair name="@id">{$url}</pair>,
-          <pair name="level" type="number">0</pair>,
-          if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>,
-          if ($members)
-          then
-            <pair name="member" type="array">{$members}</pair>
-          else (),
-          $passage,
-          <pair name="parent">null</pair>
-        }</json>
+    else utils:idNavigation($id, $down)
+      
 };
 
+(:~  
+Cette fonction permet de construire la réponse d'API DTS pour le endpoint Navigation dans le cas où seul l'identifiant de la ressource est donnée.
+: @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
+: @param $id chaîne de caractère permettant d'identifier la resource concernée
+: @param $down châine de caractère indiquant le niveau de profondeur des membres citables à renvoyer en réponse
+:)
+declare function utils:idNavigation($id as xs:string, $down) {
+  let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
+  let $resource := db:get($projectName, $G:configProject)//dots:member[@xml:id = $id]
+  let $members :=
+    for $member in db:get($projectName, $G:register)//dots:member[@target = concat("#", $id)]
+    let $ref := normalize-space($member/@ref)
+    let $level := normalize-space($member/@level)
+    where if ($down) then xs:integer($level) = $down else xs:integer($level) = 1
+    let $citeType := normalize-space($member/@citeType)
+    let $dc := utils:getDublincore($member)
+    let $extensions := utils:getExtensions($member)
+    return
+      <item type="object">
+        <pair name="ref">{$ref}</pair>
+        <pair name="level" type="number">{$level}</pair>
+        {
+          if ($citeType) then <pair name="citeType">{$citeType}</pair> else (),
+          $dc,
+          $extensions
+        }
+      </item>
+  let $passage := <pair name="passage">{concat("/api/dts/document?id=", $id, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
+  let $url := concat("/api/dts/navigation?id=", $id)
+  let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
+  return
+    <json type="object">{
+      <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>,
+      <pair name="@id">{$url}</pair>,
+      <pair name="level" type="number">0</pair>,
+      if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>,
+      if ($members)
+      then
+        <pair name="member" type="array">{$members}</pair>
+      else (),
+        $passage,
+      <pair name="parent" type="null"></pair>
+    }</json>
+};
+
+(:~ 
+: Cette fonction permet de construire la réponse pour le endpoint Navigation de l'API DTS pour le passage identifié par $ref de la resource $id
+: @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
+: @param $id chaîne de caractère permettant d'identifier la collection ou resource concernée. Ce paramètre vient de routes.xqm;routes.collections
+: @param $ref chaîne de caractère permettant d'identifier un passage précis d'une resource. Ce paramètre vient de routes.xqm;routes.collections
+: @param $down châine de caractère indiquant le niveau de profondeur des membres citables à renvoyer en réponse
+:)
 declare function utils:refNavigation($id as xs:string, $ref as xs:string, $down as xs:integer) {
   let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $url := concat("/api/dts/navigation?id=", $id, "&amp;ref=", $ref)
@@ -236,6 +263,14 @@ declare function utils:refNavigation($id as xs:string, $ref as xs:string, $down 
     </json>
 };
 
+(:~ 
+: Cette fonction permet de construire la réponse pour le endpoint Navigation de l'API DTS pour la séquence de passages suivis entre $start et $end de la resource $id
+: @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
+: @param $id chaîne de caractère permettant d'identifier la collection ou resource concernée. Ce paramètre vient de routes.xqm;routes.collections
+: @param $start chaîne de caractère permettant de spécifier le début d'une séquence de passages d'une resource à renvoyer
+: @param $end chaîne de caractère permettant de spécifier la fin d'une séquence de passages d'une resource à renvoyer
+: @param $down châine de caractère indiquant le niveau de profondeur des membres citables à renvoyer en réponse
+:)
 declare function utils:rangeNavigation($id as xs:string, $start as xs:integer, $end as xs:integer, $down as xs:integer) {
   let $projectName := db:get($G:config)//dots:member[@xml:id = $id]/@projectPathName
   let $url := concat("/api/dts/navigation?id=", $id, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
@@ -260,7 +295,7 @@ declare function utils:rangeNavigation($id as xs:string, $start as xs:integer, $
       <pair name="level" type="number">1</pair>
       {if ($members) then <pair name="member" type="array">{$members}</pair> else ()}
       <pair name="passage">{concat("/api/dts/document?id=", $id, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
-      <pair name="parent">null</pair>
+      <pair name="parent" type="null"></pair>
     </json>
 };
 
@@ -331,6 +366,7 @@ Fonctions "utiles"
 : @see https://docs.basex.org/wiki/JSON_Module#Attributes
 : @see utils.xqm;utils:collections (fonction qui fait appel à la fonction ici présente)
 : @see utils.xqm;utils:collectionById (fonction qui fait appel à la fonction ici présente)
+: @todo envisager de modifier le paramètre $nav en $queryParams as map si plusieurs paramètres d'URI doivent être utilisés
 :)
 declare function utils:getMandatory($member as element(dots:member), $nav as xs:string) {
   let $id := normalize-space($member/@xml:id)
@@ -345,6 +381,8 @@ declare function utils:getMandatory($member as element(dots:member), $nav as xs:
       if ($member/@n) 
       then normalize-space($member/@n) 
       else 0
+  let $passage := concat("/api/dts/document?id=", $id)
+  let $references := concat("/api/dts/navigation?id=", $id)
   return
     (
       <pair name="@id">{$id}</pair>,
@@ -352,7 +390,9 @@ declare function utils:getMandatory($member as element(dots:member), $nav as xs:
       <pair name="title">{$title}</pair>,
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="totalChildren" type="number">{$totalItems}</pair>,
-      <pair name="totalParents" type="number">{$totalParents}</pair>
+      <pair name="totalParents" type="number">{$totalParents}</pair>,
+      <pair name="passage">{$passage}</pair>,
+      <pair name="references">{$references}</pair>
     )
 };
 
