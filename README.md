@@ -75,11 +75,11 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Collections-Endpoint.html#uri)
 
-| Nom  | Description                                                                 | Méthode | Implémentation |
-| ---- | --------------------------------------------------------------------------- | ------- | -------------- |
-| id   | identifier for a collection or document.                                    | GET     | ✅              |
-| page | page of the current collection’s members                                    | GET     | 🚧             |
-| nav  | whether members of the collection are its `children` (default) or `parents` | GET     | ✅              |
+| Nom  | Méthode | Implémentation |
+| ---- | ------- | -------------- |
+| id   | GET     | ✅              |
+| page | GET     | 🚧             |
+| nav  | GET     | ✅              |
 
 ### Endpoint Navigation
 
@@ -114,13 +114,30 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#query-parameters)
 
-| Nom       | Méthode | Implémentation |
-| --------- | ------- | -------------- |
-| `id`      | GET     | ✅              |
-| `ref`     | GET     | ✅              |
-| `start`   | GET     | 🔄             |
-| `end`     | GET     | 🔄             |
-| `down`    | GET     | 🔄             |
-| `groupBy` | GET     | 🚧             |
-| `max`     | GET     | 🚧             |
-| `exclude` | GET     |                |
+| Nom     | Méthode | Implémentation |
+| ------- | ------- | -------------- |
+| id      | GET     | ✅              |
+| ref     | GET     | ✅              |
+| start   | GET     | 🔄             |
+| end     | GET     | 🔄             |
+| down    | GET     | 🔄             |
+| groupBy | GET     | 🚧             |
+| max     | GET     | 🚧             |
+| exclud` | GET     | 🚧             |
+
+### Endpoint Document
+
+#### Paramètres de requête
+
+cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Documents-Endpoint.html#uri)
+
+| Nom    | Méthode | Implémentation |
+| ------ | ------- | -------------- |
+| id     | GET     | ✅              |
+| ref    | GET     | ✅              |
+| start  | GET     | 🔄             |
+| end    | GET     | 🔄             |
+| after  |         | 🚧             |
+| before |         | 🚧             |
+| token  |         | 🚧             |
+| format |         | 🚧             |
