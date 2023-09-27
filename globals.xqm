@@ -8,20 +8,17 @@ module namespace G = 'https://github.com/chartes/dots/globals';
 : @author École nationale des chartes - Philippe Pons
 :)
 
-(:~ Variable pour accéder au nom de la base de données config :)
-declare variable $G:config := "config";
+(:~ Variable pour accéder au nom de la base de données dots :)
+declare variable $G:dots := "dots";
 
-(:~ Variable pour accéder au document "config.xml" d'un projet :)
-declare variable $G:configProject := "config.xml";
+(:~ Variable pour accéder au document "resources_register.xml" d'un projet :)
+declare variable $G:resourcesRegister := "dots/resources_register.xml";
 
 (:~ Variable pour accéder au document "declaration.xml" d'un projet :)
 declare variable $G:declaration := "declaration.xml";
 
-(:~ Variable pour accéder au répertoire "metadata" d'un projet :)
-declare variable $G:metadata := "metadata";
-
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
-declare variable $G:register := concat($G:metadata, "/documentRegister");
+declare variable $G:fragmentsRegister := "dots/fragments_register.xml";
 
 (:~ Variable pour accéder au dossier /static :)
 declare variable $G:static := concat($G:webapp, "static/");

@@ -16,9 +16,9 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare updating function ccg:create_config($idBdd) {
-  if (db:exists($G:config))
+  if (db:exists($G:dots))
   then 
-    let $config := db:get($G:config)
+    let $config := db:get($G:dots)
     let $lastUpdate := $config//dots:lastUpdate
     let $projects := $config//dots:projects
     let $members := ccg:members($idBdd, "")
@@ -54,7 +54,7 @@ declare updating function ccg:create_config($idBdd) {
         </dots:configContent>
       </dots:configuration>
     return
-      db:create($G:config, $content, $G:configProject)
+      db:create($G:dots, $content, $G:resourcesRegister)
 };
 
 (:~ 

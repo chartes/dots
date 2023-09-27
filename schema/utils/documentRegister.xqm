@@ -21,9 +21,9 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @param $bdd chaîne de caractères qui correspond au nom de la base de données
 :)
 declare updating function docR:createDocumentRegister($bdd) {
-  if (db:exists($bdd, $G:register))
+  if (db:exists($bdd, $G:fragmentsRegister))
   then 
-    let $register := db:get($bdd, $G:register)
+    let $register := db:get($bdd, $G:fragmentsRegister)
     let $lastUpdate := $register//dots:lastUpdate
     let $members := $register//dots:members
     return
@@ -42,7 +42,7 @@ declare updating function docR:createDocumentRegister($bdd) {
         </dots:documentsContent>
       }</dots:documents>
     return
-      db:add($bdd, $content, $G:register)
+      db:add($bdd, $content, $G:fragmentsRegister)
 };
 
 (:~ 

@@ -29,7 +29,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 :)
 declare updating function cc:create_config($bdd as xs:string, $title as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
   let $countChild := 
-    let $countConfig := if (db:get($bdd, $G:configProject)) then 1 else 0
+    let $countConfig := if (db:get($bdd, $G:resourcesRegister)) then 1 else 0
     let $countDeclaration := if (db:get($bdd, $G:declaration)) then 1 else 0
     let $countMetadata := 
       if (db:get($bdd, $G:metadata)) then 1 else 0
@@ -57,9 +57,9 @@ declare updating function cc:create_config($bdd as xs:string, $title as xs:strin
   return
     (
       ccg:create_config($bdd),
-      if (db:exists($bdd, $G:configProject))
+      if (db:exists($bdd, $G:resourcesRegister))
       then 
-        let $config := db:get($bdd, $G:configProject)
+        let $config := db:get($bdd, $G:resourcesRegister)
         return
         (
           replace value of node $config//dots:lastUpdate with current-dateTime(),
@@ -67,7 +67,7 @@ declare updating function cc:create_config($bdd as xs:string, $title as xs:strin
         )
       else 
         (
-          db:put($bdd, $content, $G:configProject)
+          db:put($bdd, $content, $G:resourcesRegister)
         ),
       docR:createDocumentRegister($bdd)
     )

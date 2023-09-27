@@ -42,7 +42,7 @@ declare function cc2:getContent($bdd, $id) {
 : @todo /!\ Attention aux problèmes de namespace (notamment sur <csv/>)
 :)
 declare function cc2:getCsvContent($bdd as xs:string, $id as xs:string) {
-  let $member := db:get($bdd, $G:configProject)//dots:member[@xml:id = $id]
+  let $member := db:get($bdd, $G:resourcesRegister)//dots:member[@xml:id = $id]
   let $record := db:get($bdd, $G:metadata)/*:csv/*:record[*:id = $id]
   return
     if ($record)
@@ -63,7 +63,7 @@ declare function cc2:getCsvContent($bdd as xs:string, $id as xs:string) {
 : @param $id chaîne de caractères qui correspond à l'identifiant @xml:id d'une ressource XML dans la db identifiée ci-dessus
 :)
 declare function cc2:getTeiContent($bdd as xs:string, $id as xs:string) {
-  let $member := db:get($bdd, $G:configProject)//dots:member[@xml:id = $id]
+  let $member := db:get($bdd, $G:resourcesRegister)//dots:member[@xml:id = $id]
   let $tei := db:open($bdd)/tei:TEI[@xml:id = $id]
   return
     if ($tei)

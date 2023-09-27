@@ -110,7 +110,7 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
         case ($format[. = "txt"]) return "text/plain"
         default return "xml"
       let $style := concat($G:webapp, $G:xsl)
-      let $project := db:get($G:config)//*:member[@xml:id = $id]/@projectPathName
+      let $project := db:get($G:dots)//*:member[@xml:id = $id]/@projectPathName
       let $doc := db:get($project)/*:TEI[@xml:id = $id]
       let $trans := 
         if ($format = "html")
