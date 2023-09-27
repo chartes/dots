@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xrem/rng2html.xsl"?>
+<grammar
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  ns="https://github.com/chartes/dots/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns:h="http://www.w3.org/1999/xhtml" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" 
+  xml:lang="fr">
+  
+  <a:documentation>
+    <h:h1>Dots Resources Register</h:h1>
+    <h:p>This register lists all the resources of a DOTS project: its collections (i.e. resources @type collection) and documents (i.e. resources @type resource).</h:p>
+    <h:p>It is required for building responses to queries passed to the <h:strong>only DTS Collections Endpoint</h:strong>.</h:p>
+  </a:documentation>
+  
+  <start>
+    <ref name="resourcesRegister"/>
+  </start>
+  
+  <define name="resourcesRegister">
+    <a:documentation>Resources Register Root for DTS Collections Endpoint</a:documentation>
+    <element name="resourcesRegister">
+      <ref name="metadata"/>
+      <ref name="member"/>
+    </element>
+  </define>
+  
+  <define name="metadata">
+    <a:documentation>TODO: les métadonnées du registre</a:documentation>
+    <element name="metadata">
+      <element name="dct:created">
+        <text/>
+      </element>
+      <element name="dct:modified">
+        <text/>
+      </element>
+    </element>
+  </define>
+  
+  <define name="member">
+    <element name="member">
+      <oneOrMore>
+        <choice>
+          <ref name="collection"/>
+          <ref name="document"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  
+  <define name="collection">
+    <element name="collection">
+      <ref name="collection.atts"/>
+      <ref name="dcTitle"/>
+      <zeroOrMore>
+        <ref name="dcMetadata"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  
+  <define name="collection.atts">
+    <a:documentation>Collection attributes</a:documentation>
+    <ref name="dtsResourceId-att"/>
+    <attribute name="totalChildren">
+      <a:documentation>TODO (DTS item property: total number of members that you will find if you do nav=children)</a:documentation>
+      <data type="integer"/>
+    </attribute>
+    <optional>
+      <ref name="parentIds-att"/>
+    </optional>
+  </define>
+  
+  <define name="document">
+    <element name="document">
+      <ref name="document-atts"/>
+      <ref name="dcTitle"/>
+      <zeroOrMore>
+        <ref name="dcMetadata"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  
+  <define name="document-atts">
+    <a:documentation>Document attributes</a:documentation>
+    <ref name="dtsResourceId-att"/>
+    <attribute name="maxCiteDepth">
+      <a:documentation>TODO (DTS item property: declare the maximum depth of a readable resource)</a:documentation>
+      <data type="integer"/>
+    </attribute>
+    <optional>
+      <ref name="parentIds-att"/>
+    </optional>    
+  </define>
+  
+  <define name="dtsResourceId-att">
+    <attribute name="dtsResourceId">
+      <a:documentation>TODO</a:documentation>
+      <data type="ID"/>
+    </attribute>
+  </define>
+  
+  <define name="parentIds-att">
+    <attribute name="parentIds">
+      <a:documentation>List of collection parents IDs</a:documentation>
+      <data type="string"/><!-- TODO -->
+    </attribute>
+  </define>
+  
+  <define name="dcMetadata">
+    <a:documentation>TODO</a:documentation>
+    <choice>
+      <element name="dc:publisher"><text/></element>
+      <element name="dc:date"><text/></element>
+    </choice>
+  </define>
+  
+  <define name="dcTitle">
+    <a:documentation>TODO</a:documentation>
+    <element name="dc:title">
+      <text/>
+    </element>
+  </define>
+  
+  
+</grammar>
