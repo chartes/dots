@@ -16,7 +16,7 @@ import module namespace docR = "https://github.com/chartes/dots/schema/utils/doc
 (:~ 
 : INDIQUER ici le nom de la base de données BaseX
 :)
-declare variable $db_name := "e-NDP";
+declare variable $db_name := "endp_chap";
 
 (:~ 
 : INDIQUER ici le titre que vous souhaitez donner à la base de données BaseX

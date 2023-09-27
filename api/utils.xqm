@@ -46,7 +46,7 @@ declare function utils:collections() {
       <pair name="title">{string("Éditions numériques de l'école nationale des chartes")}</pair>,
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="member" type="object">{
-        for $project at $pos in db:get($G:config)//dots:member[not(@target)]
+        for $project at $pos in db:get($G:config)//dots:projects/dots:member
         let $id := normalize-space($project/@xml:id)
         let $projectName := $project/@projectPathName
         let $dbPrjt := db:get($projectName, $G:configProject)

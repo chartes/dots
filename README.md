@@ -44,8 +44,6 @@ Utiliser les routes de l'API DTS déjà disponibles:
 
 En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut décommenter la partie CORS du fichier `basex/webapp/WEB-INF/web.xml`.
 
-
-
 ## État d'avancement de l'implémentation de DTS dans DoTS
 
 ### Endpoint Collections
@@ -69,6 +67,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 | `extensions`    | optionnel                        | ✅              |
 | `references`    | optionnel                        | ✅              |
 | `passage`       | optionnel                        | ✅              |
+| download        | optionnel                        |                |
 | citeStructure   | optionnel                        | 🔄             |
 
 #### Paramètres de requête

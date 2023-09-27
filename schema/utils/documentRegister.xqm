@@ -5,7 +5,6 @@ xquery version "3.1";
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-07-26
 : @version  1.0
-: @todo ajouter ici les documents eux-mêmes. (À confirmer) => non, je ne suis pas sûr
 :)
 
 module namespace docR = "https://github.com/chartes/dots/schema/utils/docR";
@@ -62,25 +61,29 @@ declare function docR:getMetadata() {
 
 (:~ 
 : @todo intégrer l'usage, en plus de cRefPattern, de citeStructure
+: @todo intégrer une fonction (récursive) pour le traitement de citeStructure
 :)
 declare function docR:getFragments($bdd as xs:string) {
   for $resource in db:get($bdd)/tei:TEI
   let $path := db:path($resource)
   let $idResource := normalize-space($resource/@xml:id)
-  let $cRefPattern := $resource//tei:encodingDesc/tei:refsDecl[@n = "DTS"]/tei:cRefPattern
-  let $level := substring-after($cRefPattern/@n, "level")
-  let $xpath := normalize-space($cRefPattern/@replacementPattern)
-  let $maxCiteDepth := count($resource//tei:encodingDesc/tei:refsDecl[@n = "DTS"]/tei:cRefPattern)
+  let $refsDecl := $resource//tei:encodingDesc/tei:refsDecl
+  let $maxCiteDepth := normalize-space($refsDecl/@n)
+  let $citeStructure := $refsDecl/tei:citeStructure
+  let $level := $citeStructure/@n
+  let $xpath := normalize-space($citeStructure/@match)
+  let $citeType := normalize-space($citeStructure/@unit)
   order by $idResource
   return
     for $fragments at $pos in xquery:eval(replace($xpath, "/[a-zA-Z]+:", "/*:"), map {"": db:get($bdd, $path)})
     let $id := $fragments/@xml:id
     let $node-id := db:node-id($fragments)
+    let $ref := if ($citeStructure/@use) then normalize-space($citeStructure/@use) else $pos
     let $title := normalize-space($fragments/tei:head)
     let $date := normalize-space($fragments/tei:head//tei:date/@when)
     order by $pos
     return 
-      <dots:member level="{$level}" maxCiteDepth="{$maxCiteDepth}" ref="{$pos}" target="#{$idResource}">{
+      <dots:member level="{$level}" maxCiteDepth="{$maxCiteDepth}" ref="{$ref}" target="#{$idResource}">{
         if ($id) then attribute {"xml:id"} {$id} else attribute {"node-id"} {$node-id},
         if ($title) then <dc:title>{$title}</dc:title> else (),
         if ($date) then <dc:date>{$date}</dc:date> else ()

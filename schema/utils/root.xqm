@@ -1,7 +1,7 @@
 xquery version "3.1";
 
 (:~  
-: Ce module permet de créer un fichier de configuration général. Ce document sert ensuite pour le routeur dtsx. Spécifiquement, le rôle de ce module est de créer le document de configuration général, en intégrant toutes les collections existantes et leurs membres avec le lien vers le projet correspondant.
+: Ce module permet de créer un fichier de configuration général. Ce document sert ensuite pour le routeur DoTS. Spécifiquement, le rôle de ce module est de créer le document de configuration général, en intégrant toutes les collections existantes et leurs membres avec le lien vers le projet correspondant.
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-06-14
 : @version  1.0
@@ -38,7 +38,7 @@ declare updating function ccg:create_config($idBdd) {
           if ($config//dots:members/dots:member[@xml:id = $id])
           then replace node $config//dots:members/dots:member[@xml:id = $id] with $member
           else 
-          insert node $member as last into $config//dots:members
+            insert node $member as last into $config//dots:members
       )
   else
     let $content :=

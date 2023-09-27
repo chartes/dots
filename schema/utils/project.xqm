@@ -5,7 +5,7 @@ xquery version "3.1";
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-05-25
 : @version  1.0
-: @todo Mise à jour du fichier de configuration?
+: @todo pour l'ajout de @citeType: utiliser la fonction fn:normalize-unicode() pour enlever les diacritics
 :)
 
 module namespace cc = "https://github.com/chartes/dots/schema/utils/cc";
@@ -100,7 +100,7 @@ declare function cc:members($bdd as xs:string, $path as xs:string, $counter as x
   where not(contains($dir, $G:metadata))
   order by $dir
   return
-    if (contains($dir, ".xml"))
+    if ($dir[name() = "resource"])
     then cc:resource($bdd, $dir, $path, $boolean)
     else
       (
@@ -113,20 +113,20 @@ declare function cc:members($bdd as xs:string, $path as xs:string, $counter as x
 : Cette fonction permet de construire l'élément <member/> correspondant à une resource, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
-: @todo comment intégrer un attribut supplémentaire @maxCiteDepth?
 :)
 declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as xs:string, $boolean) {
   let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
   let $id := normalize-space($doc/@xml:id)
   let $title := normalize-space($doc//tei:titleStmt/tei:title[1])
-  let $content := 
-   if ($boolean) then cc2:getContent($bdd, $id) else ()
+  let $content := cc2:getContent($bdd, $id)
+  let $maxCiteDepth := normalize-space($doc//tei:refsDecl/@n)
   return
     if ($doc)
     then
       <dots:member xml:id="{$id}" target="#{if ($path) then $path else $bdd}" type="resource">
-        <dc:title>{$title}</dc:title>
-        {$content}
+        {if ($maxCiteDepth) then attribute {"maxCiteDepth"} {$maxCiteDepth} else (),
+        if ($content/dc:title) then () else <dc:title>{$title}</dc:title>,
+        $content}
       </dots:member>
     else ()
 };
@@ -140,8 +140,7 @@ declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as
 declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
   let $totalItems := count(db:dir($bdd, $collection))
   let $parent := if ($path = "") then $bdd else $path
-  let $content := 
-   if ($boolean) then cc2:getContent($bdd, $collection) else ()
+  let $content := cc2:getContent($bdd, $collection)
   return
     <dots:member xml:id="{$collection}" type="collection" target="#{$parent}" level="{$counter + 2}" n="{$totalItems}">{
       $content
