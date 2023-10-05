@@ -11,6 +11,8 @@ module namespace G = 'https://github.com/chartes/dots/globals';
 (:~ Variable pour accéder au nom de la base de données dots :)
 declare variable $G:dots := "dots";
 
+declare variable $G:metadata := "metadata/";
+
 (:~ Variable pour accéder au document "resources_register.xml" d'un projet :)
 declare variable $G:resourcesRegister := "dots/resources_register.xml";
 

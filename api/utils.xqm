@@ -147,7 +147,7 @@ Chacune de ces fonctions permet de construire la réponse pour le endpoint Navig
 : @todo revoir citeType
 : @todo factoriser le code avec les 3 fonctions (utils:refNavigation(), utils:rangeNavigation())
 :)
-declare function utils:navigation($id as xs:string, $ref as xs:string, $start as xs:integer, $end as xs:integer, $down as xs:integer) {
+declare function utils:navigation($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
   if ($ref)
   then utils:refNavigation($id, $ref, $down)
   else
@@ -167,11 +167,11 @@ declare function utils:idNavigation($resourceId as xs:string, $down) {
   let $projectName := utils:getDbName($resourceId) 
   let $resource := utils:getResource($projectName, $resourceId)
   let $members :=
-    for $fragment in utils:getFragment($projectName, $resourceId, "")
+    for $fragment in utils:getFragment($projectName, $resourceId, map {"id": $resourceId})
     let $ref := normalize-space($fragment/@ref)
     let $level := xs:integer($fragment/@level)
     where if ($down) then xs:integer($level) = $down else xs:integer($level) = 1
-    let $citeType := normalize-space($fragment/@citeType)
+    let $citeType := normalize-unicode($fragment/@citeType)
     let $dc := utils:getDublincore($fragment)
     let $extensions := utils:getExtensions($fragment)
     return
@@ -192,7 +192,7 @@ declare function utils:idNavigation($resourceId as xs:string, $down) {
       <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>,
       <pair name="@id">{$url}</pair>,
       <pair name="level" type="number">0</pair>,
-      if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>,
+      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>,
       if ($members)
       then
         <pair name="member" type="array">{$members}</pair> else (),
@@ -214,17 +214,17 @@ declare function utils:idNavigation($resourceId as xs:string, $down) {
 declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string, $down as xs:integer) {
   let $projectName := utils:getDbName($resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
-  let $fragment :=  utils:getFragment($projectName, $resourceId, $ref)
+  let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref})
   let $level := normalize-space($fragment/@level)
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
-  let $citeType := normalize-space($fragment/@citeType)
-  let $parent := normalize-space($fragment/@parentIds)
+  let $citeType := normalize-unicode($fragment/@citeType)
+  let $parentNodeId := normalize-space($fragment/@parentNodeId)
+  let $nodeId := $fragment/@node-id
   let $members :=
-    for $member in db:get($projectName, $G:fragmentsRegister)//dots:member[@target = concat("#", $resourceId)][@parent=$ref]
+    for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId][@parentNodeId=$nodeId]
     let $ref := normalize-space($member/@ref)
     let $levelMember :=xs:integer($member/@level)
-    where if ($down) then xs:integer($levelMember) = $down + xs:integer($level) else xs:integer($levelMember) = xs:integer($level) + 1
-    let $citeType := normalize-space($member/@citeType)
+    let $citeType := normalize-unicode($member/@citeType)
     let $dc := utils:getDublincore($member)
     let $extensions := utils:getExtensions($member)
     return
@@ -250,16 +250,18 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
       }
       <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
       <pair name="parent" type="object">{
-        if (substring-after($fragment/@target, "#") = $parent)
+        if ($parentNodeId)
         then 
-          (
-           <pair name="@id">{$resourceId}</pair>,
-           <pair name="@type">resource</pair>
-          )
+          let $parentRef := normalize-space(db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@node-id=$parentNodeId]/@ref)
+          return
+            (
+             <pair name="ref">{$parentRef}</pair>,
+             <pair name="@type">CitableUnit</pair>
+            )
         else 
           (
-            <pair name="ref">{$parent}</pair>,
-            <pair name="@type">CitableUnit</pair>
+            <pair name="@id">{$resourceId}</pair>,
+            <pair name="@type">resource</pair>
           )
       }</pair>
     </json>
@@ -273,32 +275,86 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
 : @param $end chaîne de caractère permettant de spécifier la fin d'une séquence de passages d'une resource à renvoyer
 : @param $down châine de caractère indiquant le niveau de profondeur des membres citables à renvoyer en réponse
 :)
-declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:integer, $end as xs:integer, $down as xs:integer) {
+declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
   let $projectName := utils:getDbName($resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
-  let $members :=
-    for $range in $start to $end
-    for $member in db:get($projectName, $G:fragmentsRegister)//dots:member[@target = concat("#", $resourceId)][starts-with(@ref, xs:string($range))][if ($down) then @level=$down else @level="1"]
-    let $ref := normalize-space($member/@ref)
-    let $level := normalize-space($member/@level)
-    let $citeType := normalize-space($member/@citeType)
-    return
-      <item type="object">
-        <pair name="ref">{$ref}</pair>
-        <pair name="level">{$level}</pair>
-        {if ($citeType) then <pair name="citeType">{$citeType}</pair>}
-      </item>
-  let $maxCiteDepth := normalize-space(db:get($projectName, $G:fragmentsRegister)//dots:member[@target = concat("#", $resourceId)][1]/@maxCiteDepth)
+  let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start})
+  let $maxCiteDepth := normalize-space($frag1/@maxCiteDepth)
+  let $level := normalize-space($frag1/@level)
   return
     <json type="object">
       <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>
       <pair name="@id">{$url}</pair>
       <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>
-      <pair name="level" type="number">1</pair>
-      {if ($members) then <pair name="member" type="array">{$members}</pair> else ()}
+      <pair name="level" type="number">{$level}</pair>
+      <pair name="member" type="array">{
+        utils:getFragmentsInRange($projectName, $resourceId, $start, $end, $down)
+      }</pair>
       <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
       <pair name="parent" type="null"></pair>
     </json>
+};
+
+declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
+  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
+  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  let $firstFragmentLevel := xs:integer($firstFragment/@level)
+  let $lastFragmentLevel := xs:integer($lastFragment/@level)
+  return
+    for $fragment in db:attribute-range($projectName, $start, $end, "n")/parent::dots:fragment[@resourceId = $resourceId]
+    let $ref := normalize-space($fragment/@ref)
+    let $level := xs:integer($fragment/@level)
+    where
+      if ($firstFragmentLevel = $lastFragmentLevel and $down = 0) 
+      then $level = $firstFragmentLevel
+      else 
+        if ($firstFragmentLevel = $lastFragmentLevel and $down > 0)
+        then $level = $firstFragmentLevel + $down
+        else 
+          let $minLevel := min(($firstFragmentLevel, $lastFragmentLevel))
+          let $maxLevel := max(($firstFragmentLevel, $lastFragmentLevel))
+          return
+            $level >= $minLevel and $level <= $maxLevel
+    return
+      <item type="object">
+        <pair name="ref">{$ref}</pair>
+        <pair name="level" type="number">{$level}</pair>
+      </item>
+    
+  
+  
+  (: let $currentFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
+  let $levelCurrentFragment := xs:integer($currentFragment/@level)
+  return
+    if ($down = 0)
+    then
+      (
+        <item type="object">
+          <pair name="ref">{$start}</pair>
+          <pair name="level" type="number">{$levelCurrentFragment}</pair>
+        </item>,
+        if ($start = $end) 
+        then () 
+        else 
+          let $nextFragmentRef := normalize-space($currentFragment/following-sibling::dots:fragment[1]/@ref)
+          return utils:getFragmentsInRange($projectName, $resourceId, $nextFragmentRef, $end, $down)
+      )
+    else
+      let $levelChild := $down + $levelCurrentFragment
+      for $childRange in db:get($projectName, $G:fragmentsRegister)//dots:fragment[@resourceId = $resourceId][@level = $levelChild][starts-with(@ref, $start)]
+      let $childRef := normalize-space($childRange/@ref)
+      return
+        (
+          <item type="object">
+            <pair name="ref">{$childRef}</pair>
+            <pair name="level" type="number">{$levelChild}</pair>
+          </item>,
+          if ($start = $end) 
+          then () 
+          else 
+            let $nextFragmentRef := normalize-space($currentFragment/following-sibling::dots:fragment[1]/@ref)
+            return utils:getFragmentsInRange($projectName, $resourceId, $nextFragmentRef, $end, $down)
+        ) :)
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -319,20 +375,15 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
   let $doc := db:get($project)/tei:TEI[@xml:id = $resourceId]
   let $header := $doc/tei:teiHeader
   let $idRef := 
-    let $fragment := utils:getFragment($project, $resourceId, $ref)
+    let $fragment := utils:getFragment($project, $resourceId, map{"ref": $ref})
     return
-      if ( $fragment/@xml:id)
-    then $fragment/@xml:id
-    else $fragment/@node-id
+      $fragment/@node-id
   let $ref := 
-    if ($doc//node()[@xml:id = $idRef]) 
-    then $doc//node()[@xml:id = $idRef]
-    else db:get-id($project, $idRef)
+    db:get-id($project, $idRef)
   return
     if ($ref)
     then
       <TEI xmlns="http://www.tei-c.org/ns/1.0">
-        {$header}
         <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$ref}</dts:fragment>
       </TEI>
     else
@@ -540,12 +591,22 @@ declare function utils:getResource($projectName as xs:string, $resourceId as xs:
   db:get($projectName, $G:resourcesRegister)//dots:member/node()[@dtsResourceId = $resourceId]
 };
 
-declare function utils:getFragment($projectName as xs:string, $resourceId as xs:string, $ref) {
-  if ($ref)
-  then
-    db:get($projectName, $G:fragmentsRegister)//dots:member/node()[@parentIds = $resourceId][@ref = $ref] 
-  else
-    db:get($projectName, $G:fragmentsRegister)//dots:member/node()[@parentIds = $resourceId]
+declare function utils:getFragment($projectName as xs:string, $resourceId as xs:string, $options as map(*)) {
+  let $id := map:get($options, "id")
+  let $ref := map:get($options, "ref")
+  let $start := map:get($options, "start")
+  let $end := map:get($options, "end")
+  return
+    if ($id)
+    then db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
+    else
+      if ($ref)
+      then
+        db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId][@ref = $ref] 
+      else
+        if ($start and $end)
+        then () (: to do :)
+        else ()
 };
 
 declare function utils:getResourceType($resource as element()) {
