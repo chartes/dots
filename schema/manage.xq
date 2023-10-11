@@ -10,6 +10,7 @@ xquery version "3.1";
 import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "utils/project.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "utils/root.xqm";
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "utils/project_metadata.xqm";
+import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
 
 import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "utils/documentRegister.xqm";
 
@@ -44,13 +45,9 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
 :
 :)
 
-
-(: ccg:create_config("endp", "endp") :) 
-cc:create_config("endp", "endp", "e-Édition des registres de Notre-Dame de Paris", "") 
+(: dbc:dbCreate() :) 
+(: ccg:create_config("endp_cas1", "endp_cas1") :) 
+(: cc:create_config("theatre", "theatre", "Corpus test de théatre", "") :)
  
 (: cc:collection("endp", "LL117", "") :) 
-
-
-
-
 

@@ -22,7 +22,7 @@ declare updating function ccg:create_config($idProject as xs:string, $dbName as 
   then 
     let $dots := db:get($G:dots)
     let $lastUpdate := $dots/dbSwitch//dct:modified
-    let $totalProjects := xs:integer($dots//totalProjects)
+    let $totalProjects := $dots/dbSwitch//totalProjects
     let $members := ccg:members($dbName, "")
     return
       (
@@ -33,8 +33,8 @@ declare updating function ccg:create_config($idProject as xs:string, $dbName as 
           let $projects := $dots/dbSwitch/member
           return
           (
-            replace value of node $projects with $totalProjects,
-            insert node ccg:getProject($idProject, $dbName) into $projects
+            replace value of node $totalProjects with xs:integer($totalProjects) + 1,
+            insert node ccg:getProject($idProject, $dbName) as last into $projects
           ),
         for $member in $members
         let $id := $member/@dtsResourceId
