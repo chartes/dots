@@ -15,8 +15,9 @@ import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg"
 import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "project_metadata.xqm";
 import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "documentRegister.xqm";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
+declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
@@ -27,64 +28,52 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see project.xql;cc:getMetadata
 : @see project.xql;cc:members
 :)
-declare updating function cc:create_config($bdd as xs:string, $title as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
+declare updating function cc:create_config($idProject as xs:string, $dbName as xs:string, $title as xs:string, $path as xs:string) {
   let $countChild := 
-    let $countConfig := if (db:get($bdd, $G:resourcesRegister)) then 1 else 0
-    let $countDeclaration := if (db:get($bdd, $G:declaration)) then 1 else 0
-    let $countMetadata := 
-      if (db:get($bdd, $G:metadata)) then 1 else 0
-    let $countOtherContent := sum( ($countConfig, $countDeclaration, $countMetadata) )
-    let $count := count(db:dir($bdd, ""))
+    let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
+    let $count := count(db:dir($dbName, ""))
     return
-      $count - $countOtherContent
+      $count - $countDotsData
   let $content :=
-    <dots:configuration
-      xmlns:dots="https://github.com/chartes/dots/"
+    <resourcesRegister    
       xmlns:dct="http://purl.org/dc/terms/"
       xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:html="http://www.w3.org/1999/xhtml"
-      xmlns:tei="http://www.tei-c.org/ns/1.0"
     >
-      {cc:getMetadata($bdd)},
-      <dots:configContent>
-        <dots:members>
-          <dots:member xml:id="{$bdd}" level="1" type="collection" n="{$countChild}">
-            <dc:title>{$title}</dc:title>
-          </dots:member>
-          {cc:members($bdd, $path, $counter, $boolean)}</dots:members>
-        </dots:configContent>
-    </dots:configuration>
+      {cc:getMetadata()},
+      <member>
+        <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">
+          <dc:title>{$title}</dc:title>
+        </collection>
+        {cc:members($dbName, $path)}
+      </member>
+    </resourcesRegister>
   return
     (
-      ccg:create_config($bdd),
-      if (db:exists($bdd, $G:resourcesRegister))
+      ccg:create_config($idProject, $dbName),
+      if (db:exists($dbName, $G:resourcesRegister))
       then 
-        let $config := db:get($bdd, $G:resourcesRegister)
+        let $dots := db:get($dbName, $G:resourcesRegister)
         return
         (
-          replace value of node $config//dots:lastUpdate with current-dateTime(),
-          replace node $config//dots:configContent with $content//dots:configContent
+          replace value of node $dots//dct:modified with current-dateTime(),
+          replace node $dots//member with $content//member
         )
       else 
         (
-          db:put($bdd, $content, $G:resourcesRegister)
+          db:put($dbName, $content, $G:resourcesRegister)
         ),
-      docR:createDocumentRegister($bdd)
+      docR:createDocumentRegister($dbName)
     )
 };
 
 (:~ 
-: Cette fonction se contente de construire l'en-tête <dots:configMetadata/> du fichier de configuration
+: Cette fonction se contente de construire l'en-tête <configMetadata/> du fichier de configuration
 :)
-declare function cc:getMetadata($bdd as xs:string) {
-  <dots:configMetadata>
-    <dots:gitVersion/><!-- version git du fichier -->
-    <dots:creationDate>{current-dateTime()}</dots:creationDate><!-- date de création du document -->
-    <dots:lastUpdate>{current-dateTime()}</dots:lastUpdate><!-- date de la dernière mise à jour -->
-    <dots:publisher>École nationale des chartes</dots:publisher>
-    <dots:description>Bibliothèque de resources DoTS du projet {$bdd}</dots:description>
-    <dots:licence>https://opensource.org/license/mit/</dots:licence>
-  </dots:configMetadata>
+declare function cc:getMetadata() {
+  <metadata>
+    <dct:created>{current-dateTime()}</dct:created>
+    <dct:modified>{current-dateTime()}</dct:modified>
+  </metadata>
 };
 
 (:~ 
@@ -95,17 +84,17 @@ declare function cc:getMetadata($bdd as xs:string) {
 : @see create_config.xql;cc:collection
 : @see create_config.xql;cc:resource
 :)
-declare function cc:members($bdd as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
+declare function cc:members($bdd as xs:string, $path as xs:string) {
   for $dir in db:dir($bdd, $path)
   where not(contains($dir, $G:metadata))
   order by $dir
   return
     if ($dir[name() = "resource"])
-    then cc:resource($bdd, $dir, $path, $boolean)
+    then cc:document($bdd, $dir, $path)
     else
       (
-        cc:collection($bdd, $dir, $path, $counter, $boolean),
-        cc:members($bdd, $dir, $counter + 1, $boolean)
+        if ($dir = "dots") then () else cc:collection($bdd, $dir, $path),
+        cc:members($bdd, $dir)
       )
 };
 
@@ -114,39 +103,67 @@ declare function cc:members($bdd as xs:string, $path as xs:string, $counter as x
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 :)
-declare function cc:resource($bdd as xs:string, $resource as xs:string, $path as xs:string, $boolean) {
+declare function cc:document($bdd as xs:string, $resource as xs:string, $path as xs:string) {
   let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
-  let $id := normalize-space($doc/@xml:id)
+  let $dtsResourceId := 
+    if ($doc/@xml:id)
+    then normalize-space($doc/@xml:id)
+    else db:node-id($doc)
   let $title := normalize-space($doc//tei:titleStmt/tei:title[1])
-  let $content := cc2:getContent($bdd, $id)
-  let $maxCiteDepth := normalize-space($doc//tei:refsDecl/@n)
+  let $maxCiteDepth := count($doc//tei:refsDecl//tei:citeStructure)
   return
     if ($doc)
     then
-      <dots:member xml:id="{$id}" target="#{if ($path) then $path else $bdd}" type="resource">
-        {if ($maxCiteDepth) then attribute {"maxCiteDepth"} {$maxCiteDepth} else (),
-        if ($content/dc:title) then () else <dc:title>{$title}</dc:title>,
-        $content}
-      </dots:member>
+      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{if ($path) then $path else $bdd}">{
+        cc:getDocumentMetadata($bdd, $doc)
+      }</document>
     else ()
+};
+
+declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
+  let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
+  let $externalMetadataMap := db:get($bdd, $G:metadata)/metadataMap/mapping
+  return
+    for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
+    where $metadata/@xpath
+    let $metadataName := $metadata/name()
+    let $xpath := $metadata/@xpath
+    let $query := concat('
+      declare default element namespace "http://www.tei-c.org/ns/1.0";',
+      $xpath)
+    let $valueQuery := xquery:eval($query, map {"": $doc})
+    return
+      if ($valueQuery)
+      then element {$metadataName} {normalize-space($valueQuery)}
+      else ()
 };
 
 (:~ 
 : Cette fonction permet de construire l'élément <member/> correspondant à une collection, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
-: @todo revoir l'ajout des titres d'une collection. L'info doit bien se trouver dans declaration.xml, mais il serait plus correct de fonctionner autrement: spécifier où les titres de collection sont disponibles
+: @todo revoir l'ajout des métadonnées d'une collection. 
 :)
-declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string, $counter as xs:integer, $boolean) {
+declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string) {
   let $totalItems := count(db:dir($bdd, $collection))
   let $parent := if ($path = "") then $bdd else $path
-  let $content := cc2:getContent($bdd, $collection)
   return
-    <dots:member xml:id="{$collection}" type="collection" target="#{$parent}" level="{$counter + 2}" n="{$totalItems}">{
-      $content
-    }</dots:member>
+    <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
+      cc:getCollectionMetadata($bdd, $collection)
+    }</collection>
 };
 
+declare function cc:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
+  let $metadataMap :=  db:get($bdd, $G:metadata)/metadataMap
+  for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
+  let $getResourceId := $metadata/@resourceId
+  let $source := db:get($bdd, normalize-space($metadata/@source))//*:record[node()[name() = $getResourceId] = $collection]
+  let $metadataName := $metadata/name()
+  let $contentName := $metadata/@content
+  let $content := normalize-space($source/node()[name() = $contentName])
+  return
+    element {$metadataName} {$content}
+};
 
 
 

@@ -44,8 +44,11 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
 :
 :)
 
-cc:create_config($db_name, $db_title, "", 0, true())
 
+(: ccg:create_config("endp", "endp") :) 
+cc:create_config("endp", "endp", "e-Édition des registres de Notre-Dame de Paris", "") 
+ 
+(: cc:collection("endp", "LL117", "") :) 
 
 
 

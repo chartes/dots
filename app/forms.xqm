@@ -214,7 +214,7 @@ function page:createDocs($data, $bdd, $title) {
   return
     (
       page:createDeclaration($bdd, $json),
-      cc:create_config($bdd, $title, "", 0, true())
+      cc:create_config("", $bdd, $title, "")
     )
 };
 

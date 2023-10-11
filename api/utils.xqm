@@ -346,7 +346,10 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 :)
 declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
   let $project := utils:getDbName($resourceId)
-  let $doc := db:get($project)/tei:TEI[@xml:id = $resourceId]
+  let $doc := 
+    if (db:get($project)/tei:TEI[@xml:id = $resourceId])
+    then db:get($project)/tei:TEI[@xml:id = $resourceId]
+    else db:node-id($resourceId)  
   let $header := $doc/tei:teiHeader
   let $idRef := 
     let $fragment := utils:getFragment($project, $resourceId, map{"ref": $ref})
