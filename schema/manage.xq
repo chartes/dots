@@ -14,73 +14,17 @@ import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db
 
 import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "utils/documentRegister.xqm";
 
-(:~ 
-: INDIQUER ici le nom de la base de données BaseX
+(: 1. Vérifier l'existence de la db dots et la créer le cas échéant :)
+(: ccg:create_config() :)
+
+(: 2. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
+: /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm
 :)
-declare variable $db_name := "endp_chap";
-
-(:~ 
-: INDIQUER ici le titre que vous souhaitez donner à la base de données BaseX
-:)
-declare variable $db_title := "e-Édition des registres médiévaux de Notre-Dame de Paris";
-
-(:~ 
-Cette fonction est la fonction principale de la librairie. Elle permet de:
-: - créer ou mettre à jour la base de données BaseX "config" (qui sert de poste d'aiguillage)
-: - créer le fichier de configuration (config.xml) de la base de données XML de son choix, comprenant éventuellement des métadonnées complémentaires
-:
-: Prérequis:
-: - avoir créer une base de données XML dans BaseX 
-: - s'assurer que les fichiers TEI de la base disposent bien d'un attribut @xml:id sur l'élément <TEI/>
-:
-: Résultat:
-: - les fichiers de configuration créés permettent de rendre fonctionnel l'API DTS pour les urls suivantes: /api/dts/collections et /api/dts/document
-:
-: Paramètres (5):
-: - $bdd: nom de la base de données XML dans BaseX (ex. "e-NDP", "ENCPOS")
-: - $title: titre de la base de données (ex. "Positions de thèse")
-: - $path: la valeur de ce paramètre doit être une chaîne de caractère vide "". Ce paramètre sert à parcourir la structure arborescente d'une base de données si nécessaire
-: - $compteur: la valeur de ce paramètre doit être 0. Ce paramètre, combiné avec l'argument $path, permet d'identifier le niveau d'une collection dans le cas d'une structure arborescente.
-: - $boolean: ce paramètre boolean permet de spécifier si la commande doit aller chercher des métadonnées supplémentaires pour compléter le fichier de configuration. Si la valeur est true(), il faut s'asurer au préalable qu'un fichier declaration.xml est présent dans la base de données $bdd
-:
-:)
-
-(: dbc:dbCreate() :)
-(: ccg:create_config("endp_cas1", "endp_cas1") :) 
-(: cc:create_config("ENDP", "endp_cas2", "e-Édition des registres de Notre-Dame de Paris", "") :) 
- 
-(: cc:collection("endp", "LL117", "") :) 
-
-(: dbd:handleDelete() :)
-
-
-(: 
-: 1. Créer projet BD
-2. Check db DoTS / créer db DoTS
-3. Créer les registres + MAJ db DoTS
-:)
-
-
-(: 1. dbc:dbCreate() :) 
 (: dbc:dbCreate() :)
 
-(: ccg:create_config("mon_theatre", "theatre") :)
-
-(: 3. cc:create_config("ENDP", "endp_cas2", "e-Édition des registres de Notre-Dame de Paris", "") :)
-
-(: cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "") :) 
-
-(: dbd:handleDelete() :)
-
-
-(: db:get("theatre", "dots/resources_register.xml") :)
-
+(: 3. Créer les registres DoTS dans la db Project :)
+(: cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "") :)
 cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "")
-
-
-
-
-
 
 
 

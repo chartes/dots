@@ -17,47 +17,16 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
-declare updating function ccg:create_config($idProject as xs:string, $dbName as xs:string) {
+declare updating function ccg:create_config() {
   if (db:exists($G:dots))
-  then 
-    let $dots := db:get($G:dots)
-    let $lastUpdate := $dots/dbSwitch//dct:modified
-    let $totalProjects := $dots/dbSwitch//totalProjects
-    let $members := ccg:members($dbName, "")
-    return
-      (
-        replace value of node $lastUpdate with current-dateTime(),
-        if ($dots//project/@dtsResourceId = $idProject)
-        then ()
-        else
-          let $projects := $dots/dbSwitch/member
-          return
-          (
-            replace value of node $totalProjects with xs:integer($totalProjects) + 1,
-            insert node ccg:getProject($idProject, $dbName) as last into $projects
-          ),
-        for $member in $members
-        let $id := $member/@dtsResourceId
-        return
-          if ($dots//member/node()[@dtsResourceId = $id])
-          then replace node $dots//member/node()[@dtsResourceId = $id] with $member
-          else 
-            insert node $member as last into $dots//member,
-        if (db:get($G:dots, $G:metadataMapping))
-        then ()
-        else
-          db:put($G:dots, "/webapp/dots/schema/dots_default_metadata_mapping.xml", $G:metadataMapping)
-      )
+  then ()
   else
     let $dbSwitch :=
       <dbSwitch 
         xmlns="https://github.com/chartes/dots/" 
         xmlns:dct="http://purl.org/dc/terms/">
         {ccg:getMetadata("dbSwitch")},
-        <member>{
-            ccg:getProject($idProject, $dbName),
-            ccg:members($dbName, "")
-        }</member>
+        <member></member>
       </dbSwitch>
     let $metadataMap :=
       <metadataMap 

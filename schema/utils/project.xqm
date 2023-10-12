@@ -48,7 +48,7 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
     </resourcesRegister>
   return
     (
-      ccg:create_config($idProject, $dbName),
+      ccg:create_config(),
       if (db:exists($dbName, $G:resourcesRegister))
       then 
         let $dots := db:get($dbName, $G:resourcesRegister)
