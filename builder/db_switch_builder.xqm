@@ -7,10 +7,10 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg";
+module namespace ccg = "https://github.com/chartes/dots/builder/ccg";
 
-import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
-import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "project.xqm";
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";

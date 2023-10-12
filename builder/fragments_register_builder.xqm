@@ -7,9 +7,9 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-module namespace docR = "https://github.com/chartes/dots/schema/utils/docR";
+module namespace docR = "https://github.com/chartes/dots/builder/docR";
 
-import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";

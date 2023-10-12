@@ -8,11 +8,11 @@ xquery version "3.1";
 : @todo pour l'ajout de @citeType: utiliser la fonction fn:normalize-unicode() pour enlever les diacritics
 :)
 
-module namespace cc = "https://github.com/chartes/dots/schema/utils/cc";
+module namespace cc = "https://github.com/chartes/dots/builder/cc";
 
-import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
-import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "root.xqm";
-import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "documentRegister.xqm";
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
+import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";

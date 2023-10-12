@@ -7,12 +7,12 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "utils/project.xqm";
-import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "utils/root.xqm";
+import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
+import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
+import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
 import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
 
-import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "utils/documentRegister.xqm";
 
 (: 1. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config() :)
