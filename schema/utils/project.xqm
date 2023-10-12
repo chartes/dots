@@ -89,7 +89,7 @@ declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as
   order by $dir
   return
     if ($dir[name() = "resource"])
-    then cc:document($bdd, $dir, $path)
+    then cc:document($bdd, $idProject, $dir, $path)
     else
       (
         if ($dir = "dots") then () else cc:collection($bdd, $idProject, $dir, $path),
@@ -102,7 +102,7 @@ declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 :)
-declare function cc:document($bdd as xs:string, $resource as xs:string, $path as xs:string) {
+declare function cc:document($bdd as xs:string, $idProject as xs:string, $resource as xs:string, $path as xs:string) {
   let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
   let $dtsResourceId := 
     if ($doc/@xml:id)
@@ -113,7 +113,7 @@ declare function cc:document($bdd as xs:string, $resource as xs:string, $path as
   return
     if ($doc)
     then
-      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{if ($path) then $path else $bdd}">{
+      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{if ($path) then $path else $idProject}">{
         cc:getDocumentMetadata($bdd, $doc)
       }</document>
     else ()

@@ -51,4 +51,40 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
  
 (: cc:collection("endp", "LL117", "") :) 
 
-dbd:handleDelete()
+(: dbd:handleDelete() :)
+
+
+(: 
+: 1. Créer projet BD
+2. Check db DoTS / créer db DoTS
+3. Créer les registres + MAJ db DoTS
+:)
+
+
+(: 1. dbc:dbCreate() :) 
+(: dbc:dbCreate() :)
+
+(: ccg:create_config("mon_theatre", "theatre") :)
+
+(: 3. cc:create_config("ENDP", "endp_cas2", "e-Édition des registres de Notre-Dame de Paris", "") :)
+
+(: cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "") :) 
+
+(: dbd:handleDelete() :)
+
+
+(: db:get("theatre", "dots/resources_register.xml") :)
+
+cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "")
+
+
+
+
+
+
+
+
+
+
+
+
