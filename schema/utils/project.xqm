@@ -12,7 +12,6 @@ module namespace cc = "https://github.com/chartes/dots/schema/utils/cc";
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../../globals.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "root.xqm";
-import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "project_metadata.xqm";
 import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "documentRegister.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
@@ -44,7 +43,7 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">
           <dc:title>{$title}</dc:title>
         </collection>
-        {cc:members($dbName, $path)}
+        {cc:members($dbName, $idProject, $path)}
       </member>
     </resourcesRegister>
   return
@@ -84,7 +83,7 @@ declare function cc:getMetadata() {
 : @see create_config.xql;cc:collection
 : @see create_config.xql;cc:resource
 :)
-declare function cc:members($bdd as xs:string, $path as xs:string) {
+declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as xs:string) {
   for $dir in db:dir($bdd, $path)
   where not(contains($dir, $G:metadata))
   order by $dir
@@ -93,8 +92,8 @@ declare function cc:members($bdd as xs:string, $path as xs:string) {
     then cc:document($bdd, $dir, $path)
     else
       (
-        if ($dir = "dots") then () else cc:collection($bdd, $dir, $path),
-        cc:members($bdd, $dir)
+        if ($dir = "dots") then () else cc:collection($bdd, $idProject, $dir, $path),
+        cc:members($bdd, $idProject, $dir)
       )
 };
 
@@ -144,9 +143,9 @@ declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 : @todo revoir l'ajout des métadonnées d'une collection. 
 :)
-declare function cc:collection($bdd as xs:string, $collection as xs:string, $path as xs:string) {
+declare function cc:collection($bdd as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
   let $totalItems := count(db:dir($bdd, $collection))
-  let $parent := if ($path = "") then $bdd else $path
+  let $parent := if ($path = "") then $idProject else $path
   return
     <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
       cc:getCollectionMetadata($bdd, $collection)

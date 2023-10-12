@@ -11,17 +11,19 @@ module namespace dbc = "https://github.com/chartes/dots/db/dbc";
 
 import module namespace functx = "http://www.functx.com";
 
-declare variable $dbc:resourceId := "theatre";
+declare variable $dbc:resourceId := "ENDP";
 
-declare variable $dbc:dbName := "theatre";
+declare variable $dbc:dbName := "endp_cas2";
 
-declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/theatre/TEI/";
+declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/registres/";
 
-declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/theatre/dots_metadata_mapping.xml";
+declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/dots_metadata_mapping.xml";
 
-declare variable $dbc:metadataTSV := "";
+declare variable $dbc:metadataTSV := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/endp_metadata.tsv";
 
 declare variable $dbc:separator := "	";
+
+declare variable $dbc:language := "fr";
 
 declare updating function dbc:dbCreate() {
   let $resourcesXML :=
@@ -54,6 +56,7 @@ declare updating function dbc:dbCreate() {
     db:create($dbc:dbName, $resources, $paths, map {
       "ftindex": true(),
       "updindex": true(),
-      "stemming": true()
+      "stemming": true(),
+      "language": $dbc:language
     })
 };

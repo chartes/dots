@@ -1,7 +1,7 @@
 xquery version "3.1";
 
 (:~ 
-: Ce document main permet d'utiliser les librairies de fonctions de project.xqm, root.xqm et project_metadata.xqm de DoTS
+: Ce document main permet d'utiliser les librairies de fonctions de project.xqm, et root.xqm de DoTS
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-06-23
 : @version  1.0
@@ -9,8 +9,8 @@ xquery version "3.1";
 
 import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "utils/project.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/schema/utils/ccg" at "utils/root.xqm";
-import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "utils/project_metadata.xqm";
 import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
+import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
 
 import module namespace docR = "https://github.com/chartes/dots/schema/utils/docR" at "utils/documentRegister.xqm";
 
@@ -45,9 +45,10 @@ Cette fonction est la fonction principale de la librairie. Elle permet de:
 :
 :)
 
-(: dbc:dbCreate() :) 
+(: dbc:dbCreate() :)
 (: ccg:create_config("endp_cas1", "endp_cas1") :) 
-(: cc:create_config("theatre", "theatre", "Corpus test de théatre", "") :)
+(: cc:create_config("ENDP", "endp_cas2", "e-Édition des registres de Notre-Dame de Paris", "") :) 
  
 (: cc:collection("endp", "LL117", "") :) 
 
+dbd:handleDelete()

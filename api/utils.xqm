@@ -349,7 +349,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
   let $doc := 
     if (db:get($project)/tei:TEI[@xml:id = $resourceId])
     then db:get($project)/tei:TEI[@xml:id = $resourceId]
-    else db:node-id($resourceId)  
+    else db:get-id($project, xs:integer($resourceId))  
   let $header := $doc/tei:teiHeader
   let $idRef := 
     let $fragment := utils:getFragment($project, $resourceId, map{"ref": $ref})

@@ -6,7 +6,6 @@ module namespace page = 'http://basex.org/examples/web-page';
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace cc = "https://github.com/chartes/dots/schema/utils/cc" at "../schema/utils/project.xqm";
-import module namespace cc2 = "https://github.com/chartes/dots/schema/utils/cc2" at "../schema/utils/project_metadata.xqm";
 
 import module namespace functx = "http://www.functx.com";
 
