@@ -35,3 +35,8 @@ declare variable $G:webapp := file:parent(file:base-dir());
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:xsl := "static/xsl/tei2html.xsl";
 
+declare variable $G:dbSwitchValidation := concat($G:webapp, "dots/schema/dots_db_switcher.rng");
+
+declare variable $G:resourcesValidation := concat($G:webapp, "dots/schema/resources_register.rng");
+
+declare variable $G:fragmentsValidation := concat($G:webapp, "dots/schema/fragments_register.rng");

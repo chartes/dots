@@ -12,7 +12,8 @@ import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "re
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
 import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
-
+import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace valid = "https://github.com/chartes/dots/validation/rng_validator" at "../validation/rng_validator.xqm";
 
 (: 1. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config() :)
@@ -24,8 +25,9 @@ import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db
 
 (: 3. Créer les registres DoTS dans la db Project :)
 (: cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "") :)
-cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "")
 
+ 
+valid:handleValidations("theatre")
 
 
 
