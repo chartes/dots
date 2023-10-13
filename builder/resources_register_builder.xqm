@@ -38,7 +38,7 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
       xmlns:dct="http://purl.org/dc/terms/"
       xmlns:dc="http://purl.org/dc/elements/1.1/"
     >
-      {cc:getMetadata()},
+      {cc:getMetadata()}
       <member>
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">
           <dc:title>{$title}</dc:title>
@@ -58,9 +58,11 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
           replace node $dots//member with $content//member
         )
       else 
-        (
-          db:put($dbName, $content, $G:resourcesRegister)
-        ),
+        if (validate:rng($content, $G:resourcesValidation))
+        then
+          (
+            db:put($dbName, $content, $G:resourcesRegister)
+          ),
       docR:createDocumentRegister($dbName)
     )
 };

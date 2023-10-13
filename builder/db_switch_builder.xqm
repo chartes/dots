@@ -25,7 +25,7 @@ declare updating function ccg:create_config() {
       <dbSwitch 
         xmlns="https://github.com/chartes/dots/" 
         xmlns:dct="http://purl.org/dc/terms/">
-        {ccg:getMetadata("dbSwitch")},
+        {ccg:getMetadata("dbSwitch")}
         <member></member>
       </dbSwitch>
     let $metadataMap :=

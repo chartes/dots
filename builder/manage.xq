@@ -25,9 +25,8 @@ import module namespace valid = "https://github.com/chartes/dots/validation/rng_
 
 (: 3. Créer les registres DoTS dans la db Project :)
 (: cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "") :)
-
+cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "")
  
-valid:handleValidations("theatre")
 
 
 

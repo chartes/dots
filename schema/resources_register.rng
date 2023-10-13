@@ -77,6 +77,8 @@
     <element name="document">
       <ref name="document-atts"/>
       <ref name="dcTitle"/>
+      <ref name="dcCreator"/>
+      <ref name="dcCreated"/>
       <zeroOrMore>
         <ref name="dcMetadata"/>
       </zeroOrMore>
@@ -120,6 +122,20 @@
   <define name="dcTitle">
     <a:documentation>TODO</a:documentation>
     <element name="dc:title">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="dcCreator">
+    <a:documentation>TODO</a:documentation>
+    <element name="dc:creator">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="dcCreated">
+    <a:documentation>TODO</a:documentation>
+    <element name="dc:created">
       <text/>
     </element>
   </define>
