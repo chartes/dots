@@ -1,0 +1,140 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ll105_002" xml:lang="lat">
+  <teiHeader><fileDesc><titleStmt><title>Chapitre 2 du registre LL105</title><author>Olivier Canteaut</author></titleStmt><publicationStmt><publisher>École nationale des chartes</publisher><address><addrLine>19, rue de la Sorbonne</addrLine><addrLine>75005 Paris.</addrLine><addrLine>tél. : +33 (0)1 55 42 75 00</addrLine><addrLine>http://enc.sorbonne.fr/</addrLine><addrLine>recherche@enc.sorbonne.fr</addrLine></address><date>2023-10-10T16:45:31.182+02:00</date><idno>https://github.com/chartes/endp-edition/</idno><distributor>École nationale des chartes</distributor><availability status="restricted"><p>L'École nationale des chartes met à disposition cette ressource électronique structurée, protégée par le code de la propriété intellectuelle sur les bases de données (L341-1), selon les termes de la licence *Creative Commons* : « Paternité - Pas d'Utilisation Commerciale - Pas de Modification ; 2.0 France ». Cette licence est disponible en ligne http://creativecommons.org/licenses/by-nc-nd/2.0/fr/ ou par courrier postal à Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105, USA.</p><p>*Pas d'Utilisation Commerciale* : L'École nationale des chartes souhaite encourager l'utilisation et l'amélioration de ses ressources électroniques, pour les intérêts de l'enseignement et de la recherche. Toute autorisation au-delà du champ de cette licence doit être obtenue auprès de l'École nationale des chartes.</p><p>*Pas de Modification* : Afin de mieux servir la communauté scientifique, l'École nationale des chartes s'engage à conserver et à toujours offrir publiquement la version la plus à jour de ses ressources électroniques par une URI pérenne. Elle s'engage à les corriger et à les améliorer, à intégrer les contributions qui lui sont soumises (après validation par un comité scientifique), et à référencer l'origine de ces contributions. Toute modification de la ressource qui ne serait pas reversée à la version de référence sous l'autorité éditoriale de l'École nationale des chartes doit faire l'objet de l'accord de celle-ci, afin de ne pas disperser les contributions et de permettre les meilleures conditions possibles de collaboration scientifique.</p><p>*Paternité* : l'École nationale des chartes demande à ce que toute publication dérivée de ses ressources électroniques comporte : 1) le nom de l'École nationale des chartes et, pour les publications électroniques, son logo 2) l'URI permettant d'accéder à la page citée sur notre site, ou à la page d'accueil de la ressource 3) la date du fichier source utilisé.</p><p>Tout litige soulevé par le non respect des termes de cette licence sera soumis à la juridiction des tribunaux de Paris.</p></availability></publicationStmt><sourceDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+        <bibl>
+          <!-- lien vers les Archives Nationales -->
+          <ref target="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_059635/Delib_914"/>
+          <author/> <!-- différence avec publisher ? -->
+          <title source="registre capitulaire LL105">registre capitulaire LL105</title>
+          <pubPlace ref="geonames:2988506" source="registre capitulaire LL105">Paris</pubPlace>
+          <!-- publisher : A réfléchir -->
+          <publisher>
+            <orgName>Archives nationales</orgName>
+          </publisher>
+          <date source="registre capitulaire LL105" from="1451" to="1454">1451-1454</date>
+        </bibl>
+        <!-- description d'un manuscrit -->
+        <msDesc>
+          <msIdentifier>
+            <country ref="geonames:3017382">France</country>
+            <settlement ref="geonames:2988506">Paris</settlement>
+            <repository xml:lang="fr" ref="wikidata:Q182542 viaf:131469365">Archives nationales</repository>
+            <idno type="cote">LL/105</idno>
+          </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>
+                  <!-- 33 x 23,5 x 6,5 cm -->
+                  <dimensions type="binding">
+                    <height unit="cm">33</height>
+                    <width unit="cm">23,5</width>
+                    <depth unit="cm">6,5</depth>
+                  </dimensions>
+                </extent>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <!--<history>
+            <provenance>
+            </provenance>
+          </history>-->
+        </msDesc>
+      </sourceDesc></fileDesc><encodingDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+      <!-- - Description générique du projet -->
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANR e-NDP. Son objectif principal
+          est de fournir un texte encodé selon les spécifications TEI destiné à l'exploration avec des outils électroniques. 
+          Préciser les objectifs de l'édition ....</p>
+        <p>Les textes encodés dans le cadre du projet e-NDP sont issus d'une campagne de numérisation des Archives nationales.</p>
+        <p>L'édition présentée ici est issue d'un processus de transcription automatique (HTR) réalisé avec le moteur Kraken et la production de vérité terrain avec le logiciel eScritporium.</p>
+      </projectDesc>
+      <refsDecl>
+        <citeStructure unit="delibération" n="1" match="/TEI/text/body/div[@xml:id]/p[@ana='deliberation']" use="@n"/>
+      </refsDecl>
+      <!-- - Description des choix d'encodage -->
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc><profileDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+      <langUsage>
+        <language ident="lat">Document en latin</language>
+        <language ident="fr">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="registre capitulaire LL105">
+          <!-- si nécéssaire -->
+        </p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <!-- réfléchir -->
+          <term type="form">décision capitulaire</term>
+        </keywords>
+      </textClass>
+      <!-- <settingDesc>
+        <setting xml:id="" source="">
+          <p></p>
+          <date when=""></date>
+        </setting>
+      </settingDesc> -->
+    </profileDesc><revisionDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+      <change status="corrected" when="2023-11-08" who="VJ"/>
+      <change status="corrected" when="2023-11-08" who="LT"/>
+    </revisionDesc></teiHeader><text><body><div xmlns:xi="http://www.w3.org/2001/XMLSchema" type="chapitre">
+        <head resp="editor">
+          <date when="2000-01-01">Date à définir</date>
+        </head>
+        <p>
+          <label type="date">XXII<hi rend="sup">o</hi> die lune post festum Martini estivalis</label>, capitulantibus : <list type="person">
+          <item>
+              <unclear>cancellario</unclear>
+            </item>
+          <item>
+              <supplied>archidiacono</supplied> magno</item>
+          <item>
+              <gap/>
+            </item>
+          <item>Odone de Senonis</item>
+          <item>P. de Chambliaco</item>
+          <item>
+              <gap/>
+            </item>
+          <item>
+              <gap/>
+            </item>
+          <item>Ph. Conversi</item>
+          <item>
+              <gap/>
+            </item>
+          <item>P. de Condeto</item>
+          <item>Guillelmo <gap/>
+            </item>
+          <item>P. de Fayello</item>
+          <item>Johanne de Arpadella</item>
+          <item>G. de Lauduno</item>
+          <item>G. Piqueti</item>
+          <item>H. de Tornodoro<note resp="editor">Ces trois derniers mots réunis par une accolade dans une seconde colonne</note>
+            </item>
+        </list>
+        </p>
+        <p ana="deliberation" n="1">
+          <label type="entree">Philippus de Meleduno obtulit re<gap/>
+          </label> domum claustrale que fuit deffuncti magistri Johannis de Forgettis, archidiaconi Brie, ad <gap/>. dominorum decani et capituli, quod fuit concessum.</p>
+        <p ana="deliberation" n="2">
+          <label type="entree">
+            <del>
+              <supplied>cuid.</supplied>
+            </del> procurator cardinalis de Arrableyo</label> exhibuit pro<unclear>curationem</unclear> de collee.<del>
+            <supplied>cuid.</supplied>
+          </del>
+          <gap/>tatis que sunt d<gap/> archid.</p>
+        <p ana="deliberation" n="3">
+          <label type="entree">Item procurator prepositi Anen.</label> <gap/> fuit proce <gap/>.</p>
+        <p ana="deliberation" n="4">
+          <label type="entree">Item dominus Philippus de Messia, exequtor Johannis de Bl<gap/>.</label> contulit prebendam. P. Cassalis fuit procurator. Presentibus in capitulo domino Radulpho Boni Sensus, domino <unclear>Jacobo de Plombu</unclear>, magistro Stephano de Bercendicuria, domino <unclear>Reg. de Losana</unclear>.</p>
+        <pb n="3" resp="sarasin" facs="https://nakala.fr/path/to/FRAN_0393_05300_L.jpg/"/>
+        <p ana="deliberation" n="5">
+          <label type="entree">Accessit procurator ad dominum episcopum in domo claustrali et narravit eidem collationem factam dicto domino cardinali de Sancte<gap/>
+          </label> suis juribus et pertinentiis universis et processum super ipsa collatione habitum et requisivit dictum dominum episcopum ut  ipsum cardinalem <gap/>et ad dictum archidiaconatum quicquid. Episcopus respondit quod gratia facta dicto domino cardinali sibi multum <supplied>quod</supplied> lacebat et quod ipsum recipiebat in archidiaconatum cujuslibet, jure salvo. Protestatus tamen extitit de habendo omnia que levarentur medio tempore de dicto archid<supplied>iaconatu</supplied> <supplied>a</supplied>ppartet ipsum non habere jus in archidiaconatu predicto et qui ad hoc, ut dicebat, se tenebat ad dictum procuratorem et <gap/> mag<gap/> citum ibidem presente qui procurator et <gap/>ecitus responderunt quod ipsi constituerunt unum sigilliferum qui levaret emolumentum <gap/>. <supplied>facient</supplied> super hoc erga dominum episcopum quod debent et fidelitatem quam debebat <del>id<supplied>em</supplied>
+          </del> eidem dictus cardinalis raccione dicti archidiaconatus posuit in respectu. Presentibus Petro de Quingeyo et Roberto de Portu, clericis, testibus etc.</p>
+      </div></body></text></TEI>

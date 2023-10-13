@@ -77,10 +77,11 @@
     <element name="document">
       <ref name="document-atts"/>
       <ref name="dcTitle"/>
-      <ref name="dcCreator"/>
-      <ref name="dcCreated"/>
       <zeroOrMore>
         <ref name="dcMetadata"/>
+        <ref name="dcCreator"/>
+        <ref name="dcCreated"/>
+        <ref name="dctPublisher"/>
       </zeroOrMore>
     </element>
   </define>
@@ -113,10 +114,13 @@
   
   <define name="dcMetadata">
     <a:documentation>TODO</a:documentation>
-    <choice>
+    <zeroOrMore>
       <element name="dc:publisher"><text/></element>
       <element name="dc:date"><text/></element>
-    </choice>
+      <element name="dc:creator"><text/></element>
+      <element name="dc:created"><text/></element>
+      <element name="dct:publisher"><text/></element>
+    </zeroOrMore>
   </define>
   
   <define name="dcTitle">
@@ -136,6 +140,13 @@
   <define name="dcCreated">
     <a:documentation>TODO</a:documentation>
     <element name="dc:created">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="dctPublisher">
+    <a:documentation>TODO</a:documentation>
+    <element name="dct:publisher">
       <text/>
     </element>
   </define>

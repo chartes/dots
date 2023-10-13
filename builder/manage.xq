@@ -13,10 +13,10 @@ import module namespace docR = "https://github.com/chartes/dots/builder/docR" at
 import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
 import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace valid = "https://github.com/chartes/dots/validation/rng_validator" at "../validation/rng_validator.xqm";
 
 (: 1. Vérifier l'existence de la db dots et la créer le cas échéant :)
-(: ccg:create_config() :)
+(: ccg:create_config("ENDP", "endp") :)
+ccg:create_config("ENDP", "endp")
 
 (: 2. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
 : /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm
@@ -24,8 +24,8 @@ import module namespace valid = "https://github.com/chartes/dots/validation/rng_
 (: dbc:dbCreate() :)
 
 (: 3. Créer les registres DoTS dans la db Project :)
-(: cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "") :)
-cc:create_config("mon_theatre", "theatre", "Ma collection de théatre", "")
+(: cc:create_config("ENDP", "endp", "e-Édition des registres de Notre-Dame de Paris", "") :)
+
  
 
 

@@ -1,0 +1,129 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ll117_006" xml:lang="lat"><teiHeader><fileDesc><titleStmt><title>Chapitre 5 du registre LL117</title><author>Darwin Smith</author></titleStmt><publicationStmt><publisher>École nationale des chartes</publisher><address><addrLine>19, rue de la Sorbonne</addrLine><addrLine>75005 Paris.</addrLine><addrLine>tél. : +33 (0)1 55 42 75 00</addrLine><addrLine>http://enc.sorbonne.fr/</addrLine><addrLine>recherche@enc.sorbonne.fr</addrLine></address><date>2023-10-10T16:45:31.182+02:00</date><idno>https://github.com/chartes/endp-edition/</idno><distributor>École nationale des chartes</distributor><availability status="restricted"><p>L'École nationale des chartes met à disposition cette ressource électronique structurée, protégée par le code de la propriété intellectuelle sur les bases de données (L341-1), selon les termes de la licence *Creative Commons* : « Paternité - Pas d'Utilisation Commerciale - Pas de Modification ; 2.0 France ». Cette licence est disponible en ligne http://creativecommons.org/licenses/by-nc-nd/2.0/fr/ ou par courrier postal à Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105, USA.</p><p>*Pas d'Utilisation Commerciale* : L'École nationale des chartes souhaite encourager l'utilisation et l'amélioration de ses ressources électroniques, pour les intérêts de l'enseignement et de la recherche. Toute autorisation au-delà du champ de cette licence doit être obtenue auprès de l'École nationale des chartes.</p><p>*Pas de Modification* : Afin de mieux servir la communauté scientifique, l'École nationale des chartes s'engage à conserver et à toujours offrir publiquement la version la plus à jour de ses ressources électroniques par une URI pérenne. Elle s'engage à les corriger et à les améliorer, à intégrer les contributions qui lui sont soumises (après validation par un comité scientifique), et à référencer l'origine de ces contributions. Toute modification de la ressource qui ne serait pas reversée à la version de référence sous l'autorité éditoriale de l'École nationale des chartes doit faire l'objet de l'accord de celle-ci, afin de ne pas disperser les contributions et de permettre les meilleures conditions possibles de collaboration scientifique.</p><p>*Paternité* : l'École nationale des chartes demande à ce que toute publication dérivée de ses ressources électroniques comporte : 1) le nom de l'École nationale des chartes et, pour les publications électroniques, son logo 2) l'URI permettant d'accéder à la page citée sur notre site, ou à la page d'accueil de la ressource 3) la date du fichier source utilisé.</p><p>Tout litige soulevé par le non respect des termes de cette licence sera soumis à la juridiction des tribunaux de Paris.</p></availability></publicationStmt><sourceDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+        <bibl>
+          <!-- lien vers les Archives Nationales -->
+          <ref target="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_059635/Delib_914"/>
+          <author/> <!-- différence avec publisher ? -->
+          <title source="registre capitulaire LL117">registre capitulaire LL117</title>
+          <pubPlace ref="geonames:2988506" source="registre capitulaire LL117">Paris</pubPlace>
+          <!-- publisher : A réfléchir -->
+          <publisher>
+            <orgName>Archives nationales</orgName>
+          </publisher>
+          <date source="registre capitulaire LL117" from="1451" to="1454">1451-1454</date>
+        </bibl>
+        <!-- description d'un manuscrit -->
+        <msDesc>
+          <msIdentifier>
+            <country ref="geonames:3017382">France</country>
+            <settlement ref="geonames:2988506">Paris</settlement>
+            <repository xml:lang="fr" ref="wikidata:Q182542 viaf:131469365">Archives nationales</repository>
+            <idno type="cote">LL/117</idno>
+          </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>
+                  <!-- 33 x 23,5 x 6,5 cm -->
+                  <dimensions type="binding">
+                    <height unit="cm">33</height>
+                    <width unit="cm">23,5</width>
+                    <depth unit="cm">6,5</depth>
+                  </dimensions>
+                </extent>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <!--<history>
+            <provenance>
+            </provenance>
+          </history>-->
+        </msDesc>
+      </sourceDesc></fileDesc><encodingDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+      <!-- - Description générique du projet -->
+      <projectDesc>
+        <p>Cette édition a été réalisée dans le cadre du projet ANR e-NDP. Son objectif principal
+          est de fournir un texte encodé selon les spécifications TEI destiné à l'exploration avec des outils électroniques. 
+          Préciser les objectifs de l'édition ....</p>
+        <p>Les textes encodés dans le cadre du projet e-NDP sont issus d'une campagne de numérisation des Archives nationales.</p>
+        <p>L'édition présentée ici est issue d'un processus de transcription automatique (HTR) réalisé avec le moteur Kraken et la production de vérité terrain avec le logiciel eScritporium.</p>
+      </projectDesc>
+      
+      <refsDecl n="1">
+        <citeStructure unit="delibération" n="1" match="/TEI/text/body/div[@xml:id]/p[@ana='deliberation']" use="@n"/>
+      </refsDecl>
+      
+      <!-- - Description des choix d'encodage -->
+      <editorialDecl>
+        <p/>
+      </editorialDecl>
+    </encodingDesc><profileDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+      <langUsage>
+        <language ident="lat">Document en latin</language>
+        <language ident="fr">Document en français</language>
+      </langUsage>
+      <abstract>
+        <p source="registre capitulaire 117">
+          <!-- si nécéssaire -->
+        </p>
+      </abstract>
+      <textClass>
+        <keywords>
+          <!-- réfléchir -->
+          <term type="form">décision capitulaire</term>
+        </keywords>
+      </textClass>
+      <!-- <settingDesc>
+        <setting xml:id="" source="">
+          <p></p>
+          <date when=""></date>
+        </setting>
+      </settingDesc> -->
+    </profileDesc><revisionDesc xmlns:xi="http://www.w3.org/2001/XMLSchema">
+      <change status="corrected" when="2023-11-08" who="VJ"/>
+      <change status="corrected" when="2023-11-08" who="LT"/>
+    </revisionDesc></teiHeader><text><body><div type="chapitre">
+        <head resp="editor">
+          <date when="1451-08-28">Samedi 28 août 1451</date>
+        </head>
+        <p>
+          <label type="date">Sabbati in festo sancti Augustini XXVIII augusti</label>, quinta et ultima dicti capituli generalis, fuerunt ad capitulum et lucrati sunt domini :<list type="person">
+          <item>archidaconus de Josayo</item>
+          <item>succentor</item>
+          <item>cancellarius</item>
+          <item>penitenciarius</item>
+          <item>Ordeimonte</item>
+          <item>Chacy</item>
+          <item>Breton</item>
+          <item>Cotin</item>
+          <item>Gaillon</item>
+          <item>Haultny</item>
+          <item>Bussi</item>
+          <item>Fresnoy</item>
+          <item>De Croces</item>
+          <item>Mondidier</item>
+          <item>Victri</item>
+          <item>De Brollio</item>
+          <item>Vayli</item>
+          <item>Paillard</item>
+          <item>Monneti</item>
+          <item>Jerson</item>
+          <item>Aguenin</item>
+          <item>Pion</item>
+          <item>Bastardi</item>
+          <item>Sohier</item>
+          <item>Despars</item>
+          <item>Boullardi</item>
+          <item>P. Thomas</item>
+          <item>Fraxinis</item>
+          <item>Fourbeur</item>
+          <item>De Cameraco</item>
+          <item>Confranc infirmus</item>
+          <item>Du Drac</item>
+          <item>Renouart</item>
+        </list>
+        </p>
+        <p ana="deliberation" n="1">
+          <label type="entree">De tabula domini Parisiensis</label> ― Audita relacione magistri Johannis James, magistri operum lathomie ecclesie, placet dominis quod quedam tabula de cupro continens fundacionem deffuncti domini Parisiensis, nuper episcopi Parisiensis, videlicet domini Dyonisii de Molendino, affigatur in muro capellanie sanctorum Dionisii et Georgii in ecclesia Parisiensi ad discrecionem domini magistri Johannis James in qua ordinatum certas missas celebrari.</p>
+        <p ana="deliberation" n="2">
+          <label type="entree">Recepcio promotoris videlicet Morain</label> ― Hodie magister P. Morain, presbyter beneficiatus in ecclesia Parisiensi, fuit receptus in promotorem capituli sive adjunctum cum magistro R. Barnesse, promotore capituli, qui juravit in forma ut continetur in parvo Pastorali.</p>
+      </div></body></text></TEI>

@@ -17,16 +17,37 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
-declare updating function ccg:create_config() {
+declare updating function ccg:create_config($idProject, $dbName) {
   if (db:exists($G:dots))
-  then ()
+  then 
+    if (db:get($G:dots)//project[@dbName = $dbName])
+    then ()
+    else
+      let $dots := db:get($G:dots)/dbSwitch
+      let $totalProject := $dots//totalProjects
+      let $modified := $dots//dct:modified
+      let $member := $dots//member
+      let $contentMember :=
+        (
+          ccg:getProject($idProject, $dbName),
+          ccg:members($dbName, "")
+        )
+      return
+        (
+          replace value of node $modified with current-dateTime(),
+          replace value of node $totalProject with xs:integer($totalProject) + 1,
+          insert node $contentMember as last into $member
+        )
   else
     let $dbSwitch :=
       <dbSwitch 
         xmlns="https://github.com/chartes/dots/" 
         xmlns:dct="http://purl.org/dc/terms/">
         {ccg:getMetadata("dbSwitch")}
-        <member></member>
+        <member>{
+          ccg:getProject($idProject, $dbName),
+          ccg:members($dbName, "")
+        }</member>
       </dbSwitch>
     let $metadataMap :=
       <metadataMap 

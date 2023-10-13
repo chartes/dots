@@ -48,7 +48,7 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
     </resourcesRegister>
   return
     (
-      ccg:create_config(),
+      ccg:create_config($idProject, $dbName),
       if (db:exists($dbName, $G:resourcesRegister))
       then 
         let $dots := db:get($dbName, $G:resourcesRegister)
@@ -58,8 +58,7 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
           replace node $dots//member with $content//member
         )
       else 
-        if (validate:rng($content, $G:resourcesValidation))
-        then
+       
           (
             db:put($dbName, $content, $G:resourcesRegister)
           ),

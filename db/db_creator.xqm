@@ -11,15 +11,15 @@ module namespace dbc = "https://github.com/chartes/dots/db/dbc";
 
 import module namespace functx = "http://www.functx.com";
 
-declare variable $dbc:resourceId := "mon_theatre";
+declare variable $dbc:resourceId := "ENDP";
 
-declare variable $dbc:dbName := "theatre";
+declare variable $dbc:dbName := "endp";
 
-declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/theatre/TEI/";
+declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/TEI/";
 
-declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/theatre/dots_metadata_mapping.xml";
+declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/dots/dots_metadata_mapping.xml";
 
-declare variable $dbc:metadataTSV := "";
+declare variable $dbc:metadataTSV := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/dots/endp_metadata.tsv";
 
 declare variable $dbc:separator := "	";
 
@@ -48,9 +48,9 @@ declare updating function dbc:dbCreate() {
     else $resourcesXML
   let $paths :=
     (
-      for $path in $resourcesXML return substring-after($path, $dbc:pathResources),
-      if ($dbc:metadataMapping != "") then concat("dots/", functx:substring-after-last($dbc:metadataMapping, "/")) else (),
-      if ($tsv != "") then concat("dots/", functx:substring-after-last($dbc:metadataTSV, "/")) else ()
+      for $path in $resourcesXML return substring-after($path, "/TEI"),
+      if ($dbc:metadataMapping != "") then concat("dots/", functx:substring-after-last($dbc:metadataMapping, "/dots")) else (),
+      if ($tsv != "") then concat("dots/", functx:substring-after-last($dbc:metadataTSV, "/dots")) else ()
     )
   return
     db:create($dbc:dbName, $resources, $paths, map {
