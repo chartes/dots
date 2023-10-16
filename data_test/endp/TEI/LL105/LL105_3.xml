@@ -48,7 +48,7 @@
         <p>L'édition présentée ici est issue d'un processus de transcription automatique (HTR) réalisé avec le moteur Kraken et la production de vérité terrain avec le logiciel eScritporium.</p>
       </projectDesc>
       <refsDecl>
-        <citeStructure unit="delibération" n="1" match="/TEI/text/body/div[@xml:id]/p[@ana='deliberation']" use="@n"/>
+        <citeStructure unit="delibération" n="1" match="/TEI/text/body/div/p[@ana='deliberation']" use="@n"/>
       </refsDecl>
       <!-- - Description des choix d'encodage -->
       <editorialDecl>
