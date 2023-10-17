@@ -1,6 +1,5 @@
-<?xml-model href="../../resources_register.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<resourcesRegister 
-      xmlns="https://github.com/chartes/dots/" 
+<?xml-model href="../../../schema/resources_register.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<resourcesRegister xmlns="https://github.com/chartes/dots/" 
       xmlns:dct="http://purl.org/dc/terms/" 
       xmlns:dc="http://purl.org/dc/elements/1.1/">
       <metadata>
@@ -15,4 +14,16 @@
                   <dc:title>Bérénice</dc:title>
                   <dc:creator>Pierre Du Ryer</dc:creator>
                   <dc:created>1635</dc:created>
-            </document><document dtsResourceId="fre000327" maxCiteDepth="4" parentIds="mon_theatre"><dc:title>Cinna</dc:title><dc:creator>Pierre Corneille</dc:creator><dc:created>1643</dc:created></document><document dtsResourceId="fre000336" maxCiteDepth="4" parentIds="mon_theatre"><dc:title>Mélite</dc:title><dc:creator>Pierre Corneille</dc:creator><dc:created>1682</dc:created></document></member></resourcesRegister>
+            </document>
+            <document dtsResourceId="fre000327" maxCiteDepth="4" parentIds="mon_theatre">
+                  <dc:title>Cinna</dc:title>
+                  <dc:creator>Pierre Corneille</dc:creator>
+                  <dc:created>1643</dc:created>
+            </document>
+            <document dtsResourceId="fre000336" maxCiteDepth="4" parentIds="mon_theatre">
+                  <dc:title>Mélite</dc:title>
+                  <dc:creator>Pierre Corneille</dc:creator>
+                  <dc:created>1682</dc:created>
+            </document>
+      </member>
+</resourcesRegister>

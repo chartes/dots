@@ -61,9 +61,14 @@ declare updating function ccg:create_config($idProject, $dbName) {
         </mapping>
       </metadataMap>
     return
-      (
-        db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
-      )
+      let $validate := validate:rng-info($dbSwitch, $G:dbSwitchValidation)
+      return
+        if ($validate)
+        then ()
+        else
+        (
+          db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
+        )
 };
 
 (:~ 
