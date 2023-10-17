@@ -15,11 +15,11 @@ declare variable $dbc:resourceId := "ENDP";
 
 declare variable $dbc:dbName := "endp";
 
-declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/TEI/";
+declare variable $dbc:pathResources := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/TEI/";
 
-declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/dots/dots_metadata_mapping.xml";
+declare variable $dbc:metadataMapping := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata_mapping.xml";
 
-declare variable $dbc:metadataTSV := "/home/ppons/Documents/Work/dots_corpus/endp/cas2/dots/endp_metadata.tsv";
+declare variable $dbc:metadataTSV := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata.tsv";
 
 declare variable $dbc:separator := "	";
 
