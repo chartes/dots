@@ -14,7 +14,7 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
-declare variable $dbd:dbName := "theatre";
+declare variable $dbd:dbName := "LL584";
 
 declare updating function dbd:handleDelete() {
   dbd:dbSwitchDelete(),

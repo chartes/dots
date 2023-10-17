@@ -60,6 +60,7 @@ declare function docR:getMetadata() {
 :)
 declare function docR:getFragments($bdd as xs:string) {
   for $resource in db:get($bdd)/tei:TEI
+  where $resource//tei:citeStructure
   let $resourceId :=
     if ($resource/@xml:id)
     then normalize-space($resource/@xml:id)

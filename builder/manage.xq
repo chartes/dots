@@ -14,22 +14,21 @@ import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db
 import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
+(: Exemple pour le registre ENDP 
+: /!\ Attention, les commandes doivent être lancées successivment.
+:)
 
 (: 1. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
-: /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm
-:)
-(: dbc:dbCreate() :)
+: /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm :)
+dbc:dbCreate()
 
 (: 2. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config("ENDP", "endp") :)
 
 (: 3. Créer les registres DoTS dans la db Project :)
 (: cc:create_config("ENDP", "endp", "e-Édition des registres de Notre-Dame de Paris", "") :)
-cc:create_config("ENDP", "endp", "e-Édition des registres de Notre-Dame de Paris", "")
- 
 
-
-
-
+(: 4. Supprimer  :)
+(: dbd:handleDelete() :)
 
 

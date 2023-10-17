@@ -105,11 +105,7 @@ declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as
 :)
 declare function cc:document($bdd as xs:string, $idProject as xs:string, $resource as xs:string, $path as xs:string) {
   let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
-  let $dtsResourceId := 
-    if ($doc/@xml:id)
-    then normalize-space($doc/@xml:id)
-    else db:node-id($doc)
-  let $title := normalize-space($doc//tei:titleStmt/tei:title[1])
+  let $dtsResourceId := $doc/@xml:id
   let $maxCiteDepth := count($doc//tei:refsDecl//tei:citeStructure)
   return
     if ($doc)
@@ -117,12 +113,12 @@ declare function cc:document($bdd as xs:string, $idProject as xs:string, $resour
       <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{if ($path) then $path else $idProject}">{
         cc:getDocumentMetadata($bdd, $doc)
       }</document>
-    else ()
+    else <toto></toto>
 };
 
 declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
-  let $externalMetadataMap := db:get($bdd, $G:metadata)/metadataMap/mapping
+  let $externalMetadataMap := db:get($bdd)/metadataMap/mapping
   return
     for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
     where $metadata/@xpath

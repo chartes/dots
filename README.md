@@ -140,7 +140,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 | `extensions`    | optionnel                        | ✅              |
 | `references`    | optionnel                        | ✅              |
 | `passage`       | optionnel                        | ✅              |
-| download        | optionnel                        |                |
+| download        | optionnel                        | 🚧          |
 | citeStructure   | optionnel                        | ✅             |
 
 #### Paramètres de requête

@@ -19,7 +19,7 @@ declare variable $dbc:pathResources := "/home/ppons/Bureau/basex/webapp/dots/dat
 
 declare variable $dbc:metadataMapping := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata_mapping.xml";
 
-declare variable $dbc:metadataTSV := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata.tsv";
+declare variable $dbc:metadataTSV := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata_mapping.xml";
 
 declare variable $dbc:separator := "	";
 
