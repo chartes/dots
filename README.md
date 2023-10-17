@@ -61,7 +61,7 @@ Dir Project (exemple: ENDP)
 │        ├── (metadata.tsv)
 │        ├── (dots_metadata_mapping.xml)
 ```
-Dans ce cas, `metadata.tsv` est obligatoire pour déclarer *a minima* les métadonnées des collections (au moins un **dc:title**).
+Dans ce cas, un tableur TSV et un `m̀etadata_mapping.xml` sont obligatoires pour déclarer *a minima* les métadonnées des collections (au moins un **dc:title**).
 Le TSV doit disposer d'une colonne avec les identifiants des collections dont le nom est similaire à celui proposé dans l'arborescence des fichiers.
 
 
