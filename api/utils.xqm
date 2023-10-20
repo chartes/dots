@@ -1,18 +1,16 @@
 xquery version "3.1";
 
 (:~ 
-: Ce module permet de construire les réponses à fournir pour les urls spécifiées dans routes.xqm. Il gère la communication entre 
+: Ce module permet de construire les réponses à fournir pour les urls spécifiées dans routes.xqm. 
 : @author   École nationale des chartes - Philippe Pons
 : @since 2023-05-15
 : @version  1.0
-: @todo Revoir en profondeur les namespaces
 :)
 
 module namespace utils = "https://github.com/chartes/dots/api/utils";
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace routes = "https://github.com/chartes/dots/api/routes" at "routes.xqm";
-import module namespace functx = 'http://www.functx.com';
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dts = "https://w3id.org/dts/api#";
@@ -22,8 +20,8 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
 : Cette variable permet de choisir l'identifiant d'une collection "racine" (pour le endpoint Collections sans paramètre d'identifiant)
-: @todo pouvoir choisir l'identifiant de collection Route? (le title du endpoint collections sans paramètres)
-: à déplacer dans globals.xqm?
+: @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collections sans paramètres)
+: à déplacer dans globals.xqm ou dans un CLI?
 :)
 declare variable $utils:root := "ELEC";
 
@@ -349,7 +347,10 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
   let $doc := 
     if (db:get($project)/tei:TEI[@xml:id = $resourceId])
     then db:get($project)/tei:TEI[@xml:id = $resourceId]
-    else db:get-id($project, xs:integer($resourceId))  
+    else 
+    for $document in db:get($project)/tei:TEI
+    where ends-with(db:path($document), $resourceId)
+    return $document
   let $header := $doc/tei:teiHeader
   let $idRef := 
     let $fragment := utils:getFragment($project, $resourceId, map{"ref": $ref})

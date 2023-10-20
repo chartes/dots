@@ -11,6 +11,8 @@ module namespace docR = "https://github.com/chartes/dots/builder/docR";
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
+import module namespace functx = 'http://www.functx.com';
+
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
@@ -64,7 +66,7 @@ declare function docR:getFragments($bdd as xs:string) {
   let $resourceId :=
     if ($resource/@xml:id)
     then normalize-space($resource/@xml:id)
-    else db:node-id($resource)
+    else functx:substring-after-last(db:path($resource), "/")
   let $maxCiteDepth := count($resource//tei:refsDecl//tei:citeStructure)
   return
     docR:handleCiteStructure($bdd, $resource, 1, $resourceId, "", "", $maxCiteDepth)
@@ -103,7 +105,7 @@ declare function docR:handleCiteStructure($bdd as xs:string, $resource as elemen
               $xpath)
             let $valueQuery := xquery:eval($query, map {"": $fragment})
             return
-              element {$nameMetadata} {normalize-space($valueQuery)}
+              element {$nameMetadata} {normalize-space($valueQuery[1])}
           else ()
         }</fragment>,
         if ($citeStructure/tei:citeStructure)

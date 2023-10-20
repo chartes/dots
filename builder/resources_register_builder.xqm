@@ -105,7 +105,10 @@ declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as
 :)
 declare function cc:document($bdd as xs:string, $idProject as xs:string, $resource as xs:string, $path as xs:string) {
   let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
-  let $dtsResourceId := $doc/@xml:id
+  let $dtsResourceId := 
+    if ($doc/@xml:id)
+    then $doc/@xml:id
+    else $resource
   let $maxCiteDepth := count($doc//tei:refsDecl//tei:citeStructure)
   return
     if ($doc)
@@ -113,7 +116,7 @@ declare function cc:document($bdd as xs:string, $idProject as xs:string, $resour
       <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{if ($path) then $path else $idProject}">{
         cc:getDocumentMetadata($bdd, $doc)
       }</document>
-    else <toto></toto>
+    else ()
 };
 
 declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
@@ -151,14 +154,18 @@ declare function cc:collection($bdd as xs:string, $idProject as xs:string, $coll
 
 declare function cc:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
   let $metadataMap :=  db:get($bdd, $G:metadata)/metadataMap
-  for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
-  let $getResourceId := $metadata/@resourceId
-  let $source := db:get($bdd, normalize-space($metadata/@source))//*:record[node()[name() = $getResourceId] = $collection]
-  let $metadataName := $metadata/name()
-  let $contentName := $metadata/@content
-  let $content := normalize-space($source/node()[name() = $contentName])
   return
-    element {$metadataName} {$content}
+    if ($metadataMap)
+    then 
+      for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
+      let $getResourceId := $metadata/@resourceId
+      let $source := db:get($bdd, normalize-space($metadata/@source))//*:record[node()[name() = $getResourceId] = $collection]
+      let $metadataName := $metadata/name()
+      let $contentName := $metadata/@content
+      let $content := normalize-space($source/node()[name() = $contentName])
+      return 
+        element {$metadataName} {$content}
+    else <dc:title>{$collection}</dc:title>
 };
 
 

@@ -11,15 +11,15 @@ module namespace dbc = "https://github.com/chartes/dots/db/dbc";
 
 import module namespace functx = "http://www.functx.com";
 
-declare variable $dbc:resourceId := "ENDP";
+declare variable $dbc:resourceId := "Littérature";
 
-declare variable $dbc:dbName := "endp";
+declare variable $dbc:dbName := "litterature";
 
-declare variable $dbc:pathResources := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/TEI/";
+declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/CORPUS-DEMO_DoTS/cas_1-2/TEI/";
 
-declare variable $dbc:metadataMapping := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata_mapping.xml";
+declare variable $dbc:metadataMapping := "";
 
-declare variable $dbc:metadataTSV := "/home/ppons/Bureau/basex/webapp/dots/data_test/endp/dots/endp_metadata_mapping.xml";
+declare variable $dbc:metadataTSV := "";
 
 declare variable $dbc:separator := "	";
 

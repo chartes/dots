@@ -9,6 +9,8 @@ xquery version "3.1";
 
 module namespace ccg = "https://github.com/chartes/dots/builder/ccg";
 
+import module namespace functx = 'http://www.functx.com';
+
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
 
@@ -63,9 +65,7 @@ declare updating function ccg:create_config($idProject, $dbName) {
     return
       let $validate := validate:rng-info($dbSwitch, $G:dbSwitchValidation)
       return
-        if ($validate)
-        then ()
-        else
+       
         (
           db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
         )
@@ -102,7 +102,7 @@ declare function ccg:members($idBdd as xs:string, $path as xs:string) {
 
 declare function ccg:resource($idBdd as xs:string, $resource as xs:string, $path as xs:string) {
   let $doc := db:get($idBdd, concat($path, "/", $resource))/tei:TEI
-  let $id := if ($doc/@xml:id) then normalize-space($doc/@xml:id) else db:node-id($doc)
+  let $id := if ($doc/@xml:id) then normalize-space($doc/@xml:id) else functx:substring-after-last(db:path($doc), "/")
   return
     if ($doc)
     then

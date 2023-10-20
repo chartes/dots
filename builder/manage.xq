@@ -20,15 +20,20 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 
 (: 1. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
 : /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm :)
-dbc:dbCreate()
+(: dbc:dbCreate() :)
 
 (: 2. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config("ENDP", "endp") :)
+(: ccg:create_config("Littérature", "litterature") :)
 
 (: 3. Créer les registres DoTS dans la db Project :)
 (: cc:create_config("ENDP", "endp", "e-Édition des registres de Notre-Dame de Paris", "") :)
-
+(: cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "") :)
+cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "")
 (: 4. Supprimer  :)
 (: dbd:handleDelete() :)
+
+(: db:get("test", "dots/resources_register.xml") :)
+
 
 

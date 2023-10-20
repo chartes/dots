@@ -5,13 +5,15 @@ xquery version "3.1";
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-05-15
 : @version  1.0
-: @todo Revoir en profondeur les namespaces
 :)
 
 module namespace routes="https://github.com/chartes/dots/api/routes";
 
+import module namespace functx = "http://www.functx.com";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
+
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
 : Cette fonction gère le point d'entrée de l'API DTS
@@ -37,10 +39,9 @@ function routes:entryPoint() {
 
 (:~  
 : Cette fonction dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
-: @return réponse JSON pour les endpoints Collections de la spécification d'API DTS
+: @return réponse JSON pour le endpoints Collections de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier une collection DTS
 : @see https://distributed-text-services.github.io/specifications/Collections-Endpoint.html
-: @todo compléter les paramètres 
 :) 
 declare
   %rest:path("/api/dts/collections")
@@ -62,8 +63,11 @@ function routes:collections($id as xs:string, $nav as xs:string) {
 : Cette fonction dispatche vers les fonctions permettant de donner les informations du endpoint Navigation pour la collection $id
 : @return réponse JSON pour le endpoint Navigation de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier une collection DTS
+: @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
+: @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
+: @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
+: @param $down entier qui permet de spécifier la profondeur des membres descendant attendus dans la réponse d'API
 : @see https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html
-: @todo compléter les paramètres 
 :) 
 declare
   %rest:path("/api/dts/navigation")
@@ -84,6 +88,10 @@ function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:str
 : Cette fonction permet de renvoyer un document ou un fragment du document XML identifié par le paramètre $id
 : @return réponse XML-TEI pour les endpoints Document de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier le document XML (obligatoire)
+: @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
+: @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
+: @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
+: @param $format chaîne de caractère pour spécifier le format de sortie attendu. Les formats possibles sont: html et txt. XML est le format par défaut.
 : @see https://distributed-text-services.github.io/specifications/Documents-Endpoint.html
 :)
 declare
@@ -111,7 +119,11 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
         default return "xml"
       let $style := concat($G:webapp, $G:xsl)
       let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
-      let $doc := db:get($project)/*:TEI[@xml:id = $id]
+      let $doc := 
+        if (db:get($project)/tei:TEI[@xml:id = $id])
+        then db:get($project)/tei:TEI[@xml:id = $id]
+        else 
+          db:get($project, $id)/tei:TEI
       let $trans := 
         if ($format = "html")
         then
