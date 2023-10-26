@@ -304,8 +304,10 @@ declare function utils:getFragmentsInRange($projectName as xs:string, $resourceI
   let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
+  let $s := normalize-space($firstFragment/@n)
+  let $e := normalize-space($lastFragment/@n)
   return
-    for $fragment in db:attribute-range($projectName, $start, $end, "n")/parent::dots:fragment[@resourceId = $resourceId]
+    for $fragment in db:attribute-range($projectName, $s, $e, "n")/parent::dots:fragment[@resourceId = $resourceId]
     let $ref := normalize-space($fragment/@ref)
     let $level := xs:integer($fragment/@level)
     where
