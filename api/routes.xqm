@@ -38,10 +38,13 @@ function routes:entryPoint() {
 };
 
 (:~  
-: Cette fonction dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
+: Cette fonction gère le endpoint Collections. Elle dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
 : @return réponse JSON pour le endpoints Collections de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier une collection DTS
+: @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents. Ce paramètre permet de définir si les membres de la collection sont les enfants ou les parents.
 : @see https://distributed-text-services.github.io/specifications/Collections-Endpoint.html
+: @see utils.xqm;utils:collectionById
+: @see utils.xqm;utils:collections
 :) 
 declare
   %rest:path("/api/dts/collections")
@@ -60,7 +63,7 @@ function routes:collections($id as xs:string, $nav as xs:string) {
 };
 
 (:~  
-: Cette fonction dispatche vers les fonctions permettant de donner les informations du endpoint Navigation pour la collection $id
+: Cette fonction gère le endpoint Navigation. Elle dispatche vers les fonctions permettant de donner les informations du endpoint Navigation pour la collection $id
 : @return réponse JSON pour le endpoint Navigation de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier une collection DTS
 : @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
@@ -85,13 +88,13 @@ function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:str
 };
 
 (:~ 
-: Cette fonction permet de renvoyer un document ou un fragment du document XML identifié par le paramètre $id
+: Cette fonction gère le endpoint Document. Elle permet de renvoyer un document ou un fragment du document XML identifié par le paramètre $id
 : @return réponse XML-TEI pour les endpoints Document de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier le document XML (obligatoire)
 : @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
 : @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
 : @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
-: @param $format chaîne de caractère pour spécifier le format de sortie attendu. Les formats possibles sont: html et txt. XML est le format par défaut.
+: @param $format chaîne de caractère pour spécifier le format de sortie attendu. Les formats possibles sont: XML (par défaut), html et txt.
 : @see https://distributed-text-services.github.io/specifications/Documents-Endpoint.html
 :)
 declare

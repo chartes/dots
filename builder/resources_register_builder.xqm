@@ -132,7 +132,7 @@ declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
       $xpath)
     let $valueQuery := xquery:eval($query, map {"": $doc})
     return
-      if ($valueQuery)
+      if (normalize-space($valueQuery) != "")
       then element {$metadataName} {normalize-space($valueQuery)}
       else ()
 };
@@ -153,18 +153,29 @@ declare function cc:collection($bdd as xs:string, $idProject as xs:string, $coll
 };
 
 declare function cc:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
-  let $metadataMap :=  db:get($bdd, $G:metadata)/metadataMap
+  let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
     if ($metadataMap)
-    then 
-      for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
-      let $getResourceId := $metadata/@resourceId
-      let $source := db:get($bdd, normalize-space($metadata/@source))//*:record[node()[name() = $getResourceId] = $collection]
-      let $metadataName := $metadata/name()
-      let $contentName := $metadata/@content
-      let $content := normalize-space($source/node()[name() = $contentName])
-      return 
-        element {$metadataName} {$content}
+    then
+      let $metadatas := 
+        for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
+        let $getResourceId := $metadata/@resourceId
+        let $source := db:get($bdd, normalize-space($metadata/@source))//*:record[node()[name() = $getResourceId] = $collection]
+        let $metadataName := $metadata/name()
+        let $contentName := $metadata/@content
+        let $content := normalize-space($source/node()[name() = $contentName])
+        return 
+          if ($content != "") 
+          then element {$metadataName} {$content}
+          else ()
+      return
+        if ($metadatas/name() = "dc:title")
+        then $metadatas
+        else 
+          (
+            <dc:title>{$collection}</dc:title>,
+            $metadatas
+          )
     else <dc:title>{$collection}</dc:title>
 };
 

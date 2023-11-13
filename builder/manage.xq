@@ -33,7 +33,5 @@ cc:create_config("Littérature", "litterature", "Bibliothèque de littérature",
 (: 4. Supprimer  :)
 (: dbd:handleDelete() :)
 
-(: db:get("test", "dots/resources_register.xml") :)
-
 
 

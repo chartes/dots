@@ -15,11 +15,11 @@ declare variable $dbc:resourceId := "Littérature";
 
 declare variable $dbc:dbName := "litterature";
 
-declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/CORPUS-DEMO_DoTS/cas_1-2/TEI/";
+declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/cas_3/TEI/";
 
-declare variable $dbc:metadataMapping := "";
+declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/cas_3/dots/metadata_mapping.xml";
 
-declare variable $dbc:metadataTSV := "";
+declare variable $dbc:metadataTSV := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/cas_3/dots/litterature_metadata.csv";
 
 declare variable $dbc:separator := "	";
 
