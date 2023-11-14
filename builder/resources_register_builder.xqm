@@ -10,6 +10,8 @@ xquery version "3.1";
 
 module namespace cc = "https://github.com/chartes/dots/builder/cc";
 
+import module namespace functx = 'http://www.functx.com';
+
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
@@ -94,7 +96,7 @@ declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as
     else
       (
         if ($dir = "dots") then () else cc:collection($bdd, $idProject, $dir, $path),
-        cc:members($bdd, $idProject, $dir)
+        cc:members($bdd, $idProject, concat($path, "/", $dir))
       )
 };
 
@@ -110,10 +112,17 @@ declare function cc:document($bdd as xs:string, $idProject as xs:string, $resour
     then $doc/@xml:id
     else $resource
   let $maxCiteDepth := count($doc//tei:refsDecl//tei:citeStructure)
+  let $parentIds :=
+    if ($path)
+    then
+      if (contains($path, "/"))
+      then functx:substring-after-last($path, "/")
+      else $path
+    else $idProject
   return
     if ($doc)
     then
-      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{if ($path) then $path else $idProject}">{
+      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
         cc:getDocumentMetadata($bdd, $doc)
       }</document>
     else ()
@@ -145,7 +154,14 @@ declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
 :)
 declare function cc:collection($bdd as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
   let $totalItems := count(db:dir($bdd, $collection))
-  let $parent := if ($path = "") then $idProject else $path
+  let $parent := 
+    if ($path = "") 
+    then $idProject 
+    else 
+      if (contains($path, "/"))
+      then
+        functx:substring-after-last($path, "/")
+      else $path
   return
     <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
       cc:getCollectionMetadata($bdd, $collection)

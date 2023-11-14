@@ -32,9 +32,8 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 (: cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "") :)
 (: cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "") :)
 (: cc:create_config("Littérature", "litterature2", "Bibliothèque de littérature", "") :)
-
+cc:create_config("Littérature", "litterature2", "Bibliothèque de littérature", "")
 (: 4. Supprimer  :)
 (: dbd:handleDelete() :)
-dbd:handleDelete()
 
 
