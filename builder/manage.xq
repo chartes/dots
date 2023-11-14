@@ -25,13 +25,16 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 (: 2. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config("ENDP", "endp") :)
 (: ccg:create_config("Littérature", "litterature") :)
+(: ccg:create_config("Littérature", "litterature2") :)
 
 (: 3. Créer les registres DoTS dans la db Project :)
 (: cc:create_config("ENDP", "endp", "e-Édition des registres de Notre-Dame de Paris", "") :)
 (: cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "") :)
-cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "")
+(: cc:create_config("Littérature", "litterature", "Bibliothèque de littérature", "") :)
+(: cc:create_config("Littérature", "litterature2", "Bibliothèque de littérature", "") :)
+
 (: 4. Supprimer  :)
 (: dbd:handleDelete() :)
-
+dbd:handleDelete()
 
 

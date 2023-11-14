@@ -91,12 +91,12 @@ declare function ccg:members($idBdd as xs:string, $path as xs:string) {
   where not(contains($dir, $G:metadata))
   order by $dir
   return
-    if (contains($dir, ".xml") or contains($dir, ".tsv"))
+    if ($dir/name() = "resource")
     then ccg:resource($idBdd, $dir, $path)
     else
       (
         ccg:collection($idBdd, $dir, $path), 
-        ccg:members($idBdd, $dir)
+        ccg:members($idBdd, concat($path, "/", $dir))
       )
 };
 
