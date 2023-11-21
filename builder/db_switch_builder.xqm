@@ -94,10 +94,12 @@ declare function ccg:members($idBdd as xs:string, $path as xs:string) {
     if ($dir/name() = "resource")
     then ccg:resource($idBdd, $dir, $path)
     else
+      if ($dir != "")
+      then
       (
         ccg:collection($idBdd, $dir, $path), 
         ccg:members($idBdd, concat($path, "/", $dir))
-      )
+      ) else ()
 };
 
 declare function ccg:resource($idBdd as xs:string, $resource as xs:string, $path as xs:string) {

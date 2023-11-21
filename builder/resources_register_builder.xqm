@@ -87,18 +87,28 @@ declare function cc:getMetadata() {
 : @see create_config.xql;cc:resource
 :)
 declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as xs:string) {
-  for $dir in db:dir($bdd, $path)
-  where not(contains($dir, $G:metadata))
-  order by $dir
+  for $document in db:list($bdd)
+  where not(contains($document, "dots/"))
+  let $resource := tokenize($document, "/")[last()]
   return
-    if ($dir[name() = "resource"])
-    then cc:document($bdd, $idProject, $dir, $path)
-    else
-      (
-        if ($dir = "dots") then () else cc:collection($bdd, $idProject, $dir, $path),
-        cc:members($bdd, $idProject, concat($path, "/", $dir))
-      )
+    cc:document($bdd, $idProject, $resource, functx:substring-before-last($document, "/")),
+  cc:collections($bdd, $idProject, $path)
 };
+
+declare function cc:collections($bdd as xs:string, $idProject as xs:string, $path as xs:string) {
+  for $dir in db:dir($bdd, $path)
+  where $dir/name() = "dir" and not(contains($dir, "dots"))
+  let $newPath := concat($path, "/", $dir)
+  let $newDir := db:dir($bdd, $newPath)
+  return
+    (
+      cc:collection($bdd, $idProject, $dir, $path),
+      if (empty($newDir))
+      then ()
+      else cc:collections($bdd, $idProject,$newPath)
+    )
+};
+
 
 (:~ 
 : Cette fonction permet de construire l'élément <member/> correspondant à une resource, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
