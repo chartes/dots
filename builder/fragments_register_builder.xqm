@@ -105,7 +105,7 @@ declare function docR:handleCiteStructure($bdd as xs:string, $resource as elemen
               $xpath)
             let $valueQuery := xquery:eval($query, map {"": $fragment})
             return
-              element {$nameMetadata} {normalize-space($valueQuery[1])}
+              if ($valueQuery) then element {$nameMetadata} {normalize-space($valueQuery[1])} else ()
           else ()
         }</fragment>,
         if ($citeStructure/tei:citeStructure)

@@ -29,7 +29,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see project.xql;cc:getMetadata
 : @see project.xql;cc:members
 :)
-declare updating function cc:create_config($idProject as xs:string, $dbName as xs:string, $title as xs:string, $path as xs:string) {
+declare updating function cc:create_config($idProject as xs:string, $dbName as xs:string, $title as xs:string) {
   let $countChild := 
     let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
     let $count := count(db:dir($dbName, ""))
@@ -45,7 +45,10 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">
           <dc:title>{$title}</dc:title>
         </collection>
-        {cc:members($dbName, $idProject, $path)}
+        {
+          cc:collections($dbName, $idProject),
+          cc:document($dbName, $idProject)
+        }
       </member>
     </resourcesRegister>
   return
@@ -60,7 +63,6 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
           replace node $dots//member with $content//member
         )
       else 
-       
           (
             db:put($dbName, $content, $G:resourcesRegister)
           ),
@@ -86,37 +88,90 @@ declare function cc:getMetadata() {
 : @see create_config.xql;cc:collection
 : @see create_config.xql;cc:resource
 :)
-declare function cc:members($bdd as xs:string, $idProject as xs:string, $path as xs:string) {
-  for $document in db:list($bdd)
-  where not(contains($document, "dots/"))
-  let $resource := tokenize($document, "/")[last()]
+declare function cc:collections($bdd as xs:string, $idProject as xs:string) {
+  let $list_collections :=
+    let $collections :=
+      for $document in db:open($bdd)/tei:TEI 
+      let $dbPath := db:path($document)
+      let $base_path := functx:substring-before-last($dbPath, "/") 
+      group by $base_path 
+      let $c := count(tokenize($base_path, "/"))
+      return
+        <path>
+          <complet_path>{$base_path}</complet_path>
+          <nbre_collection>{$c}</nbre_collection>
+        </path>
+    return
+      $collections
   return
-    cc:document($bdd, $idProject, $resource, functx:substring-before-last($document, "/")),
-  cc:collections($bdd, $idProject, $path)
+    let $collectionsWithDuplicate :=
+      for $collection in $list_collections
+      let $nbre_collection := $collection/nbre_collection
+      return
+        if ($nbre_collection = 1)
+        then
+          let $path := $collection/complet_path
+          let $totalChildren := count(db:dir($bdd, $path))
+          return
+            <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
+                cc:getCollectionMetadata($bdd, $path)
+              }</collection>
+        else
+          let $splitCollections := tokenize($collection/complet_path, "/")
+          return
+            for $numCollection in 1 to $nbre_collection
+            let $dtsResourceId := $splitCollections[$numCollection]
+            let $path :=
+              <path>{
+                for $p in 1 to $numCollection
+                return
+                  concat($splitCollections[$p], "/")
+              }</path>
+            let $totalChildren := count(db:dir($bdd, replace($path, " ", "")))
+            let $parent := 
+              if ($splitCollections[$numCollection - 1])
+              then $splitCollections[$numCollection - 1]
+              else $idProject
+            return
+              <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
+                cc:getCollectionMetadata($bdd, $dtsResourceId)
+              }</collection>
+    return
+      for $goodCollection in $collectionsWithDuplicate
+      let $id := $goodCollection/@dtsResourceId
+      group by $id
+      return
+        $goodCollection[1]
 };
-
-declare function cc:collections($bdd as xs:string, $idProject as xs:string, $path as xs:string) {
-  for $dir in db:dir($bdd, $path)
-  where $dir/name() = "dir" and not(contains($dir, "dots"))
-  let $newPath := concat($path, "/", $dir)
-  let $newDir := db:dir($bdd, $newPath)
-  return
-    (
-      cc:collection($bdd, $idProject, $dir, $path),
-      if (empty($newDir))
-      then ()
-      else cc:collections($bdd, $idProject,$newPath)
-    )
-};
-
 
 (:~ 
 : Cette fonction permet de construire l'élément <member/> correspondant à une resource, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 :)
-declare function cc:document($bdd as xs:string, $idProject as xs:string, $resource as xs:string, $path as xs:string) {
-  let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
+declare function cc:document($bdd as xs:string, $idProject as xs:string) {
+  for $document in db:get($bdd)/tei:TEI
+  let $path := db:path($document)
+  let $dtsResourceId := 
+    if ($document/@xml:id)
+    then $document/@xml:id
+    else
+      functx:substring-after-last($path, "/")
+  let $maxCiteDepth := count($document//tei:refsDecl//tei:citeStructure)
+  let $parentIds := 
+    let $path := functx:substring-before-last($path, "/")
+    return
+      if (contains($path, "/"))
+      then functx:substring-after-last($path, "/")
+      else $path
+  return
+    if ($document)
+    then
+      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
+        cc:getDocumentMetadata($bdd, $document)
+      }</document>
+    else ()
+  (: let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
   let $dtsResourceId := 
     if ($doc/@xml:id)
     then $doc/@xml:id
@@ -135,7 +190,7 @@ declare function cc:document($bdd as xs:string, $idProject as xs:string, $resour
       <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
         cc:getDocumentMetadata($bdd, $doc)
       }</document>
-    else ()
+    else () :)
 };
 
 declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {

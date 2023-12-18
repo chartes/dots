@@ -23,7 +23,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collections sans paramètres)
 : à déplacer dans globals.xqm ou dans un CLI?
 :)
-declare variable $utils:root := "ELEC";
+declare variable $utils:root := "Biblissima";
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 Fonctions d'entrée dans le endPoint "Collections" de l'API DTS
@@ -42,7 +42,7 @@ declare function utils:collections() {
     (
       <pair name="@id">{$utils:root}</pair>,
       <pair name="@type">collection</pair>,
-      <pair name="title">{string("Éditions numériques de l'école nationale des chartes")}</pair>,
+      <pair name="title">{string("Collections de ressources de Biblissima+")}</pair>,
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="member" type="object">{
         for $project at $pos in db:get($G:dots)//dots:member/dots:project
@@ -587,6 +587,7 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
 : @param $down entier indiquant le niveau de profondeur des membres citables à renvoyer en réponse
 : @param $context chaîne de caractère (navigation ou document) permettant de connaître le contexte d'utilisation de la fonction
 : @see utils.xqm;utils:getFragment
+: @error ne fonctionne pas dans le cas de fragments avec un attribut @xml:id
 : @todo le cas de figure suivant n'est pas pris en charge: 
 : $start et $end ont 2 level différents + down > 0
 : comment gérer ce cas de figure?
