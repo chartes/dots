@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’établissement de la maison de Savoie au sud du Léman, la châtellenie d’Allinges-Thonon (<hi rend="sc">xii</hi><hi rend="sup">e</hi> siècle – 1536)</title>
+        <author ref="https://www.idref.fr/109287657">Monique Constant</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 57-63</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="57" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’établissement de la maison de Savoie
+       <lb/>au sud du Léman
+       <lb/>la châtellenie d’Allinges-Thonon
+       <lb/>(<num>xii<hi rend="sup">e</hi></num> siècle-1536)</head>
+      <byline>
+        par
+        <forename>Monique</forename>
+        <surname>Constant</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Nous avons surtout utilisé la série des comptes de la châtellenie, dans la série SA des Archives de la Savoie ; elle couvre la période 1272-1535, avec quelques lacunes, assez importantes pour le <num>xiii<hi rend="sup">e</hi></num> siècle, exceptionnelles plus tard. Nous nous sommes également servie d’autres documents provenant des archives de l’État de Savoie, conservés aux Archives de la Savoie et de la Haute-Savoie, et de la série H des Archives de la Haute-Savoie.</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Les domaines de la maison de Savoie étaient divisés en châtellenies. Celle que nous étudions ici présente la caractéristique d’avoir été formée de trois parties distinctes, pourvues chacune d’un château, acquises à des époques différentes, du <num>xii<hi rend="sup">e</hi></num> siècle à 1355 ; ce sont Allinge-Vieux, Allinge-Neuf et Thonon. Allinge-Vieux appartint longtemps au Faucigny. Il s’agit en effet d’une région située à la frontière des États de Savoie, où n’a pu se développer que tardivement la ville de Thonon.</p>
+        <p><hi rend="i">Le cadre géographique et les routes.</hi> – La châtellenie d’Allinges-Thonon s’étendait à la fois sur une partie du massif préalpin du Chablais, voué à l’élevage, et sur sa bordure lémanique, où l’on cultivait la vigne. Elle occupait en effet le bassin de la Dranse de Morzine, la partie aval de celui du Brevon et la partie de la plaine côtière et du « piedmont » située sur la rive gauche de la rivière formée par la réunion des trois Dranses, celle d’Abondance, celle de Morzine et le Brevon. Les biens situés dans la vallée de la Dranse de Morzine, ou vallée d’Aulps, étaient d’un accès difficile.</p>
+        <pb n="58" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_02.TIF/full/full/0/default.jpg"/>
+        <p>La châtellenie était desservie par deux routes, héritières des voies romaines, la route de Genève à Meillerie par le bord du lac et celle qui, venant d’Annemasse par le pied des Voirons, rencontrait la première à Thonon. Le lac lui-même était une voie de communication importante. En outre, il est possible que des chemins aient relié Thonon aux vallées chablaisiennes.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La maison de Savoie aux Allinges et à Thonon</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’installation des comtes de Savoie au sud du Léman</head>
+          <p>Les châteaux des Allinges étaient sans doute à l’origine des possessions des rois de Bourgogne ; ils les confièrent à une famille qui en prit le nom et qui les usurpa à la faveur de l’anarchie qui marqua la fin du royaume de Bourgogne. Les seigneurs d’Allinges étaient avoués de l’abbaye de Saint-Maurice d’Agaune pour les territoires qu’elle possédait dans la région.</p>
+          <p>Les comtes de Maurienne, futurs comtes de Savoie, qui avaient déjà un droit de suzeraineté sur les seigneurs d’Allinges dans la vallée d’Aulps à la fin du <num>xi<hi rend="sup">e</hi></num> siècle et qui furent abbés laïcs, puis avoués, de Saint-Maurice, s’installèrent au château neuf, probablement à la suite des différends qui opposèrent les seigneurs d’Allinges à l’abbaye au début du <num>xii<hi rend="sup">e</hi></num> siècle. De leur côté, les sires de Faucigny acquirent le château vieux pour une raison inconnue. Dans les premières années du <num>xiii<hi rend="sup">e</hi></num> siècle, le comte de Maurienne avait un châtelain à Allinge-Neuf et le sire de Faucigny un sénéchal à Allinge-Vieux. Quant aux seigneurs d’Allinges, ils obtinrent de l’abbaye de Saint-Maurice, au milieu du <num>xiii<hi rend="sup">e</hi></num> siècle, la seigneurie de Coudrée. En 1266, le comte Pierre de Savoie acquit du prieuré de Thonon les droits que celui-ci possédait dans cette ville, dont les origines demeurent incertaines ; il donna des franchises à Thonon deux ans plus tard.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les guerres des <num>xiii<hi rend="sup">e</hi></num> et xiv<hi rend="sup">e</hi> siècles et l’acquisition
+           <lb/>de la châtellenie d’Allinge-Vieux</head>
+          <p>Le comte Pierre de Savoie épousa l’héritière de Faucigny, Agnès. Tous deux moururent en 1268. La Savoie passa alors au frère cadet de Pierre, Philippe, et le Faucigny à sa fille, Béatrice, épouse du dauphin de Viennois. Les contestations qui s’élevèrent alors entraînèrent une guerre qui devait durer pendant toute la première moitié du xiv<hi rend="sup">e</hi> siècle. Après l’achat du Dauphiné <pb n="59" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_03.TIF/full/full/0/default.jpg"/>par le roi de France, on finit par aboutir à la paix de Paris (1355), par laquelle la Savoie obtenait le Faucigny en échange des châteaux qu’elle possédait à la frontière dauphinoise. Les deux châteaux des Allinges étaient ainsi réunis.</p>
+          <p>Ces châteaux avaient joué un rôle important dans la guerre, ce qui avait donné aux châtellenies qui en dépendaient un caractère essentiellement militaire. De plus, dans les dernières années du <num>xiii<hi rend="sup">e</hi></num> siècle, on avait construit une maison-forte à Thonon, menacé du côté du lac et vers l’intérieur. La guerre finie, le château d’Allinge-Vieux fut abandonné, tandis que celui d’Allinge-Neuf continua à être occupé jusqu’à la fin du <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La cour à Thonon et à Ripaille</head>
+          <p>Une fois la région pacifiée, l’épouse du comte Amédée VI, Bonne de Bourbon, fit construire à Ripaille, à l’embouchure de la Dranse, une maison de campagne qui fut vite insuffisante. Il fallut alors faire reconstruire le château de Thonon, en l’agrandissant, au début du <num>xv<hi rend="sup">e</hi></num> siècle. La présence de la cour à Thonon donna à la ville une certaine importance, d’autant plus que le comte Amédée VIII se fit construire à Ripaille un ermitage où il se retira en 1435. Par la suite, le château de Thonon fut un peu délaissé par les ducs de Savoie, mais il continua à être entretenu jusqu’à l’invasion bernoise de 1536.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Le cadre institutionnel de la châtellenie
+         <lb/>d’Allinges-Thonon</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le mandement</head>
+          <p>Le mandement de la châtellenie d’Allinges-Thonon était constitué par le territoire soumis immédiatement au châtelain. Il a varié au cours des siècles. Dans la première moitié du <num>xiv<hi rend="sup">e</hi></num> siècle, le mandement d’Allinge-Vieux couvrait la paroisse d’Armoy et une partie de celle d’Allinges ; celui d’Allinges-Thonon, qui l’entourait, s’étendait sur une vingtaine de paroisses, dont beaucoup étaient partagées avec les seigneurs du ressort de la châtellenie, avec les comtes de Genève ou avec les seigneurs de Faucigny. Par la suite, les principales modifications furent l’acquisition par la Savoie de la châtellenie d’Allinge-Vieux en 1355, la cession à l’abbaye d’Aulps de la métralie du Biot en 1365, l’acquisition de la paroisse de Saxel, qui fut inféodée au seigneur de Ballaison en 1403, et enfin la vente des paroisses de Vailly et de Reyvroz au seigneur de Genève-Lullin en 1531.</p>
+          <pb n="60" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_04.TIF/full/full/0/default.jpg"/>
+          <p>Les mandements étaient divisés en métralies ; celui d’Allinge-Neuf comprenait les métralies de Thonon, de Concise, de Sorcy et du Biot ; celui d’Allinge-Vieux, la sénéchaussée d’Allinge et la métralie du Lyaud. La paroisse de Saxel forma une nouvelle métralie vingt-trois ans après son acquisition par le comte de Savoie.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les premiers centres de la châtellenie aux Allinges</head>
+          <p>Les Allinges ont dû avoir une certaine importance pendant le haut Moyen âge, car la paroisse était le siège d’un doyenné rural. Les châteaux, situés aux deux extrémités de la colline dominant le village, offraient une certaine symétrie. Chacun était formé d’un donjon et d’un plain-château et était flanqué d’un bourg fortifié ; les deux châteaux se faisaient face et les bourgs étaient situés vers l’extérieur.</p>
+          <p>Les habitants des deux bourgs jouissaient de franchises qui n’étaient pas des franchises urbaines ; en échange, ils devaient assurer la défense du château et prêter l’hommage lige soit au comte de Savoie, soit au sire de Faucigny. Ils avaient le droit de quitter le château pour s’installer dans les terres qu’ils cultivaient au pied de la colline en temps de paix et, en été, pour vaquer aux travaux des champs.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le déplacement vers Thonon</head>
+          <p>Contrairement aux bourgs des Allinges, Thonon était une ville franche dotée d’une organisation embryonnaire. Elle avait un marché et une foire s’y tenait chaque année en novembre. Les franchises concédées en 1268 par Pierre II de Savoie s’appliquaient à la fois au bourg de Thonon, situé sur la falaise qui borde le Léman, et à son port, la ville neuve de Rives.</p>
+          <p>Le comte de Savoie avait à Thonon un château, qui devint le siège de la châtellenie lorsque Allinge-Neuf fut délaissé. Il y possédait également des moulins et des fours banaux ainsi que la halle du marché. Il y percevait les droits provenant du contrôle des mesures, du <hi rend="i">foragium vini</hi> et du banvin.</p>
+          <p>Malgré sa taille exiguë, Thonon était une véritable ville, qui connaissait un certain trafic commercial, possédait des écoles et un hôpital. Un couvent de moines mendiants, des Frères Augustins, s’y établit au début du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le ressort : les seigneuries ecclésiastiques</head>
+          <p>La plus importante seigneurie ecclésiastique était l’abbaye d’Aulps, fondée à la fin du <num>xi<hi rend="sup">e</hi></num> siècle dans la vallée de ce nom, où elle institua un type d’exploitation pastorale. En dehors de cette vallée, elle possédait des biens en Faucigny et dans le comté de Bourgogne. Dans la première moitié du <num>xiv<hi rend="sup">e</hi></num> siècle, des conflits l’opposèrent aux châtelains d’Allinges-Thonon et aux métraux du Biot ; sans doute ceux-ci se méfiaient-ils de ses relations avec les possesseurs de la <pb n="61" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_05.TIF/full/full/0/default.jpg"/>terre de Faucigny. En 1365, Amédée VI mit fin à ces difficultés en cédant à l’abbaye, en échange de biens situés en plaine, la métralie du Biot, qui était d’un accès difficile quand on venait de Thonon.</p>
+          <p>Les rapports avec les autres seigneuries ecclésiastiques, c’est-à-dire avec la chartreuse de Vallon et le prieuré de Bellevaux dans la vallée du Brevon et avec l’abbaye de Filly au bord du Léman, furent plus faciles, ces établissements étant beaucoup moins puissants. Le prieuré de Draillant et l’abbaye des Cisterciennes du Lieu étaient alors d’une importance négligeable.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Le ressort : les seigneuries laïques</head>
+          <p>Les principaux seigneurs du ressort étaient ceux d’Allinges et ceux de Rovorée. Les seigneurs d’Allinges possédaient, outre la seigneurie de Coudrée, les maisons-fortes de Cervette et de Charmoisy. Les rapports avec la maison de Savoie furent souvent tendus, d’autant plus que les seigneurs d’Allinges-Coudrée essayaient d’usurper les droits des comtes puis ducs de Savoie, surtout au xvi<hi rend="sup">e </hi>siècle. Les seigneurs de Rovorée avaient l’essentiel de leurs biens dans la vallée d’Aulps. Ils étaient divisés en plusieurs branches, dont l’une possédait la seigneurie de La Mouille, que le comte de Savoie acheta en 1304 malgré les tentatives de la dauphine Béatrice. Des familles étrangères à la châtellenie, dont certaines étaient apparentées aux Faucigny, y avaient aussi des terres et des hommes. Enfin, l’acquisition du Faucigny en 1355 fit entrer dans le ressort de la châtellenie d’Allinges-Thonon les seigneuries de Lullin et de Langin. Celle de Lullin passa dans le ressort de la châtellenie de Châtillon-Cluses en 1382, lorsque la vallée de Mégevette, inféodée à l’abbaye d’Aulps, fut ajoutée au ressort de la châtellenie d’Allinges-Thonon.</p>
+          <p>Les comtes de Savoie établirent leur autorité sur les seigneurs laïques en prenant leurs terres en gage lorsqu’ils étaient ruinés et en leur faisant prêter l’hommage lige moyennant finance. Ils achetèrent parfois des seigneuries ou les acquirent par échange. Enfin, ils prirent dans leur garde des hommes dépendant des seigneurs de leur ressort. Amédée VIII essaya de simplifier la géographie de la région et de former autour de son ermitage de Ripaille un groupe compact de territoires.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>L’administration de la châtellenie
+         <lb/>(fin du <num>xiii<hi rend="sup">e</hi></num> siècle-début du xvi<hi rend="sup">e</hi> siècle)</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le personnel administratif</head>
+          <p>Le châtelain fut d’abord nommé pour un temps limité, qui allait de quelques jours à cinq ou six ans. H appartenait à la noblesse militaire et, à partir de 1330, <pb n="62" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_06.TIF/full/full/0/default.jpg"/>l’office tendit à se fixer dans quelques grandes familles, comme les Viry, les Challant, les Blonay. Cependant il fut confié trois fois à des hommes de robe, des familles Ravais et Duboin. De 1477 à 1523, il semble avoir été inféodé à la famille de Montfalcon. Ensuite ce fut le vice-châtelain qui devint châtelain en titre. La châtellenie fut affermée trois fois, et chaque fois pour peu de temps, en 1423-1424, de 1525 à 1528 et de 1532 à 1535.</p>
+          <p>Le châtelain fut secondé par un lieutenant dès le début du <num>xiv<hi rend="sup">e</hi></num> siècle. A partir de 1348, ce fut lui qui alla rendre les comptes de la châtellenie à Chambéry. A la fin du <num>xv<hi rend="sup">e</hi></num> siècle, le châtelain en titre, ou grand châtelain, affermait la châtellenie à son lieutenant sous le contrôle de la Chambre des Comptes.</p>
+          <p>Chaque métralie avait à sa tête un métral, qui percevait les redevances et les <hi rend="i">banna.</hi> A la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, les métraux qui détenaient leur charge à titre perpétuel furent remplacés par des receveurs nommés par le comte. Au <num>xv<hi rend="sup">e</hi></num> siècle, eux aussi avaient des lieutenants.</p>
+          <p>A deux reprises un receveur particulier rendit des comptes pour une partie des recettes de la châtellenie, ainsi Pierre de Sainte-Marie, receveur des blés en 1286, et Albert Bonjour, receveur des revenus fixes, en 1322. C’étaient des bourgeois de Thonon.</p>
+          <p>Le commissaire d’extentes assurait la sauvegarde des droits du comte de Savoie dans la châtellenie ; c’était un notaire. Il recevait les reconnaissances des tenanciers et des nobles de la châtellenie. Le clerc curial, qui était aussi un notaire, s’occupait de ce qui concernait la justice et conservait les archives ; ces deux charges furent parfois exercées par le même homme.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les attributions militaires du châtelain</head>
+          <p>Le châtelain assurait l’entretien et la défense des châteaux, convoquait l’ost sur l’ordre du comte ou du bailli de Chablais et commandait les clients de la châtellenie ainsi que les nobles qui n’étaient pas chevaliers bannerets. En 1325-1326, à l’époque de la défaite de Varey et de la prise du château de Ballon par les troupes savoyardes, le bailli de Chablais fut en même temps châtelain d’Allinges-Thonon.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La justice</head>
+          <p>Les attributions judiciaires du châtelain étaient limitées ; il partageait avec le juge la justice pénale de première instance (<hi rend="i">banna concordata, mandata</hi> et <hi rend="i">condemnata</hi>) ; l’appel était possible au Conseil résidant à Chambéry. Le comte de Savoie et son Conseil intervinrent assez fréquemment à partir de la seconde moitié du <num>xiv<hi rend="sup">e</hi></num> siècle, soit pour remettre tout ou partie des peines, soit pour prononcer des sentences ou composer avec les délinquants.</p>
+        </div>
+        <div>
+          <pb n="63" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_07.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Les finances</head>
+          <p>Le châtelain assurait la perception et l’emploi des recettes ordinaires, qu’elles fussent d’origine domaniale ou banale. Les recettes en nature étaient vendues, d’abord par le châtelain, puis par un commissaire, lorsque le vice-châtelain venait rendre les comptes de la châtellenie. Les sommes perçues furent longtemps employées presque exclusivement sur place ; mais, au cours du <num>xiv<hi rend="sup">e</hi></num> siècle, des sommes de plus en plus importantes furent versées aux trésoriers généraux ou à l’Hôtel du comte.</p>
+          <p>Le châtelain assurait également la perception des subsides dont le produit était versé à un receveur.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p>Généalogie des seigneurs d’Allinges.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <pb n="64" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_07/ENCPOS_1971_07_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

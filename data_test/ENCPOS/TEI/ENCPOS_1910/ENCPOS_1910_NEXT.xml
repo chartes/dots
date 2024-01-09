@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_NEXT" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pages postliminaires</title>
+        </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_NEXT.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. -185</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="185" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_01.TIF/full/full/0/default.jpg"/>
+      <p>TABLE DES MATIÈRES</p>
+      <p>es</p>
+      <p>Études sur le commerce et l’industrie à Chartres, depuis le xi<hi rend="sup">e</hi> siècle jusqu’à la fin du ministère de Colbert, par Geneviève ACLOCQUE	... 1</p>
+      <p>La Moralité de Bien Advisé et Mal Advisé, précédée d’une étude sur les Moralités en général, par Jean BABELON	....	13</p>
+      <p>La Viticulture en Bordelais au Moyen Age, par Jean BARENNES. 19</p>
+      <p>Les Institutions municipales dans le Comté Venaissin, des origines à 1790, par H. CHOBAUT................. 27</p>
+      <p>Étude archéologique sur la cathédrale de Troyes, par Valentin CHODRON DE COURCEL........................ 35</p>
+      <p>Les Institutions municipales de Castres, du xu<hi rend="sup">e</hi> au xvi° siècle, par J. COLOMBIE........................... 45</p>
+      <p>Étude sur la censive de Saint-Germain-l’Auxerrois, à Paris, au xm<hi rend="sup">e</hi> et au xiv’ siècle, par Pierre DELONCLE......... 53</p>
+      <p>Formation et organisation du département du Cantal (1789-an lit), par Benjamin FAUCHER.................. 59</p>
+      <p>Contribution à l’étude de la jeunesse de Du Plessis-Mornay et de ses débuts dans la politique et la diplomatie (1549-1582), suivie de lettres inédites de Du Plessis-Mornay conservées à la Bibliothèque Nationale, par G. GARRIC.......... 65</p>
+      <p>Essai historique sur le cimetière des Saints-Innocents, depuis les origines jusqu’à 1786, par Marcel GASTINEAU........ 71</p>
+      <p>La Congrégation de Montaigu (1490-1580), par Marcel GODET. .	81</p>
+      <p>Les États d’Artois, depuis leur origine jusqu’à la réconciliation des provinces wallonnes avec Philippe II (1340-1579), par Ch. HIRSCHAUER	 ..93</p>
+      <p>La Juridiction de la Municipalité parisienne, de saint Louis à Charles VII, par Georges HUISMAN................ 109</p>
+      <p>Essai historique sur le Chapitre cathédral de Digne et sur Pierre Gassendi, chanoine et prévôt (1177-1790), par Émile ISNARD................................ 119</p>
+      <pb n="186" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_02.TIF/full/full/0/default.jpg"/>
+      <p>La Juridiction municipale à Toulouse, au xn° et au xm<hi rend="sup">e</hi> siècle, étude de droit urbain et d’administration judiciaire, par G. LOIRETTE............................. 125</p>
+      <p>L’Ordre des Avocats au Parlement de Paris, aux xvn° et XV111<hi rend="sup">0</hi> siècles (1602-1790), par Maurice LONCLE.......... 133</p>
+      <p>La réforme et les origines de la Ligue dans le Maine et principalement dans la ville du Mans, par Roger Luzu....... 143</p>
+      <p>Essai sur la politique religieuse de Philippe le Bon dans les Pays-Bas, par Georges MAZERAN................. 147</p>
+      <p>Simon Arnauld de Pomponne avant son ministère (1618-1671), étude sur sa jeunesse, sa carrière administrative et diplomatique, par René PICHARD DU PAGE............... 153</p>
+      <p>Etude biographique sur Eudes de Sully, évêque de Paris (1197-1208), par Maurice ROUSSET.................... 163</p>
+      <p>L’abbaye de Montmajour-lez-Arles, du x° au xv° siècle, par Louis ROYER............................. 169</p>
+      <p>Essai historique sur les origines et l’organisation de l’église Saint-Marcel de Paris (v<hi rend="sup">e</hi> siècle-1597), par J. RUINAUT.....	179</p>
+      <p>Abbeville. – Imprimerie F. PAILLAU-T.</p>
+      <pb n="187" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_03.TIF/full/full/0/default.jpg"/>
+      <pb n="188" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_04.TIF/full/full/0/default.jpg"/>
+      <pb n="189" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_05.TIF/full/full/0/default.jpg"/>
+      <pb n="190" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_06.TIF/full/full/0/default.jpg"/>
+      <pb n="191" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_07.TIF/full/full/0/default.jpg"/>
+      <pb n="192" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_08.TIF/full/full/0/default.jpg"/>
+      <pb n="193" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_09.TIF/full/full/0/default.jpg"/>
+      <pb n="194" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_NEXT/ENCPOS_1910_NEXT_10.TIF/full/full/0/default.jpg"/>
+    </body>
+  </text>
+</TEI>

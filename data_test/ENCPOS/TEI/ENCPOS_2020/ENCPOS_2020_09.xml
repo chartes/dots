@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_09" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le décor et le métier. Lucien Aguettand-Blanc, architecte-décorateur de cinéma (1901-1969)</title>
+        <author>Louise Gousseau-Kotwica</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 93-102</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le décor et le métier
+        <lb/>Lucien Aguettand-Blanc, architecte-décorateur de cinéma (1901-1969)</head>
+      <byline>
+        par
+        <forename>Louise</forename>
+        <surname>Gousseau-Kotwica</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>La carrière de Lucien Aguettand-Blanc, foisonnante, s’étend sur près de cinquante ans. Du début des années 1920 à la fin des années 1960, il est l’auteur des décors de plus d’une centaine de films et de deux séries télévisées. Pendant une dizaine d’années, il dirige le service décoration de Pathé Cinéma. Enseignant l’histoire du décor à l’Institut des hautes études cinématographiques (IDHEC), il forme de nouvelles générations de décorateurs. Il est un membre durable de la Commission supérieure technique, l’une des organisations de techniciens les plus influentes du monde du cinéma, créée aux lendemains de la seconde guerre mondiale. Il en devient président d’honneur en 1964. Pourtant, il demeure aujourd’hui presque inconnu.</p>
+        <p>Dans les premiers temps du cinéma, les décors de film présentent, à bien des aspects, une grande proximité formelle avec les décors de théâtre. Ils sont en effet brossés par des artistes-peintres décorateurs de théâtre. La vie d’Aguettand, assistant de Louis Jouvet devenu décorateur de cinéma, révèle l’entrecroisement des histoires théâtrale et cinématographique. Pourtant, Aguettand n’a jamais été artiste-peintre. La carrière du décorateur soulève donc par un biais nouveau la question des rapports entre ces deux arts, question qui a divisé les opinions des journalistes et professionnels du cinéma pendant de nombreuses années.</p>
+        <p>Après une période d’expérimentations, le décor de cinéma prend son indépendance vis-à-vis du théâtre. De simples talents en peinture ne suffisent plus à faire un bon décorateur. Le métier nouveau de décorateur de cinéma englobe des savoir-faire d’une grande diversité, dans le domaine à la fois de l’architecture, des arts décoratifs et de la construction. Aguettand est l’un des premiers « architectes-décorateurs », terme qui vient bientôt refléter ce changement profond. Dès la période de l’Occupation, il s’engage pour défendre une vision exigeante du métier, luttant pour tenter d’élever le niveau de recrutement et pour faire entendre les besoins des départements de décoration auprès des autorités dont ils dépendent. L’étude de la carrière d’Aguettand dans sa globalité, jusqu’au montage de ses derniers décors, en 1969, offre une vision d’ensemble, faisant de lui un témoin particulièrement intéressant des évolutions du métier de décorateur de cinéma.</p>
+        <div>
+          <head>Sources</head>
+          <p>En 1978, Lucien Aguettand-Blanc fait don d’une partie de ses archives sur le théâtre et le cinéma au département des Arts du spectacle de la Bibliothèque nationale de France. Le fonds regroupe maquettes de décors, photographies, coupures de presse, scénarios, correspondance et documentation réunis par Aguettand et plusieurs textes de cours et de conférences. Un second don, auprès des archives de l’IDHEC, a lieu au début des années 1980 et est aujourd’hui conservé à la Bibliothèque du film. Ce second fonds contient davantage de documents concernant l’activité d’Aguettand en tant que syndicaliste ou au sein des organismes d’État tels que la Commission supérieure technique. Demeurent aux mains des descendants du décorateur plusieurs maquettes et dessins de mobilier.</p>
+          <p>Ces principaux ensembles ont été complétés par la consultation de photographies de tournage et de plateau conservées à la Cinémathèque française, par les lettres du fonds Jouvet de la Bibliothèque nationale et par de nombreuses coupures de presse.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Du dessin à l’édifice Les années d’apprentissage</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Une formation entrecoupée</head>
+          <p>Lucien Aguettand-Blanc naît le 28 février 1901 dans le troisième arrondissement de Paris. Il ne suit pas de cursus dans une école officielle, aux Beaux-Arts ou aux Arts décoratifs, à l’image de nombre de décorateurs de cinéma de sa génération. Après une scolarité interrompue par la guerre, son père parvient à lui trouver une place dans un petit atelier spécialisé dans la fabrication de camions et de tracteurs militaires. Au fil de ses premiers emplois, Aguettand acquiert une riche expérience dans le milieu de la construction et de l’optique.</p>
+          <p>Pendant ce temps, il s’intéresse beaucoup au théâtre. En 1921, il est engagé comme « dessinateur architecte » et comme assistant par Louis Jouvet, alors régisseur au théâtre du Vieux-Colombier. Celui-ci devient son mentor et son ami. Grâce aux cours de Jouvet à l’école du Vieux-Colombier, Aguettand apprend l’architecture. Ce n’est donc pas dans les anciens ateliers de décoration théâtrale que le jeune homme fait sa formation, mais dans un théâtre en réforme, dans lequel le concept de décoration laisse déjà la place à une définition plus large qui ne met plus au premier plan la peinture, mais l’architecture scénique elle-même.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Quand le décor se cherche : les années vingt</head>
+          <p>Le moment où Lucien Aguettand-Blanc prend ses premiers contacts avec le cinéma est une période de profondes transformations pour le décor. Les premiers décors de cinéma sont, comme les décors de théâtre, constitués d’une toile peinte, de machineries, et de quelques meubles et accessoires. À partir des années 1910, ce modèle est progressivement abandonné.</p>
+          <p>Cette évolution a deux causes principales. Premièrement, les metteurs en scène, en alternant les prises de vues en extérieur avec les scènes tournées en studio, amènent les décorateurs à délaisser les trompe-l’œil, qui contrastent trop avec le réalisme des scènes de plein air, et à les remplacer par de vrais meubles et accessoires. D’autre part, les décorateurs italiens et américains, comprenant que le décor peut être un argument propre à séduire le public, montent, à grands renforts de staff, de contreplaqué et de carton-pierre, les premiers décors entièrement construits. L’idée d’un décor vu comme une architecture est transmise en France par les décorateurs russes de la Société des films Albatros.</p>
+          <p>En parallèle, une attention nouvelle est portée aux décors. En 1921, la projection dans les salles parisiennes du <hi rend="i">Cabinet du docteur Caligari</hi>, film du réalisateur allemand Robert Wiene, déclenche une intense controverse parmi les journalistes et professionnels du cinéma. Les décors, couverts de zébrures, animés de formes géométriques, constellés de signes peints, y dévorent l’intégralité du film. Ils suscitent un foisonnement d’interrogations sur le décor, qui se trouve soudainement projeté au centre de l’attention.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>De l’assistant de Francis Jourdain au décorateur de cinéma</head>
+          <p>En mars 1923, Aguettand est appelé en Algérie afin d’effectuer son service militaire. À son retour, Jouvet est dans l’incapacité de le reprendre auprès de lui. Dans une lettre du 27 mai 1924, il le recommande à Francis Jourdain. La rencontre avec ce prolifique créateur de mobilier et décorateur d’intérieur le fait pénétrer dans le milieu des arts décoratifs. Aguettand travaille avec lui lors de l’exposition internationale des Arts décoratifs et industriels modernes, qui a lieu du mois d’avril au mois d’octobre 1925. Le jeune homme s’occupe de meubler la reconstitution d’un studio de cinéma présentée au sein de la classe de photographie et de cinématographie, l’une des sections de l’exposition. Il s’agit de l’une des premières manifestations de ce type à accorder une place au cinéma parmi les œuvres présentées.</p>
+          <p>Pendant la préparation de l’exposition, Aguettand rencontre Robert Mallet-Stevens, architecte de formation, qui, dans les années 1920, s’intéresse beaucoup au décor de cinéma. Celui-ci lui présente Marcel L’Herbier. Ce réalisateur esthète voit le cinéma comme une synthèse des arts. Dans son film <hi rend="i">L’Inhumaine</hi> (1923), il rassemble les contributions d’architectes, de peintres, de décorateurs d’intérieurs, de couturiers, de compositeurs à la pointe de la modernité artistique. Mallet-Stevens choisit Aguettand pour finir les décors d’un film de L’Herbier, <hi rend="i">Le Vertige</hi> (1926). Le jeune homme, promu assistant-décorateur, s’imprègne des théories de Mallet-Stevens, selon lesquelles dans un décor de film, il faut donner la primauté à l’architecture sur les autres composantes du décor. Le travail d’Aguettand pour <hi rend="i">Le Vertige</hi> permet de souligner que le décor de cinéma joue un rôle crucial, qui fut longtemps sous-estimé, dans les recherches artistiques des années 1920. Il offre à l’art moderne un terrain d’expression et une tribune.</p>
+          <p>Durant cette période, des questionnements émergent sur la fonction de décorateur de cinéma. On reconnaît peu à peu la spécificité du décor cinématographique, phénomène qu’accentue le développement des trucages. Les hommes formés dans les ateliers de décoration théâtrale sont progressivement écartés des studios. La génération d’Aguettand incarne une nouvelle définition, multiple, du décorateur : celui-ci ne peut plus se contenter d’une formation de peintre, il doit avoir des connaissances diverses, dans les arts plastiques, les arts décoratifs et l’architecture. Intervenant moins directement dans la construction effective du décor, il le crée et en supervise la mise en place. La fonction de décorateur devient un métier.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Un architecte-décorateur au temps des studios</head>
+        <p>Dès les lendemains de la première guerre mondiale, l’Allemagne se dote dans les environs de Berlin, à Tempelhof, Johannistahl, Staaken ou Potsdam, de studios d’une ampleur colossale. Un peu plus tôt, dans les années 1910, un groupe de cinq compagnies américaines acquiert d’énormes surfaces dans une région peu développée de la côte Ouest et y fait construire de gigantesques bâtiments, pourvus de terrains extérieurs spécialement destinés à la construction de décors. L’industrie française, si elle tarde à moderniser ses studios, connaît une évolution similaire à celle des industries allemande et américaine. Se met en place autour du lieu spécifique qu’est le studio une organisation rationalisée, qui ne connaîtra pas de bouleversement majeur jusque dans les années 1950. La génération d’« architectes-décorateurs » dont fait partie Aguettand est intimement liée à l’essor du studio. Tout au long de sa carrière, il se fait le défenseur de ce système, au point d’en faire l’une des principales causes de son engagement.</p>
+        <div>
+          <head>Chapitre premier
+            <lb/>L’expérience de la modernité : les voyages à Berlin</head>
+          <p>Depuis le début de la guerre, la France n’est plus la première industrie cinématographique mondiale. Embourbée dans le marasme financier, elle a laissé la place au puissant réseau de production américain et, surtout, à l’industrie allemande, la première au vu de la quantité de films produits et exportés en Europe. En novembre 1928, Aguettand est envoyé par la société de production Sofar superviser les décors de <hi rend="i">Quartier latin</hi>, production française, mais dont une partie des décors ont été construits en Allemagne. De telles coopérations sont courantes à une époque où les entreprises cinématographiques allemandes cherchent à s’implanter en France et où la production de films à versions multiples favorise la circulation des professionnels entre les deux pays. Berlin devient un lieu d’échanges féconds entre cinéma français et allemand.</p>
+          <p>Ce voyage est pour Aguettand une véritable révélation. La qualité technique du matériel dépasse de loin celle des studios français les plus modernes. La majorité des studios allemands est localisée aux alentours de Berlin et est aux mains de la UFA (Universum Film AG), principale société de production du pays. Le plus grand par sa superficie et le plus emblématique prend la forme d’un gigantesque complexe basé à Neubabelsberg, au sud-ouest de la capitale. Aguettand n’est pas seulement marqué par l’ampleur et la qualité technique du matériel, mais aussi par le professionnalisme et la technique des décorateurs allemands. Les films expressionnistes ont amené sur le devant de la scène des décorateurs de talent, capables de peser dans les décisions.</p>
+          <p>D’emblée il est décidé qu’un soin particulier serait accordé aux décors de <hi rend="i">Quartier latin</hi>. Lors de sa projection en France, le film est admiré pour sa qualité technique et la critique place alors Aguettand parmi les meilleurs décorateurs de l’époque. Il intègre à ses compétences les nouveautés techniques mises au point en Allemagne, ce qui lui permet de s’affirmer, non comme un ancien décorateur de théâtre fâcheusement reconverti, mais comme l’un des principaux représentants de la nouvelle génération de jeunes décorateurs de cinéma.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Aguettand, décorateur chez Pathé</head>
+          <p>À l’automne 1930, Aguettand obtient une place de décorateur chez Pathé-Natan, mettant ainsi fin à plusieurs années de précarité. Il intègre une petite équipe de décorateurs engagés à l’année et se met à former des assistants. En 1936, après la faillite de la société et l’élimination de son propriétaire, Bernard Natan, Aguettand devient décorateur indépendant et se lance un temps dans des productions sans grande ambition. La période 1931-1939 est celle où l’activité d’Aguettand comme décorateur atteint sa plus haute intensité.</p>
+          <p>Le premier film parlant décoré par Aguettand est produit par Pathé-Natan. Il s’agit de <hi rend="i">L’Enfant de l’amour</hi> de Marcel L’Herbier. L’introduction du parlant bouleverse en profondeur la technique du décor car elle oblige à reconfigurer les studios pour les adapter à la réception du son et alourdit considérablement l’appareillage. Les contraintes diverses liées à la captation du son font qu’un lien a été établi par l’historiographie entre usage du studio et arrivée du parlant. Pourtant, la prédominance des scènes en studio dans les films des années 1930 et 1940 est autant une nécessité qu’un choix esthétique, dans la mesure où le tournage en intérieur permet de contrôler chaque détail de l’aspect futur du film.</p>
+          <p>L’introduction de nouveaux matériaux dans le décor et l’augmentation des budgets généraux alloués aux films entraînent une progressive complexification de la pratique du métier de décorateur. Le besoin d’un terme nouveau se fait jour pour prendre acte de cette évolution. Le mot d’« architecte-décorateur » est créé pour la personne de Mallet-Stevens, qui est effectivement diplômé d’architecture et décorateur de films. Il semble que la diffusion de la dénomination soit intimement liée à la naissance d’une identité professionnelle et à la création des premiers groupements professionnels du cinéma. En 1933, est créé le Syndicat des décorateurs-architectes français de films. Aguettand et son ami et confrère Hugues Laurent tiennent à voir employer le terme d’architecte-décorateur et contribuent à en propager l’usage.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Aguettand, décorateur caméléon</head>
+          <p>Durant les années 1930, Lucien Aguettand-Blanc, demeure à l’écart des grands tandems qui se forment entre réalisateur et décorateur. Préférant varier les collaborations, il crée les décors de films extrêmement divers, allant du mélodrame à costumes à la comédie de mœurs, en passant par les films dits « exotiques ». Il pousse très loin le rôle de caméléon que doit endosser tout décorateur et fait preuve d’un réel talent dans l’art de s’adapter au contexte et à l’ambiance de chaque film. C’est pourquoi il est difficile de dégager du travail d’Aguettand un style qui lui est propre. Aguettand lui-même ne semble pas se considérer comme un artiste. Il paraît plus juste de le définir comme un habile technicien, proche de l’artisan, doué d’un penchant pour la rêverie.</p>
+          <p>Aguettand laisse derrière lui de nombreux cours et articles publiés dans la presse, témoignages d’une riche activité de théoricien. Il enseigne l’histoire du décor et de la scénographie à l’IDHEC à partir de 1944. Dans ses écrits, il met en valeur l’ambivalence entre l’intervention du décor dans l’atmosphère du film et la nécessaire discrétion de celui-ci. Reniant les décors d’avant-garde de ses débuts, il prône un réalisme s’appuyant sur une documentation approfondie.</p>
+          <p>En 1933, Aguettand réalise les décors du film <hi rend="i">Knock ou le Triomphe de la médecine</hi>, réalisé par Louis Jouvet et Roger Goupillières d’après la pièce du même nom. La comparaison entre les décors du film et ceux de la pièce, créés par Jouvet avec l’aide d’Aguettand, permet de mesurer les différences structurelles qui opposent décor de théâtre et décor de cinéma. Pourtant, ces derniers se rejoignent dans la recherche du détail vrai, permettant d’évoquer avec peu de moyens le cadre et l’ambiance de la narration.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Aguettand et sa profession au rythme de la guerre</head>
+          <p>En septembre 1939, Aguettand est mobilisé pour faire partie du génie. Il est fait prisonnier sur les bords de la Loire et intègre le camp de Fourchambault, près de Nevers. Il parvient à rejoindre Paris en août 1940 et joue alors un rôle important dans la reprise de la production cinématographique, en devenant chef du nouveau service décoration à la Société d’exploitation des établissements Pathé Cinéma, qui avait repris les actifs de la Société Pathé Cinéma. Il travaille à la reconstruction des studios de Joinville, fleuron de la production française, après leur incendie en 1940. Il crée les décors de <hi rend="i">Nous les gosses</hi> de Louis Daquin, premier film tourné dans ces studios depuis le début de la guerre.</p>
+          <p>À partir d’août 1944, Aguettand est soupçonné de sympathies pro-allemandes. Ces accusations donnent lieu à une affaire judiciaire qui va durer près de quatre ans et qui sera amenée jusqu’au Conseil d’État. Il est suspendu de ses fonctions par le Comité de libération du cinéma français pour opinion collaborationniste et attitude anti-sociale. Ce n’est qu’en 1948 qu’Aguettand retrouve le droit d’exercer sa profession. En réalité, l’affaire se révèle un complexe entremêlement de rivalités professionnelles et politiques, avivées par le contexte de la libération de Paris.</p>
+          <p>Durant l’Occupation, la mise en place d’un contrôle de l’État sur l’industrie cinématographique semble propice à la réforme du métier de décorateur, qui ne dispose d’aucune école pour former ses nouveaux éléments ni d’aucun moyen officiel pour contrôler la compétence de ses membres. Aguettand et Hugues Laurent s’attachent à alerter les représentants du Comité d’organisation de l’industrie cinématographique, les prévenant contre l’amateurisme qui gagne progressivement les métiers du cinéma. Le 4 septembre 1944 est fondé l’Institut des hautes études cinématographiques qui dispose d’une section de décoration, créant ainsi un cursus professionnel pour les jeunes se destinant au métier de décorateur.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Aguettand militant : la voix des techniciens face aux mutations du cinéma</head>
+        <p>Après la période faste des studios, une nouvelle conjoncture se met en place au cours des années 1950. Progressivement, les studios français perdent leur prestige aux yeux de nombreux cinéastes et producteurs. Durant cette décennie et la suivante, tout en continuant à créer des décors de cinéma, Aguettand réserve plus de temps à son activité au sein des organisations professionnelles et syndicales.</p>
+        <div>
+          <head>Chapitre premier
+            <lb/>La création de la Commission supérieure technique ou la naissance d’un lieu d’échanges entre techniciens</head>
+          <p>Après la libération de Paris, Jean Painlevé est nommé à la direction générale du Cinéma. Sa première action officielle est de créer une « commission technique » pour améliorer la qualité de la production cinématographique française. La Commission supérieure technique, ou CST, est créée le 4 septembre 1944, alors qu’Aguettand est encore sous le coup de l’interdiction d’exercer prononcée par le Comité de libération du cinéma français. Il n’intègre la commission qu’en 1952. Si la CST naît d’une décision de l’État, elle est une initiative des professionnels du cinéma qui appellent de leurs vœux l’institution d’un lieu d’échanges entre techniciens. Aguettand et Hugues Laurent jouent un grand rôle dans cette prise de conscience, notamment en représentant les décorateurs dans le cadre du Cercle technique du cinéma, association de techniciens qui préfigure par bien des aspects le fonctionnement et les missions de la CST.</p>
+          <p>Au sein de la CST, les architectes-décorateurs sont rassemblés dans la sous-commission Studio-Décors. Ils occupent d’emblée un poids important dans l’organisation de la commission. Aguettand devient président de celle-ci en 1965. La CST permet aux décorateurs de tous les studios français de se réunir, ce qui fait d’elle l’un des moteurs de la constitution d’une identité professionnelle.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La CST, les décorateurs et le nouveau cinéma français</head>
+          <p>Les années 1950 et 1960 sont le cadre d’un renouvellement du spectacle cinématographique, lié à l’arrivée en France de techniques nouvelles héritées des innovations américaines. Les premiers films hollywoodiens en relief sont projetés en France à partir d’avril 1953. Viennent ensuite les premiers longs métrages distribués pour être projetés sur des écrans larges. Les films en couleur, majoritairement américains, le cinémascope et d’autres systèmes permettant l’élargissement de l’image font leur apparition sur le marché français. La CST s’attache à mettre au point des procédés français, mais échoue face à l’insuffisance des moyens accordés par les pouvoirs publics.</p>
+          <p>À la fin des années 1950, le modèle du studio est remis en question. Cette opposition, contrairement à une opinion répandue, n’est pas déclenchée par les réalisateurs de la Nouvelle Vague, mais est le fruit d’une évolution de longue durée, qui tire son origine de phénomènes esthétiques et économiques plus anciens. Aguettand se positionne alors comme un fervent défenseur du décor en studio contre les seuls extérieurs réels et travaille au sein de la CST pour mettre au point des projets de studios modernes. Devant l’échec des tentatives de la commission pour démontrer que le studio est plus avantageux financièrement que les extérieurs réels, le studio doit désormais partager son règne. Dans un dernier effort pour sauver les studios, Aguettand travaille à un projet de Centre international audiovisuel, qui réunirait en un même lieu tournages pour le cinéma et pour la télévision.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Contrairement à ce que laisse penser le silence de l’historiographie à son sujet, Lucien Aguettand-Blanc joue un grand rôle dans plusieurs évolutions cruciales du décor de cinéma. Durant sa jeunesse, il contribue, aux côtés de Francis Jourdain, Robert Mallet-Stevens et Marcel L’Herbier, à susciter chez les cinéastes et le public une prise de conscience des potentialités artistiques du décor. En tant que décorateur chez Pathé, il est amené à travailler pendant de nombreuses années dans les studios français et acquiert une connaissance fine de leurs aménagements et de leurs atouts. Aguettand n’est peut-être pas un artiste, mais il est sans conteste un travailleur acharné. Ses décors, difficiles à qualifier, paraissent sans personnalité propre. Cependant, sa capacité à respecter l’atmosphère de chaque film lui vaut l’admiration de ses pairs, ainsi que des réalisateurs et des chefs-opérateurs avec lesquels il collabore. Quoi qu’il en soit, son ambition ne réside pas dans une révolution esthétique, mais dans une volonté d’améliorer la qualité technique des films français. Dans ce domaine, son apport est considérable.</p>
+        <p>La longue durée du parcours d’Aguettand et la diversité des personnalités avec lesquelles il collabore font de lui un témoin idéal pour appréhender la réalité du métier d’architecte-décorateur dans sa quotidienneté. Au fil des rencontres, s’esquisse une histoire du décor de cinéma racontée par ses acteurs. Les réalisations d’Aguettand démontrent comment celui-ci s’enrichit des principes façonnés par le théâtre. L’épanouissement du cinéma en tant qu’art spécifique rend nécessaire le rejet parfois violent des pratiques théâtrales. Pourtant, passées les premières années du parlant, les relations s’apaisent et un nouveau dialogue s’instaure entre théâtre et cinéma, dont le décor est le cadre. Ainsi, l’histoire du décor permet de repenser la catégorie apparemment figée du théâtre filmé. La carrière d’Aguettand embrasse les évolutions qui président à la naissance du métier de décorateur. Outre l’affirmation du cinéma comme un art spécifique, la deuxième évolution à l’origine de la création d’un métier nouveau est le mouvement vers le décor construit, d’où l’expression « architecte-décorateur » tire son origine. Le métier de décorateur, à l’aube des années 1960, est confronté à de nouveaux défis. Du fait de la remise en question du modèle du studio, la dénomination « architecte-décorateur » demeure définitivement associée aux décennies 1930 et 1940. Dans le discours des professionnels du cinéma et d’un public averti, demeure une certaine nostalgie pour cette période. Les années 1930 et 1940 apparaissent comme un âge d’or des studios, temples de la création dans lesquels le décorateur est maître.</p>
+        <div>
+          <head>Annexes</head>
+          <p>Filmographie complète de Lucien Aguettand-Blanc. – Filmographie jalonnant le parcours d’Aguettand.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_05" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’administration des biens chez les frères mineurs des origines au milieu du <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle</title>
+        <author>Marguerite-Marie Clément</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_05.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 41-47</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="41" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’administration des biens
+       <lb/>chez les frères mineurs
+       <lb/>des origines au milieu du <num>xvi<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Marguerite-Marie</forename>
+        <surname>Clément</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Il ne s’agit pas ici d’étudier du point de vue théorique l’idéal de pauvreté évangélique professé par saint François et ses disciples, niais de montrer comment ceux-ci le firent passer dans la pratique, d’examiner le statut des biens qu’ils furent obligés de recevoir et l’administration de ceux-ci.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Rappel de la vie de saint François d’Assise.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>des origines à la bulle « Exultantes »
+         <lb/>(1223 a 1238).</head>
+        <div>
+          <head rend="uc">
+            <hi rend="i">A</hi>) la règle et les déclarations de la règle.</head>
+          <p>I. <hi rend="i">La Règle de 1223.</hi> – La Règle de 1223 est la première <pb n="42" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_02.TIF/full/full/0/default.jpg"/>Règle approuvée solennellement par le Pape. Saint François y réclame l’expropriation complète de ses Frères, individuellement et collectivement, et interdit l’usage de l’argent, prévoyant cependant un recours aux « amis spirituels » dans deux Cas : pour le soin des malades et pour l’habillement des Frères.</p>
+          <p>2. <hi rend="i">La bulle « Quo elongati » et ses conséquences.</hi> – Publiée par Grégoire IX, le 18 septembre 1230, la bulle <hi rend="i">Quo elongati </hi>prescrit le recours à un « ami spirituel », dépositaire des aumônes pécuniaires, interdites aux Frères, ou à un <hi rend="i">nuntius, </hi>représentant du vendeur ou du donateur, pour toutes les opérations de vente et d’achat. En outre, l’autorisation du Cardinal protecteur est obligatoire pour ces dernières.</p>
+          <p>3. <hi rend="i">Apparition du procureur chez les Frères Mineurs : la bulle « Ordinem vestrum » et le bref « Quanto studiosius ».</hi> – Innocent IV, dans la bulle <hi rend="i">Ordinem vestrum,</hi> apporte d’importantes modifications à <hi rend="i">Quo elongati : a</hi>) les notions de <hi rend="i">nuntius</hi> et d’« ami spirituel » tendent à se confondre ; – <hi rend="i">b</hi>) le recours à cet ami est permis aux Frères pour leurs simples commodités ; <hi rend="i">c</hi>) surtout il fait entrer les biens donnés aux Frères dans le domaine de Saint-Pierre, fiction juridique sauvegardant la pauvreté franciscaine. De là sortira l’institution du procureur-syndic de l’Église romaine, administrateur au nom du Saint-Siège des biens donnés aux Frères. Le bref <hi rend="i">Quanto studiosius</hi> (19 août 1247) accorde au ministre général et aux provinciaux le droit de nommer eux-mêmes des procureurs, privilège auquel renonce le chapitre général de Metz (1254). Le procureur est donc nommé en réalité par le Cardinal protecteur ou par le Pape.</p>
+          <p>4. « <hi rend="i">Exiit qui seminat » (1279) et le Syndic jusqu’en 1283.</hi> – Pour les biens meubles, l’échange seul est autorisé. Pour la vente, les Frères doivent recourir au procureur nommé par le Saint-Siège ou par le Cardinal protecteur. En général, celui-ci délègue son pouvoir à l’évêque qui nomme les laïcs présentés par les ministres.</p>
+        </div>
+        <div>
+          <pb n="43" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">
+            <hi rend="i">B</hi>) l’activité du syndic.</head>
+          <p>1. <hi rend="i">Personnalité.</hi> – Très souvent, les syndics sont des bourgeois, parfois des prêtres. On peut penser qu’ils se recrutaient souvent chez les tertiaires.</p>
+          <p>2. <hi rend="i">Pouvoirs.</hi> – D’après <hi rend="i">Quanto studiosius</hi> et les actes de nomination, les syndics peuvent vendre, échanger, aliéner les dons faits aux Frères et, avec l’argent produit par ces opérations, procurer aux Frères le nécessaire ou même le « commode ». En outre, ils ont droit de poursuites judiciaires sur les détenteurs récalcitrants de legs ou de dons.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>De la bulle « Exultantes »
+         <lb/>à la bulle « Ad conditorem »
+         <lb/>(1223 a 1238).</head>
+        <div>
+          <head rend="uc">
+            <hi rend="i">A</hi>) règles de l’administration des biens<lb/>d’après les déclarations pontificales.</head>
+          <p>1. <hi rend="i">Faits nouveaux dans la nomination du procureur-syndic. </hi>– Les Frères procèdent eux-mêmes à la nomination du procureur.</p>
+          <p>2. <hi rend="i">La bulle « Exultantes in Domino » (17 janvier 1283</hi>). – La bulle <hi rend="i">Exultantes in Domino</hi> accorde au ministre général et aux provinciaux le droit de nommer eux-mêmes les syndics du Saint-Siège. Ces procureurs sont sous l’entière dépendance des ministres et des Frères.</p>
+          <p>3. <hi rend="i">Polémique entre la « communauté » et les « spirituels » avant le concile de Vienne.</hi> – Lutte entre les « spirituels », tenants de la pauvreté primitive non mitigée par les déclarations pontificales, et la « communauté » qui accepte ces déclarations. Clément V règle ces discussions au concile de Vienne par la bulle <hi rend="i">Exivi de Paradiso</hi> (6 mai 1312).</p>
+          <p>4, <hi rend="i">La bulle « Exivi de Paradiso</hi> ». – La bulle <hi rend="i">Exivi de Para<pb n="44" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_04.TIF/full/full/0/default.jpg"/>diso</hi> déclare les Frères incapables de succéder et interdit les rentes annuelles considérées comme des biens immeubles. Elle ne change rien à l’usage du syndic tel qu’il avait été établi par Martin IV.</p>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">B</hi>) l’activité du procureur.</head>
+          <p>1. <hi rend="i">Personnalité.</hi> – Les procureurs sont des bourgeois, des clercs, plus rarement des nobles. La pratique courante est maintenant que chaque couvent ait plusieurs procureurs.</p>
+          <p>2. <hi rend="i">Pouvoirs.</hi> – Mêmes pouvoirs qu’à l’époque précédente, mais le procureur est devenu un véritable intendant des Frères, entièrement à leur disposition et dont parfois même ils semblent s’être passés.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>De la bulle « Ad conditorem » a sa révocation
+         <lb/>(1322-1428).</head>
+        <div>
+          <head rend="uc">
+            <hi rend="i">A</hi>) nouveau statut des biens<lb/>des frères mineurs avec « Ad conditorem ».</head>
+          <p>1. <hi rend="i">La bulle « Ad conditorem ».</hi> – Jean XXII récuse pour l’avenir tout domaine de l’Église sur les biens des Frères et interdit de nommer de nouveaux procureurs.</p>
+          <p>2. <hi rend="i">Réaction de l’ordre et protestation de Bonagrazia de Bergame.</hi> – Le procureur de l’ordre en cour de Rome, Bonagrazia de Bergame, proteste et s’efforce de démontrer le droit pour l’ordre des Frères Mineurs de renoncer à toute propriété et l’excellence de cette renonciation. Cette protestation eut deux conséquences : 1° l’emprisonnement de Bonagrazia ; 2° un remaniement d’<hi rend="i">Ad conditorem</hi> : les églises et les objets du culte resteront dans le domaine de l’Église. Révolte du ministre général Michel de Césène.</p>
+          <p>3. <hi rend="i">Administration autonome des biens de l’ordre après « Ad conditorem</hi> ». – On en revient dans quelques cas à l’antique conception <pb n="45" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_05.TIF/full/full/0/default.jpg"/> du <hi rend="i">nuntius.</hi> En général, on nomme des <hi rend="i">Frères procureurs</hi> chargés d’administrer les biens du couvent.</p>
+          <p>4. <hi rend="i">Survivance du syndic.</hi> – Beaucoup de couvents, surtout ceux qui adoptent la réforme de l’observance, conservent l’usage du syndic, soit suivant la formule de Martin IV, soit selon celle plus stricte de Nicolas III : <hi rend="i">nuntius</hi> nommé par les donateurs ou le pouvoir séculier.</p>
+          <p>5. <hi rend="i">Révocation de la bulle « Ad conditorem ».</hi> – Révocation partielle en 1395 par Boniface IX pour la province d’Allemagne supérieure, définitive et générale, par Martin V en 1428.</p>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">B</hi>) le procureur et son activité.</head>
+          <p>1. <hi rend="i">Personnalité.</hi> – Les procureurs sont tantôt des Frères, tantôt des laïcs et parmi eux certains sont de grands personnages de la cité : bourgmestres en Allemagne.</p>
+          <p>2. <hi rend="i">Activité.</hi> – L’activité du procureur diffère essentiellement de celle du syndic précédent par le fait que nous nous trouvons ici en présence d’un représentant non plus du Saint-Siège, mais des Frères. Ses fonctions sont cependant, identiques.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>L’administration des biens,
+         <lb/>des constitutions martiniennes à la bulle « Ite et vos »
+         <lb/>(1430-1517).</head>
+        <p>1. <hi rend="i">Les constitutions martiniennes et leur échec.</hi> – <hi rend="i">a</hi>) Les constitutions martiniennes prescrivent que chaque couvent ait son procureur selon les déclarations et privilèges de Nicolas III, Clément V et Martin V ; – <hi rend="i">b</hi>) Les constitutions échouent : échec dû à l’opposition des conventuels (non réformés). Le ministre général Guillaume de Casale obtint du Pape le bref <hi rend="i">Ad statum</hi> qui anéantissait les réformes décidées concernant la pauvreté ; – <hi rend="i">c</hi>) En conséquence de cet échec, <pb n="46" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_06.TIF/full/full/0/default.jpg"/>les divisions entre les observants (réformés) et les conventuels s’accentuent ; – <hi rend="i">d</hi>) Les rivalités entre observants et conventuels se poursuivent durant tout le <num>xv<hi rend="sup">e</hi></num> siècle et la première moitié du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        <p>2. <hi rend="i">L’administration des biens chez les conventuels.</hi> – Le procureur laïc, élu par la communauté, est conservé, mais, en règle générale, on rencontre auprès de lui un Frère procureur. Laïcs ou séculiers, ces procureurs rendent des comptes aux gardiens qui les nomment et les révoquent. Parfois même on a l’impression que le gardien et les Frères agissent seuls. L’esprit de pauvreté est en dégénérescence.</p>
+        <p>3. <hi rend="i">L’observance et l’administration des biens temporels.</hi> – Pour connaître l’opinion des observants à ce sujet, nous pouvons recourir à deux sources : les écrits dogmatiques et les décisions des chapitres provinciaux ou généraux : <hi rend="i">a</hi>) Les écrits dogmatiques préconisent le recours aux amis spirituels et, quand il y a un procureur, au procureur nommé d’après les règles établies par la décrétale <hi rend="i">Exiit</hi> ; – <hi rend="i">b</hi>) Les décisions des chapitres généraux et provinciaux nous révèlent une façon différente d’user du procureur, suivant les provinces : syndic martinien pour les provinces cismontaines, <hi rend="i">nuntius</hi> pour les provinces ultramontaines ; – <hi rend="i">c</hi>) Chez les observants, les syndics sont soit des prêtres ou des clercs, soit des bourgeois. Dans les provinces cisalpines, on ne permet qu’un procureur par couvent, mais celui-ci peut nommer des substituts. Le syndic vend ou échange les biens-fonds des couvents des conventuels passés à l’observance ; si la nécessité obligeait un couvent à avoir quelques biens-fonds, il en assure également l’administration, celle-ci devant rester aussi étrangère que possible aux Frères.</p>
+        <p>4. <hi rend="i">Dernières tentatives d’union et leur échec.</hi> – <hi rend="i">a</hi>) Les constitutions « alexandrines » ont été rédigées au chapitre de Terni en septembre 1500 et approuvées en 1501 par Alexandre VI, qui prescrit l’usage du procureur, mais permet qu’on lui adjoigne un Frère procureur ; – <hi rend="i">b</hi>) Les statuts do <pb n="47" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_07.TIF/full/full/0/default.jpg"/>Jules II suppriment les biens-fonds, les revenus annuels et le droit d’héritage, ne permettent que les procureurs laïcs et apportent des restrictions sévères au droit de recours à ceux-ci ; – <hi rend="i">c</hi>) Le chapitre de Rome en 1517 et la bulle <hi rend="i">Ite et. vos</hi> séparent définitivement les conventuels et les observants en donnant à ces derniers le premier rang et le titre d’« ordre des Frères Mineurs ».</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>L’administration des biens et le syndic après 1517
+         <lb/>dans la première moitié du <num>xvi<hi rend="sup">e</hi></num> siècle.</head>
+        <p>Les observants d’Italie acceptent les constitutions martiniennes, les ultramontains préfèrent le <hi rend="i">nuntius</hi> de Nicolas III.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>La pauvreté tient dans l’Ordre franciscain une place prédominante et la question pratique de l’administration des biens et du syndic est un point crucial de l’histoire franciscaine.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Tables</head>
+        <pb n="48" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_05/ENCPOS_1943_05_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

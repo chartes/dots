@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_18" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les yeux qui fascinent. Georges Franju, un cinéaste dans l’histoire. Poétique du documentaire et mémoire du cinéma</title>
+        <author>Simon Rozel</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 207-216</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Les yeux qui fascinent
+        <lb/>Georges Franju, un cinéaste dans l’histoire
+        <lb/>Poétique du documentaire et mémoire du cinéma</head>
+      <byline>
+        par
+        <forename>Simon</forename>
+        <surname>Rozel</surname>
+        <roleName>diplômé de master</roleName> 
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Né en Bretagne en 1912, Georges Franju exerce à Paris divers métiers, comme affichiste ou décorateur de théâtre, avant de se lier en 1934 à Henri Langlois. Ensemble, ils réalisent un court métrage d’avant-garde, <hi rend="i">Le Métro</hi>, avant d’animer en 1935 un ciné-club, le Cercle du cinéma, dédié au cinéma muet. En 1936, leurs activités les conduisent à fonder, en compagnie de Jean Mitry et Paul-Auguste Harlé, la Cinémathèque française, institution destinée à conserver et diffuser les œuvres du cinéma muet considérées comme classiques. En 1938, Franju devient le secrétaire exécutif de la Fédération internationale des archives du film (FIAF), à laquelle la Cinémathèque, dirigée par Langlois, est affiliée.</p>
+        <p>Après s’être employé à protéger les collections de l’institution sous l’Occupation, il rejoint l’Institut de cinématographie scientifique de Jean Painlevé et, en parallèle, réalise en 1949 <hi rend="i">Le Sang des bêtes</hi>, un court métrage sur les abattoirs de Paris. Il signe ensuite une dizaine de courts métrages, documentaires pour la plupart : <hi rend="i">Hôtel des Invalides</hi>, <hi rend="i">Le Grand Méliès</hi>, <hi rend="i">Les Poussières</hi>. Il s’illustre là comme un des plus éminents représentants de l’école française du court métrage et en tant que membre du groupe des Trente. En 1959, au moment de l’éclosion de la Nouvelle Vague, il devient un cinéaste de longs métrages avec <hi rend="i">La Tête contre les murs</hi>. Son film suivant, en 1960, <hi rend="i">Les Yeux sans visage</hi>, devient progressivement un classique du cinéma d’épouvante et consacre son auteur comme représentant malgré lui du « cinéma fantastique à la française ». Sa carrière se concentre ensuite sur l’adaptation de romans, avec <hi rend="i">Thérèse Desqueyroux</hi> et <hi rend="i">La Faute de l’abbé Mouret</hi> ; elle trouve même un second souffle dans un hommage au maître du sérial Louis Feuillade : <hi rend="i">Judex</hi>, réalisé en 1963. Mais, ses projets ayant de plus en plus de mal à aboutir, Franju se voit cantonné durant les années 1970 à réaliser des films pour la télévision française, dont le feuilleton <hi rend="i">L’Homme sans visage</hi>en 1975. Il décède en 1987.</p>
+        <p>Georges Franju peut faire figure de parent pauvre des études sur les grands réalisateurs de l’histoire du cinéma français. Malgré quelques monographies, les travaux à son sujet se concentrent principalement sur <hi rend="i">Les Yeux sans visage</hi> et ses rapports – contrariés – à l’histoire du cinéma fantastique. Or son œuvre doit être examinée selon d’autres perspectives. D’une part, la première période de la carrière cinématographique de Franju, consacrée au court métrage, mérite de retenir l’attention : les années 1950, longtemps considérées comme une période d’académisme fade, constituent pour le réalisateur un moment d’inventivité formelle et stylistique. D’autre part, le rapport de Franju à l’histoire et au patrimoine cinématographique constitue un véritable fil conducteur de son œuvre, ce qui implique de ne pas disjoindre sa carrière de réalisateur de ses activités en tant qu’administrateur – entre autres – de la Cinémathèque française. Il s’agit donc de contribuer à une relecture constructiviste de l’histoire du cinéma, qui ne serait plus considérée comme un récit intangible, mais comme une construction née des interactions sociales et culturelles des acteurs produisant un discours sur le cinéma, au sein d’un champ social dont Franju fait partie.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les films de Georges Franju constituent un matériau documentaire indispensable, tout comme les archives personnelles du réalisateur, conservées au sein du fonds Franju à la Bibliothèque du film au sein de la Cinémathèque française. Outre des scénarios de travail, des coupures de presse et une partie de la correspondance personnelle du cinéaste, le fonds est principalement composé des archives de l’Académie du cinéma, institution dirigée par Franju et sa compagne, Dominique Johanssen, de 1946 au milieu des années 1970.</p>
+          <p>D’autres fonds de la Bibliothèque du film, comme les archives du Cercle du cinéma, les dossiers de censure des courts métrages de Franju, conservés dans les archives du Centre national de la cinématographie, et les archives des Documents cinématographiques, la société de production de Jean Painlevé, pour lequel Franju a travaillé, permettent de compléter le point de vue offert par les archives du réalisateur et d’envisager les réseaux de sociabilité au sein desquels s’inscrit le travail de ce dernier.</p>
+          <p>S’y ajoutent enfin des entretiens : d’une part, les interviews radiophoniques de Franju conservées dans les archives de l’Institut national de l’audiovisuel, en particulier l’entretien-fleuve accordé à Serge Daney pour France Culture en 1986 ; d’autre part des entretiens réalisés à l’occasion de ce travail avec des personnalités ayant personnellement connu Georges Franju, comme le scénariste et acteur Jacques Champreux, petit-fils de Louis Feuillade.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Un pionnier du court métrage documentaire</head>
+        <div>
+          <head>Chapitre premier
+            <lb/><hi rend="i">Le Sang des bêtes</hi> Anatomie d’une réception</head>
+          <p><hi rend="i">Le Sang des bêtes</hi>, premier film réalisé par Franju, fait l’objet d’une réception complexe qui aura une influence durable sur la carrière du cinéaste. Placé d’emblée sous le signe d’une réputation sulfureuse, le court métrage est interprété de différentes manières au fil des années. À sa première projection publique à Venise en août 1949, il fait polémique en raison de la violence de ses images, ce qui ne l’empêche pas d’être diffusé par la suite dans le monde entier. Dès sa première représentation à Paris, le film devient pour certains militants de la cause animale un instrument dans leur lutte pour les droits des animaux.</p>
+          <p>Dans le même temps, <hi rend="i">Le Sang des bêtes</hi> est peu à peu intégré au répertoire des films d’avant-garde, à travers une lecture exclusivement esthétique du film. Cette interprétation se trouve déjà en germe dans la réception du court métrage par le milieu germanopratin, en particulier par Jean Cocteau ou encore Jean Boullet, qui le soutient dans la revue <hi rend="i">Saint-Cinéma-des-Prés</hi>. Mais c’est à New York que le film est explicitement présenté comme une œuvre d’avant-garde. Le ciné-club Cinema 16 d’Amos Vogel le programme à plusieurs reprises, en le comparant notamment à <hi rend="i">Fireworks</hi>, œuvre classique de l’<hi rend="i">underground</hi> américain réalisée en 1947 par Kenneth Anger.</p>
+          <p>Enfin, la violence des images du <hi rend="i">Sang des bêtes</hi> est progressivement reconsidérée à l’aune du traumatisme de la seconde guerre mondiale. Dans les années d’immédiat après-guerre, le film est vu par certains comme une référence à l’horreur de la guerre des tranchées. Mais c’est après la sortie en 1955 de <hi rend="i">Nuit et Brouillard</hi> d’Alain Resnais que l’on compare le film de Franju aux images de la barbarie nazie. Cette comparaison est explicitement énoncée en 1960 par le philosophe allemand Siegfried Kracauer dans son livre <hi rend="i">Théorie du film</hi>.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Un cinéma de la révolte ?</head>
+          <p>Tout au long de sa carrière, Georges Franju jouit d’une image de marginal révolté. Cette réputation tient principalement à sa posture de victime de la censure et à ses prises de position anarchisantes. L’obsession de Franju pour la censure se met en place dès ses premiers courts métrages. Certes <hi rend="i">Le Sang des bêtes</hi> obtient un visa d’exploitation grâce au soutien du président de la commission de contrôle Georges Huisman, mais il ne sera jamais diffusé en salle, à cause des réticences des exploitants. Son troisième court métrage, <hi rend="i">Hôtel des Invalides</hi>, en 1952, fait l’objet d’un imbroglio entre le ministère de la Défense et le Quai d’Orsay. Néanmoins, il serait faux de présenter Franju comme une victime de la censure d’État, le cinéaste pointant plutôt du doigt le rôle de groupes de pression, notamment les catholiques.</p>
+          <p>C’est que ses courts métrages témoignent d’un regard critique sur la société, surtout contre les valeurs d’ordre et d’autorité portées par l’armée et par l’Église. En effet, Franju est régulièrement présenté dans la presse comme un anarchiste. <hi rend="i">Hôtel des Invalides</hi> apparaît comme un parangon d’ironie antimilitariste, tandis qu’en 1957 <hi rend="i">Notre-Dame, cathédrale de Paris</hi> manifeste l’anticléricalisme revendiqué de son auteur. <hi rend="i">En passant par la Lorraine</hi>, en 1950, et <hi rend="i">Les Poussières</hi>, en 1954, témoignent également d’une attention à la représentation des ouvriers. Cette sensibilité est probablement née au moment des mobilisations collectives du Front populaire. Toutefois, on aurait tort de vouloir trop politiser Franju, le cinéaste ayant toujours récusé toute appartenance à un quelconque courant politique.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Une vision esthétique du documentaire</head>
+          <p>Dans le paysage du cinéma français des années 1950, Georges Franju occupe une place à la fois marginale et originale, explorant, au sein du genre documentaire, une perspective esthétique et poétique. Son style cinématographique évolue en partie dans les marges du surréalisme, une filiation reconnue par le réalisateur lui-même, qui se nourrit des expérimentations visuelles de ses mentors Luis Buñuel, Jean Painlevé et Jean Cocteau. De plus, il fréquente certaines personnalités du mouvement surréaliste, comme le critique Ado Kyrou. Une lecture surréaliste des courts métrages de Franju est donc possible, autour de thèmes chers aux adeptes d’André Breton : la cruauté, la provocation, les associations visuelles déconcertantes, la recherche d’un langage poétique supérieur, que l’on retrouve chez Franju sous la notion d’« insolite ». Néanmoins, l’esthétique de ses films puise aussi dans de multiples courants de l’avant-garde de manière générale.</p>
+          <p>La vision du documentaire proposée par Franju repose également sur une maîtrise rigoureuse de l’art du court métrage. Ses films disposent de commentaires soigneusement écrits, où la tendresse le dispute à l’ironie. Le cinéaste sait s’entourer de talents, comme le poète Jacques Prévert, auteur du commentaire de <hi rend="i">Mon Chien</hi> en 1955. Cette faculté à faire appel à des collaborateurs qualifiés se retrouve dans les musiques : Franju travaille avec de grands compositeurs comme Joseph Kosma ou bien avec des débutants prometteurs, tels que Maurice Jarre, dont il contribue à lancer la carrière cinématographique.</p>
+          <p>Au sein de cette périphérie du cinéma français qu’est l’école du court métrage documentaire, Georges Franju devient une figure centrale. Il se distingue par la qualité de ses films de commande, détournant avec habileté les exigences de ses commanditaires. Il fait d’ailleurs partie du groupe des Trente, un groupe de pression pour la préservation d’un court métrage de qualité, composé de réalisateurs et de producteurs. C’est aussi un cinéaste en quête de reconnaissance critique, qui remporte un certain nombre de prix durant les années 1950, ses films jouissant d’une réception critique favorable, aussi bien de la part de <hi rend="i">Positif</hi> que des <hi rend="i">Cahiers du cinéma</hi>, deux revues pourtant rivales.</p>
+        </div>
+      </div>
+      <div>
+        <head>Seconde partie
+          <lb/>Georges Franju et la mémoire du cinéma</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Du Cercle à l’Académie du cinéma Une brève histoire des institutions cinématographiques</head>
+          <p>Tout au long de sa vie, Franju s’investit dans les institutions cinématographiques, en parallèle de sa carrière cinématographique. Dès 1935, il co-anime le Cercle du cinéma, dont la programmation reflète en partie ses goûts. Il convient aussi de réévaluer son rôle dans les premières années de la Cinémathèque française, avant qu’Henri Langlois n’y occupe une place hégémonique. Au moment de la seconde guerre mondiale, Franju se voit propulsé à la tête de l’administration de la Fédération internationale des archives du film. Entretenant des rapports étroits avec le directeur allemand de l’organisation, le major Hensel, il joue un rôle d’interface – parfois à la limite de la collaboration – entre la Cinémathèque et les autorités d’occupation, afin de protéger les collections patrimoniales coûte que coûte. Mais la guerre marque aussi la fin de son amitié avec Langlois. Après 1945, il s’éloigne définitivement des activités de la Cinémathèque, hormis une brève tentative de retour en tant que directeur artistique après la mort de Langlois en 1977.</p>
+          <p>Franju se montre tout aussi actif dans le champ institutionnel une fois quittée la Cinémathèque française et il y fait preuve d’efficacité. Dès 1945, il est engagé par Jean Painlevé pour administrer l’Institut de cinématographie scientifique (ICS), destiné notamment à organiser des projections publiques sur des thèmes scientifiques. Mais il se brouille avec son mentor, qui l’accuse de détournement de fonds. En effet, il est possible que Franju se soit servi de l’ICS comme tremplin pour le lancement de l’Académie du cinéma, une institution qu’il dirige avec sa compagne Dominique Johanssen. Cette académie, qui organise des projections cinématographiques d’œuvres patrimoniales dans le monde entier, permet entre autres à Franju de financer ses propres films. Enfin, l’Académie du cinéma distribue chaque année entre 1955 et 1975 les Étoiles de cristal, des récompenses cinématographiques sur le modèle des Oscars, qui sont supplantées par les César à partir de 1976.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Regards sur les premiers temps du cinéma</head>
+          <p>Dès les années 1930, Georges Franju contribue à l’écriture du récit des origines du cinéma. Deux figures de pionniers se trouvent au cœur de son œuvre. Tout d’abord, du temps de la Cinémathèque française, Franju participe à la reconnaissance publique de Georges Méliès dans les dernières années de sa vie. Cet intérêt pour l’auteur du <hi rend="i">Voyage dans la Lune</hi> se manifeste également en 1953 à travers son court métrage <hi rend="i">Le Grand Méliès</hi>, qui le présente comme le « créateur du spectacle cinématographique ». De plus, à travers l’Académie du cinéma, Franju offre aux descendants de Méliès la possibilité de présenter les films du pionnier dans le monde entier. Franju participe donc activement au vaste processus de reconnaissance de l’œuvre de Méliès, même s’il peut se sentir plus proches d’autres cinéastes des premiers temps.</p>
+          <p>De ce point de vue, celui dont Franju se sent le plus proche est assurément Louis Feuillade, le réalisateur de <hi rend="i">Fantômas</hi> et des<hi rend="i"> Vampires</hi>, le maître du sérial noir. Fasciné dès son enfance par les romans mettant en scène Fantômas, il découvre une partie de l’œuvre de Feuillade à la fin des années 1930, parmi les films collectés par la Cinémathèque française, avant de se lier, bien des années plus tard, à Jacques Champreux, petit-fils de Feuillade, qui œuvre pour la redécouverte des films de son aïeul. Les droits d’adaptation de Fantômas étant alors monopolisés par la saga de de Funès, il réalise <hi rend="i">Judex</hi> en 1963, un film d’aventures en hommage au pionnier du cinéma. Puis, en 1975, il s’approprie la forme feuilletonesque propre au sérial à travers <hi rend="i">L’Homme sans visage</hi>, une série télévisée écrite et interprétée par Jacques Champreux. Outre la parenté stylistique qui lie Franju à Feuillade en un mélange de réalisme et de fantastique, l’œuvre de Franju est hantée par la figure de Fantômas, qu’il a toujours souhaité adapter à l’écran.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Un voyage de Georges Franju à travers l’histoire du cinéma</head>
+          <p>En France, les cinéastes cinéphiles constituent une catégorie de réalisateurs spécifique née avec l’avant-garde des années 1920, à la suite notamment de Louis Delluc ou Jean Epstein. Franju devient cinéphile au début des années 1930, à un moment où la cinéphilie se structure autour de la redécouverte des œuvres du cinéma muet. Ce contexte marque durablement les goûts cinéma­tographiques de Franju. Au sujet du cinéma américain, véritable pierre angulaire de l’histoire de la cinéphilie française, il se montre assez ambivalent, admirant le pionnier D. W. Griffith, mais rejetant la modernité d’Orson Welles. C’est en fait le cinéma allemand qui le passionne, notamment le cinéma expressionniste et les grands réalisateurs comme Fritz Lang et F. W. Murnau. Son attrait pour les films ­fondateurs de l’épouvante, en particulier <hi rend="i">Nosferatu</hi> et <hi rend="i">Le Cabinet du docteur Caligari</hi>, explique la prédilection de Franju pour le fantastique. Son chef-d’œuvre, <hi rend="i">Les Yeux sans visage</hi>, peut être vu comme un hommage distancié à l’expressionnisme allemand, ce que manifeste le recours à l’éclairage du chef opérateur Eugen Schüfftan, déjà à l’œuvre dans <hi rend="i">Metropolis</hi> et <hi rend="i">Le Quai des Brumes</hi>.</p>
+          <p>Par ailleurs, en tant que cinéphile, Franju participe à la formation d’un panthéon de l’histoire du cinéma français, notamment en publiant en 1982 un catalogue intitulé <hi rend="i">De Marey à Renoir, trésors de la Cinémathèque française</hi>. À partir des collections patrimoniales de l’institution, Franju esquisse une synthèse de sa vision du cinéma français, commentant des photogrammes des films qui comptent pour lui. Son regard se montre assez classique, mettant l’accent sur des réalisateurs unanimement considérés comme emblématiques, tels Marcel Carné ou Jean Renoir. On trouve aussi bien des grands cinéastes un peu passés de mode au moment de la publication, comme René Clair ou Jacques Feyder, que des oubliés de l’histoire du cinéma : ainsi de Dimitri Kirsanoff ou d’André Antoine. Parmi les différents courants cinématographiques français, Franju accorde une large part à l’avant-garde des années 1920 et au réalisme poétique des années 1930, deux mouvements dont il est en quelque sorte l’héritier. Enfin, Franju entretient des rapports ambigus avec la Nouvelle Vague. D’un côté, il est considéré par les jeunes turcs des <hi rend="i">Cahiers du cinéma</hi> comme un des réalisateurs inventifs qui tranchent avec l’immobilisme du cinéma français des années 1950, et il passe au long métrage en même temps que tous les représentants de la nouvelle génération, de Truffaut à Godard. D’un autre côté, Franju rejette totalement la modernité affichée par la Nouvelle Vague et refuse d’y être associé comme le font certains critiques de cinéma.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>L’œuvre de Georges Franju paraît à la fois périphérique et centrale au sein de l’histoire du cinéma français. Il n’appartient à aucune des générations de réalisateurs du cinéma français – signant ses premiers courts métrages dans les années 1950, il est pourtant plus vieux que tous les réalisateurs du groupe des Trente –, à aucun mouvement – ni « qualité française », ni Nouvelle Vague –, mais il fait figure d’héritier de tous les courants qui l’ont précédé et inspiré : cinéma des premiers temps, avant-garde, surréalisme, expressionnisme, réalisme poétique. Il apparaît ainsi comme le cinéaste de la « continuité retrouvée », son œuvre proposant un fil conducteur pour relire l’histoire du cinéma français. Passé de la cinéphilie et du patrimoine cinématographique à la réalisation de courts, puis de longs métrages, son parcours ne trouve pas d’équivalent.</p>
+        <p>Deux lectures sont possibles si l’on souhaite juger en définitive la carrière cinématographique de Franju. D’un côté, il peut être vu comme un grand cinéaste au destin inabouti. Au faîte de sa carrière au début des années 1960, au point d’être considéré par certains comme l’égal d’Alain Resnais, Franju décline peu à peu, ayant de plus en plus de mal à trouver des producteurs susceptibles de financer ses projets. Il n’aura donc jamais l’occasion de réaliser son propre <hi rend="i">Fantômas</hi>. Mais on peut aussi voir dans l’œuvre de Franju la possibilité d’un cinéma singulier, fondée sur une vision poétique du réel. Il y a là une voie de compréhension secrète de l’histoire du cinéma français, qui va de Jean Vigo à Leos Carax.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Publications de Georges Franju relatives à sa cinéphilie. — Textes inédits de Georges Franju : articles, archives. — Critiques de films de Georges Franju parues dans la presse (1949-1959). — Correspondances et articles relatifs à Franju et ses films. — Entretiens avec Jacques Champreux, François Porcile et Serge Korber réalisés dans le cadre d’une campagne d’archives orales (2019-2020).</p>
+        </div>
+        <div>
+          <head>Annexe</head>
+          <p>Filmographie de Georges Franju.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Photogrammes de films de Georges Franju. — Photogrammes de films et reproductions d’œuvres picturales susceptibles de rapprochement avec les films de Franju.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

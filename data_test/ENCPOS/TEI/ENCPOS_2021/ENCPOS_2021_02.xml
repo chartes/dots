@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_02" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Être homme du roi sous Louis XIV. Achille III de Harlay (1639-1712), procureur général au parlement de Paris</title>
+        <author>Louis Borel de Brétizel</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 19-30</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Être homme du roi sous Louis XIV</head>
+      <head type="sub">Achille III de Harlay (1639-1712), procureur général au parlement de Paris</head>
+      <byline>
+        par
+        <forename>Louis</forename>
+        <surname>Borel de Bretizel</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Depuis les années 1980, un courant historiographique, s’appuyant sur les archives des institutions et des hommes qui les peuplent, tend à revoir la légende noire des parlements sous Louis XIV, dont l’histoire se résumerait à un écrasement décidé par le souverain. Parmi ceux-ci, Achille III de Harlay est resté largement inconnu, sa vie n’étant abordée que par les mémoires rédigés par ses contemporains. Or l’étude de ses attributions comme procureur général au parlement de Paris apporte un éclairage nouveau à la connaissance de l’absolutisme louis-quatorzien. Procureur général de 1667 à 1689, Harlay constitue une porte d’entrée idéale pour mesurer la place dévolue au Parlement dans la machine de gouvernement. Par ailleurs, replacer l’exercice de sa charge dans une étude du parquet du Parlement à travers les siècles permet de mesurer l’étendue des attributions du procureur général à la fin du <num>xvii<hi rend="sup">e</hi></num> siècle, tout en évaluant la manière dont chacun les met en œuvre en fonction de sa formation, de sa carrière et de sa personnalité. Enfin, l’étude d’Achille III de Harlay offre un éclairage complémentaire aux biographies de ministres qui, depuis quelques décennies, ont tiré de l’ombre des personnages moins atypiques que les Colbert et Le Tellier : bien qu’éloigné à plusieurs reprises de la chancellerie et donc jamais ministre, Harlay ne constitue pas moins un exemple de la mentalité, des réseaux et de l’action des grands serviteurs de la monarchie louis-quatorzienne.</p>
+        <div>
+          <head>Sources</head>
+          <p>La correspondance passive d’Achille III de Harlay, conservée à la Bibliothèque nationale de France, est une source de première importance pour saisir l’acti­vité de celui-ci. L’étude quantitative de la totalité des quelque quatre mille lettres reçues de 1665 à 1709 permet de réaliser une pesée globale de la carrière d’Achille III de Harlay. Sur cet ensemble, 1 882 lettres correspondent aux années que ce dernier passe au parquet, de 1665 à 1689. Les fonds de ses correspondants, principalement la collection des Mélanges de Colbert conservée à la Bibliothèque nationale de France, permettent d’ajouter quelque cent trente lettres écrites par Harlay sur la même période. Cet ensemble d’environ deux mille lettres a été indexé selon un thesaurus de soixante mots-clés.</p>
+          <p>En outre, les manuscrits français de l’ancienne collection Harlay conservée à la Bibliothèque nationale de France contiennent ses dossiers de travail et les discours qu’il a prononcés au Parlement. Les papiers personnels de Harlay sont complétés avec profit par les registres du Parlement et par la table de Jean Le Nain, conservés aux Archives nationales. Enfin, les mémoires des contemporains viennent parfaire le portrait d’Achille III de Harlay.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Un magistrat intégré à l’administration du royaume</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Une vie à l’ombre du Palais</head>
+          <p><hi rend="i">Les premières années au Palais.</hi> — Arrière-petit-fils du premier président Achille 1<hi rend="sup">er</hi> de Harlay (1536-1616), Achille III est issu d’une lignée de magistrats. Né le 1<hi rend="sup">er</hi> août 1639, il est reçu conseiller au Parlement en août 1657. Au début des années 1660, il devient substitut du procureur général, charge occupée par son père Achille II. Celui-ci lui confie déjà des missions politiques : il sert de relais d’information à Colbert avec qui il entretient des liens étroits de service et de fidélité. Envoyé en janvier et septembre 1663, puis en août 1665, à l’université requérir l’enregistrement d’arrêts du Parlement, il y prononce des discours remarqués, sur fond d’argumentaire gallican. En mai 1667, le roi accepte qu’Achille III succède à son père dans la charge de procureur général. La même année, il épouse Anne-Madeleine de Lamoignon, fille de Guillaume de Lamoignon, premier président au Parlement.</p>
+          <p><hi rend="i">Heurs et malheurs d’une carrière. </hi>— Dès le début de sa carrière, Harlay est lié à certaines affaires politiques du règne de Louis XIV. En 1673, il manœuvre au Parlement pour faire enregistrer les lettres de légitimation des bâtards royaux et le roi le remercie en lui faisant entrevoir la place de chancelier. Le procès de M<hi rend="sup">me</hi> de Brinvilliers, première étape de l’affaire des poisons, passe aussi entre ses mains, mais cette fois le roi semble mécontent de l’issue trop rapide de l’affaire. La décennie 1680 lui offre l’occasion d’être un conseiller écouté du souverain à l’occasion du conflit avec Innocent XI et de l’affirmation du gallicanisme royal, à cause de ses connaissances en droit public. Mais, proche de Colbert, Harlay aspire aux plus hautes charges à contretemps puisque le clan Le Tellier triomphe dans l’entourage royal. Éloigné à plusieurs reprises de la chancellerie, Harlay devient premier président au Parlement en novembre 1689. À cette charge, la haute main qu’il a sur la grande police le rend incontournable dans la gestion de la famine de 1693-1694. Fatigué, il se retire en 1707 avant de s’éteindre le 23 juillet 1712.</p>
+          <p><hi rend="i">Harlay vu par ses contemporains.</hi> — Saint-Simon, dans ses <hi rend="i">Mémoires</hi>, brosse deux portraits d’Achille III de Harlay. De petite taille au physique, mesquin, servile, et incivil au moral, celui-ci subit les foudres du mémorialiste qui lui concède seulement une science étendue et une grande réputation. La confrontation de son témoignage avec ceux de l’abbé Le Gendre ou de d’Aguesseau confirme les qualités alléguées au procureur général, mais nuance ses défauts : si son humeur le rend bien difficile d’accès, il serait déraisonnable de lui imputer quelque action injuste ou sordide. Par ailleurs, sa volonté de servir le roi et les grands confine à l’obséquiosité.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Un homme placé entre la cour, le Palais et la province</head>
+          <p><hi rend="i">Le parlement de Paris au début du règne personnel de Louis XIV (1660-1680).</hi> — La décennie 1660 constitue encore un moment de fortes tensions, où les parlementaires tentent de revendiquer leur autonomie et leur droit à défendre leurs prérogatives. Dans son attitude à l’égard de sa cour de justice, le roi alterne entre menaces, coups d’éclat, paroles rassurantes et félicitations. Ce rapport de force défavorable au Parlement aboutit à un nouvel équilibre qui commence à se faire sentir dans la décennie 1670. Harlay se trouve ainsi au centre de ces tensions : homme du roi au Parlement, il doit faire accepter à ce dernier la place qui lui est dévolue dans le nouvel équilibre des institutions mis en œuvre par Louis XIV.</p>
+          <p><hi rend="i">Panorama d’une fonction.</hi> — L’étude quantitative de la correspondance du procureur général révèle la prépondérance de ses attributions judiciaires. À celles-ci, il faut ajouter le poids important des prérogatives liées à sa charge comme la responsabilité des prisons ou la garde du Trésor des chartes, ainsi que l’exercice de la grande police par le Parlement. En outre, cette étude quantitative livre un tableau contrasté du gouvernement de Louis XIV : les secrétaires d’État de la Maison du roi, Colbert, Seignelay et Pontchartrain, sont très fréquemment en relation avec Harlay, à cause tant de leur rôle dans la police de Paris que du cumul d’attributions réalisé par Colbert. L’élaboration de la législation est en partie accaparée par celui-ci, quoique le chancelier soit associé à la préparation de certains textes. Les relations du procureur général puis premier président avec le chancelier semblent assez lâches, hormis les années où Michel Le Tellier occupe la chancellerie.</p>
+          <p><hi rend="i">La circulation de l’information dans la machine d’État.</hi> — L’urgence ou l’importance d’une affaire suscitent des entrevues du procureur général avec le roi ou un ministre, selon une fréquence qui n’a pu être mesurée. Les lettres reçues par le procureur général révèlent tout à la fois les obstacles à l’administration du royaume que constituent les délais de transmission des ordres, et les moyens que prend le roi pour les surmonter quand il souhaite aller vite.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Harlay censeur</head>
+          <p><hi rend="i">La pratique des mercuriales au Parlement.</hi> — Le développement de l’éloquence parlementaire sur le thème de la censure des mœurs des magistrats se greffe sur la pratique des mercuriales, assemblées visant à faire respecter la discipline du Palais. Les orateurs des deux derniers siècles de l’Ancien Régime sont tout à la fois méconnus et largement dominés par l’écrasante figure de d’Aguesseau. Aussi, étudier les discours de Harlay en relation avec ceux de Talon et de d’Aguesseau permet de les inscrire dans une tradition rhétorique bien établie.</p>
+          <p><hi rend="i">La censure dans les discours d’Achille III de Harlay.</hi> — Harlay reprend de nombreux lieux communs de la rhétorique parlementaire, comme l’expression « prêtres de la justice » ou la désignation du Parlement comme sénat, mais leur sens en est souvent atténué par leur usage oratoire. Il puise aux sources du genre pour développer à sa manière un enseignement moral : importance de l’étude pour le magistrat, obéissance nécessaire à la loi, risque de prévention à l’égard des parties. Sa vision de l’homme, qui insiste sur les dégâts causés par le péché originel, apparaît marquée par un fond de stoïcisme et d’augustinisme. Une tonalité chrétienne forte se dégage de ses discours, notamment à partir de celui de 1682.</p>
+          <p><hi rend="i">Les questions politiques.</hi> — À l’inverse de Talon ou d’Aguesseau, Harlay se montre favorable à l’accès précoce des rejetons de la robe à la magistrature, développant la conception d’un État qui s’appuie sur de grandes familles. En prononçant l’éloge funèbre de Guillaume de Lamoignon, il trace la ligne de crête des relations du Parlement avec le roi, entre expression de doutes légitimes et confiance envers un souverain attentif et sage, donnant ainsi à voir le discours que l’institution parlementaire porte sur elle-même au moment où elle subit des réformes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Exercer la charge de procureur général</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Procureur du roi</head>
+          <p><hi rend="i">Défendre les droits du roi.</hi> — Procureur du roi, Harlay défend l’intégrité des droits de la couronne. Il est ainsi sollicité pour étayer les fondements juridiques de la souveraineté du roi de France sur le Barrois mouvant. Défendre les droits du roi le pousse aussi à s’opposer, en vain, à la volonté de Louis XIV d’accorder la souveraineté judiciaire à la principauté de Dombes.</p>
+          <p><hi rend="i">Requérir l’enregistrement.</hi> — De la correspondance de Harlay et des registres du Parlement émergent les contours de la nouvelle forme de relations qui unit le roi à son Parlement dans le cadre de l’enregistrement des actes royaux, après la déclaration du 24 février 1673 qui limite le recours aux remontrances. Le Parlement utilise encore le terme « remontrances » après 1673, mais il reste encore à préciser la portée de celui-ci et à déterminer si les remontrances qui sont pratiquées sous le règne de Louis XIV en revêtent la forme traditionnelle. L’emploi de remontrances s’intègre à toute une palette de moyens pour exprimer son opposition au roi, comme une entrevue du premier président avec le roi ou une remontée de doutes par l’intermédiaire du procureur général. La mise en lumière des voies de l’opposition parlementaire relativise l’importance des remontrances souvent étudiées de manière isolée et par référence à celles du <num>xviii<hi rend="sup">e</hi></num> siècle. Quant aux lettres sur requête, celles-ci doivent toujours faire l’objet d’un examen par la cour mais les dispositions prévues pour les lettres de propre mouvement du roi sont parfois étendues à ces dernières, le Parlement risquant alors de perdre une de ses prérogatives.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Chef du ministère public</head>
+          <p><hi rend="i">Le chef du parquet.</hi> — Les archives de Harlay sont presque muettes sur l’activité interne du parquet du Parlement, hormis la mention de réunions du procureur général avec les avocats généraux. En revanche, Harlay jouit d’un pouvoir sur les procureurs du roi des sièges inférieurs du ressort du Parlement et sanctionne les écarts des officiers de ces juridictions. Ce puissant réseau territorial sert de relais d’information, par exemple pour la diffusion de la législation royale ou la remontée de renseignements de police depuis la province.</p>
+          <p><hi rend="i">Garantir le bon déroulement de la justice.</hi> — Harlay veille à la stricte application des ordonnances sur les liens de parenté entre officiers et parties et sur l’âge requis pour remplir les charges de magistrature. Ce contrôle exercé par le procureur général est le plus souvent ponctuel et dépend de la remontée d’informations par la voie des placets ou des commissaires départis en province. Harlay contribue à la préparation de déclarations qui visent à la réforme de la justice, mais tient un rôle très effacé dans l’élaboration de l’ordonnance criminelle de 1670. Le procureur général contribue à l’œuvre de réforme de la justice principalement par le biais de sa mission de veiller à la bonne administration de la justice dans les sièges du ressort.</p>
+          <p><hi rend="i">Le procureur général face aux conflits de juridiction.</hi> — Harlay défend la juridiction du Parlement et cherche à accroître son champ d’action judiciaire, profitant des occasions que lui donnent les ordonnances à portée pénale. Les relations avec le Conseil du roi ont laissé peu de traces, tandis que Louvois cherche fréquemment à défendre l’indépendance de la justice militaire. Le chancelier se sert souvent du parquet comme médiateur dans les conflits de juridiction entre le Parlement et une autre cour souveraine.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>L’exercice de la police</head>
+          <p><hi rend="i">La participation du procureur général à la police.</hi> — Le procureur général doit exercer le pouvoir de grande police du Parlement alors qu’un nouvel acteur est établi en 1667 avec la création de la charge de lieutenant de police, confiée à La Reynie. Tous deux ont des rapports fréquents et harmonieux passant le plus souvent par l’oral, à l’occasion d’assemblées de police qui réunissent de manière restreinte les acteurs du Parlement et du Châtelet. Harlay descend parfois jusqu’aux détails des solutions à apporter aux problèmes très concrets de la police parisienne, comme lors de l’aménagement du cimetière de Saint-Sulpice.</p>
+          <p><hi rend="i">La police de l’imprimé.</hi> — Réorganisée par le chancelier Séguier, la censure exercée par la monarchie est confiée à des censeurs royaux mais Harlay joue lui aussi un rôle de censeur royal officieux. Il est en effet sollicité par les ministres pour examiner des ouvrages qui requièrent une connaissance fine de la procédure ou du droit public du royaume. À l’instar de La Reynie, il procède à la saisie de livres imprimés de manière clandestine.</p>
+          <p><hi rend="i">La police de la peste.</hi> — Dans la lutte contre l’épidémie de peste de 1666-1669, le Parlement constitue un acteur incontournable puisqu’il lui revient, sur les réquisitions du procureur général, de prendre des mesures pour limiter les déplacements à partir des villes infectées. Mais Colbert concurrence le Parlement par la remontée d’informations qu’il reçoit des intendants et des acteurs locaux, et fait pression sur Harlay pour limiter la portée des restrictions. Préserver Paris de la contagion constitue une préoccupation spéciale du procureur général.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Le procureur général et la législation</head>
+          <p><hi rend="i">Faire remonter des demandes d’éclaircissements.</hi> — Sa place au Palais met le procureur général au courant des difficultés juridiques soulevées par les affaires. Il se tourne régulièrement vers le chancelier, notamment Le Tellier qui, par sa connaissance fine des ordonnances, permet leur harmonisation. À l’inverse et contrairement au <num>xviii<hi rend="sup">e</hi></num> siècle, il ne semble pas que le parquet tienne une grande part dans ce processus d’harmonisation de la législation.</p>
+          <p><hi rend="i">L’élaboration des textes à portée législative et réglementaire.</hi> — Les ministres, spécialement Le Tellier, adressent à Harlay des textes élaborés dans leurs bureaux pour que celui-ci les relise, les corrige ou en soit simplement informé. Il est même sollicité pour rédiger à titre principal des édits ou déclarations. Le procureur général est souvent consulté pour deux matières qui sont au cœur de ses attributions : la procédure et l’administration de la justice d’une part, la législation pénale d’autre part. Cependant, la vingtaine de contributions de Harlay et la portée juridique relativement faible des textes concernés ne font pas du procureur général un acteur majeur de l’élaboration de la législation du règne de Louis XIV.</p>
+        </div>
+        <div>
+          <head>Chapitre V
+            <lb/>Les prérogatives du procureur général</head>
+          <p><hi rend="i">Le procureur général et les condamnés.</hi> — Parmi les attributions qui se sont cristallisées autour de sa charge, le procureur général exerce une responsabilité particulière à l’égard des prisonniers et du bon ordre des prisons. Il joue un rôle charnière dans l’administration de la peine des galères, depuis la condamnation jusqu’à l’organisation de la chaîne des galériens, sans oublier l’octroi des ­commutations de peine pour invalidité. Les décennies 1670 et 1680 constituent un moment où l’on tente de définir un processus administratif tant pour le choix des galériens que pour l’examen des motifs d’invalidité allégués.</p>
+          <p><hi rend="i">Le procureur général et les pauvres de Paris.</hi> — La gestion du Grand Bureau des pauvres est peu présente dans la correspondance de Harlay, contrairement à celle de l’hospice des Petites Maisons qui en dépend et pour lequel le procureur général est chargé d’exécuter les ordres du roi prescrivant l’enfermement ou l’élargissement de personnes, le plus souvent qualifiées d’insensées. Son rôle d’administrateur de l’hôpital général le confronte aux difficultés d’organiser l’enfermement du grand nombre de pauvres souhaité par le roi et à la nécessité de leur trouver des moyens matériels de subsistance.</p>
+          <p><hi rend="i">Le procureur général et l’écrit.</hi> — Le procureur général a sous sa responsabilité l’impression des textes législatifs et des arrêts rendus par le Parlement. Or, pour ceux-ci, l’approbation royale est nécessaire, aussi un dialogue s’établit entre Harlay et les ministres pour définir ce qui doit être imprimé. Comme garde du Trésor des chartes, Harlay fait preuve d’une gestion régulière des archives, qui correspond aux besoins de l’administration royale, réclamant des titres de territoires annexés ou communiquant des pièces demandées par les ministres, mais il ne manifeste pas de tentative de réforme du dépôt. À la fin du <num>xvii<hi rend="sup">e</hi></num> siècle, les prérogatives du procureur général sont toujours largement exercées de manière traditionnelle.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Servir Louis XIV</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Le roi et sa justice</head>
+          <p><hi rend="i">L’intervention du roi dans la justice déléguée.</hi> — Le roi dirige l’action judiciaire du procureur général en contrôlant l’opportunité de ses réquisitions, en demandant de différer ou d’achever le traitement d’une affaire ou en précisant la nature des condamnations qu’il souhaite être portées. Cependant, le roi demeure conscient des limites que constitue l’ordre de la justice, incarné par les magistrats, ainsi que le procureur général le lui rappelle parfois.</p>
+          <p><hi rend="i">L’usage des lettres de cachet.</hi> — Les lettres de cachet permettent une intervention directe et contraignante de la part du roi. Mais le Parlement peut faire remonter ses doutes sur celles-ci notamment quand elles viennent contrecarrer un de ses arrêts.</p>
+          <p><hi rend="i">Les rencontres du roi avec son procureur général.</hi> — Quoique passant régulièrement par l’écrit, la relation de Harlay avec Louis XIV prend aussi la forme d’entrevues. Celles-ci sont souvent requises par la matière à traiter, d’ordre politique, mais elles se produisent aussi à l’occasion de rencontres liées au protocole. Harlay apparaît comme un interlocuteur souvent sollicité par le roi pour exécuter ses ordres.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La répression des duels</head>
+          <p><hi rend="i">L’implication du roi dans la répression du duel.</hi> — En matière de duel, le roi affiche sa détermination à poursuivre les suspects et à punir les coupables selon la rigueur des ordonnances. Malgré celle-ci, de nombreuses difficultés subsistent pour réprimer le duel : les intrigues de la cour peuvent influencer le souverain dans un sens favorable au coupable ; en l’absence de coopération des témoins, il est impossible à la justice d’obtenir la preuve du combat.</p>
+          <p><hi rend="i">Procéder contre les duellistes.</hi> — Le procureur général déclenche une action en justice en se fondant sur la rumeur. Le ministère public utilise toutes les ressources de la procédure pénale pour recueillir au plus vite les preuves nécessaires à une condamnation. L’édit des duels d’août 1679 prévoit une disposition dérogatoire à l’ordonnance criminelle de 1670 permettant le récolement des témoins dans les vingt-quatre heures.</p>
+          <p><hi rend="i">Le renforcement de la juridiction du Parlement : la déclaration du 14 décembre 1679.</hi> — La déclaration du 14 décembre 1679 précise l’édit d’août 1679 sur les duels. Fruit de la collaboration de Harlay et Le Tellier, celle-ci attribue aux parlements la connaissance des conflits de juridiction, à l’exclusion du Grand Conseil, et réaffirme le droit du parlement de Paris de connaître du crime de duel en première instance dans son ressort.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le procureur général et la grâce royale</head>
+          <p><hi rend="i">La grâce : une décision du souverain.</hi> — La décision de gracier appartient au roi et les ministres la notifient au procureur général avant même d’expédier les lettres de clémence afin que l’impétrant ne subisse pas la peine dont le roi vient de l’absoudre.</p>
+          <p><hi rend="i">Le rôle du procureur général dans l’octroi de la grâce.</hi> — En amont de la décision de grâce, Harlay est sollicité par les ministres comme un magistrat instructeur. Il est chargé de s’informer de la qualité des personnes, des circonstances de l’affaire, de fournir un extrait des charges ou l’arrêt de condamnation afin d’éclairer la décision du roi. Mais il ne lui revient pas de formuler un avis sur l’opportunité de répondre favorablement à la demande de grâce. Seule l’instruction des affaires de protestants le rapproche de ce cas par la porosité qui existe entre instruction des circonstances de l’affaire et jugement de la sincérité de la conversion, cette dernière entraînant la grâce.</p>
+          <p><hi rend="i">Le contrôle de la grâce royale par le Parlement : une progressive restriction.</hi> — La vérification des lettres de clémence peut conduire le Parlement à un refus d’enregistrer qui laisse le condamné aux mains de la justice. Le principe de remontrances postérieures à l’enregistrement, quoique prévu initialement pour les lettres patentes expédiées pour affaires publiques, s’étend, sous l’influence de Colbert, à l’ensemble des lettres de clémence, contraignant les cours à enregistrer les lettres et à exprimer leurs doutes ensuite. La déclaration du 10 août 1686, préparée conjointement avec Harlay, abandonne même les remontrances, prescrivant à la cour de suspendre la procédure pour demander au roi un éclaircissement.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Le procureur général et les affaires ecclésiastiques</head>
+          <p><hi rend="i">Le droit de régale.</hi> — En matière de régale, le roi donne une impulsion forte au procureur général en lui ordonnant la mise en branle de l’action judiciaire tant pour casser ordonnances épiscopales ou brefs du pape que pour se saisir des troubles fomentés par les antirégalistes. L’impact politique et diplomatique de la question justifie un interventionnisme du souverain et Harlay accepte volontiers d’être un instrument de la politique de Louis XIV. Au printemps 1680, il rédige un projet d’acte d’appel au concile auquel le roi ne donne pas suite. Au même moment, le roi se sert aussi des théories gallicanes du Parlement dans l’affaire du monastère de Charonne, pour s’opposer à Innocent XI.</p>
+          <p><hi rend="i">Les Quatre Articles.</hi> — Les théories gallicanes sur la limitation de la puissance ecclésiastique mobilisent le Parlement qui prend, sur ordre du roi, la défense du frère carme Henri Buhy, pourtant condamné par le pape. Surtout, Harlay est chargé en 1682 de requérir l’université d’enregistrer la déclaration des Quatre Articles alors que l’institution rechigne face à cet acte royal d’autorité. Dans cette affaire, Harlay élabore une stratégie habile, validée par Louis XIV, pour amener l’université à l’enregistrement sans susciter une trop grande résistance. Ainsi, il remplit une fonction de confiance dans une matière politique, fort de son expérience de l’université acquise lorsqu’il était substitut.</p>
+          <p><hi rend="i">Les appels au concile de 1688.</hi> — Le problème des franchises romaines s’ajoutant à celui des évêchés vacants, la menace de l’appel au concile général est de nouveau évoquée en 1688. Harlay élabore un premier acte d’appel en janvier et propose au roi que le Parlement le supplie d’user de plus de sévérité à l’égard du pape, pour qu’il puisse se positionner favorablement face à Innocent XI. Un second acte d’appel est composé en septembre conjointement par Louis XIV et Harlay lors d’un entretien, afin d’aboutir plus vite. Le parquet apparaît comme un laboratoire de la doctrine et de l’action déployées par le roi contre le pape.</p>
+        </div>
+        <div>
+          <head>Chapitre V
+            <lb/>Le procureur général et les protestants</head>
+          <p><hi rend="i">Avant 1679 : une application stricte des ordonnances.</hi> — Pendant les décennies 1660 et 1670, le gouvernement se contente d’une application stricte des textes en vigueur réglementant l’exercice du culte et la vie publique des protestants. L’action du roi peut même s’exercer en faveur de ceux-ci.</p>
+          <p><hi rend="i">1679-1685 : un recours fréquent à l’appareil judiciaire.</hi> — À partir de 1680, le roi manifeste à Harlay son implication très forte dans les affaires concernant les protestants, notamment en ce qui concerne la destruction des temples. Le procureur général sert d’arbitre pour juger jusqu’où peut s’étendre la volonté politique de restreindre les droits des protestants sans porter atteinte à la justice que le roi doit rendre. Harlay participe ponctuellement à l’amélioration de la législation antiprotestante mais est surtout associé à la préparation de la révocation de l’édit de Nantes.</p>
+          <p><hi rend="i">Après 1685 : la police des conversions.</hi> — Le roi confie à Harlay l’organisation de la conversion des protestants parisiens, plaçant sous ses ordres La Reynie et Robert, procureur du roi au Châtelet. Homme de terrain, il lui revient de coordonner les moyens policiers mis en place pour susciter et évaluer les conversions.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>La figure et la carrière d’Achille III de Harlay permettent de pénétrer dans les relations qui unissent le Parlement au gouvernement royal dans la première partie du règne personnel de Louis XIV. Celles-ci apparaissent apaisées mais peuvent varier d’un ministre à l’autre, Colbert conservant une méfiance à l’égard du Parlement à l’inverse de Le Tellier. Dépassant le clivage entre soumission ou résistance au roi, il faut donc voir en Harlay un homme qui joue le rôle d’un intermédiaire qui tente d’harmoniser, dans la pratique du Parlement, le nouvel équilibre des institutions voulu par le roi et la nécessaire préservation de l’ordre de la justice. À travers ses différentes attributions, Harlay est confronté au développement d’une normalisation administrative dans le traitement des affaires, alors même que l’exercice de sa charge demeure largement traditionnel. Produit du Parlement, il reflète, à travers sa carrière, les conceptions et les ambitions des grands serviteurs de la monarchie louis-quatorzienne.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Projet d’acte d’appel au concile, mai 1680. — Réponse d’Achille III de Harlay sur les raisons de la déclaration de 1673, 24 mai 1680. — Mercuriales et discours prononcés par Achille III de Harlay (1677-1689).</p>
+        </div>
+        <div>
+          <head>Annexe</head>
+          <p>Liste raisonnée des projets d’actes législatifs auxquels a contribué Achille III de Harlay.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>échantillon de correspondance reçue et de discours d’Achille III de Harlay.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

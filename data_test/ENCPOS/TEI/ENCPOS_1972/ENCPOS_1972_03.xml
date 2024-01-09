@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_03" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La Madeleine de Châteaudun : étude archéologique</title>
+        <author ref="https://www.idref.fr/031528236">Sophie Bévillard</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_03.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 25-32</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="25" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La Madeleine de Châteaudun :
+       <lb/>étude archéologique</head>
+      <byline>
+        par
+        <forename>Sophie</forename>
+        <surname>Bévillard</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Le fonds de la Madeleine de Châteaudun se trouve aux Archives départementales d’Eure-et-Loir, série H 3503 à 3800. Des liasses dispersées se trouvent dans les séries G, J, N, O, Q, V, X. La Bibliothèque nationale conserve les notes de Claude Estiennot et d’Antoine Lancelot qui ont permis à Lucien Merlet de reconstituer le cartulaire disparu de l’abbaye. A la Bibliothèque municipale de Châteaudun se trouvent les ouvrages manuscrits sur l’histoire de Châteaudun et du Dunois d’Alexandre Courgibet et de l’abbé Bordas, deux érudits locaux du <num>xviii<hi rend="sup">e</hi></num> siècle. Utiles surtout pour l’histoire de l’abbaye, ces ouvrages ne fournissent que peu de renseignements sur l’église de la Madeleine. Les travaux qui y ont été effectués depuis le début du <num>xix<hi rend="sup">e</hi></num> siècle ont pu être étudiés grâce aux dossiers de restaurations qui sont déposés à la direction de l’Architecture (dossiers n° 465 <hi rend="i">bis</hi>).</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les données historiques</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>des origines au <num>xii<hi rend="sup">e</hi></num> siècle</head>
+          <p><hi rend="i">Situation, ecclésiastique de Châteaudun aux temps mérovingiens.</hi> – En 511, au concile d’Orléans, saint Aventin, évêque de Chartres, s’intitula évêque de Châteaudun. Un demi-siècle plus tard, Sigebert fit sacrer évêque de Châteaudun Promotus, qui fut déposé par le <num>iv<hi rend="sup">e</hi></num> concile de Paris. On ignore quelle fut <pb n="26" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_02.TIF/full/full/0/default.jpg"/>l’église cathédrale ; les églises Saint-Lubin et Saint-Médard semblent les plus anciennes. Des sarcophages de pierre retrouvés dans l’église de la Madeleine attestent l’existence, à cet emplacement, d’un cimetière dès le haut Moyen Âge.</p>
+          <p><hi rend="i">La fondation de l’église de la Madeleine par Charlemagne.</hi> – La tradition de la fondation de l’église de la Madeleine par Charlemagne fut acceptée sans discussion jusqu’au <num>xviii<hi rend="sup">e</hi></num> siècle. Elle dérivait de l’interprétation donnée aux reliefs qui décoraient la façade de l’église, qui étaient censés représenter Charlemagne, Louis le Débonnaire, deux autres fils de l’empereur, ses trois femmes, Turpin et Roland. Dans le trésor de l’abbaye, se trouvait un verre arabe du <num>xii<hi rend="sup">e</hi></num> siècle, appelé « verre de Charlemagne » ; de plus, au <num>xvi<hi rend="sup">e</hi></num> siècle, les armes de l’abbaye portaient l’aigle impériale.</p>
+          <p><hi rend="i">L’église Notre-Dame.</hi> – <hi rend="i">V</hi>ers la fin du <num>ix<hi rend="sup">e</hi></num> siècle, le comte de Blois fonda une collégiale de chanoines pour desservir la chapelle du château de Châteaudun. Au cours du <num>xi<hi rend="sup">e</hi></num> siècle, les chanoines vinrent s’établir, hors des murs de la ville, à l’emplacement de l’église actuelle de la Madeleine. A la fin de ce siècle, ils participèrent à la fondation de l’Hôtel-Dieu de Châteaudun. A la même époque, le vocable de sainte Marie-Madeleine fut substitué à celui de la Vierge.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’abbaye de chanoines réguliers (1131-1546)</head>
+          <p><hi rend="i">L’introduction des chanoines réguliers.</hi> – L’installation des chanoines réguliers à la Madeleine de Châteaudun est connue par une bulle du pape Innocent II, datée du 22 février 1131. Bien que la collégiale ait été fondée par un comte de Blois, le comte Thibault ne semble pas avoir été à l’origine de la substitution de chanoines réguliers aux chanoines séculiers ; ce serait l’évêque de Chartres, Geoffroy de Lèves, qui aurait favorisé cette transformation, peut-être commencée par son prédécesseur, Yves de Chartres.</p>
+          <p><hi rend="i">L’abbaye jusqu’au milieu du <num>xv<hi rend="sup">e</hi></num> siècle.</hi> – L’histoire de l’abbaye pendant le Moyen Âge est fort obscure. La liste des abbés est incertaine, surtout au <num>xiv<hi rend="sup">e</hi></num> siècle. Les documents ne dorment aucune précision sur l’état de l’église, dont on sait seulement, par un mémoire du <num>xvii<hi rend="sup">e</hi></num> siècle, qu’elle fut comprise dans les murs de la ville vers 1288.</p>
+          <p><hi rend="i">L’abbaye sous les derniers abbés réguliers.</hi> – A la fin du Moyen Âge, les abbés de la Madeleine étaient des personnalités fort importantes dans la ville de Châteaudun. Vers 1460, les bâtiments réguliers furent la proie d’un incendie ; puis, à une date indéterminée pendant le premier quart du <num>xvi<hi rend="sup">e</hi></num> siècle, le chœur de l’église, avec son déambulatoire, s’écroula et fut diminué d’une vingtaine de mètres par la construction d’un chœur à chevet polygonal.</p>
+        </div>
+        <div>
+          <pb n="27" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>L’abbaye sous les abbés commendataires (1546-1790)</head>
+          <p><hi rend="i">Le premier siècle d’abbés commendataires.</hi> – La mise en commende de l’abbaye fut suivie, chez les chanoines, d’un relâchement de la discipline qui provoqua une tentative de réforme en 1573. Les troubles des guerres de Religion ne favorisèrent pas la remise en ordre et, en 1592, on essaya à nouveau de réformer l’abbaye. Pour cette époque, on trouve quelques mentions de travaux dans l’église de la Madeleine.</p>
+          <p><hi rend="i">L’entrée dans la Congrégation de France.</hi> – L’abbé de la Madeleine, Jacques de la Ferté, demanda au cardinal de La Rochefoucauld d’introduire la réforme génovéfaine dans son abbaye. Ce fut réalisé en 1634. A cette occasion, un procès-verbal détaillé de la visite de l’église et des bâtiments réguliers fut établi.</p>
+          <p><hi rend="i">L’abbaye génovéfaine.</hi> – De 1634 à 1790 se succédèrent dix abbés qui ne résidèrent guère à Châteaudun. La mise en commende de l’abbaye avait affaibli son importance dans la ville. Du <num>xvii<hi rend="sup">e</hi></num> siècle datent les premiers documents iconographiques de l’église qui permettent de connaître la décoration de la façade nord. L’église menaçait ruine ; en 1651, une pile fut englobée dans un massif de maçonnerie, puis en 1692, une autre pile s’écroula sur les fidèles. En 1680, l’enfoncement du carrelage permit la découverte de la crypte. Le clocher, qui présentait des signes d’instabilité, eut sa flèche de pierre détruite en 1732 et, en 1742, une simple corniche le couronnait. Les bâtiments réguliers incendiés en 1698 furent reconstruits au début du <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>L’église de la Madeleine de la révolution à nos jours</head>
+          <p><hi rend="i">La période révolutionnaire et l’Empire.</hi> – A cause de la suppression des ordres religieux et de la confiscation des biens ecclésiastiques, les chanoines se dispersèrent et l’église de la Madeleine fut réduite à son rôle d’église paroissiale. En 1793, la Convention supprima toutes les paroisses de Châteaudun, sauf une seule, celle de la Madeleine. L’église devint le centre des réunions publiques et, le 8 nivôse an II, elle était transformée en temple de la Raison, avant de devenir le centre du culte de l’Être suprême et de l’immortalité de l’âme. En juin 1795, le culte catholique fut rétabli et les réparations les plus urgentes furent effectuées.</p>
+          <p><hi rend="i">Les travaux du <num>xix<hi rend="sup">e</hi></num> siècle.</hi> – L’état de l’église inquiéta l’administration de la ville de Châteaudun qui établit des tirants et consolida les contreforts. Une controverse naquit entre Grillon, inspecteur des bâtiments civils, qui <pb n="28" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_04.TIF/full/full/0/default.jpg"/>pensait une restauration possible, et Viollet-le-Duc, qui estimait préférable de ne conserver que ce qui était stable. Le Conseil des bâtiments décida la destruction d’une partie de l’église, mais rien ne fut fait. Le 18 octobre 1870, l’église de la Madeleine essuya le feu d’une batterie prussienne qui endommagea sa toiture. En 1885, on découvrit le portail méridional muré depuis le <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Les restaurations du <num>xx<hi rend="sup">e</hi></num> siècle.</hi> – Les deux collatéraux nord et le bas-côté sud furent classés en 1908, et l’ensemble de l’église en 1922. Deux campagnes de restauration suivirent ce classement. Le 15 juin 1940, l’église de la Madeleine fut la proie d’un incendie consécutif à un bombardement. Depuis trente ans, des restaurations sont en cours. Elles ont eu pour objet d’assurer la stabilité de l’édifice, qui tendait à glisser dans le ravin que surplombe son mur méridional. Ces restaurations ont permis la mise à jour des substructions d’une église antérieure.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Étude archéologique</head>
+        <div>
+          <head rend="uc">L’église découverte lors des fouilles</head>
+          <p>L’église dont les fouilles ont révélé les substructions présente une disposition particulière : à l’est de l’abside, en contrebas, se trouve un étroit couloir qui conduit à trois chapelles carrées, suivant un plan que l’on retrouve à Corvey. Ces constructions avaient pour raison première d’assurer la stabilité de l’église, qui fut construite vers 1070-1080 ; il s’agit de l’église Notre-Dame. Quelques années plus tard, lors d’un remaniement des chapelles carrées, on décora de peintures la chapelle située à l’est de l’abside. Il n’en subsiste que les parties inférieures, qui sont dans un excellent état de conservation. Elles représentent des draperies très finement traitées aux coloris ocre rouge, ocre jaune, gris bleu et blanc, et datent des premières années du <num>xii<hi rend="sup">e</hi></num> siècle. Dans le chœur de l’église, à l’endroit où se trouvait l’autel, ont été retrouvés un petit reliquaire en terre et des plaques d’os qui devaient recouvrir un coffret de bois. Dans le mur nord de l’église avait été percée la porte principale, près de laquelle subsiste une margelle de plus de deux mètres de diamètre. Au cours des fouilles ont été dégagés plusieurs sarcophages de pierre du haut Moyen Âge, parmi lesquels deux abritaient les sépultures d’abbés de la Madeleine de la seconde moitié du <num>xiii<hi rend="sup">e</hi></num> siècle ou du début du <num>xiv<hi rend="sup">e</hi></num>.</p>
+        </div>
+        <div>
+          <pb n="29" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">L’église actuelle. Étude architecturale</head>
+          <div>
+            <head rend="uc">Chapitre premier
+             <lb/>la crypte et le plan général</head>
+            <p>Dans le prolongement du bas-côté méridional existe une crypte éclairée au sud par cinq fenêtres. Cette crypte se prolonge à l’est, où il existe également des fenêtres. Sur cette crypte s’ouvraient deux chapelles rayonnantes. La raison d’être de cette crypte était d’asseoir l’église supérieure sur un terrain présentant une forte dénivellation. La crypte avait donc un plan adapté à la physionomie du terrain, mais pour le déterminer avec certitude il faudrait poursuivre les fouilles.</p>
+            <p>L’église du <num>xii<hi rend="sup">e</hi></num> siècle, avec ses quatre-vingt-quatre mètres de longueur, était donc un édifice très étendu. Il était prévu de la voûter d’ogives. C’était un monument important dans le diocèse de Chartres.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+             <lb/>Le clocher et les bas-côtés nord</head>
+            <p>Le clocher se trouve au niveau de la dernière travée, à la hauteur du second collatéral nord. Sa base est voûtée en berceau avec un épais doubleau légèrement surbaissé ; cette partie date des premières années du <num>xii<hi rend="sup">e</hi></num> siècle. Au <num>xviii<hi rend="sup">e</hi></num> siècle, la flèche de pierre qui datait du milieu du <num>xii<hi rend="sup">e</hi></num> fut abattue et la tour reçut un couronnement simplement mouluré.</p>
+            <p>Les bas-côtés nord sont doubles sur quatre travées, pour inclure la tour du clocher dans le plan de l’église. Sur ces quatre travées, ils sont voûtés d’ogives sur plan carré. Les doubleaux, dont le profil présente un méplat entre deux tores, sont ornés de dents de scie. Les piles qui supportent ces voûtes sont cantonnées de dix colonnettes dont certaines montrent un appareil à joints alternés. Les chapiteaux sont ornés de feuilles d’acanthe finement découpées, proches de celles des chapiteaux du rez-de-chaussée de la tour sud de la cathédrale de Chartres et des chapiteaux de Saint-Nicolas de Blois. Les travaux ont commencé par l’ouest ; ils ont été entrepris dans les années qui suivirent l’introduction des chanoines réguliers, c’est-à-dire vers 1135.</p>
+          </div>
+          <div>
+            <pb n="30" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_06.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre III
+             <lb/>La nef</head>
+            <p>La nef a beaucoup souffert au cours des siècles. Le mur occidental s’est écroulé dans toute sa partie méridionale ; cette chute fut contemporaine de celle des voûtes de la nef. Les voûtes primitives étaient sur plan carré, avec une élévation curieuse qui rappelait les voûtes dômicales de la cathédrale d’Angers. La chute de ces voûtes entraîna la réfection de certaines piles et la construction d’arcs-boutants afin d’établir des voûtes sur plan barlong. Ces voûtes ne subsistèrent pas longtemps ; le projet de voûter la nef fut alors abandonné et les murs de la nef furent exhaussés. Le mur sud continua d’être affecté par l’instabilité du sol et présente aujourd’hui un aspect très irrégulier.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IV
+             <lb/>Le bas-côté sud</head>
+            <p>Le bas-côté sud comprend sept travées. Les deux dernières faisaient partie du déambulatoire qui entourait le chœur primitif ; elles datent des travaux de la fin du <num>xii<hi rend="sup">e</hi></num> siècle, tandis que les cinq premières appartiennent aux constructions du milieu du siècle. Les voûtes de ce bas-côté présentent d’importantes déformations dues au manque de contrebutement du côté de la nef après la chute des voûtes de celle-ci, et, du côté sud, au manque d’assises du mur méridional et de ses contreforts.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre V
+             <lb/>Le chœur</head>
+            <p>Le chœur actuel fut construit au <num>xvi<hi rend="sup">e</hi></num> siècle, après la ruine du chœur primitif qui appartenait à une campagne de travaux de la fin du <num>xii<hi rend="sup">e</hi></num> siècle. L’axe du chœur est dévié vers le nord par rapport à celui de la nef. Le chœur comprend une travée droite et une abside à chevet polygonal. Il fut voûté d’ogives qui s’écroulèrent à cause du manque de solidité des arcs-boutants qui les contrebutaient au sud. Il est éclairé par de longues fenêtres à remplage flamboyant.</p>
+          </div>
+        </div>
+        <div>
+          <pb n="31" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_07.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Étude de la sculpture et du mobilier</head>
+          <div>
+            <head rend="uc">Chapitre premier
+             <lb/>la façade septentrionale</head>
+            <p>La décoration de la façade nord fut presque totalement bûchée en 1793. Elle est connue par deux dessins des <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles, la description d’Antoine Lancelot et les gravures de Simonneau. Elle consistait en reliefs disposés sur la façade suivant un dessein décoratif. Ce système se retrouve sur les façades des églises de l’ouest de la France, mais il était exploité à Châteaudun d’une façon particulière : onze reliefs étaient répartis en deux rangées autour de la porte centrale et sur les contreforts. En plus du projet initial, d’autres reliefs avaient été placés sur le mur de la deuxième travée. Certains reliefs étaient proches de ceux qui ornent la roue de fortune au croisillon nord de l’église Saint-Étienne de Beauvais ; d’autres peuvent être rapprochés des statues-colonnes du portail méridional de Notre-Dame d’Étampes et de celles de l’ébrasement gauche de la porte nord du portail royal de la cathédrale de Chartres. C’était un ensemble décoratif d’une grande importance dans l’histoire de la sculpture du milieu du <num>xii<hi rend="sup">e</hi></num> siècle.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+             <lb/>Le portail méridional</head>
+            <p>Muré à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle et découvert à la fin du <num>xix<hi rend="sup">e</hi></num> siècle, le portail méridional a conservé intacte sa décoration. Sur un cordon et une archivolte, sont répartis de nombreux motifs représentant des animaux réels ou fictifs et des figures humaines. Les représentations animales sont empruntées au <hi rend="i">Physiologus</hi> et aux <hi rend="i">Bestiaires</hi> qui en sont dérivés ; elles illustrent les dangers du péché. Les figures humaines sont diverses : deux vertus tirées de la <hi rend="i">Psychomachie</hi> de Prudence, une représentation de la Gourmandise et une figure d’abbé qui prouve que les motifs ont valeur d’enseignement. L’iconographie et le style des sculptures révèlent l’influence de l’art des régions de l’ouest de la France. La décoration de ce portail date du milieu du <num>xii<hi rend="sup">e</hi></num> siècle.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+             <lb/>La décoration sculptée intérieure</head>
+            <p>Les chapiteaux des arcatures aveugles qui ornent tous les pans de mur de l’église sur lesquels ne s’ouvre pas une porte, forment un ensemble décoratif fort important. Les arcatures des murs des bas-côtés nord portent des chapiteaux décorés de feuilles lisses ; ailleurs, on trouve diverses combinaisons de <pb n="32" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_03/ENCPOS_1972_03_08.TIF/full/full/0/default.jpg"/>feuilles d’acanthe et de têtes humaines suivant un procédé décoratif qui se retrouve à Saint-André de Chartres et à Notre-Dame de Château-Landon, ou bien, pour les chapiteaux ornés uniquement d’un visage humain, à Saint-Pierre d’Aulnay-de-Saintonge. Dans toute l’église, on ne trouve qu’un seul chapiteau montrant un personnage, un ange de l’Annonciation ; par sa composition, il rappelle les chapiteaux de Saint-Pierre de Melle.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IV
+             <lb/>Le mobilier</head>
+            <p>Dans le chœur de l’église a été dégagée la décoration sculptée d’un tombeau Renaissance : sous un enfeu, sont placées sept niches qui contiennent six statuettes représentant les vertus avec leurs attributs allégoriques. C’est le tombeau de Geoffroy Le Vavasseur, seigneur d’Eguilly, mort en 1505. Il est très proche, par sa décoration, du tombeau de Louis de Blanchefort, dans l’église de Ferrières-en-Gâtinais. De la même époque datent les fonts baptismaux ornés d’anges, de rinceaux et des armes de l’abbaye. Dans l’église se trouvent également six statues de pierre du <num>xviii<hi rend="sup">e</hi></num> siècle, d’un médiocre intérêt artistique.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p>1. Liste des abbés de la Madeleine de Châteaudun.</p>
+        <p>2. Rapport de Viollet-le-Duc.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>1. Le « verre de Charlemagne ».</p>
+        <p>2. Les bâtiments réguliers.</p>
+        <p>3. Notices archéologiques des anciens prieurés de l’abbaye de la Madeleine de Châteaudun.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de planches</head>
+        <p>Documents iconographiques anciens. Photographies.</p>
+      </div>
+      <div>
+        <head rend="uc">Plans et carte</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

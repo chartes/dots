@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Marle à la fin de l’Ancien Régime : étude de la société et de la vie sociale dans une petite ville de 1760 à 1789</title>
+        <author ref="https://www.idref.fr/111367972">Dominique Morelon-Péry</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_14.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 115-124</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="115" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Marle à la fin de l’ancien régime :
+       <lb/>étude de la société et de la vie sociale
+       <lb/>dans une petite ville de 1760 à 1789</head>
+      <byline>
+        par
+        <forename>Dominique</forename>
+        <surname>Morelon-Péry</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Aux Archives départementales de l’Aisne nous avons examiné une partie des registres de catholicité, les minutes notariales provenant de deux des quatre études qui étaient alors installées à Marle, et une partie du fonds du bailliage. Différents articles de la série C nous ont fourni un grand nombre de renseignements, notamment des rôles fiscaux, des enquêtes, des projets et des adjudications concernant les travaux des routes et toutes les affaires soumises au contrôle de l’intendant. Enfin, nous avons tiré certains éléments des séries L et Q datant de la période révolutionnaire.</p>
+        <p>Nous avons pu consulter les fonds notariaux demeurés à Marie. Nous nous sommes servi également des registres de catholicité de la paroisse Saint-Nicolas et des registres de délibération de la période révolutionnaire conservés aux Archives municipales de la ville.</p>
+        <p>Aux Archives nationales ont été étudiés en particulier des enquêtes, des plans et diverses correspondances conservés dans les sous-séries F<hi rend="sup">14</hi> et F<hi rend="sup">20</hi>, des éléments sur les péages dans la série H, la correspondance de la Régie générale dans la sous-série G<hi rend="sup">2</hi>, des cartes et des plans dans la série N, enfin un certain nombre de dossiers de la sous-série R<hi rend="sup">4</hi>, puisque le comté de Marie est entré dans l’apanage d’Orléans en 1766.</p>
+        <p>A la Bibliothèque nationale nous avons utilisé les manuscrits fr. 6207 et fr. 15383, qui concernent les routes, fr. 14089, qui a trait à la perception de la taille, et fr. 11384, qui donne le dénombrement par feux en 1713. Le département des Estampes conserve trois estampes représentant Marie et un plan, que nous avons reproduits.</p>
+      </div>
+      <div>
+        <pb n="116" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Introduction</head>
+        <p>La ville de Marle est située dans la frange nord-est du bassin parisien, à 130 kilomètres au nord de Paris, sur l’axe Laon-Bruxelles. Elle est construite à la bordure d’un plateau, sur une butte qui domine la Serre. Elle se trouve à la limite nord du Laonnais, proche de la Thiérache, mais le sol est encore recouvert d’un limon fertile qui assure à la région sa grande richesse agricole.</p>
+        <p>Toutes ces conditions ont fait très tôt de Marie un lieu de peuplement.</p>
+        <p>Le <hi rend="i">castellum,</hi> attesté en 1112, dut être élevé beaucoup plus tôt pour résister aux invasions. Il fut un de ceux sur lesquels le fameux Thomas de Marie appuya sa puissance, et fut reconstruit par un de ses descendants en 1220, en même temps que l’enceinte de la ville. Dès 1174 la ville, aux portes de laquelle s’étendaient déjà deux faubourgs, avait obtenu de son seigneur une charte « de paix et de commune ». Elle eut son sceau, son beffroi, son maire et ses jurés et manifesta même plusieurs fois son soutien au roi, notamment par l’envoi d’hommes d’armes, comme une « bonne ville ». Sa situation « sur le grand chemin de Champagne au païs de Flandre », selon des lettres patentes d’Henri II, en tout cas à proximité de ce chemin, sa fonction de marché contribuent à expliquer sa relative importance.</p>
+        <p>Malheureusement au <num>xv<hi rend="sup">e</hi></num> siècle ses fortifications furent un des enjeux de la lutte entre Armagnacs et Bourguignons, puis entre Louis XI et Charles le Téméraire. C’est de cette époque également que datent le comté de Marie, formé en 1413 avec les châtellenies de Marle, La Fère et Montcornet, et le grenier à sel accordé par Louis XI en 1476.</p>
+        <p>Les guerres de François I<hi rend="sup">er</hi> contre Charles-Quint, puis les guerres de Religion n’épargnèrent pas la ville. Henri IV, héritier du comté, le réunit à la couronne mais en aliéna une grande partie. Le bailliage de Marle, dont les officiers étaient devenus officiers royaux, garda tout de même une vitalité qu’attestent de nombreux procès pour conflits de juridiction.</p>
+        <p>La prospérité de la ville, probablement déjà atteinte par toutes ces guerres, subit un coup d’arrêt définitif avec la guerre de Trente Ans et la Fronde, lorsqu’elle fut ravagée en même temps que toute la région.</p>
+        <p>Les quelques chiffres de population que nous pouvons connaître semblent témoigner pourtant d’un « creux » encore plus grave dans la décennie 1720-1730. La création d’un marché franc et surtout la construction de nouvelles routes de la Champagne à la Flandre et de Paris à Mons, qui passaient par Marie, allaient relancer l’économie de la ville, mais pas au point de lui rendre sa prospérité d’antan.</p>
+        <p>Marle, à l’époque à laquelle se situe cette étude, est donc une petite agglomération (deux cent trente-trois feux selon le <hi rend="i">Dictionnaire</hi> d’Expilly), mais qui se définit toujours comme une ville, dont elle a la topographie, les institutions et les fonctions, malgré la survivance d’un certain nombre d’aspects ruraux.</p>
+      </div>
+      <div>
+        <pb n="117" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>La ville</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la topographie de Marle</head>
+          <p>Marie conservait au <num>xviii<hi rend="sup">e</hi></num> siècle son enceinte de murailles, premier critère de définition de la ville encore à cette époque. Mais les fossés avaient été envahis par des jardins, comme dans beaucoup de villes. Les rues, dont certaines étaient pavées, le type de maisons qui les bordaient, la spécialisation du centre de la ville close – qui réunissait les sièges des juridictions, l’église, l’Hôtel-Dieu, les écoles, le marché – et celle du faubourg – où s’alignaient le long de la grande route les auberges, les forges et les boutiques de charrons –, la différenciation sociale des rues en rues riches et rues pauvres contribuaient à donner à la ville son caractère urbain.</p>
+          <p>La ville avait également un corps de ville, un sceau, un hôtel de ville, par lesquels s’exprimait sa personnalité civile et politique. Le corps de ville était encore élu au début du <num>xviii<hi rend="sup">e</hi></num> siècle, mais les charges devinrent vénales probablement en 1771. Les maires, échevins et procureurs-syndics devaient bien s’acquitter de leur tâche, car ils furent presque tous réélus dans les différentes municipalités de la période révolutionnaire.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La fonction d’assistance</head>
+          <p>On peut regrouper sous ce titre un certain nombre de services, dont la ville était le siège, quoique dans plusieurs cas leur pauvreté ne leur ait guère permis d’assister beaucoup la campagne environnante. C’est ainsi que l’Hôtel-Dieu ne comprenait que douze lits. Les sœurs qui s’en occupaient prenaient également en charge l’éducation des filles. Les Frères des Écoles chrétiennes se chargeaient de l’instruction primaire des garçons, tandis qu’un « régent » et un maître de pension assuraient leur instruction « secondaire ». Il est difficile de connaître l’extension de ces écoles.</p>
+          <p>Marie était le siège d’une direction des postes et d’une brigade de maréchaussée.</p>
+        </div>
+        <div>
+          <pb n="118" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>La fonction administrative</head>
+          <p>Comme l’affirment ses habitants eux-mêmes, « Marie jouit de la plupart des titres qui illustrent les villes de province ». Elle était, en effet, le siège d’un bailliage royal, d’une gruerie, d’un grenier à sel, d’un bureau des traites foraines, d’une direction des aides, d’une subdélégation, et, dans le domaine de l’administration religieuse, d’un doyenné rural. Les officiers des juridictions formaient environ 6,5 % de la population active marloise ; les différents employés des fermes et administrateurs des aides représentaient le même pourcentage. Le bailliage, très restreint quant au ressort et quant au personnel, avait gardé la juridiction criminelle. Le grenier à sel, dont le ressort s’étendait aux cinquante-huit villages, n’avait qu’un personnel limité. Le bureau des aides et la direction des traites amenaient dans la ville toute une population, qui s’intégrait assez mal, semble-t-il. L’établissement à Marie du siège de la subdélégation ne se traduisait guère que par la présence du subdélégué et de son greffier. Depuis la fin du <num>xvii<hi rend="sup">e</hi></num> siècle toutefois, les limites de la circonscription étaient bien fixées autour de Marie et le subdélégué était l’auxiliaire indispensable de l’intendant.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La fonction commerciale et artisanale</head>
+          <p>Le marché hebdomadaire attirait les villageois d’une trentaine de paroisses voisines, mais il était très concurrencé par celui de Vervins pour les grains. Le commerce principal était celui des fils et des toiles, ainsi que celui du beurre et des œufs, qu’on envoyait jusqu’à Paris. Les villageois venus à Marie pour le marché constituaient une clientèle importante pour les artisans et les marchands, qui formaient respectivement 38 % et 19 % de la population active. Ainsi s’explique, en outre, la présence à Marle de quatre notaires, dont le rayon d’action coïncidait à peu près avec celui du marché.</p>
+          <p>Les marchands, dont près de la moitié étaient aubergistes ou cabaretiers, à part entière ou tout en exerçant une autre activité, devaient également à la route une partie de leurs ressources. L’importance des deux routes qui font de Marie un carrefour ne date que de la seconde moitié du <num>xviii<hi rend="sup">e</hi></num> siècle. En 1755 fut créé un relais de poste à Marie, sur une traverse de Laon à Maubeuge. Entre 1760 et 1765, la construction d’une nouvelle chaussée fit de la route par Marie et Vervins la route principale. L’amélioration de l’autre route, qui menait « de Champagne en Flandre » par Montcornet, Marie et Guise fut plus lente. Néanmoins, le trafic de marchandises et de voyageurs passant par Marie semble avoir été, assez tôt, considérable,</p>
+        </div>
+        <div>
+          <pb n="119" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre V
+           <lb/>Les aspects ruraux</head>
+          <p>Si Marie est bien une ville, c’est cependant une ville pénétrée par la campagne, qui conserve de nombreux jardins, des chaumières et des tas de fumier à l’intérieur même de l’enceinte, et un certain nombre d’exploitations rurales dans les faubourgs. Le terroir de la commune comprenait environ cinq cents hectares de « terres et prez » et les éléments ruraux de la population, laboureurs et manouvriers, constituaient encore 23 % de l’ensemble.</p>
+          <p>C’est également une ville aux moyens limités, qui n’est guère différente sur certains points des villages environnants. Une partie de son terroir était aux mains des bourgeois de villes plus importantes, vers lesquelles se produisait une certaine émigration. Enfin, son corps de ville, dépourvu de crédits, pouvait difficilement se défendre contre les empiètements.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La société de la ville</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la signification des mentions socio-professionnelles</head>
+          <p>Il est important d’essayer de préciser et d’expliquer ce que recouvrent les mentions socio-professionnelles qui qualifient les habitants de la ville. Un fichier onomastique, qui recense l’ensemble des données concernant chaque personnage, a permis de constater la relativité de ces mentions. Le cumul de deux métiers ou de deux charges était chose courante, en particulier dans le cas des manouvriers. Parmi les artisans, l’absence de métier juré rend difficile la distinction entre le patron et le salarié ; mais marchands-artisans et artisans-marchands se distinguent par l’importance du capital d’exploitation. Les marchands, plus riches, étaient cependant rarement spécialisés dans un seul type de commerce. Certains d’entre eux alliaient même l’agriculture au commerce. Les officiers cumulaient souvent plusieurs charges. Le terme de bourgeois ou de bourgeoise, par contre, qualifie exclusivement la personne qui vit de ses rentes.</p>
+        </div>
+        <div>
+          <pb n="120" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>L’apport des rôles de taille</head>
+          <p>Aucun rôle de taille proprement dit ne subsiste, mais la taille est connue par les rôles de taille en ville, imposition fixée d’après la taille royale, qui donnent le chiffre de l’impôt pour chaque cote, sauf pour les plus pauvres, qui semblent avoir été exempts de la taille royale. L’étude porte principalement sur le rôle de 1784, les données fournies par les autres rôles venant éclairer les cas singuliers. Les conditions d’imposition de la taille appellent certes des réserves, mais les rôles de taille sont les seuls documents qui permettent une coupe des fortunes à un moment donné et un classement. Le rôle de 1784 divise assez nettement les Marlois en trois groupes : pauvres, aisés et riches. Manouvriers et petits artisans restent cantonnés dans la première catégorie, tandis que les artisans plus spécialisés ou installés à leur compte sont relativement nombreux à franchir le cap des cinq livres de taille. Les bourgeois et les marchands ont des situations assez diverses, mais la plupart d’entre eux se situent nettement parmi les aisés, tandis que la plupart des officiers et neuf des onze laboureurs apparaissent comme riches.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Comparaison du rôle de taille et du rôle de vingtième</head>
+          <p>Seul subsiste, pour Marle, un rôle de vingtième foncier de 1784. C’est donc une étude de la propriété foncière seule qu’il rend possible. Cet impôt était réparti par un personnel spécialisé ; le contrôleur préposé au rôle de Marle était réputé pour son sérieux. Malheureusement le rôle est en très mauvais état. D’autre part, il n’indique que les possessions foncières des Marlois à Marle, qui sont quelquefois peu caractéristiques de leur véritable fortune foncière. C’est pourquoi nous avons fait un sondage dans tous les registres de vingtième des environs de Marie conservés aux Archives départementales de l’Aisne.</p>
+          <p>La comparaison du rôle de vingtième et du rôle de taille ne fait pas apparaître de grandes différences. Les manouvriers sont mentionnés comme propriétaires un peu plus souvent que les artisans, ce qui est normal si l’on considère que le petit jardin attenant à leur masure est souvent leur unique richesse. Les laboureurs apparaissent comme plus imposés à la taille qu’au vingtième, surtout si on compare leur situation à celle des officiers ; mais ces derniers semblent avoir été particulièrement épargnés par la taille. Quant aux laboureurs, ils exploitaient souvent autant de terres prises à bail que de terres leur appartenant en propre. Ils pouvaient donc être riches sans être propriétaires,</p>
+        </div>
+        <div>
+          <pb n="121" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_07.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Étude quantitative des dots</head>
+          <p>Les données fiscales ne sauraient être une base suffisante pour l’estimation des fortunes. On peut les compléter par une étude des dots qui apparaissent dans les contrats de mariage. Cette méthode, quoique rendue possible par l’état des sources, les dispositions prévues par la coutume de Vermandois et les usages alors en vigueur à Marie, appelle aussi des réserves. Mais elle seule apporte des données chiffrées comparables à celles de la taille et du vingtième. Au total, le montant des dots énoncées dans les contrats passés à Marle coïncide assez bien avec ce que nous apprennent les rôles fiscaux. Les habitants de la campagne proche de Marle ont été compris dans cette étude, ce qui permet de les comparer avec les habitants de la ville, à l’intérieur d’une même catégorie professionnelle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les critères de prestige</head>
+          <p>L’équivalence de fortunes ne suffit pas à caractériser un milieu social. Il faut trouver d’autres critères qui permettent d’étudier les rapports entre les différents groupes que nous venons d’analyser et de déterminer la place qu’ils occupent réellement dans la hiérarchie sociale de leur époque. L’étude de l’ordre dans lequel le subdélégué de Marie classe les habitants pour son dénombrement de 1773 ne manque pas d’intérêt, mais elle se révèle finalement assez décevante, de même que l’étude des avant-noms. Pour certains groupes, qu’on pourrait appeler « de transition », seule une analyse très détaillée peut faire apparaître la réalité de la situation sociale. L’étude des alliances matrimoniales contractées entre les différents groupes permet, dans une large mesure, une telle analyse. Les résultats ne recoupent qu’en partie ceux de l’étude des rôles d’impôt. Ils mettent en évidence, en particulier, l’endogamie sociale des officiers et des bourgeois, doublée d’une absence totale d’endogamie géographique, ce qui montre bien que la similitude des fortunes ne suffit pas toujours à caractériser un milieu. Pour les autres groupes au contraire elle paraît bien être un critère suffisant, comme le montrent les nombreux mariages entre le groupe des artisans du fer et celui des laboureurs, entre ces deux groupes et le groupe des marchands. Mais l’analogie du mode de vie explique peut-être ces alliances autant que la fortune,</p>
+        </div>
+      </div>
+      <div>
+        <pb n="122" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>Ressources et modes de vie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>manouvriers et compagnons-artisans : citadins ou ruraux ?</head>
+          <p>Ni par les ressources ni par le mode de vie les manouvriers marlois ne différaient sensiblement de ceux des campagnes. Ils possédaient toutefois moins de terres et un plus petit jardin. Ils tiraient une partie de leurs maigres ressources de la préparation du chanvre et du lin pour la filature. Les femmes filaient quelquefois du lin pour la fabrique de Saint-Quentin ou du chanvre pour le tissage local. Le glanage, le chaumage, quelquefois même la mendicité, dans les mauvaises années, formaient un appoint. Les inventaires montrent une certaine diversité de situations : certains manouvriers n’ont pas de quoi vivre, d’autres possèdent une ou deux vaches, des poules, quelquefois même des provisions de blé ou un peu d’argent liquide. Les tisserands et les jardiniers paraissent en général plus riches que les manouvriers et plus alphabétisés. Au total, plus de la moitié des hommes savent signer, mais plus de 60 % des femmes sont illettrées, bien que la situation s’améliore au cours de la période.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les artisans : citadins au service de la campagne</head>
+          <p>Les artisans habitaient le plus souvent la ville ; ils formaient une part importante de la population marloise. Leur clientèle pouvait comprendre, dans certains cas, les usagers de la route, mais elle paraît avoir été constituée surtout par les habitants de la ville même et des villages. Certains d’entre eux possédaient, en outre, un peu de terre qu’ils exploitaient directement, mais rarement plus d’un arpent et demi, ou une deuxième maison qu’ils louaient. Certains même prêtaient à rente, mais plus nombreux étaient ceux qui empruntaient, et bien peu d’entre eux finissaient bourgeois. Leur mode de vie était dans l’ensemble beaucoup moins misérable que celui des manouvriers, même si leurs successions étaient souvent déficitaires. Leur taux d’alphabétisation paraît également supérieur,</p>
+        </div>
+        <div>
+          <pb n="123" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_09.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Les laboureurs</head>
+          <p>Bien que le groupe des laboureurs ait été assez peu représenté à Marle même, il est important de lui consacrer une étude car tous les membres de la petite société que formait la ville ont été en rapports plus ou moins directs avec eux, soit par leur travail, soit par des alliances de famille, soit par les rentes constituées ou les fermages. C’étaient, en général, d’assez gros exploitants : à l’exception d’un petit nombre qui ne disposaient pas de plus de vingt hectares, la plupart exploitaient de quarante à cent ou cent vingt hectares. Souvent leurs propres terres ne représentaient même pas un quart de cet ensemble, bien que leur principale ambition eût été de les augmenter ; beaucoup d’entre eux chercheront à acheter des biens nationaux.</p>
+          <p>Les « bleds », froment, méteil, seigle représentaient la culture principale. A l’exception de quelques petits exploitants, les laboureurs de Marie et de la région étaient assez prospères.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les marchands</head>
+          <p>Les marchands des campagnes, peu nombreux et assez misérables, étaient des blatiers ou des marchands de toile qui récoltaient leur marchandise chez les paysans. Les marchands de Marle, au contraire, achetaient en ville des produits fabriqués pour les revendre aux habitants et aux villageois le jour du marché, ce qui ne les empêchait pas de faire éventuellement le commerce du blé, du lin, du chanvre ou des toiles fabriquées par les tisserands des campagnes. Ils étaient très peu spécialisés. Les aubergistes eux-mêmes, groupe important, puisqu’ils n’étaient pas moins de vingt-trois aubergistes et cabaretiers en 1785, se livraient souvent à tout un commerce de détail. Plusieurs d’entre eux étaient en même temps marchands et laboureurs. D’autres affermaient des terres. Beaucoup prêtaient de l’argent aux Marlois et aux habitants de la campagne au moyen de rentes constituées. Leur fortune quelquefois assez élevée, leur mode de vie plus « urbain » rapprochaient les plus riches d’entre eux des bourgeois.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Bourgeois et officiers :
+           <lb/>la tutelle financière sur la campagne</head>
+          <p>Seuls certains bourgeois pouvaient être admis parmi les groupes des officiers. Pour les autres, artisans ou marchands enrichis au point de pouvoir vivre de leurs rentes, le terme de bourgeois indique une certaine notabilité. Leur <pb n="124" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_14/ENCPOS_1972_14_10.TIF/full/full/0/default.jpg"/>emprise financière sur la campagne par les fermages et les rentes constituées était très variable. Une fois mis à part les officiers « ministériels », dont le train de vie était assez proche de celui des marchands, les autres officiers formaient un groupe assez homogène ; leurs gages ne jouaient le plus souvent qu’un faible rôle dans leurs ressources, dont l’essentiel provenait des fermages et des arrérages de rente. Leur mode de vie était presque luxueux par rapport à celui des autres habitants de la ville.</p>
+          <p>Les deux seigneurs résidant dans les environs immédiats de Marle, enfin, offrent deux types contraires et également caractéristiques de petits nobles ruraux.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes et plans</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Biographie de Jean II de Montagu, surintendant des finances et grand maître de l’hôtel du roi Charles VI (1388-1409)</title>
+        <author ref="https://www.idref.fr/027024431">Lucien-Hestor-Claude Merlet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_13.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 27</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Biographie
+        <lb/>de
+        <lb/>Jean II de Montagu,
+        <lb/>Surintendant des Finances et Grand-Maître de l’Hôtel du roi Charles VI
+        <lb/>(1388-1409.)</head>
+      <byline>Thèse soutenue par
+        <forename>Lucien-Victor-Claude</forename>
+        <surname>Merlet</surname>
+        <roleName>Licencie ès-lettres, ancien élève de l’École nationale d’administration</roleName>
+      </byline>
+      <div>
+        <head>I.</head>
+        <p>Origine, nom et armoiries de la famille de Montagu.</p>
+      </div>
+      <div>
+        <head>II.</head>
+        <p>Titres et possessions de Jean II de Montagu, souverain et grand maître de l’hôtel du roi Charles VI.</p>
+      </div>
+      <div>
+        <head>III.</head>
+        <p>Histoire de la vie de Jean II de Montagu.</p>
+      </div>
+      <div>
+        <head>IV.</head>
+        <p>Son procès, — sa condamnation, — sa mort.</p>
+      </div>
+      <div>
+        <head>V.</head>
+        <p>Sa réhabilitation.</p>
+        <p/>
+        <p>Vu:</p>
+        <p>Paris, le 22 novembre 1850.</p>
+        <p><hi rend="i">Le Sous-Directeur des études, L. de MAS-LATRIE</hi>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

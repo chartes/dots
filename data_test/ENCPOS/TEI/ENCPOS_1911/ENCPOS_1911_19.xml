@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_19" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La Grande Confrérie Notre-Dame aux prêtres et aux bourgeois de Paris</title>
+        <author ref="https://www.idref.fr/034419578">André Vaquier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_19.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 147-153</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="147" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La
+       <lb/>grande confrérie Notre-Dame
+       <lb/>aux prêtres et aux bourgeois de Paris</head>
+      <byline>
+        par
+        <forename>André</forename>
+        <surname>Vaquier</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources. Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction
+         <lb/>les origines de la. Confrérie</head>
+        <p>Les origines de la Grande Confrérie Notre-Dame sont de beaucoup antérieures à l’année 1168, date à laquelle les historiens de Paris l’ont généralement fait remonter. Preuves de cette antériorité déduites : 1° d’un acte de 1203 qui montre qu’à cette date les femmes étaient admises dans la Confrérie ; 2° des statuts primitifs français d’après lesquels les femmes étaient exclues, et la Confrérie composée de cent membres ; 3° des statuts primitifs latins d’après lesquels la Confrérie n’était composée que de soixante-douze membres, et existait longtemps avant leur rédaction. Existence entre les années 1058 et 1066 d’une petite société parisienne appelée « des douze apôtres ». Elle présente avec la Confrérie Notre-Dame de telles similitudes qu’il faut conclure à leur identité ; mais le caractère de cette société et son organisation sont impossibles à préciser.</p>
+      </div>
+      <div>
+        <pb n="148" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre premier
+         <lb/>l’organisation de la confrérie</head>
+        <p>1. <hi rend="i">Les confrères.</hi> – Le nombre des confrères, fixé d’abord à soixante-douze, fut ensuite limité à cent, moitié prêtres et moitié bourgeois de Paris. Cette limitation, et les conditions morales et surtout matérielles qu’on exigeait des candidats, contribuèrent puissamment à assurer le succès de la Confrérie qui fut composée des personnages les plus notables de Paris. Les femmes, primitivement exclues, furent admises avant la fin du <num>xii<hi rend="sup">e</hi></num> siècle, et dans leur nombre, fixé à cinquante, devaient être acceptées de préférence les femmes des bourgeois déjà reçus. Treize confrères de Saint-Denis, sept prêtres et six laïques firent encore partie de l’association. Admis dans la deuxième moitié du <num>xii<hi rend="sup">e</hi></num> siècle, ils étaient astreints entre eux aux mêmes devoirs que leurs confrères de Paris. Ils avaient cessé au <num>xvii<hi rend="sup">e</hi></num> siècle de figurer dans la Confrérie.</p>
+        <p>2. <hi rend="i">Les officiers.</hi> – Il y eut primitivement trois officiers : l’abbé, qui avait la haute direction des affaires, le prévôt ou trésorier et comptable, le doyen ou secrétaire. Une nouvelle charge, celle de greffier, fut créée au <num>xiii<hi rend="sup">e</hi></num> siècle. Le greffier s’occupait spécialement de la célébration des anniversaires et de la distribution des jetons de présence aux offices. Il y eut en outre deux fonctions subalternes, celle de clerc ou commis du doyen, qui existait dès la fin du <num>xii<hi rend="sup">e</hi></num> siècle, celle de receveur ou commis du prévôt, créée seulement au <num>xv<hi rend="sup">e</hi></num> siècle. Ces six officiers gouvernaient la Confrérie à titre viager. Ils étaient révocables. Ils touchaient certaines rémunérations, et, seuls, ou assistés de confrères dans les cas importants, ils délibéraient sur les affaires de la Confrérie.</p>
+        <pb n="149" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_03.TIF/full/full/0/default.jpg"/>
+        <p>3. <hi rend="i">La mission.</hi> – Le clerc et le receveur étaient à la nomination du doyen et du prévôt. Les quatre autres fonctions étaient électives. L’élection s’appelait « mission » parce que, pour colliger les voix, on nommait quatre scrutateurs appelés « miseurs ». L’élection des officiers se faisait par scrutin, et celle des confrères par compromis. Les nouveaux élus étaient reçus solennellement le jeudi qui suivait l’élection.</p>
+        <p>4. <hi rend="i">Le siège.</hi> – On appelait ainsi l’assemblée générale des confrères qui se fit d’abord deux fois l’an, puis à partir du <num>xv<hi rend="sup">e</hi></num> siècle, seulement de deux en deux ans. Le jour du siège était dite une messe solennelle dans l’église de la Madeleine, où la Confrérie avait son établissement au moins depuis 1266. A l’issue de la messe avait lieu un banquet, pour lequel on élisait spécialement un lecteur, deux panetiers, deux échansons, deux cuisiniers, deux huissiers, quatre aumôniers et deux sous-aumôniers. La disposition des tables était ingénieusement réglée, et tous les restes étaient distribués en aumônes. Le lendemain du siège, tous les confrères se réunissaient de nouveau pour examiner les affaires de la Confrérie et procéder à l’élection des nouveaux membres et officiers.</p>
+        <p>5. <hi rend="i">Les privilèges.</hi> – Le droit de sceau. Description de l’unique exemplaire de ce sceau qui nous ait été conservé. Le droit de <hi rend="i">committimus</hi> au petit sceau. Philippe de Valois autorise (1337-1338) les confrères à se faire représenter en justice par des procureurs, et Charles VI, en 1404, met tous leurs biens sous la sauvegarde royale. Ces divers droits contribuèrent à faire de la Confrérie une véritable personne morale, dont les privilèges furent complétés au point de vue religieux par des lettres d’indulgences que lui accorda la cour de Rome.</p>
+      </div>
+      <div>
+        <pb n="150" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre II
+         <lb/>L’activité de la confrérie</head>
+        <p>1. <hi rend="i">L’activité politique</hi>. – La Confrérie n’a joué aucun rôle politique. Elle n’a jamais été mêlée, comme l’a prétendu Le Roux de Lincy, aux événements de 1306, ni à ceux de 1358. Il faut voir la raison de ce fait dans la diversité même des membres dont la Confrérie était composée.</p>
+        <p>2. <hi rend="i">L’activité religieuse et charitable.</hi> – Toute autre fut son activité religieuse, car elle avait pour seul objet les exercices de dévotion, l’assistance mutuelle, et les devoirs de charité. Le service consistait principalement en messes de fondation, presque quotidiennes, qui rapportaient aux prêtres de beaux revenus, à cause des jetons de présence qu’ils touchaient. L’assistance mutuelle se pratiquait sous une double forme, spirituelle et morale, d’une part, matérielle, d’autre part, et se manifestait dans toutes les circonstances critiques de la vie : dans les revers de fortune, par un soutien pécuniaire ; dans la maladie, par des visites et un réconfort moral ; dans la mort, par des prières et par l’assistance obligatoire de tous les confrères aux obsèques, qui se faisaient aux frais de la Confrérie, lorsque les biens du défunt n’y pouvaient suffire. Enfin les aumônes, que pratiquait largement la Confrérie, étaient le complément nécessaire de sa vie religieuse.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Les biens de la confrérie</head>
+        <p>Les produits de sa censive et les rentes qu’elle percevait sur des maisons dans différents quartiers de Paris, étaient pour la Confrérie la source principale de ses revenus.</p>
+        <pb n="151" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_05.TIF/full/full/0/default.jpg"/>
+        <p>1. <hi rend="i">La censive.</hi> – Elle ne formait pas un bloc, mais était composée de plusieurs fiefs, d’inégale importance, tous situés à Paris.</p>
+        <p><hi rend="i">Le Clos aux bourgeois.</hi> – La Confrérie n’en était pas redevable à saint Louis, mais le possédait déjà en 1218. Preuves que l’acte de 1218 concerne bien le Clos aux bourgeois. Celui-ci était situé à la porte du Gibard et s’appelait alors Châtelet. Echanges avec les Chartreux de Vauvert. Bail fait, en 1364, à Jean Mouchard, et sous-bail partiel, fait par celui-ci à Philippot Renier, à la suite duquel le clos se trouva divisé en deux. Succession des divers propriétaires. Différents noms portés par le fief : Hôtel de Bourges, Clos aux bourgeois. Les noms de Clos Vignerai et de Clos Saint-Sulpice, que l’on rencontre quelquefois, doivent s’étendre au territoire tout entier et non pas seulement au Clos aux bourgeois. Différends entre la Confrérie et les religieux de Saint-Germain-des-Prés. Le grand procès de 1611 nécessita un arpentage qui montre la contenance totale du fief. Fin du procès en 1616, à l’avantage de la Confrérie.</p>
+        <p><hi rend="i">Le fief de la Huchette.</hi> – Origines obscures de ce fief. Il portait, en 1293, sur quatre maisons qui se faisaient suite sur le côté gauche de la rue de la Huchette. Histoire de ces maisons, dont la plus importante s’appelait « la maison aux Paons ».</p>
+        <p>Le <hi rend="i">fief de Froid-Mantel</hi>. – Il remontait au deuxième quart du <num>xiii<hi rend="sup">e</hi></num> siècle. Détermination de la rue de Froid-Mantel (ou de la Noeroie), de la Ruelle devant l’Hôpital (ou Thibaut Dacre) et de la rue Maître Henri l’organiste. Situation précise du fief dans ces trois voies. Procès entre les religieux de Sainte-Geneviève et les confrères. Ceux-ci perçurent encore les produits de leur censive en 1329, mais peu après cessèrent de rien percevoir. Explication de la perte du fief.</p>
+        <p><hi rend="i">Le fief de Villesenie</hi>. – Acquis en 1263, il portait sur <pb n="152" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_06.TIF/full/full/0/default.jpg"/>deux maisons situées, l’une rue du Chevet Saint-Landry, l’autre rue Saint-Landry.</p>
+        <p><hi rend="i">Le fief Saint-Christophe</hi>. – – La censive que possédait déjà la Confrérie, rue Saint-Christophe, fut complétée par l’acquisition qu’elle fit, en 1282, de plusieurs maisons situées dans la même rue.</p>
+        <p><hi rend="i">Le fief des Barres.</hi> – Donation de Guillaume des Barres en 1232. Le fief portait, en 1293, sur cinq maisons situées, l’une rue des Viez-Poulies (cul-de-sac Putigneux), les autres rue des Barres. Détails sur ces maisons.</p>
+        <p><hi rend="i">Le fief de la Mortellerie</hi>. – Il vint à la Confrérie par l’échange fait entre elle et Philippe le Bel en 1293. Il comprenait deux groupes de maisons entre la rue de la Mortellerie et le Port au foin (quai des Ormes). Nouvelle assignation de Philippe VI de Valois en 1328.</p>
+        <p><hi rend="i">Le fief Saint-Fiacre.</hi> – Noms divers portés par ce fief. La Confrérie le possédait au <num>xiii<hi rend="sup">e</hi></num> siècle. Il consistait en une pièce de terre au delà de la porte Montmartre, mais dont deux arpents étaient en censive de l’évêque de Paris. Bail de 1330 fait à cinq courtilliers. Au <num>xv<hi rend="sup">e</hi></num> siècle la terre était détenue par une famille de jardiniers, appelés Desmarets, qui firent au siècle suivant plusieurs sous-accensements. Construction de maisons et de la rue Saint-Fiacre. Procès entre la Confrérie et les religieux de Saint-Magloire de 1562 à 1571. Arpentage (1567) et bornage (1571) du fief. Construction de nouveaux fossés de Paris pour lesquels fut prise une grande partie du fief. Limites du fief au <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+        <p>2. <hi rend="i">Les rentes.</hi> – Elles étaient considérables, assises tant à Paris que dans la banlieue. Il faut se contenter de signaler les plus importants de ces revenus. A Paris, un moulin au port de Mi-Bray, un étal dans la Boucherie, une maison rue de la Licorne, vingt-huit sous sur le Parloir aux Bourgeois. Dans la banlieue, des vignes à Rueil, à l’Hay, à Passy, des terres à Villeneuve-le-Roy, deux <pb n="153" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_07.TIF/full/full/0/default.jpg"/>moulins à Puteaux. Quelques chiffres des revenus annuels de la Confrérie.</p>
+        <p>3. <hi rend="i">Les biens meubles.</hi> – Ils consistaient uniquement en ornements d’église et livres d’offices. Les plus riches restaient en garde chez le doyen, les autres étaient à la Madeleine.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>La fin de la confrérie</head>
+        <p>Les modifications que subit la Confrérie dans les derniers temps de son existence atteignirent seulement son organisation, son objet étant resté toujours le même. Nombre illimité des confrères. Réunion de la charge de receveur à celle de prévôt. Large rémunération des fonctions. Suppression de la Confrérie par la loi du 18 août 1792. Conclusion.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>I. Censier de 1329.</p>
+        <p>II. Photographie du sceau de la Confrérie.</p>
+        <p>III. Tableau synoptique des officiers et principaux membres de la Confrérie.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <pb n="154" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_19/ENCPOS_1911_19_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

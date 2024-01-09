@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_16" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les origines du monachisme dans le diocèse de Besançon (<hi rend="sc">v</hi><hi rend="sup">e</hi>-<hi rend="sc">x</hi><hi rend="sup">e</hi> siècle)</title>
+        <author ref="https://www.idref.fr/027041700">Gérard Moyse</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_16.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 129-135</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="129" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les origines du monachisme
+       <lb/>dans le diocèse de Besançon
+       <lb/>(<num>v<hi rend="sup">e</hi></num>-<num>x<hi rend="sup">e</hi></num> siècles)</head>
+      <byline>
+        par
+        <forename>Gérard</forename>
+        <surname>Moyse</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction et sources</head>
+        <p>Le renouveau actuel de la qualité des travaux sur l’histoire comtoise a peu touché le domaine de l’histoire monastique en général et la période du haut Moyen Âge en particulier : les connaissances admises sont souvent encore un héritage de l’historiographie d’Ancien Régime. Pourtant les sources sont peu nombreuses. Une enquête à travers archives et bibliothèques révèle que, malgré d’innombrables copies du <num>xvii<hi rend="sup">e</hi></num> siècle, où le rôle du Père Chifflet fut considérable, et du <num>xviii<hi rend="sup">e</hi></num> siècle, on ne peut plus vraiment découvrir de documents nouveaux. Tout au plus, quelques manuscrits liturgiques peu utilisés peuvent-ils fournir quelques précisions nouvelles sur la date d’apparition d’un culte, ainsi le sacramentaire de Hugues de Salins (Bibliothèque nationale, ms. lat. 10500).</p>
+        <p>Pour saisir toute l’histoire du haut Moyen Âge en Comté, compte tenu de l’avancement relativement modeste des fouilles, il faut donc se contenter d’une cinquantaine de sources diplomatiques, presque uniquement carolingiennes – dont une dizaine au moins est constituée de textes falsifiés – de quelques mentions annalistiques et d’une collection de plusieurs dizaines de vies de saints (martyrs, évêques de Besançon, saints du Jura, saints colombaniens). Une trentaine de ces textes concernent exclusivement le diocèse de Besançon ; encore parmi eux quelques-uns seulement sont-ils d’une réelle valeur pour l’histoire du haut Moyen Âge, et tous ne présentent-ils pas l’intérêt exceptionnel de la <hi rend="i">Vita Patrum Jurensium.</hi></p>
+      </div>
+      <div>
+        <pb n="130" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Le cadre</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le pays et son peuplement
+           <lb/>avant l’apparition du monachisme</head>
+          <p>Une étude des conditions physiques, sols et climats et, dans la mesure d’une documentation jusqu’à présent fragmentaire, de l’équipement en voies de communication et de l’évolution du peuplement au cours de la préhistoire, de la protohistoire et de l’époque gallo-romaine de l’aire comprise entre Vosges, Saône et Jura, montre que les zones favorisées par les établissements humains (bordure occidentale du Jura, vignoble et plateaux le dominant, zone des confluents de la Saône, du Doubs et de l’Ognon, chaussée entre les deux portes de Bourgogne et trouée de Belfort) formaient, avant que le monachisme apparût, une sorte de croissant fertile et peuplé, étiré du Rhin à la Saône, qui traduisait le rôle de passage entre la Germanie et la Gaule joué par le diocèse. Mais les zones laissées désertes par ce croissant, hauteurs du Jura et plateaux de Haute-Saône, toutes rudes qu’elles fussent, pouvaient offrir un jour des possibilités de vie à des populations tenaces.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La germanisation et ses effets
+           <lb/>dans le diocèse de Besançon</head>
+          <p>Jusqu’au milieu du <num>v<hi rend="sup">e</hi></num> siècle, le diocèse de Besançon, où la christianisation, malgré la présence d’un évêque à Besançon dès le <num>iii<hi rend="sup">e</hi></num> siècle, avait sans doute peu mordu sur les campagnes, resta attaché au vieux monde romain et ne fut qu’effleuré, au pire, par les grandes invasions.</p>
+          <p>Ce n’est que dans la seconde moitié du siècle que commença vraiment la germanisation, due aux Alamans, qui furent bientôt refoulés par les Burgondes venus de Lyon, dont les établissements, révélés par l’archéologie, présentent un caractère militaire marqué. Il n’est pas assuré que, dans le domaine religieux, les Burgondes firent preuve de leur traditionnelle tolérance. La germanisation du diocèse se poursuivit bien après la conquête franque, puisque des Alamans (Warasques) s’y établirent encore au début du <num>vii<hi rend="sup">e</hi></num> siècle.</p>
+          <pb n="131" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_03.TIF/full/full/0/default.jpg"/>
+          <p>En réalité, ces vagues successives d’apports germaniques étaient loin d’avoir transformé radicalement le fonds celtique romanisé (« réduit » de Haute-Saône) et c’est grâce à une alliance avec l’aristocratie gallo-romaine, avec la famille Waldelenus, par exemple, que les Francs, très peu nombreux dans le diocèse, purent maintenir leur domination et réprimer quelques soulèvements « nationaux » burgondes, d’origine aristocratique.</p>
+          <p>Il semble surtout, en l’état actuel des fouilles et des « trouvailles » archéologiques, que le peuplement n’avait pas conquis de nouveaux territoires et qu’il avait même régressé au nord du diocèse. Mais le <num>vii<hi rend="sup">e</hi></num> siècle, malgré ses agitations, fut, à en juger par l’exemple de Besançon, une période favorable à la christianisation, qui avait été perturbée aux <num>v<hi rend="sup">e</hi></num> et <num>vi<hi rend="sup">e</hi></num> siècles.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Caractères de l’époque carolingienne
+           <lb/>dans le diocèse de Besançon</head>
+          <p>Les premiers carolingiens prirent rapidement en mains le diocèse et y répercutèrent la politique unificatrice et autoritaire qui les caractérisa, tant dans le domaine religieux que dans le domaine fiscal, ainsi que l’attestent les mentions de polyptyques à Saint-Claude et Luxeuil.</p>
+          <p>On est tenté de rapporter à cette tendance l’apparition de la notion de <hi rend="i">pagus</hi> dans les sources. L’examen des textes révèle en effet que, dans les limites du diocèse de Besançon en tout cas, les <hi rend="i">pagi</hi> ne furent une réalité qu’à partir du <num>viii<hi rend="sup">e</hi></num> siècle au plus tôt. Mais on peut douter de l’existence politique et administrative, aux côtés des cinq pagi de Varais, Escuens, Amous, Portois et Ajoye, d’une Sexte autour de Besançon, ainsi que de l’adéquation des limites des <hi rend="i">pagi</hi> à celles des futurs doyennés.</p>
+          <p>Particulièrement touché par les éphémères morcellements politiques de la seconde moitié du <num>ix<hi rend="sup">e</hi></num> siècle, puis par les interventions des souverains germaniques et français, par la féodalisation et les tendances à l’autonomie, le diocèse de Besançon paraît en revanche, et contrairement aux vieilles légendes, avoir été à peu près épargné par les invasions sarrazine et normande. Seuls les raids hongrois l’ont atteint à l’occasion. On a donc finalement l’impression que les régions situées entre Saône et Jura jouirent de conditions humaines relativement privilégiées.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="132" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Les courants monastiques</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’action des courants primitifs du monachisme
+           <lb/>avant l’apparition de la règle bénédictine</head>
+          <p>En dépit de quelques vieilles traditions bisontines, la vie monastique n’a commencé dans le diocèse de Besançon qu’avec les Pères du Jura, soit dans le milieu du <num>v<hi rend="sup">e</hi></num> siècle. Tout ce que la <hi rend="i">Vita Patrum Jurensium</hi> nous apprend en fait d’usages monastiques ou de relations humaines avec d’autres régions de Gaule nous reporte dans le sillon rhodanien ou la Provence. Ainsi se trouvent prouvées les origines méditerranéennes de la règle mise au point par saint Oyend, qu’on observait à Condat, Lauconne et la Balme, voire Romainmôtier, seuls établissements vraiment attestés comme issus de Condat. Les usages observés, proches de ceux de saint Benoît, durent permettre un passage facile à l’observance de la règle italienne.</p>
+          <p>Si l’influence de Condat sur Saint-Maurice d’Agaune est évidente, celle de Saint-Maurice dans le diocèse de Besançon est très douteuse. En fait, cette influence a passé par-dessus le diocèse pour aboutir à Saint-Bénigne de Dijon et surtout Saint-Marcel de Chalon, et les liens entre Valais et Bourgogne sont matérialisés par une ligne de relais qui traverse le diocèse.</p>
+          <p>En revanche, l’influence bourguignonne dans le diocèse est certaine dès la fin du <num>v<hi rend="sup">e</hi></num> siècle au moins, avec la fondation de Silèze, futur Saint-Lothain, et de Maximiac par Lautenus, venu d’Autun. Mais il ne faudrait pas étendre cet apport bourguignon à Baume-les-Dames, car l’histoire de sa fondation au <num>vi<hi rend="sup">e</hi></num> siècle par le roi Gontran ou le duc Garnier n’est qu’une légende.</p>
+          <p>A la fin du siècle, la moitié nord du diocèse – sauf Besançon peut-être, avec l’abbaye de Saint-Martin de Brégille – n’avait pour ainsi dire pas encore été touchée par le monachisme. Ce fut le rôle des Irlandais que de l’y implanter et, si Colomban ne fut pas le premier – Carantoc le précéda à <hi rend="i">Salicis</hi> –, du moins fut-il le catalyseur. Mais on chercherait en vain dans le diocèse des fondations colombaniennes antérieures à Walbert autres qu’Annegray, Luxeuil, Fontaine, Saint-Paul de Besançon et peut-être le premier Cusance, pour les moniales : les origines anciennes de Lure et Saint-Ursanne ne sont que fiction. Fiction aussi que les mentions de la <hi rend="i">laus perennis</hi> à Luxeuil.</p>
+        </div>
+        <div>
+          <pb n="133" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Progrès et hégémonie
+           <lb/>de la règle bénédictine</head>
+          <p>Les fondations postérieures au premier tiers du <num>vii<hi rend="sup">e</hi></num> siècle dues au courant iro-franc ne sont pas nombreuses dans le diocèse de Besançon. Certes, les fondations de la famille de Donat de Besançon sont célèbres, que ce soit Notre-Dame de Jussa-Moutier à Besançon pour les moniales, ainsi que le mystérieux <hi rend="i">Dornatiacum</hi> en Attuyer, ou Romainmôtier, restauré par le frère de Donat. Les créations dues à Luxeuil même au <num>vii<hi rend="sup">e</hi></num> siècle, à l’exception de Moutier-Grandval, exemplaire mais en fait hors du diocèse, sont toutes hypothétiques encore que vraisemblables, qu’il s’agisse du second Cusance pour les hommes, ou de Baume-les-Dames.</p>
+          <p>Ce qui n’est pas douteux, c’est l’influence bourguignonne, non pas à Château-Chalon, dont il faut se résoudre à ignorer l’origine malgré l’histoire prestigieuse de l’intervention de saint Léger, mais à Favemey, au début du <num>viii<hi rend="sup">e</hi></num> siècle, puisqu’il s’agit d’une création de Wideradus, fondateur de Flavigny.</p>
+          <p>Mais à cette époque déjà, la règle bénédictine tendait à l’unicité. C’est en tout cas la conclusion qui s’impose, sinon à l’examen des sources locales – encore que la <hi rend="i">Régula Donati,</hi> document exceptionnel mais isolé, montre dès les années 650 un moine de Luxeuil s’inspirant pour moitié de Benoît et rarement de Colomban –, du moins après une enquête systématique des mentions de règles dans les textes des <num>vii<hi rend="sup">e</hi></num> et <num>viii<hi rend="sup">e</hi></num> siècles, et notamment dans les privilèges épiscopaux. En fait, il faut se garder d’imaginer cette période de la <hi rend="i">Régula mixta </hi>comme uniquement dominée par le couple Colomban-Benoît. Les textes font apparaître plutôt des combinaisons capricieuses, la règle de Benoît étant parfois recommandée seule dès la fin du <num>vii<hi rend="sup">e</hi></num> siècle alors qu’ailleurs, à la même époque, règnent des conglomérats proches de celui de Donat et que la règle de Colomban est encore nommée au début du <num>viii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>C’est aux carolingiens qu’est dû le triomphe de la règle bénédictine ; dans le domaine monastique comme dans les autres domaines, le diocèse de Besançon n’échappa pas à leurs grandes mesures, ainsi qu’en témoigne la <hi rend="i">Notitia de servitio monasteriorum.</hi> L’époque carolingienne ne fut pas exempte de fondations monastiques, puisque les textes signalent en 869-871 de nouveaux établissements, tels que Enfonvelle, Vaucluse, Mouthier-Hautepierre, Château-Chalon et Baume-les-Messieurs, création – ou acquisition – de Bemon.</p>
+          <p>C’est du diocèse de Besançon que partit la réforme clunisienne, de Gigny précisément, Baume-les-Messieurs n’étant qu’une <hi rend="i">cellula,</hi> où Bemon se trouvait déjà avant 888, venant d’Autun. Il renouvelait ainsi la démarche de Lautenus et marquait à nouveau l’influence bourguignonne sur le diocèse de Besançon. Si on y ajoute les emprises française au <num>x<hi rend="sup">e</hi></num> siècle à Favemey, germanique dès la fin du <num>ix<hi rend="sup">e</hi></num> siècle à Luxeuil et à Lure, et lyonnaise à Saint-Oyan dès le milieu du <num>ix<hi rend="sup">e</hi></num> siècle, on remarquera combien, à l’époque carolingienne encore, se vérifie, dans le domaine monastique, le rôle de convergence du diocèse de Besançon,</p>
+        </div>
+      </div>
+      <div>
+        <pb n="134" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>Le monachisme dans l’économie
+         <lb/>et la société</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la situation économique et sociale :
+           <lb/>approches et conclusions</head>
+          <p>La <hi rend="i">Vita Patrum Jurensium</hi> montre très nettement les intentions colonisatrices des premiers moines du Jura et les tâtonnements dans le choix d’un terroir convenable, souci qui transparaît clairement aussi dans la <hi rend="i">Vita Germani Grandivallensis ;</hi> les occupations agricoles des moines sont abondamment mentionnées, et par la <hi rend="i">Vita Patrum Jurensium,</hi> et par la <hi rend="i">Vita Colombani. </hi>En effet, l’époque est bien celle de l’économie autarcique, où chaque établissement cherche à se suffire à lui-même. Mais on décèle quelques rares signes d’une économie d’échange, comme le voyage des moines de Condat vers la côte méditerranéenne pour s’approvisionner en sel (fin <num>v<hi rend="sup">e</hi></num>-début <num>vi<hi rend="sup">e</hi></num> siècle).</p>
+          <p>L’apparence matérielle des monastères du diocèse n’est connue que pour le Condat primitif, où l’on constate l’existence de bâtiments en bois fort évolués, avec étages et pièces multiples formant des cellules séparées, avant l’instauration de la vie communautaire par Oyend, et pour le Luxeuil du <num>ix<hi rend="sup">e</hi></num> siècle qui, grâce aux libéralités d’Ansegise, dut présenter alors le plan triangulaire caractéristique de Saint-Riquier.</p>
+          <p>Les populations, parfois préexistantes comme c’est le cas à Luxeuil, étaient attirées auprès des monastères par ces personnages exceptionnels que leur semblaient alors les moines et venaient s’y faire sauver, guérir ou nourrir, ainsi qu’en témoignent les catégories correspondantes de miracles, mais elles ne semblent s’y être vraiment fixées à demeure qu’à l’époque carolingienne. Ce n’est qu’au <num>ix<hi rend="sup">e</hi></num> siècle qu’on repère des signes de défrichages et de colonisation, opérations plus dures à Saint-Oyan peut-être qu’à Luxeuil à cause des conditions naturelles. Toujours est-il que sur les huit cent cinquante-sept colonges recensées en 819 à Saint-Oyan, 2 % seulement n’étaient pas peuplées, preuve d’une intense mise en valeur. Ce nombre de huit cent cinquante-sept apparaît pourtant singulièrement réduit face aux quinze mille manses donnés comme possession de Luxeuil dans la première moitié du <num>ix<hi rend="sup">e</hi></num> siècle ; même diminué, ce total fait encore de Luxeuil une abbaye importante, du niveau de Saint-Germain-des-Prés.</p>
+          <p>Les relations du monachisme avec les pouvoirs politiques, moins attestées pour Condat, mais réelles, aussi bien avec la royauté burgonde qu’avec la <pb n="135" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_07.TIF/full/full/0/default.jpg"/>royauté mérovingienne puis carolingienne, sont suffisamment connues pour Luxeuil, où elles culminèrent en 673-675, quand l’abbaye joua le rôle de prison politique. A Luxeuil, comme à Condat et peut-être à Lure, elles furent aussi marquées par l’octroi de l’exemption des tonlieux par les carolingiens. A la limite, l’étroitesse des liens entre pouvoirs politiques et monachisme conduisit aux usurpations de monastères par les laïcs, dont l’exemple extrême est Lure.</p>
+          <p>Si cette collusion existe aussi entre monachisme et pouvoir épiscopal à l’époque carolingienne, où il n’est pas rare de voir un évêque de Metz abbé de Luxeuil ou un archevêque de Lyon abbé de Saint-Oyan, en revanche, au <num>vii<hi rend="sup">e</hi></num> siècle et au début du <num>viii<hi rend="sup">e</hi></num> siècle les deux domaines sont nettement séparés, puisque les monastères colombaniens sont en général pourvus d’immunités face aux évêques – mais un tel privilège n’a pas été conservé pour Luxeuil – et que Condat jouit de la présence d’un évêque claustral.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Comment expliquer que le diocèse de Besançon, centre d’attraction de tous les courants monastiques connus par le monde occidental du haut Moyen Âge, ait finalement vu si peu de monastères s’établir, ou du moins se perpétuer dans ses limites ? C’est dans sa position géographique et ses caractères physiques qu’on trouvera l’explication. Il faudra attendre le <num>ix<hi rend="sup">e</hi></num> siècle pour que l’essaimage s’arrête et que l’emprise des hommes sur son sol rude produise ses fruits.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <pb n="136" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_16/ENCPOS_1972_16_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

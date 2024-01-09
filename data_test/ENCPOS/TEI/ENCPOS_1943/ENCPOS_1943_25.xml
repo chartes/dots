@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_25" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’architecture civile privée dans le Pays chartrain</title>
+        <author ref="https://www.idref.fr/027181332">Hélène Verlet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_25.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 217-223</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="217" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’architecture civile privée
+       <lb/>dans le pays chartrain</head>
+      <byline>
+        par
+        <forename>Hélène</forename>
+        <surname>Verlet</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’étude ne porte que sur l’architecture civile privée. Elle se limite à Chartres et aux pays limitrophes.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Le milieu</head>
+        <div>
+          <head rend="uc">I. – Les conditions naturelles</head>
+          <div>
+            <head rend="uc">Chapitre premier
+             <lb/>le sol. Étude géologique.</head>
+            <p>A des pays de formation géologique différente correspondent des sous-sols différents. La pierre à bâtir se rencontre dans le Perche, aux environs de Nogent-le-Rotrou, dans le Dunois et dans la Haute-Beauce, à proximité de Chartres. Le grès est exploité à Épernon. Au contraire, le Drouais, le Thimerais, le Pays chartrain et le Petit-Perche sont dépourvus de pierre de construction et ne possèdent que de la terre à briques et des forêts.</p>
+          </div>
+          <div>
+            <pb n="218" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_02.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre II
+             <lb/>La forêt.</head>
+            <p>La foret était plus étendue autrefois qu’aujourd’hui. Elle reste très dense au nord et à l’ouest du Pays chartrain et fournit du bon bois de charpente.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+             <lb/>Les transports.</head>
+            <p>Les transports étaient très difficiles au Moyen-Age. L’Eure n’était guère navigable, mais seulement flottable. Le seul moyen de transport possible était le charroi, lent et Coûteux pour les gros blocs de pierre.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IV
+             <lb/>Le climat.</head>
+            <p>Le climat de Chartres est le climat séquanien ; les pluies y sont plus abondantes que fréquentes, et les vents violents. Tous ces facteurs réagissent sur la construction des maisons (forte pente des toits, solin de pierre à la base des maisons, encorbellements sur solives jamais orientés vers l’ouest).</p>
+          </div>
+        </div>
+        <div>
+          <head rend="uc">II. – Les conditions historiques</head>
+          <div>
+            <head rend="uc">Chapitre premier
+             <lb/>aperçu historique.</head>
+            <p>Des ères de paix ou de guerre ont déterminé des périodes de constructions ou de destructions. L’époque de tranquillité entre la guerre de Cent ans et les luttes de François I<hi rend="sup">er</hi> contre Charles-Quint a été la plus propice à l’édification des maisons.</p>
+          </div>
+          <div>
+            <pb n="219" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_03.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre II
+             <lb/>L’extension de la ville de Chartres.</head>
+            <p>L’extension de Chartres hors de ses enceintes successives a provoqué la création de faubourgs, mais les deux sièges de la fin du <num>xvi<hi rend="sup">e</hi></num> siècle expliquent qu’il ne reste plus dans ces faubourgs qu’une seule maison antérieure à cette époque.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+             <lb/>Les rues et les maisons.</head>
+            <p>La forme des rues et la topographie ont bien souvent déterminé le plan des maisons. Celles-ci s’étendent en profondeur et s’élèvent en hauteur.</p>
+            <p>Les luttes qui se sont déroulées à l’intérieur de la ville ont agi aussi sur l’équipement des maisons en vue de leur défense : les ouvertures sont, renforcées et le rez-de-chaussée possède un étroit couloir facile à barricader.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>L’architecture civile a Chartres</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les origines.</head>
+          <p>Les maisons de Chartres des <num>ix<hi rend="sup">e</hi></num> et <num>x<hi rend="sup">e</hi></num> siècles sont sans doute entièrement de bois, avec toit de chaume. Mais, au <num>xii<hi rend="sup">e</hi></num> siècle, la pierre apparaît dans leur construction (maison, 29, rue Chantault).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La construction de pierre.</head>
+          <p>Lorsque la maison est entièrement bâtie en pierre, celle-ci peut, <pb n="220" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_04.TIF/full/full/0/default.jpg"/> être disposée en <hi rend="i">appareil.</hi> Plus souvent, les pierres disposées en <hi rend="i">harpe</hi> ne forment que l’armature, tandis que la majeure partie du mur est constituée de silex noyés dans du mortier ou <hi rend="i">blocage.</hi></p>
+          <p>Des caves et des celliers servent d’assise à la maison. Les celliers, vastes salles rectangulaires et voûtées, prennent jour sur la rue un peu au-dessus du niveau du sol (cellier de Loëns).</p>
+          <p>Les portes affectent diverses formes au cours des siècles. La pierre de Berchères permet surtout l’emploi de la porte à linteau et de la porte à corbeaux, plus solide encore. Aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles, on rencontre plus souvent la porte en arc (arc surbaissé, anse de panier et un type intermédiaire : la porte « à forme de linteau et coins arrondis »). Au <num>xvi<hi rend="sup">e</hi></num> siècle, on revient à l’arc en plein cintre, encore employé au <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Les fenêtres de pierre sont rectangulaires et divisées par un meneau. Elles sont surmontées, aux <num>xii<hi rend="sup">e</hi></num> et <num>xiii<hi rend="sup">e</hi></num> siècles, d’un tympan sculpté, non évidé. A cette époque, les baies sont contiguës et forment une claire-voie. Au <num>xiv<hi rend="sup">e</hi></num> siècle, les fenêtres ne sont pas encore très éloignées les unes des autres et sont surmontées d’une imposte. Dans la suite, elles affectent les mêmes formes que les portes, mais s’élargissent et s’agrandissent ; on les partage par un meneau horizontal.</p>
+          <p>Les lucarnes sont rares à Chartres, car on y rencontre très peu de murs goutterots sur rue.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La construction de bois.</head>
+          <p>La maison en pans de bois est formée à sa base d’un solin de pierre, sur lequel prend assise tout un système de poteaux verticaux et d’écharpes obliques, que coupent, à chaque étage, poutres et sablières.</p>
+          <p>Entre les pièces du colombage se trouve un remplissage : le torchis. Enfin le tout est souvent recouvert de crépi.</p>
+          <pb n="221" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_05.TIF/full/full/0/default.jpg"/>
+          <p>La maison est couronnée par le comble, formé de fermes, sur lequel vient prendre appui la toiture. Le pignon se présente sur la rue.</p>
+          <p>A côté du comble simple, à fermes triangulaires, on rencontre le « comble à ravallement », caractérisé par un exhaussement du comble qui permet une libre circulation dans la toiture et rend le grenier habitable.</p>
+          <p>Beaucoup de maisons offrent un ou deux étages en encorbellement, c’est-à-dire en avancée, afin de gagner de la place. L’encorbellement est porté par les abouts des pièces de bois qui forment le plancher. A Chartres, on trouve des encorbellements sur solives, sur sommiers ou sur simples pigeâtres et des encorbellements à entretoises, système plus savant et plus solide.</p>
+          <p>Les portes de bois sont simples et peu originales.</p>
+          <p>Les fenêtres sont généralement percées entre les colombes. Elles sont assez hautes et peu nombreuses (deux par façade).</p>
+          <p>Les escaliers à noyau sont le plus souvent en bois ; on en trouve aussi en pierre et même un en briques. Au <num>xvii<hi rend="sup">e</hi></num> siècle, la cage s’élargit pour le développement des grands escaliers à rampes droites et jour intérieur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La distribution intérieure.</head>
+          <p>A côté de la maison d’artisan qui comprend, au rez-de-chaussée, une boutique sur le devant et une salle par derrière, on trouve des plans plus compliqués, dont les plus intéressants comprennent deux corps de logis réunis par une galerie. Au temps de la Renaissance, le plan, quoique un peu évolué, reste fondé, comme au Moyen-Age, sur le grand couloir latéral, avec escalier au fond.</p>
+          <p>Les maisons canoniales, qui nous sont bien connues aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles par les documents d’archives, sont caractérisées par la multiplicité de leurs corps de logis et de leurs petites pièces,</p>
+        </div>
+        <div>
+          <pb n="222" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre V
+           <lb/>La décoration.</head>
+          <p>La décoration sur pierre est plus intéressante que la décoration sur bois.</p>
+          <p>Au Moyen-Age, les tympans des fenêtres sont sculptés, des bandeaux soulignent les étages, les portes sont ornées d’accolades ou d’écussons. La décoration des maisons de bois consiste principalement en statuettes sculptées sur les poteaux, en sablières et entretoises moulurées. A l’intérieur, les celliers présentent des chapiteaux sculptés. On rencontre, au pignon des Trois-Rois, des restes de fresques. Les portes intérieures, les combles, les manteaux des cheminées sont également ornés.</p>
+          <p>La maison du Médecin offre le seul ensemble important de décorations sur pierre de la Renaissance, en dehors de quelques chapiteaux ou pilastres en encadrements de portes. La décoration intérieure sur pierre disparaît alors, tandis qu’on peut signaler de remarquables vantaux de portes en bois.</p>
+          <p>Aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles, seule subsiste la décoration extérieure sur pierre, les maisons de bois n’étant plus désormais que des maisons pauvres. Un heureux effet s’obtient en faisant alterner des assises de briques et de pierres.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>L’architecture civile
+         <lb/>des environs de Chartres</head>
+        <p>Quelques caractéristiques locales sont à signaler, imposées surtout par des différences de matériaux.</p>
+        <p>De grandes lucarnes, de hauts pignons à rampants ornés et des tourelles à pans font, en pierre, l’originalité de Nogent-le-Rotrou,</p>
+        <pb n="223" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_07.TIF/full/full/0/default.jpg"/>
+        <p>Dans le Drouais et le Thimerais, les maisons sont en bois et à remplissage de tuileaux.</p>
+        <p>A Épernon, le grès domine et sert à marquer les façades d’un large boudin horizontal.</p>
+        <p>Gallardon possède la plus belle maison de toute la région, richement sculptée à l’époque de la Renaissance.</p>
+        <p>Les maisons de Châteaudun ont leurs pans de bois très souvent visibles ; les encorbellements sur sommiers sont portés par de longs corbeaux.</p>
+        <p>Enfin, les habitations rurales, souvent encore Couvertes de chaume, n’ont qu’un rez-de-chaussée ; les portes sont rarement visibles ; leur construction est caractérisée par une grande routine.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Chartres se différencie principalement des autres villes médiévales du nord de la France par l’adoption systématique du pignon sur rue, par l’usage des portes à linteaux de pierre, même sur des maisons de bois, par le crépissage des façades et par la variété de ses encorbellements. Tous les pays environnants ont, par contre, les murs goutterots sur rue. L’adaptation au cadre géographique et historique fait le principal mérite de cette architecture civile.</p>
+      </div>
+      <div>
+        <head rend="uc">Index des maisons de Chartres</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des planches – Table des matières</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album</head>
+        <pb n="224" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_25/ENCPOS_1943_25_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

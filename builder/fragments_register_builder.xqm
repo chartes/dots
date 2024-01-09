@@ -80,6 +80,7 @@ declare function docR:handleCiteStructure($bdd as xs:string, $resource as elemen
     $xpath)
   let $citeType := normalize-unicode($citeStructure/@unit)
   return
+    if ($xpath) then
     for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then $resource//db:get-id($bdd, $parentNodeId) else $resource})
     let $n :=
       if ($parentRef)

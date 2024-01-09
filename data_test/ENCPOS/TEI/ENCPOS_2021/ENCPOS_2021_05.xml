@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_05" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>« Conserver la santé des gens de mer ». La littérature médicale française sur les marins (<hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle - début du <hi rend="sc">xix</hi><hi rend="sup">e</hi> siècle)</title>
+        <author>Alexandre Couturier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 55-64</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>« Conserver la santé des gens de mer »
+        <lb/>La littérature médicale française sur les marins (<num>xviii<hi rend="sup">e</hi></num> siècle - début du <num>xix<hi rend="sup">e</hi></num> siècle)</head>
+      <byline>
+        par
+        <forename>Alexandre</forename>
+        <surname>Couturier</surname>
+        <roleName>diplômé de master</roleName> 
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>L’importance prise par les voyages en mer et le développement du ­commerce maritime et de la guerre sur mer durant l’époque moderne entraînent l’apparition de modes de vie inédits et extrêmement durs. La santé des hommes embarqués et les conditions matérielles de navigation deviennent alors un nouvel objet scientifique et médical. Si des préoccupations sanitaires se font jour dans les récits de voyageurs français dès le <num>xvi<hi rend="sup">e</hi></num> siècle, c’est à partir de la fin du <num>xvii<hi rend="sup">e</hi></num> siècle que naît l’intérêt des soignants envers le sort de ces hommes, un intérêt qui va croissant durant tout le <num>xviii<hi rend="sup">e</hi></num> siècle et dont les traces se multiplient dans les archives institutionnelles, émanant notamment du secrétariat d’État de la Marine, de la Compagnie française des Indes orientales, de l’Académie de marine, de l’Académie royale de chirurgie ou encore de la Société royale de médecine. S’y accumulent en effet les textes professionnels et académiques sous forme de journaux de bord, de mémoires ou de petites dissertations, ou encore de lettres. À ces textes manuscrits, viennent progressivement s’ajouter au cours du <num>xviii<hi rend="sup">e</hi></num> siècle des imprimés relatifs à la santé des marins, propres à apporter des solutions, notamment médicales, aux conditions fort pénibles que rencontrent ces hommes.</p>
+        <p>Les ouvrages français relatifs aux maladies des gens de mer et à la « conservation » de leur santé sont encore largement négligés tant par les historiens de la marine que par ceux de la médecine. Or entre la fin du premier quart du <num>xviii<hi rend="sup">e</hi></num> siècle et le début du <num>xix<hi rend="sup">e</hi></num> siècle, ils se constituent en un véritable genre littéraire. Le cadre d’étude fourni par ce concept soulève des questionnements d’ordre rhétorique, poétique et épistémologique, et permet de remettre ces publications dans leur contexte. Celles-ci révèlent également des filiations intellectuelles et les évolutions des conceptions et pratiques au service de la santé des marins. À travers elles, émerge ainsi un discours médical spécialisé en cours de structuration.</p>
+        <div>
+          <head>Sources</head>
+          <p>La santé des gens de mer suscite de nombreuses publications au cours du <num>xviii<hi rend="sup">e</hi></num> et au début du <num>xix<hi rend="sup">e</hi></num> siècle. Aux quinze ouvrages publiés entre 1724 et 1817 qui s’attachent strictement à cette question, s’ajoutent ceux qui n’y consacrent qu’une partie de leur discours et ceux qui, au contraire, se focalisent sur un aspect ponctuel. Des ouvrages étrangers, surtout britanniques, circulent également en France et offrent un point de comparaison avec la littérature française.</p>
+          <p>Ces sources imprimées sont complétées de manière ponctuelle par des périodiques, en particulier les <hi rend="i">Annales maritimes et coloniales</hi>, la <hi rend="i">Gazette de santé</hi>, le <hi rend="i">Journal de médecine, chirurgie, pharmacie</hi> et les <hi rend="i">Nouvelles ou Annales de l’art de guérir</hi>, qui éclairent la réception des ouvrages imprimés ainsi que les débats médicaux qu’ils peuvent susciter.</p>
+          <p>Le corpus secondaire est aussi constitué des recueils de mémoires publiés par quelques sociétés savantes comme l’Académie royale des sciences, l’Académie royale de marine, l’Académie royale de chirurgie et la Société royale de médecine. Ils sont utiles pour appréhender les réflexions qui ont lieu au sein de ces institutions.</p>
+          <p>Les fonds d’archives propres à ces institutions, notamment celui de la Société royale de médecine, conservé à la bibliothèque de l’Académie de médecine, et celui de l’Académie royale de marine, aujourd’hui sur le site de Vincennes du Service historique de la Défense, contiennent également des documents relatifs à la médecine maritime, notamment des mémoires et rapports médicaux qui témoignent des expériences et des observations des soignants.</p>
+          <p>S’y ajoutent les archives du secrétariat d’État de la Marine conservées dans le fonds Marine des Archives nationales, notamment la série D<hi rend="sup">3</hi> consacrée aux « approvisionnements et subsistances » et certains articles de la série G dédiés aux « mémoires et projets (1641-1816) ». Les archives des ports, conservées au Service historique de la Défense, sur les sites de Brest et Rochefort, apportent également des éclairages sur l’organisation concrète des services de santé et la réception des ordres ministériels.</p>
+        </div>
+        <div>
+          <head>Chapitre liminaire
+            <lb/>Cerner les ouvrages imprimés sur la « conservation des gens de mer »</head>
+          <p>La conservation de la santé des marins, l’étude de leurs maladies et des moyens de leur guérison, à travers la chirurgie, la médecine ou l’hygiène, retiennent de manière très variable les auteurs. Certains ne traitent que marginalement de ces questions ou se limitent à une maladie, à un aspect de l’hygiène, tel que l’alimentation, ou aux spécificités d’une localité, d’un navire, d’une campagne. Si ces ouvrages, tout comme ceux en langue étrangère diffusés sur le sol français, forment un corpus secondaire utile pour analyser le discours médical français sur les marins, seuls quinze ouvrages, parus à l’occasion de vingt-neuf éditions, développent un discours général sur la conservation des gens de mer entre le début du <num>xviii<hi rend="sup">e</hi></num> et le début du <num>xix<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Ce corpus est délimité chronologiquement par deux publications : la parution des <hi rend="i">Observations générales sur les incommoditez ausquelles sont sujets les équipages des vaisseaux</hi> de Pierre Chirac en 1724, et celle du <hi rend="i">Mémoire sur les causes des maladies des marins</hi> de Pierre-François Keraudren en 1817. Parmi ces quinze ouvrages, treize sont écrits par des docteurs en médecine, les deux derniers par des polygraphes érudits et impliqués dans l’administration navale. Des personnages très célèbres (Chirac, Duhamel du Monceau, Lind) côtoient des inconnus, qui n’ont parfois laissé d’autre trace que leur ouvrage.</p>
+          <p>Ces écrits connaissent une diffusion assez variable : certains se trouvent très répandus dans les ports du royaume et d’autres sont diffusés de manière locale. Ce sont des éditions abordables, de petit format, peu illustrées et plutôt ordinaires, voire peu soignées. Il s’agit d’une littérature professionnelle qui s’adresse à la fois aux soignants, sans restriction à ceux de la Marine, et aux officiers et capitaines de navires.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Le discours médical français sur les marins et son histoire</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les origines et les premiers exemples d’une littérature médicale sur les marins</head>
+          <p>Le discours français sur la santé des marins au <num>xvii<hi rend="sup">e</hi></num> siècle s’insère avant tout au sein de récits de voyage et d’écrits d’histoire naturelle. Il prend également place dans des ouvrages encyclopédiques comme l’<hi rend="i">Hydrographie</hi> de Georges Fournier. Le marin n’est alors qu’une figure périphérique par rapport au voyageur. Malgré la publication de <hi rend="i">La consolation des navigants</hi> de Johann Rudolph Glauber et du <hi rend="i">Traité du scorbut</hi> de Nicolas Venette, qui touchent à la santé des marins, il n’existe pas véritablement en France d’ouvrages généraux sur la ­médecine des gens de mer avant le <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>La réception des écrits britanniques en France dès la première moitié du <num>xviii<hi rend="sup">e</hi></num> siècle, notamment ceux de John Huxham et de James Lind, est une étape importante pour la formation d’un socle de connaissances fondateur d’une littérature française. Avant les années 1760, deux courts ouvrages français se consacrent ainsi à la santé des équipages : les <hi rend="i">Observations générales</hi>de Pierre Chirac, parues en 1724, et <hi rend="i">La Prévoyance du marinier</hi> de Pierre Decan de Villeneuve en 1753. Ce sont toutefois deux contributions mineures en raison de leur audience, car elles ne font pas partie des œuvres lues et commentées au <num>xviii<hi rend="sup">e</hi></num> siècle. Ces ouvrages bénéficient en partie de l’influence britannique et semblent témoigner d’une demande croissante d’écrits en lien avec la refondation de la Compagnie des Indes.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>L’émergence d’une littérature française dans la seconde moitié du <num>xviii<hi rend="sup">e</hi></num> siècle</head>
+          <p>La seconde moitié du <num>xviii<hi rend="sup">e</hi></num> siècle est marquée par une multiplication des écrits français relatifs à la médecine navale. La majorité de la production imprimée se situe dans les années 1760 à 1780 ; le <hi rend="i">Traité des maladies des gens de mer</hi> du médecin Antoine Poissonnier-Desperrières en est la publication la plus emblématique. Ces ouvrages font suite à de nombreux débats initiés par de nouvelles institutions savantes comme l’Académie royale de marine ou encore la Société royale de médecine. La santé des marins est toujours conçue comme un sujet qui dépasse le simple cadre médical et prend place dans un système de connaissances plus vaste qui appartient au domaine de la navigation et concerne tous les acteurs en mer, notamment les officiers. Cette médecine maritime bénéficie également du développement et de la diffusion des œuvres de médecine militaire et coloniale. Malgré les réflexions politiques et scientifiques ­foisonnantes liées au contexte révolutionnaire, la fin du siècle est marquée par une très faible production d’écrits spécifiquement dédiés à la santé des marins.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>La littérature du début du <num>xix<hi rend="sup">e</hi></num> siècle</head>
+          <p>Le début du <num>xix<hi rend="sup">e</hi></num> siècle est marqué par une littérature presque exclusivement hygiénique. L’hygiène navale, dont les fondements proviennent d’une spécialisation de la notion d’hygiène élaborée pendant les années révolutionnaires, est une mise en ordre et une réactualisation des connaissances élaborées au <num>xviii<hi rend="sup">e</hi></num> siècle plus qu’une véritable rupture. Le progrès des sciences chimiques, que l’on résume souvent aux expériences de Lavoisier, inspire de nouvelles observations et expériences à ces auteurs. Pour autant, les problèmes posés par la navigation au long cours n’évoluent que très peu. L’« ère Keraudren », du nom de l’inspecteur général du service de santé de la Marine de 1813 à 1845, est cependant déterminante dans la transformation de la littérature médicale maritime, sensible principalement dans la multiplication d’ouvrages appelés « médecins de papier », c’est-à-dire des petits guides médicaux à l’usage de la marine marchande.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Les caractéristiques d’un genre littéraire</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Réputation et légitimité des auteurs : les preuves d’une conscience générique ?</head>
+          <p>La connaissance et l’expérience directes apparaissent être un gage de légitimité pour les auteurs de médecine maritime et sont inscrites par ceux-ci au cœur de leur démonstration, sans être pour autant exclusives ou forcément indispensables. Le développement de leurs travaux semble être également lié au renforcement des liens grandissants entre les praticiens des ports et l’élite de la profession, ou du moins les milieux scientifiques, ainsi qu’à l’élargissement progressif du public réceptif aux réflexions qui entourent la santé des marins.</p>
+          <p>Ces auteurs utilisent pleinement les approches épistémologiques de leur époque, c’est-à-dire le primat de l’expérimentation, mais aussi le raison­nement inductif à partir d’exemples tirés d’un savoir livresque issu des ouvrages médicaux contemporains et des récits de voyage ou de campagnes de navigateurs connus. Les références et autorités utilisées dans les ouvrages étudiés attestent également les nombreux liens intertextuels qui les unissent les uns aux autres, ainsi que l’influence importante des auteurs britanniques. Les auteurs s’accordent sur l’existence d’un corpus commun de connaissances à l’échelle européenne et le mobilisent dans leurs écrits. Ils reconnaissent également contribuer à l’élaboration des mêmes savoirs. Ils font donc preuve d’une conscience générique notable.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Finalités d’écriture et attentes des lecteurs</head>
+          <p>Les auteurs mettent en œuvre un argumentaire politique consensuel destiné à justifier la nécessaire intervention des médecins dans les affaires maritimes. Ils tirent parti des inquiétudes de la monarchie et des officiers quant à l’importance du vivier de marins. Ils insistent sur la cruauté de la vie en mer, mais réaffirment aussi l’utilité politique et économique de ces hommes. La spécialisation de leurs écrits se justifie par l’évolution de la navigation et les écarts grandissants entre les conditions de vie des marins et celles des hommes à terre. Les ouvrages font donc la liaison entre deux mondes : ils s’adressent autant aux marins qu’aux soignants. Tous visent donc un même public, ce qui rend possible l’émergence d’un horizon d’attente commun chez leurs lecteurs.</p>
+          <p>Ces livres sont des manuels recourant aux codes de l’écriture pratique médicale et destinés à guider les capitaines, les officiers, les chirurgiens dans l’organisation de la vie à bord. Il s’agit donc de présenter un savoir vulgarisé, avant tout destiné à favoriser la prévention des accidents et des maladies. Les ouvrages doivent en effet être accessibles aux deux univers, médical et maritime, qui ont leurs savoirs, leurs pratiques et leurs vocabulaires propres. Des objectifs secondaires s’y décèlent. Les auteurs mettent parfois en œuvre une écriture prescriptive qui s’adresse aux autorités afin de les pousser à établir une réglementation claire. Ils entendent enfin mieux former aux soins les chirurgiens navigants, mais aussi parfois, ce qui est plus critiqué, les marins eux-mêmes, dans une intention proprement pédagogique et vulgarisatrice.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Expliquer et décrire les maux des marins</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Étiologie : environnement et régime de vie</head>
+          <p>La majorité des ouvrages concentrent leur propos sur la prévention et les mesures de police sanitaire. Si le discours thérapeutique est cantonné à quelques écrits, l’ensemble des auteurs ont cependant la nécessité de formuler des prérequis étiologiques – c’est-à-dire relatifs aux causes des maladies – afin de constituer l’assise de mesures préventives et thérapeutiques.</p>
+          <p>Le système étiologique complexe des pathologies en mer associe des causes environnementales jugées majeures à des causes prédisposantes relatives au régime de vie. L’éventail des causes fait l’objet de peu de débats : les conditions extrêmes et contraignantes du régime de vie des marins et surtout leur intempérance les prédisposent à la maladie. Dès lors, les causes générales et communes que sont l’extrême volatilité de la météo en mer et le passage entre les différents climats les exposent continuellement à un grand nombre de maladies. La présence des maladies épidémiques s’explique également par la nature de l’air, conçu comme le véhicule de la contagion, mais aussi par ses qualités nuisibles à l’intérieur du navire. En revanche, la hiérarchisation et la répartition typologique de ces causes entraînent quelques dissensions entre les auteurs. Celles-ci sont surtout perceptibles en marge du corpus étudié, principalement dans les mémoires manuscrits envoyés au secrétariat d’État et aux sociétés savantes ou encore dans les périodiques médicaux.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Pathologie de l’homme de mer</head>
+          <p>La conception pathologique qui se dégage du corpus repose dans son ensemble sur les grandes tentatives de synthèses des acquis du <num>xvii<hi rend="sup">e</hi></num> siècle en chimie et en physique appliquées au corps humain, particulièrement celle portée entre autres par Boerhaave et appelée « éclectisme ». Ces ouvrages témoignent en effet de l’abandon de la théorie galénique des humeurs au profit d’une vision de la pathologie comme un déséquilibre au sein du corps entre les solides régis par des lois physiques et les liquides déterminés par des principes chimiques.</p>
+          <p>L’ensemble des maladies est dominé par le scorbut qui, par son omniprésence en mer, peut selon les auteurs affaiblir les corps et surtout les disposer à d’autres pathologies, majoritairement infectieuses. Dans ce cadre se déploie également une vision sociologique et parfois géographique des maladies qui découle directement des conceptions étiologiques. Les maladies « particulières aux gens de mer » (dysenterie, rhumatismes, etc.) côtoient donc des pathologies endémiques et exotiques (fièvres de Saint-Domingue, etc.). La part accordée au sein de ces ouvrages aux pathologies externes, mais aussi aux traumatismes et aux blessures, provoqués par les accidents et les combats en mer, est très réduite.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Les stratégies thérapeutiques et prophylactiques en milieu maritime</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Hygiène et prévention</head>
+          <p>La prévention des causes environnementales est consacrée en grande partie à la gestion de la qualité de l’air. Comme il est souvent impossible d’éviter de mauvaises conditions, les auteurs multiplient les préconisations pour « rectifier » l’air. Si des méthodes correctives comme les fumigations, héritées de la médecine médiévale, sont reprises et adaptées, la principale nouveauté réside dans l’usage croissant de réalisations techniques telles que les ventilateurs, les soufflets, etc. Au même titre que la prison ou l’hôpital, le navire constitue un lieu d’expérimentation pour les inventeurs et ingénieurs.</p>
+          <p>La prévention porte aussi sur l’intempérance du régime de vie des marins ; s’exprime donc une forte volonté d’encadrer la vie en mer dans ses moindres aspects. Parmi les « six choses non naturelles » héritées de la diététique de la fin de l’Antiquité, la question alimentaire occupe une place très importante : on recourt à des solutions techniques ou chimiques pour conserver les aliments, on porte aussi une attention particulière au choix et à la préparation des vivres. Le cadre des six choses est aussi dépassé par la prise en compte grandissante de la propreté et de l’hygiène individuelle des hommes. Les recommandations dépassent parfois même les questions sanitaires pour se porter sur l’amélioration générale du quotidien des marins.</p>
+          <p>Les auteurs sont attentifs à la faisabilité de leurs préconisations et développent un argumentaire destiné à prévenir les éventuelles inerties et résistances à bord. Néanmoins, malgré quelques progrès timides et la prise en compte de certaines mesures dans les règlements à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle et au début du <num>xix<hi rend="sup">e</hi></num> siècle, ces recommandations sont souvent suivies de peu d’effets sur le terrain, comme en témoignent certaines critiques émises par les auteurs ainsi que les doléances et témoignages parfois transmis à l’administration centrale par les soignants établis dans les arsenaux.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Thérapeutique et organisation des soins</head>
+          <p>L’importance de la prévention est directement en rapport avec l’insatisfaction qui caractérise la médecine du <num>xviii<hi rend="sup">e</hi></num> siècle envers les réponses thérapeutiques. De là vient la prédominance des remèdes appelés « préservatifs », qui ne sont pas tous issus de la pharmacie, mais s’apparentent le plus souvent à de banals aliments. Cette relative limitation de l’usage des substances médicamenteuses, notamment liée à leur difficile conservation durant les longues navigations, explique la volonté des auteurs de restreindre fortement le contenu des coffres médicaux. Transparaît également le souci d’encadrer strictement l’automédication des marins et de limiter le plus possible le recours aux remèdes de charlatans.</p>
+          <p>Les ouvrages mettent en œuvre un grand nombre de recommandations liées à l’organisation des soins durant les épidémies et détaillent notamment la prise en charge des malades afin d’éviter la contagion ou encore le régime de vie en maladie et durant la convalescence. Sont parfois exposées l’organisation des soins à la suite du débarquement à terre et la création d’hôpitaux de campagne dans le cadre d’une escadre. À l’inverse, la pratique quotidienne, qu’il s’agisse des consultations auprès des hommes ou de la gestion de l’infirmerie, est ­largement occultée.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le milieu du <num>xviii<hi rend="sup">e</hi></num> siècle constitue la véritable naissance d’un genre littéraire dédié à la « conservation de la santé des gens de mer », genre dont le développement ne connaît pas de véritable rupture durant les bouleversements causés par la Révolution au sein du monde médical. Les questions sanitaires en mer, auparavant du seul ressort des chirurgiens navigants, sont discutées de plus en plus largement au sein du monde médical alors que le service de santé de la Marine se structure lentement. La réception de la littérature britannique sur cette question avant les années 1760 ainsi que les inquiétudes liées aux pertes de la guerre de Sept Ans pourraient expliquer une telle chronologie.</p>
+        <p>Contrairement aux ouvrages britanniques, une part majoritaire des écrits français est dédiée aux aspects préventifs et au régime de vie en mer. Les auteurs expriment une ambition très forte d’améliorer les conditions de vie des marins. Néanmoins, cette littérature témoigne en partie des difficultés à faire appliquer de telles mesures, mais aussi à élaborer des stratégies thérapeutiques perçues comme efficaces. Si ces ouvrages de médecine maritime sont une source idéale pour connaître les représentations, les normes et les pratiques médicales en mer, il faut toutefois relativiser leur impact sur le quotidien à bord, qui ne connaît que des améliorations modestes durant cette période.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Édition commentée des principaux règlements et ordonnances concernant l’organisation sanitaire à bord des navires. — Anthologie commentée de textes sur l’étiologie des maladies, le régime préservatif et la prise en charge thérapeutique en mer, tirés des ouvrages du corpus d’étude et de plusieurs mémoires.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Tables des chapitres des quinze ouvrages constituant le corpus d’étude. — Analyse de la structuration et de la segmentation de ces ouvrages. — Relevé des références et des autorités citées dans ces ouvrages. — Relevés lexicographiques. —Relevé des domaines de prévention sanitaire commentés dans ces ouvrages. — Relevé des pathologies exposées dans ces ouvrages. — Notices biographiques des auteurs du corpus. — Lexique de termes de marine et de médecine.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

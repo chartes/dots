@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_21" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les seigneurs de Montlaur, des origines au <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/027079031">Odette Pontal</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_21.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 183-189</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="183" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les seigneurs de Montlaur
+       <lb/>des origines au <num>xv<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Odette</forename>
+        <surname>Pontal</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Sources – Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction géographique</head>
+        <p>La région occupée par la baronnie de Montlaur peut se diviser en trois parties : 1) Les hauts plateaux ou montagne, drainés par la Loire et ses premiers affluents. – 2) La haute vallée de l’Allier et ses affluents entre le Velay et la Margeride. – 3) Le bassin de l’Ardèche sur le versant rhodanien du Massif central.</p>
+      </div>
+      <div>
+        <head rend="uc">Partie préliminaire
+         <lb/>les Montlaur et leurs domaines</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>étude généalogique.</head>
+          <p>La pauvreté des documents et la fréquence du nom de Montlaur rendent cette étude dillicile pour les premiers per<pb n="184" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_02.TIF/full/full/0/default.jpg"/>sonnages de la famille. De 1129 à 1274, les seigneurs de Montlaur se succèdent de père en fils. Pons IV, mort sans enfants en 1274, eut pour successeur son frère Héracle III. Les seigneurs se suivent ensuite en ligne directe jusqu’à Pons VII qui laissa la baronnie à son frère Louis I<hi rend="sup">er</hi>, dernier descendant mâle de la famille. Après la mort de Louis, le titre de seigneur de Montlaur fut repris par son gendre Hugues de Maubec.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Possessions et acquisitions des seigneurs
+           <lb/>de Montlaur.</head>
+          <p>Au <num>xiii<hi rend="sup">e</hi></num> siècle, les seigneurs de Montlaur ne possédaient que leur baronnie. Elle s’étendait sur le bassin de l’Ardèche en Vivarais, sur le plateau du Velay et en Gévaudan entre l’Allier et ses affluents l’Ance et le Chapeauroux.</p>
+          <p>Au milieu du <num>xiii<hi rend="sup">e</hi></num> siècle, les Montlaur possèdent un moment la baronnie de Posquières et ses dépendances.</p>
+          <p>Au <num>xiv<hi rend="sup">e</hi></num> siècle, ils acquirent la baronnie de Sabran sur la rive droite du Rhône et celle de Florac au sud du Gévaudan. Au <num>xv<hi rend="sup">e</hi></num> siècle, ils acquirent la baronnie de Randon et momentanément la vicomté de Polignac.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Politique laïque des seigneurs
+         <lb/>de Montlaur</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les premiers seigneurs de Montlaur.</head>
+          <p>Le premier seigneur de Montlaur, de qui nous connaissons à peu près l’activité, est Pons II. Il partage son temps entre <pb n="185" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_03.TIF/full/full/0/default.jpg"/>la lutte contre l’évêque du Puy et de longs séjours à la cour de divers seigneurs méridionaux.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Pons III.</head>
+          <p>Après s’être dans sa jeunesse adonné à la littérature, Pons III, au moment de la croisade albigeoise, se range, après quelques hésitations, aux côtés de Simon de Montfort. Il poursuit la lutte engagée par son père contre l’évêque du Puy. Cette lutte prend fin en 1.226, grâce à l’intervention du roi, puis du comte de Forez.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Héracle II.</head>
+          <p>Héracle II, associé à la politique de son père, du vivant de celui-ci, jouit d’un grand prestige qui incite le comte de Valentinois à lui confier la t utelle de son fils.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les fils d’Héracle II.</head>
+          <p>L’aîné, Pons IV, a peu d’activité politique ; le cadet, Héracle III, qui succéda à son frère, soutient une courte lutte contre Randon de Châteauneuf et passe plusieurs années à mener à bien le mariage de son fils Pons avec Isabelle d’Anduze.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Pons V.</head>
+          <p>Pons V entretient de bonnes relations avec les évêques ses suzerains, avec ses voisins et avec ses vassaux. Il prend une part active à la guerre contre les Anglais (1294) et acquiert la faveur du roi.</p>
+        </div>
+        <div>
+          <pb n="186" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VI
+           <lb/>Gui I<hi rend="sup">er</hi> et Pons VI.</head>
+          <p>Gui I<hi rend="sup">er</hi>, au retour de la guerre contre les Flamands, s’occupe de ses domaines. A partir de Pons VI, la guerre de Cent ans absorbe toute l’activité des seigneurs de Montlaur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>Gui II et Pons VII.</head>
+          <p>Gui II s’occupe d’arrêter les bandes de pillards qui dévastent la seigneurie et assure au mieux la défense du Vivarais.</p>
+          <p>Son fils Pons VII prend part à la croisade de Hongrie et. meurt à Nicopolis.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Louis I<hi rend="sup">er</hi> de Montlaur.</head>
+          <p>Louis est le plus puissant des seigneurs de Montlaur. Il a une vie de famille troublée et une vie politique agitée. Fidèle serviteur du roi Charles VH, il lui conserve le Vivarais contre les Bourguignons.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Politique ecclésiastique des seigneurs
+         <lb/>de Montlaur</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>rôle des seigneurs de Montlaur
+           <lb/>dans l’église.</head>
+          <p>Les cadets de Montlaur entrent en général dans les ordres ; <pb n="187" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_05.TIF/full/full/0/default.jpg"/>beaucoup sont évêques. Chaque génération donne, en outre, un chanoine à la cathédrale du Puy ; le doyenné de cette cathédrale leur est réservé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Rapports des Montlaur avec les abbayes voisines.</head>
+          <p>1° <hi rend="i">Rapports avec l’abbaye de Mazan.</hi> – Enclose dans la seigneurie de Montlaur, l’abbaye de Mazan passe sans cesse contrats et transactions avec les seigneurs qui se montrent tantôt libéraux, tantôt processifs à son égard.</p>
+          <p>2° <hi rend="i">Rapports avec les autres abbayes.</hi> – Rapports avec la chartreuse de Bonnefoy, avec les abbayes des Chambons et de la Chaise-Dieu et avec le prieuré de La Villedieu. Ces rapports sont toujours bons. Les Montlaur se montrent le plus souvent généreux avec les couvents.</p>
+          <p>3° <hi rend="i">Dons pieux.</hi> – Outre des dons faits aux abbayes de leurs domaines, les Montlaur, et particulièrement Pons IV, font de nombreuses libéralités à de multiples couvents. Ils fondèrent en 1266 un couvent de Dominicains à Aubenas.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Politique administrative des seigneurs
+         <lb/>de Montlaur</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>administration de la baronnie.</head>
+          <p>Les seigneurs de Montlaur gouvernent entourés de conseillers. Ils s’aident d’un bailli et de bailes qui cumulent toutes les fonctions administratives et parfois même judiciaires ou militaires. Ils ont une cour de justice composée de seigneurs <pb n="188" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_06.TIF/full/full/0/default.jpg"/>et de prud’hommes et présidée par le juge. Ce dernier est aussi garde du sceau seigneurial.</p>
+          <p>Les barons de Montlaur ont dans le ressort de leur seigneurie haute, moyenne et basse justice. Tous les délits sont taxés et les délinquants ont la faculté de passer des compositions pécuniaires.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Administration des villes.</head>
+          <p>11 y a peu de villes dans la baronnie de Montlaur. Ville-type : Aubenas, qui reçoit sa première charte de franchise en 1248. Cette charte est confirmée à plusieurs reprises. Elle n’accorde à la ville que quelques libertés économiques et judiciaires, mais la laisse dans la dépendance étroite du seigneur. La ville forme une communauté à la tête de laquelle se trouvent des syndics ou des régents.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Particularités des institutions juridiques.</head>
+          <p><hi rend="i">Etude du régime successoral.</hi> – Les Montlaur pratiquent le testament avec institution d’héritier. Mais c’est toujours le fils aîné qui succède seul à son père. Les filles ne succèdent qu’à défaut d’héritiers mâles. Le fils cadet reste auprès de son aîné, devenu seigneur de Montlaur, et est associé au gouvernement de celui-ci tout en restant sous sa dépendance.</p>
+          <p><hi rend="i">Traditionalisme et formalisme.</hi> – La tradition imprègne tous les actes juridiques qui sont caractérisés par un formalisme rigoureux. Exemple d’une cérémonie d’émancipation rappelant l’hommage carolingien, en plein <num>xv<hi rend="sup">e</hi></num> siècle. Exemple de la prise de possession d’un château à la même époque,</p>
+        </div>
+        <div>
+          <pb n="189" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_07.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Ressources et revenus des seigneurs.</head>
+          <p>1° Ressources matérielles de la seigneurie. Elles sont très variées : pâturages, forêts, céréales, vigne.</p>
+          <p>2° Revenus pécuniaires. Les rentes et les cens payés par les tenanciers en général, les redevances urbaines et surtout les péages, les taxes de justice, la taille et, enfin, les pensions royales.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Croquis</head>
+        <pb n="190" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_21/ENCPOS_1943_21_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

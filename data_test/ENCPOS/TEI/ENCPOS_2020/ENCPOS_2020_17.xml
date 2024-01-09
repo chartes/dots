@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Rédiger son testament selon le droit canonique (<hi rend="sc">xii</hi><hi rend="sup">e</hi>-<hi rend="sc">xv</hi><hi rend="sup">e</hi>  siècle),</title>
+        <author>Sarag Rigaudeau</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 179-186</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Rédiger son testament selon le droit canonique (<num>xii<hi rend="sup">e</hi></num>-<num>xv<hi rend="sup">e</hi></num> siècle)</head>
+      <byline>
+        par
+        <forename>Sarah</forename>
+        <surname>Rigaudeau</surname>
+        <roleName>diplomée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Le droit canonique a incontestablement constitué un vecteur de diffusion de la technique du testament en Europe occidentale. Cependant il modifie considérablement les règles qui gouvernent cet instrument en droit romain – d’où celui-ci est originaire –, en particulier en les simplifiant. Cette adaptation est destinée à permettre au chrétien le plus modeste de tester facilement, même lorsque celui-ci est entouré de personnes ne sachant pas plus écrire que lui.</p>
+        <p>La présence d’un notaire n’étant pas exigée, l’historiographie a tendance à opposer un testament proprement « canonique » au testament romain, voire à en définir un troisième type, purement coutumier. Canonistes et civilistes ne distinguent pourtant que deux types d’actes, l’un écrit, l’autre oral, et ils s’accordent à dire que les testaments contenant des legs pieux font l’objet d’un traitement particulier. L’expression « testament canonique », ignorée des juristes médiévaux, n’apparaît que tardivement. Elle est probablement l’œuvre d’Agnellus Sixtus de Rogerio, auteur d’une répétition sur la décrétale <hi rend="i">Cum esses</hi>au début du <num>xviii<hi rend="sup">e</hi></num> siècle. Expliquant dans son introduction que cette lettre d’Alexandre III est fondamentale pour le droit canonique, de la même façon que la constitution <hi rend="i">Jubemus</hi> l’est pour le droit civil, Agnellus décide d’appeler son ouvrage <hi rend="i">De testamento canonico</hi>. L’expression disparaît ensuite des travaux consacrés à la matière avant de resurgir au <num>xx<hi rend="sup">e</hi></num> siècle sous la plume d’historiens qui s’attachent à distinguer le testament civil des testaments canonique et coutumier.</p>
+        <p>Si le testament canonique est une invention doctrinale, il n’en demeure pas moins que l’Église s’est emparée de cette technique. Dès le <num>xii<hi rend="sup">e</hi></num> siècle, les papes légifèrent sur cette question. Il s’agit avant tout de sauver les dernières volontés du défunt. Toutefois, avec Innocent III, le droit canonique devient plus technique et se rapproche du droit civil. Des questions aussi complexes que les substitutions et la légitime sont abordées par les juristes qui tentent de trouver un équilibre entre liberté individuelle et protection de la famille.</p>
+        <div>
+          <head>Sources</head>
+          <p>La doctrine canonique commentant le <hi rend="i">Décret</hi> de Gratien, puis le <hi rend="i">Liber Extra</hi>, le <hi rend="i">Sexte</hi>et les <hi rend="i">Clémentines</hi>, a été explorée de la façon la plus exhaustive possible en s’appuyant notamment sur le <hi rend="i">Repertorium der Kanonistik</hi>de Stephan Kuttner et la base de données bio-bibliographique des canonistes médiévaux mise en ligne par Kenneth Pennington (http://legalhistorysources.com/biobibl.htm). Le droit civil n’a fait l’objet que de sondages. Seuls les grands glossateurs et commentateurs tels que Azon, Balde, Bartole ou Accurse ont été systématiquement consultés. Peu nombreuses sont les œuvres doctrinales à avoir connu des éditions critiques, aussi des incunables et des éditions du <num>xvi<hi rend="sup">e</hi></num> siècle ont été le plus souvent utilisés. À défaut, notamment pour les gloses, il a fallu recourir aux versions manuscrites conservées dans les différentes bibliothèques européennes.</p>
+          <p>La pratique n’a pas été négligée : des testaments issus de recueils, comme les testaments de l’officialité de Besançon édités par Ulysse Robert ont été utilisés. Un grand nombre de cartulaires français, italiens et allemands ont aussi été compulsés. Cependant, face à la masse des testaments médiévaux conservés, l’étude s’est concentrée sur ceux ayant fait l’objet d’une édition. Ce choix a été justifié par le nombre d’éditions disponibles. Les décisions des officialités et de cours laïques, essentiellement en France et en Angleterre, ont permis de mieux prendre en compte la réalité de la pratique. Ces deux types de sources ont été confrontés aux consultations des juristes médiévaux, les <hi rend="i">consilia</hi>. Le plus grand nombre de juristes possible ont été consultés. Pour les auteurs prolifiques, comme Balde ou Panormitain, les répertoires ont permis de sélectionner les cas les plus intéressants. Un recueil vénitien de 1581, réunissant des consultations remarquables en matière successorale, offre également une vue intéressante de la pratique juridique.</p>
+          <p>Enfin, les droits locaux – coutumes françaises, statuts italiens et <hi rend="i">fueros</hi>espagnols – ont permis à la fois de mesurer l’influence du droit canonique et de dessiner une géographie du droit des successions. Les sources littéraires et la théologie ont été exploitées ponctuellement, soit pour fournir une illustration soit pour souligner une approche originale. C’est le cas, par exemple, pour le testament de l’usurier où canonistes et théologiens analysent de façon radicalement différente l’interdiction de tester.</p>
+        </div>
+        <div>
+          <head>Chapitre préliminaire
+            <lb/>L’acte à cause de mort de la fin de l’Antiquité au <num>xii<hi rend="sup">e</hi></num> siècle</head>
+          <p>Le haut Moyen Âge se caractérise par un double mouvement : celui de quasi-disparition du testament romain, qui est peu à peu remplacé par des formes plus souples inspirées des traditions germaniques et romaines, et celui qui voit le triomphe du don <hi rend="i">pro anima</hi>. Durant cette période, l’acte pour cause de mort change complètement de forme mais surtout de nature. Il n’est plus simplement le moyen de choisir son héritier, mais devient la meilleure voie pour assurer son salut. Cette évolution explique le rôle nouveau que joue l’Église, incitant les chrétiens à donner pour l’au-delà et enjoignant l’autorité publique à protéger ces aumônes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>La capacité testamentaire</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>La capacité testamentaire des <hi rend="i">personnae ecclesiasticae</hi></head>
+          <p>Très tôt, le droit canonique reconnaît aux clercs le droit de disposer de leurs biens par testament. Cette reconnaissance amène alors de longs débats visant à déterminer ce que recouvre précisément le patrimoine propre du clerc. Les juristes consacrent de nombreux développement au <hi rend="i">peculium clericorum</hi>, pour mettre en avant les rapports du clerc avec le patrimoine de son église. Toutefois, l’emploi de ce vocabulaire est parfois critiqué par les civilistes. Ainsi Roffredus rappelle qu’en droit civil, le vocable « pécule » est utilisé pour désigner les biens propres des personnes n’ayant pas de patrimoine et qui demeurent sous la puissance du père de famille : l’esclave et le fils. Un individu juridiquement pleinement capable comme le <hi rend="i">paterfamilias</hi> ne saurait avoir de pécule. En droit canonique, en revanche, le pécule des clercs constitue le patrimoine propre des personnes détenant une parfaite capacité juridique</p>
+          <p>L’un des traits fondamentaux du monachisme est le dépouillement radical imposé aux religieux liés par les vœux de pauvreté et d’obéissance. Les plus anciennes règles monastiques insistent sur la nécessité d’abandonner ses biens avant de faire profession. Ainsi, dans la Règle de Macaire, celui qui apporte des biens au monastère doit les déposer sur l’autel en y entrant, sous l’œil attentif des frères. La même pratique se trouve dans la <hi rend="i">Regula Magistri</hi> qui demande à l’<hi rend="i">ingredians</hi> de présenter soit l’inventaire de ses biens, soit l’acte de donation au monastère. Néanmoins, dès le <num>xiii<hi rend="sup">e</hi></num> siècle, des impératifs pratiques mettent à mal ce dépouillement total ; si le principe de renonciation au monde et aux biens matériels demeure, des aménagements apparaissent. Le religieux ne peut <hi rend="i">a priori</hi> pas faire de testament. Les juristes du Moyen Âge central distinguent cependant plusieurs hypothèses permettant au cloîtré de disposer d’une petite somme. L’interdiction de posséder en propre aurait dû entraîner l’interdiction de succéder, or il n’en est rien. Les juristes médiévaux ne cessent de le rappeler face à la tentation des familles de s’octroyer la part de celui qu’elles considèrent comme mort au monde.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La capacité testamentaire des laïcs</head>
+          <p>S’agisssant des laïcs, la limitation de la capacité testamentaire a pour but premier d’éviter la dilapidation du patrimoine familial. La faculté de tester d’un individu comporte deux facettes : l’une, active, est celle de réaliser un acte à cause de mort ; l’autre, passive, est le fait de pouvoir recevoir un legs ou être institué héritier. Cette distinction semble apparaître pour la première fois sous la plume de Pierre d’Ancarano qui tente de lier les deux facettes de la <hi rend="i">factio testamenti</hi>. Elle devient systématique chez les auteurs du <num>xvi<hi rend="sup">e</hi></num> siècle. Le premier aspect est le plus développé par les canonistes, qui ne systématisent jamais la capacité active mais se contentent de lister toutes les personnes qui se voient interdire de faire un testament. Le second est plus complexe car il n’est pas lié à l’acte : celui qui ne peut bénéficier d’un testament ne peut non plus, en général, recevoir une succession <hi rend="i">ab intestat</hi>. Cette particularité explique pourquoi les canonistes ne traitent jamais de cette question sous les rubriques portant sur le testament ou la succession <hi rend="i">ab intestat</hi>. La capacité passive n’est pas envisagée de façon systématique.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>La forme du testament</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>La confection du testament</head>
+          <p>Le renouveau du testament au <num>xii<hi rend="sup">e</hi></num> siècle est la conséquence d’un formidable développement de l’acte à cause de mort. Cet essor, qui accompagne l’inflation documentaire qui caractérise la période, est nourri par l’expansion du culte 
+            <lb/>des défunts. La multiplication des legs faits pour le salut de l’âme, dont l’importance croît et dont les types se diversifient, a conduit certains à parler de « budget de l’au-delà ». Le testament devient le mode normal de dévolution successorale et une grande partie de l’acte est consacrée aux dispositions charitables. Sous cette appellation, de nombreux dons sont envisagés, depuis ceux faits aux églises et aux misérables jusqu’à ceux consentis aux clercs ou à des fondations. Au cours des <num>xiii<hi rend="sup">e</hi></num> et <num>xiv<hi rend="sup">e</hi></num> siècles, la définition de la cause pieuse se précise : ce n’est plus le destinataire qui est considéré mais l’<hi rend="i">animus donandi</hi>.</p>
+          <p>La simplification des formes testamentaires sert ce mouvement. Damase, se fondant sur le titre <hi rend="i">De testamentis</hi> de la <hi rend="i">Compilatio</hi><hi rend="i">prima</hi>, admet que les parties puissent renoncer aux solennités, car elles sont établies pour les protéger, ce qui ne vaut pas quand l’utilité commune ou le bien public est en jeu. Parallèlement, les théologiens exaltent cette liberté chrétienne qui permet au croyant de participer aux œuvres de la foi sans être contraints par les rigueurs de la loi. Ainsi Pierre Lombard, en reconnaissant expressément le droit de traiter les hommes différemment, admet implicitement la liberté testamentaire.</p>
+          <p>Le testament sans écrit ou nuncupatif est celui qui a retenu le plus longuement l’attention des canonistes. Au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, Filippo Franchi l’explique en précisant « qu’aujourd’hui c’est le testament par nuncupation qui est en usage ». Mais il affirme aussi que les tabellions peuvent rédiger un écrit qui, s’il n’est pas nécessaire à la validité de l’acte, en facilite grandement la preuve. Les canonistes se focalisent tant sur le testament nuncupatif qu’ils finissent par qualifier ainsi un testament pourtant écrit, signé par le disposant et ses témoins, puis scellé. Le rôle des témoins est donc fondamental dans le testament nuncupatif. En 1289, Pierre d’Eschelon, un des clercs jurés de l’officialité de Forez, définit leur rôle en expliquant qu’ils sont chargés de garder en mémoire ce qui a été dit. Cette définition livrée par un praticien doit être rapprochée de celle donnée par le traité <hi rend="i">Inter homines litium</hi>, selon laquelle « le témoin est l’assistant de la vérité, le révélateur des choses cachées ». Les témoins sont donc les garants de la véracité des volontés exprimées par l’auteur de l’acte. Ces deux définitions mettent l’accent sur les deux qualités essentielles du déposant : la mémoire et l’honnêteté. Dans une de ses consultations, Alexandre d’Imola s’interroge sur la valeur des témoins par rapport aux instruments. Selon lui, deux témoins ne suffisent pas à rejeter un écrit ; il en faut au minimum trois.</p>
+          <p>Dans les cas les plus extrêmes, quand le testateur s’apprête à rendre son dernier soupir, le droit canonique va jusqu’à admettre le testament par commissaire, permettant au disposant de tester sans aucune forme précise. Les exemples sont extrêmement rares. Le plus connu vient d’Angleterre : en 1216, Jean sans Terre est alité et ne peut ordonner ses dernières volontés de façon conventionnelle. Il décide alors de les confier à treize hommes de confiance qu’il charge de réparer ses fautes envers l’Église et de distribuer des aumônes.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La confirmation du testament</head>
+          <p>À la fin du Moyen Âge, apparaît en Allemagne une littérature particulière, les <hi rend="i">artes moriendi</hi>, véritables guides pratiques de la bonne mort. Deux moments importants y sont décrits : la confession et le testament. La plupart de ces textes rappellent que le mourant peut sauver son âme grâce aux biens terrestres et certains donnent de véritables conseils pour bien réaliser l’acte de dernière volonté. L’assimilation de l’intestat et du déconfès ainsi que l’importance du contentieux successoral expliquent les longs développements contenus dans les testaments. Il n’est pas rare que, dans le préambule même, le défunt exprime sans ambages sa volonté de ne pas mourir intestat. Le 17 janvier 1415, Thomas de Valleran, chanoine de l’église de Saint-André de Châteaudun, organise ainsi sa succession « pensant aux choses mondaines, convoitant et desirant de tout cueur comme vray chrestien pourveoir et secourre au salut et remede de l’ame de luy, non voulant de cest siecle trespasser et deffiner intestat, mais au cas de fortune mieulx obvier ». Les réflexions de ce type, fréquentes en tête des actes, prennent place après les invocations divines et sanctorales pour répondre à l’avertissement de l’Évangile de Matthieu : « Veillez, car vous ne savez ni le jour, ni l’heure ». Des considérations anticipant les vers de l’abbé Testu, selon lesquels « Rien n’est plus certain que la mort, / Mais rien n’est plus incertain que son heure », sont aussi souvent placées au même endroit pour justifier les dispositions prises. Le souci de veiller au salut de l’âme est tel que des subterfuges, comme le testament <hi rend="i">loco defuncti</hi>, ordonné par les parents du défunt, permettent de pallier le manque de préparation, les proches accomplissant au nom du mort des legs pieux.</p>
+          <p>L’insistance des <hi rend="i">artes moriendi</hi> et des préambules trahit la fragilité des testaments qui, du vivant de leurs auteurs, n’ont aucune force et n’existent réellement qu’à leur disparition. Entre sa rédaction et son ouverture, l’acte de dernière volonté peut en effet être révoqué par le testateur lui-même. Mais il est également susceptible d’être déclaré nul après sa mort, événement qui entraîne une présomption de changement de sa volonté.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Les conditions de fond</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Le choix de l’héritier</head>
+          <p>Le droit romain admet qu’un parent puisse favoriser une autre personne que ses enfants en l’instituant héritier, mais il reconnaît aussi à ces derniers le droit de se retourner contre l’héritier institué et de réclamer leur <hi rend="i">legitima pars</hi>. Il tente de trouver un équilibre entre la liberté de disposer et ce qu’est censée guider l’affection due aux proches. Les canonistes héritent des réflexions romaines mais également de la philosophie chrétienne. Pierre Lombard et Abélard exaltent la liberté permettant à l’homme de joindre les œuvres à la foi sans être gêné par les rigueurs du droit. S’il faut aimer les parents qui nous sont proches, nul égard n’est en revanche dû au fils indigne ou au mauvais parent. Une telle assertion rattache les liens de parenté non à la nécessité mais à la charité. Cette liberté permet à chacun d’assurer son salut, elle assure également l’autorité du père de famille.</p>
+          <p>L’aumône est un devoir de piété mais il faut prendre garde à ne pas complètement dépouiller ses descendants. Le don <hi rend="i">pro anima</hi> est un acte rédempteur et ne doit pas être cause de la ruine de la famille. Toutefois, au sein même de la famille, le testateur peut choisir d’avantager un fils plutôt qu’un autre. Instituer un héritier est avant tout une pratique romaine mais le droit canonique, à travers l’interprétation des docteurs, oblige aussi à désigner un héritier. Toutefois, la simple désignation ne suffit pas à faire un testament valide, il faut également laisser une part à ses descendants ou ascendants. Cette portion leur revient selon le droit naturel et le testateur ne peut librement en disposer.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Les legs</head>
+          <p>Le legs est souvent défini comme une donation faite par testament. L’origine de la technique remonterait à la Loi des XII Tables. Les canonistes reprennent les éléments romains. Ainsi Angelo Chiavato écrit que le legs est la donation laissée par le testateur mais remise après la mort de ce dernier et après l’acceptation de la succession par l’héritier. Les legs peuvent être guidés par l’amitié ou plus encore par la piété. Pour être valables, ces donations doivent être raisonnables, le but n’est pas de léser les héritiers par une trop grande générosité. Cependant, même un legs raisonnable doit répondre à certaines exigences : son objet doit être identifiable et délivrable. En outre, certains legs permettent véritablement au testateur de « vouloir pour le temps où il ne sera plus », notamment en y adjoignant une condition. Le testament médiéval a un caractère religieux incontestable. Le disposant le conçoit comme l’accomplissement d’un devoir religieux. Le <hi rend="i">Bilder ars</hi>, un art de mourir, rappelle qu’avec les biens d’ici-bas, le <hi rend="i">de cujus</hi> peut sauver son âme. Les actes portent d’ailleurs la marque de cette affectation spirituelle, ils sont faits <hi rend="i">amore Dei</hi>, <hi rend="i">pro anima</hi>. La donation pie est donc très importante dans l’acte : elle l’est formellement puisque nombre de clauses en relèvent, mais c’est surtout dans l’esprit de l’acte qu’elle est fondamentale.</p>
+        </div>
+        <div>
+          <head>Appendice
+            <lb/>Le testament chez Damase le Hongrois</head>
+          <p>Damase le Hongrois a laissé une riche production conservée, mais peu d’éléments biographiques à son sujet nous sont parvenus. L’origine même du canoniste est objet de débats, celui-ci étant présenté tantôt comme hongrois, tantôt comme venant de Bohême. En réalité, l’hypothèse d’une origine bohémienne est due à une erreur paléographique : dans certains manuscrits, Damase est qualifié de <hi rend="i">Bononiae</hi>, de Bologne, où il enseigne à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle. Une mauvaise lecture a pu donner <hi rend="i">Boemiae</hi>.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le testament en droit canonique se caractérise d’abord par des formes simplifiées et par une extension de la capacité testamentaire par rapport aux prescriptions romaines. L’acte change également de nature : de simple acte de disposition, il devient un véritable « passeport pour l’au-delà ». La pratique montre que si la donation pieuse n’est pas obligatoire, elle est néanmoins présente dans quasiment tous les testaments médiévaux.</p>
+        <p>L’analyse du testament a été longtemps négligée par l’historiographie juridique. Toutefois, depuis quelques années, le droit des successions connaît un nouvel essor. De nombreux articles sont consacrés à un aspect précis du droit successoral. Cette étude permet de donner une vue d’ensemble du testament médiéval mais elle appelle aussi des travaux plus précis notamment sur la légitime et la doctrine civiliste.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Édition des titres <hi rend="i">De peculio clericorum</hi>, <hi rend="i">De testamentis</hi>, <hi rend="i">De successionibus ab intestatibus</hi> et <hi rend="i">De successionibus</hi> de la somme de Damase le Hongrois d’après le manuscrit 1910 de la bibliothèque Casanatense à Rome, corrigé par le manuscrit Borghese 261 de la bibliothèque apostoliqueVaticane et par d’autres témoins. – Titre <hi rend="i">De testamentis</hi> de la somme d’Ambroise.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

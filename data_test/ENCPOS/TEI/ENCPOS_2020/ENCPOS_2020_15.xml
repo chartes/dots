@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_15" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le Maître du retable Beaussant. Redécouverte d’un peintre angevin du <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle</title>
+        <author>Hortense de Reviers</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 157-166</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le Maître du retable Beaussant
+        <lb/>Redécouverte d’un peintre angevin du <num>xv<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Hortense</forename>
+        <surname>de Reviers</surname>
+        <roleName>licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Pendant la plus grande partie du <num>xv<hi rend="sup">e</hi></num> siècle, l’Anjou est un centre artistique actif, vivifié par la présence des ducs d’Anjou et de leur cour. Le roi René en particulier laisse l’image d’un roi mécène, entretenant des artistes nombreux, originaires des différentes parties du royaume mais aussi d’autres pays européens. Cependant le départ du roi René, qui s’établit définitivement en Provence en 1471, et le rattachement du duché au domaine royal en 1480 semblent s’accompagner d’un ralentissement de la production artistique, particulièrement dans le domaine de la peinture et de l’enluminure. Dans les deux dernières décennies du <num>xv<hi rend="sup">e</hi></num> siècle Angers n’a plus le rayonnement artistique qui a été le sien sous le règne de René d’Anjou. Les documents d’archives livrent pourtant les noms de quelques artistes, mais sans qu’il soit possible de leur attribuer des œuvres et jusqu’à récemment aucune personnalité artistique importante n’a pu être rattachée à l’Anjou de la fin du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        <p>Dans ces conditions, la redécouverte du Maître du retable Beaussant et la mise au jour de ses liens avec la région angevine sont doublement exceptionnelles. Les conditions mêmes de la redécouverte de ce peintre sont remarquables. Dès 1993, à l’occasion d’une exposition, François Avril attribue à un même artiste plusieurs manuscrits enluminés, dont le <hi rend="i">Cœur d’amour épris</hi>dit « de Paris », l’un des rares exemplaires de ce roman de chevalerie écrit par le roi René. Mais c’est en 2007 que la connaissance de cet artiste franchit une nouvelle étape, avec la redécouverte du retable Beaussant. Ce retable, alors recouvert d’une peinture très abîmée du <num>xvii<hi rend="sup">e</hi></num> siècle est offert à l’État en 2003 par le général Beaussant. Sa restauration permet de découvrir une peinture du <num>xv<hi rend="sup">e</hi></num> siècle sous la couche du <num>xvii<hi rend="sup">e</hi></num> siècle, qui est alors retirée. Celle-ci est rapidement attribuée au peintre du <hi rend="i">Cœur d’amour épris</hi>de Paris par François Avril, qui lui donne le nom de convention de Maître du retable Beaussant.</p>
+        <p>La constitution du corpus des œuvres du Maître du retable Beaussant repose sur des critères exclusivement stylistiques, cet artiste n’ayant pu être identifié à ce jour. La redécouverte de ce maître permet néanmoins de jeter un éclairage nouveau sur la production artistique angevine de la fin du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les œuvres attribuées au Maître du retable Beaussant sont le seul témoignage de l’activité de celui-ci. Elles comprennent des manuscrits enluminés, des miniatures isolées, des verrières et une peinture sur panneau, le retable Beaussant. La connaissance de celui-ci et des verrières de l’église de Sablé-sur-Sarthe est également éclairée par les dossiers de restauration de ces œuvres, ainsi que par les photographies prises lors de la restauration du retable et par des clichés anciens des verrières.</p>
+          <p>La production du Maître du retable Beaussant est confrontée aux renseignements fournis par la documentation archivistique : inventaires d’églises et d’abbayes, comptes privés ou de fabriques, minutes notariales. Les catalogues de vente permettent également de reconstituer l’histoire des œuvres du maître.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Les premières œuvres attribuées au Maître du retable Beaussant</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Le <hi rend="i">Cœur d’amour épris</hi> dit « de Paris » (Paris, Bibliothèque nationale de France, français 24399)</head>
+          <p>Le <hi rend="i">Cœur d’amour épris</hi> est composé en 1457 par le roi René d’Anjou. Ce roman de chevalerie allégorique met en scène le Cœur, chevalier personnifiant le cœur du narrateur, dans sa quête de Douce Merci. Guidé par Désir, le Cœur affronte des personnages qui sont autant d’allégories des dangers qui guettent les amants, avant de parvenir à l’île du dieu d’Amour. Après avoir contemplé le cimetière d’Amour et les merveilles du château de Plaisance, le Cœur poursuit sa quête, qui connaîtra une conclusion tragique. Cette œuvre d’une grande richesse sémantique est donc à la fois un roman allégorique inspiré du <hi rend="i">Roman de la rose</hi> et un roman de chevalerie adoptant les codes et les lieux communs du genre. Elle accorde une importance particulière au sens de la vue, à travers les descriptions des merveilles et œuvres d’art rencontrées par le Cœur, donnant une importance particulière aux relations entre texte et iconographie.</p>
+          <p>Le <hi rend="i">Cœur d’amour épris</hi> connaît une faible diffusion en dehors du milieu de la cour du roi René. Sept copies nous en sont parvenues, dont trois sont enluminées. Le manuscrit français 24399 de la Bibliothèque nationale de France est la seule d’entre elles à présenter un cycle complet, composé de soixante-dix miniatures, ce qui rend tout particulièrement perceptible le lien entre le texte du roman et sa transposition visuelle. Il présente en outre la version la plus ancienne du texte. Le <hi rend="i">Cœur d’amour épris</hi> de Paris a longtemps souffert de la comparaison avec le <hi rend="i">Cœur d’amour épris</hi> dit « de Vienne », le manuscrit 2597 de l’Österreichische Nationalbibliothek, enluminé par Barthélémy d’Eyck et redécouvert à la fin du <num>xix<hi rend="sup">e</hi></num> siècle. Des travaux récents ont depuis montré l’originalité du cycle iconographique du manuscrit de Paris. Bien que le cycle de Paris s’inspire de celui de Vienne, reprenant notamment la fameuse enluminure du Cœur devant la fontaine de Fortune, il adopte des choix iconographiques différents, en privilégiant l’efficacité narrative et dramatique et en faisant montre d’une attention particulière au mouvement et d’une connaissance de la mise en scène théâtrale.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La<hi rend="i"> Chronique de Baudoin d’Avesnes</hi>, ou <hi rend="i">Trésor des histoires</hi> (Paris, Bibliothèque nationale de France, français 1367)</head>
+          <p>La <hi rend="i">Chronique de Baudoin d’Avesnes</hi>, également connue sous le nom de <hi rend="i">Trésor des histoires</hi> ou de <hi rend="i">Trésor de sapience</hi>, est une compilation historique anonyme rédigée à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle à la demande de Baudoin d’Avesnes. Cette compilation s’étend de la création du monde jusqu’à la mort de Pierre de La Broce en 1280 et couvre aussi bien l’histoire biblique que celle des Grecs, des Perses, des Bretons et des Romains, avant d’aborder l’histoire de la Flandre et du Hainaut. Elle est composée à partir de compilations historiques plus anciennes, parmi lesquelles <hi rend="i">l’Histoire ancienne jusqu’à César</hi> et les <hi rend="i">Faiz des romains</hi>. Plus de cinquante manuscrits de cette chronique, complets ou partiels, sont aujourd’hui conservés.</p>
+          <p>Le manuscrit français 1367 de la Bibliothèque nationale de France contient la première partie de cette chronique, de la création du monde jusqu’au règne de Tibère. Avec soixante-dix-sept miniatures, il renferme l’un des cycles iconographiques les plus riches. La comparaison de celui-ci avec d’autres exemplaires permet d’établir, d’après les détails des vêtements des personnages, que le manuscrit français 1367 a été réalisé à partir du manuscrit 729 de la bibliothèque de Chantilly, daté du premier quart du <num>xv<hi rend="sup">e</hi></num> siècle. Les enluminures de ce dernier, toutes de petite taille, sont réalisées à la plume et parfois relevées d’un trait de pinceau bleu. Ce manuscrit et celui du Maître du retable Beaussant contiennent presque le même nombre d’enluminures. Celles-ci figurent aux mêmes emplacements dans les deux copies, accompagnent les mêmes rubriques et, dans plus de deux cas sur trois, représentent les mêmes scènes. Le manuscrit 729 de Chantilly a appartenu au connétable de Bourbon, dont la famille est proche de René d’Anjou, ce qui établit un lien supplémentaire entre le Maître du retable Beaussant et la cour d’Anjou-Provence.</p>
+          <p>Le Maître du retable Beaussant ne se contente pas de copier les enluminures de ce manuscrit, qui lui a probablement été fourni par son commanditaire, mais il réalise un cycle d’une grande clarté et d’une grande efficacité dramatique, où il privilégie les plans resserrés, plus adaptés à des miniatures de petite taille.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Autres attributions antérieures à la redécouverte du retable Beaussant</head>
+          <p>Plusieurs manuscrits enluminés de moindre importance ont été rattachés au même artiste avant la redécouverte du retable Beaussant. Deux livres d’heures complets, le manuscrit 1110 de la bibliothèque municipale de Poitiers et le manuscrit 135 de la bibliothèque municipale de Toulouse, lui sont attribués, ainsi qu’un troisième dont les miniatures se trouvent dispersées entre le manuscrit Hart 20984 du Blackburn Museum and Art Gallery et la collection Robert Lehman au Metropolitan Museum of Art de New York, sous la cote 1975.</p>
+          <p>Les commanditaires de ces livres d’heures ne sont pas connus. Les livres d’heures de Toulouse et de Blackburn contiennent des prières adressées à des saints vénérés dans l’Est de la France, tels saint Claude et saint Gébouin. Celui de Toulouse contient en outre une prière adressée à Jean Gerson, qui connaît une grande popularité dans le diocèse de Lyon après sa mort. Les commanditaires de ces manuscrits ont donc un lien avec l’Est de la France. Les lettres <hi rend="i">P</hi> et <hi rend="i">R</hi> qui figurent sur l’un des encadrements des enluminures du livre d’heures de Toulouse pourraient correspondre aux initiales du destinataire.</p>
+          <p>François Avril y ajoute encore une crucifixion sur parchemin, qui se trouve aujourd’hui dans une collection particulière. Ces différentes œuvres, bien que d’une originalité moindre, sont d’une grande importance pour l’analyse du style de l’enlumineur et l’attribution à celui-ci de nouvelles œuvres.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Les œuvres d’un maître angevin</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Le retable Beaussant</head>
+          <p>Le retable Beaussant, redécouvert en 2007, est l’œuvre qui donne son nom de convention à cet artiste. Il est à ce jour la seule peinture sur panneau attribuée à ce dernier. Ce retable se trouvait dans le prieuré de Villemoisant, situé dans la région angevine, depuis au moins le <num>xix<hi rend="sup">e</hi></num> siècle. Jusqu’à sa restauration en 2007, il était recouvert d’une peinture du <num>xvii<hi rend="sup">e</hi></num> siècle très endommagée, représentant 
+            <lb/>l’assomption de la Vierge et exécutée par le peintre angevin Pierre Durand. L’analyse dendrochronologique du support permet d’établir que celui-ci a été réalisé dans le dernier quart du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Cette œuvre en forme de <hi rend="i">T</hi>, probablement exposée à l’origine sur un autel, représente trois scènes différentes : au centre une crucifixion avec la Vierge et saint Jean, à gauche une pietà et à droite un donateur cistercien présenté par saint Bernard. La composition est d’une grande simplicité mais aussi d’une grande force dramatique. Cette sobriété est probablement à mettre en rapport avec l’identité du donateur, l’ordre cistercien mettant en avant l’humilité et la simplicité, et peut-être avec la nécessité de rendre l’œuvre visible de loin.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La Vie de saint François (Paris, Bibliothèque nationale de France, français 28640)</head>
+          <p>Le manuscrit français 28640 de la Bibliothèque nationale de France, auparavant en mains privées, a été acquis en 2007. L’intérêt de ce manuscrit est double : le texte qu’il contient est une traduction française inconnue de la <hi rend="i">Legenda major</hi> de saint Bonaventure, d’autre part le cycle qu’il contient est l’un des plus riches cycles franciscains de l’enluminure française. Il n’existe aucune autre copie de cette traduction de la Vie et des miracles de saint François, probablement réalisée dans l’Ouest de la France, peut-être par un auteur poitevin. Comme la version latine d’origine, cette traduction est divisée en quinze chapitres et suivie d’une partie consacrée aux miracles du saint après sa mort.</p>
+          <p>Cet exemplaire de la Vie de saint François est passé dans un grand nombre de collections différentes et il est possible de reconstituer son histoire jusqu’en 1776, peut-être jusqu’en 1750, si l’exemplaire mentionné dans la collection du comte Wassenaer est bien celui de la Bibliothèque nationale de France.</p>
+          <p>Le cycle iconographique contient treize grandes miniatures illustrant le début de chaque chapitre et quarante-neuf plus petites correspondant aux miracles du saint. Une grande miniature ouvrant le chapitre X a disparu. Ce cycle présente certaines analogies avec celui du manuscrit 411 de la Bibliotheca nazionale de Rome. Ainsi les mêmes épisodes sont représentés en tête des mêmes chapitres dans neuf cas sur treize.</p>
+          <p>L’identité de la destinataire n’est pas connue mais celle-ci s’est fait représenter dans la miniature illustrant la stigmatisation de saint François. Il pourrait s’agir de Jeanne de Laval, probable commanditaire du <hi rend="i">Cœur d’amour épris</hi> de Paris. Deux des bordures du manuscrit contiennent cependant des pensées et des véroniques qui semblent figurer à titre d’emblèmes personnels. Or ces fleurs ne font pas partie des emblèmes connus de Jeanne de Laval.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Autres attributions en lien avec la région d’Angers</head>
+          <p>Trois autres œuvres permettent de conforter l’hypothèse d’un ancrage angevin du Maître du retable Beaussant. Trois miniatures conservées au Louvre sous les cotes INV 20696, RF 54636 et RF 54637 sont issues d’un Code de Justinien ayant appartenu à Pierre de Laval, archevêque de Reims, frère de Jeanne de Laval, la seconde épouse du roi René. Cet ecclésiastique séjourne en Anjou à partir de 1484, ce qui incite à penser que c’est bien dans cette région que ces trois enluminures ont été commandées.</p>
+          <p>Une curieuse miniature représentant un crucifix peut également être attribuée au Maître du retable Beaussant. Aujourd’hui conservée au musée des Beaux-Arts d’Angers, elle provient de la collection Mordret, constituée par un collectionneur angevin et rassemblant un grand nombre d’œuvres achetées pour la plupart dans cette région. Elle a peut-être été conçue comme un objet de dévotion indépendant et pourrait s’inspirer de la croix d’orfèvrerie que Jean Du Verger a offert à la cathédrale d’Angers en 1455. Enfin une miniature ornant les statuts de la faculté de médecine d’Angers, aujourd’hui conservés aux archives départementales du Maine-et-Loire sous la cote D 38, peut aussi être attribuée à ce maître.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Un peintre de cartons</head>
+          <p>Les cartons de plusieurs verrières situées dans le Maine-et-Loire et dans la Sarthe doivent être attribués au Maître du retable Beaussant, ce qui confirme définitivement l’ancrage angevin de cet artiste et élargit le corpus de ses œuvres. Les plus importantes de ces verrières sont celles de la Crucifixion et de la Vie du Christ conservées dans l’église de Sablé-sur-Sarthe. La première représente une grande crucifixion à multiples personnages, encadrée de la Passion et de la Résurrection. La seconde représente quatorze scènes de la vie du Christ, deux donateurs, plusieurs saints et une Vierge à l’enfant. Elle a été assemblée à partir de deux verrières différentes, consacrées l’une à la vie cachée du Christ, l’autre à sa vie publique. Les armoiries peintes sur les verrières permettent d’élargir considérablement la connaissance des commanditaires du maître : y sont identifiées celles du roi de France, du dauphin, de la châtellenie de Sablé, de Yolande de La Haye, duchesse de Nemours, de Philippe de Luxembourg, évêque du Mans, de Jeanne de Laval et de son frère, Guy XV de Laval.</p>
+          <p>Le Maître du retable Beaussant est aussi l’auteur de la partie inférieure de la baie 111 de la cathédrale d’Angers. Ce vitrail représente l’évêque d’Angers Jean de Rély, décédé en 1499, en prière devant une Pietà. Enfin un petit vitrail provenant de l’église de Soulaire-sur-Bourg et représentant une crucifixion avec la Vierge, saint Jean, Marie-Madeleine et un donateur, peut être attribué au même artiste. Ce vitrail, dont la réalisation est mentionnée dans le compte de la fabrique, porte la date de 1521, ce qui en ferait l’œuvre la plus tardive du Maître du retable Beaussant.</p>
+          <p>L’attribution des cartons de ces verrières au Maître du retable Beaussant s’appuie sur des critères stylistiques. Plusieurs scènes de la vie du Christ de la verrière de Sablé-sur-Sarthe présentent des ressemblances frappantes avec celles des livres d’heures de Toulouse et de Blackburn. Certains détails se retrouvent également dans la Vie de saint François. La verrière de Jean de Rély se rapproche des représentations des donateurs des verrières de Sablé-sur-Sarthe, tandis que la pietà qui y figure possède de grandes similitudes avec celles qui sont déjà attribuées au Maître du retable Beaussant. La crucifixion de Soulaire-sur-Bourg offre une grande ressemblance avec celle du retable Beaussant, bien qu’elle y ajoute le personnage de la Madeleine et d’un donateur.</p>
+          <p>Ces œuvres donnent une image nouvelle de cet artiste : il se révèle peintre de cartons capable de réaliser des compositions complexes, comme le montre la verrière de la Crucifixion de Sablé-sur-Sarthe.</p>
+        </div>
+      </div>
+      <div>
+        <head>Partie III
+          <lb/>Style et éléments biographiques</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les commanditaires</head>
+          <p>Les œuvres attribuées au Maître du retable Beaussant permettent d’identifier plusieurs commanditaires de ce dernier. L’artiste semble avoir entretenu une proximité particulière avec la famille de Laval, dont des membres lui commandent au moins deux de ses œuvres. Il est vrai que cette famille comporte plusieurs véritables bibliophiles. Tel est le cas de Jeanne de Laval, seconde épouse du roi René, qui réside en Anjou jusqu’à sa mort en 1498 et qui, du vivant de son mari, recourt à plusieurs reprises aux services des enlumineurs Jean Missant et Adenet Lescuyer, installés à Angers. Le frères de Jeanne, Guy XV de Laval, grand maître de France et lieutenant de Bretagne, exerce également une activité de bibliophile. Un autre frère de Jeanne, Pierre de Laval, est abbé de Saint-Aubin et de Saint-Nicolas d’Angers, puis archevêque de Reims. Il réside en Anjou jusqu’à sa mort.</p>
+          <p>Le Maître du retable Beaussant compte également parmi ses clients un nombre notable d’ecclésiastiques, des plus prestigieux aux plus humbles. Le cardinal-évêque Philippe de Luxembourg fait partie des commanditaires des verrières de Sablé-sur-Sarthe, l’évêque d’Angers Jean de Rély est probablement celui du vitrail qui le représente dans la cathédrale d’Angers. Des prêtres comptent aussi parmi les commanditaires des verrières du Maître du retable Beaussant, bien que leur identification soit plus délicate. Un seul régulier, le donateur du retable Beaussant, figure au nombre des clients connus du maître. Enfin quelques institutions font appel à celui-ci, notamment la faculté de médecine d’Angers et la ville de Sablé.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Style et influence</head>
+          <p>Le Maître du retable Beaussant demeure difficile à situer précisément dans le paysage artistique français du <num>xv<hi rend="sup">e</hi></num> siècle. Maître à la personnalité originale et affirmée, il connaît l’œuvre de Barthélémy d’Eyck, mais son art demeure avant tout français et est marqué par l’utilisation de modèles circulant dans la vallée de la Loire. Il utilise ainsi de manière récurrente des modèles empruntés à Jean Bourdichon mais aussi à Jean Poyet.</p>
+          <p>Son œuvre se reconnaît à ses personnages aux paupières lourdes, à la silhouette sculpturale, presque massive. Le maître réutilise souvent les mêmes détails architecturaux, les mêmes paysages, les mêmes compositions, au sein d’une même œuvre comme d’une œuvre à l’autre. Il ne recherche pas la virtuosité, mais l’efficacité narrative et l’effet dramatique, et il lui arrive de se montrer d’une étonnante expressivité. Il a une maîtrise correcte de l’héraldique, mais il lui arrive de commettre des erreurs dans l’interprétation des blasons. S’il privilégie les compositions simples, il est cependant capable d’œuvres complexes et semble adapter ses réalisations aux goûts et aux moyens de ses commanditaires. De légères différences stylistiques entre les réalisations qui lui sont attribuées et au sein de certaines œuvres invitent à s’interroger sur l’évolution de son style et sur la présence de collaborateurs à ses côtés.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Proposition d’identification</head>
+          <p>Les archives livrent les noms de plusieurs peintres actifs dans la région angevine à la fin du <num>xv<hi rend="sup">e</hi></num> siècle, sans qu’il soit possible dans la majorité des cas de leur attribuer des œuvres d’art. Plusieurs artistes au service de la cour d’Anjou-Provence restent ou reviennent dans la région angevine après la mort du roi René. Coppin Delf y est actif jusqu’en 1488, mais il n’est probablement que fresquiste. Il est sans doute l’auteur des fresques de la chapelle de Montreuil-Bellay, dont le style ne peut se confondre avec celui du Maître du retable Beaussant.</p>
+          <p>L’hypothèse d’identification la plus sérieuse est celle de Pierre Garnier, peintre à la cour de René d’Anjou dans les années 1470. Après la mort de son protecteur et un court séjour en Lorraine, cet artiste vient s’installer en Anjou, d’où il est peut-être originaire. Il y reste jusqu’à sa mort, survenue au plus tard en 1526. Au cours de sa carrière il réalise au moins un retable et des cartons de tapisserie pour plusieurs églises de la région angevine. Son parcours correspond bien à ce que l’on peut reconstituer de la biographie du Maître du retable Beaussant, peintre probablement formé dans la vallée de la Loire et proche de membres de la cour d’Anjou. Aucun document d’archives ne permet cependant de corroborer cette identification.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le Maître du retable Beaussant est donc un artiste important de la région angevine. Réalisant aussi bien des manuscrits enluminés que des retables et des cartons de vitraux, il reçoit des commandes prestigieuses et travaille pour une clientèle variée implantée principalement en Anjou. Il est particulièrement proche de la famille de Laval et rencontre peut-être Jeanne de Laval à la cour de René d’Anjou. L’existence de ce maître montre que si la ville d’Angers ne retrouve pas à la fin du <num>xv<hi rend="sup">e</hi></num> siècle le dynamisme artistique qui a été le sien sous le roi René, elle reste néanmoins un centre de création, en partie grâce à l’implication d’anciens proches du roi René.</p>
+        <div>
+          <head>Pièce justificative</head>
+          <p>Compte de la fabrique de Soulaire-sur-Bourg (1518-1520).</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Reproductions des œuvres du Maître du retable Beaussant.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

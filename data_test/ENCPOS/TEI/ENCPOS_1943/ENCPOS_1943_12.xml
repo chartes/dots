@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’architecture gothique des <hi rend="sc">xv</hi><hi rend="sup">e</hi> et <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècles dans les anciens diocèses de Quimper et de Vannes</title>
+        <author ref="https://www.idref.fr/104201835">Léon de Groër</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_12.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 101-107</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="101" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’architecture gothique
+       <lb/>des <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles
+       <lb/>dans
+       <lb/>les anciens diocèses de Quimper et de Vannes</head>
+      <byline>
+        par
+        <forename>Léon</forename>
+        <surname>de Groër</surname>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie générale</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Pauvre et peu peuplée durant la première moitié du Moyen-Age, la Bretagne se développe brusquement après la fin de la guerre de Succession. Au point de vue artistique, elle a subi de nombreuses influences extérieures, surtout normandes et anglaises. Les unes et les autres sont encore fortes à la fin du <num>xiv<hi rend="sup">e</hi></num> siècle, mais cela n’empêche pas que l’art breton ne soit déjà devenu original.</p>
+        <p>L’objet du présent travail n’est que l’étude de quelques ateliers ; il est vrai que ceux-ci englobent une grande partie des édifices intéressants.</p>
+        <p>Les limites des diocèses n’ont pas d’importance par elles-mêmes. Celui de Vannes correspond assez bien à une région économique et artistique, mais le nord-est de celui de Quimper s’apparente à la Bretagne du Nord.</p>
+      </div>
+      <div>
+        <pb n="102" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre premier
+         <lb/>l’atelier de Kernascléden.</head>
+        <p>Porche de la chapelle Sainte-Noyale à Noyal-Pontivy (1423). – Chapelle Notre-Dame de Kernascléden (avant 1430-1453 et 1464). – Notre-Dame-de-l’Assomption à Quimperlé. – Chapelle Saint-Fiacre du Faouët.</p>
+        <p>D’une église à l’autre, certains détails sont transportés presque sans changement : des feuilles sculptées de Sainte-Noyale à Kernascléden, une fenêtre de Kernascléden à Quimperlé, un portail de Kernascléden à Saint-Fiacre. Sur une niche du chœur de Quimperlé, on a reproduit le dessin de deux fenêtres de Kernascléden.</p>
+        <p>En outre, et c’est le plus intéressant, on assiste au perfectionnement et à l’évolution graduelle des conceptions d’un même artiste, en accord avec l’évolution générale du style : série des trois porches de Sainte-Noyale, Kernascléden, Quimperlé. Façades de Kernascléden et de Saint-Fiacre : tous les défauts de la première sont éliminés dans la seconde. Dans chacune des églises, une très grande partie de la sculpture décorative a été faite par le même artiste, qui est probablement le maître d’œuvre lui-même, car c’est naturellement le meilleur sculpteur qui est l’ouvrier le plus habile.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>La chapelle Notre-Dame de la houssaye,
+         <lb/>près de Pontivy.</head>
+        <p>Commencée en 1435, terminée avant 1450. Là aussi, le maître d’œuvre paraît avoir été le principal sculpteur.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>La cathédrale de Quimper et son atelier.</head>
+        <p>De la façade de la cathédrale aux croisillons du transept, <pb n="103" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_03.TIF/full/full/0/default.jpg"/>la sculpture devient progressivement moins fine, mais conserve toujours le même caractère : pendant toute la durée de la construction, on a scrupuleusement suivi le projet du premier maître d’œuvre. Celui-ci était un décorateur remarquable, mais, comme son contemporain de Kernascléden, il est embarrassé lorsqu’il s’agit d’une grande composition.</p>
+        <p>On savait que Pierre Le Goaraguer, maître d’œuvre du croisillon nord, avait ensuite travaillé à Locronan, où il se trouvait en 1485, mais on se demandait ce qu’il était venu y faire, car la grande église de Locronan était achevée à cette date.</p>
+        <p>En corrigeant l’erreur de Pol de Courcy, qui attribuait la construction de la chapelle du Pénity à Renée de France, on a daté la chapelle des environs de 15’10. Il suffit de comparer son portail avec le portail du croisillon nord de Quimper pour voir qu’elle est l’œuvre de P. Le Goaraguer.</p>
+        <p>Le chœur de la chapelle Saint-Germain de Plogastel et probablement les églises de Saint-Guénolé et Saint-Nonna à Penmarc’h sont du même atelier.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>L’atelier de la cathédrale de Vannes.</head>
+        <p>Le chœur de la cathédrale de Vannes, démoli au <num>xviii<hi rend="sup">e</hi></num> siècle, datait du <num>xii<hi rend="sup">e</hi></num>. La façade étant du <num>xiii<hi rend="sup">e</hi></num>, on a pu supposer avec vraisemblance que la nef avait été reconstruite dans la seconde moitié du <num>xii<hi rend="sup">e</hi></num>. La nef unique de la cathédrale actuelle ne serait qu’une transformation de cette nef du <num>xii<hi rend="sup">e</hi></num> siècle, qui aurait été couverte de trois grandes voûtes angevines. Cependant, aucune trace de la construction romane n’a pu être retrouvée. Les colonnettes, dans le croisillon sud, proviennent du fait qu’on s’apprêtait à voûter ce croisillon. On a eu également l’intention de voûter la nef, comme le prouvent quelques détails, et, par-dessus tout, le fait qu’elle ait pu recevoir, sans avoir été renforcée, les lourdes voûtes d’arêtes du <num>xviii<hi rend="sup">e</hi></num> siècle,</p>
+        <pb n="104" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_04.TIF/full/full/0/default.jpg"/>
+        <p>Dernière en date des cathédrales de Bretagne, la cathédrale de Vannes montre très bien comment les maîtres d’œuvre bretons ont oublié progressivement les principes de la construction gothique : les arcs-boutants sont si faibles et si petits qu’ils ne jouent presque aucun rôle. C’est à la construction massive des murs et des contreforts qu’on a l’ait confiance, et on n’a même pas osé percer de grandes fenêtres.</p>
+        <p>Une partie de l’atelier de Vannes émigra à Quelven avant 1485, date à laquelle la fabrique de Vannes vendit de la pierre de Taillebourg à la fabrique de Quelven. La comparaison de la chapelle avec la cathédrale montre que la construction du chœur et du transept se place entre l’achèvement de la nef de Vannes (1476) et la construction du croisillon sud de la cathédrale (1504-1505). La nef de la chapelle dut être achevée vers 1510.</p>
+        <p>Après Notre-Dame de Quelven, l’atelier continua à essaimer et construisit, d’une part, Notre-Dame-de-la-Clarté à Baud et, d’autre part, la chapelle Notre-Dame de Locmaria en Melrand. A la chapelle Saint-Nicodème en Pluméliau, on retrouve des ouvriers de Quelven travaillant en collaboration avec d’autres qui venaient de la chapelle voisine de Saint-Nicolas des Eaux.</p>
+        <p>En outre, il faut sans doute rattacher à l’atelier de Quelven l’église Notre-Dame-de-la-Joie à Pontivy et celle de Bieuzy.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>La chapelle notre-dame-de-paradis a hennebont.</head>
+        <p>Commencée en 1513 et terminée en 1530. Les voûtes, les balustrades et les pinacles restés inachevés n’ont été posés qu’au cours du <num>xix<hi rend="sup">e</hi></num> siècle et même au <num>xx<hi rend="sup">e</hi></num>. Très proche de l’atelier de Vannes, l’église a cependant été construite par un maître d’œuvre original et excellent.</p>
+      </div>
+      <div>
+        <pb n="105" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VI
+         <lb/>La chapelle Sainte-Barbe du Faouët (1489-1512)
+         <lb/>et l’église de langonnet.</head>
+        <p>Existence d’un petit atelier local aux <num>xv<hi rend="sup">e</hi></num> cl <num>xvi<hi rend="sup">e</hi></num> siècles.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>L’atelier de Saint-Herbot.</head>
+        <p>Atelier très considérable, de caractère semi-industriel, après le clocher de la chapelle Saint-Herbot (1516), l’atelier de Saint-Herbot construisit, d’une part, les clochers de Saint-Trémeur de Carhaix (1529-1535) et de Plouguer, d’autre part, travailla aux chapelles de la Trinité en Melgven, Saint-Maurice-du-Moustoir en Kernevel, à l’église de Ploaré, à la chapelle Saint-Tugen en Primelin, à l’église de Pleyben, aux chapelles Saint-Thélau en Plogonnec et Saint-Germain de Plogastel ; enfin, à l’église de Plozévet.</p>
+        <p>La sculpture, jamais très fine, reste la même pendant de longues années.</p>
+        <p>Le maître d’œuvre n’hésite pas à transporter des morceaux entiers d’églises d’un endroit à un autre, sans se donner la peine d’y rien changer. Le portail de Saint-Herbot avec le balcon et la fenêtre qui le surmonte se retrouvent à Saint-Trémeur de Carhaix. Le balcon et la tourelle d’escalier de Saint-Tugen, à Pleyben. Les portails, spécialement, sont faits en série : ceux de Saint-Herbot, de Saint-Trémeur, de la Trinité en Melgven et de Saint-Maurice-du-Moustoir ne diffèrent un peu que parce qu’il y avait moins de place sur la façade des deux dernières chapelles. Celui de Saint-Tugen a exactement les mêmes détails ; celui de Ploaré se retrouve à Saint-Thélau.</p>
+        <p>Les tours, par contre, isolées ou groupées avec des tourelles d’escalier, ont toujours été modifiées d’une église à l’autre. C’est leur effet décoratif qui intéresse le plus l’artiste.</p>
+      </div>
+      <div>
+        <pb n="106" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VIII
+         <lb/>Caractère local des ateliers.</head>
+        <p>Rapports des ateliers entre eux. Différences régionales. Dans quelle mesure peut-on dater un édifice d’après son style ?</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>Les ressources financières.</head>
+        <p>Outre les cathédrales, ce sont surtout les chapelles, et spécialement celles dédiées à Notre-Dame, qui bénéficient des mesures financières importantes des évêques et de la trésorerie ducale.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>L’organisation du travail.</head>
+        <p>11 n’y a que peu de différence entre les maîtres d’œuvre et les autres tailleurs de pierre. Le maître d’œuvre, parfois payé à la journée, devient de plus en plus souvent un entrepreneur payé à forfait.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XI
+         <lb/>Technique de la construction.</head>
+        <p>Par elle-même, la technique n’intéresse pas les ouvriers bretons. Ils recherchent la simplicité à tout prix. Depuis que la Bretagne est soumise moins directement aux influences extérieures, on y perd l’intelligence de la construction gothique, tout en continuant à vouloir faire des voûtes d’ogives.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XII
+         <lb/>Valeur artistique de l’architecture bretonne.</head>
+        <p>L’art flamboyant marque la dernière période d’un style, <pb n="107" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_07.TIF/full/full/0/default.jpg"/>celle où l’on oublie la valeur des formes au profit de la violence des effets. La Bretagne, pays jeune, sans passé artistique, l’a compris tout autrement et a conservé, ou plutôt acquis, un sentiment remarquable de la beauté des lignes.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Plans</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Carte</head>
+        <pb n="108" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_12/ENCPOS_1943_12_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

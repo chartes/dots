@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_11" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La congrégation de Montaigu (1490-1580)</title>
+        <author ref="https://www.idref.fr/033857970">Marcel Godet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_11.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 81-92</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="81" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La congrégation de Montaigu
+       <lb/>(1490-1580)</head>
+      <byline>
+        par
+        <forename>Marcel</forename>
+        <surname>Godet</surname>
+        <roleName>Licencié ès lettres et en droit, Ancien élève de l’École des Hautes-Études, Conservateur de la Bibliothèque et des Musées d’Abbeville</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>La congrégation de Montaigu comprend l’ensemble des Communautés de Pauvres établies par Jean Standonck (♰ 1504) à Cambrai, Valenciennes, Malines et Louvain, en dépendance de la Communauté des Pauvres Ecoliers du collège de Montaigu. Ce terme (<hi rend="i">congregatio</hi>) ne saurait désigner un ordre constitué (<hi rend="i">religio</hi>). La congrégation de Montaigu se destinait au rôle préparatoire de séminaire : elle devait former, pour la régénération de l’église, des religieux observants et des prêtres mortifiés autant qu’instruits ; en subordonnant la formation savante à la formation ascétique, son fondateur s’opposait à l’humanisme absolu de la Renaissance. Elle dura trop peu pour marquer dans l’histoire ; mais elle a pu passer, à quelques points de vue, pour le précurseur obscur de la Compagnie de Jésus. L’étude de ce dernier point marque le terme de notre travail.</p>
+      </div>
+      <div>
+        <pb n="82" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre premier
+         <lb/>les origines du collège de Montaigu
+         <lb/>(1314-1483)</head>
+        <p>1. – Vie de Gilles Aycelin de Montaigu, archevêque de Rouen (♰ 1317). – Le 14 juillet 1314, il libère ses maisons de la rue des Sept-Voies des charges foncières dues à l’abbaye de Sainte-Geneviève. – Par testament, en date du 13 décembre 1314, il affecte ces maisons au logement et à l’entretien de quelques boursiers. – La nouvelle communauté porte le nom de collège des Aycelin ; la direction en appartient, au cours du <num>xiv<hi rend="sup">e</hi></num> siècle, aux clercs de la famille, qui sont : Aubert Aycelin de Montaigu, évêque de Clermont (♰ 1327), Gilles Aycelin de Montaigu, cardinal, évêque de Thérouanne (♰ 1378), Pierre Aycelin de Montaigu, dit le cardinal de Laon (♰ 1388).</p>
+        <p>2. – Par testament du 7 novembre 1388, le cardinal de Laon affecte certaines sommes à l’entretien de six boursiers au collège des Aycelin ; il remet la direction du collège à Philippe de Moulins, évêque d’Évreux, puis de Noyon (♰ 1409), et, après lui, au chapitre de Notre-Dame de Paris, à défaut de clercs dans la famille Aycelin. – Louis Aycelin de Montaigu, dit Listenois, abandonne ses droits héréditaires sur le collège, le 17 juin 1392 ; mais le collège portera désormais le nom de Montaigu. – Philippe de Moulins en dresse le règlement, promulgué le 25 juillet 1402.</p>
+        <p>3. – Le collège de Montaigu au <num>xv<hi rend="sup">e</hi></num> siècle, sous l’administration du chapitre de Notre-Dame. Principaux : Guillaume des Brosses (1408-1423), Guillaume Maistron (1423-1430), Hugues Lemaire (1430-1431), Pierre Lefèvre (1431-1433), Bertrand Cormier (1433-1446), Pierre Caros <pb n="83" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_03.TIF/full/full/0/default.jpg"/>(1446-1459), Jean Péron (1459-1471), Pierre de Saint-Martin, dit Belin (1471-1476), Amâtre Chetart (1476-1483). – En 1483, la maison est ruinée ; les revenus ne permettent plus d’entretenir des boursiers. Le chapitre de Notre-Dame commet à la garde du collège un pauvre régent, nommé Jean Standonck, à charge de célébrer les messes prescrites par les fondateurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Jean Standonck
+         <lb/>(1453 (?)-1504)</head>
+        <p>1. – Né à Malines, le 16 août 1453 (?) ; arrive à Paris vers 1470. Le 12 mai 1483, il succède à Amâtre Chetart, à titre provisoire ; il est nommé principal de Montaigu, le 30 mai 1483. – Le collège n’a plus de boursiers ; Standonck maintient la Pédagogie, ou pension, tenue par son prédécesseur. Il applique à ses élèves un règlement sévère. – – Sa carrière universitaire. – Il obtient des lettres de Naturalité (mai 1491).</p>
+        <p>2. – – Ses réformes religieuses : il s’unit de prières avec la plupart des anciens ordres, Franciscains, Dominicains, Carmes, Chanoines Réguliers (1488-1504).</p>
+        <p>En 1493, il rédige, sur l’ordre du roi, des « articles « pour la réformacion des gens d’église. » – Il encourage l’expansion des Minimes, s’occupe de la réforme de Cluny, des Cordeliers, des Carmes ; il prend une part très active à la réforme des chanoines réguliers de Saint-Victor et de Château-Landon. Enfin, il fonde la congrégation de Montaigu.</p>
+      </div>
+      <div>
+        <pb n="84" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre III
+         <lb/>Fondation de la communauté des pauvres
+         <lb/>du collège de Montaigu
+         <lb/>(1490-1499)</head>
+        <p>1. – Le 17 mars 1490, Standonck achète, rue des Sept-Voies, une petite maison, où il instruit ses premiers disciples, suivant une règle religieuse empruntée aux Frères de la Vie Commune. Ils sont plus de 80 en 1493. – Les fondations de l’amiral de Graville (16 avril 1494) et du vicomte de Rochechouart (25 février 1495) constituent définitivement la Communauté : elle se compose de 12 étudiants en théologie, représentant les 12 apôtres, de 72 étudiants ès-arts ou en grammaire, représentant les 72 disciples, et de 2 chapelains, figurant Jésus-Christ et la Sainte Vierge. Elle dépend du Prieur des Chartreux de Paris, du Prieur des Célestins et du Pénitencier de Notre-Dame. – En 1496, elle est transportée dans une aile du collège de Montaigu, rebâtie à neuf ; elle a son oratoire privé, sa bibliothèque, ses dortoirs, son humble costume, qui vaut aux disciples le sobriquet de Capettes ; bientôt, elle possède son jardin, appelé le « Royaume des Pauvres ou d’en bas. » – A ses côtés subsiste la Pédagogie restaurée par Standonck, nommée la Pension des Riches ; l’ensemble continue à porter le titre de Collège de Montaigu.</p>
+        <p>2. – Standonck a été nommé chanoine de Beauvais, le 11 septembre 1493. – Ses prédications à Beauvais, Amiens, Abbeville (1494-1496). – Son procès pour l’archevêché de Reims (1497-1498). – Son attitude intransigeante contre le divorce de Louis XII et dans la lutte de l’Université contre le Roi (1498-1499) rend son exil inévitable.</p>
+        <pb n="85" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_05.TIF/full/full/0/default.jpg"/>
+        <p>3. – Cependant la Communauté des Pauvres n’a cessé de prospérer. – Essai de fondation d’un collège subalterne à Beauvais : le projet doit échouer définitivement, le 30 septembre 1500. – A Paris, un don généreux du roi de Portugal, Emmanuel le Grand, permet à la Communauté d’acheter la ferme de Wissous (26 avril 1499) ; de son côté, l’amiral de Graville assure aux Pauvres 200 livres de rente. – La Communauté de Montaigu possède déjà une règle spirituelle détaillée (Arsenal, ms. 1168) ; en 1499, au moment de partir pour l’exil, Standonck présente au chapitre de Notre-Dame des articles fixant les règles d’administration de la Communauté des Pauvres et de la Pension des Riches, qui en dépend : ces deux documents contiennent en germe les futurs statuts de Montaigu. Standonck quitte Paris le 16 juin 1499.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Fondation des maisons subalternes
+         <lb/>constitution définitive de la congrégation de Montaigu
+         <lb/>(1499-1504)</head>
+        <p>1. – Standonck est à Cambrai vers le 24 juin 1499 ; il établit son collège dans l’ancienne maison des Bons-Enfants, restaurée, le 17 juin 1499 (?), par l’évêque Henri de Berghes.</p>
+        <p>– Il prêche à Valenciennes, le 9 novembre 1499 ; il y laisse son disciple Thomas Warnet, qui achète l’hôtel de Beaufort, rue Montoise, pour y fonder un collège appelé Collège de Standonck ou de maître Thomas ; la princesse de Castille, de passage à Valenciennes, encourage cette fondation (23 décembre 1500).</p>
+        <p>– Standonck fonde son troisième collège à Malines : les premiers Bons-Enfants sont groupés, dès le 9 avril 1500 ; <pb n="86" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_06.TIF/full/full/0/default.jpg"/>le magistrat autorise la fondation, le 11 juin ; le chapitre de Saint-Rombaut accorde son consentement, le 12 décembre 1500. Le collège est bâti aux frais de la ville.</p>
+        <p>– A Louvain, Adrien Floriszoon, d’Utrecht (le futur pape Adrien VI), agissant comme mandataire de Standonck, achète la pédagogie du Porc, le 15 avril 1500, et y établit les Pauvres. La nouvelle Communauté dépend du Prieur des Chartreux et du doyen de Saint-Pierre de Louvain. Standonck, rappelé d’exil par lettres du roi Louis XII, du 17 avril 1500, rentre en France au mois de juillet suivant.</p>
+        <p>2. – Fort de l’approbation orale du pape Alexandre VI, Standonck établit définitivement sa congrégation. – Il isole la maison de Montaigu du reste de l’Université. Le 13 juin 1501, on arrête la fondation d’un cimetière et d’une infirmerie, entre la porte Saint-Bernard et la porte Saint-Victor. On rachète d’anciennes maisons jadis aliénées par les boursiers de Montaigu (13 juin 1501). La donation de Jeanne de Mailly (28 juin 1501) accroît encore le patrimoine des Pauvres. Il est stipulé expressément dans tous les actes que, si l’esprit de pauvreté s’affaiblit dans la communauté, les biens iront à l’Hôtel-Dieu de Paris.</p>
+        <p>3. – Standonck renonce à demander une bulle en forme, à Rome. Il fait confirmer sa congrégation, en France, par le cardinal légat Georges d’Amboise (22 février 1502). Ensuite, il retourne dans les Pays-Bas. Les collèges subalternes de Cambrai, Valenciennes, Malines et Louvain sont approuvés par une bulle du cardinal légat Raymond Péraud (20 février 1503). – Les statuts définitifs de la congrégation sont promulgués par le chapitre de Notre-Dame de Paris, le 30 janvier 1503. – Le roi Louis XII, par lettres patentes du mois de février 1503, amortit aux Pauvres de Montaigu, jusqu’à 200 livres parisis de rente.</p>
+        <p>La Congrégation de Montaigu est à son apogée. A Paris, <pb n="87" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_07.TIF/full/full/0/default.jpg"/>il y a 200 pauvres dans la communauté ; plus de 300 disciples sont déjà entrés en religion. Les ordres réformés ne cessent d’en demander. Standonck meurt le 5 février 1504.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>La règle de Montaigu</head>
+        <p>1. – Sources : <hi rend="i">a.</hi> Les Frères de la Vie Commune.</p>
+        <p><hi rend="i">b.</hi> Les anciens ordres mendiants.</p>
+        <p><hi rend="i">c</hi>. Les Minimes.</p>
+        <p>2. – La congrégation de Montaigu a pour but de fournir aux anciens ordres des religieux observants, à l’Église entière des prêtres mortifiés et instruits. – Le supérieur de la congrégation est le Prieur des Chartreux de Paris ; chaque maison est dirigée par un Père des Pauvres, assisté du Procureur et des Discrets. – – Les disciples prononcent des vœux temporaires. – Conditions d’admission.</p>
+        <p>3. La formation religieuse est prépondérante ; la formation littéraire est admise dans la mesure où elle peut soutenir et fortifier l’action apostolique. Sommaire de la Règle : C. I, <hi rend="i">de divino officia.</hi> – C. Il, <hi rend="i">de exercitio litterario</hi>. – C. III, <hi rend="i">de refrenanda lingua</hi>. – C. IV, <hi rend="i">de habitu et vestitu</hi>. – C. V, <hi rend="i">de modo frugaliter reficiendi</hi>. – C. VI, <hi rend="i">de cura circa infirmas gerenda</hi>. – C. VII, <hi rend="i">de jejuniis et abstinentiis</hi>. – C. VIII, <hi rend="i">de pœnitentiis.</hi> – C. IX, <hi rend="i">de exercitio corporali</hi>. – C. X, <hi rend="i">de electione patris pauperum</hi>, <hi rend="i">œconomorum</hi>, etc. – C. XI, <hi rend="i">de modo probandi et recipiendi pauperes</hi>. – C. XII, <hi rend="i">de divino officio in oratorio inferiori</hi>, <hi rend="i">in quo Divites conveniunt, celebrando.</hi></p>
+        <p>4, – Organisation du collège de Montaigu : la Pension des Riches est dépendante de la Communauté des Pauvres. – Organisation des maisons subalternes.</p>
+      </div>
+      <div>
+        <pb n="88" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VI
+         <lb/>Décadence de la congrégation
+         <lb/>noel Béda abandonne les maisons subalternes
+         <lb/>autres causes de décadence
+         <lb/>(1504-1513)</head>
+        <p>1. – Noël Béda succède à Standonck, qui l’a désigné ; les bienfaiteurs de la congrégation naissante sont alors nombreux. En 1511, on achète l’hôtel de Vézelay, qui double presque la superficie du collège. – Béda dresse un règlement d’études pour les Riches en 1509. A cette époque, on compte, à Montaigu, près de 400 élèves Riches et 122 Pauvres ; la Communauté décroît en nombre et perd son esprit d’apostolat.</p>
+        <p>2. – – Béda renonce à la supériorité de la maison de Montaigu sur les maisons subalternes. – Le collège de Valenciennes reprend son indépendance dès 1505. – A Cambrai, les pourparlers entamés, dès 1505 entre le chapitre cathédral et le nouvel évêque Jacques de Croÿ amènent, en 1509, l’établissement des Frères de la Vie Commune. – Les échevins de Malines ne se décident qu’en 1509, sur une lettre pressante de Béda (4 septembre 1509), à organiser indépendamment leur collège. Il est désormais administré par quatre proviseurs : deux laïcs et deux ecclésiastiques. – Le collège de Louvain s’organise sous la direction d’Adrien d’Utrecht. Il comprend, comme à Paris, une communauté de Pauvres (la maison de Standonck) et une pension de Riches.</p>
+        <p>3. – A Paris, la Communauté de Montaigu perd, au profit du curé de Saint-Étienne-du-Mont, ses privilèges spirituels (24 janvier 1511), mais la décadence a aussi sa cause dans les statuts : <hi rend="i">a</hi>) Leur austérité excessive entrave toutes études sérieuses. La « modération » des statuts, <pb n="89" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_09.TIF/full/full/0/default.jpg"/>autorisée par l’amiral de Graville (11 juillet 1511) et par le pape Léon X (20 août 1513), n’est jamais appliquée. 6) L’administration complexe du collège, dont le chapitre de Notre-Dame est demeuré, en dépit du Prieur des Chartreux, correcteur et visiteur, est une cause de troubles et de procès sans fin.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Le collège de Montaigu au <num>xvi<hi rend="sup">e</hi></num> siècle
+         <lb/>(1513-1570)</head>
+        <p>1. – Principalat de Pierre Tempête (1513-1528) : Sa sévérité ; ses démêlés avec le chapitre de Notre-Dame. – La Barbaromachie (1522). – Le collège de Montaigu est l’un des premiers de l’Université. En février 1528, Calvin quitte la pension des Riches. Ignace de Loyola, arrivant à Paris, y suit des cours de grammaire.</p>
+        <p>2. – Principalat de Jean Hégon (1528-1546) : Sentence des requêtes du Palais, du 10 mai 1532, reconnaissant au chapitre de Notre-Dame le droit de visite, au Prieur des Chartreux, la supériorité. – Mauvaise administration de Hégon.</p>
+        <p>3. – Pierre Alès (1546-1559). – François Borel (1559-1571) : Procès entre Montaigu et Sainte-Barbe (1559-1562) ; achat de l’hôtel des Abbés du Mont Saint-Michel (1570). – La Communauté des Pauvres est alors en complète décadence.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>Fin de la congrégation de Montaigu : Jean Boulaese
+         <lb/>(1570-1580)</head>
+        <p>1. – Jean Boulaese est né à Arrou (Eure-et-Loir), vers 1530 ; ses débuts au collège des Lombards ; ses tra<pb n="90" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_10.TIF/full/full/0/default.jpg"/>vaux hébraïques ; à partir de 1566, il entreprend de se faire connaître en écrivant l’histoire du miracle de l’Eucharistie, survenu à Laon, le 8 juin 1566 ; ses voyages à Laon, en Espagne, en Avignon. – En 1568, il est appelé pour enseigner l’hébreu au collège de Montaigu. En 1570-1571, Boulaese va à Rome présenter l’Histoire du Miracle de Laon au pape, qui l’approuve (8 octobre 1571).</p>
+        <p>2. – Le 20 août 1571, Boulaese, absent, avait été élu Principal du collège de Montaigu, en remplacement de Borel, décédé ; mais un intrigant, Jean Margot, se fait élire à la place de Boulaese (23 août 1571). – Celui-ci revient rapidement de Rome. Démêlés de Margot et de Boulaese. Troubles. – Plan de réformes de Boulaese.</p>
+        <p>3. – Un arrêt du Parlement du 2 septembre 1575 réintègre Boulaese dans sa chambre et décrète la réforme du collège de Montaigu ; Margot quitte sa place de Principal (17 septembre 1578). – Boulaese, sur ces entrefaites, publie une édition complète de l’Histoire du Miracle de Laon. Dans la préface, adressée au pape Grégoire XIII, il affirme que les Jésuites tirent leur origine de Montaigu ; en même temps, il trace un tableau idéal de la Congrégation. – Le 28 septembre 1578, il est élu Principal de Montaigu.</p>
+        <p>4. – Boulaese veut restituer l’observance primitive. – Plaintes contre lui : il comparait devant le Tribunal de l’Université ; l’affaire est apaisée par un arrêt du Parlement (19 mai 1579). – Peu après, les plaintes recommencent ; visite du collège de Montaigu par les commissaires de l’Université (24 septembre 1579), nouveau procès : Boulaese donne sa démission à l’audience. Un arrêt du 9 décembre 1579 ordonne de lui élire un successeur. Il est chassé du collège de Montaigu, qui reprend définitivement la forme académique.</p>
+      </div>
+      <div>
+        <pb n="91" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_11.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre IX
+         <lb/>Montaigu et les origines de la compagnie de Jésus</head>
+        <p>L’argumentation de Boulaese, reprise au <num>xvii<hi rend="sup">e</hi></num> siècle et au <num>xviii<hi rend="sup">e</hi></num> siècle, n’est pas sérieuse. Position nouvelle de la question : Quelle a été sur l’œuvre d’Ignace de Loyola l’influence de son passage à Montaigu (1528-1530) ; la congrégation de Montaigu fut-elle, à quelque point de vue, dans la lutte contre l’esprit de la Renaissance, le précurseur obscur et stérile de la Compagnie de Jésus ?</p>
+        <p>1. – Composition des « Exercices spirituels » (1522-1535). – Genèse des « Exercices » : influence notoire des écrivains mystiques de l’école de Windesheim. Montaigu fut sans doute l’intermédiaire direct entre Ignace de Loyola et les Frères de la Vie Commune. – Autre rapport entre les règles d’orthodoxie, énoncées plus tard dans les « Exercices », et les « points » proposés, en 1535, aux luthériens d’Allemagne, par la faculté de théologie de Paris, dont Noël Béda était syndic. – Enfin, Ignace de Loyola put connaître à loisir la règle de Montaigu.</p>
+        <p>2. – Fondation de la Compagnie de Jésus (1539-1540). – Rédaction des « Constitutions » : Ignace étudie les règles des anciennes communautés religieuses. La congrégation de Montaigu, dernière en date, ne répondait-elle pas, en partie, aux mêmes besoins que la Compagnie de Jésus ? En réalité, l’institut des Capettes participe des ordres du moyen âge, et les Jésuites s’en écartent. Si leur fondateur a pu s’inspirer des statuts de Montaigu, c’est uniquement lorsqu’il a dressé des règles pour la formation littéraire de ses jeunes religieux (Constitutions, IV), règles qui vont présider à la première organisation des collèges de la Compagnie.</p>
+        <p>3. – Genèse des collèges de la Compagnie de Jésus (1540-1580). – A Paris, existe, dès 1540, le premier sémi<pb n="92" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_11/ENCPOS_1910_11_12.TIF/full/full/0/default.jpg"/>naire de la Compagnie. La Communauté d’étudiants du collège du Trésorier (1540-1541) ; elle se transporte au collège des Lombards (1541-1549) ; elle devient le collège de Clermont (1549-1564) ; premier procès avec l’Université (1565) ; les débats durent encore en 1578. L’histoire de cette communauté à ses débuts (1540-1549) permet de rendre compte, en partie, des erreurs et des confusions de Boulaese.</p>
+        <p>Les idées générales, qui ont présidé à l’organisation des premiers collèges, sont exposées dans les Constitutions (IV), dans la correspondance d’Ignace et de ses compagnons et dans quelques règlements particuliers, antérieurs à la <hi rend="i">Ratio Studiorum :</hi> L’enseignement est un mode d’apostolat, c’est un moyen de former des chrétiens ; par conséquent, la formation littéraire concourra toujours avec la formation religieuse orthodoxe, qui doit occuper la première place. Standonck, réagissant contre la culture exclusive de certains humanistes, se proposait aussi de former, avant tout, des chrétiens, mais des chrétiens mortifiés ; il subordonnait la formation littéraire à la formation ascétique.</p>
+        <p>Si l’on excepte des analogies de détail (livres expurgés, manuels de piété, règles d’édification extérieure), les méthodes employées, pour atteindre ce but presque identique, diffèrent dans l’ensemble ; les Jésuites ont adapté l’humanisme au lieu de le combattre ; loin de restreindre la culture littéraire, ils l’ont admise et propagée dans toute la mesure où elle était compatible avec la foi. Par conséquent, les résultats s’opposent : les Capettes sont demeurés inférieurs à leur temps ; au contraire, les Jésuites ont pu contribuer à former 1’« honnête homme » catholique du <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <div>
+          <head rend="uc">Photographies et plans</head>
+          <p/>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

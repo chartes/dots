@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’<hi rend="i">Anti-Lucrèce</hi> du cardinal de Polignac. Édition, traduction et commentaire du quatrième livre, <hi rend="i">De motu</hi></title>
+        <author>Alexandre Quilez</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 199-206</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>L’<hi rend="i">Anti-Lucrèce </hi>du cardinal de Polignac
+        <lb/>Édition, traduction et commentaire du quatrième livre, <hi rend="i">De motu</hi></head>
+      <byline>
+        par
+        <forename>Alexandre</forename>
+        <surname>Quilez</surname>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>L’<hi rend="i">Anti-Lucrèce</hi> du cardinal Melchior de Polignac (1661-1741) est un poème philosophique latin écrit à l’imitation du <hi rend="i">De rerum natura</hi> de Lucrèce mais conçu pour en être l’antidote. De même que Lucrèce s’adressait dans son poème à Memmius pour lui enseigner la philosophie d’Épicure, Polignac s’adresse à Quintius, déjà gagné à l’épicurisme, pour l’en détourner et le conduire à la religion naturelle, c’est-à-dire à la croyance en Dieu fondée sur la seule raison. Polignac s’appuie sur la philosophie de Descartes pour combattre non seulement le système épicurien, mais aussi plusieurs modernes.</p>
+        <p>Les 11 855 vers de l’<hi rend="i">Anti-Lucrèce</hi> sont répartis en neuf livres. Le premier, <hi rend="i">De voluptate</hi>, est une critique de la morale d’Épicure. Les trois suivants, <hi rend="i">De inani</hi>, <hi rend="i">De atomis</hi> et <hi rend="i">De motu</hi>, s’attaquent à sa physique. Viennent ensuite les livres <hi rend="i">De mente, </hi>qui défend la distinction de l’âme et du corps en deux substances, <hi rend="i">De belluis</hi>, qui défend la théorie des animaux machines, <hi rend="i">De seminibus</hi> sur la génération des êtres vivants et <hi rend="i">De mundo </hi>sur l’astronomie. Le neuvième et dernier livre est composite : il commence par vingt-quatre vers d’un livre inachevé, intitulé <hi rend="i">De terra et mari</hi>, après quoi vient ce que l’éditeur considère comme la conclusion de l’ensemble du poème. On y trouve à nouveau les arguments en faveur d’un créateur intelligent, une théodicée et une réfutation des théories attribuant une origine psychologique ou politique à la religion.</p>
+        <p>Le quatrième livre, sur le mouvement, permet de donner une idée exacte de l’objet et de la manière de ce vaste poème. La critique d’un point technique tiré de Lucrèce, le <hi rend="i">clinamen,</hi> y conduit à un exposé cartésien et à la critique de l’attraction newtonienne, l’ensemble se rattachant au dessein du poème par l’idée que Dieu est à l’origine du mouvement de la matière.</p>
+        <div>
+          <head>Sources</head>
+          <p>L’<hi rend="i">Anti-Lucrèce</hi> est un ouvrage posthume. Polignac y travailla toute sa vie et le manuscrit qu’il laissa à son ami Charles d’Orléans de Rothelin (1691-1744) était plein de leçons différentes et de vers épars. Comme le manuscrit n’a pas été conservé, il n’est guère possible de juger du travail d’édition accompli par Rothelin et achevé après sa mort par Charles Le Beau (1701-1778). Seule subsiste l’édition originale, publiée chez Guérin à Paris en 1747. Toutes les éditions postérieures, françaises et étrangères, copient celle de Paris. Cent soixante vers du premier livre ont été publiés par les <hi rend="i">Mémoires de littérature</hi> à La Haye en 1716 et présentent de très nombreuses variantes par rapport à l’édition de 1747, mais il n’existe manifestement rien de tel pour les livres suivants.</p>
+          <p>En 1749 parut une traduction de l’<hi rend="i">Anti-Lucrèce </hi>par Jean-Pierre de Bougainville (1722-1763), frère du célèbre navigateur. Le discours préliminaire qui la précède et la préface de l’édition originale, qui expliquent comment Polignac est venu à écrire son poème et comment celui-ci a été édité, sont des sources essentielles pour l’histoire de cette œuvre.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Origine et intention de l’<hi rend="i">Anti-Lucrèce</hi></head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Melchior de Polignac (1661-1741)</head>
+          <p>La vie de Melchior de Polignac est très éloignée du calme et du détachement prisés par la philosophie du Jardin. Homme d’Église, diplomate, courtisan, membre de trois académies, il a toujours été mêlé aux affaires de la vie publique. Sa carrière a été retracée par Pierre Paul dans une biographie parue en 1922 et qui n’a pas été remplacée depuis. Elle commença aux conclaves de 1689 et de 1691, où Polignac accompagnait le cardinal de Bouillon comme secrétaire. Sa première mission d’importance, comme ambassadeur en Pologne de 1693 à 1697, s’acheva par sa disgrâce et son exil dans son abbaye de Notre-Dame de Bonport, du fait de l’échec de l’élection du prince de Conti au trône de Pologne. Après son retour en grâce, il fut l’un des plénipotentiaires français aux conférences de Geertruidenberg de 1710 et au congrès d’Utrecht. La dernière étape de sa carrière fut une longue ambassade à Rome de 1724 à 1732. Peu avant la signature de la paix d’Utrecht en 1713, il reçut le chapeau de cardinal et devint archevêque d’Auch en 1726.</p>
+          <p>Les contemporains de Polignac rapportent la facilité dans la conversation et l’ampleur des connaissances qui lui permettaient de briller dans le monde. La collection d’antiques qu’il avait réunie à Rome était célèbre. Son intérêt pour les sciences n’était pas que théorique et l’on sait qu’il s’adonnait à des expériences d’optique et qu’il aimait faire des observations au microscope.</p>
+          <p>D’après la préface de Charles Le Beau, c’est la rencontre de Pierre Bayle aux Pays-Bas, lors de son retour de Pologne, qui aurait conduit Polignac à composer l’<hi rend="i">Anti-Lucrèce.</hi> Cette rencontre n’eut peut-être jamais lieu, comme l’affirma Voltaire, mais cette histoire désigne les cibles du poème, l’athéisme et la tradition libertine.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>L’anti-épicurisme</head>
+          <p>L’anti-épicurisme est aussi ancien que l’épicurisme. Le matérialisme strict de ce dernier, qui considère l’âme matérielle et mortelle, sa morale du plaisir, ses dieux matériels et indifférents aux hommes, l’opposaient radicalement aux autres écoles philosophiques et plus tard au christianisme. Polignac hérite de cette tradition anti-épicurienne, reprend des arguments de Cicéron, utilise des formules de Lactance.</p>
+          <p>Le premier livre de l’<hi rend="i">Anti-Lucrèce, De voluptate, </hi>est dirigé contre la morale épicurienne et tout le poème est fondé sur l’idée que l’épicurisme tient son ­succès de sa morale, que Polignac assimile à un pur hédonisme et à un laisser-aller égoïste. <hi rend="i">Voluptas</hi>, <hi rend="i">libido</hi>, <hi rend="i">cupido </hi>fourvoient et mènent à l’erreur.</p>
+          <p>Polignac défend aussi l’idée d’une nature conçue par la providence. L’anti-providentialisme des épicuriens est traditionnellement compris par ses adversaires comme une explication de la nature par le hasard. Polignac cherche donc à montrer que le monde ne peut être le fruit du hasard, mais qu’il révèle une intelligence, un dieu.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le cartésianisme et l’apologétique</head>
+          <p>Malgré les polémiques théologiques que suscita le cartésianisme, notamment sur la conciliation de sa conception de la matière comme étendue avec le mystère de la transsubstantiation, le système possédait des attraits évidents pour qui désirait refonder un rationalisme chrétien après le rejet de l’Aristote scolastique : la séparation de l’âme et du corps, l’usage de la preuve ontologique de l’existence de Dieu, la physique fondée sur la critique des concepts, l’ensemble de la connaissance dépendant de la métaphysique. Polignac fut cartésien dès ses classes de philosophie au collège d’Harcourt et le resta toute sa vie. Le cartésianisme lui fournit une physique mécaniste non matérialiste qu’il peut opposer à la physique épicurienne.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>La poésie latine</head>
+          <p>La poésie néo-latine était encore bien vivante au <num>xvii<hi rend="sup">e</hi></num> siècle et le genre didactique était particulièrement cultivé, sur les sujets les plus divers. La philosophie de Descartes inspira d’autres poèmes : la <hi rend="i">Paraphrasis poetica primae philosophiae </hi>de Schotanus en 1699, un poème écrit en 1747 par Benoît Stay, qui en composa ensuite un autre sur le système de Newton. Le <num>xviii<hi rend="sup">e</hi></num> siècle vit pourtant le déclin de la poésie latine. Les Jésuites, ses plus dévoués défenseurs, le déploraient dans le <hi rend="i">Journal de Trévoux</hi> et attendaient beaucoup de l’<hi rend="i">Anti-Lucrèce, </hi>mais les poètes directement inspirés par Polignac, Louis Racine, auteur de <hi rend="i">La Religion</hi>, et le cardinal de Bernis, auteur de <hi rend="i">La Religion vengée</hi>, écrivirent en français.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Les sciences de la nature pour connaître Dieu</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Éloge de la connaissance et des grands savants</head>
+          <p>L’<hi rend="i">Anti-Lucrèce</hi> utilise souvent l’image du sanctuaire, du fond de la nature, <hi rend="i">penetralia</hi>, <hi rend="i">adyta naturae</hi>, que la science s’efforce d’atteindre par un difficile cheminement. L’attachement à la raison, l’amour du vrai, la capacité à surmonter les sens et les préjugés, sont autant de qualités qui doivent permettre de l’atteindre et que loue Polignac en plusieurs endroits, particulièrement dans le prologue du livre III. Il est donc naturel qu’il loue les savants qui ont fait avancer la science, les anciens et surtout les modernes, tels que Copernic, Galilée, Descartes, Newton aussi, Huygens, Leeuwenhoek.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La nature créée</head>
+          <p>Néanmoins la vraie connaissance est celle des causes et, pour Polignac, la cause ultime est Dieu. L’étude de la nature reste donc subordonnée à la religion naturelle. Cela est très clair quand, dans le livre VIII, après avoir brièvement rappelé l’histoire de l’astronomie et l’opposition des systèmes héliocentrique et géocentrique, Polignac affirme que, si, par amour du vrai, il adhère au système héliocentrique, ces oppositions ne sont pourtant pas très importantes, car la grandeur divine est évidente dans chacun des systèmes : <hi rend="i">non minus omnipotens numen splendebit ubique. </hi>Polignac termine le livre VI par la même idée : que les animaux soient ou non doués d’intelligence, ils témoignent de leur créateur, par conséquent, dit-il à Quintius, <hi rend="i">mirare et numen adora.</hi></p>
+          <p>Faire des merveilles de la nature un argument en faveur de l’existence de Dieu est une idée très ancienne, déjà exposée par Cicéron dans le <hi rend="i">De natura deorum. </hi>L’apologétique moderne l’a reprise à la faveur des nouvelles merveilles ­découvertes par la science. Polignac n’est qu’un des ses représentants, le plus remarquable étant Fénelon, dont la première partie de la <hi rend="i">Démonstration de l’existence de Dieu</hi>, intitulée <hi rend="i">L’Art de la nature</hi>, est entièrement fondée sur cet argument.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>L’exemple du quatrième livre</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Contre le <hi rend="i">clinamen</hi></head>
+          <p>Le quatrième livre, composé de 1 507 vers, est l’un des plus longs du poème. Venant après les livres II et III sur le vide et les atomes, il conclut la critique de la physique épicurienne. Pour celle-ci, le mouvement, induit par la pesanteur, est inhérent aux atomes. L’idée qui sous-tend tout ce livre est exactement contraire : la matière ne se meut pas d’elle-même, elle a besoin d’une cause motrice. Polignac commence par s’attaquer au <hi rend="i">clinamen</hi>. Le <hi rend="i">clinamen</hi>, c’est-à-dire la déviation spontanée des atomes par rapport à leur chute verticale, est décrit par Lucrèce dans le deuxième livre du <hi rend="i">De rerum natura</hi>, où il est justifié par un raisonnement de même type que celui qui permet d’affirmer l’inexistence du vide : sans vide il n’y aurait pas de mouvement, sans <hi rend="i">clinamen</hi> il n’y aurait pas de choc et donc pas de corps. Pareillement, le mouvement volontaire des ­animaux est considéré comme une conséquence du <hi rend="i">clinamen</hi>. Polignac accumule les ­objections pour attaquer cette idée : qu’est-ce qui fait que certains atomes dévient et d’autres non ? Qu’est-ce que l’oblique dans l’espace infini ? Si les atomes sont libres, la matière est libre et il n’y a dès lors plus de régularité dans la nature.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La théorie cartésienne des tourbillons</head>
+          <p>Descartes rejette l’existence du vide et explique donc tout mouvement mécaniquement. Pour rendre compte du mouvement des astres, il imagine des tourbillons de matière subtile – puisqu’invisible –, qui entraînent ceux-ci dans leurs révolutions. La pesanteur est expliquée par la différence de mouvement entre cette matière et la matière terrestre : la première ayant une force centrifuge plus importante, elle repousse la seconde vers le centre de la Terre. Polignac expose cette théorie et développe plusieurs exemples tendant à montrer la relativité des notions de lourd et de léger et donc à réfuter la théorie de la pesanteur inhérente à la matière.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Contre Newton</head>
+          <p>L’opposition de Polignac à Newton porte sur la théorie de l’attraction. Les premières décennies du <num>xviii<hi rend="sup">e</hi></num> siècle connaissent un affrontement, particulièrement vif en France, entre cartésiens et newtoniens, les premiers défenseurs de l’impulsion contre l’attraction des seconds. Polignac formule l’objection principale des cartésiens : l’attraction, action à distance et propriété de la matière, est une régression par rapport au système rationnel et mécaniste de Descartes, un retour aux qualités occultes de la scolastique, à la magie. Comme il le résume aux vers 933 et 934, <hi rend="i">reciso / impulsu, magicis totum dedit artibus orbem</hi>  : l’attraction donne à la matière une sorte de mystère et d’autonomie dont l’avait privée le cartésianisme et que rejette absolument Polignac.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Le style</head>
+          <p>L’influence de Lucrèce sur la langue de Polignac se voit par l’usage récurrent d’archaïsmes de forme – génitifs en -<hi rend="i">ai</hi>, infinitifs en -<hi rend="i">ier –</hi> et de termes proprement lucrétiens, tel <hi rend="i">momen</hi>. Polignac emploie aussi fréquemment un vocabulaire non classique, particulièrement des termes techniques : <hi rend="i">natatus</hi>, <hi rend="i">libramen</hi>, <hi rend="i">attractus</hi>, etc. Le poème est essentiellement argumentatif, mais des passages poétiques y trouvent place en début de livre ou dans le courant d’exposés théoriques, tels que, dans le livre IV, aux vers 546 et suivants, l’apostrophe inspirée à la matière subtile : <hi rend="i">Salve elementorum pars subtilissima…</hi> Il demeure que l’ensemble est extrêmement rhétorique et les arguments logiques, souvent formels, se mêlent aux sarcasmes des passages polémiques, Polignac aimant montrer les conséquences absurdes des propositions qu’il combat.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Édition et traduction</head>
+        <p>Le texte édité est celui de l’édition originale parue chez Hippolyte-Louis Guérin en 1747. Quelques rares variantes ont été relevées dans l’édition de 1749 du même éditeur, mais aucune n’a été retenue. La ponctuation a été librement modifiée, selon les pratiques actuelles, de même que les majuscules, si ­fréquentes, n’ont été conservées qu’en début de nom propre. Enfin, quelques graphies ont été modifiées, telles que <hi rend="i">silva</hi> à la place de <hi rend="i">sylva.</hi></p>
+        <p>L’<hi rend="i">Anti-Lucrèce </hi>est traduit dès le <num>xviii<hi rend="sup">e</hi></num> siècle en plusieurs langues, notamment par trois fois en français. Ces trois traductions, celle de Jean-Pierre de Bougainville en 1749, en prose, et celles, en vers, de l’abbé Bérardier de Bataut en 1786 et de Jeanty-Laurens en 1813, sont toutes des adaptations. C’est pourquoi le texte est accompagné d’une nouvelle traduction en prose, aussi proche que possible de l’original.</p>
+        <p>Le texte et sa traduction sont suivis de notes formant un commentaire continu. Les passages des auteurs antiques qu’imite Polignac, tout particulièrement de Lucrèce, sont cités et sont fournis les éléments de l’histoire des idées et des sciences permettant d’éclairer l’argumentation de celui-ci.</p>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>L’<hi rend="i">Anti-Lucrèce</hi> est une œuvre qui, par son ampleur, n’a guère d’équivalent à l’époque moderne. Son intérêt, en plus d’offrir un remarquable exemple de poésie didactique, est de résumer les polémiques morales, métaphysiques et scientifiques de la fin du <num>xvii<hi rend="sup">e</hi></num> et du début du <num>xviii<hi rend="sup">e</hi></num> siècle, du point de vue d’un défenseur du christianisme. L’idée de Polignac de prendre pour cible Lucrèce pour défendre la religion contre le matérialisme et l’athéisme, qui menacent de plus en plus le christianisme, se révèle assez féconde pour lui permettre d’embrasser un grand nombre de questions. Celle du mouvement, développée dans le quatrième livre, montre comment une question de physique, renouvelée par la science moderne, peut être rattachée à un problème métaphysique et à l’apologétique.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

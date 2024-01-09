@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les notables de l’élection de Carentan (1670-1790)</title>
+        <author ref="https://www.idref.fr/027018075">Gérard Mauduech</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_12.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 101-106</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="101" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_12/ENCPOS_1972_12_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les notables de l’élection de Carentan
+       <lb/>(1670-1790)</head>
+      <byline>
+        par
+        <forename>Gérard</forename>
+        <surname>Mauduech</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>La source principale est constituée par les archives du notariat de Carentan conservées aux Archives départementales de la Manche, dont les lacunes sont insignifiantes. Des renseignements complémentaires ont été fournis par la série C des Archives départementales du Calvados et par la série T des Archives nationales (papiers de la famille de Coigny). Des articles d’autres séries de ces mêmes dépôts, des manuscrits de la Bibliothèque nationale, de la Bibliothèque Sainte-Geneviève et du Musée des Beaux-Arts à Caen (collection Mancel), ainsi que quelques pièces des Archives diocésaines de Coutances, ont été également consultés.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Le milieu</head>
+        <p><hi rend="i">Le pays.</hi> – Le sol n’offre pas d’autres ressources que l’agriculture et l’élevage. Les problèmes de l’assèchement des marais, de l’assainissement de la ville et de la lutte contre les fièvres se posent jusqu’à la Révolution.</p>
+        <p><hi rend="i">Le cadre institutionnel.</hi> – Par notables il faut entendre l’ensemble des possesseurs d’offices des diverses juridictions que rassemble la ville, dont les deux plus importantes sont le bailliage et l’élection. La vicomté est supprimée au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle, l’amirauté a un rôle très réduit, car elle est concurrencée par des sièges voisins plus importants. Le gouverneur a cessé d’avoir toute influence après la Fronde. Le subdélégué, qui parvient à occuper la fonction de lieutenant de bailliage, a du mal à imposer son autorité ; sans cesse sa compétence <pb n="102" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_12/ENCPOS_1972_12_02.TIF/full/full/0/default.jpg"/>est menacée, qu’il s’agisse de questions importantes ou de simples privilèges honorifiques.</p>
+        <p><hi rend="i">La ville.</hi> – La population urbaine, qui compte environ deux mille personnes, vit surtout des fonctions administratives et de la rente foncière. La ville essaie de regrouper le plus possible de tribunaux et d’organismes administratifs, d’où, à la fin de l’Ancien Régime, des disputes sévères avec les bourgs voisins de Périers et de La Haye-du-Puits. La ville s’anime aux jours de foires ; elle tire l’essentiel de ses ressources du marché du beurre et des procès. Le port, à dix kilomètres, périclite et ne connaît plus que le cabotage.</p>
+        <p><hi rend="i">La vie municipale.</hi> – Les charges municipales restent jusqu’au premier tiers du <num>xviii<hi rend="sup">e</hi></num> siècle assez mal définies en nombre et en attributions et créent des rivalités entre les échevins et les officiers du bailliage. Un statu quo s’établit ensuite. Le groupe des officiers et des hommes de loi veut accaparer la mairie et l’échevinage, mais chacun essaie de se soustraire à ce qui est considéré comme une corvée. La règle est que « les assemblées (des habitants) sont toujours très tumultueuses, le dernier du peuple y étant autant que le premier, à quoy il est nécessaire de remédier » (1778). Le subdélégué s’efforce de susciter les candidatures ; ce sont surtout les avocats, qui pour la plupart n’exercent pas au bailliage, qui assument les fonctions municipales ; à compétence égale, ils ont plus de liberté de manœuvre que les officiers royaux.</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La société</head>
+        <p><hi rend="i">Les offices et les officiers.</hi> – Le nombre maximum des officiers en charge se situe autour de soixante-dix ; il n’a pas diminué à la fin de l’Ancien Régime. Les offices de justice et de finances échappent, dans ce coin de province, au déclin général qui frappe les petits offices, car on les recherche comme facteurs et sanctions d’ascension sociale ; l’intendant est fréquemment sollicité de favoriser la création d’offices mineurs. On reproche même à certaines personnes de se livrer à un trafic des offices. L’office qui permet le passage au rang de notable semble être celui de procureur. Ce sont les offices principaux qui sont exercés le plus longtemps. L’office de receveur des tailles, étant donné son prix très élevé – cinquante mille livres au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle – se trouve réservé à des acheteurs étrangers, mieux nantis. L’office est considéré comme un investissement, même s’il occupe une part restreinte dans l’ensemble de la fortune : quand l’occasion manque sur place, on achète un office dans un siège de juridiction voisin. Ainsi se forme-t-il, à l’échelle d’une généralité, puis d’une province, un vaste réseau de parentèles ; on rencontre les mêmes noms à Bayeux, Coutances et Valognes. Les familles les plus anciennes et les plus riches accèdent aux carrières des cours souveraines à Rouen ou à Paris, sans rompre leurs attaches <pb n="103" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_12/ENCPOS_1972_12_03.TIF/full/full/0/default.jpg"/>provinciales. Certains employés de la Ferme générale avaient sans doute les capacités et la fortune requises pour accéder au rang de notables, mais leur mobilité rendait difficile la création de liens locaux.</p>
+        <p>Si la famille ne bouge pas, les offices s’y transmettent ou s’y agglomèrent avec régularité. L’hérédité dans la possession de certains offices est la règle ; un exemple frappant est fourni par les offices de notaire de la ville dont les prix sont particulièrement élevés, puisqu’une charge de notaire coûte au moins quinze mille livres vers 1750.</p>
+        <p>La fidélité à l’égard du roi est très souvent oubliée ; lors des troubles frumentaires, les officiers royaux n’hésitent pas à prendre le parti des émeutiers, voire à faire naître des désordres pour nuire à une autre juridiction (rivalité entre le procureur de police et le lieutenant de bailliage).</p>
+        <p><hi rend="i">La formation des groupes sociaux.</hi> – L’endogamie de la société robine est nette. Les officiers inférieurs, greffiers, huissiers, sergents, archers ou praticiens, viennent des classes marchandes mais s’en détachent. Très rares sont les passages directs du monde paysan à celui des officiers mineurs. Plus on monte dans la hiérarchie des offices, plus on va rechercher son conjoint au loin. Les secondes et même les troisièmes noces sont très fréquentes ; il existe incontestablement une hypergamie féminine.</p>
+        <p><hi rend="i">Les chirurgiens, les médecins et les apothicaires.</hi> – La comparaison de ce groupe avec celui des officiers de justice et de finances fait ressortir son infériorité très marquée en tous les domaines, économique, culturel et politique. La succession dans la profession du père est très fréquente.</p>
+        <p><hi rend="i">Noblesse et office.</hi> – Le nombre des familles nobles diminue, du fait de l’appauvrissement des hobereaux et de l’émigration hors de l’élection, surtout vers Valognes. Il existe une frange commune à la noblesse et aux officiers, constituée par les principaux officiers. On peut chiffrer approximativement à 6 % la proportion d’officiers nobles, le titre nobiliaire à peu près unique étant celui d’écuyer. Cependant il arrive fréquemment qu’un roturier s’arroge ce titre, considéré comme un corollaire de la richesse. Les nombreuses recherches de noblesse menées jusqu’en 1666 n’ont pas supprimé cette fraude. Mis à part quelques nobles authentiques, qui ne résident pas, on se trouve en présence d’une masse nobiliaire aux prétentions invérifiables, reposant en fait sur la fortune. Les offices mineurs restent toutefois dérogeants. Les anoblissements épisodiques du <num>xviii<hi rend="sup">e</hi></num> siècle concernent principalement les officiers.</p>
+        <p><hi rend="i">Clercs et officiers.</hi> – Les vocations religieuses sont nombreuses dans le monde des officiers. Le recrutement sacerdotal de la région de Carentan est issu de milieux plus aisés que dans le reste du diocèse. La petite noblesse a toujours été plus riche en vocations masculines que la bourgeoisie de robe. Les vocations féminines sont bien plus rares. Les officiers entretiennent de bonnes relations avec les clercs mais préservent leur indépendance. La rupture sera complète pendant la Révolution entre le clergé d’une part, l’échevinage et le reste de la population de l’autre.</p>
+      </div>
+      <div>
+        <pb n="104" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_12/ENCPOS_1972_12_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>Les mentalités</head>
+        <p><hi rend="i">La religion.</hi> – L’élection de Carentan possède un clergé instruit, des confréries prospères, telle celles du Saint-Sacrement et du Rosaire, des Tiers-Ordres actifs. D’après les lectures, les fondations de messes, les legs pieux, les constructions de chapelles et les constitutions de titres cléricaux dont les archives ont conservé la trace, la piété individuelle semble avoir été profonde. Vers 1730, ces manifestations extérieures disparaissent assez brusquement des sources. En l’absence d’autres raisons, il faut bien supposer un attiédissement de la foi traditionnelle. A la veille de la Révolution, l’élection de Carentan sera la région du diocèse qui présentera le plus grand nombre d’abstentions pascales, ce qui n’est pas incompatible avec un développement janséniste certain.</p>
+        <p>Les protestants, même lors de la Révocation, louent l’impartialité des juges du bailliage . La bourgeoisie de robe semble avoir fourni beaucoup de Réformés ; cependant les sources manquent sur ce point.</p>
+        <p><hi rend="i">La culture.</hi> – Les connaissances des notables sont vastes et diversifiées, d’un bout à l’autre de la période. La ville a une académie depuis 1580 et une loge maçonnique se crée en 1788 ; celle-ci est composée presque exclusivement d’officiers et d’hommes de loi, avec quelques ecclésiastiques. Le subdélégué de Valognes reconnaît qu’en Basse-Normandie « pour le Tiers-état toute la science y est concentrée aux praticiens... ».</p>
+        <p>L’économie politique et, à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle, l’agitation parlementaire, ont constitué des centres d’intérêt particuliers. Les bibliothèques des officiers contiennent, en moyenne, une centaine de titres.</p>
+        <p><hi rend="i">Les frontières mal définies.</hi> – Les missions répétées des Eudistes dans la seconde moitié du <num>xvii<hi rend="sup">e</hi></num> siècle n’ont pas réussi à détruire les pratiques de sorcellerie à Carentan ni à Valognes. Les officiers sont accusés d’incompétence et d’excessive crédulité ; eux-mêmes ou leurs familles sont impliqués dans les affaires qui, en 1669-1670, provoquent l’intervention favorable du Parlement de Rouen puis celle, hostile, de Colbert. Les mêmes personnages se font remarquer par leur croyance tout aussi vigoureuse dans le diable que dans l’Église. Les justiciables des juges locaux notent ces compromissions des notables et le carcan administratif et juridique qui, selon eux, pèse sur la société ; cette conclusion ressort d’une polémique qui a été portée à l’échelle nationale. Le diable demeure une présence quotidienne (cf. aussi <hi rend="i">L’ensorcelée</hi> de Barbey d’Aurevilly).</p>
+        <p><hi rend="i">Les relations à l’intérieur de la famille.</hi> – Les rapports se montrent plutôt rudes. La pratique coutumière ne connaît pas les fiançailles ; bien des « recherches » en mariage sont annulées comme dues à l’attrait de la dot. A la fin du <num>xviii<hi rend="sup">e</hi></num> siècle, la résistance des filles et la pratique des « sommations respectueuses » au sortir du couvent prennent de l’importance. L’émancipation est pratiquée uniquement chez les notables ; elle est inconnue des couches plus pauvres. D’une manière <pb n="105" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_12/ENCPOS_1972_12_05.TIF/full/full/0/default.jpg"/>générale, les relations ne sont pas exemptes de dureté : séparations, coups et injures lors des inventaires, interdictions, jamais respectées, du port d’armes, molestations des collecteurs de tailles en sont autant d’indices.</p>
+        <p>C’est surtout à la fin du <num>xvii<hi rend="sup">e</hi></num> siècle que l’on voit les nouveaux couples loger chez les parents du mari. La famille est un ensemble bien organisé ; dans les contrats de mariage et les testaments nombre de dispositions d’ordre matériel concernent les enfants. La tutelle est minutieusement réglée ; l’un des nombreux tuteurs est affecté « aux dettes mineures ».</p>
+      </div>
+      <div>
+        <head rend="uc">Quatrième partie
+         <lb/>La présence économique</head>
+        <p><hi rend="i">L’exploitation rurale.</hi> – Les caractères traditionnels prédominent : ni engrais marins ni arrosages, rarement des chaulages. Une grande liberté est laissée au preneur à bail. Le subdélégué de Carentan écrit : « D’une part, les terres sont cultivées et portées à leur degré de valeur et d’un autre côté, les différentes épreuves que lesdits nouveaux systèmes sur l’agriculture ont donné lieu de faire n’ont servi qu’à faire donner la préférence à l’ancienne méthode qui est de bien engraisser les terres » (1761). Le bail le plus couramment pratiqué est celui de six ans ; à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle il recule devant le bail de neuf ans, tout en gardant la prépondérance ; le bail de trois ans, en usage d’un bout à l’autre de la période, mais rarement dans la seconde moitié du <num>xviii<hi rend="sup">e</hi></num> siècle, intervient quand, parmi les « maisons et héritages » concédés, la part des maisons est supérieure. Les achats de terres par les notables augmentent dans le premier tiers du <num>xviii<hi rend="sup">e</hi></num> siècle. Les investissements terriens de la bourgeoisie d’offices sont groupés en quelques centres hors des terres nobles ; la « campagne » de la ville regroupe 60 % de ces investissements.</p>
+        <p><hi rend="i">La composition des fortunes.</hi> – Les officiers mineurs disposent de fortunes très modiques, qui les laissent au bord de l’indigence. Les receveurs des tailles se distinguent, de loin, par leur richesse ; les notaires également sont fort à leur aise. Parmi les officiers moyens, on constate une grande diversité des fortunes, la gestion personnelle du dernier propriétaire du patrimoine ayant un rôle important. Les détenteurs des fortunes les plus élevées possèdent la plus forte proportion de rentes, surtout foncières. Un sondage portant sur l’année 1720 montre que la plupart des utilisateurs des billets de la banque royale sont des officiers royaux ; viennent ensuite des nobles ; puis, plus rarement, des marchands.</p>
+        <p>Les fortunes les plus grosses sont le plus sujettes à des fluctuations. C’est par un mauvais investissement dans des terrains inondables, des procès, une tutelle mal gérée que le subdélégué explique le plus souvent les déficits dans l’exposé des lettres de rémission ou de surséance.</p>
+      </div>
+      <div>
+        <pb n="106" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_12/ENCPOS_1972_12_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Conclusion</head>
+        <p>Les notables de l’élection de Carentan forment une société qui, globalement, évolue peu ; les avancements ou les déclassements sociaux sont possibles mais relèvent de cas d’espèce. Les filières sociales n’ont pas changé pendant cette période.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

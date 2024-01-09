@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_11" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Blaise de Monluc, lieutenant du roi et chef des catholiques de Guyenne durant les premières guerres de Religion (1560-1570)</title>
+        <author>Jean-Baptiste Lucq</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 123-134</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Blaise de Monluc, lieutenant du roi et chef des catholiques de Guyenne durant les premières guerres de Religion (1560-1570)</head>
+      <byline>
+        par
+        <forename>Jean-Baptiste</forename>
+        <surname>Lucq</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>De Blaise de Monluc la postérité n’a bien voulu retenir que le souvenir du défenseur de Sienne, de l’intrépide capitaine gascon, du bourreau catholique et de l’auteur des <hi rend="i">Commentaires</hi>. Pourtant, en dehors des phases d’affrontement militaire, son action dans le Sud-Ouest de la France durant la première décennie des guerres de Religion, particulièrement au cours des périodes de pacification, reste relativement méconnue. Par ailleurs, du fait de son double statut de lieutenant du roi et de chef du parti catholique de Guyenne, Monluc est au cœur du dialogue complexe qui s’instaure entre le pouvoir royal et ses sujets catholiques, suite à l’émergence du protestantisme. Imprégnés par la croyance en un Roi Très Chrétien, défenseur de l’Église et pourfendeur des hérésies, nombre de fidèles de la religion romaine attendent du souverain qu’il agisse avec fermeté contre la nouvelle foi, perçue comme une menace pour l’ordre social et politique du royaume. Mais les monarques et leur mère, la reine Catherine de Médicis, sans jamais abdiquer l’objectif d’un retour à l’unité chrétienne, semblent plutôt opter pour une politique d’équilibre et de concorde, par laquelle le pouvoir royal, unique dispensateur de paix au-delà des appartenances confessionnelles et partisanes, relèverait l’autorité de l’État.</p>
+        <p>À travers une approche plus transversale que biographique, les réussites, les échecs, les espoirs et les désillusions de Monluc, en tant que représentant du roi et chef de parti, illustrent avec acuité ces incompréhensions politico-religieuses naissantes entre le souverain français et ses sujets catholiques, problématique majeure des guerres de Religion.</p>
+        <div>
+          <head>Sources</head>
+          <p>La ville d’Agen et son plat pays occupent une place centrale dans l’administration de Monluc et le soutien à son autorité. Les registres de délibération de la jurade, conservés aux archives municipales sous les cotes BB 30 et 31, documentent relativement bien l’ensemble de la période. Les séries judiciaires, notamment les cotes FF 31 à FF 33, couvrent toute la décennie et leur fournissent souvent un complément, puisqu’elles renferment, outre les interrogatoires des suspects de protestantisme, un grand nombre de minutes des délibérations consulaires. Les mêmes archives municipales possèdent également, sous les cotes GG 202 et CC 306, de très riches liasses et registres de comptes, qui renseignent sur la saisie des biens réformés et la mise en œuvre de travaux de fortification réalisés entre 1567 et 1568 sur les ordres de Monluc. Plus largement, la série CC, relative aux comptes et aux finances, livre notamment les procès-verbaux des assemblées d’états du pays, cotés CC 65 et CC 67, mais aussi de nombreux éléments concernant la gestion de la cité, ses relations avec Monluc et l’engagement des habitants dans les combats, en particulier sous la cote CC 304.</p>
+          <p>Un grand nombre de lettres et de mémoires échangés entre le pouvoir royal et ses représentants dans le Sud-Ouest tout au long des années 1560 est conservé dans le fonds français de la Bibliothèque nationale de France, notamment dans les manuscrits français 15875 à 15882. Les registres alphabétiques et chronologiques de l’ordre de Saint-Michel, en particulier les volumes regroupés sous les cotes français 32866 et 32867, s’avèrent très utiles pour identifier les nobles de l’entourage de Monluc et comprendre le rôle de ce dernier auprès du second ordre.</p>
+          <p>Les fonds conservés dans la série K de l’Archivo general de Simancas et microfilmés aux Archives nationales sous la cote 21 Mi constituent un troisième môle documentaire. Dans les documents cotés K 1495 et K 1511 – soit 21 Mi 98 et 21 Mi 112 – se révèlent les relations entre Philippe II et les catholiques du Sud-Ouest, en particulier à travers les lettres et mémoires adressés par Monluc au maître de l’empire espagnol.</p>
+          <p>Enfin, de nombreux documents ont été publiés par les érudits et les historiens entre le <num>xix<hi rend="sup">e</hi></num> et le <num>xx<hi rend="sup">e</hi></num> siècle. La correspondance de Monluc adjointe par le baron Alphonse de Ruble à son édition des <hi rend="i">Commentaires</hi>, parue entre 1864 et 1872, bien qu’elle ne soit ni exhaustive ni exempte d’approximations, constitue un ensemble documentaire incontournable sur l’action politique de Monluc.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Chef de parti et homme du roi : la lieutenance de Monluc et ses ambivalences (1560-1563)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Blaise de Monluc face à la montée des tensions en Guyenne (1560-1561)</head>
+          <p>La diffusion et le développement de la Réforme sont précoces sur les bords de la Garonne. Les luttes de pouvoir qui agitent la cour suite à la mort accidentelle de Henri II en 1559, couplées au ralliement d’une partie de la noblesse à la nouvelle foi, politisent l’antagonisme religieux et constituent un préalable à une première structuration des partis catholiques et protestants. Ce processus est accentué en Guyenne par la présence d’un protestantisme vigoureux et d’une notabilité catholique active, ainsi que par des conflits entre seigneurs locaux ; aux premiers synodes des églises réformées répondent les premiers rassemblements associatifs des catholiques intransigeants, accélérant encore l’engrenage des troubles.</p>
+          <p>Monluc aspire à jouer un rôle dans ce nouveau contexte. Mais, preuves de sa mauvaise lecture de la situation, ses initiatives maladroites aux côtés des catholiques agenais puis ses démarches auprès d’Antoine de Bourbon, alors gouverneur de Guyenne et proche des protestants, semblent le discréditer des deux côtés. Prudent, il se résout finalement à suivre la ligne politique modérée de Catherine de Médicis, devenue régente à la mort de François II, le 5 décembre 1560. Dans un Sud-Ouest en proie à des tensions croissantes, il se fait le fidèle second du lieutenant du roi, Charles de Coucys, seigneur de Burie, et devient peu à peu indispensable. La reine-mère lui accorde sa confiance et lui confie une commission en décembre 1561.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Blaise de Monluc, chef des catholiques et représentant du roi en Guyenne (1562-1563)</head>
+          <p>Entre le début et la fin des premiers troubles, Monluc devient à la fois le principal chef des catholiques de Guyenne et le lieutenant de Charles IX dans la province. Bien qu’il soit chargé de juger impartialement les exactions commises, sa colère devant les menées du parti protestant, l’intransigeance des notables agenais et l’idée qu’il y a une place à prendre à la tête des catholiques du Sud-Ouest le poussent à choisir résolument son camp. Quelques manifestations d’une justice brutale et expéditive, au grand dam des commissaires de robe longue dépêchés par la reine-mère en même temps que lui, le désignent aux yeux de tous comme le protecteur et le vengeur des catholiques de Guyenne.</p>
+          <p>Paradoxalement, c’est cette aura de chef de parti qui décide la reine à le nommer lieutenant de son fils au début de l’année 1563. Devenu l’homme fort de la province, la souveraine compte sur lui pour surveiller les protestants et obtenir le ralliement des catholiques, notamment des nobles, à la politique royale. Mais sa faveur n’est pas complète. Monluc n’obtient qu’une moitié de la lieutenance, l’autre partie restant entre les mains du modéré Burie : une nomination tronquée donc et une marque de défiance envers les catholiques du Sud-Ouest, surtout au moment où la reine signe l’édit d’Amboise avec les chefs huguenots. Le capitaine des catholiques intransigeants est ainsi choisi pour faire publier une paix qu’il ne comprend pas, comme nombre de ses compagnons ; sa tâche symbolise toute l’ambiguïté de sa position. Il s’exécute pourtant, non sans réussite, bien que ses convictions influent rapidement sur sa mission pacificatrice.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le lieutenant et les villes : Agen et son pays, capitale catholique de la lieutenance de Monluc</head>
+          <p>L’autorité de Monluc en Guyenne repose sur plusieurs piliers ; les autorités urbaines, plus particulièrement à Agen, sont l’un d’entre eux. L’épisode traumatique de l’occupation protestante durant les premiers troubles ancre fermement Agen dans le camp de l’intransigeance catholique. Aux exécutions vengeresses du temps de guerre s’ajoute une politique d’extrême vigilance et de reconquête symbolique, mémorielle et spirituelle après la publication de la paix.</p>
+          <p>Résidant souvent en ses murs, Monluc fait de la catholique Agen le centre de son administration. Le lieutenant lui accorde sa protection, ses faveurs et recommande ses affaires auprès du roi. En retour la ville réserve à son libérateur de nombreux honneurs et présents, en concurrence avec les cités voisines, et soutient indéfectiblement ses manœuvres politiques à travers les assemblées du pays. Certains événements, comme le passage de la cour en mars 1565, illustrent symboliquement l’unité entre le souverain, le lieutenant et la ville, dans une célébration commune du catholicisme et de la majesté royale.</p>
+          <p>À Agen, Monluc dispose d’amis, de clients, voire de parents, fidèles conseillers et représentants de l’intransigeance catholique, qui le renseignent et relaient ses ordres à l’échelle de la ville, du pays et même de la province. Il cherche à entretenir des réseaux parmi les notabilités urbaines pour assurer une application homogène de sa politique. La composition de son conseil illustre cette alliance à la fois sociale et politico-religieuse entre le gentilhomme d’épée et les représentants de la robe.</p>
+          <p>Agen occupe également une place prépondérante sur le plan militaire. En plus d’engager de nombreux Agenais dans les troupes catholiques, Monluc fait de la ville un centre logistique d’importance. En bonne intelligence avec lui, la municipalité pose les premières bases d’un conseil de guerre et organise selon ses vœux des campagnes de renforcement et de réfection des fortifications, ­faisant ainsi de la ville un bastion du parti catholique en Guyenne.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Monluc, patron nobiliaire</head>
+          <p>Un autre élément constitutif de l’autorité de Monluc en Guyenne réside dans le soutien d’une bonne partie du second ordre. Le lieutenant n’est pas le plus grand seigneur de la province : il est le représentant d’une noblesse seconde bien établie. Ses enfants, ses proches et l’ensemble de sa parentèle, bien enracinés aux quatre coins de la province, servent de relais à une politique dans laquelle s’intègrent les stratégies familiales.</p>
+          <p>L’aura de Monluc auprès des gentilshommes repose sur l’établissement de sa maison et sur la charge qu’il occupe, mais aussi sur sa réputation de chef de guerre, qui fait de lui le défenseur d’une noblesse d’épée dont la supériorité dépend de la vertu guerrière. Ses qualités de tacticien et de meneur d’homme lui attirent la fidélité d’un grand nombre de capitaines, qui bénéficient, en dehors du champ de bataille, de sa libéralité et de sa générosité de patron.</p>
+          <p>Monluc ouvre également les portes de la faveur royale à ses clients et amis : il peut compter sur ses bonnes relations avec certains grands personnages de la cour ou de la famille royale, comme le jeune duc d’Anjou, afin de recommander les seigneurs gascons. Profitant d’une économie libérale de la faveur, il intervient pour faire octroyer le collier de l’ordre de Saint-Michel à plusieurs de ses ­compagnons d’armes. Le lieutenant fait également attribuer les principaux postes de commandement de la province à ses clients.</p>
+          <p>Protecteur et porte-parole de la noblesse de Guyenne, il veille à maintenir l’unité du second ordre en évitant les mécontentements et en arbitrant les querelles, non seulement entre gentilshommes mais aussi entre ces derniers et les autres ordres de la province. Son rôle d’intermédiaire entre le roi et la noblesse provinciale est cependant fortement marqué par les antagonismes politico-­religieux ; ses interventions se font majoritairement au service des seigneurs catholiques, la confessionnalisation des réseaux d’amitié l’emportant parfois sur l’appartenance sociale.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>L’application de l’édit de paix, ou la poursuite de la guerre par d’autres moyens (vers 1563-vers 1567)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Monluc face au protestantisme : un programme de reconquête catholique à l’ombre de la paix</head>
+          <p>Si Monluc fait appliquer les articles de l’édit d’Amboise, censé parvenir au rétablissement de la concorde en ménageant une place légale au culte protestant et en imposant l’oubli des troubles passés, il le fait au détriment des réformés. Il est aidé en cela par les fortes tensions qui secouent encore la province au printemps 1563.</p>
+          <p>La mise en relation d’éléments éparpillés dans sa correspondance révèle une réflexion pertinente et trop souvent ignorée sur la nouvelle foi et sur la manière de la combattre, ainsi qu’un véritable programme de reconquête catholique à la faveur du temps de paix. Monluc considère les protestants comme des prétentieux, des hypocrites et des séditieux, et leur religion comme une menace pour l’ordre social et politique. Selon lui, les grands seigneurs huguenots, avec la complicité des modérés, veulent placer le roi sous la tutelle des états et du conseil qu’ils auraient choisi, et ainsi faire du royaume une république dont ils seraient les protecteurs, quitte à se débarrasser du souverain.</p>
+          <p>Le parti catholique doit donc identifier et circonscrire les communautés protestantes. Le développement de la nouvelle foi doit être stoppé par une politique d’empêchements et de contraintes quotidiennes de la pratique. Les acteurs politiques et militaires constitutifs du parti huguenot doivent quant à eux être neutralisés et mis hors d’état de nuire par tous les moyens, sous couvert de la préservation de la paix. Monluc esquisse ainsi des idées et des méthodes qui seront reprises par le parti catholique mais aussi par le pouvoir royal jusqu’au siècle suivant.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Une liquidation catholique des troubles</head>
+          <p>L’un des premiers objectifs du pouvoir royal est d’assurer la liquidation matérielle et mémorielle des troubles. Monluc et ses pairs veulent donc peser sur cette politique pour préserver les acquis catholiques et maintenir la pression sur les protestants. Ainsi appliquent-ils de manière partiale et partielle les ordres royaux en faveur du désarmement, avançant des circonstances opportunes pour justifier leur mainmise sur les armes.</p>
+          <p>Le lieutenant tente également de maintenir mobilisée une partie des troupes catholiques, entretenant ainsi un climat de défiance dans la province. Ses fidèles, à Agen comme dans d’autres villes, entravent de leur côté le retour des protestants chez eux.</p>
+          <p>Arguant parfois de la lettre de l’édit, parfois profitant de ses approximations, Monluc ordonne la rétrocession des biens de l’Église – sans toujours y parvenir –, et intervient surtout pour empêcher le retour des leurs aux protestants. Conformément à la politique de l’oubli prévue par le texte d’Amboise, il plaide pour le fait accompli des troubles et condamne les longs et ruineux procès en restitution qui ne font selon lui qu’entretenir les rancœurs. À Bordeaux, comme à Agen, Monluc veut ainsi préserver son autorité et les intérêts catholiques, qui plus est lorsqu’il s’agit de clients ou d’amis.</p>
+          <p>Envoyés en province pour recevoir les doléances et veiller à l’application de l’édit, les commissaires royaux représentent une menace pour la politique catholique du lieutenant du roi. L’accueil tantôt menaçant, tantôt caressant que ce dernier et les catholiques de Guyenne leur réservent durant l’hiver 1563-1564 semble porter ses fruits ; en plus de se révéler bons catholiques, les prudents commissaires ne perturbent finalement pas trop le fonctionnement des affaires provinciales, laissant Monluc et ses pairs administrer la province à leur guise.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le culte protestant soumis à la rigueur</head>
+          <p>L’édit d’Amboise accorde des aménagements aux protestants concernant la pratique de leur culte. En se fondant rigoureusement sur ces concessions, qui sont aussi des limites, et en exploitant les lacunes du traité, Monluc entrave le développement des églises réformées dans sa province. Les prêches sont soumis à une surveillance scrupuleuse. Le lieutenant s’oppose aux interprétations laxistes de l’édit et utilise tous les moyens possibles pour en diminuer le nombre. Il s’arrange pour que les lieux de prêches réglementaires soient difficiles d’accès et surtout éloignés des cités les plus stratégiques de la province. Globalement couronnée de succès, cette politique comporte cependant une faille ; bénéficiant des imprécisions juridiques dans ce domaine et de la protection de la noblesse, beaucoup de réformés vont entendre leurs ministres chez le seigneur protestant le plus proche.</p>
+          <p>La rigueur est également de mise envers toutes les autres expressions de la nouvelle foi, des baptêmes aux enterrements en passant par les chants de psaumes ou le respect des jours fériés. À travers les contraintes imposées aux réformés et les manifestations d’un catholicisme triomphant, les chefs catholiques réaffirment le poids de la religion romaine sur le quotidien, reléguant concrètement et symboliquement le nouveau culte aux marges de la société.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Neutraliser les forces politico-militaires du parti protestant</head>
+          <p>Si Monluc considère que, dans un premier temps, on peut seulement freiner la diffusion de la foi protestante, il est favorable à la neutralisation immédiate des ressources politico-militaires du parti huguenot. Ainsi, conformément aux directives royales, dont il déplore cependant la trop grande timidité, il procède avec enthousiasme au démantèlement des principales places fortes réformées dans sa province.</p>
+          <p>Il prend également pour cible les protestants les plus actifs et les plus dangereux. C’est ainsi que les ministres, les notables réformés et les chefs de bande sont pourchassés, bannis, arrêtés voire exécutés.</p>
+          <p>Il s’agit aussi de couper les huguenots de leurs principaux alliés politiques et militaires, à l’extérieur comme à l’intérieur de la province. La surveillance est donc renforcée sur les côtes de l’Atlantique, de crainte qu’un débarquement anglais n’apporte son soutien aux « rebelles », mais aussi aux frontières du Béarn, royaume de la protestante Jeanne d’Albret. Le lieutenant doit aussi parer aux exactions et aux tentatives de déstabilisation de certains seigneurs pillards réformés.</p>
+          <p>Pour étouffer le parti huguenot, il faut lui opposer un bloc catholique uni. Monluc et ses pairs mènent donc une politique de dénonciation et de harcèlement continue des catholiques les plus modérés, accusés d’être des traîtres, particulièrement lorsqu’il s’agit de personnalités politiques importantes.</p>
+          <p>Enfin, convaincu que, pour prendre l’avantage, la seule coercition est stérile si elle n’est pas contrebalancée par une dose de charme, Monluc entretient des relations d’intérêt, de protection et parfois d’amitié parmi les religionnaires, tout en veillant à soigner sa popularité auprès du peuple, enjeu majeur des guerres civiles.</p>
+          <p>Les succès rencontrés par le lieutenant durant les seconds troubles en septembre et octobre 1567 démontrent l’efficacité de sa politique et des réseaux catholiques. Cependant la méfiance des souverains vis-à-vis des initiatives catholiques, déjà latente durant le temps de paix, persiste : Monluc connaît une première disgrâce en novembre 1567, apprenant soudainement qu’une partie de sa lieutenance lui a été retirée.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Les initiatives ligueuses de Monluc et des catholiques du Sud-Ouest : espoirs et désillusions (vers 1562-1570)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Associations, confréries et initiatives ligueuses : expressions paroxystiques de la politique catholique</head>
+          <p>Les initiatives ligueuses, symptôme du malaise entre le Très Chrétien et ses sujets catholiques, en sont aussi le remède aux yeux de Monluc. Suite aux premiers rassemblements de la noblesse catholique, le lieutenant est l’instigateur au début de l’année 1563 de plusieurs associations, qui se développent sous des formes plus ou moins similaires en Agenais, en Toulousain et en Bordelais. Condamnées à la dissolution par la paix, ces organisations structurées pour la guerre se mettent en sommeil. Monluc et les chefs ligueurs parviennent cependant à entretenir les solidarités ainsi nouées pour peser autant que possible sur la politique royale et la pacification, au grand dam de Catherine de Médicis, embarrassée par le zèle de ces catholiques presque plus catholiques et royalistes que le roi lui-même. Les initiatives ligueuses gagnent ensuite en ampleur. En 1565, Monluc propose la création d’une « confédération du roi », dont le souverain prendrait la tête et qui réunirait tous les catholiques fidèles sujets de la couronne. Sur les ordres d’un monarque peut-être influencé par ce projet, le lieutenant procède au dénombrement des catholiques aptes au combat et à des prestations de serment de fidélité, dans l’atmosphère belliqueuse de l’été 1568. Avec le déclenchement des troisièmes troubles en septembre 1568, cette mobilisation générale des catholiques adopte les formes de la confrérie et le discours mystique de la croisade, explicitant, par les paroles et les actes, la radicalisation de l’antagonisme politico-religieux.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>L’alliance espagnole ou la ligue des princes chrétiens</head>
+          <p>L’Espagne de Philippe II fascine les catholiques français. Monluc, parmi d’autres, voit dans le rapprochement avec la péninsule un moyen d’étendre la stratégie ligueuse sur la scène internationale : avec le soutien de la puissance espagnole, le roi pourrait se libérer des mauvais conseillers et engager sans crainte une politique rigoureuse contre la Réforme. Du fait de sa position, Monluc est bien placé pour favoriser une alliance entre les deux couronnes. Il se fait donc l’informateur et le conseiller de Philippe II, sans jamais oublier de rappeler sa fidélité au Très Chrétien. Établis durant les troubles de 1562 et les premiers mois de la paix, ses contacts avec le Roi Catholique sont entretenus par des intermédiaires fidèles. Des réseaux espagnols pérennes se mettent en place au nord des Pyrénées. Bien que ses accointances suscitent les soupçons du pouvoir royal et les dénonciations des protestants, Monluc échafaude avec les Espagnols des projets contre Jeanne d’Albret et plaide avec ferveur pour une rencontre entre les deux monarques. L’entrevue de Bayonne de juin 1565 semble être l’aboutissement de ses manœuvres et le point de départ d’une fructueuse coopération. Mais le lieutenant constate l’échec de la rencontre bayonnaise, tandis que ses maladresses le discréditent auprès de certains conseillers de Philippe II. L’absence de soutien militaire espagnol dans le Sud-Ouest lors des troisièmes troubles apprend aux chefs catholiques, dupes de l’amitié entre les princes et de la confessionnalisation de la diplomatie, que le projet d’une ligue européenne est illusoire.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>La grande désillusion</head>
+          <p>Monluc et les chefs catholiques du Sud-Ouest pensent également que le roi a clairement pris leur tête et que l’ampleur de la mobilisation catholique permettra de briser une bonne fois pour toute le parti huguenot. Les solidarités ligueuses et les discours de croisade ne tiennent pourtant pas longtemps devant l’aggravation de troubles incessants et la réalité d’une province épuisée. Alors que Monluc tombe progressivement en disgrâce, les divisions se multiplient entre lui et les principales autorités politico-militaires de la province, par lassitude, mauvaise volonté ou inimitiés personnelles. États, cités et parlements obéissent de plus en plus difficilement aux exigences. De nombreuses querelles éclatent entre Monluc et d’autres commandants catholiques ; celle qui l’oppose à Henri de Montmorency-Damville, gouverneur de Languedoc, est la plus violente. Ces divisions ont de lourdes conséquences sur le cours des événements. Les chefs catholiques sont incapables de s’entendre pour résister aux armées protestantes qui ravagent le Sud-Ouest en 1569. Les illusions de la mobilisation ligueuse s’effondrent douloureusement devant l’offensive huguenote. Pire, les espoirs des catholiques quant à la détermination du Très Chrétien à soutenir la lutte s’envolent avec la signature d’un nouvel édit de pacification à Saint-Germain-en-Laye, le 8 août 1570. Grièvement blessé au cours d’une inutile campagne de reconquête du Béarn, Monluc, sacrifié sur l’autel de la paix, bientôt suspecté de malversations financières, apprend par messager que sa charge de lieutenant du roi en Guyenne lui est retirée.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Le parcours et l’action de Monluc en Guyenne entre 1563 et 1570 sont marqués par le décalage croissant entre la politique d’équilibre recherchée par le pouvoir royal et les attentes intransigeantes d’une grande partie des catholiques du royaume. Considérant que la fidélité au catholicisme va de pair avec celle due au Roi Très Chrétien, Monluc, comme beaucoup d’entre eux, ne comprend pas, ou ne peut pas comprendre, que ceux qu’il regarde comme séditieux soient consciemment reconnus par le souverain. De cette incompréhension découle l’idée selon laquelle le roi et la reine sont sous la tutelle des huguenots et des modérés, et l’illusion que la politique de concorde n’est qu’un moyen de gagner du temps en attendant de pouvoir s’engager sur une voie plus intransigeante. Ainsi s’expliquent les réflexions de Monluc pour planifier la reconquête catholique par le biais d’une application rigoureuse des édits, ainsi que ses projets ligueurs nationaux et internationaux. Mais malgré des fluctuations tendancielles, la volonté de la reine-mère et de son fils reste inchangée : même si le retour à l’unité catholique est l’objectif, l’État doit être l’unique garant de la paix dans l’intérêt du royaume.</p>
+        <p>La désillusion, qui jalonne son parcours de lieutenant, est douloureuse pour Monluc. Ce dernier, comme d’autres avec lui, comprend qu’il s’est fourvoyé. Dans l’ordre politique, les catholiques, notamment les nobles, doivent désormais se positionner et déterminer peu à peu un ordre de priorité entre d’un côté l’État et le royaume, qui construit son identité autour de lui, et de l’autre les intérêts de la religion catholique. C’est ce que fait Monluc, dans un long mémoire à Charles IX, trois ans après sa retraite : entre le catholicisme et l’État, Monluc y choisit l’État.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Délibérations de la jurade d’Agen de janvier 1562 (n. st.) et mai 1563. — Rapport anonyme sur la conduite de Monluc à Bordeaux en avril 1563. — Arrêt de prise de corps décrété par Monluc contre le protestant Balthazar Vaquier le 29 octobre 1565 et procès-verbal de son arrestation le 18 janvier 1566.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

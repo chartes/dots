@@ -168,47 +168,59 @@ declare function cc:document($bdd as xs:string, $idProject as xs:string) {
     if ($document)
     then
       <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-        cc:getDocumentMetadata($bdd, $document)
+        cc:getDocumentMetadata($bdd, $document, $dtsResourceId)
       }</document>
     else ()
-  (: let $doc := db:get($bdd, concat($path, "/", $resource))/tei:TEI
-  let $dtsResourceId := 
-    if ($doc/@xml:id)
-    then $doc/@xml:id
-    else $resource
-  let $maxCiteDepth := count($doc//tei:refsDecl//tei:citeStructure)
-  let $parentIds :=
-    if ($path)
-    then
-      if (contains($path, "/"))
-      then functx:substring-after-last($path, "/")
-      else $path
-    else $idProject
-  return
-    if ($doc)
-    then
-      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-        cc:getDocumentMetadata($bdd, $doc)
-      }</document>
-    else () :)
 };
 
-declare function cc:getDocumentMetadata($bdd as xs:string, $doc) {
+declare function cc:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId as xs:string) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($bdd)/metadataMap/mapping
   return
     for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
-    where $metadata/@xpath
-    let $metadataName := $metadata/name()
-    let $xpath := $metadata/@xpath
-    let $query := concat('
-      declare default element namespace "http://www.tei-c.org/ns/1.0";',
-      $xpath)
-    let $valueQuery := xquery:eval($query, map {"": $doc})
     return
-      if (normalize-space($valueQuery) != "")
-      then element {$metadataName} {normalize-space($valueQuery)}
-      else ()
+      if ($metadata/@xpath)
+      then
+        let $metadataName := $metadata/name()
+        let $xpath := $metadata/@xpath
+        let $query := concat('
+          declare default element namespace "http://www.tei-c.org/ns/1.0";',
+          $xpath)
+        let $valueQuery := xquery:eval($query, map {"": $doc})
+        return
+          if (normalize-space($valueQuery) != "")
+          then element {$metadataName} {normalize-space($valueQuery)}
+          else ()
+      else
+        let $csv := db:get($bdd, normalize-space($metadata/@source))//*:csv
+        let $findIdInCSV := normalize-space($metadata/@resourceId)
+        let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]       
+        return
+          if ($record and $metadata) 
+          then cc:createContent($metadata, $record)
+          else ()
+};
+
+declare function cc:createContent($itemDeclaration, $record) {
+  let $key := $itemDeclaration/name()
+  let $element := $itemDeclaration/@content
+  let $value := 
+    if ($record/node()[name() = $element] != "")
+    then
+      concat($itemDeclaration/@prefix, $record/node()[name() = $element], $itemDeclaration/@suffix)
+    else ()
+  let $subKey := $itemDeclaration/@key
+  let $type := $itemDeclaration/@type
+  return
+    if ($value) 
+    then 
+      element {$key} {
+        if ($type) then attribute { "type" } { $type } else (),
+        if ($subKey) then attribute { "key" } { $subKey } else (),
+        $value
+      } 
+    else 
+      ()
 };
 
 (:~ 
@@ -241,13 +253,12 @@ declare function cc:getCollectionMetadata($bdd as xs:string, $collection as xs:s
       let $metadatas := 
         for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
         let $getResourceId := $metadata/@resourceId
-        let $source := db:get($bdd, normalize-space($metadata/@source))//*:record[node()[name() = $getResourceId] = $collection]
-        let $metadataName := $metadata/name()
-        let $contentName := $metadata/@content
-        let $content := normalize-space($source/node()[name() = $contentName])
-        return 
-          if ($content != "") 
-          then element {$metadataName} {$content}
+        let $csv := db:get($bdd, normalize-space($metadata/@source))//*:csv
+        let $findIdInCSV := normalize-space($metadata/@resourceId)
+        let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
+        return
+          if ($record and $metadata) 
+          then cc:createContent($metadata, $record)
           else ()
       return
         if ($metadatas/name() = "dc:title")

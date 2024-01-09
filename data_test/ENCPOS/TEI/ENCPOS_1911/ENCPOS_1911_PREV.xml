@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_PREV" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pages liminaires</title>
+        </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_PREV.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 0</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="1" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_01.TIF/full/full/0/default.jpg"/>
+      <pb n="2" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_02.TIF/full/full/0/default.jpg"/>
+      <pb n="3" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_03.TIF/full/full/0/default.jpg"/>
+      <pb n="4" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_04.TIF/full/full/0/default.jpg"/>
+      <pb n="5" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_05.TIF/full/full/0/default.jpg"/>
+      <p>ÉCOLE NATIONALE DES CHARTES</p>
+      <p>POSITIONS DES THÈSES</p>
+      <p>					SOUTENUES PAR LES 				</p>
+      <p>ÉLÈVES DE LA PROMOTION DE 1911</p>
+      <p>					POUR OBTENIR 				</p>
+      <p>LE DIPLOME D’ARCHIVISTE PALÉOGRAPHE</p>
+      <p><hi rend="i">Ces Thèses seront soutenues le 30 janvier et jours suivants</hi></p>
+      <p>PARIS LIBRAIRIE ALPHONSE PICARD ET FILS <hi rend="i">Librairie des Archives nationales et de la Société de l’Ecole des Chartes </hi>82, RUE BONAPARTE, 82 1911</p>
+      <pb n="6" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_06.TIF/full/full/0/default.jpg"/>
+      <pb n="7" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_07.TIF/full/full/0/default.jpg"/>
+      <p>ÉCOLE NATIONALE DES CHARTES</p>
+      <p>POSITIONS DES THÈSES</p>
+      <p>					SOUTENUES PAR LES 				</p>
+      <p>ÉLÈVES DE LA PROMOTION DE 1911</p>
+      <pb n="8" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_08.TIF/full/full/0/default.jpg"/>
+      <p>Chaque élève publiera les positions de sa thèse sous sa responsabilité personnelle.</p>
+      <p>(<hi rend="i">Règlement 3u 2 février 1866, art.!).’</hi>)</p>
+      <pb n="9" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_09.TIF/full/full/0/default.jpg"/>
+      <p>ÉCOLE NATIONALE DES CHARTES</p>
+      <p>POSITIONS DES THÈSES</p>
+      <p>					SOUTENI ES PAR LES 				</p>
+      <p>ÉLÈVES DE LA PROMOTION DE 1911</p>
+      <p>					P O ü R O B T E N I R</p>
+      <p>LE DIPLOME D’ARCHIVISTE PALÉOGRAPHE</p>
+      <p>Ces <hi rend="i">Thèses seront soutenues le 30 janvier et jours suivants</hi></p>
+      <p>PARIS LIBRAIRIE ALPHONSE PICARD ET FILS <hi rend="i">Librairie des Archives nationales et de la Société de l’Ecole des Chartes </hi>82, RUE BONAPARTE, 82 1911</p>
+      <pb n="10" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_PREV/ENCPOS_1911_PREV_10.TIF/full/full/0/default.jpg"/>
+    </body>
+  </text>
+</TEI>

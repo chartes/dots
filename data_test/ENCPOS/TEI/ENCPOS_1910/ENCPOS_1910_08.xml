@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Formaiton et organisation du département du Cantal (1789-an III)</title>
+        <author ref="https://www.idref.fr/03107748X">Benjamin Faucher</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 59-64</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="59" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_08/ENCPOS_1910_08_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Formation et organisation
+       <lb/>du
+       <lb/>département du Cantal
+       <lb/>(1789-an III)</head>
+      <byline>
+        par
+        <forename>Benjamin</forename>
+        <surname>Faucher</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction. – Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La formation territoriale</head>
+        <div>
+          <head rend="uc">I
+           <lb/>les diverses circonscriptions du « haut pays d’Auvergne »
+           <lb/>en 1789</head>
+          <p>Le diocèse de Saint-Flour et ses cinq archiprêtrés. – Les bailliages d’Aurillac, siège présidial, Saint-Flour, Vic-en-Carladès, Salers, Calvinet et Andelat (séant à Murat). « Il n’est pas de province dans le royaume où la distribution des bailliages soit si bizarre et où les ressorts soient si entrecoupés ». – La généralité de Riom et les trois élections de Saint-Flour, Aurillac et Mauriac. – Gouvernement et « province » d’Auvergne. Le « sous-gouvernement » du Haut pays ; incertitude de ses limites.</p>
+          <pb n="60" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_08/ENCPOS_1910_08_02.TIF/full/full/0/default.jpg"/>
+          <p>Réformes demandées par les Cahiers au sujet de l’organisation territoriale et administrative :</p>
+          <p>1° Rétablissement des États provinciaux du Haut pays.</p>
+          <p>2° Arrondissement des ressorts judiciaires, création de justices de paix.</p>
+          <p>3° Centralisation des divers établissements administratifs et judiciaires dans la même ville.</p>
+        </div>
+        <div>
+          <head rend="uc">II
+           <lb/>les tendances particularistes du haut pays avant 1789</head>
+          <p>La convocation par bailliages aux États généraux favorisait Riom au détriment du Haut pays, car le bailliage de Salers, notamment, ressortissait en appel à la sénéchaussée d’Auvergne. Aussi prit-on prétexte de l’arrêt du Conseil, en date du 8 août 1788, pour demander le rétablissement des États provinciaux particuliers et la convocation par Haut et Bas pays. Le résultat de ces démarches fut le règlement particulier du 15 février 1789, qui convoquait à Saint-Flour toutes les paroisses de la Haute Auvergne. – Élection de 12 députés.</p>
+        </div>
+        <div>
+          <head rend="uc">III
+           <lb/>division de la « province d’Auvergne »
+           <lb/>en deux départements
+           <lb/>délimitation du « département du haut pays »</head>
+          <p>L’adoption, le 11 novembre 1789, du principe de la division de la France en départements comble les vœux du Haut pays, heureux de se séparer du Bas pays, opposé au contraire à la scission. – Difficultés dans la démarcation intérieure des trois départements que devaient for<pb n="61" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_08/ENCPOS_1910_08_03.TIF/full/full/0/default.jpg"/>mer l’Auvergne et le Velay : elles sont tranchées par le Comité de Constitution, puis par la Constituante (séance du 21 janvier 1790). Par contre, la délimitation extérieure, si l’on peut dire, ne donne lieu à aucune contestation sérieuse : on respecte scrupuleusement les bornes de l’ancienne généralité de Riom.</p>
+        </div>
+        <div>
+          <head rend="uc">IV
+           <lb/>formation des districts</head>
+          <p>Le projet de décret, sur les divisions intérieures du futur département du Cantal, comportait seulement trois districts : Saint-Flour, Aurillac et Mauriac. – Les villes secondaires et les campagnes protestent contre ce petit nombre de centres administratifs et demandent jusqu’à neuf districts. – Résistance des députés du Haut pays, citadins pour la plupart ; le Comité de Constitution parvient à faire ajouter un quatrième district provisoire à Murat.</p>
+        </div>
+        <div>
+          <head rend="uc">V
+           <lb/>formation des cantons
+           <lb/>le nom du nouveau département</head>
+          <p>Malgré les avis de la Constituante, les députés du Haut pays créèrent peu de cantons, chose bizarre dans un pays montagneux, où les communications sont difficiles. Le règlement général du 22 février 1790 porte formation de 20 cantons englobant 273 municipalités.</p>
+          <p>Ce fut le Comité de Constitution qui dénomma le nouveau département. Celui-ci prit le nom du sommet le plus élevé de ses montagnes, le Plomb du <hi rend="i">Cantal.</hi></p>
+        </div>
+        <div>
+          <pb n="62" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_08/ENCPOS_1910_08_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">VI
+           <lb/>circonscription définitive du département</head>
+          <p>Sauf du côté du Lot, les limites du département du Cantal furent l’objet de contestations, parfois très vives. Le Haut pays était, paraît-il, accablé d’une surcharge d’impositions que beaucoup de paroisses limitrophes ne se souciaient pas de partager. Mais il y eut en somme peu de rectifications. En l’an II, le Cantal comprenait 21 cantons englobant 266 municipalités.</p>
+        </div>
+        <div>
+          <head rend="uc">VII
+           <lb/>luttes pour l’attribution des établissements de justice
+           <lb/>et d’administration</head>
+          <p><hi rend="i">Saint-Flour et Aurillac.</hi> – Ces deux villes s’étaient déjà querellées, au sujet de la tenue de l’assemblée bailliagère, en 1789. Leur rivalité continua, lors de la formation du département : Saint-Flour invoquait la tradition, Aurillac les convenances géographiques. La tradition l’emporta et Saint-Flour obtint, le 28 janvier 1790, l’alternat et la « première séance ».</p>
+          <p>Troubles à Saint-Flour, lors de la tenue des assemblées électorales de juin 1790 et mars 1791. Aurillac s’efforce d’obtenir la translation définitive du chef-lieu en ses murs. – Suppression générale des alternats, le 11 septembre 1791 ; le Cantal est excepté de cette mesure. – Incidents produits par le vote de l’art. 4 de la loi du 11 septembre 1791 ; la question de la « première séance ». – Transfert provisoire de l’administration à Aurillac, le 20 novembre 1791.</p>
+          <pb n="63" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_08/ENCPOS_1910_08_05.TIF/full/full/0/default.jpg"/>
+          <p>Election de Carrier à la Convention, due à la rivalité des deux villes. Ce député, originaire du district d’Aurillac, fait tous ses efforts pour dénigrer Saint-Flour et le représenter comme une ville « aristocrate », indigne de posséder le chef-lieu de l’administration. Une première tentative échoue, à la séance de la Convention du 13 juillet 1793 ; c’est seulement par décret du 19 messidor an II que l’alternat de l’administration du département du Cantal est supprimé et le chef-lieu fixé définitivement à Aurillac.</p>
+          <p><hi rend="i">Mauriac et Salers</hi>. – On crut satisfaire ces deux villes rivales en leur laissant leurs établissements respectifs de l’ancien régime : Mauriac gardait l’administration et Salers, le tribunal. – Mauriac réclama en vain pour obtenir le tribunal : le conventionnel J.-B. Lacoste, député de Mauriac, n’eut pas le succès de son collègue Carrier, et Salers, bien que taxé par lui d’aristocratie et de fanatisme, conserva son siège de justice.</p>
+          <p><hi rend="i">Murat et Allanche</hi>. – Ces deux villes se disputèrent le district, d’abord provisoire. Pour les concilier, le Conseil du département proposa à la Constituante la division des établissements. Cette mesure ne fut pas ratifiée, et Murat garda la justice et l’administration.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Organisation du département</head>
+        <p>La première session de l’assemblée du département se tint à Saint-Flour (1790) et les sessions suivantes à Aurillac. – Les administrateurs du Cantal étaient des hommes conciliants, ennemis des mesures de rigueur, et peu soucieux de la chose publique. Leurs opinions modérées et leur incurie furent cause que l’assemblée électorale, de septembre <pb n="64" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_08/ENCPOS_1910_08_06.TIF/full/full/0/default.jpg"/> 1792, chargée d’élire les députés à la Convention, nomma illégalement de nouveaux administrateurs.</p>
+        <p>Bien que choisi par les électeurs qui venaient de désigner Lacoste, Milhaud et Carrier, le nouveau Conseil ne se montra d’abord pas à la hauteur des principes révolutionnaires : son président en particulier était « infecté de girondisme ». Mais les représentants en mission et leurs délégués surent réduire peu à peu la résistance, et le décret du 14 frimaire an II annihila presque l’administration centrale.</p>
+        <p>Celle-ci fut modifiée par les épurations successives de Bô (pluviôse an II), Musset (brumaire an III), et par les décrets des 1<hi rend="sup">er</hi> ventôse et 28 germinal an III.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion. – Appendices. – Cartes</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

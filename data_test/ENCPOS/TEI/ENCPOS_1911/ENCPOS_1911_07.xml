@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Guillaume Gouffier, seigneur de Bonnivet, amiral de France (1485-1525)</title>
+        <author ref="https://www.idref.fr/057255946">Pierre Despras</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 59-65</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="59" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Guillaume Gouffier
+       <lb/>Seigneur de Bonnivet
+       <lb/>amiral de France
+       <lb/>(1485-1525)</head>
+      <byline>
+        par
+        <forename>Pierre</forename>
+        <surname>Despras</surname>
+        <roleName>Licencié ès lettres et en droit., Élève à l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>la famille Gouffier</head>
+        <p>Les origines. La famille Gouffier : Guillaume Gouffier, seigneur de Boisy, et ses deux femmes, Louise d’Amboise, Philippe de Montmorency. Ses domaines. Ses charges.</p>
+        <p>Ses enfants : Pierre, Madeleine, Louise, Artus (chef de la famille après 1495, sa vie, sa carrière), Louis, Adrien, Pierre, Guillaume, Aymar, Catherine, Charlotte et Anne.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Les débuts de Bonnivet</head>
+        <p>Guillaume Gouffier ; sa naissance, son éducation. La guerre et les lettres, les beaux-arts. Le page de l’écurie du roi. L’écuyer. Artus Gouffier à la cour de Louise de Savoie, gouverneur de François d’Angoulême. Guillaume <pb n="60" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_02.TIF/full/full/0/default.jpg"/>introduit au château d’Amboise. Roman d’amour avec la future Marguerite de Navarre : récit de l’Heptaméron. Mariage avec Bonaventure du Puy-du-Fou. Son intimité avec la princesse. La conquête de Gênes : exploits de Bonnivet. Aventure galante en Italie. Il revient en France. Le roman continue avec Marguerite. Seconde expédition dans le Milanais : Agnadel. Il est fait prisonnier avec le marquis de Mantoue. Nouveau retour : les baisers de la princesse. La mort de Bonaventure. Brouille avec Marguerite. La guerre entre la France et l’Angleterre : il est pris par les ennemis à Guinegatte. Le mariage de Louis XII : les joûtes et les fêtes. La mort du roi. François d’Angoulême roi de France.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Marignan. Bonnivet, amiral de France</head>
+        <p>François I<hi rend="sup">er</hi>. Distribution des charges et des pensions. Artus grand maître. Bonnivet conseiller, chambellan du roi, capitaine de cinquante lances. Les promesses du roi ; ses dons d’argent. La conquête du Milanais : Marignan. Bonnivet négocie l’entrevue de Bologne. Adrien Gouffier, cardinal. L’amitié du roi. Il est fait chevalier de l’ordre, amiral de France. L’Amirauté : importance, juridiction, bénéfices, le dixième des prises. Le rôle de l’amiral. La construction du Hâvre. Les déprédations réciproques des Anglais et des Français. Expédition en Danemark. La guerre de Navarre et l’armée de mer. La lutte avec l’empereur et l’Angleterre. Bonnivet inspecte les côtes ; expédition du duc d’Albany. La dernière lettre de l’amiral.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>L’ambassade a Londres</head>
+        <p>La paix avec l’Angleterre : les négociations en cours. <pb n="61" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_03.TIF/full/full/0/default.jpg"/>L’amiral ambassadeur extraordinaire du roi ; il est chargé d’épouser, au nom du dauphin de France, la princesse Marie, fille d’Henri VIII. Les instructions de Bonnivet ; sa suite. Le voyage de l’ambassade. Le mauvais temps à Calais. Tentative infructueuse de traversée. Le Pas-de-Calais enfin franchi. L’armée à Londres. Réception d’Henri VIII. Les fêtes à la cour : signature du traité de paix. Les autres accords : la restitution de Tournai. Le traité de mariage. Les cérémonies des épousailles. Retour de Bonnivet en France. Les ambassadeurs anglais à Paris. Ratification des traités de Londres.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>L’élection à l’Empire</head>
+        <p>Les premiers pourparlers pour l’élection de l’empereur. Maximilien essaie de faire élire, de son vivant, son petit-fils : la diète d’Augsbourg. Mort de Maximilien. Bonnivet. Jean d’Albret et le président Guillard sont chargés de négocier l’élection de François I<hi rend="sup">er</hi>. Leurs pouvoirs. Les instructions du roi. L’amiral et Guillard à Lunéville. Les premières démarches. Leur correspondance avec François I<hi rend="sup">er</hi>. Bonnivet et l’archevêque de Trêves. Le marquis de Brandebourg : ses exigences. Les autres électeurs. L’ambassade à Nancy : l’or versé à pleines mains. Bonnivet et le comte palatin : il se rend à Rüdesheim sous un déguisement. L’approche de l’élection ; les angoisses des ambassadeurs ; l’amiral à Francfort. Charles élu roi des Romains.</p>
+        <p>L’impression de François I<hi rend="sup">er</hi> : départ de l’ambassade. Bonnivet va se soigner aux eaux de Plombières.</p>
+      </div>
+      <div>
+        <pb n="62" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VI
+         <lb/>La succession d’Artus Gouffier. – L’entrevue du
+         <lb/>camp du drap d’or</head>
+        <p>La vie à la cour ; mort d’Artus Gouffier ; sa tombe à Oiron. Bonnivet chef de famille ; il hérite des charges du Grand-Maître. Il est nommé gouverneur du Dauphiné, gérant du douaire de la reine Marie d’Angleterre et gouverneur de la personne du Dauphin. Son zèle pour cette dernière fonction. Les lettres à Dubouchage : il se préoccupe de la santé des enfants royaux, règle le service de leur maison, surveille les dépenses.</p>
+        <p>Intimité toujours plus étroite avec François I<hi rend="sup">er</hi>. L’amiral premier ministre. Il négocie avec Wolsey l’entrevue du Camp du drap d’or. Le voyage de la cour à Cognac ; l’entrée de la reine ; les fêtes. Continuation des pourparlers avec l’Angleterre ; l’accord signé le 26 mars 1526. Les préparatifs de la rencontre. Le roi de France à Ardres ; Henri VIII à Guines. L’entrevue : Bonnivet assiste avec le cardinal d’York à l’entretien des deux souverains. Les festins, les joûtes. La cour regagne Saint-Germain.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>La campagne de Navarre</head>
+        <p>L’amiral et la politique extérieure. Voyage de François I<hi rend="sup">er</hi> en Bourgogne. La guerre déguisée avec l’empereur : expédition de Robert de la Marck et tentative de Lesparre sur la Navarre : leur échec. La guerre ouverte : formation de trois armées. Bonnivet lieutenant général du roi en Guyenne. Il est chargé de reprendre la Navarre. En cours de route il rassemble son armée. Action com<pb n="63" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_05.TIF/full/full/0/default.jpg"/>binée avec la flotte : il donne ses ordres en conséquence au vice-amiral Lartigue. Son souci des affaires générales du royaume ; il donne des conseils au roi. Ses demandes d’argent, sa pénurie. Il emprunte de fortes sommes aux habitants de Bordeaux. Les retards causés par les chevaux de l’artillerie. Son armée. Arrivée à Bayonne. Ses rapports avec le roi de Navarre. Prise du château du Pignon. Marche détournée dans la montagne. Le passage de la Bidassoa et la fuite des Espagnols. Il s’empare du château de Béhobie. Siège de Fontarabie. Les difficultés de l’entreprise. La ville se rend. II la fait réparer et munir de provisions. Opérations de police dans la région. Départ de l’amiral.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>L’homme. Le courtisan. Le chateau de Bonnivet</head>
+        <p>Bonnivet et François I<hi rend="sup">er</hi>. Expédition projetée dans le Milanais. L’amiral à Grenoble ; il fait son entrée dans la ville. Marche en avant de l’armée qu’il commande. Ajournement de la campagne ; le Milanais définitivement perdu ; alliance d’Henri VIII et de Charles-Quint. L’amiral reste à la cour.</p>
+        <p>L’homme : ses qualités, ses défauts. Sa fortune rapide. Il se remarie avec Louise de Crèvecœur. Ses nouveaux domaines. Ses enfants. Bonnivet seigneur terrien. Les produits de la faveur du roi ; il obtient le comté de Penthièvre. Ses amis et ses relations avec eux. Son caractère.</p>
+        <p>Son amour persistant pour Marguerite de Navarre. Nouvelle et audacieuse tentative de l’amiral contre la princesse. Ses autres aventures. Ses dépenses et ses embarras d’argent ; la succession du cardinal de Boisy. Bonnivet et le connétable de Bourbon. Leur rivalité ; les légendes <pb n="64" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_06.TIF/full/full/0/default.jpg"/> de l’histoire. L’oraison funèbre du connétable.</p>
+        <p>L’amiral protecteur des lettres et des arts. Le château de Bonnivet : sa construction, ses magnificences.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>La campagne d’Italie</head>
+        <p>Nouvelle expédition en Italie. Les projets du roi. Bonnivet à Lyon. Correspondance avec Montmorency. Alliance de Venise avec les confédérés ; persévérance de François I<hi rend="sup">er</hi>. L’amiral à Grenoble. Jonction à Santhià avec les troupes du maréchal ; l’armée dans le Milanais. La conspiration de Bourbon empêche François I<hi rend="sup">er</hi> de les rejoindre. Bonnivet lieutenant général du roi en Italie.</p>
+        <p>Passage du Tessin et fuite des Impériaux. Retards de l’amiral ; il manque la prise de Milan. Le siège de la ville. Les opérations des troupes françaises aux alentours. La famine à Milan. Héroïsme des assiégés. Le marquis de Mantoue à Pavie. Bonnivet obligé de dégarnir Monza ; les vivres entrent dans la ville. Pourparlers en vue d’une trêve. Approche de l’hiver. Il lève le siège. L’armée campe à Abbate Grasso. La vie au camp français. Mort de Prosper Colonna. Election de Clément VII et arrivée de Lannoy. L’armée impériale supérieure en nombre. Bourbon contre Bonnivet. Surprise de Rebecco. L’amiral repasse le Tessin. Il attend les renforts. Les Suisses à Ivrée. Retraite de l’armée française. Passage de la Sesia à Romagnano. Attaque des Impériaux. Bonnivet blessé. La retraite continue. Mort de Bayard. Les troupes royales repassent les Alpes.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>Pavie. Mort de Bonnivet</head>
+        <p>L’accueil du roi : l’amiral comparé à Xénophon. Pré<pb n="65" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_07.TIF/full/full/0/default.jpg"/>paratifs militaires. Bourbon assiège Marseille ; il est forcé de battre en retraite. L’armée française en Lombardie. Prise de Milan. Siège de Pavie. Bonnivet à la tête du commandement. Les négociations avec le Saint-Siège et Lannoy. Expédition du duc d’Albany à Naples. Les renforts des Impériaux. Situation des troupes ennemies. Les efforts du pape pour empêcher le combat. Conseil de guerre au camp royal : l’avis de l’amiral. Bataille de Pavie. Mort de Bonnivet. Les tombeaux d’Oiron.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>I. Les portraits de Bonnivet.</p>
+        <p>II. Les ruines du château de Bonnivet : les reproductions. Les propriétaires.</p>
+        <p>III. Epitaphe de Bonnivet, par Jean Bouchet.</p>
+        <p>IV. Epitaphe de Philippe de Montmorency.</p>
+        <p>V. Epitaphe d’Artus Gouffier.</p>
+        <p>VI. Dédicace à Bonnivet.</p>
+        <p>VII. Dédicace à Bonnivet.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>I. Titres, nominations, pouvoirs, quittances, etc.</p>
+        <p>II. Lettres.</p>
+        <pb n="66" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_07/ENCPOS_1911_07_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

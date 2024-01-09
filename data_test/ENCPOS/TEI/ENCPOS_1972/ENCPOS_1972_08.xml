@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les routes de la généralité de Châlons-sur-Marne au <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/050210254">Martine Illaire</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 65-71</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="65" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les routes de la généralité
+       <lb/>de Châlons-sur-Marne au <num>xviii<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Martine</forename>
+        <surname>Illaire</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le dix-huitième siècle a été véritablement le « grand siècle » des routes. Au cours de cette période s’est élaboré un système organisé des voies de communications terrestres qui s’est maintenu jusqu’à nos jours et sur lequel le réseau routier actuel s’est modelé. Cette réalisation a été rendue possible par la constitution, à partir de 1750, du corps des Ponts et Chaussées, qui fournit un cadre de techniciens. La corvée, qui s’est généralisée à partir de 1738, a procuré la main-d’œuvre nécessaire. L’aide de l’État, quoiqu’encore assez faible, s’est régulièrement accrue au cours du siècle. Mais l’essor routier, plus encore que le fruit d’une politique routière, a été une conséquence des conditions économiques nouvelles. Les débuts des industries minières, métallurgiques, textiles, le développement du commerce et de l’activité des ports provoquèrent une forte augmentation des échanges et la formation de courants de circulation réguliers. Le réseau s’est agrandi et organisé selon le principe de centralisation qui était à l’origine de la création des routes de poste, qui devaient relier Paris aux capitales provinciales tout en assurant les communications interrégionales et en se ramifiant en réseaux provinciaux centrés autour des grandes villes.</p>
+        <p>Si le développement du réseau routier a été rendu nécessaire par les nouveaux besoins de l’économie, en contre-partie l’économie a été stimulée par l’extension des routes, qui ont favorisé les échanges, permis la diffusion des idées nouvelles et répandu la langue française dans les provinces. La constitution d’une armature routière a été une des conditions préalables de la révolution industrielle du <num>xix<hi rend="sup">e</hi></num> siècle.</p>
+        <p>Cette thèse voudrait tenter de dégager, à travers l’étude de la constitution d’un réseau provincial, les traits généraux de l’entreprise routière du <num>xviii<hi rend="sup">e</hi></num> siècle et s’efforcer de définir les besoins particuliers qui ont motivé l’ouverture ou l’extension de routes données, en fournissant des indications importantes sur l’activité économique et commerciale de la région considérée. La généralité de Châlons-sur-Marne a été choisie comme base de cette étude en raison de sa situation géographique qui, de tout temps, en a fait un carrefour de communications internationales.</p>
+      </div>
+      <div>
+        <pb n="66" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Sources</head>
+        <p>Les Archives nationales fournissent des renseignements d’ordre général sur la constitution et l’organisation des Ponts et Chaussées. Pour la Champagne, deux séries de documents sont particulièrement intéressantes, les albums des routes de Trudaine pour la généralité de Châlons (F<hi rend="sup">14</hi> 8471 à F<hi rend="sup">14</hi> 8477) et les articles F<hi rend="sup">14</hi> 143 à 146. Les albums de Trudaine contiennent un grand nombre de mémoires adressés à l’intendant chargé du détail des Ponts et Chaussées. Ces mémoires étaient destinés à solliciter l’ouverture de nouvelles routes et fournissent un tableau des motifs invoqués. La bibliothèque de l’École des Ponts et Chaussées renferme les archives relatives à la création de l’École et du corps des ingénieurs. Ces documents permettent de reconstituer l’état du personnel des Ponts et Chaussées en Champagne de 1750 à 1789.</p>
+        <p>Les sources d’origine provinciale sont constituées principalement par les fonds de la généralité, dont les archives sont réparties entre les dépôts d’archives des départements champenois ; c’est la série C qui a été consultée. Les Archives départementales de la Marne, qui possèdent la plus grande partie des fonds de l’intendance, ont fourni l’essentiel de la documentation. Les Archives départementales de l’Aube comportent un assez grand nombre d’articles généraux intéressant l’ensemble des routes de la partie méridionale de la Champagne. La série C des Archives de la Haute-Marne n’a été consultée que dans sa partie actuellement inventoriée ; il semble que ce dépôt ne contient que des documents d’intérêt strictement local. La série C des Archives des Ardennes a entièrement disparu lors de la destruction du dépôt de Mézières en 1940. On ne peut prendre connaissance des fonds que par l’inventaire sommaire de 1905. Cette perte est sensible pour ce qui concerne les routes d’intérêt militaire. Toutefois, les archives du Service historique de l’Armée donnent des renseignements sur les routes militaires dans les « Mémoires et reconnaissances » relatifs aux frontières.</p>
+        <p>Enfin, le dépôt des Cartes et Plans de la Bibliothèque nationale a fourni un grand nombre de documents cartographiques qui indiquent l’étendue de la généralité et l’aspect de son réseau routier.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>présentation de la généralité</head>
+        <p>La généralité de Châlons correspond, dans ses grandes lignes, aux départements des Ardennes, de la Marne, de la Haute-Marne et de l’Aube.</p>
+        <p>Deux données géographiques ont eu une influence sur le réseau routier : d’une part, la nature géologique de l’est du bassin parisien, qui a donné naissance à un relief caractéristique, le relief de côtes, et a commandé l’orientation générale est-ouest ; d’autre part, la situation de la Champagne, qui en fait un carrefour naturel où se croisent les grandes voies de circulation.</p>
+        <pb n="67" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_03.TIF/full/full/0/default.jpg"/>
+        <p>L’administration de la généralité au <num>xviii<hi rend="sup">e</hi></num> siècle n’a rien d’exceptionnel. Elle offre un bon exemple de gestion par des administrateurs éclairés, férus d’idées économistes et soucieux d’édifier et d’entretenir un réseau de communications nécessaire au développement de l’économie.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Le corps des ponts et chaussées</head>
+        <p>L’histoire du corps des Ponts et Chaussées est connue. La création de l’école des Ponts et Chaussées en 1747 a permis de former, à partir de 1750, un corps de techniciens, les ingénieurs des Ponts et Chaussées.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Le personnel des ponts et chaussées en Champagne</head>
+        <p>On peut retracer l’historique de l’évolution du personnel scientifique des Ponts et Chaussées et de son organisation dans la généralité. L’ampleur du travail à réaliser explique le développement du corps des Ponts et Chaussées en Champagne ; il fut freiné toutefois par le peu de moyens financiers dont l’administration a disposé. La généralité a bénéficié des services d’ingénieurs compétents et de haute valeur.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Technique et réglementation routières</head>
+        <p>La technique routière s’est précisée et perfectionnée au <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+        <p>Les ingénieurs ont eu à compter avec deux difficultés, le manque de matériaux solides et la présence de nombreuses pentes dues au relief des côtes.</p>
+        <p>La réglementation routière est très importante. La répétition fréquente de mesures identiques indique qu’elles rencontraient des difficultés d’application. Le respect des travaux des Ponts et Chaussées et la notion même d’ouvrage public semblent avoir été, sinon méconnus, du moins mal admis.</p>
+        <p>L’examen de l’emploi des fonds révèle une gestion prudente, qui a donné la priorité à l’entretien des voies existantes sur la construction de nouvelles routes, afin d’assurer à tout prix la continuité et de tirer le meilleur parti de ressources toujours insuffisantes et toujours variables.</p>
+      </div>
+      <div>
+        <pb n="68" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre V
+         <lb/>Le budget</head>
+        <p>Une comptabilité régulière apparaît entre 1735 et 1740. L’étude du budget des Ponts et Chaussées de la généralité permet donc d’évaluer les ressources dont les ingénieurs ont disposé pour édifier le réseau et aussi de constater la part grandissante que l’État a prise à cette entreprise. La contribution de l’État augmente au cours du siècle, sauf pendant les périodes de crise que représentent les guerres. Les dépenses des Ponts et Chaussées par rapport au budget général du royaume ont doublé, mais la totalité des sommes reste faible. Une étude systématique des fonds accordés à chaque généralité – quand les sources le permettent – serait le seul moyen de rendre compte de l’évolution générale du budget des Ponts et Chaussées et de la répartition faite entre les différentes généralités.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>Les moyens d’exécution</head>
+        <p>Les travaux ont été réalisés les uns à prix d’argent, les autres grâce à la corvée. Les ouvrages d’art, c’est-à-dire les travaux tels que les ponts et la construction de chaussées pavées, qui exigeaient des connaissances plus poussées que le rechargement des routes en pierrailles, étaient confiés à des entrepreneurs particuliers avec lesquels l’administration passait des adjudications. L’entretien était effectué par la corvée. Les ateliers de charité devaient fournir du travail, faiblement rémunéré, aux indigents et assurer l’entretien des chemins particuliers. Ils suppléèrent la corvée sur les routes royales puis la remplacèrent après sa suppression. Le système d’entretien par cantonniers fit son apparition en 1788.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>La corvée</head>
+        <p>La plus grande partie des routes fut construite et entretenue au moyen de la corvée. Les principes furent établis par un « Mémoire sur la conduite du travail par corvées de 1737 », repris par l’« Instruction » du contrôleur général Orry du 13 juin 1738, qui généralisa la corvée. Mais les modalités varièrent de généralité à généralité.</p>
+        <p>La corvée fut introduite très tôt dans la généralité de Châlons, dès 1727. Sa durée annuelle, qui était, au début, de vingt à vingt-deux jours, n’était plus <pb n="69" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_05.TIF/full/full/0/default.jpg"/>que de douze jours en 1760. Rouillé d’Orfeuil, qui fut intendant de 1764 à 1791, était hostile au principe de la corvée et tenta d’en diminuer la durée. Après l’essai de suppression de quelques mois réalisé par Turgot en 1776, la corvée fut reprise et, jusqu’à sa disparition, fut exigée en nature. Le système de l’imposition représentative avait été exclu, de même que celui de l’option entre l’imposition et la corvée.</p>
+        <p>L’étude comparative des conditions dans lesquelles la corvée a été appliquée au <num>xviii<hi rend="sup">e</hi></num> siècle dans les différentes généralités présente un grand intérêt, non seulement pour l’histoire du réseau routier, mais aussi pour l’histoire de la classe paysanne, étant donné les renseignements que fournissent les états de corvéables.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>Les voies romaines</head>
+        <p>On a examiné rapidement le réseau romain établi sur le territoire de la généralité ; il ne s’agit pas d’une étude archéologique mais d’une comparaison entre deux systèmes de circulation. On constate que le réseau antique, très dense, présentait déjà presque toutes les directions qu’emprunte le réseau moderne. Certaines voies avaient, pour une part, été délaissées au Moyen Âge et ont été reprises lors de l’extension des routes au <num>xviii<hi rend="sup">e</hi></num> siècle. On peut donc supposer que des courants de circulation abandonnés se sont ranimés. Ceci fournit un témoignage supplémentaire de l’activité des transports et des besoins de communications au <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>Les péages</head>
+        <p>L’étude des péages n’a pas donné les renseignements escomptés ; en effet, on n’a pas retrouvé de comptes de péages qui auraient fourni une appréciation quantitative du volume des échanges. On s’est donc borné à faire le relevé de tous les lieux de perception et à en dresser la carte. Il semble que la majorité des péages étaient situés sur des routes secondaires et que les grands itinéraires en étaient presque complètement dépourvus. Des recherches restent à faire quant à la régularité et au mode de perception des droits.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>Le réseau routier au <num>xviii<hi rend="sup">e</hi></num> siècle</head>
+        <p>L’orientation du réseau routier a été guidée par des considérations économiques. Le ravitaillement de la capitale reste au premier rang des préoccupations ; on accorde toujours la priorité aux routes qui y conduisent. Mais les routes <pb n="70" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_06.TIF/full/full/0/default.jpg"/>de Champagne ont aussi été établies en fonction du réseau général du royaume. Elles le complètent dans le système d’échanges intérieurs et elles le relient aux grands axes internationaux. C’est la raison pour laquelle, sur vingt-et-une grandes routes, quinze sont des routes qui traversent la généralité pour assurer les relations de province à province, voire de pays à pays, et six sont des routes de communications interrégionales. Ceci n’est toutefois qu’une conséquence de la situation de la Champagne.</p>
+        <p>Les ingénieurs n’ont fait que reprendre avec des moyens nouveaux et des techniques améliorées les grandes voies de passage et ils les ont établies d’une façon durable. Le fait nouveau et propre au <num>xviii<hi rend="sup">e</hi></num> siècle qui marque le réseau routier, c’est l’essor tout particulier qui fut donné aux communications secondaires.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XI
+         <lb/>La circulation</head>
+        <p>La circulation a été plus active qu’on ne l’a dit. Les communications militaires ont tenu une grande place. Les passages de troupes étaient fréquents dans la généralité et se faisaient par petits détachements, selon des itinéraires bien établis. La situation de frontière de la province lui valait d’être traversée par les nombreux voyageurs d’Allemagne, d’Italie, de Suisse, du Luxembourg et des Pays-Bas.</p>
+        <p>On manque de données précises sur le volume des échanges locaux, mais leur existence est attestée. Une grande partie du roulage nous échappe également parce qu’il se faisait par de trop petites entreprises. Mais les messageries sont mieux connues et on constate que des voitures publiques sillonnaient très régulièrement les grandes routes.</p>
+        <p>Enfin, il faut souligner l’importance de toute une population de la route, locale, avec les paysans se rendant aux villes voisines, et étrangère à la province, avec les voyageurs, les soldats et les nomades, honnêtes ou sans aveu.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Cette étude permet de souligner l’importance qu’a eue la création de l’administration des Ponts et Chaussées, sans laquelle l’implantation et l’extension des routes n’auraient pu se faire.</p>
+        <p>Le réseau créé en Champagne répond au rôle de plaque tournante joué par la généralité de Châlons ; de grands axes ouest-est et nord-sud ont été tracés. La circulation a sans doute été très active, mais on manque d’éléments précis pour évaluer le degré de fréquentation et le volume de la circulation. Il faudrait mener une recherche systématique de tous les documents susceptibles <pb n="71" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_07.TIF/full/full/0/default.jpg"/>de fournir des renseignements ; des enquêtes semblables pourraient être faites dans un certain nombre de généralités, dans la mesure où l’état des sources le permet. Le recoupement des résultats obtenus permettrait de tracer un tableau plus exact des moyens et de l’activité des Ponts et Chaussées, et d’avoir une vue plus précise de ce que fut la circulation générale dans la France d’Ancien Régime.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes et plans</head>
+        <pb n="72" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_08/ENCPOS_1972_08_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

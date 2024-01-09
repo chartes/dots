@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_11" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Du <hi rend="i">quadrivium</hi> aux <hi rend="i">disciplinae mathematicae</hi> : histoire éditoriale d’un champ disciplinaire en mutation (1480-1550). Une recherche de bibliographie matérielle et d’histoire sociale du livre à Paris au <hi rend="sc">xiv</hi><hi rend="sup">e</hi> siècle</title>
+        <author>Alissar Levy</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 113-124</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Du <hi rend="i">quadrivium</hi> aux <hi rend="i">disciplinae mathematicae</hi> : histoire éditoriale d’un champ disciplinaire en mutation (1480-1550) 
+        <lb/>Une recherche de bibliographie matérielle et d’histoire sociale du livre à Paris au <num>xvi<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Alissar</forename>
+        <surname>Levy</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Les livres imprimés sont parfois produits dans un contexte de tension entre la dimension intellectuelle des textes et la dimension matérielle d’un objet de marché. Les livres mathématiques sont dès les premiers temps de l’imprimerie concernés par ces difficultés parce qu’ils s’adressent à un public restreint, nécessitent un matériel d’impression spécialisé et exigent pour leur révision la présence d’un mathématicien. L’étude de la production des textes mathématiques constitue de ce fait un moyen d’accéder au fonctionnement du marché du livre en s’intéressant aux difficultés que les libraires-imprimeurs rencontrent au cours de leur activité et à la manière dont ils s’organisent pour les contourner.</p>
+        <p>Le cas parisien paraît particulièrement fécond pour ce faire, dans la mesure où Paris est l’un des principaux centres de production de textes imprimés en Europe. Qui plus est, les travaux réalisés sur les ateliers parisiens et sur les réseaux de libraires-imprimeurs offrent un socle solide pour une analyse transversale d’un secteur précis de la production. Les imprimés mathématiques apparaissent à Paris au début des années 1480 et ils ne cessent de se diversifier jusqu’au début des années 1550, lorsque la plus grande part de cette production commence à être prise en charge par un seul et même libraire-imprimeur, Guillaume Cavellat. Au total, ils ne représentent qu’une faible part de la production parisienne de livres, mais sont suffisamment nombreux durant cette période pour offrir une vue riche d’enseignements sur le monde du livre au début du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        <div>
+          <head>Sources</head>
+          <p>Deux cent vingt-huit éditions mathématiques parisiennes publiées entre 1480 et 1550 sont recensées et décrites, et leurs exemplaires localisés. Ceux qui ont été produits entre 1480 et 1520 et sont conservés à Paris font l’objet d’une notice détaillée. Les ressources de la Réserve des livres rares de la Bibliothèque nationale de France constituées par le bibliographe Philippe Renouard (1862-1934) et ses continuateurs fournissent des renseignements essentiels sur les libraires-imprimeurs parisiens du <num>xvi<hi rend="sup">e</hi></num> siècle. Des catalogues anciens de bibliothèques contribuent à parfaire l’étude de la réception de ces livres et les catalogues de libraires-imprimeurs parisiens du <num>xvi<hi rend="sup">e</hi></num> siècle offrent des indications relatives à leurs prix.</p>
+        </div>
+        <div>
+          <head>Chapitre préliminaire
+            <lb/>Les disciplines mathématiques à la Renaissance</head>
+          <p>Les mathématiques sont des disciplines mouvantes à la Renaissance. Elles se situent dans une période de transition entre une approche ancienne et médiévale et une approche moderne. Le <hi rend="i">quadrivium</hi>, qui rassemble l’arithmétique, la géométrie, l’astronomie et la musique, est de moins en moins synonyme de mathématiques, même s’il garde une charge symbolique importante dans la pensée humaniste, en tant qu’héritage ancien et accès au savoir encyclopédique. En parallèle, les disciplines mixtes, intermédiaires entre les mathématiques et la physique, comme la cosmographie, la perspective et l’optique, prennent une place de plus en plus importante dans la littérature mathématique renaissante. Enfin, dans la suite des travaux des <hi rend="i">calculatores</hi> du <num>xiv<hi rend="sup">e</hi></num> siècle, les études de proportions et de mouvement permettent à partir du <num>xv<hi rend="sup">e</hi></num> siècle le perfectionnement de l’algèbre et la progressive remise en question des fondements du <hi rend="i">quadrivium</hi>.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Les publications mathématiques parisiennes aux premiers temps de l’imprimerie</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les premiers imprimés mathématiques à Paris (1480-1494)</head>
+          <p>Les premiers livres mathématiques parisiens sont publiés au début des années 1480, une dizaine d’années après l’installation des premières presses typographiques à la Sorbonne. Ils sont essentiellement destinés à l’enseignement des mathématiques dans les collèges et se différencient peu des modèles médiévaux. Les trois premiers sont préparés par des auteurs qui semblent être présents à Paris au moment de la publication de leurs textes : Georges de Hongrie et Renaud Montoro, qui publient respectivement deux arithmétiques pratiques anonymes et une édition des <hi rend="i">Proportiones</hi> d’Albert de Saxe. Ces livres ne sont pas datés ou signés d’un atelier d’impression mais peuvent être tous trois attribués aux presses d’Antoine Caillaut ou de son associé Louis Martineau, dans les années 1482-1485.</p>
+          <p>En 1489, l’édition <hi rend="i">princeps</hi> parisienne du <hi rend="i">De sphaera</hi> de <hi rend="i">Johannes</hi> <hi rend="i">de Sacrobosco</hi> est publiée par Wolfgang Hopyl, qui établit en cette même année son premier atelier parisien. Hopyl suit pour cette réalisation le modèle vénitien d’Erhard Ratdolt (1482-1485), qui est alors le libraire-imprimeur de textes mathématiques le plus renommé en Europe. Hopyl tient à montrer qu’il se situe dans cette tradition et reprend pour cela quelques éléments caractéristiques de son modèle, même s’il l’adapte et le simplifie. Son édition connaît un grand succès dans la capitale et est rééditée au moins trois fois dans les cinq années suivantes par autant de libraires-imprimeurs différents : Georg Mittelhus (1493), Antoine Caillaut (vers 1493) et Félix Baligault (vers 1494). Une quatrième édition, qui ne nous est pas parvenue, aurait encore existé entre 1489 et 1493.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Les programmes de Jacques Lefèvre d’Étaples et de Pedro Sánchez Ciruelo (1495-1502)</head>
+          <p>L’enseignement des mathématiques à Paris est profondément renouvelé à partir de 1495 grâce à la publication des programmes de Jacques Lefèvre d’Étaples et de Pedro Sánchez Ciruelo. Tous deux arrivent simultanément à Paris en 1492 et enseignent les mathématiques dans les collèges parisiens. Le contexte de leur séjour est toutefois différent : à cette date, Lefèvre est un théologien renommé, qui enseigne les arts libéraux dans l’un des plus prestigieux collèges parisiens, le collège du Cardinal-Lemoine. Ciruelo, quant à lui, est un jeune étudiant de théologie, qui enseigne les mathématiques comme un moyen de financer ses études. Ses lieux d’étude et d’enseignement ne semblent pas connus.</p>
+          <p>Les programmes de Lefèvre et de Ciruelo, imprimés respectivement par Wolfgang Hopyl et Guy Marchant, reflètent cette différence de parcours bien qu’ils aient tous deux un impact important sur l’enseignement des mathématiques à Paris. Le programme de Lefèvre, qui recouvre toutes les disciplines du <hi rend="i">quadrivium</hi>, est structuré selon une conception aristotélicienne des mathématiques et présente des influences aussi bien antiques que médiévales et modernes. Le programme de Ciruelo apparaît davantage comme un ensemble de publications mathématiques d’influence médiévale. Il présente en commun avec le programme de Lefèvre une édition commentée du <hi rend="i">De sphaera</hi>. Ciruelo dira plus tard que cette édition a été donnée par opposition à celle de Lefèvre, mais il ne semble pas qu’il y ait dans les années 1490 de concurrence entre les programmes.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le développement de deux courants d’enseignement des mathématiques à Paris (1503-1515)</head>
+          <p>Dans les années 1503-1515, les publications de Lefèvre et Ciruelo donnent lieu au développement de deux courants d’enseignement des mathématiques à Paris : le premier est un courant traditionnel et classique, principalement influencé par la pensée des philosophes anciens, avant tout enseigné au collège du Cardinal-Lemoine autour de Jacques Lefèvre d’Étaples et de ses disciples, Josse Clichtove et Charles de Bovelles. Le second se développe dans la lignée des travaux des <hi rend="i">calculatores</hi> du <num>xiv<hi rend="sup">e</hi></num> siècle, qui s’intéressent aux questions de proportions et de mouvement et qui accordent, à la différence des philosophes anciens, une place centrale à la physique dans les études mathématiques. Ce courant est principalement enseigné dans les collèges de tradition ibérique à Paris, en particulier Coqueret, Sainte-Barbe et Montaigu.</p>
+          <p>Outre leur approche différente des mathématiques, les livres destinés à ces deux courants se distinguent également par leur présentation. Les publications du courant traditionnel et classique suivent ainsi un modèle plus humaniste et d’influence italienne. Ils sont essentiellement publiés par Henri Estienne qui poursuit les publications mathématiques de Wolfgang Hopyl. Les livres du courant des <hi rend="i">calculatores</hi> se rattachent quant à eux à un modèle plus médiéval et d’influence ibérique. Ils sont publiés par plusieurs libraires-imprimeurs parisiens, parmi lesquels Jean Petit, qui devient avec Henri Estienne l’un des libraires-imprimeurs de textes mathématiques les plus productifs à Paris. Les deux modèles tendent toutefois à se rapprocher à partir de 1514, comme l’atteste le choix des caractères romains dans les publications du courant des <hi rend="i">calculatores</hi>, même si les pages de titre en rouge et noir y subsistent.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>L’élaboration d’une littérature mathématique parisienne moderne (1516-1530)</head>
+          <p>Dans la deuxième moitié des années 1510, la plupart des professeurs qui enseignent les mathématiques à Paris obtiennent leur doctorat et se destinent à d’autres activités. En conséquence, la production de textes scolaires dans ce domaine ralentit, alors que la nouvelle génération de professeurs se consacre à la publication de textes plus avancés et surtout plus en phase avec les principaux sujets mathématiques du temps : les traductions d’Euclide, le mouvement des planètes, la huitième sphère, la construction des instruments astronomiques, entre autres.</p>
+          <p>La fin des années 1510 et les années 1520 se caractérisent ainsi par une diminution du nombre de textes mathématiques imprimés à Paris, mais aussi par une diversification de la littérature mathématique parisienne qui ne s’adresse plus seulement à un public local d’étudiants : désormais, elle intéresse l’ensemble des mathématiciens de la Renaissance, faisant de Paris un important pôle de production de textes mathématiques en Europe. Ces publications mathématiques plus avancées sont principalement prises en charge par Henri Estienne jusqu’à la fin des années 1510, puis par son associé et successeur Simon de Colines à partir des années 1520.</p>
+        </div>
+        <div>
+          <head>Chapitre V
+            <lb/>Les mathématiques aux premiers temps du Collège royal (1531-1541)</head>
+          <p>Dans les années 1530, la production des textes mathématiques scolaires est relancée grâce à l’institution du Collège royal qui influence l’enseignement des mathématiques de deux manières. D’une part est créée la première chaire d’enseignement parisienne exclusivement consacrée aux mathématiques. Elle est accordée à Oronce Fine qui publie plusieurs textes pour ses cours, principalement chez Simon de Colines. D’autre part, des textes mathématiques grecs ou bilingues sont régulièrement imprimés à Paris et sont probablement destinés à l’enseignement des textes classiques. Ils sont surtout pris en charge par Chrétien Wechel.</p>
+          <p>En dehors de ce contexte scolaire, la production de textes savants continue à se développer, notamment avec un nombre plus important de textes relatifs à la géométrie et la cosmographie. Cela tient en partie au fait que ces disciplines sont à présent enseignées à un niveau plus avancé à Paris, mais aussi que les libraires-imprimeurs, de plus en plus spécialisés, rééditent d’eux-mêmes des textes mathématiques initialement publiés à l’étranger.</p>
+        </div>
+        <div>
+          <head>Chapitre VI
+            <lb/>La mise en place d’un modèle standardisé de publication mathématique (1542-1550)</head>
+          <p>Dans les années 1540, Jean Loys et Guillaume Richard entrent dans le marché des livres mathématiques et renouvellent en profondeur les publications parisiennes en s’alignant sur un modèle d’édition plus standardisé à l’échelle de l’Europe. Le <hi rend="i">De sphaera</hi> continue à être régulièrement réédité mais suit désormais un modèle généralisé, initialement proposé par Pierre Apian à Ingolstadt en 1526, puis repris par Philip Melanchthon à Wittenberg en 1531. En parallèle, les rééditions de textes mathématiques étrangers se poursuivent et deviennent aussi importantes que la production locale. Enfin, un plus grand nombre de textes mathématiques avancés sont rédigés en français ou traduits.</p>
+          <p>En 1547, Guillaume Cavellat et Thomas Richard prennent la suite de l’activité de Jean Loys et Guillaume Richard. Toutefois, dès 1549, Cavellat entend détenir le monopole de la production mathématique parisienne et entretient des rapports tendus avec ses collaborateurs. Thomas Richard quitte l’association la même année, laissant la place à Michel de Vascosan, qui est déjà un imprimeur reconnu. Ce dernier ne reste lui aussi qu’un an, avant de devenir le principal concurrent de Cavellat dans ce domaine. Jusqu’aux années 1570, Cavellat et Vascosan seront les principaux libraires-imprimeurs de textes mathématiques à Paris.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Le marché des imprimés mathématiques à Paris</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Bilan statistique de la production mathématique parisienne</head>
+          <p>Les livres mathématiques des années 1480-1550 représentent en moyenne 1 % de la production imprimée parisienne connue. Dans les moments de plus forte demande, ils peuvent atteindre 2,1 % de celle-ci (1508-1515) ou descendre à 0,6 % lorsqu’ils ne suivent pas la croissance du marché de l’impression (1535-1540).</p>
+          <p>Les disciplines mathématiques les plus imprimées à Paris sont l’astronomie et l’arithmétique qui concernent respectivement 43 % et 23 % des ouvrages. Les quatre textes mathématiques les plus édités sont tous anciens ou médiévaux et représentent plus de 40 % des publications : ce sont, dans l’ordre de leur importance sur le marché, le <hi rend="i">Computus manualis</hi> d’<hi rend="i">Anianus</hi>, le <hi rend="i">De sphaera</hi> de <hi rend="i">Sacrobosco</hi>, la <hi rend="i">Sphaïra</hi> du pseudo-Proclus et les <hi rend="i">Éléments</hi> d’Euclide. Les titres modernes représentent en revanche 70 % de la littérature mathématique parisienne.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Libraires et imprimeurs de livres mathématiques à Paris</head>
+          <p>La production des livres mathématiques à Paris se concentre entre les mains d’un nombre restreint de libraires-imprimeurs qui peuvent acquérir le matériel nécessaire à la réalisation de ces textes et en tirer profit. Quelques grands noms de l’imprimerie parisienne comme Henri Estienne, Simon de Colines, Jean Petit et Chrétien Wechel, sont parmi les principaux libraires-imprimeurs de textes mathématiques à Paris, même si ceux-ci représentent souvent une part modeste de leur production.</p>
+          <p>Au nombre des raisons pouvant amener un libraire-imprimeur à éditer des textes mathématiques, la principale réside dans l’appartenance à un réseau large de libraires-imprimeurs qui publient de tels textes. Elle leur permet de s’échanger le matériel nécessaire à ces ouvrages, tout en garantissant que celui-ci demeure partagé entre un petit nombre d’ateliers qui ne se concurrencent pas.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Les publics des livres mathématiques à Paris</head>
+          <p>Les lecteurs de textes mathématiques se répartissent principalement en deux ensembles : le public universitaire et le public non universitaire. Le public universitaire comprend d’une part les étudiants de la faculté des arts, qui sont les principaux demandeurs de textes mathématiques à Paris, d’autre part les lecteurs de textes avancés, inscrits dans les facultés supérieures de théologie, droit ou médecine, ou ayant achevé leur formation. Les théologiens constituent en particulier un groupe important de lecteurs de textes mathématiques avancés.</p>
+          <p>Le public non universitaire inclut des marchands, lecteurs des arithmétiques en français, des clercs, auxquels s’adressent une partie des éditions du <hi rend="i">Computus manualis</hi> d’<hi rend="i">Anianus</hi> sur le calcul des fêtes liturgiques mobiles, et d’autres lettrés parisiens, lecteurs de textes mathématiques en français. Les publications mathématiques avancées en langue vernaculaire se diffusent surtout à partir des années 1540, lorsque l’enseignement de ces disciplines est déjà mieux implanté à Paris et que les auteurs sont moins réticents à l’idée de publier en français.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Mise en page et mise en texte des imprimés mathématiques parisiens</head>
+          <p>Les auteurs sont souvent présents dans les ateliers pour assurer la bonne publication de leurs textes et interviennent parfois directement dans le processus d’impression de l’ouvrage. Ils participent également à l’élaboration d’un matériel spécifique à cette production et qui reste généralement entre les mains des libraires-imprimeurs.</p>
+          <p>Dès les premières réalisations, les caractères mathématiques constituent un problème pour les libraires-imprimeurs. Dans les années 1480, la plupart de ceux-ci ne possèdent pas de chiffres arabes, de sorte que les calculs sont souvent remplacés par des espaces blancs. Ces chiffres commencent à apparaître de manière régulière à partir des années 1490 et semblent se généraliser à Paris dans la décennie suivante. En outre, à partir des années 1510, quelques libraires-imprimeurs qui commencent à se spécialiser davantage font l’acquisition de caractères typographiques spéciaux, comme les chiffres barrés en 1513 et les symboles astronomiques en 1521. Le nombre d’acteurs sur ce marché se réduit et il est de plus en plus difficile pour les autres libraires-imprimeurs d’y prendre pied.</p>
+          <p>La publication des textes mathématiques dans les années 1520 et 1530 se caractérise par l’utilisation d’une page de titre différente des autres ouvrages, qui rappelle le caractère spécialisé de cette production et en renforce le prestige. 
+            <lb/>Marques et encadrements de type architectural sont ainsi remplacés par des schémas techniques ou des encadrements historiés à motif mathématique.</p>
+          <p>Les privilèges sont presque inexistants dans les livres mathématiques parisiens du premier quart du <num>xvi<hi rend="sup">e</hi></num> siècle parce que la plupart de ces textes s’adressent à un public restreint et ne sont pas spontanément réédités. Ils commencent à devenir nombreux à partir des années 1530 dans les publications d’Oronce Fine, presque toutes protégées. Ils sont régulièrement employés par Guillaume Cavellat à partir de la fin des années 1540.</p>
+        </div>
+        <div>
+          <head>Chapitre V
+            <lb/>Typologies des illustrations dans les imprimés mathématiques parisiens</head>
+          <p>Des illustrations se rencontrent dans plus de trois quarts des imprimés mathématiques parisiens des années 1480-1550. Les premières publications n’en présentent pas mais réservent des espaces blancs pour l’introduction d’images manuscrites. Les schémas imprimés apparaissent à la fin des années 1480 mais posent encore le problème de l’association entre le texte et l’image.</p>
+          <p>Dès les années 1490, des libraires-imprimeurs parisiens obtiennent des schémas mathématiques historiés qui participent aussi au prestige de ces publications. Ceux-ci s’échangent sans difficulté dans les premières années du <num>xvi<hi rend="sup">e</hi></num> siècle avant d’être surtout utilisés par les libraires-imprimeurs appartenant à un même réseau. Il faut généralement compter une quinzaine d’années pour que ces illustrations commencent à être utilisées dans des livres destinés à un plus large public.</p>
+          <p>Les schémas complexes doivent souvent être préparés par un auteur qui travaille en collaboration avec l’atelier. Inversement, des formes géométriques simples peuvent être réalisées par le libraire-imprimeur lui-même avec des fils de fer. Les schémas plus élémentaires peuvent être très simplement reproduits avec des caractères typographiques disposés de manière à former des figures.</p>
+          <p>Les « volvelles », instruments mobiles sur papier, existent dès les premières publications mathématiques à Nuremberg dans les années 1470. Elles apparaissent dans les productions parisiennes au cours des années 1520 et se généralisent dans les années 1540. Elles sont parfois imprimées sur un dépliant à part, portant les instructions de montage au verso.</p>
+          <p>Les illustrations sans rapport avec les mathématiques disparaissent tôt des publications, dès les années 1500. Celles qui portent sur un sujet mathématique mais ne participent pas à la démonstration subsistent dans les ouvrages scolaires jusqu’aux années 1510 et au-delà dans les seuls livres adressés à un large public.</p>
+        </div>
+        <div>
+          <head>Chapitre VI
+            <lb/>Prix et tirages</head>
+          <p>Le prix d’un quart des imprimés mathématiques scolaires et savants publiés à Paris dans la première moitié du <num>xvi<hi rend="sup">e</hi></num> siècle est connu grâce à des catalogues de libraires-imprimeurs en partie spécialisés dans la publication de tels textes. Force est de constater que, malgré les difficultés induites par cette production, les livres mathématiques, même lorsqu’ils sont très illustrés, ne sont pas commercialisés à des prix plus élevés que les autres textes : le prix moyen par feuille est maintenu à 2,4 deniers pour la majorité d’entre eux ou à 1,2 denier pour les plus anciens. En option, certains libraires-imprimeurs proposent un service de montage des instruments mobiles sur papier, facturé à part.</p>
+          <p>Les problèmes de bibliographie matérielle mettent parfois en lumière des aspects peu connus de la production de livres, notamment des questions logistiques relatives au processus d’impression. L’édition du <hi rend="i">De sphaera</hi> publiée en 1495 par Wolfgang Hopyl avec les commentaires de Lefèvre offre en particulier un moyen d’appréhender ces questions. L’étude matérielle de ce volume révèle entre autres qu’Hopyl a attribué à chacun de ses compagnons un cahier à composer et a défini l’importance matérielle des trois cahiers en fonction des difficultés techniques impliquées par leur composition. En outre, il a été décidé en cours d’impression d’augmenter le tirage, ce qui a eu pour conséquence la recomposition complète de feuilles issues de chacun des trois cahiers.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Les livres mathématiques dans les bibliothèques parisiennes : deux études de catalogues</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les livres mathématiques de la <hi rend="i">magna libraria</hi> du collège de Sorbonne</head>
+          <p>Le collège de Sorbonne possède au Moyen Âge et à la Renaissance l’une des plus importantes collections de livres mathématiques en Europe. Cette collection s’est constituée au fil des siècles grâce aux dons effectués par des bienfaiteurs du collège. Dans le premier tiers du <num>xvi<hi rend="sup">e</hi></num> siècle, François Guillebon fait de nombreux dons à la bibliothèque et renouvelle en profondeur le fonds de l’institution. Peut-être est-ce la raison qui amène à mettre en place un nouveau système de cotation, puis à imprimer au début des années 1550 un catalogue connu aujourd’hui sous le nom de la <hi rend="i">Tabula</hi> du collège de Sorbonne. Ce catalogue a été identifié par Gilbert Fournier et fait aujourd’hui l’objet d’un travail de recherche collectif.</p>
+          <p>La rubrique mathématique de la <hi rend="i">Tabula</hi> contient plus de quatre-vingts manuscrits et imprimés disposés thématiquement, suivant un classement ancien des savoirs adapté aux enjeux d’une collection moderne. Comme l’a montré le groupe de travail en charge de son étude, la plupart des exemplaires imprimés présents dans le pupitre mathématique proviennent des dons de François Guillebon. Bien plus, cet ensemble n’est pas mis à jour entre la mort de Guillebon en 1534 et l’impression du catalogue après 1550 : s’il y a bien des entrées de livres pendant cette période et encore après l’impression du catalogue, celles-ci concernent essentiellement des livres qui ont aussi appartenu à Guillebon.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La bibliothèque de Pascal Du Hamel, lecteur royal de mathématiques</head>
+          <p>Lecteur royal des mathématiques depuis le début des années 1540, Pascal Du Hamel possède une importante bibliothèque connue à travers son inventaire après décès en 1565. Cette bibliothèque est recensée par le libraire-imprimeur Thomas Brumen et comprend cent quarante-quatre livres décrits à la pièce, cent trente-cinq rassemblés par lots et trente instruments mathématiques. Une partie de cette bibliothèque demeure toutefois inconnue puisque Brumen ne décrit pas les recueils, mais seulement la première pièce de chaque volume. Les livres sont majoritairement imprimés dans les années 1530 et 1540 et sont classés par format, sans rangement thématique. Les sciences et l’histoire sont les disciplines les plus représentées parmi les ouvrages identifiables.</p>
+          <p>Les livres scientifiques constituent près de la moitié des titres cités dans l’inventaire. Les textes modernes d’astronomie et de cosmographie sont majoritaires. Pascal Du Hamel possède aussi plusieurs tables de coordonnées qui lui ont peut-être servi à préparer son édition parisienne des tables alphonsines. En complément, il possède aussi des livres sur l’arithmétique, la géométrie, la physique, la navigation, l’agronomie, qui témoignent d’un intérêt étendu pour les sciences de manière générale. La théorie musicale et l’astrologie sont en revanche peu présentes dans la bibliothèque.</p>
+          <p>Les instruments astronomiques de Pascal Du Hamel sont recensés à la fin de l’inventaire comme une partie de la bibliothèque. Ils sont classés thématiquement : les globes, les sphères armillaires, une grande carte de la théorie des planètes, les astrolabes, les autres instruments mathématiques et les lots d’instruments. Le prix attribué par Brumen à ces objets dépend souvent des matériaux et de la présence d’accessoires, tels que pieds et étuis. Quelques instruments sont décrits comme incomplets et revendus avec des outils : c’est peut-être l’indice que Pascal Du Hamel a fabriqué lui-même des instruments.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Si la production des textes mathématiques semble au premier abord un secteur discret de la librairie parisienne, en raison de son caractère spécialisé et de son public restreint, elle apparaît en réalité comme un secteur de plus en plus concentré. En effet les libraires-imprimeurs producteurs de tels textes ont besoin de détenir une forme de monopole pour que leurs publications restent rentables ; en outre, ils acquièrent rapidement un prestige qui rend difficile l’arrivée de nouveaux acteurs sur ce marché.</p>
+        <p>En parallèle, la progressive reconfiguration des disciplines mathématiques à la Renaissance et leur introduction sous une forme plus structurée dans l’enseignement et dans la littérature parisienne moderne, semblent être menées aussi bien par les auteurs que par les libraires-imprimeurs, qui acquièrent, pour des raisons avant tout commerciales, une marge d’initiative importante dans l’élaboration de cette production : loin d’être des simples techniciens du savoir, ils participent pleinement à son évolution.</p>
+        <div>
+          <head>Annexes</head>
+          <p>Études de marques et d’encadrements d’imprimeur pour permettre leur datation. – Reproductions de matériel typographique. – Plans de Paris localisant les collèges et les libraires-imprimeurs actifs dans le domaine des mathématiques. – Notices d’incunables. – Relevés de prix de livres mathématiques. –Transcription du catalogue de la bibliothèque de Pascal Du Hamel d’après son inventaire après décès et identification des éditions qui y sont mentionnées.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

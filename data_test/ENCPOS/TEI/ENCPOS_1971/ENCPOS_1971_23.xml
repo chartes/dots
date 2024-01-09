@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_23" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’architecture militaire en Dauphiné à la fin du Moyen Âge</title>
+        <author ref="https://www.idref.fr/026926873">Viviane Rey</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_23.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 157-162</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="157" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_23/ENCPOS_1971_23_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’architecture militaire en Dauphiné
+       <lb/>à la fin du moyen âge</head>
+      <byline>
+        par
+        <forename>Viviane</forename>
+        <surname>Rey</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les enquêtes pontificale et delphinale menées lors du projet de cession du Dauphiné par le dauphin Humbert II au pape Benoît XII, en 1339, fournissent le point de départ de cette étude. Les procès-verbaux des commissaires pontificaux sont conservés aux Archives du Vatican sous les cotes Collectoriae 274, 380 et 410 ; l’enquête delphinale est aux Archives départementales de l’Isère (B 3120 et B 4443). Les registres de visites des châteaux delphinaux, <hi rend="i">libri visitationum, </hi>de 1366 à 1553, sont également conservés aux Archives départementales de l’Isère (B 3121 à B 3134). L’enquête pour la réunion au domaine des terres aliénées menée par ordre de François I<hi rend="sup">er</hi> en 1531, fournit les renseignements sur les châteaux engagés. Les archives delphinales sont relativement pauvres en comptes militaires spéciaux : on dispose d’un recueil de comptes du garde de l’artillerie delphinale, de devis de comptes d’achat de matériel et de nombreux inventaires de châteaux. Les comptes de châtellenies englobent une vaste période, qui va des années 1310 à la fin du <num>xv<hi rend="sup">e</hi></num> siècle ; ils constituent aux Archives de l’Isère la sous-série VIII B. Dans le fonds dauphinois de la Bibliothèque municipale de Grenoble, les manuscrits de Guy Allard, avocat et généalogiste grenoblois du <num>xviii<hi rend="sup">e</hi></num> siècle, nous transmettent un certain nombre de pièces originales rassemblées par ses soins. La richesse du fonds de la Chambre des Comptes fournit une documentation relativement complète, qui est fondée tant sur les pièces émanant du pouvoir central que sur les comptes effectifs des châtellenies.</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Seuls les châteaux delphinaux, c’est-à-dire ceux qui relevaient directement du dauphin, ont été retenus. Leur étude a été conduite dans le cadre fourni par les limites successives de la province du Dauphiné. Elle embrasse la période des origines au xvi<hi rend="sup">e</hi> siècle. Il semble que les guerres de Religion aient mis fin à un système de fortification qui ne répondait plus aux besoins. L’édit de Richelieu de 1622 ordonnant la démolition des châteaux n’a pas eu d’exécution effective.</p>
+      </div>
+      <div>
+        <pb n="158" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_23/ENCPOS_1971_23_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>L’état delphinal et sa fonction</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le cadre géographique</head>
+          <p>Qu’il s’agisse du Haut-Dauphiné ou du Bas-Dauphiné, l’État delphinal devait défendre ses frontières. H était en lutte contre la maison de Savoie à l’est et au nord, contre la Provence au sud et partout ailleurs contre le royaume de France. Malgré des conditions naturelles difficiles, l’état delphinal disposait de moyens de circulation assez développés ; ni les fleuves ni les montagnes ne constituaient de barrière véritable à son expansion.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Circonstances historiques de la formation du Dauphiné</head>
+          <p>Le Dauphiné n’était qu’un conglomérat de seigneuries voisines mal soudées. Après avoir donné à son État composite une organisation administrative relativement forte, Humbert II négocia le « transport » du Dauphiné au roi de France. L’État delphinal devint une province. Ses destinées furent liées à celles du royaume. Les rois-dauphins liquidèrent les litiges séculaires avec la Savoie par le traité de Paris, en 1355. L’autre frontière savoyarde du Briançonnais ne fut fixée qu’en 1710, au traité d’Utrecht, et la frontière du Guiers en 1760.</p>
+          <p>En plein cœur de la guerre de Cent ans eut lieu la dernière acquisition delphinale, celle des comtés de Valentinois et de Diois en 1419.</p>
+          <p>La fortification des frontières n’a pu conjurer de brusques et sanglantes invasions, depuis les Hongrois au <num>xi<hi rend="sup">e</hi></num> siècle jusqu’aux Sardes de 1692. Les Dauphinois défendirent la <hi rend="i">patria Delphinatus</hi> tant contre les routiers du <num>xiv<hi rend="sup">e</hi></num> siècle que contre les troupes revenant d’Italie au xvi<hi rend="sup">e</hi> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>L’art militaire en Dauphiné</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les conditions</head>
+          <p><hi rend="i">Le sol.</hi> – Deux types de construction existent en Dauphiné : les châteaux de montagne ou bâtis sur un terrain accidenté et les châteaux édifiés sur un emplacement relativement plat, défendus par des marais ou des cours d’eau. <pb n="159" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_23/ENCPOS_1971_23_03.TIF/full/full/0/default.jpg"/>En Dauphiné, le plan très simple du château de montagne, donjon accolé à une <hi rend="i">aula,</hi> peut subir des modifications en fonction du relief. Le plan du château de plaine est celui d’un <hi rend="i">palatium</hi> flanqué de tours, en général intégré dans une ville neuve.</p>
+          <p><hi rend="i">Les matériaux.</hi> – Le Dauphiné offre peu de possibilités en dehors du bois et d’un calcaire grossier mais solide. On trouve cependant de belles pierres, comme le tuf, matériau léger, la mollasse, belle pierre jaune mais friable du Royannais, les calcaires de l’Échaillon et même le marbre extrait de Vizille. Selon les richesses du sous-sol les toitures varient, tuiles dans les Terres Froides, lauzes de pierres ou ardoises en Briançonnais et en Oisans, enfin essandoles.</p>
+          <p><hi rend="i">La construction.</hi> – Les seuls indices sont fournis, dans les procès-verbaux de visites, par les articles du contrat passé entre les maîtres des œuvres et les artisans. Ces prix-faits fixent, outre les conditions de payement, les modalités de construction et de prise en charge des réparations. Les travaux étaient réalisés soit selon un prix-fait global, soit selon des forfaits plus précis <hi rend="i">ad tascham.</hi> Le châtelain prenait à charge une partie des travaux ; il assurait le charroi et la main-d’œuvre grâce à la corvée. Ce rôle revenait à la communauté à partir du moment où le vingtain fut levé sur les habitants pour l’entretien des fortifications.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Organisation militaire du Dauphiné</head>
+          <p>Les dauphins avaient établi dans leur état un système de divisions administratives appelées châtellenies ou mandements, qui avaient pour sièges des places fortes ou châteaux. Les officiers chargés d’y résider, les châtelains, étaient à la fois des hommes d’armes, des juges et des trésoriers. Ils étaient responsables devant la Chambre des Comptes de la recette des droits seigneuriaux. Leurs comptes, outre les renseignements économiques qu’ils fournissent, mentionnent, au chapitre des dépenses, les réparations qui ont été effectuées tant aux châteaux qu’aux autres édifices delphinaux. Les châtelains étaient aussi chargés d’entretenir la garnison, de renouveler les munitions et l’artillerie. Ils étaient alors contrôlés par le garde de l’artillerie ou par des commissaires envoyés par le gouverneur.</p>
+          <p>L’institution du maître des œuvres, au <num>xiv<hi rend="sup">e</hi></num> siècle, témoigne de l’intérêt porté aux châteaux. Architectes toujours, maçons ou charpentiers quelquefois, ils visitaient régulièrement les édifices et les domaines delphinaux (châteaux, moulins, ponts, étangs, forêts et routes). Ils dressaient des prix-faits détaillés en présence du châtelain et d’artisans spécialisés ; le prix-fait était ensuite mis aux enchères. Leurs visites furent inscrites dans des registres de la Chambre des Comptes, les <hi rend="i">Libri visitationum,</hi> depuis 1366 jusqu’à la fin du xvi<hi rend="sup">e</hi> siècle. Avec la guerre de Cent ans les visites s’espacèrent, car les fonds manquaient et le gouverneur n’accordait plus qu’un budget d’entretien. A la fin du <num>xv<hi rend="sup">e</hi></num> siècle, les visites se multiplièrent, mais cette activité n’est qu’illusoire, les maîtres des œuvres en étant réduits à faire des projets qu’ils savaient irréalisables.</p>
+          <pb n="160" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_23/ENCPOS_1971_23_04.TIF/full/full/0/default.jpg"/>
+          <p>Officier important dans la hiérarchie administrative, le maître des œuvres touchait un salaire fixe, ce qui ne l’empêchait pas de cumuler avec d’autres charges. Il était accompagné dans ses visites d’un lieutenant. La charge pouvait être dédoublée en offices de maître de charpenterie et de maître de maçonnerie.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Évolution des châteaux</head>
+          <p>Les données sur les châteaux primitifs sont très incomplètes. Au <num>xi<hi rend="sup">e</hi></num> siècle, on cite les <hi rend="i">castra</hi> de Quirieu, Vizille, Voiron. Faute de traces, les châteaux de l’époque romane sont aussi peu connus. Au <num>xiii<hi rend="sup">e</hi></num> siècle, la construction fait des progrès ; on a conservé quelques ruines de cette époque. Au plan initial, donjon accolé d’une <hi rend="i">aula,</hi> s’ajoutent de nouveaux bâtiments : la chapelle, partout attestée, des chambres chauffées et, dans des bâtisses isolées, la cuisine, le four, les étables et le grenier. Les rares documents sur les premières résidences des dauphins montrent qu’ils aimaient à séjourner dans la vallée. Beauvoir-en-Royans reçut souvent les dauphins de la maison de Bourgogne ; ceux-ci aimaient aussi venir à Vizille, château facile à défendre et situé au cœur de leur domaine propre. Parallèlement, les barons de la Tour entretenaient des châteaux pour asseoir leur domination dans le Bas-Dauphiné. En Viennois, partie non encore delphinale, Pierre de Savoie, surnommé « le Petit Charlemagne », rénova complètement l’art militaire, par l’utilisation d’un plan régulier et la construction circulaire du donjon. Il semble que cette influence ait été sensible surtout dans le Pays de Vaud, où les comtes de Savoie avaient une partie de leurs possessions, et en Angleterre, pays avec lequel ils entretenaient des rapports étroits. En Dauphiné, ces améliorations ne furent guère notables. Après la guerre de Cent ans, les rois-dauphins prirent un plus grand intérêt à leurs châteaux et palais menacés ; ils instituèrent, en 1470, un denier spécial consacré à leur entretien. De même, les guerres d’Italie redonnèrent un élan à la construction militaire, qui devait s’adapter aux nouveaux moyens offensifs : on perça des canonnières à Château-Dauphin, on édifia des barbacanes à Quirieu. Les guerres de Religion eurent, au contraire, des conséquences désastreuses pour ces forteresses médiévales. Dans la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle, beaucoup de châteaux furent aliénés. Cette situation empêchait tout contrôle par le châtelain delphinal et les châteaux se dégradaient. Les lettres patentes de Richelieu qui, en 1622, ordonnèrent le « razement » des places du Dauphiné, ne touchèrent que les fortifications des Baronnies, du Diois et du Gapençais. Le rapport rendu par Jean de Beins, ingénieur-géographe, en témoigne. Des forteresses plus adaptées aux nouvelles conditions des temps suffisaient alors à assurer la défense de la <hi rend="i">patria Delphinatus.</hi></p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives sur la construction militaire
+         <lb/>en Dauphiné</head>
+        <p/>
+      </div>
+      <div>
+        <pb n="161" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_23/ENCPOS_1971_23_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>Monographies de châteaux delphinaux</head>
+        <p>Un certain nombre de monographies étaient nécessaires pour étayer cette étude. Le choix auquel on s’est résolu embrasse, à côté de châteaux qui ont fait partie dès l’origine du domaine delphinal, des fortifications élevées par des feudataires ou par les comtes de Savoie, qui furent réunies plus tard au domaine delphinal.</p>
+        <p><hi rend="i">Beauvoir-en-Royans</hi> fut la résidence préférée du dauphin Humbert II.</p>
+        <p><hi rend="i">Bellecombe,</hi> acquis à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, était le poste de garde de la frontière savoyarde sur l’Isère.</p>
+        <p><hi rend="i">Château-Dauphin,</hi> construit au delà des monts par Humbert II, resta vaillamment delphinal jusqu’en 1713.</p>
+        <p><hi rend="i">La Côte-Saint-André,</hi> édifié par Philippe de Savoie, fut le séjour d’élection des gouverneurs du Dauphiné.</p>
+        <p><hi rend="i">Fallavier,</hi> forteresse savoyarde à l’origine, passa entre les mains de la famille de Genève avant de revenir au domaine. Elle dresse encore un solide donjon à l’abord de la plaine de Lyon.</p>
+        <p><hi rend="i">Quirieu,</hi> place défendant la frontière du Bugey, constituait, avec son bourg, un ensemble fortifié remarquable au-dessus du Rhône.</p>
+        <p><hi rend="i">Saint-Georges-d’Espéranche</hi> fut le premier château construit par le Maître de Saint-Georges, qui s’illustra comme architecte du roi d’Angleterre.</p>
+        <p><hi rend="i">Vizille</hi> fut la première résidence des dauphins, avant d’être le fief du connétable de Lesdiguières.</p>
+        <p><hi rend="i">Voiron,</hi> construit aussi pour les comtes de Savoie, défendait la route de Grenoble du côté de Lyon.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Les pièces justificatives (prix-faits des maîtres des œuvres, travaux exécutés par les châtelains, inventaires de biens) sont publiées à la suite de chaque monographie.</p>
+        <p>Elles sont accompagnées d’un lexique des termes d’architecture et de construction.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>La constante pauvreté des rois-dauphins n’a pas permis au Dauphiné d jouer dans l’art militaire du Moyen âge le rôle tenu par la Savoie. Les requête incessantes des États du Dauphiné, demandant que l’on veillât à l’entretien <pb n="162" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_23/ENCPOS_1971_23_06.TIF/full/full/0/default.jpg"/>des châteaux delphinaux, restèrent pratiquement sans effet. Disposant de constructions d’origine et de conception diverses, le dauphin ne sut pas imprimer une marque véritablement originale à ses châteaux, symboles de sa puissance.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de planches et de photographies</head>
+        <p>Un recueil de dessins, de plans, de gravures et de photographies illustre les monographies.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

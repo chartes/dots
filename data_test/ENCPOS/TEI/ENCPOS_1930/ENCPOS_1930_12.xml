@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Missions diplomatique de Pomponne de Bellièvre de 1573 à 1588. Contribution à l’étude de la politique d’Henri III</title>
+        <author ref="https://www.idref.fr/186170424">Louis Monnier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_12.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 119-128</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="119" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Missions diplomatiques
+       <lb/>de
+       <lb/>Pompone de Bellièvre
+       <lb/>de 1573 à 1588
+       <lb/>Contribution a l’Etude de la politique
+       <lb/>d’Henri III</head>
+      <byline>
+        par
+        <forename>Louis</forename>
+        <surname>Monnier</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>les débuts de Bellièvre</head>
+        <p>La famille de Bellièvre est une famille de magistrats et d’humanistes. Claude de Bellièvre, premier Président au Parlement de Dauphiné, collectionneur et érudit, tint à Lyon un salon littéraire. Son fils, Pompone de Bellièvre, né à Lyon en 1529, obtient rapidement des charges dans la magistrature. Il est chargé de missions en Suisse dès 1560 et 1562. De mai 1564 à décembre 1565, il est ambassadeur ordi<pb n="120" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_02.TIF/full/full/0/default.jpg"/>naire auprès des Ligues Grises. De mars 1566 à octobre 1570, il est ambassadeur ordinaire auprès des Ligues Suisses. Son rôle qu’il remplit avec succès, consiste à maintenir le traité de Paix Perpétuelle entre les cantons suisses et la Couronne de France, malgré les intrigues espagnoles et les embarras financiers des rois de France, qui ne peuvent remplir leurs engagements. En décembre 1572, ambassadeur extraordinaire, il est chargé de présenter aux Suisses la version royale du massacre de la Saint-Barthélémy. Ses services lui valent d’être nommé assez rapidement au Conseil privé du Roi.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>L’ambassade en Pologne
+         <lb/>(novembre 1573-aout 1574)</head>
+        <p>Catherine de Médicis choisit Bellièvre pour accompagner son fils, le duc d’Anjou, élu roi de Pologne, en qualité d’ambassadeur de Charles IX, accrédité auprès de son frère. Après un voyage de quatre mois, le Roi et sa suite arrivent à Cracovie (17 février 1574). Discours de Bellièvre au Sénat de Pologne. Le rôle de Bellièvre est de représenter la volonté de Catherine de Médicis auprès de son fils. Les Français éloignés de leur pays ne songent qu’au retour ; la mort de Charles IX (30 mai 1574) oblige Henri III à s’enfuir de la Pologne, malgré l’opposition des sujets polonais. Au retour, Bellièvre est envoyé de nouveau en Suisse pour consolider l’alliance avec les Cantons (juillet-août 1574).</p>
+      </div>
+      <div>
+        <pb n="121" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre III
+         <lb/>L’invasion du duc Casimir
+         <lb/>(1575-1576)</head>
+        <p>Condé, soutenu par Casimir veut, pour relever le parti protestant français, réunir une armée qui donnera la main aux forces du Duc d’Alençon, échappé de Paris, le 15 septembre 1575. Malgré la trêve de Champigny (21 novembre), Catherine ne réussit pas à arrêter Casimir et Condé ; elle envoie Bellièvre accompagné de Missery (19 décembre). Sous les apparences d’accepter une trêve, les alliés franchissent la frontière (7 janvier 1576). Plan de Bellièvre pour empêcher leur jonction avec les troupes de Monsieur. Ce plan n’est pas accepté ; les forces protestantes arrivent près de Paris. La paix de Monsieur (6 mai 1576), véritable capitulation, oblige le roi à payer de grosses sommes aux reîtres de Casimir. Bellièvre est chargé du règlement. Envoyé auprès des reîtres pour les calmer (10 juin), il ne peut y arriver à cause du retard des paiements. Accord de Montréal (5 juillet 1576). Le roi ne pouvant répondre à ses obligations, Bellièvre, au cours d’une nouvelle mission auprès des reîtres (27 juillet), est emmené par eux prisonnier à Heidelberg (11 août). Il est relâché le 2 septembre.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Mission de Bellièvre dans les Pays-Bas
+         <lb/>(juillet-aout 1578)</head>
+        <p>Projets de Monsieur sur les Pays-Bas, dans l’intention d’y assurer sa domination. Opposition de la Cour par crainte de conflits avec les Espagnols. Monsieur pénètre à Mons (12 juillet 1578). Henri III y <pb n="122" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_04.TIF/full/full/0/default.jpg"/>envoie Bellièvre (26 juillet). Celui-ci essaie, en vain, de dissuader le duc d’Anjou de son entreprise. Il essaie de négocier une trêve avec Don Juan d’Autriche ; Casimir et ses reîtres, alliés du Duc d’Anjou, arrivent brusquement : ils exigent le paiement immédiat des dettes du roi de France et menacent Bellièvre qui est obligé de fuir (25 août).</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Le traité de Fleix, la pacification du MIDI
+         <lb/>et les entreprises de Monsieur</head>
+        <p>La guerre, dite des Amoureux, qui éclate dans le Midi entre les catholiques commandés par Biron et les protestants sous le commandement du Roi de Navarre, ruine une partie du pays (mars-novembre 1580). Les conditions du traité sont débattues à Fleix entre Monsieur, aidé de Villeroy et de Bellièvre, d’une part, et le Roi de Navarre, avec les députés de Guyenne, d’autre part. Le traité de Fleix (22 novembre 1580) reproduit à peu de choses près, celui de Nérac (1579). On signe une trêve en attendant la confirmation de la paix par le Roi. Satisfaction d’Henri III, de Catherine, et de Bellièvre. Difficultés avec les protestants qui ne suivent pas la direction d’Henri de Navarre, veulent continuer la guerre, et avec Monsieur, qui trouble les projets politiques de Catherine de Médicis en voulant repartir dans les Pays-Bas. La trêve n’est pas observée dans le Midi : réclamations de Navarre touchant les villes de sûreté ; difficiles paiements des troupes. Bellièvre fait son possible pour que le duc d’Anjou demeure dans le Midi. Publication de la Paix dans le Midi ; mais l’agitation continue (janvier 1580) : Coudé pousse les protestants de Languedoc et de <pb n="123" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_05.TIF/full/full/0/default.jpg"/>Dauphiné à refuser la paix. Désorganisation de la justice. Pillages des soldats. Négociations de Cadillac avec les députés protestants (9 mars). Intrigues de Biron avec Navarre ; intrigues de Navarre avec l’Espagne ; intrigues de Marguerite de Navarre pour éloigner son mari du Midi. Le roi de Navarre, à la lin du mois de mars, avait rendu un certain nombre de places, en vertu du traité de Fleix. Ce succès pousse le duc d’Anjou à partir ; protestants et catholiques s’efforcent en vain de le retenir : son départ (26 avril). Bellièvre est envoyé à l’Assemblée de Montauban (20 mai 1581). Son intervention ne peut obtenir la remise de places de sûreté. Bellièvre reste dans le Midi pour l’établissement de la paix jusqu’à la mi-juillet 1581.</p>
+        <p>Il est brusquement rappelé par le Roi pour arrêter Monsieur dans les Pays-Bas. Ses deux missions (12 août et 17 septembre) échouent. Il repart dans le Midi (début d’octobre). La Guyenne étant pacifiée, il se rend en Languedoc. Il assiste aux Etats de Béziers (15 décembre) et contribue à amener la paix dans la région. Il négocie avec Henri de Navarre la Composition de Périgueux (3 février 1582) et revient à la Cour dans le courant du mois. L’année suivante, il est envoyé pour rétablir la situation précaire où s’était mis le Duc d’Anjou dans les Pays-Bas (Folie d’Anvers, 17 janvier 1583). Bellièvre négocie les accords de Termonde (22 février-18 mars).</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>L’affaire Marguerite de Navarre
+         <lb/>(aout 1583-avril 1584)</head>
+        <p>Marguerite de Navarre, à la Cour depuis le mois d’avril 1582, n’obtient pas, comme on l’attendait d’elle, le retour de son mari près de Catherine de <pb n="124" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_06.TIF/full/full/0/default.jpg"/>Médicis. Son amitié pour Mesdames de Duras et de Béthune, de réputation suspecte, oblige Catherine de Médicis et Henri III à chasser ces dames de son entourage et à renvoyer Marguerite auprès de son mari. Lors de son retour dans le Midi, elle se refuse à se séparer de ses amies, qui sont arrêtées à Bourg-la-Reine (8 août 1583). Scandale de cette arrestation. Navarre refuse de recevoir sa femme et demande des réparations. La Cour essaie d’atténuer le scandale : les conseils de Bellièvre sont suivis par le Roi. Henri III promet à Duplessis, envoyé par Navarre, de donner une réponse au sujet de sa sœur ; il envoie Bellièvre au roi de Navarre (7 novembre), Navarre profitant peut-être de la situation, s’empare de Mont-de-Marsan (23 novembre). Ce coup de main augmente les méfiances de la Cour à l’égard de Navarre : le gouverneur de Guyenne, Matignon, répond par l’occupation de Bazas, et d’autres villes du Midi, avec l’assentiment de Henri III. Navarre refuse d’entrer en pourparlers avec Bellièvre, le 23 novembre et le 7 décembre, jusqu’à ce que Bazas soit délivré. Navarre accepte enfin de recevoir Bellièvre (13-16 janvier 1584) ; Bellièvre lui démontre qu’il exagère ses griefs, mais Navarre finit par obtenir gain de cause. Le roi et la reine de Navarre se réconcilient à Pont-Sainte-Marie près de Nérac (13 avril 1584).</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Rébellion de Montmorency.
+         <lb/>Assemblée de Montauban</head>
+        <p>Les difficultés dans le Midi : exercice de la justice et remise des villes de sûreté par les protestants. La solution de ces questions est empêchée par la rivalité entre le duc de Montmorency, gouverneur de <pb n="125" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_07.TIF/full/full/0/default.jpg"/>Languedoc et le Maréchal de Joyeuse, son lieutenant-général. Montmorency soupçonne le Roi (avril 1584) de favoriser les desseins de Joyeuse qui enviait son gouvernement. Henri III le nie, mais redoute une nouvelle coalition entre les protestants et catholiques, soutenus par le roi d’Espagne. Navarre propose d’intervenir. Politique de Navarre dans le Midi. Henri III ne lui donnant pas les pouvoirs qu’il demande, il refuse d’intervenir directement (juin-juillet). Bellièvre est envoyé près de Montmorency (5 août) et au cours de ses entrevues avec Joyeuse et Montmorency, il prépare leur réconciliation. Le 28 août il assiste à l’Assemblée de Montauban, réunie pour liquider la question des villes de sûreté et, comme toujours, on n’arrive à aucune solution. Bellièvre rappelle à l’ordre le clergé de Montauban. A l’arrivée de Pontcarré (septembre 1584), Bellièvre lui transmet les affaires du Midi et rentre à Paris.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>L’ambassade a Londres
+         <lb/>(1<hi rend="sup">er</hi> décembre 1586-14 janvier 1587)</head>
+        <p>Situation de Marie Stuart prisonnière d’Elisabeth depuis 1569.</p>
+        <div>
+          <head rend="uc">A) <hi rend="i">départ de Bellièvre pour Londres</hi>.</head>
+          <p>Instructions données à Bellièvre par Henri III. Mémoire de l’archevêque de Glasgow. Les bruits lancés par les Ligueurs à Paris. En Ecosse, Jacques VI est hostile à sa mère. Le peuple de Londres encourage Elisabeth dans son désir de se débarrasser de sa rivale. – Le départ de Bellièvre (28 novembre 1586).</p>
+        </div>
+        <div>
+          <pb n="126" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_08.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">B) <hi rend="i">les négociations.</hi></head>
+          <p>1) Première entrevue (7 décembre). Harangue de Bellièvre : arguments employés pour distraire Elisabeth de ses desseins. Réponse de la Reine : elle ne se prononce pas. Le Parlement est nettement favorable à une exécution immédiate de Marie Stuart.</p>
+          <p>2) Deuxième entrevue (15 décembre). Elisabeth est catégorique : les tentatives de conspiration contre elle-même que Marie Stuart a fomentées sont trop éclatantes pour la dissuader. La mort de la reine d’Ecosse est prononcée en plein Parlement (16 décembre). Réjouissances du peuple à cette nouvelle.</p>
+          <p>Instruction de Genlis envoyé vers Henri III par Bellièvre (19 décembre). L’ambassadeur lui demande conseil avant qu’il ne soit trop tard. Le 2 janvier 1587 arrive à Londres la réponse d’Henri III : il ordonne à Bellièvre de faire tout son possible pour empêcher l’exécution (arguments sentimentaux ; aides pécuniaires).</p>
+          <p>3) Troisième entrevue (6 janvier 1587). Harangue de Bellièvre. Il essaie d’alléguer les arguments avancés par Henri III. La Reine lui répond qu’elle craint pour sa propre vie si elle ne met pas fin à celle de Marie Stuart. Le Parlement est d’ailleurs responsable en partie de cette résolution.</p>
+          <p>C) <hi rend="i">Départ de Londres</hi> (14 <hi rend="i">janvier) et ses conséquences.</hi></p>
+          <p>Elisabeth fait courir le bruit d’un complot imaginé par Bellièvre et Chateauneuf pour attenter à sa propre vie. Ce qu’il faut en penser. – Conclusions.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="127" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_09.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre IX
+         <lb/>Ambassade auprès des ducs de Guise et de lorraine
+         <lb/>(mars-avril 1588)</head>
+        <div>
+          <head rend="uc">A) <hi rend="i">ambassade près des ducs de Guise et de lor</hi><hi rend="i">raine</hi> (<hi rend="i">mars</hi>).</head>
+          <p>Le Roi craint les préparatifs de la guerre des princes protestants allemands et charge Bellièvre et La Guiche d’en apprendre par le Duc de Lorraine les desseins, et de lui offrir en son nom, dans le cas d’une invasion, des secours en hommes et en argent. Il est intrigué des manœuvres de rebellion du duc d’Aumale en Picardie où ses régiments et les troupes royales semblent se mutiner.</p>
+          <p>1) Ambassade près du duc de Guise (Vitry, 7 mars 1588).</p>
+          <p>Les affaires de Picardie sont sans issue. Réponse évasive du Duc au sujet de Sedan et de Jamet.</p>
+          <p>2) Ambassade près du duc de Lorraine (Châlons, 21 mars 1588).</p>
+          <p>Le duc Casimir a fait lever 3.000 reîtres, ainsi que le duc de Würtemberg. Bellièvre a écrit au colonel Hans Frederick qui est prêt à suivre les ordres du Roi. Celui-ci maintient son désir de ne pas céder Sedan et Jamet sans résistance.</p>
+        </div>
+        <div>
+          <head rend="uc">B) <hi rend="i">ambassade près du duc de Guise</hi> (<hi rend="i">Soissons</hi>,
+           <lb/><hi rend="i">avril</hi> 1588).</head>
+          <p>Les motifs sont les suivants : la guerre à entreprendre contre les hérétiques en Guyenne ; les affaires de Picardie et le désir qu’éprouve le Roi de mettre le duc d’Aumale en retraite ; la remise de la ville de Valence entre les mains du duc d’Epernon.</p>
+          <p>Le duc de Guise se plaint des rumeurs qui courent <pb n="128" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_12/ENCPOS_1930_12_10.TIF/full/full/0/default.jpg"/>contre lui dans Paris. Il ne peut rien décider sur les trois points de la négociation, attendu que ni M. de Rambures, ni le duc d’Aumale ne sont présents. Bellièvre est dans l’incertitude.</p>
+          <p>La question des deux ambassades. Bellièvre ne peut éloigner le duc de Guise de Paris où il arrive le 3 mai ; le duc y entre à son tour le 8. Réception du duc de Guise par Henri III : Bellièvre y assiste. – Causes de sa destitution.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Portrait physique et moral de Bellièvre. Ses rapports avec ses collègues, avec la Reine-Mère, avec Henri III. – Rôle de Bellièvre dans la politique d’Henri III.</p>
+      </div>
+      <div>
+        <head rend="uc">Pieces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Index</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

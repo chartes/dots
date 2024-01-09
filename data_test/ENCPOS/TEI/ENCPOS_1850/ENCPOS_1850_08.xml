@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Recherches sur la minorité et ses effets dans la France coutumière au Moyen Âge</title>
+        <author ref="https://www.idref.fr/030069580">Henry d’Arbois de Jubainville</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 21</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Recherches
+        <lb/>sur
+        <lb/>la minorité et ses effets
+        <lb/>dans la France coutumière au Moyen-Âge</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Marie-Henry</forename>
+        <surname>d’Arbois de Jubainville</surname>
+        <roleName>Avocat à la Cour d’appel de Paris</roleName>
+      </byline>
+      <div>
+        <head>Divisions</head>
+        <p><hi rend="i">Droit commun</hi> (barbare et coutumier) ; puissance paternelle, tutelle, conventions du mineur, le mineur devant les tribunaux.</p>
+        <p><hi rend="i">Droit féodal</hi> ; garde seigneuriale, bail des ascendants et des collatéraux, fin du bail féodal.</p>
+      </div>
+      <div>
+        <head>Positions</head>
+        <list type="ol" rend="1">
+          <item>L’exception de minorité en fait d’actions pétitoires ne fut pas abolie par l’ordonnance de 1330. (<hi rend="i">Contra</hi> <hi rend="sc">Laurière.</hi>)</item>
+          <item>La garde seigneuriale était une institution française dès le règne de Charles-le-Chauve.</item>
+          <item>On ne peut appliquer d’une manière absolue au seigneur gardien l’adage : <hi rend="i">Qui bail ou garde prend quitte le rend. (Contra</hi> <hi rend="sc">Laboulaye.</hi> <hi rend="i">Condition des Femmes</hi>, page 255.)</item>
+          <item>Le droit de baillistre aux meubles et son obligation de payer les dettes, le même droit et la même obligation du mari s’expliquent par les mêmes principes.</item>
+          <item>La France était, quant à l’époque de la majorité féodale, divisée en deux régions qui portèrent leur usage, l’une à Jérusalem, l’autre en Angleterre.</item>
+          <item>Une ordonnance de saint Louis, avec le concours de plusieurs barons, déclara les <hi rend="i">filles</hi> capables de tenir les fiefs.— La préférence accordée aux mâles dans les successions féodales avait pour cause l’intérêt de la famille, était motivé par des principes empruntés au droit commun.</item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>

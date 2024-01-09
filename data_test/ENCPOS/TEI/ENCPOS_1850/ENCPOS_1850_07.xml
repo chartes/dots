@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>De la nature du pouvoir royal en France sous les mérovingiens</title>
+        <author ref="https://www.idref.fr/029779626">Louis-Charles-Marie Tranchant</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 15-20</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">De la nature
+       <lb/>du
+       <lb/>pouvoir royal en France
+       <lb/>sous les mérovingiens.</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Louis-Charles-Marie</forename>
+        <surname>Tranchant</surname>
+        <roleName rend="uc">Licencié en droit, Auditeur au Conseil d’État, Ancien élève de l’École nationale d’Administration</roleName>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p><hi rend="i">Du pouvoir royal mérovingien considéré dans son origine juridique et son. essence.</hi></p>
+        <p>Quatre origines juridiques, et par conséquent quatre caractères différents ont été attribués en France au pouvoir royal pendant la longue durée de son existence :</p>
+        <p>On l’a dit issu de Dieu ;</p>
+        <p>On l’a dit issu du sacerdoce ;</p>
+        <p>On l’a dit issu du pouvoir impérial ;</p>
+        <p>On l’a dit issu de la nation.</p>
+        <p>1° La doctrine de l’origine divine de la royauté est postérieure en France à la première race.</p>
+        <p>2° La doctrine de l’origine théocratique de la royauté à l’époque où l’État gallo-frank s’établit, n’était pas écrite dans la vraie tradition de l’Église chrétienne ; mais elle avait été préparée par la confusion des pouvoirs spirituel et temporel qui s’était faite dans l’empire après la conversion de Constantin et se continue dans la Gaule franke sous les rois mérovingiens.</p>
+        <p>Elle commence à apparaître sous la première race ; mais sans se manifester d’une manière bien franche.</p>
+        <p>Le renversement de la dynastie mérovingienne n’est pas l’œuvre réelle de cette doctrine, bien qu’il doive plus tard lui fournir des armes et qu’il soit le prélude d’un acte dans lequel le principe <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_02.TIF/full/full/0/default.jpg"/> théocratique se démasque (sacre de Pepin le Bref).</p>
+        <p>3° La doctrine de l’origine impériale de la royauté apparaît en France au commencement de la première race comme conséquence du respect que les populations gallo-romaines conservent pour le principe impérial, surtout comme conséquence de la position que les Barbares et leurs chefs se sont faite pendant longtemps vis-à-vis des empereurs.</p>
+        <p>Sa résurrection est préparée, vers la fin de la première race, par l’immixtion du pape dans les affaires de France, du pape qui est non-seulement le chef spirituel de la chrétienté, mais encore le premier magistrat de Rome.</p>
+        <p>Les faits par lesquels la doctrine de l’origine impériale de la royauté se manifeste sous la première race sont rares et sans importance réelle.</p>
+        <p>4° La doctrine de l’origine nationale de la royauté ne s’est pas réalisée sous les Mérovingiens d’une manière aussi complète et aussi régulière que l’ont soutenu les écrivains de l’école démocratique (Hottmann, Bodin, etc.) ou les écrivains de l’école aristocratique (Boulainvilliers, Montlosier, etc.) ; mais elle s’est réalisée d’une manière incontestable, par l’action continuelle, puissante, de forme multiple exercée sur la royauté par l’aristocratie représentant plus ou moins parfaitement la nation.</p>
+        <p>Les traditions romaines, dans la formation du pouvoir gallo-frank apportaient comme contingent le culte exclusif de l’autorité et le principe de l’unité, les traditions germaniques, le principe de l’individualisme et de l’indépendance. Les traditions germaniques triomphent ; l’aristocratie gallo-romaine, laïque et ecclésiastique, s’unit peu après la conquête à l’action de l’aristocratie franke.</p>
+        <p>L’action de l’aristocratie mérovingienne s’exerce par une intervention active dans la transmission de la royauté et surtout par une immixtion perpétuelle, et de plus en plus énergique, des grands dans l’exercice du pouvoir.</p>
+        <p>L’action de l’aristocratie mérovingienne sous Dagobert en Neustrie, un peu plus tôt en Ostrasie où elle est plus forte, commence à se concentrer assez régulièrement entre les mains du premier des grands officiers du palais, du maire, nommé d’abord par le roi, ensuite élu par les grands. Le maire se substitue rapidement au roi, dans l’exercice du pouvoir qui lui est resté, et il finit par le remplacer complètement.</p>
+      </div>
+      <div>
+        <pb n="17" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">II.</head>
+        <div>
+          <head rend="uc">
+            <hi rend="i">Du pouvoir royal mérovingien considéré dans ses attributions.</hi>
+          </head>
+          <div>
+            <head rend="uc">1° attributions du pouvoir législatif.</head>
+            <p>Le roi, sous la première race, exerce le pouvoir législatif dans le grand plaid national, dans le conseil du palais ou seul.</p>
+            <p>A mesure que le roi s’efface, l’aristocratie exerce plus directement le pouvoir législatif comme tous les autres. Son chef, le maire du palais, après en avoir usé au nom du roi, finit, sous les derniers règnes mérovingiens, par en user en son propre nom. Il en use sous la même forme que le roi.</p>
+            <p>Les décisions qu’on peut regarder sous la première race comme ayant le caractère de lois, concernent la paix ou la guerre, les taxes ou impôts, le droit civil ou pénal, et quelquefois les matières religieuses.</p>
+          </div>
+          <div>
+            <head rend="uc">2° attributions du pouvoir exécutif.</head>
+            <p/>
+          </div>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">Attributions politiques.</hi>
+          </head>
+          <p><hi rend="i">a. Mise en action des pouvoirs publics n’ayant point une origine royale.</hi> – Le roi convoque les plaids et les dirige. Il les préside pendant toute la durée de la première race, de fait tant qu’il est vraiment roi, nominalement quand il n’est plus qu’un vain simulacre.</p>
+          <p>Évêques du dehors, les rois mérovingiens convoquent dès le principe les conciles de la Gaule franke, comme les Césars avaient convoqué ceux de l’empire. Dans la moitié du <num>vii<hi rend="sup">e</hi></num> siècle, on voit l’un d’eux leur dénier le droit de se rassembler sans son autorisation.</p>
+          <p><hi rend="i">b. Promulgation des lois.</hi> – Il y a dans certains cas, sous les Mérovingiens, une sorte de promulgation des lois par le roi. Les décisions des plaids sont portées dans les provinces par les magistrats royaux et les hommes libres qui y ont assisté. Mais les lois qui n’ont pas été rendues dans les plaids, ou bien auxquelles on veut donner un caractère de permanence, sont rédigées au nom du roi, scellées de son sceau et revêtues de la signature de quelques-uns de ses grands officiers, notamment de celle du grand référendaire. Quelquefois des exemplaires sont alors envoyés aux magistrats royaux des provinces.</p>
+          <p>Sous les derniers règnes mérovingiens, on voit des actes ayant caractère législatif directement promulgués par les maires du palais. c. <pb n="18" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_04.TIF/full/full/0/default.jpg"/><hi rend="i">Disposition de la force publique.</hi> – Le roi convoque l’armée. A partir de la fin du règne de Clotaire I<hi rend="sup">er</hi>, le service militaire tend à devenir une charge de propriété. Les officiers royaux des provinces, patrices, ducs, comtes, vicaires, centeniers, veillent à ce que le service militaire soit accompli par ceux qui les doivent ; les patrices, les ducs, les comtes, conduisent, quand il y a lieu, à l’armée les hommes du pays qu’ils administrent. Le roi commande l’armée, par lui-même, par ses fils, ou par quelque grand officier, soit un officier palatin, soit un patrice, un duc, un comte.</p>
+          <p>L’un des officiers palatins, le maire du palais, finit par commander l’armée de sa propre autorité et sans délégation du roi. <hi rend="i">d. Relations extérieures.</hi> – Le roi mérovingien nomme, tant qu’il exerce le pouvoir, les députés chargés de missions auprès des autres rois de la Gaule ou de peuples étrangers. – Ces missions n’ont jamais un caractère permanent sous la première race.</p>
+          <p>Le roi mérovingien reçoit les ambassadeurs étrangers, et leur répond. Ils se présentent devant lui, alors même qu’il n’est plus que le prête-nom du maire.</p>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">Attributions administratives.</hi>
+          </head>
+          <p>L’administration mérovingienne se forme des débris de l’administration romaine ; elle ne présente point un caractère symétrique ni complet.</p>
+          <p>Le roi est, en principe, chef de l’administration ; il a dans les provinces des agents, dont la hiérarchie et la distribution sont fort irrégulières ; il les nomme et les révoque ; il les laisse néanmoins souvent nommer par les populations, même au commencement de la première race. Quelques pays sont administrés au nom du roi par des patrices et des ducs ; les magistrats royaux ordinaires sont les comtes, et à un degré inférieur les vicaires, le centenier, ou tunginus, et le dizainier. Ces derniers paraissent avoir été le plus souvent nommés par les populations. On peut même dire que le dizainier n était point un magistrat royal.</p>
+          <p>L’administration financière s’exerce dans les provinces par les mêmes instruments que l’administration civile ; elle a, en outre, des agents spéciaux dont les fonctions sont souvent temporaires. Auprès du roi elle a pour instruments le chambellan, le camérier, le trésorier, et quelquefois le comte du palais. Elle s’applique tant aux impôts, débris des anciens impôts romains et qui pèsent exclusivement sur les Gallo-Romains, qu’à la gestion des domaines <pb n="19" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_05.TIF/full/full/0/default.jpg"/> royaux aux droits de finances d’origine germanique, etc.</p>
+          <p>Le roi a une sorte d’administration religieuse, quelquefois légitime, le plus souvent résultant d’usurpations sur le pouvoir spirituel ; il l’exerce surtout par l’archichapelain, au moins à partir de Clotaire II.</p>
+          <p>L’administration mérovingienne tend, dès son principe, à une ruine complète : les immunités, l’indépendance toujours croissante des magistrats royaux des provinces, les aliénations partielles du droit d’impôt réduisent de plus en plus son action.</p>
+          <p>Le peu de pouvoir administratif qui reste au roi, les grands qui l’entourent finissent par l’exercer pour lui. Dès le règne de Dagobert, il tend à passer, et bientôt après il passe, aux mains du maire du palais.</p>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">Attributions judiciaires.</hi>
+          </head>
+          <p>Le roi mérovingien préside, en général, à la justice civile et criminelle, soit par lui-même, soit par ses agents. Mais on ne peut pas dire, à proprement parler, qu’il la rend ou qu’elle est rendue en son nom. Même dans le principe, elle émane, moins de lui, que de l’élément individuel.</p>
+          <p>Le roi mérovingien préside à la justice en personne dans le grand plaid, dans le plaid du palais composé d’officiers royaux, notamment le comte du palais, et de grands laïques ou ecclésiastiques. Dans les provinces, les magistrats royaux, patrices, ducs, comtes, vicaires, centeniers, président des plaids d’hommes libres dans leurs différents districts. Dans tous ces tribunaux, les pairs sont les vrais juges.</p>
+          <p>Les immunités territoriales, les exemptions personnelles enlèvent une foule de justiciables aux tribunaux royaux, au moins pour ce qui regarde les questions de droit civil. Elles affaiblissent leurs attributions, au point de vue du droit criminel. En outre, les magistrats provinciaux, à mesure qu’ils deviennent plus indépendants, tendent à faire, des tribunaux qu’ils président au nom du roi, leurs tribunaux propres ; en même temps, à mesure que les grands qui entourent le roi l’annihilent davantage, ils effacent de plus en plus l’importance du rôle judiciaire qu’il exerce par lui-même.</p>
+          <p>La juridiction volontaire s’exerce, sous les Mérovingiens, par les tribunaux organes de la juridiction contentieuse ; elle s’exerce par les curies romaines, dans les villes qui les auriont conservées.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="20" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">III.
+         <lb/><hi rend="i">De la transmission du pouvoir royal en France sous la première</hi>
+         <lb/><hi rend="i">race ; de la minorité des rois et de la régence à la même époque.</hi></head>
+        <p>1° La transmission du pouvoir royal est régie, sous la première race, à la fois par le principe électif et par le principe héréditaire. L’action du principe électif se manifeste surtout à partir du règne de Clotaire II. Ce principe, pendant toute la durée de la première race, a pour instrument l’aristocratie ; son action confirme souvent, quelquefois aussi surtout à partir de Clotaire II contrarie, les règles de l’hérédité.</p>
+        <p>La transmission héréditaire du pouvoir royal se fait en général, au commencement de la première race, au profit de tous les enfants mâles sans distinction d’aînés ou puînés. <hi rend="i">A</hi> partir du septième siècle, les partages ne sont plus la loi commune, ceux qu’on rencontre sont provoqués surtout par des nécessités politiques. A partir de la même époque, le privilége de primogéniture apparaît.</p>
+        <p>Sous la première race, la royauté se transmet aux fils sans distinction de bâtards et de légitimes.</p>
+        <p>Elle ne vient jamais aux filles ; mais ce sont les traditions du passé, les mœurs, les circonstances qui sont cause de cette exclusion, non la loi salique.</p>
+        <p>2° L’admission incomplète du principe héréditaire, sous la première race, amène des règnes d’enfants. Les règnes d’enfants amènent des régences. La régence s’exerce sans règles fixes ; mais toujours principalement par les grands, représentés plus ou moins complètement dès la mort de Childebert II en Ostrasie, dès celle de Dagobert I<hi rend="sup">er</hi> en Neustrie, par les maires du palais.</p>
+        <p>La majorité des rois mérovingiens ne paraît pas avoir eu de limites parfaitement fixes et déterminées.</p>
+        <p>Vu :</p>
+        <p>Paris, le 12 mars 1850,</p>
+        <p>Le sous-directeur des études, répétiteur général.</p>
+        <p>L. DE MAS LATRIE.</p>
+        <p>Paris. – Typographie de Firmin Didot frères, rue Jacob, 56.</p>
+        <pb n="21" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_07.TIF/full/full/0/default.jpg"/>
+        <pb n="22" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_07/ENCPOS_1850_07_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

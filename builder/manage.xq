@@ -24,13 +24,17 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 
 (: 2. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config("idProject", "dbName") :)
-(: ccg:create_config("cartulaires", "cartulaires") :)
+(: ccg:create_config("ENCPOS", "ENCPOS") :)
 
 (: 3. Créer les registres DoTS dans la db Project :)
 (: cc:create_config("idProjet", "dbName", "Project Title") :)
 (: cc:create_config("ducange", "ducange", "Glossarium mediæ et infimæ latinitatis", "") :)
 (: cc:create_config("litterature2", "litterature2", "Corpus Test", "") :)
-cc:create_config("litterature2", "litterature2", "Corpus Test")
+cc:create_config("ENCPOS", "ENCPOS", "Les positions des thèses de l'Ecole nationale des chartes")
 
 (: 4. Supprimer  :)
 (: dbd:handleDelete() :)
+
+(: let $tei := db:get("ENCPOS")/*:TEI[1]
+return
+  cc:getDocumentMetadata("ENCPOS", $tei, "ENCPOS_1972_18") :)

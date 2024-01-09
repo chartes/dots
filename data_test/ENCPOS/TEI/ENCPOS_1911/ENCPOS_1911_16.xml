@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_16" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les chartes de l’ordre dauphinois et provençal de Chalais</title>
+        <author>Joseph-Charles Roman</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_16.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 123-130</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="123" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les chartes
+       <lb/>de
+       <lb/>l’ordre dauphinois et provençal
+       <lb/>de Chalais</head>
+      <byline>
+        par
+        <forename>Joseph-Charles</forename>
+        <surname>Roman</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Étude historique</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la fondation de l’abbaye de Chalais</head>
+          <p>Considérations générales. Le rôle de la fondation de Chalais dans le procès du <hi rend="i">pagus</hi> de Sermorens. Saint Hugue fonde cette abbaye dans le territoire contesté entre lui et l’archevêque de Vienne, et s’assure ainsi la possession de ce pays. Le monastère de Chalais est fondé le 22 mars 1101, dans les montagnes de la Grande-Chartreuse. La première observance de Chalais : cette maison n’a jamais été un prieuré de Chartreux. Formation du domaine de Chalais ; ses modestes débuts ; importance des donations du comte d’Albon. Les moines de <pb n="124" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_02.TIF/full/full/0/default.jpg"/>Chalais sont chassés de leur maison par leurs voisins en 1108 ; le comte d’Albon les ramène à leur monastère. Celui-ci, en 1124, est érigé en abbaye. Constitution de son domaine définitif par l’acquisition des fermes de Font-Martin, de Pulley, de la Forêt et du Cellier de Chalais. – Les ressources de Chalais sont médiocres et le nombre de ses moines considérable ; ces deux raisons déterminent l’expansion de l’ordre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La zone d’expansion de l’ordre de Chalais et son
+           <lb/>rôle politique</head>
+          <p>Les abbayes chalaisiennes se trouvent groupées dans le comté de Forcalquier et dans la Haute-Provence ; ce groupement a des causes religieuses et politiques. L’ordre de Chalais continue l’œuvre de réforme ecclésiastique entreprise en Provence dès le milieu du <num>xi<hi rend="sup">e</hi></num> siècle par les clercs et les moines viennois. L’ordre de Chalais, fondé par le comte d’Albon et protégé par ses successeurs, sert dans le comté de Forcalquier les intérêts de ses patrons, et contribue à l’annexion des comtés de Gapençais et d’Embrunais au Dauphiné.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La formation de la congrégation chalaisienne</head>
+          <p>L’ordre de Chalais se forme de la réunion de Chalais, Boscaudon et Albeval. – Fondation de Boscaudon en 1130, au diocèse d’Embrun. Questions qui se posent au sujet de l’état primitif de celte abbaye, qui n’a jamais été une dépendance d’Oulx, ni un établissement de l’ordre des Augustins. Fondation du prieuré de Lavercq <pb n="125" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_03.TIF/full/full/0/default.jpg"/>en 1135. Colonisation de Boscaudon par les moines de Chalais, en 1140 environ. Fondation d’Albeval au diocèse de Grenoble.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les statuts de la congrégation chalaisienne</head>
+          <p>Les statuts de la congrégation chalaisienne se trouvent dans la « Charte de Charité » ; celle-ci, promulguée en 1148, est calquée sur celle de Cîteaux. Les Chalaisiens suivent la règle de saint Benoît. Les organes directeurs de la congrégation sont l’abbé général et le chapitre général des abbés. Mode de réunion et attributions de ce chapitre. Les abbayes chalaisiennes sont visitées deux fois par an, la première fois par l’abbé majeur, c’est-à-dire par l’abbé de leur maison fondatrice, et la seconde par l’abbé général. L’indépendance à l’égard de l’ordinaire et l’obéissance au chapitre général sont assurées aux nouvelles fondations par une charte de l’évêque du diocèse où se fait la fondation. Election et déposition des abbés. Dispositions accessoires.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Nouvelle extension de l’ordre</head>
+          <p>Fondation de Prads, au diocèse de Digne, en 1150 : discussion de cette date. Fondation du prieuré de Saint-Maurice de Valserre, au diocèse d’Embrun, vers 1155. Fondation de Lure, au diocèse de Sisteron, vers 1160-1164 : discussion de cette date. Le territoire de Lure, son histoire. Fondation du prieuré de Pailherol au diocèse de Riez, entre 1167 et 1180, et d’Alme val avant 1179.</p>
+        </div>
+        <div>
+          <pb n="126" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VI
+           <lb/>Projet d’union a Cîteaux</head>
+          <p>De 1165 à 1180, un temps d’arrêt se marque dans le développement de la congrégation chalaisienne, cela tient à ce que Chalais tente de s’agréger à Cîteaux, pour échapper à l’influence des séculiers et pour avoir un appui solide. – Vers 1162, Chalais s’agrège à Bonnevaux. Mécontentement des Chartreux qui s’efforcent de rompre cette union. Procès de limites, puis procès en cour de Rome, où le crédit des Chartreux finit par triompher en 1177. Attitude du Pape, des Chartreux et des évêques.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>L’apogée de l’ordre de Chalais</head>
+          <p>Tandis que Chalais commence à décliner, ses filiales continuent à donner naissance à de nouvelles abbayes. Lure fonde Clausonne, au diocèse de Gap, vers 1185 : discussion de cette date. Fondation de Clairecombe au même diocèse, vers 1190 : discussion de cette date. Valbonne, au diocèse d’Antibes, est fondée par Prads, en 1200. Fondation de Puyredon par Boscaudon, pour servir de point d’appui aux bergers des troupeaux transhumants des abbayes chalaisiennes. Translation d’Albeval à Beaulieu, en 1218. Etude critique sur la prétendue abbaye chalaisienne de Tournemire. Constitution définitive de la congrégation.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Le déclin de Chalais</head>
+          <p>Une lassitude se manifeste à Chalais dès le début du <num>xiii<hi rend="sup">e</hi></num> siècle, elle est due à la pauvreté du chef d’ordre et <pb n="127" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_05.TIF/full/full/0/default.jpg"/>à la mauvaise administration de quelques-uns de ses abbés. Des procès, la position que prennent à la cour delphinale les abbés de Chalais aggravent la situation. En 1247, l’abbé et une partie du couvent de Chalais demandent à s’agréger à l’ordre des Chartreux ; les réclamations des abbayes suffragantes font échouer le projet. En 1249, les statuts de la congrégation sont solennellement confirmés.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IX
+           <lb/>La dissolution de l’ordre</head>
+          <p>En 1250, l’abbaye de Chalais s’agrège à celle de Saint-Chef ; cette union jette le désordre dans la congrégation sans la dissoudre. L’abbaye de Clairecombe, abandonnée à l’anarchie par son abbé Olivier, devient le foyer des plus graves désordres. Elle est unie, en 1282, à l’hôpital de Saint-Jean de Jérusalem. En 1286, Chalais abandonne Saint-Chef et est unie à Saint-Pierre de Vienne. Cet évènement est le signal de la dissolution de l’ordre ; les abbayes chalaisiennes tombent sous la main des évêques et succombent tour à tour. Beaulieu est uni à Saint-Ruf vers 1290. Prads, après différentes tentatives d’union, entre dans la congrégation clunisienne. Valbonne, en 1298, après des fluctuations plus nombreuses encore, est réunie à Saint-André d’Avignon. Chalais quitte Saint-Pierre de Vienne pour se rattacher à la Grande-Chartreuse en 1303. Lure enfin est affectée au chapitre d’Avignon en 1318. Boscaudon et Clausonne, isolées l’une de l’autre, représentent seules l’ordre chalaisien. Elles périssent l’une au <num>xvi<hi rend="sup">e</hi></num>, l’autre au <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="128" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Étude diplomatique</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>chronologie</head>
+          <p>L’emploi de l’indiction ne devient habituel qu’au <num>xiii<hi rend="sup">e</hi></num> siècle dans le Sud-Est de la France, sauf exception. Son point de départ est le 25 décembre dans le diocèse de Grenoble ; dans le Gapençais et l’Embrunais, généralement le 1<hi rend="sup">er</hi>, quelquefois le 24 septembre. Dans les diocèses de Grasse et de Nice, l’indiction est surtout employée au <num>xii<hi rend="sup">e</hi></num> et au début du <num>xiii<hi rend="sup">e</hi></num> siècle. Son point de départ est le 1<hi rend="sup">er</hi> septembre de l’année précédente, suivant le mode génois.</p>
+          <p>Dans la région de Grenoble on fait commencer l’année à Noël. Dans le Gapençais et l’Embrunais, on suit le mode florentin du 24 mars. Système analogue en Provence. De l’emploi du style pisan dans la Basse-Provence.</p>
+          <p>La date est placée à la fin de l’acte pendant le <num>xii<hi rend="sup">e</hi></num> siècle ; dans les premières années du <num>xiii<hi rend="sup">e</hi></num> on la transporte au début.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Forme des actes</head>
+          <p>On rencontre dans le Sud-Est, au <num>xii<hi rend="sup">e</hi></num> et au <num>xiii<hi rend="sup">e</hi></num> siècle, trois sortes d’actes : l’acte pseudo-probatoire, l’acte scellé, l’acte notarié. – L’acte pseudo-probatoire, où le fait juridique est prouvé par la mise en forme de l’acte et par le témoignage possible des témoins. Ces actes <pb n="129" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_07.TIF/full/full/0/default.jpg"/>affectent souvent la forme de notices. Rôle des témoins dans ces sortes d’actes : ils sont à la fois <hi rend="i">tutores</hi> et <hi rend="i">testes. </hi>Interventions des évêques dans les actes des particuliers. Ils tendent à prendre la place de témoins privilégiés. Différents aspects de leur intervention.</p>
+          <p>Cette intervention des évêques explique l’appension de leur sceau. Le sceau n’a au <num>xii<hi rend="sup">e</hi></num> siècle que la valeur d’une signature. Cependant dès la fin de cette époque se manifeste l’idée d’authentification par le sceau. Le sceau prenant une réelle valeur, les particuliers qui n’en ont point font sceller leurs actes par les évêques, les communes, les cours de justice. Cette pratique donne naissance à l’acte notarié.</p>
+          <p>Essai d’explication de l’origine des notaires provençaux. Ce sont les successeurs des scribes des <num>x<hi rend="sup">e</hi></num> et <num>xi<hi rend="sup">e</hi></num> siècles. Ils s’arrogent à la fin du <num>xii<hi rend="sup">e</hi></num> siècle, de leur propre autorité et à l’imitation des notaires italiens, le pouvoir d’authentiquer les actes. Les premiers notaires à Arles, Avignon et Marseille. Cette institution s’étend vers le Nord. Après 1230, les seigneurs laïques créent des notaires.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Remarques paléographiques</head>
+          <p>Ecriture des actes. – Les <hi rend="i">E</hi> cédillés subsistent dans le diocèse de Grenoble jusqu’en 1241. Abréviations curieuses. Accents. Appension du sceau.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Mode de transmission des actes et éditions</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Liste des abbés des abbayes chalaisiennes
+         <lb/>et des prieurs de Boscaudon</head>
+        <p/>
+      </div>
+      <div>
+        <pb n="130" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_16/ENCPOS_1911_16_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Les chartes de l’ordre de Chalais</head>
+        <p>Édition des chartes de l’abbaye de Chalais. Chartes de Boscaudon jusqu’en 1318. Charte de l’abbaye d’Albeval. Charte de l’abbaye de Prads. Chartes de Lure. Chartes de Clairecombe. Chartes de Valbonne. Chartes de Puyredon. Chartes de Sainte-Croix. Examen d’une charte fausse de 1124.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

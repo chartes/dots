@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_16" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Italie, design et politique : fabrique d’un modèle et transferts culturels vers la France (1964-début des années 1990). Étude fondée sur les archives de Gruppo Strum et Studio 65 à Turin</title>
+        <author>Pia Rigaldiès</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 167-178</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Italie, design et politique : fabrique d’un modèle et transferts culturels vers la France (1964-début des années 1990)
+        <lb/>Étude fondée sur les archives de Gruppo Strum et Studio 65 à Turin</head>
+      <byline>
+        par
+        <forename>Pia</forename>
+        <surname>Rigaldiès</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Dans <hi rend="i">Rhétorique de l’image</hi>, Roland Barthes affirme que « l’italianité, ce n’est pas l’Italie, c’est l’essence condensée de tout ce qui pourrait être italien, des spaghetti à la peinture » ; il signale ainsi que l’italianité, barbarisme à ses yeux, mais outil d’analyse fort utile, fait appel à l’histoire des représentations. Le design, qui éclot en Italie aux lendemains de la seconde guerre mondiale, se conçoit à partir de 1972, année de l’exposition <hi rend="i">Italy : The New Domestic Landscape</hi> au musée d’Art moderne de New York, selon un paradigme national d’étude et de représentation.</p>
+        <p>L’italianité du design se construit également depuis l’extérieur, sous le regard d’un autre groupe culturel. Il convient d’enquêter de manière plus précise sur ces confrontations, ces zones de contact et ces transferts, à l’origine à la fois de cette supposée identité nationale et de la diffusion internationale du design italien comme modèle industriel et culturel. L’histoire de Studio Totem à Lyon dans les années 1980 est emblématique de ce moment italien du design français. L’étude de la trajectoire du groupe permet d’appréhender les supports, les acteurs et les stratégies des transferts culturels du design italien en France, en cherchant à y déceler des phénomènes d’appropriation aussi bien esthétiques que culturels et industriels.</p>
+        <p>Par ailleurs, les interactions entre design et politique semblent fonder cette italianité et constituer un modèle de référence en dehors des frontières de la péninsule. La question est abordée d’un point de vue conceptuel, en mobilisant sociologie et philosophie politique. Elle est aussi confrontée à un double cas précis, celui de Gruppo Strum et de Studio 65 à Turin entre 1964 et 1974. Ces deux groupes sont considérés comme la déclinaison turinoise du design radical, mouvement italien et européen qui consacre l’apogée de la démarche et du positionnement politique des designers. Cependant, la trajectoire des deux collectifs, étudiée sous l’angle d’une approche sociologique de l’art et de l’engagement politique, révèle les ambiguïtés et les contradictions des rapports entre design et politique au contact de la territorialité turinoise.</p>
+        <p>L’approche sociologique est complétée par des réflexions empruntant à l’histoire de l’art autant qu’à l’histoire sociale, économique, industrielle et politique, afin de construire une histoire culturelle du design qui, contrebalançant une tradition historiographique italienne qui tend à mythologiser ses designers et ses industriels, privilégie l’inscription de l’objet, de sa matérialité et de ses formes dans un tissu de réflexions pluridisciplinaires.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les archives privées de Studio 65 et Gruppo Strum constituent les sources principales de cette étude. Conservées à Turin, dans les agences des anciens membres de ces groupes et sans véritable classement, elles se composent de dossiers de projets comprenant plans, textes descriptifs et photographies, ainsi que de documents produits dans le cadre de la pluralité de leurs activités. Des écrits témoignent de l’engagement politique de ces designers et architectes. L’exploitation de ces archives inédites a nécessité un travail de description archivistique préalable en collaboration avec leurs producteurs.</p>
+          <p>Le dialogue avec les anciens membres des groupes a également permis de mettre en place une campagne d’archives orales qui a abouti à une vingtaine d’entretiens semi-directifs menés auprès d’autant de témoins de la scène culturelle turinoise des années 1960 et 1970, comprenant designers mais aussi plasticiens, photographes, industriels, etc. Les informations récoltées, concernant notamment leur activisme politique, ont demandé à être confrontées avec les archives publiques de la préfecture de Turin pour la période 1967-1972, conservées à l’Archivio centrale di Torino. La méthodologie de traitement des sources s’inscrit donc dans une interactivité entre l’écrit et l’oral, les archives orales confirmant les sources écrites et réciproquement.</p>
+          <p>Les transferts culturels du design italien en France ont été abordés au travers de plusieurs sources : les fonds de designers français et italiens déposés à la bibliothèque Kandinsky, les archives du musée des Arts décoratifs comprenant les fonds d’expositions et de conservateurs, les archives du Mobilier national, celles du ministère de l’Industrie aux Archives nationales ainsi que le fonds du groupe Studio Totem. Ce dernier, lui aussi non classé et conservé en mains privées à Lyon, a fait l’objet du même traitement que les archives des groupes turinois avant de pouvoir être exploité à des fins de recherche. Des entretiens oraux ont aussi été réalisés avec les membres de ce groupe.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Design et politique : une dialectique au cœur de la définition de l’italianité (1964-début des années 1990) ?</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>1964-1972 : le nouveau paradigme politique de la culture du projet. Invention ou réactualisation d’une tradition italienne ?</head>
+          <p><hi rend="i">Nouvelles implications politiques du projet.</hi> – Lors de la deuxième moitié des années 1960, le renouvellement générationnel des architectes italiens prend toute la mesure de la propension politique du projet. La pratique du projet, commune aux disciplines de l’architecture, du design et de l’urbanisme, est de plus en plus perçue comme un outil pertinent pour intervenir dans les débats sociétaux italiens. Dans l’émergence de la figure politique de l’architecte-intellectuel, il convient de noter que celle du designer reste encore indéfinie.</p>
+          <p><hi rend="i">Corps et signe.</hi> – La contamination réciproque du design et de la sémiotique est un élément déterminant dans la découverte du design comme objet politique. La conscience de la sémantisation de l’environnement devient un outil critique pour le designer italien qui, au travers des meubles qu’il crée, cherche à échapper de manière précoce à l’adage moderniste « la forme suit la fonction ». De cette attitude irrévérencieuse envers la tradition architecturale naissent des formes qui redéfinissent radicalement les postures du corps, révélant sa portée politique.</p>
+          <p><hi rend="i">Esthétique et politique</hi>. – À la lumière de la philosophie politique de Jacques Rancière et Walter Benjamin, il convient de revenir en arrière sur les antécédents des débats concernant les relations entre esthétique et politique dans l’histoire italienne. Les héritages culturels du futurisme et l’instrumentalisation politique de l’architecture sous le fascisme permettent de mettre en perspective l’explosion du paradigme politique du projet entre 1964 et 1972. Il est ainsi possible de déceler les éléments de continuité et de situer l’émergence du concept d’italianité. Forgé par Filippo Tommaso Marinetti, il est ensuite réinvesti par le fascisme, compromission qui explique sa relative disparition du discours dans les années 1960.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>1972-1981 : design et politique, de l’essence de l’italianité à la critique généralisée</head>
+          <p><hi rend="i">Invention de l’italianité du design</hi>. – En 1972, l’exposition <hi rend="i">Italy : The New Domestic Landscape</hi> au musée d’Art moderne de New York fait date en consacrant le design italien comme catégorie d’analyse pertinente. La localisation de cet événement fondateur hors des frontières de l’Italie n’est pas anodine. Elle rappelle que les identités culturelles se définissent dans des situations de confrontation et d’altérité. Le commissaire de l’exposition, Emilio Ambasz, contribue à une définition de l’italianité du design en des termes politiques et donne à voir au public américain un design italien qui se caractérise par une attitude fondamentalement critique.</p>
+          <p><hi rend="i">Crises du design.</hi> – Malgré ce moment de visibilité internationale retentissant pour l’Italie, les années 1970 sont marquées par une crise du design aux multiples facettes. Celle-ci est à la fois disciplinaire, idéologique, économique et sociale. Le degré extrême de l’ébranlement du fonctionnalisme moderne débouche sur une critique de l’aspect idéologique du design et de l’architecture, portée notamment par le théoricien Manfredo Tafuri. S’y ajoutent des facteurs exogènes : un miracle économique finissant et le contexte du terrorisme politique qui remet profondément en question les thèmes de l’engagement pour les intellectuels italiens. Malgré tout, cette critique généralisée semble propice à l’émergence du designer comme figure autonome de l’architecte, bien que ces deux disciplines soient exercées par les mêmes personnes en Italie, et comme porte-drapeau d’une pratique politique du projet.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>1981-début des années 1990 : le retournement de la postmodernité dans le design italien et « la fin du politique »</head>
+          <p><hi rend="i">Design dépolitisé et société post-idéologique</hi>. – Les années 1980 et 1990 sont marquées par la chute spectaculaire du système des partis politiques italiens, sous le coup des révélations d’une corruption généralisée. Plus que l’engagement, c’est la définition même du politique qui est remise en question par des penseurs comme Giorgio Agamben. Le thème de la fin du politique s’immisce chez les designers italiens en même temps que prend place la révolution esthétique de la postmodernité dans le design et l’architecture. En Italie, la postmodernité n’est autre que l’aboutissement de la dynamique d’effondrement du modernisme. À Milan, Memphis en devient une figure de proue. Dans la pratique du projet de ce groupe au succès international, les interactions entre design et politique semblent pour la première fois passer volontairement au second plan.</p>
+          <p>Made in Italy. – Cette période marque en réalité une refondation complète des rapports entre politique, design et italianité. Dans le contexte de l’intégration européenne de l’Italie, de l’ouverture sur un marché mondialisé, l’émergence du label <hi rend="i">made in Italy</hi> est révélatrice à la fois de la réutilisation des thèmes de l’italianité en stratégie de marketing, ainsi que des nouveaux enjeux de l’unité culturelle italienne. Ceux-ci ont souvent été délaissés par les pouvoirs publics, qui s’en emparent au tournant des années 1980 et 1990. Le design se retrouve au cœur des débats politiques et est instrumentalisé par l’exécutif. En 1994, l’entrée en politique de l’homme d’affaires Silvio Berlusconi clôt de manière édifiante la période. Il est le symbole d’une permutation complète : le design est moins politique que la politique berlusconienne n’est « designée », de l’identité visuelle du nouveau parti Forza Italia jusqu’au corps de son candidat.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Gruppo Strum et Studio 65 Le design radical Pop à Turin, entre engagement politique, contradictions et renonciations (1964-1974)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>La genèse turinoise de Studio 65 et de Gruppo Strum au sein de la contestation étudiante (1964-1969)</head>
+          <p><hi rend="i">Pietro Derossi et l’occupation de 1964.</hi> –Le rôle joué dans la première occupation de la faculté d’architecture de Turin par l’architecte Pietro Derossi, futur fondateur de Gruppo Strum et alors assistant universitaire, permet de comprendre les modalités de la politisation de celui-ci. À la même époque, il est aussi, avec ses associés Giorgio Ceretti et Riccardo Rosso, le designer et l’animateur de la discothèque turinoise le<hi rend="i"> Piper</hi><hi rend="i">Club</hi>. Cette expérience fondatrice, autant d’un point de vue esthétique que social, tisse des liens importants entre les représentants du design radical turinois et ceux de l’<hi rend="i">arte povera</hi>.</p>
+          <p><hi rend="i">Studio 65 et l’occupation de 1968</hi>. – En 1967-1968, Franco Audrito et son groupe Studio 65 participent à la deuxième phase d’occupation de la faculté d’architecture par les étudiants. Les activités de Studio 65, créé en 1965, se sont déplacées de la peinture expérimentale à la pratique d’un design critique et politique, abandonnant le medium pictural jugé réactionnaire. 1968 est un moment central qui détermine la structuration, le discours et l’histoire du groupe, aux confins du mythe.</p>
+          <p><hi rend="i">Enjeux mémoriels de la contestation</hi>. – Les deux groupes se connaissent et se fréquentent au sein de la même institution. Leurs rapports sont définis par un facteur hiérarchique qui veut que Gruppo Strum appartienne au groupe des assistants universitaires quand Studio 65 représente celui des étudiants. De 1969, date de l’organisation par Derossi et ses collègues du colloque international <hi rend="i">Utopia e/o rivoluzione</hi> à la faculté d’architecture de Turin, jusqu’à aujourd’hui, les relations des deux groupes s’inscrivent dans le cadre d’un conflit mémoriel de la contestation, chacun étant en quête d’une légitimation politique de son travail de designer.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Identité sociologique, esthétique et industrielle du design radical pop turinois (1969-1972)</head>
+          <p><hi rend="i">Structure des groupes</hi>. – Il convient d’analyser sociologiquement la structuration et la hiérarchisation des groupes pour comprendre leur évolution, d’un groupe d’étudiants activistes à une agence de designers professionnels pour Studio 65 et d’une agence d’architecture à un groupe de cinq « opérateurs culturels » pour Gruppo Strum. L’étude comparée de la répartition des rôles, des figures de leaders et de seconds donne une idée du fonctionnement de la création collective et du statut du groupe aux yeux de ceux qui le composent.</p>
+          <p><hi rend="i">Univers des formes</hi>. – Les objets créés par Studio 65 et l’agence de Derossi, Ceretti et Rosso sont passés à la postérité comme la déclinaison turinoise du design radical italien et européen. Il faut cependant considérer l’influence massive de l’appropriation italienne du <hi rend="i">pop art</hi> par le biais des stratégies du kitsch, de l’ironie et du jeu mises en place dans ces objets. Réfléchir sur les métissages entre les mouvances pop et radicale, considérées comme antinomiques dans l’historiographie, permet d’appréhender les particularités de la condition esthétique commune aux artistes et designers turinois.</p>
+          <p><hi rend="i">Édition par Gufram</hi>. – L’entreprise piémontaise Gufram édite, fabrique et commercialise les prototypes de ces deux groupes de designers. Cette histoire entrepreneuriale particulière met en lumière le passage de la conception à la réalisation ainsi que les liens entre les designers et l’industrie. Cette adaptation au marché dénote aussi une prise de risque importante de la part de Gufram, à la fois sur le plan commercial et technologique. L’entreprise se spécialise en effet dans le travail très expérimental de la mousse de polyuréthane, sous l’impulsion de l’artiste turinois Piero Gilardi.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>La fin d’une aventure collective : une autopsie politique (1972-1974) ?</head>
+          <p><hi rend="i">De New York à néant.</hi> – Gruppo Strum est créé par Derossi pour participer à l’exposition <hi rend="i">Italy : The New Domestic Landscape</hi> de 1972. En distribuant au musée d’Art moderne de New York trois romans-photos politiques, les membres du groupe refusent, contre toute attente, de promouvoir leur travail de designers. Au travers de cette œuvre, ils portent sur le devant de la scène les luttes turinoises dans lesquelles ils s’étaient engagés et signent l’acmé du geste politique de l’architecte. La vie du Gruppo Strum est brève : les romans-photos sont presque leur seule création collective. Sans raison apparente, le groupe se dissout progressivement au retour de New York. Studio 65 semble victime d’un même phénomène post-partum. Le groupe éclate peu de temps après la participation à l’exposition Eurodomus de 1972 qui lui donne pourtant une visibilité inédite.</p>
+          <p><hi rend="i">Éclatement idéologique des groupes.</hi> – Il faut également voir dans la fin de ces expériences collectives des raisons idéologiques et politiques. Au cœur de la contradiction de ces groupes se trouve la commercialisation de leurs meubles par Gufram. L’entreprise joue sur des mécanismes de consommation extrêmement élitistes mettant en porte à faux l’engagement politique de ces designers, notamment pour le logement ouvrier à Turin. Au-delà de l’impossible viabilité économique de Studio 65 et de Gruppo Strum, le retour à des trajectoires individuelles signale également l’essoufflement de la dynamique collective de Mai 68 et fait de ces deux expériences des parenthèses dans des stratégies relativement individualistes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Industrialisation, appropriation, esthétique, patrimonialisation : les transferts culturels du nouveau design italien en France (1964-début des années 1990)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Industrialisation Le <hi rend="i">topos</hi> du retard français</head>
+          <p><hi rend="i">Triennale de Milan.</hi> – Moment de confrontation des nations autour du design industriel, les triennales de Milan sont l’occasion d’observer les enjeux compétitifs qui entourent les sections française et italienne, ainsi que l’évolution de la perception du design italien par les Français. Si, lors de l’édition de 1964, le comité français semble satisfait de la sobriété moderniste de sa section, loin de l’extravagance outre-alpine, le sentiment d’un retard français vis-à-vis de l’industrie italienne du design se fait nettement sentir lors de la triennale de 1968.</p>
+          <p><hi rend="i">Cultures industrielles.</hi> – Il convient de mettre dos à dos les industries du design française et italienne afin de mettre en évidence leurs principaux traits distinctifs et de vérifier le <hi rend="i">topos</hi> répandu chez les contemporains d’un retard de la France. La comparaison est principalement axée sur la structure macroéconomique de ces industries nationales ainsi que sur les cultures entrepreneuriales des investisseurs français et italiens. À partir des années 1980, il est possible d’identifier un intérêt explicite des industriels français pour ce qui apparaît clairement comme un modèle italien de l’industrie du design.</p>
+          <p><hi rend="i">Politiques étatiques.</hi> – La volonté de développer un design proprement français est soutenue par l’État au travers de politiques culturelles qui voient successivement l’émergence d’initiatives comme l’Atelier de recherche et création (ARC) en 1964, le Centre de création industrielle (CCI) en 1969 et le Comité pour la valorisation de l’innovation dans l’ameublement (VIA) en 1981. Ces trois projets volontaristes en faveur du design témoignent de manière plus ou moins consciente d’une référence au design italien, modèle dont il faut s’inspirer notamment dans la mise en relation entre les designers et les industriels.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Appropriation esthétiqueAnalyse de l’italianotropisme des designers français à travers l’exemple de Studio Totem</head>
+          <p><hi rend="i">La France entre design scandinave et italien</hi>. – Les années 1970 voient le passage d’un modèle de référence à un autre. La France se tourne progressivement vers les Alpes après avoir consacré pendant plusieurs dizaines d’années le design scandinave. La mise en parallèle de la construction successive de ces deux modèles de design en France permet de saisir les enjeux du glissement de la Scandinavie vers l’Italie : si le design scandinave, parangon de modernisme et de vertus humanistes, semblait susciter respect et admiration de la part des Français, l’adhésion au modèle italien est nettement plus ambiguë et versatile. Du fantasme au rejet en passant par la moquerie, le design italien provoque des réactions extrêmes.</p>
+          <p><hi rend="i">Perspectives structurelles de Studio Totem.</hi> – La naissance de Studio Totem à Lyon en 1980 advient dans le contexte d’un fort italianisme des designers français. La comparaison avec Studio 65 et Gruppo Strum permet de mieux comprendre la structuration et la pratique collective du design de Totem. Cependant, les profils sociologiques des quatre membres de ce dernier ne laissent pas préfigurer un quelconque attachement à la culture italienne.</p>
+          <p><hi rend="i">Initiation milanaise.</hi> – Lors d’un voyage à Milan, la rencontre des jeunes membres de Totem avec les designers plus expérimentés du groupe Memphis est une révélation, tout comme la vie culturelle et sociale foisonnante qui règne à Milan autour du salon du Meuble. Débutent plusieurs années d’échanges intenses entre les deux groupes qui permettent d’apprécier les métissages esthétiques et les parentés formelles des designs français et italien dans les années 1980.</p>
+          <p><hi rend="i">Axe Lyon-Milan</hi>. – Studio Totem est le grand promoteur du design postmoderne italien en France. Ses membres transforment non seulement leur espace de travail en galerie mais mettent aussi en place une quadriennale du design à Lyon dans laquelle le design italien est mis à l’honneur. Le terreau lyonnais des années 1980 et 1990, éloigné des industries françaises et ouvert à de nombreuses opportunités, semble alors culturellement plus proche de Milan que de Paris.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Patrimonialisation De l’usine italienne aux musées français, reconstitution de circuits et de logiques</head>
+          <p><hi rend="i">Galeries et acteurs commerciaux</hi>. – Les circuits qui mènent à la patrimonialisation des produits du design italien des années 1960 aux années 1990 dans les musées français ne pourraient exister sans les chaînons capitaux que représentent les galeristes et les intermédiaires commerciaux. Par leurs voyages réguliers en Italie, leurs réseaux et leur culture du design, ils sont des vecteurs de transferts culturels de premier ordre, qui permettent une première diffusion et acculturation du design italien en France, même si celui-ci demeure confidentiel.</p>
+          <p><hi rend="i">Collections muséales.</hi> – La fin des années 1980 et le début des années 1990 correspondent à une vague d’acquisitions de pièces de designers italiens par les collections patrimoniales françaises, qui fait de la matérialité de l’objet un support de transferts culturels. Les logiques et l’intentionnalité de ces achats s’inscrivent de manière plus générale dans l’évolution des politiques culturelles en France. La patrimonialisation d’objets utilitaires voués à la commercialisation doit être restituée dans toute son ambiguïté : de produit à chef-d’œuvre, ce processus déplace également le statut de l’objet entre la France et l’Italie.</p>
+          <p><hi rend="i">Enjeux de la restauration.</hi> – Les meubles édités par l’entreprise Gufram et conservés dans les collections françaises font depuis peu l’objet de campagnes de restauration. Le peu de connaissances sur les propriétés techniques de la mousse de polyuréthane et ses processus de détérioration rendent cependant ces opérations tout à fait expérimentales. Cet acte de pérennisation d’un matériau consommable et éphémère semble également contradictoire. Toutefois, la contemporanéité des enjeux de ces objets apporte des informations scientifiques extrêmement probantes pour l’appréhension des procédés de fabrication. Elle met également au jour les possibles transferts de connaissances techniques permis par la patrimonialisation.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Un rapide état des lieux dans les boutiques parisiennes commercialisant des produits du design italien permet de se rendre compte qu’aujourd’hui, le label <hi rend="i">made in Italy</hi> est toujours un puissant outil de marketing. Toutefois l’italianité affichée des objets repose davantage sur les thèmes du luxe, de l’élégance, de la qualité des objets et du cadre de vie dans lequel ils sont censés s’inscrire. Les transferts culturels du design italien en France semblent en avoir modifié la portée initiale en oblitérant la question politique, pourtant hégémonique dans l’Italie des années 1960 et 1970. Plusieurs facteurs expliquent cela : d’une part, l’italianisme des industriels et designers français atteint son apogée dans les années 1980, quand le design italien se retire sciemment des débats politiques ; d’autre part, le public français, malgré l’importance d’un auteur comme Jean Baudrillard, est probablement peu réceptif au discours politique des objets. Ainsi le transfert n’induit-il pas une adhésion complète et univoque au modèle. Celle-ci est au contraire sélective et fluctuante, le design italien apparaissant parfois comme un anti-modèle. La pluralité des groupes concernés et de leurs représentations explique en partie l’ambiguïté de ce modèle, construit aussi bien par les industriels que par les designers, les décideurs publics, les consommateurs et le public des musées.</p>
+        <p>L’analyse des transferts culturels révèle sa complexité en échappant à toute tentative de simplification de la question à une relation bilatérale entre la France et l’Italie. L’influence des États-Unis, dans le cadre de l’exposition de 1972 ou comme abstraction d’un modèle industriel de référence, montre comment les transferts culturels s’inscrivent bien souvent dans une triangulation permettant d’extérioriser une relation en apparence bilatérale. Cette démarche dynamique incite à varier sans cesse les échelles temporelles et géographiques, de sorte que l’étude de cas turinoise donne à voir la force des identités locales ainsi qu’une italianité plurielle et morcelée – ce qui ne fait pas moins de celle-ci une catégorie de pensée valide. Là se trouve toute l’ambivalence pour l’historien d’une approche qui, cherchant à dépasser l’histoire comparée, ne peut pas entièrement se passer de ses méthodes et qui, prônant l’histoire globale aux dépens de l’histoire nationale, confirme l’existence d’une italianité du design perçue et vécue.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Édition et traduction française de correspondances et de documents extraits des dossiers de projet conservés dans les fonds des groupes de designers Gruppo Strum, Studio 65 et Studio Totem.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Descriptions et inventaires des fonds de Gruppo Strum, Studio 65 et Studio Totem. – Dossier d’entretien de l’archiviste-oral : support-type des entretiens menés auprès des groupes turinois et exemple de la fiche chrono-thématique de l’entretien réalisé avec Riccardo Rosso.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Reproductions d’œuvres à partir de photographies issues des fonds de Gruppo Strum, Studio 65 et Studio Totem.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

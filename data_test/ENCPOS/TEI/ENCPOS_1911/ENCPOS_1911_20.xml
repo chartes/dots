@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_20" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai sur l’organisation et l’histoire administratives d’un bailliage royal aux <hi rend="sc">xiii</hi><hi rend="sup">e</hi> et <hi rend="sc">xiv</hi><hi rend="sup">e</hi> siècles. Le bailliage de Vermandois</title>
+        <author ref="https://www.idref.fr/027192806">Henri Waquet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_20.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 155-164</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="155" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai sur l’organisation
+       <lb/>et l’histoire administratives
+       <lb/>d’un
+       <lb/>bailliage royal
+       <lb/>aux <num>xiii<hi rend="sup">e</hi></num>et <num>xiv<hi rend="sup">e</hi></num>siècles
+       <lb/>le bailliage de Vermandois</head>
+      <byline>
+        par
+        <forename>Henri</forename>
+        <surname>Waquet</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction. Sources</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>le bailliage. Origines, formation, territoire</head>
+        <p>Le comté de Vermandois uni à la couronne en trois fois, 1186, 1192, 1213. – Origines du bailliage. Il est faux qu’il y ait eu primitivement quatre grands baillis dont celui de Vermandois. Les premiers baillis ; vaste étendue du territoire auquel ils sont préposés. Pourquoi, d’abord groupés, ils s’isolent ; confirmation de la théorie de M. Borrelli de Serres : nécessités financières et militaires. – La superficie du bailliage va diminuant, mais le Vermandois et la circonscription de Senlis restent unis. <pb n="156" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_02.TIF/full/full/0/default.jpg"/>Malgré d’évidentes tendances à la création de bailliages distincts devant avoir chacun un bailli particulier, l’ancien état de choses subsista peut-être jusqu’en 1234. En 1234-1235, Eudes de Gonesse est bailli de Senlis, Geoffroi de la Chapelle bailli de Vermandois. Puis nouvelle confusion des territoires jusqu’en 1264 ; exception seulement en 1254-1256. Souvenir jusque assez avant dans le <num>xiv<hi rend="sup">e</hi></num> siècle de la situation primitive. – Le bailliage s’était agrandi à l’ouest vers 1250. Détermination des limites au <num>xiv<hi rend="sup">e</hi></num> siècle ; querelle de frontière entre les baillis de Vermandois et de Senlis. – Tournai rattaché au Vermandois jusqu’en 1383. – Division du bailliage. Parmi les prévôtés, les unes ont disparu de bonne heure, les autres ont apparu tard ; d’autres enfin ont eu rarement une existence indépendante. – Subdivision de celle de Péronne en cinq sergenteries, de celle de Laon en cinq pays. Importance toute spéciale de cette dernière.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Le bailli. Sa situation personnelle</head>
+        <p>Le sénéchalat de Vermandois est la survivance purement honorifique d’un office de la cour comtale. – Des titres du bailli. Celui de « Bailli de Vermandois » apparaît en 1236 ; jusqu’à 1256, on ajoute « de monseigneur le roi ». Au <num>xiv<hi rend="sup">e</hi></num> siècle, formules longues et pompeuses. Le titre de « gouverneur du bailliage » usité de 1341 à 1347 ; malgré les ordonnances, tout le monde se sert de ce mot, le roi lui-même. – Nomination des baillis. La plupart sont originaires de la région du Nord, mais ont, avant de venir en Vermandois, exercé leurs fonctions ailleurs, souvent dans le Midi. Sauf sous saint Louis et Philippe III, la durée de leur administration est très courte. A partir de 1369, tendance à les maintenir plus <pb n="157" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_03.TIF/full/full/0/default.jpg"/>longtemps. – La législation relative aux baillis n’est guère faite que de prohibitions. Caractère familial de l’administration, surtout au <num>xiii<hi rend="sup">e</hi></num> siècle. – Gages du bailli ; ils diminuent de 1269 à 1305. Plaintes d’Eustache Deschamps. Dons reçus : ils sont peu importants. – Autorité morale, mais aussi responsabilité du bailli. Ton fréquemment menaçant des mandements royaux qui lui sont adressés. Il reste dans son bailliage après avoir quitté ses fonctions, non pas seulement pour répondre aux plaintes, mais aussi pour mettre au courant son successeur. – Résidence exigée. Des vacances sont fixées au <num>xiv<hi rend="sup">e</hi></num> siècle. Baillis employés par le roi hors de leur circonscription. Les ambassades de Guy de Houcourt sous Charles VI. – Les baillis sont exclus du Parlement sous saint Louis, du Conseil en 1303.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Attributions judiciaires du bailli</head>
+        <p>1. <hi rend="i">Juridiction contentieuse.</hi> – Attributions à l’origine peu précises : les baillis pouvaient sans doute recevoir toute plainte. C’est sous saint Louis que peu à peu leur compétence se fixe. – Le bailli juge en appel ; un mot de Pierre de Fontaines. Il juge en première instance les cas royaux et les causes où des nobles sont défendeurs. La prévention et les procès de nouvelle dessaisine. Contentieux administratif. Dans la pratique, des mesures royales particulières étendent ou limitent cette compétence. Les affaires des pairs de France : un officier royal ne peut citer à la cour les justiciables de ceux-ci que pour un motif grave ; le pair a le choix entre les juridictions.</p>
+        <pb n="158" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_04.TIF/full/full/0/default.jpg"/>
+        <p>Il y a six sièges d’assises, qui son t les mêmes que ceux des grandes prévôtés et, en outre, au <num>xiv<hi rend="sup">e</hi></num> siècle, Maire en Tournaisis. Diminution du nombre des sessions, il y en a cependant toujours plus d’une. Tournées d’assises accomplies par le bailli. A mesure que l’intervalle entre les sessions augmente, la durée de chacune augmente aussi, transformation qui se marque dans la langue administrative. – Importance de l’assise : le bailli profite de l’affluence pour traiter des questions d’intérêt général, publier des décisions du roi, etc.</p>
+        <p>Composition de la cour ; les hommes. Ils sont véritablement juges. Nombre variable. Quelques-uns sont peut-être astreints à une présence régulière. A Laon, ce sont les échevins qui jugent. Les noms des hommes de fief sont, au <num>xiv<hi rend="sup">e</hi></num> siècle, donnés dans les actes à la suite de la sentence, et chaque homme appose son sceau avec celui du bailli. Le rôle de celui-ci semble aller croissant ; celui des jugeurs tend à diminuer. Ils se plaignent de la responsabilité qui leur incombe ; on se plaint de leur négligence. Le bailli juge seul à Laon après 1332. Charles V, en 1368, atténue la responsabilité des hommes en cas d’appel. D’ailleurs, ils ne jugent pas seulement ; on en voit jusqu’à la fin du <num>xiv<hi rend="sup">e</hi></num> siècle prendre part à des enquêtes, à des opérations de police, etc. Affaires qui leur sont soustraites.</p>
+        <p>Les procès du Vermandois furent toujours les premiers entendus au Parlement. Importance des jours réservés à ce bailliage. Relations du Parlement et du bailli. Règles concernant les ajournements.</p>
+        <p>2. <hi rend="i">La juridiction gracieuse</hi>. – Dès le début du <num>xiii<hi rend="sup">e</hi></num> siècle, des chartes privées sont soumises à l’homologation des baillis qui les scellent de leurs sceaux personnels. La juridiction gracieuse, en 1272, paraît organisée. L’ordonnance dite de Philippe III est appliquée de 1287 à 1290 ; elle ne l’était pas encore en 1286. – En <pb n="159" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_05.TIF/full/full/0/default.jpg"/>1291, apparaît le garde-scel. La charge existe aux sièges des principales prévôtés. La déclaration des parties est, au <num>xiv<hi rend="sup">e</hi></num> siècle, de plus en plus souvent reçue par un « commis » du garde-scel, et c’est « à la relation » de ce commis qu’est apposé le sceau. Dans la seconde moitié de ce siècle, des commis sont ainsi établis à Soissons, à Reims, à Noyon. – Compétence du bailli en fait de juridiction gracieuse.</p>
+        <p>3. <hi rend="i">Les appeaux volages</hi>. – Il convient de distinguer deux procédures analogues et pourtant bien distinctes. Dans les deux cas, une affaire est portée au juge royal sans ajournement régulier ; mais, dans l’un, c’est un plaideur qui, troublé dans sa saisine, « appelle » immédiatement l’intrus ; dans l’autre, c’est un plaideur qui, avant jugement, en appelle de son juge ordinaire à la justice royale. – Ancienneté de ces usages. Détermination du territoire où on les rencontre. Plaintes auxquelles ils donnent lieu. Le premier, supprimé, puis rétabli presque aussitôt en 1296, disparut lentement, mais peut-être complètement à partir de 1332. Le second existait encore au <num>xv<hi rend="sup">e</hi></num> siècle ; on n’avait fait que réformer des abus.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Police. Fonctions militaires</head>
+        <p>Le bailli fait observer les ordonnances et régner l’ordre. Il rend lui-même des ordonnances. – Il est, en 1321, chargé de convoquer pour les Etats, à Paris, les habitants des bonnes villes. En 1246, il préside les États du Vermandois. La réglementation du commerce et celle de l’industrie sont de sa compétence. Surtout, il fait des enquêtes : exemples. Importance des frais occasionnés par la police. Les prisons du roi. Véritables expéditions armées, conséquences des fonctions policières données <pb n="160" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_06.TIF/full/full/0/default.jpg"/>au bailli. L’affaire de Signy et celle de Beaulieu en Argonne.</p>
+        <p>Le bailli officier de recrutement. Il transmet les lettres qui lui sont envoyées par le roi pour la convocation du ban et de l’arrière-ban. Il écrit lui-même à ceux que le roi a oubliés ; parfois il négocie, doit expliquer les motifs de la convocation. Il conduit ensuite les gens d’armes à l’armée. Faits de guerre accomplis par les baillis de Vermandois au <num>xiv<hi rend="sup">e</hi></num> siècle. Visite des villes fortes ; service de l’intendance. – Institution, en 1317, d’un capitaine en chaque bonne ville, d’un capitaine général en chaque contrée. C’était, malgré les réserves faites par le roi, une première atteinte aux attributions militaires du bailli.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Attributions financières</head>
+        <p>Administration du domaine. En cas de vente de fiefs tenus du roi, c’est entre les mains du bailli que se dessaisit le vendeur ; c’est lui qui saisit du fief l’acheteur, presque toujours en présence des « hommes du roi ». Il traite avec les particuliers. Pendant longtemps, il a la surveillance des eaux et forêts. – Les recettes : vente de produits du domaine, locations, droits de relief, de gîte, de mortemain ; en outre, à partir de la seconde moitié du <num>xiii<hi rend="sup">e</hi></num> siècle, droits de sceaux et amendes. Le chiffre des recettes semble avoir un peu varié. – En revanche, les dépenses augmentaient. D’abord, surtout, les dépenses sont sujettes à des variations ; ensuite les travaux publics et les gages des fonctionnaires passent tous à la charge du bailli. Assignations de plus en plus nombreuses. Plaintes au <num>xiv<hi rend="sup">e</hi></num> siècle ; retards dans les paiements. – Le bailli et la Chambre des comptes. C’est par lui que les prévôts présentent <pb n="161" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_07.TIF/full/full/0/default.jpg"/> leurs comptes, dès le début du <num>xiii<hi rend="sup">e</hi></num> siècle. Nouvelle division de l’année financière à partir de Philippe le Bel ; en ce qui concerne la comparution du bailli à la Chambre, la tradition se maintient ; seulement il n’est plus question de la Chandeleur.</p>
+        <p>Il y a un receveur en Vermandois à partir de 1294. Il a une situation officielle, mais les comptes sont toujours présentés par le bailli jusqu’en 1316. Ordonnance de 1320. Tâtonnements. L’ordonnance qui, en 1323, supprimait les receveurs a été appliquée un an en Vermandois. Pendant quelques années, le bailli dut encore comparaître à la Chambre des comptes avec le receveur. Situation personnelle de celui-ci ; ses gages ; sa responsabilité ; ses sergents. – Sous Philippe le Bel, la recette des subsides extraordinaires est souvent confiée au bailli, mais il en rend compte à part ; bientôt même il n’est plus seul. Son rôle se réduit à solliciter les contribuables, à négocier. Tendances à le laisser complètement étranger à ces finances. En 1348, l’évolution paraît consommée.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>Les Auxiliaires et les subordonnés du bailli</head>
+        <p><hi rend="i">Les prévôts.</hi> – Pouvoirs réduits par suite de la création du bailli qui, d’ailleurs, cherche à entamer leurs attributions. Les nobles du Vermandois demandent, en 1315, qu’on cesse d’affermer les prévôtés, ou qu’elles ne le soient pas pour plus de trois ans. Refus du roi sur le premier point ; consentement vague sur le deuxième. Le prévôt de la cité de Laon institué en 1332 devait être à gages. – Lieutenants de prévôts.</p>
+        <p><hi rend="i">Les châtelains.</hi> – Grande diversité. A Laon, le châtelain est une sorte de suppléant du prévôt et garde la tour royale avec la prison. Gages ; privilèges.</p>
+        <pb n="162" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_08.TIF/full/full/0/default.jpg"/>
+        <p><hi rend="i">Les sergents.</hi> – D’abord sergents du prévôt et sergents du bailli ; en 1263, sergents du roi, puis « sergents du roi en la prévôté de N. » Leur nomination et leur répartition concernent seulement le roi et le bailli. Dans la prévôté de Laon, ils sont répartis par groupes. Peut-être, au <num>xiv<hi rend="sup">e</hi></num> siècle, existe-t-il des sergents de rang plus élevé, exerçant leurs fonctions dans tout le bailliage. Les sergents ajournent les parties, arrêtent les coupables, surveillent les nobles. Aidés par les officiers des seigneurs, ils peuvent aussi être mis à la disposition de ces seigneurs. Gages. Plaintes sur le nombre excessif des sergents. Compétitions ardentes pour ces places. Substituts des sergents.</p>
+        <p><hi rend="i">Les clercs du bailli.</hi> – Secrétaires du bailli, ils peuvent en outre être employés à des besognes très différentes, telles que des enquêtes.</p>
+        <p><hi rend="i">Le lieutenant.</hi> – Hostilité de la royauté à l’institution des lieutenants. En fait, ceux-ci se font accepter. Pas de personnage qualifié expressément ainsi en Vermandois avant 1315 ; dès lors, semble-t-il, il est permanent, et ses attributions deviennent les mêmes que celles du bailli. Il tient des assises avec lui ou seul, et bientôt juge en son propre nom. Pas de situation officielle, cependant la royauté impose des conditions. Il y a deux ou plusieurs lieutenants, mais non pas un en chaque siège d’assises, sauf pour Maire. D’ailleurs il en est un qui paraît avoir le rôle principal.</p>
+        <p><hi rend="i">Le procureur du roi.</hi> – Il y a deux procureurs, dont un à Maire. Le procureur n’agit pas seulement au tribunal ; il doit être appelé dans les enquêtes où se trouve engagé le droit du roi. Il prend part à l’administration du domaine, royal ; de bonne heure il a des substituts, un en chaque siège, exerçant ses fonctions à la cour du prévôt. Nomination, gages. – Les avocats du roi.</p>
+        <p><hi rend="i">Le conseil et les États</hi>. – Le bailli, en une foule de cir<pb n="163" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_09.TIF/full/full/0/default.jpg"/>constances, n’agit que sur conseil d’autres personnes, et cela, non pas de sa propre initiative, mais officiellement. Ces personnes doivent être « tant d’église comme nobles et bourgeois ». – États du Vermandois à Noyon en mai 1346, à Montdidier en septembre 1347, à Roye en janvier 1358.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Administrateurs et administrés</head>
+        <p>De l’attitude des premiers envers les seconds. – Les enquêtes de saint Louis dans le bailliage de Vermandois. Questions qui se posaient. Pouvoirs donnés aux enquêteurs. Types de plaintes portées contre les baillis, les prévôts, les sergents. – Les enquêtes postérieures. Le droit de prononcer des condamnations est, sous Philippe le Bel, enlevé, puis rendu aux enquêteurs. Les réformateurs du <num>xiv<hi rend="sup">e</hi></num> siècle. Les plaintes continuent. Réclamations au Parlement. L’affaire du receveur Bon Jean de Sissonne. – Il faut, pour juger en connaissance de cause, replacer les officiers royaux dans leur milieu, se rendre compte des conditions où ils agissent. Le soin même avec lequel furent conduites les enquêtes fournit un argument en faveur de ces officiers. Beaucoup d’accusations sont absolument injustifiées. Les dépositions des témoins interrogés sur Mathieu de Beaune. On peut croire que, dans l’ensemble, les choses n’ont guère changé au <num>xiv<hi rend="sup">e</hi></num> siècle. Il faudrait, enfin, au tableau des abus reprochés aux baillis, sergents et prévôts, opposer celui des difficultés rencontrées, des violences, des affronts subis par eux dans l’exercice de leurs fonctions.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <pb n="164" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_20/ENCPOS_1911_20_10.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Appendices</head>
+        <p>1. Notices chronologiques et biographiques sur les baillis de Vermandois de 1*236 à 1400.</p>
+        <p>2. Liste des lieutenants de baillis (1315-1400).</p>
+        <p>3. Liste des gardes-scel du bailliage.</p>
+        <p>4. Listes des procureurs du bailliage.</p>
+        <p>5. Liste des prévôts des grandes prévôtés.</p>
+        <p>6. Liste des receveurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Carte</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_05" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Des appellations en cour de Rome</title>
+        <author ref="https://www.idref.fr/253411114">Pierre-Charles-Armand Loyseau-Grandmaison</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_05.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 11-12</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="11" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_05/ENCPOS_1850_05_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Des appellations
+       <lb/>en cour de Rome.</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Pierre-charles-Armand</forename>
+        <surname>Loyseau-Grandmaison</surname>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>L’appel (en droit canon l’appellation) est le recours formé par-devant le juge supérieur contre la sentence du juge inférieur.</p>
+        <p>Dans la société chrétienne, le plus haut degré de juridiction est le tribunal du pape.</p>
+        <p>L’exercice de ce droit de juger en dernier ressort, né avec la suprématie dont il est une conséquence naturelle, a grandi avec elle selon que le besoin d’unité s’est fait de plus eu plus sentir.</p>
+        <p>L’histoire de son développement peut être divisée en trois parties :</p>
+        <p>1<hi rend="sup">0</hi> Les appellations avant le concile de Sardique ;</p>
+        <p>2° Les appellations après le concile de Sardique ;</p>
+        <p>3° Les appellations après les fausses décrétales.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>Dans la première période, les appellations sont assez rares ; l’état de l’Église, livrée au mouvement de conquête universelle qui s’est emparé d’elle tout d’abord, courbée sous le fer des persécuteurs et souvent privée de communications libres et régulières, explique suffisamment cette rareté. Toutefois, les exemples qu’on peut en fournir suffisent pour attester l’exercice des droits du pape, qui ne paraissent écrits nulle part, il est vrai, mais qui découlent de l’idée de suprématie expliquée et développée par la tradition, principale source du droit ecclésiastique des premiers temps.</p>
+      </div>
+      <div>
+        <pb n="12" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_05/ENCPOS_1850_05_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">III.</head>
+        <p>Dans la seconde période, les appellations passent de la tradition dans le droit écrit. Les canons de Sardique reconnaissent formellement deux degrés de juridiction, le concile provincial et le pape. Mais le concile provincial et le métropolitain, auxquels l’état de l’Eglise avait permis de laisser l’exercice de cette prérogative de la suprématie et qui, jusque-là, ont jugé presque sans appel, croient ou feignent de croire que les droits de la papauté sont nés avec le concile de Sardique, et, comme ils ont en leur faveur de nombreux exemples d’affaires terminées par le tribunal provincial et même des décisions particulières écrites antérieures au concile, une lutte s’engage entre la papauté, appuyée sur la tradition renouvelée par les récents canons de Sardique, et les métropolitains, défendant à l’aide d’exemples et d’arrêts particuliers l’ancien ordre de choses qui leur était plus favorable.</p>
+      </div>
+      <div>
+        <head rend="uc">IV.</head>
+        <p>Cette lutte dure jusqu’à l’apparition des fausses décrétales, qui, transportant dans les trois premiers siècles de l’Église l’exercice et le développement de droits qui alors n’étaient qu’un germe fécond, fournissent à la papauté des textes écrits qui semblent antérieurs à ceux que peuvent lui opposer ses adversaires et viennent, pour ainsi dire, légaliser aux yeux des contemporains les droits du pape.</p>
+      </div>
+      <div>
+        <head rend="uc">V.</head>
+        <p>Les fausses décrétales vont même plus loin ; elles aident puissamment à l’introduction dans le droit canon de l’appel direct (<hi rend="i">sine medio</hi>) à Rome.</p>
+        <p>C’était là, en fait, une nouveauté contraire aux canons de Sardique, mais une nouveauté impérieusement réclamée par l’état de la société religieuse, prête à se dissoudre sous l’action désorganisatrice de la féodalité. C’est au temps de Grégoire VII que cette réforme sera complète, mais elle avait été appliquée déjà dans l’affaire de l’évêque Rothade par Nicolas I<hi rend="sup">er</hi>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Une paraphrase poétique des miracles du Christ à l’époque de la réforme  catholique : le <hi rend="i">Thevrgicon sive De miracvlis Christi</hi> (1644) du P. François Vavasseur, s. j. Édition, traduction et commentaire </title>
+        <author>Julien Portal</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 149-156</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Une paraphrase poétique des miracles du Christ à l’époque de la réforme catholique : le <hi rend="i">Thevrgicon sive De miracvlis Christi</hi>(1644) du P. François Vavasseur, s. j.
+        <lb/>Édition, traduction et commentaire</head>
+      <byline>
+        par
+        <forename>Julien</forename>
+        <surname>Portal</surname>
+        <roleName>diplômé de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>La vie de François Vavasseur (1605-1681) est mal connue. Les informations qui la concernent sont maigres et proviennent exclusivement des notices nécrologiques publiées à son décès dans les gazettes. Entré jeune dans la compagnie de Jésus alors florissante, François Vavasseur consacre toute sa vie à l’enseignement, d’abord de la rhétorique dans divers collèges, ensuite de la théologie au fameux collège parisien de Clermont. Parallèlement à son activité de professeur, il écrit abondamment en latin, tant en prose qu’en vers, et fréquente assidûment les cercles érudits, notamment ceux de Nicolas Bourbon le Jeune (1574-1650) et de Denis Petau (1583-1652). Il s’y fait une réputation de puriste, intransigeant en matière de bonne latinité. Son œuvre très variée, principalement consacrée à la critique littéraire, à la polémique religieuse, en particulier contre le jansénisme, et à l’éloge de la politique royale, est rassemblée après sa mort par son confrère et ami Jean Lucas (1638-1716) en un gros volume in-folio publié à Amsterdam en 1709. Écrit au début des années 1640, à la charnière des règnes de Louis XIII et de Louis XIV, le <hi rend="i">Theurgicon</hi>est une paraphrase versifiée des miracles du Christ, tels qu’ils sont décrits dans les Évangiles. L’ouvrage, qui compte environ deux mille six cents vers, se compose de quarante poèmes, d’une longueur comprise entre dix-neuf et deux cent deux vers, répartis en quatre livres.</p>
+        <p>Malgré les commentaires très élogieux qu’il reçoit dans les cercles érudits, il ne semble ni très diffusé, ni très étudié. La renommée d’autres poètes jésuites de la même époque, tels Sarbiewski ou Rapin, supplantera largement celle de Vavasseur.</p>
+        <div>
+          <head>Sources</head>
+          <p>Édité une première fois à Paris chez la veuve Camusat en 1644, le <hi rend="i">Theurgicon</hi>connaît deux rééditions du vivant de Vavasseur : une en 1645 à Leyde chez Elzevier, une autre en 1676 chez Johannes Van Gelder, également à Leyde. Il est aussi repris intégralement dans une anthologie de poèmes latins intitulée le <hi rend="i">Parnasus poeticus societatis Iesu</hi>, publiée à Francfort en 1654 chez Schonwetter, et bien sûr dans les <hi rend="i">Œuvres complètes</hi>publiées à Amsterdam chez Humbert en 1709. Il existe des variantes textuelles entre ces différentes éditions mais elles sont rares et ne modifient pas le ton général. En revanche, aucun manuscrit n’est conservé.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Le genre littéraire et sa réappropriation par Vavasseur</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Une paraphrase des Évangiles inscrite dans une tradition littéraire chrétienne</head>
+          <p>Le <hi rend="i">Theurgicon</hi>appartient au genre littéraire de la paraphrase biblique. Inspiré d’un exercice scolaire de l’Antiquité, celui-ci a été pratiqué par les chrétiens à partir du <num>iv<hi rend="sup">e</hi></num> siècle dans l’espoir de doter leur religion d’une littérature capable de rivaliser avec celle de la mythologie classique. Pour les Évangiles, le modèle de Vavasseur est le poète tardo-antique Juvencus, même si le jésuite ne méconnaît pas d’autres auteurs chrétiens de la même époque, en particulier Prudence, qu’il regarde comme supérieur à tout son siècle, alors communément jugé décadent, et Paulin de Nole, récemment réédité par le soin d’érudits jésuites. Érasme a remis le terme « paraphrase » à la mode à l’époque humaniste et les <num>xvi<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècles sont remplis de paraphrases poétiques, tant catholiques que protestantes, tant en latin qu’en langue vernaculaire. Les Jésuites s’illustrent dans ce genre et Vavasseur donne dès 1638 une paraphrase du livre de Job, publiée à Paris par Jean Camusat et très appréciée de Nicolas Bourbon. Parmi les auteurs modernes, c’est l’humaniste italien Marco Girolamo Vida (1485-1566), auteur d’une épopée évangélique intitulée la <hi rend="i">Christiade</hi>(1535), qui semble avoir eu la préférence de Vavasseur. Malgré son grand succès éditorial, le genre de la paraphrase est critiqué, soit qu’on trouve indécent de faire de la religion un sujet de poème, soit que la mythologie ou l’histoire ancienne paraissent des matières plus attrayantes et plus propices à frapper l’imagination. Vavasseur, qui connaît les polémiques littéraires de son temps, répond donc à ces objections dans un avis <hi rend="i">Ad lectorem</hi>qui précède l’ouvrage. Il réagit aussi avec vigueur contre les paraphrastes de son époque qui prennent trop de liberté avec le texte, qui s’en éloignent en se perdant dans des considérations morales et théologiques ou qui y ajoutent des détails extravagants qu’ils inventent eux-mêmes. Il revendique au contraire une poésie à la fois élégante et scrupuleusement respectueuse du texte biblique qu’il paraphrase. Il concilie ainsi les deux grandes matières qui l’accaparent depuis toujours, celles qu’il enseigne successivement dans les meilleurs collèges jésuites, la rhétorique et la théologie.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La technique paraphrastique du P. Vavasseur</head>
+          <p>Le travail de paraphraste du P. Vavasseur commence par la reconstitution de l’ordre chronologique des miracles du Christ, ordre qui diffère selon les évangélistes. Pour cela, il s’appuie sur les commentaires des Pères ou de théologiens contemporains. Les travaux pour accomplir cette tâche ne manquent pas alors, tant le genre littéraire de la vie de Jésus est pratiqué et apprécié depuis au moins la fin du Moyen Âge, en particulier dans l’œuvre rédigée par Ludolphe le Chartreux ou de Saxe. Cependant, même s’il croise plusieurs sources, Vavasseur semble consulter surtout <hi rend="i">La Vie du sauveur du monde Jésus-Christ, tirée du texte des quatre évangélistes, réduits en un corps d’histoire</hi>, publiée pour la première fois en 1637 par son confrère le P. Bernardin de Montereul (1596-1646). Il reconstitue ensuite les faits le plus précisément possible et rassemble tous les détails que donnent les différents évangélistes sur un même miracle. Lorsqu’il y a contradiction, 
+            <lb/>il choisit, en suivant là encore l’avis des Pères de l’Église, la version qui lui paraît la plus plausible et mérite donc d’être paraphrasée. Il lui arrive parfois de faire quelques digressions, souvent inspirées de traditions popularisées par l’iconographie, ce qui n’a rien d’étonnant car la rhétorique et la spiritualité des Jésuites sont profondément influencées par les arts graphiques. Parfois Vavasseur s’écarte aussi quelque peu de son sujet pour traiter d’autres passages de l’Évangile dont il transpose des éléments dans son récit. Ces ajouts demeurent peu fréquents et sont généralement moins longs que ceux présents chez Vida ou chez d’autres paraphrastes contemporains. Vavasseur est donc bien fidèle aux conseils stylistiques que lui donne le P. Petau dans ses lettres et qu’il dispense à son tour à ses élèves dans les discours qu’il a prononcés dans les décennies précédentes et fait publier par Cramoisy en 1646 : il faut fuir l’abondance de mots, l’<hi rend="i">inflatio uerborum</hi>. Il se permet néanmoins, sans rien modifier aux faits eux-mêmes, de déplacer, d’abréger et d’amplifier pour embellir ou dramatiser son récit. Il ajoute ainsi des adjectifs qui colorent un peu le style, personnifie souvent les maladies ou les sentiments, solennise les paroles rapportées ou développe des périphrases précieuses pour désigner des réalités jugées trop triviales pour être dites en vers. Tout cela vise sans doute à redonner de l’intérêt et du suspens à un récit que tous ses lecteurs connaissent déjà – ainsi qu’à montrer ses talents de poète virtuose.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>L’imitation des classiques au service d’une interprétation</head>
+          <p>C’est chez les auteurs de la latinité classique que Vavasseur va chercher des figures rhétoriques pour embellir son poème. Il n’y a pas lieu d’en être étonné : Vavasseur enseigne longtemps la rhétorique, c’est-à-dire qu’il apprend à des jeunes gens à réutiliser pour leurs propres compositions les mots et images qu’ils trouvent dans leurs lectures. Les rhéteurs jésuites débattent toutefois sur le modèle à choisir, sur la période de la latinité la plus parfaite. Vavasseur est grand admirateur des écrivains latins de la fin de la République et du principat d’Auguste. Contre certains de ses confrères français qui recommandent à leurs élèves de prendre à chaque auteur ce qu’il a de mieux, il se fait partisan, à la suite de son maître le P. Petau, de l’imitation d’un modèle unique : Cicéron pour la prose et Virgile pour les vers. Aussi trouve-t-on surtout des réminiscences virgiliennes dans le <hi rend="i">Theurgicon</hi>. Celui-ci emprunte aux <hi rend="i">Géorgiques</hi>, auxquelles fait penser le titre, et aux <hi rend="i">Bucoliques</hi>, en raison de la traditionnelle interprétation chrétienne qui est faite de l’églogue de Pollion. Mais si Vavasseur y fait parfois de belles allusions, c’est surtout l’<hi rend="i">Énéide</hi> qu’il imite et, de même que chez Juvencus et chez Vida, le Christ est présenté comme le nouvel Énée, dont les apôtres sont les compagnons d’armes. Au-delà de reprises textuelles directes et aisément repérables, notamment de clausules, Vavasseur imite Virgile en conformant son style à celui du poète de Mantoue et en le surchargeant de formules et d’images propres à l’épopée, dont l’<hi rend="i">Énéide</hi> est le modèle latin le plus abouti. Ainsi il transpose souvent, comme beaucoup de poètes humanistes, des éléments païens dans le contexte juif : le ciel devient l’Olympe, l’enfer l’Averne, le soleil Titan, etc. Néanmoins le syncrétisme est très limité par rapport à d’autres productions de la même époque. L’œuvre est également riche en citations et en réminiscences d’autres poètes classiques, mais celles-ci sont moins nombreuses et plus discrètes que celles de Virgile. Elles concernent en premier lieu Lucrèce, dont Vavasseur apprécie les mots rares et les enjambements audacieux, Ovide, surtout quand il s’agit de décrire une métamorphose, enfin les autres poètes épiques, Valerius Flaccus, Silius Italicus et, dans une moindre mesure, Lucain. L’influence d’auteurs tardifs et même néo-latins se décèle également, surtout celle de Jacopo Sannazzaro et de Marco Girolamo Vida. Au total, même si la paraphrase n’altère pas les faits rapportés par les évangélistes, le style brillant, savant et parfois même grandiloquent, contraste fortement avec la simplicité du texte source.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Une œuvre ancrée dans le contexte religieux et les débats théologiques de son siècle</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Une œuvre de l’apogée de la réforme catholique</head>
+          <p>Le <hi rend="i">Theurgicon</hi>est écrit et publié au moment où la réforme catholique atteint son apogée, sous le pontificat d’Urbain VIII. Issu de la grande famille florentine des Barberini, ce pape fastueux compte en effet sur les arts, notamment sur la poésie qu’il pratique lui-même avec aisance, pour diffuser et exalter la religion catholique romaine, qui est enfin sortie de la grande crise morale et contestataire du siècle précédent. Dans la lignée de ses prédécesseurs, dont il pousse la logique encore plus loin, il adopte une esthétique résolument triomphaliste. Les Jésuites du Collège romain sont le fer de lance de l’élaboration d’un art pur à la fois d’erreurs doctrinales et de fautes de goût, un art qui frappe l’imagination et tous les sens. En tant que jésuite, Vavasseur prend une part active à cette politique. Il espère par son œuvre doter sa religion d’une poésie digne d’elle. Il lance donc un défi au paganisme antique, dont les fables absurdes ont inspiré des vers si beaux que cela lui paraît indécent. À ses yeux, la Bible néglige souvent la bonne rhétorique cicéronienne et les auteurs chrétiens tardo-antiques ou médiévaux ont trop perdu le sens du bon latin. Un examen attentif du poème révèle néanmoins des expressions prises au latin tardif ou ecclésiastique, voire quelques gallicismes. Ces incorrections concernent le plus souvent le vocabulaire : un mot, généralement un adjectif, est usité dans un sens qu’il ne pourrait avoir en latin cicéronien. Malgré cela, l’effort d’imitation des poètes classiques réalisé par le P. Vavasseur est remarquable. On retrouve fréquemment sous sa plume la saveur particulière des poètes les plus illustres de la latinité. Son œuvre, comme celles de tous les Jésuites de sa génération, poursuit un double objectif esthétique et religieux, avec la bénédiction d’Urbain VIII, qui meurt l’année même de la publication du <hi rend="i">Theurgicon</hi>.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Une spiritualité optimiste et moliniste</head>
+          <p>Un aspect important du catholicisme du premier <num>xvii<hi rend="sup">e</hi></num> siècle est son optimisme développé par des théologiens jésuites en réaction au regard plus pessimiste que portent Luther et Calvin sur la nature humaine après la Chute. Or le <hi rend="i">Theurgicon</hi>est tout entier imprégné de cette spiritualité. Le sujet du poème est lui-même révélateur : il traite du Christ qui accomplit des miracles. Or le miracle est par excellence une cause de joie parmi les hommes. Le poète est donc sans cesse rempli d’allégresse pour le triomphe de son Dieu sur les maladies et les malheurs du monde, bien loin d’une mystique doloriste qui se repaît de la contemplation de la Passion, de la croix et de la flagellation. Si le miracle est toujours vu par les théologiens comme une preuve de l’origine divine de la religion chrétienne, exalter les miracles revient donc pour Vavasseur à exalter sa foi. Il suit également l’enseignement des théologiens jésuites, notamment du P. Louis Richeome (1544-1625), auteur d’un traité intitulé <hi rend="i">L’art d’admirer, aimer et louer Dieu par les créatures</hi>paru en 1611. Il porte ainsi un regard très bienveillant sur la création, relevant les moindres détails relatifs à la nature et aux animaux pour s’en émerveiller. Il présente également ses personnages sous un angle favorable et compatit vraiment à la souffrance de ceux qui demandent une guérison au Christ. Il s’oppose parfois aux Pères de l’Église qui voient dans certains d’entre eux des importuns indignes. En outre, en citant sans cesse Virgile et en rapprochant ses personnages de héros païens, même implicitement, il présuppose une théologie optimiste sur les conséquences du péché originel : s’il est possible d’imiter les poètes païens et de comparer leurs grands hommes aux saints, c’est que, même dans le paganisme, il y eut des justes que l’on peut donner en exemple. Se dessine donc une théologie optimiste, qui, sans jamais être exposée, sous-tend toute la paraphrase de Vavasseur.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Une exaltation de la figure du Christ</head>
+          <p>Le poème, malgré son style virgilien qui pourrait passer pour antique voire intemporel, appartient bien à la spiritualité de son époque qui s’attache à la méditation sur la vie du Christ. Sans surprise, Vavasseur s’inscrit dans la tradition de son ordre et suit en premier lieu les méthodes d’Ignace de Loyola, c’est-à-dire qu’il pratique une contemplation très concrète et immerge pour ainsi dire son lecteur dans l’atmosphère des Évangiles grâce au procédé éminemment ignacien de la « composition de lieu ». Bien plus, il s’approprie le récit biblique en le réécrivant avec sa culture personnelle et son goût humaniste, il le fait sien en y plaçant une part de lui-même et de ses lectures. C’est surtout en cela que le <hi rend="i">Theurgicon</hi>est l’œuvre d’un jésuite : l’auteur, bien que résolument attaché aux dogmes intangibles du christianisme, y conserve toute sa personnalité. Il se distingue donc nettement d’une école de spiritualité plus abstraite, portée sur la contemplation des esprits et du ciel et illustrée au <num>xvii<hi rend="sup">e</hi></num> siècle par le cardinal de Bérulle. Bien qu’il s’exprime rarement à la première personne, on le sent s’émouvoir chaque fois qu’il introduit la personne du Christ, dont il fait son héros. Pour rendre ce dernier attractif et fascinant, il le dote de toutes les qualités du héros épique, soulignant sans cesse son courage ou encore sa beauté. À ces traits attendus, il ajoute la douceur, caractéristique qu’il souligne dans de nombreux détails, ses gestes, ses paroles, son attitude. Mais Jésus est plus qu’un simple personnage : c’est en lui que Vavasseur voit le véritable inspirateur de sa poésie et, comme d’autres poètes chrétiens antérieurs, antiques et modernes, c’est lui qu’il invoque plutôt que la Muse païenne. Par là, il donne à l’activité poétique une nouvelle dimension : elle devient acte religieux.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Édition du <hi rend="i">Theurgicon</hi></head>
+        <p>Est édité le texte latin des deux premiers livres du <hi rend="i">Theurgicon</hi>, soit vingt poèmes précédés d’une pièce liminaire qui introduit le sujet pour un total de plus de mille hexamètres dactyliques. Il est précédé d’un avis <hi rend="i">Ad lectorem</hi>, d’une dédicace en prose à François Sublet de Noyers, ancien secrétaire d’État à la guerre de Louis XIII, et d’un éloge du dédicataire sous forme d’une élégie de soixante vers.</p>
+        <p>L’établissement du texte est réalisé d’après la première édition publiée par la veuve de Jean Camusat en 1644 ; les variantes des quatre autres éditions sont relevées dans l’apparat critique. Celui-ci est complété par l’identification des emprunts aux principaux poètes latins et par un commentaire explicatif.</p>
+        <p>L’ensemble du texte édité est accompagné d’une traduction française en regard. Comme dans toutes les éditions anciennes du <hi rend="i">Theurgicon</hi>, avant chaque poème est fourni le texte de la Vulgate qui correspond à celui-ci et, en regard, sa traduction par Lemaistre de Sacy. La traduction vise surtout à la fidélité pour aider à la lecture du texte latin vers par vers.</p>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>La lecture du <hi rend="i">Theurgicon</hi> permet d’entrer dans la culture des érudits jésuites du premier <num>xvii<hi rend="sup">e</hi></num> siècle. Située à la confluence de deux disciplines <hi rend="i">a priori</hi>très différentes, la rhétorique et la théologie, l’œuvre du P. Vavasseur vise à atteindre la perfection dans ces deux domaines : pureté formelle et conformité doctrinale. Ainsi, tout en reprenant un genre littéraire très pratiqué et très apprécié, Vavasseur se distingue en revendiquant une très grande fidélité à la Bible et au dogme catholique, à une époque où les paraphrastes se permettent beaucoup de libertés dans le souci d’embellir leur ouvrage.</p>
+        <p>Sur le plan stylistique, son choix d’imiter principalement – mais pas exclusivement – Virgile découle d’une prévention personnelle contre l’éclectisme d’inspiration que préconisent certains de ses confrères. Le <hi rend="i">Theurgicon</hi> atteste ainsi la place déterminante que peut prendre l’imitation des modèles antiques dans la composition d’une œuvre littéraire, tout particulièrement d’une œuvre néolatine.</p>
+        <p>Malgré la discrétion de Vavasseur sur ses intentions, dans la mesure où il ne prend pas la parole dans son œuvre, se laissent déceler ses prises de position dans les débats doctrinaux et spirituels qui animent alors le clergé : un ton triomphaliste en accord avec l’enthousiasme et le faste post-tridentins, une théologie optimiste qui croit en la conciliation des vertus et de l’esthétique païennes avec le christianisme, une spiritualité plutôt centrée sur la personne humaine du Christ. En somme, le <hi rend="i">Theurgicon</hi>est une œuvre qui semble certes avoir été assez peu lue, mais qui synthétise bien les positions de la compagnie de Jésus et qui révèle l’omniprésence de celle-ci tant dans les milieux littéraires qu’ecclésiastiques sous les règnes de Louis XIII et de Louis XIV.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Huit lettres manuscrites adressées par Nicolas Bourbon à François Vavasseur, pendant la rédaction du <hi rend="i">Theurgicon</hi>entre 1638 et 1643 (Bibliothèque nationale de France, latin 8585, fol. 164-179).</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_09" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Des asiles religieux dans l’empire romain et en France</title>
+        <author ref="https://www.idref.fr/026712881">Charles de Robillard de Beaurepaire</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_09.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 22</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Des asiles religieux
+        <lb/>dans l’Empire romain et en France</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Charles-Marie-R.</forename>
+        <surname>de Beaurepaire</surname>
+      </byline>
+      <p>Le besoin de protéger contre la vengeance les faibles et les malheureux, a fait établir des asiles chez la plupart des nations antiques. On les rencontre chez les Hébreux, chez les Grecs et chez les Romains. — A Rome, ils semblent être une institution plutôt civile que religieuse; en Grèce, ils sont une institution religieuse, qui eut souvent pour effet la protection des coupables.</p>
+      <p>Cette constitution religieuse de la Grèce survécut à Tibère; il est faux qu’il l’ait abolie.</p>
+      <p>Elle passa dans la législation romaine, sinon sous Constantin, du moins sous les premiers empereurs chrétiens ; mais, en l’admettant pour le plus grand bien de l’humanité, l’Eglise l’avait épurée, en lui donnant pour correctif les pénitences canoniques.</p>
+      <p>Le 1<hi rend="sup">er</hi> concile d’Orléans la proclama de nouveau et la fit adopter par Clovis. Considérée à cette époque, elle est l’abri de toute critique; elle remédiait efficacement au vice du système pénal des Francs.</p>
+      <p>Charlemagne ne l’a point abolie; on a pris une régularisation pour une abrogation.</p>
+      <p>Elle s’est développée quant aux lieux auxquels elle s’étendait, lors de l’établissement de la trêve de Dieu.</p>
+      <p>Elle a protégé non seulement les personnes, mais leurs biens.</p>
+      <p>Elle a été peu à peu restreinte par les lois civiles, les lois ecclésiastiques et les légistes.</p>
+      <p>Au <num>xv<hi rend="sup">e</hi></num> siècle, les nombreux abus auxquels elle donnait lieu la firent prendre en dégoût par les rois et les princes, qui en demandèrent une réforme au souverain pontife.</p>
+      <p>François I<hi rend="sup">er</hi> l’abolit implicitement par l’ordonnance de 1539, sans avoir recours à l’autorité pontificale.—Le changement qui s’était opéré dans les institutions politiques et judiciaires de là France, et dans la discipline ecclésiastique , la rendait à peu près inutile.</p>
+    </body>
+  </text>
+</TEI>

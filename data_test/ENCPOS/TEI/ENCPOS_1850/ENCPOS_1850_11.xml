@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_11" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pépin II, roi d’Aquitaine</title>
+        <author ref="https://www.idref.fr/073649821">Alfred Jacobs</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_11.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 24-25</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Pépin II, roi d’Aquitaine</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Alfred</forename>
+        <surname>Jacobs</surname>
+      </byline>
+      <p>L’Aquitaine. — Ses limites en 806 et 817. — Etat de la contrée sous Louis-le-Débonnaire et son fils Pépin I<hi rend="sup">er</hi>. — Mariage de Pépin I<hi rend="sup">er</hi>. — Naissance de Pépin IL — Ses premières années. — Son père veut le confier à Droghon, archevêque de Metz, et l’élever dans l’état monastique. — Note à ce sujet. — Mort de Pépin I<hi rend="sup">er</hi>. — Etat de l’Aquitaine. —Deux partis se forment : l’un pour Louis-le-Débonnaire; l’autre en faveur de son petit-fils Pépin IL —Nature de ces partis. — Mesures de Louis-le-Débonnaire. — Brigandages exercés par les partisans de Pépin. —Message d’Ebroin, évêque de Poitiers. — L’empereur descend en Aquitaine. — Résistance et reddition de Carlat. — Les défenseurs de ce château conservent <hi rend="i">leurs héritages. —</hi> Prise de Turenne. — Louis se rend à Poitiers. — Ses intentions sur son petit-fils. — Sa mort. — Résultats de cet événement. — Pépin II redevient libre. — Avait-il quitté l’Aquitaine? — Note à ce sujet et sur un diplôme de l’année 839. — Embarras de Charles-le-Chauve. — Ses dispositions en Aquitaine. — Son départ. — Conduite de Lothaire. — Tentative de Pépin pour s’emparer de la reine Judith. — Lothaire affecte de protéger son neveu, et se montre prêt à le sacrifier. — Aspect de l’empire et des partis au commencement de 841.— Préparatifs de la bataille de Fontenet. — Quelle part y prend Pépin ? —Après la défaite il retourne en Aquitaine. — Charles l’y suit. — Son armée se disperse. — Pépin, d’abord disposé à la soumission, prépare une nouvelle résistance. — Conduite de Lothaire. — Ses intrigues. — Prêt à livrer une nouvelle bataille, il appelle Pépin. — La bataille n’a pas lieu, il offre de le sacrifier. — Pépin le suit en Bretagne. — Au retour de cette expédition, Lothaire, menacé par ses frères de la perte de ses Etats, conclut, au détriment de son neveu, l’accommodement provisoire de Mâcon. — Expédition de Charles-le-Chauve en Aquitaine. — En son absence Pépin avait agrandi sa domination et pris Toulouse. — Note à ce sujet. — Il résiste à Charles. — Le comte Egfrid prend ou tue quelques-uns de ses partisans. — Les progrès de Pépin continuent après le départ du Roi de France. — Un diplôme de 842 le montre possesseur de plusieurs pays dans le diocèse de Limoges. — Remarques sur ce monument. — Etat des populations de l’Aquitaine au commencement de 843. — Expédition de Charles dans cette contrée. — Résultats du traité de Verdun pour Pépin II. — Bien que resté seul, il continue à disputer l’Aquitaine. — Charles vient assiéger Toulouse. — Mort de Bernard, duc de Septimanie. — Guillaume, fils de ce duc, s’unit d’amitié à Pépin, et défend victorieusement Toulouse. — Insuccès d’une expédition envoyée dans les environs par le roi de France pendant le siège. — Défaite du <hi rend="i">Gué du Talion. —</hi> Défaite du pays d’Angoulême. — L’abbé Hugues, fils de Charlemagne, y périt. — Son chant funèbre.— Par le traité de Saint Benoit-Fleury, Charles-le-Chauve cède à Pépin le royaume d’Aquitaine à l’exception des comtés de Poitiers, Saintes et Angoulême. — Résultats de celte paix. — Pépin laissé à l’inaction s’adonne à l’intempérance. — Il ne s’oppose pas aux ravages des Normands, et s’aliène les populations par son incurie. — Alternatives d’abandon et de retour. — Résolutions relatives à l’Aquitaine prises en 847 par les fils de Louis-le-Débonnaire à l’assemblée de Mersen.—Charles-le-Chauve détruit un détachement de Normands auprès de Périgueux. — Cet événement le rend populaire auprès des Aquitains. — Il est proclamé roi à Orléans. — Il s’empare de Charles, frère de Pépin, et le fait enfermer au monastère de Corbie. — Siège et prise de Toulouse. Conduite de Pépin. — Mort de Guillaume, fils de Bernard. — Les Aquitains, mécontents de Charles-le-Chauve, retournent à Pépin — Intrigues de Pépin avec les Normands. — Il est pris par Sanchès, duc des Vascons, et livré à Charles. — Enfermé au monastère de Saint-Médard, il tente de s’en échapper. — Troubles de l’Aquitaine pendant sa captivité. — En 854 il reparaît après s’être enfui de Saint-Médard. — Les Aquitains le reprennent pour roi. — Il laisse les Normands ravager le pays, et les Aquitains couronnent Charles, fils de Charles-le-Chauve. — En 856 il se fait vers lui un nouveau retour, puis vers Charles-le-Chauve. — Pépin s’attache ouvertement aux bandes des Normands. — En 858 Char-les-le-Chauve lui cède par un traité quelques comtés de l’Aquitaine. — Odieux aux populations, Pépin est forcé de chercher asile en Bretagne. — En 861 il reparaît en Aquitaine avec les Normands. — Ses ravages pendant les années 862 et 863. — En 864 il mène ses alliés au siège de Toulouse. — Le comte Rainulfe s’empare de sa personne, et le livre à l’assemblée de Pistres. — Condamné à mort, il obtient d’être enfermé au monastère de Senlis, où il finit ses jours. — Caractère de sa vie et de son règne.</p>
+    </body>
+  </text>
+</TEI>

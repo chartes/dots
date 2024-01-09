@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Étude sur les évêques et le diocèse de Bayeux au milieu du <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle (1431-1479)</title>
+        <author ref="https://www.idref.fr/027001792">Bernard Mahieu</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_17.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 143-153</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="143" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Étude
+       <lb/>sur
+       <lb/>les évêques et le diocèse de Bayeux
+       <lb/>au milieu du <num>xv<hi rend="sup">e</hi></num>siècle
+       <lb/>(1431-1479)</head>
+      <byline>
+        par
+        <forename>Bernard</forename>
+        <surname>Mahieu</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre préliminaire
+         <lb/>vue d’ensemble sur le diocèse de Bayeux
+         <lb/>des origines au <num>xv<hi rend="sup">e</hi></num> siècle.</head>
+        <p>Répondant à l’ancienne <hi rend="i">Civitas Baiocassium</hi> de l’Empire, puis au comté de Bessin, dans une région géographique où voisinent le jurassique fertile des campagnes du Bessin, les calcaires oolithiques de la plaine de Caen, terre des moissons, et au sud le Bocage au sous-sol de grès et de granit ne permettant que des cultures réduites, l’Église de Bayeux fut, au <num>iii<hi rend="sup">e</hi></num> siècle, fondée par le Romain Exuperius et connut des débuts difficiles, entravés au <num>ix<hi rend="sup">e</hi></num> siècle par les invasions normandes. Au <num>xi<hi rend="sup">e</hi></num> siècle, la foi profonde, le monachisme dans son essor, la protection des ducs en font une circonscription <pb n="144" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_02.TIF/full/full/0/default.jpg"/>religieuse prospère, dont la richesse ne s’affaiblira guère qu’après la descente anglaise de 1346 et surtout après l’installation de l’autorité effective de Henry V en 1417. Rappel des avances de ce roi à l’égard des clercs. La situation matérielle est lamentable en 143’1.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La fin de l’occupation anglaise</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’élection de Zanon de Castiglione
+           <lb/>et sa personnalité.</head>
+          <p>Après la mort de l’évêque Nicolas Habart, Zanon de Castiglione, qui bénéficiait depuis le 29 janvier 1430 de l’expectative pontificale, est élu évêque de Bayeux le 14 décembre 1431. La majorité des suffrages paraissait acquise à un chanoine du diocèse, Jean d’Esquay, qui, après la confirmation, le 27 janvier 1432, de l’élection de Zanon, par le pape Eugène IV, refuse de reconnaître expectative et élection et, au nom des principes de Constance, porte l’affaire devant le concile de Bâle, le 11 juillet 1432 : le déroulement du procès montre le peu d’empressement des Pères, en dépit des recommandations du duc de Bourgogne et de l’Université de Paris, à satisfaire le concurrent évincé. L’arrivée de Zanon à Bâle, en 1435, comme ambassadeur du roi d’Angleterre met pratiquement fin à l’action engagée par son compétiteur.</p>
+          <p>Le nouvel évêque, né dans le dernier quart du <num>xiv<hi rend="sup">e</hi></num> siècle, était neveu du cardinal Branda de Castiglione, évêque de Lisieux de 1420 à 1424. Docteur <hi rend="i">utriusque juris,</hi> il devient évêque de Lisieux, par résignation de son oncle, le 27 août 1424, et se signale par sa déposition au procès de Jeanne d’Arc. C’est un humaniste grand seigneur et politique.</p>
+        </div>
+        <div>
+          <pb n="145" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>La vie politique de Zanon de Castiglione
+           <lb/>de 1431 à 1449.</head>
+          <p>L’entrée de Zanon dans la vie politique est favorisée par le duc de Gloucester. Auparavant, les rapports de l’évêque avec le roi n’avaient été marqués que par sa prestation de serment, le 13 juillet 1432. Le 4 janvier 1435, Zanon est envoyé à Bâle comme ambassadeur royal. Il participera ensuite au concile de Florence et, en même temps qu’il reprendra d’anciennes relations ou en nouera de nouvelles avec les humanistes italiens, il se livrera, pour le compte de Gloucester, à des achats divers de livres et introduira le duc près de Pier Candido Decembrio, Léonardo Bruni et d’autres. Il est, de plus, un excellent propagandiste de la renommée du duc. De retour en 1442, il est chargé d’aller visiter, en janvier 1443, les forteresses de Dieppe et Granville, nouvellement reconquises. Membre du Grand Conseil royal, le 20 janvier 1443, il accompagne, en mars 1444, le duc d’York dans un voyage d’inspection en Basse-Normandie ; en avril 1445, enfin, il est délégué par ce dernier prince vers le roi de France pour conclure une union entre Jeanne de France et Edouard d’York.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La vie administrative et religieuse du diocèse
+           <lb/>a la fin de la domination anglaise.</head>
+          <p>Les vicaires généraux, particulièrement Nicole Hermecent : leur rôle dans l’administration, la réception des serments d’abbés, les ordinations, la surveillance des écoles, les examens des jeunes prêtres. Dans les fonctions pontificales, l’évêque est suppléé par le cordelier Guillaume Loiseleur, évêque d’Aulona, résidant à Baveux. Quelques détails sur les visites archidiaconales.</p>
+          <p>L’officialité : différentes affaires passées devant ce tribu<pb n="146" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_04.TIF/full/full/0/default.jpg"/>nal ; parmi d’autres, sentence d’excommunication portée, en 1445, contre l’abbé de Saint-Étienne de Caen, Hugues de Juvigny, qui avait incarcéré un clerc venu lui porter sommation au nom de l’évêque. Le droit de lever l’excommunication portée contre les gens d’église fait l’objet d’une contestation entre le doyen Martin Pinard et l’évêque en 1434, réglée à l’avantage de Zanon.</p>
+          <p>Les synodes sont réunis deux fois par an : il nous reste quelques extraits de statuts pour 1436, 1444 et 1449, ainsi qu’une allocution prononcée en l’un de ces synodes par le secrétaire de l’évêque, Roland de Talentes.</p>
+          <p>La mort du cardinal Branda (5 février 1443) provoque une grosse émotion à Bayeux et détermine une abondante correspondance de Roland de Talentes. Division des fruits de la prébende de Bernesq par Nicolas de Clamanges, la moitié étant affectée aux enfants du candélabre. Long conflit entre l’évêque et son chapitre à propos de la juridiction à l’entour de la chapelle, de la Délivrande.</p>
+          <p>L’Université de Caen, fondée en 1432, confirmée par le pape en 1437, installée en 1439, eut comme chancelier l’évêque de Bayeux, selon des fonctions définies dans les statuts de 1457, consistant à conférer les grades universitaires et à recevoir les serments des gradués.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Troubles matériels et sociaux.</head>
+          <p>Dans deux lettres au cardinal d’York et au duc de Gloucester, Roland de Talentes dépeint la pénible situation du pays et met en garde les administrateurs anglais contre leurs fautes.</p>
+          <p><hi rend="i">L’administration anglaise dans le diocèse de Bayeux.</hi> – Vue générale sur les organismes centraux en Normandie et sur le personnel local. L’administration militaire : garnisons de Bayeux, Caen et Vire. La multiplication des levées détermine des protestations du chapitre en 1439 et 1446.</p>
+          <pb n="147" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_05.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Incursions françaises.</hi> – Le capitaine manceau Ambroise de Loré ne craint pas, le 29 septembre 1431, de pousser jusque sous les murs de Caen où se tient la foire.</p>
+          <p><hi rend="i">Brigandage et soulèvements.</hi> – La situation lamentable du paysan écrasé sous les exactions, torturé par les gens de guerre errant un peu partout, malgré les interventions réitérées du pouvoir, est aggravée encore par les méfaits des brigands : pour leur résister, on arme les communes, ce qui n’empêche point le chef de bande Vénables de massacrer dans un guet-apens les pauvres gens de la région, à Vicques, le 8 septembre 1434. Dans l’hiver 1434, sous la direction de Jean de Chantepie, 50,000 hommes se portent, à Caen, pour succomber dans un traquenard à Vaucelles. En septembre 1436, les manants des Vaux-de-Vire se soulèvent sous la conduite de Boschier et se font tuer dans les parages de Saint-Sever. La misérable situation de la Normandie, dont Thomas Basin nous a laissé un tableau désolant, se perpétuera sans changements jusqu’à 1450.</p>
+          <p><hi rend="i">Les lieux de culte.</hi> – Exemples d’églises détruites, mais aussi de constructions nouvelles. A la cathédrale, des réfections sont nécessaires : privilèges et indulgences concédés par Eugène IV en 1440 et 1442. Une nouvelle dédicace aura lieu le 14 juillet 1451.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Le diocèse de Bayeux et la reconquête
+           <lb/>(1449-1450).</head>
+          <p>L’évêque de Bayeux, jusqu’alors Anglais de cœur et par politique, va maintenant servir la cause française.</p>
+          <p><hi rend="i">La reconquête avant Formigny.</hi> – Rappel rapide des événements de juillet 1449 à mars 1450. L’évêque Zanon assiste à l’entrée du roi à Rouen, le 3 novembre 1449. Son château de Neuilly était tombé, le 2 octobre, dans les mains royales, en même temps qu’une partie du chapitre embrassait la cause française.</p>
+          <pb n="148" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_06.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Formigny et la reconquête du diocèse de Bayeux.</hi> – Cependant qu’à Bayeux le capitaine Matthew Gough procède à des pillages organisés, Kyriel débarque, le 15 mars 1450, à Cherbourg, descend vers les Veys et, faisant sa jonction avec des renforts venus de Vire et Bayeux, se porte vers l’Est, mais, attaqué par le comte de Clermont, perd, le 15 avril, la bataille de Formigny : description de la bataille où Richemont détermine la victoire. Bayeux succombe le 15 mai 1450. Le chapitre fait sa soumission au roi et lui envoie, le 20 mai, des délégués qui retrouveront près de Charles VII l’évêque qui avait prêté serment, le 25 mai. Caen tombe le 24 juin et tout le diocèse est reconquis.</p>
+          <p><hi rend="i">La fête de la délivrance de la Normandie.</hi> – Instituée par le roi, le 31 août 1450, la fête fut promulguée à Bayeux par mandement de Zanon, œuvre de Roland de Talentes. Le diocèse de Bayeux se trouve aujourd’hui le seul à conserver le souvenir de Cette institution.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Après la reconquête</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la fin de l’épiscopat de Zanon de Castiglione
+           <lb/>(1450-1459).</head>
+          <p>L’évêque, après son serment au roi, le 25 mai 1450, voit, le 16 juin 1453, son dénombrement enregistré à la Chambre des Comptes.</p>
+          <p><hi rend="i">La vie du diocèse.</hi> – ■ Mesure de discipline ecclésiastique. Serments d’abbés. Affaires diverses. La visite du cardinal d’Estouteville, le 27 avril 1452, permet à Roland de Talentes de prononcer un discours, où il pose la question de la Croi<pb n="149" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_07.TIF/full/full/0/default.jpg"/>sade, question qu’il développera dans une adresse à Charles VII, après la prise de Constantinople.</p>
+          <p><hi rend="i">La mort et les donations de Zanon de Castiglione.</hi> – L’évêque avait comblé son église de dons considérables, fait travailler au manoir épiscopal, offert au trésor de riches pièces d’orfèvrerie et des vêtements liturgiques. Il mourut à Neuilly, le 12 septembre 1459, et fut inhumé dans sa cathédrale.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Louis de Harcourt, patriarche de Jérusalem,
+           <lb/>évêque de Bayeux.</head>
+          <p>Le 28 novembre 1459, l’archevêque de Narbonne, Louis de Harcourt, est élu évêque de Bayeux contre Jean de Gaucourt, chanoine de Bayeux : la postulation ayant été appuyée près du pape par Roland de Talentes, Louis de Harcourt était nommé, le 27 janvier 1460, à la fois patriarche de Jérusalem et évêque de Bayeux, le titre patriarcal lui étant concédé tant pour des raisons personnelles que par une nécessité de droit canonique, l’archevêque étant transféré à un simple siège cathédral. Jean de Gaucourt pourtant avait eu un puissant, intercesseur à Rome : le roi en personne.</p>
+          <p>Fils posthume et né hors mariage, en 1424, de Jean de Harcourt, comte d’Aumale, tué à Verneuil, et de Marguerite de Preullay, reconnu par la famille, puis légitimé par lettres royaux d’avril 1441, Louis, après ses études au collège d’Harcourt, devient chanoine et vicaire général de Narbonne, maître des requêtes du Conseil et accumule les titres ecclésiastiques : le 13 octobre 1451, évêque de Béziers, le 12 décembre suivant, archevêque de Narbonne, et les privilèges civils : membre du Conseil du roi, le 11 novembre 1452. Il se réservait un rôle normand : il est procureur à Rouen du cardinal d’Estouteville à la prise de possession de celui-ci, le 9 juillet 1453, habite Rouen et préside l’Échiquier en 1453, 1454, 1456.</p>
+        </div>
+        <div>
+          <pb n="150" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_08.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Le diocèse de Bayeux sous Louis de Harcourt
+           <lb/>(1459-1479).</head>
+          <p><hi rend="i">La vie du diocèse.</hi> – Pas d’évêque suffragant : la présence de Guillaume le Bas, évêque d’Aulona, ancien abbé de Lyre jusqu’à 1463, où il eut comme successeur Louis de Harcourt lui-même, est attestée à Bayeux, mais rien n’indique qu’il ait accompli des fonctions pontificales. Les vicaires généraux : Raoul Bouvery et Ursin Thibout. Fondation du collège des</p>
+          <p>Heuriers de la cathédrale par les Frères de Talentes en 1463. Plusieurs voyages royaux : Louis XI, reçu à Bayeux, le 24 août 1462, puis le 7 septembre 1470, se rend alors au pèlerinage de la Délivrande, du 7 au 10 septembre. Un autre déplacement royal ramena Louis XI à Caen et à la Délivrande (1473), voyage qui lui permit peut-être de rencontrer Warwick.</p>
+          <p><hi rend="i">Le patriarche et l’église de Bayeux.</hi> – Louis de Harcourt se montre prélat magnifique par les six obits qu’il fonde et par ses dons au trésor de la cathédrale : le contretable, qui fut détruit par les ravages protestants de 1562, sa mitre, des gants, des joyaux divers, chasubles, tentures, que nous pouvons connaître par l’inventaire de 1476, par ses libéralités à la librairie : ouvrages surtout de théologie décrits par l’inventaire de 1480 ; enfin, par l’achèvement de la tour centrale de la cathédrale, dont les travaux se poursuivirent d’octobre 1477 à juillet 1479. Il avait eu l’intention de compléter les fortifications de la ville épiscopale et de développer le havre de Port-en-Bessin.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La vie politique de Louis de Harcourt
+           <lb/>de 1460 à 1479.</head>
+          <p><hi rend="i">Le rôle du patriarche avant la guerre du Bien public.</hi> – <pb n="151" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_09.TIF/full/full/0/default.jpg"/>Jouissant de la confiance de Charles VII, il officie aux obsèques du roi défunt, le 1.0 août 1461, puis assiste, le 15, au sacre de Louis XI, qui lui confie les sceaux en 1464 pour recevoir divers hommages.</p>
+          <p><hi rend="i">Louis de Harcourt et la guerre du Bien public.</hi> – Le patriarche ouvre les portes de Rouen aux troupes du duc de Bourbon, dans la nuit du 27 au 28 septembre 1465. Il est du Conseil de Charles de France, qu’il couronne, le 1<hi rend="sup">er</hi> décembre, duc de Normandie. Il le suit dans sa fuite, puis bénéficie de la clémence royale, en juillet 1466.</p>
+          <p><hi rend="i">Louis de Harcourt et la oie politique de 1467 à 1479.</hi> – Le patriarche assiste aux Etats de Tours en 1467, où il défend la thèse royale concernant la Normandie. Il tient les sceaux à nouveau en 1471, assiste aux délibérations du Conseil du roi, est chargé de diverses missions, comme la fortification de Montivilliers en 1474.</p>
+          <p><hi rend="i">Les missions diplomatiques :</hi> – Deux ambassades lui sont confiées, une en Bourgogne en octobre-novembre 1464, l’autre en Angleterre, qui aboutirent aux accords du 16 février 1471.</p>
+          <p><hi rend="i">Louis de Harcourt et la Normandie</hi>. – Président de l’Échiquier du 13 octobre 1474, il préside aussi les États de Normandie en 1470 et 1475, ainsi que la commission chargée d’enquêter sur les nouveaux acquêts et les francs-fiefs en 1471.</p>
+          <p><hi rend="i">La mort de Louis de Harcourt.</hi> – Le patriarche préside l’assemblée du clergé en octobre 1478 à Orléans. Il meurt à Tours, le 15 décembre 1479.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Administration spirituelle et temporelle</head>
+        <div>
+          <pb n="152" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_10.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre premier
+           <lb/>administration spirituelle.</head>
+          <p><hi rend="i">L’évêque.</hi> – Entrée solennelle. Fonctions propres à l’église de Bayeux.</p>
+          <p><hi rend="i">Le chapitre cathédral.</hi> – Les douze dignitaires. Les quarante-neuf prébendés. Les bénéficiers et les clercs de la cathédrale. Les chapitres de Caen et Croissanville.</p>
+          <p><hi rend="i">Les paroisses.</hi> – Six cent trente-trois paroisses réparties en quatre archidiaconés et quinze doyennés. Caen et Bayeux ont un statut à part.</p>
+          <p><hi rend="i">Le clergé régulier du diocèse de Bayeux.</hi> – Abbayes et prieurés. Rapports des abbés et des évêques. Les autres maisons religieuses.</p>
+          <p><hi rend="i">L’administration du diocèse.</hi> – Vue générale : vicaires, archidiacres, officialités, synodes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Administration temporelle.</head>
+          <p><hi rend="i">Le temporel de l’évêché.</hi> – Les dénombrements de 1453 et 1460 permettent de fixer l’état des baronnies épiscopales de Douvres, La Ferrières-Hareng, Les Bois d’Elle, Le Plessi-Grimoult, Neuilly-l’Évêque, Saint-Vigor et Cambremer. Elles sont érigées en haute justice en octobre 1474. État sommaire du temporel de l’évêché. Les dépenses de la temporalité épiscopale.</p>
+          <p><hi rend="i">Les autres temporels.</hi> – ■ État sommaire du temporel du chapitre. Les autres temporels.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>L’activité intelligente des deux administrateurs a permis <pb n="153" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_11.TIF/full/full/0/default.jpg"/>d’assurer au diocèse de Bayeux une existence propre dans une période difficile.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>I. ÉVÊQUES DE BAYEUX ET SIÈGE MÉTROPOLITAIN. – Past et serments. Cérémonies diverses avec présidence ou assistance de l’évêque de Bayeux.</p>
+        <p>II. LES ARMES ET LES SCEAUX DE ZANON DE CASTIGLIONE ET DE Louis DE HARCOURT, d’après le ms. fr. 20880 de la Bibliothèque nationale, qui en conserve les seuls exemplaires connus.</p>
+        <p>III. L’ŒUVRE DE ROLAND DE TALENTES.</p>
+        <p>IV. Louis DE HARCOURT, ABBÉ DE LYRE.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièges justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Photographies</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des matières</head>
+        <pb n="154" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_17/ENCPOS_1943_17_12.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

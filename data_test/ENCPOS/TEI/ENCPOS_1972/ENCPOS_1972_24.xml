@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_24" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La Terreur dans le district de Brignoles (Var)</title>
+        <author ref="https://www.idref.fr/027044920">Michèle Tilloy</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_24.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 185-189</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="185" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_24/ENCPOS_1972_24_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La Terreur
+       <lb/>dans le district de Brignoles (Var)</head>
+      <byline>
+        par
+        <forename>Michèle</forename>
+        <surname>Tilloy</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Afin de donner un exemple local de l’application des mesures du gouvernement révolutionnaire de l’an II et des réactions que sa politique put susciter en province, nous avons choisi une région éloignée de la capitale et des mouvements populaires qui s’y déroulèrent, la Provence. Cette région se signala souvent, au cours de la période révolutionnaire, par une opposition parfois violente aux mesures les plus radicales. Nous avons centré notre étude sur la période démocratique de la Révolution, la Terreur, et choisi pour cadre un district, celui de Brignoles, qui regroupait vingt-deux communes. Le district fut en effet l’unité administrative de base sous la Convention montagnarde.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Pour mener cette étude, nous avons tout d’abord utilisé les sources que fournissent les Archives départementales du Var, en particulier la série L, qui renferme les archives des administrations et des tribunaux de la période révolutionnaire. Pour notre district, elles forment un ensemble homogène et assez complet ; nous devons toutefois signaler une lacune importante pour la période qui nous intéresse : l’absence des archives des Sociétés populaires, dont le rôle politique et économique fut capital en l’an II.</p>
+        <p>Nous avons tenté de compléter ces sources par le dépouillement de certaines séries des Archives nationales. Le résultat en fut parfois décevant, mais les sous-séries F<hi rend="sup">10</hi> (agriculture), F<hi rend="sup">11</hi> (subsistances), F<hi rend="sup">12</hi> (commerce et industrie) nous ont permis de préciser ce que fut la vie économique du district de Brignoles tant sous l’Ancien Régime que pendant la Révolution. Les séries W, DXL et AF II nous ont fourni quelques renseignements sur les réactions politiques de la population.</p>
+      </div>
+      <div>
+        <pb n="186" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_24/ENCPOS_1972_24_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Le district de Brignoles
+         <lb/>à la fin de l’ancien régime</head>
+        <p>Le district, situé au centre du département du Var, ne présente pas d’unité géographique réelle ; les plaines alluviales y côtoient les plateaux calcaires, comme dans toute la Provence.</p>
+        <p>Les ressources agricoles du district se composaient de la triade provençale classique, grains, oliviers, vigne, à laquelle s’ajoutait un important élevage ovin. Elles ne pouvaient assurer seules la subsistance du district. L’approvisionnement reposait sur une économie d’échanges qui dépendait de la vente des excédents de vin et d’huile, ainsi que des fabrications locales (cuir, papier).</p>
+        <p>L’habitat était très groupé ; les villages, plus peuplés qu’aujourd’hui, présentaient les caractères de petites villes. On y trouvait une société très diversifiée où, en général, toutes les catégories sociales étaient représentées. La hiérarchie, au moins en ce qui concerne le Tiers État, y était en effet complète : « bourgeoisie » traditionnelle, rentiers et membres des professions libérales, axquels négociants et fabricants s’assimilaient par la richesse ; artisans et boutiquiers ; classes rurales, formées de petits propriétaires indépendants, les « ménagers », et de salariés agricoles, les « travailleurs ». Une forte organisation municipale réglait la vie de la commune, sous la direction des classes les plus riches.</p>
+        <p>Cette situation n’était pas sans provoquer des conflits qui opposaient tantôt la commune à son seigneur éventuel, tantôt la bourgeoisie aux classes pauvres des artisans et des travailleurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La vie politique
+         <lb/>de 1789 à l’installation du régime terroriste</head>
+        <p><hi rend="i">La période censitaire (1789-1792</hi>). – Au printemps de 1789, la crise des subsistances provoqua des troubles violents qui prirent parfois un aspect anti-féodal. Néanmoins, les cahiers de doléances insistèrent davantage sur la réforme des institutions du royaume que sur le problème de la féodalité. Le district ne fut pas atteint par la Grande Peur et ne connut pas de troubles graves en 1790 et 1791. Il semble avoir été plutôt modéré.</p>
+        <pb n="187" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_24/ENCPOS_1972_24_03.TIF/full/full/0/default.jpg"/>
+        <p>La phase censitaire de la Révolution consacra le pouvoir politique de la bourgeoisie traditionnelle et son rôle administratif ; elle fut majoritaire dans toutes les nouvelles institutions.</p>
+        <p>La vie politique de la commune connut un développement qui se traduisit par l’ouverture de nombreux clubs et sociétés populaires.</p>
+        <p>Le problème essentiel demeurait toujours celui des subsistances et l’été 1792 fut marqué par une violente agitation.</p>
+        <p>Sur le plan politique, la journée du 10 août 1792 creusa un fossé entre une majorité républicaine et un parti modéré assez important.</p>
+        <p><hi rend="i">La crise de 1793 et le mouvement sectionnaire.</hi> – L’inquiétude des masses populaires et le mécontentement des modérés se rejoignirent et eurent pour conséquence, à la fin de juillet, l’ouverture de « sections » qui siégèrent en permanence dans la plupart des commîmes.</p>
+        <p>Le mouvement eut ainsi une base sociale très hétérogène.</p>
+        <p>Les autorités du district reconnurent l’administration provisoire fédéraliste de Toulon, sans toutefois jamais rompre avec la Convention.</p>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>La vie politique et administrative
+         <lb/>du district en l’an II</head>
+        <p><hi rend="i">L’installation et le fonctionnement des organismes de la Terreur.</hi> – La répression du mouvement fédéraliste par les représentants en mission Barras et Fréron se poursuivit jusqu’en décembre 1793. Elle donna lieu à une épuration sévère des autorités constituées ; l’artisanat et les classes rurales prirent une place importante dans les nouvelles municipalités et les comités de surveillance. La bourgeoisie, toutefois, ne fut pas éliminée de la vie politique.</p>
+        <p>Si les administrateurs du district s’acquittèrent avec zèle de leurs tâches, il n’en fut pas de même des autorités communales. Composées de gens peu instruits et inexpérimentés, elles parurent souvent écrasées par le nombre et l’ampleur de leurs responsabilités.</p>
+        <p><hi rend="i">L’« esprit public » et l’application des mesures révolutionnaires.</hi> – Le calme régna pendant toute la période et l’autorité de la Convention ne fut plus contestée, ni par les administrateurs, ni par l’ensemble de la population. Les événements parisiens, lointains et mal compris, eurent peu de retentissement.</p>
+        <p>La législation révolutionnaire qui portait atteinte au mode de vie traditionnel reçut une application plutôt favorable aux classes possédantes dont elle heurtait les intérêts. Le partage des biens communaux, par exemple, qui était redouté par les éleveurs, fut généralement peu pratiqué.</p>
+        <pb n="188" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_24/ENCPOS_1972_24_04.TIF/full/full/0/default.jpg"/>
+        <p>L’idéologie jacobine rencontra peu d’écho dans la population, plus sensible aux événements qui la touchaient directement. La déchristianisation ne fut qu’apparente, surtout parmi les classes rurales, et s’apaisa dès avant le 9 thermidor. L’indifférence de la population ne put être combattue par l’application des mesures sociales de la Convention. Les lois sur l’instruction primaire et les secours reçurent à peine un début d’application.</p>
+      </div>
+      <div>
+        <head rend="uc">Quatrième partie
+         <lb/>L’application de la loi des suspects</head>
+        <p>La répression du mouvement sectionnaire fut à l’origine de près de la moitié des arrestations opérées dans les derniers mois de 1793. Elle frappa surtout les anciens élus et les responsables directs de l’ouverture des sections. Les poursuites pour délits d’opinion, plus nombreuses au printemps 1794, visèrent davantage à mettre les prévenus hors d’état de nuire qu’à les punir. L’émigration, qui fut souvent le fait d’anciens sectionnaires, et les délits s’y rapportant motivèrent environ un quart des mandats d’arrêt. La répression des délits économiques fut faible et concerna surtout des refus d’assignats. Les infractions à la loi du maximum général ne furent pas sanctionnées.</p>
+        <p>Seuls furent jugés les anciens sectionnaires et les contrevenants à la législation économique, en nombre d’ailleurs restreint. L’acquittement fut le verdict le plus fréquent ; 10,7 % des jugements entraînèrent la mort.</p>
+        <p>La Terreur ne poursuivit aucune catégorie précise d’individus. La composition sociale des suspects ne varia guère selon le délit. Les arrestations frappèrent à proportion égale riches et pauvres, citadins et paysans.</p>
+      </div>
+      <div>
+        <head rend="uc">Cinquième partie
+         <lb/>La Terreur économique
+         <lb/>et le poids de la guerre</head>
+        <p><hi rend="i">Les réquisitions.</hi> – Le passage incessant des troupes exposa le district à de multiples réquisitions tant en hommes qu’en denrées. Elles compromirent l’équilibre économique de la région et surtout l’approvisionnement des habitants. La question des subsistances se posa avec encore plus d’acuité qu’à l’ordinaire. La disette fut endémique jusqu’à la moisson de 1794. Ce fut là, <pb n="189" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_24/ENCPOS_1972_24_05.TIF/full/full/0/default.jpg"/>pour la population, la caractéristique du gouvernement révolutionnaire. La lassitude était générale à l’été 1794.</p>
+        <p><hi rend="i">L’application du maximum général.</hi> – L’élaboration des tableaux fut longue et posa de multiples problèmes pratiques aux autorités. L’absence de répression et la mauvaise volonté des paysans et des revendeurs maintinrent un marché parallèle, où les prix étaient parfois décuplés. La loi ne fut réellement appliquée que pour les réquisitions destinées aux besoins de l’armée ; elle fut donc surtout un expédient de défense nationale et ne put résoudre les problèmes de l’approvisionnement des habitants. Liée, aux yeux de la population, à des réquisitions impopulaires, la taxation fut unaniment détestée.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Le bilan du gouvernement révolutionnaire semble donc négatif dans le district de Brignoles. Les problèmes locaux immédiats masquèrent presque toujours les problèmes nationaux. Ayant surtout ressenti le poids de la guerre, la population accueillit plutôt favorablement le 9 thermidor, sans se rendre compte de la portée de l’événement.</p>
+        <p>La Terreur ne fut qu’un intermède sans lendemain, qui ne marqua pas profondément la vie du district. Elle n’entraîna aucune mutation politique : en l’an III, la bourgeoisie consolida un pouvoir politique et économique qui n’avait jamais été réellement menacé.</p>
+        <p>Bien que fidèle à la Convention, le district de Brignoles se montra, en définitive, très modéré.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <pb n="190" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_24/ENCPOS_1972_24_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les réformes et les origines de la Ligue dans le Maine et principalement dans la ville du Mans</title>
+        <author ref="https://www.idref.fr/250819910">Roger Luzu</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_17.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 143-146</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="143" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_17/ENCPOS_1910_17_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La réforme &amp; les origines de la ligue
+       <lb/>dans le Maine
+       <lb/>et principalement dans la ville du Mans</head>
+      <byline>
+        par
+        <forename>Roger</forename>
+        <surname>Luzu</surname>
+        <roleName>Licencié en droit</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie</head>
+        <div>
+          <head rend="uc">Sources</head>
+          <p>1. Les registres criminels du parlement de Paris et les actes des rois de France. – Procédure employée contre les hérétiques sous François I<hi rend="sup">er</hi> : ordonnance de Fontainebleau, 1540. – Sous Henri II : édits du 19 novembre 1549 et du 27 juin 1551. – Sous François II : édit de Romorantin, mars 1560. – Distinction entre les laïcs et les clercs jouissant du privilège de clergie. – Les Inquisiteurs de la Foi. – Motifs pour lesquels on était poursuivi. Les peines. – Ordonnances du Parlement contre les hérétiques.</p>
+          <p>2. Les délibérations capitulaires du chapitre de Saint-Julien du Mans. – Petit nombre des registres originaux. – Extraits fournis par le ms. 257 de la Bibliothèque du Mans.</p>
+          <pb n="144" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_17/ENCPOS_1910_17_02.TIF/full/full/0/default.jpg"/>
+          <p>3. Les registres originaux des délibérations de l’Hôtel de ville du Mans sont perdus. Il existe seulement des extraits de ces registres dans les mss. 243 et 242 des Archives municipales du Mans. Critique de ces manuscrits. Leur importance.</p>
+          <p>4. Comptes des receveurs des deniers communs de la ville du Mans. Les receveurs Marc Flotté, René Framboucher, Macé Engoulvent. – Intérêt de cette source, qui donne d’amples renseignements sur les officiers de ville.</p>
+          <p>5. Papier et registre du consistoire de 1560-1561 (1561-1562) ; original perdu ; il en existe deux copies, l’une du <num>xvi<hi rend="sup">e</hi></num> siècle et l’autre du <num>xviii<hi rend="sup">e</hi></num> ; histoire de ce document, et son importance pour l’histoire du protestantisme.</p>
+          <p>6. Le procès-verbal de la ruine de l’église du Mans et de la perte des titres de fondation du 20 juillet 1562, et les rapports des gens de métier sur le pillage de cette église. Le procès-verbal doit être complété par les plaintes et doléances adressées en 1563 par le chapitre du Mans à François Briçonnet et Jehan de Lavau, conseillers au Parlement. Utilité de ces deux sources pour la reconstitution des richesses artistiques de Saint-Julien.</p>
+          <p>7. Enquêtes et informations faites après le départ des huguenots. D’abord l’enquête du conseiller Michel Legras du 5 août 1562, qui est générale ; puis celle de Pierre Prousteau, sergent royal, et Pierre Moriceau, notaire royal, dirigée la même année plus spécialement contre les auteurs du pillage du couvent des Jacobins ; enfin l’information de Mathurin Leboindre faite en 1574 contre les auteurs du pillage de Saint-Julien. Mauvaise rédaction de ces enquêtes. Critique de ces documents.</p>
+          <p>8. Les deux sentences présidiales du 21 novembre 1562 et du 22 janvier 1563. Nombreuses copies.</p>
+          <p>9. Monitoires. – Lettre de Guy du Parc, abbé de Beaulieu, du 8 décembre 1562 contre les détenteurs d’objets <pb n="145" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_17/ENCPOS_1910_17_03.TIF/full/full/0/default.jpg"/> volés pendant l’occupation du Mans. – – Monitoire de l’official d’Angers du 25 octobre 1572. – Monitoire d’Anselme Taron du 28 novembre 1587.</p>
+          <p>10. Remontrance du 29 avril 1562. Son peu d’intérêt pour l’histoire locale. – C’est le seul document émanant des protestants pendant l’occupation.</p>
+          <p>Auteurs qui ont écrit spécialement sur la province du Maine. – Peu de valeur de leurs écrits. – Les ouvrages généraux.</p>
+        </div>
+        <div>
+          <head rend="uc">Deuxième partie</head>
+          <p>Les origines de la Réforme. – Critique de l’opinion de Dom Piolin. – Jugement de Jehan le Coq par le Parlement (décembre 1535). – – Propagation rapide de la Réforme parmi les prêtres, les gens de métier, les officiers de la ville et ceux du roi. – Les mesures prises par la Royauté et le Parlement restent sans effet.</p>
+          <p>Constitution de l’Église du Mans (1<hi rend="sup">er</hi> janvier 1561) – Division de la ville et des faubourgs en cinq cantons. Les « surveillants » ; les ministres ; les diacres ; le scribe ; les « senieurs ». – Instruction des fidèles dans les « exhortations ». – Prohibition des jeux de dés, de cartes, etc.</p>
+          <p>Troubles causés par ces assemblées. ■ – Intervention du duc de Montpensier empêchée par du Mortier, conseiller au Parlement, et Lebarbier de Francourt. Peu après le 25 mars, émeute au faubourg Saint-Jean ; rixe entre catholiques et protestants ; intervention de Chavigni et de l’évêque du Mans. – Suppression du culte protestant.</p>
+          <p>Résurrection de l’Église du Mans au mois d’août 1561 avec Pierre Merlin. Extension du culte dans la province, à Mamers, à Laval, à Château-du-Loir. – Rapports de l’Église avec les églises voisines. – Interventions de Le Barbier auprès du roi et de la reine-mère. – Accueil <pb n="146" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_17/ENCPOS_1910_17_04.TIF/full/full/0/default.jpg"/>fait à l’édit du 17 janvier 1562. Association entré les nobles protestants de la province.</p>
+          <p>Prise du Mans par les Calvinistes en 1562, le 3 avril. – Attitude des protestants pendant l’occupation d’après les enquêtes et d’après la remontrance du 29 avril. – Pillage du couvent des Jacobins et ruine de celui des Cordeliers. – Incursions des protestants à Thourvoye, chez l’évêque du Mans et à la Chartreuse du Parc. Pillage de l’église Saint-Julien et autres églises.</p>
+          <p>Départ des huguenots le 12 juillet. Discussion sur cette date. Causes de leur départ. Poursuites des rebelles ; ils sont jugés par contumace par le présidial ; ils sont excommuniés. – Amnistie du 20 septembre 1562 et édit d’Amboise en 1563. – Représailles contre les protestants. Activité du procureur du roi Félix Le Chesne. – Mesures importantes prises pour la sûreté de la ville. Vente du temporel du clergé en 1563 pour subvenir aux frais de la guerre. L’évêque du Mans nommé gouverneur du pays du Maine en 1567. – Remplacé en 1568 par son frère Nicolas d’Angennes, sénéchal depuis la mort de Christophe Pérot, arrivée en 1565. – Accentuation du mouvement d’opinion contre les protestants. – Association du mois de juillet 1568 entre Vassé, Sourches et de Thouars à l’insu du roi. – Projet de ligue entre les trois états.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

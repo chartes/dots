@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_11" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La vie des nobles en Cornouaille à la fin de l’Ancien Régime</title>
+        <author ref="https://www.idref.fr/027008770">Michel Maréchal</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_11.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 91-100</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="91" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La vie des nobles en Cornouaille
+       <lb/>à la fin de l’ancien régime</head>
+      <byline>
+        par
+        <forename>Michel</forename>
+        <surname>Maréchal</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le but qu’on s’est proposé dans ce travail est de décrire la vie quotidienne des gentilshommes de Cornouaille à la veille de la Révolution. On a voulu tout d’abord examiner leur cadre de vie, puis se rendre compte de leurs préoccupations quotidiennes, enfin, étudier leur rôle dans la société à la veille de la Révolution.</p>
+        <p>A travers cette étude on a voulu avant tout déterminer si les gentilshommes de Cornouaille de la fin de l’Ancien Régime étaient des hommes de leur temps ou, au contraire, des attardés.</p>
+        <p>La Cornouaille a été choisie comme cadre de cette étude en raison des contrastes qu’elle offre avec, d’un côté, les pays de la mer, riches et susceptibles de permettre de nombreux contacts extérieurs, et, de l’autre, l’intérieur, beaucoup plus pauvre et, en apparence au moins, coupé du monde extérieur. Pour des raisons d’ordre matériel, qui tiennent à la nature des sources, ce sont des circonscriptions d’époque révolutionnaire qui ont servi à délimiter la région étudiée, en l’occurrence les districts de Quimperlé, Quimper et Pont-Croix.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les sources sont constituées principalement par des inventaires et des archives privées. Pour les inventaires, il s’agit essentiellement des inventaires du séquestre des émigrés, dans la série 1Q des Archives départementales du Finistère. Quant aux archives privées, correspondances et comptes, citons celles des séries E et J des Archives départementales du Finistère et celles de la série T des Archives nationales. Les autres sources, tels certains manuscrits de la Bibliothèque nationale, n’ont qu’une importance secondaire.</p>
+      </div>
+      <div>
+        <pb n="92" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Les hommes</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les critères de noblesse</head>
+          <p>Afin de vérifier la noblesse des familles auxquelles on s’est intéressé, on leur a appliqué trois critères de noblesse en vigueur à l’époque considérée. Il s’agit du droit d’entrée aux États de Bretagne dans les rangs du second ordre, de l’inscription sur les rôles de la capitation noble et de la situation, reconnue, lors de la grande réformation de la noblesse bretonne de 1668. Les résultats sont apparus avec évidence : toutes les familles que nous avons étudiées étaient nobles ou, du moins, disaient l’être et leurs contemporains les reconnaissaient comme telles.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les fonctions</head>
+          <p>On a cherché à déterminer selon quelle proportion les gentilhommes se répartissaient entre les différentes catégories que représentent les rentiers, les ecclésiastiques, les officiers et les militaires. Sur cent vingt personnages, il est apparu que quatre-vingt-dix étaient des militaires, dont cinquante-deux servaient dans la marine ; proportion écrasante donc, puisque des trois quarts.</p>
+          <p>Il a paru intéressant de camper, à cette occasion, quelques figures marquantes. On a retenu l’exemple de marins qui s’étaient signalés par leurs exploits. D’autres gentilshommes semblent avoir réalisé le type même du grand seigneur. A côté d’eux, les autres paraissent plus ternes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Familles et parentés</head>
+          <p>La règle générale est celle de la famille nombreuse, qui compte six, huit ou dix enfants, voire davantage. Les prénoms se transmettent de père en fils à travers plusieurs générations.</p>
+          <p>Toutes nos familles ont l’air de former une espèce de grand clan, car elles sont, pour la plupart, apparentées. C’est particulièrement net en ce qui concerne les familles d’officiers de marine. On a dès lors l’impression d’être en présence d’une société de caste.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="93" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Les demeures</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la résidence d’été : le manoir</head>
+          <p><hi rend="i">Pourquoi a-t-on construit des manoirs ?</hi> – A la fin du <num>xiv<hi rend="sup">e</hi></num> siècle, la Bretagne demeure à l’écart de la guerre de Cent Ans et les châteaux apparaissent comme inutiles. Dans ces conditions, les nobles les démolissent ou les remanient profondément pour les rendre plus agréables et moins ruineux à entretenir.</p>
+          <p><hi rend="i">Comment définir un manoir ?</hi> – Il semble qu’on puisse dire qu’un manoir est la résidence d’un gentilhomme terrien qui doit pouvoir vivre sur sa terre en autarcie.</p>
+          <p>Les premiers manoirs ont encore l’allure de maisons fortes, avec leurs enceintes et leurs tours. Mais plus on s’avance dans le <num>xvi<hi rend="sup">e</hi></num> siècle et, à plus forte raison, dans le <num>xvii<hi rend="sup">e</hi></num> siècle, plus l’apparence de maison fortifiée se dissipe : c’est la « Renaissance bretonne ». Enfin, de nouvelles transformations ont lieu au <num>xviii<hi rend="sup">e</hi></num> siècle, parmi lesquelles de nombreuses adjonctions de boiseries. Cependant, malgré les transformations, on peut parler d’un type du manoir breton qui a survécu à travers les siècles jusqu’à la Révolution.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les autres types d’habitation : châteaux et maisons de ville</head>
+          <p>A quelques exceptions près, tel le château de Pont-L’Abbé, les châteaux médiévaux ont disparu. En revanche, on construit des châteaux aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles, comme Guilguiffin et Cheffontaines. Malgré tout, ils sont rares. Au <num>xviii<hi rend="sup">e</hi></num> siècle, les gentilshommes paraissent ne plus considérer manoirs et châteaux que comme des résidences d’été ; ils passent l’hiver en ville, où ils ont des maisons. Le principe de la double résidence est donc connu jusqu’en Cornouaille.</p>
+        </div>
+        <div>
+          <pb n="94" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Les travaux d’entretien : demeures et jardins</head>
+          <p>Les demeures nécessitent de nombreux travaux, tant réparations qu’aménagements au goût du jour. Selon leurs moyens, les gentilshommes aiment à mener à bien de telles tâches, non sans prendre conseil des manuels d’architecture qu’ils ont souvent dans leurs bibliothèques.</p>
+          <p>Ils ont les mêmes soucis pour les jardins : on goûte le charme de la vie champêtre, on s’entoure de fleurs. Les plus riches ont une orangerie. Là aussi, ils puisent de précieux renseignements dans les manuels de jardinage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les terres</head>
+          <p>Les terres sont soumises au régime du domaine congéable, encore mal connu malgré de nombreux travaux. Avec l’outillage qui reste vétuste, le domaine congéable est un facteur de stagnation. Dans la production agricole, les grains se situent de très loin au premier plan. Quelques terres sont réservées au lin et au chanvre.</p>
+          <p>L’élevage, bovin surtout, a sa place. On élève des volailles ; chaque manoir paraît avoir sa basse-cour.</p>
+          <p>Enfin, il reste quelques bois en Cornouaille à la fin de l’Ancien Régime. On y chasse et on s’y approvisionne en bois de construction et de chauffage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les meubles</head>
+          <p>Les lits et les armoires sont très nombreux ; cela frappe à première vue à la lecture des inventaires. On ne peut cependant parler de surabondance de mobilier ; tout meuble, en effet, a sa place et son usage propres.</p>
+          <p>A côté de vieux meubles en mauvais état, on constate l’apparition des meubles d’acajou ou d’ébène qui se vendent très cher. Les lits restent cependant les pièces de plus grande valeur.</p>
+        </div>
+        <div>
+          <pb n="95" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VI
+           <lb/>Les vêtements et le linge</head>
+          <p>Si l’abondance paraît la règle générale, la valeur des garde-robes n’en est pas moins très inégale. Seule les plus riches font des frais dans ce domaine et peuvent se piquer d’acheter leurs vêtements à Paris.</p>
+          <p>Le linge est très abondant car les lessives sont rares.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>La vaisselle et l’argenterie</head>
+          <p>Dans la vaisselle aussi il y a, en général, abondance, mais certainement pas surabondance. La porcelaine est de plus en plus appréciée. L’étain, en revanche, a presque complètement disparu.</p>
+          <p>Les inventaires ne donnent que des renseignements décevants au sujet de l’argenterie, car bien souvent, les nobles l’ont cachée avant de partir en émigration. Il paraît cependant vraisemblable que la plupart en possédaient, peut-être en quantité réduite.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Les éléments de la décoration</head>
+          <p>Si les tapisseries et les galeries de portraits d’ancêtres restent nombreuses, même à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle, les glaces, miroirs et tableaux apparaissent également. Tout en sacrifiant à la tradition, on semble donc aimer la nouveauté ; les boiseries Louis XV l’attestent également.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Les préoccupations quotidiennes</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’alimentation</head>
+          <p>Si le pain et la viande constituent toujours l’essentiel de l’alimentation, des nouveautés apparaissent avec les produits laitiers et, surtout, les légumes et les fruits. On apprécie en outre la bonne cuisine, avec condiments et épices, ainsi que le café et le thé. Cependant, on continue à sacrifier l’équilibre à l’abondance.</p>
+          <pb n="96" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_06.TIF/full/full/0/default.jpg"/>
+          <p>On boit beaucoup de vin, particulièrement d’Espagne et de Bordeaux. Les liqueurs des îles sont connues des plus évolués seulement. Le cidre n’est pas encore très répandu.</p>
+          <p>Les contacts extérieurs paraissent avoir joué un rôle dans la diversification de l’alimentation. Néanmoins, les aspects anciens subsistent, que ce soit la prédominance du pain et de la viande, ou le goût, peut-être exagéré, que l’on porte à la boisson.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’hygiène : toilette et santé</head>
+          <p>A part quelques rares exceptions, il ne semble pas qu’on se lave beaucoup chez les gentilshommes de Cornouaille.</p>
+          <p>Dans ces conditions les maladies sont fréquentes. Malgré le goût que certains portent aux ouvrages médicaux, les nobles continuent à employer des remèdes de charlatans.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La vie intellectuelle</head>
+          <p>La lecture de récits historiques et de poèmes, ainsi que d’ouvrages de religion et d’édification, paraît prédominante. Le <num>xviii<hi rend="sup">e</hi></num> siècle n’apparaît que par le canal des auteurs mineurs, des récits de voyage, des journaux et d’un certain goût pour les sciences. On aime, en outre, à versifier.</p>
+          <p>La musique semble avoir été appréciée, mais si les instruments nouveaux sont connus, les grands compositeurs sont sacrifiés à des compositeurs que nous jugeons mineurs.</p>
+          <p>Enfin, l’éducation des enfants tient à cœur : on en retire de la fierté, elle permet de briller en société.</p>
+          <p>Des curiosités intellectuelles existent donc chez les nobles cornouaillais, même si elles sont de valeur très inégale.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le sentiment religieux</head>
+          <p>Le sentiment religieux reste très fort, malgré une certaine emprise de la philosophie nouvelle. L’éducation reste avant tout religieuse. L’impiété est rare, pour ne pas dire inexistante. Certaines familles fournissent même des évêques à la province.</p>
+        </div>
+        <div>
+          <pb n="97" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_07.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre V
+           <lb/>Les distractions</head>
+          <p>Si la chasse reste l’un des principaux divertissements des nobles, d’autres distractions font leur apparition. On aime se recevoir entre amis, on se plait aux fêtes, aux bals. Surtout, on joue beaucoup, tant dans les cafés que chez soi. Enfin, on écrit beaucoup et on échange des nouvelles. Dans tous ces divertissements, on note une grande insouciance, assez typique d’ailleurs de ce siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>La domesticité</head>
+          <p>Les renseignements, épars, restent succincts. Il semble qu’il y ait bien des différences entre les familles ; les inventaires et les cotes de capitation apportent quelques résultats. A côté de maisonnées très nombreuses, sans doute certains nobles n’avaient-ils personne à leur service. A partir d’un certain nombre de serviteurs, une spécialisation paraît intervenir.</p>
+          <p>Il semble, enfin, que l’on se montre de plus en plus exigeant et que l’on préfère choisir ses domestiques en ville, où l’on court moins le risque de trouver des gens sales ou malades qu’à la campagne.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>L’affirmation du rang</head>
+          <p>On se sent noble et noble avant tout et l’on aime à porter ses titres, même quand ils sont usurpés, ce qui est fréquent. Tous les gentilshommes sont généalogistes et prennent soin de leurs archives. L’une des distinctions les plus recherchées consiste à participer aux honneurs de la cour et l’on tire une grande fierté d’avoir eu droit à ce cérémonial.</p>
+          <p>Enfin, on attache une grande importance à tous les droits honorifiques et à toutes les prééminences dont on jouit, dans les églises par exemple. Malheur à qui les conteste, car un rien est motif à procès.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="98" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Quatrième partie
+         <lb/>Richesse, puissance, influences</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la richesse</head>
+          <p>Les biens mobiliers ne constituent, sauf exception, qu’une petite partie de la fortune de la noblesse. Un chiffre pouvant aller de deux mille à cinq mille livres paraît être une moyenne.</p>
+          <p>L’essentiel de la richesse des nobles provient de la terre. Il faut vendre les grains de redevances au mieux et les gentilshommes suivent l’évolution des cours de ventes avec attention. La moyenne des revenus fonciers annuels semble osciller entre cinq mille et dix mille livres. Il est vrai que, là aussi, on doit noter quelques exceptions de gentilshommes très pauvres et, à l’inverse, des exemples de très grande richesse, puisque l’un d’entre eux a jusqu’à cent mille livres de rentes.</p>
+          <p>Il existe d’autres sources de revenus, tels les riches mariages, qui sont rares, il est vrai, ou les prêts à intérêt. Quant aux placements de capitaux dans le commerce, ils sont pratiquement inexistants et l’on préfère acquérir des offices.</p>
+          <p>Si leur train de vie est parfois au-dessus des moyens dont ils disposent, les gentilshommes ne paraissent pas, dans la plupart des cas, être très endettés.</p>
+          <p>Enfin, à l’aide des cotes de capitation et des estimations du séquestre, sources à manier avec bien des précautions, on peut arriver à chiffrer les revenus de la noblesse. Une moyenne paraît se dessiner entre cinq mille et dix mille livres de rentes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La puissance</head>
+          <p>On ne peut étudier la puissance de la noblesse cornouaillaise sans avoir essayé de déterminer auparavant si elle vivait ou non dans l’isolement. Certes, les voyages sont lents et coûteux. Mais, d’un autre côté, les influences nouvelles ont pénétré jusqu’en Cornouaille, tant dans le domaine de l’alimentation que dans celui des préoccupations intellectuelles et des divertissements ; en outre, la mode parisienne est connue en matière de meubles et de vêtements. Donc, s’il y a toujours un certain isolement, celui-ci s’est considérablement atténué au cours du siècle.</p>
+          <pb n="99" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_09.TIF/full/full/0/default.jpg"/>
+          <p>Néanmoins c’est le monde paysan que la noblesse continue à côtoyer au premier chef ; les rapports se dégradent, ce qui n’a rien d’étonnant car les intérêts sont contraires. Avec la bourgeoisie également les tensions sont vives : haine, jalousie et mépris sont réciproques. En revanche, la plupart des nobles cornouaillais sont obéissants aux ordres du roi et se désintéressent du conflit qui oppose les États et le Parlement à l’administration centrale. D’ailleurs, beaucoup d’entre eux s’illustrent au service du roi ; n’est-ce-pas là la meilleure preuve de leur dévouement ?</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Bien des archaïsmes subsistent, tant dans le cadre de vie des gentilshommes de Cornouaille, dans leurs « meubles et effets », dans leur alimentation et dans leurs goûts que dans leurs relations avec le reste de la société. Cependant, des nouveautés sont apparues. La décoration extérieure et intérieure des demeures, la mode nouvelle en matière de mobilier ou de vêtements, la consommation de primeurs et de liqueurs des îles, l’influence, même limitée, de la philosophie nouvelle en sont autant de preuves.</p>
+        <p>Peut-on, dès lors, parler de refus du siècle ? Certes, cette noblesse reste avant tout terrienne ; certes, il y a la réaction seigneuriale, mais elle n’est pas propre à la Cornouaille. Il ne semble donc pas que les gentilshommes de Cornouaille aient été des attardés. Ils ont connu de toute évidence les nouveautés de l’époque, mais deux facteurs décisifs ont déterminé la diversité des résultats : seuls les plus riches et les moins isolés ont pu suivre le progrès, même si tous ont désiré le suivre.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p>1. Répertoire alphabétique des familles, comprenant une notice historique sur chaque famille étudiée.</p>
+        <p>2. Liste des manoirs et châteaux.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Comptes. – Dépenses. – Revenus de terres. – Inventaires.</p>
+      </div>
+      <div>
+        <pb n="100" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_11/ENCPOS_1972_11_10.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Carte</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <p>Photographies de manoirs classées par ordre chronologique.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

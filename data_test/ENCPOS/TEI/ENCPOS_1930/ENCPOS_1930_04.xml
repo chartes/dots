@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_04" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La langue de Cahors depuis le début du <hi rend="sc">xiii</hi><hi rend="sup">e</hi> siècle jusqu’à la fin du <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/115110143">Suzanne Dobelmann</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_04.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 27-34</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="27" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La langue de Cahors
+       <lb/>depuis le début
+       <lb/>du <num>xiii<hi rend="sup">e</hi></num> siècle
+       <lb/>jusqu’à la fin du <num>xvi<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Suzanne</forename>
+        <surname>Dobelmann</surname>
+        <roleName>Licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Nous nous proposons d’étudier, d’après les chartes originales, la langue parlée à Cahors au moyen âge.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Premiere partie</head>
+        <div>
+          <head rend="uc">Sources</head>
+          <p>Il n’y a pas de documents pour Cahors au XII<hi rend="sup">e </hi>siècle. A partir du milieu du <num>xiii<hi rend="sup">e</hi></num> siècle les sources sont abondantes. Le provençal n’est plus guère employé dans les chartes après le premier quart du <num>xiv<hi rend="sup">e</hi></num> siècle. Mais il reste la langue dominante des registres municipaux <hi rend="i">Te igitur</hi> et <hi rend="i">Livre Tanné.</hi></p>
+          <p>Les fonds principaux sont les archives municipales de Cahors et la série H (fonds de l’Hôpital général). <pb n="28" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_02.TIF/full/full/0/default.jpg"/>Les deux tiers des chartes originaires de Cahors sont seules publiés.</p>
+        </div>
+        <div>
+          <head rend="uc">Table chronologique des chartes
+           <lb/>en langue vulgaire</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Tables chronologiques du <hi rend="i">Te igitur</hi></head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Repartition par fonds
+           <lb/>des chartes publiees</head>
+          <p/>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxieme partie
+         <lb/>Phonetique</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>graphie</head>
+          <p><hi rend="i">Graphie des voyelles.</hi> – La graphie <hi rend="i">ou</hi> pour [o] fermé apparaît dès le début du <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>La diphtongue [iu] à partir de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle est écrite <hi rend="i">io</hi>, <hi rend="i">iou</hi>, <hi rend="i">ieu</hi>, la graphie <hi rend="i">o</hi> semble bien avoir la valeur d’un [u].</p>
+          <p>[Au] est quelquefois écrit <hi rend="i">ao</hi>.</p>
+          <p>[Eu] est quelquefois écrit <hi rend="i">eo</hi>.</p>
+          <p>Ces graphies paraissent tout à fait spécifiques de la région du Quercy et de l’Auvergne.</p>
+          <p><hi rend="i">Graphie des consonnes.</hi> – On emploie indifféremment <hi rend="i">s</hi> ou <hi rend="i">c</hi> pour noter [s] dur ou [ts] (<hi rend="i">c</hi> latin devant [e] ou [i]) dès la fin du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Le son [ch] est noté <hi rend="i">sh</hi> puis <hi rend="i">sch</hi> pendant cinquante <pb n="29" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_03.TIF/full/full/0/default.jpg"/>ans au moins à la chancellerie consulaire ; après 1330, la graphie <hi rend="i">ch</hi> l’emporte.</p>
+          <p>Le groupe [tch] final est noté <hi rend="i">h</hi> anciennement, puis <hi rend="i">ch,</hi> puis <hi rend="i">g.</hi> Pour [tch] médial on trouve les graphies <hi rend="i">it</hi> et <hi rend="i">ch.</hi></p>
+          <p>[L] et [n] <hi rend="i">mouillés</hi> sont notés <hi rend="i">lh</hi> et <hi rend="i">nh</hi> dès le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>La graphie est assez satisfaisante, sauf pour [j] qui est noté <hi rend="i">i</hi> ou <hi rend="i">g.</hi></p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Voyelles</head>
+          <p><hi rend="i">Voyelles atones.</hi> – [a] post-tonique s’affaiblit en [o] au <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+          <p>[ia] s’affaiblit en [ie], quelquefois en [i] ; dans <hi rend="i">estia</hi>, qui devient <hi rend="i">estie</hi>, <hi rend="i">esti</hi>...</p>
+          <p><hi rend="i">Voyelles toniques.</hi> – [a]. Le suffixe latin -<hi rend="i">arium </hi>passe par les étapes : <hi rend="i">eir &gt; er &gt; ier</hi>.</p>
+          <p>Le suffixe <hi rend="i">-aria,</hi> par : <hi rend="i">eira &gt; ieira &gt; iera</hi>.</p>
+          <p>[e] et [o] ouverts se diphtonguent au milieu du <num>xiii<hi rend="sup">e</hi></num> siècle devant <hi rend="i">yod</hi> ou un groupe occlusif plus <hi rend="i">yod.</hi></p>
+          <p>[o] fermé latin a passé à [u] dès la fin du XIII<hi rend="sup">e </hi>siècle comme l’attestent les graphies : <hi rend="i">io = iu</hi>, <hi rend="i">eo = eu, ao = au</hi> et <hi rend="i">ou</hi> dans <hi rend="i">tout.</hi></p>
+          <p>Pour [i] il y a épenthèse d’un [e] entre [i] et [1] au <num>xiv<hi rend="sup">e</hi></num> siècle, et [iel] s’assourdit en [ial].</p>
+          <p>[u] long latin a passé à [ü] dès le <num>xiii<hi rend="sup">e</hi></num> siècle comme l’indiquent les graphies <hi rend="i">lh</hi> devant <hi rend="i">u</hi> et la répugnance à employer <hi rend="i">u</hi> dans la diphtongue <hi rend="i">iu</hi> depuis la fin du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Diphtongues.</hi> – [iu] devient [ieu] à la fin du XIII<hi rend="sup">e </hi>siècle. Les diphtongues [ieu] et [iou] permutent fré<pb n="30" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_04.TIF/full/full/0/default.jpg"/>quemment. Il est à croire que ce passage se fait sans l’intermédiaire de [iau], jamais attesté par les textes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Consonnes</head>
+          <p><hi rend="i">Consonnes initiales.</hi> – Les consonnes initiales se maintiennent en général.</p>
+          <p>Cependant <hi rend="i">yod</hi> devient [j] ou [dz].</p>
+          <p>[1] est mouillé devant [i] ou [ü] à partir de 1250 ; apres 1329 le phénomène n’est plus que sporadique.</p>
+          <p>Les groupes latins <hi rend="i">se</hi> devenu <hi rend="i">es, ss</hi> plus <hi rend="i">yod</hi> devenu <hi rend="i">yod</hi> + <hi rend="i">ss</hi> en roman, passent à [ch] au milieu du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Consonnes intervocaliques.</hi> – Les consonnes sourdes intervocaliques devenues finales en roman ne sont pas encore assourdies dans les pièces de 1224 et 1235, on trouve : <hi rend="i">revestig</hi>, <hi rend="i">marid</hi>, <hi rend="i">cab</hi>.</p>
+          <p>Le groupe s + <hi rend="i">yod</hi> latin est devenu <hi rend="i">yod</hi> + s en roman. Il se réduit à <hi rend="i">yod</hi> au milieu du <num>xiii<hi rend="sup">e</hi></num> siècle : <hi rend="i">maio</hi>, <hi rend="i">gleia</hi>.</p>
+          <p>Le groupe roman <hi rend="i">zi</hi> peut se réduire à <hi rend="i">yod</hi> dans <hi rend="i">faia</hi>, <hi rend="i">envaidor</hi>.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisieme partie
+         <lb/>Morphologie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>substantif</head>
+          <p>La déclinaison à deux cas des noms parisyllabiques est bien observée jusque vers 1320.</p>
+        </div>
+        <div>
+          <pb n="31" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Article</head>
+          <p><hi rend="i">Masculin.</hi> – Au singulier, <hi rend="i">lo</hi> pour les deux cas. Au pluriel <hi rend="i">li</hi>, <hi rend="i">lhi</hi> au cas sujet, et <hi rend="i">los</hi> à l’accusatif. A la fin du <num>xiv<hi rend="sup">e</hi></num> siècle <hi rend="i">los</hi> pour les deux cas.</p>
+          <p><hi rend="i">Féminin.</hi> – Au singulier <hi rend="i">la,</hi> au pluriel <hi rend="i">las,</hi> pour les deux cas.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Pronom personnel</head>
+          <p><hi rend="i">Pronom sujet.</hi> – A la première personne, dès le <num>xiii<hi rend="sup">e</hi></num> siècle, <hi rend="i">ieu</hi> peut passer à <hi rend="i">io</hi> – [iu].</p>
+          <p><hi rend="i">Pronom régime.</hi> – Les pronoms régimes disjoints sont en <hi rend="i">mi</hi> et <hi rend="i">si,</hi> les pronoms conjoints en <hi rend="i">me</hi> et <hi rend="i">se.</hi></p>
+          <p>On rencontre les formes <hi rend="i">nonh</hi> et <hi rend="i">vonh</hi> pour <hi rend="i">no ne </hi>et <hi rend="i">vo ne.</hi></p>
+          <p>Le pronom personnel pluriel de la troisième personne est <hi rend="i">lor.</hi></p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Verbe</head>
+          <p><hi rend="i">Désinences générales.</hi> – Troisième personne du pluriel (futur excepté) : au <num>xii<hi rend="sup">e</hi></num> siècle les terminaisons sont en -o, -<hi rend="i">io</hi> pour l’imparfait de l’indicatif et le conditionnel, <hi rend="i">-io</hi> peut passer à -<hi rend="i">iou</hi>, -<hi rend="i">iu</hi> dès la fin du <num>xiii<hi rend="sup">e</hi></num> siècle. Au <num>xiv<hi rend="sup">e</hi></num> siècle les terminaisons savantes en -<hi rend="i">ian</hi> remplacent les désinences en <hi rend="i">-io</hi>.</p>
+          <p><hi rend="i">Futur.</hi> – La première personne est en -<hi rend="i">ei</hi>, -<hi rend="i">iei</hi>. Les troisièmes personnes du pluriel sont en <hi rend="i">-au</hi> jusqu’au <num>xiv<hi rend="sup">e</hi></num> siècle, époque où elles sont concurrencées par <hi rend="i">-an,</hi> sans qu’au disparaisse.</p>
+          <p><hi rend="i">Présent de l’indicatif.</hi> – La voyelle d’appui de la première personne est <hi rend="i">i</hi>.</p>
+          <pb n="32" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_06.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Présent du subjonctif.</hi> – La synérèse est accomplie comme l’indiquent les diphtongues <hi rend="i">siou</hi>, <hi rend="i">sieu</hi>, rencontrées à la troisième personne du pluriel.</p>
+          <p><hi rend="i">Parfait.</hi> – Troisième personne du singulier. Les parfaits <hi rend="i">faibles</hi> continuant le latin <hi rend="i">-avit, -edit,</hi> sont d’abord en -<hi rend="i">ec</hi> et <hi rend="i">-et,</hi> puis <hi rend="i">-et</hi> l’emporte ; continuant – <hi rend="i">ivit</hi>, les désinences sont généralement en <hi rend="i">ic ;</hi> dans un document de 1310 on trouve quelques désinences en <hi rend="i">it</hi>.</p>
+          <p>Parfaits <hi rend="i">forts.</hi> – Dès le <num>xiii<hi rend="sup">e</hi></num> siècle les désinences faibles envahissent la conjugaison forte : on trouve <hi rend="i">foret</hi> pour <hi rend="i">fo</hi>.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Quatrieme partie
+         <lb/>Syntaxe</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>mots a flexion</head>
+          <p>1) <hi rend="i">Pronom personnel.</hi> – Distinction entre formes conjointes atones et formes disjointes accentuées.</p>
+          <p>2) <hi rend="i">Pronom possessif.</hi> – Les formes accentuées <hi rend="i">sei</hi>, <hi rend="i">mei</hi>, sont toujours employées comme atones non précédées d’article.</p>
+          <p>3) <hi rend="i">Pronom démonstratif.</hi> – Neutre : <hi rend="i">aiso</hi> est le pronom démonstratif par excellence ; au <num>xiii<hi rend="sup">e</hi></num> siècle <hi rend="i">aquo</hi> est surtout employé dans les expressions <hi rend="i">aquo que ;</hi> plus tard <hi rend="i">so</hi> le remplace dans cette fonction.</p>
+          <p>4) <hi rend="i">Pronom relatif.</hi> – <hi rend="i">Que</hi> est employé concurremment à <hi rend="i">loqual</hi>. <hi rend="i">Qui</hi> est encore employé au début du <num>xiii<hi rend="sup">e</hi></num> siècle comme pronom sujet.</p>
+        </div>
+        <div>
+          <pb n="33" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_07.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Groupes nominaux</head>
+          <p><hi rend="i">Accord du substantif et de l’adjectif.</hi> – Lorsqu’il y a plusieurs substantifs pour un seul adjectif, il règne une grande hésitation pour l’accord.</p>
+          <p><hi rend="i">Article.</hi> – L’article défini est omis devant les noms propres et les noms abstraits.</p>
+          <p>L’article indéfini ne commence à être employé qu’à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Le <hi rend="i">complément déterminatif</hi> est réuni au déterminé par <hi rend="i">de ;</hi> anciennement <hi rend="i">de</hi> pouvait être omis devant les noms propres.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La proposition</head>
+          <p>Le <hi rend="i">sujet pronominal</hi> inutile à l’expression est fréquent jusqu’au <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>La <hi rend="i">tournure impersonnelle</hi> s’exprime par le verbe à la troisième personne du singulier, sans pronom.</p>
+          <p><hi rend="i">Régime.</hi> – L’ordre des pronoms régimes est accusatif, datif.</p>
+          <p><hi rend="i">Attribut.</hi> – L’accord de l’attribut se fait très régulièrement en cas.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Subordination et coordination</head>
+          <p>1) Le présent du subjonctif peut être employé pour le futur, l’imparfait du subjonctif pour le conditionnel.</p>
+          <p>2) <hi rend="i">Phrases hypothétiques.</hi> – On trouve un exemple <pb n="34" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_04/ENCPOS_1930_04_08.TIF/full/full/0/default.jpg"/>de phrase hypothétique irréelle avec le conditionnel passé : <hi rend="i">appellera Dieu si pogues</hi>.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Publication de 32 pieces originales
+         <lb/>en dialecte de Cahors</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Analyse des pieces du <hi rend="i">Te igitur</hi>
+         <lb/>utilisées dans l’Etude linguistique
+         <lb/>et corrections à l’édition du manuscrit</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des noms propres</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Glossaire</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Fac-similes et plans</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

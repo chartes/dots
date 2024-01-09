@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_15" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La Juridiction municipale à Toulouse au <hi rend="sc">xii</hi><hi rend="sup">e</hi> et au <hi rend="sc">xiii</hi><hi rend="sup">e</hi> siècle, étude de droit urbain et d’administration judiciaire</title>
+        <author ref="https://www.idref.fr/081498373">Gabriel Loirette</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_15.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 125-131</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="125" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La juridiction municipale
+       <lb/>à Toulouse
+       <lb/>au <num>xii<hi rend="sup">e</hi></num>et au <num>xiii<hi rend="sup">e</hi></num>siècle
+       <lb/>Étude de droit urbain et d’administration judiciaire</head>
+      <byline>
+        par
+        <forename>G.</forename>
+        <surname>Loirette</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction et sources</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Premiere partie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les origines de la juridiction municipale</head>
+          <p>Les magistrats municipaux Gallo-romains n’ont pas subsisté après la chute de l’Empire. – Les justices mérovingienne et carolingienne ont été adoptées dans toute la Gaule, dans le Midi comme dans le Nord. Les « boni homines » de l’époque féodale sont les descendants directs des rachimbourgs.</p>
+          <p>Les premiers privilèges concédés aux Toulousains par le comte Alphonse Jourdain sont d’ordre économique. – Les premiers statuts faits par le comte et le « commun conseil » de la Ville et du Bourg sont aussi d’ordre économique. Les infractions aux statuts de 1152 seront jugées par <pb n="126" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_02.TIF/full/full/0/default.jpg"/>des prud’hommes sauf les cas réservés au comte. – Les « capitulaires », qu’on voit apparaître dans les règlements de 1152, sont à la fois assesseurs de la cour du comte et représentants de la communauté. Ce sont les anciens « boni homines », choisis par le seigneur parmi les notables de la Cité et du Bourg. – Les « capitulaires », déjà représentants de la communauté, ne tardent pas à en devenir les juges. La juridiction des prud’hommes est absorbée par la juridiction « capitulaire ». – Les « capitulaires » se dégagent peu à peu de la cour du viguier, représentant direct du comte auprès de la communauté. – Cette évolution est définitive en 1189.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Limitation de la juridiction municipale</head>
+          <p>I. <hi rend="i">Le comte.</hi> – Il est le suzerain direct de la communauté qui se comporte à son égard comme un simple vassal ; il collabore aux règlements d’administration, à côté des magistrats municipaux. – Droits juridictionnels. – Droits domaniaux. – Droits fiscaux.</p>
+          <p>II. <hi rend="i">Le viguier.</hi> – Ses origines. Il est le dépositaire des pouvoirs comtaux ; attributions militaires, administratives, judiciaires. – Il est assisté d’un sous-viguier. – Sa juridiction s’étend sur la viguerie de Toulouse. – Sa compétence. – Apparition d’un juge spécial sous le gouvernement d’Alphonse : le <hi rend="i">judex Tholose</hi> ou <hi rend="i">judex vicarii</hi>.</p>
+          <p>III. <hi rend="i">Le sénéchal.</hi> – Ses origines ; attributions militaires, financières, administratives et judiciaires. Ses rapports avec la commune de Toulouse ne datent que de l’ordonnance de 1254.</p>
+          <p>IV. <hi rend="i">L’évêque</hi>. – Territoires soumis à sa juridiction. Sa compétence. Cas épiscopaux. – Conflits avec le viguier et les magistrats municipaux.</p>
+          <pb n="127" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_03.TIF/full/full/0/default.jpg"/>
+          <p>V. <hi rend="i">Le Chapitre de Saint-Etienne.</hi> – Droits synodaux ; droits domaniaux. – Le prévôt du Chapitre ou prévôt de Toulouse. Etendue de sa juridiction.</p>
+          <p>VI. <hi rend="i">Juridictions diverses.</hi> – Ordres religieux, leur nombre. – L’ordre de Saint-Jean de Jérusalem. Hôpitaux. Léproseries.</p>
+          <p>VII. <hi rend="i">L’abbaye de Saint-Sernin</hi>. – La situation dans le Bourg. Immunité du cloître. Dépendances immédiates. Etendue de ses domaines. Le prévôt. Juridiction de l’abbé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les magistrats municipaux</head>
+          <p>I. Origines du mot « consul ». – Nommés d’abord par le seigneur, ils furent ensuite choisis par la communauté elle-même. Alphonse de Poitiers conteste aux Toulousains le droit de nomination directe. L’ordonnance de 1283 et le choix des magistrats municipaux.</p>
+          <p>II. <hi rend="i">De la condition sociale des consuls.</hi> – D’abord aristocratique, elle admet l’élément démocratique.</p>
+          <p>HL <hi rend="i">Etendue de la juridiction consulaire.</hi> – La Cité, le Bourg, la banlieue. Origine de la banlieue ; son développement progressif à la fin du <num>xii<hi rend="sup">e</hi></num> siècle et en 1226. Condition des habitants de la banlieue.</p>
+          <p>IV. <hi rend="i">Du tribunal consulaire.</hi> – Il siège à la maison commune, dès la fin du <num>xii<hi rend="sup">e</hi></num> siècle. Les jugements ont lieu d’abord en présence de prud’hommes, qui approuvent la sentence ; à partir du <num>xiii<hi rend="sup">e</hi></num> siècle, les magistrats municipaux jugent seuls. – Notaires, avocats, sergents, « tubicinator ». Leur rôle.</p>
+        </div>
+        <div>
+          <pb n="128" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Les justiciables</head>
+          <p>T. <hi rend="i">Distinction des</hi> cives, <hi rend="i">ou habitants de la Cité</hi>, <hi rend="i">et des </hi>burgenses, <hi rend="i">ou habitants du Bourg.</hi> – Accès de la bourgeoisie. – Une simple déclaration suffit, du moins à l’époque de la rédaction des Coutumes de Toulouse. – Droits et obligations des bourgeois. – Condition des serfs à Toulouse. Affranchissements.</p>
+          <p>II. <hi rend="i">Les « Etrangers ».</hi> – Leur condition juridique. – Droit de « marque et de représailles » exercé par la commune sur les étrangers coupables de forfaiture contre un bourgeois.</p>
+          <p>III. <hi rend="i">Les Juifs.</hi> – Leur condition, avant l’avènement d’Alphonse. Incertitudes et conflits des juridictions rivales à leur égard.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la juridiction civile</head>
+          <p>1. Elle n’est exercée que par les plus grandes cités du Midi. Ses origines sont celles de la juridiction consulaire, à Toulouse. La juridiction civile des consuls jusqu’au début du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>H. <hi rend="i">Procédure civile.</hi> – Citation. Ajournement. Comparution. Délais. Excuses. Jugement par défaut.</p>
+          <p>III. <hi rend="i">Les preuves.</hi> – Preuve par enquête : elle n’est usitée que dans des cas très déterminés. Preuve testimoniale : condition de deux témoins. Le témoignage des <pb n="129" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_05.TIF/full/full/0/default.jpg"/>femmes n’est pas admis en matière civile. Le tuteur testamentaire ne peut pas témoigner, lorsqu’il s’agit des biens à lui confiés par testament. Preuve par écrit : elle tend à prédominer, à Toulouse, dès le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle. Elle est admise, à côté de la preuve par témoins, dans les plus anciens jugements du tribunal consulaire. Les copies notariées ont la même valeur que l’original, au point de vue de la preuve.</p>
+          <p>IV. <hi rend="i">Tribunaux secondaires</hi>, <hi rend="i">établis par les consuls de Toulouse, pour régler les questions de dettes.</hi> – « Cours jurées ». Leur origine ; leur fonctionnement ; ont-elles persisté après 1228, date du dernier procès jugé par l’une d’elles ? – Dettes. Procédure pour dettes. Condition des débiteurs, à Toulouse, au <num>xii<hi rend="sup">e</hi></num> siècle et au <num>xiii<hi rend="sup">e</hi></num>.</p>
+          <p>V. <hi rend="i">Frais des procès.</hi></p>
+          <p>VI. <hi rend="i">Les tribunaux d’arbitrage</hi>. – Leur persistance, au <num>xiii<hi rend="sup">e</hi></num> siècle, à côté des tribunaux ordinaires. Leur fonctionnement et leur compétence. La juridiction consulaire tend à devenir juridiction d’appel des sentences arbitrales.</p>
+          <p>VI. <hi rend="i">Juridiction de simple police.</hi> – La cour mineure ou cour « pauque ».</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La juridiction criminelle</head>
+          <p>I. <hi rend="i">Ses origines.</hi> – Les consuls d’abord juges de la cour du comte en matière criminelle. – La juridiction criminelle apparaît en 1189. Les progrès de la compétence criminelle des consuls dans ses rapports avec la guerre des Albigeois. Elle est définitivement acquise en 1226 par les magistrats municipaux, qui jugent seuls à l’exclusion du viguier. Alphonse de Poitiers donne au viguier la connaissance des crimes. Démêlés fréquents entre la com<pb n="130" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_06.TIF/full/full/0/default.jpg"/>mune de Toulouse et le viguier, au sujet de leur compétence respective en matière criminelle. – L’ordonnance de 1283 crée un tribunal unique, composé des consuls et présidé par le viguier.</p>
+          <p>II. <hi rend="i">Procédure criminelle.</hi> – Flagrant délit ; procédure par accusation ; procédure par dénonciation.</p>
+          <p>III. <hi rend="i">Preuves.</hi> – Aveu ; preuve par enquête ; preuve par témoins. Le témoignage des femmes est admis, en matière criminelle, à défaut du témoignage par hommes. – -Peines : bannissement, confiscation de biens, pilori, amendes. – Les prisons : la prison des consuls, dans la maison commune, ne paraît applicable qu’aux flagrants délits et aux débiteurs. – La prison comtale du Château Narbonnais est, de plus, applicable à tous les condamnés. Régime des prisonniers. Voie d’exécution des jugements.</p>
+          <p>IV. <hi rend="i">Appel des sentences consulaires, introduit à Toulouse par l’ordonnance d’Alphonse de Poitiers de</hi> 1254. – Réglementation de l’appel. Les juges d’appeaux, distincts des juges ordinaires, apparaissent dans le Midi vers 1268. – Rôle du parlement, sous Philippe le Hardi, comme tribunal d’appel. Protestations des consuls contre l’appel.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La juridiction gracieuse</head>
+          <p>I. <hi rend="i">Ses origines.</hi> – Les consuls de Toulouse témoins légaux. Influence du droit romain sur le développement de cette juridiction pendant le <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>II. <hi rend="i">Donations et ventes.</hi> – Commissaire aux enchères, créé par les consuls. Obligations et contrats. Scel aux contrats.</p>
+          <p>III. <hi rend="i">Tutelle des orphelins.</hi> – Les magistrats municipaux approuvent le choix des tuteurs testamentaires, ou en désignent d’office. Ils ratifient les ventes faites par eux, <pb n="131" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_07.TIF/full/full/0/default.jpg"/>des biens des pupilles confiés à leurs soins. Curateurs aux biens. Prescriptions de l’ordonnance « Sane ».</p>
+          <p>IV. <hi rend="i">Emancipation devant les magistrats municipaux.</hi></p>
+          <p>V. <hi rend="i">Actes perdus.</hi> – Procédure de reconstitution.</p>
+          <p>VI. <hi rend="i">Les notaires publics.</hi> – Leur nomination par les consuls. Origine de ce droit. Investiture du tabellionnage. Contrôle exercé par la royauté sur le choix des notaires. Rôle des notaires.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <pb n="132" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_15/ENCPOS_1910_15_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

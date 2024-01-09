@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les industrie de la soie en Languedoc au <hi rend="sc">xvii</hi><hi rend="sup">e</hi> siècle et au <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/254313922">Madeleine Laporte</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_14.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 117-126</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="117" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les industries de la soie
+       <lb/>en Languedoc
+       <lb/>au <num>xvii<hi rend="sup">e</hi></num>et au <num>xviii<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Madeleine</forename>
+        <surname>Laporte</surname>
+        <roleName>Licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>L’étude des industries de la soie aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles dans la province de Languedoc présente un double intérêt : elle permet de passer en revue, avec les diverses transformations propres à la soie, les différentes formes du travail à cette époque et, d’autre part, d’examiner les méthodes et les résultats de l’économie dirigée.</p>
+        <p>Ce travail porte sur les industries qui se succèdent, depuis le cocon jusqu’au tissu ou au bas de soie, telles qu’elles étaient pratiquées dans le ressort administratif de l’ancienne province de Languedoc.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources – Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>1. <hi rend="i">Aperçu sur les diverses phases des industries.</hi> – La filature ou tirage, le moulinage, la teinture, le tissage et la bonneterie,</p>
+        <pb n="118" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_02.TIF/full/full/0/default.jpg"/>
+        <p>2. <hi rend="i">La soie en France avant Henri IV.</hi> – Le commerce de la soie a existé en France avant l’industrie, par l’importation des soieries orientales. En Languedoc, pourtant, on trouve des traces d’industries de la soie dès le <num>xiv<hi rend="sup">e</hi></num> siècle. Elles ne devinrent importantes et prospères qu’avec Henri IV, qui intensifia la culture du mûrier ; cette culture, qui échoua dans plusieurs régions, réussit parfaitement en Languedoc et permit l’essor des quelques industries déjà existantes.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les métiers libres
+         <lb/>le tirage et le moulinage de la soie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>du cocon à la soie grège.</head>
+          <p>La filature, ou tirage de la soie, comprend diverses phases : <hi rend="i">étouffage</hi> des cocons, la plupart du temps dans des l’ours à pain ; <hi rend="i">déblazage, tri</hi> en trois sortes de cocons, puis <hi rend="i">tirage</hi> proprement dit. On ôtait la soie extérieure des cocons en les plongeant dans l’eau bouillante et en les battant avec un petit balai. Puis, la fileuse réunissait ensemble les brins de soie provenant de l’intérieur de plusieurs cocons, pour former le fil de <hi rend="i">soie grège,</hi> dont elle faisait des écheveaux ou. <hi rend="i">flottes.</hi> Ces opérations étaient souvent mal exécutées ou négligées ; les ordonnances prescrivaient de les accomplir soigneusement.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>De la soie grège à la soie torse.</head>
+          <p>Avant d’être utilisée pour le tissage ou les bas, la soie grège doit subir une torsion, qui lui est donnée par le <hi rend="i">mouli<pb n="119" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_03.TIF/full/full/0/default.jpg"/>nage.</hi> La soie pouvait être <hi rend="i">moulinée</hi> ou <hi rend="i">ouvrée,</hi> en <hi rend="i">trame</hi> ou en <hi rend="i">organsin,</hi> selon qu’on la destinait à la trame ou à la chaîne du tissu. Pour l’organsin, qui devait être le plus solide, on donnait un deuxième tors : le second apprêt.</p>
+          <p>Le Languedoc ne produisait pas de beaux organsins, il fallait les importer du Piémont. Des efforts furent faits pour essayer de concurrencer les organsins piémontais.</p>
+          <p>Comme la mauvaise qualité des organsins français venait de négligences dans le tirage des soies, beaucoup de fabricants ou de simples particuliers essayèrent d’apporter des perfectionnements au tirage et au moulinage de la soie. Les systèmes les plus ingénieux furent ceux de l’abbé Soumille et de l’inventeur Vaucanson ; ils furent adoptés officiellement et leurs auteurs reçurent des gratifications.</p>
+          <p>Des essais furent faits aussi pour obtenir de la soie blanche à l’imitation de celle de Nankin ; ils ne réussirent pas très bien.</p>
+          <p>Tous ces efforts étaient soutenus par le Gouvernement et les États.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La situation des tirages et des moulinages.
+           <lb/>Les conditions du travail.</head>
+          <p>Les tirages de soie étaient situés surtout dans les Cévennes et le Bas-Languedoc, mais il y en avait aussi dans le Haut-Languedoc. Il était prescrit d’établir les tirages non dans les villes et villages, mais à la campagne, pour ne pas incommoder les habitants par les odeurs. En général, il n’y avait pas de grands ateliers, mais les tours étaient dispersés chez les paysans, ce qui rendait les inspections difficiles et favorisait les négligences. Le tirage de la soie ne durait, que quelques mois par an, après la récolte des cocons.</p>
+          <p>Dans les ateliers, les ouvrières travaillaient dix, douze ou quatorze heures par jour. Le travail à la journée était recommandé, de préférence au travail à la tâche,</p>
+          <pb n="120" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_04.TIF/full/full/0/default.jpg"/>
+          <p>Les salaires étaient relativement élevés.</p>
+          <p>Les moulinages étaient surtout localisés dans le Vivarais. Le travail, dans le moulinage, était exécuté en ateliers, souvent groupés avec les tirages.</p>
+          <p>Les mouliniers et fileurs de soie tentèrent à plusieurs reprises de former un corps à Nîmes, mais ces industries formèrent toujours des métiers libres. Cependant, les pouvoirs publics s’en occupaient.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La production des soies grèges et ouvrées
+           <lb/>en Languedoc.</head>
+          <p>La production des soies est difficile à connaître, car elle provient des récoltes de cocons, qui étaient très variables.</p>
+          <p>Alais fournissait les trois huitièmes de l’ensemble de la production nationale.</p>
+          <p>Les filatures et moulinages de soie étaient la principale richesse des Cévennes, du Vivarais et du Bas-Languedoc.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les corps de métiers</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la teinture de la soie.</head>
+          <p>Les teinturiers en soie formaient un corps séparé des autres teinturiers, car ils avaient la permission de faire le grand et le petit teint. La soie était cuite et décreusée, puis on la passait à la teinture. Les règlements défendaient d’employer de la galle, sauf pour la teinture en noir.</p>
+        </div>
+        <div>
+          <pb n="121" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Le tissage de la soie.</head>
+          <p>La soie, une lois teinte, servait à tisser des étoiles. 11 fallait d’abord <hi rend="i">ourdir</hi> la chaîne, puis passer la traîne au travers. Pour assurer la qualité des tissus, le nombre des portées et la largeur étaient fixés pour chaque tissu.</p>
+          <p>Les principaux tissus fabriqués étaient les <hi rend="i">taffetas, satins, failles, crêpes, velours, damas, brocatelles.</hi> Avec les déchets, on faisait des <hi rend="i">fleurets, filoselles</hi> et <hi rend="i">bourettes.</hi> En mêlant la soie avec de la laine, on obtenait des <hi rend="i">grisettes</hi> et <hi rend="i">mignonnettes.</hi></p>
+          <p>Les soieries se tissaient à Nîmes, Montpellier, Toulouse. A Toulouse, on faisait des étoffes mélangées de laine. La fabrique de Nîmes était de beaucoup la plus importante. Malgré les persécutions, les principaux marchands de Nîmes étaient protestants. Les tissus de Nîmes étaient de qualité médiocre, pour pouvoir se vendre à meilleur compte. La marque et les plombs étaient obligatoires pour garantir la qualité ; malgré cela, les Nîmois l’altéraient ; cela causa en partie la chute de leur fabrique.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les bas de soie.</head>
+          <p>Les bas au métier supplantèrent les bas au tricot à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle ; le métier à bas travaillait en rond, comme des aiguilles à tricoter. En Languedoc, on ne pouvait fabriquer de bas au métier qu’à Nîmes, Toulouse et Uzès, mais beaucoup d’artisans, installés dans les Cévennes, étaient rattachés à la jurande de Nîmes. A partir de 1754, on put fabriquer des bas au métier partout.</p>
+          <p>Le poids des bas était fixé, et chaque douzaine devait être marquée.</p>
+          <p>C’est à Nîmes qu’on fabriquait le plus de bas de soie, puis venait Ganges. Les bas du Midi étaient en grande partie exportés, <pb n="122" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_06.TIF/full/full/0/default.jpg"/> surtout en Espagne. La fermeture du marché espagnol fut une cause du déclin de la fabrique de Nîmes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les conditions du travail
+           <lb/>dans les corps de métiers.</head>
+          <p>La teinture, le tissage et la bonneterie de soie étaient pratiqués par des ouvriers groupés en communautés.</p>
+          <p>Les « marchands-fabricants » et les « marchands faisant fabriquer les étoffes de soie » formaient un seul corps, mais ils se querellaient sans cesse. On les sépara et on forma un troisième corps, celui des « maîtres ouvriers travaillant à façon ». Ces corps étaient jaloux les uns des autres.</p>
+          <p>11 fallait rester apprenti cinq ans et compagnon cinq ans avant d’être maître. Les fils et gendres de maîtres ne payaient pas les droits de réception à la maîtrise.</p>
+          <p>L’observation des statuts des corps était contrôlée par les syndics et jurés-gardes des corps. Les inspecteurs des manufactures contrôlaient la production.</p>
+          <p>Malgré l’organisation en corps de métiers, il y avait déjà lutte entre le capital et le travail. Le chômage était fréquent. Ce fait, joint aux offres alléchantes des gouvernements étrangers, surtout de l’Espagne, provoquait le départ de beaucoup d’ouvriers.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Les manufactures</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la manufacture royale de Lavaur.</head>
+          <p>L’histoire de la manufacture de Lavaur permet d’étudier <pb n="123" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_07.TIF/full/full/0/default.jpg"/>le fonctionnement du système des manufactures. Elle fut fondée par Reboul en 1757 ; il s’engageait à produire de beaux tissus et à former des apprentis, moyennant de substantielles gratifications et des privilèges honorifiques. 11 n’était pas soumis aux règlements en vigueur pour la qualité, afin de pouvoir créer de nouvelles étoffes. Reboul joignit à sa fabrique filature et moulinage ; mais ses disputes avec son associé Roux causèrent la ruine de la manufacture de Lavaur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les manufactures de soie en Languedoc.</head>
+          <p>Le Languedoc connut des manufactures royales et d’autres qui furent seulement privilégiées. Une manufacture royale de moulinage et organsinage exista à Aubenas, chez Deydier ; son succès fut complet. La région vivaraise posséda à Privas, Chomérac, Largentière des manufactures privilégiées.</p>
+          <p>Servant et C<hi rend="sup">ie</hi> obtinrent le titre de manufacture royale, au Puy, pour leur fabrique de tissus. Ils réussirent bien.</p>
+          <p>Liotard fonda à Toulouse une manufacture royale qui subsista jusqu’à la Révolution. Pascal obtint aussi le titre, à Narbonne, mais laissa péricliter son entreprise.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>l’importance et le rôle des manufactures royales.</head>
+          <p>Les manufactures royales avaient un caractère exceptionnel et répondaient à un double but : former des ouvriers habiles qui pourraient ensuite diffuser de bonnes méthodes de travail et assurer une qualité supérieure qui pût maintenir et affirmer le renom de l’industrie française. Les manufactures marquent les débuts de la grande industrie dans notre pays.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="124" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Quatrième partie
+         <lb/>Le commerce des soies
+         <lb/>et des soieries</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la douane de Lyon.</head>
+          <p>Les droits payés à Lyon par les soies et soieries étaient élevés : cette douane conditionne l’histoire du commerce des soies en France. Les soies et soieries entrant en France, ou voyageant d’une province à l’autre, étaient obligées de passer par Lyon et d’y acquitter des droits. Cela mettait les fabricants languedociens dans une situation inférieure par rapport à ceux de Lyon.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’importation des soies et des soieries.</head>
+          <p>On importait des soies grèges et ouvrées, surtout des organsins piémontais, pour alimenter les fabriques françaises. 11 était interdit d’importer des tissus qui auraient concurrencé les étoffes françaises ; seule la Compagnie des Indes pouvait introduire soieries et toiles peintes venant des Indes et de Chine. Cependant, on introduisait tout de même des soieries étrangères, car la production nationale ne suffisait pas.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le commerce intérieur.</head>
+          <p>Les soies de Languedoc devaient passer par Lyon pour aller dans d’autres provinces ; mais, pour l’étendue des cinq grosses fermes, elles pouvaient passer par Vichy et Gannat. La circulation était libre à l’intérieur de la province,</p>
+          <pb n="125" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_09.TIF/full/full/0/default.jpg"/>
+          <p>Les soies vendues aux foires ne payaient que le droit de foraine : à la foire de Beaucaire se faisaient de gros achats de soie, de même qu’à Alès.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>L’exportation des soies et des soieries.</head>
+          <p>L’exportation fut favorisée pour les soieries et les bas et plusieurs fois interdite pour les soies, car on désirait vendre à l’étranger les objets fabriqués et garder la matière première nécessaire au pays. Grâce à la foire de Beaucaire, les acheteurs étrangers réussissaient à se procurer des soies languedociennes.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Le Languedoc occupait une place de choix pour importer ou exporter soies et soieries. Mais son commerce fut toujours gêné par la douane de Lyon. Les soies du pays étaient en général consommées dans la province même. La maison Itier et Reboul, de Montpellier, montre que les soieries vendues dans le Midi venaient souvent de fort loin.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion générale</head>
+        <p>La filature et. le moulinage de la soie ont constitué la seule richesse des régions pauvres des Cévennes. La fabrique des soieries- et des bas de soie a fait prospérer la ville de Nîmes, mais n’a pu se maintenir en raison des privilèges de Lyon.</p>
+        <p>L’industrie de la soie est une industrie de luxe, qui a été créée en France par l’État et n’a pu s’y maintenir que grâce à son intervention, par les gratifications et un contrôle sévère. Malgré les échecs, grâce au bon sens des intendants et à la compétence <pb n="126" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_14/ENCPOS_1943_14_10.TIF/full/full/0/default.jpg"/> des inspecteurs, l’économie dirigée aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles a eu des résultats heureux.</p>
+      </div>
+      <div>
+        <head rend="uc">Cartes – Planches</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Index des noms de lieux</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le roman de l’<hi rend="i">Image du monde</hi></title>
+        <author ref="https://www.idref.fr/203033477">Étienne Héron De Villefosse</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1849/ENCPOS_1849_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>, <biblScope>p. 13</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="13" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_07/ENCPOS_1849_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le roman de l’Image du monde</head>
+      <byline>
+        Thèse pour le diplôme d’archiviste paléographe, soutenue par
+        <forename>E.</forename>
+        <surname>Héron de Villefosse</surname>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>Le roman de l’<hi rend="i">Image du monde</hi> n’est pas de Jean de Beauvais, mais d’un Messin nommé Gossuin.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>Ce poëme n’est pas un ouvrage original, mais est extrait de plusieurs autres, surtout du traité <hi rend="i">de Imagine mundi,</hi> qu’on attribue à Honoré d’Autun.</p>
+      </div>
+      <div>
+        <head rend="uc">III.</head>
+        <p>Le plan, entièrement subordonné à la religion, diffère de celui des auteurs qui ont fourni les matières.</p>
+      </div>
+      <div>
+        <head rend="uc">IV.</head>
+        <p>L’auteur semble mériter plus d’indulgence qu’on ne lui en a accordé. 11 a une certaine indépendance d’esprit, et ne répète pas servilement les préjugés reçus.</p>
+        <pb n="14" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_07/ENCPOS_1849_07_02.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

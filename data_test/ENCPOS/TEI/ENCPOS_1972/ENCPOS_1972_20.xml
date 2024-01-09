@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_20" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Guillaume de Varye, facteur de Jacques Cœur et général des finances de Louis XI</title>
+        <author ref="https://www.idref.fr/026751046">Marie-Édith Poulon</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_20.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 161-166</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="161" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_20/ENCPOS_1972_20_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Guillaume de Varye
+       <lb/>facteur de Jacques cœur
+       <lb/>et
+       <lb/>général des finances de Louis XI</head>
+      <byline>
+        par
+        <forename>Marie-Édith</forename>
+        <surname>Poulon</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>A Bourges, où Guillaume de Varye est né, une rue porte son nom et les plus vieux habitants de la ville peuvent se rappeler un hôtel de belle allure, maintenant démoli, qui avait été construit sur la boutique de ses ancêtres. C’est là que Guillaume de Varye, devenu l’ami et le collaborateur, sinon le rival de Jacques Cœur et promis à de grandes tâches, aidait Jacques Cœur dans ses affaires privées, sans négliger les siennes, et s’initiait aux affaires publiques par le biais des affaires domestiques du roi.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>La majorité des documents utilisés se trouvent à la Bibliothèque nationale et aux Archives nationales, dans les séries JJ, K et KK ; quelques renseignements ont été fournis également par les Archives départementales de l’Hérault (séries A et B) et du Cher (série G), par les Archives municipales de Montpellier, Toulouse et Lyon, et par les Archives de Florence (Archives de l’État et Archives de l’Hôpital des Saints-Innocents).</p>
+      </div>
+      <div>
+        <pb n="162" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_20/ENCPOS_1972_20_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Biographie et fortune de Guillaume de Varye</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>biographie de Guillaume de Varye</head>
+          <p>Guillaume de Varye naquit à Bourges d’un marchand drapier, créancier du roi, dans la paroisse Notre-Dame du Fourchaud, quartier marchand de la ville. En 1440 il épousa Charlotte de Bar. Il fut anobli par Charles VII en 1448. Il mourut en 1469.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les biens de Guillaume de Varye</head>
+          <p>Guillaume de Varye hérita des propriétés berrichonnes de ses parents ; il reconstruisit en grande partie leur hôtel de Bourges. Il se fit donner par Charles VII une maison à Rouen, en acquit une autre à Tours, et en 1464 acheta la seigneurie de l’Isle-Savary, où il construisit un château qui conserve encore son décor original.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Guillaume de Varye et Jacques cœur :
+         <lb/>leurs affaires privées</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les liens personnels</head>
+          <p>Jacques Cœur et Guillaume de Varye vécurent tous deux à Bourges dans le quartier marchand de Notre-Dame du Fourchaud. Guillaume de Varye entra au service de Jacques Cœur vers 1444, semble-t-il. La demeure de Guillaume de Varye servit d’entrepôt à l’argent et aux marchandises de <pb n="163" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_20/ENCPOS_1972_20_03.TIF/full/full/0/default.jpg"/>Jacques Cœur pendant la construction de son hôtel. Guillaume de Varye resta fidèle à Jacques Cœur tout au long de son procès ; entraîné dans la même disgrâce, il se réfugia à l’abbaye de Grandmont, en Limousin, avant de le rejoindre en Italie. Au moment de la restitution des biens de Jacques Cœur confisqués, Guillaume de Varye fut assimilé à ses enfants.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les relations professionnelles</head>
+          <p>Guillaume de Varye, associé plutôt que facteur de Jacques Cœur, était au centre de ses opérations financières et commerciales. Il signait en toute autorité les quittances et participa à la plupart des associations marchandes de Jacques Cœur.</p>
+          <p>L’activité de Guillaume de Varye s’est exercée essentiellement, mais non exclusivement, dans le nord de la France. Il veillait sur le commerce normand, sur l’approvisionnement des stocks de l’Argenterie à Tours. Il se rendit à plusieurs reprises aux foires de Genève. Il dirigeait aussi les affaires de Jacques Cœur à Florence où il participait lui-même à l’industrie et au commerce de la soie : en 1450, il se fit immatriculer dans la corporation de <hi rend="i">Por Santa Maria </hi>ou Art de la soie ; il s’associa alors avec le florentin Bonaccorso ; leurs relations se prolongèrent bien après la chute de Jacques Cœur, jusqu’en 1457.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Guillaume de Varye officier de Charles VII
+         <lb/>et de Louis XI</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>Guillaume de Varye dans l’administration des finances</head>
+          <p>Guillaume de Varye, comme Jacques Cœur et peut-être grâce à lui, trouva des appuis en Languedoc. Il fallait en effet bénéficier des protections les plus hautes pour amortir les risques des affaires privées. Il obtint, le 11 mai 1448, le contrôle de la recette générale de Languedoc ; entraîné dans la disgrâce de Jacques Cœur, il ressaisit vite, sous Louis XI, les rênes de la fortune.</p>
+          <pb n="164" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_20/ENCPOS_1972_20_04.TIF/full/full/0/default.jpg"/>
+          <p>Général des finances en 1461, il le resta jusqu’à sa mort en 1469. Il fit de plus en plus figure de conseiller écouté ; toutes les grandes affaires économiques du royaume lui étaient confiées. Le roi le délégua également à toutes les assemblées des États de Languedoc de 1462 à 1469 pour le représenter.</p>
+          <p>Sa carrière ne suivit pas un cours continu puisque, de contrôleur général, il devint général des finances, avec dix ans d’interruption entre ces deux charges (1451-1461). Les contrôleurs généraux ne devenaient pour ainsi dire jamais généraux des finances, car, bien qu’ils fussent les troisièmes officiers de la généralité, un fossé hiérarchique les séparait des généraux des finances et même des receveurs généraux. Guillaume de Varye ne dut donc pas son avancement au prestige de la charge de contrôleur, mais à la faveur de Louis XI, avec lequel il avait peut-être eu des relations d’argent quand il n’était que dauphin.</p>
+          <p>Guillaume de Varye fut donc nommé receveur général en 1460, mais receveur général du comte du Maine, gouverneur de Languedoc. Aucun document ne prouve qu’il ait rempli ces fonctions ; cette nomination montre cependant la notoriété qu’il avait déjà acquise, que ce soit dans son commerce ou dans sa charge de contrôleur général.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les fonctions domestiques de Guillaume de Varye</head>
+          <p>Guillaume de Varye dut s’occuper de divers services domestiques du roi, l’Argenterie et l’Écurie, dont Jacques Cœur était officiellement chargé. En 1448, il fut commis aux fonctions d’argentier pour l’extraordinaire, sans que Jacques Cœur cessât de l’être en titre ; Jacques Cœur lui abandonna l’ordinaire en 1450.</p>
+          <p>A l’arrestation de Jacques Cœur, Guillaume de Varye perdit ses fonctions, puis les retrouva de 1461 à 1465 ; il se chargea même de nouveau de l’Écurie dès 1457. Il reste trois comptes de Guillaume de Varye pour l’Argenterie et deux pour l’Écurie. H était aussi chargé de la Chambre et commis au paiement de la garde du roi. En 1465, il démissionna de toutes ses fonctions domestiques, prétextant avoir trop de travail. Peut-être faut-il voir dans cette démission une conséquence de la guerre du Bien Public, qui défavorisa l’entourage berrichon de Louis XI au profit du groupe tourangeau. Guillaume de Varye avait tout de même sauvé l’essentiel de ses fonctions et put désormais se consacrer à l’administration des aides et aux tâches économiques que lui confiait le roi, dont il restait le général des finances et le conseiller.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="165" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_20/ENCPOS_1972_20_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Quatrième partie
+         <lb/>Rôle de Guillaume de Varye
+         <lb/>dans la politique économique de Louis XI</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>protectionnisme et entourage marchand de Louis XI</head>
+          <p>Pour réaliser sa politique protectionniste Louis XI s’entoura de gros commerçants tourangeaux, dauphinois ou berrichons, parmi lesquels Guillaume de Varye tint une place importante.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Guillaume de Varye continue ses propres affaires commerciales</head>
+          <p>Il racheta des galées de Jacques Cœur pour continuer le trafic des épices avec le Levant, il s’occupa de la production et du commerce du salpêtre nécessaire pour l’artillerie.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Guillaume de Varye et les affaires économiques du royaume</head>
+          <p>Dans la rivalité qui opposait les villes de foires entre elles, il soutint Lyon contre Genève, malgré une attitude parfois équivoque. Il participa à l’œuvre du « relievement du navigaige » et fut chargé par Louis XI d’organiser le départ des galées pour le Levant ; la tète de pont était Aigues-Mortes, dont Varye avait le titre honorifique de viguier. A l’intérieur du royaume il se préoccupa de faire régner l’ordre sur les routes et de supprimer les péages inutiles sur les fleuves. Il est probable qu’il incita le roi à introduire l’industrie de la soie à Lyon. Il participa à la tentative de création d’une banque royale.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="166" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_20/ENCPOS_1972_20_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Conclusion</head>
+        <p>Guillaume de Varye poursuivit au service de Louis XI l’œuvre entreprise par Jacques Cœur. Il fut soutenu et aidé par le roi. En effet, si l’œuvre de Varye lui avait été purement personnelle, elle aurait sombré avec lui ; au contraire, le roi montra son désir d’assurer la continuité de l’œuvre de Guillaume de Varye en donnant en mariage sa veuve, Charlotte de Bar, à Pierre Doriole, qui faisait partie de son entourage protectionniste.</p>
+        <p>De nos recherches se dégage le portrait d’un homme qui tient encore solidement, par ses origines et ses habitudes, au Moyen Âge finissant, mais qui déjà s’ouvre largement aux temps modernes. En grand marchand du <num>xv<hi rend="sup">e</hi></num> siècle, Guillaume de Varye avait des activités qui dépassaient les limites du royaume de France, il pressentait les principes du capitalisme et devinait ce que la richesse pouvait apporter à l’État ; mais, tout en incorporant au commerce traditionnel les nouvelles valeurs de l’aventure et de la spéculation, il n’oubliait pas qu’il était sorti d’une obscure boutique berrichonne et préférait, aux investissements dans des affaires toujours nouvelles, l’achat de terres et de seigneuries et la gloire d’une carrière aux côtés du roi.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

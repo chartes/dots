@@ -11,15 +11,18 @@ module namespace dbc = "https://github.com/chartes/dots/db/dbc";
 
 import module namespace functx = "http://www.functx.com";
 
-declare variable $dbc:resourceId := "Littérature";
+declare variable $dbc:resourceId := "ENCPOS";
 
-declare variable $dbc:dbName := "litterature";
+declare variable $dbc:dbName := "ENCPOS";
 
-declare variable $dbc:pathResources := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/cas_3/TEI/";
+declare variable $dbc:pathResources := "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/TEI/";
 
-declare variable $dbc:metadataMapping := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/cas_3/dots/metadata_mapping.xml";
+declare variable $dbc:metadataMapping := "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/dots/metadata_mapping.xml";
 
-declare variable $dbc:metadataTSV := "/home/ppons/Documents/Work/dots_corpus/CORPUS-DEMO_DoTS/cas_3/dots/litterature_metadata.csv";
+declare variable $dbc:metadataCSV := "
+/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/dots/encpos.tsv
+/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/dots/titles.csv
+";
 
 declare variable $dbc:separator := "	";
 
@@ -32,25 +35,33 @@ declare updating function dbc:dbCreate() {
     order by $resource
     return
       concat($dbc:pathResources, $resource)
-  let $tsv := 
-    if ($dbc:metadataTSV)
-    then csv:doc($dbc:metadataTSV, map{
-  "header": true(),
-  "separator": $dbc:separator
+  let $csvData := 
+    if ($dbc:metadataCSV)
+    then 
+      for $csv in tokenize($dbc:metadataCSV)
+      return
+        csv:doc($csv, map{
+        "header": true(),
+        "separator": $dbc:separator
 })
     else ()
   let $resources :=
     if ($dbc:metadataMapping != "")
     then
-      if ($tsv != "")
-      then ($resourcesXML, $dbc:metadataMapping, $tsv)
+      if ($csvData != "")
+      then ($resourcesXML, $dbc:metadataMapping, $csvData)
       else ($resourcesXML, $dbc:metadataMapping)
     else $resourcesXML
   let $paths :=
     (
       for $path in $resourcesXML return substring-after($path, "/TEI"),
       if ($dbc:metadataMapping != "") then concat("dots/", functx:substring-after-last($dbc:metadataMapping, "/dots")) else (),
-      if ($tsv != "") then concat("dots/", functx:substring-after-last($dbc:metadataTSV, "/dots")) else ()
+      if ($csvData != "") 
+      then 
+        for $csv in tokenize($dbc:metadataCSV)
+        return 
+          concat("dots/", functx:substring-after-last($csv, "/dots"))
+      else ()
     )
   return
     db:create($dbc:dbName, $resources, $paths, map {

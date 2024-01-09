@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_05" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le Conseil d’État sous la Restauration</title>
+        <author ref="https://www.idref.fr/026775387">Michel Chabin</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_05.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 43-50</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="43" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le conseil d’état sous la restauration</head>
+      <byline>
+        par
+        <forename>Michel</forename>
+        <surname>Chabin</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le Conseil d’État est une de nos plus anciennes institutions, et une de celles qui se sont le plus transformées au cours de leur histoire. Issu de la <hi rend="i">curia regis,</hi> devenu un élément essentiel du Conseil du roi sous la monarchie centralisée, il a connu, avec le Consulat et l’Empire, dans une organisation nouvelle, une époque de gloire et de splendeur, ce qui a fait considérer le Conseil d’État napoléonien comme l’ancêtre direct du Conseil d’État actuel : c’est en effet en 1950 qu’a été célébré le cent-cinquantenaire du Conseil d’État. Et pourtant, quelles différences entre le Conseil d’un empereur tout-puissant et notre Conseil d’État, conseil consultatif d’un gouvernement représentatif, en même temps que juge administratif suprême. L’évolution ne s’est pas faite insensiblement ; le pas décisif a été franchi sous la Restauration, en même temps que s’établissait durablement en France le système parlementaire.</p>
+        <p>Voilà qui suffit à montrer l’intérêt de l’étude du Conseil d’État à cette époque. Malgré deux thèses de doctorat en droit qui lui ont été consacrées par Ch. Léonardi en 1909 et par B. Olivier-Martin en 1941, en n’utilisant d’ailleurs que des sources imprimées, le Conseil d’État de la Restauration continuait à souffrir, à son grand désavantage, de la comparaison avec son prédécesseur ; tous les ouvrages qui abordent le sujet sont unanimes : le Conseil d’État fut amoindri sous la Restauration et ne fut plus que l’ombre de ce qu’il était. En outre, les incendies de 1871 nous ont privés de ses archives.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Aux textes législatifs imprimés, aux comptes rendus des débats parlementaires, aux nombreux ouvrages sur le Conseil publiés sous la Restauration et au-delà, aux journaux, aux souvenirs et mémoires de contemporains, il faut <pb n="44" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_02.TIF/full/full/0/default.jpg"/>ajouter un certain nombre de documents d’archives. La plupart proviennent des fonds du ministère de la Justice, ministère de tutelle du Conseil, qui se trouvent aux Archives nationales, série BB (en particulier BB 17 et BB 30) ; en outre, des documents intéressants sur les débuts du Conseil d’État de la Restauration se trouvent dans les papiers de la Secrétairerie d’État, aux Archives nationales (AF IV et V) ; on trouve encore aux Archives nationales, dans la série F, des traces des relations du Conseil, et plus particulièrement du comité de l’Intérieur, avec le ministère de l’Intérieur, et, dans la série O, quelques indications sur les locaux occupés par le Conseil, surtout le palais du Louvre. Les archives de la Marine et de la Guerre ne conservent rien sur l’activité des comités attachés à ces ministères et celles des Finances ont également été détruites en 1871. Pour étudier le personnel du Conseil, on a eu recours, outre quelques dossiers de préfets aux Archives nationales – qui ne conservent des dossiers de conseillers d’État qu’à partir de 1834 – aux archives de la Légion d’Honneur, à quelques dossiers des archives de la Guerre et de la Marine, à l’état civil reconstitué des Archives de Paris. Enfin, les archives des Affaires étrangères fournissent quelques renseignements sur les rapports entre le Conseil d’État français et des Conseils d’État étrangers, en particulier celui de Prusse.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>L’organisation du conseil d’état de 1814 à 1830</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le conseil d’état sous la première restauration</head>
+          <p><hi rend="i">Le Conseil d’État en péril.</hi> – Au cours des événements du printemps 1814, le Conseil d’État, dont les principaux membres étaient dispersés et n’avaient pas la même opinion sur la conduite à tenir, assista passivement au changement de régime.</p>
+          <p>Le corps dans son ensemble ne se rallia aux Bourbons qu’assez tard, les 11 et 13 avril. Le 16, le comte d’Artois nomma un Conseil d’État provisoire, qui était en fait le gouvernement provisoire formé par Talleyrand augmenté de deux personnes. C’est ce Conseil qui remplit alors, épisodiquement d’ailleurs, les fonctions du Conseil précédent. Le Conseil d’État napoléonien cessa alors d’exister en fait ; il le cessa bientôt en droit : un projet d’édit fut préparé, qui le supprima expressément – la Charte du 4 juin n’en parle pas – puis un autre projet d’édit reprit le titre de Conseil d’État pour désigner une réalité toute différente, un conseil des Affaires étrangères.</p>
+          <pb n="45" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_03.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Le nouveau Conseil d’État.</hi> – Le principe d’un nouveau Conseil d’État ayant été acquis, on assista à une série d’efforts de la part d’hommes soucieux d’une bonne administration, au premier rang desquels figura Henrion de Pansey, pour donner à ce Conseil les attributions utiles de l’ancien, en particulier en matière contentieuse.</p>
+          <p>L’ordonnance du 29 juin 1814 fut le fruit d’un compromis ; on y retrouve des éléments du Conseil napoléonien, mais amalgamés avec des souvenirs d’Ancien Régime par le chancelier Dambray, ce qui leur ôte toute efficacité. Ce nouveau Conseil, installé le 3 août, fonctionna fort mal, ou plutôt n’eut pas le temps de fonctionner ; il fut balayé par Napoléon le 20 mars 1815.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le conseil d’état sous la deuxième restauration</head>
+          <p><hi rend="i">La réorganisation du Conseil d’État en août 1815.</hi> – Pendant les Cent-Jours, Napoléon reconstitua son ancien Conseil d’État. A son retour, le roi décida de tenir compte de son premier échec. La réorganisation du Conseil d’État fut confiée à un ancien administrateur impérial, Pasquier, nouveau garde des Sceaux. Son œuvre, l’ordonnance du 23 août 1815, est une adaptation pragmatique et hâtive du Conseil napoléonien au nouveau système constitutionnel.</p>
+          <p>De retour au ministère de la Justice en 1817, Pasquier compléta sa première ordonnance par celle du 19 avril. Mais sa réforme se révéla vite insuffisante : les membres du service ordinaire devaient être nommés chaque année, ce qui laissa s’instaurer un sentiment d’inquiétude dans le personnel et le sentiment d’une composition arbitraire dans l’opinion, et surtout, le problème des attributions contentieuses du Conseil n’était pas abordé.</p>
+          <p><hi rend="i">La stabilisation de 1824.</hi> – A défaut d’une réforme de fond, le ministère Villèle, par l’ordonnance du 26 août 1824, apporta une certaine stabilisation du personnel : il fallut désormais une ordonnance individuelle et spéciale pour être révoqué. Les auditeurs au Conseil d’État, supprimés en 1814, furent rétablis, après une tentative infructueuse en ce sens de la part de Cormenin en 1820. Cette ordonnance accorda au Conseil un répit de quelques années.</p>
+          <p><hi rend="i">Les dernières réformes de la Restauration.</hi> – L’opposition parlementaire, en réduisant les crédits alloués au Conseil, contraignit le ministère Martignac à une réforme de circonstance, l’ordonnance du 5 novembre 1828, cependant qu’il promit de mettre en chantier une réforme de fond. Une commission présidée par Cuvier, dont Cormenin fut le rapporteur, fut réunie par le ministère Polignac. Elle termina ses travaux le 25 janvier 1830 en adoptant un projet de loi sur le Conseil d’État, que la dissolution de la Chambre, puis la révolution de Juillet empêchèrent d’être voté.</p>
+          <p>Ce projet est très important par les réformes qu’il contient, dont certaines seront reprises dès 1831, comme la création d’un ministère public auprès du Conseil et la publicité des débats au contentieux, mais dont d’autres devront attendre encore longtemps : large autonomie du conseil du contentieux au sein du Conseil d’État, cette fois par le moyen des conseillers à vie, et système de la justice déléguée remplaçant le système de la justice retenue.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="46" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>La composition, les attributions, le fonctionnement
+         <lb/>et l’œuvre du conseil d’état</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la composition du conseil d’état</head>
+          <p><hi rend="i">La politique et la composition du Conseil.</hi> – Sous la première Restauration, la composition du Conseil, fixée par l’ordonnance du 5 juillet 1814, reflète les idées qui ont présidé à son organisation : un équilibre artificiel est réalisé entre les membres venus du Conseil impérial et d’anciens magistrats des cours souveraines. Une bonne partie de ces derniers furent éliminés en 1815 ou peu après.</p>
+          <p>Sous la deuxième Restauration, un certain nombre de nominations, de révocations et de démissions furent essentiellement de caractère politique. Elles frappèrent beaucoup l’opinion. Le garde des Sceaux Peyronnet fut le plus critiqué à cet égard ; mais en fait, ces perturbations n’affectèrent qu’une toute petite proportion des effectifs du Conseil d’État.</p>
+          <p><hi rend="i">La compétence et la composition du Conseil.</hi> – La nécessité de remplir le Conseil d’État d’hommes compétents s’imposa rapidement. Dans une très large mesure, les personnes choisies pour faire partie des différents comités du Conseil possédaient une qualification particulière.</p>
+          <p><hi rend="i">Quelques caractères particuliers de la composition du Conseil.</hi> – La stabilité de la composition du Conseil d’État était réelle : plus de la moitié des postes de conseiller d’État ou de maître des requêtes ont été occupés par des personnes qui ont poursuivi une carrière continue au sein du Conseil, et un bon quart par des hommes qui ont alterné entre le Conseil et l’administration active. En ce qui concerne le problème des incompatibilités, le principe de l’incompatibilité entre les fonctions du Conseil et les activités commerciales et financières fut nettement affirmé, tandis que le problème fut simplement posé pour ce qui est des mandats électifs.</p>
+          <p>L’auditorat se reconstitua progressivement et prépara la relève que demandait le vieillissement du personnel.</p>
+          <p><hi rend="i">Les grandes figures du Conseil d’État.</hi> – Six conseillers ou maîtres des requêtes ont été choisis en fonction de leur rôle éminent dans le Conseil d’État de la Restauration. Il s’agit du chevalier Allent, du comte Bérenger, du vicomte de Cormenin, du baron Cuvier, du chevalier Delamalle et du baron de Gérando.</p>
+        </div>
+        <div>
+          <pb n="47" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Attributions, fonctionnement et œuvre du conseil d’état</head>
+          <p><hi rend="i">Les attributions du Conseil d’État.</hi> – Les attributions législatives et administratives du Conseil d’État sont : la préparation des lois et des règlements, attribution incontestée ; l’interprétation de la loi, qui lui fut retirée par la loi du 28 juillet 1828 ; l’examen et l’enregistrement des actes des autorités religieuses ; la haute police administrative, qui tomba en désuétude, au moins dans sa conception napoléonienne. Ses attributions juridictionnelles, comme juge en premier ressort, juge d’appel et juge de cassation, sont également héritées du Conseil impérial.</p>
+          <p><hi rend="i">Le fonctionnement du Conseil d’État.</hi> – Le Conseil d’État était théoriquement placé sous la présidence du roi, mais, à l’inverse de Napoléon, le roi ne présida jamais en personne son Conseil d’État sous la Restauration. Les ministres étaient directement chargés de la présidence des comités, car on voulait se passer de présidents de section, jugés trop dangereux pour les ministres. En fait, des vice-présidents de comité furent très vite indispensables ; ils accomplirent avec modestie l’essentiel du travail.</p>
+          <p>Le Conseil disposait d’un secrétariat général pour coordonner le travail. Au début de la Restauration, en raison des changements successifs de régimes, le travail fut assez long à s’organiser. Les méthodes du Conseil napoléonien furent généralement conservées, de même que la procédure au contentieux. Le Conseil était assisté par les avocats aux Conseils du roi et à la Cour de Cassation et par deux, puis un seul huissier.</p>
+          <p><hi rend="i">L’œuvre du Conseil d’État.</hi> – En matière administrative, le Conseil donnait des <hi rend="i">avis,</hi> et, en matière contentieuse, des <hi rend="i">ordonnances,</hi> que le roi devait sanctionner. L’activité contentieuse du Conseil d’État s’accrut régulièrement sous la Restauration et le comité du contentieux dut doubler ses effectifs. La jurisprudence du Conseil fit de nets progrès ; le recours pour excès de pouvoir apparut à cette époque. L’œuvre du Conseil d’État est la source directe du développement du droit administratif.</p>
+          <p>Dans le domaine de la législation, l’activité du Conseil marqua légèrement le pas, en raison du système parlementaire. Malgré quelques velléités, il ne put se signaler par aucune œuvre de prestige, comme il l’avait fait sous l’Empire avec les grands codes. Mais dans le travail de routine et dans de nombreuses commissions, il fut d’une grande utilité au gouvernement.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="48" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>Le conseil d’état et son temps</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la polémique autour du conseil d’état</head>
+          <p><hi rend="i">Les adversaires du Conseil d’État.</hi> – L’histoire du Conseil d’État sous la Restauration est jalonnée par les attaques dont il fut l’objet et qui, pour les contemporains, masquèrent souvent son action réelle. La première série d’attaques est liée à la réaction qui se déchaîna en 1814 contre les institutions impéréales. Vers 1817, elles ont trouvé des arguments plus sérieux : le Conseil n’est pas constitutionnel, il n’est pas légal, il est trop dépendant du ministère, enfin il coûte trop cher pour son peu d’utilité.</p>
+          <p>L’ordonnance de 1824 donna partiellement satisfaction aux détracteurs du Conseil, mais en 1828 la querelle rebondit. Les libéraux demandaient, avec le duc de Broglie, la suppression de la justice administrative autonome, tandis qu’une majorité se dégageait autour des propositions de réformes émanant des défenseurs du Conseil.</p>
+          <p><hi rend="i">Les défenseurs du Conseil d’État.</hi> – Aux premières attaques le gouvernement, pris de court, répliqua en faisant défendre l’institution telle que les ordonnances l’organisaient ; mais cette voie était sans issue. Les véritables défenseurs du Conseil furent donc ceux qui, tels Gérando, Cormenin, Macarel et Sirey, s’efforcèrent de le faire mieux connaître et de montrer son utilité, et qui proposèrent une réforme réaliste. Ce sont finalement les grandes lignes de la réforme que Cormenin ébaucha en 1818 et qu’il rapporta devant la commission en 1830, qui inspirèrent le projet de loi ardemment réclamé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le conseil d’état dans la société de son temps</head>
+          <p><hi rend="i">Le cadre de vie, les locaux.</hi> – L’établissement matériel du Conseil d’État sous la Restauration est à l’image de la position contestée de l’institution. Dispersé entre les ministères après avoir été chassé des Tuileries en 1814, il retrouva en 1824 un local plus prestigieux avec le Louvre. Mais il y était à l’étroit et on lui fit bien sentir qu’il n’y était pas véritablement chez lui.</p>
+          <pb n="49" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_07.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Traitements, costumes et préséances.</hi> – Les traitements des conseillers d’État furent sensiblement réduits, passant de 25 000 à 16 000 francs. Le costume perdit une partie de son apparat et le Conseil dut abandonner l’honneur des premiers rangs dans les cérémonies publiques.</p>
+          <p><hi rend="i">Le rayonnement du Conseil d’État.</hi> – Le Conseil d’État continua néanmoins à exercer un certain attrait, qui n’était plus dû aux avantages matériels. Les demandes de places ou de titres au Conseil furent très nombreuses. Le Conseil rassemblait encore une bonne part de l’élite intellectuelle du pays. Cuvier, Ramond et Mirbel y représentaient l’Académie des Sciences, Gérando et Maine de Biran la philosophie, Villemain, Salvandy, Guizot, Barante et bien d’autres s’illustrèrent dans les lettres ; on trouva même au Conseil un poète et un romancier à la mode, Jules de Resseguier et Victor d’Arlincourt.</p>
+          <p>L’éclat du Conseil parvint même à franchir les frontières, car le roi de Prusse s’inspira de son exemple pour créer en 1817 le Conseil d’État prussien.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>C’est sous la Restauration plus que sous l’Empire que s’est décidé, en définitive, l’avenir du Conseil d’État. Il fut alors reconstruit sur les bases nouvelles après avoir failli disparaître. La distance qui sépare le Conseil d’État de la première Restauration, tourné vers le passé, et le projet porteur d’avenir de 1830 est immense.</p>
+        <p>Le Conseil a accompli cette évolution décisive au milieu des difficultés et des controverses, en perdant son faste, sa grandeur et même sa légitimité. Mais, paradoxalement, il y trouva son compte : en 1814, il était craint et redouté et les ministres tremblaient devant lui ; désormais, il faisait figure de victime de l’arbitraire ministériel et devait s’imposer uniquement par la valeur et l’utilité de son travail. Il n’était plus un danger politique et l’on reconnut alors ses mérites.</p>
+        <p>Dans ces conditions, peut on encore parler de déclin du Conseil d’État sous la Restauration ? Bien au contraire, il sortit de cette période de son histoire plus fort et plus respecté que jamais.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>1. Les rapports du Conseil d’État français avec les Conseils étrangers, notamment le Conseil d’État prussien.</p>
+        <p>2. La composition du service ordinaire par comités sous la deuxième Restauration : sur une moyenne de trente conseillers d’État et de quarante maîtres de requêtes, le comité du contentieux passa de sept à douze conseillers et de <pb n="50" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_05/ENCPOS_1972_05_08.TIF/full/full/0/default.jpg"/>huit à dix-huit maîtres des requêtes ; le comité de législation, supprimé en 1824, compta de six à trois conseillers et de quatre à sept maîtres des requêtes ; le comité de l’intérieur et du commerce eut en moyenne sept conseillers et huit maîtres des requêtes ; le comité des finances eut d’abord sept conseillers, tomba à trois, remonta à cinq et le nombre de ses maîtres des requêtes oscilla entre six et neuf ; enfin, les comités de la marine et de la guerre, ce dernier créé en 1817, passèrent de cinq à quatre conseillers et de même pour les maîtres des requêtes.</p>
+        <p>3. Tableau des affaires pour lesquelles le Conseil était compétent.</p>
+        <p>4. Répertoire alphabétique des membres ordinaires, extraordinaires, surnuméraires et honoraires du conseil d’état pendant la Restauration.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

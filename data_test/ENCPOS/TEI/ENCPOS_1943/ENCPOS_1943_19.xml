@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_19" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Politiques, ligueurs et huguenots en Vivarais à la fin du <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle (1574-1600)</title>
+        <author ref="https://www.idref.fr/164116303">Nicole Maufront</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_19.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 161-173</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="161" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Politiques, ligueurs et huguenots
+       <lb/>en Vivarais
+       <lb/>à la fin du <num>xvi<hi rend="sup">e</hi></num>siècle
+       <lb/>(1574-1600)</head>
+      <byline>
+        par
+        <forename>Nicole</forename>
+        <surname>Maufront</surname>
+        <roleName>Licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre préliminaire
+         <lb/>les chefs et les groupes en 1574-1575.</head>
+        <p>La famille des Montmorency est prépondérante en Languedoc et en Vivarais : adhésion de son chef au mouvement des Politiques. François de Montmorency, fondateur de ce dernier avec le duc d’Alençon, est emprisonné le 4 mai 1574. Son frère, Henri de Damville, est destitué de son gouvernement de Languedoc et remplacé par François de Montpensier. Son manifeste de novembre 1574 marque sa dissidence et l’assemblée réformée de Nîmes, en février 1575, le confirme comme général en chef des religionnaires. Gilbert de Lévis soutient sa politique en Vivarais. Les barons « de tour », Bayle de la Motte-Brion et Guillaume de Vogüe, seront les premiers sympathisants de ce groupe.</p>
+        <p>Les catholiques ardents se rallient à la Ligue : parmi eux, Montlor à Aubenas, le comte de Tournon, le baron de Pra<pb n="162" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_02.TIF/full/full/0/default.jpg"/>delles, le baron de Boulogne, René de Hautefort-Lestrange, futur gouverneur du Puy, et, enfin, Montréal, chef militaire du bas Vivarais. Dans la baronnie d’Annonay, Nicolas du Peloux, qualifié de « Guisard » par les protestants, sera moins un ligueur qu’un royaliste. Il en est de même pour Jacques de Crussol, retourné au catholicisme en 1574.</p>
+        <p>Les villes représentées aux États se distribuent à peu près également entre les deux fractions : Annonay, Aubenas, Chalancon, Le Cheylard, Privas et Saint-Agrève, du côté protestant ; Bourg-Saint-Andéol, Joyeuse, Largentière, Pradelles, Rochemaure, Tournon et Viviers, dans le camp opposé. Le dédoublement politique du Vivarais est un fait accompli, dès novembre 1567. Scission calquée sur celle de la province : deux gouverneurs, deux assemblées, deux armées. Cent trente-sept bénéfices ecclésiastiques sont alors détenus par les rebelles : ceux des neutres ne furent pas occupés (Antonins d’Aubenas).</p>
+        <p>Presque tous d’origine italienne, les évêques de Viviers demeurent absents de leur diocèse. Le clergé paroissial s’est en partie dispersé. Dans le clergé régulier, peu d’abbayes et de prieurés se montrent fidèles à la règle. La commende sévissait à Mazan depuis 1479 et aux Chambons depuis 1474, cette dernière au profit de la famille de Joyeuse.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>la cinquième guerre civile (1574-1575).</head>
+        <p>Les châteaux de Largentière et d’Antraigues recueillent les « fuytifs » catholiques. Le château de Meyras-Ventadour, propriété du politique seigneur de la Voulte, constitue ainsi que Privas un refuge important pour les réformés. L’assemblée générale huguenote à Aubenas, en mars 1574, est la première à comprendre des gentilshommes et des consuls « de l’union », c’est-à-dire des Politiques. En juillet, l’assemblée catholique réitère son adhésion au prince dauphin.</p>
+        <p>Un mouvement urbain de protestants contre les garnisons étrangères s’organise dans la vallée du Rhône : à Cruas, Vi<pb n="163" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_03.TIF/full/full/0/default.jpg"/>viers et Rochemaure. Le Vivarais est menacé de voir sa récolte de blé détruite par les rebelles. A l’assemblée de Pradelles (13 août 1575) se manifeste le premier indice des ligues populaires. Damville et Crussol signent une trêve de labourage le 13 octobre. On constate dès ce moment que les trêves générales sont inopérantes en Vivarais, d’où la nécessité des trêves locales, seules efficaces. Échec du roi devant le Pouzin, Livron et Baix. Une trêve est conclue à Annonay, le 31 décembre. Les trois quarts du pays en étaient exclus.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Le traité de la Borie de balazuc
+         <lb/>et la réconciliation des partis (1576).</head>
+        <p>Les pourparlers de paix en bas Vivarais aboutissent à la conclusion du traité de La Borie. Les revenus ecclésiastiques des paroisses occupées demeurent acquis aux protestants. Politiquement, ce traité constituait un acte de souveraineté de la part des Etats du Vivarais. Un texte additionnel du 14 février 1576 fixe l’état des paroisses appelées à subventionner le tiers parti de Damville. Le duc d’Uzès ratifia le traité le 26 février. L’assemblée catholique du Bourg confirma la trêve le 24 mai. Un traité d’union, conclu à Viviers le 28 septembre, scellait la réconciliation des adversaires.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Les modalités de la Ligue en Vivarais
+         <lb/>et les ligues paysannes (1577).</head>
+        <p>Par suite du respect de la trêve de La Borie, la sixième guerre civile n’eut en Vivarais qu’une faible répercussion. Un mouvement parallèle à la Ligue de 1576 s’y développa, comme d’ailleurs en Dauphiné, sous le nom de ligues paysannes ou populaires. Ce mouvement dégénéra en sédition antifiscale. De juin à juillet 1577, vingt-deux paroisses prennent les armes.</p>
+        <p>En juin, l’assemblée de Joyeuse propose une entente avec <pb n="164" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_04.TIF/full/full/0/default.jpg"/>le Velay et le Gévaudan pour une action combinée contre les rebelles.</p>
+        <p>Un traité local est conclu à Jaujac, le 29 septembre. Du politique Damville ou du royaliste Bellegarde, les sujets vivarois se demandent quel est le chef légitime. En somme, éclipse du pouvoir central.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>L’entente catholico-protestante
+         <lb/>et les revendications des ligues populaires (1578-1579).</head>
+        <p>A Privas, où le culte catholique n’était plus célébré depuis seize ans, une assemblée mixte peut faire dire une messe du Saint-Esprit (20 août). Le traité de Nérac accorde Baix et Saint-Agrève aux R.P.R. Vivarois.</p>
+        <p>Le 22 février 1579, par le mariage du ligueur périgourdin René de Hautefort avec la protestante Marie de Lestrange, le puissant château de Boulogne devient une place anti-huguenote.</p>
+        <p>Les ligues paysannes n’opèrent en armes qu’à partir de 1579. Catherine de Médicis leur est profondément hostile. En Vivarais, ce mouvement fut exclusivement rural. La requête des ligues du Vivarais au roi (13 mars) dénonce hardiment l’insuffisance de l’administration civile et la carence du pouvoir ecclésiastique. Leurs animateurs, Jean de la Rouvière, Antoine de Sibleyras et M<hi rend="sup">e</hi> Raymond de Saléon, procureurs des suppliants du tiers état, participent à l’assemblée générale d’Annonay (21 août).</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>L’effervescence populaire
+         <lb/>et l’union catholico-protestante en 1580.</head>
+        <p>L’année 1580 est une époque de grands brigandages, de peste et de famine. Le prix du blé fait plus que doubler. Des assemblées populaires, réunies par La Rouvière, se tiennent à Largentière et à Chomérac. Il y a refus de payer non seu<pb n="165" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_05.TIF/full/full/0/default.jpg"/>lement l’impôt royal, mais aussi les dîmes ecclésiastiques et les redevances seigneuriales. Les religionnaires invoquent l’autorité du roi de Navarre, tuteur naturel des églises réformées.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>La trêve du duc d’Anjou en Vivarais (1581-1584).</head>
+        <p>La mort du duc d’Anjou (10 juin 1584), qui commande la nouvelle orientation de l’histoire de France, se répercute aussi dans celle du Vivarais. La perspective d’un roi hérétique passionne le conflit. Toutefois, les États du pays persistent à maintenir la trêve. Jean de Fayn est élu syndic. Pour réprimer le brigandage, trois lieutenants de prévôt sont nommés, parmi lesquels l’ancien syndic du tiers état, Jean de la Rouvière.</p>
+        <p>Jusqu’au milieu de 1585, les assemblées sont mixtes. Olivier de Serres s’affirme pacifiste convaincu. Visite épiscopale du vicaire général de Viviers dans les paroisses ravagées de l’archiprêtré des Routières. Les troubles créés par les La Tronchère occupent la chronique de 1584.</p>
+        <p>Le 30 mars 1585, le manifeste de la Ligue déchaîne une nouvelle guerre.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Le deuxième semestre de 1585 et la seconde Ligue.</head>
+        <p>L’édit de Nemours, en juillet, est une interdiction de culte et un ordre d’exil pour les réformés refusant de se convertir. Les deux Languedoc s’opposent plus que jamais : d’une part, de Toulouse à Narbonne, de l’autre, de Béziers au Rhône ; le premier obéissant à Guillaume de Joyeuse, le second au duc de Montmorency. En Vivarais, la Ligue n’offre pas la même âpreté qu’à Toulouse ou au Puy. L’émigration protestante reprend alors vers Genève et la Suisse. Destitué encore, une fois au profit de Joyeuse, Montmorency se tourne vers le roi de Navarre,</p>
+        <pb n="166" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_06.TIF/full/full/0/default.jpg"/>
+        <p>Aux États catholiques de Pradelles, les liens se resserrent entre Vivarais, Velay et Lyonnais ligueurs. L’assemblée protestante de Privas offre de s’unir sous l’autorité du roi de Navarre et du duc de Montmorency : les États catholiques de Pradelles refusent d’obéir à Montmorency.</p>
+        <p>Neutralité de Ventadour, de La Motte-Brion et de Vogüe-Rochecolombe.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>Guérilla, peste et famine (1586).</head>
+        <p>La scission organique du pays s’accentue encore. L’assiette catholique continue à se réunir, sous la présidence de Montréal, à Largentière, devenue le quartier général de la Ligue comme Privas est celui des États protestants, présidés par Jacques de Chambaud.</p>
+        <p>Les razzias de bétail se font plus nombreuses. Une violente attaque de peste se déchaîne pendant le deuxième semestre de 1586. La contagion gagne Valence, Saint-Pons, Annonay et le Puy-en-Velay. A la suite de l’épidémie, l’extrême rareté des grains provoque une grande famine à Annonay. On dut fabriquer du pain à Chassiers avec de l’écorce de noix et du marc de raisin, à Vesseaux, avec des racines de fougères.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>L’année de la surprise d’Aubenas par les ligueurs
+         <lb/>(1587).</head>
+        <p>A Vogüe, quatre pacifistes se détachent nettement : les seigneurs de Rochecolombe, de la Motte-Brion, de Saint-Thomé et Louis Desserres.</p>
+        <p>L’attaque d’Aubenas, préparée à Lyon par Mandelot, Saint-Vidal et Tournon, est exécutée par les ligueurs de Sanilhac, le 11 février. Le roi récompense Sanilhac en le nommant colonel et gouverneur d’Aubenas.</p>
+        <p>Au printemps, une manœuvre de concentration protes<pb n="167" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_07.TIF/full/full/0/default.jpg"/>tante s’oriente vers la vallée du Rhône : armée de Châtillon, troupes de Montmorency, reîtres et Suisses, forces du roi de Navarre. Contre eux se forme une armée ligueuse sous le triple commandement de Mandelot, Tournon et Saint-Vidal. Le pacifiste Guillaume de la Motte-Brion est envoyé en mission à Paris.</p>
+        <p>Tournon, mécontent de l’attitude des ligueurs largentiérois, les traite de « maréchalistes » et les accuse de vouloir former un État dans l’État.</p>
+        <p>O. de Serres et ses amis renouvellent leur tentative de conciliation.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>Les prouesses de Chambaud
+         <lb/>et la prolongation de la trêve (1588).</head>
+        <p>Les pourparlers de 1588 n’aboutissent qu’à étendre l’idée de trêve. Henri III n’est pas satisfait de cette prolongation de la trêve de Dieu. Les chefs militaires y répugnent aussi, les deux Montréal surtout.</p>
+        <p>L’assemblée catholique de Largentière décide en janvier de poursuivre les négociations avec les huguenots qui désavouent les infractions à la trêve. Ils signent le traité de Saint-Germain-lès-Vogüe. Charles des Serres représente les députés catholiques vivarois aux États de Blois.</p>
+        <p>Chambaud continue ses prouesses. Il est avec Saint-Lager le principal bailleur de fonds de son parti. Tournon l’assiège dans Saint-Agrève et Chambaud capitule avec les honneurs de la guerre. La violation de la trêve par les ligueurs du haut Vivarais était flagrante.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XI
+         <lb/>La Ligue démagogique (1589).</head>
+        <p>L’assassinat des Guise à la fin de 1588 éloigne beaucoup de catholiques du roi, La population vivaroise hésite pour<pb n="168" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_08.TIF/full/full/0/default.jpg"/>tant à se séparer de lui. Les évêques cévenols, ainsi que les Etats du Velay et du Vivarais répudient les exagérations de la Ligue. En avril, Henri III se rapproche du roi de Navarre, d’où éclipse de la Ligue en Vivarais. Montmorency ayant été confirmé gouverneur de Languedoc par le roi, les États reconnaissent sa seule autorité, à Viviers, en mai. Les ligueurs adhèrent à la trêve du 26 avril.</p>
+        <p>La nouvelle de l’assassinat du roi produit peu d’émotion à l’assemblée de Satillieu. Un traité est conclu à Tournon, le 7 septembre 1589, entre royalistes du Languedoc et ligueurs du Lyonnais. Chambaud refuse de le reconnaître. Les évêques cévenols se montrent peu émus de l’avènement d’un roi hérétique. Le consulat de Viviers et son évêque inclinent vers Montmorency. Le crédit de Chambaud diminue auprès du roi de Navarre. En octobre, Montmorency le prive de son gouvernement vivarois et nomme à sa place le comte de Tournon : le parti huguenot est indigné. Un seul personnage, le politique duc de Ventadour, aurait pu faire sur son nom l’accord des députés catholiques, royalistes et huguenots.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XII
+         <lb/>La victoire des politiques (1590).</head>
+        <p>Le dédoublement du pays a pris fin. Les assemblées redeviennent mixtes, sans que, toutefois, les réformés renoncent à leur particularisme jusqu’en 1595. Le remplacement de Chambaud par Tournon a donné satisfaction aux ligueurs. Le parti royaliste enregistre de nouvelles adhésions et finit par devenir la majorité. Les opposants tenaces, Sanilhac, Lestrange et Chambaud, perdent du terrain. Le consulat de Viviers désavoue les ligueurs.</p>
+        <p>Un cahier de doléances constate la ruine de soixante paroisses. Sanilhac et Lestrange réclament le remboursement de leurs frais pour les garnisons d’Aubenas et de Boulogne. Du côté protestant, le receveur Guitard se plaint des obstacles qu’il rencontre dans les lieux occupés par la Ligue. L’ultime <pb n="169" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_09.TIF/full/full/0/default.jpg"/> bastion de la dissidence ligueuse dans la région largentiéroise et albenassienne résiste encore à la fin de 1590.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XIII
+         <lb/>La prise du fort d’Ailhon
+         <lb/>par les protestants fugitifs d’Aubenas (1591).</head>
+        <p>Après l’échec de Tournon, c’est Ventadour qui reçoit mission de pacifier le Vivarais. Une longue trêve est conclue à Saint-Jean-le-Centenier, pour venir à expiration le 30 mars 1592. Les protestants empêchent le rétablissement de la messe à Villeneuve, parce que les catholiques d’Annonay ne veulent pas permettre celui du prêche dans leur ville. Lestrange est nommé gouverneur du Puy pour la Ligue.</p>
+        <p>Réfugiés à Vais, Privas et autres lieux, les huguenots d’Aubenas surprennent le fort d’Ailhon. Henri III autorise Chambaud à lever sept compagnies contre les Espagnols. Leur entretien et celui des troupes de Tournon paraissent de plus en plus intolérables au pays. L’hostilité des protestants ne désarme pas à l’égard du gouverneur catholique. Réunis en synode à Privas, ils rétablissent Chambaud dans son gouvernement général de Vivarais. Irrité, Tournon veut lever des compagnies à son tour.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XIV
+         <lb/>Henri IV est reconnu par les états du Vivarais
+         <lb/>(1592).</head>
+        <p>La reconnaissance de Henri IV obtenue à la fin d’avril place la minorité ligueuse, venue principalement de la région largentiéroise, en face de sa défaite irrémédiable. Une nouvelle conférence interconfessionnelle a lieu et Montréal se rallie à la suspension d’armes. Une ouverture de règlement général entre Vivarais, Velay et Gévaudan rencontre l’opposition des religionnaires, à cause des seigneurs d’Apchier et de Lestrange, chefs ligueurs de Gévaudan et de Velay.</p>
+        <pb n="170" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_10.TIF/full/full/0/default.jpg"/>
+        <p>La liquidation de la guerre civile et les lourdes contributions qui s’en suivent provoquent un grand mécontentement, surtout à Saint-Fortunat. Les séditieux se rassemblent à Chomérac, puis dans le mandement de Chalancon, pour s’opposer à la levée des impôts par les armes. Anne de Lévis reprend les traditions de son père, Gilbert III. Tournon fait lever des compagnies et s’approprie les deniers publics. L’assemblée provinciale de Montagnac proteste contre les « foules » qu’il fait subir au pays. Montmorency le révoque en novembre.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XV
+         <lb/>La reprise protestante d’Aubenas sur les ligueurs
+         <lb/>(1593).</head>
+        <p>Jacques de Chambaud s’empare d’Aubenas. Montmorency condamne cet attentat et permet aux catholiques de rentrer dans la ville, où le culte sera rétabli (restauration effective en octobre 1594).</p>
+        <p>La conversion du roi achève de lui rallier les derniers hésitants. Montmorency établit des garnisons royales dans vingt-sept localités du bas Vivarais. Les excès de Tournon provoquent de nombreux troubles en haut Vivarais. Dans la baronnie d’Annonay, du Peloux s’oppose à la levée des deniers. Les États dénoncent les exactions des troupes de Tournon, des contingents de Montmorency, des levées de Ventadour, enfin des derniers partisans de la Ligue.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XVI
+         <lb/>L’agonie de la Ligue, la sédition des croquants
+         <lb/>et la pacification du duc de Ventadour (1594-1600).</head>
+        <p>Dorénavant, Anne de Lévis dirige sur place les dernières négociations. Il a été chargé par le connétable de réduire les dernières places ligueuses. Montréal se soumet, enfin, et fait remise au roi des villes de Largentière et de Joyeuse. Puis, Montlor abandonne la Ligue et jure obéissance au roi. La <pb n="171" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_11.TIF/full/full/0/default.jpg"/>soumission de Hautefort-Lestrange est rendue publique le 21 décembre.</p>
+        <p>L’exagération fiscale a déterminé au début de 1594 une reprise des ligues populaires. Saint-Lager qualifie les mutins de « croquants ». La grève de l’impôt a surtout sévi en Routières. La royauté envisage un dégrèvement pour les années 1590 à 1594. Une recrudescence se manifeste en 1595. Cette révolte se manifesta aussi en Guyenne et dans d’autres provinces. En 1599, Arsac, Prat et Chanteloube résistent encore. La coercition redouble en 1600.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XVII
+         <lb/>Les ultimes marchandages et la fin de la dissidence
+         <lb/>(1595-1597).</head>
+        <p>Aux États languedociens de février 1595, Ventadour prend la défense du Vivarais « foulé ». Le rachat des quarante-deux places ligueuses de Montréal a coûté fort cher. Le 12 avril, le roi décharge le Vivarais des reliquats de taille pour 1590-1593. Chambaud reçoit 12,000 écus des États. Montlor attend un an encore la restitution d’Aubenas, dont le nouveau commandant, en 1597, sera catholique. Comme les autres chefs ligueurs, Hautefort-Lestrange est récompensé de sa soumission : 30,000 écus et sa confirmation comme gouverneur du Puy. Tournon ne semble pas avoir reçu d’indemnité spéciale. Après la levée de l’excommunication papale contre Henri IV (18 septembre 1595), les catholiques les plus inquiets s’inclinent. En 1597, la pacification complète dans la vallée du Rhône.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XVIII
+         <lb/>L’édit de Nantes et le retour de Montlor a Aubenas
+         <lb/>(1598).
+         <lb/>Les ruines et les réparations (1599 et 1600).</head>
+        <p>L’ère des troubles prend fin par la promulgation de l’Édit de Nantes, le 13 avril. Bays figure parmi les places accordées <pb n="172" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_12.TIF/full/full/0/default.jpg"/>aux protestants. Montlor recouvre son château par une surenchère de 10,000 écus et instaure à Aubenas une tolérance mutuelle observée notamment dans les mariages mixtes. Les Etats lui accordent enfin 3,000 écus (décembre 1600).</p>
+        <p>Chambaud reçoit 4,500 écus et Henri IV le désintéresse en lui confiant le commandement de mille fantassins. Parti pour l’armée des Alpes, le baron de Privas meurt en Tarentaise (1600).</p>
+        <p>Sous l’impulsion de l’évêque Jean de l’Hostel, les prédications reprennent, notamment à Largentière. Le prélat effectue sa première visite à Aubenas en juin 1599. 11 constate la pénurie de prêtres dans le diocèse.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion
+         <lb/>restauration économique et financière
+         <lb/>(1594-1600).</head>
+        <p>Quarante ans de guerre et de troubles ont développé la lande aux dépens de la culture. La campagne a particulièrement souffert dans la banlieue d’Aubenas, à Mercuer et à Saint-Étienne-de-Fontbellon, dans le terroir d’Antraigues, à Genestelle et à Sagnes. Au Bourg, les Frères de l’Observance ont besoin de faire reconstruire leur monastère, brûlé lors des premiers troubles. Dans la ville même d’Aubenas, qui a subi deux sièges, nombreuses sont les maisons en ruines. Le gardien du couvent franciscain revient dans la cité, ainsi que les Antonins.</p>
+        <p>La reprise de la vie économique se fait sentir dès 1594. Montmorency laisse passer du blé de Toscane en franchise au Bourg-Saint-Andéol. Le renouveau industriel est surtout sensible à Aubenas, dans la teinturerie, la draperie et la tannerie. On peut suivre dans les contrats notariés les effets de la revalorisation monétaire décrétée par Henri IV : diminution du prix des denrées et réduction des anciennes créances. La verrerie et la tonnellerie sont aussi actives. Des artisans <pb n="173" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_13.TIF/full/full/0/default.jpg"/>étrangers viennent s’installer dans la ville, ainsi que des médecins. Les grands marchands d’Aubenas peuvent prendre femme dans la noblesse. Une mine est exploitée à Mercuer. Dès 1589, la tannerie reprend dans le quartier d’Ouvèze, à Privas.</p>
+        <p>La publication en 1600 du <hi rend="i">Théâtre d’Agriculture,</hi> d’Olivier de Serres, marque le renouveau des méthodes de culture et le retour à la terre. Une grande industrie va naître, l’industrie cévenole par excellence, celle du fil de soie.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Index des noms de lieu</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des matières</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <pb n="174" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_19/ENCPOS_1943_19_14.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

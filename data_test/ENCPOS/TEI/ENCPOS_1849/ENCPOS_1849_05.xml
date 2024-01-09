@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_05" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>De l’ost et de la chevauchée, ou du service militaire des fiefs nobles en France pendant les <hi rend="sc">xi</hi><hi rend="sup">e</hi>, <hi rend="sc">xii</hi><hi rend="sup">e</hi> et <hi rend="sc">xiii</hi><hi rend="sup">e</hi> siècles</title>
+        <author ref="https://www.idref.fr/073413593">Henri Duplès-Agier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1849/ENCPOS_1849_05.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>, <biblScope>p. 9-10</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="9" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_05/ENCPOS_1849_05_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">De l’ost et de la chevauchée, ou du service militaire des fiefs nobles en France pendant les <num>xi<hi rend="sup">e</hi></num>, <num>xii<hi rend="sup">e</hi></num> et <num>xiii<hi rend="sup">e</hi></num>siècles.</head>
+      <byline>
+         Thèse pour le diplôme d’archiviste paléographe, soutenue par
+        <forename>Henri</forename>
+        <surname>Duplès-Agier</surname>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>Il y a des distinctions importantes à établir entre l’ost et la chevauchée.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>L’âge propre au service militaire n’était autre que celui de la majorité féodale.</p>
+      </div>
+      <div>
+        <head rend="uc">III.</head>
+        <p>Les Assises de Jérusalem nous apprennent qu’il y avait quatre manières de faire la semonce de service.</p>
+      </div>
+      <div>
+        <head rend="uc">IV.</head>
+        <p>La circonscription territoriale dans laquelle le service militaire pouvait être exigé, était ordinairement les limites du fief</p>
+        <p>1* <pb n="10" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_05/ENCPOS_1849_05_02.TIF/full/full/0/default.jpg"/>du Suzerain, ou les limites du royaume, qui n’était lui-même qu’un grand fief possédé par un Roi.</p>
+      </div>
+      <div>
+        <head rend="uc">V.</head>
+        <p>La durée du service, continuelle dans le principe, fut réduite par les coutumes, grâce à l’affaiblissement de l’usage des guerres privées, à un certain temps fixe et déterminé.</p>
+      </div>
+      <div>
+        <head rend="uc">VI.</head>
+        <p>La sanction pénale attachée à la violation des lois qui réglaient les devoirs du service militaire, était la confiscation perpétuelle, la confiscation temporaire, ou même une simple amende.</p>
+      </div>
+      <div>
+        <head rend="uc">VII.</head>
+        <p>Une ordonnance de Philippe le Hardi est la base de l’estimation en argent du service militaire, dû par les divers ordres de vassaux.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

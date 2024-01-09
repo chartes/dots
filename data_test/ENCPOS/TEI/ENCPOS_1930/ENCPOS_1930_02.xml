@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_02" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Raymond Martin et son œuvre inédite le Capistrum judæorum</title>
+        <author ref="https://www.idref.fr/026724111">André Berthier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_02.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 13-18</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="13" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_02/ENCPOS_1930_02_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Raymond Martin
+       <lb/>et son œuvre inédite
+       <lb/>le « Capistrum Judæorum »</head>
+      <byline>
+        par
+        <forename>André</forename>
+        <surname>Berthier</surname>
+      </byline>
+      <div>
+        <head rend="uc">Premiere partie
+         <lb/>Raymond Martin et son milieu</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>introduction à la biographie de Raymond Martin</head>
+          <p>Une documentation très fragmentaire ne permet pas de donner beaucoup de détails sur la vie de Raymond Martin. Il est cependant possible de noter les principales étapes de sa carrière. Entré dans l’Ordre de St Dominique vers 1235, il fut successivement élève, puis professeur dans les écoles de langues orientales d’Espagne et il s’occupa activement d’apostolat parmi les Sarrazins et surtout les Juifs.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Raymond Martin et les écoles de langues orientales.</head>
+          <p>L’activité littéraire de Raymond Martin tire son originalité de sa science des langues orientales.</p>
+          <pb n="14" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_02/ENCPOS_1930_02_02.TIF/full/full/0/default.jpg"/>
+          <p>Les Dominicains avaient de bonne heure organisé des centres d’étude et d’enseignement des langues orientales. Mais nulle part, au <num>xiii<hi rend="sup">e</hi></num> siècle, les <hi rend="i">studia arabica</hi> et <hi rend="i">hebraica</hi> ne fonctionnèrent avec plus de succès qu’en Espagne, sous l’intelligente et énergique impulsion de saint Raymond de Peñafort. Il y eut des écoles fondées à Tunis, Murcie, Valence, Barcelone, Jativa. C’est là que Raymond Martin s’instruisit. Il fut d’abord élève au <hi rend="i">studium arabicum</hi> de Tunis, puis il fut nommé en 1281, professeur au <hi rend="i">studium he</hi><hi rend="i">braicum</hi> de Barcelone. Il est la gloire de ces <hi rend="i">studia. </hi>On peut reconstituer avec une certaine probabilité, ce que fut son enseignement à Barcelone. L’étude de ses œuvres fournit d’ailleurs les meilleures indications permettant d’éclairer les méthodes et les travaux de ces écoles de langues orientales.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Raymond Martin et les controverses publiques
+           <lb/>avec les juifs.</head>
+          <p>Les Frères Prêcheurs du royaume d’Aragon se donnaient avec un grand zèle à la conversion des juifs. Mais le roi veillait à ce que leurs prédications dans les synagogues ou leurs rencontres avec les rabbins ne donnassent lieu à aucun excès, aucune scène de fanatisme. De nombreux mandements des rois d’Aragon montrent cette protection accordée aux juifs. Ces sentiments n’empêchaient pas le roi de favoriser l’activité des religieux.</p>
+          <p>Il est certain que Raymond Martin s’occupa beaucoup de cet apostolat parmi les Juifs. Le prologue du <hi rend="i">Capistrum Judæorum</hi> le prouve, et un acte royal de 1264 donne son nom parmi les juges choisis pour examiner les écrits juifs.</p>
+          <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_02/ENCPOS_1930_02_03.TIF/full/full/0/default.jpg"/>
+          <p>Le document qui peint le mieux ces controverses publiques est le procès-verbal de la rencontre du rabbin Mosse avec frère Pablo Cristiani. L’argumentation du frère Pablo fait pressentir celle que Raymond Martin développera plus tard dans le <hi rend="i">Capistrum Judæorum.</hi></p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxieme partie
+         <lb/>Le « Capistrum Judæorum »</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les manuscrits.</head>
+          <p>Le <hi rend="i">Capistrum Judæorum</hi> était considéré comme perdu. Or, il en existe deux manuscrits, l’un appartenant à la Bibliothèque Nationale, l’autre à la Bibliothèque Universitaire de Bologne. Un troisième manuscrit, intitulé <hi rend="i">Capistrum Judæorum,</hi> se trouve à la Bibliothèque Mazarine. Mais, en dépit de la similitude du titre, son plan, nettement différent de celui des deux manuscrits précédents, en fait un ouvrage à part.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Authenticité du texte et date.</head>
+          <p>Les deux manuscrits de Bologne et de Paris sont sans nom d’auteur. C’est pourtant bien l’œuvre de Raymond Martin. En effet, le <hi rend="i">Pugio Fidei</hi> cite en plusieurs passages le <hi rend="i">Capistrum Judæorum</hi> et y renvoie. Ces citations correspondent bien au texte des manuscrits de Paris et et de Bologne.</p>
+          <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_02/ENCPOS_1930_02_04.TIF/full/full/0/default.jpg"/>
+          <p>La date de composition (1267) du <hi rend="i">Capistrum Judæo</hi><hi rend="i">rum</hi> se trouve explicitement indiquée dans un passage de cette œuvre : « Notandum autem quod Judei computant ab initio mundi usque nunc et est hodie ab Incarnatione Domini annus MCCLXVII, annos VMXXVII ».</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Objet, méthode et plan.</head>
+          <p>Raymond Martin se propose de réunir les textes de l’Ancien Testament susceptibles de prouver la venue du Messie.</p>
+          <p>Il ne cite pas la Bible d’après la version de saint Jérôme, mais il traduit directement le texte hébreu. Il recueille, dans le <hi rend="i">Talmud</hi> et les autres livres qui jouissent de crédit auprès des Juifs, les commentaires de leurs propres maîtres se rapportant au texte de la Bible. Le <hi rend="i">Capistrum Judæorum</hi> a d’ailleurs été écrit tout spécialement pour les juifs, afin de les convaincre de leurs erreurs, ce qui n’est pas facile à faire dans les controverses publiques où les juifs se montrent pleins de ruses et de mauvaise foi. A ce propos, Raymond Martin peint leur attitude dans les discussions avec les Chrétiens en homme qui a souvent éprouvé leur habileté à se tirer d’affaire.</p>
+          <p>Si le <hi rend="i">Capistrum Judæorum</hi> ne peut être considéré comme un guide de ces disputes, il est cependant l’argumentation type contre les Juifs sur la question du Messie.</p>
+          <p>L’œuvre est divisée en sept arguments prouvant que le Messie est déjà venu et en sept objections des Juifs assurant que le Messie n’est pas encore venu.</p>
+          <p>Science de l’hébreu, expérience de la mentalité juive, clarté et vigueur dans l’argumentation, voilà <pb n="17" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_02/ENCPOS_1930_02_05.TIF/full/full/0/default.jpg"/>les qualités qui donnent leur relief aux discussions du <hi rend="i">Capistrum Judæorum.</hi></p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Rapports du « Capistrum Judæorum » avec
+           <lb/>l’« Explanatio symboli Apostolorum » et le
+           <lb/>« pugio Fidei ».</head>
+          <p>La discussion sur la venue du Messie se retrouve dans ces trois ouvrages. L’analyse de chacun d’eux permet de voir que le <hi rend="i">Capistrum Judæorum</hi> est intermédiaire, comme l’assurent déjà les dates respectives de ces ouvrages. On peut suivre de l’un à l’autre le développement de la maîtrise de Raymond Martin.</p>
+          <p>Dans l’<hi rend="i">Explanatio symboli Apostolorum,</hi> Raymond Martin ne montre que les qualités d’un clerc instruit et familiarisé avec l’Ancien et le Nouveau Testament.</p>
+          <p>Dans le <hi rend="i">Capistrum Judæorum,</hi> on voit combien l’expérience de la controverse publique avec les juifs et l’étude des langues orientales ont déjà formé l’esprit de Raymond Martin et lui ont permis de faire une œuvre solide.</p>
+          <p>Dans le <hi rend="i">Pugio Fidei,</hi> Raymond Martin déploie les ressources d’une érudition affermie, d’une expérience renouvelée et d’une maturité achevée. Les textes hébreux prennent une place plus considérable dans ce dernier ouvrage. Ils sont non seulement traduits, mais encore cités dans la langue même, voire en caractères hébraïques.</p>
+          <p>Le <hi rend="i">Pugio Fidei</hi> est en outre une véritable « Somme ». Raymond Martin y aborde la théologie et y combat la philosophie juive et arabe.</p>
+          <p>Aussi le <hi rend="i">Pugio Fidei</hi> a-t-il été une des œuvres du Moyen Age les plus connues. Il a été l’objet de deux grandes <pb n="18" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_02/ENCPOS_1930_02_06.TIF/full/full/0/default.jpg"/> éditions au <num>xvii<hi rend="sup">e</hi></num> siècle et Pascal l’a utilisé dans ses <hi rend="i">Pensées</hi>.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièce justificative</head>
+        <p>Transcription d’une partie du <hi rend="i">Capistrum Judæo</hi><hi rend="i">rum</hi> d’après le manuscrit 3643 du fonds latin de la Bibliothèque Nationale.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

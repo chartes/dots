@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai historique sur le Chapitre cathédral de Digne et sur Pierre Gassendi, chanoine et prévôt (1177-1790)</title>
+        <author ref="https://www.idref.fr/030270863">Émile Isnard</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_14.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 119-124</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="119" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_14/ENCPOS_1910_14_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai historique
+       <lb/>sur
+       <lb/>le chapitre cathédral de Digne
+       <lb/>et sur
+       <lb/>Pierre Gassendi
+       <lb/>chanoine et prévôt
+       <lb/>(1177-1790)</head>
+      <byline>
+        par
+        <forename>Émile</forename>
+        <surname>Isnard</surname>
+        <roleName>Elève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Intérêt du sujet. – La <hi rend="i">Notitia Ecclesiæ Diniensis,</hi> par P. Gassendi. – Justification du plan.</p>
+      </div>
+      <div>
+        <head rend="uc">Premiere partie
+         <lb/>Organisation du chapitre</head>
+        <p>Incertitude sur la fondation ; aucun document antérieur à deux bulles pontificales d’Alexandre III et de Lucius III en 1180 et 1184. – Nombre des chanoines. – L’ordre et l’âge requis. – Résidence des chanoines. – Officiers du chapitre : dignités et personnats. – Assemblées capitu<pb n="120" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_14/ENCPOS_1910_14_02.TIF/full/full/0/default.jpg"/>laires ; prééminence du prévôt contestée par les évêques. – Les élections canoniques : absence de renseignements. – Attribution des prébendes : loi de l’option. – Distributions canoniques ; pécuniaires à l’origine, elles se font en denrées à partir de 1460. Les chanoines s’en privent à partir de 1639. – Les anniversaires et fondations pieuses : le produit en était partagé. Les chapellenies : leurs biens sont énumérés dans le cartulaire du chapitre en 1320. Les cures de Digne dépendaient du chapitre ; mais la collation appartenait à l’évêque.</p>
+        <p>Les vicaires et clercs bénéficiers. Les semi-vicaires. – Règlements de Jacques Serène, archevêque d’Embrun (1278), et de Guillaume Porcellet, évêque de Digne (1290).</p>
+        <p>Les vicaires disparaissent vers la fin du <num>xv<hi rend="sup">e</hi></num> s. ; le chapitre se contente de douze bénéficiers ; le corps des bénéficiers est rival du chapitre ; procès continuels ; actes d’indiscipline des bénéficiers, leur suppression en 1767.</p>
+        <p>Les curés, appelés aux <num>xiii<hi rend="sup">e</hi></num> et <num>xiv<hi rend="sup">e</hi></num> siècles, chapelains ordinaires ; leur portion congrue, fixée en 1686, amena de nombreux procès.</p>
+        <p>Les autres serviteurs inférieurs du chapitre : enfants de chœur, maîtres de chapelle, sous-sacristain ou campanier, baylon, etc.</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Biens, revenus et acquisitions de la mense
+         <lb/>capitulaire</head>
+        <p>Les possessions d’après les bulles de 1180 et 1184. – Absence de documents pour le <num>xiii<hi rend="sup">e</hi></num> siècle ; ils sont rares au <num>xiv<hi rend="sup">e</hi></num> ; la maison du chapitre. – Acquisitions de la mense : l’hôpital du Bourg au début du <num>xv<hi rend="sup">e</hi></num> siècle. – Le prieuré de Catalières en 1409. – Droits seigneuriaux à Heuzières augmentés en 1440. – En 1470, union du cou<pb n="121" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_14/ENCPOS_1910_14_03.TIF/full/full/0/default.jpg"/>vent de Sainte-Catherine. – En 1476, acquisition du prieuré de Courbon par voie d’échange avec l’évêque ; importance de la dîme de Courbon. – Union du prieuré de Thoard par bulle pontificale en 1479 ; aliénation faite en 1563 ; la valeur de la dîme ; les charges.</p>
+        <p>Acquisition du prieuré de Saint-Nicolas-de-Bras en 1513.</p>
+        <p>Acquisition de Châteauneuf-Val-Saint-Donat en 1532 ; protestations de l’évêque de Sisteron.</p>
+        <p>Autres dîmes du chapitre. – Prieuré de Gaubert acquis peut-être au <num>xiv<hi rend="sup">e</hi></num> siècle ; droits seigneuriaux du chapitre vendus à la fin du <num>xvi<hi rend="sup">e</hi></num> siècle. Grave procès intenté à ce sujet en 1621 : Gassendi, envoyé à Grenoble pour le diriger, écrit de nombreuses lettres au chapitre ; longueur du procès ; voyages de Gassendi à Paris et à Aix ; fin lamentable du procès en 1629. La dîme de Gaubert représentait une source de revenus importants.</p>
+        <p>La dîme des Sièyes ou de Saint-Véran. – La dîme de Digne fut seule acquise par voie d’échange avec l’évêque au commencement du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        <p>Les terres du chapitre se bornaient à deux grands prés qui furent aliénés de bonne heure.</p>
+        <p>Autres revenus de la mense. – Pensions, droits ecclésiastiques ; annates ; droits de chape, etc.</p>
+        <p>Administration de la mense. – Les économes ou administrateurs, les livres de comptes ; les charges de la mense.</p>
+        <p>Rapports avec la commune. – Translation des foires du Bourg dans la ville en 1437 ; convention pour les contributions en 1460. – Transaction au sujet de l’entrée des vins (1489).</p>
+      </div>
+      <div>
+        <pb n="122" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_14/ENCPOS_1910_14_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>La prévôté</head>
+        <p>La prébende du prévôt était de beaucoup la plus importante et mérite d’être étudiée à part. Les sources ; conservation des documents due à Gassendi.</p>
+        <p>La prébende du prévôt consistait dans la seigneurie du Bourg : droits juridictionnels ; exercice de la juridiction par les prévôts ; criées annuelles ; la cour prévôtale.</p>
+        <p>Etendue de la seigneurie ; l’enceinte du Bourg ; les divers quartiers composant la seigneurie.</p>
+        <p>Le domaine de la prévôté ; maisons et terres ; les acquisitions de Gassendi.</p>
+        <p>Les dîmes et autres droits de la prévôté ; le grenier à sel ; la <hi rend="i">gabelle</hi> du vin ; droits de pacage, pulvérage, pesage et mesurage, etc. – Les dîmes du Bourg.</p>
+        <p>Valeur globale de la prébende ; examen de divers baux à ferme. Les procès de Gassendi contre son prédécesseur Blaise Ausset ; procédure et arrêts pour la mise en possession du bénéfice ; affaire du « Brûlement des titres » ; mémoire de Gassendi.</p>
+        <p>Union de la prévôté à la mense capitulaire en 1770.</p>
+      </div>
+      <div>
+        <head rend="uc">Quatrieme partie
+         <lb/>Les prébendes</head>
+        <p>Examen des diverses prébendes : les prébendes de l’archidiacre, du sacristain, du précenteur ou capiscol.</p>
+        <p>Prébende d’Aiglun avec ses filiales : Saint-Domnin et Saint-Marcellin. – Prébende d’Archail acquise en 1193. <pb n="123" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_14/ENCPOS_1910_14_05.TIF/full/full/0/default.jpg"/>– Prébende de Bédéjun affectée au théologal en 1637. – – Prébendes du Chaffaut et de Lagremuse. – Prébende de Gaubert. – Prébendes de la Robine et Roquebrune. – Prébende de Barles.</p>
+        <p>Les prébendes de l’église de Digne étaient de faible importance.</p>
+      </div>
+      <div>
+        <head rend="uc">Cinquieme partie
+         <lb/>Histoire du chapitre du <num>xvi<hi rend="sup">e</hi></num> siècle
+         <lb/>à la Révolution</head>
+        <p>Absence de faits importants ; sources principales : les pièces de procédure et les registres capitulaires.</p>
+        <p>Procès de Gassendi pour la théologale. – Procès du chapitre avec l’évêque Raphaël de Bologne ; mémoire de Gassendi.</p>
+        <p>Procès avec la commune au sujet du droit de mouture.</p>
+        <p>Etat précaire de la mense dès la fin du <num>xvii<hi rend="sup">e</hi></num> siècle. La situation ne fait que s’aggraver pendant le <num>xviii<hi rend="sup">e</hi></num>. – En 1756 le chapitre est mis sous séquestre. – Examen du décret statut de 1767 : union de toutes les prébendes à la mense ; suppression d’un canonicat et de douze bénéficiatures.</p>
+        <p>La mense continue à être misérable : nouvelle mise sous séquestre en 1776 ; projets d’union avec l’évêché de Senez ; absence de documents à partir de 1685.</p>
+        <p>Pension de 8.000 livres accordée par l’assemblée du clergé.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Causes de la ruine du chapitre ; impossibilité de trouver d’autres faits dans les documents des archives des Basses-Alpes.</p>
+      </div>
+      <div>
+        <pb n="124" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_14/ENCPOS_1910_14_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Pièces justificatives
+         <lb/>et lettres inédites de p. Gassendi</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p>Listes chronologiques de dignitaires et de chanoines. – Liste des manuscrits autographes de Gassendi conservés aux archives des Basses-Alpes. – Index topographique. – Table des matières.</p>
+      </div>
+      <div>
+        <head rend="uc">Fac-similé. – Photographies. – Cartes</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

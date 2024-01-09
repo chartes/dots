@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Aspects économiques et sociaux de la vie rurale en Nivernais : la paroisse de Saint-Parize-le-Châtel au milieu du <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/234757620">Marie-Andrée Guyot-Ledoux</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 55-63</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="55" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Aspects économiques et sociaux
+       <lb/>de la vie rurale en Nivernais :
+       <lb/>la paroisse de Saint-Parize-le-Châtel
+       <lb/>au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Marie-Andrée</forename>
+        <surname>Guyot-Ledoux</surname>
+      </byline>
+      <p>Le Nivernais, et, plus particulièrement la région d’entre Loire-et-Allier, a été choisi pour l’intérêt que présente l’étude des conditions agricoles d’une région peu favorisée. On a insisté particulièrement sur les aspects économiques, car ils possèdent plus d’originalité que les caractères sociaux dans cette région.</p>
+      <div>
+        <head rend="uc">Introduction
+         <lb/>le cadre historique et géographique</head>
+        <p>Le Nivernais est un pays coutumier qui se trouve dans le ressort du Parlement de Paris et fait partie de la généralité de Moulins. La seigneurie de Saint-Parize-le-Châtel est connue depuis le <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+        <p>Saint-Parize-le-Châtel est situé dans le pays d’entre Loire et Allier, au sud de Nevers. Cette paroisse présente un paysage diversifié. Les possibilités de culture y sont peu favorables aux céréales, les sols argileux de cette région se prêtant mieux aux prairies.</p>
+      </div>
+      <div>
+        <pb n="56" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Sources</head>
+        <p>Les principales sources d’archives proviennent des Archives départementales de la Nièvre ; les documents dont il a été tiré le plus de profit sont les minutes de notaires, les terriers et les registres paroissiaux. On a pu aussi prendre connaissance des archives privées du château de la Chasseigne, qui appartient à M. le comte de Montrichard ; elles sont d’un grand intérêt car elles décrivent les détails de gestion des exploitations agricoles dépendant de la seigneurie de la Chasseigne.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les cadres de la vie rurale</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le cadre seigneurial</head>
+          <p><hi rend="i">Les seigneuries.</hi> – La principale seigneurie est celle de Saint-Parize-le-Châtel, dont la justice couvre presque toute l’étendue de la paroisse. Les seigneurs, au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle, en sont Germain-Joseph de Pagani jusqu’en 1750, puis Pierre Girard de Vannes. Tous deux sont issus de familles anoblies aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles. Les autres seigneuries importantes sont celles de la Chasseigne, de Soultrait et de Villars, qui appartiennent respectivement à Gilbert Flamen de Coudray, aux frères Richard de Soultrait et à François-Marie de Forestier.</p>
+          <p><hi rend="i">Les droits seigneuriaux.</hi> – Le seigneur de Saint-Parize-le-Châtel perçoit encore des droits seigneuriaux au <num>xviii<hi rend="sup">e</hi></num> siècle, mais ce qu’il en tire ne représente pas grand-chose. Le droit de haute, moyenne et basse justice s’exerce sur presque toute l’étendue de la paroisse, ainsi que le droit de corvée. Les banalités existent pour le moulin et pour le four, mais pas pour le pressoir. Le seigneur perçoit aussi des droits de marché et un droit de blairie pour l’accès aux vaines pâtures. Il touche enfin les droits relatifs à son terrier sur les censives et les autres tenures pour lesquelles il perçoit les droits de lods et ventes.</p>
+          <p><hi rend="i">Les droits d’usage et les communaux.</hi> – Les droits d’usage et les communaux sont très importants pour les habitants de Saint-Parize qui élèvent du bétail. Les bois d’usage sont constitués par le censif de Grand et Petit Bour, actuel bois de Bord ; le seigneur perçoit pour ce droit un cens de trois deniers <pb n="57" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_03.TIF/full/full/0/default.jpg"/>par feu. La vaine pâture se pratique, mais la coutume du Nivernais octroie la permission de clore les prés ; ainsi les effets de la vaine pâture sont-ils atténués.</p>
+          <p><hi rend="i">Les dîmes.</hi> – Le principal décimateur de la paroisse de Saint-Parize-le-Châtel est le chapitre de la cathédrale Saint-Cyr de Nevers. Le problème de la quotité de la dîme reste posé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La répartition de la propriété</head>
+          <p>A côté des domaines utiles des seigneurs, qui sont peu étendus pour la plupart, les censives forment la plus grande masse des propriétés.</p>
+          <p><hi rend="i">Les censives.</hi> – Les tenures en vigueur à Saint-Parize-le-Châtel sont principalement le cens et le bordelage. Le cens est la tenure classique, comportant des droits de lods et ventes et tous les droits de directe seigneurie. Le bordelage est une tenure originale en vigueur surtout en Nivernais. Issu des tenures serviles, le bordelage garde encore quelques caractères de cette ancienne condition et pèse plus lourdement sur les paysans que les cens, par des redevances en argent et en nature (grain et poules).</p>
+          <p>Au <num>xviii<hi rend="sup">e</hi></num> siècle, la majeure partie des terres sont tenues à cens, mais on trouve encore de nombreux bordelages, qui ont perdu la plupart de leurs aspects anciens mais conservent des redevances perpétuelles plus élevées que les cens. Les redevances bordelières apportent plus de profit au seigneur, car elles consistent surtout en grain (avoine, froment, méteil) et leur valeur croît en même temps que le prix des denrées.</p>
+          <p><hi rend="i">Les autres propriétés.</hi> – Les officiers du présidial de Saint-Pierre-le-Moûtier possèdent d’importants domaines à Saint-Parize-le-Châtel où ils ont leur maison de campagne. Absents la plupart du temps, ils confient l’exploitation de leurs terres à un régisseur. On trouve encore à Saint-Parize des parcelles qui ne relèvent d’aucun seigneur ; ce sont des alleux ou des censives dont la redevance restée impayée a été prescrite. H existe aussi de petits fiefs tenus par des roturiers, qui consistent en une maison ou en une ou deux parcelles de terre.</p>
+          <p>Les modes de possession des terres sont donc variés et le morcellement de la propriété est grand.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les cadres de l’exploitation du sol</head>
+          <p><hi rend="i">Les cadres juridiques de l’exploitation du sol.</hi> – Le fermage est pratiqué à Saint-Parize dans les seigneuries mises en régie et baillées à des marchands fermiers étrangers à la paroisse. De petites propriétés sont aussi données à ferme <pb n="58" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_04.TIF/full/full/0/default.jpg"/>sous le nom d’« accenses » ; elles sont prises par les paysans pauvres car leur prix est modique.</p>
+          <p>Le métayage est le mode de faire-valoir le plus répandu. Le bail est fait pour trois, six ou neuf ans, au gré des parties. C’est un bail à métairie à moitié, comportant un partage des fruits à part égale entre le bailleur et le preneur. Le preneur doit en plus de menus suffrages (beurre et poules) et divers services au bailleur (charrois, entretien de haies, etc.).</p>
+          <p><hi rend="i">Les différentes sortes d’exploitation.</hi> – Le domaine constitue l’exploitation agricole type de la paroisse de Saint-Parize-le-Châtel. Il est lié au bail à métairie. Le domaine a une superficie qui varie entre trente-cinq et cinquante hectares. Il comprend les bâtiments, des terres et des prés. Les terres labourables sont plus étendues que les prés. Les parcelles sont rarement groupées d’un seul bloc autour des bâtiments mais elles s’éparpillent aux alentours.</p>
+          <p>Les petites fermes et les « accenses » sont très répandues. Elles se composent d’une maison, d’une étable et de terres d’une superficie de trois à quatre hectares en général ; elles ne dépassent jamais cinq à six hectares. De nombreuses « accenses » sont jointes à des vignes, de trois à quatre hectares le plus souvent, que le preneur de 1’« accense » s’engage à façonner. Les travaux ainsi faits lui sont payés par le propriétaire de la vigne.</p>
+          <p>Ces diverses exploitations comportent donc de grandes différences, tant sur le plan juridique sur sur le plan agricole. La rigidité du système du métayage entraîne de nombreuses difficultés pour le tenancier et empêche tout progrès.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les hommes et leurs travaux</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les hommes</head>
+          <p>La population de Saint-Parize-le-Châtel s’élève, au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle, à environ six cent cinquante personnes réparties en cent cinquante feux.</p>
+          <p><hi rend="i">La hiérarchie sociale.</hi> – Les seigneurs, les bourgeois et les fermiers des seigneuries forment le sommet de la hiérarchie sociale de la paroisse. Les distinctions sont moins nettes entre les autres catégories sociales. Le chirurgien, le notaire et le curé occupent une place un peu à part. Les laboureurs sont tous métayers. On ne trouve pas, comme dans d’autres régions de la <pb n="59" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_05.TIF/full/full/0/default.jpg"/>France, une classe de fermiers-laboureurs monopolisant la production agricole. Les artisans et les manœuvres sont assez proches les uns des autres, tandis que les journaliers se distinguent par la modicité de leurs ressources.</p>
+          <p>Les différences entre les catégories sociales sont surtout des différences de fortune et d’influence. Celle-ci reste aux mains des seigneurs et des grands propriétaires fonciers, tandis que les laboureurs, artisans, manœuvres et journaliers, malgré leur grand nombre, ont une influence sociale pratiquement nulle.</p>
+          <p><hi rend="i">Essai de démographie.</hi> – On constate à Saint-Parize une stagnation de la population, le nombre des baptêmes étant à peu près égal au nombre des sépultures. Des périodes de crise se dessinent surtout entre 1747 et 1750, alors qu’une renaissance s’opère entre 1752 et 1757.</p>
+          <p><hi rend="i">Les communautés taisibles.</hi> – La persistance au <num>xviii<hi rend="sup">e</hi></num> siècle de communautés taisibles à Saint-Parize constitue une originalité de la société de cette paroisse. Les communautés taisibles sont des associations tacites, familiales la plupart du temps. La vie au même pot et au même feu pendant un an et un jour suffit à la formation de la communauté. Placée sous l’autorité du maître et chef de communauté, cette association comprend des membres, les parsonniers, qui mettent tous leurs biens en commun. Pour entrer dans la communauté par le mariage, on donne une dot portant le nom de « droit de communauté » ; presque tous les contrats de mariage portent cette clause. Les communautés taisibles sont très nombreuses à Saint-Parize ; ce sont surtout de petites communautés familiales qui regroupent le père, ses fils et ses gendres. Mais on trouve aussi de grandes communautés qui conservent une puissance considérable. Cependant les communautés que l’on rencontre au <num>xviii<hi rend="sup">e</hi></num> siècle sont en déclin ; elles sont dépourvues de l’influence sociale qu’elles pouvaient exercer aux siècles précédents.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le domaine et son exploitation</head>
+          <p><hi rend="i">Le métayer et le domaine.</hi> – Le métayer est un laboureur ; quelquefois c’est une petite communauté taisible qui se trouve à la tête d’un domaine. Le métayer est assez pauvre et connaît de nombreuses difficultés financières. Obligé de demander au propriétaire du domaine des avances d’argent et de grain, il s’endette peu à peu et se trouve incapable de rembourser. Il doit alors passer devant notaire une obligation en faveur du propriétaire, qui monte parfois jusqu’à plus de mille livres. Il lui arrive même d’aller jusqu’à céder la part de récolte qui lui revient, ce qui le libère de sa dette mais aggrave encore sa situation. Pourtant le domaine lui offre des possibilités de culture qui peuvent paraître avantageuses.</p>
+          <p><hi rend="i">L’exploitation du domaine de Saillant.</hi> – Le domaine de Saillant fait partie de la seigneurie de la Chasseigne, qui appartient à Gilbert Flamen de <pb n="60" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_06.TIF/full/full/0/default.jpg"/>Coudray. Il s’étend sur 53,8 hectares de terres et prés. Ce domaine est assez peu morcelé ; les terres les plus fréquemment cultivées et les mieux entretenues sont, cependant, du domaine.</p>
+          <p>Les quantités de gros blés (froment, méteil, seigle) semées dans ce domaine entre 1734 et 1738 progressent peu à peu de trente à trente-six hectolitres par an, tandis que les quantités de petits blés (orge, avoine) restent stationnaires autour de vingt hectolitres par an. L’assolement n’est ni biennal, ni triennal, il est très irrégulier. Beaucoup de terres ne sont cultivées que tous les trois ou quatre ans, quelques-unes sont laissées à l’abandon. En revanche, les terres proches de la maison sont exploitées plus souvent qu’il ne faudrait.</p>
+          <p>Les récoltes sont partagées entre le propriétaire et le métayer ; les rendements sont médiocres, de l’ordre de deux et demi pour les gros blés (6,25 hectolitres à l’hectare), et de trois et demi pour les petits blés (7,75 hectolitres à l’hectare). Des travailleurs saisonniers sont employés pour les moissons et le battage, qui a lieu en grange l’hiver. Les instruments dont dispose le métayer lui sont fournis par le propriétaire du domaine comme « harnois de labourage ». Ce sont, pour le domaine de Saillant, deux charrues, cinq « héreaux » (araires), deux charrettes, une herse, des jougs, des pièces d’attelage. Le bétail est confié par le propriétaire à titre de bail à cheptel. Les bovins y dominent, dix bœufs de trait, neuf vaches et des taureaux, mais il y a aussi des juments, quelques porcs et brebis.</p>
+          <p>Les rendements connus dans d’autres domaines se rapprochent de ceux de Saillant. Ils sont au grain trois pour les gros blés (7,5 hectolitres à l’hectare) et au grain cinq pour les petits blés (12,5 hectolitres à l’hectare).</p>
+          <p><hi rend="i">Le prix du blé.</hi> – La mercuriale de Nevers donne des indications sur le prix des blés qui subit des variations saisonnières au cours de l’année : les prix montent en juin et juillet pour assurer la soudure avec la récolte suivante. Entre 1730 et 1760, le prix du froment s’élève de cent à cent soixante-dix livres pour un hectolitre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les « accenses » et leur exploitation</head>
+          <p>Les « accenses » peuvent être assimilées aux petites propriétés particulières car elles ont les mêmes caractéristiques, et souvent une « accense » est prise par un petit propriétaire pour accroître la surface dont il dispose pour la culture.</p>
+          <p><hi rend="i">Le tenancier.</hi> – Il est fréquent qu’un manœuvre ou un vigneron prenne un bail d’« accense ». Il vit très modestement et ne possède pas beaucoup de biens. Il doit recourir à des activités secondaires (moissons, battage, charrois) pour améliorer ses ressources.</p>
+          <p><hi rend="i">L’exploitation de l’« accense ».</hi> – Les quantités emblavées en gros blé dans une « accense » moyenne sont de l’ordre de 1,6 hectare, ce qui représente <pb n="61" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_07.TIF/full/full/0/default.jpg"/>la moitié des terres de l’« accense ». Les terres des « accenses » sont cultivées plus intensément que celles des domaines, et leur rendement semble meilleur. On y récolte plus de seigle que de froment, en moyenne de dix à quinze hectolitres de gros blé par an. L’« héreau » est utilisé plutôt que la charrue, trop chère à l’achat, car les instruments de culture ne sont pas fournis par le propriétaire de la terre. Le bétail, surtout des vaches, est baillé à cheptel.</p>
+          <p><hi rend="i">Les travaux de la vigne.</hi> – Les vignes sont exploitées par les baux d’« accense » à façon de vigne. Le vigneron est payé pour son travail à raison de trois livres par œuvrée de vigne (4,25 ares) ; il façonne, en général, trois à quatre hectares de vigne. Il y a cinq façons à la vigne : la recuraille d’hiver (nettoyage), la taille, la bêchaille, la recuraille d’été et le rebinaille. Les vendanges sont partagées par moitié entre le vigneron et le propriétaire.</p>
+          <p><hi rend="i">Les jardins et les vergers.</hi> – Il existe des baux à façon de jardin pour le potager du château de la Chasseigne. Ces baux comprennent aussi l’octroi d’une « accense ». Le jardinier est rémunéré pour son travail. Les légumes cultivés sont surtout des pois, fèves et haricots, des choux et des navets. L’entretien des vergers comprend la taille des arbres, le nettoyage des haies et des allées. Les fruits recueillis sont partagés à part égale entre le tenancier et le propriétaire.</p>
+          <p>Les conditions d’existence du manœuvre sont précaires, car il ne peut compter que sur son travail et est assujetti aux nécessités climatiques et économiques. Le sort du vigneron semble plus enviable, car il est payé quel que soit le résultat de son ouvrage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>L’élevage</head>
+          <p><hi rend="i">Les baux à cheptel.</hi> – Le bétail est fourni au métayer, ou au tenancier de l’« accense », par un bail à cheptel à moitié croît et profit, qui est octroyé par le propriétaire des terres, ou bien par un simple bail à cheptel, qui ne lie pas les bêtes à l’exploitation d’un fonds. Ce bail comporte un partage du croît et profit du bétail au cours du bail et à son expiration. Les bêtes fournies sont estimées à la conclusion du bail à cheptel. Pour un domaine, le cheptel peut s’élever jusqu’à deux mille livres ; il est de l’ordre de cinq cent livres pour une « accense » et cinquante à soixante-dix livres pour un petit propriétaire.</p>
+          <p><hi rend="i">Le bétail.</hi> – Dans un domaine, on trouve en moyenne dix à douze bœufs, une dizaine de vaches, trois à quatre taureaux, trois à cinq juments, vingt porcs, de vingt à cinquante brebis. Les bovins sont de race nivemaise rousse ; les vaches sont « garnies » de leurs veaux et les juments de leurs poulains. En général, en fin du bail, on arrive plutôt à un accroissement du cheptel qu’à un déficit. Les paysans possèdent du bétail en propre, mais en petite quantité, une ou deux vaches, des porcs et des poules.</p>
+          <pb n="62" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_08.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Les progrès de l’élevage au dix-huitième siècle.</hi> – L’étendue des prés a considérablement augmenté entre le <num>xvii<hi rend="sup">e</hi></num> et le <num>xviii<hi rend="sup">e</hi></num> siècle. Dans le finage de Gié par exemple, il y a sept hectares de pré au <num>xvii<hi rend="sup">e</hi></num> siècle et quinze hectares au <num>xviii<hi rend="sup">e</hi></num> siècle. On constate, d’autre part, une importante circulation du bétail dans la région de Nevers. Un très grand nombre de bêtes sont abattues pour la boucherie, environ mille cinquante bœufs et vaches et deux mille six cents veaux et génisses par an. On doit donc conclure à une extension de l’élevage dans la région de Nevers et en particulier à Saint-Parize-le-Châtel.</p>
+          <p><hi rend="i">La pratique de l’élevage à Saint-Parize-le-Châtel.</hi> – Nous sommes bien renseignés sur les ventes de bétail du domaine de Saillant. Le profit des ventes est partagé entre le métayer et le seigneur de la Chasseigne, propriétaire du domaine, et procure au métayer un revenu moyen de cent quatre-vingt livres par an. Les ventes de bétail ont lieu surtout dans les foires et les marchés de Nevers et de la région.</p>
+          <p>Les progrès de l’élevage sont importants au <num>xviii<hi rend="sup">e</hi></num> siècle, mais le grand développement de l’élevage dans cette région ne se fera qu’après la Révolution.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les autres activités rurales</head>
+          <p><hi rend="i">L’exploitation des bois et des étangs.</hi> – Les bois et les étangs sont mis en valeur par les seigneurs auxquels ils appartiennent. Les coupes de bois et les poissons des étangs sont vendus à des marchands.</p>
+          <p><hi rend="i">Le commerce.</hi> – A côté des marchands-fermiers des seigneuries qui exercent leur activité en dehors de la paroisse, de petits marchands existent à Saint-Parize, mais on ne connaît pas bien l’objet de leur négoce. La boucherie de Saint-Parize appartient au seigneur, qui la rétrocède à bail au boucher de Magny, paroisse voisine de Saint-Parize, ou <hi rend="i">à</hi> un marchand.</p>
+          <p><hi rend="i">L’artisanat.</hi> – Les tisserands sont très nombreux à Saint-Parize, ils travaillent la laine et surtout le chanvre. Les charpentiers, maçons et couvreurs trouvent toujours de l’ouvrage, mais ils ne sont pas payés en proportion du travail effectué.</p>
+          <p><hi rend="i">Les industries rurales.</hi> – Des minières on extrait du minerai de fer qui est lavé puis traité dans les paroisses voisines. La tuilerie de la Chasseigne produit des tuiles, des briques, des carreaux et de la chaux. Ces activités ont une importance locale, elles suffisent aux besoins de la paroisse et des paroisses voisines sans dépasser ce cadre régional.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="63" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_09.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Conclusion</head>
+        <p>La vie rurale au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle reste difficile pour le paysan ; ses récoltes sont médiocres, ses profits très faibles. La persistance de caractères archaïques, du métayage en particulier, vient aggraver cette situation. Le seul espoir d’amélioration réside dans une transformation de l’économie qui conduise à adopter le système du fermage dans les grandes exploitations et à développer l’élevage intensif.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes et plans</head>
+        <pb n="64" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_07/ENCPOS_1972_07_10.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

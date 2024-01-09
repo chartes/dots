@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_16" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Étude sur la <hi rend="i">Consultation de Paris pour la noblesse de Picardie</hi> de Dumoulin (1564)</title>
+        <author ref="https://www.idref.fr/234709669">Jean-Pierre Le Coq</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_16.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 115-117</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="115" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_16/ENCPOS_1971_16_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Étude sur la <hi rend="i">consultation de Paris</hi>
+       <lb/><hi rend="i">pour la noblesse de Picardie</hi>
+       <lb/>de Dumoulin (1564)</head>
+      <byline>
+        par
+        <forename>Jean-Pierre</forename>
+        <surname>Le Coq</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’étude de la <hi rend="i">Consultation de Paris pour la noblesse de Picardie</hi> de Dumoulin se justifiait essentiellement pour trois raisons : la première consiste dans les circonstances qui ont donné naissance à cette consultation ; la seconde réside dans l’objet de cette consultation, c’est-à-dire le mode de désignation des évêques au milieu du <num>xvi<hi rend="sup">e</hi></num> siècle, entre le concordat de 1516, qui supprime les élections, et l’ordonnance des États d’Orléans du 31 janvier 1561, qui rétablit le principe électif ; la personnalité de l’auteur de la <hi rend="i">Consultation,</hi> enfin, ajoutait un nouveau centre d’intérêt à cette étude.</p>
+        <p>Partant donc de l’étude d’une situation historique bien définie, la situation à Amiens en 1564 et l’opposition d’une partie de la noblesse locale à la promotion d’un nouvel évêque, notre travail devait progressivement permettre une approche de Dumoulin.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Causes de la <hi rend="i">consultation</hi> et aperçu sur l’évolution
+         <lb/>du principe électif jusqu’à l’ordonnance de 1561</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la situation à Amiens</head>
+          <p>En 1561, Nicolas de Pellevé résigne en faveur d’Antoine de Créquy ; ce dernier abandonne l’évêché de Nantes à son oncle et se rend à Amiens. Il y rencontre une forte opposition de la part des protestants, qui sont fortement <pb n="116" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_16/ENCPOS_1971_16_02.TIF/full/full/0/default.jpg"/>implantés dans le diocèse et sont en majorité à l’échevinage. On assiste alors à une lutte entre le parti catholique, qui a à sa tête Antoine de Créquy, et le parti protestant, conduit par le vidame Louis d’Ailly, pour savoir qui l’emportera à la tête du diocèse et à la tête de l’échevinage. L’opposition de Louis d’Ailly à la promotion d’Antoine de Créquy à l’évêché d’Amiens constitue un des épisodes de cette lutte.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’intervention de Dumoulin</head>
+          <p>Les documents font défaut pour comprendre à la suite de quelles démarches Dumoulin <hi rend="i">a été</hi> appelé à intervenir dans cette affaire. On peut légitimement penser que Louis d’Ailly a d’abord porté son opposition devant le Conseil du roi, que ce dernier a déclaré recevable cette requête et que le vidame a alors interjeté appel comme d’abus, procédure pour laquelle la consultation de plusieurs avocats était nécessaire.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La question juridique posée</head>
+          <p>L’ordonnance d’Orléans a rétabli le principe des élections des évêques. La <hi rend="i">Consultation</hi> de Dumoulin permet de voir dans quelle mesure cette prescription fut respectée. Pour ce faire et pour comprendre l’argumentation de Dumoulin, il a été nécessaire de tracer l’évolution du principe électif.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Analyse et appréciation de la <hi rend="i">consultation</hi></head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’argumentation de Dumoulin</head>
+          <p>L’argumentation se développe autour de deux thèmes : d’une part, Antoine de Créquy n’a pas reçu l’évêché suivant les formes prescrites, d’autre part, il est incapable de devenir évêque, notamment il manque de science et d’expérience.</p>
+          <p>Pour établir le vice de la provision, il est incontestable, selon Dumoulin, qu’au temps de la primitive Église, les évêques étaient les égaux des autres prêtres et qu’ils ne pouvaient être élus qu’avec le consentement du peuple. Cette prescription a été reprise par les saints docteurs, par les saints décrets <pb n="117" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_16/ENCPOS_1971_16_03.TIF/full/full/0/default.jpg"/>et conciles, par Charlemagne et enfin par l’ordonnance d’Orléans. Or, il est non moins incontestable que les nobles forment la partie la plus importante du peuple et qu’ils n’ont pas été appelés à l’élection. De ce fait, l’élection d’Antoine de Créquy doit être tenue pour nulle, comme n’ayant pas respecté les règles observées depuis la primitive Église jusqu’à l’ordonnance d’Orléans. Qui plus est, même si ces règles avaient été respectées, Antoine de Créquy ne pourrait en aucun cas recevoir cet évêché : il n’a pas la science requise par saint Paul et les anciens docteurs. Par ailleurs, il possède des bénéfices incompatibles et sa conduite, tant à Nantes qu’à Amiens, où il a commis certains crimes, le rend inhabile à l’épiscopat.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La procédure préconisée</head>
+          <p>La nullité d’une telle promotion est si apparente qu’il est possible de s’y opposer par tous les moyens, mais le plus expédient est d’interjeter appel comme d’abus. Ce moyen est d’autant plus justifié que la promotion d’Antoine de Créquy s’est faite contre les décrets et canons reconnus en France.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Appréciation de la <hi rend="i">consultation</hi></head>
+          <p>Dans l’œuvre de Dumoulin, cette consultation apparaît comme le prolongement des écrits plus importants qu’il vient de publier ou va publier à la même époque sur les droits du roi de France et sur son opposition à l’intrusion en France de l’autorité pontificale, que ce soit sous la forme des canons du concile de Trente ou de bulles de provision d’un évêché.</p>
+          <p>H est possible également que sous les arguments gallicans apparaissent quelques conceptions chères aux protestants.</p>
+          <p>Enfin, tant par la forme que par le fond, cette consultation met en relief l’originalité de Dumoulin dans la doctrine du xvi<hi rend="sup">e</hi> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Édition</head>
+        <pb n="118" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_16/ENCPOS_1971_16_04.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

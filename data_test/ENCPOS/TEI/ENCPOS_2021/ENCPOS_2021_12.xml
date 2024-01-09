@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le château de Montceaux-lès-Meaux : architecture, ameublement et vie sociale sous Catherine de Médicis, Gabrielle d’Estrées et Marie de Médicis (1556-1642)</title>
+        <author>Marguerite-Marie Luquet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 135-148</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Le château de Montceaux-lès-Meaux : architecture, ameublement et vie sociale sous Catherine de Médicis, Gabrielle d’Estrées et Marie de Médicis (1556-1642)</head>
+      <byline>
+        par
+        <forename>Marguerite-Marie</forename>
+        <surname>Luquet</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Le château de Montceaux et le vaste domaine qui l’entoure, avec parcs et jardins, ont été résidence royale et princière entre 1556 et 1642. Pourtant, des demeures royales des <num>xvi<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècles, le château de Montceaux est l’une des moins connues et ne bénéficie à ce jour d’aucun travail monographique, hormis un article, fondateur mais aujourd’hui dépassé, publié par Rosalys Coope en 1959. La rareté des descriptions et des récits contemporains, ajoutée à la disparité des sources relatives à chaque propriétaire et à l’insuffisance des vues et des plans d’époque, en rend l’étude très complexe, même en la restreignant au seul château principal. Pourtant, l’état ruiné du château invite à la reconstitution, non seulement de son apparence, mais aussi de son histoire. Château de deux reines et d’une maîtresse royale, il est représentatif de l’évolution du statut de la reine comme figure politique et curiale dans la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle, notamment à travers le développement des commandes artistiques et des projets architecturaux à visée symbolique. En conséquence, il convient d’aborder ce château d’un regard nouveau, dans la ligne d’une historiographie plurielle, à la croisée des disciplines. D’un point de vue historique, doivent être ainsi mobilisés tant l’analyse sociale de la cour que les études de genre et les questionnements relatifs à la culture matérielle. Du point de vue de l’histoire de l’art, les études architecturales des grandes demeures de la fin de la Renaissance offrent un guide pour reconstituer l’aspect formel du château et l’occupation de ses espaces intérieurs, tandis que la vie en son sein est éclairée par les travaux relatifs aux objets d’art des collections princières et royales ou encore aux divertissements. Il en découle une compréhension renouvelée de la spécificité de Montceaux, en tant que château féminin, par rapport aux autres demeures royales et de ce qui en fait un « luogo delitsioso », pour reprendre les mots du nonce Sebastiano Gualterio en 1560.</p>
+        <div>
+          <head>Sources</head>
+          <p>La documentation archivistique relative au château de Montceaux est aussi fragmentaire que les vestiges matériels qui en subsistent, en dépit des sources découvertes depuis cinquante ans. L’unique carton consacré à Montceaux dans les fonds des Bâtiments du roi au sein de la sous-série O<hi rend="sup">1</hi> des Archives nationales ne documente que les années 1621 à 1783. Pour suppléer à cette lacune, il convient de recourir aux registres de comptes des finances et des bâtiments des reines, essentiellement conservés dans la série KK des Archives nationales. À la Bibliothèque nationale de France, les comptes de la Maison de Catherine de Médicis, les comptes de bouche royaux du <num>xvi<hi rend="sup">e</hi></num> siècle, ainsi que les lettres missives de Marie de Médicis préservées dans la collection des Cinq Cents de Colbert, s’avèrent incontournables. Un livre de comptes de l’Écurie de Catherine de Médicis pour l’année 1558, redécouvert aux archives départementales de la Seine-Maritime et aujourd’hui coté 28 F 1, apporte également des précisions sur une année cruciale de l’histoire du château et de son aménagement. Les correspondances éditées des propriétaires successives, de leur entourage, des ambassadeurs et des nonces, les journaux et mémoires personnels, ainsi que les reconstitutions d’itinéraires, sont de leur côté une source non négligeable de la connaissance des séjours royaux et de leur déroulement.</p>
+          <p>Plusieurs inventaires sont également riches en informations. Ainsi, les inventaires après décès de Gabrielle d’Estrées pour ses biens meubles et ses papiers personnels sont conservés respectivement aux Archives nationales et à la Bibliothèque nationale de France, celui des papiers du trésorier de Marie de Médicis au Minutier central des notaires de Paris, celui des biens immobiliers de Marie de Médicis, qui contient la première description complète de Montceaux, à la bibliothèque de l’Arsenal. En complément, les fonds du Minutier central des notaires éclairent tant l’architecture que l’histoire du domaine. La période postérieure à 1783 est documentée par les archives privées du prince de Conti, qui forment la sous-série R<hi rend="sup">3</hi> des Archives nationales, et par les procès-verbaux issus de l’administration des biens nationaux à la Révolution, conservés dans la sous-série 1 Q des archives départementales de Seine-et-Marne.</p>
+          <p>La restitution architecturale du château est rendue possible par de nombreuses sources visuelles, en sus des descriptions contemporaines : collections de plans dans la série des Cartes et plans des Archives nationales, aux archives départementales de Seine-et-Marne et au musée du domaine de Sceaux ; vues dessinées ou gravées au département des Estampes de la Bibliothèque nationale de France et au département des Arts graphiques du musée du Louvre, ou encore carnet de dessins de Jacques Gentillâtre au Royal Institute of British Architects à Londres ; et enfin relevés des ruines réalisés à la fin du <num>xix<hi rend="sup">e</hi></num> siècle et photographies du début du siècle suivant, tous conservés à la Médiathèque de l’architecture et du patrimoine.</p>
+        </div>
+      </div>
+      <div>
+        <head>Partie liminaire
+          <lb/>Montceaux dans l’histoire Trois siècles d’existence (vers 1544-1849)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Vers 1544-1643, un siècle d’occupation : les propriétaires successifs</head>
+          <p><hi rend="i">Jean Laguette (1531-1555). — </hi>Notaire et secrétaire du roi originaire du Cotentin, trésorier et receveur général des finances et parties casuelles, Jean Laguette obtient par son mariage en 1531 la seigneurie de Montceaux en Brie. Les richesses qu’il a amassées grâce à sa charge, son rôle sur les chantiers de Fontainebleau et de Challuau, ainsi que ses liens avec l’Italie et les Italiens séjournant à la cour de François I<hi rend="sup">er</hi>, lui permettent de rénover et d’agrandir un hôtel seigneurial, dont la situation et la modernité attirent bientôt l’attention de Henri II. Accusé de malversations, Laguette est contraint à un échange avec le roi en 1555.</p>
+          <p><hi rend="i">Catherine de Médicis (1556-1589).</hi> — Catherine de Médicis reçoit la terre et seigneurie de Montceaux en cadeau du roi, pour des raisons politiques, économiques et personnelles. Il s’agit de la première demeure d’envergure proche de Paris dont elle est entièrement propriétaire. Elle y effectue des travaux et des aménagements sur ses propres finances dès 1557.</p>
+          <p><hi rend="i">Gabrielle d’Estrées (vers 1594-1599).</hi> — Le sort complexe de la succession de Catherine de Médicis – tombée en déshérence en raison des dettes considérables de la reine-mère et du contexte des guerres de Religion – semble avoir favorisé l’acquisition du château par Gabrielle d’Estrées, maîtresse de Henri IV. Le roi ne lui en fait pas directement cadeau, mais il lui fournit les moyens administratifs et financiers nécessaires pour obtenir une assise territoriale et acquérir le titre de marquise de Montceaux.</p>
+          <p><hi rend="i">Marie de Médicis (1601-1642).</hi> — La date de l’obtention réelle du château de Montceaux par Marie de Médicis est incertaine : elle y effectue son premier séjour dès juin 1601, les comptes de son trésorier Florent d’Argouges font état d’une acquisition en juillet 1601, Sully affirme qu’elle reçoit le château suite à la naissance du dauphin en septembre 1601 et le contrat officiel d’achat du domaine aux héritiers de Gabrielle d’Estrées date de juin 1605. Montceaux est le premier château dont la reine, petite-nièce de Catherine de Médicis, devient propriétaire. C’est aussi la dernière donation immobilière d’un souverain qui reste en dehors du domaine de la couronne. Exilée en 1631 jusqu’à sa mort, Marie de Médicis abandonne le château, que Louis XIII s’approprie.</p>
+          <p><hi rend="i">Questions juridiques de propriété et évolution de la titulature de la terre de Montceaux.</hi> — La terre de Montceaux évolue de simple seigneurie en marquisat. Si trois dames en sont les propriétaires successives, Montceaux n’est pas pour autant une demeure exclusivement féminine. En donnant à chacune les moyens de l’acquérir, Henri II et Henri IV décident du sort de la terre et fournissent les moyens de son achat. Henri IV y place des officiers de sa Maison, appose ses initiales dans les décors des façades et semble par deux fois vouloir empêcher qu’une telle demeure soit définitivement distraite des possessions royales.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>1643-1849, deux siècles d’abandon ? Le déclin du château royal</head>
+          <p><hi rend="i">Le temps des hésitations (seconde moitié du <num>xvii<hi rend="sup">e</hi></num> siècle - début du <num>xviii<hi rend="sup">e</hi></num> siècle). —</hi> À la mort de Marie de Médicis, la vente du château est jugée nécessaire pour couvrir les dettes de la défunte reine. Admiré par les visiteurs, il ne trouve cependant pas d’acquéreur et le domaine retourne dans le giron de la couronne. Louis XIV ne s’y rend presque plus, mais deux campagnes de restauration urgentes sont menées par Colbert de 1665 à 1667, puis par Louvois entre 1684 et 1688. La jouissance du domaine est ensuite laissée à un officier d’Anne d’Autriche et la justice locale à la capitainerie des chasses ; l’usage de la chapelle est accordé aux villageois ; le château sert de grenier à grain et le parc de réserve à cervidés.</p>
+          <p><hi rend="i">Le prince de Conti : visites, aménagements, démolitions.</hi> — Louis-François-Joseph de Bourbon, comte de la Marche, cousin de Louis XVI, se rend à Montceaux pour la chasse, au moins depuis 1760. Il obtient le domaine en don du roi en 1783 et, pour y loger, fait aménager et agrandir un des quatre pavillons aux angles de la terrasse bâtis sous Henri IV. Pour financer ces travaux, il entame la démolition des parties les plus endommagées du château principal et en revend le plomb et les pierres qu’il en tire. Il convertit également une aile en écurie et chenil.</p>
+          <p><hi rend="i">Au <num>xix<hi rend="sup">e</hi></num> siècle, le déclin (1789-1849). —</hi> La disparition progressive du château de Montceaux n’est pas due à un quelconque vandalisme révolutionnaire, mais au « vandalisme de la noblesse » et au « vandalisme industriel », selon les formules de Louis Réau. Si la destruction du château est envisagée dès le <num>xviii<hi rend="sup">e</hi></num> siècle, c’est finalement à l’occasion de la construction d’un tunnel ferroviaire par la Compagnie des chemins de fer de l’Est entre 1846 et 1849 que le château sert de carrière de pierres et est réduit aux vestiges actuels.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Montceaux, maison « vrayment royale » et château de plaisance (1556-1643)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Une approche quantitative des séjours royaux</head>
+          <p>Un recensement des séjours royaux et princiers à Montceaux entre 1558 et 1643 met en évidence la fréquentation assidue du domaine par Henri IV puis Louis XIII, ce qui remet en cause le qualificatif communément employé de « château des trois reines » pour désigner Montceaux. Si Catherine de Médicis s’y rend à tout moment, Henri IV et Marie de Médicis viennent plutôt à la chaude saison. C’est Henri IV qui effectue le plus grand nombre de séjours, mais ce sont ceux de Louis XIII qui sont en moyenne les plus longs.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Les activités durant les séjours à Montceaux</head>
+          <p><hi rend="i">Typologie des séjours.</hi> — Les sources ne renseignent pas de manière systématique sur les raisons de la venue des visiteurs. Qu’elles soient politiques, diplomatiques, cynégétiques ou thérapeutiques – notamment pour la consommation d’eaux thermales apportées au roi et à la reine des sources voisines –, les visites à Montceaux semblent toujours liées à l’agrément du lieu et à ses divertissements. À toutes les époques, la demeure de campagne, « maison de plaisir » selon les mots de Henri IV, se prête à de grandes cérémonies officielles, mais aussi à des entrevues privées, notamment dans les jardins, ainsi qu’aux retraites solitaires loin du tumulte la cour. Louis XIII ne s’y rend presque plus que pour la chasse.</p>
+          <p><hi rend="i">La place de Montceaux dans l’itinéraire royal</hi>. — Situé sur la route de Villers-Cotterêts à Fontainebleau, Montceaux est avant tout une étape dans le parcours royal. Par trois fois, on s’y arrête sur le chemin de Reims pour un sacre. C’est sous Henri IV et Gabrielle d’Estrées que Montceaux devient une destination d’importance dans l’Est parisien, formant avec Paris et Fontainebleau un triangle où le souverain séjourne de manière privilégiée.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Les conditions de séjour à Montceaux</head>
+          <p><hi rend="i">Préparer la venue</hi>. — Les documents comptables et épistolaires témoignent des préparatifs précédant la venue des propriétaires et de leur entourage. Se dégage ainsi une organisation-type, dont le déroulement est représentatif des séjours royaux dans les demeures de campagne : envoi de lettre pour annoncer sa venue, mise en ordre des lieux avec le nettoyage des cours ou le ramonage des cheminées, aménagement de l’espace par la disposition des meubles dans les logis et la fabrication de mobilier de menuiserie supplémentaire, transport du ravitaillement, etc.</p>
+          <p><hi rend="i">La compagnie de la reine, son train, sa suite.</hi> — La composition de la suite de la propriétaire lors d’une visite – famille royale, courtisans, gens de service et de « seureté » – permet de préciser l’objet du séjour à Montceaux, public lorsqu’il se fait avec la cour, ou privé lorsqu’il s’effectue en compagnie choisie. De manière générale, tout le train de la cour ne peut loger à Montceaux et se répartit dans les villages voisins. À partir de 1608, Marie de Médicis lance un projet ambitieux pour le développement du bourg et de ses infrastructures afin d’augmenter le confort de la cour.</p>
+          <p><hi rend="i">Dépenses et gestion. « L’entretenement » des visiteurs.</hi> — Le ravitaillement des visiteurs à Montceaux est assuré par les marchands suivant la cour, qui se fournissent à Paris ou à Meaux, et par les apports locaux, grâce aux structures développées par Gabrielle d’Estrées et Marie de Médicis : une ferme, un moulin, un étang. La dépense quotidienne liée aux séjours à Montceaux est extrêmement variable, même si elle augmente considérablement sous Henri IV : au château, le faste alterne avec la simplicité. Les aménagements du domaine destinés à l’agrément des visiteurs font intervenir un personnel permanent dont les charges perdurent de père en fils, notamment celles de jardiniers de Montceaux.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>L’architecture et la distribution du château au début du <num>xvii<hi rend="sup">e</hi></num> siècle</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les campagnes de construction</head>
+          <p><hi rend="i">L’hôtel de Jean Laguette (1546-1547). — </hi>D’hôtel seigneurial de taille modeste, le château de Montceaux évolue, par adjonctions successives jusqu’au milieu du <num>xvii<hi rend="sup">e</hi></num> siècle, vers le modèle du château harmonieux de plan carré autour d’une cour intérieure, les bâtiments des communs étant disposés autour d’une immense avant-cour et l’ensemble étant complété par des pavillons indépendants, trois ponts-levis et corps de garde pour accéder à la terrasse du château, et des parcs et jardins aménagés.</p>
+          <p><hi rend="i">Le château de Catherine de Médicis (1557, 1562, 1573). — </hi>Catherine de Médicis entre en possession d’un château récemment modernisé par Laguette et y mène des travaux continus, qui culminent en 1561-1562 et en 1572-1573. Les maîtres d’ouvrages en sont inconnus, à l’exception de Philibert Delorme, qui construit le pavillon de la grotte en 1557-1558.</p>
+          <p><hi rend="i">Le château de Gabrielle d’Estrées (1596-1599). — </hi>Gabrielle d’Estrées et Henri IV entament au plus tard en 1597 de nouveaux travaux d’agrandissement, que le décès soudain de la marquise ne semble pas arrêter. Ces travaux se concentrent sur les ailes nord, est et ouest du château, les pavillons détachés et la nouvelle basse-cour, ce dont témoignent les copies des projets de l’atelier Du Cerceau effectuées par Jacques Gentillâtre.</p>
+          <p><hi rend="i">Le château de Marie de Médicis (1601-1623). — </hi>Henri IV et Marie de Médicis poursuivent les aménagements, en particulier des jardins et des dépendances. Avant 1607, on ajoute une salle de bal et un escalier d’apparat dans l’aile sud. Sous la direction de Salomon de Brosse, on établit la chapelle royale au premier étage du pavillon d’entrée en 1610-1611 et on accroît les bâtiments de l’avant-cour entre 1607 et 1616.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La distribution intérieure : analyse et hypothèses</head>
+          <p><hi rend="i">La circulation intérieure</hi>. — La circulation intérieure, majoritairement horizontale et en enfilade, relève d’un certain archaïsme, confirmé par l’importance des quinze escaliers de tailles variées qui articulent les niveaux entre eux. Montceaux dispose en outre de deux escaliers monumentaux : l’escalier rampe sur rampe traditionnel au centre du corps de logis formant l’aile ouest et un escalier semi-circulaire à noyaux multiples, escalier d’apparat, au dessin peu courant, proche de la salle de bal au sud.</p>
+          <p><hi rend="i">Les logis dans le château</hi>. — En 1645, date de la fin de la période d’occupation régulière du château, celui-ci compte neuf grands logis, six petits appartements, situés notamment dans les pavillons d’angles, et vingt-deux chambres individuelles, réparties dans les galetas. Les logis royaux se trouvent à l’angle nord-ouest, sur les jardins, et suivent la répartition traditionnelle des pièces développée au cours de la seconde moitié du <num>xvi<hi rend="sup">e</hi></num> siècle. En 1643, Louis XIII installe une volière dans ses appartements. Quant aux offices et cuisines, ils occupent les sous-sols du château.</p>
+          <p><hi rend="i">Les caractéristiques distributives. </hi>— À Montceaux, les galeries des appartements royaux dans l’aile nord sont superposées. Le grand volume de la salle de bal dans l’aile sud s’intègre dans le quadrilatère du château au prix d’une asymétrie dans la largeur des ailes. La chapelle royale est aménagée au premier étage du pavillon d’entrée par Marie de Médicis et Salomon de Brosse suivant le modèle du château de Verneuil. Même si les sources témoignent de la pratique des bains à Montceaux, elles ne permettent pas d’affirmer qu’il existait des appartements affectés à cet usage.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>La restitution du château au <num>xvii<hi rend="sup">e</hi></num> siècle</head>
+          <p><hi rend="i">Les matériaux. — </hi>Pendant la totalité des travaux, ce sont des pierres tirées de carrières locales qui sont employées pour la maçonnerie. L’usage de la brique, qui varie selon les corps de bâtiments, fait de Montceaux un des exemples d’architecture brique et pierre en vogue dans un très large <num>xvi<hi rend="sup">e</hi></num> siècle. L’ardoise remplace la tuile dès les travaux de Laguette et les plombs des toitures ne sont jamais dorés. Tout cela participe à l’effet à la fois rustique et élégant du château.</p>
+          <p><hi rend="i">Les élévations</hi>. — Les façades de Montceaux se caractérisent par l’usage généralisé de pilastres colossaux d’ordre ionique, ordre féminin par excellence, et par la répétition des travées, tant côté cour qu’à l’extérieur, ce qui donne à l’ensemble un aspect à la fois gracieux et grandiose. Les murs sont chargés d’éléments accolés et de motifs brisés ou foisonnants, mais l’effet vivace qui en résulte est tempéré par des lignes horizontales ininterrompues et des reliefs peu saillants. Les avant-corps de colonnes sur cour, qui individualisent les parties centrales des élévations, contribuent à renforcer les axes du plan. Le pavillon d’entrée se distingue par un traitement spécifique fait de brique et de bossages variés, et surtout par ses proportions, sans commune mesure avec le reste du château. L’aile d’entrée apparaît comme une variation sur le même thème.</p>
+          <p><hi rend="i">Les décors extérieurs.</hi> — Le décor des façades est majoritairement issu du vocabulaire végétal. Il se surimpose aux lignes géométriques des baies, des pilastres et des entablements, mais est cantonné à des espaces limités : frontons des fenêtres, encadrement des portes, parties hautes. Sur le pavillon ­d’entrée, l’emploi des décors est plus libre et contrasté. Dans les projets et d’après les descriptions, une grande part est donnée à l’emblématique royale sur les façades, où les initiales mêlées de Gabrielle et Henri cohabitent avec celle de Marie de Médicis, identifiant nettement le château comme demeure royale.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Les décors intérieurs</head>
+          <p><hi rend="i">Au château de Catherine de </hi><hi rend="i">Médicis</hi>. — Jacques Androuet du Cerceau affirme reproduire les décors de Montceaux dans son <hi rend="i">Livre de grotesques </hi>de 1566, motifs qui pourraient être de son invention ou être dus à Primatice. Le marbre et les menuiseries de Scibec de Carpi ont aussi leur place dans les décors de Montceaux.</p>
+          <p><hi rend="i">Au château de Gabrielle d’Estrées</hi>. — Les voûtes sculptées de l’escalier, sans doute à caissons, portent les chiffres du roi et des motifs de roses. Le recueil de dessins de Jacques Gentillâtre présente des cheminées ornées de marbre, d’animaux et de végétaux qui viendraient de Montceaux.</p>
+          <p><hi rend="i">Au château de Marie de Médicis.</hi> — Les appartements royaux et les galeries sont recouverts du sol au plafond de boiseries qui signalent leur richesse. L’intérieur de la chapelle – inachevé – recourt à la polychromie des marbres et des carreaux de terre cuite. La salle de bal, également inachevée, présente un impressionnant décor de faux ciel et une perspective illusionniste de colonnes.</p>
+        </div>
+        <div>
+          <head>Chapitre V
+            <lb/>Montceaux et l’architecture de son temps</head>
+          <p><hi rend="i">La typologie du château</hi>. — Montceaux tire d’abord ses caractéristiques du château défensif, mais est avant tout un château de chasse. Résidence royale destinée à la récréation et au plaisir des visiteurs, Montceaux présente donc les caractéristiques de la demeure de plaisance du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">En plan. — </hi>Par son plan, Montceaux s’inscrit dans la catégorie des châteaux quadrangulaires qui font l’objet de recherches depuis le début du <num>xvi<hi rend="sup">e</hi></num> siècle et la construction du château de Bury en 1510, et qui persistent jusqu’au milieu du <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">L’ordonnance et les décors extérieurs. —</hi> Les architectes des décennies 1590 et 1600 renouent naturellement avec les formules architecturales antérieures, des années 1550 à 1570. L’emploi de l’ordre colossal démontre la filiation de Montceaux à l’œuvre de Philibert Delorme et de Jean Bullant et le traitement du pavillon d’entrée l’inscrit dans l’héritage de Verneuil et des Du Cerceau. Les décors de brique extrêmement raffinés de l’aile d’entrée sont sans pareils, mais les parements de brique des dépendances répondent bien au style Henri IV tel qu’il se déploie sur la place des Vosges. Jouant à la fois sur l’effet solennel – presque michelangelesque – de la concentration des motifs et sur le foisonnement libre des ornements végétaux, Montceaux apparaît comme une anthologie de l’architecture française, où la combinaison de deux tendances, entre un style décoratif raffiné et des compositions d’une rigueur ample, survit jusque dans les années 1620.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>L’ameublement du château de Montceaux (1558, 1599, 1624)</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Le mobilier de Catherine de Médicis</head>
+          <p><hi rend="i">Les pièces d’ameublement. — </hi>Les pièces de mobilier, commandées pour garnir la nouvelle demeure ou transportées à l’occasion d’un séjour, sont le reflet du mode de vie itinérant des monarques, mais aussi du confort et du luxe recherchés par Catherine de Médicis dans une demeure de campagne destinée à accueillir la cour. Les mentions fragmentaires liées à la commande et au transport de portraits de membres de l’entourage de la reine ne suffisent pas à démontrer l’intention de celle-ci d’en rassembler une collection à Montceaux.</p>
+          <p><hi rend="i">La gestion du mobilier.</hi> — La gestion du mobilier de Catherine de Médicis à Montceaux est assurée par un petit personnel qui y réside de manière permanente, mais aussi par les gens au service de la reine, qui la suivent constamment et accommodent les lieux avant son arrivée. Les meubles et les décors mobiles circulent entre les demeures royales. Le sort du mobilier de Montceaux à la mort de Catherine de Médicis est inconnu : il est probable que Gabrielle d’Estrées en réemploie une partie.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Le mobilier de Gabrielle d’Estrées à Montceaux d’après son inventaire après décès (1599)</head>
+          <p><hi rend="i">Analyse formelle de l’inventaire. — </hi>L’inventaire après décès de Gabrielle d’Estrées offre une description très complète de l’ameublement et des collections d’objets d’art d’une maîtresse royale au faîte de sa gloire. Le volume conservé aux Archives nationales est une copie du document original, destinée à servir de pièce justificative lors d’un litige lié à la succession de Gabrielle en 1619.</p>
+          <p><hi rend="i">Le mobilier d’une demeure princière.</hi> — L’inventaire exhaustif montre que le château de Montceaux sert de garde-meubles à la marquise, mais aussi qu’elle y reçoit beaucoup de monde. On y recense les meubles précieux comme les communs, les étoffes de grande valeur et les tentures de laine ou de cuir doré ainsi que les textiles d’usage et linges divers, les somptueux buffets d’orfèvrerie mais aussi les batteries de cuisine en cuivre, ou encore les collections éclectiques d’objets d’art et du cabinet de curiosités, les meubles de menuiserie, et enfin le bétail. La fortune de Gabrielle est estimée être l’une des plus conséquentes qu’une maîtresse royale ait jamais possédée.</p>
+          <p><hi rend="i">Le mobilier d’un château royal : histoire des collections de Gabrielle d’Estrées. — </hi>La provenance de certains articles est remarquable : meubles issus de Catherine de Médicis ou transportés depuis d’autres demeures royales comme Fontainebleau, objets sortis des collections royales, achats de la duchesse, cadeaux du roi, présents diplomatiques, échanges ou prêts de son entourage. La présence de pièces maîtresses comme la tenture des <hi rend="i">Plaisirs de Henri II</hi> ou un buffet d’orfèvrerie fourni par Zamet, qui s’avère provenir des collections des Guises, révèle un château destiné à l’apparat et aux fêtes, vitrine de la faveur et des ambitions de Gabrielle d’Estrées.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le mobilier de Marie de Médicis : nouvelles commandes et meubles anciens</head>
+          <p><hi rend="i">La fourniture des meubles. — </hi>Marie de Médicis, qui acquiert le château de Montceaux deux ans après le décès de Gabrielle d’Estrées, conserve une partie de ses meubles et passe de nouvelles commandes. Plusieurs meubles sont signalés dans les documents de gestion de la reine, notamment les lits, quelques tentures tissées et les batteries de cuisine. Grâce à un inventaire de 1624, conservé aux archives du ministère des Affaires étrangères, le mobilier de Marie peut être confronté avec celui de la propriétaire précédente. Il n’est qu’un pâle reflet des collections abondantes de Gabrielle d’Estrées : il ne reste par exemple que trois des dix-sept riches lits prisés en 1599. Certains articles sont plus nombreux qu’auparavant comme les tentures de cuir doré ou les tapis dits de Tournai, témoignages de l’évolution du goût et des pratiques de l’aménagement intérieur.</p>
+          <p><hi rend="i">La gestion des meubles. — </hi>Catherine Du Hamel, garde des meubles de Gabrielle d’Estrées, est prolongée dans ses fonctions par Henri IV puis par Marie de Médicis, au service de laquelle elle reste au moins jusqu’en 1624.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Avec l’évolution des pratiques curiales et du goût architectural au <num>xvii<hi rend="sup">e</hi></num> siècle, Montceaux est progressivement abandonné par les souverains, car jugé inadapté : « très grand pour un particulier, il était trop petit pour un roi », remarque à juste titre le comte de Beauchamp. Première demeure d’envergure proche de Paris de Catherine de Médicis, puis château de Gabrielle d’Estrées, dite « la presque reine », il est enfin la scène principale des ambitions architecturales de Marie de Médicis. À contre-courant de l’image traditionnelle d’un château exclusivement féminin, le rôle capital des rois dans son histoire – Henri II l’acquiert, Henri IV en est le visiteur le plus fréquent et le maître d’œuvre le plus important, Louis XIII en profite – témoigne d’une jouissance partagée des lieux. Montceaux, en sa qualité de château royal, voit passer des maîtres d’ouvrages et des maçons de premier plan, comme l’attestent les vestiges. Il est indéniable que l’influence des plus grands architectes français s’y décèle : Philibert Delorme, Jean Bullant, l’atelier Du Cerceau, en particulier Jacques II, Salomon de Brosse. En 1600, Vincenzo Scamozzi témoigne de la modernité de Montceaux, qui reste pourtant inachevé. On y trouve le goût français pour une architecture animée et pittoresque, mais on perçoit également la recherche de l’équilibre des masses et d’une lecture claire des rythmes. Ainsi Pierre Dan pouvait-il écrire en 1642 : « Monceaux, une des plus belles et agréables demeures de nos rois ».</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Devis de travaux à l’hôtel seigneurial de Jean Laguette (1546). — État des dépenses des travaux faits à Montceaux (1562). — Contrats de couverture aux bâtiments du château de Montceaux (1573). — Inventaire après décès de Gabrielle d’Estrées (1599) : édition partielle, glossaire, concordance avec les inventaires mobiliers des Guises. — Quittances et récépissés liés aux travaux à Montceaux extraits de l’inventaire des papiers de Gabrielle d’Estrées (1597-1599). — Inventaire des meubles au château (avant 1624). — Extrait du procès-verbal de visite du château de Montceaux pour l’estimation des biens immobiliers de Marie de Médicis (1645). — Descriptions du château par ses visiteurs au <num>xvii<hi rend="sup">e</hi></num> siècle. — Montceaux dans les guides de Paris et de ses environs (<num>xvii<hi rend="sup">e</hi></num>-<num>xviii<hi rend="sup">e</hi></num> siècles). — Brevet de don en faveur du prince de Conti (1783). — Description du domaine de Montceaux lors de la donation au prince de Conti. — Procès-verbal d’adjudication du château et du domaine de Montceaux lors de la vente des biens nationaux (1798).</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Chronologie des séjours de la famille royale au château de Montceaux (1558-1642). — Tableau des ouvriers ayant travaillé à Montceaux (1546-1643). — Deux exemples de distribution intérieure : les séjours de mars 1617 et de l’année 1643.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Catalogue de quarante-neuf représentations graphiques et photographiques et de vingt-sept plans du château de Montceaux. — Photographies des ruines actuelles du château de Montceaux. — Plans, représentations graphiques et photographiques de châteaux contemporains de Montceaux.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

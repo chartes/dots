@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Des réformes du droit civil demandées par le tiers ordre des états généraux de 1614 (1302-1614)</title>
+        <author ref="https://www.idref.fr/253411122">François-Eugène Jolly</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_12.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 25-26</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Des réformes
+        <lb/>du
+        <lb/>Droit civil
+        <lb/>demandées par le Tiers ordre des États généraux de 1614
+        <lb/>(1302-1614.)</head>
+      <byline>
+        Thèse soutenue par
+        <forename>François-Eugène</forename>
+        <surname>Jolly</surname>
+        <roleName>membre de la Légion-d’Honneur</roleName>
+      </byline>
+      <div>
+        <head>I.</head>
+        <p>Rechercher dans l’histoire du Tiers Etat les traces constantes du sentiment de l’égalité sociale qui alarmait les classes privilégiées.</p>
+      </div>
+      <div>
+        <head>II.</head>
+        <p>Montrer qu’aux États de 1614 les demandes qui avaient pour objet la réforme du droit civil et le progrès de l’égalité émanèrent surtout de l’ordre du Tiers.</p>
+      </div>
+      <div>
+        <head>III.</head>
+        <p>Faire voir par quelles causes les États de 1614 échouèrent dans leurs tentatives de réformes civiles.</p>
+      </div>
+      <div>
+        <head>IV.</head>
+        <p>Montrer comment Richelieu, membre et orateur du clergé à ces mêmes États, se mit au-dessus des préjugés de son ordre dès qu il eût en main le pouvoir absolu, et exécuta, dès les premières années de son ministère, tout ce qu’il crût possible alors, en fait d’améliorations sociales, c’est-à-dire précisément ce qui était demandé dans les cahiers du Tiers État.</p>
+      </div>
+      <div>
+        <head>V.</head>
+        <p>Enfin, établir par la comparaison de ces cahiers avec le Code Michaud, que la réforme accomplie par Richelieu demeura encore, sur beaucoup de points, au-dessous de la pensée des cahiers du Tiers.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

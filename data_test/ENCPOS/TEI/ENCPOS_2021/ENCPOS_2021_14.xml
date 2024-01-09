@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ambassade, bords de Neva. La mission de Maurice Bompard à Saint-Pétersbourg aux lendemains de la « lune de miel » de l’alliance franco-russe (1903-1908)</title>
+        <author>Corentin Morisot</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 161-174</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Ambassade, bords de Neva
+        <lb/>La mission de Maurice Bompard à Saint-Pétersbourg aux lendemains de la « lune de miel » de l’alliance franco-russe (1903-1908)</head>
+      <byline>
+        par
+        <forename>Corentin</forename>
+        <surname>Morisot</surname>
+        <roleName>diplômé de master</roleName> 
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>À l’été 1902, Maurice Bompard est choisi par Théophile Delcassé pour représenter la France en Russie en qualité d’ambassadeur. En ce début de <num>xx<hi rend="sup">e</hi></num> siècle, l’édifice diplomatique de la République repose sur l’alliance franco-russe : Bompard est alors chargé de préserver cette collaboration politique et militaire et d’approfondir les liens économiques entre les deux puissances alliées. Mais alors que la III<hi rend="sup">e</hi> République engage une politique active de réchauffement de ses relations avec ses voisins, l’alliance franco-russe paraît fragilisée. Quant à la Russie, elle traverse une crise intérieure d’une ampleur inédite qui culmine avec la révolution de 1905, alors qu’elle mène en parallèle une politique extérieure périlleuse en Extrême-Orient. Lorsque Maurice Bompard arrive en Russie au début de l’année 1903, l’harmonie entre les deux partenaires est donc loin d’être parfaite. Le nouvel ambassadeur le déplore : il estime lui-même dans ses mémoires que « la lune de miel de l’alliance franco-russe avait pris fin » au moment de sa prise de poste.</p>
+        <p>Maurice Bompard est une figure jusqu’ici inexplorée dans le paysage diplomatique français. Mais plus que le diplomate lui-même, c’est son ambassade – dans toutes les acceptions du terme – à Saint-Pétersbourg entre 1903 et 1908 qui mérite d’être étudiée. Y interagissent plusieurs acteurs, dont le couple d’ambassadeurs, formé par Maurice Bompard et son épouse Gabrielle, et le poste diplomatique de Saint-Pétersbourg, l’un des plus illustres, ne sont que les principaux. Le contexte international, l’effervescence intérieure en Russie, ainsi que le métier de diplomate, lui-même soumis à de profonds bouleversements dans les années qui précèdent la première guerre mondiale, sont autant de facteurs qui rendent singulier le séjour de l’ambassadeur. De la confrontation de l’ensemble de ces éléments ressort toute la complexité de sa mission auprès du tsar, qui se déroule elle-même à un moment-clé de l’action diplomatique française au début du <num>xx<hi rend="sup">e</hi></num> siècle.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les fonds des archives diplomatiques du ministère des Affaires étrangères sont au cœur de tout travail d’histoire diplomatique. Le centre de La Courneuve conserve notamment le fonds, essentiel à notre étude, des archives personnelles de Maurice Bompard, coté 417 PAAP dans la série Papiers d’agents, ainsi que d’autres fonds personnels de diplomates, dont Théophile Delcassé et Paul Cambon. S’y ajoutent le fonds Russie, conservé dans la série Correspondance politique et commerciale, dite « Nouvelle Série », la série C – dite « Administrative » – et les séries Comptabilité et Personnel. Les archives du poste diplomatique de l’ambassade de Saint-Pétersbourg, gardées au centre des Archives diplomatiques de Nantes, sont susceptibles d’offrir des éclairages complémentaires sur le fonctionnement interne de l’ambassade ; elles sont pour la plupart restées inaccessibles durant la réalisation de cette étude.</p>
+          <p>Les Archives nationales conservent les dossiers de personnel du ministère de l’Intérieur relatifs à Ernest de Blignières, père de Gabrielle Bompard, à Maurice Bompard et à Paul Cambon, ainsi que le fonds privé d’Émile Loubet. La bibliothèque de l’Institut préserve quant à elle les archives personnelles de Stephen Pichon. Les séries d’état-civil des archives départementales des Alpes-Maritimes, du Morbihan, de la Moselle offrent de leur côté des renseignements sur les familles Bompard et Le Barbier de Blignières, dont est issue Gabrielle.</p>
+          <p>Les mémoires de Maurice Bompard, publiés sous le titre <hi rend="i">Mon ambassade en Russie</hi>, méritent d’être confrontés à ceux de son épouse Gabrielle, conservés dans le fonds personnel du diplomate aux Archives diplomatiques. Ces deux œuvres sont autant de lectures distinctes d’une seule et même mission, menée par des protagonistes différents mais intimement liés.</p>
+          <p>Les <hi rend="i">Documents diplomatiques français</hi> et les <hi rend="i">British Documents on the Origins of the War</hi> constituent pour leur part une ressource considérable sur les relations diplomatiques et internationales : ils permettent de replacer l’action du diplomate au sein de la politique extérieure de la France au début du <num>xx<hi rend="sup">e</hi></num> siècle. Enfin, la mission de Maurice Bompard a également des échos dans la presse de l’époque : <hi rend="i">Le</hi> <hi rend="i">Figaro</hi>, <hi rend="i">Le</hi> <hi rend="i">Temps</hi>, <hi rend="i">Le</hi> <hi rend="i">Matin </hi>et <hi rend="i">La</hi> <hi rend="i">Revue diplomatique</hi> permettent principalement de saisir l’opinion française sur le personnage et sur l’activité de son ambassade en Russie.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Des quais de Seine aux bords de la Neva : l’ascension de Maurice Bompard dans la carrière diplomatique</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Dans les pas de Paul Cambon</head>
+          <p>Jeune Messin installé à Paris après la défaite de 1870, dont il garde un profond souvenir, Maurice Bompard s’engage comme directeur de cabinet auprès du nouveau préfet du Nord, Paul Cambon, en 1877. À partir de cette date et jusqu’en 1886, le parcours professionnel de Maurice Bompard est largement dépendant et presque indissociable de la personne de Paul Cambon. Après une courte séparation, Cambon propose en effet à Bompard – qui accepte – de le suivre en Tunisie, où il est chargé d’organiser le protectorat.</p>
+          <p>Nommé secrétaire général du gouvernement tunisien dès 1883, Bompard prend une part importante à la mise en place du protectorat français. Proche collaborateur de Cambon, dont il passe volontiers pour le disciple, c’est auprès de lui qu’il se forme à l’administration, à la politique intérieure et extérieure et, dans une moindre mesure, à la diplomatie. Cette protection lui vaut d’ailleurs un bel avancement.</p>
+          <p>Mais en 1886, Paul Cambon, nommé ambassadeur à Madrid, ne parvient pas à conserver Bompard à ses côtés. Ce dernier, dont la carrière de diplomate est lancée, doit désormais s’efforcer de gravir seul – quoiqu’avec le soutien lointain de son ami – les échelons de la hiérarchie.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Mariage et faux départs</head>
+          <p>En novembre 1886, Maurice Bompard profite de son mariage, avantageux à bien des égards, avec Gabrielle de Blignières pour obtenir son rappel de Tunisie à Paris : il ne souhaite pas continuer l’aventure tunisienne sans Cambon. À son retour en France, il passe près de trois ans dans l’administration centrale des Affaires étrangères où il met dans un premier temps ses compétences au service des colonies et des protectorats africains de la France. En 1889, il est envoyé à Madagascar, où il est rapidement titularisé résident général avant de quitter brusquement ses fonctions en 1892 en raison de désaccords avec ses supérieurs. Ce premier échec se double d’une disgrâce et son passage au Monténégro, qui la sanctionne, est extrêmement rapide durant l’année 1893. Ses deux expériences à l’étranger s’apparentent alors à des faux départs, qui ne retardent toutefois pas sa progression de carrière.</p>
+          <p>Rentré à Paris, Bompard prend rapidement les rênes de la direction des Consulats et des Affaires commerciales du ministère des Affaires étrangères, où ses compétences économiques et financières sont appréciées. Sa situation se stabilise, au point de devenir avantageuse. C’est donc dans l’administration centrale que le diplomate cherche désormais à gravir les derniers échelons de la Carrière. Il doit toutefois attendre l’arrivée de Théophile Delcassé au fauteuil de Vergennes en juin 1898 pour entrevoir la possibilité d’échapper de nouveau à Paris.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>À la recherche d’une ambassade</head>
+          <p>À Paris, la situation de Maurice Bompard s’améliore significativement dans la mesure où il occupe désormais une place de choix auprès du ministre. Pendant leurs quatre années de collaboration, de 1898 à 1902, Théophile Delcassé et Maurice Bompard entretiennent en effet une relation de confiance. Le soutien du ministre n’est d’ailleurs pas étranger à la nomination de son directeur commercial comme ambassadeur à l’été 1902. Pourtant, l’ambassade qu’il offre à Bompard n’est pas celle qu’il lui avait promise et que le diplomate désirait. Ce dernier voit en effet ses espoirs anéantis par la concurrence des frères Cambon, qui, forts de leurs appuis, remportent finalement la course à Madrid au bénéfice de Jules.</p>
+          <p>C’est donc en Russie, après de longues semaines de tractations et un mouvement diplomatique d’envergure, que Bompard est finalement chargé de représenter la République. Bien que Saint-Pétersbourg ne l’attire guère, il n’a toutefois pas voulu patienter davantage au Quai d’Orsay. Malgré leur déception, Maurice et Gabrielle Bompard acceptent volontiers cette promotion comme une délivrance.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Les prémices de la mission</head>
+          <p>Entre août 1902 et février 1903, les Bompard sont occupés par la préparation de leur mission depuis Paris. Ambassadeurs en puissance, ils jouissent d’un statut particulièrement distingué dans les salons de la capitale, qui préfigure celui qui les attend en Russie. Cette période de latence, sans cesse prolongée par le retard pris par leurs prédécesseurs dans leur retour de Russie, s’avère bénéfique : elle leur permet de s’acclimater à leurs nouvelles fonctions.</p>
+          <p>À Paris, Maurice Bompard reçoit également des directives. Au vu de celles données par Delcassé et des informations relayées par la presse, c’est un ambassadeur d’affaires qui doit succéder au marquis de Montebello à Saint-Pétersbourg et tenter d’approfondir les relations commerciales entre les deux puissances alliées. Très attaché à l’alliance franco-russe, Delcassé compte également sur Bompard pour veiller consciencieusement sur l’édifice diplomatique façonné et consolidé au cours de la décennie précédente ; la réussite de son ambitieux programme de politique extérieure, propre à fragiliser l’alliance entre la République et l’Empire russe, en dépend. Seulement, le comportement du gouvernement Combes tant à l’égard du tsar que de Montebello a d’emblée écorné l’héritage que Bompard tente de recueillir avant de se rendre en Russie. Il rejoint celle-ci au début de l’année 1903 alors que le pays semble profondément troublé.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>L’ambassade de France à Saint-Pétersbourg au temps des Bompard : les modalités de la mission</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Le couple d’ambassadeurs</head>
+          <p>L’ambassade de France à Saint-Pétersbourg, qui compte parmi les plus importantes du réseau diplomatique français à l’aube du <num>xx<hi rend="sup">e</hi></num> siècle, offre à son titulaire une situation particulièrement avantageuse aussi bien en Russie qu’en France.</p>
+          <p>À Saint-Pétersbourg, l’ambassadeur et son épouse mènent leur journée séparément, bien qu’ils servent tous deux les mêmes buts. Au rez-de-chaussée de l’ambassade, Maurice Bompard revêt ses fonctions de chef de mission – qu’il ne quitte jamais vraiment – afin d’encadrer ses collaborateurs. Ses devoirs l’obligent néanmoins à se déplacer hors des murs de l’ambassade, dans la capitale et dans l’Empire russe, parfois également à Paris, pour rencontrer ses interlocuteurs.</p>
+          <p>De son côté, l’ambassadrice est tout occupée à des tâches de maîtresse de maison qu’elle n’abandonne qu’un temps, l’après-midi, pour rendre des visites dans des salons de la capitale. À l’instar de tous les autres collaborateurs de l’ambassadeur, elle se voit déléguer une partie des fonctions qui sont dévolues à celui-ci. Elle pratique en particulier la diplomatie de manière souvent officieuse, en prolongement des entreprises officiellement portées par les agents du Quai d’Orsay. Son action est donc complémentaire de celle de son mari : elle s’y associe toujours, s’y superpose parfois, mais s’y substitue rarement. À Saint-Pétersbourg, « madame l’ambassadrice » s’érige ainsi en actrice incontournable de la vie et de l’œuvre diplomatiques françaises en Russie et s’impose comme un rouage indispensable à la bonne marche de la mission de son époux.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Les collaborateurs</head>
+          <p>En tant qu’ambassadeur, Maurice Bompard est l’unique autorité hiérarchique des agents diplomatiques et consulaires français accrédités en Russie. À l’hôtel Pachkov, qui les abrite en tant qu’hôtel diplomatique de la République en Russie, le conseiller, les secrétaires et les attachés assistent au quotidien l’ambassadeur dans sa mission. Puisqu’ils partagent en partie les fonctions de leur chef, ils en portent les responsabilités avec lui : chacun d’entre eux se voit attribuer par l’ambassadeur des tâches qui correspondent à ses compétences, ses appétences ou son grade respectif. Ces agents se révèlent alors indispensables au bon fonctionnement de l’ambassade. Souvent jeunes, ils sont généralement en quête de reconnaissance et de promotion. Dans ces conditions, Bompard appuie ou, plus rarement, refrène les ambitions de chacun selon un paternalisme hiérarchique observé dans le corps diplomatique comme dans nombre d’autres grands corps de l’État. Le personnel de l’ambassade est ainsi soumis à des remaniements fréquents.</p>
+          <p>Le cas des attachés militaire et naval est particulier. Dépendants de ministères différents de celui auquel appartiennent les autres collaborateurs, ils jouissent au sein même de l’hôtel diplomatique d’une indépendance relative vis-à-vis du chef de mission. Cette situation est d’ailleurs renforcée par leurs compétences dans des domaines bien souvent mal maîtrisés des diplomates et de l’ambassadeur lui-même. Loin de compliquer les rapports, cette proximité et cette interdépendance donnent lieu à des collaborations fructueuses.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Le cadre de la mission : l’hôtel Pachkov</head>
+          <p>Les raisons qui ont motivé le gouvernement français à faire l’acquisition d’un hôtel diplomatique en Russie répondent avant tout à des considérations qui mêlent prestige et représentation dans un contexte de réchauffement des relations franco-russes. Acheté en 1890, l’hôtel Pachkov préfigure alors l’alliance franco-russe avant de l’incarner et de la symboliser.</p>
+          <p>La valeur symbolique de l’immeuble est en effet primordiale : celui-ci suggère, autant qu’il détermine, la place que doit tenir l’ambassadeur de France dans la capitale des tsars et au sein de la bonne société pétersbourgeoise. Dès lors, l’hôtel Pachkov doit être propre à rehausser l’honneur et à affirmer le prestige de l’ambassadeur et de la puissance représentée : le soin apporté aux décorations des intérieurs – vantant les mérites du savoir-faire et de l’élégance à la française – doit se comprendre dans cette logique de rivalité qui régit les sphères où évoluent les diplomates.</p>
+          <p>Maison des Bompard pendant cinq années, l’hôtel Pachkov reste avant tout la maison de la France. Lieu de travail, de vie et de sociabilité, l’hôtel diplomatique répond assez imparfaitement aux exigences privées de ses occupants, tant ses différentes fonctions sont vouées à se confondre. L’hôtel Pachkov, bordant la Neva, est donc un acteur de la présence française en Russie avec lequel ses hôtes doivent constamment interagir.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Insertion et rayonnement dans la capitale</head>
+          <p>À Saint-Pétersbourg, Maurice Bompard entretient des relations plus ou moins soutenues avec les représentants du pouvoir impérial. Les ministres du tsar, notamment celui des Affaires étrangères, sont ses interlocuteurs habituels et privilégiés. Quant à l’empereur, l’ambassadeur ne le rencontre personnellement que lorsqu’il en fait une demande préalable par la voie diplomatique : ces occasions sont exceptionnelles. Maurice Bompard jouit ainsi d’une position particulièrement avantageuse dans la capitale, bien qu’ordinaire pour un diplomate de son grade. L’ensemble des représentants étrangers accrédités auprès du tsar forment par ailleurs un cercle restreint de sociabilité auquel il s’associe : ses homologues sont en ce sens des partenaires.</p>
+          <p>Maurice et Gabrielle Bompard occupent une place de choix au sein de la haute société russe. Durant cinq années, le couple est un acteur essentiel de la vie mondaine de la capitale. Dans ses devoirs de représentation, Maurice Bompard est bien aidé par son épouse qui participe au rayonnement de l’hôtel Pachkov dans le paysage pétersbourgeois. Entre 1903 et 1908, les représentants de la République amie et alliée tiennent donc un rang particulièrement élevé, qui fait du 10, quai Français un des hauts lieux de mondanité à Saint-Pétersbourg, participant à la diffusion de la culture française à l’étranger.</p>
+          <p>Enfin, Maurice et Gabrielle Bompard, premiers parmi les Français dans l’empire, sont des interlocuteurs privilégiés de leurs compatriotes. À cet égard, ils endossent le rôle de protecteur de la colonie française installée en Russie et entretiennent des relations à la fois cordiales et patriotiques avec ses représentants.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Maurice Bompard, acteur et gardien d’une alliance en mutation dans une Europe en cours de polarisation</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>L’exercice de l’alliance franco-russe au temps de la guerre russo-japonaise : une alliance militaire défectueuse ?</head>
+          <p>La guerre russo-japonaise, qui éclate en février 1904, soit dans les premiers instants de la mission de Maurice Bompard, ébranle tant la Russie que l’alliance franco-russe. Pendant de longs mois, la France observe avec effroi son alliée livrer toutes ses forces en Extrême-Orient. Depuis Saint-Pétersbourg, Bompard et Moulin, l’attaché militaire de l’ambassade de France, constatent que le tsar et ses ministres, en s’obstinant à poursuivre les combats, courent au désastre. Durant toute la durée du conflit, la France et son représentant à Saint-Pétersbourg observent toutefois une attitude discrète, pleine de retenue, qui pose sérieusement la question de la neutralité française et du fonctionnement de l’alliance.</p>
+          <p>Si celle-ci n’est pas rompue, force est de constater qu’elle est fortement ébranlée par les événements. Sous l’impulsion de l’ambassade de France, qui prend les choses en main dès la fin du conflit, le dialogue est toutefois renoué rapidement entre les états-majors russe et français pour tenter de pallier les carences de l’alliance. Le constat est pourtant clair : les conventions militaires, sur lesquelles repose l’ensemble de l’édifice diplomatique entre la France et la Russie, sont caduques, dans la mesure où l’état des forces armées russes est dégradé et la frontière polonaise dégarnie. En somme, l’alliance franco-russe, momentanément vidée de sa substance militaire, sort très affaiblie de la première crise internationale à laquelle elle est confrontée.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La pratique de l’alliance franco-russe lors de la première crise marocaine : une relation économique complexe</head>
+          <p>La crise marocaine, qui débute avec le coup de Tanger de Guillaume II en mars 1905, est la seconde crise internationale à laquelle l’alliance franco-russe est confrontée au début du <num>xx<hi rend="sup">e</hi></num> siècle. Cet épisode met en lumière l’importance des rapports économiques qui unissent les deux alliées, puisque ces liens prennent le relais des clauses militaires devenues inapplicables. C’est en s’appuyant sur la dépendance de l’État russe envers le marché français que la diplomatie française parvient à obtenir le soutien russe à Algésiras, après des mois de négociations à Paris comme à Saint-Pétersbourg. Au cours de cette crise, l’action de Maurice Bompard s’apparente à une œuvre patiente de persuasion. Au terme de cette délicate entreprise, l’alliance survit à une nouvelle crise.</p>
+          <p>Avec l’émission de l’emprunt d’avril 1906, le Quai d’Orsay participe aussi à renforcer la dépendance économique de la Russie vis-à-vis de la France. Mais, sur ce terrain, l’importance exceptionnelle des rapports financiers entre les deux alliées contraste avec la faiblesse de leurs échanges commerciaux. Maurice Bompard tente d’estomper cette disparité en négociant un nouveau traité de commerce destiné à favoriser les échanges entre les deux pays. Cet accord n’est toutefois pas suivi d’effets tangibles, tandis que les sommes régulièrement allouées à l’État russe ne suffisent pas non plus à raffermir des liens commerciaux considérablement distendus.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>La lutte contre le rapprochement germano-russe : préserver l’alliance franco-russe</head>
+          <p>Pour perdurer, Maurice Bompard a profondément conscience que l’alliance franco-russe, affaiblie par les crises, doit évoluer. Dans une Europe qui tend à se polariser, la diplomatie française – et Bompard avec elle – espère pouvoir greffer à la Double-Alliance une entente entre la Russie et le Royaume-Uni afin de consolider ce qu’elle n’a jamais cessé de considérer comme le socle de sa politique extérieure. L’œuvre de conciliation anglo-russe passe alors avant tout par une lutte incessante contre les tentatives de rapprochement imaginées entre la cour de Saint-Pétersbourg et celle de Berlin, auprès de laquelle le tsar tente lui-même de pallier les insuffisances de son alliance avec la France.</p>
+          <p>Bompard a très tôt conscience de la menace que fait peser sur l’alliance franco-russe la poursuite de bonnes relations entre l’Allemagne et la Russie : il en alerte sans cesse son ministre durant sa mission. Malgré ses efforts, l’intimité des empereurs de Russie et d’Allemagne aboutit en juillet 1905 à une entente qui aurait pu voir sombrer la Double-Alliance. Au mois de mai 1906, l’arrivée d’Izvolski au ministère des Affaires étrangères fait encore craindre de nouvelles combinaisons : sans abandonner les pourparlers engagés avec l’Angleterre, celui-ci poursuit une politique de conciliation avec l’Allemagne et l’Autriche-­Hongrie qui n’est pas sans inquiéter l’ambassade de France, qui perçoit là un danger de résurgence de l’alliance des Trois Empereurs. Ici, Maurice Bompard fait surtout valoir ses talents d’observateur : ses remarques et ses avertissements, aussi bien à destination du ministère des Affaires étrangères français que de son homologue russe, lui font endosser le rôle de défenseur de l’alliance franco-russe.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>L’œuvre de rapprochement anglo-russe : redéfinir l’alliance franco-russe</head>
+          <p>Entre 1903 et 1908, Maurice Bompard se positionne comme l’un des principaux promoteurs et acteurs d’un rapprochement anglo-russe, en France comme en Russie. Au moment où l’alliance franco-russe court de grands dangers, Bompard contribue à entraîner la Russie du côté de l’Angleterre, en alertant sans relâche le Quai d’Orsay de l’impasse où le conduit une politique d’entente avec Londres sans être suivi par son alliée, en surveillant le langage de la presse et l’humeur de l’opinion, et en conseillant d’agir à Paris ou à Londres, mais rarement à Saint-Pétersbourg, où il se garde souvent d’intervenir. Maurice Bompard, s’il n’est pas le plus actif, fait preuve d’une grande clairvoyance sur la situation internationale et d’une détermination qui lui permettent de remplir ses objectifs.</p>
+          <p>S’étant efforcé, tout au long de son séjour chez le tsar, de ménager et parfois d’établir des conditions favorables au dialogue entre l’alliée et l’amie de la France, il peut en effet se féliciter de voir la Russie s’entendre avec l’Angleterre à la fin du mois d’août 1907. Malgré un contexte parfois peu propice à un rapprochement, la politique mêlant patience et discrétion qu’il a préconisée et incarnée à Saint-Pétersbourg en étroite collaboration avec son collègue britannique s’avère fructueuse. Au cours de sa mission, Bompard concourt donc largement à redéfinir l’alliance franco-russe et à favoriser l’émergence de blocs de puissances en Europe dans la première décennie du <num>xx<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head>Chapitre V
+            <lb/>La Russie et l’alliance en crise : Maurice Bompard dans la tourmente et la fin de l’aventure russe</head>
+          <p>Entre 1903 et 1908, les troubles intérieurs russes, ainsi que la lente et difficile évolution de l’Empire vers un système parlementaire, ne sont pas sans inquiéter son alliée. Maurice Bompard juge alors sévèrement la désorganisation politique du pays : la crise de l’autocratie se double d’une révolution. L’ambassadeur, qui expose ses idées dans ses courriers professionnels et dans la société russe, est alors emporté dans la tourmente.</p>
+          <p>Après avoir cédé aux pressions de son propre gouvernement et conseillé au tsar de s’entendre avec la Douma, le représentant de la République amie et alliée semble avoir perdu la confiance du pouvoir impérial à l’été 1906, sans jamais parvenir à la recouvrer. Le voyage que l’ambassadeur entreprend peu après dans la région très troublée du Donets pour rencontrer ses compatriotes convainc bientôt Izvolski de demander le rappel d’un diplomate qu’il juge trop engagé dans les affaires intérieures de l’Empire.</p>
+          <p>Dans un contexte de troubles intérieurs inédits dans l’histoire du pays, la presse russe, imitée par les titres français, accuse Bompard de nourrir des idées trop libérales. Les critiques que le diplomate cristallise rendent son maintien en Russie progressivement impossible et plongent les deux puissances dans ce qui est perçu comme une « crise de l’alliance ». Le gouvernement français doit céder au début de l’année 1908 aux demandes d’Izvolski en rappelant son ambassadeur, dont la présence à Saint-Pétersbourg est jugée compromettante pour l’alliance.</p>
+        </div>
+        <div>
+          <head>Épilogue
+            <lb/>Mémoire d’une ambassade : Maurice Bompard et le souvenir de Russie</head>
+          <p>Durant son séjour, Maurice Bompard contribue à repenser l’alliance franco-russe en préparant le terrain à un système à trois avec l’Angleterre. Telle est la plus grande réussite de l’ambassadeur et par là même son meilleur souvenir.</p>
+          <p>La presse est plus ambivalente. Présentant la mission de Maurice Bompard tantôt comme un échec, tantôt comme une réussite, mais souvent comme une déception, elle tient surtout rigueur au diplomate d’avoir compliqué les relations franco-russes en outrepassant ses droits sur les injonctions de son gouvernement à l’été 1906.</p>
+          <p>Par ailleurs, Maurice Bompard n’est pas aussi regretté par le pouvoir impérial et par les hautes sphères de la capitale que son prédécesseur, Montebello, dont le brillant séjour en Russie contribue à ternir le souvenir de son ambassade. Davantage que dans la capitale, le souvenir laissé par Maurice Bompard est peut-être à chercher dans l’Empire, où les consuls et les colonies françaises se montrent particulièrement touchés par son départ. Il y a en ce sens plusieurs souvenirs du diplomate et de son ambassade.</p>
+          <p>Enfin, après avoir pris sa retraite diplomatique en 1919, Maurice Bompard se lance en politique. Sénateur de la Moselle entre 1920 et 1933, il se montre particulièrement bienveillant envers les Russes réfugiés en France. Le souvenir de ses anciennes fonctions resurgit alors de manière inopinée : ses souvenirs de diplomate rencontrent ceux du diplomate, participant ainsi à faire perdurer la mémoire de son ambassade à la fois dans le temps et dans les esprits.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>La rencontre entre Maurice Bompard et le poste diplomatique de Saint-Pétersbourg a donc été façonnée par les trente années qui séparent son installation à Paris avec sa mère et ses frères en 1872 et sa nomination comme ambassadeur en 1902. Quant à la confrontation du diplomate – et de son épouse – au poste diplomatique de Saint-Pétersbourg, elle montre que le séjour des Bompard en Russie est avant tout une expérience professionnelle et privée. Force est de constater que le contexte intérieur russe particulièrement instable du début du siècle, ainsi que les différentes crises internationales qui se sont enchevêtrées, n’ont pas permis au diplomate de se consacrer pleinement à la mission que lui avait confiée Théophile Delcassé en 1902. Le volet politique a en effet rapidement éclipsé le volet économique et la Double-Alliance, durant son séjour, a été gravement mise à l’épreuve.</p>
+        <p>Maurice Bompard n’a pas peu contribué à repenser cet édifice diplomatique et à en faire le socle d’un des deux grands systèmes d’alliances qui se sont constitués sur le Vieux Continent au début du <num>xx<hi rend="sup">e</hi></num> siècle. À cet égard, le diplomate s’est lui-même assigné une fonction de témoin muet dont il a parfaitement su cerner les limites, estimant que la France était contrainte à jouer un rôle de conciliateur discret entre la Russie et le Royaume-Uni. Mais en agissant ainsi, l’ambassadeur a également mené une politique dangereuse sur le long terme, faite d’arrangements multiples et intriqués en Europe. En ce sens, il est à compter tant parmi les promoteurs d’une des plus ambitieuses politiques extérieures de l’histoire diplomatique française qu’au nombre de ces « somnambules » qui, selon Christopher Clark, ont contribué à façonner un monde polarisé, favorable au maintien de la paix comme à la déflagration de 1914. Son ambassade n’est donc pas seulement révélatrice du quotidien diplomatique et privé d’un représentant de la Carrière à l’étranger au début du <num>xx<hi rend="sup">e</hi></num> siècle ; elle incarne aussi un monde global en mutation, au sein duquel les diplomates assistent autant qu’ils participent à la reconfiguration du système géopolitique européen.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Correspondance entre Maurice Bompard, Paul Cambon et Théophile Delcassé (1902-1908). — Mémoires de Gabrielle Bompard et de François Charles-Roux. — Articles de la presse française et russe<hi rend="i">.</hi></p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Arbres généalogiques des familles Bompard et Blignières ; de la famille impériale de Russie. — Listes du personnel de l’ambassade, du haut personnel diplomatique en Russie et des principaux ministres russes de 1903 à 1908. — Liste des tapisseries prêtées à l’ambassade de France en Russie (1904). — Chronologies de la carrière des époux Bompard. — Répartition du temps passé en Russie et en France par Maurice Bompard durant son ambassade. — Chronologie générale des événements de 1903 à 1908. — Graphique représentant l’avancement de Maurice Bompard dans la carrière diplomatique. — Graphiques de la volumétrie de la correspondance politique de l’ambassade de France en Russie au Quai d’Orsay et de la correspondance de Maurice Bompard à Théophile Delcassé et Stephen Pichon. — Plan de Saint-Pétersbourg situant les principaux lieux de pouvoir, culturels et de culte. — Plans architecturaux de l’hôtel Pachkov. — Cartes de l’Empire russe, de l’Extrême-Orient et de l’Asie centrale.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Portraits de Maurice et Gabrielle Bompard. — Portraits des principales personnalités diplomatiques et politiques en France et en Russie au début du <num>xx<hi rend="sup">e</hi></num> siècle. — Portraits des membres de la famille impériale de Russie. — Photographies de l’hôtel Pachkov, des palais impériaux et des résidences des Bompard. — Vignette chromolithographique représentant Maurice Bompard. — Dépêche diplomatique rédigée par Adolphe Boutiron, conseiller de l’ambassade, corrigée par Maurice Bompard. — Présents offerts par les souverains russes aux Bompard lors de leur départ de Russie.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

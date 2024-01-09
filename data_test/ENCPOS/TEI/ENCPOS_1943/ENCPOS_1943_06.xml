@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_06" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Barthélémy de Roye, chambrier de France</title>
+        <author ref="https://www.idref.fr/243591136">Pierre Daon</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_06.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 49-54</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="49" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_06/ENCPOS_1943_06_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Barthélemy de Roye
+       <lb/>Chambrier de France</head>
+      <byline>
+        par
+        <forename>Pierre</forename>
+        <surname>Daon</surname>
+        <roleName>Licencié ès lettres, Diplômé d’Études supérieures des langues classiques</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>la maison de Roye.</head>
+        <p>La maison de Roye en Vermandois. Sa filiation. Ses alliances : celle de Rorgon de Roye avec Adeline de Guise, nièce du connétable Mathieu de Montmorency, et de l’ex-reine Louise de Savoie.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Les débuts de Barthélemy de Roye.</head>
+        <p>Barthélemy est né vers 1160. Il est cadet. Le traité de 1185 réunit Roye au domaine royal. Barthélemy, dès 1186, figure dans l’entourage du sénéchal de France Thibaut de Blois, qu’il accompagne peut-être à la croisade en 1190.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Mariage de Barthélemy de Roye.</head>
+        <p>Barthélemy est déjà assez haut placé vers 1190 pour <pb n="50" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_06/ENCPOS_1943_06_02.TIF/full/full/0/default.jpg"/>épouser Perronelle de Montfort, fille du comte d’Évreux, seigneur de Montfort, et de la comtesse de Leicester. Cette brillante alliance le met de plain-pied avec les grands barons de France et lui crée avec l’Angleterre des attaches qui le qualifieront pour s’occuper des relations avec ce pays.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Premières négociations.</head>
+        <p>Le rôle de Barthélemy est prépondérant dans les négociations avec Jean sans Terre, comte de Mortain (1194), Richard Cœur de Lion (1196), enfin Jean devenu roi (1201), et dans le maintien du loyalisme des grands vassaux : il prépare le mariage de la fille de l’un d’eux, le comte de Boulogne, avec Philippe Hurepel, fils de Philippe-Auguste. Le roi de France, dont il est, en 1196, premier panetier, le comble de biens ; le roi d’Angleterre le pensionne.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Établissement en Normandie. Mission en Flandre.</head>
+        <p>Barthélemy de Roye, qui se fait construire près de Poissy un château dit de Roye, s’établit solidement en Normandie après la conquête de ce pays (1204). Il reçoit des terres et. marie ses filles à de puissants seigneurs normands : le fils aîné du comte d’Alençon et Guillaume Crespin.</p>
+        <p>Après la mort du comte de Flandre (1206), il travaille à accroître l’influence française dans ce pays au cours d’une mission que lui a confiée le roi.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>De la chambrerie a l’Échiquier.</head>
+        <p>En 1208, Barthélemy reçoit l’un des cinq grands offices de la Couronne, celui de chambrier. Confusion souvent commise <pb n="51" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_06/ENCPOS_1943_06_03.TIF/full/full/0/default.jpg"/>entre les chambellans du roi et le chambrier de France. Prérogatives et avantages matériels de ce dernier. Le nouveau titulaire en fait profiter l’église (Roye) et l’abbaye (Ourscamps) chères à ses ancêtres (1209). Dès 1213, il est juge à l’Échiquier de Normandie, qu’il présidera régulièrement de 1218 à 1234, contribuant à rendre plus étroite l’union du duché avec la France.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Bouvines.</head>
+        <p>Barthélemy se montre, à Bouvines, guerrier vaillant et sage conseiller. Il protège la personne du roi qui lui confie la garde du prisonnier le plus dangereux, le comte de Flandre. Plus tard, la reine Isembour lui témoigne la même confiance en le choisissant pour exécuteur testamentaire. De grands seigneurs le prennent pour arbitre.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>La fondation de Joyenval.</head>
+        <p>En 1221, Barthélemy peut songer à assumer la fondation, près de son château, d’une abbaye de Prémontrés. Il la dote de terres labourables, prés, vignes, bois, rentes en argent et en nature, de reliques, fait participer à ses donations toute sa famille, les Montfort, les Montmorency, provoque les libéralités de trois rois, les privilèges de l’évêque et du métropolitain, la protection du pape.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>Autres donations.</head>
+        <p>Liste des établissements religieux et charitables ayant bénéficié des largesses du chambrier : collégiales de Roye et de Saint-Quentin, abbayes de Morienval et d’Ourscamps, <pb n="52" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_06/ENCPOS_1943_06_04.TIF/full/full/0/default.jpg"/>église Notre-Dame d’Amiens, abbayes de Saint-Victor, Saint-Germain-des-Prés, Saint-Antoine-des-Champs, prieurés d’Argenteuil et de Saint-Martin-des-Champs, Hôtel-Dieu de Paris, églises Notre-Dame de Paris, d’Évreux, de Chartres, abbaye de Saint-Père-en-Vallée.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>État des biens de Barthélemy de Roye.</head>
+        <p>Possessions en Vermandois (environs de Roye et de Montdidier), en Normandie, au pays chartrain et aux environs de Paris (notamment à Étampes, Gonesse, Poissy, Mantes, tous lieux de résidence royale). Maisons de Paris. Résidence de Saint-Germain-l’Auxerrois.</p>
+        <p>Modes d’accroissement de la fortune de Barthélemy : dons du roi en terres et en argent, pensions de souverains étrangers, revenus de sa charge de chambrier, achats souvent effectués en vue de dons ou d’échanges.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XI
+         <lb/>Le règne de Louis VIII.</head>
+        <p>A la mort de Philippe-Auguste (1223), Barthélemy est un des trois exécuteurs du testament du roi. Il garde la confiance du nouveau roi, son voisin de Poissy. En son absence, il joue le rôle d’un régent et reçoit de lui diverses missions.</p>
+        <p>Son neveu, Amaury de Montfort, cède au roi ses droits sur le comté de Toulouse.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XII
+         <lb/>La régence de blanche de castille.</head>
+        <p>La mort, de Louis VIII (1226) renforce encore l’influence de Barthélemy : accession de plusieurs de ses parents à de hauts postes civils et ecclésiastiques. La retraite du chance<pb n="53" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_06/ENCPOS_1943_06_05.TIF/full/full/0/default.jpg"/>lier Guérin, le départ du légat, le cardinal de Saint-Ange, la mort du connétable Mathieu de Montmorency et du chambellan Orson lui permettent d’exercer une influence presque sans partage : le royaume est alors gouverné, dit une chronique, par une femme, un enfant et un vieillard. Le chambrier continue jusqu’à la fin de 1234 de présider deux fois l’an l’Échiquier normand : programme d’une session de ce tribunal.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XIII
+         <lb/>Mort de Barthélemy de Roye.</head>
+        <p>Barthélemy de Roye est mort en janvier 1237 ; détermination de la date exacte. Sa sépulture à Joyenval. Son testament. Sa succession. Sa postérité.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XIV
+         <lb/>Portrait physique et moral de Barthélemy de Roye.</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XV
+         <lb/>Rapports aves les grands personnages contemporains.</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Barthélemy de Roye, prototype du chevalier du <num>xiii<hi rend="sup">e</hi></num> siècle, a été, durant près de cinquante ans, le serviteur fidèle et dévoué de trois rois. Placé par son origine, ses intérêts et son apparentement au point de rencontre de la plupart des événements politiques contemporains, il a pu, par son crédit mérité, y prendre une part directe et importante. Au terme de sa vie, par la protection qu’il a donnée à une monarchie faible, il a permis et préparé le règne de saint Louis.</p>
+      </div>
+      <div>
+        <pb n="54" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_06/ENCPOS_1943_06_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Appendice I</head>
+        <div>
+          <head rend="uc">
+            <hi rend="i">a</hi>) quand Barthélemy de Roye est-il allé en terre<lb/>sainte ?</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">b</hi>) armes et sceaux de Barthélemy de Roye.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">
+            <hi rend="i">c</hi>) catalogue des actes de Barthélemy de Roye.</head>
+          <p/>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Appendice II</head>
+        <div>
+          <head rend="uc">Extraits et sommaire d’une étude sur les chevaliers
+           <lb/>dans la politique capétienne aux <num>xi<hi rend="sup">e</hi></num> et <num>xii<hi rend="sup">e</hi></num> siècles.</head>
+          <p/>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Tableau généalogique</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Carte géographique</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Preuves</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Tables</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

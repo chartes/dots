@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2020_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Une mystique du cœur à l’âge baroque. L’<hi rend="i">Exercice des dix jours</hi> du père Joseph du Tremblay</title>
+        <author>Florine Jaosidy</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2020 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2020</date>, <biblScope>p. 103-112</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2020"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Une mystique du cœur à l’âge baroque
+        <lb/>L’<hi rend="i">Exercice des dix jours</hi> du père Joseph Du Tremblay</head>
+      <byline>
+        par
+        <forename>Florine</forename>
+        <surname>Jaosidy</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Le père Joseph Du Tremblay (1577-1638) est plus célèbre pour son activité politique et diplomatique au service de Richelieu et du Très-Chrétien Louis XIII que pour ses écrits spirituels. Dans l’historiographie, l’attention portée à l’« Éminence Grise » a laissé peu de place à son action mystagogique, dans le cadre de la congrégation bénédictine de Notre-Dame du Calvaire, qu’il a fondée et qui existe encore aujourd’hui. Il convient de donner une résonance à cette voix, assez méconnue malgré sa faconde, en commentant et en éditant partiellement un traité issu de la prédication du capucin, l’<hi rend="i">Exercice des dix jours</hi>, conçu comme un épitomé de l’ensemble de ses enseignements, appelés <hi rend="i">Exhortations</hi>. Dans ces textes, la Passion est omniprésente ; la thématique du côté percé du Christ (Jn XIX, 31-37) constitue plus particulièrement le point nodal de l’<hi rend="i">Exercice des dix jours</hi>. Le cadre théorique et conceptuel de la pensée du père Joseph peut être appréhendé grâce à l’examen de ce signe spécifique. La dévotion cordiale a des origines bibliques et médiévales, mais le capucin l’adapte largement aux intérêts baroques. C’est là un symbole dont les enjeux concernent autant la révélation biblique que l’institution religieuse, dans sa force de transmission et sa capacité de contrainte, l’affirmation du sujet ou le langage. Il permet de mettre en avant le pragmatisme et le sens pastoral de l’Éminence Grise.</p>
+        <div>
+          <head>Sources</head>
+          <p>Des manuscrits des <hi rend="i">Exhortations</hi> figurent dans les couvents actuels de la congrégation des Bénédictines de Notre-Dame du Calvaire, à la bibliothèque Mazarine, sous la cote 1203-1205, et à la Bibliothèque nationale de France, sous les numéros 19689-19690 du fonds français. Les manuscrits les plus anciens incluant l’<hi rend="i">Exercice des dix jours</hi>sont conservés, dans l’ordre chronologique, dans les bibliothèques des monastères de Prailles (mss 3A6f-3 et 3A6f-4), de Bouzy-la-Forêt (ms 22) et d’Angers (ms 7 rouge).</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>Portrait du père Joseph en auteur spirituel</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Écrire une histoire du père Joseph</head>
+          <p><hi rend="i">Bilan historiographique. —</hi> Il n’existe aucune synthèse historiographique sur la spiritualité du père Joseph. L’attention portée par les historiens à son action prédicative et spirituelle se développe à partir du <num>xix<hi rend="sup">e</hi></num> siècle. Elle est néanmoins toujours articulée à une réflexion sur sa politique : le capucin rend possible l’union de la mystique et du pouvoir. Henri Bremond donne ainsi une publicité aux écrits spirituels de l’Éminence Grise en l’intégrant à son exhaustive <hi rend="i">Histoire littéraire du sentiment religieux en France, depuis la fin des guerres de religion jusqu’à nos jours</hi>. La figure du père Joseph apparaît ensuite timidement dans l’historiographie contemporaine, qu’il s’agisse du structuralisme ou de l’étude des cultures politiques du premier <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Rappels biographiques : un homme en quête d’unité. —</hi> François Le Clerc Du Tremblay naît en novembre 1577 au sein d’une famille mixte, d’un père magistrat et d’une mère issue de la noblesse d’épée. Bien qu’instruit en vue de mener une carrière diplomatique, il choisit d’entrer en 1599 chez les Capucins, ordre réformé et célèbre pour son engagement dans la contestation ligueuse. Sa formation théologique est rapide et, dès 1605, il obtient ses patentes de prédicateur et prend des responsabilités au sein de l’ordre, instiguant notamment dès 1616 la mission du Poitou en même temps qu’un projet de croisade finalement avorté. Il évolue dans le milieu parisien dévot qui se rencontre aux hôtels Acarie et Bérulle. En 1624, le religieux devient le conseiller de Richelieu et laisse derrière lui ses activités capucines.</p>
+          <p><hi rend="i">La fondation de la congrégation de Notre-Dame du Calvaire. —</hi> Après sa rencontre avec Antoinette d’Orléans-Longueville, en religion mère Antoinette de Sainte-Scholastique, le père Joseph est amené à participer à la floraison conventuelle du <num>xvii<hi rend="sup">e</hi></num> siècle. La jeune femme, feuillantine, obtient de pouvoir mener des expériences de vie réformée à Lencloître puis à Poitiers ; elle meurt cependant dès 1618. Le capucin poursuit son œuvre et obtient l’approbation pontificale pour la création de la congrégation des Bénédictines de Notre-Dame du Calvaire en 1621. Quoique son activité politique lui laisse peu de temps, il veille à l’organisation de l’ordre et à l’orientation spirituelle des moniales jusqu’à sa mort, le 18 décembre 1638.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La rédaction des <hi rend="i">Exhortations</hi></head>
+          <p><hi rend="i">Les séminaires parisiens et la genèse des</hi>Exhortations<hi rend="i">. —</hi> Tout au long de sa vie, le père Joseph s’illustre par une intense activité d’écriture et de prédication. Celle-ci débute alors qu’il est chargé de l’instruction de novices capucins et s’épanouit pleinement dans le cadre de l’accompagnement de la congrégation qu’il a fondée. Il commence à adresser des exhortations aux Bénédictines du vivant d’Antoinette d’Orléans, à Lencloître. Néanmoins c’est la mise en place d’un séminaire parisien en 1632 qui donne un cadre fixe au déploiement de sa parole. Les moniales les plus avancées y sont rassemblées et instruites, notamment pour pouvoir ensuite assumer des responsabilités en tant que prieures, maîtresses des novices ou cellérières. À la fin de la vie du capucin, les séminaires ont un programme clair : pérenniser sur le plan institutionnel et spirituel la jeune fondation et prolonger l’uniformité de la congrégation alors que les créations conventuelles ont été nombreuses.</p>
+          <p><hi rend="i">Fixation et postérité des</hi>Exhortations<hi rend="i">. —</hi> Au sens strict, les <hi rend="i">Exhortations</hi> désignent un canon clos, établi par les Bénédictines et rassemblant sous forme de traités distincts de nombreuses conférences du père Joseph datant des années 1612-1638. Très peu ont été publiées. Les exhortations formant l’<hi rend="i">Exercice des dix jours</hi>ont été prononcées en deux temps et dans les deux monastères parisiens de la congrégation. Elles ont été rédigées et fixées au propre en 1640, à partir des notes des auditrices. Une version issue des notes d’Ange de Mortagne, secrétaire de l’Éminence Grise, a été éditée en 1913.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Les <hi rend="i">Exhortations</hi>, un corpus mystique</head>
+          <p><hi rend="i">« Invasion mystique » et genre des exercices spirituels à l’âge baroque. —</hi> Depuis les travaux de Michel de Certeau, le processus d’objectivation de la théologie mystique est bien connu. La progression spirituelle jusqu’à l’extase mystique, celle qu’a déjà cherché à baliser timidement la <hi rend="i">devotio moderna</hi>, devient un enjeu majeur, illustré par la multiplication des traductions et l’explosion livresque du premier <num>xvii<hi rend="sup">e</hi></num> siècle. Le père Joseph ne cache pas son intérêt, typique des auteurs spirituels de la période, pour le pseudo-Denys, Bernard de Clairvaux, Bonaventure, les rhéno-flamands ainsi que les écoles mystiques italiennes et espagnoles. Le genre spécifique des exercices spirituels connaît son âge d’or. C’est moins Ignace de Loyola († 1556) qui inspire le capucin que la tradition de son ordre. Les <hi rend="i">Dix jours</hi> constituent la méthode nécessaire à la retraite annuelle prescrite dans les <hi rend="i">Constitutions</hi> des Bénédictines du Calvaire.</p>
+          <p><hi rend="i">Utilité et usage des</hi>Exhortations :<hi rend="i"> la lecture au féminin. —</hi> Les <hi rend="i">Exhortations</hi> constituent un véritable recueil-bibliothèque destiné à permettre aux Bénédictines, professionnelles de la prière, de nourrir leur vie spirituelle en ayant le moins possible recours à l’extérieur, souvent perçu comme dangereux par les ordres réformés. Les temps d’oraison sont totalement investis par la plume du capucin qui multiplie les conférences sur une variété grandissante de thèmes : exercices sur la compassion de la Vierge, le Calvaire, le saint-sacrement, l’eucharistie, les cinq plaies du Christ, pour les âmes du Purgatoire, etc. Les Bénédictines conservent de très nombreux volumes de notes sur ces exercices.</p>
+          <p><hi rend="i">Structuration des</hi>Exhortations<hi rend="i">. —</hi> Les <hi rend="i">Exhortations</hi> déclinent des modèles forts dans un projet monastique original qui réunit saint Benoît ermite, Marie au pied de la croix et le Christ crucifié. Elles répondent à la nécessité d’instruire les moniales dans les mystères de la foi en même temps que de leur donner des clefs pour prier et persévérer dans l’oraison jusqu’à l’inhabitation mystique. Théologiquement, le père Joseph met largement l’accent sur la rédemption par le Fils et son effet – à savoir la grâce – et sur le rôle unique de la Vierge ; mystiquement, il insiste sur la notion de croissance, gradation triple sur le modèle dionysien, fondée sur des dispositifs particuliers, notamment les sacrements et les vœux de religion ; ecclésiologiquement, il établit spécifiquement sa congrégation au service du rétablissement de l’emprise chrétienne sur les Lieux saints.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Le cœur comme symbole</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>L’univers symbolique chrétien du cœur</head>
+          <p><hi rend="i">Naissance et affirmation de la théologie symbolique. —</hi> La théologie symbolique médiévale est l’arrière-plan épistémique de la pensée de Joseph de Paris. En contexte chrétien, la légitimité du symbole comme voie d’accès à la connaissance de Dieu repose sur les approches du pseudo-Denys et de Bonaventure. Le premier, largement influencé par le platonisme, considère le symbolisme dans sa verticalité, comme moyen de se hausser jusqu’aux attributs divins : Dieu parle au moyen de ses créatures. Le second met l’accent sur l’opération des sens pour s’élever, l’expérience de la création permettant d’accéder au Créateur.</p>
+          <p><hi rend="i">Symbolique des cœurs dans la Bible et chez les Pères.</hi> — La Bible fait une large place au motif du cœur (<hi rend="i">leb</hi> en hébreu, <hi rend="i">kardia</hi> en grec) qui est un élément fondamental de la géographie symbolique du corps. Il est le lieu de l’intériorité dans toute sa complexité, le cerveau n’existant pas en contexte biblique. Siège des pensées et des volontés, de la vie morale et religieuse, il concrétise la liberté spirituelle. Les Pères développent ensuite une lecture allégorique du récit du transpercement (Jn XIX, 31-37), qui donne lieu au déploiement du motif du cœur du Christ : l’eau et le sang jaillissent de la blessure, symboles de la vitalité sacramentelle ; Jésus, nouvel Adam, enfante par son côté l’Église, nouvelle Ève.</p>
+          <p><hi rend="i">Les apports médiévaux : l’essor du cœur affectif.</hi> — La spiritualité médiévale, à partir du <num>xii<hi rend="sup">e</hi></num> siècle, met l’accent sur la portée affective du cœur ; la blessure costale du Christ est blessure d’amour. L’imagerie courtoise contribue à populariser cette dimension, en particulier hors du milieu clérical.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Cœur de l’homme et cœur du Christ chez le père Joseph</head>
+          <p><hi rend="i">Le cœur de l’homme. —</hi> Quoiqu’une vision mécaniste et scientifique du cœur se développe au <num>xvii<hi rend="sup">e</hi></num> siècle, l’organe cardiaque est chez le père Joseph encore utilisé dans son sens symbolique. Généralement lieu de l’intériorité, il est parfois plus spécifiquement lié à l’amour et à la volonté éclairée par la grâce. Bien qu’il ne soit pas toujours distingué de l’âme ou de l’esprit, deux connotations qui lui sont propres lui sont souvent attribuées. D’une part, il tient une place importante dans le modèle des spirituels du Siècle des saints car sa perpétuelle tension fait écho à la continuelle rénovation nécessaire aux ordres réformés. D’autre part, il prend toute sa mesure dans un modèle mystique puisqu’il instigue l’élan nécessaire au sursaut spirituel et parce qu’il est espace creux, c’est-à-dire configuré pour être habité par l’Autre divin.</p>
+          <p><hi rend="i">Le cœur du Christ, références scripturaires et patristiques.</hi> — Les <hi rend="i">Exhortations</hi> montrent la maîtrise exégétique du père Joseph et son appétence pour les textes avec un réservoir symbolique et prophétique important. Dans les Écritures, la blessure au côté est préfigurée, manifestée et contemplée : aucune de ces dimensions ne lui échappe. Il rejoue largement l’allégorisme patristique, notamment bernardin et bonaventurien, sans l’étendre. Le cœur révélé est d’abord une plaie, intégrée au culte de la Passion issu du christocentrisme médiéval et décuplé par la <hi rend="i">devotio moderna</hi>.</p>
+          <p><hi rend="i">Accents modernes du discours sur le cœur du Christ.</hi> — Le père Joseph sanctionne cependant le passage de la simple plaie costale au cœur. L’organe cardiaque, principe centralisateur et totalisateur, s’intègre à une réflexion sur la médiation du Christ et la vie trinitaire. Surtout une inflexion majeure se produit : l’affirmation d’un intérêt marqué pour l’intériorité et l’affectivité du Christ. Sur la croix, le martyre du cœur et de la volonté s’ajoute au martyre physique. Cependant la réflexion symbolique du capucin n’atteint jamais la clarté du modèle synthétique que compose Jean Eudes († 1680) à l’âge classique. Les <hi rend="i">Dix Jours</hi> sont une œuvre de transition entre le Moyen Âge et la modernité.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Le cœur comme expérience mystique</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>L’univers mystique chrétien du cœur</head>
+          <p><hi rend="i">Origines médiévales. —</hi> Le père Joseph parle du cœur humain comme du cœur divin dans un contexte mystique, c’est-à-dire en référence à la recherche d’un absolu, d’un au-delà de l’expérience commune. La corrélation entre cœur et expérience spirituelle voit le jour au Moyen Âge, sous la forme de la <hi rend="i">meditatio vitae et passionis Christi</hi>. Sous l’impulsion de Bernard de Clairvaux, la dévotion au cœur du Christ se diffuse dans les milieux contemplatifs médiévaux. Elle est enrichie par l’expérience de François d’Assise et par les écrits de Bonaventure. À la fin du Moyen Âge, les femmes mystiques qui vivent la Passion sous le signe d’un « réalisme excessif » la popularisent davantage encore.</p>
+          <p><hi rend="i">Affirmations modernes.</hi> — À l’époque moderne, François de Sales et Pierre de Bérulle proposent aux âmes avancées une mystique du <hi rend="i">fiat</hi>, un abandon à la volonté de Dieu, aussi appelé « pur amour », sur le modèle du Christ qui a réservé l’entièreté de son cœur à Dieu. Néanmoins la dévotion au cœur n’est pas encore explicitement autonome avant l’institutionnalisation du Sacré-Cœur et les œuvres de Jean Eudes, disciple de Bérulle. De même, la dimension réparatrice et politique de la dévotion se développe seulement sous l’impulsion de Marguerite-Marie Alacoque († 1690).</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Expérience mystique du cœur chez le père Joseph</head>
+          <p><hi rend="i">Mystique de la contemplation. —</hi> Le père Joseph intègre des dimensions aussi bien médiévales que modernes à la dévotion qu’il propose aux Bénédictines. Sa méthode est tout à fait progressive, reprenant la tradition déjà bien établie de l’<hi rend="i">itinerarium mentis in Deum</hi>, selon la terminologie bonaventurienne. Le prédicateur ne défend jamais une mystique infuse, brutale, rapide. Au contraire, son discours insiste sur la persévérance. En même temps, cette persévérance n’est pas pélagienne : le cœur vulnéré répand la grâce sur ceux qui le cherchent. En tant que lieu où se révèle la possibilité de la rédemption, il est un mystère à contempler.</p>
+          <p><hi rend="i">Mystique de la conformation et de la compassion.</hi> — Avec la <hi rend="i">mystica crucis</hi>, la théologie vient s’inscrire dans le vécu corporel. Les Bénédictines sont tout particulièrement invitées à une mystique de la compassion, sur le mode marial. Suivre Jésus, c’est faire siennes les attitudes fondamentales de son expérience, en particulier celles de sa Passion : obéissance, amour solidaire, humiliation. Le père Joseph promeut la « terreur des sens ». Par une corrélation paradoxale qu’affectionne la spiritualité baroque, l’exaltation est conditionnée à l’abaissement. Par ce biais, le capucin valorise ainsi la vocation des moniales comme supérieure à celle du laïcat. Surtout, les <hi rend="i">Dix jours</hi> s’inscrivent dans une attention particulière aux tourments intérieurs du Christ. La <hi rend="i">via doloris</hi> n’est pas seulement ascétique, elle est surtout éminemment mystique. Dans l’exaltation de sa douleur, l’homme-Dieu connaît le ravissement dès la croix.</p>
+          <p><hi rend="i">Mystique de l’habitation et de l’extase.</hi> — Au bout du <hi rend="i">transitus</hi>, voici l’<hi rend="i">excessus</hi> : quand l’âme s’est élevée et perdue dans la contemplation, la moniale parvient à « habiter le cœur », selon une formule qu’affectionne le père Joseph. Pour le capucin, l’incorporation cordiale est vraiment le propre de sa congrégation. Elle est pensée sur le modèle de la rencontre des amants du <hi rend="i">Cantique des cantiques</hi>. Cette inhabitation mutuelle n’est pas quiétiste dans la mesure où l’accent est souvent porté sur le dynamisme de la rencontre mystique et sur la réactivation de la volonté de la moniale. Dans les <hi rend="i">Dix jours</hi>, le père Joseph ne reprend pas la méthode de la progression triple, sur le modèle du pseudo-Denys ; l’unification dynamique des trois étapes prend la forme d’une seule volonté amoureuse, celle du cœur.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Un symbole militant ? Problèmes d’une mystique du cœur</head>
+          <p><hi rend="i">Le « crépuscule des mystiques ». —</hi> La spiritualité du père Joseph répond à des enjeux qui lui sont contemporains. Au <num>xvii<hi rend="sup">e</hi></num> siècle, le soupçon pèse sur la connaissance mystique, l’accusation d’illuminisme se porte contre toute forme de religiosité considérée comme anti-institutionnelle. François de Sales († 1622) promeut dans ses traités une approche résolument dévotionnelle en se méfiant des formules trop abstraites. L’Éminence Grise, serviteur de l’ordre royal, semble s’inscrire dans un même mouvement de part son implication répétée dans la répression des dissidences.</p>
+          <p><hi rend="i">Le cœur comme image : tensions et résolutions.</hi> — À l’époque moderne, la méditation tend moins à transiter par le texte biblique que par le tableau. C’est à la vision d’une représentation de la Passion que Thérèse d’Avila († 1582) se convertit. Devant la nécessité de répondre à cette soif d’image, l’Éminence Grise navigue dans un entre-deux : la dévotion cordiale est souvent présentée comme une réponse orthodoxe à l’illuminisme mais, dans un même temps, le capucin ne renie pas une rhétorique volontiers abstraite. Le cœur vulnéré semble en fait être la seule figuration possible dans sa méthode mystique. Il ne déroge pas en cela à son maître, Benoît de Canfield († 1611), dont le livre III de la <hi rend="i">Règle de perfection</hi> met l’accent sur la Passion comme totalisation de la révélation et unique image possible dans les stades avancés d’oraison.</p>
+          <p><hi rend="i">Un enjeu moderne : volonté de l’homme, volonté de Dieu.</hi> — En donnant au cœur une importante coloration volontariste, le père Joseph fait correspondre union des cœurs et union des volontés. Cependant, la fusion sur le mode de l’inhabitation n’est jamais confusion, puisque le cœur réside dans le côté divin sans y disparaître. L’incorporation que décrit le capucin échappe ainsi à la tentation essentialiste rhéno-flamande. En outre, bien que les <hi rend="i">Dix jours</hi> soient marqués par le thème de l’anéantissement, l’usage du symbole cœur, pulsation continuelle, tend à écarter le spectre de ce qu’on n’appelle pas encore le quiétisme. Le père Joseph ne cesse jamais de mettre l’accent sur la pratique des vertus. Enfin, son traité fait parfois entendre une tonalité plus psychologique que résolument mystique, l’inhabitation cordiale étant moins le sommet de la vie d’oraison qu’une « accoutumance » quotidienne à la présence divine et un usage de la volonté dans le combat spirituel. S’affirment timidement ici les traits d’une modernité classique de plus en plus rétive aux exaltations mystiques.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Dans l’<hi rend="i">Exercice des dix jours</hi>, le fond – la thématique du cœur – et la forme – une prédication monastique – sont deux dimensions intrinsèquement liées. Les <hi rend="i">Exhortations</hi> sont des <hi rend="i">discours</hi>, au sens étymologique : <hi rend="i">dis-cursus</hi>, allées et venues de la pensée, jaillissements d’idées, éclaircissements progressifs, réflexions inabouties. Le traité n’a pas la stature des ouvrages spirituels structurés et méthodiques destinés à être des succès baroques et le trope cardiaque n’est pas encore l’objet d’une réflexion synthétique, comme à l’âge classique : il est plutôt traversé que circonscrit par la pensée. Le but du père Joseph est bien de donner des orientations spirituelles fortes à une toute jeune congrégation, au moment où la lecture féminine est sous surveillance, en particulier en contexte monastique. Les <hi rend="i">Dix jours</hi> relèvent d’un genre traditionnel et le processus d’importation intellectuelle du capucin n’est pas inédit : les autorités sont sélectionnées, réarrangées, ajustées, adaptées, de façon à répondre à des enjeux souvent actuels. L’intérêt plusieurs fois souligné pour la question de l’intériorité rappelle que l’histoire du fait mystique éclaire celle des regards sur la condition humaine plutôt qu’elle ne met en scène des logiques d’exception. Le père Joseph Du Tremblay est en fait moins original qu’ingénieux : il comprend l’opportunité offerte par la symbolique dans un contexte mystagogique. Or le cœur est relié à un imaginaire déjà très développé et n’est encore la dévotion propre d’aucune congrégation au début du <num>xvii<hi rend="sup">e</hi></num> siècle ; en outre, il s’intègre bien au volontarisme baroque qui subjugue alors l’ontologisme médiéval. Enfin, il répond à une problématique fondamentale en mystique, celle du langage : le symbole permet de dépasser les apories de la langue, sans comprimer l’infini ; il offre au regard des Bénédictines l’invisible et l’ineffable.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>« Avis introductifs » à l’<hi rend="i">Exercice des dix jours</hi>. – Exhortations n<hi rend="sup">os</hi> 6, 18 et 29.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Sommaire de l’<hi rend="i">Exercice des dix jours</hi>. – Table d’équivalence entre les <hi rend="i">Dix jours</hi> retranscrits par Ange de Mortagne et les <hi rend="i">Dix jours</hi> retranscrits par les Bénédictines. – Sommaire de l’<hi rend="i">Exercice des cinq plaies</hi>. – Index méthodique des <hi rend="i">Dix jours</hi>.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_09" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Contribution à l’étude de la jeunesse de Du Plessis-Mornay et de ses débuts dans la politique et la diplomatie (1549-1582) suivie de lettres inédites de Du Plessis-Mornay conservées à la Bibliothèque Nationale</title>
+        <author ref="https://www.idref.fr/254313221">Gabriel Garric</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_09.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 65-71</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="65" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Contribution à l’Etude
+       <lb/>de la
+       <lb/>jeunesse de du Plessis-Mornay
+       <lb/>et de ses
+       <lb/>débuts dans la politique et la diplomatie
+       <lb/>(1549-1582)
+       <lb/>Suivie de lettres inédites de du Plessis-Mornay conservées
+       <lb/>a la bibliothèque nationale</head>
+      <byline>
+        par
+        <forename>G.</forename>
+        <surname>Garric</surname>
+        <roleName>Élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie et sources</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Etat de la question. Insuffisance des travaux parus au <num>xix<hi rend="sup">e</hi></num> siècle. La « Vie de Philippe de Mornay », de 1647. Sa valeur. Son étude se ramène à celle des Mémoires de M<hi rend="sup">me</hi> de Mornay. Les Mémoires de M<hi rend="sup">me</hi> de Mornay ; leur valeur historique ; leur composition. Manque de précision chronologique. Abondance des détails. On y remarque pourtant d’importantes lacunes.</p>
+        <p>Les sources diplomatiques. La correspondance et les papiers de du Plessis-Mornay, conservés dans sa bibliothèque, d’après l’inventaire de 1630. Histoire de leur dispersion. Les manuscrits qui en subsistent. Ce qui en est publié.</p>
+      </div>
+      <div>
+        <pb n="66" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Premiere partie
+         <lb/>Les origines et la jeunesse de du Plessis-Mornay</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les origines</head>
+          <p>La Maison de Mornay. Sa parenté avec la maison d’Estouteville. La généalogie de la maison de Mornay. Les ancêtres illustres de du Plessis-Mornay.</p>
+          <p>Origine de sa famillle en Berry. Son établissement, au <num>xv<hi rend="sup">e</hi></num> siècle, dans le Vexin Français. Les parents de du Plessis-Mornay.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Sa jeunesse. – Ses études</head>
+          <p>Sa naissance. Les premiers précepteurs. Son entrée au collège de Lisieux. Mort de son père (30 novembre 1559). Son retour à Buhy.</p>
+          <p>Conversation avec Jean de Lus, curé de Magny : lecture du Nouveau Testament. Conversion à la religion réformée. Son retour à Paris. Séjour au collège de Boncourt. Maladie, retour à Buhy. Sa mère, sur sa prière, le renvoie à Paris, sous la conduite de Lazare Ramigny, son précepteur. Son ardeur au travail, ses progrès.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Sa jeunesse. – Ses voyages</head>
+          <p>Grâce à la paix signée en mars 1568, du Plessis part en voyage. Il se rend à Genève, passe l’hiver à Heidelberg. <pb n="67" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_03.TIF/full/full/0/default.jpg"/>Il va en Italie ; séjourne à Padoue, à Venise jusqu’en 1571. Il revient en Allemagne ; se trouve à Francfort en septembre 1571. Il se rend à Cologne.</p>
+          <p>11 est aux Pays-Bas, au printemps de 1572. 11 passe en Angleterre.</p>
+          <p>Résultats de ses voyages au point de vue de son instruction.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les années d’apprentissage</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la Saint-Barthélemy</head>
+          <p>Retour en France en juillet 1572. Visite à l’amiral de Coligny. Les projets de guerre aux Pays-Bas. Remontrance remise à l’Amiral, qui, après l’avoir revue, la présente à Charles IX. Etude de cet écrit. La Saint-Barthélémy. Dangers courus par du Plessis II se réfugie en Angleterre. Son séjour en Angleterre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’entreprise de Saint-Germain</head>
+          <p>Retour de du Plessis en France, sur les instances de de La Noue. Du Plessis chargé de faire évader Thoré et Méru (10 mars 1574).</p>
+          <p>Arrivée de Guitry. Du Plessis et son frère De Buhy ont ordre d’occuper Mantes. Echec de la tentative. Du Plessis se réfugie à Jametz.</p>
+        </div>
+        <div>
+          <pb n="68" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Du Plessis et François de Valois</head>
+          <p>Le duc d’Alençon envoie du Plessis auprès de Louis de Nassau, à Maëstricht. Du Plessis fait connaissance de M<hi rend="sup">me</hi> de Pas-Feuquères. Fiançailles de du Plessis. Il va rejoindre l’avant-garde, commandée par Thoré, d’une armée d’invasion levée par Condé en Allemagne. Marche de ces troupes le long de l’Aisne et de la Marne. Combat de Dormans (10 octobre 1575). Du Plessis prisonnier. Sa mise à rançon. Il est mis en liberté. Mariage. Du Plessis veut passer en Berry rejoindre le duc d’Alençon. Son départ. Du Plessis auprès du duc, qui veut le dépêcher en Angleterre. Sous l’influence de Catherine de Médicis, ce voyage est retardé.</p>
+          <p>Du Plessis élu aux Etats généraux par le baillage de Senlis. Rupture du projet de voyage en Angleterre. Du Plessis quitte le service du duc d’Alençon</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Les premières ambassades</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les premières négociations en Angleterre
+           <lb/>(1577-1578)</head>
+          <p>Du Plessis au service du roi de Navarre (décembre 1576). Voyage de du Plessis auprès du maréchal de Montmorency à Chantilly. Il revient auprès du roi de Navarre. Siège de Marmande. Négociation de la trêve.</p>
+          <p>Affaire d’Eauze.</p>
+          <pb n="69" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_05.TIF/full/full/0/default.jpg"/>
+          <p>Envoi en Angleterre (avril 1577) avec pleins pouvoirs. La reine Elisabeth lui accorde ses demandes. Arrivée en Angleterre de Michel de la Huguerye, ambassadeur du prince de Condé, qui contrarie la négociation de du Plessis et obtient un secours de la reine d’Angleterre. Prise de La Charité et défection de Damville. Dispositions de la reine, défavorables au roi de Navarre. Signature de la paix en septembre 1577. Elisabeth, désireuse d’entretenir la guerre en France, accorde à du Plessis le secours demandé.</p>
+          <p>Arrivée en Angleterre d’un ambassadeur du duc d’Anjou, pour négocier le mariage de ce prince avec la reine. Du Plessis, qui désapprouve ce mariage, passe aux Pays-Bas.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les négociations, de 1578 à 1580, en Flandre
+           <lb/>et en Angleterre</head>
+          <p>Du Plessis retrouve en Flandre la Huguerye, qui est à l’armée du duc Casimir. Il essaie de savoir ce qu’il négocie. Du Plessis traite avec Jean-Casimir pour le roi de Navarre.</p>
+          <p>Du Plessis prend part aux affaires des Pays-Bas, fait partie du Conseil du prince d’Orange et apaise la sédition d’Embise.</p>
+          <p>Avis donnés au roi de Navarre sur le rétablissement de la religion romaine en Béarn, sur des propositions d’alliance faites par les Guise.</p>
+          <p>Maladie due à un empoisonnement. Conseils donnés au sieur des Pruneaux, agent du duc d’Anjou, sur la conduite à tenir, par ce prince, aux Pays-Bas.</p>
+          <p>Lorsque la guerre est reprise (printemps de 1580), du Plessis passe en Angleterre, pour négocier un secours, qu’il <pb n="70" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_06.TIF/full/full/0/default.jpg"/> obtient d’abord, qu’ensuite une intervention maladroite du prince de Condé fait refuser.</p>
+          <p>Voyage en France auprès du roi de Navarre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les négociations, de 1581 à 1582</head>
+          <p>L’envoi à la diète d’Augsbourg.</p>
+          <p>Retour de du Plessis aux Pays-Ras. Il se prépare à rentrer en France. Les Etats, le prince d’Orange le retiennent avec l’assentiment du roi de Navarre.</p>
+          <p>Arrivée du duc d’Anjou aux Pays-Bas. Son attitude vis-à-vis de du Plessis. Il lui fait bon visage, mais ne l’emploie en aucune affaire. – Pour se débarrasser de lui, le duc d’Anjou se fait représenter par lui et par le duc de Bouillon à la diète d’Augsbourg. Les instructions de cette ambassade dressées par du Plessis. Retards apportés à leur départ. Le trésorier du duc d’Anjou a l’ordre de ne pas fournir à du Plessis l’argent et les présents nécessaires à ce voyage. Du Plessis renvoie sa dépêche au duc d’Anjou, se retire à Buhy, puis se rend vers le roi de Navarre en novembre. Sa nomination à la surintendance de la maison de Navarre en 1584.</p>
+          <p>Conclusion sur le rôle de du Plessis-Mornay, comme diplomate, de 1577 à 1582.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Quatrieme partie
+         <lb/>L’homme privé</head>
+        <p>Le caractère de du Plessis-Mornay. Besoin d’activité. Son courage et sa hardiesse. Habileté et sang-froid.</p>
+        <p>Sa foi, ses préoccupations religieuses. Manque de tolérance.</p>
+        <pb n="71" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_07.TIF/full/full/0/default.jpg"/>
+        <p>Qualités intellectuelles. Curiosité universelle. Esprit réfléchi, à tendance philosophique ; bon sens ; jugement net.</p>
+        <p>M<hi rend="sup">me</hi> de Mornay d’après ses Mémoires. Simplicité et modestie ; courage. Sa foi.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion générale</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p>Lettres inédites de du Plessis-Mornay conservées à la Bibliothèque Nationale.</p>
+        <pb n="72" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_09/ENCPOS_1910_09_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

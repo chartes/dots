@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Histoire des <hi rend="i">Missi dominici</hi></title>
+        <author ref="https://www.idref.fr/055825796">Charles Charronnet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_10.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 23-24</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Histoire
+        <lb/>des
+        <lb/><hi rend="i">Missi Dominici</hi></head>
+      <byline>
+        Thèse soutenue par
+        <forename>Charles</forename>
+        <surname>Charronnet</surname>
+      </byline>
+      <p>Les <hi rend="i">Missi</hi> sont d’origine germaine. Ce sont les anciens <hi rend="i">principes</hi> et <hi rend="i">comités</hi> dont parle Tacite. En Gaule, ils sont nommés par le <hi rend="i">mallum</hi> d’abord, puis par le roi, qui en fait des officiers judiciaires et des inspecteurs, quelquefois même des agents fiscaux. Chaque chef de bande établi en Gaule paraît avoir eu ses <hi rend="i">Missi.</hi> Il faut distinguer ces officiers en <hi rend="i">Missi discurrentes</hi> et en <hi rend="i">Missi dominici</hi> : les premiers sont ces envoyés judiciaires, ces inspecteurs dont nous venons de parler; les seconds sont des commissaires extraordinaires détachés par le roi pour examiner un fait spécial, et statuer sur ce fait dans un sens déterminé.</p>
+      <div>
+        <head>Des <hi rend="i">Missi</hi> sous la première race</head>
+        <p>La première apparition des <hi rend="i">Missi</hi> dans l’histoire ne date pas de l’année 579, comme on l’a dit, mais bien de l’année 540. Nous en avons d’autres exemples en 547, 562, 576. Puis vient l’affaire de Limoges en 579. Un assez grand nombre de chartes et de documents font encore mention des <hi rend="i">Missi</hi> jusque vers la fin du règne de Dagobert. Les formules de Marculfe et d’Anjou en parlent également ; mais il faut se défier de ces formules.</p>
+        <p>Remarquons qu’il est fréquemment question des <hi rend="i">Missi</hi> sous les règnes de Chilpéric, de Clotaire II et de Dagobert ; c’est que ces princes ont eu un pouvoir assez étendu, et qu’ils ont fait faire des progrès aux institutions monarchiques. Après eux, les maires du palais, chefs de l’aristocratie, détruisent les instruments de domination des rois, et parmi eux les <hi rend="i">Missi.</hi> Ceux-ci ne reparaissent que vers 750.</p>
+      </div>
+      <div>
+        <head>Des <hi rend="i">Missi</hi> sous la seconde race</head>
+        <p>Les <hi rend="i">Missi</hi> de la première race se continuent jusqu’en 802 : leurs attributions sont augmentées en 789. En 802 sont créés les <hi rend="i">Missi majores</hi>, qui sont les <hi rend="i">Apostoli</hi> de l’empire romain. Les <hi rend="i">Missi</hi> de la première race subsistent toujours avec le titre de <hi rend="i">Missi minores.</hi> Au reste, l’institution des <hi rend="i">Missi majores</hi> eut plus d’importance en théorie qu’en pratique, car elle n’empêcha point l’avènement de la féodalité. L’époque de l’affaiblissement de la royauté est aussi l’époque de la disparition des <hi rend="i">Missi.</hi></p>
+        <p>Sous la troisième race, les agents qui remplacent les <hi rend="i">Missi</hi> sont les enquêteurs.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

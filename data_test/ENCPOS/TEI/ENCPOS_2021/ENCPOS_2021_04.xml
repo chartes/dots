@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_04" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Saint-Omer, un collège et ses livres. Étude des livres et de la bibliothèque du collège des Jésuites anglais de Saint-Omer (1593-1762)</title>
+        <author>Marguerite Cinotti</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 43-54</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Saint-Omer, un collège et ses livres
+        <lb/>Étude des livres et de la bibliothèque du collège des Jésuites anglais de Saint-Omer (1593-1762)</head>
+      <byline>
+        par
+        <forename>Marguerite</forename>
+        <surname>Cinotti</surname>
+        <roleName>diplômée de master</roleName> 
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Le collège jésuite anglais a laissé à Saint-Omer une élégante façade classique, silencieux décor de théâtre, déserté par ses acteurs dont on peine aujourd’hui à reconstituer le jeu. Après l’expulsion de la compagnie de Jésus en 1762, la Révolution a pris soin de disperser définitivement ce qui restait de la présence des religieux anglais implantés là depuis 1593. De la bibliothèque, il subsiste aujourd’hui quelques centaines de volumes de maigre valeur, rescapés plus ou moins mutilés des exactions militaires, et un étonnant catalogue imprimé datant de 1752.</p>
+        <p>L’histoire des bibliothèques religieuses n’a plus le vent en poupe ; celles-ci offrent pourtant un accès privilégié à la culture savante d’une communauté. L’historiographie récente a surtout mis en lumière leur rôle dans l’affirmation de l’identité d’un ordre ou d’un établissement. À Saint-Omer, ce point est d’autant plus pertinent que, nés en Angleterre, éduqués pour la plupart sur le continent mais destinés à exercer un ministère dans leur patrie, les Jésuites anglais font figure d’hapax dans l’histoire de la compagnie de Jésus. Dans un ordre qui se distingue par sa hiérarchie centralisée, l’uniformité stricte de ses maisons, la réglementation sévère encadrant ses bibliothèques, la collection des Jésuites anglais de Saint-Omer ne manque pas de susciter l’intérêt.</p>
+        <p>À cet enjeu s’ajoute un véritable défi lié au silence documentaire entourant cette bibliothèque, qui invite à revoir l’approche ordinairement adoptée dans l’étude de bibliothèques jésuites, laquelle consiste surtout à croiser les sources statutaires de la compagnie et les titres contenus dans les inventaires. Or l’examen minutieux des volumes subsistants permet de dépasser la simple liste de titres et de pénétrer dans les modes d’appropriation des ouvrages par la communauté autant que dans leur utilisation individuelle par les religieux.</p>
+        <div>
+          <head>Sources</head>
+          <p>Les archives des collèges jésuites forment ordinairement des liasses bien fournies dans la série D des archives départementales. Ces cartons contiennent, selon les collèges, des pièces liées à la fondation, à la construction des bâtiments, des lettres d’amortissement, des livres de comptes, des relevés de quittances et autres documents de gestion, etc., et surtout le procès-verbal d’inventaire dressé en 1762 à l’occasion de l’expulsion des Jésuites de France. Les Archives nationales conservent également sous les cotes M 245 à M 249 une copie des procès-verbaux concernant les collèges qui relevaient de la juridiction du parlement de Paris, qui couvrait une bonne partie de la France. Or les Jésuites anglais de Saint-Omer ont brûlé leurs archives avant de fuir en août 1762, tandis que l’inventaire réalisé quelques semaines plus tard par les commissaires du roi a disparu dans l’incendie des archives départementales du Pas-de-Calais de 1915 et n’est pas conservé aux Archives nationales. Pour la bibliothèque du collège anglais de Saint-Omer, les sources traditionnellement mobilisées sont donc littéralement parties en fumée, une invitation à explorer de nouvelles pistes. De cette bibliothèque, il reste d’abord une source exceptionnelle, la première partie d’un catalogue imprimé en 1752. Deux exemplaires en sont aujourd’hui recensés : le premier à Heythrop College, la maison d’études des Jésuites à Londres, le second à la Routh Collection de la Palace Green Library à l’université de Durham. En outre, quelques centaines de volumes qui appartenaient à l’ancien collège anglais sont encore conservés à la bibliothèque d’agglo­mération de Saint-Omer et offrent un point de vue très riche pour l’histoire de leur utilisation effective. La collection d’images créée sous l’impulsion de Kathleen Comerford, de Georgia University, dans le cadre du <hi rend="i">Jesuit Libraries Provenance Project</hi>, qui rassemble plus d’une centaine de pages de titre et de reliures provenant de bibliothèques jésuites de tout l’Occident, offre d’indispensables références à l’aune desquelles les exemplaires de Saint-Omer peuvent être appréciés. Les archives de l’État à Gand conservent également, sous la cote BE-A0514/K44, une liste datée de 1619 d’une centaine de livres ayant appartenu au collège audomarois.</p>
+          <p>Les documents éclairant l’histoire du collège de Saint-Omer en général sont principalement conservés aux archives de la province britannique de la compagnie de Jésus à Londres sur Farm Street. À Durham, la Palace Green Library abrite sous la cote UC P43/1-22 quelques extraits de la correspondance adressée à un recteur du collège au <num>xviii<hi rend="sup">e</hi></num> siècle, avec des allusions à l’incendie destructeur de 1725. L’importance du collège de Saint-Omer dans l’histoire des Jésuites anglais a permis que les extraits les plus importants des <hi rend="i">Litterae annuae</hi>, les lettres annuelles qui étaient envoyées à Rome par le recteur d’un collège, ainsi que la correspondance de certains recteurs et d’élèves notables comme Charles Carroll, aient fait l’objet de précieuses éditions.</p>
+          <p>Aux Archives nationales, les documents produits par la vague de confiscations révolutionnaires en 1790, conservés dans la série F<hi rend="sup">17</hi>, permettent de situer la collection anglaise parmi les autres bibliothèques religieuses du Pas-de-Calais. Enfin, des documents comme les guides touristiques aux Pays-Bas méridionaux sous l’Ancien Régime, la correspondance de touristes anglais ou le plan-relief de la ville de Saint-Omer conservé au musée des Plans-reliefs jettent un éclairage sur des points ciblés de l’histoire de la bibliothèque.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>état des lieux de l’histoire des bibliothèques jésuites en France</head>
+        <div>
+          <head>Chapitre premier 
+            <lb/>sources normatives et inventaires, « autoroutes de la recherche » sur les bibliothèques jésuites</head>
+          <p><hi rend="i">Une politique du livre chez les Jésuites. —</hi> Dans la compagnie de Jésus, la culture du livre est particulièrement prégnante. Ceci tient aux origines universitaires de sa fondation mais surtout à la mission de prédication donnée par Ignace de Loyola à ses disciples, comme une contre-offensive à la Réforme. Par conséquent, les normes encadrant la bibliothèque dans la compagnie de Jésus sont aussi précoces que détaillées et elles sont régulièrement mobilisées dans les études consacrées aux collections jésuites.</p>
+          <p><hi rend="i">Les inventaires de 1762, une source surexploitée et limitée. —</hi> L’historiographie consacrée aux bibliothèques jésuites est assez maigre – neuf monographies tout au plus – et se fonde toujours sur les procès-verbaux d’inventaire dressés en 1762, à l’occasion de l’expulsion de la compagnie de Jésus du royaume. Archives nationales et départementales regorgent de ces documents de qualité très inégale d’un collège à l’autre. Ils détaillent la procédure, peu étudiée, des inventaires de maisons religieuses et permettent d’établir des parallèles avec les inventaires de 1790. Cependant les listes de titres fournies n’offrent au mieux qu’un point de vue étroit sur les bibliothèques.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Décloisonner l’histoire des bibliothèques jésuites</head>
+          <p><hi rend="i">Les bibliothèques jésuites au cœur de l’économie du livre. —</hi> Quelques études, en particulier celles du père de Dainville, restées sans postérité, invitent à décloisonner la recherche en inscrivant les bibliothèques jésuites dans un écosystème plus large, celui du monde du livre à l’époque moderne. Croiser archives de libraires et de bibliophiles, catalogues de vente, offre un point de vue plus complet de l’histoire de ces bibliothèques religieuses implantées en milieu urbain. Outre la liturgie, la bibliothèque est vraiment la passerelle privilégiée entre la cité et les Jésuites.</p>
+          <p><hi rend="i">Pour une histoire renouvelée des bibliothèques. —</hi> Une histoire de bibliothèque est forcément décevante si elle ne tente pas de lever le voile sur l’utilisation même des livres par les lecteurs. À cette fin, une prospection dans les exemplaires eux-mêmes s’avère très fructueuse car elle permet, à travers les marques de provenance, de retracer d’abord l’histoire de leur entrée dans les collections, puis d’esquisser l’usage propre dont ils sont l’objet au sein de la communauté. C’est dans cette voie nouvelle que s’oriente aujourd’hui l’historiographie.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>L’archéologie du livre au service d’une histoire renouvelée des bibliothèques</head>
+        <div>
+          <head>Chapitre premier 
+            <lb/>Une bibliothèque anglaise au cœur du fleuron de l’« Europe des dévots »</head>
+          <p><hi rend="i">Un dense réseau jésuite « à la frontière de deux catholicités »</hi>. — La bibliothèque des Anglais, loin de constituer un bloc isolé, s’inscrit dans un territoire profondément marqué par les conflits religieux puis par la reconquête tridentine. Selon l’organisation inhérente à la compagnie de Jésus, le collège anglais de Saint-Omer s’insère d’abord dans un réseau jésuite particulièrement dense dans cette région, avec des bibliothèques de taille inégale. À Saint-Omer même, la collection des Anglais côtoie celle des Jésuites wallons qui s’élève à onze mille titres, tandis que dans la ville voisine d’Aire, on en comptabilise quelque trois mille.</p>
+          <p><hi rend="i">Le collège de Saint-Omer, une plaque tournante du catholicisme anglais en exil. —</hi> Dans le contexte d’une persécution accrue du catholicisme en Angleterre, le jésuite Persons fonde, dans les Pays-Bas espagnols, à Saint-Omer, en 1593 un collège destiné à l’instruction de la jeunesse anglaise. Rapidement, l’établissement devient un véritable pôle autour duquel gravitent familles, soldats de confession romaine et congrégations féminines exilées.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>La bibliothèque des Anglais au cœur de l’économie audomaroise</head>
+          <p><hi rend="i">Une bibliothèque au cœur de la ville. —</hi> En dépit de son statut exceptionnel, de son peuplement étranger, de sa progressive autonomie vis-à-vis de la province belge de la Compagnie et de la méfiance qu’il s’attire de la part des échevins, le collège anglais s’efforce d’asseoir sa présence en ville. Il suscite et organise des festivités comme tout collège jésuite, invite la population à pénétrer dans le collège et à participer aux célébrations religieuses qui scandent l’année. Peu à peu, sa vocation exceptionnelle assure même au nom de la ville une réelle célébrité Or, contrairement à quelques-unes de ses homologues voisines des Pays-Bas, à Anvers, Bruxelles, Liège ou Louvain, la bibliothèque des Anglais de Saint-Omer ne constitue pas en elle-même un centre d’attraction : elle est unanimement ignorée des guides et récits de voyage publiés aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles. Cette désaffection ne tient pas à la pauvreté quantitative de ses collections mais à l’absence de curiosités patrimoniales ou <hi rend="i">mirabilia</hi>, ce qu’expliquent les deux incendies subis par le collège. Sur ce point, la bibliothèque des Anglais souffre certainement de l’ombre de la vénérable abbaye Saint-Bertin.</p>
+          <p><hi rend="i">Jésuites anglais et libraires : collaboration ou concurrence</hi> ? — Dès 1605, quelques années après sa fondation, le collège jouit de son propre atelier typographique. Simultanément, le seul imprimeur en ville, François Bellet, signifie son départ auprès des échevins en alléguant la concurrence nouvelle du collège. Pourtant, bien loin de rivaliser avec les imprimeurs locaux, la presse du collège a un rôle moteur pour l’activité typographique en ville puisque plusieurs imprimeurs sont formés au savoir-faire en ses murs et qu’ils assument des commandes anglaises. La production éditoriale du collège, quant à elle, est exclusivement destinée à un public anglais et n’empiète aucunement sur l’activité dévolue à un imprimeur ordinaire.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>La bibliothèque au cœur du collège</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>« Like the geological strata in the crust of the earth » Croissance et érosion de la bibliothèque du collège</head>
+          <p><hi rend="i">Une bibliothèque hors les murs.</hi>— À ses origines, la bibliothèque s’enrichit de dons provenant de catholiques anglais exilés aux Pays-Bas. Néanmoins, ses contours se révèlent flous et la collection instable jusqu’à la création d’une province anglaise au sein de la société de Jésus en 1623 : les livres transitent d’une maison à l’autre et le collège audomarois assume une fonction de centre d’appro­visionnement pour les Jésuites anglais qui ne constituent encore qu’une « mission », qualificatif inscrit sur quelques-uns des volumes publiés au début du <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Une lente sédimentation. —</hi> Malgré deux incendies destructeurs, en 1684 et 1725, la bibliothèque se développe et grandit à la faveur des achats, aujourd’hui impossibles à déceler, et des dons. Les premiers bienfaiteurs semblent être les jésuites eux-mêmes, les recteurs surtout qui font donation de leurs volumes personnels à l’occasion de leur mutation. Les noms d’anciens élèves sont également lisibles parmi les <hi rend="i">ex-dono</hi> : les catholiques anglais qui financent presque exclusivement le collège n’omettent pas de soutenir spécifiquement la bibliothèque, surtout après les deux incendies destructeurs que subit celle-ci.</p>
+          <p><hi rend="i">Dispersion. —</hi> L’expulsion des Jésuites en 1762 marque la fin de l’unité de la bibliothèque anglaise dont l’histoire suit désormais deux trajectoires. Une part des livres est emportée par les religieux à Bruges, où ils sont saisis en 1773 par les autorités autrichiennes à la suite de la suppression universelle de la compagnie de Jésus. Quant aux volumes restés à Saint-Omer, ils sont attribués à la communauté de prêtres séculiers qui succède aux Jésuites. Trente ans plus tard, à la Révolution, cette bibliothèque est confisquée et dépecée avant de rejoindre la bibliothèque municipale de Saint-Omer qui se met sur pied au début du <num>xix<hi rend="sup">e</hi></num> siècle. À cette époque mouvementée, une part importante de livres de théologie est vraisemblablement sacrifiée aux nécessités de la guerre.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Institutionnaliser le rapport au savoir écrit</head>
+          <p><hi rend="i">« A very handsome library ». —</hi> S’il est impossible d’attribuer une date au début de la bibliothèque, de multiples signes traduisent l’effort d’institutionnalisation de la collection par les pères, à commencer par l’attribution d’un local. Celui-ci occupe une place avantageuse dans le collège, au deuxième étage du corps de bâtiment donnant sur rue, derrière une façade ornée de 45 mètres de long. De l’autre côté, les baies s’ouvrent sur la cour intérieure, agrémentée en son centre d’un jardin, selon une disposition conforme aux recommandations de Claude Clément. Tout laisse penser qu’elle est reconstruite à l’identique après l’incendie de 1725.</p>
+          <p><hi rend="i">Les <hi rend="i">ex-libris</hi>, signes d’un travail invisible.</hi> — Marquer à la main sur le livre son appartenance au collège constitue la forme d’enregistrement la plus rudimentaire et, de ce fait, la plus utilisée. Les variations très légères de formulation témoignent du travail discret et efficace des bibliothécaires anonymes qui se sont succédé à la conservation des livres audomarois. Après des oscillations infimes autour de la forme <hi rend="i">Coll. anglor. societatis Jesu bibliot. Audom</hi>, c’est l’expression <hi rend="i">bibliothecae majori</hi> qui se répand au <num>xviii<hi rend="sup">e</hi></num> siècle. L’examen des écritures confirme qu’en cas de donation, c’est le bibliothécaire lui-même qui inscrit sur la page de titre la formule d’<hi rend="i">ex-dono</hi>. Enfin, l’exacte similitude graphique des inscriptions de cotes dans les ouvrages laisse penser qu’ils ont tous été cotés par la même main au début du <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">La reliure.</hi> — La reliure, nécessaire à la bonne conservation des textes, est généralement sommaire, en veau brun ou havane, agrémentée d’un encadrement de filets, le plus souvent par estampage à froid. Elle n’exclut parfois pas des coquetteries caractéristiques de l’artisanat d’outre-Manche. Pour plus de prestige, quelques volumes sont reliés au chiffre du collège qui connaît trois formes au moins, la plus caractéristique figurant le monogramme christique de la compagnie de Jésus, flanqué d’une palme et d’une branche d’olivier et cintré de la devise <hi rend="i">Jesu converte Angliam</hi>. Relier les livres au chiffre jésuite, pratique superfétatoire, s’avère relativement rare dans les maisons jésuites ordinaires, et, au vu de la date des livres concernés, traduit à Saint-Omer une phase, dans la première moitié du <num>xvii<hi rend="sup">e</hi></num> siècle, où le collège s’affirme et prend son indépendance après le rectorat glorieux de Schondonck.</p>
+          <p><hi rend="i">Le catalogue imprimé, acmé de la modernité bibliothéconomique ou caprice ? —</hi> En 1752, la bibliothèque se dote d’un catalogue, imprimé sur les presses du collège. Si l’utilité d’un tel document à la gestion d’une collection ne fait pas de doute, son caractère imprimé suscite l’interrogation. La piètre qualité de la mise en page, l’imprécision des entrées semblent en effet exclure une visée de diffusion. Le rangement des volumes par format, les titres réinventés, pointent plutôt vers un usage domestique mais on ne s’explique pas alors son impression. En outre, il est possible que celle-ci n’ait jamais été menée à son terme puisque dans les deux seuls exemplaires attestés, on ne trouve que la première partie, dédiée à la théologie.</p>
+        </div>
+        <div>
+          <head>Chapitre III 
+            <lb/>Les collections du collège anglais</head>
+          <p><hi rend="i">La composition du fonds de la <hi rend="i">bibliotheca major</hi>.</hi> — En croisant différents indices – le catalogue de 1752, le catalogue de la vente de la bibliothèque de Bruges en 1778, la part de livres restés à Saint-Omer – et en établissant des comparaisons avec la composition d’autres bibliothèques connues, on peut estimer avec prudence que la bibliothèque des Anglais de Saint-Omer se chiffre au minimum à quatre mille volumes, ce qui en fait une collection de taille moyenne dans le paysage des collections jésuites. Le choix des titres de théologie ancre résolument la bibliothèque dans le sillage du concile de Trente. Néanmoins la présence de nombreux volumes anglais, la place malingre réservée à la controverse janséniste largement supplantée par le débat avec les protestants, permettent à la collection de Saint-Omer d’échapper à la standardisation caractéristique des bibliothèques jésuites dans le royaume de France. En outre si les humanités dominent sans surprise les matières profanes, il est plus hasardeux d’apprécier réellement la collection scientifique des Anglais au seul vu des volumes restés à Saint-Omer dont l’archaïsme – aucune publication n’est postérieure à 1701 – ne laisse pas d’étonner.</p>
+          <p><hi rend="i">Une géographie du savoir.</hi> — La collection de livres est soumise à un indispensable classement, partiellement inconnu aujourd’hui. Du moins le fait que, dans le catalogue, disciplines théologiques et spirituelles soient dissociées en deux parties qui encadrent celle dédiée aux matières profanes, suggère la prééminence accordée aux matières religieuses. Cette disposition met sur un même plan lectures savantes destinées à l’étude et lectures destinées à nourrir la dévotion des religieux. Les inscriptions de cotes sur les pages de titre, quant à elles, si elles ne présentent aucune corrélation avec les lettres du catalogue de 1752, renvoient à la disposition physique des volumes, vraisemblablement répartis en travées étiquetées de A à N, chacune comptant sept rayons au moins.</p>
+          <p><hi rend="i">Des bibliothèques dans l’ombre. —</hi> Même si la réglementation relative aux bibliothèques jésuites, inspirée d’Ignace lui-même, est stricte, la collection de livres des pères anglais ne forme nullement un bloc monolithique. Outre l’enfer bien entendu – qui se décèle avec peine aujourd’hui –, elle se décline en plusieurs petites bibliothèques, celle du préfet des études, celle des pensionnaires, celle de la sodalité, entre lesquelles les échanges ne sont pas exclus. La bibliothèque ne forme pas le cadre figé, immuable que donnent à voir les normes statutaires : le livre s’infiltre partout, dans les chambres, au réfectoire, dans la salle d’étude.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Les usages du livre au collège de Saint-Omer</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Diversité des usages des livres chez les Jésuites</head>
+          <p><hi rend="i">La lecture, une activité obligatoire et encadrée. ­—</hi>La lecture est une activité inhérente à la vie religieuse, à plus forte raison dans un ordre qui entend se donner les moyens intellectuels de combattre l’erreur. La lecture est ordonnée à une fin, c’est pourquoi tous les jésuites ont un accès différencié aux collections selon leurs fonctions au sein du collège. Les livres portent des traces variées de leur utilisation : soulignements, croix marginales, commentaires sur le texte, index personnels. Ces signes traduisent surtout une appropriation intelligente du texte.</p>
+          <p><hi rend="i">La lecture vocale, au service de l’identité religieuse. —</hi> À l’opposé d’une lecture personnelle, menée librement, dont rendent compte ces diverses annotations, il est une lecture, souvent à peine effleurée par l’historiographie car plus difficile à identifier, mais centrale dans la vie religieuse : la lecture à voix haute. Cette lecture, au réfectoire ou dans la liturgie, humblement subie, qui n’appelle pas à la discussion, constitue pourtant le creuset d’une identité commune. Elle permet à tous les membres d’une communauté, savants profès comme coadjuteurs temporels, de communier aux mêmes textes. Ainsi la culture commune déborde de la bibliothèque.</p>
+          <p><hi rend="i">La bibliothèque laboratoire. —</hi> Comme le collège Louis-le-Grand a vu éclore en ses murs une foule de savants, de même Saint-Omer, doté de sa propre presse, est le lieu privilégié de l’écriture. La réglementation prévoit que le bibliothécaire veillera aussi à conserver la mémoire des événements qui scandent la vie du collège. Dans la mesure où, en dépit de deux incendies, le collège de Saint-Omer a joui d’une réelle stabilité institutionnelle par rapport aux autres fondations anglaises, sa bibliothèque a certainement représenté le plus formidable conservatoire d’archives des Jésuites anglais. En cela, elle représente un outil de travail précieux, notamment pour l’écriture de l’histoire de la province anglaise de la Compagnie.</p>
+        </div>
+        <div>
+          <head>Chapitre II 
+            <lb/>Livres d’écoliers</head>
+          <p><hi rend="i">La <hi rend="i">ratio studiorum</hi>, une tradition pédagogique bien vivante chez les Anglais. —</hi> En sus des lectures des pères, quelques dizaines de volumes gardent la mémoire de la présence des écoliers au collège. Ces titres couvrent exclusivement les humanités. Les quelques exemplaires de littérature contemporaine représentent surtout de la poésie néo-latine, un peu de poésie anglaise. Les lettres françaises quant à elles se distinguent par leur absence, renforçant l’idée qu’au collège, on privilégie malgré tout la formation de jeunes Anglais destinés à rentrer au pays pour y perpétuer le catholicisme.</p>
+          <p><hi rend="i">« L’imitation est l’horizon de l’annotation ». —</hi> Si les auteurs classiques constituent la base des lectures des écoliers de Saint-Omer, c’est aussi pour que ceux-ci apprennent à écrire eux-mêmes, non seulement en latin, mais encore en anglais, ce dont témoigne l’existence au sein du collège d’une <hi rend="i">writing house</hi>qui contenait sa propre collection de livres.</p>
+          <p><hi rend="i">Lire plume à la main</hi>. —Les manuels présentent généralement un aspect très usagé. Constellés de gribouillis en tous genres, essais de plume, dessins, jeux de mots, ils témoignent ainsi de la familiarité, libre de toute révérence obséquieuse, que les écoliers entretiennent avec leurs livres. S’y déchiffrent par ailleurs les signes d’une transmission active des volumes, qui passent très rapidement de main en main, parfois en quelques mois, consacrant par là leur statut de bien de consommation.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>Au milieu des Pays-Bas méridionaux, le collège anglais de Saint-Omer constitue, au fil des décennies et des vicissitudes, une collection de livres qui répond à la fois aux critères de la compagnie de Jésus et aux besoins pastoraux spécifiques des Jésuites anglais.</p>
+        <p>Si la possession d’un ouvrage ne présume pas d’une adhésion à son contenu, en revanche les inscriptions que renferment les volumes nous introduisent avec bonheur dans les pratiques qui entourent leur utilisation, que celles-ci procèdent de normes bibliothéconomiques ou traduisent son assimilation par le lecteur.</p>
+        <p>La cohabitation de deux populations au sein du collège anglais de Saint-Omer souligne avec acuité les différentes approches du livre. Pour le religieux, à qui le livre n’appartient pas en propre, le volume entre ses mains porte les traces de l’histoire de sa communauté ; chez l’écolier, le livre répond à des besoins immédiats et éphémères. À l’objet de consommation s’oppose l’héritage.</p>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Édition du catalogue de la bibliothèque du collège des Anglais imprimé en 1752. — Transcription d’un extrait du procès-verbal d’inventaire de la bibliothèque du noviciat jésuite de Watten en 1765 (archives départementales du Nord, 45 D 6).</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Tableaux illustrant les répartitions par discipline, langue et provenance géographique des fonds de la bibliothèque du collège des Anglais. — Liste des noms propres relevés dans les volumes provenant du collège des Anglais.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Gravure représentant le collège des Anglais. — Plan dit Titelouze de la ville de Saint-Omer. — Reproduction de la page de titre du catalogue imprimé de 1752. — Reproduction d’une liste d’ouvrages provenant du collège des Anglais (archives de l’État à Gand, BE-A0514/K44).</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

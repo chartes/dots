@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_06" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Étude sur l’histoire et l’organisation de l’abbaye de Sainte-Colombe de Sens, depuis son origine jusqu’à la fin du <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/026826747">Paul Deschamps</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_06.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 49-57</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="49" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Étude
+       <lb/>sur
+       <lb/>l’histoire et l’organisation
+       <lb/>de l’abbaye
+       <lb/>de
+       <lb/>Sainte-Colombe de sens
+       <lb/>depuis son origine
+       <lb/>jusqu’à la fin du <num>xv<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Paul</forename>
+        <surname>Deschamps</surname>
+        <roleName>Élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’abbaye bénédictine de Sainte-Colombe de Sens, élevée aux portes de Sens, fut fondée par le roi Clotaire II vers 620, non loin du lieu où la tradition rapporte que sainte Colombe fut martyrisée lors de la persécution d’Aurélien. Ce monastère dut sa notoriété à sa fondation royale et aux reliques de sainte Colombe et de saint Loup, évêque de Sens, qui y étaient conservées. Il ne disparut qu’à la Révolution. L’étude présente s’arrête à l’année 1486 : à partir de cette date, Sainte-Colombe se trouva soumise à des abbés commendataires. – Sources. Les <hi rend="i">Annales Sanctae Columbae Senonensis. </hi>Dom Cotron, <hi rend="i">Chronicon coenobii Sanctae Colombae Senonensis</hi> (1648).</p>
+      </div>
+      <div>
+        <pb n="50" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Histoire de l’abbaye</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les origines</head>
+          <p>Fondation de Sainte-Colombe, Saint Loup veut y être enterré (623). Dès les premiers temps, les moines de cette abbaye se constituent un patrimoine important grâce aux donations qui leur sont faites par les rois Clotaire II et Dagobert I<hi rend="sup">er</hi>, les évêques saint Loup de Sens et saint Didier d’Auxerre. En 660, Agon, abbé de Sainte-Colombe, reçoit d’Emmo de Sens une charte épiscopale. En 695, l’abbé Ranachaire fait confirmer ce privilège par de nombreux évêques.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La première moitié du <num>ix<hi rend="sup">e</hi></num> siècle</head>
+          <p>Après le concile d’Aix-la-Chapelle de 817, Louis le Pieux envoie l’abbé Benoît d’Aniane réformer l’abbaye. Dans la suite, les archevêques de Sens tentent à plusieurs reprises de faire tomber le monastère en leur pouvoir : c’est d’abord Jérémie qui, en 826. le réduit à son autorité. Les religieux s’affranchissent de cette suprématie en 833 (diplôme de Louis le Pieux). En 847, ils sont de nouveau en butte aux tentatives de l’archevêque Wenilon, mais grâce au privilège qu’Emmo accorda en 660 à leur maison, et à la suite de l’intervention de Loup de Ferrières, ils sont maintenus dans leurs prérogatives par Charles le Chauve (5 décembre 847). – En 858, lors de la guerre entre Charles le Chauve et Louis le Germanique, celui-ci donne à Wenilon l’abbaye de Sainte-Colombe en bénéfice.</p>
+        </div>
+        <div>
+          <pb n="51" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Les abbés laïques</head>
+          <p><hi rend="i">Les Welf</hi> (865-886). – Trois membres de cette famille, les comtes Welf, Conrad et Hugues l’Abbé sont successivement abbés laïques de Sainte-Colombe. Ces personnages confient le gouvernement spirituel et temporel du monastère à un moine portant le titre de prévôt et remplaçant l’abbé régulier. – Charte fausse attribuée à Conrad.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les abbés laïques (<hi rend="i">suite</hi>)</head>
+          <p><hi rend="i">Les ducs de Bourgogne</hi> (886 ?-936). – Sainte-Colombe tombe aux mains de Richard le Justicier, comte d’Autun et d’Auxerre, puis de Sens, et abbé laïque de plusieurs monastères de la région. Il prend le titre de duc de Bourgogne. Aperçu sur la politique de ce personnage. De son temps, les moines de Sainte-Colombe sont gouvernés par le prévôt Belto. A cause des invasions, Richard leur fait accorder par le roi Eudes un lieu de refuge dans l’enceinte de Sens (891). Betto reconstruit l’église et fortifie le monastère. Le duc de Bourgogne est enterré à Sainte-Colombe. Son fils Raoul, duc de Bourgogne, hérite de l’abbaye. Il est élu roi de France après la mort de Robert ; il est possible que ce dernier ail été enterré à Sainte-Colombe (?). Le roi Raoul est inhumé dans son abbaye sénonaise (936).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les comtes de sens</head>
+          <p>Une fois le danger des invasions passé, les vicomtes <pb n="52" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_04.TIF/full/full/0/default.jpg"/>établis dans les cités par les ducs francs vont s’affranchir de leur suzeraineté et se rendre indépendants. Le vicomte Fromond, lieutenant à Sens du duc Hugues le Grand, est chassé de la ville par des comtes du voisinage. Il la reprend en cachant des troupes dans le château de Sainte-Colombe dont il détruit ensuite les fortifications. A la fin de sa vie, il prend le titre de comte de Sens que ses descendants Renard I. Fromond II et Renard II garderont après lui.</p>
+          <p>Situation malheureuse des monastères sénonais pendant l’occupation de ces comtes qui sont continuellement en lutte avec les archevêques. Ils ne portent pas le titre d’abbés laïques de Sainte-Colombe, mais ils ont l’abbaye en bénéfice et s’attribuent les revenus de ses domaines. La ville de Sens est prise en 1015 par le roi Robert.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Le <num>xi<hi rend="sup">e</hi></num> et le <num>xii<hi rend="sup">e</hi></num> siècle</head>
+          <p>Le Sénonais, se trouvant réuni au domaine royal, voit s’ouvrir une ère plus prospère. La restauration de Sainte-Colombe, qui se trouvait dans un état de ruine complète à la fin du <num>xi<hi rend="sup">e</hi></num> siècle, est entreprise par les abbés de cette maison. Ils appellent les religieux de Cluny pour les aider. Lettre de Pierre le Vénérable à l’abbé de Sainte-Colombe, Thibaud, pour le féliciter sur son gouvernement. Louis VII accorde au monastère la « tuitio » royale. Au milieu du <num>xii<hi rend="sup">e</hi></num> siècle, on commence à construire une nouvelle basilique ; elle est consacrée en 1164 par le pape Alexandre III. A cette époque, l’abbaye reçoit du Saint-Siège un privilège d’exemption. – Associations de prières avec des monastères voisins.</p>
+        </div>
+        <div>
+          <pb n="53" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VII
+           <lb/>Le <num>xiii<hi rend="sup">e</hi></num> et le <num>xiv<hi rend="sup">e</hi></num> siècle</head>
+          <p>Prospérité de l’abbaye à cette époque ; des domaines considérables constituent son temporel. Le pape Grégoire IX fait établir certaines réformes à Sainte-Colombe (1231-1232). L’abbaye jouit d’une grande renommée et ses abbés reçoivent du Saint-Siège des privilèges honorifiques, tels que le droit d’officier avec les ornements pontificaux. Un schisme se produit à Sainte-Colombe à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle : les moines ne peuvent s’entendre sur le choix d’un abbé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Le <num>xv<hi rend="sup">e</hi></num> siècle. Le commencement de la décadence</head>
+          <p>Les malheurs de la guerre de Cent ans causent la ruine de Sainte-Colombe. Sa décadence, apparente au début du <num>xv<hi rend="sup">e</hi></num> siècle, ne fait que s’accentuer dans la suite, malgré les indulgences promises par les papes à ceux qui viendraient en aide au monastère et malgré les quêtes faites dans toute la France par les religieux. – En 1432, les moines de Sainte-Colombe et ceux de Saint-Loup-de-Naud, prieuré dépendant de Saint-Pierre-le-Vif de Sens, mettent fin aux débats qu’ils avaient entre eux depuis trois siècles, à propos de la possession des reliques de saint Loup. Ils décident qu’à l’avenir ils quêteront ensemble avec leurs reliques réunies. – Les efforts des deux derniers abbés réguliers, Guichard Byerne et Jean Bulton (mort en 1486), rendent pendant quelques années à l’abbaye un semblant de prospérité.</p>
+        </div>
+        <div>
+          <head rend="uc">Catalogue des abbés</head>
+          <p/>
+        </div>
+      </div>
+      <div>
+        <pb n="54" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Organisation</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’établissement des menses au <num>ix<hi rend="sup">e</hi></num> siècle
+           <lb/>et la réforme de benoit d’Aniane</head>
+          <p>Les réformateurs envoyés dans les monastères par Louis le Pieux après les conciles d’Aix-la-Chapelle de 816-817, comprenant que la ruine des maisons religieuses est causée par les abbés séculiers, réservent une part du temporel pour les besoins des moines. Ces biens « segregata ad stipendia fratrum » formeront plus tard la mense conventuelle. L’abbé Benoît d’Aniane joua un rôle considérable dans l’établissement du régime des menses ; il introduisit ce système à Sainte-Colombe, où il avait été envoyé par Louis le Pieux pour organiser la réforme.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La situation juridique</head>
+          <p>Situation privilégiée des moines dans le diocèse. – Les évêques du <num>vii<hi rend="sup">e</hi></num> siècle leur reconnaissent une certaine indépendance (charte d’Emmo). Immunités royales. Privilèges de protection du Saint-Siège (bulle d’Innocent II, 1143). Tous ces privilèges ont pour but principal d’assurer aux moines la libre possession de leur temporel, mais ne portent aucune atteinte aux pouvoirs spirituels de l’évêque du diocèse qui garde sur l’abbaye son droit de visite et de correction.</p>
+          <pb n="55" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_07.TIF/full/full/0/default.jpg"/>
+          <p>L’Exemption. – Adrien IV, en 1157, accorde aux moines de Sainte-Colombe le privilège de l’exemption par lequel ils sont soustraits à la juridiction spirituelle de l’archevêque de Sens et soumis directement au Saint-Siège. Obligations résultant de cette soumission envers le Saint-Siège : le pape surveille la discipline du cloître et fait établir des réformes par ses délégués (1231-1232) ; l’abbé nouvellement confirmé prête un serment d’obédience au pape ; cens d’un marabotin d’or dû à Rome. Avantages que tire l’abbaye de la protection spéciale du Saint-Siège : les moines soumettent leurs causes à ses représentants ; le pape nomme des conservateurs des droits du monastère ; privilèges honorifiques accordés aux abbés.</p>
+          <p>Rapports avec l’archevêque de Sens. – L’archevêque ne peut venir exercer les fonctions épiscopales au monastère sans y être invité par l’abbé ; celui-ci peut se faire donner la bénédiction abbatiale par un évêque choisi par lui. Les religieux, les tenanciers et les domaines de Sainte-Colombe sont soustraits à la juridiction diocésaine.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La situation juridique (<hi rend="i">suite</hi>)</head>
+          <p>La faveur spéciale dont bénéficia l’abbaye de Sainte-Colombe de la part des rois est due à sa fondation royale. – Remarque sur la concession faite par le roi Lothaire en 974 de la « foresta regia » sur une partie de la rivière de l’Yonne. – Les religieux étaient seigneurs justiciers dans un grand nombre de villages des environs de Sens Le « Bailli du chastel de Sainte-Colombe » jugeait « les hommes de Sainte-Colombe ». – Le pape Alexandre IV autorise les moines de Sainte-<pb n="56" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_08.TIF/full/full/0/default.jpg"/>Colombe à hériter des biens de famille, sauf des terres féodales : le principe de la « mort civile » des religieux apparaît au <num>xiii<hi rend="sup">e</hi></num> siècle, dans le droit français.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>L’administration intérieure</head>
+          <p>La réforme organisée à Sainte-Colombe en 1232 par ordre du Souverain-Pontife montre que le gouvernement de l’abbé n’était pas une autocratie ; sa gestion était soumise au contrôle des religieux réunis au Chapitre général Les séances du Chapitre général avaient lieu deux fois par an. La garde du sceau de l’abbaye était réglementée avec soin. L’abbé était l’élu des moines. Dérogations à cette règle : le pape et le roi intervinrent fréquemment dans la nomination de l’abbé. Détails d’une élection au <num>xv<hi rend="sup">e</hi></num> siècle. Les officiers claustraux administrent certains services sous la surveillance de l’abbé. – Les offices ne sont pas encore des bénéfices indépendants. – Fonctions du cellérier de l’eau à Sainte-Colombe. Les prieurs ; les moines. Les services de la Chambre et de la Pitancerie sont organisés et dotés dès le <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les prieurés et les cures</head>
+          <p>Les prieurés étaient des dépendances de l’abbaye établies dans les domaines éloignés. En 1300, le monastère de Sainte-Colombe possédait dix prieurés. Le monastère avait le droit de présentation sur un certain nombre d’églises paroissiales établies sur ses domaines.</p>
+        </div>
+        <div>
+          <pb n="57" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_09.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VI
+           <lb/>Le temporel</head>
+          <p>Comment le domaine de l’abbaye s’est constitué ; il est déjà important au <num>ix<hi rend="sup">e</hi></num> siècle. Il est fort amoindri par les abbés séculiers et les seigneurs bénéficiers. Les donations testamentaires et les fondations pieuses l’accroissent considérablement au <num>xii<hi rend="sup">e</hi></num> et au <num>xiii<hi rend="sup">e</hi></num> siècle ; il cesse de s’agrandir au début du <num>xiv<hi rend="sup">e</hi></num> siècle. La fortune territoriale du monastère à cette époque nous est connue par son « Livre des Revenus » qui a été conservé. Les biens sont divisés en quatorze « mairies ». Les droits sont perçus par le censier et les maires ; les menues redevances de chaque mairie sont affermées à ceux-ci. La plupart des terres sont amodiées. En dehors des revenus domaniaux et seigneuriaux, l’abbaye avait encore les revenus des foires et les revenus d’ordre ecclésiastique, tels que les offrandes des églises paroissiales, sur lesquelles elle avait le patronat, les anniversaires, les quêtes. – Comment les revenus étaient répartis entre les divers services de l’abbaye.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Appendice
+         <lb/>la charte d’Emmo de sens (660, 26 août)</head>
+        <p>Il semble que la charte épiscopale d’Emmo ait été remaniée et amplifiée vers l’an 847, alors que l’abbaye était menacée de tomber sous la dépendance des archevêques de Sens.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <pb n="58" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_06/ENCPOS_1911_06_10.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_03" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La viticulture en Bordelais au Moyen Âge</title>
+        <author ref="https://www.idref.fr/08157097X">Jean Barennes</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_03.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 19-26</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="19" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La
+       <lb/>viticulture en bordelais
+       <lb/>au moyen Age</head>
+      <byline>
+        par
+        <forename>Jean</forename>
+        <surname>Barennes</surname>
+        <roleName>Licencié ès lettres, Élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’histoire du commerce des vins de Bordeaux a déjà été faite. Il restait à étudier la viticulture et ses procédés. – Exposé du plan. – Limites du sujet dans le temps : des origines à 1500 ; dans l’espace : le diocèse de Bordeaux.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Documents utilisés aux Archives départementales de la Gironde, aux Archives et à la Bibliothèque municipale de Bordeaux, dans des châteaux de la Gironde ; à Paris, aux Archives Nationales et à la Bibliothèque Nationale. – Ouvrages imprimés.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>géographie viticole</head>
+        <p>Culture de la vigne en Bordelais à l’époque romaine. On ne sait rien des vignes bordelaises durant les invasions <pb n="20" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_02.TIF/full/full/0/default.jpg"/>et les premiers siècles du Moyen Age. Les plus anciens documents pour le Bordelais, au <num>xi<hi rend="sup">e</hi></num> siècle et au <num>xii<hi rend="sup">e</hi></num>, révèlent la présence de nombreux vignobles. Du reste, à cette époque, grande extension de la culture de la vigne dans toute l’Europe occidentale. Diminution progressive des vignobles dans certains pays, à mesure que les relations commerciales s’étendent. En Bordelais, au contraire, on constate leur développement. Noms donnés aux parcelles de terre complantées en vigne : <hi rend="i">trens</hi>, <hi rend="i">réges, cour</hi><hi rend="i">réges, cabotz</hi>, <hi rend="i">sadons</hi>, etc. – Etude sucessive des diverses parties du Bordelais.</p>
+        <p>1° Bordeaux et sa banlieue. – Les vignes y sont particulièrement nombreuses, surtout dans les terres occupées maintenant par la ville et les faubourgs (terres de palus et de graves).</p>
+        <p>2° Médoc. – Nombreuses mentions de vignes, tout spécialement pour le Haut-Médoc, mais les emblavures paraissent cependant de beaucoup supérieures aux vignobles. – Pas de renseignements spéciaux pour les terres qui constituent les grands vignobles actuels du Médoc.</p>
+        <p>3° Pays de Buch et de Born. – Quelques très rares vignobles dans ces pays, où, au Moyen Age comme maintenant, il y avait surtout des forêts et des landes.</p>
+        <p>4° Pays de Cernés. – Vignobles à Sauternes, à Barsac et dans les paroisses voisines.</p>
+        <p>5° Entre deux Mers et Benauges. – Des terres y étaient surtout complantées en vigne, dans les parties qui avoisinent la Garonne et la Dordogne. Vignobles autour de l’abbaye de la Sauve.</p>
+        <p>6° Entre Dordogne et Fronsadais. – Indications de vignobles aux environs de Saint-Emilion, Libourne et Fronsac.</p>
+        <p>7° Bourgès et Blayais. – La culture de la vigne y est assez générale.</p>
+        <pb n="21" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_03.TIF/full/full/0/default.jpg"/>
+        <p>Encouragements donnés à la viticulture par les rois d’Angleterre. Ce n’est qu’à partir du <num>xvi<hi rend="sup">e</hi></num> siècle que des règlements entravèrent en Bordelais la libre culture de la vigne.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Conditions des tenures de vignobles</head>
+        <p>Les vignobles sont très morcelés. Leurs divers tenanciers. La classe des « laboradors de binha ». – Exposé sommaire du régime des terres en Bordelais. Les baux en usage pour les vignes « a fazandura, a gaudence », etc. sont de même nature que pour les autres terres. – Baux relatifs à des terres incultes que le preneur s’engage à planter en vigne. Les conditions spéciales qu’ils comportent (dégrèvement de redevance pour un certain nombre d’années, etc., etc.) permettent de les rapprocher du traité de complant. – Vignes baillées, 1° à charge d’un cens fixe en argent ou en nature, 2° à charge d’une redevance de quotité, qui est une portion de la récolte annuelle ; on l’appelle « agreyra » ou agrière. – « Esporle » et lods et ventes dus pour les vignes. – Vente des vignes. Un exemple de mise en possession réelle, après contrat notarié, d’une vigne par le don, sur place, de sarments à l’acquéreur. – Preuves du changement de valeur d’une vigne au cours du <num>xv<hi rend="sup">e</hi></num> siècle. – Divers termes de paiement des cens ; ceux d’automne, après les vendanges, sont les plus usuels. – Gardes envoyés par le bailleur dans les vignes au moment des vendanges, pour assurer la perception des redevances. Salaire habituel de deux deniers et repas dus par le tenancier à ce garde. – Modifications des redevances : à la Sauve la crainte de la contagion fait transformer en cens en argent la redevance en nature due par des lépreux ; abaissement des redevances, par <pb n="22" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_04.TIF/full/full/0/default.jpg"/>suite des guerres et des intempéries. – Commise des vignes par le seigneur, dans certains cas déterminés par le contrat. Le tenancier, au contraire, paraît pouvoir les déguerpir quand il lui plaît.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Culture de la vigne</head>
+        <p>Les cépages. Leur variété chez les Romains et au Moyen Age. Le plant du Bordelais, dit <hi rend="i">traditionnel</hi> au <num>xvi<hi rend="sup">e</hi></num> siècle, est la « bidure », qui est devenue le « cabernet », toujours très en faveur en Bordelais et importé au <num>xviii<hi rend="sup">e</hi></num> siècle en Anjou, où il est connu sous le nom de « Petit Breton ». Rapprochement fait, dès le <num>xvi<hi rend="sup">e</hi></num> siècle, entre cette « bidure » ou « vidure » et la <hi rend="i">vitis biturica</hi> de l’époque romaine, mais aucun document du Moyen Age ne paraît appuyer cette tradition. Les chartes mentionnent seulement l’engagement de planter « de bon plant » ou de « bon seme » ou bonne semence. – La plantation des vignes en hiver et le provignage. Plantation des vignes, 1° en « réges » (en rangs ou en plein), 2° en « joualles » (vignes associées à des cultures intercalaires), 3° en treilles (tout particulièrement à Bordeaux). – Travaux ou « façons » nécessités par la vigne ; leurs noms et leurs saisons : taille, essarmentage, travail à la <hi rend="i">marra</hi> ou bêche, à la charrue ou <hi rend="i">arayre</hi>. Le labourage des vignes dans certaines régions du Bordelais. L’épamprage des vignes était fait par des femmes. – La fumure des vignes, interdite dans certains pays, paraît avoir été encouragée en Bordelais. – L’<hi rend="i">œuvre</hi>, c’est-à-dire les échalas (carrassons et paux), les <hi rend="i">lates</hi>, le <hi rend="i">vime</hi> (ou osier) pour lier la vigne, etc., etc. La vente de l’<hi rend="i">œuvre</hi> à Bordeaux ; sa longueur est déterminée. Elle provenait des <hi rend="i">aubarédes</hi> et <hi rend="i">vimeneys.</hi> Le remplacement des <pb n="23" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_05.TIF/full/full/0/default.jpg"/><hi rend="i">aubiers</hi> par l’emploi de divers arbres, principalement, aujourd’hui, par l’acacia, importé d’Amérique en France au <num>xvii<hi rend="sup">e</hi></num> siècle seulement. – Gelées, grêles et sécheresses funestes aux vignobles. Ravage des vignes par des insectes les « diestaux » et par des escargots ou « cogolhas ». – Prière pour obtenir la protection de Dieu sur les vignes et la destruction des animaux et insectes qui lui nuisent.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Vendanges</head>
+        <p>A Bordeaux, cri ou ban des vendanges, après l’inspection faite dans les vignes par des visiteurs nommés par la municipalité ou « Jurade ». Mesures de police toutes spéciales pour protéger les récoltes, avant le cri ou ban : interdiction de la chasse dans les vignes ; les bêtes (porcs, chiens, etc.) devaient être attachées. Défense de vendanger avant le cri, sous peine d’amende, pour les vendangeurs et les charretiers. – Défenses relatives à l’<hi rend="i">agras</hi> ou verjus. Usage du verjus très fréquent, semble-t-il, au Moyen Age et explications fournies sur sa fabrication par Pierre de Crescens. On ignore maintenant en Bordelais l’emploi d’un semblable verjus. – La date des vendanges varie entre la fin d’août et les premiers jours d’octobre. Les vendangeurs étaient pris à Bordeaux ou aux environs. Venir vendanger était parfois une corvée imposée aux tenanciers, corvée dont on pouvait se racheter. – Nombreux renseignements sur les vendanges dans les comptes de l’Archevêché de Bordeaux du <num>xiv<hi rend="sup">e</hi></num> et du <num>xv<hi rend="sup">e</hi></num> siècle. Chaque année, avant les vendanges, nettoyage des ustensiles et achats de paniers, etc. Les vendangeurs étaient nourris. Les charretiers qui transportaient, des vignes aux pressoirs, la vendange, dans des <hi rend="i">comportes, douils</hi> ou cuveaux. <pb n="24" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_06.TIF/full/full/0/default.jpg"/>– Dans les vignes de palu, les charrettes n’entraient pas, aussi devait-on recourir à des porteurs. – Les salaires des vendangeurs variaient suivant qu’ils étaient coupeurs, coupeuses, vide-paniers, porte-paniers, etc., etc.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Vinification</head>
+        <p>Nettoyage des celliers, cuviers et pressoirs. Aucune mention de pressoir banal pour le Bordelais. – On sait peu de chose des installations vinicoles. Le mot treuil, « trolium », employé pour désigner le pressoir. Réparation des treuils et des cuves avec de l’étoupe, de la <hi rend="i">bourre </hi>et de la mousse. Parfois les cuves étaient louées. Les raisins portés au cuvier étaient d’abord foulés. L’interdiction par Charlemagne de fouler la vendange avec les pieds ne fut peut-être jamais connue en Bordelais, au Moyen Age. En tous cas elle ne paraît pas y avoir été observée puisque le foulage par des <hi rend="i">foladors,</hi> occupés à « calcare vindemiam », est constant. Dans les domaines importants, ces <hi rend="i">foladors </hi>étaient surveillés. – Emploi de presse pour achever l’extraction du moût. – Les procédés de vinification semblent avoir été les mêmes pour la vendange blanche et la vendange rouge. – Il est difficile de donner des explications sur les usages relatifs à la fermentation et au décuvage ou « écoulages ». Les expressions « bullitio vini » et « vinum bullitum » se rapportent à la fermentation naturelle et non pas à une « bullition » artificielle ou pasteurisation. – La <hi rend="i">raspa</hi> (raffle ou marc de raisins) était vendue, et on l’utilisait pour en faire, en y ajoutant de l’eau, du <hi rend="i">retrovi</hi><hi rend="i">num</hi>, <hi rend="i">reyrevin</hi>, ou piquette. On obtenait des vins rouges, blancs, clarets ou clairets, des vins lymphatés, du pinpin, etc. Le vin clairet serait ce qu’on appelle aujourd’hui <pb n="25" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_07.TIF/full/full/0/default.jpg"/>du vin gris, c’est-à-dire du vin produit par un mélange de vendange blanche et de vendange rouge. – L’ouillage, ou « avelhagium », et le soutirage étaient pratiqués, mais le collage, le soufrage, la distillation, ne paraissent pas l’avoir été. – Un rituel bordelais du <num>xv<hi rend="sup">e</hi></num> siècle contient une « bénédiction » du vin nouveau.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>Logement des vins</head>
+        <p>Emploi de vaisseaux vinaires de bois, pour <hi rend="i">loger</hi> le vin. – Le mot fût désigne ces vaisseaux. – Les plus usités en Bordelais, au Moyen Age, de 1200 à 1500, étaient les tonneaux, les pipes, les barriques. Le tonneau valait deux pipes ou quatre barriques et correspondait alors à une mesure réelle, à un fût. Aujourd’hui au contraire le terme de tonneau, toujours usité, n’est plus qu’une simple mesure de compte et le tonneau de vin se loge dans quatre barriques de deux cent vingt-cinq litres. Ces tonneaux, malgré leur dimension (contenance de plus de neuf cents litres, semble-t-il), étaient chargés sur des navires. Peu à peu, au <num>xv<hi rend="sup">e</hi></num> siècle, les tonneaux sont moins fréquemment mentionnés et les pipes elles-mêmes finissent par disparaître. On ne conserva plus que la <hi rend="i">barrique bordelaise.</hi> – Autres vaisseaux vinaires au Moyen Age : carrals, hoguettes, barils, barriquots, etc., etc. – Le quartier des tonneliers, ou charpentiers de tonneaux, près de l’église Saint-Michel, à Bordeaux. Description d’une fête dite <hi rend="i">traditionnelle</hi> à laquelle les tonneliers prirent part au <num>xvi<hi rend="sup">e</hi></num> siècle. – Pour la fabrication des vaisseaux vinaires, emploi de merrain, « mayrame », provenant des forêts du Bordelais et des pays voisins : Bazadais, Agenais, Périgord, etc. Le merrain était inspecté, à Bordeaux, par <pb n="26" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_03/ENCPOS_1910_03_08.TIF/full/full/0/default.jpg"/> des visiteurs nommés par la Jurade. Décisions municipales, prises au début du <num>xv<hi rend="sup">e</hi></num> siècle, au sujet de cette inspection du merrain. D’un millier de merrain, on pouvait, semble-t-il, tirer 50 pipes. – Les noms des diverses parties des vaisseaux vinaires : <hi rend="i">fonssalha, barra</hi>, douelles ou douves, etc. Dès le Moyen Age, on cerclait les vaisseaux vinaires avec du <hi rend="i">coudre</hi> et de l’<hi rend="i">aulan.</hi> – Emploi habituel des vieilles barriques, préalablement réparées. – Le travail et le salaire à donner aux tonneliers étaient fixés à Bordeaux par la Jurade. – Les bouteilles n’étaient pas en usage, au Moyen Age, pour le vin. – Celui-ci ne se conservait pas longtemps. Des améliorations dans la vinification s’imposaient. Elles n’ont été réalisées que bien après 1500.</p>
+      </div>
+      <div>
+        <head rend="uc">Carte. – Dessins. – Tables</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

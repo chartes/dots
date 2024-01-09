@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Histoire du district d’Ancenis (1788-1800)</title>
+        <author>Paul Perrier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_14.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 107-115</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="107" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Histoire
+       <lb/>du
+       <lb/>district d’Ancenis
+       <lb/>(1788-1800)</head>
+      <byline>
+        par
+        <forename>Paul</forename>
+        <surname>Perrier</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Préface</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>le pays en 1789</head>
+        <p>L’agitation révolutionnaire en Bretagne et l’opposition du Parlement en 1788. La bourgeoisie contre les privilégiés : elle réclame le doublement du tiers. La convocation des États-Généraux. État de la subdélégation d’Ancenis : les divisions administratives, religieuses et féodales. Le chef-lieu, Ancenis, est la seule localité importante. L’esprit des bourgeois éclairés et leur hostilité contre les nobles. Le pays, dépourvu d’industrie, tire toutes ses ressources de l’agriculture.</p>
+      </div>
+      <div>
+        <pb n="108" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre II
+         <lb/>Les paysans et leurs cahiers</head>
+        <p>Avant 1789, toute la vie politique du pays se borne aux réunions des « généraux » de paroisse. Pour la première fois, la masse des paysans est convoquée aux assemblées de mars-avril 1789. Originalité des cahiers qui y furent rédigés : un grand nombre de paysans ont participé à leur rédaction et ont réussi à y faire inscrire leurs revendications. Influences que les paysans subirent : celle des présidents des assemblées, celle aussi des décisions prises par le Tiers à Rennes et à Nantes. La question de l’instruction populaire en 1789. Les cahiers révèlent une hostilité profonde entre paysans et nobles. Les attaques contre le régime féodal. Les revendications d’un caractère général sont rares, et la plupart visent des abus locaux et particuliers : vénalité, cherté et arbitraire de la justice seigneuriale, abus de la corvée des grands chemins et de la milice, le moulin banal. Charges qui pèsent sur la terre roturière : aggravation de l’aveu, du droit de franc-fief, des lods et ventes ; fraudes dans la perception des rentes seigneuriales ; le droit de chasse. Vestiges de servitude personnelle. Les usurpations seigneuriales et la lutte pour les « communs » entre le prolétariat rural et les propriétaires alliés aux seigneurs. Les entraves au commerce et la contrebande du sel dans les communes limitrophes de l’Anjou. Faux-sauniers et vagabonds. Le curé de paroisse, victime comme le paysan des privilégiés. La question de la dîme. L’esprit particulariste des paysans d’après leurs cahiers. Bourgeois et paysans.</p>
+      </div>
+      <div>
+        <pb n="109" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre III
+         <lb/>La Révolution fraternelle (1789-1790)</head>
+        <p>Tranquillité de la population pendant les premiers mois de 1789. Les paroisses adhèrent à l’abolition des droits féodaux. Les élections municipales de janvier-février 1790 : dès le début de la Révolution, on est embarrassé dans les campagnes pour trouver des sujets aptes à remplir les fonctions municipales. Les prêtres entrent dans les municipalités en 1790. La formation du district. Une bizarrerie administrative de l’ancien régime : le cas de la rue du Fresne. Elections des membres de l’administration du district (11 mai 1790). Grand rôle donné à cette administration par la Constitution. Difficultés qu’éprouve le district pour se faire accepter des municipalités qui lui restent hostiles. Les fêtes locales dans le district, lors de l’organisation des gardes nationales et des fédérations. Destruction des emblèmes de la féodalité. La « guerre aux châteaux » et la destruction des archives seigneuriales dans la Loire-Inférieure.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>L’application du nouveau régime (1791)</head>
+        <p>Application des lois nouvelles : les curés d’Ancenis et de Montrelais prêtent le serment à la constitution civile du clergé. Les refus. Election des curés constitutionnels du district (27 mars 1791). Troubles lors de l’installation des prêtres constitutionnels : les prêtres réfractaires refusent de leur céder la place et mènent contre eux une campagne de libelles ; on doit faire proléger les asser<pb n="110" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_04.TIF/full/full/0/default.jpg"/>mentes par la troupe. Malgré l’agitation religieuse, les biens ecclésiastiques se vendent bien ; la plupart des acheteurs sont des gens du pays, bourgeois, propriétaires, paysans, marchands, administrateurs ; les nobles et les prêtres achètent aussi. Un conflit à l’intérieur du district : l’affaire Barbot ; un administrateur proteste contre la politique religieuse de ses collègues ; intervention de la garde nationale qui demande à prendre sa part dans l’administration. Par suite des troubles, les nouveaux impôts rentrent très mal. Renouvellement des administrateurs du district (23 septembre 1791) et des municipalités (novembre). La liberté des votes est supprimée en fait. Le danger des contrebandiers et des vagabonds.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Contre-révolutionnaires et patriotes (1792)</head>
+        <p>Aggravation de la crise religieuse en 1792 : attitude séditieuse des réfractaires, que soutient une partie de la population ; il est de plus en plus difficile de réprimer les agitations. L’arrêté du département du 22 mars 1792 ordonnant aux prêtres insermentés de venir se fixer au chef-lieu. Le « concordat » des communes de Pouillé, Maumusson, Saint-Herblon, Belligné et la Chapelle-Saint-Sauveur, qui rédigent, le 1<hi rend="sup">er</hi> avril 1792, une pétition où elles protestent contre l’arrêté du 22 mars. Polémiques dans le district autour de la pétition. Mouvements à Montrelais en octobre 1792 : les mineurs veulent s’opposer au départ des grains pour Nantes. L’agitation des contre-révolutionnaires provoque de la part des patriotes des mesures de surveillance et de répression. Les assemblées primaires en août 1792. Le renouvellement des corps administratifs et judiciaires en novembre 1792. Le district attribue le succès des contre-révolutionnaires, lors des élections, au nouveau mode de suffrage.</p>
+      </div>
+      <div>
+        <pb n="111" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VI
+         <lb/>La révolte. La conspiration de Montrelais
+         <lb/>(janvier-mars 1793)</head>
+        <p>L’agitation des mineurs de Montrelais pendant la Révolution. Le district, hostile à la compagnie minière, fait procéder au séquestre des mines le 4 février 1793. Vains essais d’enrôlements fédéralistes dans le pays : la « tournée » du commissaire Gautrais. La loi sur le recrutement du 24 février 1793 et les dispositions de la population. Caractère et portée du soulèvement du 10 mars dans le district : les émeutes de Ligné, Saint-Mars-la-Jaille, Saint-Herblon, Montrelais. Mélange de spontanéité et de contrainte : aveux des insurgés. Les chefs et les meneurs, Françoise Després. Les révoltés, répartis en trois bandes, investissent le chef-lieu du district et l’attaquent le 13 mars. Ils sont repoussés. L’administration du district fait retomber sur les mineurs de Montrelais la responsabilité de la révolte.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Le district envahi (mars-décembre 1793)</head>
+        <p>Les rebelles continuent leurs attaques contre le district. Pour empêcher l’extension de la révolte, l’administration prend des mesures de répression : la loi du 12 mars et la commission militaire formée à Ancenis pour juger les rebelles (31 mars-21 avril 1793). Incursions des rebelles sur les deux rives de la Loire. A la suite de la prise de Saumur et d’Angers, l’armée de Bonchamps envahit le chef-lieu, que les corps administratifs évacuent le 16 juin 1793. Pendant leur absence, la ville est administrée par un Conseil provisoire élu par les habitants. Retour des administrateurs républicains le 11 juil<pb n="112" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_06.TIF/full/full/0/default.jpg"/>let ; nouvelles mesures de répression. L’armée vendéenne, après le passage de la Loire, occupe de nouveau le chef-lieu, le 18 octobre 1793, et une troisième fois le 16 décembre 1793, après la défaite du Mans. Elle doit se disperser à l’arrivée des troupes républicaines.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>Le gouvernement révolutionnaire du district.
+         <lb/>L’administration (1793-1795)</head>
+        <p>Premiers essais de gouvernement révolutionnaire dès le mois de mars 1793. Les représentants en mission l’organisent (mars-septembre 1793). Adhésion des républicains du district à la constitution de 1793. Un comité de surveillance établi à Ancenis, le 21 septembre 1793. Tableau de la désorganisation de l’administration et de l’impuissance des pouvoirs publics tracé par le district. La loi du 14 frimaire an II développe et renforce le gouvernement révolutionnaire ; nouveaux pouvoirs du district. L’installation des agents nationaux. Les commissaires du club de Vincent-la-Montagne renouvellent les corps administratifs du district (1<hi rend="sup">er</hi> avril 1794). L’agent national Douville : un jacobin de l’an II. Les préoccupations et les « tournées » de l’agent national. La désertion des charges municipales et l’impossibilité de faire exécuter la loi. La tâche de l’agent national. Les commissaires de Vincent-la-Montagne et la propagande montagnarde dans le district .</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>Le gouvernement révolutionnaire du district.
+         <lb/>La population (1793-1795)</head>
+        <p>Pour les paysans, la Révolution se résume en un mot : <pb n="113" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_07.TIF/full/full/0/default.jpg"/>la réquisition. Les réquisitions sont nécessaires, mais il y a de graves abus. Le pays épuisé par les enlèvements répétés de grains ; situation lamentable des communes viticoles : le chef-lieu en proie à la famine. Les spéculateurs et les faux commissaires. Pillages commis par les troupes républicaines en cantonnement. Le commissaire Savariau. Une expédition du général Tuncq à travers le district. Déprédations commises par les troupes de Varades. L’administration est impuissante à faire respecter la loi du maximum. Législation révolutionnaire contre les rebelles, les émigrés et les suspects. Les habitants du district inculpés de participation à la révolte ; leurs réclamations. Poursuites contre les membres du Conseil provisoire du 16 juin ; leur justification. Les listes d’émigrés et d’absents et les demandes de radiation ; l’absence des registres de l’état civil aggrave la situation des suspects. Défiance des administrateurs à l’égard des privilégiés. Nombreuses inscriptions erronées ou frauduleuses. L’administration n’avertit pas toujours les intéressés de leur inscription sur la liste : la liste du 11 pluviôse an III. Situation difficile des créanciers et des fermiers des émigrés. Destinées des petites gens pendant la Révolution. Pendant la durée du gouvernement révolutionnaire, il est impossible de mettre en vente les biens nationaux qui sont pillés par les chouans et par les soldats républicains. La politique religieuse : le district réclame contre les réfractaires des mesures de répression. L’œuvre de « déchristianisation » faite dans les communes du district par les commissaires de Vincent-la-Montagne. L’église constitutionnelle abandonnée des pouvoirs publics. Tentatives de pacification religieuse de la part de l’administration, à partir de floréal an II. Les réfractaires demeurent inconciliables : le cas de Bodinier.</p>
+      </div>
+      <div>
+        <pb n="114" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre X
+         <lb/>Le règne des chouans (1793-1795).</head>
+        <p>La terreur contre-révolutionnaire : rebelles, brigands et chouans. Origine des chouans d’après madame de La Rochejacquelein. Leur but : empêcher toute communication entre les campagnes et le chef-lieu. La défaite des communes patriotes. Les chouans attaquent Riaillé et les mines de Montrelais (prairial an II) ; ils obligent les municipalités patriotes à s’enfuir. Proclamation désespérée des communes patriotes du district (brumaire an III). Echec de la tentative de pacification (20 nivôse an III). Recrudescence de la chouannerie à la fin de l’an III. Les communes bloquées et affamées : Montrelais, Ancenis. Apparition des « chauffeurs ».</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XI
+         <lb/>Le démembrement du district. Les administrations
+         <lb/>cantonales (1795-1800).</head>
+        <p>Dangers que courent les républicains du district en l’an III : très petit nombre des votants lors de l’acceptation de la constitution du 5 fructidor an III. Le district supprimé et remplacé par six municipalités de canton. Pendant toute la période du Directoire, les citoyens prenant part aux élections sont très peu nombreux. Difficultés entre anciens chouans et « exclusifs » ; « scissions » électorales : exemple à Saint-Géréon. Incapacité et ignorance des élus. Par suite de l’insuffisance des candidats, les contre-révolutionnaires sont parfois élus aux charges municipales. Les embarras d’une municipalité de canton en l’an IV : Varades. Toute la tâche retombe sur les commissaires du Directoire, mal secondés par les agents et <pb n="115" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_09.TIF/full/full/0/default.jpg"/>adjoints. La destruction des registres de l’état civil. Le chaos des contributions et la disparition des rôles de l’impôt. Efforts des commissaires du Directoire pour réformer l’esprit public ; appréciations diverses qu’ils donnent sur l’esprit de la population. La majorité des paysans aspire à la paix. Retour aux mesures de répression contre les réfractaires après le 18 fructidor an V. L’organisation du culte décadaire dans les cantons et la célébration des fêtes décadaires, particulièrement dans le canton de la Rouxière. Les essais de réorganisation de l’enseignement primaire et l’ignorance des paysans à la fin de la Révolution.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XII
+         <lb/>Les effets de la guerre civile. Les derniers
+         <lb/>chouans (1795-1800)</head>
+        <p>Misère extrême de la population à la fin de l’an III et au début de l’an IV ; dépréciation des assignats : les habitants ruinés ne peuvent payer les impôts. L’emprunt forcé. La chouannerie est la principale cause de la misère du pays. Son organisation après l’an III : bandes de partisans formées de paysans, de contrebandiers et de déserteurs. Elle dégénère de plus en plus en brigandage. Les exploits des « chauffeurs de pieds ». Expéditions des commissaires à travers les communes. Principaux chefs de chouans. Tentative des chefs royalistes, en l’an VII, pour réunir toutes ces bandes. Les succès remportés par les rebelles, en l’an VII, forcent les municipalités de canton à évacuer les chefs-lieux. Elles y rentrent de pluviôse à ventôse an VIII. La pacification.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <pb n="116" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_14/ENCPOS_1911_14_10.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

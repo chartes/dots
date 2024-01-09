@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_NEXT" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pages postliminaires</title>
+        </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_NEXT.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. -225</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="225" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_NEXT/ENCPOS_1943_NEXT_01.TIF/full/full/0/default.jpg"/>
+      <p>TABLE DES MATIÈRES</p>
+      <p>Pages</p>
+      <p>Jury des examens de l’Ëcole.............. 6</p>
+      <p>Membres du jury désignés pour l’examen des thèses....	7</p>
+      <p><hi rend="i">Positions des thèses.</hi></p>
+      <p>L’exercice de la justice publique dans l’Empire carolingien, par Robert-Henri BAUTIER............. 9</p>
+      <p>Etienne Pasquier. Sa vie et ses recherches sur l’organisation civile française, par Paul BOUTEII. LER......... 19</p>
+      <p>Le « Ruralium commodorum opus » de Pierre de Crescent. Etude d’histoire économique, par Pierre BOYER..... 29</p>
+      <p>Le temporel de l’église cathédrale de Paris pendant les guerres de religion (1560-1610), par Marie-Thérèse CHA~ BORD....................... 37</p>
+      <p>L’administration des biens chez les Frères Mineurs, des origines au milieu du xvi® siècle, par Marguerite-Marie CLÉMENT....................... 41</p>
+      <p>Barthélemy de Roye, chambrier de France, par Pierre DAON. 49</p>
+      <p>Gaillard, Jacques et Raoul Spifame. Etude d’une famille au xvi<hi rend="sup">e</hi> siècle, par André DELMAS............ 55</p>
+      <p>Un chapitre de dames nobles : la collégiale Saint-Goéry d’Epinal, par Jean-Marie DUMONT.......... 63</p>
+      <p>Le bailliage de Saint-Pierre-le-Moutier, de sa création au milieu du xvi<hi rend="sup">e</hi> siècle, par Pierre DURYF......... 75</p>
+      <p>Le testament dans la coutume de Paris au xvt® siècle, par Marie-Antoinette FLEURY.............. 81</p>
+      <p>L’industrie du fer en France, de Colbert à la Révolution, par Bertrand GILLE.................. &lt;89</p>
+      <p>L’architecture gothique des xv<hi rend="sup">e</hi> et xvi<hi rend="sup">e</hi> siècles dans les an~</p>
+      <pb n="226" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_NEXT/ENCPOS_1943_NEXT_02.TIF/full/full/0/default.jpg"/>
+      <p>cicns diocèses de Quimper et de Vannes, par Léon DE GROËR...................... 101</p>
+      <p>L’architecture militaire du xi<hi rend="sup">e</hi> au xvi<hi rend="sup">e</hi> siècle dans la viguerie de Grasse et le bailliage de Saint-Paul-de-Vence, par Denise HUMBERT.................. 109</p>
+      <p>Les industries de la soie en Languedoc au xvn<hi rend="sup">e</hi> et au xvni<hi rend="sup">e</hi> siècle, par Madeleine LAPORTE......... 117</p>
+      <p>L’assistance charitable à Blois avant la Révolution, par Jeannine LEMOINE................. 127</p>
+      <p>La communauté des maîtres maçons de Paris et sa juridiction aux xvii<hi rend="sup">e</hi> et xvm<hi rend="sup">e</hi> siècles, par Jean-Jacques LE~ TRAIT...................... 135</p>
+      <p>Etude sur les évêques et le diocèse de Bayeux au milieu du xv<hi rend="sup">e</hi> siècle (1431-1479), par Bernard MAHIEU...... 143</p>
+      <p>Les corps de métiers toulousains au xm<hi rend="sup">e</hi> et au xiv<hi rend="sup">e</hi> siècle. Etude suivie de la publication du <hi rend="i">Livre des métiers,</hi> par Georgette MARIE-SAINT-GERMAIN.......... 155</p>
+      <p>Politiques, ligueurs et huguenots en Vivarais à la fin du xvi<hi rend="sup">e</hi> siècle (1574-1600), par Nicole MAUFRONT..... 161</p>
+      <p>Guillaume de Conches et le <hi rend="i">Dragmaticon Philosophiae. </hi>Etude et édition, par Clotilde PARRA......... 175</p>
+      <p>Les seigneurs de Montlaur, des origines au xv<hi rend="sup">e</hi> siècle, par Odette PONTAI................... 183</p>
+      <p>Les eaux et forêts dans la maîtrise particulière de Grenoble au xvm<hi rend="sup">e</hi> siècle, par Suzanne REPITON-PRENEUF....	191</p>
+      <p>Le duché de Bourgogne aux xi<hi rend="sup">e</hi> et xn<hi rend="sup">e</hi> siècles, par Jean RICHARD.............’........ 199</p>
+      <p>L’architecture religieuse flamboyante dans les anciens archi~ diaconés du Vexin français et du Vexin normand, par Monique RIVOIRE	 ..209</p>
+      <p>L’architecture civile privée dans le Pays ehartrain, par Hélène VERI. ET................... 217</p>
+      <p>					UAUPELEÏ-GOUVERNEUR, IMPRIMEUR A NOGENT-LE-ROTROU. – 2088-3 1943.</p>
+      <p>Visa de la Commission de contrôle du papier N“16.115</p>
+      <pb n="227" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_NEXT/ENCPOS_1943_NEXT_03.TIF/full/full/0/default.jpg"/>
+      <pb n="228" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_NEXT/ENCPOS_1943_NEXT_04.TIF/full/full/0/default.jpg"/>
+    </body>
+  </text>
+</TEI>

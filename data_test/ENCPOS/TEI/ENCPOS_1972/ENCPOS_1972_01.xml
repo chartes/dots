@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_01" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les statuts d’une colonie génoise en Corse : Bonifacio à la fin du Moyen Âge</title>
+        <author ref="https://www.idref.fr/105979813">Marie-Claude Bartoli</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_01.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 9-13</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="9" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_01/ENCPOS_1972_01_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les statuts d’une colonie génoise en corse :
+       <lb/>Bonifacio à la fin du moyen âge</head>
+      <byline>
+        par
+        <forename>Marie-Claude</forename>
+        <surname>Bartoli</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Pour se maintenir dans l’île de Corse, enjeu principal de l’antagonisme politique et commercial qui opposait en Méditerranée occidentale Pisans et Génois, la République de Gênes avait fondé deux villes-forteresses sur des lieux qu’elle considérait comme les positions clés de l’île : Bonifacio au sud, Calvi au nord. Dès la fin du <num>xii<hi rend="sup">e</hi></num> siècle, elle avait envoyé des colons à Bonifacio et elle leur concéda, en 1321, une série de franchises et immunités, qui firent du petit port une ville à statut privilégié.</p>
+        <p>Rédigés au cours des <num>xiv<hi rend="sup">e</hi></num> et <num>xv<hi rend="sup">e</hi></num> siècles par les habitants de Bonifacio, les statuts ont été rassemblés dans le <hi rend="i">Libro rosso,</hi> qui se présente comme un code de lois et de règlements civils, criminels et économiques, complétant les statuts génois et les adaptant aux nécessités de la colonie.</p>
+        <p>Témoignage précieux des franchises de la colonie, les statuts bonifaciens constituent la principale source de ce travail. Avec les documents du fonds de la Banque de Saint-Georges, conservés aux Archives d’État de Gênes, ils ont permis de dresser un tableau de la colonie génoise à la fin du Moyen Âge.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Une colonie génoise : Bonifacio</head>
+        <p>Fondée par une grande cité marchande qui voulait être la maîtresse incontestée du bassin occidental de la Méditerranée, Bonifacio répondit aux exigences de la politique de sa métropole.</p>
+        <p><hi rend="i">Le cadre géographique.</hi> – Coupée du reste de la Corse par une chaîne granulitique, dépourvue d’arrière-pays mais située à l’extrémité d’un territoire <pb n="10" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_01/ENCPOS_1972_01_02.TIF/full/full/0/default.jpg"/>agricole restreint, Bonifacio est bâtie sur une longue presqu’île tenant à la terre par un étroit pédoncule qui la dote d’un port d’une sécurité absolue. Entièrement tournée vers la mer et facile à défendre, elle présentait un intérêt stratégique certain pour Gênes, qui fit d’elle la première ville de Corse pendant tout le Moyen Âge.</p>
+        <p><hi rend="i">Le cadre historique.</hi> – Le <num>xv<hi rend="sup">e</hi></num> siècle génois est une période de crise sociale et politique. Bouleversée par des luttes intestines entre l’aristocratie marchande et les artisans, désorientée par le déplacement des axes du commerce international, la Commune ne pouvait faire face à tous les problèmes qui l’assaillaient et confia l’administration des territoires d’outre-mer à un organisme privé, la <hi rend="i">Casa di San Giorgio.</hi> Aux troubles intérieurs s’ajoutait la guerre étrangère contre les Aragonais qui voulaient conquérir la Corse et la Sardaigne. En 1453, la Corse, divisée entre partisans de Gênes et partisans de l’Aragon, que la République se montrait incapable de soumettre, passa donc sous l’administration du Magnifique Office de la <hi rend="i">Casa di San Giorgio.</hi> Les difficultés propres de Bonifacio provenaient moins de l’instabilité chronique de la vie politique génoise que des convoitises belliqueuses de l’Aragon.</p>
+        <p><hi rend="i">Topographie et population.</hi> – Bonifacio, juchée sur la falaise et dominant à pic le détroit, était divisée en deux parties distinctes : d’un côté, la citadelle, couvrant la plus grande partie de la presqu’île avec ses bois, ses bâtiments ecclésiastiques et la forteresse proprement dite, de l’autre, la ville avec ses hautes maisons resserrées autour de l’église Sainte-Marie-Majeure, la <hi rend="i">loggia </hi>et le <hi rend="i">palazzo di città,</hi> centres de la vie publique.</p>
+        <p>Il est difficile d’évaluer la population qui vivait à Bonifacio, mais une liste d’habitants incomplète permet d’estimer qu’il y avait, à l’aube du <num>xvi<hi rend="sup">e</hi></num> siècle, trois mille cinq cents à trois mille huit cents âmes dont les trois quarts étaient d’origine ligure et le quart seulement d’origine corse. Chaque feu comprenait en moyenne 3,6 personnes.</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>L’organisation administrative et judiciaire</head>
+        <p><hi rend="i">L’administration.</hi> – Bonifacio jouissait d’un système administratif particulier dans l’île. Le magistrat suprême était le podestat, gouverneur envoyé par Gênes dans la colonie et non pas choisi par la population, comme le vocable pourrait le laisser penser. Mais les pouvoirs du podestat n’étaient pas réellement très étendus ; il ne restait en place qu’une année et, bien qu’il fût génois et envoyé par Gênes, c’était aux habitants que revenait la plus grande part de la vie municipale. Les Anciens, au nombre de quatre, renouvelés tous les trimestres, et les membres du Grand Conseil, composé de cinquante bourgeois élus pour un an, qui se recrutaient dans les familles bonifaciennes les plus influentes, détenaient le pouvoir législatif. Leur correspondance avec les autorités génoises montre combien celles-ci devaient compter avec eux.</p>
+        <pb n="11" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_01/ENCPOS_1972_01_03.TIF/full/full/0/default.jpg"/>
+        <p><hi rend="i">Les officiers municipaux.</hi> – Un certain nombre d’officiers étaient chargés de veiller à la bonne marche des institutions municipales. Leur fonction répondait aux divers besoins de la ville : les <hi rend="i">grasseri</hi> se chargeaient du ravitaillement, les <hi rend="i">ministrali</hi> de l’inspection des marchés, tandis que la police du port était confiée aux <hi rend="i">sanbarbari</hi> et celle des campagnes aux <hi rend="i">campari.</hi></p>
+        <p><hi rend="i">Les finances.</hi> – Les finances ne présentaient rien de remarquable. Un aspect, toutefois, reste assez original : la dualité des caisses. En effet, à côté de la caisse communale bonifacienne existait une caisse génoise, destinée à alimenter les dépenses militaires indépendantes de la colonie. La gestion financière laissait beaucoup à désirer ; devant les inquiétudes du Magnifique Office, le Grand Conseil votait à l’unanimité des réformes, mais le peu de bonne volonté qu’on mettait à les appliquer ne permettait pas à celles-ci d’être efficaces.</p>
+        <p><hi rend="i">La défense.</hi> – La défense de la ville était un des soucis majeurs de Gênes, qui envoyait à Bonifacio un châtelain, y avait à sa solde une garnison de continentaux et finançait les dépenses occasionnées par la réparation des remparts. Lorsque le châtelain était malade, le podestat devait immédiatement le remplacer et abandonner toutes ses activités civiles, qui pouvaient être assumées par les Anciens et le Grand Conseil. Le podestat paraissait être le premier personnage de Bonifacio, mais c’était le châtelain qui tenait le rôle principal dans une ville-forteresse à laquelle Gênes attachait une grande importance.</p>
+        <p><hi rend="i">L’organisation judiciaire.</hi> – L’organisation judiciaire était analogue à celle des autres pays de droit écrit. Au-dessus des tribunaux locaux de première instance et d’appel se situait la juridiction suprême génoise ; on pouvait faire appel au Doge et au Sénat puis, après que la Corse fut passée sous l’administration de la <hi rend="i">Casa di San Giorgio</hi> en 1453, au Magnifique Office.</p>
+        <p>La procédure judiciaire était la procédure écrite ou romaine. On jugeait selon les statuts de Bonifacio, le droit génois jouant un rôle supplétif lorsque les lois locales étaient muettes sur un cas.</p>
+        <p>L’étude des peines fait ressortir une plus grande clémence des juges à Bonifacio qu’à Gênes.</p>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>La vie économique et sociale</head>
+        <p><hi rend="i">Le ravitaillement.</hi> – Comme toutes les villes du monde méditerranéen, Bonifacio vivait dans la crainte de manquer de blé. La municipalité n’était pas seule à veiller à l’approvisionnement ; le gouvernement génois, pour prévenir les disettes, faisait envoyer les cargaisons de grains nécessaires. Parmi les moyens utilisés pour ravitailler la ville, le plus notable était la « part de la Commune » : tout Bonifacien qui faisait parvenir des denrées alimentaires en ville, était tenu d’en vendre, sans bénéfice, une partie à la population.</p>
+        <pb n="12" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_01/ENCPOS_1972_01_04.TIF/full/full/0/default.jpg"/>
+        <p><hi rend="i">Les produits du commerce.</hi> – Les cultures de la plaine de Santa-Manza procuraient aux Bonifaciens fruits, légumes et orge ; mais c’est surtout l’élevage des caprins, des ovins et même des bovins qui permettait de mettre à profit les espaces de maquis et alimentait l’artisanat local de tanneries.</p>
+        <p>En fait, c’est de l’exploitation de la mer et du commerce que les Bonifaciens tiraient leurs ressources ; la mer était poissonneuse et l’extraction du sel permettait de préparer des salaisons. L’exploitation du corail donnait lieu à un commerce fructueux.</p>
+        <p><hi rend="i">Le commerce.</hi> – Les privilèges dont jouissaient les habitants de Bonifacio – monopole du commerce pour le sud de la Corse, exemption des douanes de Gênes et des taxes portuaires de leur ville – les incitaient à se livrer au commerce de cabotage en Corse et sur le continent, et à pratiquer le commerce de transit entre Gênes et la Sardaigne. Ils utilisaient les techniques de crédit et de change en usage à Gênes. Les contrats maritimes étaient conçus assez libéralement pour permettre aux patrons de modifier leur itinéraire au mieux de leurs intérêts. Les marins avaient des devoirs très stricts, mais étaient protégés par la loi.</p>
+        <p><hi rend="i">Les difficultés économiques.</hi> – Le <num>xv<hi rend="sup">e</hi></num> siècle marque, pour l’économie méditerranéenne, un véritable tournant ; de nouveaux marchés s’ouvrent et Bonifacio ne se trouve plus dans le courant du commerce international. Née de nécessités stratégiques, la ville était destinée à péricliter si son utilité diminuait. L’indice le plus évident du malaise économique de Bonifacio est l’apparition de la piraterie, que les habitants pratiquaient soit directement, soit indirectement en accueillant les pirates étrangers dans leur port, abri sûr pour les amis, véritable coupe-gorge pour les autres. Les navires éviteront peu à peu la Corse du sud à cause de l’insécurité qui y régnait.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Bonifacio, malgré les bouleversements politiques et économiques du <num>xv<hi rend="sup">e</hi></num> siècle, ne perdait pas l’essentiel de son intérêt pour la métropole génoise. Première ville fondée par Gênes en Corse, Bonifacio restait encore, en cette fin du Moyen Âge, l’un des points d’attache vitaux de Gênes. Son port lui expédiait salaisons, fromages, peaux tannées et corail. Sa forteresse protégeait tout le sud de l’île des incursions aragonaises. Enfin, et surtout, sa population, d’origine et de tradition génoises, apportait à la mère patrie la certitude de son loyalisme et de sa fidélité, tandis que la possession de la Corse devenait pour Gênes, après la disparition des comptoirs orientaux, une question de vie ou de mort : sa perte aurait réduit la Superbe à un port de cabotage.</p>
+      </div>
+      <div>
+        <pb n="13" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_01/ENCPOS_1972_01_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Édition</head>
+        <p>L’édition du <hi rend="i">Libro rosso</hi> est faite d’après le manuscrit conservé à Ajaccio. Il est composé de statuts civils, criminels et économiques rédigés entre 1388 et 1539, en latin et en italien.</p>
+      </div>
+      <div>
+        <head rend="uc">Index</head>
+        <p>L’édition est suivie d’un index des noms de personne et de lieu et d’un index des matières.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p>Liste des podestats de Bonifacio de 1388 à 1501. – Extraits des statuts de Gênes. – Extraits du livre des franchises des habitants de Bonifacio.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <pb n="14" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_01/ENCPOS_1972_01_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

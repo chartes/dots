@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_03" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ordonnances de l’hôtel des rois de France ou de l’organisation intérieure de la maison des rois aux <hi rend="sc">xiii</hi><hi rend="sup">e</hi> et <hi rend="sc">xiv</hi><hi rend="sup">e</hi> siècles</title>
+        <author ref="https://www.idref.fr/056885989">Édouard Garnier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_03.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 6-7</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="6" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_03/ENCPOS_1850_03_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Ordonnances
+       <lb/>de
+       <lb/>l’Hôtel des rois de France,
+       <lb/>ou
+       <lb/>de l’organisation intérieure de la maison des rois
+       <lb/>aux <num>xiii<hi rend="sup">e</hi></num> et <num>xiv<hi rend="sup">e</hi></num> siècles.</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Édouard</forename>
+        <surname>Garnier</surname>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>Les ordonnances de l’Hôtel sont des règlements que les rois faisaient pour l’organisation intérieure, la police et l’approvisionnement de leur maison.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>Elles commencent à saint Louis ; la plus ancienne est l’ordonnance en langue latine du mois d’août 1261. C’est sous le règne de Philippe le Long qu’elles sont le plus nombreuses.</p>
+      </div>
+      <div>
+        <head rend="uc">III.</head>
+        <p>Les principaux officiers de l’Hôtel étaient le Chambellan, le Grand-Maître de l’Hôtel, le Chancelier, les Notaires, le Trésorier, le Confesseur, le Chapelain, l’Aumônier, le Panetier, l’Échanson et les Médecins.</p>
+      </div>
+      <div>
+        <head rend="uc">IV.</head>
+        <p>Il y avait dans l’Hôtel six offices ou métiers, savoir : la Paneterie, l’Échansonnerie, la Cuisine, la Fruiterie, l’Écurie et la Fourrière.</p>
+      </div>
+      <div>
+        <pb n="7" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_03/ENCPOS_1850_03_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">V.</head>
+        <p>En tête des ordonnances de l’Hôtel et avant les six métiers, mais sans se confondre avec eux, paraît la Chambre ou Hôtel du roi, avec un personnel nombreux de gens attachés à son service, tels que Chambellans, Valets de chambre, Sommeliers, Huissiers, Portiers et Roi des Ribauds.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

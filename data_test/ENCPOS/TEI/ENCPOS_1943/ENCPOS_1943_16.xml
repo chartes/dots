@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_16" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La communauté des maîtres maçons de Paris et sa juridiction aux <hi rend="sc">xvii</hi><hi rend="sup">e</hi> et <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècles</title>
+        <author ref="https://www.idref.fr/035011688">Jean-Jacques Letrait</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_16.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 135-142</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="135" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La communauté des maîtres maçons
+       <lb/>de Paris
+       <lb/>et sa juridiction aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles</head>
+      <byline>
+        par
+        <forename>Jean-Jacques</forename>
+        <surname>Letrait</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>On oppose habituellement les métiers libres aux métiers jurés. Parmi les anciens métiers de Paris, la communauté des maîtres maçons présente les caractères du métier juré érigé en office : ses membres, astreints au serment, portaient leurs différends devant une juridiction spéciale, issue des fonctions du maître maçon du roi, garde du métier au <num>xiii<hi rend="sup">e</hi></num> siècle. Par rapport aux autres communautés du bâtiment, celle des maçons apparaît comme autonome. Les membres actifs en étaient les maîtres.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>les apprentis.</head>
+        <p>Au <num>xvii<hi rend="sup">e</hi></num> siècle, bien qu’il ait perdu son caractère obligatoire, l’apprentissage continue à subsister avec les mêmes caractères <pb n="136" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_02.TIF/full/full/0/default.jpg"/> qu’au <num>xvi<hi rend="sup">e</hi></num> siècle et semblable à celui des autres métiers. En cas de non-observation du contrat d’apprentissage, il était fait appel à la juridiction. Certains apprentissages étaient onéreux pour les maîtres, tels ceux des enfants de l’hôpital de la Trinité.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>La main-d’œuvre proprement dite.</head>
+        <p>1. <hi rend="i">Compagnons et manœuvres.</hi> – Les compagnons, les mieux payés, étaient maçons, limousins, tailleurs de pierre, poseurs. Les manœuvres étaient terrassiers, goujats, bardeurs. On employait des femmes et des enfants comme manœuvres. Ces ouvriers étaient surveillés par des piqueurs et des appareilleurs. Ces derniers avaient une formation technique plus poussée et il existait des cours publics pour les perfectionner.</p>
+        <p>2. <hi rend="i">Recrutement de la main-d’œuvre.</hi> – La main-d’œuvre vient souvent du Limousin. Elle se recrute parfois au préjudice de la main-d’œuvre agricole. L’embauche se fait place de Grève. Les maîtres se répartissent la main-d’œuvre. Le chômage volontaire est réprimé.</p>
+        <p>3. <hi rend="i">Régime du travail.</hi> – Entre maître et ouvriers, contrat verbal devant témoins. En cas de conflit, appel à la juridiction. L’horaire varie avec les saisons ; le travail de nuit existe.</p>
+        <p>4. <hi rend="i">Rémunération des maçons.</hi> – Il est difficile de connaître un salaire. 11 varie avec la qualité de la main-d’œuvre (presque du simple au double pour un compagnon et un manœuvre), avec la saison pour les salaires à la journée ; souvent il y a des compensations en nature (fourniture de pain ou de soupe), libre disposition des matériaux (pour les puisatiers). Les salaires sont payés à la journée le plus souvent, parfois à la toise. La paye se faisait à la semaine ou à la quin<pb n="137" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_03.TIF/full/full/0/default.jpg"/>zaine. En cas de conflit, appel à la juridiction. Les ouvriers, répartis en compagnonnage, usaient de la grève.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Les maîtres.</head>
+        <p>1. Les marchés de caractère public s’adjugeaient au rabais. Les entrepreneurs et les propriétaires employaient surtout le marché à forfait. Il existait des tarifs officiels pour les guider.</p>
+        <p>2. Suivant les contemporains, le métier de maçon était lucratif ; on dut interdire de bâtir. Les maçons jouissaient d’un droit de priorité pour se faire payer leurs travaux.</p>
+        <p>3. Les maîtres prétendaient à la carrière libérale. Quelques-uns avaient une certaine curiosité intellectuelle. Un cas extrême est celui de J.-M. Sedaine, qui passa le chef-d’œuvre le 19 septembre 1750 et se fit un nom dans la littérature. Les maçons usurpaient souvent le titre d’architecte, réservé aux membres de l’Académie royale d’architecture. Les vrais architectes devaient toutefois passer le chef-d’œuvre de maçon pour exercer la profession d’entrepreneur.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>L’accès a la maîtrise.</head>
+        <p>Le chef-d’œuvre donnait normalement accès à la maîtrise. Le maître général, juge du métier, recevait le candidat, qui devait satisfaire à des conditions d’ordre moral et professionnel. Le jury comprit toujours des jurés maçons pourvus d’office et des maîtres maçons désignés par le maître du métier. Le chef-d’œuvre comprenait des dessins et un exercice pratique. Le nouveau maître payait des droits à la communauté et à la confrérie, ainsi qu’aux personnalités du métier. Pouvaient aussi accéder à la maîtrise les maîtres par lettres. <pb n="138" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_04.TIF/full/full/0/default.jpg"/>ceux des lieux privilégiés, ceux qui avaient été moniteurs dans des établissements charitables, les maîtres suivant la cour et les conseils du roi.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>L’administration du métier.</head>
+        <p>1. <hi rend="i">Les organes.</hi> – <hi rend="i">a</hi>) La communauté était représentée par l’assemblée générale des membres du métier. Celle-ci devait élire le comité qui gérait les biens de la communauté et expédiait les affaires courantes ; elle surveillait la gestion de ce comité et pouvait être réunie pour prendre des décisions importantes ; elle était convoquée par le syndic sur l’ordre du maître général ; – <hi rend="i">b</hi>) L’assemblée restreinte comprenait douze membres ; ses décisions valaient comme s’il y avait eu assemblée générale ; – <hi rend="i">c</hi>) Le syndic et l’adjoint étaient les dirigeants élus du métier. Ils étaient rééligibles. La communauté connut un syndic pourvu d’office qui eut une existence éphémère.</p>
+        <p>2. <hi rend="i">Activité des organes.</hi> – Revenus de la communauté : droits de réception à la maîtrise et amendes. Le syndic levait la capitation dont la communauté était responsable en corps et rendait les comptes chaque année. La communauté eut à racheter des offices, ce qui compromit sa situation financière.</p>
+        <p>Dans le domaine administratif, les assemblées avaient à satisfaire au devoir de solidarité : à l’intérieur de la communauté, vis-à-vis des maîtres malchanceux (c’est là surtout l’objet de la confrérie) ; à l’extérieur, en participant à la lutte contre les disettes.</p>
+        <p>La communauté prenait part aux cérémonies publiques et au rééquipement militaire de la nation. Nombreux ouvriers du bâtiment dans les troupes royales.</p>
+        <p>La communauté eut aussi un rôle législatif. Formation empirique de la législation. Essai, en 1694, de faire une œuvre d’ensemble,</p>
+      </div>
+      <div>
+        <pb n="139" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VI
+         <lb/>Le personnel.</head>
+        <p>1. <hi rend="i">Les jurés.</hi> – Les jurés sont à l’origine élus, puis pourvus d’office.</p>
+        <p>2. <hi rend="i">Les greffiers de l’écritoire.</hi> – Auxiliaires des jurés.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>L’exercice de la police.</head>
+        <p>Les visites sont hebdomadaires et ordonnées par le maître général. Elles sont faites par des jurés et des maîtres maçons désignés à tour de rôle, assistés d’un huissier. Tous les bâtiments faisaient l’objet des visites ; il fallait cependant une autorisation pour les bâtiments royaux et pour certains établissements charitables (hôpital de la Trinité).</p>
+        <p>Le but de ces visites était la poursuite des compagnons faisant acte de maître et la réparation des malfaçons. Pour empêcher les compagnons de faire acte de maître, on les obligeait à fournir des certificats pour lesquels ils payaient des droits et on leur interdisait la détention de matériel. Cependant, de véritables entreprises illicites, montées par des compagnons, subsistaient. Pour tromper la police, les compagnons mettaient leurs entreprises au nom d’un maître maçon, ou promettaient de se faire recevoir à la maîtrise. Les lieux privilégiés favorisaient le travail illicite.</p>
+        <p>Des actes de notoriété définissaient la responsabilité des entrepreneurs. Le marché « en bloc » est interdit jusqu’aux statuts de 1782.</p>
+        <p>Fours à plâtre, carrières, chaux firent l’objet des visites des gens de la police.</p>
+        <p>On procédait à des visites extraordinaires à la suite d’accidents ; la construction des murs, des pans de bois, des cheminées fit l’objet d’ordonnances des maîtres généraux.</p>
+        <p>Lutte contre les incendies et les inondations,</p>
+      </div>
+      <div>
+        <pb n="140" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VIII
+         <lb/>Les maîtres généraux.</head>
+        <p>A l’origine, le maître maçon du roi est garde du métier. Ce personnage, pourvu d’une charge, était reçu à la Chambre des Comptes. Par la suite, il le fut également au Parlement. A partir de 1645, il y eut trois maîtres généraux : ancien, alternatif et triennal. Seul le maître général ancien était obligatoirement maître maçon. A la fin de l’Ancien Régime, ce furent surtout des juristes qui acquirent ces charges.</p>
+        <p>Les maîtres généraux, reçus par les trésoriers de France grands voyers du royaume, étaient leurs auxiliaires et faisaient des expertises à leur compte. Gardes du métier, ils recevaient les maçons à la maîtrise, désignaient la police, jugeaient les maçons : en cas de conflit entre eux, appel à un avocat du Parlement pour les départager. Leurs suppléants : jurés pourvus d’office, garde-scel, doyen des procureurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>Le procureur du roi.</head>
+        <p>Création tardive : après 1770.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>Le garde-scel.</head>
+        <p>L’office de garde-scel est souvent rempli par le greffier. Le garde-scel prétendait jouer le rôle de procureur du roi.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XI
+         <lb/>Les auxiliaires de la justice.</head>
+        <p>Les greffiers : un greffier en chef ; un Commis au greffe. Les huissiers : ce sont des praticiens groupés en communauté et confrérie. Le receveur des amendes. Le concierge.</p>
+      </div>
+      <div>
+        <pb n="141" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_07.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre XII
+         <lb/>Les procureurs.</head>
+        <p>Praticiens groupés en communautés, les procureurs exercent concurremment avec les procureurs au Parlement.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XIII
+         <lb/>Compétence de la juridiction.</head>
+        <p>1. <hi rend="i">Etendue de la juridiction.</hi> – <hi rend="i">a) Territoriale</hi> : vicomté et prévôté de Paris ; – <hi rend="i">b) Ratione personne</hi> : toute personne qui s’occupe de maçonnerie ; parfois même des marchands de bois, des sculpteurs, des potiers en terre ; – <hi rend="i">c) Ratione materiae</hi> : tout ce qui a trait à la construction.</p>
+        <p>2. <hi rend="i">Rapports avec. les autres juridictions.</hi> – <hi rend="i">a) Avec le Parlement</hi> : depuis 1598, l’appel des causes se fait directement au Parlement ; – <hi rend="i">b) Avec les autres juridictions</hi> : défense des droits contre les empiétements des juridictions du Châtelet, des Consuls, du Bailliage, du Palais et autres.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre XIV
+         <lb/>Fonctionnement de la justice.</head>
+        <p>1. <hi rend="i">Les audiences,</hi> – <hi rend="i">a) Les lieux</hi> : Paris ; Versailles durant le règne de Louis XIV ; – <hi rend="i">b) Jours d’audiences</hi> : deux fois par semaine pour les audiences ordinaires ; une fois pour les audiences de police ; – <hi rend="i">c) Présidence :</hi> maître général en exercice ou suppléant.</p>
+        <p>2. <hi rend="i">La procédure.</hi> – <hi rend="i">a) Présentation du plaideur</hi> : par procureur le plus souvent ; – <hi rend="i">b) Etablissement de la preuve :</hi> par une série d’« appointements » ou jugements préparatoires qui nécessitent des expertises complémentaires ; – <hi rend="i">c) Les sanctions :</hi> ce sont les amendes, la démolition et reconstruction, les dommages et intérêts.</p>
+      </div>
+      <div>
+        <pb n="142" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_16/ENCPOS_1943_16_08.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre XV
+         <lb/>Administration de la juridiction.</head>
+        <p>La juridiction était administrée par un conseil restreint, composé de maîtres généraux et du procureur du roi. On consultait ce conseil pour avoir un avis compétent en matière de maçonnerie. Il réglait les cérémonies à l’intérieur de la juridiction. Il protesta contre les statuts de 1782. Il se solidarisa avec le Parlement exilé à Troyes en 1781. Il se montra très soumis à l’Assemblée nationale.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Communauté qui a joui d’une autonomie à peu près complète jusqu’aux statuts de 1782, qui enlèvent au maître général la réception des aspirants à la maîtrise, organe « semi-public » qui levait la capitation au profit du roi et surveillait la construction des bâtiments, veillant ainsi à la sécurité des citoyens, la communauté des maçons de Paris s’intégrait dans l’État et en était un rouage.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_2021_06" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Une activité artistique parisienne à la fin du Moyen Âge. Le travail des métaux cuivreux : acteurs et production (<hi rend="sc">xiv</hi><hi rend="sup">e</hi>  siècle-1540)</title>
+        <author>Anne-Cécile Desbordes</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 2021 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>2021</date>, <biblScope>p. 65-76</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="2021"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Une activité artistique parisienne à la fin du Moyen Âge
+        <lb/>Le travail des métaux cuivreux : acteurs et production (<num>xiv<hi rend="sup">e</hi></num> siècle-1540)</head>
+      <byline>
+        par
+        <forename>Anne-Cécile</forename>
+        <surname>Desbordes</surname>
+        <roleName>diplômée de master</roleName>
+      </byline>
+      <div>
+        <head>Introduction</head>
+        <p>Les derniers siècles du Moyen Âge marquent les ultimes moments du mythe de l’aurichalque, ce métal utilisé par les dieux que d’aucuns identifient au cuivre en raison de son éclat. Cet éclat, mais aussi la malléabilité, l’abondance et le prix raisonnable du cuivre en font un des métaux les plus appréciés aux <num>xiv<hi rend="sup">e</hi></num> et <num>xv<hi rend="sup">e</hi></num> siècles. Fondu, martelé, découpé, il permet la production d’objets si divers qu’il devient omniprésent dans la société médiévale : objets du quotidien comme de petits accessoires de costume ou des batteries de cuisine, mais aussi œuvres plus imposantes telles que des pièces de mobilier d’église, des tombes, des statues, des cloches et des armes à feu. À Paris, la fabrication de tels objets est le fait des fondeurs et des chaudronniers, qui fondent le métal et le travaillent en plaques. Ces artistes et artisans sont constitués en métiers et se concentrent autour de la rue Saint-Martin. Or ils demeurent méconnus et leurs œuvres sous-estimées, au contraire des bronzes italiens et français de la Renaissance ou de la production de dinanderie de l’espace belge. L’absence presque totale d’objets parisiens dans les collections françaises, due aux destructions de l’époque moderne et de la période révolutionnaire, explique ce désintérêt. Les études menées jusqu’ici assimilent ces artistes à des orfèvres ou à des sculpteurs ; ils méritent pourtant d’être mis en lumière, depuis le début du <num>xiv<hi rend="sup">e</hi></num> siècle, moment de production des premières cloches encore conservées <hi rend="i">in situ</hi> aujourd’hui, jusqu’à la décennie 1540, au cours de laquelle les cadres et l’esthétique de la Renaissance orientent le travail des fondeurs vers une tout autre direction.</p>
+        <div>
+          <head>Sources</head>
+          <p>Si les objets réalisés par les fondeurs et chaudronniers parisiens sont désormais rares et n’ont laissé que peu de traces matérielles, ils sont abondamment documentés par les sources archivistiques. Celles-ci éclairent également les conditions de vie des artisans qui les ont produits. Le remarquable regroupement géographique de ces professions, dans la rue Saint-Martin et ses environs, impose le recours aux registres d’ensaisinement du prieuré Saint-Martin-des-Champs, conservés aux Archives nationales sous les cotes S 1447<hi rend="sup">2</hi> à S 1448<hi rend="sup">2</hi>. Ces registres, documentant une période courant de 1398 à 1505 – avec des lacunes – constituent un éclairage indispensable sur la présence parisienne de ces artisans et donnent, à l’occasion, le nom de leurs épouses et de leurs voisins. Les documents du Minutier central des notaires de Paris offrent également un regard concret, à la fois sur la vie de ces artisans – à travers inventaires après décès et actes de mariage – et sur leur œuvre grâce aux marchés de commande qu’ils consignent.</p>
+          <p>Les aspects réglementaires du métier, touchant les corporations ou les structures de vente, sont documentés par le <hi rend="i">Livre des métiers</hi> d’Étienne Boileau, en particulier dans la version du manuscrit français 24069 de la Bibliothèque ­nationale de France, et par les ordonnances éditées des rois de France.</p>
+          <p>L’aspect des œuvres, aujourd’hui détruites dans leur immense majorité, est partiellement connu par des descriptions présentes dans les archives de leurs commanditaires, en particulier dans les inventaires de trésors. Les comptes de l’Hôtel-Dieu et surtout ceux de Saint-Jacques-aux-Pèlerins, connus par les travaux d’Ernest Coyecque, d’Henri Bordier et de Léon Brièle, sont les plus loquaces. Les archives des marguilliers et des chanoines de Notre-Dame de Paris et les inventaires du trésor de la Saint-Chapelle, tous édités par Alexandre Vidier, ainsi que les inventaires du trésor de Saint-Denis, publiés par Henri Omont, fournissent des descriptions semblables.</p>
+          <p>Enfin, les dessins de la collection Gaignières, partiellement conservés à la Bibliothèque nationale de France et indexés en ligne dans la base Collecta, sont une source inestimable pour connaître l’aspect des tombes réalisées par les ­fondeurs parisiens et intégralement détruites à l’époque moderne et à la Révolution.</p>
+        </div>
+      </div>
+      <div>
+        <head>Première partie
+          <lb/>L’activité : cadres et conditions du travail</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Les contours des métiers des alliages cuivreux</head>
+          <p>L’exécution d’objets de taille moyenne, grande ou monumentale est le fait de plusieurs professions. Fondeurs et chaudronniers s’y adonnent tous, mais ces deux métiers ne sont pas identiques et diffèrent autant par leur structure institutionnelle que par leurs productions.</p>
+          <p>Le métier de chaudronnier est régi à Paris par des statuts promulgués en 1327 et en 1420, puis confirmés et brièvement augmentés en 1484 et 1514. Les chaudronniers, répartis hiérarchiquement entre jurés, maîtres, apprentis et valets, sont soumis au cadre que mettent en place ces statuts. Ceux-ci régissent tant l’accès au métier que la qualité de sa pratique, l’approvisionnement en métal grâce aux courtiers et le déroulement des ventes. Avec d’autres métiers du métal, les chaudronniers sont placés sous une bannière en 1467.</p>
+          <p>L’activité de fondeur est quant à elle décrite dès le <num>xiii<hi rend="sup">e</hi></num> siècle dans le <hi rend="i">Dictionarius</hi> de Jean de Garlande. Des statuts pour les fondeurs figurent dans le <hi rend="i">Livre des métiers</hi>, mais ils ne régissent que la fabrication de petits objets de fonte. Pendant les derniers siècles du Moyen Âge et jusqu’à la promulgation de nouveaux statuts plus précis en 1572, les fondeurs de gros objets obéissent donc à des statuts qui ne correspondent pas tout à fait à la réalité de leur métier. Ces statuts n’encadrent ni la vente de la production ni les modalités d’apprentissage du métier et sont donc plus souples que ceux des chaudronniers. Les artisans de la fonte se présentent selon des titres très divers qui leur permettent de préciser leur production – « fondeur de cloches » – ou, au début du <num>xvi<hi rend="sup">e</hi></num> siècle, leur technique – « fondeurs en sable ».</p>
+          <p>Fondeurs comme chaudronniers peuvent se dire marchands. Plusieurs d’entre eux combinent les deux activités, ce qui implique qu’ils se forment dans les deux métiers, réalisent deux chefs-d’œuvre et, le cas échéant, versent deux fois les droits à la maîtrise.</p>
+          <p>La liste des travaux opérés par ces artisans et artistes permet de saisir l’activité de chaque métier : un chaudronnier travaille le métal déjà fondu ou en tôle, fabrique des objets de taille moyenne et fournit du métal pour des réalisations plus grandes ; les statuts lui garantissent le monopole de sa production. Lorsqu’il est également fondeur, il se livre à la fonte d’œuvres de plus grande taille : cloches, pièces de mobilier d’église, tombes, armes à feu. Cette activité ne fait pas l’objet d’un monopole et est proche du travail des orfèvres et des tombiers qui peuvent eux aussi réaliser ce type d’objet. L’entretien d’œuvres de cuivre, surtout du mobilier présent dans les églises parisiennes, constitue le deuxième pilier de cette activité.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Le travail du métal</head>
+          <p>Le vocabulaire médiéval est riche de termes désignant le cuivre et ses alliages, sans pour autant distinguer les détails de leur composition chimique. Plus que la nature précise de l’alliage, c’est sa qualité qui est réclamée à l’artiste, car elle garantit la clarté du mobilier de chœur et la qualité du son de la cloche. Le cuivre et le bronze sont également mis à l’honneur dans les textes antiques et bibliques, ce qui explique leur succès auprès des commanditaires. Le métal est acheminé depuis les mines d’Europe centrale et d’Angleterre jusqu’à la capitale sous forme de lingots ; à Paris, le commerce du métal neuf cohabite avec un dynamique marché d’occasion.</p>
+          <p>Une partie des accessoires de cuisine est fabriquée par martelage de la feuille, mais la plus grande partie de la production est fondue. La fonte se fait à la cire perdue, procédé coûteux que remplace le moule de terre pour les cloches, ce qui permet d’augmenter considérablement le volume des réalisations. La fonte d’une seule pièce est privilégiée ; l’objet subit ensuite des reprises – correction des traits – et reçoit des ornements – gravure de textes, dorure. Tandis que la coulée du métal est un procédé rapide, mais délicat car il expose à une forte chaleur et à des risques de brûlures, c’est la construction du moule qui demande le plus de temps. L’artisan se consacre donc surtout à cette dernière étape, mais son travail se révèle pénible et dangereux pendant tout le processus.</p>
+          <p>L’artisan travaille dans son atelier, souvent très proche de son domicile et partagé avec des collègues ; il se déplace également sur le parvis des églises pour fondre des cloches – mais il peut aussi fondre de tels objets à domicile. La fonte des armes à feu se fait dans une fonderie dédiée, d’abord à l’hôtel de ville puis sur un terrain appartenant au couvent des Célestins. Tous les travaux d’entretien sont effectués là où les objets sont installés.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>L’artisan et son entourage professionnel</head>
+          <p>La fabrication d’œuvres de cuivre s’exerce dans un cadre familial. Les femmes jouent dans un premier temps un rôle dans les structures professionnelles, mais celui-ci s’amenuise au fil du temps. Quant aux enfants de l’artisan, ils sont amenés à reprendre son métier, ce qui est particulièrement facile chez les chaudronniers dont les statuts avantagent les fils de maîtres dans l’accès à la maîtrise. Émergent ainsi des dynasties comme les Morant dans le troisième quart du <num>xv<hi rend="sup">e</hi></num> siècle, les Maugué à partir de la fin du <num>xv<hi rend="sup">e</hi></num> siècle, ou les Preudon dans la première moitié du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Au sein de l’atelier, apprentis et valets jouent un rôle subalterne mais essentiel à la production, particulièrement pour les tâches les plus répétitives et les moins techniques, ou pour déplacer les œuvres.</p>
+          <p>La fabrication des œuvres implique enfin de fréquentes collaborations entre plusieurs fondeurs, particulièrement pour fondre des cloches, avec d’autres professions du métal comme les serruriers et les orfèvres pour la dorure, ou encore avec des graveurs pour l’exécution des textes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie
+          <lb/>Les pratiques commerciales : de la commande au service après-vente</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Un préalable au travail : la commande</head>
+          <p>Pièces de chaudronnerie mises à part, la réalisation des œuvres de fonte répond à une demande le plus souvent formalisée par un marché passé entre un commanditaire et l’artiste. Toutes les catégories de la société commandent des œuvres de cuivre : laïcs ou ecclésiastiques, nobles, bourgeois ou personnes du peuple, même si ces dernières sont plus rarement représentées. Aucun groupe social n’a le monopole d’une commande, mais des habitudes sont visibles : pour une église, les cloches sont plutôt commandées par les marguilliers, alors que la commande de mobilier est davantage le fait des prélats ou de bourgeois. Le roi Charles V, certains grands prélats et plusieurs bourgeois développent l’habitude de passer commande auprès d’un fondeur en particulier et le recommandent à leurs proches.</p>
+          <p>Le marché permet de formaliser une commande : l’artiste et le commanditaire s’accordent sur l’apparence de l’œuvre, les matériaux employés, la rémunération. Ce texte est important puisqu’il marque le début de la relation entre l’artiste et le commanditaire, mais il ne manque pas de souplesse. L’artiste garde certaines libertés dans l’exécution de l’œuvre ; quant au commanditaire, il ne passe pas toujours lui-même commande : rois, princes et prélats délèguent cette tâche à des hommes de confiance. À la fin de la période et pour les œuvres les plus ambitieuses, c’est un artiste responsable du chantier qui sous-traite les opérations de fonte à un fondeur.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Mise en œuvre, livraison et garantie</head>
+          <p>L’artiste travaille suivant les spécifications et références précisées dans le marché. Celles-ci prennent le plus souvent la forme d’un portrait : rarement en trois dimensions, il s’agit le plus souvent d’un dessin sur papier, fourni par un peintre ou par le fondeur, qui peut alors l’avoir dessiné lui-même. L’artiste peut également avoir recours à une description précise de l’objet, travailler à l’imitation d’une autre œuvre, ou encore recevoir une devise à inscrire. Il travaille dans un délai compris le plus souvent entre deux et quatre mois.</p>
+          <p>Le travail de l’artisan ne s’arrête pas à la fabrication de l’objet. Une fois cette première étape achevée, il faut procéder à la livraison et à l’installation des pièces, qui, lorsqu’elles sont volumineuses, entraînent l’embauche d’une main-d’œuvre supplémentaire et plus compétente : charpentiers et maçons participent à l’installation des cloches. Ces tâches de transport et d’installation constituent un travail supplémentaire de la part du fondeur et lui sont payées comme telles.</p>
+          <p>Occasionnellement, les fondeurs garantissent les cloches qu’ils fondent, puisqu’il s’agit d’objets souvent sollicités et souvent endommagés. Rarement documentée, cette pratique semble néanmoins plus fréquente à la fin de la période.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Une rémunération souple</head>
+          <p>Réalisation de pièces de chaudronnerie, fonte de pièces massives et exécution de travaux d’entretien ont chacune leurs propres modalités de vente. Celles des pièces de chaudronnerie sont les plus simples : la vente a lieu à l’atelier et, certains jours de la semaine, aux halles de la chaudronnerie, mais l’usage de celles-ci ne s’impose pas chez les artisans et elles périclitent dès le <num>xv<hi rend="sup">e</hi></num> siècle. C’est donc la vente à l’atelier qui l’emporte. Les prix pratiqués pour ces objets modestes sont relativement bas, mais l’artisan complète ses revenus avec la vente de métal, plus lucrative, et des travaux d’entretien.</p>
+          <p>Les œuvres de bronze plus importantes, qui répondent à une commande, sont payées au poids de métal neuf et travaillé ; ce tarif tourne souvent autour de 20 l. t. les cent livres de métal. Le cas échéant, un second tarif est prévu pour le remploi de métal ancien. Une limite de poids est fixée dans les marchés afin de réprimer la tentation pour le fondeur de faire une œuvre plus lourde pour être payé davantage. Le versement d’une avance au moment de la passation du marché facilite l’achat de la matière première par le fondeur.</p>
+          <p>Les sommes versées pour les travaux d’entretien, enfin, sont relativement faibles mais constituent un appoint régulier et non négligeable ; elles compensent à la fois la faiblesse des profits réalisés sur la vente d’objets de la vie quotidienne et le caractère occasionnel des commandes les plus importantes.</p>
+        </div>
+      </div>
+      <div>
+        <head>Troisième partie
+          <lb/>Le profil social : des individus plutôt aisés et bien implantés dans la société parisienne</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Importance numérique et implantation géographique</head>
+          <p>Le grand nombre d’individus repérés – près de trois cents sur deux siècles et demi – témoigne de leur importance dans le paysage artisanal et artistique parisien. Les deux premières décennies du <num>xv<hi rend="sup">e</hi></num> siècle, ainsi que les années 1480 à 1530, sont particulièrement favorables à l’exercice de cette activité.</p>
+          <p>La plupart des fondeurs et chaudronniers résident à l’intérieur de Paris, où l’habitat est particulièrement dense, mais une petite partie est installée au-delà de l’enceinte de Charles V où les parcelles sont encore relativement larges. Dans la ville même, ils se concentrent principalement le long de la rue Saint-Martin et dans ses alentours, rues Quincampoix et Aubry-le-Boucher en particulier. Cette concentration géographique, exceptionnelle à l’échelle de Paris, leur assure un certain entre-soi. Le quartier de la rue Saint-Martin est ainsi presque exclusivement dévolu à la fabrication d’objets de cuivre. Cette partie de la capitale dépend du prieuré Saint-Martin-des-Champs, dont les fondeurs et chaudronniers tiennent leurs maisons et ateliers ; ils relèvent des paroisses Saint-Nicolas-des-Champs et Saint-Merry.</p>
+          <p>Les fondeurs et chaudronniers ont principalement pour voisins d’autres artisans du métal, des orfèvres – certainement moins prestigieux que ceux du Pont-au-Change – et des potiers d’étain. S’y ajoutent minoritairement des ­commerçants exerçant des métiers de bouche et la vente de textiles.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Un niveau de vie confortable offrant des possibilités d’ascension sociale</head>
+          <p>Aux sommes gagnées grâce à la vente de leur production et de leurs travaux d’entretien, les artistes et artisans ajoutent d’autres sources de revenus. Actifs dans le marché immobilier, ils font commerce de rente sur des immeubles.</p>
+          <p>Fondeurs et chaudronniers font partie des métiers les plus aisés de l’ensemble des travailleurs du métal. En comparaison de l’ensemble des artisans parisiens et des individus taillables, leur fortune apparaît modeste, mais les met à l’abri de la pauvreté. Une petite frange bascule néanmoins dans la pauvreté ou la criminalité : la fabrication de faux, particulièrement de fausse monnaie, est parfois une tentation.</p>
+          <p>À l’opposé, une partie des artisans se hisse dans l’élite urbaine. Bon nombre d’entre eux sont bourgeois de Paris, tandis que d’autres occupent des charges urbaines ou des postes importants au sein de confréries religieuses. En plus d’être honorifiques, ces charges sont synonymes de revenus supplémentaires ou d’exemptions d’impôt.</p>
+        </div>
+        <div>
+          <head>Chapitre III
+            <lb/>Relations personnelles et comportements sociaux : entre refus de l’entre-soi et solidarités professionnelles</head>
+          <p>Bien que majoritairement concentrés en un même quartier, ces artistes et artisans se lient, par leurs alliances familiales ou leurs transactions immobilières, à de nombreux autres milieux professionnels et ne cultivent pas l’entre-soi à l’excès. Au début du <num>xvi<hi rend="sup">e</hi></num> siècle se manifeste ainsi une ouverture aux artisans du livre.</p>
+          <p>L’entre-soi est surtout visible à la mort des artistes, puisque les inventaires après décès sont toujours rédigés en présence d’au moins un membre du métier du défunt. Les confréries sont le cadre de manifestations de piété : celle des fondeurs se place ainsi sous le patronage de saint Hubert.</p>
+        </div>
+        <div>
+          <head>Chapitre IV
+            <lb/>Un groupe à l’identité affirmée : les canonniers du roi</head>
+          <p>L’exercice d’une charge dans l’artillerie du roi est propre aux fondeurs – il ne concerne qu’un seul chaudronnier. Ceux-ci peuvent être canonniers ou fondeurs et canonniers, titre plus prestigieux. Les porteurs de ces charges fabriquent la poudre et tirent les coups de feu sur le champ de bataille, activités dangereuses qui justifient la hauteur de leur rémunération. Ils exercent ces fonctions en complément, et non en remplacement, de leur travail dans le monde civil.</p>
+          <p>Bien qu’elles ne soient pas héréditaires, ces charges sont parfois portées par les membres de dynasties de fondeurs, comme les Maugué entre 1469 et 1519. Ce sont eux qui connaissent par ailleurs la plus belle ascension sociale grâce à leurs stratégies matrimoniales, au point de devenir seigneurs au début du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head>Quatrième partie
+          <lb/>Diversité et aspect de la production : de l’objet utilitaire à l’œuvre décorative</head>
+        <div>
+          <head>Chapitre premier
+            <lb/>Typologie de la production et statut des objets : entre artisanat et objet d’art</head>
+          <p>Plusieurs catégories se dégagent au sein des œuvres de fonte : mobilier liturgique ; cloches ; canons ; tombes en relief, épitaphes et plates-tombes ; chandeliers ; production courante. Plusieurs types d’objets, pourtant assez largement représentés dans les collections européennes, brillent par leur absence dans les marchés conclus par les fondeurs : il s’agit notamment des heurtoirs de porte et des aquamaniles en bronze.</p>
+          <p>Par leur apparence et leur mode de production, les œuvres de fonte relèvent autant de l’artisanat que de l’œuvre d’art. Une partie d’entre elles résulte en effet d’une production de masse : ce sont les plates-tombes, les épitaphes, mais aussi les chandeliers et les croix. Dans le cas des œuvres plus imposantes que sont le mobilier liturgique et les cloches, le fondeur travaille fréquemment en s’inspirant d’une œuvre qui lui est indiquée à titre de référence, voire en l’imitant. La création ne se fait donc pas <hi rend="i">ex nihilo</hi>, mais prend place dans des cadres précis ; le fondeur a une obligation de résultat concernant la qualité et l’aspect de son œuvre.</p>
+          <p>Cela n’empêche pas le fondeur d’appliquer sa signature sur son œuvre. Le cas est particulièrement fréquent sur les cloches, dont l’inscription dédicatoire célèbre à la fois le commanditaire et le saintier. Une grande partie de la quinzaine d’œuvres signées le sont par Jean Jouvente, ce qui s’explique par le nombre de commandes royales qu’il honore.</p>
+        </div>
+        <div>
+          <head>Chapitre II
+            <lb/>Apparence de la production et procédés décoratifs</head>
+          <p>L’iconographie des différents objets est en rapport avec la fonction de ceux-ci : les images présentes sur les lutrins en exaltent l’importance pour la liturgie de la parole ; sur les crosses, elles glorifient le sacrifice de l’Eucharistie ; sur les colonnes, les anges servent à table. Les variations iconographiques, relativement rares, ajoutent à ces modèles des figures de saints plus spécifiquement liés au lieu de culte concerné. Les tombes sont elles aussi ornées d’une iconographie très normée, qui place le plus souvent sous un cadre architecturé l’effigie du défunt pourvu d’attributs permettant de l’identifier ; animaux, anges et éléments héraldiques complètent ce dispositif décoratif. À la fin de la période, les fondeurs, perméables aux changements esthétiques de la Renaissance, préfèrent aux cadres gothiques et anges thuriféraires une architecture d’inspiration antique peuplée de <hi rend="i">putti</hi>.</p>
+          <p>Les éléments décoratifs employés sur les cloches et les canons sont bien plus discrets, puisque c’est avant tout la qualité et l’efficacité de l’objet qui sont recherchées. Le décor se limite donc à des inscriptions et des marques permettant d’identifier le commanditaire ou, plus rarement, le fondeur. Cloches et canons, souvent fondus par les mêmes artistes, font l’objet d’une semblable économie du décor et se rapprochent donc par leur apparence même.</p>
+        </div>
+      </div>
+      <div>
+        <head>Conclusion</head>
+        <p>La fabrication d’œuvres en alliage cuivreux prend un véritable essor dans le Paris des deux derniers siècles du Moyen Âge. Pratiquée par les fondeurs et, plus occasionnellement, par les chaudronniers, elle débouche sur une production d’objets de tailles et de fonctions très variées. Ces artisans s’emploient aux nouvelles techniques permettant d’obtenir les bourdons et les pièces d’artillerie dont cette fin de Moyen Âge est demandeuse ; mais ce sont aussi eux qui meublent les chœurs des églises, répondent à une partie de la commande funéraire et fournissent en petits objets les demeures parisiennes.</p>
+        <p>Massivement concentrés dans un quartier de la ville, fondeurs et chaudronniers constituent un milieu familial très lié aux autres branches de l’artisanat parisien par des collaborations ou des relations personnelles. Leur exercice de charges royales et leurs opérations de spéculation immobilière, qui traduisent leur volonté de diversifier leurs revenus, témoignent de leur dynamisme économique. Connaissant un succès important dans la capitale, ils s’exportent dans d’autres villes de France, particulièrement pour la fonte des cloches. Leur mobilité, constante pendant toute la période, appelle à relativiser la prééminence que l’on prête aux productions des Pays-Bas.</p>
+        <p>Le tournant survient dans les années 1540, lorsque les mécanismes de la commande et l’esthétique des objets produits changent du tout au tout. Les fondeurs ne travaillent alors plus pour eux-mêmes, mais mettent leurs capacités techniques au service d’un autre artiste qui crée véritablement l’œuvre finale. Mise au service d’artistes italiens et tournant son iconographie vers les modèles antiques, la fonte parisienne entre alors pleinement dans la Renaissance. L’émission de nouveaux statuts à la fin du <num>xvi<hi rend="sup">e</hi></num> siècle consacre le considérable développement qu’a connu cette activité dans les derniers siècles du Moyen Âge.</p>
+        <div>
+          <head>Dictionnaire</head>
+          <p>Dictionnaire biographique de deux cent soixante artistes, listant leurs dates d’activité, leurs titres, leurs lieux de résidence, leurs réalisations et leurs relations personnelles.</p>
+        </div>
+        <div>
+          <head>Catalogue</head>
+          <p>Répertoires des œuvres en alliages cuivreux produites par les artistes parisiens : tombes (106 notices), mobilier liturgique (56 notices), cloches (65 notices), armes à feu (5 notices), chandeliers (7 notices), plaques gravées (88 notices), objets divers (19 notices).</p>
+        </div>
+        <div>
+          <head>Pièces justificatives</head>
+          <p>Marché de commande (1534). — Bref historique de la confrérie des fondeurs d’après un recueil de statuts de 1774. — Extraits du registre d’écrou du châtelet de Paris pour l’année 1488. — Extraits d’un registre d’ensaisinement du prieuré Saint-Martin-des-Champs pour les années 1504 et 1505. — Compte de Gaspard Bureau pour le personnel de l’ordinaire de l’artillerie en 1469.</p>
+        </div>
+        <div>
+          <head>Annexes</head>
+          <p>Tableaux récapitulant l’identité des artistes et des commanditaires, le montant des rémunérations et les délais de confection des œuvres. — Frise chronologique des principaux artistes recensés. — Relevé des signatures présentes sur les œuvres.</p>
+        </div>
+        <div>
+          <head>Planches</head>
+          <p>Enluminures représentant du mobilier de chœur et des tombes en cuivre.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

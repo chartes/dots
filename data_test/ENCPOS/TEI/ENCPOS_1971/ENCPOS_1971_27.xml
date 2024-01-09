@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_27" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Du tombeau de saint Martial au “château” de Limoges, étude de topographie historique</title>
+        <author ref="https://www.idref.fr/057158800">Marie-Christine Trouillet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_27.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 185-192</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="185" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Du tombeau de saint Martial
+       <lb/>au « château » de Limoges
+       <lb/>étude de topographie historique</head>
+      <byline>
+        par
+        <forename>Marie-Christine</forename>
+        <surname>Trouillet</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>En 1901, paraissait la thèse présentée à l’École des chartes par Charles de Lasteyrie sous le titre de <hi rend="i">L’Abbaye de Saint-Martial de Limoges.</hi> Cependant, une partie importante de l’étude de la topographie de l’abbaye de Saint-Martial a été renouvelée et précisée grâce aux fouilles entreprises ces dernières années par la Société archéologique et historique du Limousin. La première campagne, effectuée sur l’emplacement présumé du sépulcre de saint Martial, a amené la découverte de la crypte où avaient été enterrés les corps de saint Martial et de ses deux compagnons. Deux autres campagnes de fouilles, conduites au cours des étés 1966 et 1967, auxquelles nous avons participé, ont abouti à la mise à jour des substructions des deux églises parallèles à la grande basilique romane du Sauveur, Saint Benoît à l’extrême nord, et, communiquant avec elle, l’église Saint-Pierre-du-Sépulcre, attenante à la basilique du Sauveur. La construction, en 1968, d’un parking souterrain dans l’aire voisine de ces églises, n’a pas permis de fouiller cette zone, mais la publication en 1970, dans le <hi rend="i">Bulletin de la Société archéologique du Limousin,</hi> des observations faites alors, montre qu’il ne restait pas de traces de constructions monastiques dans ce secteur, les bâtiments claustraux édifiés de ce côté au <num>xiii<hi rend="sup">e</hi></num> siècle se situant plus à l’ouest.</p>
+        <p>Ces apports récents sont donc très importants pour la topographie des lieux, mais ils demeurent partiels. Aussi, une nouvelle étude centrée uniquement sur l’histoire de l’abbaye de Saint-Martial de Limoges ou sur la topographie de ses édifices, nous aurait amenée à revenir sur bien des points sans pouvoir y apporter de perspectives nouvelles. D’autre part, la topographie de la partie de la ville de Limoges, appelée le « château », créée dès la fin du m<hi rend="sup">e</hi> siècle à l’extérieur de la cité, autour du tombeau de l’évangélisateur du Limousin n’a été l’objet que de travaux sommaires et dispersés. C’est pourquoi il nous a paru bon d’entreprendre l’étude topographique de cette partie du Limoges actuel, en utilisant les textes anciens et les découvertes récen<pb n="186" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_02.TIF/full/full/0/default.jpg"/>tes. Nous verrons comment, en raison du culte rendu aux reliques du premier évêque de Limoges, s’est formée une véritable ville nouvelle, dont l’importance ira croissante et dépassera rapidement celle de la cité proche et plus ancienne, pour former le noyau de la ville moderne.</p>
+        <p>Assez rapidement organisé, le pèlerinage aux reliques de saint Martial est bientôt assez important pour qu’en 848 les chanoines de la cathédrale, qui célébraient les offices dans la <hi rend="i">basilica</hi> élevée dans le prolongement du tombeau, se séparent de l’évêque de Limoges et embrassent la règle de saint Benoît. Jusqu’en 1063 les abbés bénédictins sont les maîtres de l’embryon urbain, qui commence à prendre forme, le <hi rend="i">castrum Sancti Martialis</hi> ; il s’enclôt de murailles à la fin du <num>xii<hi rend="sup">e</hi></num> siècle. La seconde enceinte de pierre, du début du <num>xiii<hi rend="sup">e</hi></num> siècle, englobe dans une même fortification les anciens quartiers et les faubourgs. Le <hi rend="i">castrum Lemovicense</hi> atteint alors sa superficie maximum ; elle est délimitée par les remparts qui ne seront démolis qu’au <num>xviii<hi rend="sup">e</hi></num> siècle. Dans cette nouvelle ville, l’abbé de Saint-Martial n’est plus le seul maître temporel : les vicomtes d’un côté et de l’autre les bourgeois, qui se sont organisés en consulat au début du <num>xiii<hi rend="sup">e</hi></num> siècle, veulent également leur part. Néanmoins, l’abbaye de Saint-Martial demeure le pôle attractif de la vie du « château » et, avant d’entrer en charge, les nouveaux consuls élus viennent prier au tombeau de saint Martial. Le xvi<hi rend="sup">e</hi> siècle marque la décadence de l’abbaye ; sécularisée en 1535, elle tombe très rapidement en ruine par suite de la négligence des chanoines. La ville, dont le sort est intimement lié à celui de l’abbaye, connaît la fin de ses libertés à la même époque : reprise en 1566 par les vicomtes de Limoges, elle est réunie à la couronne par Henri IV, dernier vicomte de Limoges et, en 1792, elle est annexée à la cité et au bourg de Saint-Christophe, pour ne former qu’une seule ville. Quant à l’abbaye, elle est livrée aux démolisseurs, à la Révolution, et disparaît du sol de Limoges vers 1837.</p>
+        <p>Ce sont les différentes étapes de cette évolution, que nous nous sommes proposé de retracer.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Pour la période antérieure au <num>xiv<hi rend="sup">e</hi></num> siècle, outre les renseignements contenus dans les vies de saints, les sources sont constituées par les chroniques de Saint-Martial, dont les manuscrits se trouvent à la Bibliothèque Nationale. Un grand nombre de ces sources narratives ont été réunies dans la publication composée par Duplès-Agier, parue en 1874. Des compilations postérieures reprennent en tout ou en partie, avec des éléments nouveaux, ces chroniques. La plus ancienne est celle éditée sous le titre d’<hi rend="i">Annales manuscrites de Limoges dites de 1638, </hi>dont le manuscrit se trouve à la Bibliothèque municipale de cette ville. Beaucoup plus vaste est l’œuvre du P. Bonaventure de Saint-Amable, qui, au <num>xvii<hi rend="sup">e</hi></num> siècle, a écrit une <hi rend="i">Histoire de Saint-Martial.</hi> Il a eu pour continuateur l’abbé Legros, chanoine de Saint-Martial à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle ; ses œuvres, encore inédites, se trouvent aux Archives départementales de la Haute-Vienne.</p>
+        <p>Les documents diplomatiques conservés aux Archives départementales de la Haute-Vienne deviennent de plus en plus nombreux du <num>xiv<hi rend="sup">e</hi></num> siècle au <pb n="187" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_03.TIF/full/full/0/default.jpg"/><num>xviii<hi rend="sup">e</hi></num> siècle. Ils consistent en des reconnaissances de cens et de rentes dans le « château ». Le fonds le plus important est celui de l’abbaye (série H). Aussi riche, la série H supplément, qui regroupe les fonds hospitaliers, nous fournit des renseignements de même nature. Il en est de même des fonds des deux églises paroissiales du « château », Saint-Michel-des-Lions et Saint-Pierre-du-Queyroix (séries 14 G et 15 G). Couvrant des périodes plus étroites, le fonds du collège des Jésuites (série D) et celui de l’Intendance (série C) constituent un apport important, l’un pour un quartier, l’autre pour les tentatives d’urbanisation du <num>xviii<hi rend="sup">e</hi></num> siècle. Les fonds des autres congrégations religieuses établies dans le « château » sont inexistants, excepté quelques articles pour les Oratoriens.</p>
+        <p>La consultation des Archives communales de Limoges, à la Bibliothèque municipale, ne nous a rien donné. Les registres consulaires ont fait l’objet d’une publication.</p>
+        <p>La documentation iconographique sur la ville commence au xvi<hi rend="sup">e</hi> siècle, avec le premier plan du château.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Des origines au monastère bénédictin</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>des origines à la christianisation</head>
+          <p>L’étude entreprise porte uniquement sur la partie de la ville actuelle comprise à l’intérieur des boulevards édifiés après le <num>xviii<hi rend="sup">e</hi></num> siècle sur l’emplacement des fossés du « château » de Limoges du <num>xiii<hi rend="sup">e</hi></num> siècle. H s’agit du périmètre compris entre les boulevards Carnot, Georges-Perrin, Louis-Blanc, Gambetta, Victor-Hugo, et l’avenue de la Libération jusqu’à son croisement avec le boulevard Carnot.</p>
+          <p>A l’intérieur de ce périmètre il n’a pas été retrouvé de vestiges préhistoriques ; toutefois, selon une communication faite en 1969 à la Société archéologique, un centre antique se serait développé vers le secteur compris entre les rues Gondinet, Pierre-au-Bois et le plateau où s’élève l’église Saint-Michel-des-Lions.</p>
+          <p>Après la conquête romaine, les <hi rend="i">Lemovices</hi> ont pour capitale <hi rend="i">Augustoritum, </hi>« la ville du gué d’Auguste ». Son nom indique l’existence d’un gué sur la Vienne, par lequel les plaines du Poitou, de la Charente et de la Dordogne communiquent avec le Plateau central. <hi rend="i">Augustoritum</hi> s’élève en dehors de la zone étudiée, au flanc d’un coteau que la Vienne baigne. Seul sera construit, sur l’actuelle place de la Motte, le <hi rend="i">castellum divisiorum,</hi> le château d’eau, qui est le point de jonction des deux aqueducs. L’un des cimetières de cette cité se trouvait en bordure de la voie de Saintes à Bourges et Lyon, à l’emplacement de la place actuelle de la République. Nous attribuons à ce cimetière les <pb n="188" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_04.TIF/full/full/0/default.jpg"/>quatre lions de pierre remployés à l’entrée des cimetières nouveaux ; ce sont des sculptures funéraires gallo-romaines dont de nombreux exemples sont connus.</p>
+          <p>Lorsque saint Martial vient d’Orient évangéliser la population des <hi rend="i">Lemovices,</hi> il se rend à <hi rend="i">Augustoritum,</hi> alors dans sa splendeur, et meurt sans doute avant 276, date des invasions et de la destruction de la ville gallo-romaine, alors que le cimetière précité était toujours en usage.</p>
+          <p>La seconde ville, édifiée à la fin du <num>iii<hi rend="sup">e</hi></num> siècle, occupera le plateau Saint-Étienne, où s’élève la cathédrale actuelle. Elle est également en dehors du secteur étudié. Cependant, autour du <hi rend="i">castellum divisiorum</hi> se maintient un noyau d’habitation.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le « miracle Saint-Martial »</head>
+          <p>Ce n’est qu’après la paix de l’Église que la vénération des reliques de saint Martial conduit au pèlerinage. Une crypte est alors aménagée dans le cimetière même, des gardiens du sépulcre sont installés, une <hi rend="i">memoria</hi> recouvre le tombeau. Cette première construction est rapidement complétée par l’édification d’une <hi rend="i">basilica</hi> et Grégoire de Tours nous donne une description des lieux à la fin du <num>vi<hi rend="sup">e</hi></num> siècle : de la <hi rend="i">basilica</hi> on atteint le sépulcre, salle souterraine à peine éclairée à laquelle on accède par un escalier.</p>
+          <p>Dans le même temps, l’évêque de Limoges, Rorice II, fonde une église suburbaine, proche du cimetière, qu’il dédie à saint Pierre ; il s’agit de l’actuel Saint-Pierre-du-Queyroix.</p>
+          <p>Les comtes mérovingiens, dont la première mention sûre est de la fin du <num>vi<hi rend="sup">e</hi></num> siècle, viennent s’installer à l’emplacement de l’ancien château d’eau. On peut penser que l’irrigation du coteau où s’édifiera plus tard le « château » de Limoges leur est due. Ils ont utilisé pour cela les ressources en eau du <hi rend="i">castellum divisiorum</hi> et de la fontaine d’Aygoulène. Les traces de cette organisation se voient encore dans les petites places triangulaires, appelées « andeix ».</p>
+          <p>C’est à l’initiative des comtes que l’on peut rapporter également la fondation sur le plateau, près de leur demeure, d’une chapelle dédiée à saint Michel, chapelle privée et funéraire, puisque des sépultures mérovingiennes y ont été retrouvées.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le premier monastère</head>
+          <p>Selon la légende, c’est par obéissance à la volonté de saint Martial que les chanoines, gardiens du tombeau, prennent en 848 l’habit de saint Benoît. La rupture entre les nouveaux moines et les chanoines de la cathédrale est alors complète. De là provient l’indépendance de la ville qui va se créer vis-à-vis de la cité épiscopale.</p>
+          <p>Autour de la basilique Saint-Pierre-du-Sépulcre s’élèvent les constructions monastiques, auprès desquelles s’installent commerçants et artisans, attirés par la foule des pèlerins.</p>
+          <pb n="189" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_05.TIF/full/full/0/default.jpg"/>
+          <p>Le monastère carolingien comprend une basilique terminée par un chevet à trois absides, un baptistère dédié à saint Jean-Baptiste, dont nous ignorons l’emplacement exact, et une église dédiée à la Vierge, Notre-Dame-de-la-Courtine, dont le site a été révélé par des fouilles faites en 1892.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>De <hi rend="i">Stephanopolis</hi> au <hi rend="i">castellum Lemovicense</hi></head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/><hi rend="i">stéphanopolis</hi></head>
+          <p>Les abbés qui se succèdent entretiennent soigneusement la légende forgée et diffusée par la <hi rend="i">Vie</hi> de leur saint patron, selon laquelle il aurait été contemporain de saint Pierre et envoyé par lui en Gaule ; les miracles qui se produisent augmentent la ferveur de la foule.</p>
+          <p>Pour assurer la sécurité du monastère, le roi Charles le Simple ordonne à l’abbé Étienne, qui dirige l’abbaye de 920 à 937, de construire une enceinte fortifiée, sans doute de bois, avec deux portes s’ouvrant sur deux tours « Orgolet » et « Fustinie ». La première, proche du monastère, s’ouvre dans la direction de la cité, l’autre sur le plateau Saint-Michel, en direction des arènes. C’est le premier « château » de Limoges, auquel l’abbé Étienne donne son nom (<hi rend="i">Stephanopolis</hi>).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le « château » Saint-Martial</head>
+          <p>L’ampleur du pèlerinage entraîne de nouvelles constructions. La crypte, un moment endommagée par un incendie, est rénovée à la fin du <num>x<hi rend="sup">e</hi></num> siècle par l’abbé Guigues, qui l’agrandit de deux autres salles souterraines ; la première est organisée pour le culte, l’autre reçoit le tombeau du « duc Étienne ».</p>
+          <p>Une nouvelle basilique, dédiée au Sauveur, s’élève sur le côté sud de la basilique Saint-Pierre-du-Sépulcre, dont une partie est démolie pour permettre l’assiette du nouvel édifice. Pour rehausser encore le prestige du pèlerinage, les moines amplifient la légende de saint Martial ; ils réussissent à obtenir une lettre du pape Jean XIX reconnaissant l’apostolicité de leur saint patron.</p>
+          <p>L’hôpital Saint-Martial est mentionné alors pour la première fois ; nous ignorons la date de sa construction, car son origine est obscurcie par la légende qui en attribue la fondation à Tève le Duc, au I<hi rend="sup">er</hi> siècle.</p>
+          <p>Le roi Lothaire demande à l’abbé Guigues de construire les murs du « château », mais jusqu’au <num>xii<hi rend="sup">e</hi></num> siècle il n’y a pas d’enceinte de pierre ; il existe seulement une défense en bois, protégée par une levée de terre, l’<hi rend="i">agger. <pb n="190" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_06.TIF/full/full/0/default.jpg"/></hi>L’importance de la ville se manifeste notamment par l’établissement de commerçants vénitiens à la fin du <num>x<hi rend="sup">e</hi></num> siècle.</p>
+          <p>En 1063, avec l’appui du vicomte de Limoges, les Clunisiens occupent le monastère, après en avoir chassé les moines bénédictins.</p>
+          <p>Jusqu’à la fin du <num>xii<hi rend="sup">e</hi></num> siècle, les abbés clunisiens reprennent et amplifient les constructions antérieures, couvrant ainsi tout l’espace situé entre la basilique du Sauveur et les fortifications de la courtine. Un grand cloître est construit au sud de la basilique du Sauveur et le cimetière des moines est transporté au chevet de la basilique, sur les terrains gagnés sur l’étang dont l’asséchement est entrepris. Les principaux artisans de ces transformations sont les abbés Adémar, Pierre du Barri et Isembert.</p>
+          <p>A la fin du <num>xii<hi rend="sup">e</hi></num> siècle, la première muraille en pierre entoure une ville agrandie par l’adjonction du quartier des Combes ; la nouvelle ville occupe le flanc du coteau de Saint-Michel. Dans cette nouvelle ville, les consuls organisés cherchent à prendre le pas sur l’abbé dans les affaires quotidiennes et installent, au début du <num>xiii<hi rend="sup">e</hi></num> siècle, une maison commune au-dessous du cimetière de l’abbaye.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le « château » de Limoges</head>
+          <p>Le développement des faubourgs oblige les consuls à entreprendre une plus vaste construction. Au début du <num>xiii<hi rend="sup">e</hi></num> siècle, les quartiers de Vieille-Boucherie, Vieille-Monnaie et Vieux-Marché, ainsi que Lansecot sont intégrés à l’intérieur des murailles de pierre, où s’ouvrent de nombreuses portes ; le « château » de Limoges a atteint sa superficie maxima. Malgré les luttes intestines entre le vicomte et les consuls, la ville prospère et, au <num>xiv<hi rend="sup">e</hi></num> siècle, les riches bourgeois font édifier de belles demeures de pierre ; les églises du « château » sont rebâties.</p>
+          <p>Le monastère connaît alors une période de grande expansion et l’abbé Raymond Gaucelm mène à bien une bonne partie de l’édification des nouveaux bâtiments claustraux, au flanc nord de la basilique. L’ancien cloître est laissé aux consuls, qui ouvrent à sa place le marché dit de la « Clautre ».</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Du « château » a la ville de Limoges</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le « château » du xvi<hi rend="sup">e</hi> siècle</head>
+          <p>Il est plus facile de connaître la ville du <num>xvi<hi rend="sup">e</hi></num> siècle, car c’est à ce moment qu’apparaissent les premiers plans et dessins. La première vue cavalière du « château » est une gravure établie par Jean Fayen. Malgré ses imperfections. <pb n="191" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_07.TIF/full/full/0/default.jpg"/>elle donne une représentation valable des lieux. Certaines des places du « château » y sont esquissées avec leurs monuments, qui seront repris de façon plus précise par les dessins des <hi rend="i">Annales manuscrites</hi> au siècle suivant. Quant aux édifices religieux, leur silhouette générale est acceptable. A ces documents s’ajoutent les dessins du plan dit « Regina » ou « des Fontaines », qui nous livrent l’allure de ces monuments précieux pour la vie commune ; ils sont précisés par le texte du procès à l’occasion duquel le plan a été dressé.</p>
+          <p>Le consulat s’installe définitivement dans la rue qui portera désormais son nom.</p>
+          <p>L’abbaye est sécularisée en 1535. La décadence commence pour elle ; il n’est plus question que de la ruine progressive de ses bâtiments, laissés à l’abandon par les chanoines.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les transformations internes du <num>xvii<hi rend="sup">e</hi></num> siècle</head>
+          <p>Le plan Jouvin de Rochefort, dit « des Trésoriers de France », donne une idée plus nette de la topographie du « château ». Au cours du <num>xvii<hi rend="sup">e</hi></num> siècle, les fondations religieuses sont nombreuses ; des communautés nouvelles ou réformées ouvrent une maison à Limoges.</p>
+          <p>Pour cette période nous possédons également deux dessins de Joachim Duviert, dont un inédit provenant de la réserve du Cabinet des Estampes de la Bibliothèque Nationale.</p>
+          <p>Les consuls, après avoir fondé un collège à Limoges, font appel aux Jésuites pour le tenir, ce qui amène l’édification d’un grand ensemble, bâtiments scolaires et chapelle. Aujourd’hui le collège est un lycée de garçons, où, peu à peu, de nouveaux bâtiments remplacent les anciens, mais la chapelle demeure.</p>
+          <p>Les édifices civils, témoins de l’emprise de l’autorité royale sur la ville, apparaissent, tels le bureau des Trésoriers et le présidial. L’ancien hôpital Saint-Martial est fermé, ses revenus sont attribués à l’hôpital général créé en dehors du « château ». Dans les bâtiments de l’hôpital Saint-Martial, agrandis par l’acquisition de maisons voisines, le roi établit l’hôtel des monnaies.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Vers la ville de Limoges</head>
+          <p>Sous l’impulsion des intendants du <num>xviii<hi rend="sup">e</hi></num> siècle et principalement de deux d’entre eux, Turgot et d’Aisne, Limoges devient une ville ouverte. Les intendants, qui lui reprochent ses ruelles étroites et malodorantes, le manque d’air, font abattre les remparts et les maisons qui menacent ruine, percer de nouvelles rues, ouvrir des promenades ; la tentative d’urbanisation est certaine. Elle est facilitée à la fois par des incendies spectaculaires, qui détruisent des quartiers entiers de la ville, et par l’effondrement de certains édifices religieux qui ne sont plus entretenus. Les bâtiments de l’intendance et du présidial sont reconstruits, un nouveau collège s’élève.</p>
+          <pb n="192" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_27/ENCPOS_1971_27_08.TIF/full/full/0/default.jpg"/>
+          <p>C’est dans cette même période, à la veille de la Révolution, que le « château » prend la forme d’une étoile dont les branches se tendent en direction des nouveaux faubourgs. La Révolution achève l’œuvre commencée, mais sans discernement : les édifices religieux du « château », à l’exception de quatre d’entre eux, Saint-Pierre-du-Queyroix, Saint-Michel-des-Lions, Saint-Aurélien et la chapelle du collège, sont détruits. Ce sont d’ailleurs les seuls monuments qui sont parvenus jusqu’à nous, avec l’ensemble monumental de la place du présidial.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Du cimetière gallo-romain dévasté il ne reste que quelques stèles, jadis remployées dans les rues et les fondations de la basilique du Sauveur. Du monastère, on ne découvre de nos jours que quelques pierres, mais pas les fondations. De la grande église du Sauveur, il ne demeure que la partie la plus éloignée, la crypte de Saint-Martial, mise à jour en 1960 et depuis lors aménagée et livrée aux visiteurs. Et pourtant, Limoges est issue de la présence, dans le cimetière gallo-romain, des reliques de Martial, le premier évêque du Limousin.</p>
+        <p>On peut se demander alors pourquoi la ville a pris une pareille ampleur, et a atteint un tel développement, qui en faisaient, avant la guerre de 1914, une des plus importantes villes de France, avec 90 000 habitants. Il semble que tout se résume en un seul mot : le gué. Limoges était dès les temps les plus anciens une ville de passage, et donc de commerce, entre l’arrière-pays montagneux et les riches plaines des environs. <hi rend="i">Augustoritum,</hi> place administrative et lieu de marché, a conservé la tradition qu’a reprise à son compte le monastère de Saint-Martial. Le pèlerinage a créé la richesse, les marchands l’ont exploitée à leur profit. La conjonction des efforts des moines sur le plan spirituel et des marchands sur le plan temporel a réussi à créer un élément essentiel, le commerce. Ville commerçante, industrieuse avant d’être industrielle, le « château » de Limoges s’est développé ainsi sous la double action de ses abbés et de ses consuls.</p>
+      </div>
+      <div>
+        <head rend="uc">Plans</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>
