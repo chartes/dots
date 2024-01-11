@@ -35,15 +35,17 @@ declare updating function docR:createDocumentRegister($bdd) {
         replace node $members with <member>{docR:getFragments($bdd)}</member>
       )
   else
+    let $fragments := docR:getFragments($bdd)
     let $content := 
       <fragmentsRegister>{
         docR:getMetadata(),
-        <member>{
-          docR:getFragments($bdd)
-        }</member>
+        <member>{$fragments}</member>
       }</fragmentsRegister>
     return
-      db:add($bdd, $content, $G:fragmentsRegister)
+      if ($fragments)
+      then
+        db:add($bdd, $content, $G:fragmentsRegister)
+      else ()
 };
 
 (:~ 
