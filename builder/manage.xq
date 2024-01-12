@@ -33,8 +33,4 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 cc:create_config("ENCPOS", "ENCPOS", "Les positions des thèses de l'Ecole nationale des chartes")
 
 (: 4. Supprimer  :)
-(: dbd:handleDelete() :)
-
-(: let $tei := db:get("ENCPOS")/*:TEI[1]
-return
-  cc:getDocumentMetadata("ENCPOS", $tei, "ENCPOS_1972_18") :)
+(: dbd:handleDelete() :) 
