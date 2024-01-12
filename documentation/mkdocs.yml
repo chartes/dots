@@ -5,3 +5,4 @@ nav:
     - About: about.md
     - Contact: contact.md
     - License: license.md
+# theme: readthedocs
