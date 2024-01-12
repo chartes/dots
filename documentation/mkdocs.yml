@@ -1,0 +1,8 @@
+site_name: DoTS documentation
+site_url: https://dots.documentation.com/
+nav:
+    - Home: index.md
+    - About: about.md
+    - Contact: contact.md
+    - License: license.md
+# theme: readthedocs
