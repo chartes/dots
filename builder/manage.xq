@@ -10,10 +10,13 @@ xquery version "3.1";
 import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
 import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
+import module namespace multi = "https://github.com/chartes/dots/builder/multi" at "documents_in_multiple_collections.xqm";
 import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
 import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
+
+import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm";
 (: Exemple pour le registre ENDP 
 : /!\ Attention, les commandes doivent être lancées successivment.
 :)
@@ -30,7 +33,9 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 (: cc:create_config("idProjet", "dbName", "Project Title") :)
 (: cc:create_config("ducange", "ducange", "Glossarium mediæ et infimæ latinitatis", "") :)
 (: cc:create_config("litterature2", "litterature2", "Corpus Test", "") :)
-cc:create_config("ENCPOS", "ENCPOS", "Les positions des thèses de l'Ecole nationale des chartes")
+(: cc:create_config("ENCPOS", "ENCPOS", "Les positions des thèses de l'Ecole nationale des chartes") :)
 
 (: 4. Supprimer  :)
-(: dbd:handleDelete() :) 
+dbd:handleDelete() 
+
+(: multi:handle() :)

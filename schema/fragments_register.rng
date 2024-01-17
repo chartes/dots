@@ -32,84 +32,50 @@
     <a:documentation>TODO: les métadonnées du registre</a:documentation>
     <element name="metadata">
       <element name="dct:created">
-        <text/>
+        <data type="dateTime"/>
       </element>
       <element name="dct:modified">
-        <text/>
+        <data type="dateTime"/>
       </element>
     </element>
   </define>
   
   <define name="member">
+    <a:documentation>Liste des fragments</a:documentation>
     <element name="member">
       <oneOrMore>
-        <ref name="fragment"/>
+        <choice>
+          <ref name="fragment"/>
+        </choice>
       </oneOrMore>
     </element>
   </define>
   
   <define name="fragment">
     <element name="fragment">
-      <ref name="fragment.atts"/>
-      <zeroOrMore>
-        <choice>
-          <ref name="dcTitle"/>
-          <ref name="dcMetadata"/>
-        </choice>
-      </zeroOrMore>
-    </element>
-  </define>
-  
-  <define name="fragment.atts">
-    <a:documentation>Fragment attributes</a:documentation>
-    <choice>
-      <attribute name="xml:id">
-        <a:documentation>TODO</a:documentation>
-        <data type="ID"/>
+      <attribute name="n">
+        <text/>
       </attribute>
       <attribute name="node-id">
-        <a:documentation>TODO</a:documentation>
         <data type="integer"/>
       </attribute>
-    </choice>
-    <attribute name="ref">
-      <a:documentation>TODO à clarifier (DTS item property: the unique passage identifier for one node in the citation structure of the Resource)</a:documentation>
-      <data type="integer"/>
-    </attribute>
-    <attribute name="level">
-      <a:documentation>TODO (DTS item property: hierarchical level of the requested identifier)</a:documentation>
-      <data type="integer"/>
-    </attribute>
-    <attribute name="maxCiteDepth">
-      <a:documentation>TODO (DTS item property: maximum depth of the document’s citation tree)</a:documentation>
-      <data type="integer"/>      
-    </attribute>
-    <attribute name="citeType">
-      <a:documentation>TODO (DTS item property: default type of the reference)</a:documentation>
-      <data type="string"/>      
-    </attribute>
-    <ref name="parentIds-att"/>
-  </define>
-  
-  <define name="parentIds-att">
-    <attribute name="parentIds">
-      <a:documentation>List of collection parents IDs</a:documentation>
-      <data type="string"/><!-- TODO -->
-    </attribute>
-  </define>
-  
-  <define name="dcMetadata">
-    <a:documentation>TODO</a:documentation>
-    <choice>
-      <element name="dc:publisher"><text/></element>
-      <element name="dc:date"><text/></element>
-    </choice>
-  </define>
-  
-  <define name="dcTitle">
-    <a:documentation>TODO</a:documentation>
-    <element name="dc:title">
-      <text/>
+      <attribute name="ref">
+        <text/>
+      </attribute>
+      <attribute name="level">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="maxCiteDepth">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="resourceId">
+        <text/>
+      </attribute>
+      <optional>
+        <attribute name="citeType">
+          <text/>
+        </attribute>
+      </optional>
     </element>
   </define>
   

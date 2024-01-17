@@ -99,7 +99,15 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
             if ($nav = "parents")
             then
               let $idParent := normalize-space($resource/@parentIds)
-              return utils:getResource($projectName, $idParent) 
+              return 
+                if (contains($idParent, " "))
+                then 
+                  let $parents := tokenize($idParent)
+                  for $parent in $parents
+                  return
+                    utils:getResource($projectName, $parent) 
+                else
+                  utils:getResource($projectName, $idParent) 
             else utils:getChildMembers($projectName, $resourceId) 
           let $mandatoryMember := utils:getMandatory($member, "")
           let $dublincoreMember := utils:getDublincore($member)
@@ -377,7 +385,17 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
   let $title := normalize-space($resource/dc:title)
-  let $totalParents := if ($resource/@parentIds) then 1 else 0
+  let $totalParents := 
+    if ($resource/@parentIds) 
+    then 
+      if (contains($resource/@parentIds, " "))
+      then 
+        let $parents := tokenize($resource/@parentIds)
+        let $c := count($parents)
+        return
+          $c
+      else 1 
+    else 0
   let $totalItems := 
     if ($nav = "parents")
     then
@@ -648,5 +666,20 @@ declare function utils:getResourceType($resource as element()) {
 : @param $resourceId chaîne de caractère identifiant une resource
 :)
 declare function utils:getChildMembers($projectName as xs:string, $resourceId as xs:string) {
-  db:get($projectName, $G:resourcesRegister)//dots:member/node()[@parentIds = $resourceId]
+  let $child := db:get($projectName, $G:resourcesRegister)//dots:member/node()[@parentIds = $resourceId]
+  return
+    if ($child)
+    then $child
+    else
+      let $candidatsMember := db:get($projectName, $G:resourcesRegister)//dots:member/node()[contains(@parentIds, $resourceId)]
+      return
+        for $parentIds in $candidatsMember
+        let $candidatParent := tokenize($parentIds/@parentIds)
+        where 
+          for $candidat in $candidatParent
+          where $candidat = $resourceId
+          return
+            $candidat
+        return
+          $parentIds
 };

@@ -32,15 +32,16 @@
     <a:documentation>TODO: les métadonnées du registre</a:documentation>
     <element name="metadata">
       <element name="dct:created">
-        <text/>
+        <data type="dateTime"/>
       </element>
       <element name="dct:modified">
-        <text/>
+        <data type="dateTime"/>
       </element>
     </element>
   </define>
   
   <define name="member">
+    <a:documentation>Liste des ressources (collections et documents)</a:documentation>
     <element name="member">
       <oneOrMore>
         <choice>
@@ -52,101 +53,47 @@
   </define>
   
   <define name="collection">
+    <a:documentation>Ressource de type collection</a:documentation>
     <element name="collection">
-      <ref name="collection.atts"/>
       <ref name="dcTitle"/>
-      <zeroOrMore>
-        <ref name="dcMetadata"/>
-      </zeroOrMore>
+      <ref name="dtsResourceId-att"/>
+      <attribute name="totalChildren">
+        <a:documentation>Nombre d'enfant(s) direct(s) de la collection</a:documentation>
+        <data type="integer"/>
+      </attribute>
+      <optional>
+        <attribute name="parentIds">
+          <text/>
+        </attribute>
+      </optional>
     </element>
-  </define>
-  
-  <define name="collection.atts">
-    <a:documentation>Collection attributes</a:documentation>
-    <ref name="dtsResourceId-att"/>
-    <attribute name="totalChildren">
-      <a:documentation>TODO (DTS item property: total number of members that you will find if you do nav=children)</a:documentation>
-      <data type="integer"/>
-    </attribute>
-    <optional>
-      <ref name="parentIds-att"/>
-    </optional>
   </define>
   
   <define name="document">
+    <a:documentation>Ressource de type ressource (un document)</a:documentation>
     <element name="document">
-      <ref name="document-atts"/>
       <ref name="dcTitle"/>
-      <zeroOrMore>
-        <ref name="dcMetadata"/>
-        <ref name="dcCreator"/>
-        <ref name="dcCreated"/>
-        <ref name="dctPublisher"/>
-      </zeroOrMore>
+      <ref name="dtsResourceId-att"/>
+      <attribute name="maxCiteDepth">
+        <a:documentation>Profondeur maximale des passages citables</a:documentation>
+        <data type="integer"/>
+      </attribute>
+      <attribute name="parentIds">
+        <text/>
+      </attribute>
     </element>
-  </define>
-  
-  <define name="document-atts">
-    <a:documentation>Document attributes</a:documentation>
-    <ref name="dtsResourceId-att"/>
-    <attribute name="maxCiteDepth">
-      <a:documentation>TODO (DTS item property: declare the maximum depth of a readable resource)</a:documentation>
-      <data type="integer"/>
-    </attribute>
-    <optional>
-      <ref name="parentIds-att"/>
-    </optional>    
   </define>
   
   <define name="dtsResourceId-att">
     <attribute name="dtsResourceId">
-      <a:documentation>TODO</a:documentation>
+      <a:documentation>Identifiant de la ressource</a:documentation>
       <data type="ID"/>
     </attribute>
   </define>
   
-  <define name="parentIds-att">
-    <attribute name="parentIds">
-      <a:documentation>List of collection parents IDs</a:documentation>
-      <data type="string"/><!-- TODO -->
-    </attribute>
-  </define>
-  
-  <define name="dcMetadata">
-    <a:documentation>TODO</a:documentation>
-    <zeroOrMore>
-      <element name="dc:publisher"><text/></element>
-      <element name="dc:date"><text/></element>
-      <element name="dc:creator"><text/></element>
-      <element name="dc:created"><text/></element>
-      <element name="dct:publisher"><text/></element>
-    </zeroOrMore>
-  </define>
-  
   <define name="dcTitle">
-    <a:documentation>TODO</a:documentation>
+    <a:documentation>Titre de la ressource</a:documentation>
     <element name="dc:title">
-      <text/>
-    </element>
-  </define>
-  
-  <define name="dcCreator">
-    <a:documentation>TODO</a:documentation>
-    <element name="dc:creator">
-      <text/>
-    </element>
-  </define>
-  
-  <define name="dcCreated">
-    <a:documentation>TODO</a:documentation>
-    <element name="dc:created">
-      <text/>
-    </element>
-  </define>
-  
-  <define name="dctPublisher">
-    <a:documentation>TODO</a:documentation>
-    <element name="dct:publisher">
       <text/>
     </element>
   </define>
