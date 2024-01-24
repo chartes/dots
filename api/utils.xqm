@@ -565,6 +565,8 @@ declare function utils:getDbName($resourceId) {
   normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resourceId]/@dbName)
 };
 
+
+
 (:~  
 : Cette fonction permet de retrouver, dans la base de données BaseX $projectName, dans le registre DoTS "dots/resources_register.xml" la resource $resourceId
 : @return réponse XML
@@ -666,7 +668,7 @@ declare function utils:getResourceType($resource as element()) {
 : @param $resourceId chaîne de caractère identifiant une resource
 :)
 declare function utils:getChildMembers($projectName as xs:string, $resourceId as xs:string) {
-  let $child := db:get($projectName, $G:resourcesRegister)//dots:member/node()[@parentIds = $resourceId]
+  for $child in db:get($projectName, $G:resourcesRegister)//dots:member/node()[contains(@parentIds, $resourceId)]
   return
     if ($child)
     then $child

@@ -15,6 +15,7 @@ import module namespace functx = 'http://www.functx.com';
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
+import module namespace var = "https://github.com/chartes/dots/variables" at "../project_variables.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -29,10 +30,10 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see project.xql;cc:getMetadata
 : @see project.xql;cc:members
 :)
-declare updating function cc:create_config($idProject as xs:string, $dbName as xs:string, $title as xs:string) {
+declare updating function cc:create_config() {
   let $countChild := 
-    let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
-    let $count := count(db:dir($dbName, ""))
+    let $countDotsData := if (db:get($var:dbName, $G:metadata)) then 1 else 0
+    let $count := count(db:dir($var:dbName, ""))
     return
       $count - $countDotsData
   let $content :=
@@ -42,21 +43,21 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
     >
       {cc:getMetadata()}
       <member>
-        <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">
-          <dc:title>{$title}</dc:title>
+        <collection dtsResourceId="{$var:idProject}" totalChildren="{$countChild}">
+          <dc:title>{$var:titleProject}</dc:title>
         </collection>
         {
-          cc:collections($dbName, $idProject),
-          cc:document($dbName, $idProject)
+          cc:collections($var:dbName, $var:idProject),
+          cc:document($var:dbName, $var:idProject)
         }
       </member>
     </resourcesRegister>
   return
     (
-      ccg:create_config($idProject, $dbName),
-      if (db:exists($dbName, $G:resourcesRegister))
+      ccg:create_config(),
+      if (db:exists($var:dbName, $G:resourcesRegister))
       then 
-        let $dots := db:get($dbName, $G:resourcesRegister)
+        let $dots := db:get($var:dbName, $G:resourcesRegister)
         return
         (
           replace value of node $dots//dct:modified with current-dateTime(),
@@ -64,9 +65,9 @@ declare updating function cc:create_config($idProject as xs:string, $dbName as x
         )
       else 
           (
-            db:put($dbName, $content, $G:resourcesRegister)
+            db:put($var:dbName, $content, $G:resourcesRegister)
           ),
-      docR:createDocumentRegister($dbName)
+      docR:createDocumentRegister($var:dbName)
     )
 };
 

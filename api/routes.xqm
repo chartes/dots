@@ -146,6 +146,3 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
 };
 
 
-
-
-

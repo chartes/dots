@@ -10,64 +10,49 @@ xquery version "3.1";
 module namespace dbc = "https://github.com/chartes/dots/db/dbc";
 
 import module namespace functx = "http://www.functx.com";
+import module namespace var = "https://github.com/chartes/dots/variables" at "../project_variables.xqm";
 
-declare variable $dbc:resourceId := "ENCPOS";
 
-declare variable $dbc:dbName := "ENCPOS";
-
-declare variable $dbc:pathResources := "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/TEI/";
-
-declare variable $dbc:metadataMapping := "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/dots/metadata_mapping.xml";
-
-declare variable $dbc:metadataCSV := "
-/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/dots/encpos.tsv
-/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/dots/titles.csv
-";
-
-declare variable $dbc:separator := "	";
-
-declare variable $dbc:language := "fr";
-
-declare updating function dbc:dbCreate() {
+declare updating function dbc:dbCreate($dbName as xs:string) {
   let $resourcesXML :=
-    for $resource in file:list($dbc:pathResources, true())
+    for $resource in file:list($var:pathResources, true())
     where contains($resource, ".xml")
     order by $resource
     return
-      concat($dbc:pathResources, $resource)
+      concat($var:pathResources, $resource)
   let $csvData := 
-    if ($dbc:metadataCSV)
+    if ($var:metadataCSV)
     then 
-      for $csv in tokenize($dbc:metadataCSV)
+      for $csv in tokenize($var:metadataCSV)
       return
         csv:doc($csv, map{
         "header": true(),
-        "separator": $dbc:separator
+        "separator": $var:separator
 })
     else ()
   let $resources :=
-    if ($dbc:metadataMapping != "")
+    if ($var:metadataMapping != "")
     then
       if ($csvData != "")
-      then ($resourcesXML, $dbc:metadataMapping, $csvData)
-      else ($resourcesXML, $dbc:metadataMapping)
+      then ($resourcesXML, $var:metadataMapping, $csvData)
+      else ($resourcesXML, $var:metadataMapping)
     else $resourcesXML
   let $paths :=
     (
       for $path in $resourcesXML return substring-after($path, "/TEI"),
-      if ($dbc:metadataMapping != "") then concat("dots/", functx:substring-after-last($dbc:metadataMapping, "/dots")) else (),
+      if ($var:metadataMapping != "") then concat("dots/", functx:substring-after-last($var:metadataMapping, "/dots")) else (),
       if ($csvData != "") 
       then 
-        for $csv in tokenize($dbc:metadataCSV)
+        for $csv in tokenize($var:metadataCSV)
         return 
           concat("dots/", functx:substring-after-last($csv, "/dots"))
       else ()
     )
   return
-    db:create($dbc:dbName, $resources, $paths, map {
+    db:create($var:dbName, $resources, $paths, map {
       "ftindex": true(),
       "updindex": true(),
       "stemming": true(),
-      "language": $dbc:language
+      "language": if ($var:language) then $var:language else "fr"
     })
 };

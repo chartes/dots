@@ -23,7 +23,7 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 
 (: 1. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
 : /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm :)
-(: dbc:dbCreate() :)
+dbc:dbCreate("")
 
 (: 2. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config("idProject", "dbName") :)
@@ -35,7 +35,10 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: cc:create_config("litterature2", "litterature2", "Corpus Test", "") :)
 (: cc:create_config("ENCPOS", "ENCPOS", "Les positions des thèses de l'Ecole nationale des chartes") :)
 
-(: 4. Supprimer  :)
-dbd:handleDelete() 
-
+(: 4. Créer des collections transverses :)
 (: multi:handle() :)
+
+(: 5. Supprimer  :)
+(: dbd:handleDelete() :)
+ 
+

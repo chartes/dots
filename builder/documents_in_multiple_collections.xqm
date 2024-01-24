@@ -18,14 +18,12 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-
-declare variable $multi:path := "/home/ppons/Bureau/test_multiple_collections.csv";
-declare variable $multi:separator := "	";
+import module namespace var = "https://github.com/chartes/dots/variables" at "../project_variables.xqm";
 
 declare updating function multi:handle() {
-  let $source := csv:doc($multi:path, map{
+  let $source := csv:doc($var:metadataMultipleCollections, map{
         "header": true(),
-        "separator": $multi:separator
+        "separator": $var:separator
 })
   return
     (
