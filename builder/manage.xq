@@ -23,7 +23,7 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 
 (: 1. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
 : /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm :)
-dbc:dbCreate("")
+dbc:dbCreate("ENCPOS", "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/")
 
 (: 2. Vérifier l'existence de la db dots et la créer le cas échéant :)
 (: ccg:create_config("idProject", "dbName") :)

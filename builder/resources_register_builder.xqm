@@ -43,9 +43,9 @@ declare updating function cc:create_config($dbName as xs:string, $topCollectionI
     >
       {cc:getMetadata()}
       <member>
-        <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">
-          <dc:title>{$var:titleProject}</dc:title>
-        </collection>
+        <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">{
+          cc:getCollectionMetadata($dbName, $topCollectionId)
+        }</collection>
         {
           cc:collections($dbName, $topCollectionId),
           cc:document($dbName, $topCollectionId)
@@ -180,31 +180,37 @@ declare function cc:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId 
   return
     for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
     return
-      if ($metadata/@xpath)
-      then
-        let $metadataName := $metadata/name()
-        let $xpath := $metadata/@xpath
-        let $query := concat('
-          declare default element namespace "http://www.tei-c.org/ns/1.0";',
-          $xpath)
-        let $valueQuery := xquery:eval($query, map {"": $doc})
+      if ($metadata/@resourceId = "all")
+      then 
+        let $key := $metadata/name()
         return
-          if (normalize-space($valueQuery) != "")
-          then element {$metadataName} {normalize-space($valueQuery)}
-          else ()
+          element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
       else
-        let $csv := db:get($bdd, normalize-space($metadata/@source))//*:csv
-        let $findIdInCSV := normalize-space($metadata/@resourceId)
-        let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]       
-        return
-          if ($record and $metadata) 
-          then cc:createContent($metadata, $record)
-          else ()
+        if ($metadata/@xpath)
+        then
+          let $metadataName := $metadata/name()
+          let $xpath := $metadata/@xpath
+          let $query := concat('
+            declare default element namespace "http://www.tei-c.org/ns/1.0";',
+            $xpath)
+          let $valueQuery := xquery:eval($query, map {"": $doc})
+          return
+            if (normalize-space($valueQuery) != "")
+            then element {$metadataName} {normalize-space($valueQuery)}
+            else ()
+        else
+          let $csv := db:get($bdd, normalize-space($metadata/@source))//*:csv
+          let $findIdInCSV := normalize-space($metadata/@resourceId)
+          let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]       
+          return
+            if ($record and $metadata) 
+            then cc:createContent($metadata, $record)
+            else ()
 };
 
 declare function cc:createContent($itemDeclaration, $record) {
   let $key := $itemDeclaration/name()
-  let $element := $itemDeclaration/@content
+  let $element := $itemDeclaration/@value
   let $value := 
     if ($record/node()[name() = $element] != "")
     then
@@ -258,9 +264,15 @@ declare function cc:getCollectionMetadata($bdd as xs:string, $collection as xs:s
         let $findIdInCSV := normalize-space($metadata/@resourceId)
         let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
         return
-          if ($record and $metadata) 
-          then cc:createContent($metadata, $record)
-          else ()
+          if ($metadata/@resourceId = "all")
+          then 
+            let $key := $metadata/name()
+            return
+              element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+          else
+            if ($record and $metadata) 
+            then cc:createContent($metadata, $record)
+            else ()
       return
         if ($metadatas/name() = "dc:title")
         then $metadatas

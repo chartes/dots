@@ -668,7 +668,7 @@ declare function utils:getResourceType($resource as element()) {
 : @param $resourceId chaîne de caractère identifiant une resource
 :)
 declare function utils:getChildMembers($projectName as xs:string, $resourceId as xs:string) {
-  for $child in db:get($projectName, $G:resourcesRegister)//dots:member/node()[contains(@parentIds, $resourceId)]
+  for $child in db:get($projectName, $G:resourcesRegister)//dots:member/node()[@parentIds = $resourceId]
   return
     if ($child)
     then $child

@@ -13,7 +13,7 @@ declare variable $G:dots := "dots";
 
 declare variable $G:dbSwitcher := "dots_db_switcher.xml";
 
-declare variable $G:metadata := "dots/";
+declare variable $G:metadata := "metadata/";
 
 declare variable $G:metadataMapping := "dots_default_metadata_mapping.xml";
 
