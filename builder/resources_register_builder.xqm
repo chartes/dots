@@ -13,7 +13,7 @@ module namespace cc = "https://github.com/chartes/dots/builder/cc";
 import module namespace functx = 'http://www.functx.com';
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
+import module namespace dots.switcher = "https://github.com/chartes/dots/builder/switcher" at "db_switch_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 import module namespace var = "https://github.com/chartes/dots/variables" at "../project_variables.xqm";
 
@@ -30,10 +30,10 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see project.xql;cc:getMetadata
 : @see project.xql;cc:members
 :)
-declare updating function cc:create_config() {
+declare updating function cc:create_config($dbName as xs:string, $topCollectionId as xs:string) {
   let $countChild := 
-    let $countDotsData := if (db:get($var:dbName, $G:metadata)) then 1 else 0
-    let $count := count(db:dir($var:dbName, ""))
+    let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
+    let $count := count(db:dir($dbName, ""))
     return
       $count - $countDotsData
   let $content :=
@@ -43,21 +43,21 @@ declare updating function cc:create_config() {
     >
       {cc:getMetadata()}
       <member>
-        <collection dtsResourceId="{$var:idProject}" totalChildren="{$countChild}">
+        <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">
           <dc:title>{$var:titleProject}</dc:title>
         </collection>
         {
-          cc:collections($var:dbName, $var:idProject),
-          cc:document($var:dbName, $var:idProject)
+          cc:collections($dbName, $topCollectionId),
+          cc:document($dbName, $topCollectionId)
         }
       </member>
     </resourcesRegister>
   return
     (
-      ccg:create_config(),
-      if (db:exists($var:dbName, $G:resourcesRegister))
+      dots.switcher:createSwitcher($dbName, $topCollectionId),
+      if (db:exists($dbName, $G:resourcesRegister))
       then 
-        let $dots := db:get($var:dbName, $G:resourcesRegister)
+        let $dots := db:get($dbName, $G:resourcesRegister)
         return
         (
           replace value of node $dots//dct:modified with current-dateTime(),
@@ -65,9 +65,9 @@ declare updating function cc:create_config() {
         )
       else 
           (
-            db:put($var:dbName, $content, $G:resourcesRegister)
+            db:put($dbName, $content, $G:resourcesRegister)
           ),
-      docR:createDocumentRegister($var:dbName)
+      docR:createDocumentRegister($dbName)
     )
 };
 

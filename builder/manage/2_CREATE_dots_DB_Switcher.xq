@@ -1,5 +1,8 @@
 xquery version '3.0' ;
 
-import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "../db_switch_builder.xqm";
+import module namespace dots.switcher = "https://github.com/chartes/dots/builder/switcher" at "../db_switch_builder.xqm";
 
-ccg:create_config()
+declare variable $dbName external;
+declare variable $topCollectionId external;
+
+dots.switcher:createSwitcher($dbName, $topCollectionId)

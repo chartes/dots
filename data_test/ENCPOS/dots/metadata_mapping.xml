@@ -5,6 +5,8 @@
     <dct:modified>2023-11-03T16:33:33.942+02:00</dct:modified>
   </metadata>
   <mapping>
+    <!--<licence scope="document|collection" resourceId="all" value=".">CC-BY</licence>-->
+    
     <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" format="csv" source="/dots/titles.csv" resourceId="id" content="title" scope="collection"/>
     
     <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>

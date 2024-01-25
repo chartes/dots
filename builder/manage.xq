@@ -7,7 +7,7 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-import module namespace ccg = "https://github.com/chartes/dots/builder/ccg" at "db_switch_builder.xqm";
+import module namespace dots.switcher = "https://github.com/chartes/dots/builder/switcher" at "db_switch_builder.xqm";
 import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 import module namespace multi = "https://github.com/chartes/dots/builder/multi" at "documents_in_multiple_collections.xqm";
