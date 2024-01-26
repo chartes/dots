@@ -10,7 +10,6 @@ xquery version "3.1";
 module namespace dots.lib = "https://github.com/chartes/dots/lib";
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace var = "https://github.com/chartes/dots/variables" at "../project_variables.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
