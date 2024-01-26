@@ -40,3 +40,12 @@ declare variable $G:dbSwitchValidation := concat($G:webapp, "dots/schema/dots_db
 declare variable $G:resourcesValidation := concat($G:webapp, "dots/schema/resources_register.rng");
 
 declare variable $G:fragmentsValidation := concat($G:webapp, "dots/schema/fragments_register.rng");
+
+(: Variable pour déclarer le séparateur utilisé pour les documents CSV. Attention: un seul séparateur possible commun à tous les documents CSV :)
+declare variable $G:separator := "	";
+
+(: Code langue de la langue principale du corpus pour indexation
+: @todo: à conserver? utile?
+: @todo: le rendre facultatif
+:)
+declare variable $G:language := "fr";

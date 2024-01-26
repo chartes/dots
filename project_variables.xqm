@@ -27,13 +27,13 @@ declare variable $var:titleProject := "Les positions des thèses de l'Ecole nati
 declare variable $var:pathResources := "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/TEI/";
 
 (: Variable pour déclarer le séparateur utilisé pour les documents CSV. Attention: un seul séparateur possible commun à tous les documents CSV :)
-declare variable $var:separator := "	";
+(: declare variable $var:separator := "	"; :)
 
 (: Code langue de la langue principale du corpus pour indexation
 : @todo: à conserver? utile?
 : @todo: le rendre facultatif
 :)
-declare variable $var:language := "fr";
+(: declare variable $var:language := "fr"; :)
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 : Variables encore utilisés mais dont la pertinence est discutable
