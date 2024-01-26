@@ -1,0 +1,122 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_02" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La moralité de Bien Advisé et Mal Advisé, précédée d’une étude sur les moralités en général</title>
+        <author ref="https://www.idref.fr/031875505">Jean Babelon</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_02.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 13-17</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="13" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_02/ENCPOS_1910_02_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La Moralité
+       <lb/>de
+       <lb/>bien advisé &amp; mal advisé
+       <lb/>précédée d’une
+       <lb/>étude sur les Moralités en général</head>
+      <byline>
+        par
+        <forename>Jean</forename>
+        <surname>Babelon</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Étude sur les Moralités en général</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>de la Moralité, genre dramatique</head>
+          <p>§ I. DÉFINITION. – La Moralité peut être définie : une pièce dramatique composée en vue de l’édification et où paraissent en scène des allégories personnifiées. – Au point de vue chronologique comme au point de vue de l’action dramatique, on doit les considérer comme un intermédiaire entre les Mystères et les Miracles par personnages, d’une part, et les Farces et Soties, d’autre part.</p>
+          <p>§ II. DES ORIGINES DE LA MORALITÉ.</p>
+          <p>1. <hi rend="i">Les précurseurs.</hi> – Si nous considérons l’un des caractères des Moralités : pièces mettant en scène des abstractions personnifiées, elles ont pour point de départ la <pb n="14" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_02/ENCPOS_1910_02_02.TIF/full/full/0/default.jpg"/><hi rend="i">Psychomachie</hi> de Prudence. Si nous envisageons leur autre aspect : pièces morales par destination, nous devons les rattacher au théâtre de Hrotswitha.</p>
+          <p>2. <hi rend="i">Les romans allégoriques moraux.</hi> – <hi rend="i">A.</hi> Œuvres variées continuant la tradition de la Psychomachie. Au Moyen-Age proprement dit, et pour ne parler que des œuvres de langue française, les Moralités ont leur source dans tous les dérivés de la <hi rend="i">Psychomachie</hi> sous leurs formes multiples, parmi lesquels on peut citer plus spécialement les tournois allégoriques tels que <hi rend="i">Le Tornoie</hi><hi rend="i">ment Antecrist</hi> de Huon de Méri. – <hi rend="i">B.</hi> Les Voies de Paradis et les Pèlerinages allégoriques. Plus directement encore, les Moralités nous rappellent par leur inspiration les <hi rend="i">Voies de Paradis,</hi> dont nous citerons comme type le <hi rend="i">Songe d’Enfer</hi> et la <hi rend="i">Voie de Paradis</hi> de Raoul de Houdan.</p>
+          <p>3. <hi rend="i">Développement de la satire allégorique sous l’influence des dérivés du Roman de Renard.</hi> – Enfin, nous ne devons pas négliger parmi les influences qui contribuèrent à l’éclosion de ce genre dramatique, celle qu’exercèrent <hi rend="i">le Roman de Renard</hi> et ses dérivés, au nombre desquels nous placerons, au premier rang, <hi rend="i">Fauvel</hi>.</p>
+          <p>§ III. LES PREMIÈRES ALLÉGORIES MISES A LA SCÈNE. – Ces éléments ou ces matériaux des Moralités, qu’on vient d’analyser, furent mis en œuvre tout d’abord dans les Débats, puis dans les tableaux vivants ou allégories muettes, puis dans les danses macabres, qu’on peut considérer comme les avant-coureurs des Moralités.</p>
+          <p>§ IV. LA REPRÉSENTATION DES MORALITÉS. – Les Moralités étaient jouées et composées, en général, par les Clercs de la Bazoche. En ce qui concerne les détails de la représentation, nous signalerons l’importance spéciale des prologues et des accessoires, tels que les écriteaux et les attributs des personnages.</p>
+          <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_02/ENCPOS_1910_02_03.TIF/full/full/0/default.jpg"/>
+          <p>§ V. HISTORIQUE DE LA MORALITÉ. – Les dates extrêmes de représentations de Moralités sont 1390 et 1680. Mais leur période de floraison peut être circonscrite entre le milieu du <num>xv<hi rend="sup">e</hi></num> siècle et le milieu du <num>xvi<hi rend="sup">e</hi></num>.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Des différentes classes de Moralités. – Les Moralités
+           <lb/>dérivées de la psychomachie</head>
+          <p>On peut grouper les Moralités en cinq catégories :</p>
+          <p>1. Les Moralités dérivées de la Psychomachie.</p>
+          <p>2. Les Moralités tirées de l’Ecriture Sainte.</p>
+          <p>3. Les Moralités romanesques.</p>
+          <p>4. Les Moralités polémiques et satiriques.</p>
+          <p>5. Les Moralités mythologiques.</p>
+          <p>Nous donnons le catalogue des pièces appartenant à la première catégorie, celle où la Moralité de Bien Advisé et Mal Advisé doit être classée.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La Moralité de bien advisé et mal advisé</head>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Historique de la Moralité de bien advisé et mal advisé</head>
+          <p>Plusieurs auteurs ont indiqué différentes dates au sujet de l’apparition de cette Moralité. Les documents viennent rectifier leurs opinions : <hi rend="i">Bien Advisé</hi> fut joué en 1439 à Rennes, en 1448 à Laval et en 1455 à Nantes.</p>
+        </div>
+        <div>
+          <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_02/ENCPOS_1910_02_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Le texte de la Moralité de bien advisé</head>
+          <p>§ I. LES DEUX RÉDACTIONS. – Nous avons deux rédactions de <hi rend="i">Bien Advisé</hi>, l’une conservée en un manuscrit, l’autre en un incunable dont on connaît deux exemplaires. Ces deux rédactions sont, à peu de chose près, contemporaines et datent de l’extrême fin du <num>xv<hi rend="sup">e</hi></num> siècle. On doit les considérer comme deux remaniements d’un texte antérieur perdu.</p>
+          <p>La rédaction manuscrite est la plus courte, et cependant contient seule certains épisodes.</p>
+          <p>Le mètre employé est l’octosyllabe, sauf quelques passages en décasyllabes et un passage du manuscrit sous forme de lai.</p>
+          <p>La langue de l’incunable est le français de Paris de la fin du <num>xv<hi rend="sup">e</hi></num> siècle ; celle du manuscrit, le bourguignon de la même époque.</p>
+          <p>§ II. LES PERSONNAGES. – Les personnages sont caractérisés par un symbolisme raffiné. Ils se rattachent presque tous à une tradition qu’on peut suivre dans la littérature contemporaine et antérieure. Cette tradition symbolique est remarquable surtout en ce qui concerne la <hi rend="i">Fortune.</hi></p>
+          <p>§ III. L’ESPRIT DU TEXTE. – <hi rend="i">La doctrine.</hi> – Le caractère pratique et didactique des Moralités apparaît dans l’importance accordée à l’exposé de la doctrine catholique, qui est particulièrement développé dans notre pièce.</p>
+          <p><hi rend="i">Les mœurs</hi>. – En ce qui concerne les détails relatifs aux mœurs contemporaines, notre Moralité présente les traces d’une tradition, plutôt que d’une observation directe ou réaliste.</p>
+          <pb n="17" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_02/ENCPOS_1910_02_05.TIF/full/full/0/default.jpg"/>
+          <p>§ IV. VALEUR LITTÉRAIRE. – Quoiqu’on soit porté, en général, à juger sévèrement les Moralités au point de vue de leur valeur littéraire, nous devons noter qu’à l’époque de leur vogue elles furent appréciées, non pas seulement du populaire, mais aussi des classes cultivées de la société.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Description et histoire du manuscrit de bien advisé</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Le texte imprimé de bien advisé</head>
+          <p><hi rend="i">a.</hi> L’exemplaire de la Bibliothèque Nationale. <hi rend="i">b.</hi> L’exemplaire du musée Condé, à Chantilly.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>La Moralité de bien Advisé et mal Advisé
+         <lb/>texte établi d’après les deux rédactions</head>
+        <p><hi rend="i">Planches</hi> (photographies et dessins) d’après les miniatures du manuscrit.</p>
+        <pb n="18" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_02/ENCPOS_1910_02_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

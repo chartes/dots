@@ -1,0 +1,211 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les États d’Artois, depuis leur origine jusqu’à la réconciliation des provinces wallonnes avec Philippe II (1340-1579)</title>
+        <author ref="https://www.idref.fr/033058326">Charles Hirschauer</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_12.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 93-107</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="93" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les états d’Artois
+       <lb/>depuis leur origine
+       <lb/>jusqu’à la réconciliation des provinces wallonnes
+       <lb/>avec Philippe II
+       <lb/>(1340-1579)</head>
+      <byline>
+        par
+        <forename>Ch.</forename>
+        <surname>Hirschauer</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Premiere partie
+         <lb/>Organisation et compétence des états d’Artois</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>composition, convocation et réunion des états</head>
+          <p>1. <hi rend="i">Les trois ordres.</hi> – Clergé, noblesse, villes. La composition du premier ordre et celle du Tiers ont peu changé ; variations du nombre des nobles.</p>
+          <p>2. <hi rend="i">Convocation.</hi> – Les membres des États doivent être convoqués par lettres closes individuelles du souverain ; les exceptions à cette règle soulèvent des protestations.</p>
+          <p>3. <hi rend="i">Députation aux Etats.</hi> – Jusqu’en 1574, les abbés et les nobles peuvent se faire représenter par procureurs. Les villes et chapitres envoient des délégués en nombre variable, chargés d’un mandat impératif.</p>
+          <pb n="94" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_02.TIF/full/full/0/default.jpg"/>
+          <p>4. <hi rend="i">Lieu d’assemblée.</hi> – Les États se tiennent en général à Arras ; si le prince reste libre de les convoquer dans une autre ville d’Artois, ces infractions à la coutume sont de moins en moins nombreuses. – Locaux affectés aux séances des États : la grande salle abbatiale de Saint-Vaast d’Arras ; exceptions. – Heures des assemblées.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les séances des états : les demandes du souverain</head>
+          <p>1. <hi rend="i">Nombre des comparants.</hi> – Il est souvent trop faible pour que les délibérations soient valables ; insuffisance des mesures prises pour combattre la nonchalance des membres des États. Les préséances.</p>
+          <p>2. <hi rend="i">Le « propose » aux Etats.</hi> – Quand le prince n’assiste pas en personne à l’assemblée, il fait transmettre scs demandes par des commissaires, instructions qu’il leur donne.</p>
+          <p>3. <hi rend="i">Délibération des Etats.</hi> – Après l’audition des commissaires, les Etats se retirent pour conférer ensemble, puis à part. Précautions prises pour assurer le secret et la liberté des discussions.</p>
+          <p>4. <hi rend="i">Ajournement de la session.</hi> – D’ordinaire, les Etats sollicitent et obtiennent « retraite pour communiquer à leurs maîtres » les demandes des commissaires. – Délibérations des chapitres, des échevinages et des assemblées de notables sur le « proposé » fait aux États. Nouvelles instructions aux députés.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Réponse des états aux demandes du souverain</head>
+          <p>1. <hi rend="i">Délibérations des États.</hi> – Séances préliminaires tenues par les ordres. Rappel des demandes précédem<pb n="95" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_03.TIF/full/full/0/default.jpg"/>ment faites. Délibération séparée, puis commune, des États.</p>
+          <p>2. <hi rend="i">Réponse des Etats.</hi> – Si elle est conforme aux demandes du commissaire, celui-ci l’accepte sur-le-champ au nom de son maître ; si elle est insuffisante ou si les ordres sont en désaccord, il en réfère à la cour.</p>
+          <p>3. <hi rend="i">Clauses insérées dans la réponse des Etats.</hi> – 1° Conditions mises par eux à leurs octrois : les aides seront levées à monnaie courante, le souverain accordera l’exemption du service de ban et d’arrière-ban, etc... 2° Exposé des remontrances et des doléances les plus diverses.</p>
+          <p>4. <hi rend="i">Députations en cour.</hi> – Rares au <num>xv<hi rend="sup">e</hi></num> siècle, les commissaires se chargeant le plus souvent, moyennant une bonne courtoisie, de faire accepter la réponse des États, elles deviennent plus nombreuses au <num>xvi<hi rend="sup">e</hi></num> siècle. Le rôle des députés en cour est essentiellement de défendre les intérêts particuliers des ordres.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les états d’Artois et la cour de Bruxelles</head>
+          <p>1. <hi rend="i">Négociations des députés en cour.</hi> – Quand l’offre faite par les États est insuffisante, les députés en cour essayent néanmoins de la faire agréer ; ils y parviennent assez souvent, le gouvernement de Bruxelles étant fort attentif au bien des provinces.</p>
+          <p>2. <hi rend="i">Désaccord entre les ordres.</hi> – Quand les réponses des États divergent, c’est au souverain d’être l’arbitre. Dès le <num>xv<hi rend="sup">e</hi></num> siècle, le Tiers soutient que l’avis de deux des ordres ne peut l’emporter sur celui du troisième. Les privilégiés, appuyés par la cour, sont de sentiment contraire. Au <num>xvi<hi rend="sup">e</hi></num> siècle, les deux doctrines triomphent tour à tour ; à partir de 1555, la cour résout les conflits par voie de compromis.</p>
+          <pb n="96" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_04.TIF/full/full/0/default.jpg"/>
+          <p>3. <hi rend="i">Démarches particulières des deputés des villes.</hi> – Dès le début du <num>xv<hi rend="sup">e</hi></num> siècle, les villes poursuivent en cour exemption d’une partie de leur contingent : au <num>xvi<hi rend="sup">e</hi></num>, elles obtiennent presque régulièrement modération de moitié.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les états d’Artois et les états généraux des Pays-Bas</head>
+          <p>1. <hi rend="i">Les États Généraux des Pays-Bas.</hi> – Institués par Philippe le Bon pour abréger les formalités de l’accord des aides, ils n’ont, dans leur essence, rien d’une assemblée nationale : les provinces qui y sont représentées n’y perdent point leur individualité.</p>
+          <p>2. <hi rend="i">Députations aux États Généraux.</hi> – Sauf de rares exceptions, les Etats d’Artois sont réunis pour les désigner ; chaque ordre et souvent même chaque ville choisissent à part leurs représentants qui doivent seulement « ouir et rapporter », les Etats d’Artois leur ayant toujours refusé de pleins pouvoirs.</p>
+          <p>3. <hi rend="i">Demandes faites aux Etats Généraux et réponse des Etats d’Artois</hi>. – Après le « préposé général », une demande particulière est faite aux députés d’Artois ; les Etats de ce pays ont le privilège d’être convoqués dans la province même pour rendre réponse.</p>
+          <p>4. <hi rend="i">Frais des députations en cour et aux États Généraux. </hi>– Au <num>xv<hi rend="sup">e</hi></num> siècle, ils sont couverts par la levée d’un impôt spécial ; au <num>xvi<hi rend="sup">e</hi></num> siècle, l’usage s’établit que les dépenses des députés aux Etats Généraux soient soldées par le Trésor, celles des députations en cour, par la province. Allocations supplémentaires : indemnités en cas de prise par les brigands, etc.</p>
+        </div>
+        <div>
+          <pb n="97" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VI
+           <lb/>Compétence des états en matière financière ; subsides
+           <lb/>accordés par eux</head>
+          <p>1. <hi rend="i">Le privilège de consentir l’impôt.</hi> – Ses origines. Les États, institués gardiens de ce droit, le défendent jalousement. Protestations en 1449 et 1450 contre une tentative de Philippe le Bon afin d’échapper à la tutelle des États.</p>
+          <p>2. <hi rend="i">L’aide ordinaire ou composition d’Artois</hi>. – A l’origine impôt exceptionnel, l’aide devient fixe à la suite du rachat de la gabelle et des autres impôts établis pour la rançon du roi Jean. L’aide ordinaire garde longtemps la marque de sa précarité primitive.</p>
+          <p>3. <hi rend="i">L’aide extraordinaire.</hi> – Les comtes d’Artois, dès le <num>xiv<hi rend="sup">e</hi></num> siècle, se font accorder par les États des aides égales en valeur à celle levée par le roi. Ces octrois de subsides exceptionnels ne cessent de se multiplier.</p>
+          <p>4. <hi rend="i">Assiette des aides.</hi> – Malgré plusieurs révisions des rôles aux <num>xv<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècles, les aides pèsent de façon fort inégale sur les diverses villes et paroisses.</p>
+          <p>5. <hi rend="i">Levée des aides.</hi> – Autorisation du roi de France nécessaire jusqu’en 1529. Publication des aides. Leur perception : 1° sur les villes ; expédients employés par celles-ci pour payer leur contingent ; – 2° sur le plat pays ; c’est le corps du village qui est saisi quand un particulier est en défaut de payement.</p>
+          <p>6. <hi rend="i">Réforme fiscale de</hi> 1536. – Abandon du système suranné des aides : les États accordent des subsides à recouvrer par des impôts indirects ; avantages : justice plus grande de la répartition, variété des objets taxés. On peut ranger les nouveaux impôts sous deux chefs : les droits sur les objets de consommation (boissons, bestiaux, <pb n="98" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_06.TIF/full/full/0/default.jpg"/>draps, céréales exportées, etc.) et les impôts sur les revenus (revenu foncier, rentes par lettres, revenu commercial).</p>
+          <p>7. <hi rend="i">Exemptions.</hi> – Les ordres mendiants, les édifices du culte, les hôpitaux et les communaux sont d’ordinaire exempts d’impôts. Les privilégiés essayent vainement, de 1549 à 1558, d’échapper aux nouvelles taxes, et, dès le <num>xvi<hi rend="sup">e</hi></num> siècle, en Artois, l’impôt pèse également sur les personnes de toutes conditions.</p>
+          <p>8. <hi rend="i">Cadeaux faits par les Etats.</hi> – 1° Aux membres de la famille souveraine ; 2° aux gouverneurs de la province, etc.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>Les députés généraux et la levée des impôts</head>
+          <p>1. <hi rend="i">Election et nombre des députés généraux</hi>. – Ils sont élus par les ordres séparés ; d’abord très nombreux, ils ne sont plus qu’un par ordre depuis 1568.</p>
+          <p>2. <hi rend="i">Attributions des députés généraux.</hi> – Chargés par les États de la levée des impôts, les députés généraux ont le titre de « commissaires » du souverain ; d’où leur pouvoir de nommer les receveurs, d’édicter des règlements, d’exercer une juridiction contentieuse sans appel, d’émettre des rentes, etc. Ils ont, en outre, jusqu’en 1566, la garde des impôts. Ils touchent une indemnité.</p>
+          <p>3. <hi rend="i">Auxiliaires des députés généraux.</hi> – Les subdélégués établis primitivement dans chaque ville d’Artois disparaissent après 1553, ainsi que le surintendant. Par contre, un receveur général est créé en 1571.</p>
+          <p>4. <hi rend="i">Mise en régie et affermage des impôts.</hi> – Quartiers d’imposition. Publication des impôts dans les villes et les villages. Mise en régie : les receveurs, nommés par les échevinages, prélèvent sur la recette un pour cent assez élevé. L’affermage, jugé plus économique, est fréquent après 1549. Règles suivies pour l’adjudication.</p>
+          <pb n="99" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_07.TIF/full/full/0/default.jpg"/>
+          <p>5. <hi rend="i">Mode de levée des différents impôts.</hi> – 1° Droits sur les boissons ; difficulté de réprimer la fraude. – 2° Droits sur les céréales exportées ; surveillance exercée sur leur sortie d’Artois. – 3° Droits sur les terres ; procédure de la rédaction des rôles fonciers. – 4° Taxes sur les revenus ; évaluation du revenu commercial. – Les fraudes et l’exercice de la juridiction contentieuse des députés généraux.</p>
+          <p>6. <hi rend="i">Émission de rentes remboursables sur les impôts.</hi> – Fluctuations du taux de l’intérêt ; les contribuables les plus riches sont tenus d’acheter des rentes sur les Etats. Si l’opération s’effectue mal, les députés généraux empruntent à Anvers les sommes qui manquent.</p>
+          <p>7. <hi rend="i">Le compte final.</hi> – Cessation des impôts publiée par les députés généraux ; élection des auditeurs des comptes par les Etats ; répartition du reliquat de la recette entre les villes pour l’employer aux fortifications.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Compétence des états en matière politique, législative, etc.</head>
+          <p>1. <hi rend="i">Compétence en matière politique.</hi> – Tantôt les Etats n’ont qu’un rôle consultatif, tantôt leur approbation est nécessaire pour valider certains actes du prince (ex. : traités intéressant l’Artois).</p>
+          <p>2. <hi rend="i">Les Etats et les coutumes.</hi> – Rédaction des coutumes locales de 1507. Malgré la défense de la régente, les Etats sur mandement de Louis XII font porter au bailli d’Amiens les coutumes locales. – Rédaction des coutumes générales (1508-1509). Les coutumes, dressées par des commissions de praticiens, sont ratifiées par les Etats (juin 1509), mais ne deviennent pas officielles. – Rédaction définitive des coutumes : doléances des États (1531-1534) en vue d’obtenir l’homologation par l’Empereur des coutumes. Après modifications approuvées par les Etats, <pb n="100" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_08.TIF/full/full/0/default.jpg"/>le texte de 1509 est promulgué, provisoirement en 1540, de façon définitive en 1545. – Limites du rôle législatif des États en matière de coutumes.</p>
+          <p>3. <hi rend="i">Défense des privilèges du pays.</hi> – Officiellement attribuée aux Etats en 1549 (joyeuse entrée de Philippe II), depuis longtemps déjà, elle était exercée par eux : défense des privilèges fiscaux, judiciaires (opposition, de 1529 à 1534, à l’établissement du Conseil d’Artois ; en 1574 à la juridiction du Conseil des Troubles) et ecclésiastiques (création de l’évêché de Saint-Omer ; plaintes contre la nomination irrégulière du prélat de Marolles à Saint-Bertin, etc.).</p>
+          <p>4. <hi rend="i">Défense des intérêts du pays.</hi> – Sacrifices faits par les Etats pour mettre l’Artois à l’abri des invasions. Répression des excès commis par les gens de guerre étrangers ; organisation de la maréchaussée. Défense des intérêts de l’agriculture (vœux favorables au libre échange des grains, etc.), de l’industrie, du commerce (opposition aux ordonnances monétaires de Charles-Quint interdisant le cours des espèces françaises).</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Histoire des états (1340-1579)</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les origines des états d’Artois (1340-1475)</head>
+          <p>Consultation individuelle des gens d’église, nobles et villes d’Artois par Philippe VI : demande d’aides pour réunir l’Artois au royaume (1330). – Les premières assemblées : en février 1340, probablement pour délibérer sur le manifeste des Gantois ; en juin, pour aviser à la défense du pays. – Période d’inaction (1340-1360). – Aides accor<pb n="101" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_09.TIF/full/full/0/default.jpg"/>dées pour la rançon du roi Jean, pour garantir l’Artois contre les attaques des Grandes Compagnies, pour combattre les entreprises de Charles V sur les privilèges judiciaires de la province (1360-1376).</p>
+          <p>Les États d’Artois sous Philippe le Hardi et Jean sans Peur : aides pour la croisade de Hongrie, la rançon du comte de Nevers, le joyeux avènement de Jean sans Peur. etc. (1389-1413). L’assemblée du 2 mars 1414 : serment de fidélité au duc. Refus d’aide pour la défense du royaume (1415). Subsides pour les frais causés par le siège d’Arras (1417), pour la délivrance de Rouen (1418).</p>
+          <p>Les États d’Artois sous Philippe le Bon : Octroi d’aides pour la chevalerie du duc (1421), pour les sièges de Guise et du Crotoy (1423-1424). Lettre au pape pour protester contre le mariage de Jacqueline de Bavière avec le duc de Gloucester (1426). Aides pour subvenir aux guerres de Philippe le Bon contre la comtesse de Hainaut (1429-1430). Démarches pour obtenir trêve en Artois (1431). Aides pour la défense du pays, le siège de Saint-Valery, etc. (1432-1434).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les états d’Artois depuis le traité d’Arras jusqu’à
+           <lb/>l’occupation française (1435-1477)</head>
+          <p>Serment prêté par les États d’observer le traité d’Arras (1436). Aides pour le siège de Calais et la guerre contre les Anglais (1436-1438), pour les frais des ambassades envoyées en France et en Angleterre (1439), pour la rançon de Charles d’Orléans (1440), pour la défense de l’Artois contre les Anglais (1441-1442). Refus de rien accorder (1443 et 1446) en raison de la misère du pays. Tentative du duc de lever les impôts sans l’intervention des États (1449-1450). Subsides octroyés pour la défense des fron<pb n="102" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_10.TIF/full/full/0/default.jpg"/>tières (1451 à 1457), pour la croisade contre les Turcs (1455), pour les frais des ambassades envoyées vers le pape, en France, en Angleterre, etc. (1458-1460), pour les dépenses faites par le duc à l’occasion du sacre de Louis XI (1461), pour le rachat du Luxembourg (1462), la réception du roi à Hesdin (1464), les guerres de France et de Gueldre (1465-1466).</p>
+          <p>De 1467 à 1472, les États sont convoqués une fois seulement par Charles le Téméraire : accord d’un subside sexennal pour les guerres liégeoises (1469). Difficultés faites par l’Artois pour contribuer aux subsides demandés aux Etats généraux (1471-1473). Refus d’octroyer les aides requises par le duc, durant et après le siège de Neuss (1475-1476). Il en est de même à la suite des défaites de Granson et de Morat (1476). Après le désastre de Nancy, l’Artois soutient Marie de Bourgogne. Louis XI, entré en Artois, réunit les États le 12 mars 1477 dans la cité d’Arras et fait reconnaître ses droits sur le comté, au cas où la duchesse refuserait de lui rendre hommage ; les États le supplient vainement de retirer ses troupes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les états d’Artois depuis l’occupation française jusqu’à
+           <lb/>la paix de Cambrai (1477-1529)</head>
+          <p>Pendant l’occupation française (1477-1492), les États d’Artois sont comme supprimés ; peut-être sont-ils réunis pour députer aux États de Tours.</p>
+          <p>Les Etats reprennent leurs sessions régulières en 1497 : octroi d’une aide et demie à Philippe le Beau. Joyeuse entrée de l’archiduc (1500). Accord de subsides pour ses voyages en Espagne (1500 et 1505). Refus de contribuer aux frais de la guerre de Gueldre.</p>
+          <p>Délibérations des États généraux à la suite de la mort <pb n="103" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_11.TIF/full/full/0/default.jpg"/>de Philippe le Beau. Les députés d’Artois, pour éviter une guerre avec la France, sont d’avis d’assigner la tutelle de Charles de Luxembourg à un conseil de seigneurs des Pays-Bas et non à Maximilien (1506). Les Etats d’Artois reviennent l’année suivante sur cet avis, mais, toujours soucieux de ménager le roi de France, mettent quelque prudence dans leurs rapports avec l’Empereur (1507 et suiv.). Opposition à la guerre ruineuse contre le duc de Gueldre (1511-1513).</p>
+          <p>Joyeuse entrée de Charles [Quint] en Artois ; accord de trois aides pour quatre ans (1515). Refus d’accorder de nouveaux subsides (1516-1517). Octroi de vingt et une aides en 1520. Importantes contributions consenties par les États pour la guerre contre la France ; doléances sur la misère de la province (1522-1529).</p>
+          <p>La paix de Cambrai de 1529, séparant l’Artois de la France, vient sanctionner une situation de fait qui avait pu se créer à la faveur de la négligence des rois de France.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les états d’Artois sous la domination de Charles-Quint
+           <lb/>(1529-1555)</head>
+          <p>Ratification de la Paix de Cambrai par les États d’Artois. Ceux-ci délibèrent sur la création du Conseil provincial qui supprime le ressort du Parlement de Paris.</p>
+          <p>Après sept années de paix, les États sont de nouveau mis à contribution : Octroi en 1536 de quinze aides et de 50.000 livres, en 1540 de vingt-quatre aides. La guerre reprend en 1542 après une courte interruption ; les États accordent, de 1542 à 1544, près de 300.000 livres.</p>
+          <p>Le traité de Crespy-en-Laonnais : protestations des États contre l’abandon d’Hesdin au roi de France (1544-<pb n="104" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_12.TIF/full/full/0/default.jpg"/>1545) ; la noblesse refuse d’homologuer le traité. Subsides octroyés par les États pour mettre les Pays-Bas à l’abri de nouvelles attaques. Ratification de la transaction d’Augsbourg rattachant le cercle de Bourgogne à l’Empire (1548). Joyeuse entrée du prince d’Espagne en Artois ; serments réciproques de Philippe et des États ; ceux-ci approuvent le projet de Pragmatique destiné à empêcher que les Pays-Bas ne se démembrent par le jeu des héritages (1549).</p>
+          <p>Nouvelle guerre contre la France ; octroi d’un subside de 100.000 livres en 1552, puis en 1553, d’un autre de 120.000 livres pour les frais de la campagne de Metz. La même année, les Etats d’Artois contribuent aux dépenses de la destruction de Thérouanne, puis à celles de la guerre (1553-1555), malgré la dévastation du pays par les Français.</p>
+          <p>Abdication de Charles-Quint ; députation des Etats d’Artois à Bruxelles pour y assister.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les états d’Artois depuis l’avènement de Philippe II jusqu’àu
+           <lb/>gouvernement du conseil d’état (1555-1576)</head>
+          <p>Philippe II ne tarde pas à s’aliéner les esprits par la demande des centième et cinquantième deniers ; elle est repoussée unanimement par les Etats qui pourtant cherchent à combler le déficit budgétaire (1556-1557). En 1558, ils consentent à la levée d’une aide novennale sur tous les Pays-Bas, mais refusent de nouveau le centième et le cinquantième. En 1559 et 1560, ils accordent divers subsides pour le renvoi des troupes étrangères, donnent une maison à Lamoral d’Egmont, chef du parti national (1561), tandis qu’ils refusent des subsides à Marguerite de Parme <pb n="105" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_13.TIF/full/full/0/default.jpg"/>(1562). En 1566, ils approuvent un projet d’édit tendant à mettre fin aux persécutions.</p>
+          <p>L’accueil favorable fait par les États au duc d’Albe (1568) se tourne en hostilité quand il fait demande des centième, vingtième et dixième deniers (1569). La noblesse et le clergé accordent ces taxes sous toutes réserves (1569) ; ils reviennent en 1570 sur cette réponse, la menace des nouveaux impôts arrêtant le commerce en Artois ; les États rachètent à haut prix les dixième et vingtième pour deux ans (1570). Le duc d’Albe persistant à lever ces impôts, les États envoient une députation en Espagne vers le roi (1571). Après de longues négociations, Philippe II consent à la suppression des dixième et vingtième (1572) ; sommes offertes en échange par les États (1572-1573).</p>
+          <p>Requesens, à court d’argent, convoque les États onze fois en 1574 pour obtenir d’eux 200.000 livres, sous la condition que le Conseil des Troubles sera supprimé. Nouvelles demandes faites par lui ; elles n’obtiennent qu’un demi-succès (1575-1576).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Les états d’Artois depuis le gouvernement du conseil d’état
+           <lb/>jusqu’à la réconciliation des provinces wallonnes
+           <lb/>(1576-1579)</head>
+          <p>Les États d’Artois envoient leurs députés aux États généraux, sans leur donner pleins pouvoirs en matière financière. Malentendu avec le Conseil d’Etat (1576). Difficultés faites pour consentir aux impôts octroyés par les États généraux (1576-janv. 1577). Les États ratifient la Pacification de Gand, l’Édit Perpétuel et l’Union de Bruxelles (janv. – avr. 1577) ; mais ils mécontentent de nouveau les États généraux par leur opposition aux déci<pb n="106" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_14.TIF/full/full/0/default.jpg"/>sions de l’assemblée de Bruxelles (mai-juill.). La retraite de don Juan à Namur rejette les États d’Artois vers le parti national ; énormes subsides accordés par eux (août-nov.). Nouveau désaccord avec les Etats généraux, doléances contre les excès des Gantois, la nomination de Frédéric d’Ives à SaintBertin, le traité conclu avec la reine d’Angleterre, vœux pour la dissolution des Etats généraux (nov. 1577-févr. 1578). Echec éprouvé par Marnix de Sainte-Aldegonde envoyé par le prince d’Orange à Arras : les impôts demandés par lui sont repoussés et les Etats écrivent aux diverses provinces catholiques en vue de faire la paix avec le roi (24 fév.-1<hi rend="sup">er</hi> mars 1578). Emeute du 17 mars à Arras causée par cette démarche des Etats. Ceux-ci ne tardent point à reformer leur opposition : refus d’accorder la liberté religieuse aux protestants ; tentatives pour échapper à la tutelle des « Quinze Tribuns » d’Arras et du capitaine Ambroise (mars à octobre).</p>
+          <p>Les Etats transportent leurs séances à Béthune pour délibérer plus librement. La répression du mouvement révolutionnaire d’Arras les pousse à bien accueillir les propositions des États de Hainaut tendant à constituer une ligue catholique contre les Gantois (oct.-nov.). Les Etats d’Artois et les députés des provinces wallonnes entendent favorablement les ouvertures du prince de Parme en vue d’une réconciliation avec le roi (déc.). Par l’Union d’Arras (7 janvier 1579), une partie des Wallons déclarent maintenir en tous ses points la Pacification de Gand ; mais les projets d’Alexandre Farnèse sont traversés à Lille, à Douai et en Hainaut par les négociations contraires des députés des Etats généraux (févr.) ; il ne tarde pas à reprendre l’avantage, profitant habilement des maladresses de ses adversaires (févr.-mars). Les Wallons travaillent en avril et en mai à la rédaction du traité avec le roi. Les termes en sont arrêtés le 17 mai.</p>
+          <p>Retards apportés par le prince de Parme à la publica<pb n="107" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_15.TIF/full/full/0/default.jpg"/>tion du traité : il le signe seulement le jour de la prise de Maestricht (29 juin). Les États d’Artois, réunis en juillet, mettent en demeure Farnèse de donner sans tarder au traité d’Arras force exécutoire. Conférences de Mons (août-sept.) ; les Wallons sont intraitables sur la question du renvoi des troupes étrangères ; le traité est enfin publié le 13 septembre à Mons et le 19 à Arras.</p>
+          <p>Conclusion : Importance du traité de Mons pour l’histoire générale et pour l’histoire des Etats d’Artois-</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>I. Les actes des Etats d’Artois.</p>
+        <p>Etude diplomatique des actes émanés du greffe des Etats et de celui des députés généraux. Organisation de ces greffes au <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        <p>II. Liste chronologique des assemblées des Etats d’Artois jusqu’en 1579.</p>
+        <p>III. Liste des députés généraux des Etats d’Artois (1536-1594).</p>
+        <p>IV. 1° Liste des greffiers des États d’Artois (1498-1599).</p>
+        <p>2° Liste des receveurs généraux des États d’Artois (1536-1582).</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Fac-similés.</p>
+        <p>Carte d’Artois par quartiers d’imposition en 1579 ; membres du Clergé et du Tiers représentés aux États à cette date.</p>
+        <pb n="108" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_12/ENCPOS_1910_12_16.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

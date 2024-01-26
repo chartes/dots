@@ -1,0 +1,110 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_PREV" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pages liminaires</title>
+        </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_PREV.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 0-8</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="1" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_01.TIF/full/full/0/default.jpg"/>
+      <p>ÉCOLE NATIONALE DES CHARTES</p>
+      <p>POSITIONS DES THÈSES</p>
+      <p>					SOUTENUES PAR LES 				</p>
+      <p>ÉLÈVES DE LA PROMOTION DE 1971</p>
+      <p>					POUR OBTENIR 				</p>
+      <p>LE DIPLÔME D’ARCHIVISTE PALÉOGRAPHE</p>
+      <p><hi rend="i">Ces thèses seront soutenues le 27 mars 1971 et jours suivants</hi></p>
+      <p>PARIS ÉCOLE DES CHARTES Rue de la Sorbonne, 19 1971</p>
+      <pb n="2" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_02.TIF/full/full/0/default.jpg"/>
+      <pb n="3" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_03.TIF/full/full/0/default.jpg"/>
+      <pb n="4" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_04.TIF/full/full/0/default.jpg"/>
+      <pb n="5" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_05.TIF/full/full/0/default.jpg"/>
+      <p>ÉCOLE NATIONALE DES CHARTES</p>
+      <p>POSITIONS DES THÈSES</p>
+      <p>					SOUTENUES PAR LES 				</p>
+      <p>ÉLÈVES DE LA PROMOTION DE 1971</p>
+      <pb n="6" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_06.TIF/full/full/0/default.jpg"/>
+      <pb n="7" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_07.TIF/full/full/0/default.jpg"/>
+      <p>ÉCOLE NATIONALE DES CHARTES</p>
+      <p>POSITIONS DES THÈSES</p>
+      <p>					SOUTENUES PAR LES 				</p>
+      <p>ÉLÈVES DE LA PROMOTION DE 1971</p>
+      <p>					POUR OBTENIR 				</p>
+      <p>LE DIPLÔME D’ARCHIVISTE PALÉOGRAPHE</p>
+      <p><hi rend="i">Ces thèses seront soutenues le 27 mars 1971 et jours suivants</hi></p>
+      <p>PARIS ÉCOLE DES CHARTES Rue de la Sorbonne, 19 1971</p>
+      <pb n="8" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_08.TIF/full/full/0/default.jpg"/>
+      <p>JURY DES EXAMENS DE L’ÉCOLE</p>
+      <p><hi rend="i">Membres du Conseil de perfectionnement :</hi> MM. F. LECOY, président, délégué de l’Académie des Inscriptions et Belles-Lettres. – J. SIRINELLI, directeur général des Enseignements supérieurs. – A. CHAMSON, directeur général des Archives de France. – E. DENNERY, administrateur général de la Bibliothèque nationale, directeur générai des Bibliothèques de France. – M. FRANÇOIS, directeur de l’École, professeur d’Histoire des institutions. – R. LEBÊGUE, P. COURCELLE, P. PRADEL, délégués de l’Académie des Inscriptions et Belles-Lettres. – M. BAUDOT, inspecteur général des Archives. – M. CAILLET, inspecteur général des Bibliothèques.</p>
+      <p>– P. OURLIAC, professeur à la Faculté de droit et des sciences économiques de FUniversité de Toulouse.</p>
+      <p><hi rend="i">Professeurs :</hi> MM. A. VERNET, professeur de Sources narratives et littéraires de l’histoire de France. – J. HUBERT, professeur d’Archéologie.</p>
+      <p>– J. MONFRIN, professeur de Philologie romane. – R.-H. BAUTIER, professeur de Sources d’archives et documents diplomatiques. – P. DUPARC, professeur d’Histoire du droit. – H.-J. MARTIN, professeur de Bibliographie et Histoire du livre. – E. POULLE, professeur de Paléographie.</p>
+      <p><hi rend="i">Membres adjoints pour l’examen des thèses de la présente année : </hi>MM. G. BEAUJOUAN, directeur d’études à l’École pratique des hautes études. – R. BLAIS, directeur honoraire de l’institut agronomique. – J. DUBOIS, chargé de conférences à l’École pratique des hautes études. – J. FAVIER, professeur à l’Université de Paris-IV. – R. FOSSIER, professeur à l’Université de Nancy. – P. GOUBERT, professeur à l’Université de Paris-I. – A. GRABAR, professeur honoraire au Collège de France. – P. JEANNIN, directeur d’études à l’École pratique des hautes études. – C. LAROCHE, conservateur en chef aux Archives nationales. – J. LE GOFF, directeur d’études à l’École pratique des hautes études. – P. MAROT, directeur honoraire de l’École nationale des chartes. – Ch. SAMARAN, membre de l’institut, directeur honoraire des Archives de France. – J. THIRION, conservateur au Musée du Louvre.</p>
+      <p><hi rend="i">Maître-assistant :</hi> M<hi rend="sup">me</hi> G. HASENOHR.</p>
+      <pb n="9" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_09.TIF/full/full/0/default.jpg"/>
+      <p>MEMBRES DU JURY DÉSIGNÉS POUR L’EXAMEN DES THÈSES</p>
+      <p><hi rend="i">Auteurs des thèses</hi></p>
+      <p><hi rend="i">Examinateurs</hi></p>
+      <p>M<hi rend="sup">me</hi> M.-P. Arnauld-Cancel	 MM. COURCELLE et VERNET.</p>
+      <p>M<hi rend="sup">lle</hi> G. Bautier.................... HUBERT	et GRABAR.</p>
+      <p>M<hi rend="sup">me</hi> C. Berthier-Georgesco	 PRADEL et MARTIN.</p>
+      <p>M<hi rend="sup">me</hi> M.-Cl. Buxtorf-Laplanche	 POULLE et JEANNIN.</p>
+      <p>M<hi rend="sup">lle</hi> R. Cleyet-Michaud	 FRANÇOIS et MARTIN.</p>
+      <p>M<hi rend="sup">lle</hi> M. Constans.................. PRADEL	et MAROT.</p>
+      <p>M<hi rend="sup">lle</hi> M. Constant	 DUPARC et POULLE.</p>
+      <p>M<hi rend="sup">lle</hi> A. Duchesne.................. LECOY	et M<hi rend="sup">me</hi> HASENOHR.</p>
+      <p>M. Cl. Fagnen..................... MM.	BAUDOT et BAUTIER.</p>
+      <p>M<hi rend="sup">lle</hi> M. Geny...................... MAROT	et BLAIS.</p>
+      <p>M<hi rend="sup">lle</hi> F. Girard..................... BAUDOT	et MONFRIN.</p>
+      <p>M.A. Guerreau.................... FRANÇOIS	et FAVIER.</p>
+      <p>M.M. Hamon..................... BAUTIER	et DUBOIS.</p>
+      <p>M<hi rend="sup">me</hi> M. Hamon-Jugnet............. MONFRIN	et BAUTIER.</p>
+      <p>M<hi rend="sup">11e</hi> D. Jacquart................... VERNET	et BEAUJOUAN.</p>
+      <p>M.J.-P. Le Coq.................... OURLIAC	et DUPARC.</p>
+      <p>M<hi rend="sup">me</hi> D.-E. Le Coq-Morel		LECOY et LEBÈGUE.</p>
+      <p>M<hi rend="sup">lle</hi> E. Morin..................... BAUDOT	et MARTIN.</p>
+      <p>M<hi rend="sup">me</hi> A. Mouradian-Ségaud		CAILLET et LAROCHE.</p>
+      <p>M<hi rend="sup">me</hi> D. Oppetit-Pemé.............. OURLIAC	et FOSSIER.</p>
+      <p>Mme H. Prax-Falcou................ OURLIAC	et DUPARC.</p>
+      <p>M<hi rend="sup">lle</hi> M.-E. Rabut	 SAMARAN et VERNET.</p>
+      <p>M<hi rend="sup">lle</hi> V. Rey....................... HUBERT	et CAILLET.</p>
+      <p>M. Ph. Rosset..................... FRANÇOIS	et GOUBERT.</p>
+      <p>M.J.-Cl. Schmitt	 POULLE et LE GOFF.</p>
+      <p>M<hi rend="sup">me</hi> B. Suau-Noulens.............. MONFRIN	et BAUTIER.</p>
+      <p>M<hi rend="sup">lle</hi> M.-Ch. Trouillet	 HUBERT et THIRION.</p>
+      <p>M<hi rend="sup">lle</hi> D. Vie....................... DENNERY	et DUPARC.</p>
+      <p>M.J. Wirth....................... HUBERT	et THIRION.</p>
+      <pb n="10" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_PREV/ENCPOS_1971_PREV_10.TIF/full/full/0/default.jpg"/>
+      <p><hi rend="i">Les positions des thèses sont publiées sous la responsabilité de leurs auteurs.</hi></p>
+    </body>
+  </text>
+</TEI>

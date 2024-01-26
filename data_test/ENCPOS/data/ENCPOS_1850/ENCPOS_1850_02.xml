@@ -1,0 +1,98 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1850_02" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Des enquêteurs et des réformateurs sous la troisième race</title>
+        <author ref="https://www.idref.fr/073413593">Théodore-Henri-Léon-Auguste Duplès-Agier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1850/ENCPOS_1850_02.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1850 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1850</date>, <biblScope>p. 3-5</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1850"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="3" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_02/ENCPOS_1850_02_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Des enquêteurs
+       <lb/>et
+       <lb/>des réformateurs
+       <lb/>sous la troisième race.</head>
+      <byline>
+        Thèse soutenue par
+        <forename>Théodore-Henri-Léon-Auguste</forename>
+        <surname>Duples-Agier</surname>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>L’origine des commissaires de la troisième race est entourée de ténèbres, et il est fort difficile de préciser l’époque à laquelle ces inspecteurs administratifs furent institués.</p>
+        <p>Car, d’un côté, on ne peut soutenir qu’ils aient été les successeurs directs des <hi rend="i">Missi dominici</hi>, puisque les désordres et l’anarchie qui régnèrent pendant la dernière moitié du neuvième siècle et le commencement du dixième, en donnant naissance à la féodalité, anéantirent cette institution, ainsi que beaucoup d’autres essais de centralisation tentés par Charlemagne.</p>
+        <p>D’un autre côté, indépendamment du témoignage positif et formel des savants, qui, sans apporter des textes à l’appui de leur opinion, font honneur de l’institution de ces commissaires à Louis VI ou à Philippe-Auguste, l’absence complète de documents où saint Louis apparaisse comme le créateur de cette espèce de magistrature, ainsi que les termes mêmes de ceux des documents du treizième siècle où il est question de ces envoyés, semblent donner à entendre que cette institution, sans remonter aussi haut, est certainement antérieure à saint Louis.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>Ce qui empêcherait de déterminer le moment précis où cette institution fut fondée, c’est l’origine même à laquelle elle se <pb n="4" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_02/ENCPOS_1850_02_02.TIF/full/full/0/default.jpg"/>rattache. Nous croyons la trouver dans ces commissaires chargés par la royauté de tenir des parlements dans les villes qui étaient alors dépourvues d’une cour de justice fixe et permanente.</p>
+      </div>
+      <div>
+        <head rend="uc">III.</head>
+        <p>Les commissaires de la troisième race, chargés par la royauté du soin de surveiller ses délégués dans les provinces, ainsi que d’accueillir les plaintes qui s’élèveraient sur leur compte, prenaient ordinairement, dans les actes émanés d’eux, le nom d’Enquêteurs.</p>
+      </div>
+      <div>
+        <head rend="uc">IV.</head>
+        <p>Saint Louis les envoyait dans les provinces une ou même plusieurs fois par année. Sous Louis X, ces inspections n’avaient plus lieu que tous les trois ans ; du moins il en était ainsi pour la Champagne et la Normandie.</p>
+      </div>
+      <div>
+        <head rend="uc">V.</head>
+        <p>Sans être les successeurs immédiats, les héritiers directs des <hi rend="i">Missi dominici</hi>, ils offrent avec eux des points de ressemblance qui méritent d’être relevés :</p>
+        <p>1° Comme les <hi rend="i">Missi</hi>, ils étaient ordinairement députés dans les provinces au nombre de deux ;</p>
+        <p>2° Comme les <hi rend="i">Missi</hi> de la deuxième race étaient choisis parmi les hauts dignitaires de la cour du roi ou parmi les membres du clergé et de la noblesse, ceux de la troisième étaient pris au sein du parlement et parmi les membres laïques ou ecclésiastiques qui en faisaient partie.</p>
+        <p>3° Comme les <hi rend="i">Missi,</hi> ils étaient défrayés par l’État tout le temps que duraient leurs tournées.</p>
+      </div>
+      <div>
+        <head rend="uc">VI.</head>
+        <p>La juridiction des commissaires de la troisième race s’étendait sur tous les délégués de l’autorité royale, tels que baillis ou sénéchaux, prévôts, viguiers, vicomtes, sergents, forestiers, etc.</p>
+      </div>
+      <div>
+        <head rend="uc">VII.</head>
+        <p>A la différence des fonctions des <hi rend="i">Missi,</hi> qui offraient un caractère politique, celles des commissaires du treizième siècle étaient presque exclusivement judiciaires.</p>
+        <pb n="5" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1850_02/ENCPOS_1850_02_03.TIF/full/full/0/default.jpg"/>
+        <p>Elles consistaient surtout à recevoir les plaintes qui pouvaient s’élever contre les délégués du roi dans les provinces, et à réparer les injustices qui étaient portées à leur connaissance. Ils formaient une espèce de tribunal de première instance où étaient portées toutes les causes dans lesquelles l’État figurait comme partie ; ils étaient consultés sur certaines mesures d’utilité publique ; chargés d’examiner les comptes des baillis et des sénéchaux, ils retranchaient les sommes indûment perçues ; enfin, ils pouvaient dans certains cas réformer l’organisation intérieure des cités ou remettre en vigueur d’anciennes coutumes abolies.</p>
+      </div>
+      <div>
+        <head rend="uc">VIII.</head>
+        <p>Ils devaient suspendre ou révoquer de leurs fonctions les baillis, les sénéchaux et les autres délégués du roi qui étaient convaincus d’avoir malversé ou opprimé les peuples.</p>
+      </div>
+      <div>
+        <head rend="uc">IX.</head>
+        <p>Ils étaient investis, dans le principe, du droit de rendre des arrêts et de les faire exécuter, mais dans la suite leurs prérogatives à cet égard furent restreintes.</p>
+      </div>
+      <div>
+        <head rend="uc">X.</head>
+        <p>Pas plus que les <hi rend="i">Missi,</hi> ils ne jugeaient en dernier ressort, et ils restaient, tant que duraient leurs fonctions, sous la juridiction du parlement, devant lequel ils pouvaient être appelés à répondre de leurs actes ; dans les cas douteux, ils devaient en référer à cette cour souveraine, de laquelle ils tenaient leurs pouvoirs.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,164 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Un chapitre de dames nobles : la collégiale Saint-Goéry d’Épinal</title>
+        <author ref="https://www.idref.fr/03521273X">Jean-Marie Dumont</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 63-73</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="63" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Un chapitre de dames nobles
+       <lb/>La collégiale Saint-Goéry d’Épinal</head>
+      <byline>
+        par
+        <forename>Jean-Marie</forename>
+        <surname>Dumont</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Parmi les nombreux établissements monastiques qui prospérèrent en Lorraine dès le moyen âge, quatre abbayes de femmes furent particulièrement remarquables par le fait que, abandonnant la règle de saint Benoît, elles se sécularisèrent à des époques encore assez mal déterminées et se transformèrent peu à peu en chapitres de dames nobles.</p>
+        <p>Il nous a paru intéressant d’étudier l’histoire, la vie, les mœurs, la richesse de l’un de ces chapitres de chanoinesses, l’église collégiale Saint-Goéry d’Épinal, bien qu’il n’ait pas eu l’importance, la renommée et l’ancienneté de l’abbaye de Remiremont.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Histoire des origines à la Révolution</head>
+        <div>
+          <pb n="64" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre premier
+           <lb/>le monastère.</head>
+          <p><hi rend="i">a) Date de fondation.</hi> – Certains auteurs et la légende veulent que ce soit saint Goéry, évêque de Metz (627-641), qui ait fondé le monastère d’Épinal pour ses filles Précie et Victorine. Les sources narratives et les actes les plus anciens que nous possédions concernant l’abbaye d’Épinal sont unanimes à reconnaître que cet établissement religieux fut créé en l’honneur de saint Goéry, par Thierry de Hamelant, évêque de Metz (965-984), enrichi par son successeur Adalbéron II (984-1005), approuvé et consacré par saint Gérard, évêque de Toul (963-994), et confirmé par le futur empereur Henri II en 1003. Comme cette création du monastère coïncida avec celle d’un marché et d’un château qui furent à l’origine de la ville d’Épinal, on peut considérer que la date de fondation de l’église d’Épinal se situe, comme celle de cette ville, entre 973 et 983.</p>
+          <p><hi rend="i">b) Le <num>xi<hi rend="sup">e</hi></num> siècle : prospérité et relâchement.</hi> – Ce monastère de Bénédictines fut prospère dès l’origine, grâce à la renommée des miracles de saint Goéry et au soin que prit Adalbéron II de le doter et de le mettre sous la sauvegarde de l’empereur. Aussi, vers 1050, son église, devenue insuffisante, fut-elle reconstruite et consacrée par l’évêque de Toul Brunon, déjà élevé au pontificat sous le nom de Léon IX. En 1094, Poppon, évêque de Metz, dut entreprendre de rétablir l’observance de la règle dont le monastère s’était départi.</p>
+          <p><hi rend="i">c) Le <num>xii<hi rend="sup">e</hi></num> siècle : la sécularisation.</hi> – Les évêques de Metz et de Toul, Hillin, archevêque de Trèves, les papes Alexandre III et Lucius III confirment tour à tour les biens, statuts et privilèges du monastères et arbitrent les différends élevés entre l’Église et les puissances laïques. On ne connaît pas la date exacte de la sécularisation de ce couvent de Bénédictines ; cependant, dans un procès qu’il eut à ce sujet en 1286 avec l’évêque de Toul Conrad, le monastère se prétendit <pb n="65" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_03.TIF/full/full/0/default.jpg"/>séculier de temps immémorial. D’autre part, de l’étude des faits, il ressort que le monastère était certainement séculier dès le début du <num>xiii<hi rend="sup">e</hi></num> siècle (1215), et vraisemblablement à la fin du <num>xii<hi rend="sup">e</hi></num>, lors de la création de quatre chanoines (1140-1185). L’étude des textes, qui ne nous donne pas de précisions sur cette question, ne permet pas de déterminer avec plus de certitude la date de la sécularisation.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le chapitre : dépendance du temporel de Metz
+           <lb/>(<num>xiii<hi rend="sup">e</hi></num> siecle-1444).</head>
+          <p><hi rend="i">a) Le XIII</hi>
+            <hi rend="sup">e</hi>
+            <hi rend="i">siècle : les donations.</hi> – Au début du <num>xiii<hi rend="sup">e</hi></num> siècle, le chapitre est réduit à une pauvreté telle qu’il est obligé de quêter pour la réparation de son église (1209-1224). Cependant, il reçoit des donations de princes lorrains : Hugues II de Vaudémont (1215), Henri, comte de Bar (1218), Mathieu II, duc de Lorraine (1227), qui prend le chapitre sous sa garde, Philippe de Lorraine (1237) ; de particuliers, d’évêques, qui facilitent les démarches du chapitre pour recueillir de l’argent (1209) et confirment les dons faits à cette église, ainsi que ses droits. Les papes, eux aussi, confirment les biens du chapitre (Grégoire IX en 1234), lui accordent des privilèges (Innocent IV en 1246), interviennent dans les différends entre le chapitre et les évêques de Toul (Honorius IV, 1286-1294 ; Boniface VIII, 1296). C’est à cette époque, semble-t-il, que les souverains pontifes prirent sous leur obédience directe le chapitre d’Épinal et l’exemptèrent de l’Ordinaire, privilège qui ne fut officiellement déclaré qu’au <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">b) Le <num>xiv<hi rend="sup">e</hi></num> siècle : lutte contre les évêques de Toul.</hi> – Le monastère traverse encore une période difficile. Amédée de Genève, évêque de Toul en 1323, entreprend de le réformer. Plus tard, différends avec les évêques de Toul, Thomas de Bourlémont (1331) et Bertrand de la Tour d’Auvergne (1335), qui motivèrent même l’intervention papale (Be<pb n="66" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_04.TIF/full/full/0/default.jpg"/>noît XII en 1337). Cependant, le chapitre a recours aux évêques de Toul dans ses démêlés intérieurs (1326-1331-1361), pour le choix de ses chanoines (1365) et dans des questions de provisions (1394), le Saint-Siège étant divisé par le Grand Schisme. D’autre part, le chapitre traite avec le chevalier de Ville (1399).</p>
+          <p><hi rend="i">c) Le <num>xv<hi rend="sup">e</hi></num> siècle jusqu’en 1444.</hi> – La Lorraine est dévastée par la guerre. Le chapitre est en rapports étroits avec l’abbaye de Remiremont. A cause du schisme, démêlés de Catherine de Blamont, abbesse d’Épinal, élue abbesse de Remiremont (1404-1412). En 144’1, Isabelle de Lorraine confirme au chapitre les droits accordés par Mathieu II en 1229. Les relations du chapitre et de son suzerain, l’évêque de Metz, se sont relâchées depuis un siècle. La ville est en guerre avec Conrad Bayer de Boppart (1443). En 1444, Charles VII prend Épinal et confirme les privilèges du chapitre. Le chapitre suit désormais les vicissitudes de la ville.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le chapitre : union a la Lorraine (1466-1766)
+           <lb/>et à la France (1766-1791).</head>
+          <p><hi rend="i">a) Fin du <num>xv<hi rend="sup">e</hi></num> siècle. Le <num>xvi<hi rend="sup">e</hi></num> siècle.</hi> – Louis XI cède Épinal à Jean de Calabre (1466). La ville et le chapitre subissent les malheurs de la guerre, la peste en 1467. Épinal, au pouvoir des Bourguignons (1475), sera délivrée par René II (22 juillet 1476). Au <num>xvi<hi rend="sup">e</hi></num> siècle, sous le règne pacifique du duc Antoine (1508-1544), les papes Jules II (1511) et Léon X (1518) confirment les statuts du chapitre. Démêlés de Nicole de Dommartin, abbesse d’Épinal, élue abbesse de Remiremont (1507-1524). Le chapitre est en rapport avec le duc Antoine (1541) et le duc Charles III (1558), qui consent des exemptions au monastère (1566-1590) et lui confirme ses droits (1595). Sous le règne de ce duc, le chapitre participe aux Etats-Généraux (de 1564 à 1596). Répercussions des guerres de religion, méfaits de la réforme à Épinal, <pb n="67" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_05.TIF/full/full/0/default.jpg"/>peste en 1575, passage des « reitres » en 1587. Le chapitre a recours au Saint-Siège en 1565 et en 1586.</p>
+          <p><hi rend="i">b) Le XVII</hi>
+            <hi rend="sup">e</hi>
+            <hi rend="i">siècle.</hi> – Le règne du duc Henri et la paix. Démêlés intérieurs du chapitre (1602-1621-1629). La guerre de Trente ans sévit en Lorraine avec le règne désastreux de Charles IV (1624-1675). Louis XIII occupe la Lorraine (1633-1634) et veut jouir du droit de joyeux avènement (1635). La peste, en 1635, désorganise le chapitre et le disperse. La paix de 1641 rend momentanément la Lorraine à Charles IV ; Du Hallier, lieutenant général des armées du roi, prend Épinal le 25 août 1641 et accorde des capitulations au chapitre et à la ville. Charles IV reprend Épinal (1651) et intervient dans une question de préséance qui divisait le chapitre et la ville (1633). En 1671, le maréchal de Créqui prend Épinal. La Lorraine est occupée par la France. En 1681, le chapitre prête foi et hommage à la Chambre royale de Metz. Le chapitre, quoique exempt de l’ordinaire, doit recourir aux évêques de Toul qui agiront souvent comme délégués du Saint-Siège.</p>
+          <p><hi rend="i">c) Le <num>xviii<hi rend="sup">e</hi></num> siècle : la Lorraine française. La fin du chapitre.</hi> – La Lorraine est rendue à ses ducs. Les ducs de Lorraine, puis le roi Stanislas et enfin le roi de France exercent leur droit de joyeux avènement (Léopold en 1699 ; François III en 1729 ; Stanislas en 1737 ; Louis XV en 1766 ; Louis XVI en 1775). Le chapitre est en contestations perpétuelles avec les évêques de Toul qui tentent d’empiéter sur ses droits : le duc Léopold doit intervenir sur la demande du chapitre en 1726. Démêlés intérieurs du chapitre (1703-1734), qui est aussi en procès avec d’autres monastères (1700-1748-1755), avec la ville (1708-1738-1753), et fait de nombreux appels en cour de Rome. Le chapitre, en 1789, participe à l’élection du représentant du clergé aux Etats-Généraux et ne cesse de protester contre la confiscation de ses biens et l’abolition de ses droits jusqu’à son expulsion, le 15 avril 1791.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="68" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Organisation et vie intérieure
+         <lb/>du chapitre</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>conditions d’admission.</head>
+          <p>Les conditions essentielles étaient d’abord la nécessité d’une vacance de prébende, ce qui est rappelé dès 1215 et fut toujours observé ; ensuite, la noblesse de la naissance : les premiers noms qui nous sont parvenus sont ceux de vieilles familles lorraines. D’autre part, dès le <num>xiv<hi rend="sup">e</hi></num> siècle, est spécifié qu’il faut nommer des filles « bien nées ». Au <num>xviii<hi rend="sup">e</hi></num> siècle, on examine les arbres de ligne et on exige les huit quartiers de noblesse nécessaires. Quant à l’âge, s’il fut en principe de six ans au minimum, d’après le règlement de 1645, il fut, en réalité, beaucoup plus bas encore.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Composition.</head>
+          <p>Le chapitre comprend : l’abbesse, le chapitre proprement dit et les officiers.</p>
+          <p>1) <hi rend="i">L’abbesse.</hi> – L’abbesse est élue dès l’origine ; l’élection se fait par scrutin, dont le mode est fixé par un règlement de 1761 ; liberté de ces élections, leur confirmation par le Saint-Siège, la cérémonie de prise de possession. L’abbesse était choisie parmi le chapitre, après avoir fait son stage. Sécularisation de l’abbesse. Ses droits et privilèges : elle préside le chapitre et les cérémonies, donne les permissions d’absence et de testament et fait les ordonnances de prébende. A son décès, est élue une dame administratrice, chanoinesse capitulaire. Parfois, l’abbesse s’est adjointe une coadjutrice.</p>
+          <pb n="69" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_07.TIF/full/full/0/default.jpg"/>
+          <p>2) <hi rend="i">Le chapitre.</hi> – Le chapitre comprend des dignitaires, des chanoinesses et des chanoines : <hi rend="i">a</hi>) Les dignitaires sont la doyenne, nommée par le chapitre parmi les dames ayant l’ait stage et ayant vingt-sept ans ; elle remplace l’abbesse en son absence et est chef du chapitre pour le temporel ; la secrète, choisie par l’abbesse et le chapitre : ses fonctions sont celles d’une sacristine ; – <hi rend="i">b</hi>) Les chanoinesses sont présentées par la dame en tour d’appréhender (dame tante) ou par le droit de joyeux avènement (ducs et souverains), appréhendées solennellement à l’église devant l’abbesse à qui elles prêtent serment ; elles effectuent un stage de six mois et, par la suite, ont des fonctions de dames du Deus et de dames chantres, en même temps qu’elles participent aux réunions du chapitre quand elles sont dames capitulantes ; elles ont le droit de se démettre de leur prébende, de s’absenter et de tester avec la permission abbatiale ; – <hi rend="i">c</hi>) Les chanoines : les quatre prêtres hebdomadaires créés au <num>xii<hi rend="sup">e</hi></num> siècle sont nommés par l’abbesse et le chapitre dans les mois non réservés ; ce sont des prêtres qui exercent les fonctions sacerdotales par semaine, à tour de rôle ; ils participent aux assemblées du chapitre qui traitent de l’administration du temporel seulement ; ils jouissent d’une prébende comme les chanoinesses.</p>
+          <p>3) <hi rend="i">Les officiers du chapitre.</hi> – <hi rend="i">a) Séculiers :</hi> ce sont le vicaire administrateur nommé par le chapitre, curé primitif de l’église paroissiale d’Épinal, qui dessert la paroisse et jouit du casuel et d’une part des dîmes ; le prêtre marlier, qui sert de prêtre en second, nommé par l’abbesse et dont. l’office fut supprimé en 1647 ; le prêtre chancelier ou sacristain, qui a soin des ornements et vases sacrés, nommé par le chapitre et sous les ordres de la secrète ; le prêtre sous-diacre, nommé et révoqué par le chapitre ; le croisier, clerc ou prêtre, turiféraire aux messes hautes, nommé et révoqué par le chapitre ; enfin, des officiers secondaires comme les marguilliers, les régents d’école, l’organiste, le bâtonnier, le bedeau, les choristes et les acolytes ; – <hi rend="i">b) Laïques</hi> : ce sont le receveur de la Crosse qui administre la mense abbatiale ; le prévôt qui gère <pb n="70" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_08.TIF/full/full/0/default.jpg"/>le temporel du chapitre ; le procureur qui gère les fondations ; le receveur des ponctuations qui règle ce qui revient aux dames pour leur présence aux offices ; le grènetier qui recevait les grains et les entreposait pour le chapitre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Exemptions et privilèges.</head>
+          <p>L’exemption de l’Ordinaire : dès le <num>xiii<hi rend="sup">e</hi></num> siècle, le chapitre a recours au Saint-Siège et est en démêlés à ce sujet avec les évêques de Toul. D’autre part, le chapitre était exempté des prémices dues au Saint-Siège dès le <num>xv<hi rend="sup">e</hi></num> siècle. De plus, il avait le droit de se choisir des confesseurs ayant le pouvoir d’absoudre tous les cas réservés (1560), était exempt du logement des gens de guerre (1633-1734), du droit de passage pour ses vins de Malzéville (1534-1539) et participait aux Etats-Généraux de Lorraine (<num>xvi<hi rend="sup">e</hi></num> siècle).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Vie intérieure.</head>
+          <p><hi rend="i">a) Les offices.</hi> – La messe journale, matines, laudes, prime, tierce, sexte, none, la messe du chapitre, les vêpres. De plus, à certaines fêtes, des rites particuliers : offrande, procession, aux fêtes de saint Sébastien, saint Benoît, de la Dédicace, à la semaine sainte, aux fêtes de saint Goéry, saint Maurice, saint Auger.</p>
+          <p><hi rend="i">b) Le mode de vie.</hi> – Liberté du genre de vie, puisqu’on pouvait démissionner, s’absenter, ce qui amena des abus. D’autre part, ce ne sont que différends perpétuels qui opposent abbesse et chapitre, chapitre et chanoines, chapitre et administrateur, chapitre et abbayes voisines, le chapitre et la ville. Cependant, les dames d’Épinal n’étaient pas inaccessibles à la charité : nous avons beaucoup d’exemples de fondations pieuses pour la paroisse et le chapitre, d’institu<pb n="71" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_09.TIF/full/full/0/default.jpg"/>tions charitables (hôpital Saint-Goéry, couvent des Minimes, bouillon des pauvres et écoles, apanages du chapitre) ; de plus, elles se montraient généreuses dans leurs aumônes et indulgentes dans l’application de leurs droits.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Le temporel du chapitre</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>formation.</head>
+          <p>Le temporel de l’église d’Épinal fut constitué essentiellement par des donations : celles des fondateurs, confirmées plus tard par leurs successeurs, les métropolitains et les papes ; celles des princes, seigneurs, évêques et particuliers ; ensuite, par les fondations pieuses, ou legs par testaments ; enfin, par acquisitions, ce qui fut plus exceptionnel.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Description.</head>
+          <p>1. <hi rend="i">Les menses.</hi> – A l’origine, l’abbesse aurait eu l’administration des biens de l’église, mais, dès 1325, nous connaissons des partages de biens entre l’abbesse et le chapitre. Composition de la mense abbatiale (en 1334, 1458, 1681) et de la mense capitulaire (en 1334, 1458, 1681).</p>
+          <p>2. <hi rend="i">Les revenus.</hi> – <hi rend="i">a) Répartition</hi> : fluctuations des revenus de l’église d’Épinal à travers les siècles, périodes d’appauvrissement et de ruine (1206, 1323, 1640). Ces revenus, comme les menses, étaient répartis entre l’abbesse et le chapitre et, pour le chapitre, divisés en vingt-quatre prébendes. Revenus de l’abbaye au <num>xviii<hi rend="sup">e</hi></num> siècle ; revenus du chapitre au <num>xvii<hi rend="sup">e</hi></num> siècle et en 1789 ; – <hi rend="i">b) Sources :</hi> les revenus étaient <pb n="72" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_10.TIF/full/full/0/default.jpg"/>par leur origine soit ecclésiastiques, soit seigneuriaux. Les revenus ecclésiastiques étaient constitués par les dîmes et novales, les louables coutumes (offrandes et casuel) ; les revenus seigneuriaux comprenaient les droits d’usage dans les bois : affouages, bois mort, mort-bois, droit de carrière, de glandée ; droit d’épave, de confiscation, droit de pêche, droit de sphuse, droit de vente et, enfin, des accensements et des rentes.</p>
+          <p>3. <hi rend="i">Les dépenses.</hi> – Les dépenses étaient constituées par les charges ordinaires du chapitre découlant, soit de leur état même de chanoinesses (dons aux apprébendements des dames, des abbesses, des chanoines ; dépenses courantes ; entretien des officiers du chapitre), soit de leur condition d’établissement religieux (contre-partie des dîmes : réparations d’églises, portion congrue des vicaires ; décimes et don gratuit) et aussi des charges exceptionnelles, quoique fréquentes : procès et tous les frais qu’ils entraînaient.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Administration.</head>
+          <p>Le temporel de l’église d’Épinal était administré par des officiers qui étaient, pour l’abbesse, le receveur de la crosse et, pour le chapitre, le prévôt ; ces officiers, aidés par des agents subalternes, se chargeaient de la perception des droits ecclésiastiques et seigneuriaux.</p>
+          <p><hi rend="i">a) Perception des droits ecclésiastiques.</hi> – La dîme était en général perçue en nature pour les grosses dîmes, en argent pour les menues dîmes. La perception des grosses dîmes se faisait par les pauliers sur le terrain. Les fondations et le casuel étaient perçus par le receveur des ponctuations et le procureur.</p>
+          <p><hi rend="i">b) Perception des droits seigneuriaux.</hi> – Dans chaque seigneurie où le chapitre était propriétaire foncier et haut justicier se trouvaient des officiers qui administraient le domaine <pb n="73" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_11.TIF/full/full/0/default.jpg"/>et y faisaient observer les droits de « Madame et de Mesdames ». C’étaient le maire, le doyen, l’échevin, le marlier, les forestiers. Ces agents faisaient la recette des cens et rentes du chapitre, reprenaient les maraudeurs et tenaient, au moins deux fois l’an, les plaids banaux, y percevant les amendes, confiscations et autres redevances dues au chapitre. Ils étaient rétribués soit par une part des amendes, soit par des exemptions et privilèges. Ils rendaient compte de leur gestion au prévôt.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Nous avons vu que, si de fréquentes périodes de crises vinrent troubler la vie monastique primitive au point d’amener la sécularisation, puis la vie collégiale de cette église, la vie religieuse se maintint malgré tout très vivante et triompha toujours des désordres intérieurs amenés par une trop grande liberté et des abus inhérents aux ordres privilégiés sous l’Ancien Régime. La Révolution seule dispersa les chanoinesses attachées à leur collégiale, au point que la plupart, après la dissolution de leur communauté, continuèrent à résider autour de leur église, poursuivant par leur piété et leur charité l’œuvre bienfaisante du chapitre Saint-Goéry d’Épinal.</p>
+      </div>
+      <div>
+        <head rend="uc">Liste des abbesses</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Carte des Possessions du chapitre</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <pb n="74" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_08/ENCPOS_1943_08_12.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

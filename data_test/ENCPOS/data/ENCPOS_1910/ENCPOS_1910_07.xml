@@ -1,0 +1,106 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Étude sur la censive de Saint-Germain-l’Auxerrois, à Paris au <hi rend="sc">xiii</hi><hi rend="sup">e</hi> et au <hi rend="sc">xiv</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/074562010">Pierre Deloncle</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 53-57</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="53" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_07/ENCPOS_1910_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Étude
+       <lb/>sur la
+       <lb/>censive de Saint-Germain-l’Auxerrois
+       <lb/>à Paris
+       <lb/>au <num>xiii<hi rend="sup">e</hi></num>et au <num>xiv<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Pierre</forename>
+        <surname>Deloncle</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Premiere partie
+         <lb/>Étude de la censive au point de vue du droit</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les éléments constitutifs de la censive</head>
+          <p>Définition du mot censive : une censive n’est pas un territoire continu, mais est un ensemble de biens fonciers sur lesquels le seigneur exerce ou lève les mêmes droits. Il est donc logique de considérer d’abord une censive au point de vue juridique et d’étudier les différents éléments qui la constituent.</p>
+          <p>§ 1<hi rend="sup">er</hi>. <hi rend="i">Le Cens foncier.</hi> – Il est d’origine très ancienne et les contrats établissant un cens foncier sont fort rares ; analyse de ceux que renferme le Cartulaire de Saint-Germain l’Auxerrois. – 1° Divers cas où nous voyons constituer un chef cens par contrat : pour légitimer une <pb n="54" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_07/ENCPOS_1910_07_02.TIF/full/full/0/default.jpg"/>redevance dont l’origine semblait incertaine et qui pouvait prêter matière à discussion ; – lorsque le bien-fonds chargé de cette redevance change de possesseur, par suite d’une vente ou d’une donation ; – lorsque le seigneur aliène une partie de son domaine, en voulant conserver toutefois sa souveraineté sur le bien aliéné, et la rendre sensible par cette redevance. – 2° Cas d’abandon d’un chef cens : par le seigneur (vente du droit de lever le cens) ; par le censitaire (rétrocession de la terre sur laquelle le chef cens est établi).</p>
+          <p>§ 2. <hi rend="i">Les droits de justice.</hi> – Ils sont mal désignés dans les textes, et plutôt par allusions que d’une manière précise, mais il est aisé de voir cependant qu’ils sont l’ensemble des droits qui constituent la directe.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Autres formes de contrats que renferme le cartulaire
+           <lb/>de Saint-Germain-l’Auxerrois</head>
+          <p>Le bail à rente. Les diverses façons dont on peut le rédiger. Transferts de rentes par legs et par ventes. Nombreuses ventes de rentes. Ces opérations entraînent des amortissements, faits par les diverses autorités, l’évêque, le roi, le doyen et le chapitre.</p>
+          <p>Manières dont on peut se libérer de la rente.</p>
+          <p>1° Le rachat : exemple ancien d’un rachat de rente. Mais cette opération est encore rare à l’époque dont nous nous occupons.</p>
+          <p>2° Le déguerpissement : le censitaire, qui abandonne l’héritage grévé d’une rente, est libéré de celle-ci, mais le propriétaire, à l’origine, ne peut rentrer dans son héritage ; il en résulte que des maisons demeurent désertes, tombent en ruines, et que l’on rencontre à Paris, à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, de nombreuses places vides : ordonnance <pb n="55" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_07/ENCPOS_1910_07_03.TIF/full/full/0/default.jpg"/>de Philippe le Bel de 1303 pour remédier à cette situation : le propriétaire de l’héritage déguerpi pourra en reprendre la possession si le tenancier ne se rend pas à plusieurs monitions déterminées dans cette ordonnance. Nombreuses applications de cette ordonnance pendant le courant du <num>xiv<hi rend="sup">e</hi></num> siècle. On trouve, dans les procès-verbaux où ces applications sont rapportées, de nombreux détails intéressants au point de vue topographique.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Administration des ressources de l’église</head>
+          <p>Ressources de l’église autres que les cens et les rentes : loyers. Le loyer est généralement pris pour la vie, le locataire s’engage à employer une certaine somme aux réparations de l’immeuble, pendant les premières années où il l’occupera. Il y a aussi les dîmes ; Saint-Germain-l’Auxerrois levait de nombreuses dîmes, spécialement dans la couture de l’évêque.</p>
+          <p>Les cens, les rentes, les loyers et les dîmes forment un premier groupe de revenus que se partagent le doyen, le chapitre et la communauté de l’église. Il y a un autre groupe de revenus, formé par ce que procure l’exercice du culte dans la paroisse Saint-Germain-l’Auxerrois.</p>
+          <p>Les distributions de ces revenus se font tantôt à tous les clercs composant « la communauté » de l’église (les chanoines y sont compris), tantôt au doyen et aux chanoines seuls.</p>
+          <p>1° Maisons et revenus du chapitre. Le doyen ne semble pas avoir eu à l’origine, le droit de disposer des maisons des chanoines sans leur consentement, mais dès 1214 nous le voyons s’affranchir de ce contrôle.</p>
+          <p>2° Maisons de la communauté. L’administration des maisons du cloître, constituant la propriété de la communauté, <pb n="56" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_07/ENCPOS_1910_07_04.TIF/full/full/0/default.jpg"/> semble appartenir, en 1225, à une assemblée générale des clercs résidants.</p>
+          <p>Après cette première période de régie directe, qui correspond à des ressources assez limitées, vient une période où l’administration de ces biens et de ces revenus sera déléguée à des mandataires spéciaux. Ce sont :</p>
+          <p>Les prévôts de la communauté. Nous les voyons apparaître en 1229. Ils sont, en droit, élus par la communauté, et c’est en raison de circonstances spéciales qu’ils furent nommés cette année là par l’évêque.</p>
+          <p>Le procureur du chapitre. Nous le trouvons mentionné en 1257, et un règlement de 1261 définit exactement ses devoirs et ses prérogatives : ce sera pour un an, et à tour de rôle, le plus ancien chanoine en charge.</p>
+          <p>Le doyen, malgré la création de ces diverses charges, continue à garder la part la plus active dans cette administration.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxieme partie
+         <lb/>Étude de la censive de Saint-Germain-l’Auxerrois
+         <lb/>au point de vue topographique</head>
+        <p>Exposé de la méthode employée dans ce travail. Le résultat qu’il faut essayer d’obtenir est une reconstitution de l’enchaînement des maisons entre elles. Mais impossibilité presque constante d’atteindre ce but, par suite de l’insuffisance des documents (insuffisants comme nombre et comme précision). – Impossibilité également de parvenir à traduire graphiquement par une carte les résultats obtenus. – La seule méthode d’exposition possible actuellement est de donner, dans l’ordre alphabétique des rues, les groupes de maisons que nous avons pu reconstituer, en signalant d’abord, lorsqu’on a pu en rencontrer, les coins de rues, les édifices dont l’emplacement est <pb n="57" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_07/ENCPOS_1910_07_05.TIF/full/full/0/default.jpg"/>connu, afin d’avoir des points de repère. Signaler ensuite, dans l’ordre chronologique, les maisons entre lesquelles nous n’avons pu établir aucun lien.</p>
+        <p>Application de cette méthode à quelques rues situées dans la censive de Saint-Germain-l’Auxerrois.</p>
+        <p>Rue de l’Arbre sec et chevet de l’église.</p>
+        <p>Cimetière de Saint-Germain-l’Auxerrois.</p>
+        <p>Cloître Saint-Germain.</p>
+        <p>Rue de la Croix du Tyrouer (ou du Tyroir ou du Tyreur).</p>
+        <p>Rue Daveron.</p>
+        <p>Ecole Saint-Germain et rue de l’Ecole.</p>
+        <p>Rue du Fossé Saint-Germain.</p>
+        <p>Nous avons réuni tous les éléments d’un travail analogue sur les rues Jean Tison, des Poulies et Saint-Germain-l’Auxerrois.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives
+         <lb/>censiers et cartulaires du <num>xiv<hi rend="sup">e</hi></num> siècle</head>
+        <pb n="58" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_07/ENCPOS_1910_07_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

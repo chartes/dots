@@ -1,0 +1,116 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_15" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La vie économique et sociale à Ambert au <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/029590140">Évelyne Morin</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_15.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 125-128</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="125" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_15/ENCPOS_1972_15_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La vie économique et sociale à Ambert
+       <lb/>au <num>xvii<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Évelyne</forename>
+        <surname>Morin</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les sources principales sont les minutes des notaires d’Ambert, conservées aux Archives départementales du Puy-de-Dôme. Des recherches complémentaires ont été effectuées aux Archives départementales du Rhône, dans les minutes des notaires de Lyon, ainsi qu’à Paris, au Minutier central.</p>
+        <p>D’autre part, le livre de l’abbé Grivel, <hi rend="i">Chroniques du Livradois,</hi> publié à Ambert en 1582, peut être considéré comme une source. Il a, en effet, utilisé nombre de documents aujourd’hui disparus et pleins d’intérêt.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les papetiers</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’origine des moulins à papier d’Ambert</head>
+          <p>D’après le terrier de la seigneurie d’Ambert, qui se trouve aux Archives nationales, sous la cote Q<hi rend="sup">1</hi> 930, une demi-douzaine de moulins environ existaient près d’Ambert en 1482. Il est vraisemblable qu’avant 1577 il y avait une quarantaine de moulins, au moins, autour de la ville. Quatre moulins seulement travaillaient en 1596.</p>
+        </div>
+        <div>
+          <pb n="126" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_15/ENCPOS_1972_15_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Les moulins</head>
+          <p>Les monts du Forez ont été préférés à ceux du Livradois pour l’implantation des moulins, à cause du débit plus régulier des torrents et de la pureté de l’eau.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le métier</head>
+          <p>Un moulin demande un entretien constant, qui coûte assez cher. La remise en état des moulins d’Ambert après les guerres de Religion demanda une quarantaine d’années.</p>
+          <p>Les papetiers employaient, dans leurs filigranes, la reproduction d’une cloche ou d’une grappe de raisin. Le successeur d’un maître renommé continuait souvent à utiliser ses initiales.</p>
+          <p>Les relations d’Ambert étaient étroites avec les papeteries du Forez, du Beaujolais, du Lyonnais, du Vivarais et du Velay. Les papetiers ambertois se fixaient volontiers à Thiers.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le commerce du papier</head>
+          <p>Les recueils de filigranes de Briquet et de Heawood ont été utilisés comme des sources. On retrouve le papier d’Ambert à Lyon, le long de la vallée du Rhône, dans le Dauphiné, en Provence ; à partir de 1660 environ, on le trouve à Paris et à Londres. Nous manquons de preuves sur l’existence d’un commerce du papier entre Ambert et l’Espagne.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les papetiers</head>
+          <p>La famille Richard est la plus ancienne et la plus nombreuse des familles de papetiers. Deux branches principales peuvent être distinguées au début du <num>xvii<hi rend="sup">e</hi></num> siècle, les Richard de la Forie et ceux de la Ribbe. La présence de nombreux enfants dans les familles de papetiers donnait lieu à de fréquents partages.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="127" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_15/ENCPOS_1972_15_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Marchands et bourgeois</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les métiers et le commerce du textile</head>
+          <p>En dehors du papier, le commerce d’Ambert portait sur les produits fabriqués à Ambert ou dans la région : les « burats » (étoffes de laine grossière), les épingles et les peaux tannées. Il y avait en outre des cartiers (fabricants de cartes). H semble que les merciers aient évolué, au cours du <num>xvii<hi rend="sup">e</hi></num> siècle, pour devenir des marchands en gros, qui achetaient des étamines et des rouleaux ou des rubans de fil fabriqués dans les campagnes par les paysans, les faisaient teindre et les revendaient ensuite à Lyon.</p>
+          <p>Les muletiers du Languedoc apportaient à Ambert le sel, l’alun et les chiffons en « pattes » nécessaires à la fabrication du papier.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les métiers d’Ambert</head>
+          <p>Les bouchers formaient de véritables dynasties. Ils étaient assez riches et bien considérés. Les aubergistes et les muletiers étaient nombreux.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La bourgeoisie</head>
+          <p>La bourgeoisie d’Ambert était composée d’hommes de loi, avocats, notaires, et de quelques marchands, dont les drapiers ; en tout, une demi-douzaine de familles, parmi lesquelles se distinguaient les Thomazet et les Daurelle. Les notaires, très nombreux, formaient la base de la bourgeoisie. Tous les bourgeois possédaient des métairies aux environs d’Ambert. Ils s’y réfugièrent lors de la peste de 1628-1630. Par leur mariage avec les filles des papetiers, les bourgeois héritaient parfois de moulins. Ils étaient ainsi amenés à s’intéresser au commerce du papier et, grâce à leur fortune, ils réussissaient mieux que les simples maîtres papetiers.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="128" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_15/ENCPOS_1972_15_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Conclusion</head>
+        <p>Face à la papeterie, qui ne concernait qu’un groupe finalement assez restreint d’individus qui tendaient à former une caste, se développa à Ambert au cours du <num>xvii<hi rend="sup">e</hi></num> siècle un commerce parallèle de tissus grossiers et de petits articles de mercerie, qui devait porter sur une grosse quantité de marchandises pour être rentable.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies de filigranes</head>
+        <p>Les filigranes reproduits sont tirés des minutes de notaires de Lyon et d’Ambert.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

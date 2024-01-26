@@ -1,0 +1,152 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le couvent des Grands Carmes de Toulouse (1264-1810)</title>
+        <author ref="https://www.idref.fr/026799820">Sabine Lesur</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_10.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 83-90</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="83" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le couvent des grands Carmes de Toulouse
+        <lb/>(1264-1810)</head>
+      <byline>
+        par
+        <forename>Sabine</forename>
+        <surname>Lesur</surname>
+        <roleName>licenciée d’histoire de l’art</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les sources essentielles sont constituées par la série H des Archives départementales de la Haute-Garonne, malheureusement fort pauvres pour le Moyen Âge, et par un précieux plan manuscrit de l’église des Carmes conservé à la Bibliothèque municipale de Besançon. Pour l’époque moderne, une documentation plus riche tirée des Archives nationales (G<hi rend="sup">9</hi> 44-45), et des Archives départementales de la Haute-Garonne et des Archives municipales de Toulouse a permis de mieux entrevoir la vie du couvent.</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’ordre des Carmes est apparu à la fin du <num>xii<hi rend="sup">e</hi></num> siècle, au moment où des Occidentaux venus pour la croisade se retirèrent sur le mont Carmel pour y mener une vie solitaire et contemplative. A la différence des autres ordres religieux, il n’existe aucun fondateur juridique de l’ordre. La tradition selon laquelle le prophète Élie en serait le fondateur n’est apparue qu’au <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+        <p>C’est à leur propre demande, vers 1210, que saint Albert, patriarche de Jérusalem, donna à ces anachorètes une règle de vie qui s’inspirait directement du monachisme oriental. Vivant en cellules séparées où ils étaient tenus de prier jour et nuit, ils n’avaient qu’un seul édifice en commun, l’oratoire, où ils entendaient la messe chaque matin. La décision prise en 1229 par Grégoire IX de les soumettre à la stricte pauvreté des Mendiants fut le premier pas vers transformation de l’ordre en ordre mendiant.</p>
+      </div>
+      <div>
+        <pb n="84" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+          <lb/>Étude historique</head>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>les Carmes en France
+            <lb/>et leur installation à Toulouse</head>
+          <p>L’insécurité croissante des États latins d’Orient amena les ermites à chercher refuge en Occident, en 1238 environ. Leur expansion fut rapide en France et plus spécialement dans le sud, mais ne se fit pas sans difficultés. Ils se heurtèrent, comme les Dominicains et les Franciscains, à l’hostilité du clergé séculier. De plus, ils se trouvèrent aux prises avec des difficultés internes inévitables étant donné l’ambiguïté de leur règle : la vie érémitique étant incompatible avec la mendicité, ils risquaient de se voir privés de ressources. Le pape Innocent IV confia à deux dominicains le soin de modifier leur règle. La nouvelle règle, promulguée en 1247, transforma leur vie érémitique en vie cénobitique (réfectoire et office divin en commun). Ils furent en outre autorisés à s’installer dans les villes. L’orientation nouvelle vers la vie active devait provoquer une crise extrêmement grave, qui faillit compromettre le sort de l’ordre au deuxième concile de Lyon (1274).</p>
+          <p>Une des premières fondations des Carmes, après celle de Marseille (1244), fut celle de Toulouse, qui remonte probablement au milieu du <num>xiii<hi rend="sup">e</hi></num> siècle. Ils s’installèrent d’abord au désert du Férétra, hors la porte du Château-Narbonnais, dans le faubourg Saint-Michel. Ils s’établirent ensuite à l’intérieur de la cité, comme les y autorisait la nouvelle règle définie par Innocent IV. Un attestatoire des capitouls permet de dater ce transfert de 1264 ; il fut confirmé par le pape Clément IV en 1265. L’installation des Carmes en plein quartier juif et sur le territoire de la paroisse Saint-Étienne leur attira quelques difficultés. En effet, la rapide extension des bâtiments du couvent se fit au détriment des juifs, qui se révoltèrent ; sous la conduite du fils du viguier, ils firent le siège du couvent en 1266, mais un miracle de la Vierge délivra les religieux. En outre, leur succès auprès des fidèles leur apporta quantité de dons et d’offrandes qui provoquèrent un grave conflit avec le chapitre de la cathédrale Saint-Étienne. Le comte de Toulouse, Alphonse de Poitiers, y mit fin en 1270 par un compromis.</p>
+          <p>Par la suite, ces difficultés semblent avoir disparu. L’ordre bénéficia de la part des papes de multiples privilèges, dont profita plus spécialement le couvent de Toulouse. Celui-ci compta également parmi les rois de France quelques bienfaiteurs, dont le roi Charles VI, qui institua en 1389 l’ordre des Chevaliers de la Ceinture de l’Espérance dans la chapelle de Notre-Dame d’Espérance.</p>
+        </div>
+        <div>
+          <pb n="85" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+            <lb/>Les Carmes de Toulouse et la vie active</head>
+          <p>Bien que certains couvents se fussent trouvés à proximité d’universités célèbres (Paris, Toulouse, Oxford, Cambridge), les Carmes ne participèrent qu’assez tard au mouvement universitaire en raison de l’incertitude sur l’avenir de l’ordre : le premier maître en théologie à recevoir son titre, à Paris, fut Gérard de Bologne, en 1295. Pierre de Millaud, général de l’ordre de 1276 à 1291, organisa pour les Carmes un enseignement interne calqué sur celui des Dominicains.</p>
+          <p>A Toulouse, le couvent possédait un <hi rend="i">studium generale,</hi> dont l’existence est attestée dans les constitutions de 1294 comme centre d’études pour la philosophie. Jusqu’en 1324, l’enseignement de la théologie fut réservé au collège parisien ; ce n’est qu’en 1324 que les constitutions l’étendirent aux <hi rend="i">studia </hi>provinciaux. Le premier carme maître en théologie à Toulouse semble avoir été Guillaume Durand, qui reçut son titre en 1344. Bien que la participation des Carmes à l’université de Toulouse eût été moindre que celle des Dominicains et des Franciscains, le <hi rend="i">studium generale</hi> du couvent devint, à la fin du <num>xv<hi rend="sup">e</hi></num> siècle, presque aussi important que celui de Paris, si l’on en juge d’après le nombre d’étudiants désignés par les chapitres généraux de 1451 à 1517.</p>
+          <p>Pour ce qui est du ministère pastoral, qui fut également une activité importante de leur apostolat, les Carmes furent chargés plus spécialement d’assurer le service divin pour les nombreuses confréries établies dans leur église. Parmi celles-ci, les deux plus importantes étaient la grande Confrérie Notre-Dame d’Espérance, qui regroupait les marchands drapiers, les lanassiers, les cardeurs et les peigneurs de laine, et la Confrérie du Mont-Carmel, spécifique à l’ordre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+            <lb/>Les réformes</head>
+          <p>La vie religieuse du couvent à la veille de la réforme est mal connue ; cependant il devait exister une profonde dévotion, dont témoigne sainte Jeanne de Toulouse qui y vécut comme recluse à la fin du <num>xiv<hi rend="sup">e</hi></num> siècle. Mais les grands troubles des <num>xiv<hi rend="sup">e</hi></num> et <num>xv<hi rend="sup">e</hi></num> siècles durent avoir des répercussions sur la vie du couvent et provoquer un relâchement de la vie religieuse. Les gradués abusèrent sans doute des nombreux privilèges qui leur avaient été accordés.</p>
+          <p>En 1518, sur l’ordre du roi de France et du Parlement de Toulouse, le couvent adhéra à la Congrégation d’Albi (1499-1602), première tentative de réforme qui s’inscrit dans le mouvement d’observance dirigé en France par Jean Standonck. Les guerres de Religion mirent en échec cette tentative de réforme. Le couvent de Toulouse adhéra ensuite à la réforme de Touraine, qui <pb n="86" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_04.TIF/full/full/0/default.jpg"/> avait vu le jour au couvent de Rennes au début du <num>xvii<hi rend="sup">e</hi></num> siècle et insistait sur les exercices de prière, qui devaient constituer le centre de la vie religieuse. Enfin, en 1648, il adopta les nouvelles constitutions de l’Étroite Observance.</p>
+          <p>Malgré ces réformes, les abus réapparurent dès la seconde moitié du <num>xvii<hi rend="sup">e</hi></num> siècle : indiscipline des religieux, absence régulière au chœur et au réfectoire, relâchement des pratiques religieuses, à quoi il faut ajouter les difficultés matérielles du couvent qui ne pouvait entretenir une communauté qui comprenait soixante religieux en 1667.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+            <lb/>Les dernières années</head>
+          <p>L’application des constitutions réformées semble avoir provoqué des factions au sein des religieux du couvent de Toulouse et des autres couvents de la province. Quelques-uns d’entre eux maintinrent une agitation perpétuelle dans le couvent en se rebellant contre l’autorité supérieure accusée de despotisme. La Commission des Réguliers ne parvint pas à rétablir l’ordre et l’observance de la règle dans la province de Toulouse. Dès que parurent, en 1772, les nouvelles constitutions rédigées au chapitre national de 1770, les religieux de cette province adressèrent un mémoire au commissaire royal, dans lequel ils s’élevaient encore contre l’état d’oppression où leurs supérieurs les maintenaient.</p>
+          <p>A la Révolution, la communauté de Toulouse comprenait vingt-six religieux, qui durent quitter le couvent en 1791. L’église devint le siège de la paroisse Saint-Exupère. L’estimation des biens séquestrés permet de constater que le couvent était l’un des plus riches des grands couvents de Mendiants toulousains.</p>
+          <p>Plusieurs projets furent proposés pour l’utilisation ou la démolition des bâtiments conventuels. Par décret impérial du 7 octobre 1807, la municipalité de Toulouse reçut l’autorisation d’acquérir le terrain et les bâtiments pour y faire une place et une fontaine. La démolition s’étala sur deux ans, de 1808 à 1810.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+          <lb/>Étude archéologique</head>
+        <div>
+          <head rend="uc">Introduction</head>
+          <p>Bien qu’ayant emprunté leurs dispositions à celles des Dominicains, les premières constitutions de l’ordre des Carmes ne contiennent aucun règlement particulier en matière d’architecture, excepté l’obligation d’édifier une clôture avant <pb n="87" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_05.TIF/full/full/0/default.jpg"/> d’entreprendre la construction de quelque bâtiment conventuel. En réalité, dans la seconde moitié du <num>xiii<hi rend="sup">e</hi></num> siècle, lorsque les Carmes s’établirent à Toulouse, on constate que les Dominicains avaient déjà abandonné les prescriptions sévères qui régissaient leurs constructions. Le souci majeur des Carmes semble bien avoir été de concevoir des églises aptes à la prédication, suffisamment vastes pour recevoir des fidèles toujours plus nombreux ; quant aux bâtiments conventuels, ils devaient permettre de loger le plus grand nombre possible de religieux dans un espace restreint.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>le « moulon » des Carmes</head>
+          <p>Établi tout d’abord en bordure de la cité, dans le quartier juif, le couvent se trouva rapidement englobé dans la ville, par suite de l’expansion urbaine sensible dès la fin du <num>xiii<hi rend="sup">e</hi></num> siècle. Aussi se trouva-t-il à la limite de plusieurs capitoulats habités par deux populations très différentes : au sud-est les parlementaires, au nord-ouest les artisans, plus spécialement ceux du drap, qui s’étaient étendus jusqu’aux abords du couvent après le départ des juifs, au début du <num>xiv<hi rend="sup">e</hi></num> siècle. Situé à cet emplacement privilégié, il fut fréquenté par des fidèles aisés, ce qui en fit un des couvents les plus riches de la ville.</p>
+          <p>Limité par quatre rues, le « moulon » fut occupé progressivement par les religieux, qui, à la suite de dons ou d’achats de maisons et de jardins, s’étendirent d’abord vers le sud, puis vers l’est. Dans cet espace restreint se trouvaient l’église à l’ouest, le grand cloître et le petit cloître adossés au sud de l’église, la chapelle du Mont-Carmel au nord. Ces constructions occupaient plus de la moitié du « moulon » ; les bâtiments conventuels étaient dispersés dans le reste du « moulon ». L’exiguïté du terrain disponible obligea à construire en hauteur les bâtiments conventuels, qui s’élevèrent parfois sur trois étages, comme elle conditionna la construction de l’église.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+            <lb/>L’église</head>
+          <p><hi rend="i">L’édifice.</hi> – L’église, élevée dès l’arrivée des Carmes en 1264, fut achevée vers 1270 grâce aux multiples dons d’Alphonse de Poitiers et des fidèles. De dimensions modestes, elle se montra rapidement trop petite ; mais son existence devait conditionner les constructions ultérieures. Un premier agrandissement fut projeté en 1277 et commencé peut-être en 1290. On dut ajouter à l’ancienne église un chevet de deux travées droites bordées de chapelles pentagonales, terminé à l’est par une abside à cinq chapelles rayonnantes également pentagonales.</p>
+          <pb n="88" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_06.TIF/full/full/0/default.jpg"/>
+          <p>A la fin du <num>xiv<hi rend="sup">e</hi></num> siècle, on augmenta le chœur d’une nef transversale, sorte de transept qui s’étendait le long de la Grand-Rue. Elle était formée de cinq travées droites bordées de chapelles latérales carrées, voûtées d’ogives comme le chevet ; la travée centrale, plus large, couverte d’une voûte d’ogives en étoile, servait en quelque sorte de vestibule d’entrée et s’ouvrait sur la Grand-Rue par un portail sculpté de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, vestige de l’église primitive. Cette nef transversale ne fut achevée qu’en 1493 et la consécration solennelle eut lieu en 1511.</p>
+          <p>Bien que formant deux ensembles apparemment distincts, le chœur et la nef se rattachent aux édifices gothiques languedociens que caractérise une nef unique bordée de chapelles latérales placées entre les contreforts.</p>
+          <p>L’analyse architecturale de l’édifice conduit à penser que le plan a probablement été conçu d’un seul jet, en raison de sa parfaite unité. La forme curieuse de l’église, qui a laissé croire à l’époque moderne à son inachèvement, est due en réalité à l’architecte, qui dut tenir compte de l’étendue de terrain disponible. On en trouve une preuve à l’église de Rieux-Volvestre. En effet, moins d’un siècle après l’achèvement de l’église des Carmes, Jean de Pins, évêque de Rieux (1523-1544), projeta d’agrandir son église en ajoutant un chœur à la nef. Il s’adressa pour le plan aux maçons qui travaillaient pour lui à l’église des Carmes, où il se fit enterrer. Bien que cet agrandissement n’eût été exécuté qu’au <num>xvii<hi rend="sup">e</hi></num> siècle, il se fit selon le projet de Jean de Pins.</p>
+          <p><hi rend="i">Le mobilier.</hi> – Avant la Révolution, l’autel était orné du retable édifié par Pierre Mercier au début du <num>xviii<hi rend="sup">e</hi></num> siècle. Formé de huit colonnes de marbre rouge que surmontait une frise de pierre, il devait être semblable à celui de la cathédrale, réalisé par le même architecte en 1668.</p>
+          <p>Les vingt et une chapelles, à la demande des confréries, avaient été ornées de retables sculptés au <num>xvii<hi rend="sup">e</hi></num> siècle, dont aucun ne nous est parvenu.</p>
+          <p>De tout le mobilier que contenait autrefois l’église, il ne subsiste qu’un seul vestige : un panneau de bois figurant le prophète Elie, qui est aujourd’hui conservé au musée du Vieux-Toulouse et qui provient d’un des dossiers des stalles du chœur offertes par l’archevêque de Toulouse, Pierre du Moulin (1439-1451) ; elles s’alignaient sur deux rangées de cent huit sièges de chêne.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+            <lb/>Le cloître et ses annexes</head>
+          <p>Pour autant qu’on puisse le connaître, le cloître des Carmes s’inscrit dans la lignée de ceux qui furent construits à Toulouse à l’époque gothique. Édifié entre 1290 et 1340, un peu avant celui des Augustins auquel il devait ressembler, il s’élevait sur deux étages. Ses quatre galeries couvertes en charpente s’ouvraient sur l’extérieur par des arcades en tiers-point trilobées. Elles reposaient sur des colonnes géminées ; des piliers carrés avaient été disposés au centre et aux angles de chaque galerie pour supporter l’étage supérieur. La décoration des chapiteaux était empruntée pour une large part à des motifs <pb n="89" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_07.TIF/full/full/0/default.jpg"/>végétaux et, pour une moindre part, à des thèmes humains ou animaliers. Le cloître était en outre orné de peintures murales comme celle qui figurait, dans la galerie nord, le « Vœu de Charles VI », exécuté entre 1390 et 1393 pour commémorer le vœu que le roi fit à Notre-Dame d’Espérance, lorsqu’il se perdit dans la forêt de Bouconne.</p>
+          <p>La salle capitulaire, construite à la même époque que le cloître, s’ouvrait sur la galerie orientale suivant une disposition traditionnelle. L’originalité de cette salle capitulaire tenait à l’existence, à l’est, de trois chapelles absidales, dues sans doute à la nécessité d’avoir des autels en nombre suffisant pour le service divin des religieux.</p>
+          <p>Voisine de la salle capitulaire au nord, se trouvait la chapelle Notre-Dame d’Espérance, construite par les soins d’Étienne de Montmeian dans la seconde moitié du <num>xiv<hi rend="sup">e</hi></num> siècle. Elle était composée de deux travées droites et d’une abside à trois pans, voûtées d’ogives. On peut donc la rapprocher de la chapelle Saint-Antonin du cloître des Jacobins.</p>
+          <p>Au-dessus de la salle capitulaire et de la chapelle Notre-Dame d’Espérance se trouvait la grand dortoir, de quarante-six cellules, entièrement refait à la fin du <num>xvii<hi rend="sup">e</hi></num> siècle. Son effondrement à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle explique l’absence des absides de la chapelle et de la salle capitulaire sur les plans géométriques modernes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+            <lb/>La chapelle Notre-Dame du Mont-Carmel</head>
+          <p>Détruite dès 1806 en raison des risques d’effondrement, la chapelle Notre-Dame du Mont-Carmel était l’un des bâtiments les plus somptueux du couvent. Elle nous est bien connue grâce à son auteur même, Gabriel Vendages de Malapeire, parlementaire toulousain, membre du groupe des Lanternistes et grand amateur d’art. Animé d’un culte exacerbé pour la Vierge et jouissant d’une très grosse fortune, il fit don de plus de vingt mille livres au couvent pour y édifier une chapelle en l’honneur de la Vierge. Elle fut construite de 1671 à 1678 à l’emplacement de la première chapelle Notre-Dame du Mont-Carmel (1624) devenue trop petite. Se pliant aux théories académiques qu’il connaissait bien, il adopta une architecture classique (plan en forme de croix latine, coupole entre les bras de la croix) et exigea le respect des proportions.</p>
+          <p>Pour le décor intérieur, il s’inspira des églises italiennes qu’il avait visitées lors de ses voyages en Italie. Il conçut un vaste programme iconographique à vocation didactique, (visant à glorifier les deux aspects de la personne de Marie : la Vierge et la Mère. Aussi, les inscriptions, les peintures et les sculptures étaient-elles destinées à établir une correspondance assez complexe entre les scènes de l’enfance et de la maternité de Marie dans l’Ancien et le Nouveau Testaments. Malapeire surveilla constamment la décoration de sa chapelle, laissant aux artistes le soin d’exécuter le plus fidèlement possible les œuvres qu’il leur commandait. Il les agrémenta d’une ornementation riche et exubérante dans le goût baroque italien.</p>
+          <pb n="90" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_10/ENCPOS_1972_10_08.TIF/full/full/0/default.jpg"/>
+          <p>La description de la chapelle par le fondateur se révèle ainsi d’un intérêt exceptionnel pour la connaissance de l’œuvre comme pour celle de l’auteur, personnage illustre de la société toulousaine du <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>La démolition du couvent des Carmes a empêché les archéologues de lui rendre sa juste place dans l’histoire de l’architecture gothique du midi de la France et de reconnaître notamment que l’église des Carmes avait joui d’un très grand prestige : c’est elle qui inspira, par exemple, le chevet de la cathédrale Saint-Bertrand de Comminges.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de plans et de photographies</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les relations des rois de France et des princes protestants allemands (1541-1559)</title>
+        <author ref="https://www.idref.fr/069366969">Jean-Daniel Pariset</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_17.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 137-142</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="137" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_17/ENCPOS_1972_17_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les relations des rois de France
+       <lb/>et des princes protestants allemands
+       <lb/>(1541-1559)</head>
+      <byline>
+        par
+        <forename>Jean-Daniel</forename>
+        <surname>Pariset</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction et sources</head>
+        <p>Analysant l’activité diplomatique des agents français et étrangers au service du roi de France à l’égard des princes protestants allemands entre 1541 et 1559, on ne s’est pas attaché aux événements militaires ou diplomatiques, qui sont bien connus mais on l’a étudiée à la lumière d’archives françaises inédites, les papiers de Bassefontaine, frère du secrétaire d’État Claude de L’Aubespine, qui contiennent une partie de la correspondance relative à l’Allemagne entre 1545 et 1552 ; ont été utilisés aussi des documents allemands ou danois, qui n’avaient guère été étudiés jusqu’à ce jour, pour comprendre les rapports franco-allemands. Ainsi a-t-on tenté de démêler l’imbroglio des missions et des plans envisagés simultanément par les humanistes, les capitaines, les princes, les rois et leurs conseillers.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La fin du règne de François I<hi rend="sup">er</hi> (1541-1547)</head>
+        <p><hi rend="i">Tentatives d’alliance et échecs (1541-1544</hi>). – En 1541, un projet de ligue avec le Danemark, le duc de Clèves et les États protestants, dont la Saxe, qui ont envoyé leurs ambassadeurs à Paris, échoue à cause de l’opposition des conseillers du roi, qui ne veulent pas y admettre les États protestants, comme le dit Marguerite de Navarre dans une lettre à l’Électeur de Saxe.</p>
+        <pb n="138" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_17/ENCPOS_1972_17_02.TIF/full/full/0/default.jpg"/>
+        <p>François I<hi rend="sup">er</hi> entre en guerre, malgré le duc de Clèves, pour réunir territorialement Clèves à la France. Après la défaite du duc de Clèves en 1543, le roi et son fils, le duc d’Orléans, envoient des réformés français, A. Maillet et G. Farel, en mission auprès des princes, promettant d’introduire la Réforme au Luxembourg. Mais les princes refusent d’aider le roi.</p>
+        <p>En 1544, le Saint-Empire déclare la guerre au roi, comme allié du Turc ; cependant Jean Sturm, recteur du gymnase de Strasbourg et pensionné du roi, débauche des troupes impériales et doit se retirer quelque temps en France. Le fils du duc de Wurtemberg offre ses services au roi, de même que les ducs de Lunebourg, avec qui les ambassadeurs Fresse et Richer restent en relations pendant « l’invasion de 1544 », grâce à Bucer, le réformateur de Strasbourg.</p>
+        <p><hi rend="i">Le resserrement des liens d’amitié (1545</hi>). – Les protestants allemands s’inquiètent des clauses secrètes du traité de Crépy, puis de voir le roi prendre à son service le très catholique Henri de Brunswick, sous prétexte de lutter contre l’Angleterre. Le cardinal du Bellay, pour renouer des liens d’amitié avec les princes, leur suggère d’être médiateurs entre François I<hi rend="sup">er</hi> et Henri VIII, afin d’éviter une ligue anglo-germanique contre la France ; cette médiation est acceptée par François I<hi rend="sup">er</hi> et le cardinal de Tournon, mais échoue à cause de l’Angleterre ; cependant l’idée est lancée d’une ligue regroupant la France, l’Angleterre et les princes protestants allemands contre Charles-Quint.</p>
+        <p><hi rend="i">Bassefontaine en Allemagne (1545-1546</hi>). – La ligue de Smalkalde prend une importance nouvelle en 1546, pour défendre la Réforme contre l’alliance du pape et de l’empereur. Bassefontaine suit de près ces négociations et assure les princes de la bonne volonté du roi ; Fresse s’efforce de réconcilier le Palatin et le roi de Danemark, mais des émissaires, qui se disent agents du Dauphin (?), mettent les protestants en garde contre le roi.</p>
+        <p><hi rend="i">La ligue sollicite le roi (juillet-décembre 1546</hi>). – Les princes ayant été mis au ban de l’Empire, la guerre des Protestants (ou de Smalkalde) commence. Sturm va trois fois en France négocier un emprunt, mais les banquiers allemands, puis les villes refusent de donner la caution nécessaire.</p>
+        <p>En même temps se déroulent des négociations politiques. Bassefontaine, Strozzi et Châtillon (le futur amiral de Coligny), présents au camp des princes à Donauwörth, émettent l’idée d’une alliance générale offensive contre l’empereur, que le roi ne peut accepter, faute d’argent. D’ailleurs, la ligue de Smalkalde même, constituée essentiellement de villes et de bons bourgeois, n’approuve pas ce projet d’alliance politique et non plus religieuse ; pour ne pas prolonger une lutte qui devient une révolte contre le suzerain, les villes et les princes du sud se soumettent les uns après les autres.</p>
+        <p><hi rend="i">L’aide du roi aux princes (1547</hi>). – Les ambassadeurs de l’électeur de Saxe et du landgrave de Hesse négocient à partir de 1546 en France et en Angleterre pour obtenir une alliance franco-germano-anglaise, mais la mort de Henri VIII, puis celle de François I<hi rend="sup">er</hi> remettent en question les points acquis.</p>
+        <p>Pour prolonger la lutte en Allemagne, François I<hi rend="sup">er</hi> avait offert aux princes, un prêt et même une alliance. La défaite de l’électeur de Saxe à Mühlberg, puis la capitulation du landgrave font croire que l’empereur est vainqueur dans tout l’Empire,</p>
+      </div>
+      <div>
+        <pb n="139" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_17/ENCPOS_1972_17_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Le « voyage d’austrasie » (1547-1553)</head>
+        <p><hi rend="i">La soumission apparente à l’empereur (1547-1549</hi>). – Henri II continue la politique de son père, mais en employant d’autres moyens. Plutôt que d’agir avec les princes, il subventionne les troubles que les capitaines créent contre l’empereur. Dès juillet 1547, Bassefontaine est envoyé à Bâle pour maintenir les liens avec les adversaires de Charles-Quint réfugiés dans la ville. A l’est, Reckerodt, capitaine allemand au service de la France depuis 1541, qui a levé des troupes pour la ligue au nom du roi de France, les conserve jusqu’en décembre 1547 et a des contacts avec le duc de Prusse. Au nord, le duc de Mansfeld et les ducs de Lunebourg, après avoir vaincu les armées impériales, envoient en novembre 1547 une ambassade au roi qui, malgré les Guise, refuse de continuer à les aider.</p>
+        <p>En juillet 1548, après l’exécution, sur l’ordre de Charles-Quint, de Vogelsberger, un capitaine allemand au service de la France, après l’introduction de l’« Interim » (tentative de Charles-Quint pour imposer sa conception religieuse), « les cueurs des petits et des grands étant extrêmement ulcérés », Heideck, ancien pensionné du roi, et Schertlin, capitaine général de la ligue de Smalkalde, proposent à Henri II de soutenir militairement la résistance de Strasbourg ; mais Danzay, agent du roi, et Bassefontaine ne peuvent empêcher Jacques Sturm, Stettmeister de Strasbourg, d’aller négocier avec l’empereur. Jean Sturm se rend à Brême pour soutenir la résistance de la ville, à qui Montmorency fait envoyer dix mille écus.</p>
+        <p>La reprise du conflit franco-anglais incite Jean Sturm et Bucer à s’offrir comme médiateurs entre les deux pays, mais en cours de route Sturm est arrêté par les impériaux, et si les princes du nord reprennent le projet, c’est en vain.</p>
+        <p><hi rend="i">Plans et alliances des capitaines et des princes (1550</hi>). – Les historiens allemands placent habituellement au début de 1550 la naissance de la « ligue des princes », mais il ne semble pas qu’elle ait changé grand chose à la politique du roi ; les capitaines continuent à avoir des plans de révolte que cautionnent des princes sans grand pouvoir. Deux groupes princiers, l’un au nord, l’autre avec Maurice de Saxe, devenu électeur après avoir dépouillé de l’électorat son cousin, prisonnier de Charles-Quint, envoient des ambassades en France et, à la fin de 1550, les deux oppositions se réunissent. Le roi désormais a une nouvelle attitude face aux princes : à l’entretien des troubles suscités en secret contre l’empereur succèdent des plans politiques.</p>
+        <p><hi rend="i">Comment fonder un nouvel Empire.</hi> – Les princes désirant en finir avec la tyrannie de Charles-Quint, un plan militaire est établi et des projets politiques sont même dressés, en prévision de sa mort jugée certaine. On ne néglige pas toutefois les difficultés de l’entreprise qui tiennent, en particulier à la réaction des autres « potentats » et au projet d’union religieuse.</p>
+        <pb n="140" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_17/ENCPOS_1972_17_04.TIF/full/full/0/default.jpg"/>
+        <p><hi rend="i">Le voyage sur le Rhin (1551-1552</hi>). – Fresse se rend en Allemagne, participe aux conférences de Lochau, de Dresde (relations publiées an annexe). Après la signature du traité de Chambord (15 janvier 1552), Fresse essaie, à Friedewald, d’obtenir pour le roi de plus grands pouvoirs dans l’Empire projeté, Henri II ayant augmenté sa participation financière.</p>
+        <p>Après la prise des Trois-Évêchés, la ligue franco-germanique n’obtient pas le succès espéré auprès des autres princes restés neutres, ce qui oblige Maurice de Saxe à discuter de la paix avec l’empereur, qui a échappé de peu à une mort que tous escomptaient. La ligue des princes prononce sa dissolution au camp devant Francfort (juillet 1552).</p>
+        <p><hi rend="i">L’échec des nouvelles alliances (1553</hi>). – Certains princes continuent la lutte ; la plupart des troupes passent sous l’autorité du margrave Albert de Brandebourg-Culmbach, qui prend Trèves au nom du roi ; comme le roi ne peut le payer, il se venge en changeant de camp et en faisant prisonnier le duc d’Aumale (novembre 1552).</p>
+        <p>Virail, qui revient d’une mission en Prusse, est envoyé en Allemagne pour empêcher la création d’une ligue contre la France. Avec Maurice de Saxe, de retour d’une croisade contre le Turc, il élabore une campagne militaire pour défendre Metz assiégée par Charles-Quint. Les autres adversaires de l’empereur sont sur le point de s’unir à Maurice, mais, au cours de la guerre des Évêques (de Franconie), Maurice est tué à Sieverhausen (juillet 1553) ; les plans français s’écroulent pour un temps. Spedt, un intrigant, élabore une nouvelle alliance, qui reprend certains projets précédents, mais n’a pas de suite.</p>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Vers une politique d’amitié (1553-1559)</head>
+        <p><hi rend="i">Méfiances et indifférence</hi> (1554-1555). – Les persécutions en France (exil de Dumoulin dès 1552) font changer de camp Jean Sturm découragé (1554). Le roi, faute d’un autre candidat à l’Empire, soutient Maximilien. La fuite du margrave en France crée une grande animosité contre Henri II, qui ne peut plus envoyer d’ambassadeur aux diètes.</p>
+        <p><hi rend="i">Les capitaines ambassadeurs (1556-1557</hi>). – Pour regagner l’amitié des princes, les capitaines au service du roi leur rendent visite ; le très protestant landgrave de Hesse envoie ses fils à la cour d’Henri II, le Palatin signe un traité avec le roi (avril 1557), mais le nouvel électeur de Saxe refuse d’être le candidat du roi à l’Empire. La guerre reprend en Italie et les princes espèrent bien que le roi, pour conserver leur amitié, se montrera moins hostile à la Réforme.</p>
+        <p><hi rend="i">La défense du royaume (1557-1558</hi>). – Après la défaite de Saint-Quentin (août 1557), le roi fait appel aux banquiers, notamment à Obrecht, et à toutes les troupes disponibles ; mais l’expédition projetée contre les Pays-Bas avorte. <pb n="141" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_17/ENCPOS_1972_17_05.TIF/full/full/0/default.jpg"/>Le landgrave conseille la modération au roi, qui a levé inconsidérément des troupes dans toute l’Allemagne (mai 1558). Grumbach, qui donna son nom au célèbre « Grumbasche Handel » conduisit des troupes en France.</p>
+        <p><hi rend="i">Le traité du Cateau-Cambrésis.</hi> – La paix du Cateau-Cambrésis (avril 1559) n’est conclue qu’après de nombreux projets de reprise de la lutte, qui attestent l’influence croissante des Guise. Les Trois-Évêchés restent à la France, malgré les récriminations de l’Empire. Le roi dispose, en 1559, d’une clientèle de capitaines, de conseillers des princes et d’agents secrets. Seule, la question religieuse empêche une amitié sincère.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Les buts du roi étaient simples. Le premier était d’abattre la puissance de l’empereur et, dans l’Empire, de restaurer les « libertés germaniques », qui pour les conseillers du roi caractérisaient ce corps politique. Henri II, surtout sous l’influence des Guise, se croyait prédestiné à cette œuvre, se considérant comme descendant de Charlemagne et l’héritier des Francs, issus des Troyens. Pour exercer un ascendant sur l’Empire, il lui fallait y pénétrer, soit grâce aux autres princes, en faisant élire un de ses partisans (tentative de 1552 avec Maurice de Saxe, de 1554-1557 avec Auguste de Saxe), soit en se faisant lui-même élire empereur (en 1542, 1546, 1551), soit en réformant cet empire perverti par l’instauration d’un long interrègne (en 1547 et 1551), durant lequel son titre de vicaire d’Empire lui permettrait d’agir. La dernière solution était d’abolir l’Empire en créant une union entre le roi de France, le landgrave de Hesse et le duc de Saxe, ces deux derniers princes reconnaissant le roi comme leur seigneur.</p>
+        <p>L’autre but était de mettre en place un glacis protecteur sur les frontières de l’est, soit en établissant une zone d’influence (Metz et les Guise), soit en faisant des conquêtes (projets de 1542 sur le Luxembourg et Metz, conquête des Trois-Évêchés en 1552).</p>
+        <p>Quant aux Pays-Bas, il s’agissait de les prendre à revers (entreprise de M. van Rossem en 1542-1543 ; projets de Jean-Frédéric de Saxe en 1547, de Mansfeld en 1552, de Danzay et Bassefontaine en 1557-1558). L’intention du roi était de reconstituer au profit de la France l’héritage bourguignon et de prendre tous les territoires de langue welsche membres de l’Empire, pour atteindre la vallée du Rhin qui, comme l’a dit L. Febvre, unit et sépare.</p>
+        <p>Mais les princes restaient toujours méfiants à l’égard du roi, qui ne cessait d’accumuler les contradictions : allié des Allemands protestants, mais aussi du Turc et parfois du pape ; « défenseur des libertés germaniques », mais réprimant des velléités d’autonomie de ses « bonnes villes ». Les princes ne cherchaient que les deniers du roi pour se livrer à la guerre contre Charles-Quint, le tyran étranger. Mais celui-ci, habile, savait s’allier aux uns pour combattre les autres. Après 1552, la plupart des princes n’aspiraient qu’à conserver la paix, qui assurait le triomphe de la Réforme en Allemagne, triomphe auquel le roi a volontairement contribué pour affaiblir les Habsbourg. Ces princes, en dépit de leurs <pb n="142" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_17/ENCPOS_1972_17_06.TIF/full/full/0/default.jpg"/>prétentions, de leurs titres, de leurs honneurs, n’apparaissent souvent que comme des guerriers et des « tyranneaux rapaces » (L. Febvre).</p>
+        <p>Le roi disposait de nombreux moyens : les intellectuels humanistes, épris de tolérance et de paix, qui le croyaient capable de réaliser leur idéal, mais ils furent déçus ; des ambassadeurs, pleins de dévouement et de zèle, mais ils avaient peu de pouvoir ; des banquiers allemands, mais ils ne purent éviter les faillites de la monarchie et fournir l’argent dans les moments les plus nécessaires (comme en 1547 ou en 1559) ; des capitaines, enfin, qui l’informaient et agissaient pour son compte et pour le leur.</p>
+        <p>Enfin, les persécutions en France empêchèrent les princes les plus protestants et les plus hostiles à l’empereur de donner au roi un appui sans restriction.</p>
+        <p>Toute cette diplomatie, bâtie sur les rêves de la Renaissance française, n’était pas fondée sur le réel.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p>Documents extraits des « Papiers de Bassefontaine », notamment : lettre de Marguerite de Navarre (Archives de Weimar) ; documents relatifs à la médiation allemande de 1545 ; lettres échangées entre le roi et Bassefontaine en 1546-1547 ; lettre de C. Danzay (15 octobre 1548) et lettres de Montmorency relatives à Strasbourg ; lettre de Jean Sturm (juin 1549), et divers documents concernant la médiation allemande entre la France et l’Angleterre ; dépêches échangées entre Fresse et la cour en 1551-1552 ; « discours » sur les projets français (mai 1522) ; instructions de Mandosse pour le recrutement des mercenaires allemands (1557).</p>
+      </div>
+    </body>
+  </text>
+</TEI>

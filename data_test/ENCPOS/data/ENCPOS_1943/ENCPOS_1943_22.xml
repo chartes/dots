@@ -1,0 +1,123 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_22" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les eaux et forêts dans la maîtrise particulière de Grenoble au <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/254313949">Suzanne Repiton-Preneuf</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_22.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 191-197</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="191" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les eaux et forêts
+       <lb/>dans la maitrise particulière de Grenoble
+       <lb/>au <num>xviii<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Suzanne</forename>
+        <surname>Repiton-Preneuf</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources – Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p><hi rend="i">Limites du sujet dans le temps.</hi> – L’époque choisie est le <num>xviii<hi rend="sup">e</hi></num> siècle, période où se placent l’application des deux réformations de 1699 et 1724, qui essaieront de faire exécuter en Dauphiné l’ordonnance de 1669, et la création de la Maîtrise particulière de Grenoble, en 1729.</p>
+        <p><hi rend="i">Limites du sujet dans l’espace.</hi> – Le ressort de la Maîtrise particulière de Grenoble comprend les élections de Grenoble et Gap et la recette particulière de Briançon ; circonscription administrative, mais qui se défend du point de vue géographique, car elle correspond à peu près au Haut-Dauphiné.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>les forêts au <num>xviii<hi rend="sup">e</hi></num> siècle.</head>
+        <p>1. <hi rend="i">Importance des bois.</hi> – Lutte contre les phénomènes naturels : avalanches, glissements de terrain, torrents, comme aujourd’hui encore. Bois de construction (certaines <pb n="192" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_02.TIF/full/full/0/default.jpg"/>maisons sont construites entièrement en bois) et bois de chauffage. Fournitures aux troupes et à la marine.</p>
+        <p>2. <hi rend="i">Boisement.</hi> – La question du déboisement est difficile à résoudre, à cause du peu de crédit que l’on peut accorder aux statistiques du <num>xviii<hi rend="sup">e</hi></num> siècle. En fait, l’étendue boisée n’a guère dû changer. L’essence dominante est le sapin ; quant aux feuillus, ils sont le plus souvent exploités en taillis de préférence aux futaies.</p>
+        <p>3. <hi rend="i">Propriété forestière.</hi> – La plupart des bois appartiennent aux communautés rurales, surtout dans le Briançonnais. Viennent ensuite le roi et les particuliers, puis les communautés religieuses. Parmi les particuliers, beaucoup de parlementaires sont propriétaires de forêts, notamment dans la vallée du Grésivaudan. Parmi les communautés religieuses, les principales sont la Grande Chartreuse, la chartreuse de Durbon, l’abbaye de Boscodon.</p>
+        <p>4. <hi rend="i">Condition des bois.</hi> – Les bois payent généralement la taille, qui est réelle en Dauphiné. Les redevances dues pour les droits d’usage sont acquittées en argent, en nature ou sous forme de corvées. Elles sont la plupart du temps purement récognitives, sauf pour les pâturages, où elles sont souvent élevées et représentent en quelque sorte une location. Le seigneur a généralement le droit de premier habitant ; il use rarement du droit de triage.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>L’administration forestière jusqu’à la révolution.</head>
+        <p>En 1575, le Grand Maître a dans son ressort le Languedoc, la Provence et le Dauphiné. Il aura plus tard le Lyonnais, le Forez, le Beaujolais, l’Auvergne, le Dauphiné et la Provence, ressort trop étendu pour être efficacement surveillé, d’autant plus que le Grand Maître se heurte à l’hostilité du Parlement : celui-ci n’enregistrera l’ordonnance de 1669 qu’avec beaucoup de difficulté. En novembre 1689, comme suite à l’or<pb n="193" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_03.TIF/full/full/0/default.jpg"/>donnance de 1669, la maîtrise de Dauphiné est créée. En 1729, comme conséquence de la Réformation, elle est scindée en trois : maîtrises particulières de Grenoble, Die et Saint-Marcellin.</p>
+        <p>Jusqu’en 1790, les officiers de la nouvelle maîtrise vont avoir à lutter avec le Parlement qui entend conserver ses prérogatives en matière forestière et rester le seul maître dans les forêts dont il est propriétaire. En 1736, il essaie d’empêcher les officiers forestiers d’accomplir leur métier et, en 1750, en met un certain nombre en accusation. Les officiers et les gardes de la nouvelle maîtrise vont aussi avoir à lutter contre l’hostilité des habitants qui ne connaissaient jusque-là aucune règle en matière d’exploitation forestière.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Les réformations de 1699 et 1724.</head>
+        <p>La réformation de 1699 est la conséquence directe de l’ordonnance de 1669. Elle durera jusqu’en 1705. Les travaux dirigés par l’intendant Bouchu, assisté d’un commissaire de la Marine, auront pour but essentiel d’assurer des bois à la Marine. Beaucoup de communautés seront visitées, mais la commission se séparera avant la fin des travaux et aucun règlement de portée générale ne sera édicté.</p>
+        <p>Une nouvelle commission sera nommée par lettres patentes du 14 novembre 1724. Travaillant sous la direction de l’intendant Fontanieu, les commissaires poursuivront leurs travaux jusqu’en 1732. Il s’agit d’enrayer le déboisement et d’introduire une règle d’exploitation. Toutes les communautés sont visitées et un certain nombre de règlements sont pris, malgré l’hostilité du Parlement qui essaie de faire supprimer la commission dont les travaux commencent à l’inquiéter (elle a, en effet, supprimé un certain nombre de martinets appartenant à des parlementaires). Le règlement définitif sera celui du 15 octobre 1731, adaptation au Dauphiné de l’ordonnance de 1669.</p>
+      </div>
+      <div>
+        <pb n="194" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre IV
+         <lb/>Le règlement de 1731 et son application
+         <lb/>jusqu’à la Révolution.</head>
+        <p>1. <hi rend="i">Exploitation forestière.</hi> – Les habitants ne connaissent aucune règle et le nom même de baliveau est ignoré ; seuls les bois des communautés religieuses et notamment ceux de la Grande Chartreuse sont bien exploités. Ceux des communautés laïques sont dans un état lamentable, sauf ceux qui protègent le village des torrents et des avalanches. Il faut faire une mention spéciale des communautés du Briançonnais qui ont des règles très strictes en fait d’exploitation forestière.</p>
+        <p>Les taillis du roi et des communautés religieuses seront réglés en coupes de vingt-cinq ans, ceux des particuliers qui ont besoin de revenus plus rapides en coupes de dix ans. Seize baliveaux devront être laissés par arpent ; dans les futaies, le quart sera mis en réserve et le reste exploité quand les arbres auront atteint une certaine grosseur. Les futaies de sapins seront exploitées en jardinant.</p>
+        <p>Les gardes éprouvent de grandes difficultés à faire appliquer ces règlements.</p>
+        <p>2. <hi rend="i">La mise en valeur des différentes catégories de forêts au <num>xviii<hi rend="sup">e</hi></num> siècle.</hi> – <hi rend="i">a) Bois du roi.</hi> – Presque toutes les forêts du roi ont été usurpées. Les commissaires réunissent au domaine les forêts du mandement de Bellecombe et Chapareillan en 1731 et se heurtent à de grandes difficultés. En 1733, le roi vend ses forêts d’Embrun au seigneur de la Hougue pour que celui-ci les défriche et y sème du blé, ce qui montre que les essais de remise en valeur ont été vains.</p>
+        <p><hi rend="i">b) Bois des ecclésiastiques.</hi> – Les commissaires, en essayant d’introduire les règles d’exploitation dans les bois des ecclésiastiques, se heurteront à l’opposition des Chartreux, qui ont le privilège de jouir de leurs bois « en bons pères de famille ». Mais le roi, cette fois, soutiendra les commissaires. <pb n="195" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_05.TIF/full/full/0/default.jpg"/>Ceux-ci se heurteront également à l’opposition de l’évêque de Grenoble.</p>
+        <p><hi rend="i">c) Bois des particuliers.</hi> – Donation en 1784 des forêts d’Oisans à Monsieur.</p>
+        <p><hi rend="i">d) Bois communs.</hi> – L’introduction des règles d’exploitation donne lieu à de nombreuses contestations et les délits vont se poursuivre sur une grande échelle pendant tout le cours du <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+        <p>3. <hi rend="i">Les principales causes de déboisement.</hi> – <hi rend="i">a) Droits d’usage.</hi> – Nombreux abus.</p>
+        <p><hi rend="i">b) Essarts.</hi> – Les essarts sont sévèrement défendus, mais sans succès. A la fin du <num>xviii<hi rend="sup">e</hi></num> siècle, les habitants profiteront largement de la déclaration du roi du 28 novembre 1768 encourageant les défrichements en Dauphiné.</p>
+        <p><hi rend="i">c) Industrie.</hi> – L’exploitation des forges, martinets et autres artifices et celle des scies étaient une des grandes causes du déboisement, aussi le nombre des fourneaux et martinets est-il réduit de cent vingt à quatre-vingt-quatre en 1726. Beaucoup de ces fourneaux appartiennent à dos parlementaires. En même temps, le nombre des scies est réduit de cent vingt à quarante.</p>
+        <p><hi rend="i">d) Pâturage.</hi> – Le bétail est la seule source de revenus permett ant aux habitants d’acquitter leurs impôts. Les deux animaux les plus nuisibles aux forêts sont le mouton et la chèvre ; les moutons indigènes sont plus nuisibles que les transhumants, car ils arrivent les premiers sur les pâturages, à la fonte des neiges, quand le sol est encore meuble. Les règlements les plus sévères concerneront les chèvres, dont la destruction totale est prescrite. Cette mesure est inapplicable, car, dans les pays pauvres, les chèvres sont la seule ressource ; aussi les gardes ne parviendront-ils pas à faire respecter les règlements à ce sujet. En fait, la question du pâturage se réduit à celle du fourrage ; quand celui-ci sera suffisant, les habitants ne seront plus obligés de dégrader leurs bois pour nourrir leurs bestiaux.</p>
+        <pb n="196" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_06.TIF/full/full/0/default.jpg"/>
+        <p>4. <hi rend="i">Commerce des bois.</hi> – <hi rend="i">a) Fournitures à la marine et aux troupes.</hi> – Les forêts du Dauphiné doivent alimenter les arsenaux de Toulon et Marseille, mais les difficultés d’extraction font que beaucoup d’arbres ne sont pas exploités. Les fournitures aux armées concernent surtout les forts du Briançonnais dont le ravitaillement en bois pose beaucoup de problèmes dans cette région dénudée ; aussi Fontanieu, dès 1724, ordonnera-t-il de chauffer les garnisons au charbon et non au bois.</p>
+        <p><hi rend="i">b) Commerce local.</hi> – Le commerce local comprend celui du bois de chauffage (les grands centres sont alimentés par les communautés environnantes, le plus souvent en fraude) et celui du bois de construction qui se fait au moyen du flottage. Serres est un véritable centre pour tout le bois transporté par le Buech.</p>
+        <p><hi rend="i">c) Commerce extérieur.</hi> – Le commerce extérieur se fait surtout avec la Provence. Le bois, transporté par flottage, est vendu à la foire de Beaucaire. La plupart du bois qui y est vendu provient de la chartreuse de Durbon.</p>
+        <p><hi rend="i">d) Flottage.</hi> – Seule l’Isère porte des bateaux à partir de Montmélian, mais les moindres torrents sont utilisés, comme la Girandole dans le Briançonnais. Les cours d’eau les plus utilisés sont l’Isère, le Drac et le Buech.</p>
+        <p>5. <hi rend="i">Chasse et pêche.</hi> – Les commissaires n’ont pris aucune disposition concernant la chasse et la pêche, car la plus haute fantaisie règne en Dauphiné, où tout le monde prétend avoir le droit de chasse en vertu de libertés delphinales. Les gardes qui essaieront de faire respecter l’ordonnance de 1669 ne pourront y parvenir. Les délits de chasse sont, souvent, du reste, de peu de conséquence et portent, sauf de rares exceptions, sur les lièvres et les oiseaux.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>La situation n’a guère changé entre le début et la fin du <pb n="197" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_07.TIF/full/full/0/default.jpg"/><num>xviii<hi rend="sup">e</hi></num> siècle. Cela tient beaucoup, semble-t-il, aux circonstances économiques qui dépendent en grande partie des moyens de communication. Les chemins permettront une exploitation rationnelle des bois ; ils permettront également d’enrayer les essarts en facilitant le commerce des grains.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Listes des officiers de la maitrise</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des communautés visitées
+         <lb/>par les commissaires</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <pb n="198" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_22/ENCPOS_1943_22_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,190 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_02" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le Saint-Sépulcre de Jérusalem et l’Occident au Moyen Âge</title>
+        <author ref="https://www.idref.fr/026751453">Geneviève Bautier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_02.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 15-25</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le Saint-Sépulcre de Jérusalem
+       <lb/>et l’Occident au moyen âge</head>
+      <byline>
+        par
+        <forename>Geneviève</forename>
+        <surname>Bautier</surname>
+        <roleName>licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le Saint-Sépulcre de Jérusalem a été l’objet d’une dévotion ardente en Occident. Elle a poussé vers la Terre Sainte pèlerins et croisés et a déterminé la construction de nombreuses églises placées sous l’invocation du Saint-Sépulcre, dont certaines reproduisent même les caractéristiques architecturales du monument hiérosolymitain. Notre étude se limite au Sépulcre, relique matérielle, sans aborder l’iconographie de la Résurrection, ni les représentations du tombeau du Christ, ni la liturgie de la semaine pascale où le sépulcre divin a la première place, ni encore la motivation de la première croisade ou les thèmes de ses prédicateurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p>En raison des aspects multiples du sujet et de son extension chronologique et géographique, les sources sont dispersées. Du chapitre, puis de l’ordre, des chanoines du Saint-Sépulcre de Jérusalem, très peu de documents ont survécu, mis à part le cartulaire qu’a publié E. de Rozière. Le fonds le plus important de ses prieurés, conservé à l’Archivo histórico nacional de Madrid, est celui de la collégiale de Calatayud, qui fut le centre de la province d’Aragon. Un autre fonds intéressant est celui de la collégiale Sainte-Anne de Barcelone, aux Archives diocésaines de cette ville. Des fonds des prieurés de Denkendorf, de Zderas et de Miechów, respectivement centres des provinces d’Allemagne, de Bohême et de Pologne, l’ensemble des titres a été publié. Les Archives d’État de Pérouse ne possèdent plus que de très maigres épaves de l’archiprieuré de San Luca, qui fut, aux xiv<hi rend="sup">e</hi> et <num>xv<hi rend="sup">e</hi></num> siècles, le chef de l’ordre. Il ne subsiste plus que des vestiges insignifiants des documents des autres établissements.</p>
+        <p>L’extrême dispersion des sources indirectes relatives à l’histoire des maisons et des biens du chapitre, ou à l’histoire des églises et des chapelles placées sous <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_02.TIF/full/full/0/default.jpg"/>l’invocation du Saint-Sépulcre, a rendu nécessaire un dépouillement aussi vaste que possible des textes diplomatiques et historiographiques.</p>
+        <p>Le chapitre du Saint-Sépulcre de Jérusalem a été jusqu’ici fort peu étudié et l’histoire de l’ordre en Occident est pratiquement inconnue ; la plupart de ses biens n’avaient pas été identifiés jusqu’à présent. Aucune enquête n’avait encore été faite sur les églises dédiées au Saint-Sépulcre, sinon en Allemagne où Dalman avait recensé les édicules élevés à l’imitation de celui de Jérusalem. L’établissement des notices que nous avons consacrées aux églises du Saint-Sépulcre nous a amenée à consulter une large bibliographie locale, qui a été indiquée en tête de chaque notice.</p>
+        <p>Sur les bâtiments du Saint-Sépulcre de Jérusalem, l’ouvrage fondamental est celui des pères Vincent et Abel et il existe une abondante littérature sur l’édifice de l’époque constantinienne ; mais les travaux de restauration en cours permettent de procéder à une nouvelle étude de la structure du monument.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Le Saint-Sépulcre de Jérusalem</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’église et les bâtiments du Saint-Sépulcre</head>
+          <p><hi rend="i">Le Saint-Sépulcre avant Constantin.</hi> – Le souvenir du tombeau où avait été déposé le Christ, composé d’une chambre creusée dans le roc et d’une antichambre, se perpétua, malgré les vicissitudes, dans la petite communauté chrétienne. L’empereur Hadrien, désirant, après 134, transformer la cité biblique en <hi rend="i">Aelia Capitolina,</hi> construisit, au sud des lieux saints, entre le Golgotha et l’ancienne muraille urbaine, un vaste forum avec basilique ou capitole, dont on a retrouvé récemment les fondations occidentales, et, sur le Sépulcre, un temple de Vénus. Cette disposition, qui utilisait les murs hérodiens, n’implique pas le remblaiement gigantesque qu’on a supposé.</p>
+          <p><hi rend="i">Les travaux de Constantin.</hi> – Sitôt achevé le concile de Nicée, Constantin donna l’ordre de dégager le Saint-Sépulcre. En dépit des affirmations du panégyriste Eusèbe de Césarée, c’est en s’aidant des fondations du temps d’Hadrien que fut édifiée une grande basilique-<hi rend="i">martyrium,</hi> à l’est. A l’ouest, on tailla le rocher autour du Sépulcre, en lui donnant l’aspect d’un bloc monolithe, on l’orna et on l’entoura de la rotonde dite <hi rend="i">Anastasis.</hi> Les dégagements récents mettent en valeur la structure constantinienne, encore en place malgré les remaniements. Il s’agit d’une rotonde pourvue de trois absidioles, qui s’évase à l’est en une sorte de transept et que vient couper une façade rectiligne, où s’ouvraient <pb n="17" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_03.TIF/full/full/0/default.jpg"/> latéralement deux groupes de quatre portes. Vingt supports, présentant une alternance de deux piliers et de trois colonnes, supportaient un<hi rend="i">matroneum</hi> éclairé à l’est par huit grandes baies, qui correspondaient aux portes de l’étage inférieur. Un atrium, où se dressait le rocher du Calvaire, séparait l’<hi rend="i">Anastasis</hi> de la grande basilique<hi rend="i">-martyrium</hi> dont la façade postérieure était rectiligne. On peut penser que le Calvaire (<hi rend="i">hemisphaerion,</hi> tenu symboliquement pour le centre de la terre ?) communiquait avec la basilique à cinq nefs, terminée à l’est par un second atrium qui s’ouvrait par trois portes sur des propylées. Des travaux récents permettent d’identifier des bâtiments annexes, alignés au nord de l’<hi rend="i">Anastasis</hi> et séparés d’elle par une cour à ciel ouvert.</p>
+          <p><hi rend="i">Le monument de 614 à 1009.</hi> – Après l’invasion des Perses, qui incendièrent la rotonde en 614, le futur patriarche Modeste restaura principalement le voûtement et la décoration. La coupole de l’<hi rend="i">Anastasis,</hi> refaite plusieurs fois, reçut au <num>ix<hi rend="sup">e</hi></num> siècle la forme d’un tronc de cône, ouvert au centre.</p>
+          <p><hi rend="i">Le monument de 1009 à 1099.</hi> – La calife fatimide Hakim ordonna, en 1009, la destruction du lieu sacré ; le <hi rend="i">martyrium</hi> fut dévasté de fond en comble, le rocher du tombeau presque rasé, mais la structure de la rotonde fut protégée par la solidité et l’épaisseur de ses murs. Après des réfections de fortune, la reconstruction des parties endommagées fut entreprise, en 1048 seulement, par les soins de l’empereur Constantin Monomaque. Le <hi rend="i">martyrium</hi> laissé à l’abandon, les Byzantins réédifièrent, devant le Calvaire, l’atrium dont subsiste encore la galerie nord et, à la façade orientale de l’<hi rend="i">Anastasis,</hi> obstruèrent les portes constantiniennes et y pratiquèrent une large abside. Le mur extérieur des tribunes fut reconstruit et des piles furent implantées à l’intérieur. Vers le même temps, on transforma en chapelle une partie de la cour nord de l’<hi rend="i">Anastasis,</hi> on édifia l’actuelle chapelle Saint-Abraham derrière le Calvaire, enfin on remania les annexes au sud de l’église, cependant qu’on localisait dans la crypte dite de Sainte-Hélène le lieu de la découverte de la Croix.</p>
+          <p><hi rend="i">Le Saint-Sépulcre au temps du royaume latin.</hi> – – Après la victoire des croisés, on éleva une grande basilique à l’emplacement de l’atrium précédent. Les arguments précédemment allégués pour fixer le début des travaux à 1105, l’exécution du croisillon sud entre 1131 et 1144, l’’achèvement de l’œuvre en 1149, lors de la consécration, et l’érection du clocher entre 1172 et 1187 sont difficilement admissibles. Pour des raisons d’ordre politique, les travaux furent entrepris vers 1112-1115. On éleva alors le chœur avec déambulatoire et trois chapelles rayonnantes. Après une interruption, la construction reprit vers 1146.</p>
+          <p>La consécration de 1149 se borna à commémorer la prise de Jérusalem cinquante ans plus tôt. La décoration du Calvaire n’est pas antérieure à 1165 et l’achèvement de l’édifice eut lieu vers 1167-1169. Le décor de la façade fut exécuté entre 1172 et 1187 par des sculpteurs d’origines diverses (toscans, provençaux, languedociens). Quant au clocher, il faut y voir une œuvre de la seconde occupation latine, vers 1229-1239.</p>
+          <p>L’œuvre des Latins, caractérisée par un grand respect des éléments primitifs, fut l’érection d’une église avec un chœur et un transept, à la croisée duquel s’élevait une grande coupole. Ils firent aussi œuvre originale en élevant le palais patriarcal et les bâtiments canoniaux réunis, à l’est, autour d’un vaste cloître.</p>
+          <pb n="18" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_04.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Le Saint-Sépulcre de 1244 à nos jours.</hi> – De 1244 (seconde chute de Jérusalem) à 1962, l’histoire du Saint-Sépulcre est une suite de dégradations dues aux hommes, aux tremblements de terre, aux incendies, notamment celui de 1808. Depuis 1962, l’édifice, libéré des ornements et des enduits, retrouve son aspect primitif.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’édicule du Saint-Sépulcre</head>
+          <p><hi rend="i">De 325 à 1009.</hi> – La critique des textes et les images du tombeau sur les petites ampoules de Terre Sainte exécutées au <num>vi<hi rend="sup">e</hi></num> siècle, la comparaison avec les tombes de la vallée du Cédron et certaines imitations occidentales permettent de reconstituer l’aspect de l’édicule du Saint-Sépulcre depuis sa décoration par Constantin au <num>iv<hi rend="sup">e</hi></num> siècle jusqu’à la destruction de Hakim en 1009, mieux que les représentations des scènes de la Résurrection sur les ivoires et les miniatures.</p>
+          <p>La chambre intérieure avait été respectée ; mais on avait supprimé son vestibule pour donner au Sépulcre l’aspect d’un édicule monolithe, carré ou rectangulaire, surmonté d’un toit pyramidal. On l’avait entouré d’un écrin de six colonnes, précédé d’un <hi rend="i">pronaos</hi> et ceint de chancels sculptés.</p>
+          <p><hi rend="i">De 1009 à 1244.</hi> – La destruction presque totale du monolithe, en 1009, provoqua la réunion en un même édicule de la <hi rend="i">cella</hi> carrée du tombeau et de l’ancien écrin reconstruit. Le Sépulcre devint une rotonde, qui était précédée d’une antichambre et abritait la chambre sépulcrale.</p>
+          <p><hi rend="i">De 1244 à nos jours.</hi> – Après la chute de Jérusalem, l’édicule, plusieurs fois remodelé (notamment en 1555 et 1728), garda toujours approximativement son aspect ; il fut reconstruit en 1809.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le clergé latin au Saint-Sépulcre</head>
+          <p><hi rend="i">Le clergé de Jérusalem avant les croisades et ses rapports avec les Latins. </hi>– Les relations entre Rome, le clergé latin et Jérusalem furent longtemps bonnes mais espacées. Un épisode important en est le « protectorat » de Charlemagne, qui fit l’objet d’une controverse passionnée entre les historiens. L’empereur, à la demande du patriarche, obtint une sorte d’« avouerie » honorifique sur le Saint-Sépulcre, sa protection se marquant surtout par des envois d’argent à Jérusalem et des échanges d’ambassades avec le calife, sans aucun abandon de souveraineté de la part de celui-ci.</p>
+          <p>Outre quelques moines latins au Mont des Oliviers et quelques religieuses, la présence de Latins à Jérusalem se marqua par l’installation de l’hospice de Sainte-Marie Latine au <num>ix<hi rend="sup">e</hi></num> siècle, puis, au <num>xi<hi rend="sup">e</hi></num> siècle, par l’implantation d’autres hospices pour les pèlerins.</p>
+          <pb n="19" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_05.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Le clergé latin au Saint-Sépulcre à l’époque du royaume latin (1099-1187</hi>). – Après la première croisade, dont le chef prit le titre d’« avoué du Saint-Sépulcre », le lieu saint, fondement par excellence du nouvel État, fut pourvu, pour le desservir, d’un chapitre canonial. Les chanoines, d’abord séculiers et détenteurs de prébendes, furent contraints, en 1112, d’adopter la communauté de table et, en 1114, furent soumis à la règle de saint Augustin. L’effectif, qui atteignit jusqu’à trente-deux chanoines en 1138, semble avoir oscillé entre vingt et trente dans les années 1130-1155. Après 1160, leur nombre commença à décroître ; en 1178, on n’en connaît plus que neuf à Jérusalem même, vu le rétrécissement du temporel en Orient. Le recrutement fut d’abord principalement français, surtout des régions septentrionales, avec quelques Anglais, Italiens, Espagnols et Allemands. Les premiers « poulains » apparaissent dans la seconde moitié du <num>xii<hi rend="sup">e</hi></num> siècle. Pépinière de prélats, le chapitre joua un rôle important dans le royaume latin ; son prieur était le bras droit du patriarche, sans qu’il existât de liens étroits de dépendance à l’égard de celui-ci. Une confraternité avait été instituée, qui admettait des laïcs, hommes et femmes.</p>
+          <p>Les chanoines coexistaient dans la basilique du Sépulcre avec des communautés religieuses de différents rites.</p>
+          <p><hi rend="i">Les chanoines du Saint-Sépulcre (1187-1489</hi>). – La décadence s’accentua après la chute de Jérusalem. Repliés à Acre en 1191, les chanoines furent réduits au rôle d’électeurs du patriarche – que le pape désignera d’ailleurs dès le troisième quart du <num>xiii<hi rend="sup">e</hi></num> siècle – mais sans autorité effective. Le pontificat de Jacques Pantaléon, patriarche de Jérusalem devenu pape sous le nom d’Urbain IV, donna un nouvel essor au chapitre et à ses dépendances, vers 1262-1263. Cette fortune éphémère ne résista pas au repli en Occident qui suivit la chute d’Acre en 1291. Retiré à Pérouse, le prieur général, entouré de clercs de cette cité, vit ses liens avec ses dépendances d’Occident se distendre puis se dissoudre, tandis qu’il se débattait dans de graves difficultés financières. Un moment confié au général des Franciscains, le futur Sixte IV, le priorat était dans un état lamentable en 1472-1473 et l’appui du pontife ne put y remédier. Innocent VIII résolut, en 1489, de supprimer cet ordre fossilisé et d’en rattacher les biens à l’Hôpital ; mais nombre de maisons échappèrent à la dissolution et survécurent comme collégiales autonomes.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La dévotion envers le Saint-Sépulcre de Jérusalem
+         <lb/>dans l’Occident médiéval</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’expression de la dévotion envers le Saint-Sépulcre
+           <lb/>avant les croisades</head>
+          <p><hi rend="i">Les pèlerinages.</hi> – Dès la fin du <num>x<hi rend="sup">e</hi></num> siècle, le Saint-Sépulcre attira une foule de pèlerins, qui s’y rendaient par mysticisme, par volonté d’ascèse, par désir <pb n="20" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_06.TIF/full/full/0/default.jpg"/>de toucher la relique du tombeau, pour vivre et mourir aux lieux saints, pour y gagner le salut, souvent aussi par pénitence, plus rarement par peur de la fin du monde et quelquefois pour suivre la mode. Dans les régions touchées par l’hérésie qui, au <num>xi<hi rend="sup">e</hi></num> siècle, niait les vertus des reliques (« manichéens »), il semble que les prélats orthodoxes aient accentué leur dévotion envers le Saint-Sépulcre et s’y soient rendus en pèlerinage.</p>
+          <p>On peut distinguer plusieurs vagues : après un temps où les pèlerinages furent nombreux (980-1010), ils se raréfirent (1010-1020), reprirent avec l’apparition de grands voyages collectifs (vers 1020-1035), puis, après un nouveau ralentissement (1040-1050), ils se développèrent tout au long de la seconde moitié du <num>xi<hi rend="sup">e</hi></num> siècle, époque où l’on constate le départ de troupes de plusieurs milliers de pèlerins, phénomène qui annonce la croisade toute proche.</p>
+          <p><hi rend="i">Fondations et donations liées aux pèlerinages.</hi> – Déjà avant de partir, les pèlerins faisaient des donations en argent ou en terres à des églises et disposaient de leurs biens en cas de non-retour. Une fois rentrés, nombreux étaient ceux qui se faisaient bienfaiteurs d’un établissement ecclésiastique ou fondaient une église ; certains lui donnaient le vocable du Saint-Sépulcre, marquant ainsi plus particulièrement leur dévotion. D’autres, regrettant de n’avoir pu atteindre le lieu saint, agissaient de même.</p>
+          <p>Trois vocables ont été utilisés pour de telles fondations : celui de Jérusalem, surtout répandu au très haut Moyen âge (le dernier exemple isolé est du milieu du <num>xi<hi rend="sup">e</hi></num> siècle), celui de la Résurrection (fin <num>ix<hi rend="sup">e</hi></num>-début <num>xi<hi rend="sup">e</hi></num> siècle), celui du Saint-Sépulcre, qui apparaît à la fin du <num>x<hi rend="sup">e</hi></num> siècle, mais eut le plus grand succès (trente-trois églises dès avant 1099).</p>
+          <p><hi rend="i">Donations au Saint-Sépulcre de Jérusalem.</hi> – Certains pèlerins poussèrent la dévotion jusqu’à donner au Saint-Sépulcre même argent, terres et quelquefois églises nouvellement fondées, telles celles d’Aquapendente, de Neuvy-Saint-Sépulcre, de Mauriac (à Villeneuve-d’Aveyron), de Lodi, de La Salvetat-de-Lauraguais et de Paiera en Catalogne. La gestion en était difficile de Jérusalem et le patriarche se contentait généralement de percevoir un cens en besants d’or.</p>
+          <p><hi rend="i">Le culte des reliques du Sépulcre.</hi> – Les premières reliques rapportées par les pèlerins furent de l’huile de lampes ayant brûlé devant le Sépulcre. Puis on vit apparaître les premiers exemples de pierres provenant du rocher, qui devinrent les reliques les plus répandues ; tous les grands monastères en possédaient un fragment. Les objets sacrés les plus curieux sont des lampes ou des cierges allumés au « feu sacré », qui était censé descendre du ciel le Samedi saint.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le chapitre, puis l’ordre du Saint-Sépulcre en Occident
+           <lb/>(<num>xii<hi rend="sup">e</hi></num>-<num>xv<hi rend="sup">e</hi></num> siècles)</head>
+          <p><hi rend="i">La formation du temporel.</hi> – Les possessions acquises en Occident par le Saint-Sépulcre avant les croisades semblent avoir été perdues avant que les chanoines aient constitué leur temporel. La première donation fut probable<pb n="21" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_07.TIF/full/full/0/default.jpg"/>ment espagnole, peut-être à l’instigation de la monarchie castillane. Dès 1122, le chapitre était possessionné à León et, peu après, en Catalogne. En 1128, une bulle pontificale énumère des biens considérables en Espagne du Nord, à côté de quelques autres, isolés, en Pouille, en Provence et en Languedoc. En 1131, Alphonse le Batailleur légua son royaume d’Aragon, en parties égales, au Saint-Sépulcre, aux Hospitaliers et aux Templiers ; cette décision inapplicable entraîna, en 1140-1141, un accord entre le comte de Barcelone, époux de l’héritière, et les parties intéressées ; ce fut le point de départ du temporel en Aragon. Des provinces importantes étaient constituées avant 1146 en Pouille, dans l’État pontifical, en Basse-Allemagne et en Angleterre. L’expansion fut plus lente ensuite ; des biens furent donnés en Pologne (1162) et en Bohême (vers 1190). Le mouvement est dès lors achevé, si l’on excepte la province éphémère de Romanie (Constantinople, Salonique, Athènes) au temps de l’empire latin. Pourtant certaines des maisons, surtout en Europe centrale, continuèrent à acquérir de nouveaux biens.</p>
+          <p>En France, les premières donations avaient été perdues très rapidement et le grand prieuré qui s’établit à La Vinadière en Limousin ne prospéra guère ; il en fut de même en Angleterre (prieuré de Warwick).</p>
+          <p>Une réforme, amenant la création de nouvelles maisons, se produisit à la fin du <num>xv<hi rend="sup">e</hi></num> siècle, à la veille de la dissolution, dans les Pays-Bas ; ce fut l’œuvre de Jan van Abroeck et l’origine de l’ordre canonial contemplatif, surtout féminin, du Saint-Sépulcre (Sépulchrines).</p>
+          <p><hi rend="i">Caractères de l’ordre.</hi> – Destinés à financer le chapitre de Jérusalem, les prieurés furent constitués en provinces vers le milieu du <num>xii<hi rend="sup">e</hi></num> siècle, puis organisés en un ordre qui n’eut jamais de caractère militaire. Urbain IV lui octroya l’exemption de la juridiction des ordinaires et l’immunité des décimes pontificales et de toute autre taxe ecclésiastique. Dès le <num>xiv<hi rend="sup">e</hi></num> siècle, les liens s’étaient complètement relâchés entre le prieur général (archiprieur fixé à San Luca de Pérouse) et les différentes maisons. Une tentative eut lieu vers 1472 pour renouer ces liens : le prieur désigna des vicaires dans les provinces, procéda à des visites, tint un chapitre général, mais échoua dans son entreprise.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les autres formes de la dévotion envers le Saint-Sépulcre
+           <lb/>(<num>xii<hi rend="sup">e</hi></num>-<num>xv<hi rend="sup">e</hi></num> siècles)</head>
+          <p><hi rend="i">Fondations d’églises du Saint-Sépulcre.</hi> – Après la première croisade, les fondations d’églises placées sous le vocable du Saint-Sépulcre se poursuivirent dans la tradition du <num>xi<hi rend="sup">e</hi></num> siècle. Abondantes entre 1100 et 1187 (quarante-neuf églises), elles se raréfièrent ensuite (quatorze de 1187 à 1291, onze entre 1291 et 1400), indice d’une très nette désaffection.</p>
+          <p>Au <num>xv<hi rend="sup">e</hi></num> siècle, en revanche, de nombreuses chapelles du Sépulcre furent érigées ; mais conçues avant tout pour abriter des groupes monumentaux de la Mise au tombeau, elles révèlent une dévotion nouvelle, tournée non plus vers Jérusalem, mais vers la Passion du Christ.</p>
+          <pb n="22" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_08.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Confréries de « paumiers ».</hi> – Au retour du pèlerinage, il arriva que se constituent des confréries de « paumiers », fondées pour entretenir la dévotion au Saint-Sépulcre ; elles participèrent à la construction d’églises du Sépulcre dès le <num>xii<hi rend="sup">e</hi></num> siècle à Thetford, Cambridge et Augsbourg et, au <num>xiv<hi rend="sup">e</hi></num> siècle, à Paris.</p>
+          <p><hi rend="i">Chevaliers du Saint-Sépulcre.</hi> – Dès le <num>xi<hi rend="sup">e</hi></num> siècle, l’habitude s’était prise d’adouber des chevaliers au Saint-Sépulcre. Mais ni cette pratique, ni la milice fournie par le chapitre à l’ost royal, ni les « sergents » des chanoines ne sont à l’origine de l’ordre nobiliaire des chevaliers du Saint-Sépulcre. Celui-ci remonte, en fait, à la cérémonie par laquelle, dès le xiv<hi rend="sup">e</hi> siècle, le custode des Franciscains du Mont-Sion armait chevaliers du Sépulcre des pèlerins qui pouvaient faire la preuve de leur noblesse. L’ordre, d’abord honorifique, reçut une hiérarchie au <num>xvi<hi rend="sup">e</hi></num> siècle et fut réorganisé à l’époque moderne.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>La résonance du Saint-Sépulcre de Jérusalem
+         <lb/>dans l’archéologie médiévale</head>
+        <p>Le Saint-Sépulcre de Jérusalem était connu en Occident par les récits des pèlerins ; dès le haut Moyen Âge, celui d’Arculfe, transmis successivement par Adamnannus et par Bède, était largement diffusé. Certains pèlerins rapportaient des mesures, plus ou moins exactes, du monument. Mais l’idée qu’on s’en faisait était très largement tributaire des représentations du tombeau dans les scènes de la Résurrection et des figurations de la cité de Jérusalem.</p>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les imitations de l’église du Saint-Sépulcre</head>
+          <p><hi rend="i">Historiographie du problème.</hi> – Divers auteurs ont avancé des thèses selon lesquelles les églises à plan rayonnant seraient une imitation du Saint-Sépulcre de Jérusalem. En fait, un certain nombre d’entre elles sont des chapelles castrales ou des imitations de la chapelle palatine d’Aix ou des « Sainte-Marie la Ronde » ou des chapelles Saint-Michel ou encore, fort souvent, des <hi rend="i">martyria </hi>ou des chapelles funéraires.</p>
+          <p><hi rend="i">Les imitations certaines.</hi> – Les dix-huit églises repérées comme imitant certainement le Saint-Sépulcre de Jérusalem ont été construites entre 820 et 1208 : une au <num>ix<hi rend="sup">e</hi></num> siècle (Saint-Michel de Fulda), cinq au <num>xi<hi rend="sup">e</hi></num> siècle (Paderborn et sa copie de Krukenburg, Neuvy-Saint-Sépulcre, Mauriac à Villeneuve-d’Aveyron, Grasse) ; mais la majorité appartiennent au <num>xii<hi rend="sup">e</hi></num> siècle (Northampton et Cambridge, Augsbourg, Pise, Peyrolles et Graveson, Santo Stefano de <pb n="23" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_09.TIF/full/full/0/default.jpg"/>Bologne, Brindisi, Torres del Rio, Ségovie et peut-être Parthenay) ; celle de Roquelaure est d’une date inconnue. Le plus souvent placées sous le vocable de leur modèle, elles n’en sont que des copies lointaines, circulaires ou polygonales, quelquefois même cruciformes ou quadrilobées, les dimensions reflétant le diamètre de la colonnade intérieure de l’<hi rend="i">Anastasis.</hi> Une seule église, celle de Brindisi, reproduit la façade rectiligne du modèle. Leur disposition intérieure varie à l’extrême : il peut y avoir, ou non, une colonnade centrale et des tribunes ; en général, un chœur a été bâti à l’est. On peut supposer que ces imitations abritaient des édicules dérivés de celui du Saint-Sépulcre.</p>
+          <p><hi rend="i">Les imitations probables.</hi> – Les rotondes des Templiers de Londres, de Paris et de Tomar et plusieurs autres églises des Templiers en Angleterre sont inspirées de l’<hi rend="i">Anastasis,</hi> de même que la crypte des Hospitaliers à Clerkenwell. Quelques autres monuments s’apparentent étroitement à la structure du Saint-Sépulcre ou de ses imitations certaines ; ce sont le baptistère de Pise, Sainte-Croix de Quimperlé, Almenno San Tomé, Eunate.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les imitations monumentales du tombeau</head>
+          <p><hi rend="i">Raisons d’être des imitations de l’édicule du Sépulcre.</hi> – On éleva dans des églises une <hi rend="i">memoria</hi> du Sépulcre de Jérusalem pour commémorer ce lieu saint et, parfois, pour y abriter des reliques. Ces imitations ne sont nées ni de la déposition de l’hostie au Vendredi saint, ni du drame liturgique <hi rend="i">Quem quaeritis ?</hi></p>
+          <p><hi rend="i"><num>iv<hi rend="sup">e</hi></num>-<num>xiii<hi rend="sup">e</hi></num> siècles.</hi> – Hormis l’édicule-reliquaire du Musée de Narbonne (<num>v<hi rend="sup">e</hi></num> siècle), les premiers exemples allégués d’édicules qui auraient imité le tombeau du Christ sont hypothétiques (Trèves, Bologne) ou ne doivent pas être retenus (Hypogée des Dunes à Poitiers). A Fulda et à Vienne, deux édicules furent élevés au <num>ix<hi rend="sup">e</hi></num> siècle. Dix autres virent le jour à la grande époque des pèlerinages (milieu du <num>x<hi rend="sup">e</hi></num>-fin du <num>xi<hi rend="sup">e</hi></num> siècle), ceux de Constance, Aquapendente, Neuvy-Saint-Sépulcre, Saint-Remi de Reims, Plaisance, Cambrai, Aquilée, Saint-Hubert, Pavie, Sélestat ; onze furent édifiés au <num>xii<hi rend="sup">e</hi></num> siècle ou au début du <num>xiii<hi rend="sup">e</hi></num> siècle à Milan, Saint-Thierry de Reims, Augsbourg, Denkendorf, Aubeterre et La Boulonnie, Eichstätt, Gernrode, Tomar et Ségovie, Capoue, Constance et Magdebourg.</p>
+          <p><hi rend="i">XV^-XVI* siècles.</hi> – Après une interruption pendant la plus grande partie du <num>xiii<hi rend="sup">e</hi></num> et tout le <num>xiv<hi rend="sup">e</hi></num> siècle, une reprise se produisit au <num>xv<hi rend="sup">e</hi></num> siècle, mais la dévotion a évolué : le mysticisme de l’époque, moins sensible à la relique matérielle, est, au contraire, tourné vers la Passion ; les édicules sont dès lors liés au culte de l’eucharistie, aux chemins de croix, et beaucoup moins à Jérusalem. Le premier exemple a beau être à Limo ges (1421), les imitations du <num>xv<hi rend="sup">e</hi></num> siècle se répandirent surtout en Allemagne. En outre, les « tempietti » furent bâtis en Italie sur les plans de Leon Battista Alberti (Florence, Borgo San Sepolcro, Alvernia), celui de Florence présentant des rapports étroits avec l’église du <hi rend="i">Corpus Domini</hi> de Castiglione Olona. Ailleurs, les sépulcres de Bruges et, au <num>xvi<hi rend="sup">e</hi></num> siècle, de Troyes sont des exemples isolés.</p>
+          <pb n="24" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_10.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Caractères des imitations.</hi> – Certaines caractéristiques du tombeau de Jérusalem sont le plus souvent représentées : la couche funéraire surtout (notamment au <num>xi<hi rend="sup">e</hi></num> siècle), la forme circulaire de l’enveloppe, la porte basse. Rares sont les édicules ornés, excepté celui de Constance, qui présente de belles sculptures du milieu du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Examen de quelques problèmes archéologiques
+           <lb/>en relation avec le Saint-Sépulcre</head>
+          <p>1. Reliquaires et autres objets pouvant évoquer le Saint-Sépulcre.</p>
+          <p>2. Critique de la théorie sur l’origine des églises porches, tenues pour une symbolisation du Saint-Sépulcre.</p>
+          <p>3. Y a-t-il eu une architecture de l’ordre du Saint-Sépulcre ? Réponse négative à cette question.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Notices historiques et archéologiques</head>
+        <p>1. Églises construites à l’imitation du Saint-Sépulcre.</p>
+        <p>2. Églises ayant appartenu à l’ordre du Saint-Sépulcre.</p>
+        <p>3. Églises placées sous le vocable du Saint-Sépulcre.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>1. Titres originels des fondations d’églises sous le vocable du Saint-Sépulcre.</p>
+        <p>2. Documents relatifs à la vie spirituelle de l’ordre du Saint-Sépulcre.</p>
+        <p>3. Régestes des quarante-neuf bulles d’Urbain IV concernant l’ordre du Saint-Sépulcre.</p>
+        <p>4. Documents concernant la crise de l’ordre et sa dissolution (1472-1489).</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>1. Nouvelle interprétation d’un ivoire de Trèves (représentation rétrospective de la dédicace du Saint-Sépulcre sous Constantin).</p>
+        <p>2. Envoi des reliques de la vraie Croix et d’un fragment du Saint-Sépulcre par le chantre Anseau ; nouvelle datation (1120).</p>
+        <p>3. Restitution de l’état ancien et du classement primitif du cartulaire du Saint-Sépulcre de Jérusalem.</p>
+      </div>
+      <div>
+        <pb n="25" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_11.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Cartes, plans, tableaux</head>
+        <p>Tableau nominatif et numérique des chanoines du Saint-Sépulcre au <num>xii<hi rend="sup">e</hi></num> siècle. – Cartes des biens de l’ordre en Occident. – Carte des églises fondées sous le vocable du Saint-Sépulcre. – Plan du Saint-Sépulcre (avec datation de ses différents éléments). – Tableau comparatif des imitations du Saint-Sépulcre.</p>
+      </div>
+      <div>
+        <head rend="uc">Planches</head>
+        <p>Le Saint-Sépulcre de Jérusalem. – Les églises construites à l’imitation du Saint-Sépulcre. – Les églises à plan central. – L’édicule du Saint-Sépulcre et ses imitations. – Les églises de l’ordre du Saint-Sépulcre. – Les églises dédiées au Saint-Sépulcre.</p>
+        <pb n="26" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_02/ENCPOS_1971_02_12.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

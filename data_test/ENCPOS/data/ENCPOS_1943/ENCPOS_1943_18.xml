@@ -1,0 +1,172 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_18" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les corps de métiers toulousains au <hi rend="sc">xiii</hi><hi rend="sup">e</hi> et au <hi rend="sc">xiv</hi><hi rend="sup">e</hi> siècles. Étude suivie de la publication du <hi rend="i">Livre des métiers</hi></title>
+        <author ref="https://www.idref.fr/254313930">Georgette Marie-Saint-Germain</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_18.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 155-160</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="155" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_18/ENCPOS_1943_18_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les corps de métiers toulousains
+       <lb/>au <num>xiii<hi rend="sup">e</hi></num> et au <num>xiv<hi rend="sup">e</hi></num> siècle
+       <lb/>Étude suivie de la publication du <hi rend="i">livre des métiers</hi></head>
+      <byline>
+        par
+        <forename>Georgette</forename>
+        <surname>Marie-saint-Germain</surname>
+      </byline>
+      <div>
+        <head rend="uc">Livre premier</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Critique de l’œuvre de Du Bourg. Insuffisance d’une documentation uniquement composée de statuts.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources – Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Origine des corps de métiers développés parallèlement aux institutions communales. Métiers groupés en communautés aux <num>xiii<hi rend="sup">e</hi></num> et <num>xiv<hi rend="sup">e</hi></num> siècles.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Administration intérieure des métiers</head>
+        <div>
+          <pb n="156" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_18/ENCPOS_1943_18_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre premier
+           <lb/>la hiérarchie corporative.</head>
+          <p>1. <hi rend="i">L’apprenti.</hi> – Obligation générale de l’apprentissage. Durée de l’apprentissage. Limitation du nombre des apprentis. Prix de l’apprentissage. L’apprenti, membre de la corporation. Devoirs du maître. Devoirs de l’apprenti.</p>
+          <p>2. <hi rend="i">L’ouvrier.</hi> – Salaire. Responsabilité professionnelle. Rupture du contrat par l’ouvrier.</p>
+          <p>3. <hi rend="i">Le maître.</hi> – Conditions à remplir pour pouvoir ouvrir un atelier ; absence de chef-d’œuvre ; la majorité des métiers ne paient pas de droit d’entrée. Admission à la maîtrise des artisans étrangers à la ville. Facilités données aux fils de maîtres. Veuves de maîtres.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les bailes.</head>
+          <p>1. <hi rend="i">Durée du mandat.</hi> Mode de recrutement : par les capitouls (le plus souvent), par cooptation, par l’assemblée générale du métier.</p>
+          <p>2. <hi rend="i">Nature des fondions.</hi> – <hi rend="i">a) Vérification des matières premières et des produits manufacturés.</hi> Apposition de la marque. Levée des amendes. Périodicité des visites. – <hi rend="i">b) Pouvoir juridictionnel.</hi> Intervention des prudhommes quand les bailes ne s’accordent pas. – <hi rend="i">c) Rôle économique.</hi> – <hi rend="i">d) Examen des candidats à la maîtrise.</hi></p>
+          <p>3. <hi rend="i">Mode d’exercice des fonctions.</hi> Cas de spécialisation.</p>
+          <p>4. <hi rend="i">Rémunération.</hi> Part des amendes, vacations.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les agents de second ordre.</head>
+          <p>1. <hi rend="i">Les courtiers.</hi> – Les courtiers apparaissent dans les sta<pb n="157" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_18/ENCPOS_1943_18_03.TIF/full/full/0/default.jpg"/>tuts en 1281. Ils faisaient partie du corps de métier, mais ils sont en même temps des sortes de fonctionnaires municipaux. Les salaires. Hôteliers-courtiers.</p>
+          <p>2. <hi rend="i">Porteurs d’huile.</hi></p>
+          <p>3. <hi rend="i">Mesureurs de bois, peseurs de laine.</hi></p>
+          <p>4. <hi rend="i">Mesureurs de vin.</hi> Les mesureurs, au nombre de douze, formaient une corporation à part.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Vie collective des artisans.</head>
+          <p>1. <hi rend="i">Assemblées.</hi> – Les assemblées sont mentionnées seulement dans deux statuts. Elles sont périodiques et surveillées par l’autorité municipale.</p>
+          <p>2. <hi rend="i">Confréries.</hi> – La confrérie apparaît dès la fin du <num>xii<hi rend="sup">e</hi></num> siècle, en même temps que l’association professionnelle. Elle se développe parallèlement à cette dernière. Elle est nettement distincte de la communauté civile. Caisse commune. Patrons. Devoirs pieux et charitables des membres de la confrérie. La confrérie est-elle à l’origine de la corporation ? Vraisemblance de l’hypothèse pour la corporation des bouchers.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La réglementation professionnelle</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la réglementation du travail.</head>
+          <p>1. <hi rend="i">La journée de travail.</hi> – Durée. Travail de nuit généralement interdit. Chômage des jours de fête, du samedi et du dimanche.</p>
+          <p>2. <hi rend="i">Acquisition des matières premières.</hi> – Limitation de la <pb n="158" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_18/ENCPOS_1943_18_04.TIF/full/full/0/default.jpg"/>concurrence, interdiction de stocker, d’acheter ailleurs que dans les lieux accoutumés. Droit de priorité des fabricants sur les revendeurs.</p>
+          <p>3. <hi rend="i">L’association entre marchands.</hi> – Nombre maximum des associés : deux.</p>
+          <p>4. <hi rend="i">Conventions. Cumul.</hi></p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La réglementation de la vente.</head>
+          <p>1. <hi rend="i">Conditions de la vente.</hi> – Vente en public. Lotissement .</p>
+          <p>2. <hi rend="i">Fixation des prix de vente.</hi></p>
+          <p>3. <hi rend="i">Colporteurs, revendeurs.</hi></p>
+          <p>4. <hi rend="i">Acquittement du prix du marché.</hi></p>
+          <p>5. <hi rend="i">Les hôtelleries.</hi> – Lieux de vente. Les courtiers.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Relations des métiers avec l’autorite</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>législation, juridiction.</head>
+          <p>1. <hi rend="i">Le comte.</hi> – Le comte a la haute main sur les métiers comme sur le reste de la population.</p>
+          <p>2. <hi rend="i">Les capitouls.</hi> – Dès l’origine, les capitouls collaborent avec le comte à la législation des métiers. Ils commencent à légiférer seuls au moment de la réunion du comté à la couronne (1270). – <hi rend="i">a</hi>) Promulgation des statuts. Leur élaboration. Rôle des artisans. – <hi rend="i">h</hi>) Pouvoir juridictionnel. Prudhommes-juges des questions techniques. – <hi rend="i">c</hi>) Nomination des bailes de certains métiers. Moins grande autonomie des <pb n="159" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_18/ENCPOS_1943_18_05.TIF/full/full/0/default.jpg"/>métiers toulousains si on les compare à ceux de Paris et de Chartres.</p>
+          <p>3. <hi rend="i">Le roi et ses agents.</hi> – Rivalité traditionnelle entre les consuls et les agents royaux (sénéchal et viguier), qui se poursuit même après que Charles TV ait accordé aux capitouls le monopole et la direction des métiers (1324).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les corps de métiers et les finances municipales.</head>
+          <p>Insuffisance des renseignements concernant les droits perçus sur les corporations. L’autorité municipale se réserve une partie des amendes et des droits d’admission qu’elle emploie à l’entretien de la maison commune et aux constructions de la ville.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Quatrième partie
+         <lb/>Monographies de certains métiers</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>alimentation.</head>
+          <p>1. <hi rend="i">La boucherie.</hi> – <hi rend="i">a</hi>) Les <hi rend="i">macellarii.</hi> Concession du métier à titre héréditaire par le comte Raymond V (1222). Ils vendaient de la viande de bœuf, de mouton, du porc frais et du porc salé. Achat, écorchage et vente au détail des animaux. – <hi rend="i">h</hi>) Les <hi rend="i">bocherii</hi> vendent de la viande de qualité inférieure : brebis, boucs, chèvres, truies. – <hi rend="i">c</hi>) Les tripiers. – <hi rend="i">d</hi>) Les agneliers vendent des agneaux, chevreaux, lièvres, chevreuils, perdrix.</p>
+          <p>2. <hi rend="i">La boulangerie.</hi></p>
+          <p>3. <hi rend="i">La pâtisserie.</hi> – Les pâtissiers vendent des pâtés en <pb n="160" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_18/ENCPOS_1943_18_06.TIF/full/full/0/default.jpg"/>croûte, des flans, des nieules, des oublies. Ils font cuire des aliments et surtout des viandes pour les particuliers.</p>
+          <p>4. <hi rend="i">L’épicerie.</hi> – Les épiciers vendent des épices et des substances pharmaceutiques. En 1395, ils ont annexé les chandeliers, les ciriers et les apothicaires.</p>
+          <p>5. <hi rend="i">L’huilerie.</hi> – En 1324, les huiliers forment une seule communauté avec les chandeliers.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Étoffes et habillement.</head>
+          <p>1. <hi rend="i">L’industrie drapière.</hi> – Industrie florissante à Toulouse. Artisans et marchands drapiers. Arçonnage. Filage par les filandières. Tissage. Foulage et tendage par les pareurs. Lanage par les cardeurs. Tondage (les tondeurs forment une corporation à part). Teinture. Diverses sortes de draps.</p>
+          <p>2. <hi rend="i">Le lin.</hi></p>
+          <p>3. <hi rend="i">Les pelhiers.</hi> – Marchands d’habits neufs et vieux.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des matières</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Livre II
+         <lb/>publication du « livre des métiers »</head>
+        <p>1. INTRODUCTION. – – Description du manuscrit. Valeur historique.</p>
+        <p>2.	PUBLICATION.</p>
+        <p>3.	GLOSSAIRE.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

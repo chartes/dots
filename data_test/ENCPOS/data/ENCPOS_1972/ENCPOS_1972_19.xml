@@ -1,0 +1,151 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_19" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La société de la paroisse Saint-Michel de Bordeaux (vers 1470-vers 1520)</title>
+        <author ref="https://www.idref.fr/027059960">Mireille Pastoureau-Laprébande</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_19.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 155-160</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="155" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_19/ENCPOS_1972_19_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La société
+       <lb/>de la paroisse Saint-Michel de Bordeaux
+       <lb/>(vers 1470-vers 1520)</head>
+      <byline>
+        par
+        <forename>Mireille</forename>
+        <surname>Pastoureau-Laprébande</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Le choix du sujet fut déterminé par la richesse de la sous-série 3E des Archives départementales de la Gironde. A la fin du <num>xv<hi rend="sup">e</hi></num> siècle, plusieurs études de notaires (Dartiguemale et Paludier, Dubosc, Turpaud, Ribery, Devaulx et Seneschault) étaient concentrées dans la paroisse Saint-Michel, qui était animée d’une intense activité commerciale. Nous avons dépouillé leurs minutes exhaustivement de 1470 – date des premières séries continues – jusque 1500 et sélectivement jusque 1520. Il fut nécessaire, pour obtenir une meilleure vision de la vie sociale, de recourir à la série G, qui contient des fragments de registres de notaires, des livres de raison, des archives de confréries, et surtout les fonds de la fabrique et des bénéficiers de l’église Saint-Michel.</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction
+         <lb/>le cadre</head>
+        <p>Le quartier Saint-Michel se constitue en deux étapes, au cours desquelles, à deux reprises, la ville annexa le faubourg né hors de son enceinte. En un premier temps, les fortifications de 1227 englobèrent le quartier de la Rousselle situé au nord-est de la paroisse ; caractérisé par des rues tortueuses et une forte densité de population, il resta toujours le centre vital de la paroisse. En 1302, une nouvelle muraille beaucoup plus vaste encercla la ville et donna à la paroisse Saint-Michel sa physionomie définitive. Dès la fin du <num>xv<hi rend="sup">e</hi></num> siècle, le territoire <pb n="156" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_19/ENCPOS_1972_19_02.TIF/full/full/0/default.jpg"/>ainsi acquis, quadrillé par des rues à angles droits, se distingue du quartier de la Rousselle et de la frange qui borde la rivière par une faible densité de population et l’existence d’espaces vides, en friches ou consacrés au jardinage et à l’élevage.</p>
+        <p>Les habitants de Saint-Michel avaient pris conscience de l’entité morale que constituait leur paroisse. Fondée au <num>xi<hi rend="sup">e</hi></num> siècle par l’abbaye bénédictine voisine de Sainte-Croix, elle était restée sous sa domination jusqu’à ce que Louis XI ait octroyé aux paroissiens de Saint-Michel la faveur d’ériger leur église en collégiale. Cette promotion coïncida avec la reconstruction de l’église Saint-Michel, qui devint le plus bel édifice gothique de la ville.</p>
+        <p>Pour comprendre l’état d’esprit de cette société, il est enfin nécessaire de connaître l’expansion du commerce bordelais, qui, vers 1500, ajoute au trafic du vin celui du pastel.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les milieux sociaux</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les marchands</head>
+          <p>Les marchands dominent en tous points la société de la paroisse Saint-Michel. Ce sont eux qui se trouvent à l’origine de la fortune de la paroisse dont ils font, en quelque sorte, leur propriété : émigrant de leur quartier d’origine surpeuplé, ils achètent des « hostaus » sur tout le territoire de la paroisse et les embellissent à grands frais. Ils dotent très richement leurs filles et veillent à ce qu’elles s’allient à d’autres marchands fortunés. On n’observe pas d’immixtion par mariage dans la noblesse de vieille souche ; elle se réalise plutôt par l’acquisition progressive de biens fonciers et l’adoption d’un certain genre de vie.</p>
+          <p>L’amour de la terre dont ils sont issus reste très violent chez les marchands. Ils pratiquent également toutes sortes de prêts à intérêt. En voie d’accession à la noblesse, certains occupent des fonctions municipales et leurs fils sont parfois destinés aux carrières de robe.</p>
+          <p>Ils sont également des soutiens de la fabrique et leurs testaments révèlent une profonde piété.</p>
+          <p>Ils reconnaissent à leurs épouses la vertu « économique », les associent volontiers à leurs affaires et, s’ils viennent à disparaître, leurs veuves continuent seules le négoce.</p>
+        </div>
+        <div>
+          <pb n="157" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_19/ENCPOS_1972_19_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Nobles et officiers</head>
+          <p>Il faut distinguer la noblesse ancienne et la noblesse récente. Les nobles de vieille souche, ruinés par l’oisiveté et les dépenses excessives, sont mal à l’aise dans le quartier Saint-Michel et se retirent dans leurs terres. En revanche, les nobles de fraîche date, eux-mêmes issus du négoce, n’hésitent pas à allier leurs filles à des marchands ; toutefois leurs noms disparaissent peu à peu des chargements de navires. Ils forment donc un milieu hybride qui constitue davantage le sommet de la hiérarchie des marchands plutôt qu’une classe différente.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les clercs</head>
+          <p><hi rend="i">Les notaires.</hi> – Tous les notaires sont clercs ; en général ils ne sont pas originaires de Bordeaux. Ils cherchent à s’évader de leur condition en acquérant des biens fonciers et en adoptant la ferveur religieuse des marchands.</p>
+          <p><hi rend="i">Les chapelains.</hi> – La paroisse Saint-Michel bénéficie d’un solide encadrement. Ses chapelains, réduits par de sévères statuts à un collège de vingt-quatre bénéficiers, constituent l’élite religieuse de la paroisse. La vie du bas clergé reste peu édifiante malgré les remontrances des autorités religieuses.</p>
+          <p><hi rend="i">Les moines.</hi> – Un couvent de Frères Mineurs est implanté sur le territoire de la paroisse. Il joue un rôle assez important dans la vie religieuse jusqu’à ce que la crise intestine à propos de la nouvelle observance le déconsidère en partie auprès des fidèles.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les bouchers et les artisans</head>
+          <p>Concentrés dans la rue des Menutz, les bouchers s’enrichissent beaucoup et concurrencent les marchands pour le commerce et l’usure locale. Ils constituent de véritables dynasties mais sont toutefois loin de porter atteinte à la suprématie des marchands.</p>
+          <p>Les artisans sont surtout représentés dans la paroisse Saint-Michel par les charpentiers de barriques ; assez loin derrière viennent les boulangers, les cordonniers et les tailleurs. Ils constituent la majeure partie des locataires d’« hostaus ». Néanmoins, ils possèdent tous un petit capital.</p>
+        </div>
+        <div>
+          <pb n="158" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_19/ENCPOS_1972_19_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre V
+           <lb/>Les laboureurs</head>
+          <p>Issus de la proche campagne, des laboureurs enrichis s’installent dans la paroisse Saint-Michel. Ils ont accès à la petite bourgeoisie et s’enrichissent par leur mariage. Ils acquièrent des biens fonciers et s’assimilent aux maîtres artisans.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Les apprentis, les compagnons et les serviteurs</head>
+          <p>Un grand nombre d’apprentis affluent à Saint-Michel ; 45 % viennent de la région Gascogne-Pyrénées et 20 % de Bordeaux, 60 % d’entre eux sont employés par des marchands qui les prennent souvent très jeunes.</p>
+          <p>Les compagnons, ou « valets », reçoivent un salaire plus élevé chez les marchands que dans les autres métiers.</p>
+          <p>Un grand nombre de serviteurs aident à l’activité commerciale. Les servantes d’« hostau » réservent leurs gages pour constituer leur dot.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>Les classes dangereuses et les étrangers</head>
+          <p>Une grande quantité de pauvres hères hantent les lieux publics, sollicitant même les bourgeois pendant les offices religieux.</p>
+          <p>La paroisse était peuplée d’un grand nombre d’étrangers : 28 % seulement des testateurs y sont établis depuis deux générations. Les immigrés connaissent des fortunes diverses.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>La vie sociale</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la famille</head>
+          <p><hi rend="i">Le mariage.</hi> – 4 % des conjoints épousent un conjoint étranger à la paroisse ; on se marie toujours dans le même milieu.</p>
+          <p>La femme apporte la dot et le mari le « don ».</p>
+          <pb n="159" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_19/ENCPOS_1972_19_05.TIF/full/full/0/default.jpg"/>
+          <p>Les dots en espèces augmentent fortement entre 1485 et 1500, surtout parmi les marchands. Les régimes matrimoniaux sont adaptés au profit de la prospérité financière du ménage.</p>
+          <p><hi rend="i">Les enfants.</hi> – Le taux de natalité est très élevé : 50 %. La mortalité infantile étant très forte, 80 % des ménages n’ont qu’un enfant en moyenne. Le plus grand nombre d’enfants se rencontre chez les nobles et les gros marchands. On préfère à l’instruction, toujours très sommaire, l’apprentissage, même pour les filles.</p>
+          <p><hi rend="i">Lignage et parenté.</hi> – Malgré la forte cohésion du lignage et l’emprise de la vie communautaire, on observe des poussées d’individualisme. Les sentiments d’affection ne sont pas exempts de la vie mercantile ; l’adoption est fréquente.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les confréries et la vie religieuse</head>
+          <p>Les paroissiens de Saint-Michel sont membres de trente-deux confréries au total, soit environ la moitié des confréries bordelaises. Il est très difficile de distinguer les confréries à but strictement religieux des confréries à aspects corporatifs ; les deux aspects étaient souvent intimement mêlés.</p>
+          <p>La vie religieuse était dominée par la peur de l’enfer, et par le goût pour l’apparat, les processions et les cérémonies grandioses.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La vie quotidienne et la vie intellectuelle</head>
+          <p>Le cadre de la vie quotidienne est l’« hostau », qui comprend l’« obraduy », ou boutique au rez-de-chaussée, la salle commune et la chambre à l’étage. Il comporte souvent une « voûte » pour entreposer les barriques.</p>
+          <p>Le mobilier reste très fruste de même que les objets courants. Les marchands nobles aiment toutefois porter des vêtements aux couleurs chatoyantes.</p>
+          <p>La vie intellectuelle des habitants de Saint-Michel est d’une insigne pauvreté. Si un prêtre bénéficier dispose d’une presse à imprimer, ce n’est que pour des images pieuses. Même les riches marchands ne possèdent que des bréviaires et livres d’heures.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="160" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_19/ENCPOS_1972_19_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p>1. Répertoire des principaux habitants de Saint-Michel. 2. Tableaux généalogiques.</p>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

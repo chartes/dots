@@ -4,4 +4,6 @@ import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../
 
 declare variable $dbName external;
 
-dots.lib:switcher_update("encpos")
+dots.lib:switcher_update("encpos"),
+update:output(concat("La liste des ressources de la db ", $dbName, " a été ajouté au switcher dots
+"))

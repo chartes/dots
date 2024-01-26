@@ -1,0 +1,103 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’historien Nicolas Gilles (14..?-1503)</title>
+        <author>Jacques Riche</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_14.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 135-140</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="135" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_14/ENCPOS_1930_14_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’historien Nicole Gilles
+       <lb/>(14..?-1503)</head>
+      <byline>
+        par
+        <forename>Jacques</forename>
+        <surname>Riche</surname>
+        <roleName>Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>De même que Paul-Emile, qui faisait il y a quelques années l’objet d’une thèse, Nicole Gilles est un historien bien oublié aujourd’hui. Seuls des articles de dictionnaires, d’ouvrages généraux lui sont consacrés, et ils sont pleins d’incertitudes et d’erreurs. Quelques mises au point de détail ont été faites, mais elles n’empêchent pas la reprise d’erreurs traditionnelles. Une étude reste donc à faire sur cet historien souvent considéré comme le premier en date des véritables historiens de la France.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>biographie</head>
+        <p>On ne sait rien sur la date et le lieu de sa naissance, rien de précis sur sa famille. Son rattachement à une famille normande des Andelys paraît sans fondement. Plus sérieuse peut-être serait sa parenté avec des Gilles originaires du Vendômois, et fixés <pb n="136" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_14/ENCPOS_1930_14_02.TIF/full/full/0/default.jpg"/> depuis en Anjou. Contradictions dans la filiation de cette famille.</p>
+        <p>Essais de fixation approximative de l’époque de la naissance de Nicole Gilles, et discussion sur l’époque de son entrée à la chancellerie royale. Fut-il garde de la Librairie royale ? Cette opinion semble dénuée de fondement.</p>
+        <p>La première mention certaine de Nicole Gilles est dans l’ex-libris du ms fr. 17.088 de la Bibliothèque nationale qu’il fit copier en 1474. En 1475 vraisemblablement, il devient secrétaire du Roi. Son rôle et ses avantages en cette qualité. Il est d’abord envoyé en missions dans l’Ouest, dans les derniers mois de 1475. En 1476, il assiste, le 6 mai, au dîner corporatif des secrétaires du Roi. Il reçoit en juillet 1477 une gratification des habitants de Tournai pour avoir rédigé des lettres en leur faveur, puis en 1479, on le trouve plaidant devant le Châtelet. En 1480, 1482 et 1483 on a des mentions de ses gages. En 1483, Nicole Gilles apparaît marié avec Marie Turquan. Rang honorable de la famille parisienne des Turquan. Marie Turquan était-elle veuve quand Nicole Gilles l’épousa ?</p>
+        <p>L’avènement de Charles VIII marque pour Gilles un temps de faveur et d’ascension rapide : il devient clerc surnuméraire des comptes le 14 octobre 1483, reçoit le 4 avril 1484 (n. st.) une gratification de cent livres tournois, puis est nommé Clerc du Trésor le 25 Août 1484. Ses fonctions en cette qualité : traces qu’il nous en reste dans les pièces comptables en 1485, 1486 et 1489. Son clerc Jean de Fontenay. Gilles continue à plaider pour ses affaires personnelles. En 1490, il reçoit une pension du roi de cent livres tournois par an ; il est chargé des affaires du roi devant le Parlement. Ses rapports avec Jean Le <pb n="137" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_14/ENCPOS_1930_14_03.TIF/full/full/0/default.jpg"/>Clerc. Il obtient en 1493 de nouvelles lettres du roi pour sa pension. En septembre 1494 il est en procès avec un imprimeur. Il est chargé en mars 1496 (n. st.) de la levée d’un emprunt pour continuer la guerre en Italie ; ses lettres de rappel aux bourgeois de Troyes en cette occasion. Il intervient en mars 1495 (1496) dans l’affaire des bourses des secrétaires du Roi.</p>
+        <p>Sa lettre à Jean Bourré ; date probable de celle-ci ; son caractère intime. Il continue ses fonctions de contrôleur de Trésor après 1496. Il perd sa femme le 7 septembre 1498. Son rôle comme paroissien et marguillier de Saint-Paul à Paris. Il fait construire à ses frais la Chapelle Saint-Louis de cette église. Son aspect. Quand fut-elle construite ? Nicole Gilles est encore contrôleur du Trésor en avril 1502 ; il meurt le 10 juillet 1503 et est inhumé dans sa chapelle.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Le manuscrit</head>
+        <p>Du seul ouvrage connu de Nicole Gilles, les <hi rend="i">Annales et chroniques de France,</hi> il n’y a pas d’édition avant 1525. L’ouvrage est-il bien de Gilles ? Le manuscrit n. a. fr. 1417 de la Bibliothèque nationale décrit par Léopold Delisle comme chronique anonyme. C’est le texte des Annales de Nicole Gilles. Preuves de cette identité. Les additions nombreuses et les titres rubriqués du manuscrit ont aussi passé dans l’édition. Divergences de détail entre les deux textes : adjonctions de l’éditeur, suppressions, interversions de passages, traductions de citations latines.</p>
+        <p>Caractère du manuscrit. Sa disposition curieuse : trace de deux rédactions de son texte, dont l’une intercalaire et postérieure. Caractéristiques de l’écri<pb n="138" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_14/ENCPOS_1930_14_04.TIF/full/full/0/default.jpg"/>ture de ces deux rédactions ; elles sont bien du même temps, le filigrane du papier est le même ; on retrouve des formes intermédiaires entre les plus différenciées des deux écritures.</p>
+        <p>Etude des additions : 1°) les parties rubriquées ; 2°) les additions proprement dites ; elles sont plus ou moins cursives et de différentes époques, mais toutes de la même main ; essai de distinctions de ces « campagnes » diverses de la révision du manuscrit.</p>
+        <p>Comparaison du manuscrit n. a. fr. 1417 avec les spécimens d’écriture authentique de Nicole Gilles. Les premiers en date se rapprochent de la première rédaction, les derniers de la seconde. Quant aux additions, elles sont identiques aux feuillets reliés à rebours du manuscrit de Berne signalés par Léopold Delisle. Nous sommes donc en présence du manuscrit autographe des Annales de Nicole Gilles, du moins pour la deuxième rédaction et les additions.</p>
+        <p>Comparaison du manuscrit n. a. fr. 1417 avec le ms. 70 de Berne décrit par Léopold Delisle. Ressemblance des signes de paragraphe, des rubriques marginales. Identité de l’écriture du texte du manuscrit de Berne avec la première rédaction du n. a. fr. 1417.</p>
+        <p>Preuve par l’étude des filigranes du papier, qui sont les mêmes dans les deux manuscrits. Autres déductions intéressantes tirées des filigranes du ms. des Annales, au point de vue des livres de Nicole Gilles et du caractère autographe des additions cursives du manuscrit. Nicole Gilles est-il l’auteur des extraits de Nangis du ms. de Berne et de la première rédaction du n. a. fr. 1417 ? Ce n’est pas impossible, en tous cas on peut lui faire honneur de l’exécution du ms. de Berne et le dater ainsi avec plus de précision.</p>
+        <p>Essai de détermination plus précise de la date de ce manuscrit et des diverses parties du ms. des An<pb n="139" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_14/ENCPOS_1930_14_05.TIF/full/full/0/default.jpg"/>nales dans la vie de Nicole Gilles. Double caractère de son écriture qui est bien celui des plumitifs de cette époque, et caractère déjà personnel de cette écriture.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Les premières éditions
+         <lb/>place de Nicole Gilles
+         <lb/>dans l’historiographie française</head>
+        <p>Les éditions des Annales de Nicole Gilles de 1492 et 1498 sur lesquelles repose la réputation de Nicole Gilles, le premier en date des annalistes français, existent-elles ou non ? Recherche de témoignages de leur existence.</p>
+        <p>Hypothèse ingénieuse de Brunet sur la confusion probable de Lelong avec les éditions des Chroniques de France abrégées. Identité de ces deux textes pour le règne de Louis XI, sauf quelques divergences ; similitudes certaines, mais moins grandes, pour le règne de Charles VII. Les rapports des deux ouvrages s’arrêtent là.</p>
+        <p>Qu’est-ce que cette petite chronique par rapport à l’œuvre de Nicole Gilles ; une source ? un premier état des Annales ? Nous nous en tenons à la première hypothèse ; mais est-ce le ms. fr. 5704 de la B. n. ou une des premières éditions qu’a utilisée Nicole Gilles ? Il a pu n’y recourir que tardivement.</p>
+        <p>Quelle preuve avons-nous en définitive de l’antériorité de Gilles sur Gaguin ? témoignage de Denis Sauvage, éditeur de Nicole Gilles qui parle de copies à la main.</p>
+        <p>Récit de Gilles de l’origine du royaume d’Yvetot souvent critiqué ; sa valeur en regard de celui de Gaguin ; son origine.</p>
+        <pb n="140" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_14/ENCPOS_1930_14_06.TIF/full/full/0/default.jpg"/>
+        <p>La place que tient Nicole Gilles dans l’historiographie française ne réside pas dans l’originalité ou la valeur historique de ses Annales, mais dans la conception et la forme de son ouvrage d’une part, la langue où il écrit d’autre part. Par le premier point, par son sentiment du rôle de l’Histoire, il est l’initiateur du mouvement nouveau de l’histoire humanistique, mais par son manque de critique, – qu’on ne saurait lui reprocher d’ailleurs, – il n’est pas le type achevé de l’historien humaniste. Par l’usage de la langue française, il reste d’autre part dans la tradition des chroniqueurs. C’est une figure de transition entre le moyen âge et la Renaissance, les chroniqueurs et les historiens humanistes, et qui mérite à ce titre d’être sauvée de l’oubli.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusions</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pieces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>
