@@ -109,9 +109,9 @@ Pour tester, deux corpus d'essai sont disponibles dans `/dots/data_test`:
 
 Utiliser les routes de l'API DTS disponibles:
 
-- http://localhost:9090/api/dts/collections
-- http://localhost:9090/api/dts/navigation
-- et http://localhost:9090/api/dts/document
+- http://localhost:8080/api/dts/collections
+- http://localhost:8080/api/dts/navigation
+- et http://localhost:8080/api/dts/document
 
 ## Usage depuis d'autres applications
 
