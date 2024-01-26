@@ -17,19 +17,19 @@
   </a:documentation>
   
   <start>
-    <ref name="dbSwitch"/>
+    <ref name="metadataMap"/>
   </start>
   
-  <define name="dbSwitch">
-    <a:documentation>Dots Databases Switcher</a:documentation>
-    <element name="dbSwitch">
+  <define name="metadataMap">
+    <a:documentation>Dots Database Default Metadata Mapping</a:documentation>
+    <element name="metadataMap">
       <ref name="metadata"/>
-      <ref name="member"/>
+      <ref name="mapping"/>
     </element>
   </define>
   
   <define name="metadata">
-    <a:documentation>TODO: les métadonnées du registre</a:documentation>
+    <a:documentation>TODO: les métadonnées</a:documentation>
     <element name="metadata">
       <element name="dct:created">
         <data type="dateTime"/>
@@ -37,68 +37,45 @@
       <element name="dct:modified">
         <data type="dateTime"/>
       </element>
-      <element name="totalProjects">
-        <data type="integer"/>
-      </element>
     </element>
   </define>
   
-  <define name="member">
-    <element name="member">
-      <oneOrMore>
-        <ref name="switcher_resource_item"/>
-      </oneOrMore>
+  <define name="mapping">
+    <element name="mapping">
+      <ref name="dcTitle"/>
+      <ref name="dcCreator"/>
+      <ref name="dctPublisher"/>
     </element>
-  </define>
-  
-  <define name="switcher_resource_item">
-    <choice>
-      <ref name="project"/>
-      <ref name="collection"/>
-      <ref name="document"/>
-    </choice>
-  </define>
-  
-  <define name="project">
-    <element name="project">
-      <ref name="resource-atts"/>
-    </element>
-  </define>
-  
-  <define name="collection">
-    <element name="collection">
-      <ref name="resource-atts"/>
-    </element>
-  </define>
-  
-  <define name="document">
-    <element name="document">
-      <ref name="resource-atts"/>
-    </element>
-  </define>
-  
-  <define name="resource-atts">
-    <attribute name="dtsResourceId">
-      <data type="ID"/>
-    </attribute>
-    <attribute name="dbName">
-      <data type="string"/>
-    </attribute>
-  </define>
-    
-  <define name="dcMetadata">
-    <a:documentation>TODO</a:documentation>
-    <choice>
-      <element name="dc:publisher"><text/></element>
-      <element name="dc:date"><text/></element>
-    </choice>
   </define>
   
   <define name="dcTitle">
     <a:documentation>TODO</a:documentation>
     <element name="dc:title">
-      <text/>
+      <ref name="resource-atts"/>
     </element>
+  </define>
+  
+  <define name="dcCreator">
+    <a:documentation>TODO</a:documentation>
+    <element name="dc:creator">
+      <ref name="resource-atts"/>
+    </element>
+  </define>
+  
+  <define name="dctPublisher">
+    <a:documentation>TODO</a:documentation>
+    <element name="dct:publisher">
+      <ref name="resource-atts"/>
+    </element>
+  </define>
+  
+  <define name="resource-atts">
+    <attribute name="xpath">
+      <text/>
+    </attribute>
+    <attribute name="scope">
+      <text/>
+    </attribute>
   </define>
   
 </grammar>
