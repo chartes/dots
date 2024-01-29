@@ -5,4 +5,5 @@ import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../
 declare variable $dbName external; 
 
 dots.lib:handleDelete($dbName),
-update:output(concat("Les registres dots de la base de donnée ", $dbName, " ont été supprimés"))
+update:output(concat("Les registres dots de la base de donnée ", $dbName, " ont été supprimés
+"))
