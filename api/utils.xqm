@@ -653,9 +653,7 @@ declare function utils:getFragmentsInRange($projectName as xs:string, $resourceI
         then
           <item type="object">
             <pair name="ref">{$ref}</pair>
-            <pair name="n">{$n}</pair>
             <pair name="level" type="number">{$level}</pair>
-            <pair name="nodeId">{normalize-space($fragment/@node-id)}</pair>
           </item>
         else db:get-id($projectName, $fragment/@node-id)
 };

@@ -156,14 +156,20 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
     if ($document/@xml:id)
     then $document/@xml:id
     else
-      functx:substring-after-last($path, "/")
-  let $maxCiteDepth := count($document//tei:refsDecl//tei:citeStructure)
-  let $parentIds := 
-    let $path := functx:substring-before-last($path, "/")
-    return
       if (contains($path, "/"))
       then functx:substring-after-last($path, "/")
-      else $idProject
+      else $path
+  let $maxCiteDepth := count($document//tei:refsDecl//tei:citeStructure)
+  let $parentIds := 
+    if (contains($path, "/"))
+    then
+      let $path := functx:substring-before-last($path, "/")
+      return
+        if (contains($path, "/"))
+        then functx:substring-after-last($path, "/")
+        else 
+          $path
+    else $idProject
   return
     if ($document)
     then
@@ -198,7 +204,10 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
             then element {$metadataName} {normalize-space($valueQuery)}
             else ()
         else
-          let $csv := db:get($bdd, normalize-space($metadata/@source))//*:csv
+          let $source := $metadata/@source
+          let $SrcDocName := functx:substring-after-last($source, "/")
+          let $SrcPath := db:list($bdd)[contains(., $SrcDocName)]
+          let $csv := db:get($bdd, $SrcPath)/*:csv
           let $findIdInCSV := normalize-space($metadata/@resourceId)
           let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]       
           return
@@ -259,7 +268,13 @@ declare function dots.lib:getCollectionMetadata($bdd as xs:string, $collection a
       let $metadatas := 
         for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
         let $getResourceId := $metadata/@resourceId
-        let $csv := db:get($bdd, normalize-space($metadata/@source))//*:csv
+        let $source := functx:substring-after-last($metadata/@source, "/")
+        let $csv := 
+          for $csvs in db:get($bdd)//*:csv
+          let $paths := db:path($csvs)
+          where contains($paths, $source)
+          return
+            $csvs[1]
         let $findIdInCSV := normalize-space($metadata/@resourceId)
         let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
         return

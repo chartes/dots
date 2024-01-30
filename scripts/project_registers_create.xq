@@ -8,3 +8,4 @@ declare variable $topCollectionId external;
 dots.lib:create_config($dbName, $topCollectionId),
 update:output(concat("Les registres dots pour la base de donnée ", $dbName, " ont été créés
 "))
+
