@@ -198,7 +198,10 @@ declare function utils:idNavigation($resourceId as xs:string, $down) {
           $extensions
         }
       </item>
-  let $passage := <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
+  let $passage := 
+    if ($resource/name() = "document")
+    then <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
+    else ()
   let $url := concat("/api/dts/navigation?id=", $resourceId)
   let $maxCiteDepth := if ($resource/@maxCiteDepth) then xs:integer($resource/@maxCiteDepth) else ()
   return
@@ -403,8 +406,14 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
       if ($resource/@totalChildren) 
       then normalize-space($resource/@totalChildren) 
       else 0
-  let $passage := concat("/api/dts/document?id=", $resourceId)
-  let $references := concat("/api/dts/navigation?id=", $resourceId)
+  let $passage := 
+    if ($type = "collection")
+    then ()
+    else <pair name="passage">{concat("/api/dts/document?id=", $resourceId)}</pair>
+  let $references := 
+    if ($type = "collection")
+    then ()
+    else <pair name="references">{concat("/api/dts/navigation?id=", $resourceId)}</pair>
   return
     (
       <pair name="@id">{$resourceId}</pair>,
@@ -413,8 +422,8 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="totalChildren" type="number">{$totalItems}</pair>,
       <pair name="totalParents" type="number">{$totalParents}</pair>,
-      <pair name="passage">{$passage}</pair>,
-      <pair name="references">{$references}</pair>
+      $passage,
+      $references
     )
 };
 
