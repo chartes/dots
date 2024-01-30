@@ -53,7 +53,7 @@ declare updating function dots.lib:create_config($dbName as xs:string, $topColle
     </resourcesRegister>
   return
     (
-      (:dots.switcher:createSwitcher($dbName, $topCollectionId), :)
+      (: dots.switcher:switcher_update($dbName), :)
       if (db:exists($dbName, $G:resourcesRegister))
       then 
         let $dots := db:get($dbName, $G:resourcesRegister)
@@ -163,7 +163,7 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
     return
       if (contains($path, "/"))
       then functx:substring-after-last($path, "/")
-      else $path
+      else $idProject
   return
     if ($document)
     then

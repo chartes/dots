@@ -49,3 +49,7 @@ declare variable $G:separator := "	";
 : @todo: le rendre facultatif
 :)
 declare variable $G:language := "fr";
+
+declare variable $G:root := "DoTS - Root";
+
+declare variable $G:rootTitle := "Collection de démonstration de DoTS";

@@ -23,7 +23,6 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collections sans paramètres)
 : à déplacer dans globals.xqm ou dans un CLI?
 :)
-declare variable $utils:root := "Biblissima";
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 Fonctions d'entrée dans le endPoint "Collections" de l'API DTS
@@ -40,9 +39,9 @@ declare function utils:collections() {
   let $totalItems := xs:integer(db:get($G:dots)/dots:dbSwitch/dots:metadata/dots:totalProjects)
   let $content :=
     (
-      <pair name="@id">{$utils:root}</pair>,
+      <pair name="@id">{$G:root}</pair>,
       <pair name="@type">collection</pair>,
-      <pair name="title">{string("Collections de ressources de Biblissima+")}</pair>,
+      <pair name="title">{$G:rootTitle}</pair>,
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="member" type="object">{
         for $project at $pos in db:get($G:dots)//dots:member/dots:project
