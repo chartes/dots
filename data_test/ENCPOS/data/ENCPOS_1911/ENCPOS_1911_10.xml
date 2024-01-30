@@ -1,0 +1,175 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai archéologique et artistique sur l’abbaye Saint-Victor de Paris</title>
+        <author ref="https://www.idref.fr/075976234">Henri Lemoine</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_10.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 79-84</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="79" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_10/ENCPOS_1911_10_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai
+       <lb/>archéologique et artistique
+       <lb/>sur
+       <lb/>l’abbaye de Saint-Victor
+       <lb/>de Paris</head>
+      <byline>
+        par
+        <forename>Henri</forename>
+        <surname>Lemoine</surname>
+        <roleName>Ancien élève de l’École des Hautes-Études., Élève à l’École du Louvre</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’abbaye de Saint-Victor, fondée en 1113, s’élevait à l’emplacement actuel de la place Jussieu et de la Halle-aux-Vins. Il n’en reste rien aujourd’hui.</p>
+        <p>Les origines sont très anciennes. Depuis fort longtemps il y avait là un ermitage qui remontait peut-être au <num>vii<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p>Documents d’archives. – Manuscrits : recueils de Jean de Thoulouze et du P. Driart. – Imprimés.</p>
+      </div>
+      <div>
+        <pb n="80" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_10/ENCPOS_1911_10_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>L’église</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la cour d’entrée</head>
+          <p>On entrait par un portail du <num>xv<hi rend="sup">e</hi></num> siècle, remplacé au <num>xviii<hi rend="sup">e</hi></num>, dans une vaste cour limitée, au fond par l’église ; à droite par le palais abbatial et à gauche par les communs.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La crypte</head>
+          <p>La crypte sous le chœur était dédiée à Notre-Dame-de Bonnes-Nouvelles. Son culte s’y établit de bonne heure, à la suite d’un miracle survenu en 1174, en faveur d’Adam de Saint-Victor. Les illustres personnages qui la visitaient contribuaient à son ornementation.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Notice historique (1113-1791)</head>
+          <p>1. <hi rend="i">L’église primitive.</hi> – Elle fut achevée par le premier abbé, Gilduin, au milieu du <num>xii<hi rend="sup">e</hi></num> siècle ; on en conserva, lors de la reconstruction au <num>xvi<hi rend="sup">e</hi></num> siècle, la tour du nord-est et le chœur, qui devint chapelle Saint-Denis.</p>
+          <p>2. <hi rend="i">Les ruines des <num>xiv<hi rend="sup">e</hi></num></hi>, <hi rend="i"><num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles</hi>. – Des catastrophes qui survinrent après la guerre de Cent Ans ruinèrent l’église.</p>
+          <p>3. <hi rend="i">Construction de la nouvelle église.</hi> – On travailla sans arrêt, aux frais de généreux donateurs, de <pb n="81" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_10/ENCPOS_1911_10_03.TIF/full/full/0/default.jpg"/>1517 à 1530. Le journal du Père Driart raconte les détails de la construction.</p>
+          <p>4. <hi rend="i">Les divers travaux jusqu’à la Révolution.</hi> – Il y eut encore quelques travaux au <num>xvii<hi rend="sup">e</hi></num> siècle (projet de Marie de Médicis), mais au <num>xviii<hi rend="sup">e</hi></num> les chanoines abîment leur église en en changeant la décoration (démolition du jubé, nouveaux autels).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La démolition de l’église et des batiments
+           <lb/>(1791-1813)</head>
+          <p>L’église, déclarée paroissiale en mars 1791, fut désaffectée et ne servit plus que de passage. On la démeubla complètement ; quant aux bâtiments, ils furent loués à divers particuliers ou démolis. En 1813 on n’indique même plus rien sur les plans de Paris. Quelques débris subsistèrent jusque vers 1840.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>L’église et son mobilier au milieu du <num>xvii<hi rend="sup">e</hi></num> siècle</head>
+          <p>1. <hi rend="i">Les dimensions.</hi> – Longueur : 67 <hi rend="sup">m</hi> 65. Largeur : 27 <hi rend="sup">m</hi> 85. Hauteur : 35 mètres environ.</p>
+          <p>2. <hi rend="i">L’extérieur</hi>. – Construite au milieu du <num>xvi<hi rend="sup">e</hi></num> siècle, l’église était un beau spécimen de gothique flamboyant. Elle ne fut jamais terminée et le portail manqua toujours.</p>
+          <p>3. <hi rend="i">L’intérieur</hi>. – On y remarquait surtout un bean jubé de 1542 et l’autel de 1625, avec un chœur orné de peintures. L’ancien autel était entièrement gothique.</p>
+          <p>4. <hi rend="i">La sacristie.</hi> – Elle renfermait quelques tableaux.</p>
+          <p>5. <hi rend="i">Les chapelles.</hi> – Il y avait quatorze chapelles dont nous ignorons l’emplacement, et beaucoup d’autres autels, dont l’ornementation était très soignée.</p>
+        </div>
+        <div>
+          <pb n="82" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_10/ENCPOS_1911_10_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VI
+           <lb/>Les reliques. Le trésor. Les cloches</head>
+          <p>L’abbaye avait quelques reliques célèbres, parmi lesquelles le pied de saint Victor, qui existe encore à Saint-Nicolas-du-Chardonnet. Le trésor, aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles, renfermait de beaux bronzes et de célèbres tapisseries ; à la Révolution, il était très appauvri. Il y avait huit cloches, quatre grosses, quatre petites ; celles qu’on trouva à la Révolution dataient de 1618 et 1664.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les batiments conventuels</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le cloitre</head>
+          <p>Situé, selon la règle, au sud de l’église, il était orné d’un bassin et d’un calvaire ; sur les murs nombre d’inscriptions rappelaient aux chanoines leurs devoirs.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’infirmerie. Sa chapelle. Son cloitre</head>
+          <p>Elle fut refaite au <num>xvi<hi rend="sup">e</hi></num> siècle avec les autres bâtiments ; elle avait un cloître spécial pour les malades. Sa jolie chapelle du <num>xiv<hi rend="sup">e</hi></num> siècle renfermait le tombeau de Guillaume de Chanac, évêque de Paris.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La maison de l’évêque. La chapelle de Lisieux</head>
+          <p>Les évêques de Paris avaient à Saint-Victor une maison, et une chapelle fondée par Arnoul, évêque de Lisieux.</p>
+        </div>
+        <div>
+          <pb n="83" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_10/ENCPOS_1911_10_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Les bibliothèques</head>
+          <p>Les études étaient très en honneur à Saint-Victor ; dès l’origine, il y eut une bibliothèque qui devint célèbre ; elle était installée dans le noviciat qu’on suréleva en 1654 à l’occasion d’un legs ; une nouvelle bibliothèque, bâtie à l’italienne, commencée en 1775, ne fut jamais achevée.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Le dortoir, le réfectoire et les autres batiments</head>
+          <p>Le dortoir, à l’est du cloître, était divisé en cellules. Le réfectoire, au sud, était célèbre par ses vitraux. Quelques autres bâtiments et maisons de locataires occupaient aussi l’enclos de l’abbaye.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>La tour d’Alexandre et la fontaine Saint-Victor</head>
+          <p>L’origine de la tour est assez obscure ; elle servait de prison. A la base était une fontaine de Bernin (1672) que remplaça, en 1842, la fontaine Cuvier actuelle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>Le jardin et le cimetière</head>
+          <p>Le jardin, planté à la française et entretenu par les frères, s’étendait derrière l’abbaye presque jusqu’à la Seine. Le cimetière était au nord-est de l’église.</p>
+        </div>
+        <div>
+          <pb n="84" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_10/ENCPOS_1911_10_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VIII
+           <lb/>La Bièvre à Saint-Victor</head>
+          <p>La Bièvre fut détournée par les chanoines en 1151 pour arroser leur enclos. Selon Vacquer ce ne fut qu’une réouverture de l’ancien lit de la rivière. Ensuite elle coulait vers Paris ; dans l’abbaye elle faisait tourner un moulin ; elle fut couverte vers 1660.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Les œuvres d’art a Saint-Victor
+         <lb/>influence sur l’iconographie</head>
+        <p>L’abbaye, très riche, était remplie d’œuvres d’art. Lenoir n’en recueillit que bien peu à la Révolution et actuellement il ne reste qu’une cuve, un bénitier et la statue de Guillaume de Chanac, au Musée du Louvre.</p>
+        <p>Saint-Victor n’a pas eu d’influence artistique, mais les œuvres de l’illustre symboliste Hugues de Saint-Victor 1141) ont dû inspirer les artistes du moyen âge et avoir beaucoup d’influence sur l’iconographie des <num>xiii<hi rend="sup">e</hi></num>, <num>xiv<hi rend="sup">e</hi></num> et <num>xv<hi rend="sup">e</hi></num> siècles.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>I. Quelques inscriptions victorines.</p>
+        <p>H. Les tombes de Saint-Victor dans la collection Gaignières. Description et épitaphes.</p>
+        <p>III. Iconographie de l’abbaye. Les gravures et les dessins. Les plans cavaliers de Paris.</p>
+        <p>IV. La rivière des Gobelins en 1672.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives
+         <lb/>gravures</head>
+        <p>1 dessin, 13 photographies de plans et d’estampes.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

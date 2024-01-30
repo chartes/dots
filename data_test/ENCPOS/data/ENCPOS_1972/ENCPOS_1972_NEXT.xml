@@ -1,0 +1,73 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_NEXT" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Pages postliminaires</title>
+        </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_NEXT.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. -191</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="191" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_NEXT/ENCPOS_1972_NEXT_01.TIF/full/full/0/default.jpg"/>
+      <p>TABLE DES MATIÈRES</p>
+      <p>Pages</p>
+      <p>Jury des examens de F École..................................... 6</p>
+      <p>Membres du jury désignés pour l’examen des thèses................ 7</p>
+      <p><hi rend="i">Positions des thèses</hi></p>
+      <p>Les statuts d’une colonie génoise en Corse : Bonifacio à la fin du Moyen Âge, par Marie-Claude BARTOLI.............................. 9</p>
+      <p>Le prieuré de Saint-Martin-des-Champs à Paris : étude historique et archéologique, par Catherine BERTHIER-GEORGESCO........... 15</p>
+      <p>La Madeleine de Chàteaudun : étude archéologique, par Sophie BÉ~ v ILLARD.................................................... 25</p>
+      <p>Les pèlerinages à Jérusalem et au mont Sinaï du <num>xiv<hi rend="sup">e</hi></num> au <num>xvi<hi rend="sup">e</hi></num> siècle, par Pauline CANTONI............................................ 33</p>
+      <p>Le Conseil d’État sous la Restauration, par Michel CHABIN........... 43</p>
+      <p>Les plus anciennes chartes en langue française de l’Aube et de la Seine-et~ Marne, par Dominique COQ.................................. 51</p>
+      <p>Aspects économiques et sociaux de la vie rurale en Nivernais : la paroisse de Saint-Parize-le-Châtel au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle, par Marie~ Andrée GUYOT-LEDOÜX....................................... 55</p>
+      <p>Les routes de la généralité de Châlons-sur-Marne au <num>xviii<hi rend="sup">e</hi></num> siècle, par Martine ILLAIRE................................................ 65</p>
+      <p>Le cartulaire de l’abbaye de Saint-Seine ; introduction historique et édition critique, par Michel DE LEMPS......................... 73</p>
+      <p>Le couvent des Grands Carmes de Toulouse (1264-1810), par Sabine LESUR...................................................... 83</p>
+      <p>La vie des nobles en Cornouaille à la fin de l’Ancien Régime, par Michel MARÉCHAL.................................................. 91</p>
+      <p>Les notables de l’élection de Carentan (1670-1790), par Gérard MAUDUECH. 101</p>
+      <p>Le développement historique de la ville d’Amboise des origines jusqu’à la fin du xvm<hi rend="sup">e</hi> siècle, par Jacqueline MELET....................... 107</p>
+      <p>Marie à la fin de l’Ancien Régime : étude de la société et de la vie sociale dans une petite ville de 1760 à 1789, par Dominique MORELON-PÉRY. 115</p>
+      <pb n="192" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_NEXT/ENCPOS_1972_NEXT_02.TIF/full/full/0/default.jpg"/>
+      <p>Pages</p>
+      <p>La vie économique et sociale à Ambert au xvn<hi rend="sup">e</hi> siècle, par Evelyne MORIN. 125</p>
+      <p>Les origines du monachisme dans le diocèse de Besançon (v<hi rend="sup">e</hi>-x<hi rend="sup">e</hi> siècles), par Gérard MOYSE........................................... 129</p>
+      <p>Les relations des rois de France et des princes protestants allemands (1541-1559), par Jean-Daniel PARISET........................... 137</p>
+      <p>Le bestiaire héraldique au Moyen Âge, par Michel PASTOUREAU...... 143</p>
+      <p>La société de la paroisse Saint-Michel de Bordeaux (vers 1470-vers 1520), par Mireille PASTOUREAU-LAPRÉBANDE................. 155</p>
+      <p>Guillaume de Varye, facteur de Jacques Cœur et général des finances de Louis XI, par Marie-Édith PouLON........................ 161</p>
+      <p>Les forges des princes de Condé en Bretagne aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles, par Perrine RAMIN.......................................... 167</p>
+      <p>Coutances au <num>xviii<hi rend="sup">e</hi></num> siècle : vie urbaine et administration municipale, par Marc SANSON................................................ 173</p>
+      <p>Quatre paroisses en bas Limousin au <num>xviii<hi rend="sup">e</hi></num> siècle : Allassac, Donzenac, Sadroc, Voutezac ; étude économique et sociale, par Yves SOULINGEAS. 179</p>
+      <p>La Terreur dans le district de Brignoles (Var), par Michèle TILLOY.... 185</p>
+      <p>IMPRIMERIE NATIONALE. – 2 560014 6</p>
+    </body>
+  </text>
+</TEI>

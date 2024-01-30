@@ -1,0 +1,134 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La Juridiction de la Municipalité parisienne de saint Louis à Charles VII</title>
+        <author ref="https://www.idref.fr/028270584">Georges Huisman</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_13.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 109-118</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="109" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La
+       <lb/>juridiction de la municipalité parisienne
+       <lb/>de Saint Louis à Charles VII</head>
+      <byline>
+        par
+        <forename>Georges</forename>
+        <surname>Huisman</surname>
+        <roleName>Élève de l’École des Hautes-Études, Licencié ès lettres, Diplômé d’Études supérieures d’Histoire et de Géographie</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction
+         <lb/>les origines de la juridiction municipale</head>
+        <p>La municipalité parisienne est issue de la Hanse des marchands de l’eau. Les prévôts et les jurés de cette association devinrent les prévôts des marchands, et les échevins, probablement vers 1260 ou 1261, lorsque la prévôté de Paris cessa d’être donnée à ferme à des bourgeois, pour être confiée à un fonctionnaire de métier.</p>
+        <p>La juridiction de la municipalité dérive de la juridiction de la Hanse. Dès le <num>xii<hi rend="sup">e</hi></num> siècle, les marchands de l’eau faisaient respecter leurs privilèges, confisquaient des marchandises, surveillaient la navigation de la Seine et de ses affluents. A Paris même, au <num>xiii<hi rend="sup">e</hi></num> siècle, ils étaient chargés de la police du mesurage et du criage des grains et du vin. Ces attributions s’accrurent de la juridiction des rares privilèges concédés à la collectivité parisienne : la compétence, purement économique, de la municipalité se trouva ainsi constituée.</p>
+      </div>
+      <div>
+        <pb n="110" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre premier
+         <lb/>l’évolution de la municipalité parisienne de Saint Louis
+         <lb/>a Charles VII</head>
+        <p>Les premiers prévôts des marchands étaient de riches parisiens qui appartenaient à l’aristocratie bourgeoise de la capitale. Ils remplissaient scrupuleusement leurs fonctions, ne cherchaient point à accroître leurs pouvoirs et savaient demeurer en bons termes avec les puissances laïques et ecclésiastiques de la ville. Ils étaient en rapports constants avec les métiers parisiens pour fixer et répartir les divers impôts.</p>
+        <p>Ce fut, en partie, grâce à cette collaboration financière régulière entre l’échevinage et la bourgeoisie, qu’Etienne Marcel put exercer sur Paris une influence considérable, et tenter d’accomplir ses ambitieux projets. La municipalité parisienne ne retira aucun profit de la puissance exceptionnelle à laquelle Etienne Marcel était parvenu. Soupçonnée par Charles V, la bourgeoisie eut à supporter, sous ce règne, la tyrannie du prévôt de Paris, Hugues Aubriot. Les exigences fiscales de la royauté amenèrent en 1383 la suppression de la municipalité et de sa juridiction. Confiée d’abord aux prévôts de Paris, l’administration municipale fut bientôt abandonnée à des gardes de la prévôté des marchands, qui s’acquittèrent en toute conscience de leur tâche. Entre 1409 et 1412, la municipalité fut rétablie et l’ordonnance promulguée en 1416 donna à la juridiction municipale un essor nouveau. Malheureusement, jusqu’à l’avènement de Charles VII, les luttes civiles compromirent singulièrement le développement de l’échevinage parisien.</p>
+      </div>
+      <div>
+        <pb n="111" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre II
+         <lb/>L’organisation générale du Parloir aux bourgeois</head>
+        <p>Au tribunal municipal, appelé le « Parloir aux Bourgeois », le prévôt des marchands et les échevins prononçaient des sentences dans toutes les causes de leur compétence. Ils étaient assistés de 24 prud’hommes, conseillers bénévoles, et de juristes de métier qui les aidaient à l’occasion. Dès les dernières années du <num>xiv<hi rend="sup">e</hi></num> siècle, le prévôt et les échevins déléguèrent à leur place un lieutenant, qui présidait l’audience. Le clerc du Parloir était à la fois un greffier et un receveur municipal. Le procureur de la ville et du roi avait la double charge des privilèges municipaux et des intérêts de la royauté. Les sergents du Parloir et de la Marchandise de l’eau faisaient respecter les attributions juridiques de la municipalité. Des procureurs, accrédités auprès du Parloir, assistaient les plaideurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Le Parloir aux bourgeois, tribunal de la Hanse</head>
+        <p>Le prévôt des marchands et les échevins faisaient respecter par leurs sentences les privilèges de la Hanse. Pour conduire leurs bateaux, chargés ou vides, entre Paris et Mantes, les parisiens et les étrangers devaient « se hanser » : les étrangers étaient, de plus, contraints à prendre une « compagnie française », c’est-à-dire à partager leur cargaison avec un marchand hansé. Le Parloir aux Bourgeois prononçait la confiscation de toutes les marchandises dont les propriétaires avaient violé ces règles. Il n’infligeait jamais d’amendes et se contentait <pb n="112" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_04.TIF/full/full/0/default.jpg"/>d’expulser de la Hanse tous ceux qui n’en respectaient point les lois.</p>
+        <p>En dépit de l’hostilité continue des abbayes parisiennes et des villes rivales, la municipalité assura toujours la puissance de la Hanse. Elle sauvegardait ainsi les intérêts du commerce parisien et de la royauté : le roi partageait, en effet, avec le prévôt des marchands et les échevins le produit des confiscations.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>La juridiction de la municipalité sur la Seine et ses affluents</head>
+        <p>Dès le <num>xii<hi rend="sup">e</hi></num> siècle, la royauté s’était déchargée sur la Hanse parisienne du soin d’assurer la police de la navigation. Héritière des pouvoirs des marchands de l’eau, la municipalité parisienne comptait, parmi les plus importantes de ses attributions, la surveillance de la navigation, le soin d’interdire la création des écluses, moulins, ponts ou passerelles, pouvant entraver la circulation fluviale, et d’empêcher les propriétaires de péages d’imposer aux marchands des redevances abusives. Elle était secondée par des maîtres des ponts, qui aidaient les bateliers, recueillaient leurs doléances, et par ses sergents qui parcouraient en tous sens la Seine, l’Oise, la Marne et l’Yonne.</p>
+        <p>Le Parloir aux Bourgeois acquit bientôt la compétence nécessaire pour punir tous ceux qui édifiaient des obstacles sur la Seine et ses affluents et retardaient, en quelque manière, les bateliers. A la requête du procureur de la ville et du roi, les délinquants étaient traduits devant le Parloir aux Bourgeois pour s’entendre condamner à une amende d’un chiffre variable ; s’ils refusaient de se plier aux jugements du tribunal, un sergent recevait l’ordre de faire disparaître sans retard les obstacles litigieux, <pb n="113" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_05.TIF/full/full/0/default.jpg"/> dans l’intérêt supérieur du commerce et de la navigation.</p>
+        <p>La municipalité parisienne ne chercha jamais à enlever aux possesseurs de la rivière leurs droits de justice, et elle n’eut jamais la compétence nécessaire pour juger les délits variés commis sur la rivière. Le Parloir aux Bourgeois se confina toujours dans son rôle de juridiction économique et administrative, uniquement chargée d’assurer la sécurité de la navigation et de protéger les mariniers qui amenaient par eau, à Paris, la plus grande partie des denrées nécessaires à la consommation.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>La juridiction de la municipalité sur le commerce</head>
+        <p>En même temps qu’ils punissaient tous ceux qui troublaient l’ordre et la sécurité de la navigation, le prévôt des marchands et les échevins étaient investis d’une juridiction sur les diverses marchandises amenées par eau à Paris.</p>
+        <p>Le prévôt de Paris disposait dans la capitale d’une juridiction fort développée sur l’industrie et le commerce. Sans chercher à amoindrir ses pouvoirs, la municipalité laissa au représentant du roi la connaissance des produits amenés, à Paris, par terre, et elle se forma une compétence presque exclusive sur le vin, le bois, le charbon, le sel. les grains et diverses denrées qui montaient ou descendaient la Seine jusqu’à Paris. Ce ne fut jamais qu’en quelques cas particuliers qu’elle punit les commerçants qui apportaient des marchandises par terre. Pour régler la vente des diverses marchandises dont elle assumait la surveillance, la municipalité disposait d’un certain nombre d’intermédiaires : crieurs, courtiers, vendeurs, jaugeurs, mesureurs, porteurs, déchargeurs, etc., qu’elle <pb n="114" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_06.TIF/full/full/0/default.jpg"/>nommait, punissait et révoquait à son gré. Ces divers employés, assistés des sergents municipaux, signalaient au Parloir aux Bourgeois toutes les fraudes qu’ils surprenaient. Les délinquants étaient traduits devant le tribunal municipal, qui confisquait leurs marchandises ou les condamnait, suivant les cas, à une forte amende. Les marchands surpris à écouler des produits de qualité inférieure, ou à donner mauvaise mesure, étaient impitoyablement punis. En même temps, la stricte application par le tribunal municipal d’une série d’ordonnances, propres à chaque marchandise, assurait, sur les ports et les marchés de Paris, la rapidité et la sécurité des opérations commerciales.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>La juridiction de la municipalité en matière financière</head>
+        <p>La municipalité parisienne s’occupa toujours de la levée de la taille et des aides. Le tribunal municipal n’eut cependant jamais qualité pour assigner à comparaître devant lui les Parisiens qui se refusaient à payer la taille. Le prévôt des marchands et les échevins se bornaient à prêter un appui moral aux collecteurs de l’impôt et à poursuivre, avec eux, en Parlement, les commerçants lombards et les hôtes des abbayes parisiennes qui tentaient d’échapper à l’impôt.</p>
+        <p>Durant la plus grande partie du <num>xiv<hi rend="sup">e</hi></num> siècle, le prévôt des marchands et les échevins n’eurent jamais le droit de poursuivre les Parisiens et de les contraindre par leurs sentences au payement des aides créées par Philippe VI et ses successeurs, sans qu’une concession royale fût venue accroître temporairement leurs attributions juridiques. Ce n’est qu’à partir du moment où les aides furent affermées et confiées à des fermiers divers, qui se partageaient <pb n="115" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_07.TIF/full/full/0/default.jpg"/>entre eux les quartiers de la capitale, que le Parloir aux Bourgeois fut le tribunal qualifié pour intervenir entre les fermiers et les Parisiens.</p>
+        <p>Il semble même que le tribunal municipal ait été particulièrement compétent pour trancher les procès qui s’élevaient entre les bourgeois et les fermiers des aides imposées sur le vin. Dans ce cas, la juridiction financière de la municipalité serait de peu d’importance et pourrait se rattacher nettement à sa compétence sur le commerce.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>La juridiction du domaine de la ville</head>
+        <p>Le domaine de la municipalité se divisa de bonne heure en domaine public et en domaine privé.</p>
+        <p>Sur le domaine public (chaussées, portes, fortifications, fossés, égouts, fontaines, etc.), le prévôt des marchands et les échevins ne disposèrent jamais que d’une juridiction de simple police, infligeant des amendes à ceux qui ne respectaient point les droits municipaux. Ils ne furent qu’exceptionnellement chargés de la police générale de Paris et n’eurent jamais la compétence nécessaire pour faire comparaître au tribunal municipal ceux qui troublaient l’ordre et la sécurité de la ville.</p>
+        <p>Le domaine privé était constitué par une série de maisons, de terres et de vignes sur lesquelles la municipalité percevait des cens et des rentes. Le Parloir aux Bourgeois jugeait les procès civils des hôtes de sa censive qui recouraient à sa compétence. Il ne paraît cependant point que le Parloir aux Bourgeois ait été une juridiction gracieuse, conférant l’authenticité aux conventions passées entre ses hôtes. A plus forte raison, on ne saurait admettre que la municipalité parisienne ait jamais joui de la juridiction gracieuse de la capitale. Aucun acte <pb n="116" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_08.TIF/full/full/0/default.jpg"/>authentique ne le prouve ; peut-être pourrait-on s’appuyer sur quelques indications des registres du Parloir pour prétendre que la municipalité enregistra des conventions relatives au commerce par eau. Ce serait un autre aspect de sa compétence économique.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>Le Parloir aux bourgeois, tribunal de commerce</head>
+        <p>Dans la deuxième moitié du <num>xiv<hi rend="sup">e</hi></num> siècle, le Parloir aux Bourgeois apparaît comme un tribunal de commerce nettement constitué, auquel les marchands ont recours dans tous les procès relatifs au commerce par eau.</p>
+        <p>Le tribunal municipal aidait les vendeurs à recouvrer leurs créances ; il accueillait de même les plaintes des acheteurs qui se prétendaient trompés sur la quantité et la qualité des marchandises livrées : les employés municipaux procédaient, à la prière des parties, à des expertises de vins, de bois, de grains, etc. Lorsque, en dépit des efforts du Parloir aux Bourgeois, les marchands n’arrivaient pas à s’entendre, les juges municipaux remettaient provisoirement leurs pouvoirs à des arbitres.</p>
+        <p>Une jurisprudence spéciale réglait les procès relatifs au transport des marchandises, entre marchands et voituriers par eau. Le voiturier par eau, qui n’était pas payé par son client, saisissait et faisait vendre par les sergents municipaux les marchandises transportées ; si les marchandises avaient été détériorées par des voituriers qui n’avaient pas strictement rempli leurs engagements, les marchands pouvaient saisir le bateau du voiturier et le faire vendre dans les mêmes conditions.</p>
+        <p>Le tribunal municipal terminait aussi tous les procès qui s’élevaient entre les divers intermédiaires en fonctions <pb n="117" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_09.TIF/full/full/0/default.jpg"/>sur les ports et marchés de Paris, et les marchands qui les employaient.</p>
+        <p>Le Parloir aux Bourgeois complétait ainsi sa juridiction sur la navigation et le commerce.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IX
+         <lb/>Le Parloir aux bourgeois et la coutume de Paris</head>
+        <p>A la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, le Parloir aux Bourgeois contribua, par un nombre considérable de sentences, à fixer des points douteux de la Coutume de Paris. – Le prévôt de Paris, l’official, de grands seigneurs, de simples particuliers recouraient au Parloir pour apprendre les diverses traditions orales. La plupart des arrêts se rapportaient à des procès de successions : il est probable que le tribunal municipal profita de sa connaissance de la tradition pour augmenter sa compétence en jugeant des causes civiles de ce genre. De juridiction arbitrale, il devint pour quelque temps une juridiction régulière.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre X
+         <lb/>Les adversaires de la juridiction municipale</head>
+        <p>Le tribunal municipal fut toujours animé du désir manifeste d’éviter les conflits de juridictions et il ne semble point que ses attributions aient jamais eu à souffrir de l’hostilité des justices secondaires de Paris.</p>
+        <p>Le Parlement ne chercha à aucun moment à porter atteinte à la juridiction municipale, dont il favorisa toujours le développement. Il lui renvoyait les causes qui relevaient exclusivement du prévôt des marchands et des échevins, prêtant au besoin main-forte aux magistrats municipaux pour les aider à faire respecter leurs droits.</p>
+        <pb n="118" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_13/ENCPOS_1910_13_10.TIF/full/full/0/default.jpg"/>
+        <p>Une tradition, accueillie par la municipalité parisienne dès le <num>xvi<hi rend="sup">e</hi></num> siècle, voulait que le prévôt de Paris eût toujours été l’adversaire acharné de la juridiction municipale parisienne : les faits contredisent cette assertion qui fut répandue par la municipalité pour affirmer la haute antiquité de sa fondation. Au <num>xiii<hi rend="sup">e</hi></num> siècle et au <num>xiv<hi rend="sup">e</hi></num>, l’hostilité du prévôt de Paris ne fut qu’accidentelle. Ce fut seulement quand le tribunal municipal eut acquis la compétence nécessaire pour juger un nombre considérable de procès de commerce, que le prévôt de Paris, craignant la disparition de sa compétence civile et commerciale, devint un ennemi redoutable du Parloir aux Bourgeois. La lutte, dont nous voyons les débuts au <num>xv<hi rend="sup">e</hi></num> siècle, ne devait se terminer qu’avec l’ancien régime.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p>Essai de reconstitution d’un répertoire de jurisprudence municipale.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

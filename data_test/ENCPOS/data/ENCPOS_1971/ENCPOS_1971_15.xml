@@ -1,0 +1,150 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_15" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Un médecin parisien du <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle, Jacques Despars (1380-1458)</title>
+        <author ref="https://www.idref.fr/026933055">Danielle Jacquart</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_15.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 107-113</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="107" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Un médecin parisien du xv<hi rend="sup">e</hi> siècle
+       <lb/>Jacques Despars
+       <lb/>(1380-1458)</head>
+      <byline>
+        par
+        <forename>Danielle</forename>
+        <surname>Jacquart</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le commentaire de Jacques Despars (<hi rend="i">Jacobus de Partibus</hi>) sur le <hi rend="i">Canon </hi>d’Avicenne, bien que publié à Lyon dès 1498, n’a pas encore fait l’objet d’une étude systématique. Malgré leur aspect un peu rebutant, ces trois énormes volumes in-folio contiennent des notations intéressantes sur la médecine telle qu’elle était enseignée et pratiquée en France dans la première moitié du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>L’homme et son milieu</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les grandes étapes de la vie de Jacques Despars</head>
+          <p>La notice du <hi rend="i">Dictionnaire biographique des médecins en France au Moyen âge</hi> d’Ernest Wickersheimer peut être clarifiée et complétée, principalement pour la période pendant laquelle Jacques Despars ne parut plus à la Faculté de médecine de Paris et retourna dans son pays natal.</p>
+          <p>H semble avoir quitté Paris vers 1420 pour se rendre à Tournai, où il était chanoine trésorier ; de 1426 à 1436, il vécut à Cambrai, où il obtint une prébende canoniale ; de 1436 à 1450, il revint habiter Tournai.</p>
+          <pb n="108" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_02.TIF/full/full/0/default.jpg"/>
+          <p>Le commentaire sur le <hi rend="i">Canon</hi> d’Avicenne, écrit pendant toute cette période, cite en exemple des cas pathologiques qui prouvent que son auteur a été le médecin de nombreux seigneurs locaux. Des services rendus à la maison de Bourgogne lui valurent de la part de Philippe le Bon, en 1447, l’octroi de lettres d’amortissement pour l’acquisition de biens ecclésiastiques. Il fut appelé à plusieurs reprises au chevet du duc et de son fils, le comte de Charolais ; il participa à deux ambassades.</p>
+          <p>A la fin de sa vie, lorsqu’il réapparut à la Faculté de médecine de Paris, il eut un certain rayonnement médical, comme le prouve le témoignage d’un de ses disciples, Eudes de Creil, recueilli dans une œuvre inédite de Guillaume Fichet, récemment découverte par M. Jacques Monfrin (Bibliothèque Nationale, lat. 16685).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Jacques Despars et son temps</head>
+          <p>La profession médicale fait de celui qui l’exerce un observateur privilégié aussi bien de la vie quotidienne que de certains événements extraordinaires. La peste, ce fléau si angoissant au début du <num>xv<hi rend="sup">e</hi></num> siècle, est très souvent mentionnée dans le commentaire sur le <hi rend="i">Canon</hi> d’Avicenne, qu’il s’agisse du souvenir de la peste noire de 1348 ou des épidémies contemporaines de Jacques Despars. Le siège d’Arras de 1414 a vu une épidémie non pestilentielle, qui a, selon Jacques Despars, beaucoup intrigué les maîtres de la Faculté de médecine de Paris ; la maladie décrite ressemble à une fièvre cosmopolite ou récurrente à poux, qui accompagne souvent le typhus. Outre la description de coutumes locales, le commentaire sur le <hi rend="i">Canon</hi> d’Avicenne présente des anecdotes sur des contemporains, comme Gontier Col, à qui Jacques Despars attribue des troubles mentaux.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les conditions de l’exercice de la médecine
+           <lb/>au xv<hi rend="sup">e</hi> siècle</head>
+          <p>Jacques Despars rapporte que le médecin a, à son époque, la réputation de tuer les hommes, comme le maréchal les chevaux ; en revanche, le barbier et le charlatan, comme un certain Jean de Donrémy, bénéficient d’une plus grande audience auprès des malades.</p>
+          <p>La croyance aux pouvoirs surnaturels de certaines personnes éloigne de la médecine les gens simples, qui se fient à de prétendus sorciers, dont l’action, selon Jacques Despars, s’exerce surtout sur l’imagination. Les prières et les pèlerinages remplacent souvent les soins médicaux, des saints étant investis d’une influence spécifique sur certaines maladies.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="109" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>L’œuvre</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>présentation des textes</head>
+          <p><hi rend="i">Le commentaire sur le « Canon » d’Avicenne.</hi> – Le commentaire porte sur le premier, le troisième et la première fen du quatrième livre du <hi rend="i">Canon</hi> d’Avicenne, dans la traduction de Gérard de Crémone.</p>
+          <p>Des quinze volumes qui constituaient initialement le manuscrit original, il n’en subsiste qu’un (Faculté de médecine de Paris, n° 57).</p>
+          <p>Des copies ont été faites à la fin du <num>xv<hi rend="sup">e</hi></num> siècle : Bibliothèque municipale de Cambrai, mss. 898 à 905 (Livre I, fen 2 et 4 ; Livre III, fen 2 à 10,14 à 16 ; livre IV, fen 1) ; Bibliothèque municipale de Lille, mss. 394 à 396 (Livre I, fen 3 ; Livre III, fen 13 à 15) ; Bibliothèque municipale du Mans, ms. 242 (Livre IV, fen 1) ; Bibliothèque Nationale, mss. latins 6925 à 6929 et 6937 (Livre I, fen 1 et 4 ; livre III, fen 2 et 3, 14 à 22).</p>
+          <p>Quatre de ces manuscrits sont des copies à l’usage de Jean Budé (Bibliothèque Nationale, lat. 6926, 6927, 6928, 6937) ; les autres ont été transcrits pour des médecins.</p>
+          <p>Outre l’édition incunable de 1498, qui offre la totalité du commentaire, des extraits ont été reproduits avec les œuvres d’autres médecins, comme Hugues de Sienne, Jacques de Forli, Gentile de Foligno, dans des éditions vénitiennes du début du seizième siècle.</p>
+          <p><hi rend="i">Les autres œuvres attribuées à Jacques Despars.</hi> – 1° <hi rend="i">La glose marginale des trois premiers livres de la « Practica » d’Alexandre de Tralles.</hi> – La glose a été imprimée à Lyon en 1504 et à Venise en 1522. Ce n’est qu’une explication de mots, faite souvent à l’aide des <hi rend="i">Synonyma</hi> de Simon de Gênes.</p>
+          <p>2° <hi rend="i">La « Summula per alphabetum super plurimis remediis ex Mesue libris excerptis</hi> ». – Dans les éditions lyonnaises de 1500 et de 1509, la <hi rend="i">Summula </hi>est accompagnée de deux schémas anatomiques et de tables attribuées à Jacques Despars sous le nom de <hi rend="i">Collecta pro anathomia ;</hi> ces dernières sont issues du commentaire sur le <hi rend="i">Canon</hi> d’Avicenne. La <hi rend="i">Summula</hi> classe dans l’ordre alphabétique des affections les remèdes énumérés par Mésué dans la première partie de l’<hi rend="i">Antidotarium.</hi></p>
+          <p>3° <hi rend="i">La « Tabula magistri Jacobi de Partibus »</hi> (Bibliothèque Nationale, lat. 7281, fol. 277-279 V). – La <hi rend="i">Tabula</hi> est composée sur le modèle des <hi rend="i">Tabulae Magistri Salerni,</hi> du <num>xii<hi rend="sup">e</hi></num> siècle, et des tables présentées par Arnaud de Villeneuve dans le <hi rend="i">De simplicibus.</hi></p>
+          <pb n="110" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_04.TIF/full/full/0/default.jpg"/>
+          <p>4° <hi rend="i">Les « Régimes pour Michel et Guillaume Bernard »</hi> (Bibliothèque municipale de Lille, ms. 863, fol. 160 v-164). Ces régimes ont été rédigés en un français picardisant pour un chanoine de Tournai, Guillaume Bernard, et pour son père, Michel Bernard, tous deux atteints d’arthrite.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les caractères internes du commentaire
+           <lb/>sur le <hi rend="i">canon</hi> d’Avicenne</head>
+          <p><hi rend="i">Le traitement du texte d’Avicenne.</hi> – Le <hi rend="i">Canon</hi> est divisé en livres, fens, doctrines, traités et chapitres. Après avoir donné le plan de chaque chapitre et paraphrasé le texte d’Avicenne, Jacques Despars commente à l’aide de citations ou d’idées personnelles.</p>
+          <p>Dans le premier livre, consacré à la médecine générale, et dans la première fen du quatrième, consacrée aux fièvres, Jacques Despars introduit des questions, véritables sujets de <hi rend="i">disputatio,</hi> sur des problèmes théoriques ; par exemple : <hi rend="i">Utrum medicina bene dividitur in theoricam et practicam ?</hi> ou <hi rend="i">Si febris ethica fieri possit incipiendo, sic quod nulla alia febris species antecedat eam.</hi></p>
+          <p>Jacques Despars assigne un but didactique à son œuvre. Il résume dans des schémas ou des tableaux synoptiques les notions importantes sur l’anatomie, les éléments qui servent à établir le diagnostic, les moyens généraux de la thérapeutique. Les symptômes pathologiques de quelques maladies sont rassemblés dans des poèmes ; certains sont des vers salernitains, d’autres sont composés sur le modèle de Gilles de Corbeil. Les remèdes prescrits par Avicenne dans les affections d’un organe particulier sont regroupés en une énumération sommaire à la fin de chaque chapitre du troisième livre.</p>
+          <p>Le texte d’Avicenne est souvent illustré à l’aide d’exemples pratiques, tirés de l’expérience médicale de Jacques Despars.</p>
+          <p><hi rend="i">Les sources.</hi> – Le commentaire est un véritable répertoire de citations, annoncées par des références précises.</p>
+          <p>1° <hi rend="i">Les auteurs de base.</hi> – Le médecin le plus utilisé est Galien, que Jacques Despars qualifie de <hi rend="i">patronus noster, summus medicorum.</hi> Quarante-sept ouvrages de Galien sont mentionnés, la plupart dans la version de Nicolas de Reggio. D’autres auteurs grecs sont largement cités : Aristote, Hippocrate, Alexandre de Tralles. Les Arabes, à côté d’Avicenne, tiennent une place importante : Averroès, considéré par Jacques Despars comme hérétique, Avenzoar, Rhazès ; Mésué et Sérapion pour tout ce qui concerne la pharmacopée. Jacques Despars utilise ses sources de deux manières, soit en confrontant les différentes doctrines sur des points médicaux précis, soit en commentant toute une partie du <hi rend="i">Canon</hi> à l’aide d’un ouvrage dont il cite de larges extraits, ainsi le <hi rend="i">De utilitate particularum</hi> de Galien pour les descriptions anatomiques (livre I, fen 1, doctr. 5).</p>
+          <p>2° <hi rend="i">Les autres citations.</hi> – Pour l’explication des termes techniques d’origine arabe ou grecque, Jacques Despars utilise les <hi rend="i">Synonyma</hi> de Simon de Gênes et ceux d’Étienne d’Antioche. Le commentaire des chapitres consacrés <pb n="111" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_05.TIF/full/full/0/default.jpg"/>au pouls et à l’urine (livre I, fen 2, doctr. 3, s. 1 et 2) est fait à l’aide de Gilles de Corbeil et de Théophile, appelé aussi Philaret. Jacques Despars cite quelquefois l’<hi rend="i">Antidotarium Nicolai,</hi> Albert le Grand, Johannitius, Isaac, le prétendu Jean Damascène. Les textes cités ne sont guère postérieurs au xin<hi rend="sup">e</hi> siècle ; l’auteur tient à offrir au lecteur des autorités incontestées.</p>
+          <p>3° <hi rend="i">Les références aux praticiens de la fin du Moyen âge.</hi> – Malgré l’hostilité légendaire des médecins et des chirurgiens médiévaux, Jacques Despars se réfère à la littérature chirurgicale ; il utilise notamment, sans la citer, la <hi rend="i">Chirurgia Magna</hi> de Guy de Chauliac. Sa culture médicale est enrichie, en outre, par les pratiques dont des confrères lui ont fait part ; Jacques Despars considère l’un d’entre eux, Jean Le Lièvre, comme le plus grand médecin de son temps.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>La médecine</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les fondements de la médecine</head>
+          <p>L’étude de treize questions discutées dans le premier livre met en lumière la façon dont Jacques Despars essaie d’expliquer les contradictions entre les doctrines des différents auteurs. Le système de Galien offre, la plupart du temps, la réponse en anatomie et en physiologie. L’un des problèmes que Jacques Despars juge des plus importants et des plus difficiles à résoudre est <hi rend="i">Quomodo reducitur medicina de potentia ad actum a calore nostri corporis</hi> ? Il prouve la justesse de la proposition d’Avicenne, fondée sur l’idée aristotélicienne du passage de la chose en puissance à l’acte, selon laquelle un médicament dit chaud provoque dans le corps humain une chaleur plus grande que celle qui était sensible avant qu’il soit administré (livre I, fen 1, doctr. 3, ch. 1) ; puisque son pouvoir échauffant cesse dès qu’il est sorti du corps humain, on peut dire que la chaleur corporelle le rend actif.</p>
+          <p>La justification par l’expérience intervient parfois ; l’observation de corps disséqués est invoquée ; Jacques Despars a pu assister à des séances lors de son passage à Montpellier et à la Faculté de médecine de Paris, peut-être dès 1407.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La pathologie</head>
+          <p>Les descriptions pathologiques offrent à Jacques Despars l’occasion de se référer à son expérience de praticien.</p>
+          <p>Les fièvres sont les maladies les plus couramment rencontrées par le médecin. Jacques Despars met en relation avec leur développement, dans cer<pb n="112" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_06.TIF/full/full/0/default.jpg"/>tains cas, l’existence d’eaux stagnantes ; cette constatation est judicieuse, car nombre de fièvres correspondent à des formes de paludisme ; il voit dans les émanations fétides et l’air vicié des étuves des facteurs de propagation des fièvres pestilentielles ; bien qu’il adopte la théorie aériste, il constate la possibilité d’une contamination par les vêtements ou la vaisselle. Les maladies mentales sont illustrées par des exemples concrets ; les fantasmes ont pour la plupart un objet surnaturel, religieux ; seuls les fous furieux doivent être frappés, de préférence avec des verges. Le goitre exophtalmique a été observé par Jacques Despars en Savoie. L’intoxication mercurielle provoque chez les orfèvres et les émailleurs des troubles moteurs. Les hernies sont très fréquentes chez les nobles, habitués à des exercices violents.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La thérapeutique</head>
+          <p>Jacques Despars, contrairement à la plupart de ses contemporains, n’est pas partisan de se fier aux positions des astres pour prescrire la saignée. Il dit : <hi rend="i">Consulo medicis ne propter dispositiones celi phlebotomiam necessariam vel relinquant vel nimis différant.</hi></p>
+          <p>Le traitement par la diététique lui paraît préférable à l’utilisation de remèdes pharmaceutiques. Le vin, interdit par la religion d’Avicenne, est très souvent prescrit par Jacques Despars, avec des distinctions suivant les crus.</p>
+          <p>Le bain, élément thérapeutique important dans la médecine arabe, est déconseillé, en raison de la trop grande faiblesse des contemporains de Jacques Despars.</p>
+          <p>Par un souci d’adaptation de la pharmacopée arabe, Jacques Despars remplace des substances exotiques par des produits plus courants, ainsi la manne par du pélagon. Dans la même intention, il rectifie des recettes prescrites par Avicenne ou Mésué.</p>
+          <p>Dans le régime pour Michel Bernard, il cherche à concilier les traitements de l’arthrite et de la gravelle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>S’il n’a pas fait de découvertes géniales, Jacques Despars a été un médecin intelligent, qui a bien assimilé les œuvres des auteurs grecs et arabes. Dans les grands problèmes de la médecine générale, il est resté soumis au système de Galien et, pour essayer de les résoudre, il a eu recours à un raisonnement scolastique plutôt qu’à un jugement de médecin. Cependant, bon observateur, il a su adapter certaines théories aux conditions spécifiques du milieu dans lequel il a vécu ; dans la pratique quotidienne, il a fait preuve d’indépendance vis-à-vis des auteurs reconnus et des croyances générales.</p>
+      </div>
+      <div>
+        <pb n="113" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_07.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Pièces annexes</head>
+        <p>1. Pièces justificatives de la biographie.</p>
+        <p>2. Liste des questions posées par Jacques Despars dans le commentaire du livre I et de la fen 1 du livre IV du <hi rend="i">Canon</hi> d’Avicenne.</p>
+        <p>3. Tableaux synoptiques et poèmes présentés par Jacques Despars au cours de son commentaire sur le <hi rend="i">Canon</hi> d’Avicenne.</p>
+        <p>4. Édition des <hi rend="i">Régimes pour Michel et Guillaume Bernard</hi> (Lille, Bibliothèque municipale, ms. 863, fol. 160 v°-164), et de la <hi rend="i">Tabula magistri Jacobi de Partibus</hi> (Bibliothèque nationale, ms. latin 7281, fol. 277-279 v°).</p>
+        <pb n="114" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_15/ENCPOS_1971_15_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

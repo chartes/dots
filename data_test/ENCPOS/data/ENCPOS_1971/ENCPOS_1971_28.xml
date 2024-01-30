@@ -1,0 +1,113 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_28" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La criminalité à Bordeaux de 1768 à 1777 d’après les plaintes et les informations de la Cour des jurats</title>
+        <author ref="https://www.idref.fr/131619004">Dominique Vié</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_28.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 193-199</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="193" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La criminalité à Bordeaux de 1768 à 1777
+       <lb/>d’après les plaintes et informations
+       <lb/>de la cour des jurats</head>
+      <byline>
+        par
+        <forename>Dominique</forename>
+        <surname>Vié</surname>
+        <roleName>licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Les procédures criminelles constituent une source trop rarement exploitée de l’histoire sociale. La période choisie pour cette étude s’articule autour de deux dates essentielles : 1771 et 1772 connaissent, en effet, une crise de subsistances d’une gravité exceptionnelle. Bordeaux, capitale provinciale, est caractérisée par une grande prospérité économique, fondée sur le développement du commerce colonial. C’est aussi une très belle ville grâce aux travaux d’urbanisme de l’intendant Tourny. La compétence de la Cour des Jurats s’exerce en matière criminelle et de police. Tribunal de première instance, les affaires qu’elle juge ne représentent pas une criminalité au sens moderne du mot. La Jurade n’est pas la seule juridiction bordelaise, mais elle semble avoir la préférence des justiciables. L’étude de ses enquêtes permet d’une part l’établissement de statistiques, d’autre part une observation de la vie et de la mentalité populaires.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les documents utilisés proviennent tous de la série B des Archives départementales de la Gironde. Ils ont été complétés, accessoirement, par un document de la série C, le rôle des capitations pour 1777.</p>
+      </div>
+      <div>
+        <pb n="194" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>La criminalité globale</head>
+        <p>Il est impossible de suivre une évolution de la criminalité sur une période de dix ans : il ne se dégage de cette étude qu’une vision statique, ponctuelle du phénomène criminel.</p>
+        <p><hi rend="i">Les affaires.</hi> – En dix ans, les Jurats ont traité environ mille cinq cents affaires dont il nous reste des traces, impliquant deux mille cent accusés. La répartition annuelle des procédures est très irrégulière. Les tendances saisonnières montrent que la criminalité est plus forte à la belle saison que pendant les mois d’hiver. Deux mois, mars et surtout octobre, groupent 21,5 % des affaires : ce sont les mois de foire. La distinction par types d’affaires fait plus apparaître la répétition de certains délits que leur gravité réelle. Les véritables crimes jugés par la Jurade sont très rares. Les affaires les plus intéressantes sont les vols (24,6 %). Les injures et les coups et blessures (22,9 % et 12,8 %) offrent un tableau vivant de la vie quotidienne. Le reste se partage entre affaires de police, de travail et de mœurs.</p>
+        <p><hi rend="i">Les accusés.</hi> – Les accusés vont de l’écuyer tapageur au marin violent ou voleur, en passant par toute une gamme de personnages variés. Peu sont de véritables criminels. La criminalité féminine est tout à fait marginale. Les accusés sont caractérisés par quelques constantes, âge, profession, origine, niveau d’instruction, domicile. Trois tranches d’âge (vingt à trente-quatre ans) groupent 59 % des hommes et 52 % des femmes. La prédominance des accusés de vingt à vingt-quatre ans est un phénomène pratiquement constant. Il n’y a malheureusement pas de référence possible à des données de démographie pure (âges les plus représentés, espérance de vie). Les états et professions peuvent être répartis en trois catégories, division théorique sommaire qui permet toutefois une macro-analyse de la société. Le premier niveau, défini à la fois par un certain degré de fortune et une certaine considération sociale, est le plus disparate, puisqu’il comprend à la fois les écuyers, les parlementaires, les négociants (3,2 %), puis les bourgeois, les marchands, les membres des professions libérales et des administrations, enfin les maîtres artisans. Le tout représente 22,8 % des accusés. Le groupe des artisans est le plus nombreux (41,4 %), dominé par les métiers du bois, de l’habillement, du bâtiment. Enfin les petits métiers, qui forment la troisième catégorie (36,8 %), se définissent par un niveau social et une qualification professionnelle généralement inférieurs (marins, portefaix, métiers du transport, domestiques, vignerons). L’immigration est un phénomène d’une importance capitale, puisqu’elle serait responsable des neuf dixièmes de l’accroissement démographique annuel de la ville. Mais elle n’est pas sans danger : 40,8 % des accusés sont des immigrants (19,8 % des femmes). C’est une immigration proche, d’artisans (45 %) et de gens des petits métiers (50 %), à prédominance rurale, bien que l’apport urbain ne soit pas négligeable, récente, très marquée par la saison (62 % des immigrants arrivent d’octobre à mars) ; le pourcentage des criminels augmente au moment de la crise alimentaire de 1771-1772. <pb n="195" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_03.TIF/full/full/0/default.jpg"/> La signature des accusés donne une indication de leur niveau d’instruction : 45 % des hommes et 24 % des femmes savent signer.</p>
+        <p><hi rend="i">Les plaignants.</hi> – Les plaignants sont moins nombreux et moins bien connus que les accusés. Les femmes subissent les effets de la criminalité plus qu’elles n’y participent (30 % des plaignants). Le niveau social de l’ensemble est nettement plus élevé, puisque les petits métiers ne forment que 19,3 % du total, les artisans 32,7 %, le premier niveau, enfin, 48 %. Les plaignants d’origine extérieure à Bordeaux sont très peu nombreux. 74,7 % des hommes et 33,1 % des femmes savent signer. Les relations entre plaignants et accusés sont déterminées par l’exercice du métier (21 %), les connaissances ou rencontres (19 %), le voisinage et la cohabitation (18,8 %) ; l’absence de relations recouvre 20 % des cas. De plus, on a tendance à se plaindre de gens de même niveau social (48 %), puis de personnages socialement inférieurs (34 %).</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les délits dominants</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le vol</head>
+          <p>Les vols sont les délits graves majeurs (24,6 %). Les plus nombreux sont les plus banals (48 %), puis viennent les vols avec effraction (12 %), les vols à la tire (11 %), les escroqueries et abus de confiance, les filouteries au jeu, les vols domestiques, les recels. Les vols portent surtout sur l’argent (31,7 %), le linge (28 %), l’argenterie et les bijoux (19,5 %). La rareté des vols de nourriture est rassurante quant à l’urgence de la faim (8,3 %). La répartition annuelle des vols suit exactement les variations du prix du grain. Le niveau maximum est atteint au moment de la crise de 1771-1772. Peu de vols ont lieu l’été, mais beaucoup pendant les mois de foires (octobre notamment), marqués par l’afflux d’immigrants. Les victimes se caractérisent par un niveau social élevé. Les voleurs, au contraire, sont de très petits personnages ; ce sont, à 70 %, des gens des petits métiers, surtout des marins, des portefaix et des manœuvres, des petits marchands ; 73 % sont des immigrants souvent miséreux qui, attirés par la richesse de la ville et l’activité du port, essaient de trouver du travail. Ils n’ont cependant pas tous des intentions honnêtes. La recherche des voleurs dévoile les capacités de réaction et de défense d’une population qui subit et craint le vol comme un fléau constant. La victime, en effet, doit s’arranger pour retrouver seule son voleur ; elle n’est guère aidée par la police. Un voleur sur cinq a déjà eu affaire à la justice. Les peines infligées aux coupables sont diverses, bannissement, carcan, flétrissure, castigation, galères, les plus sévères étant la pendaison et les galères à perpétuité.</p>
+          <pb n="196" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_04.TIF/full/full/0/default.jpg"/>
+          <p>Le vol représente-t-il une criminalité de la misère ou de l’envie ? Les deux points de vue trouvent leurs arguments. Les indices d’une criminalité de misère ne manquent pas : recrudescence des vols au moment des crises alimentaires, sensibilité aux variations saisonnières, niveau social très bas des accusés et surtout, peut-être, ampleur du phénomène de l’immigration. Toutefois, la criminalité de vol apparaît assez banale, prenant une forme sournoise, insinuante plus que brutale. Sorte de criminalité de routine, elle se compose en majorité des formes les plus anodines du vol. La rareté des vols de nourriture est remarquable ; il semble que l’homme affamé préfère s’emparer d’une bourse et acheter de la nourriture au lieu de voler de quoi manger, nuance significative d’une évolution vers une forme plus élaborée de l’acte. Cependant la misère semble avoir une place prédominante, mais moins sous la forme d’une misère brutale et désespérée que sous l’aspect d’une pauvreté rendue plus sensible par la richesse de la ville et des privilégiés. Cette ébauche de prise de conscience annonce déjà la Révolution.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les injures et les coups et blessures</head>
+          <p>La première rubrique, outre les injures proprement dites, comprend les calomnies, diffamations, menaces, médisances, coups sans blessures. Elles témoignent de l’existence d’une mentalité populaire rancunière, fruit de la promiscuité. La seconde catégorie comprend les coups suivis de blessures telles qu’elles justifient un rapport de chirurgien. La crise de 1771-1772 est marquée par une baisse de la violence physique ; le phénomène est moins net pour les injures. Les deux délits sont surtout fréquents l’été. Les accusés pour coups et blessures sont les plus originaux, notamment par leur âge : 36 % ont entre vingt et vingt-quatre ans. Ils sont artisans dans 62 % des cas. Ces proportions élevées traduisent la fréquence des bagarres entre compagnons. Les violents sont surtout des travailleurs de force. Les femmes se rendent coupables d’injures plus que de tout autre délit. La répartition des plaignants pour coups et blessures correspond exactement à celle des accusés. Les personnages du premier niveau forment 58 % des plaignants pour injures. En revanche, les gens des petits métiers ne représentent que 15 % ; les raisons de leur timidité devant la justice sont nombreuses, difficulté à assumer les frais d’un procès, moindre conscience d’une dignité à conserver, moindre susceptibilité, crainte d’un préjugé défavorable à leur égard. Voisinage et travail dominent les rapports entre plaignants et accusés. Les conflits ont lieu surtout entre personnages de niveau équivalent.</p>
+          <p>La distinction entre les motifs profonds de la violence et les simples prétextes est délicate à établir, car si ces derniers sont généralement connus, les premiers le sont rarement de façon explicite. Le motif de violence le plus fréquent concerne les affaires d’argent : prêts qui s’éternisent, loyers non payés, achats à crédit, dettes diverses que l’on refuse de reconnaître. Les vengeances aussi servent de motif. Dans les affaires de voisinage, de cohabitation, de plaisanteries mal prises, de disputes de cabaret, de diffamations, les motifs ne <pb n="197" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_05.TIF/full/full/0/default.jpg"/>peuvent être perçus que de façon diffuse ; seuls les détails qui déclenchent les conflits sont connus. On peut imaginer que la futilité des prétextes cache souvent un long passé de rancunes accumulées peu à peu. Il existe cependant une violence de hasard assez courante ; elle témoigne d’une grande nervosité et d’une sensibilité de l’individu à ce qu’il croit une offense. Les injures sont extrêmement grossières et diffamatoires ; les thèmes favoris sont les accusations de mauvaise vie et de mauvaises mœurs.</p>
+          <p>Criminalité de milieu, opposée à la criminalité de passage que représente le vol, la violence fait intervenir tout un faisceau de liens entre les personnages. Elle implique, dans 50 % des cas, des gens de niveau social équivalent. Doit-on en déduire une faiblesse de l’interpénétration des milieux ? Il est difficile de donner une réponse tant la division en trois niveaux sociaux appelle de nuances dès que l’on quitte le plan théorique. Par ailleurs, il ne semble pas que la violence de la couche supérieure soit très originale ; contrairement à ce que l’on aurait pu attendre, peu d’affaires apparaissent comme caractéristiques de ce milieu.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Les délits marginaux</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le travail</head>
+          <p>Les conflits ayant pour cadre le travail ont été groupés pour leur intérêt, mais ils ne constituent pas des délits en eux-mêmes. De plus, ils sont pris dans un sens large, puisqu’ils englobent aussi bien les affaires entre maîtres et garçons qu’entre travailleurs rivaux. Ils sont dominés par l’artisanat, si on considère le nombre des accusés. Les conflits dans le cadre des corporations opposent surtout les maîtres entre eux, au cours des assemblées de communautés. Ils ont de plus à défendre leurs privilèges contre les empiètements des travailleurs libres ou des corporations voisines. L’action violente des compagnons s’exerce tout à la fois contre les non-compagnons et contre les maîtres. Elle vise surtout à leur réserver le monopole de l’embauche, dont ils auraient réussi à se rendre pratiquement maîtres, au moins dans certains métiers artisanaux. Les revendications de salaires sont mineures. Les conflits de concurrence existent à tous les niveaux, qu’il s’agisse des problèmes de vente ou d’embauche : les marchands se diffament mutuellement pour ruiner leur crédit ; les artisans jaloux, les gens des petits métiers se disputent le travail à faire. C’est dans les conflits de salariés à employeurs qu’apparaissent certaines traces d’idées sociales et revendicatives qui prouvent l’existence d’un état d’esprit nouveau : citons le cas de ce charron qui traite un négociant de « bourgeois qui vole l’argent aux ouvriers ».</p>
+        </div>
+        <div>
+          <pb n="198" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>La police</head>
+          <p>Les affaires de police sont extrêmement variées. Les plus nombreuses sont les manquements envers les magistrats, refus de se rendre à une convocation ou insultes adressées <hi rend="sup">F</hi>aux jurats et, surtout, les affaires de rebellion au guet et de tapage nocturne. La police inspire à la population les mêmes sentiments contradictoires qu’aujourd’hui, satisfaction de pouvoir y recourir au besoin, joie de la narguer, de la voir bafouée, maltraitée, impuissante. Le guet est impopulaire et souvent troublé dans l’exercice de ses fonctions par des jeunes gens qui lui résistent ou l’attaquent. Les personnes arrêtées réussissent quelquefois à ameuter contre lui la populace. Les infractions aux règlements sur l’imprimerie montrent qu’il existait une littérature de colportage interdite, composée de textes polémiques d’actualité, si nous pouvons toutefois en juger d’après des titres tels que <hi rend="i">L’ombre de Louis XV au tribunal de Minos.</hi> La police des octrois et des fermes vise à réprimer les fraudes sur les entrées et les ventes de marchandises diverses (viandes et vins surtout), inévitables dès qu’il y a des barrières douanières et des taxes. Les Jurats ont aussi la police des distractions, des cabarets, des jeux, de la comédie. Les affaires de police dénotent chez les Bordelais l’existence d’un esprit tapageur, frondeur, joueur et fraudeur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les mœurs</head>
+          <p>Les affaires de mœurs sont dominées par les rapts. Ils sont de deux sortes, de violence ou de séduction. Les premiers sont rares. Ils ont pour cause la crainte de l’opposition familiale à une mésalliance. La jeune fille est toujours consentante. Les rapts de séduction consistent à « profiter de la faiblesse » d’une jeune fille et à l’abandonner avec un enfant. Les hommes se défendent en accusant leurs victimes d’être des prostituées qu’ils auraient payées.</p>
+          <p>Une grossesse hors mariage est très grave pour une jeune femme, car elle perd non seulement son honneur et sa réputation, mais aussi ses moyens d’existence ; les servantes, notamment, sont toujours renvoyées. Les rapts sembleraient plus souvent dus à la mauvaise foi des hommes qu’à l’inconduite des filles. La prostitution est tolérée dans la mesure où elle n’est pas dénoncée par le voisinage. Le proxénétisme est surtout une affaire de femmes qui, ainsi que les jeunes débauchées, ont une vie passée chargée de malheurs. Les accusations de viol semblent recouvrir bien des dissenssions et être souvent des manœuvres contre des hommes dont on veut ternir la réputation ou dont on cherche à obtenir de l’argent. Les affaires de mœurs isolées sont nombreuses, accusations de vie scandaleuse, adultères, logement de « femmes du monde », <pb n="199" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_07.TIF/full/full/0/default.jpg"/>tapage chez des prostituées, abandons d’enfants, infanticides. Deux faits ressortent de cette étude, d’une part la tolérance vis-à-vis de la prostitution, d’autre part la vulnérabilité du milieu des servantes, les plus exposées et les plus tentées.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Nous sommes en présence d’une criminalité de routine, étant donné le niveau de la juridiction. Elle semblerait tendre vers une forme collective plus élaborée. Elle subit l’influence de la richesse de Bordeaux et celle des crises alimentaires.</p>
+        <p>L’attitude de la population envers la criminalité se marque par différentes réactions, crainte du vol, volonté de protéger le travail et la famille ; elle donne de plus une certaine idée du seuil au delà duquel on ose se plaindre. Elle permet de dégager quelques caractères typiques des mentalités d’Ancien Régime quant au comportement à l’égard de la vie, au sentiment familial, à l’attitude devant la mort, le suicide et la magie, où se révèlent des survivances anciennes et des germes d’idées révolutionnaires, dont on ne peut, en l’absence d’études complémentaires, mesurer la portée exacte.</p>
+        <pb n="200" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_28/ENCPOS_1971_28_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

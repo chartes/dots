@@ -1,0 +1,137 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_04" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La manufacture de draps fins Vanrobais au <hi rend="sc">xvii</hi><hi rend="sup">e</hi> et au <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/254313248">Maximilien Courtecuisse</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_04.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 37-42</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="37" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_04/ENCPOS_1911_04_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La
+       <lb/>manufacture de draps fins
+       <lb/>Vanrobais
+       <lb/>au <num>xvii<hi rend="sup">e</hi></num>et au <num>xviii<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Maximilien</forename>
+        <surname>Courtecuisse</surname>
+        <roleName>Élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction
+         <lb/>historique de la manufacture</head>
+        <p>Colbert attire à Abbeville, en 1665, Josse Vanrobais, manufacturier à Middelbourg, pour implanter en France l’industrie des draps fins. Caractères du privilège qu’il lui fait accorder. Rapports généraux de la nouvelle manufacture avec le pouvoir et influence de Colbert sur son développement. Prorogations du privilège en 1681 et 1698. Son accroissement considérable en 1708. Les deux fils de Josse Vanrobais. Le second, Josse, resté seul à la tête de la manufacture, se charge du recouvrement de la contribution de guerre en 1712, et approvisionne Paris de blé en 1713. Perfection à laquelle atteignent les manufacturiers. Privilège de 1724 et nouveaux avan<pb n="38" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_04/ENCPOS_1911_04_02.TIF/full/full/0/default.jpg"/>tages qu’il apporte. Les successeurs de Josse Vanrobais fils. Privilège de 1743. Suppression des principales clauses du privilège par arrêt du Conseil d’Etat du 2 février 1768. Renouvellement des clauses subsistantes en 1784. La manufacture à la fin de l’ancien régime. En 1803, elle passe aux mains de M. Grandin, ancien manufacturier d’Elbeuf.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les privilèges</head>
+        <div>
+          <head rend="uc">Chapitre premier</head>
+          <p>Privilège d’exclusion pour un rayon de dix lieues accordé en 1665. Son renouvellement en 1681 et 1698. Sa discussion et son renouvellement en 1708. Tentatives d’empiétements : 1° de la part de Crignon, marchand drapier en 1708 ; 2° de la part de Ringo, Scalogne, Picot, anciens contremaîtres ou ouvriers des Vanrobais, le premier en 1708, le second en 1724, 1728, 1729, 1737 et 1758, le troisième en 1744. Tous sont déboutés de leurs demandes. Renouvellement du privilège en 1743. Chute du privilège d’exclusion en 1768. Objet des réclamations les plus vives de la part des maire et échevins d’Abbeville ; il est cependant maintenu pour quinze ans par le Conseil de commerce. Mais l’arrêt du Conseil d’Etat du 2 février 1768 le supprime.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II</head>
+          <p>Exemption des droits d’entrée sur les laines d’Espagne accordée en 1665. Elle paraît n’être que temporaire. Contestée par les fermiers généraux, elle est confirmée <pb n="39" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_04/ENCPOS_1911_04_03.TIF/full/full/0/default.jpg"/>par arrêt du Conseil d’État en 1704 et précisée par le privilège de 1708. En 1717 et en 1722, le Conseil de commerce donne raison aux Vanrobais contre les commis des Fermes de Saint-Valéry-sur-Somme. L’exemption des droits d’entrée sur les laines est renouvelée dans les autres privilèges, mais omise dans celui de 1768. Une décision de l’abbé Terray la rétablit provisoirement en 1772 contre les Fermiers généraux. Elle est de nouveau contestée par la Régie en 1778.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III</head>
+          <p>Exemption des droits de sortie sur les draps. Ce privilège est accordé temporairement et pour l’étranger seulement en 1708. En 1724, les Vanrobais demandent et obtiennent cette exemption pour 400 pièces de drap par an dans les provinces des fermes et dans celles réputées étrangères. Le Conseil de commerce refuse en 1727 de reconnaître le nouveau privilège. Mais, en 1743, les Vanrobais s’en réclamèrent pour obtenir l’exemption des droits de rentrée, ce qui prouve son existence au moins jusqu’à celte date.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV</head>
+          <p>Droit exclusif de carder et de filer au grand rouet dans un rayon de dix lieues. Ce privilège obtenu en 1724 est l’objet des réclamations du maire et des échevins d’Abbeville. Son renouvellement en 1743. Malgré les plaintes des Vanrobais et la décision du Conseil de commerce en 1749, il ne fut jamais observé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V</head>
+          <p>Droit de mettre aux draps Vanrobais une lisière spé<pb n="40" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_04/ENCPOS_1911_04_04.TIF/full/full/0/default.jpg"/>ciale. Il en est question en 1718, les Vanrobais en font la demande en 1724. Ils n’obtiennent qu’un plomb avec d’un côté les armes royales et de l’autre ces mots : « Manufacture royale d’Abbeville ». En 1733, ils obtiennent les premiers une marque spéciale consistant en « une lisière bleue et quatre fils aurore ». Ce privilège est renouvelé en 1743 et 1768.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI</head>
+          <p>Exemption de tous impôts, accordée en 1665. Taxés en 1696, les Vanrobais sont exemptés, en 1700, d’une somme de 20.000 livres pour droit d’aubaine. Ils refusent de payer une taxe de 4,000 livres, en 1705, et obtiennent gain de cause.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII</head>
+          <p>Droit d’acheter des héritages accordé en 1665. Cette clause, qui ne semble pas avoir été bien exécutée, ne reparut plus après 1708.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII</head>
+          <p>Droit de franc salé pour huit minots de sel. Reproduit dans tous les privilèges, ce droit, contesté par le fermier des gabelles du grenier à sel d’Abbeville, est confirmé en 1720.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IX</head>
+          <p>Droit de professer la religion réformée, accordé en 1665. Assemblées et prêches. Protection de Colbert contre les catholiques. Il tente vainement de convertir Vanro<pb n="41" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_04/ENCPOS_1911_04_05.TIF/full/full/0/default.jpg"/>bais. Les Vanrobais ne sont pas inquiétés au moment de la Révocation de l’Édit de Nantes. Cependant leur privilège est importun au pouvoir : il est omis dans les prorogations de 1681 et de 1698, on refuse de l’insérer dans les lettres patentes de 1708. Surveillance du pouvoir sur les ouvriers protestants. Conduite des Vanrobais à l’égard des ouvriers catholiques. Scalogne, ancien contremaître, ayant quitté la manufacture, n’est plus admis à jouir du privilège religieux.</p>
+        </div>
+        <div>
+          <head rend="uc">Appendice</head>
+          <p>Attribution des procès et contestations à l’intendant. Demandée en 1708, cette faveur est refusée. On pourra seulement renvoyer les affaires importantes du Conseil d’Etat à l’Intendant.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les organes de la manufacture</head>
+        <div>
+          <head rend="uc">Chapitre premier</head>
+          <p><hi rend="i">Administration financière.</hi> – D’abord Josse Vanrobais père s’associe avec des étrangers. Il reste seul en 1677, puis, à partir de 1689, les Vanrobais s’associent entre eux. Compte des sommes employées jusqu’en 1689. Inventaires.</p>
+          <p>Prêts royaux. Le roi accorde dans les débuts un prêt de 80.000 livres ; 30.000 livres furent remises successivement aux Vanrobais. Ils payèrent le reste.</p>
+          <p>Conversion de billets en monnaie. Pour aider les Vanrobais à payer leurs ouvriers en argent, le pouvoir leur remet au moins une fois, en 1705, en échange de billets, les deniers de la Caisse des tailles d’Abbeville.</p>
+        </div>
+        <div>
+          <pb n="42" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_04/ENCPOS_1911_04_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II</head>
+          <p><hi rend="i">Fabrication et vente des draps.</hi> – Matières premières. Laines et teintures tirées d’Espagne. Procédés de fabrication et étoffes fabriquées. Les règlements sur la largeur des draps. Colbert veut obtenir des draps de la même largeur que ceux d’Angleterre. Lutte des Vanrobais contre les tracasseries des règlements. Ils obtiennent en plusieurs occasions gain de cause.</p>
+          <p>Outillage. Teinture. Dégraissage. Visite et marque. Les Vanrobais ne portent pas leurs draps à la halle : le plomb de marque est apposé chez eux. Nombre de métiers. Production. Vente. Prix des draps.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III</head>
+          <p><hi rend="i">Les ouvriers.</hi> – – Nombre des ouvriers. Division du travail et personnel. Condition. Privilèges des ouvriers étrangers. Salaires. Police de la manufacture. Les grèves. La grève de 1716. Elle tourne tout à l’avantage des Vanrobais : leurs privilèges sont confirmés et des règlements de police intérieure rédigés et placés sous la surveillance dé l’Intendant.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV</head>
+          <p><hi rend="i">Bâtiments de la manufacture.</hi> – Les débuts. La Maison des Rames. Sort de la manufacture.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

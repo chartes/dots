@@ -1,0 +1,165 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_07" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gaillard, Jacques, Raoul Spifame. Étude d’une famille au <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/02809557X">André Delmas</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_07.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 55-61</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="55" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Gaillard, Jacques et Raoul Spifame
+       <lb/>Étude d’une famille au <num>xvi<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>André</forename>
+        <surname>Delmas</surname>
+        <roleName>Licencié en droit</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Ce travail se propose l’étude des trois personnages les plus illustres d’une famille au <num>xvi<hi rend="sup">e</hi></num> siècle. Leur existence mouvementée et leur rang éminent font de leur étude une contribution utile à l’histoire générale du siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction
+         <lb/>les Spifame aux <num>xiv<hi rend="sup">e</hi></num> et <num>xv<hi rend="sup">e</hi></num> siècles.</head>
+        <p>D’origine lucquoise, Barthélemi Spifame apparaît en France vers 1340. Changeur et mercier, il est bientôt en relations d’affaires avec le roi et les plus grands seigneurs et acquiert renom et fortune. Il meurt en 1385, laissant son fils Simon continuer son œuvre. Quoique moins actif que son père, celui-ci affermit la situation de la compagnie Spifame ; il permet à ses descendants de continuer leur ascension au cours du <num>xv<hi rend="sup">e</hi></num> siècle. A la fin du siècle, Jean IV Spifame est déjà parvenu aux plus hautes charges : de 1492 à 1500, il est trésorier de l’extraordinaire des guerres. De son <pb n="56" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_02.TIF/full/full/0/default.jpg"/>mariage avec Jacquette Ruzé naissent six enfants, dont nous étudions les trois plus connus.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Gaillard Spifame</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la vie et l’œuvre de Gaillard Spifame.</head>
+          <p>Né vers 1482-1485, Gaillard Spifame, après avoir acquis une forte expérience des finances à la tête de la banque familiale, abandonne peu à peu celle-ci et passe au service du roi. En 1520, il est receveur des tailles en l’élection de Sens et, en 1524, il est pourvu de l’office de receveur général des finances de Normandie : il s’y fait remarquer par son zèle et dirige l’achèvement du port du Havre. En mai 1525, il obtient la charge de trésorier de l’extraordinaire des guerres et de notaire et secrétaire du roi : il s’emploie à soutenir financièrement l’expédition de Gaston de Foix à Naples. En août 1528, il devient à la fois général des finances de Normandie et prévôt des marchands de Paris : grâce à lui, la rançon des enfants royaux détenus à Madrid est en partie réunie. Convaincu de malversations et de détournements, il est emprisonné et condamné, le 5 juillet 1532, une première fois, et le 3 mai 1535, une seconde fois, à restituer plus de 700,000 livres au roi. Il s’était suicidé le 26 mars 1535. La liquidation de ses biens est pénible.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La fortune des Spifame.</head>
+          <p>Grâce à l’inventaire des biens saisis sur Gaillard Spifame, nous connaissons la majeure partie de la fortune de la famille.</p>
+          <pb n="57" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_03.TIF/full/full/0/default.jpg"/>
+          <p>Très grands propriétaires à Paris, rue des Lombards, rue aux Ours et aux environs immédiats de Paris (comme Chaillot et Conflans), les Spifame sont seigneurs de Bisseaux, près Melun, de Passy et de Cochepie, près Sens. De nombreuses autres propriétés en Ile-de-France et en Blésois, d’importantes rentes leur assurent une immense fortune. Elle s’émiettera au cours des <num>xvi<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècles.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Jacques Spifame</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la formation.</head>
+          <p>Né en 1503, Jacques Spifame est maître-ès-arts en 1519 et fait de brillantes études. En août 1522, il est procureur de la nation de France, et le 11 octobre est élu recteur de l’Université. 11 disparaît ensuite pendant quelques années de tout document.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les débuts de la carrière.</head>
+          <p>Le 14 février 1527, Jacques Spifame est nommé conseiller du roi et maître des comptes à Montpellier. En septembre 1529, il entre au Parlement, comme conseiller-clerc, mais essaye en vain, en 1530, d’obtenir la sous-chantrerie de l’Église de Paris et, en 1531, une vicairie dans cette même Église.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le chancelier de l’Université.</head>
+          <p>Le 16 mars 1533, Jacques Spifame est nommé chanoine <pb n="58" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_04.TIF/full/full/0/default.jpg"/>et chancelier de l’Église et Université de Paris. Après plusieurs échecs, il s’impose comme le réformateur des collèges : les statuts des collèges d’Autun (1543), de Narbonne (1544) et du cardinal Lemoine (1545) nous montrent ses conceptions hardies. En 1545, il réforme de même l’abbaye de Livry.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>L’homme, la vie publique et privée.</head>
+          <p>Jacques Spifame se fait remarquer au Parlement par plusieurs missions importantes. En janvier 1544, il devient président de la petite chambre des enquêtes. Erudit et lettré, il est l’égal des célèbres humanistes de son siècle. Malgré sa vie privée, il est considéré comme un très grand personnage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>L’épiscopat et le concile.</head>
+          <p>Le 5 mai 1546, il est préconisé à Rome évêque de Nevers. De septembre 1547 à octobre 1548, il joue un des premiers rôles au concile de Trente, où il s’impose comme canoniste. De 1549 à 1556, conseiller du duc de Nevers, il réside beaucoup dans son évêché, mais, en 1557, devenu maître des requêtes et membre du conseil privé de Catherine de Médicis, il ne quitte plus guère Paris. En 1558, il résigne son évêché et ses bénéfices et s’enfuit le 20 février 1559 à Genève.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Genève.</head>
+          <p>Reçu habitant, puis bourgeois de Genève, Jacques Spifame y fait reconnaître son prétendu mariage secret, y appelle sa femme et ses enfants et y est bientôt estimé pour ses sages conseils et admiré pour sa vie édifiante.</p>
+        </div>
+        <div>
+          <pb n="59" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VII
+           <lb/>Le ministre réformé.</head>
+          <p>Revenu en France comme pasteur de la communauté d’Issoudun, Jacques Spifame est quelque temps ministre particulier du duc de Nevers. Dès les premiers jours de la guerre civile, il rejoint Condé à Orléans et devient un des chefs réformés. Les appels aux Eglises de France ne suffisant plus, il va implorer l’empereur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Francfort.</head>
+          <p>En novembre 1562, à la diète de Francfort, il présente à Ferdinand le manifeste du parti de Condé et justifie la prise d’armes. Il lit devant l’assemblée générale la profession de foi des calvinistes français et résume pour le fils de l’empereur ses deux derniers discours.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IX
+           <lb/>Les dernières années.</head>
+          <p>Après avoir été pendant quelques mois superintendant des affaires de Lyon, Jacques Spifame devient premier ministre et conseiller de Jeanne d’Albret. 11 lui rend de grands services, mais des différends surgissent entre eux et il regagne prématurément Genève, en mai 1565. 11 y reprend son rang éminent, mais ses ennemis le guettent.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre X
+           <lb/>Le procès et la mort.</head>
+          <p>En 1566, Jacques Spifame est poursuivi devant le conseil genevois et, après un procès de dix jours, il est condamné à mort, le 22 mars, et exécuté le lendemain. Avant de mourir, <pb n="60" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_06.TIF/full/full/0/default.jpg"/>il se repent publiquement de scs fautes. Le véritable motif de sa condamnation a été la conjuration qu’il avait ourdie pour permettre aux catholiques de s’emparer de Genève.</p>
+        </div>
+        <div>
+          <head rend="uc">Conclusion</head>
+          <p>Jacques Spifame a été fervent catholique, puis réformé convaincu, mais sa conversion a été mûrement calculée. C’est à la fois un pauvre homme et un grand homme et on l’a trop souvent attaqué.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Raoul Spifame</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la vie de Raoul Spifame.</head>
+          <p>Frère de Gaillard et de Jacques, brillant avocat au Parlement, Raoul Spifame sombre, après 1540, dans une demi-folie. Rappelé une première fois à l’ordre en septembre 1552 pour des pamphlets injurieux, il est, en 1554, pourvu d’un curateur. Malgré celui-ci, il continue ses incartades et imprime en cachette les <hi rend="i">Dicaearchiae Henrici regis christianissimi progymnasmata.</hi> 11 est alors définitivement interdit le 3 juin 1557. 11 termine plus paisiblement sa vie et meurt en 1563.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’œuvre de Raoul Spifame.</head>
+          <p>Les <hi rend="i">Dicaearchiae Henrici regis christianissimi progymnasmata,</hi> publiés en juillet 1556, sont un recueil de 306 arrêts attribués au roi Henri II. Beaucoup sont intéressants par <pb n="61" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_07.TIF/full/full/0/default.jpg"/>leurs idées neuves et hardies, certains sont prophétiques, d’autres complètement insensés. Ce livre doit pourtant nous faire classer son auteur parmi les <hi rend="i">grands réformateurs.</hi></p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion
+         <lb/>la fin de la famille.</head>
+        <p>Après avoir encore produit de hauts personnages comme Gille, évêque de Nevers, ou Samuel, conseiller d’Etat et ambassadeur en Angleterre, la famille Spifame s’éteint le 10 avril 1642. Elle avait connu les plus grands honneurs.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Tableau généalogique</head>
+        <pb n="62" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_07/ENCPOS_1943_07_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

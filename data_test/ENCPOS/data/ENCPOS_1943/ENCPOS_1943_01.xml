@@ -1,0 +1,182 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_01" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’exercice de la justice publique dans l’Empire carolingien</title>
+        <author ref="https://www.idref.fr/026710781">Robert-Henri Bautier</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_01.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 9-18</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="9" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’exercice de la justice publique
+       <lb/>dans l’Empire carolingien</head>
+      <byline>
+        par
+        <forename>Robert-Henri</forename>
+        <surname>Bautier</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Notre but est d’étudier l’organisation, l’évolution, les transformations et les survivances des institutions judiciaires publiques (tribunaux des comtes, des <hi rend="i">missi</hi> et du roi) dans l’Empire carolingien. Les documents de la pratique seront notre principale source. Nous laisserons de côté la procédure et le droit pénal.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les réformes judiciaires de Charlemagne</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la réforme des plaids.</head>
+          <p>Le capitulaire de 769, base de la prétendue réforme de Charlemagne, concerne les assemblées royales annuelles. C’est un faux de Benoît le Diacre, en relation avec le texte du <hi rend="i">De ordine Palatii</hi> d’Hincmar. Il y avait deux juridictions <pb n="10" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_02.TIF/full/full/0/default.jpg"/>ordinaires, celle du comte et celle du centenier ; l’assistance des hommes libres était requise trois fois l’an au plaid du centenier et non à celui du comte. Le tribunal du comte est le plaid public, non le plaid général ; il a peu à peu évincé les anciens tribunaux de centaine, les a rejetés à un niveau inférieur ; les plaids généraux perdirent leur caractère public, devinrent domaniaux, voire serviles. La distinction entre la compétence du comte et celle du <hi rend="i">vicarius</hi> ou du centenier est à la base de la future séparation entre haute et basse justice.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La création des échevins.</head>
+          <p>Charlemagne institua les échevins à la fin de 774 ou au début de 775, pendant son expédition d’Italie. La mesure fut appliquée dans tous les territoires francs et lombards soumis à cette date à son autorité effective : à l’exception, par conséquent, des Etats pontificaux, de la Bretagne et des duchés d’Aquitaine, de Bavière, d’Alémanie et de Bénévent. Dans le royaume franc, elle substituait des juges professionnels et permanents aux rachimbourgs sans fixité et sans compétence spéciale. Peut-être était-elle inspirée par l’exemple des juges lombards d’origine romano-gothique.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les institutions judiciaires
+         <lb/>dans les diverses régions
+         <lb/>de l’Empire carolingien</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la Bourgogne.</head>
+          <p>Le mall bourguignon est un conseil restreint assurant, sous <pb n="11" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_03.TIF/full/full/0/default.jpg"/> la présidence du comte ou de son représentant, l’administration de la justice. Il comprend des <hi rend="i">boni homines</hi> qui deviennent les vassaux du comte, et les échevins dont l’activité est collective et s’exerce seulement au mall. Au milieu du <num>x<hi rend="sup">e</hi></num> siècle, certains souscrivent des actes privés. Ils disparaissent brusquement dans le dernier tiers du <num>x<hi rend="sup">e</hi></num> siècle : la cour féodale du comte, formée de quelques-uns de ses vassaux, se substitua au mall.</p>
+          <p>Le plaid général, strictement domanial, subsiste, réduit à une réunion annuelle, rachetée aux <num>xi<hi rend="sup">e</hi></num> et <num>xii<hi rend="sup">e</hi></num> siècles, ou transformée en une taxe fiscale pesant sur les immeubles des justiciables, qui persistera parfois jusqu’à la Révolution.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La fhanconie.</head>
+          <p>L’institution échevinale pénètre en Franconie dès sa création. Le mall est le tribunal ordinaire où la sentence est prononcée par les échevins et promulguée et exécutée par le comte. C’est aussi un organe de juridiction gracieuse. 11 garde ce double rôle jusqu’au milieu du <num>xi<hi rend="sup">e</hi></num> siècle au moins. L’assistance, plus nombreuse, ne comprend jamais toute la population, mais seulement les grands du comté. Quant aux trois plaids généraux, ils pèsent sur tous les non-libres.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La Lorraine.</head>
+          <p>Le pays reçoit des échevins dès leur création. Les échevinages des comtés de Metz et de Verdun passent au <num>x<hi rend="sup">e</hi></num> siècle, avec les droits comtaux, aux mains des évêques. Ils se transforment ultérieurement en échevinages municipaux.</p>
+          <p>Sur les <hi rend="i">patentâtes,</hi> peut-être fractionnements de centaines, s’établissent des échevinages dirigés par un maire ; leurs justiciables doivent se rendre aux trois plaids généraux annuels. A Toul et à Trèves, les échevinages du domaine urbain de <pb n="12" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_04.TIF/full/full/0/default.jpg"/>l’évêque se substituèrent à ceux des comtes quand ils furent refoulés dans la campagne.</p>
+          <p>Le tribunal du duc, garni de comtes et de grands, ne possède pas d’échevins.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La Flandre et les provinces ecclésiastiques
+           <lb/>de Cologne et de Reims.</head>
+          <p>Les échevinages de comté deviennent en Flandre des échevinages de châtellenie qui, à la fin du <num>xii<hi rend="sup">e</hi></num> siècle, se transforment en cours allodiales. Dans les cités de la province de Reims, ils passent avec le <hi rend="i">comitatus</hi> entre les mains de l’évêque et ils demeurent dans les communes urbaines la cour ordinaire de justice distincte de la commune elle-même. Dans la province de Cologne, les comtés gardent leurs corps d’échevins, cour allodiale et organe de juridiction gracieuse, à côté des nouvelles cours féodales.</p>
+          <p>Sur les domaines de Flandre et de Basse-Lorraine, les trois plaids généraux sont tenus par le maire ou l’avoué et des échevins. Ils prennent parfois un caractère servile (Aix-la-Chapelle). En Amiénois, ils se transforment en un plaid unique, qui devient une taxe fiscale dont on perd la trace au <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>La neustrie.</head>
+          <p>L’institution échevinale, attestée sous Charlemagne (Paris, Chartres, Talon), s’évanouit ensuite.</p>
+          <p>Pas de trace de plaid général, sauf en Brie, où il devient une taxe qui disparaît par concession du seigneur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Les confins franco-bretons.</head>
+          <p>La Bretagne propre ignora les échevins qui ne pénétrèrent <pb n="13" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_05.TIF/full/full/0/default.jpg"/>que dans les pays soumis politiquement à Charlemagne (pays de Nantes et Vannetais gallo-franc). Les chefs des familles indigènes du plou portent le titre d’échevins quand ils siègent en jugement autour du machtiern. Louis le Pieux accentua en vain la tendance unificatrice : avec l’avènement de Nominoë s’effondra le système administratif franc, simple placage superficiel.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>L’Italie franco-lombarde.</head>
+          <p><hi rend="i">En Toscane,</hi> les échevins constituent le corps des juges de la cité, professionnels, permanents, indépendants du gastald et de l’évêque, soumis à la seule autorité du duc. Individuellement responsables de la sentence, ils siègent seuls ou en Commission ; ils sont l’organe de la juridiction gracieuse, jouent le rôle d’avoués des parties et d’experts ; certains sont en même temps notaires. Au milieu du <num>ix<hi rend="sup">e</hi></num> siècle, ils se ferment en caste héréditaire. Vers 930, le roi Hugues leur juxtapose une délégation de juges royaux qui se substituent rapidement à eux.</p>
+          <p><hi rend="i">En Emilie,</hi> les sept échevins dépendent étroitement du comte qui préside le tribunal et qu’assistent ses vassaux. Ils se recrutent dans le collège des sept notaires, où ils font l’apprentissage de leur profession. Le roi Hugues leur substitue une judicature royale lors de l’avènement de son fils Hubert comme marquis de Parme.</p>
+          <p><hi rend="i">En Lombardie,</hi> on constate l’existence d’échevinages inférieurs dépendant des sculdais, une plus grande intensité des influences franques (notamment à Asti et à Turin) et une action plus efficace du pouvoir central (surtout à Milan). A Asti et à Bergame, le roi Hugues remplaça les échevins par des juges et des notaires royaux. Ceux de Milan, appelés <hi rend="i">judices</hi> depuis 865, passent en 930 dans les rangs des juges royaux. Les échevins disparaissent partout dans la seconde moitié du <num>x<hi rend="sup">e</hi></num> siècle.</p>
+          <pb n="14" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_06.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">En Spolétain,</hi> l’institution échevinale, introduite dès sa création, se déforma très tôt. Les échevins agissent dans le cadre du gastaldat et sont nommés à temps, sans doute pour un an, parmi un petit nombre de familles. Le titre <hi rend="i">scabinus, </hi>souvent défiguré, est remplacé, à la fin du <num>x<hi rend="sup">e</hi></num> siècle, par celui de juge, mais l’institution subsiste au <num>xi<hi rend="sup">e</hi></num> siècle ; les échevins unissent à leur charge celle de notaire et d’autres juges royaux, institués par le roi Hugues, les relèguent peu à peu dans la rédaction des actes notariés.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>La Provence.</head>
+          <p>En Provence, on distingue au tribunal des juges de plusieurs lois et deux collèges judiciaires y coexistent : celui des échevins d’origine franque et celui des <hi rend="i">judices</hi> d’origine romano-gothique. Ces derniers survécurent jusqu’en 1060. Ils avaient des attributions judiciaires dans le duché entier et jouaient un rôle politique au conseil du duc. Leur nombre diminua sans cesse. Clercs ou laïques, ils se recrutaient dans quelques familles liées aux maisons féodales.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IX
+           <lb/>La Septimanie, la marche d’Espagne
+           <lb/>et l’Aquitaine toulousaine.</head>
+          <p>Les échevins ne pénétrèrent pas en Septimanie, Marche et Aquitaine toulousaine, demeurées fidèles au système antérieur des <hi rend="i">judices</hi> et des saions d’origine wisigothique, sur lequel les Francs exercèrent une action rapidement éliminée au sud des Corbières. A Nîmes, cependant, comme en Provence, coexistaient des échevins et des juges. La Septimanie opéra la distinction entre les juges des diverses lois. Ils siégeaient normalement en commissions de cinq à neuf dans le cadre du comté. Leur initiative était large, quoique variable selon les pays ; le comte leur abandonnait certaines phases de la <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_07.TIF/full/full/0/default.jpg"/> procédure (audition des témoins et <hi rend="i">professio</hi>), certains actes spéciaux (authentification des copies d’actes), parfois même la tenue du mall. Le saion était un agent d’exécution, qui jouait aussi un rôle dans la réception des serments des témoins et dans les enquêtes de bornage. Les juges disparaissent au <num>x<hi rend="sup">e</hi></num> siècle dans toute la Septimanie. A Toulouse, nous voyons leurs héritiers dans les quatre <hi rend="i">judices</hi> qui contribueront au <num>xii<hi rend="sup">e</hi></num> siècle à la constitution du capitoul. Dans la Marche d’Espagne, ils se dégagent du cadre du comté et agissent dans l’ensemble de la Marche ou dans un groupe de comtés ; le collège judiciaire se dissocie et le juge individuel se substitue à lui. L’évolution commencée au début du <num>x<hi rend="sup">e</hi></num> siècle s’épanouit à la fin de ce siècle et au <num>xi<hi rend="sup">e</hi></num>. Ils interviennent dans une multitude de circonstances (par exemple dans les déclarations de testament). A la fin du <num>xii<hi rend="sup">e</hi></num> siècle, la fonction de « notaire public » s’ajoute à celle de « juge ordinaire ». A Barcelone, les juges du comte forment une cour suprême de justice, l’<hi rend="i">audientia.</hi></p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre X
+           <lb/>La Bavière et l’Alamanie.</head>
+          <p>Bavière et Alamanie ignorèrent les échevins et gardèrent des <hi rend="i">judices</hi> instaurés par leurs lois, inspirées par la législation wisigothique. C’étaient des juristes nommés par le duc, puis par le roi ; leur compétence s’étendait à tout le duché. Ils assistaient les comtes qui ne possédaient que des attributions judiciaires restreintes. Ils furent eux-mêmes promus au rang de comtes, en gardant leur charge de <hi rend="i">judex ;</hi> ce fait explique la disparition de l’institution (vers 800 en Alamanie, vers 836 en Bavière). Les comtes alamans tinrent jusqu’au <num>xi<hi rend="sup">e</hi></num> siècle des malls publics et les avoués de certaines églises les imitèrent. Dès 806, en Bavière, plaid public et synode ecclésiastique se confondirent pratiquement. Le <hi rend="i">judex</hi> prononçait la sentence, les comtes l’agréaient comme légale, puis les vassaux, enfin le reste de l’assistance, et parfois tous les hommes libres, y adhérait.</p>
+          <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_08.TIF/full/full/0/default.jpg"/>
+          <p>Le Nordgau, annexé par les Francs en 744, reçut des échevins comme tous les pays francs. De même la Rhétie et les Alpes Noriques, refuge des populations romanisées de l’ancienne Norique qui durent entrer dans le royaume franc en même temps que l’Italie.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre XI
+           <lb/>L’Aquitaine poitevine.</head>
+          <p>Les pays d’Outre-Loire conservèrent l’organisation antérieure à Charlemagne ; le comte juge, entouré de rachimbourgs, de <hi rend="i">boni homines</hi> désignés aussi comme ses vassaux. Depuis la seconde moitié du <num>ix<hi rend="sup">e</hi></num> siècle, il a près de lui un <hi rend="i">auditor</hi> ou un <hi rend="i">legis doctor</hi> vassal qui joue le rôle de conseiller juridique du comte et a une certaine compétence en matière de juridiction gracieuse. On le trouve en Touraine, Poitou, Angoumois, Limousin, Auvergne et Méconnais (?) ; il apparaît pour la dernière fois à Poitiers au milieu du <num>xi<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Les <hi rend="i">judices,</hi> fréquents en Poitou et Limousin, sont des agents domaniaux dont on peut voir l’origine dans les administrateurs des fiscs royaux. Bien que leur statut personnel soit assez élevé, la tare servile pèse sur eux primitivement.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre XII
+           <lb/>– Le tribunal comtal et son personnel.</head>
+          <p>1. <hi rend="i">Le mall comtal.</hi> – Désignation. Plaid public, plaid général et plaid particulier. Président. Siège. Périodicité. Compétence et ressort. Rôle de juridiction gracieuse. Rôle administratif. Assistance. Évolution ultérieure.</p>
+          <p>2. <hi rend="i">Le personnel.</hi> – <hi rend="i">a</hi>) <hi rend="i">Personnel subalterne</hi> : procureurs et. avocats (prohibition de la représentation en justice, avoués des agents publics, avoués ecclésiastiques) ; agents d’exécution ; notaires, chanceliers des comtes et rédacteurs d’actes ; – <hi rend="i">b</hi>) <hi rend="i">Les échevins</hi> : nombre, nomination, serment, surveillance, <pb n="17" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_09.TIF/full/full/0/default.jpg"/> destitution, rétribution, fondions, évolution ultérieure. Origines des échevinages médiévaux.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>L’exercice de la justice royale</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les services judiciaires du Palais.</head>
+          <p>La justice palatine est exercée par un service organisé, à la tête duquel est le comte du Palais, chef de l’administration intérieure de l’Etat ; il a sous ses ordres plusieurs lieutenants et une chancellerie avec un personnel de notaires et l’usage d’un sceau. Charlemagne a introduit au Palais des juges professionnels, analogues aux échevins des malls comtaux, qui constituent le personnel fixe des audiences palatines et accompagnent les <hi rend="i">missi.</hi> Cette organisation persistait sous Louis le Pieux et sans doute jusqu’à la fin du <num>ix<hi rend="sup">e</hi></num> siècle. En Lotharingie, ces <hi rend="i">scabini Palatii,</hi> qui fonctionnaient encore auprès de Charles le Simple, se fixèrent à Metz lors de la réunion du royaume de Lorraine à celui de Germanie. En Italie, elle demeura en pleine vigueur ; les juges, d’abord notaires spécialisés, se divisèrent au milieu du <num>ix<hi rend="sup">e</hi></num> siècle en deux classes, les juges et les notaires du Palais. Leur nombre ne cessa d’augmenter ; le roi Hugues les substitua aux échevins dans la plupart des cités ; leur corps se ferma alors en caste héréditaire. Othon le Grand en fit ses meilleurs agents d’administration en Italie, ses <hi rend="i">missi.</hi></p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les « missi » et leurs attributions judiciaires.</head>
+          <p>La compétence des <hi rend="i">missi</hi> dépend de la commission que <pb n="18" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_01/ENCPOS_1943_01_10.TIF/full/full/0/default.jpg"/>leur a donnée le roi ; elle est fréquemment restreinte à une seule affaire, mais elle peut être aussi fort étendue, telle celle dont Louis le Pieux avait chargé l’archevêque de Lyon : la révision générale de tous les procès jugés en Bourgogne et en Septimanie par toutes les juridictions sous le règne de Charlemagne. Délégués du Palais, les <hi rend="i">missi</hi> lui fournissaient un rapport écrit ou verbal ; c’était généralement d’après ce rapport et le procès-verbal de jugement que la chancellerie expédiait le diplôme de restitution ou de confirmation. Toute une suite pouvait les accompagner ; en Italie, ils ont toujours avec eux des notaires et des juges envoyés également par le Palais. Aux assemblées qu’ils tiennent n’assistent que les agents administratifs, les vassaux du roi, mais jamais tous les hommes libres. Les <hi rend="i">missi</hi> sont des organes de liaison entre le Palais et l’administration locale, et non pas entre le roi et son peuple.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Charlemagne a voulu faire œuvre de novateur ; il a songé à une refonte totale de l’administration et de la législation ; mais il n’a pas su s’opposer aux tendances féodales qu’il contribua même à renforcer. Son œuvre sombra vite, mais elle se prolongea par l’organisation judiciaire de l’Italie, les échevinages du Nord et de l’Est, enfin la distinction entre haute et basse justice.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Index</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

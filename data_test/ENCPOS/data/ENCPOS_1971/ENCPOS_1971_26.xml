@@ -1,0 +1,223 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_26" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La ville de Rodez au milieu du <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/027151093">Bernadette Suau-Noulens</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_26.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 175-184</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="175" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La ville de Rodez au milieu du xv<hi rend="sup">e</hi> siècle</head>
+      <byline>
+        par
+        <forename>Bernadette</forename>
+        <surname>Suau-Noulens</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>La base de la documentation provient des Archives départementales de l’Aveyron et des Archives municipales de Rodez. Les principales données ont été fournies par les livres d’estimes de la cité (1449) et du bourg (1470 environ) et par les comptes de tailles, en particulier ceux de 1447 à 1451. Les délibérations communales et les comptes consulaires ont donné de nombreux renseignements pour l’étude des conditions générales, du consulat et de la vie municipale. Les registres notariaux des Archives départementales, nécessaires pour l’étude économique, sont utiles pour l’étude de la société.</p>
+        <p>Les plans de 1495, du <num>xviii<hi rend="sup">e</hi></num> et du <num>xix<hi rend="sup">e</hi></num> siècle permettent de se faire une idée plus exacte de la topographie de Rodez au milieu du <num>xv<hi rend="sup">e</hi></num> siècle et complètent les données des livres d’estimes.</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Rodez, anciennement <hi rend="i">Segodunum,</hi> occupe un site privilégié, qui a permis le développement de la cité gallo-romaine, véritable <hi rend="i">oppidum</hi> situé à 600 mètres d’altitude.</p>
+        <p>Au haut Moyen âge, le monastère de Saint-Amans s’est installé à l’extérieur des remparts, sur les lieux mêmes où le saint a été enterré. Tout autour du monastère s’est développé le bourg de Rodez.</p>
+        <p>Rodez, qui dépendait du comté de Rouergue, fait partie, après le démembrement du comté, du comté de Rodez. C’est sous le troisième comte de Rodez, Hugues II, vers 1170, que la ville est séparée en deux. Désormais le comte n’est plus que le seigneur du bourg et l’évêque celui de la cité, titre qu’il revendique et qu’il doit effectivement exercer depuis longtemps. Les deux villes ont chacune une enceinte, un seigneur, un consulat, une juridiction et sont en conflit permanent. Le désaccord se manifeste surtout entre les deux seigneurs à propos des limites, des fortifications et des foires.</p>
+        <pb n="176" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_02.TIF/full/full/0/default.jpg"/>
+        <p>Au début du xiv<hi rend="sup">e</hi> siècle, le comté de Rodez devient la possession de la maison d’Armagnac, après le mariage de la comtesse Cécile, héritière du comté, avec Bernard d’Armagnac.</p>
+        <p>Au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, on assiste à l’effondrement du pouvoir des comtes, conséquence en partie de la politique royale qui cherche à anéantir les grandes familles féodales. En 1444, Jean IV est accusé de connivence avec les Anglais et de prétentions territoriales excessives. Le roi Charles VII met la main sur ses possessions.</p>
+        <p>Après la mort de son père, Jean V récupère ses biens, en 1450-1451. Mais accusé d’inceste, il est dépossédé en 1455. Louis XI, à la mort de Charles VII, lui restitue ses possessions. L’entente entre eux deux ne dure guère ; Jean V participe à la ligue du Bien Public et le roi en profite pour s’emparer des domaines d’Armagnac, en 1469. Jean V est massacré lors de la prise de Lectoure. Désormais, la maison d’Armagnac ne reprendra plus ses biens, sauf pendant quelques années, après la mort de Louis XI.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Présentation de la ville</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les conditions</head>
+          <p><hi rend="i">La guerre.</hi> – Comme le reste du pays, Rodez doit supporter les charges dues à la guerre et en subir les conséquences. Après les pillages faits par les Anglais et par les routiers, de nouveaux hommes d’armes s’installent dans la région ; ce sont les compagnies de gens d’armes créées par Charles VII. En fait, les pillages ne cessent guère, d’autant plus que des bandes de routiers sont encore mentionnées en 1451.</p>
+          <p><hi rend="i">La peste.</hi> – La peste sévit toujours et réapparaît environ tous les deux ans. Les épidémies les plus importantes se situent en 1456-1457 et en 1462. Elles entraînent une mortalité qu’il est difficile d’évaluer, désorganisent l’administration et surtout frappent les esprits.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La topographie</head>
+          <p>Le plan actuel de la ville de Rodez n’a guère évolué depuis le Moyen âge. Les boulevards périphériques correspondent à l’ancienne ligne des remparts, le tracé des principales rues et des places n’a pas été modifié.</p>
+          <pb n="177" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_03.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Les « gâches</hi> ». – Au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, la cité comprend quinze quartiers ou « gaches », treize à l’intérieur des remparts et deux faubourgs. Dans le bourg, les « gâches » sont au nombre de cinq.</p>
+          <p><hi rend="i">Les fortifications.</hi> – Certains historiens, tels A. Bonal, de Gaujal, le cardinal Bourret, ont attribué la construction des fortifications au <num>xiv<hi rend="sup">e</hi></num> siècle. Pour eux, la cité du Bas-Empire se limitait à une enceinte très réduite. Mais les documents prouvent, en fait, que la plupart des fortifications existaient avant 1350 et qu’au début de la guerre de Cent ans on a surtout réparé, consolidé, reconstruit plus que construit. En outre, les quelques vestiges de murs gallo-romains montrent que la cité du Bas-Empire était plus vaste que le tracé supposé par ces auteurs et que son enceinte correspondait à peu près à celle de la cité de 1350.</p>
+          <p>La topographie de Rodez a pu évoluer de la façon suivante : à la première cité contractée du Bas-Empire, réduite par rapport à l’<hi rend="i">oppidum</hi> ouvert gallo-romain, mais non par rapport aux fortifications du xiv<hi rend="sup">e</hi> siècle, succéda, à l’époque des invasions sarrasines ou normandes, une deuxième enceinte, véritable <hi rend="i">castrum</hi> intérieur ; la cathédrale aurait été située entre les deux enceintes. Vers le <num>xi<hi rend="sup">e</hi></num> siècle, le bourg, qui s’est développé, construisit une première fortification autour de Saint-Amans et de la place. Des traces de mur ont été localisées grâce aux textes, les portes sont visibles sur le plan de 1495, ainsi que des tours carrées, qui sont d’anciennes maisons fortes construites par des chevaliers non loin des remparts pour défendre la ville ; il en existe de semblables dans la cité (Caldegouse, Arpajonie, Corbières, Castel-Cotau). Au début du <num>xiii<hi rend="sup">e</hi></num> siècle, avec le développement du bourg et l’installation du comte, une deuxième enceinte beaucoup plus vaste fut construite dans le bourg, englobant un quartier neuf, le Bourguet-Nau, et séparant complètement les deux villes. De son côté, l’évêque entreprit de réparer les fortifications gallo-romaines et de les reconstruire en partie, avec simplement quelques modifications dans le tracé.</p>
+          <p>Les fortifications de la cité ont donc pour base une enceinte gallo-romaine qui a retrouvé sa raison d’être dès le <num>xiii<hi rend="sup">e</hi></num> siècle. Celles du bourg sont aussi antérieures à 1350. A ce moment là, les deux villes ont été réunies dans une même enceinte.</p>
+        </div>
+        <div>
+          <head rend="uc">Appendices</head>
+          <p>1. Plans des rues, des « gaches », des monuments, des fortifications.</p>
+          <p>2. Photographies des tours et des murs.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La population de Rodez</head>
+          <p>Les sources existantes, à caractère fiscal, ne permettent qu’une étude approximative de la population de Rodez au milieu du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Le nombre d’imposés en 1450, pour la cité, est de quatre cent soixante-deux, alors que pour le bourg il n’est que de trois cent cinquante-six. Le choix du coefficient de foyer généralement adopté est quatre ou cinq. A Rodez, on peut <pb n="178" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_04.TIF/full/full/0/default.jpg"/>opter pour cinq, car le coefficient familial des enfants vivants, d’après les testaments, s’élève à 3,56. On obtient ainsi, compte-tenu des « nichil » non mentionnés dans les textes, deux mille cinq cents à trois mille habitants pour la cité et environ deux mille pour le bourg.</p>
+          <p>L’existence de nombreux enfants vivants, surtout chez les riches et les nobles, est le témoignage d’une forte natalité.</p>
+          <p>Dans la ville, le nombre de feux est inférieur à celui des maisons. Mais les maisons, vides pour le fisc, ne sont-elles pas en fait habitées par les <hi rend="i">nichil, </hi>d’autant plus qu’elles se trouvent dans des quartiers pauvres ? Par contre, le nombre de feux est excédentaire dans les « gaches » riches.</p>
+          <p>Les graphiques établis montrent que la proportion des <hi rend="i">nichil</hi> est plus importante dans le bourg que dans la cité. Il faut, semble-t-il, augmenter considérablement la population du bourg.</p>
+        </div>
+        <div>
+          <head rend="uc">Appendices</head>
+          <p>Graphiques comparatifs du nombre de feux et de maisons par « gache » (cité et bourg, 1450).</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Le consulat et l’administration consulaire</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le consulat</head>
+          <p>Rodez, ville double, a deux consulats qui sont mentionnés depuis le début du <num>xiii<hi rend="sup">e</hi></num> siècle. Les consuls, élus par cooptation, sont des notables de la ville, recrutés dans une trentaine de familles pour les deux juridictions. Les problèmes graves sont traités en conseil restreint. Le « pople » n’est convoqué que pour connaître les décisions prises.</p>
+          <p>Les deux seigneurs, évêque et comte, interviennent de moins en moins dans les affaires de la ville, sauf quand leurs propres intérêts sont menacés.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’administration consulaire : les dépenses</head>
+          <p>Aux pouvoirs locaux, plus théoriques que réels, succède l’autorité royale, qui s’intéresse de plus en plus aux affaires de la ville comme elle le fait dans le reste du pays.</p>
+          <p>Son principal but est d’ordre pécuniaire. Les impositions royales représentent une telle charge pour les consuls que la gestion des finances constitue leur principal problème.</p>
+          <pb n="179" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_05.TIF/full/full/0/default.jpg"/>
+          <p>La taille royale devient permanente à partir de 1441 et ne cesse d’augmenter. En 1445, elle se traduit par la création de compagnies de gens d’armes qui sont entretenues par le pays. Les États du Rouergue, dont le pouvoir diminue, ne peuvent qu’accepter les décisions royales.</p>
+          <p>La cité de Rodez reçoit trois lances et le bourg deux. La ville est tenue de leur verser une solde mensuelle. Lorsque les paiements ne sont pas effectués, les officiers royaux ne cessent de harceler les consuls, n’hésitant pas à les faire emprisonner ; les hommes d’armes, quant à eux, se livrent au pillage.</p>
+          <p>La taille royale et ses conséquences représentent 70 à 75 % des dépenses des consulats.</p>
+          <p>Dans la seconde moitié du <num>xv<hi rend="sup">e</hi></num> siècle, après une période d’adaptation, la taille royale se stabilise, ou tout au moins augmente progressivement. Les lances ne résident que rarement dans Rodez. L’entretien des gens d’armes devient un impôt que désormais la cité verse au receveur de la Haute-Marche et le bourg à celui du comté de Rodez.</p>
+          <p>Parmi les autres dépenses, seuls les frais de robes pour les consuls occupent une place importante.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>L’administration consulaire : les recettes</head>
+          <p>Pour faire face à des dépenses qui ne cessent d’augmenter, les consuls ont besoin de ressources croissantes.</p>
+          <p>L’administration des biens communaux, l’adjudication des droits de courtier, du poids, de la marque des draps ne constituent que des revenus insuffisants. Aussi les consuls imposent-ils à leurs administrés une taille, la taille communale, dont les revenus permettront de payer la taille royale. La taille communale se fait à sol et à livre d’après les données fournies par le livre d’estimes.</p>
+          <p><hi rend="i">Les livres d’estimes.</hi> – Les estimes de Rodez sont de véritables cadastres et recensent non la population mais les <hi rend="i">proprietates</hi> de la ville. Seuls les biens immobiliers sont indiqués. Tout l’immobilier est recensé, sauf l’évêché et les maisons épiscopales, les couvents des Cordeliers et des Jacobins, les maisons communes. Par contre, figurent l’« ostal du pes », l’école, les bains, qui dépendent des consulats, les hôpitaux, mis à part ceux du bourg, les biens des chanoines, des chapelains et des nobles.</p>
+          <p>Les estimes ne contiennent que les <hi rend="i">proprietates</hi> qui se trouvent dans la juridiction du bourg ou de la cité.</p>
+          <p>Les immeubles ruraux ne sont guère importants. Le bourg n’a que des jardins et quelques prés. La cité, dont la juridiction est plus vaste, possède, en outre, plusieurs « mas » et quelques métairies. La principale richesse est constituée par les immeubles urbains, les « ostals », alors que les biens de type industriel comme les moulins ne sont pas très estimés.</p>
+          <p>L’estime est donnée dans la cité et dans le bourg en denier cadastral.</p>
+          <p><hi rend="i">Les comptes de tailles.</hi> – Les biens mobiliers des habitants de Rodez ne sont connus que par les comptes de tailles. Ceux qui n’ont pas de biens <pb n="180" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_06.TIF/full/full/0/default.jpg"/>immobiliers, les « mudans » opposés aux « statgas », figurent aussi dans ces registres. La valeur du « moble » est donnée également en denier.</p>
+          <p><hi rend="i">La recette de la taille communale.</hi> – Les consuls, qui connaissent ainsi la fortune de la ville, fixent le taux de la taille communale compte-tenu du budget de la ville et surtout du montant de la taille royale. La perception est confiée au trésorier ou à un collecteur, qui touche un pourcentage sur la recette.</p>
+          <p>La taille communale, devenue permanente en même temps que la taille royale, est octroyée et levée suivant les exigences de cette dernière ; comme à partir de 1452, le roi veut être payé par quartier d’an, la taille communale est alors établie trimestriellement.</p>
+          <p>Rares sont les exemptés : les consuls, les officiers royaux, les sergents municipaux. Les chanoines et les chapelains ne sont imposés que pour leurs biens immobiliers ; en 1456, ils obtiennent en plus une exemption territoriale autour de la cathédrale. Les forains ne sont pas non plus estimés pour leur « moble », mais l’imposition de leur immeuble est doublée. Les nobles entrent pour la plupart dans cette dernière catégorie car ils ne vivent plus à Rodez.</p>
+          <p>Les Ruthénois ne s’acquittent qu’en partie de leurs impôts : la taille communale ne rapporte que 50 à 60 % de ce qu’elle devrait rapporter mais, avec les restes ou arrérages, le pourcentage s’élève à 70 ou 80 %.</p>
+          <p>Une comparaison entre recettes et dépenses montre que les finances sont à peu près équilibrées. En réalité, les consuls ne dépensent que le montant des recettes. Ils cherchent à s’acquitter, sans toujours y parvenir, de l’impôt royal ; les autres frais restent souvent à la charge de leurs successeurs.</p>
+        </div>
+        <div>
+          <head rend="uc">Graphiques et plans</head>
+          <p>1. Graphiques : dépenses et recettes de la cité et dépenses du bourg (1444-1464). – Taux de la taille communale. – Estime des biens immobiliers et mobiliers. – Répartition de l’estime par gaches et par métiers.</p>
+          <p>2. Plans : les maisons et leur estime.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>La vie économique a Rodez</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les moyens d’échange</head>
+          <p><hi rend="i">La monnaie.</hi> – Reflet de la situation politique, la situation monétaire retrouve une certaine stabilité après 1450. Elle se manifeste de plusieurs façons : les variations de l’écu sont moins notables, la monnaie de compte devient d’un usage courant dans les textes, mais la monnaie réelle reste prédominante. Toutefois, le trésorier des consulats ne fait plus ses comptes en monnaie réelle <pb n="181" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_07.TIF/full/full/0/default.jpg"/>dès 1445. Cependant, la méfiance à l’égard de la monnaie est telle que les créanciers se font payer en valeur sûre. Les tasses d’argent sont recherchées mais deviennent de plus en plus rares. Par contre, la monnaie noire envahit toujours le pays.</p>
+          <p>Malgré les interdictions du roi, le trafic des monnaies se pratique couramment. Les marchands rouerguats se livrent au trafic de la monnaie de billon, aux foires de Genève, et utilisent des monnaies étrangères.</p>
+          <p><hi rend="i">Le crédit.</hi> – Les formes de crédit rencontrées à Rodez ne diffèrent pas dans l’ensemble de celles qui existent ailleurs (prêt à l’amiable, bail à « cabal », vente à reméré). Cependant, il faut insister sur deux formes particulières, l’aliénation des revenus à temps limité (vente d’usufruit, vente du droit du quart ou du quint, utilisé surtout par les paysans), d’un usage très courant, et la pratique du croît de cens. En revanche, la constitution de rente perpétuelle n’apparaît pas dans les textes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitres II et III
+           <lb/>les produits du commerce</head>
+          <p><hi rend="i">Les produits agricoles.</hi> – Le Rouergue produit et vend des céréales. L’unité d’exploitation rurale est encore le mans, qui se divise en demi ou quarts de mans exploités par les membres d’une communauté familiale. Ces familles, sous contrat d’emphytéose, pratiquent un assolement triennal. Le métayage ne se rencontre que très rarement et les quelques « bories » mentionnées se trouvent dans la juridiction de Rodez ou dans les environs immédiats.</p>
+          <p>Les conditions géographiques permettent la culture du seigle dans le sud-ouest et celle du froment sur certaines parties des Causses, dans les dépressions, alors que les « herms » sont favorables à l’élevage.</p>
+          <p>L’essentiel de la production viticole provient de la région de Marcillac. Dans la juridiction même de Rodez, il n’y a aucune mention de vignoble au milieu du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Les animaux.</hi> – Le Rouergue présente des conditions favorables à l’élevage. Au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, il se développe, comme le montrent les « baux à cabal », qui constituent surtout une forme de crédit. L’élevage concerne aussi bien les bovins que les ovins. H faut insister sur l’élevage des chevaux et des mulets, utiles dans un pays au refief accidenté ; mais la région de Rodez est surtout une zone de transhumance entre le Languedoc et l’Auvergne.</p>
+          <p><hi rend="i">Les cuirs et peaux.</hi> – Conséquence de l’élevage et de la transhumance, le commerce des cuirs et peaux est important à Rodez. Les principales tanneries ne sont pas installées dans la juridiction de la ville mais au Monastère-sous-Rodez, au bord de l’Aveyron. Dans le commerce des peaux et cuirs, on retrouve les relations d’une part avec l’Auvergne (Aurillac, le Puy) et le Limousin, et d’autre part avec le Languedoc, jusqu’à la Catalogne.</p>
+          <p><hi rend="i">Les draps.</hi> – Les étoffes proviennent de Rodez, où neuf moulins drapiers fabriquent des draps grossiers, noirs et blancs. La production est importante, <pb n="182" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_08.TIF/full/full/0/default.jpg"/>mais la qualité inférieure. Les moulins ne constituent pas un placement pour les marchands et appartiennent le plus souvent à de modestes paysans.</p>
+          <p>Les autres draps proviennent surtout du Languedoc méditerranéen puis de la Flandre (Wervicq) et du Brabant, ainsi que d’Angleterre. Les qualités supérieures sont des draps de Normandie (Montivilliers, Rouen). La clientèle de ces étoffes chères est constituée par les consuls, la noblesse rurale du Rouergue et de régions assez lointaines. La clientèle du marchand Antoine Séguy s’étend jusqu’à la Bigorre.</p>
+          <p><hi rend="i">Les autres produits.</hi> – Parmi les métaux, le fer, qui provient essentiellement de la vallée du Tarn, tient une place importante, ainsi que son dérivé l’acier, revendu surtout à des marchands et forgerons de Sauveterre, où existe une fabrique de couteaux.</p>
+          <p>Le sel parvient à Rodez par Millau. Dans le commerce du sel, il faut insister sur le rôle des muletiers, les « cotais », qui, originaires de la région de Laissac, sur la route de Rodez-Millau, se procurent leur marchandise dans cette dernière ville ou dans un centre producteur languedocien. Le troc est courant (draps-sel).</p>
+          <p>L’économie et le commerce intéressent en premier lieu le Rouergue. Mais Rodez est aussi une zone de passage, surtout entre le Languedoc méditerranéen, l’Auvergne et le Limousin. Rodez profite également de sa situation entre le Toulousain, l’Albigeois et l’Auvergne, mais à un degré moindre. Ses relations plus lointaines s’étendent jusqu’à Lyon et Genève.</p>
+        </div>
+        <div>
+          <head rend="uc">Appendices</head>
+          <p>Tableaux des prix du seigle, du froment, des animaux, du sel. – Représentation des filigranes du papier vendu à Rodez.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Quatrième partie
+         <lb/>La société</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les artisans</head>
+          <p>Rodez est un pays producteur de cuirs et de draps. Les artisans du cuir et du textile, par leur nombre, tiennent une place importante dans la ville. Concentrés dans les quartiers périphériques, au nord et à l’est de la cité, à l’est et au sud du bourg, ils sont peu estimés. Seuls, quelques sabatiers et quelques « caussatiers » jouissent d’une aisance certaine ; en fait, ce sont alors des marchands.</p>
+          <p>Parmi les autres métiers, il faut noter l’importance des artisans du fer et des autres métaux. Rares dans la cité, ils sont surtout groupés dans le bourg, rue de la Barrière.</p>
+        </div>
+        <div>
+          <pb n="183" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_09.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Les marchands</head>
+          <p>Les marchands dominent, dans tous les domaines, la société ruthénoise. Un peu plus nombreux dans le bourg que dans la cité, ils jouent un rôle prépondérant parce qu’ils sont les plus riches : ils représentent 11 % des feux dans la cité et 30 % de l’estime, 20 % des feux dans le bourg et près de 40 % de l’estime.</p>
+          <p>La fortune des marchands est mobilière mais les plus aisés ont aussi une fortune immobilière. Antoine Séguy possède dix « ostals » dans le bourget plusieurs prés. Sa fortune mobilière n’est pas connue exactement, mais sa clientèle noble lui achète belles étoffes et bijoux. Arnal et Raymond Rességuier sont estimés eux aussi autant pour le « pocessori » que pour le « moble ». Georges Vigouroux a surtout, en 1450, une fortune mobilière.</p>
+          <p>À l’extérieur de Rodez, ces riches marchands acquièrent une seigneurie : Séguy, seigneur de Roussenac, Vigouroux, seigneur de Camarus, Rességuier, coseigneur de Gradels. Les plus riches sont ou deviennent nobles.</p>
+          <p>Ils représentent une force d’autant plus grande qu’ils se marient entre eux. Sur trois générations, les vingt familles dirigeantes de Rodez ont toutes des liens de parenté.</p>
+          <p>Le rôle prépondérant des marchands aisés s’exerce aussi dans l’administration de la ville ; ils sont bourgeois de la cité ou du bourg de Rodez et ont un véritable monopole sur le consulat. Ils accumulent ainsi les titres.</p>
+          <p>Quelques hôteliers, parce qu’ils sont aussi marchands, figurent parmi les plus riches habitants de la ville. Les bouchers n’ont qu’un rôle secondaire et sont peu estimés.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les clercs</head>
+          <p>A côté des marchands, les clercs représentent le deuxième volet de la société ruthénoise.</p>
+          <p><hi rend="i">Les notaires.</hi> – Les notaires de Rodez sont pour la plupart, sinon tous, des clercs. Rares dans le bourg (sept), nombreux dans la cité (trente-huit), ils sont installés près de la cathédrale et de l’évêché, rue du Terralh ou place du Marché.</p>
+          <p>Quelques uns possèdent une étude importante mais la plupart sont peu estimés.</p>
+          <p><hi rend="i">L’évêque, les chanoines et les chapelains.</hi> – L’évêque, encore installé dans le vieil évêché, a pour principal souci le projet de construction d’un nouvel évêché sur des biens qu’il possède à l’ouest de la cité. Guillaume de la Tour, à qui l’on doit la reprise de la construction de la cathédrale, qui va entraîner la démolition de l’évêché, cherche à obtenir des consuls la permission de construire contre les fortifications.</p>
+          <p>Les chanoines, au nombre de vingt-quatre, vivent dans des maisons qui, à la fin du <num>xv<hi rend="sup">e</hi></num> siècle, seront comparées à des palais. Leurs rapports avec les <pb n="184" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_26/ENCPOS_1971_26_10.TIF/full/full/0/default.jpg"/>consuls sont très tendus à cause du paiement des tailles, bien que leur origine sociale soit souvent la même. Ils appartiennent soit à des familles marchandes, soit à des familles de la noblesse rurale.</p>
+          <p>Les soixante chapelains assurent le service des chapellenies de la cathédrale ou de Saint-Amans dans le bourg. Il y a, en outre, six églises ou chapelles dans la cité et cinq dans le bourg, en comptant les chapelles des hôpitaux.</p>
+          <p><hi rend="i">Les Jacobins et les Cordeliers.</hi> – Les Jacobins sont installés dans la cité et les Cordeliers dans le bourg, à l’extérieur des remparts, mais enfermés dans leur propre enceinte.</p>
+        </div>
+        <div>
+          <head rend="uc">Appendices</head>
+          <p>1. Graphique : estime des biens par métier.</p>
+          <p>2. Plan : localisation des métiers.</p>
+          <p>3. Seings manuels des notaires.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>De l’étude de Rodez au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, trois aspects principaux se dégagent :</p>
+        <p>Rodez est une ville double : elle a deux seigneurs, deux consulats, mais à cette époque cité et bourg ont des problèmes communs (guerre, peste, impositions royales). Enfermés dans une même enceinte, ils ont aussi des intérêts communs. Sur le plan économique, les échanges se révèlent permanents. Le quartier marchand de la cité fait suite à celui du bourg et les « gaches » qui constituent ce quartier sont les « gaches » les plus riches de la ville.</p>
+        <p>Certains aspects de la société et certaines formes de l’économie de Rodez présentent une originalité réelle.</p>
+        <p>Enfin, la mainmise du roi sur la ville, qui coïncide avec la fin de la tutelle des Armagnacs, se fait durement sentir.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>1. Cartes : La main-d’œuvre embauchée à Rodez. – Provenance des céréales. – Localisation des prés, de la vigne. – L’élevage. – La redistribution des draps. – La clientèle de Séguy. – Le fer et l’acier. – Le safran. – Le sel.</p>
+        <p>2. Textes : Introduction du livre d’estimes de la cité en 1449. – Extraits du livre d’estimes du bourg, de comptes de tailles, de délibérations communales. – La vente du droit du quint à temps limité.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

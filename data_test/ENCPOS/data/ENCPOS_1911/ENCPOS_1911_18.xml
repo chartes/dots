@@ -1,0 +1,194 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1911_18" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La cathédrale de Bayeux. Étude archéologique</title>
+        <author ref="https://www.idref.fr/031849911">Jean Vallery-Radot</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1911/ENCPOS_1911_18.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1911 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1911</date>, <biblScope>p. 137-145</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1911"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="137" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La
+       <lb/>cathédrale de Bayeux
+       <lb/>étude archéologique</head>
+      <byline>
+        par
+        <forename>Jean</forename>
+        <surname>Vallery-Radot</surname>
+        <roleName>Licencié ès lettres., Élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Histoire monumentale</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les origines</head>
+          <p>Des débris romains trouvés dans des fouilles exécutées aux abords de la cathédrale prouvent que celle-ci s’élève à la place d’un monument gallo-romain, qui était peut-être le temple de Belenus mentionné par Ausone.</p>
+          <p>A la fin du <num>iii<hi rend="sup">e</hi></num> siècle, saint Exupère fonde la première cathédrale, simple chapelle, qu’il remplace peu après par une basilique.</p>
+          <p>D’après la tradition, Rollon rebâtit à la fin du <num>ix<hi rend="sup">e</hi></num> siècle la cathédrale incendiée par les Normands.</p>
+        </div>
+        <div>
+          <pb n="138" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>La cathédrale du <num>xi<hi rend="sup">e</hi></num> siècle</head>
+          <p>A la suite d’un incendie, survenu vers 1044, l’évêque Hugues jette les fondements d’une nouvelle cathédrale, dédiée en 1077 sous l’épiscopat d’Eudes de Conteville (1050-1097), frère utérin de Guillaume le Conquérant.</p>
+          <p>La cathédrale est achevée avant 1097. Essai de restitution de cette cathédrale ; ressemblance de son plan et de son élévation avec les abbatiales contemporaines de Saint-Étienne de Caen et de Jumièges. Comme cette dernière, elle possédait des tribunes occupant entièrement les croisillons, et un narthex. Preuves de l’existence de ce dernier.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Transformations de la cathédrale au <num>xii<hi rend="sup">e</hi></num> siècle</head>
+          <p>En 1105, siège et prise de Bayeux par Henri I<hi rend="sup">er</hi> roi d’Angleterre. La cathédrale, dans laquelle se réfugient les habitants, est incendiée. Récit contemporain de Serlon, chanoine de Bayeux. Restaurations, et non reconstruction, à la suite de cet incendie.</p>
+          <p>C’est encore la cathédrale d’Eudes de Conteville que Raoul le Tourtier admire vers 1110. Intéressante description laissée par ce moine.</p>
+          <p>Un nouvel incendie provoque, en 1160, une restauration importante de la part de l’évêque Philippe de Harcourt (1142-1163). De son épiscopat doivent dater la décoration romane de la nef et les restes d’une arcature de la tour centrale.</p>
+        </div>
+        <div>
+          <pb n="139" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Remplacement presque complet de la cathédrale
+           <lb/>romane par une cathédrale gothique
+           <lb/>au <num>xiii<hi rend="sup">e</hi></num> siècle</head>
+          <p><hi rend="i">Première moitié du <num>xiii<hi rend="sup">e</hi></num> siècle.</hi> – L’évêque Henri de Salisbury (1165-1205) rétablit une ancienne confrérie dans le but d’aider à la reconstruction de la cathédrale.</p>
+          <p>On pourrait attribuer aux travaux de cette confrérie le renforcement des piliers et le doublement des grandes arcades de la nef, les collatéraux, le porche dit du Doyenné et la salle capitulaire, moins les voûtes. Ces différentes parties portent, en effet, l’empreinte du style du début du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>La construction du chœur est achevée sans doute vers 1230. Le transept roman, qui existait encore en 1228 au moins, est démoli pour faire place à la chapelle Saint-Pierre contemporaine du chœur.</p>
+          <p>Les piles d’angle du carré sont noyées à l’intérieur de nouvelles piles gothiques. Construction de l’étage supérieur de la nef ; ces travaux sont peut-être visés par deux bulles d’indulgences d’Innocent IV, de 1243 et 1244.</p>
+          <p><hi rend="i">Deuxième moitié du <num>xiii<hi rend="sup">e</hi></num> siècle.</hi> – Démolition du narthex, décoration de l’avant-nef et construction de la façade.</p>
+          <p>Construction des croisillons : la décoration de celui du sud est postérieure.</p>
+          <p>Fin des grands travaux.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>La cathédrale au <num>xiv<hi rend="sup">e</hi></num> siècle</head>
+          <p>Les fondations des chapelles des collatéraux s’échelonnent de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle jusqu’au milieu du <num>xiv<hi rend="sup">e</hi></num>. <pb n="140" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_04.TIF/full/full/0/default.jpg"/>Elles sont toutes construites avant 1350. Surhaussement des voûtes de la salle capitulaire. On élève un tambour carré sur la croisée. La cathédrale est transformée en forteresse pendant la guerre de Cent ans, elle est fortifiée en 1355. Guillaume de Buret et Raoul de Reneval « capitaines de l’églize Notre-Dame de Bayex ».</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Construction de la tour centrale au <num>xv<hi rend="sup">e</hi></num> siècle</head>
+          <p>On travaille à la restauration du tambour carré foudroyé en 1425, mais les travaux traînent en longueur, car tous les subsides sont réservés pour la restauration, beaucoup plus urgente, du reste de la cathédrale qui avait dû être fort éprouvée durant les récentes guerres. Bulle d’indulgences du pape Eugène IV en 1442, concernant ces travaux de restauration.</p>
+          <p>Les travaux, toujours languissants de la tour centrale, sont activement poussés, de 1477 à 1479, par l’évêque Louis de Harcourt, qui voûte le tambour carré et le surmonte d’un étage octogonal. En 1486, le dôme de plomb peint et doré couronnant la tour est achevé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>La cathédrale de 1562 à la Révolution</head>
+          <p>Pillage de la cathédrale par les protestants en 1562 et 1563. Restaurations consécutives. Aménagements nouveaux au <num>xviii<hi rend="sup">e</hi></num> siècle. En 1700, l’évêque François de Nesmond élève un nouveau jubé en remplacement d’un autre qui datait du <num>xvi<hi rend="sup">e</hi></num> siècle. En 1713 et 1714, l’architecte Moussard couronne la tour centrale d’un dôme de pierre d’architecture classique, en remplacement du dôme de plomb détruit par un incendie en 1676. En 1778, mutilation du grand portail de la façade.</p>
+        </div>
+        <div>
+          <pb n="141" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VIII
+           <lb/>La cathédrale de la Révolution à nos jours</head>
+          <p>Inventaires de 1790 et 1791. Le 30 ventôse an II suppression du culte catholique dans le département du Calvados. Pillage de la cathédrale qui sert de salle de réunion pour les fêles décadaires.</p>
+          <p>Le <num>xix<hi rend="sup">e</hi></num> siècle : travaux de restauration et d’entretien.</p>
+          <p>Etablissement de terrasses de granit sur les bas-côtés de la nef et les chapelles (1820-1822).</p>
+          <p>Des projets de restauration fantaisistes sont énergiquement combattus par la Société française pour la conservation des Monuments historiques (1830). A la suite de la démolition du jubé, constatation du mauvais état des piles de la croisée contre lesquelles il s’appuyait (1851).</p>
+          <p>Malgré les réclamations de l’évêque et de la municipalité, Fortoul, ministre de l’Instruction publique et des Cultes, inquiété par un rapport pessimiste de Viollet-le-Duc, ordonne, en 1855, la démolition de la tour centrale pour décharger les piliers.</p>
+          <p>Démolition du dôme de Moussard sous la direction de Ruprich Robert. Le reste de la tour aurait été sacrifié également, sans l’intervention de M. Flachat, qui se chargea de reconstruire les quatre piliers du carré en les reprenant en sous-œuvre. Description de ce travail (1855-1858). En 1868, l’architecte diocésain, M. Crétin, construit le couronnement actuel de la tour centrale.</p>
+          <p>Éphémérides de la construction de la cathédrale.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Description archéologique</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le plan</head>
+          <p>Plan roman ; plan au <num>xiii<hi rend="sup">e</hi></num> siècle ; plan actuel ; remarques sur les irrégularités de ce plan. Leur cause.</p>
+        </div>
+        <div>
+          <pb n="142" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Intérieur. La nef</head>
+          <p>Description de T avant-nef ; pourquoi elle est postérieure à l’étage supérieur de la nef ; exhaussement de la première travée en 1773.</p>
+          <p>La décoration romane de la nef est supportée par des piliers gothiques : raisons de cette apparente anomalie.</p>
+          <p>Les archivoltes des grandes arcades et le parement romans furent montés au <num>xii<hi rend="sup">e</hi></num> siècle sur les anciennes piles cruciformes du <num>xi<hi rend="sup">e</hi></num> siècle. Au début du <num>xiii<hi rend="sup">e</hi></num> siècle, ces supports furent noyés à l’intérieur des piles actuelles et les grandes arcades doublées intérieurement dans le dessein, non réalisé d’ailleurs à cette époque, de couvrir la nef de voûtes d’ogives.</p>
+          <p>Étude de l’étage supérieur, postérieur d’une trentaine d’années environ aux collatéraux et au travail de renforcement des piliers inférieurs.</p>
+          <p>Description de la décoration romane : sculptures des écoinçons et du parement. Collatéraux et chapelles ; leur description détaillée ; inscription de Bartole d’Anjou, chanoine de Bayeux au <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le transept</head>
+          <p>Le carré : ses piles d’angle sont modernes, mais sa voûte d’ogives renforcée par quatre liernes est ancienne. Ressemblance des profils avec ceux de la nef et des croisillons.</p>
+          <p>Le croisillon nord : preuves de l’antériorité de la chapelle Saint-Pierre sur ce croisillon.</p>
+          <p>Le croisillon sud : date comme l’autre de la seconde moitié <pb n="143" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_07.TIF/full/full/0/default.jpg"/> du <num>xiii<hi rend="sup">e</hi></num> siècle ; mais il fut décoré après coup, intérieurement et extérieurement. Preuves du collage à la porte de fond du croisillon.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le chœur</head>
+          <p>Description du chœur, du déambulatoire, des chapelles rayonnantes. Raisons pour lesquelles on peut dater cette partie de l’édifice de 1230 environ. Filiation de ce chœur. Il dérive de celui de Lisieux qui lui-même est inspiré de celui de Saint-Étienne de Caen. Pourquoi le chœur de Bayeux est antérieur de très peu d’années seulement à celui de Lisieux.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>La crypte</head>
+          <p>En creusant le tombeau de l’évêque Jean de Boissey (♰ 1412), on retrouve la crypte. Sa ressemblance avec celle de la Trinité de Caen ; comme cette dernière, elle remonte au <num>xi<hi rend="sup">e</hi></num> siècle. Statue tombale du chanoine Gervais de Larchamps (<num>xv<hi rend="sup">e</hi></num> siècle). Peintures murales.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Extérieur. Façade</head>
+          <p>C’est un type de la façade gothique normande. Portails latéraux, simplement plaqués contre les tours. Iconographie des tympans ; scènes relatives à la Passion et au Jugement dernier.</p>
+        </div>
+        <div>
+          <pb n="144" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_08.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VII
+           <lb/>Les tours</head>
+          <p>Quoique très remaniées, elles datent encore en partie du <num>xi<hi rend="sup">e</hi></num> siècle ; à cette époque appartiennent les salles des trois premiers étages. Les étages supérieurs ont été renforcés postérieurement à deux reprises différentes. 1° Au <num>xii<hi rend="sup">e</hi></num> siècle, sans doute après l’incendie de 1105, les deux derniers étages furent renforcés à l’extérieur, comme l’indiquent la mouluration des baies et divers autres détails qui forment autant de différences avec les étages inférieurs ; à l’intérieur, le dernier étage fut entièrement doublé à la tour du nord, en partie seulement à la tour du sud, où on distingue encore des traces de la maçonnerie primitive qui constitue, jusqu’à la naissance de la flèche, le noyau de cette tour : au-dessus des baies actuelles, départ des claveaux des anciennes baies. 2° A l’époque gothique, nouveau renforcement plus important, nécessité à l’intérieur et à l’extérieur par la construction des flèches. Les contreforts sont montés jusqu’à l’avant-dernier étage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Extérieur de la nef</head>
+          <p>Description de l’élévation latérale sud.</p>
+          <p>Le croisillon sud. Iconographie du portail : les démêlés de saint Thomas de Cantorbéry avec Henri II ; son martyre. La première scène, faussement identifiée jusqu’à présent, représente l’expulsion du primat d’Angleterre par ordre de Henri H. Raisons pour lesquelles la décoration extérieure de ce croisillon semble postérieure à sa construction.</p>
+          <p>L’abside. Sa ressemblance avec les absides de Coulances et de Saint-Etienne de Caen.</p>
+        </div>
+        <div>
+          <pb n="145" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_09.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IX
+           <lb/>La tour centrale</head>
+          <p>Sa souche est romane. Le tambour carré du <num>xiv<hi rend="sup">e</hi></num> siècle fut voûté et surmonté d’un étage octogonal aux frais de l’évêque Louis de Harcourt (1477-1479). La corniche qui souligne la balustrade de la plate-forme indique le niveau où commence la construction du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p>Dépendances de la cathédrale.</p>
+        <p>Trésor. Salle capitulaire. Musée lapidaire. Peintures et mobilier.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Documents.</p>
+        <p>Photographies ; dessins et profils (1-128).</p>
+        <p>Plan teinté à l’échelle de 0 <hi rend="sup">m</hi>, 01 pour mètre.</p>
+        <pb n="146" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1911_18/ENCPOS_1911_18_10.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

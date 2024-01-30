@@ -1,0 +1,129 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_17" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Étude sur les Matinées et Après-dinées du Seigneur de Cholières (1585-1587)</title>
+        <author ref="https://www.idref.fr/234710373">Dominique-Élisabeth Le Coq-Morel</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_17.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 119-122</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="119" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_17/ENCPOS_1971_17_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Étude sur les <hi rend="i">Matinées</hi> et <hi rend="i">Après-dinées</hi>
+       <lb/>du seigneur de Cholières (1585-1587)</head>
+      <byline>
+        par
+        <forename>Dominique-Élisabeth</forename>
+        <surname>Le Coq-Morel</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Pendant longtemps la littérature du <num>xvi<hi rend="sup">e</hi></num> siècle n’a été étudiée qu’au travers des écrivains les plus importants et les auteurs secondaires ont été négligés. Le seigneur de Cholières, malgré la diversité de ses écrits, compte parmi ces auteurs mal connus. En étudiant les <hi rend="i">Matinées</hi> et <hi rend="i">Après-dinées,</hi> ce travail vise à mieux faire connaître l’auteur et ses œuvres et à apporter une contribution à l’histoire littéraire du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Étude sur l’auteur</head>
+        <p>L’auteur des <hi rend="i">Matinées</hi> et <hi rend="i">Après-dinées</hi> n’est connu que sous le nom de « seigneur de Cholières » et son identification n’a cessé de poser des problèmes aux érudits.</p>
+        <p>Différentes thèses, souvent contradictoires, ont été avancées, les unes fondées sur la localisation du nom « Cholières », les autres sur les expressions dialectales employées par l’auteur ; pour les uns il serait normand, pour d’autres tourangeau, pour d’autres encore grenoblois.</p>
+        <p>Dans ses écrits, toutefois, l’auteur dorme l’anagramme de son nom, qu’il est plausible de développer en IEAN DAGONEAU. Cette thèse est corroborée par l’existence de quelques écrits signés « I.D.S. de Cholières » et par l’existence, à la Bibliothèque municipale de Reims, d’un manuscrit signé J.D.C., qui présente certaines analogies d’inspiration et de forme avec les <hi rend="i">Matinées</hi> et <hi rend="i">Après-dinées.</hi></p>
+      </div>
+      <div>
+        <pb n="120" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_17/ENCPOS_1971_17_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Composition et thèmes des ouvrages</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>composition des <hi rend="i">Matinées</hi> et <hi rend="i">Après</hi><hi rend="i">-dinées</hi></head>
+          <p>Chacun des deux ouvrages se compose de neuf séances de longueur inégale, qui rassemblent des devisants qui échangent leurs idées sur des sujets définis à l’avance.</p>
+          <p>En général, l’auteur n’intervient que pour calmer l’ardeur des interlocuteurs, ou, en fin de séance, pour tirer la leçon des propos échangés si les devisants arrivent à un accord, ou pour constater leurs divergences s’ils n’y parviennent pas.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Thèmes abordés dans les <hi rend="i">Matinées</hi> et <hi rend="i">Après</hi><hi rend="i">-dinées</hi></head>
+          <p>Dans les discussions, une place très importante est consacrée aux problèmes posés par le mariage, puis par le droit et la médecine.</p>
+          <p>Sont consacrées au mariage :</p>
+          <p>Matinée V :	« Des laides et belles femmes, lesquelles doit-on épouser de préférence »,</p>
+          <p>VI : « De la jalousie du mary et de la femme »,</p>
+          <p>VII : « De l’inégalité de l’aage des mariez »,</p>
+          <p>VIII : « Des lettrez et des guerriers, lesquels sont les meilleurs époux »,</p>
+          <p>IX : « De la trefve conjugale » ;</p>
+          <p>Après-dinée II : « Du mariage »,</p>
+          <p>III : « De la puissance maritale »,</p>
+          <p>V : « Du babil et caquet des femmes ».</p>
+          <p>Sont consacrées au droit et à la médecine :</p>
+          <p>Matinée II : « Des loix et de la médecine »,</p>
+          <p>III : « Des mains des advocats »,</p>
+          <p>IV : « Des chatrez » ;</p>
+          <p>Après-dinée I :	« Du veiller et du dormir »,</p>
+          <p>VII : <hi rend="i">« Des</hi> vieillards et des jeunes enfans, s’ils peuvent engendrer ».</p>
+          <pb n="121" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_17/ENCPOS_1971_17_03.TIF/full/full/0/default.jpg"/>
+          <p>Enfin, des sujets divers sont abordés dans les séances suivantes :</p>
+          <p>Matinée I : « De l’or et du fer » ;</p>
+          <p>Après-dinée IV :	« De l’arbre de vie »,</p>
+          <p>VI : « Des barbes »,</p>
+          <p>VIII : « Des prognostics et prédictions astrologiques »,</p>
+          <p>IX : « Des lunatiques ».</p>
+          <p>L’énumération de ces thèmes permet de voir quels étaient les sujets en vogue à la fin du xvi<hi rend="sup">e</hi> siècle et surtout de constater la place qu’occupe encore la « querelle des femmes ».</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Place de l’auteur dans le xvi<hi rend="sup">e</hi> siècle</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les idées</head>
+          <p>Les thèmes traités éclairent déjà les idées de l’auteur, mais la façon dont il les aborde permet de mieux comprendre sa mentalité.</p>
+          <p>Sur les problèmes posés par les rapports entre les hommes et les femmes, notamment au sein du mariage, on ne peut pas dire que Cholières soit particulièrement favorable aux femmes, mais il faut noter toutefois qu’il met dans la bouche de certains devisants des tentatives, bien timides il est vrai, de défense des femmes.</p>
+          <p>Sur les avocats et les médecins, les critiques vont bon train, tant sur leur manque de science que sur leur rapacité au gain. On peut également noter chez l’auteur une assez bonne culture juridique, qui le rapproche de certains de ses contemporains.</p>
+          <p>Les sciences physiques ou occultes ne sont pas étrangères à l’intérêt de Cholières, mais ses connaissances sur ces sujets sont assez réduites. Dans la séance intitulée l’« Arbre de vie », au cours de laquelle il se risque à des considérations pseudo-philosophiques, on peut voir combien ce genre lui convient peu.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les sources</head>
+          <p>Les sources anciennes abondent. Les citations sont puisées dans le texte, semble-t-il, pour les auteurs latins et dans des traductions pour les auteurs grecs.</p>
+          <p>La Bible, l’Ancien Testament et les épîtres de saint Paul en particulier, <pb n="122" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_17/ENCPOS_1971_17_04.TIF/full/full/0/default.jpg"/>sont mis à contribution, ainsi que les Pères de l’Église, saint Augustin surtout, et des théologiens comme Pierre Lombard et Hugues de Saint-Victor.</p>
+          <p>Le <hi rend="i">Corpus juris civilis,</hi> le <hi rend="i">Décret</hi> de Burchard et celui de Gratien, les écrits de Paul, Ulpien, Accurse, Balde, Bartole, Jean André, Panormitain, Cujas, etc., semblent familiers à Cholières.</p>
+          <p>Enfin, l’auteur fait de nombreux emprunts à ses contemporains, surtout Rabelais et Du Bartas. Il faut également noter l’influence des écrits espagnols.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le style</head>
+          <p>La forme adoptée, le dialogue, permet de mettre en évidence un langage vif, coloré, vert, parfois émaillé de nombreuses expressions populaires.</p>
+          <p>L’influence de Rabelais est manifeste et l’auteur semble chercher à l’égaler, à imiter ses tournures, voire à lui emprunter certaines trouvailles.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Le discrédit dans lequel est tombé Cholières semble injustifié. S’il n’est pas un auteur très original, il apparaît toutefois comme un honnête porte-parole des préoccupations du <num>xvi<hi rend="sup">e</hi></num> siècle finissant. D’autre part, il permet de mieux comprendre l’évolution des genres littéraires au xvi<hi rend="sup">e</hi> siècle et la naissance d’œuvres plus élaborées.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

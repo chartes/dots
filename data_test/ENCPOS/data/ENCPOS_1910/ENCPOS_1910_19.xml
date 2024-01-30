@@ -1,0 +1,121 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_19" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Simon Arnauld de Pomponne avant son ministère (1618-1671), étude sur sa jeunesse, sa carrière administrative et diplomatique</title>
+        <author ref="https://www.idref.fr/122909062">René Pichard Du Page</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_19.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 153-161</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="153" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Simon Arnauld de Pomponne
+       <lb/>avant son ministère
+       <lb/>(1618-1671)
+       <lb/>Étude sur sa jeunesse
+       <lb/>sa carrière administrative et diplomatique</head>
+      <byline>
+        par
+        <forename>René</forename>
+        <surname>Pichard Du Page</surname>
+        <roleName>Licencié ès lettres, Élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La jeunesse. – Les débuts dans la carrière</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la famille. – L’enfance. – Les premiers emplois administratifs
+           <lb/>(1618-1654)</head>
+          <p>Originaire d’Auvergne, la famille Arnauld fournissait, depuis le milieu du <num>xv<hi rend="sup">e</hi></num> siècle, des hommes de valeur aux armes, à la magistrature, au sacerdoce, aux lettres. Anoblie en 1577 et fixée à Paris vers le même temps, elle se trouvait, au <num>xvii<hi rend="sup">e</hi></num> siècle, « en fort bonne posture ». – Robert Arnauld, dit « d’Andilly », né en 1590, d’Antoine Arnauld, brillant avocat au Parlement de Paris, et de Catherine Marion, résuma en lui les vertus de sa race. De Catherine Lefèvre de la Boderie. qu’il épousa en 1613, <pb n="154" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_02.TIF/full/full/0/default.jpg"/>il eut, à deux ans de distance (1616-1618), Antoine et Simon. Ce dernier est l’objet de notre étude. – Leur éducation côte à côte, d’abord sous un précepteur commun, M. de Barcos, puis au Collège de Lisieux. L’origine de la fortune de Simon, simple cadet, due à la partialité paternelle. Enseignements trouvés par lui dans sa famille. Les deux frères séparés en 1635 ; dernières vacances passées ensemble. Débuts de Simon dans le monde : son père l’introduit à l’Hôtel de Rambouillet, où Simon collabore à la Guirlande de Julie. – Premier emploi connu de Simon, à l’intendance de Casal (1642), et discussion d’un passage de Saint-Simon, sur le fait de savoir s’il n’en remplit pas d’autre auparavant. – Ses protecteurs : le comte d’Harcourt, Turenne, M. d’Aiguebonne, M. de Couvonges. – Son prompt avancement : d’abord simple commis d’intendance, puis intendant, dès juin 1643, et conseiller d’État, par brevet du 7 janvier 1644. – Un premier congé le ramène en France. Pendant son absence, son frère, Antoine s’est retiré à l’abbaye de Saint-Nicolas d’Angers et son père à Port-Royal, mais non sans avoir pourvu à sa situation. – Retour de Simon à Casal. Au cours d’un nouveau congé, il va à Rome où il trouve son oncle et son frère en mission, ainsi que M. Bourgeois, docteur de Sorbonne. Ses impressions sur Rome. Il est encore à Casal, en juin 1647, et passe à Paris l’hiver suivant. Puis il obtient successivement, le 11 mai 1648, un nouvel emploi d’intendant « en l’armée de terre jointe à l’armée navalle » dirigée sur Naples ; dans les premiers mois de 1649, un poste d’intendant dans l’armée réunie sous les murs de Paris ; le 18 juin de cette année, une mission de confiance en Dauphiné, inconnue de tous ses biographes, pour y lever l’arriéré des tailles, en vue de secourir Casal, jusqu’où il est chargé de porter la somme recueillie ; enfin, le 6 janvier 1651, un dernier emploi d’intendant, à l’armée de Catalogne,</p>
+        </div>
+        <div>
+          <pb n="155" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Le premier emploi diplomatique : la mission de Piémont
+           <lb/>(1654-1656)</head>
+          <p>Situation de la France en Italie à la fin de l’année 1654. La mission de du Plessis-Praslin, auprès du duc de Mantoue (1653), ayant échoué, on en confie une nouvelle, au mois de décembre 1654, au prince Thomas de Savoie, qui se fait accompagner de Simon Arnauld d’Andilly. Arrivés à Turin, ils voient l’engagement des pourparlers retardé par les fêtes de Noël. – Les agents constitués en première ligne pour négocier avec eux, sont le marquis de Pianesse pour le duc de Savoie, le comte Sannazar pour le duc de Mantoue. Il s’agit de réconcilier les deux Maisons et d’arracher le duc de Mantoue aux Espagnols. – Les négociations, menées activement par Simon Arnauld, aboutissent, le 3 juin 1655, à un traité d’alliance avec le duc Charles III, par lequel Louis XIV s’engage à faire son possible pour aplanir le désaccord qui sépare les deux cours, à attaquer vigoureusement le Milanais, en vue de faire servir les territoires qui y seraient conquis à dédommager le duc de Mantoue ; – promet à celui-ci un commandement en Italie, à condition qu’il congédie son ministre Della Valle, et fournisse aux troupes françaises des vivres, contre paiement en argent, et le libre passage. – Le duc promet de venir lui-même à Paris, régler la question des subsides. Cinquante mille livres lui sont remises immédiatement, pour assurer l’entretien de la garnison de Casal, et cinquante mille autres promises. – Il se met effectivement en route, au mois d’août, et Simon Arnauld l’accompagne jusqu’à la frontière. Le 18 septembre, il signe, à Paris, un traité complémentaire de l’accord du 3 juin, consacrant l’alliance offensive entre <pb n="156" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_04.TIF/full/full/0/default.jpg"/>Mantoue et la France. – Il revient au début d’octobre, mais Simon Arnauld d’Andilly, parti à sa rencontre, le trouve tout ému par la nouvelle de l’échec récent de nos troupes devant Pavie, le 14 septembre : sa fidélité sera de courte durée. – Simon reçoit son congé en avril 1656. – Importance de son rôle personnel pendant cette négociation. Comment, dès maintenant, se justifie le portrait que Saint-Simon a tracé de lui.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Années d’attente (1658-1666)</head>
+          <p>Son père, soucieux de lui procurer un nouvel emploi, sollicite pour lui la charge de chancelier du duc d’Anjou. Sa correspondance à ce sujet avec la Reine et Mazarin. Intervention du Maréchal de Fabert. Sur le point de réussir, l’affaire se trouve, par une soudaine volte-face de la Reine, « ruinée sans ressource », et la raison alléguée est le Jansénisme de « Monsieur d’Andilly, le fils », qui demeure d’ailleurs assez indifférent à son échec. Cependant, le surintendant Fouquet, qui s’est intéressé à lui, s’occupe de le marier et lui fait épouser la fille d’un maître des requêtes, Catherine Ladvocat. – Beau désintéressement de son frère aîné, l’abbé Antoine, qui lui fait donation de « tout son bien » et notamment de la terre de Pomponne. – Le mariage est célébré le 9 avril, à Saint-Eustache, et le contrat signé le 8 mai, rue Plâtrière. Vie retirée du ménage ; naissance d’une fille. Simon de Pomponne se voit confirmer sa charge de conseiller d’Etat (10 janvier 1661). – Puis survient la chute de Fouquet, qui entraîne la disgrâce de Simon, malgré son attitude prudente, qu’il n’y a pas lieu toutefois de taxer d’ingratitude. – Il est envoyé en exil à Verdun, dont le gouverneur est son cousin M. de Feuquières. Ses passe-temps : <pb n="157" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_05.TIF/full/full/0/default.jpg"/>exercices pieux, étude, conversation : l’abbé le Roy, abbé de Haute-Fontaine, près Verdun. – Il obtient, en décembre 1662, la permission de se rapprocher de Paris et réside à la Ferté-sous-Jouarre jusqu’au 15 septembre 1664, où un ordre royal lui assigne Pomponne pour séjour. – Le 2 février 1665, il reçoit permission de regagner Paris. – Sa visite à l’Hôtel de Nevers, où se donne justement une soirée littéraire en l’honneur de Boileau et de Racine. Il va ensuite remercier les ministres, puis le Roi, et se retire à Pomponne. – A la fin de novembre, grâce au zèle de ses amis, Cl. Le Peletier, Lionne, etc., très peu par son initiative personnelle, il se voit appelé par le Roi à l’ambassade de Suède.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les ambassades</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la première ambassade de Suède (1665-1668)</head>
+          <p>Pomponne se met en route à la fin de décembre 1665, et parvient à Stockholm le 15 février. Etapes de son voyage ; cérémonial de sa réception. Il est adjoint d’abord au Chevalier de Terlon. Ses instructions portent qu’il devra communiquer à la Suède le dessein de la rupture de la France avec l’Angleterre ; lui demander soit une alliance contre cette puissance, soit, au moins, sa neutralité ; l’amener à négocier avec la Hollande ; la prier de contribuer à imposer la paix à l’évêque de Münster ; seconder les intentions de Louis XIV sur les troubles qui divisent alors les électeurs du Rhin ; présenter et soutenir la doctrine du droit de dévolution ; obtenir une heureuse solution de l’affaire de Pologne ; faire connaître, en passant, au roi de Danemark à quelles conditions l’Angle<pb n="158" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_06.TIF/full/full/0/default.jpg"/>terre voudrait traiter. – Malgré le labeur et le zèle incontestables et pleinement reconnus du Roi, dont il fait preuve dans la conduite de toutes ces négociations, son ambassade réussit mal. Il lui faut lutter, à la Cour de Suède, contre l’hostilité déclarée de certains ministres et contre la négligence extrême de celui qui nous est favorable, le chancelier de la Gardie. – Il ne peut empêcher la Suède, ni d’apporter sa médiation à la paix de Breda, signée le 21 juillet 1667 entre l’Angleterre et la Hollande, ni d’adhérer à la Triple Alliance de La Haye (13 janvier 1668), dont le but était l’exercice d’une médiation armée entre la France et l’Espagne. D’où la nécessité pour Louis XIV de traiter à Aix-la-Chapelle, le 22 avril. – Pomponne revient à Saint-Germain le 15 septembre 1668.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’ambassade de Hollande (1668-1670)</head>
+          <p>Dès le 24 octobre, il est nommé à un nouveau poste : l’ambassade de Hollande, en remplacement du Comte d’Estrades, mais il ne se met en route que le 9 février 1669, emmenant avec lui sa femme et sa belle-sœur, Charlotte Ladvocat. Arrivé à La Haye, le 24, il attend, pour y faire son entrée officielle, jusqu’au 6 juin. Son rôle, très délicat, auprès des Etats Généraux des Provinces-Unies, consiste à endormir leurs soupçons à l’endroit des projets de la France sur les Pays-Bas Espagnols et à faire durer leurs illusions jusqu’à la déclaration de guerre que Louis XIV médite contre eux. Pomponne a reçu cette confidence de la bouche même du Roi voyageant en Flandre (mai 1670). Puis, il est un des rares initiés au véritable objet de la mission de la duchesse d’Orléans en Angleterre qui abou tit au traité de Douvres, détachant ce pays des Etats, et il a, avec cette princesse, plusieurs entretiens, avant son <pb n="159" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_07.TIF/full/full/0/default.jpg"/>départ. – Aussitôt l’Angleterre gagnée à ses vues. Louis XIV, en quête d’un prétexte de rupture avec les États, envahit la Lorraine, et Pomponne est chargé de justifier, à leurs yeux, cette mesure. Ils y répondent par des impositions sur nos marchandises et de forts armements, pendant tout l’hiver. Mais c’est avec regret que De Witt voit s’accentuer la mésentente. – Au printemps de 1671, Louis XIV, faisant à nouveau le voyage de Flandre, invite Pomponne à le venir trouver à Dunkerque, et lui apprend qu’il vient de le nommer une seconde fois ambassadeur en Suède. – De retour à La Haye, le 18 juin, Pomponne prend, le 30, son audience de congé des États et s’embarque le 9 juillet.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La seconde ambassade de Suède et l’arrivée au ministère
+           <lb/>(juillet 1671-janvier 1672)</head>
+          <p>L’idée de Louis XIV est de s’assurer, à la veille de la guerre qu’il médite contre les États, l’alliance, ou, tout au moins, la neutralité de la Suède. Or le chevalier Rousseau, laissé à Stockholm, comme résident de France, a jugé la chose possible si Pomponne y était renvoyé comme ambassadeur : d’où cette seconde mission de Simon, qui sera de courte durée. – Arrivé le 8 août, il trouve la Cour de Suède, toujours en proie aux mêmes dissensions, mais, d’une part, peu satisfaite de ses alliés, tant de l’Espagne, qui ne paie pas les subsides promis, que de l’Autriche, qui ne se presse pas de ratifier le traité conclu naguère par son ministre Passerode, et d’autre part, assez portée pour la France. – Il tâche d’utiliser ces bonnes dispositions. Sa négociation, un moment ralentie par ordre de Louis XIV, à qui était venue l’idée de traiter avec le Prince de Lunebourg plutôt qu’avec la Suède, <pb n="160" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_08.TIF/full/full/0/default.jpg"/>reprend, par l’échec de ce second projet, et, le 2 décembre 1671 au matin, tous les articles d’un futur traité sont finalement arrêtés. – Dans l’intervalle, Pomponne a reçu, le 24 septembre, une lettre du roi, portée par M. de la Gilbertie, qui le nomme au poste de secrétaire d’Etat des Affaires Étrangères, laissé vacant par la mort de H. de Lionne (1<hi rend="sup">er</hi> septembre) : discussion des raisons qui ont déterminé Louis XIV. – C’est le 3 décembre, que Pomponne quitte Stockholm, où vient le remplacer provisoirement le Marquis de Vaubrun, en attendant l’arrivée de Courtin, le nouvel ambassadeur, retardé, en chemin, par la maladie. – De retour à Saint-Germain, le 12 (ou le 14 ?) février 1672, il est vivement félicité par le Roi et prête serment trois jours après.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>L’homme de la carrière : Pomponne diplomate ; ses qualités foncières et extérieures ; ses mémoires, ses dépêches ; jugement de Pellisson ; satisfaction du Roi. – L’homme de société : l’Hôtel de Rambouillet ; l’Hôtel de Nevers et Fresnes. Les amies : M<hi rend="sup">mes</hi> du Plessis-Guénegaud, de Sévigné, de Lafayette, etc. Les amis : Cl. Le Peletier, Pellisson, Chapelain, Lionne, etc. Beaucoup d’amis dans tous les mondes. Le cadre favori, Pomponne : Courte histoire et brève description des seigneurie, terre et château de Pomponne. Affection de Simon pour sa terre ; son sentiment de la nature. – Pomponne centre de ralliement de toute la famille. – L’homme de famille : bon fils d’un père partial en sa faveur, bon frère d’un aîné désavantagé et généreux. Le mari : Catherine Ladvocat, femme d’intérieur. Le père : ses idées en matière d’éducation ; ses fils élevés à Port-Royal par leur grand-père ; ses filles élevées à Port-Royal.</p>
+        <pb n="161" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_09.TIF/full/full/0/default.jpg"/>
+        <p>Conclusion sur le Jansénisme de Simon de Pomponne, envisagé comme la clef de son caractère et peut-être, en dépit des apparences, comme la secrète raison qui détermina le choix royal.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendice</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des matières</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cinq textes publiés. – Douze photographies</head>
+        <pb n="162" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_19/ENCPOS_1910_19_10.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

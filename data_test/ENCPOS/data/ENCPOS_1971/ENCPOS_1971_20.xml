@@ -1,0 +1,125 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_20" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La vicomté de Turenne à la fin du <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle ; essai d’histoire économique</title>
+        <author ref="https://www.idref.fr/052453251">Danielle Oppetit-Perné</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_20.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 137142</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="137" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_20/ENCPOS_1971_20_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La vicomté de Turenne à la fin du xv<hi rend="sup">e</hi> siècle
+       <lb/>essai d’histoire économique</head>
+      <byline>
+        par
+        <forename>Danielle</forename>
+        <surname>Oppetit-Perné</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le choix de ce sujet a été déterminé par la présence aux Archives nationales du fonds d’archives de la maison de Bouillon, dans la série R<hi rend="sup">2</hi>, et par l’existence de nombreux registres de titres domaniaux relatifs à la vicomté de Turenne dans la série Q<hi rend="sup">1</hi>. Le duc de Bouillon, Charles-Godefroi de la Tour avait, en effet, vendu la vicomté de Turenne au roi de France en 1738 pour la somme de 4 200 000 livres, car il était couvert de dettes dont les États de la vicomté ne voulaient pas assurer le paiement.</p>
+        <p>Nous avons choisi d’étudier la vicomté à la fin du <num>xv<hi rend="sup">e</hi></num> siècle, car il nous a paru intéressant de voir comment un grand féodal, à la tête d’une seigneurie importante, avait fait face aux problèmes de la reconstruction après la guerre de Cent ans. C’est, en effet, une époque où les tenanciers obtiennent partout des conditions meilleures de leur seigneur, mais aussi où les droits seigneuriaux sont parfois vigoureusement défendus.</p>
+        <p>La vicomté, qui possédait le privilège très particulier d’être théoriquement exempte de toutes tailles ou aides royales et de ne payer que des impôts votés et répartis par ses propres États, a-t-elle eu une évolution économique différente de celle que l’on a pu observer dans d’autres provinces du royaume ? Les vicomtes ont-ils joué un rôle dans la reconstruction agricole ? Tels sont les problèmes que nous allons essayer d’examiner.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre I
+         <lb/>Les conditions historiques et les paysages agraires</head>
+        <p>L’origine de la vicomté semble remonter au moins au <num>x<hi rend="sup">e</hi></num> siècle, sans doute au <hi rend="i">pagus</hi> administratif de l’époque carolingienne, qui englobait une petite partie du Bas-Limousin autour de Turenne, Beynat, Espagnac, Puy d’Arnac <pb n="138" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_20/ENCPOS_1971_20_02.TIF/full/full/0/default.jpg"/>et Naves. Puis cet ensemble de terres s’étendit jusqu’à comprendre bientôt le sud du Bas-Limousin et fut érigé en vicomté à la fin du <num>x<hi rend="sup">e</hi></num> siècle. Certains historiens font remonter les premiers seigneurs de Turenne à la famille des comtes de Quercy.</p>
+        <p>Au cours du Moyen âge la vicomté passa, au hasard des mariages, à la maison de Comminges, puis, en 1350, à la maison de Beaufort. En 1445, le mariage d’Anne de Turenne avec Annet VI de la Tour porta la vicomté dans la maison de la Tour d’Auvergne.</p>
+        <p>Au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, la vicomté atteignit sa plus grande expansion territoriale. Les châtellenies et les paroisses qui en faisaient partie nous sont connues par les cahiers des États de la vicomté et par l’historiographe de la maison de Turenne, Justel. La carte dressée par M. Prat pour l’<hi rend="i">Atlas historique du Quercy</hi> nous montre que l’ensemble des possessions n’était pas d’un seul tenant ; elle souligne au contraire l’enchevêtrement des terres de la vicomté avec celles des autres grands féodaux de la province.</p>
+        <p>Aujourd’hui région peu industrialisée, vouée essentiellement à l’agriculture dans les vallées et à l’élevage sur les collines, la vicomté de Turenne n’a jamais été un pays à forte densité de population. Pour évoquer les paysages agraires du <num>xv<hi rend="sup">e</hi></num> siècle, seuls les registres de reconnaissances des tenanciers nous apportent des indications fragmentaires, qui font ressortir la grande importance du froment, puis celle de l’avoine et enfin celle du seigle. La présence de nombreux bois est attestée très souvent ; mais les vignes sont difficiles à évaluer, car nulle part nous n’avons trouvé de redevances en vin. L’élevage reste aussi une grande inconnue.</p>
+        <p>Les villes étaient peu importantes et ne jouaient qu’un rôle local. Seule Brive, hors des limites proprement dites de la vicomté, mais liée très intimement à son histoire, tenait une place assez grande à l’échelon provincial. Foires et marchés animaient la vie locale.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Le vicomte et ses vassaux</head>
+        <p>Élément d’un monde seigneurial et féodal complexe, le vicomte est le suzerain de nombreux vassaux.</p>
+        <p>La cérémonie de l’hommage nous est connue par de nombreux registres. Les vassaux obtiennent parfois des délais pour apporter le dénombrement de leur fief ou même, vers la fin du siècle, pour prêter hommage. Ils sont astreints à des services nobles, qui sont essentiellement militaires. Leur richesse et leur rang sont d’importance variable : barons possesseurs d’un ou de plusieurs châteaux, chevaliers à la tête de nombreux villages, jouissant de multiples revenus, ou seulement détenteurs d’un bien médiocre. Ils ont tous le droit de transmettre héréditairement leur fief, à charge pour le successeur de prêter l’hommage et le serment de fidélité.</p>
+        <p>Le vicomte peut exercer sa commise si le devoir féodal n’a pas été rendu ou si les droits de lods et ventes ne lui ont pas été versés en cas d’aliénation. <pb n="139" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_20/ENCPOS_1971_20_03.TIF/full/full/0/default.jpg"/>Quand le vicomte s’oppose à la vente, il use de son droit de retrait féodal. Enfin, les fiefs ne doivent pas tomber en main-morte et les bourgeois acquéreurs de fiefs nobles doivent verser un droit de franc-fief.</p>
+        <p>La complexité des liens vassaliques est très grande et entraîne parfois des contestations.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Le vicomte et ses tenanciers</head>
+        <p>Comme toute seigneurie, la vicomté comprend deux parties. La première partie est constituée par la réserve, dont le vicomte assure la gestion directe ; elle englobe, d’une part, une faible étendue de terres autour du château, destinée à assurer la subsistance de la famille seigneuriale, et, d’autre part, l’essentiel des bois, des landes et des rivières, répartis cette fois sur l’ensemble du territoire. La seconde partie, beaucoup plus importante pour la vie économique du fief, est composée des tenures.</p>
+        <p>Les tenanciers sont ici des emphytéotes, c’est-à-dire des usufruitiers perpétuels de condition libre ; le vicomte garde pour lui le domaine direct ou <hi rend="i">dominium ;</hi> les charges des tenanciers sont d’abord des redevances foncières, les cens et rentes. Il est impossible de distinguer le cens primitif, devenu simplement recognitif, des rentes dont la terre a été chargée par la suite, soit en argent, soit en nature, la tendance étant de contrebalancer la dévaluation de la monnaie par l’instauration de redevances en nature.</p>
+        <p>Le manse est l’exploitation agricole la plus commune, mais il est souvent démembré en exploitations de moindre importance. Sur les manses pèsent les redevances les plus élevées, le plus souvent en indivis entre plusieurs membres de la même famille ou même entre plusieurs familles.</p>
+        <p>L’acquéreur d’une tenure doit demander au seigneur son investiture et payer un droit de mutation proportionnel au prix d’achat. Si le seigneur ne veut pas ratifier la vente, il peut user du droit de retrait censuel. Quand le tenancier reçoit un bien par accensement, il s’acquitte d’un droit d’entrée, qui tend à devenir de plus en plus élevé par rapport à la valeur réelle du cens exigé. Enfin, à chaque changement de tenancier et de seigneur, un droit d’acapte est perçu.</p>
+        <p>Les tenanciers sont tenus de payer la taille aux quatre cas, dont il est précisé une fois que le montant ne doit pas excéder celui des redevances annuelles. Le service du guet, exigible en droit, est le plus souvent racheté par une prestation en argent qui s’ajoute à l’ensemble des charges. La dîme, accaparée le plus souvent par le vicomte, peut être comptée parmi les droits seigneuriaux. Les banalités font obligation aux tenanciers de passer par les installations du vicomte pour faire moudre le blé, presser le vin et l’huile, etc.</p>
+        <p>Les droits des tenanciers sont surtout la garantie héréditaire de leurs tenures et le droit de déguerpir après payement des arrérages. Des pratiques communautaires, dans la possession et l’exploitation des manses, leur permettent sans doute une meilleure défense à l’égard du vicomte. Il n’y a pas face de communaux, mais seulement des droits d’usage indivis.</p>
+      </div>
+      <div>
+        <pb n="140" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_20/ENCPOS_1971_20_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre IV
+         <lb/>Le dépeuplement après la guerre de cent ans
+         <lb/>et le problème de la reconstruction</head>
+        <p>Il faut noter que dès la fin du <num>xiv<hi rend="sup">e</hi></num> siècle, la vicomté est entrée à nouveau dans la mouvance du roi de France. Les vicomtes ont été de fidèles auxiliaires dans la lutte contre les Anglais. L’insécurité des campagnes fut grande jusque vers le milieu du <num>xv<hi rend="sup">e</hi></num> siècle ; les dévastations elles-mêmes sont difficiles à saisir. Denifle a brossé un tableau très sombre du Quercy, mais il semble qu’aucun village n’y ait été définitivement abandonné. Cependant, la vicomté a connu sans doute une forte baisse de population. Celle-ci était attirée vers les provinces, voisines ou lointaines, où la reconstruction n’avait jamais cessé, comme dans le Bordelais, ou débutait vers 1447, comme dans la région parisienne. Dans les premiers arrentements de la vicomté, qui datent de 1489, le nombre des terres abandonnées ou en friche est important, ce qui entraîne un relâchement des liens féodaux et seigneuriaux.</p>
+        <p>La reconstruction coïncide avec l’avènement du vicomte François I<hi rend="sup">er </hi>de la Tour et se poursuivit avec son frère et successeur, Antoine. Les vicomtes furent aidés dans leur tâche de reprise en main de la vicomté par un personnel administratif choisi parmi les nobles ou les bourgeois de la vicomté.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>La renaissance des censives et les défrichements</head>
+        <p>La reconstruction agricole porte d’abord sur la remise en état des exploitations abandonnées. Nous ne connaissons pas les anciens cens exigés, mais on peut supposer que les nouveaux sont sensiblement moins élevés. La forme des baux est toujours celle des baux à emphytéose, qui assurent au preneur la possession perpétuelle de la tenure. Il n’y a pas de mention de bail à métairie, à temps ou perpétuelle. Le principe pour les cens est de demander une redevance en argent et en nature ; aucune corvée n’est exigée.</p>
+        <p>Pour les arrentements portant sur des terres données à lotir ou à défricher, les baux sont aussi à effet perpétuel, mais les cens exigés sont beaucoup plus faibles. Les lotissements sont situés dans la paroisse de Sarazac ; toutes les parcelles sont de même dimension, contiguës et destinées à recevoir une maison et un jardin. Les tenures dissociées de la réserve sont surtout des bois et des vignes. Pour un lotissement de prés situés sur la rive de la Corrèze, le cens exigé est très faible, mais les droits d’entrée très élevés.</p>
+        <p>Cependant, les baux tendent à respecter les droits du seigneur aussi bien que ceux du tenancier. H n’y a pas de réductions définitives de redevances après arrentement ; on prévoit seulement la possibilité de les diminuer ou de les augmenter selon que le bien arrenté se révèlera plus ou moins riche. C’est donc un souci de faire correspondre les cens avec la valeur des terres. Les remises de redevances ne sont pas prolongées au-delà de trois ans.</p>
+        <pb n="141" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_20/ENCPOS_1971_20_05.TIF/full/full/0/default.jpg"/>
+        <p>A partir des années 1490, la rédaction des registres de déclarations des tenanciers, qui entérinent des mutations dont certaines remontent parfois à une vingtaine d’années, montre un effort de remise en ordre de la seigneurie.</p>
+        <p>La fin du <num>xv<hi rend="sup">e</hi></num> siècle est accompagnée d’une grande instabilité dans le monde rural : beaucoup de tenanciers ne sont pas capables de faire face aux difficultés nouvelles, et, en revanche, la terre ayant repris de la valeur, de nombreux bourgeois et des ecclésiastiques investissent en achetant des biens à la campagne. Des fiefs nobles passent dans des familles roturières ; le vicomte trouve dans ces aliénations le profit des lods et ventes, et peut-être l’occasion de réviser les cens.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>La vicomté et le pouvoir royal ; le problème des impôts</head>
+        <p>L’origine et le fonctionnement des États de la vicomté ont été étudiés par René Fage, qui a mis en évidence l’indépendance absolue de la vicomté vis-à-vis du roi, tout au moins en droit, avec, pour conséquence, le privilège d’être exempte de toutes tailles, aides ou subsides quelconques. Bien sûr, les officiers royaux des sénéchaussées de Limousin et de Quercy et les États provinciaux du Bas-Limousin ont souvent tenté d’assujettir la vicomté au payement de contributions financières. Mais les rois ont toujours confirmé les privilèges de la vicomté.</p>
+        <p>Néanmoins, les États de la vicomté, qui étaient réunis régulièrement par le vicomte, au moins à partir de 1467, et qui étaient chargés de voter et de répartir l’impôt sur les paroisses, et, d’une façon générale, d’administrer les affaires de la vicomté, n’ont-ils jamais accordé de subsides au roi ? Nous avons trouvé un extrait du livre des sessions des États qui fait allusion à plusieurs occasions, en 1479, 1480 et 1481, 1517 et 1522, dans lesquelles les États, tout en protestant contre la décision des élus des États du Bas-Limousin, ont voté les sommes demandées ou envoyé les contingents de gens d’armes et d’arbalétriers requis, tout en faisant appel devant la Cour des Aides. Il semble donc que l’exemption n’était respectée par les agents du pouvoir royal que tant que le roi n’avait pas un besoin pressant d’argent ; dans le cas contraire, le roi confirmait les privilèges de la vicomté en échange du versement d’une contribution financière.</p>
+        <p>Il reste que les États étaient chargés de répartir les sommes votées entre les paroisses et d’en indiquer l’emploi. Dès le premier quart du <num>xvi<hi rend="sup">e</hi></num> siècle, les États prennent en main l’administration de la vicomté et les vicomtes, que leurs fonctions à la cour éloignent de plus en plus de leur fief, finissent par recevoir une sorte de liste civile.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Le début du <num>xvi<hi rend="sup">e</hi></num> siècle marque pour la vicomté le passage de la gestion directe du vicomte à l’administration par les États. A partir du vicomte François II, qui devint vicomte en 1527 et fut ambassadeur extraordinaire du roi François <pb n="142" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_20/ENCPOS_1971_20_06.TIF/full/full/0/default.jpg"/> I<hi rend="sup">er</hi> en Angleterre, les vicomtes s’éloignent de plus en plus de leur fief d’origine. Leurs séjours prolongés s’y font rares.</p>
+        <p>Les États prennent en charge la rédaction des terriers. La formule adoptée pour la perception des revenus est celle de la ferme, qui peut être préjudiciable à plus d’un titre. La fortune politique de la maison de Turenne a sans doute contribué à sa ruine économique, qui deviendra complète au milieu du <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces annexes</head>
+        <p>1. Terrier des tenanciers de la châtellenie de Turenne (1457-1459).</p>
+        <p>2. Tableau des arrentements de 1489 à 1513.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Dénombrement d’un fief noble (1515). – Recueil des assises tenues à Meyssac en 1480. – Recueil des assises tenues à Servière en 1517. – Arrêt du Parlement de Bordeaux réglant la possession du droit de leide à Saint-Anthoine de Plantades (20 février 1472).</p>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <p>Carte ancienne de la vicomté (publiée par Justel). – Carte établie par M. Prat pour l’<hi rend="i">Atlas historique du Quercy.</hi></p>
+      </div>
+    </body>
+  </text>
+</TEI>

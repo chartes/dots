@@ -1,0 +1,222 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Histoire du Chapitre de Rouen du <hi rend="sc">xiv</hi><hi rend="sup">e</hi> au <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle</title>
+        <author>Jacques Lafond</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 71-84</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="71" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Histoire du chapitre
+       <lb/>de Rouen
+       <lb/>du <num>xiv<hi rend="sup">e</hi></num> au <num>xvi<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Jacques</forename>
+        <surname>Lafond</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’histoire du Chapitre métropolitain de Rouen, objet de la présente étude, est limitée à la période qui va du <num>xiv<hi rend="sup">e</hi></num> au <num>xvi<hi rend="sup">e</hi></num> siècle, pour laquelle seulement des archives à peu près complètes ont été conservées. Cette étude rend compte de la composition du personnel du Chapitre, des pouvoirs religieux de cette assemblée, des biens temporels qui assuraient sa subsistance et des diverses juridictions qu’elle a exercées. L’importance du rôle social et politique tenu par le Chapitre ressort de l’exposé.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre preliminaire
+         <lb/>sources de l’histoire du chapitre.</head>
+        <p>Rien que mutilées en ce qui concerne les origines, les archives du Chapitre de Rouen sont la principale source de l’histoire de celui-ci.</p>
+        <p><hi rend="i">Historique des Archives du Chapitre.</hi> – Les trois incendies qui dévastèrent Rouen au cours du <num>xii<hi rend="sup">e</hi></num> siècle et aussi celui de 1200 ont détruit la grande majorité <pb n="72" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_02.TIF/full/full/0/default.jpg"/> des actes antérieurs au <num>xiii<hi rend="sup">e</hi></num> siècle. Les actes concernant le Chapitre furent d’abord conservés isolément puis réunis en cartulaires ; mais, dès la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, le Chapitre veilla à une conservation systématique de ses archives par l’intermédiaire de commissions spéciales chargées de les classer et inventorier. Quelques inventaires du <num>xv<hi rend="sup">e</hi></num> siècle (entre autres ceux de Nicolas de la Quesnaye) existent encore. Ils sont rédigés par matière. Intactes jusqu’au milieu du <num>xvi<hi rend="sup">e</hi></num> siècle, les archives du Chapitre souffrirent du pillage de la cathédrale par les protestants, le 3 mai 1562. Elles sont néanmoins assez complètes. Le dernier inventaire rédigé par les soins du Chapitre lui-même est peu antérieur à 1789. Pendant la Révolution et les premières années du <num>xix<hi rend="sup">e</hi></num> siècle, les archives du Chapitre subirent peu de dommages. En 1851, Charles de Beaurepaire fut investi de la fonction d’archiviste départemental de la Seine-Inférieure. Il classa les archives du Chapitre et en rédigea un inventaire minutieux.</p>
+        <p><hi rend="i">Etat actuel des Archives.</hi> – Séries principales : registres de délibérations capitulaires, comptes, actes des juridictions, titres de propriétés foncières.</p>
+        <p>La série des délibérations capitulaires est complète depuis le 16 août 1365. Importance et insuffisance de cette source. Les comptes n’offrent que des séries fragmentaires. Les titres de propriétés forment un ensemble assez complet.</p>
+        <p><hi rend="i">Sources diverses.</hi></p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>le personnel capitulaire proprement dit.</head>
+        <p>Le personnel capitulaire proprement dit comprenait les chanoines et les dignitaires.</p>
+        <pb n="73" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_03.TIF/full/full/0/default.jpg"/>
+        <p><hi rend="i">Conditions générales d’admission au canonicat</hi>. – Pour faire partie du Chapitre de Rouen, il fallait être né de légitime mariage. Aucun âge déterminé n’était requis. Aucun titre de noblesse ni aucun <hi rend="i">caractère d’ordination</hi> n’était exigé. Il suffisait d’être apte à recevoir la tonsure. Le concile de Constance exigea plus tard la possession de certains grades universitaires. Il y avait des <hi rend="i">canonici in sacris</hi> et des <hi rend="i">canonici in mi</hi><hi rend="i">noribus</hi>.</p>
+        <p>La nomination était faite par l’archevêque. Plus tard au moyen du régime des grâces expectatives, le pape se réserva également certaines provisions. Des nominations dues à l’intervention royale se multiplièrent à la faveur des événements politiques de la Guerre de Cent ans. A la fin de l’occupation par les Anglais, le Chapitre en était arrivé à se composer de membres qui avaient dû leur prébende canonicale à la faveur de lettres d’Henri IV.</p>
+        <p>Après le concordat de 1516, les nominations par lettres royaux étaient devenues de pratique courante.</p>
+        <p><hi rend="i">Serment du nouveau chanoine.</hi></p>
+        <p><hi rend="i">Installation du nouveau chanoine.</hi></p>
+        <p><hi rend="i">Nombre des chanoines.</hi> – Une trentaine en moyenne au cours du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        <p><hi rend="i">Dignitaires du Chapitre.</hi> – Les dignitaires du Chapitre étaient au nombre de dix : par ordre croissant d’importance : le chancelier, les six archidiacres, le trésorier, le chantre et le doyen.</p>
+        <p>Le <hi rend="i">chancelier</hi> n’avait pas la garde du grand sceau. Il rédigeait la « matricule » et la <hi rend="i">table chronologique des fêtes de l’année</hi>, destinée au cierge pascal. Il dirigeait les écoles de grammaire à Rouen et dans les principales possessions rurales du Chapitre (Martin-Eglise, Londinières, etc.). Décadence de ces écoles pendant <pb n="74" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_04.TIF/full/full/0/default.jpg"/> le cancellariat de Robert Morelet (1440-1472).</p>
+        <p>Les <hi rend="i">archidiacres</hi> étaient au nombre de six. Le plus haut placé était le « grand archidiacre ». Venaient ensuite les archidiacres d’Eu, du Grand-Caux, du Vexin français, du Vexin normand et du Petit-Caux. Chaque archidiacre effectuait la visite des paroisses et chapelles de son archidiaconé. Il partageait pour deux tiers le droit de déport avec l’archevêque.</p>
+        <p>Le <hi rend="i">trésorier</hi> avait la garde du trésor, entretenait le luminaire de l’église, réglait les sonneries de cloches et pourvoyait au service de l’autel. Il percevait une partie des amendes infligées par la justice du circuit de la cathédrale. Une transaction (3 mars 1470) régla les rapports de la trésorerie et de la fabrique, donnant le pas à celle-ci pour l’entretien de l’église.</p>
+        <p>Le <hi rend="i">chantre</hi> avait la direction du chœur et celle des processions. Il dirigeait les écoles de chant de la cathédrale. Il était secondé par un « sous-chantre ».</p>
+        <p>Le <hi rend="i">haut doyen</hi> était à la tête du Chapitre ; c’était le seul dignitaire élu par les chanoines. L’archevêque avait seulement le droit de confirmer ou d’infirmer l’élection du doyen. Ce droit fut reconnu en 1238, en 1362 et en 1371, c’est-à-dire dans la bulle par laquelle Grégoire XI exemptait le Chapitre de la juridiction archiépiscopale. Au milieu du <num>xv<hi rend="sup">e</hi></num> siècle, le pape confirme parfois le doyen. Le concordat de 1516 amena l’ingérence du roi dans les élections décanales.</p>
+        <p><hi rend="i">Officiers du Chapitre.</hi> – Chanoine chargé de conférer les bénéfices vacants (office hebdomadaire) ; promoteur du Chapitre, receveur général, distributeur du chœur, deux gardes des sceaux, auditeurs des comptes, clavigères, maîtres des testats, etc. (Offices annuels, renouvelables).</p>
+      </div>
+      <div>
+        <pb n="75" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre II
+         <lb/>Le personnel subalterne.</head>
+        <p>Il comprenait des membres du clergé et des laïcs. Le clergé se divisait en « petits chanoines » en en chapelains.</p>
+        <p>Les <hi rend="i">canonici minores</hi> étaient huit, quatre petits chanoines des Quinze-Marcs et quatre des Quinze-Livres. Ils tiraient leur nom du montant de deux rentes, fondées respectivement par Jean-sans-Terre, alors comte de Mortain, et par Richard Cœur de Lion.</p>
+        <p>On distinguait des chapelains appartenant à des collèges et des chapelains isolés. Parmi les uns et les autres, certains seulement étaient titulaires de bénéfices.</p>
+        <p>Avant le <num>xvi<hi rend="sup">e</hi></num> siècle, cinq collèges :</p>
+        <p>1° Collège de la Commune (chapelains bénéficiers) ; date de fondation inconnue ; statuts et possessions.</p>
+        <p>2° Collège de Darnétal : date de fondation inconnue. Seize clercs jusqu’en 1413, quatorze ensuite.</p>
+        <p>3° Collège d’Albane : fondation de Pierre de Colmieu en 1215. Dix clercs.</p>
+        <p>4° Collège du Saint-Esprit : fondation de Guillaume de Flavacourt en 1305. Six clercs.</p>
+        <p>5° Collège des Clémentins : fondation de Pierre Roger (plus tard Clément VI) en 1350. Seize clercs.</p>
+        <p>Tous ces chapelains suppléaient les chanoines pour acquitter les fondations pieuses faites en faveur du Chapitre.</p>
+        <p>Les chapelles de la cathédrale de Rouen étaient au nombre de vingt-six. A une même chapelle étaient attachées une, deux, parfois même sept chapellenies. La fondation de ces diverses chapellenies est généralement connue.</p>
+        <pb n="76" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_06.TIF/full/full/0/default.jpg"/>
+        <p><hi rend="i">Enfants de choeur et maîtrise.</hi></p>
+        <p><hi rend="i">Subalternes laïques.</hi> – Messager, gardes divers, baillis, etc. Fournisseur du Chapitre : boulanger.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Relations avec le siège métropolitain.</head>
+        <div>
+          <head rend="uc">1° <hi rend="i">Sede plena</hi>.</head>
+          <p>Le Chapitre de Rouen n’était pas un organisme indépendant. Ses supérieurs étaient, d’une part, l’archevêque, et de l’autre, le pape.</p>
+          <p>Le corps canonial était pour la célébration de l’office divin le collaborateur naturel de l’archevêque qui lui avait donné le premier fonds du temporel nécessaire à sa subsistance. L’archevêque avait le droit de confirmer l’élection du doyen. Il pouvait aussi effectuer la visite du Chapitre. C’est ainsi que Philippe d’Alençon effectua une visite le 16 décembre 1365. Le Chapitre, ayant à sa tête Nicole Oresme, reçut dignement le prélat mais, par des réponses systématiquement vagues aux questions posées, fit comprendre qu’il entendait conserver son indépendance. Dès lors, le Chapitre, fort de l’appui de Charles V, multiplia les députations auprès du pape. Il obtint finalement, le 29 octobre 1371, une bulle qui l’exemptait de la juridiction archiépiscopale. Elle restreignait le droit pour l’archevêque de visiter le Chapitre, en le subordonnant à la visite préalable du diocèse. Elle exemptait les chanoines de toute juridiction spirituelle, civile ou criminelle, d’origine archiépiscopale. Charles V et Charles VI veillèrent à la bonne observation des dispositions de la bulle de Grégoire XI. Les deux partis, archevêques et chanoines, tenaient à l’exercice de leurs prérogatives. Guillaume d’Estouteville visita le Chapitre en 1454. De leur côté, en de <pb n="77" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_07.TIF/full/full/0/default.jpg"/>multiples circonstances, les chanoines résistèrent aux empiètements de l’Officialité.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Relations avec le siège métropolitain.</head>
+        <div>
+          <head rend="uc">2° <hi rend="i">Sede vacante</hi>.</head>
+          <div>
+            <head rend="uc">A. – <hi rend="i">Pouvoirs quasi-archiépiscopaux.</hi></head>
+            <p>Lorsque le siège métropolitain était proclamé vacant, le Chapitre jouissait de toute une partie des droits archiépiscopaux. Il n’avait pas le pouvoir d’ordre, mais il avait celui de juridiction.</p>
+            <p>Il nommait de nouveaux officiers de l’archevêché et destituait les familiers de l’archevêque et les doyens ruraux, les renouvelant pourtant dans la plupart des cas.</p>
+            <p>Le Chapitre confirmait les évêques suffragants et faisait procéder à leur sacre par l’un des évêques de la province de Rouen. Il en était de même pour les abbés et les abbesses.</p>
+          </div>
+          <div>
+            <head rend="uc">B. – <hi rend="i">Election de l’archevêque.</hi></head>
+            <p>Ce droit d’élection existait depuis un temps très ancien ; mais, à partir du <num>xiv<hi rend="sup">e</hi></num> siècle, le Chapitre n’eut pas à l’exercer, car la papauté avait imaginé la réserve.</p>
+            <p>Le Grand Schisme réveilla dans le Chapitre le souvenir de ses prérogatives électorales. Des ordonnances royales rétablirent au profit des Chapitres cathédraux le droit d’élection des évêques. Mais toutes ces élections furent en général fortement faussées par des ingérences politiques.</p>
+            <p>L’histoire de l’église métropolitaine de Rouen au <num>xv<hi rend="sup">e</hi></num> siècle est marquée par deux longues vacances, <pb n="78" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_08.TIF/full/full/0/default.jpg"/>signes des difficultés. En 1408, Louis d’Harcourt fut désigné, malgré un compétiteur nommé par le pseudo-pape Benoît XIII. A la suite de la mort de Louis d’Harcourt, l’indécision du Chapitre fut telle que le pape en profita pour nommer l’archevêque de Rouen.</p>
+            <p>Une seule élection est à l’honneur du Chapitre : celle de Raoul Roussel, qui eut lieu en 1444.</p>
+            <p>La désignation de Guillaume d’Estouteville fut un acte pontifical. Quant à icelles de Robert de Croixmare et de Georges I<hi rend="sup">er</hi> d’Amboise, elles dénotent des pressions royales.</p>
+            <p>A partir du concordat de 1516, la désignation de l’archevêque est, de droit, la prérogative du roi ; le pape confère à l’élu l’institution canonique. Le Chapitre a perdu son droit d’élection.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Relations dans l’ordre ecclésiastique
+         <lb/>en dehors de l’archevêque.</head>
+        <p>Elles comprennent des rapports non seulement avec le pouvoir supérieur pontifical mais avec les égaux et les inférieurs.</p>
+        <p>a) Pour le pape, nous avons montré précédemment les relations avec le Saint-Siège, nécessitées par les interventions de l’archevêché. Au <num>xiv<hi rend="sup">e</hi></num> siècle, à la suite du Grand Schisme, et surtout au <num>xv<hi rend="sup">e</hi></num>, s’affirment les théories conciliaires qui mettent l’autorité du pape sur un autre plan.</p>
+        <p>Dans l’affaire du schisme, le Chapitre de Rouen suivit l’attitude française. Partisan de l’obédience de Clément VII, il reconnaît tout d’abord le successeur de celui-ci : Benoît XIII. Docile à l’exemple de l’archevêque de Rouen, Guillaume de Vienne, lorsque la <pb n="79" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_09.TIF/full/full/0/default.jpg"/>France se soustrait à l’obédience de Benoît XIII, lui aussi refuse d’obéir aux ordres d’Avignon. Sur le papier il y a des chanoines nommés par les deux obédiences, mais en réalité les nominations faites par le véritable pape sont les seules à assurer des places au chœur de la cathédrale de Rouen.</p>
+        <p>Dans l’affaire du concile de Bâle, le Chapitre a une place plus importante car la convocation survient tandis que le siège métropolitain est vacant. Le Chapitre est un des premiers à se préoccuper d’envoyer des délégués au concile. Ceux-ci partagent les théories conciliaires mais la fin pitoyable du concile en lève toute importance à leurs idées.</p>
+        <p>b) Des évêques suffragants de la métropole de Rouen, de même que des abbés et abbesses du diocèse, le Chapitre exigeait un serment au moment de leur consécration.</p>
+        <p>c) Avec le Chapitre de Cambrai, celui de Rouen entretenait des relations de confraternité remontant à l’époque de Philippe-Auguste. Durant l’occupation anglaise, les chanoines de Rouen firent un essai d’association analogue avec le Chapitre d’York. N’étant qu’une manifestation de pure politique, leur tentative n’eut aucune suite.</p>
+        <p>d) <hi rend="i">Sur le clergé séculier du diocèse,</hi> le Chapitre affirme sa supériorité. Assistance aux processions ; débite.</p>
+        <p>e) A l’égard des <hi rend="i">religieux,</hi> le Chapitre se montre d’abord défiant en ce qui concerne les nouveaux ordres mendiants. Démêlés avec les franciscains. La première nouveauté passée, les relations deviennent cordiales.</p>
+      </div>
+      <div>
+        <pb n="80" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_10.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre VI
+         <lb/>L’organisation financière du chapitre.</head>
+        <div>
+          <head rend="uc">A. – <hi rend="i">Les biens fonciers</hi>.</head>
+          <p>Le Chapitre de Rouen était le premier seigneur foncier du diocèse. Sa fortune terrienne provenait d’un démembrement de la mense archiépiscopale ; elle fut augmentée par des donations faites par les archevêques eux-mêmes, par les rois et par la foule des particuliers. Elle comprend des propriétés urbaines et rurales ainsi que des dîmes. Ces dernières étaient souvent des restitutions effectuées par les seigneurs laïques. Aux donations s’ajoutaient des achats : toute donation en argent en vue d’une fondation était convertie par le Chapitre en biens immobiliers. Les achats s’effectuaient de préférence autour des possessions anciennes, de façon à arrondir celles-ci.</p>
+          <p>Dans neuf paroisses dites exemptes, le Chapitre possédait tous pouvoirs spirituels et temporels. Dans ses autres possessions, il exerçait des droits plus ou moins étendus.</p>
+          <p>Liste des possessions du Chapitre au <num>xiv<hi rend="sup">e</hi></num> et au <num>xv<hi rend="sup">e</hi></num> siècle. Ces possessions se trouvaient dans toutes les parties du diocèse, insignifiantes toutefois dans l’archidiaconé du Vexin français. Les plus importantes étaient situées dans la vallée d’Eaulne et le pays de Caux ; grave inconvénient pendant la guerre de Cent ans, qui désola particulièrement cette contrée. D’autres possessions consistant principalement en dîmes, se trouvaient groupées dans la région de la forêt de Lyons ; essor inattendu de ces nombreuses sources de revenus par suite du défrichement de la forêt et de la formation de villages nouveaux. Le chapitre possédait encore quelques biens <pb n="81" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_11.TIF/full/full/0/default.jpg"/>en dehors du diocèse, en particulier à Nécy (diocèse de Séez).</p>
+          <p>L’aliénation de biens appartenant au Chapitre s’est produite très rarement, sauf pour des possessions excentriques comme celles d’Angleterre.</p>
+        </div>
+        <div>
+          <head rend="uc">B. – <hi rend="i">La fiscalité</hi>.</head>
+          <p>Le Chapitre percevait des droits ; il en acquittait fort peu.</p>
+          <p>Il percevait : 1<hi rend="sup">0</hi> divers droits acquittés par ses membres (droits de bienvenue et de réception, taille, annates, taxes sur les ventes de biens et à l’occasion de l’approbation des testaments) ; 2° des impôts ruraux, en sa qualité de seigneur foncier ; 3° des dîmes. La moitié du produit de la débite lui revenait (l’autre moitié revenant au trésorier jusqu’en 1470 et depuis lors à la fabrique de la cathédrale).</p>
+          <p>Il se faisait dispenser de nombreuses taxes, jouissant du droit de franc-salé, d’une exemption de taxes sur les blés et boissons, et ce en vertu de privilèges royaux. La municipalité de Rouen lui concéda un droit de franche-moûte.</p>
+          <p>Lors des contributions extraordinaires, même si elles étaient destinées à la défense de la ville, le Chapitre cherchait à s’esquiver et y réussissait.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>L’organisation judiciaire.</head>
+        <p>Le Chapitre possédait comme corollaire de sa fortune foncière des droits de juridiction. La bulle d’exemption lui en avait accordé d’autres.</p>
+        <div>
+          <head rend="uc">A. – <hi rend="i">Compétence.</hi></head>
+          <p>a) <hi rend="i">Ratione loci</hi>. – Ressortissaient à la juridiction du Chapitre les délits commis sur le territoire <pb n="82" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_12.TIF/full/full/0/default.jpg"/>des paroisses exemptes et dans « l’aître » de la cathédrale. Pour cette dernière juridiction, le Chapitre voulut toujours prouver qu’elle était acquise d’ancienneté. En réalité, la bulle d’exemption de 1371 fut son meilleur titre juridique. Dans l’étendue de leurs prébendes, les chanoines et dignitaires exerçaient, suivant les cas, la haute, la moyenne et la basse justice.</p>
+          <p>b) <hi rend="i">Ratione personæ</hi>. – Cette compétence fut explicitement définie par la bulle d’exemption. Elle concernait les chanoines et dignitaires, les chapelains et bénéficiers, les domestiques et familiers du Chapitre. Toutefois, un chanoine, exerçant une fonction relevant de l’archevêché, était responsable comme tel devant la juridiction archiépiscopale.</p>
+          <p>c) <hi rend="i">Ratione materiæ</hi>. – Universelle en théorie, cette compétence se réduisait en fait à des causes minimes, les cas très rares étant déférés à la justice séculière.</p>
+        </div>
+        <div>
+          <head rend="uc">B. – <hi rend="i">Fonctionnement.</hi></head>
+          <p>a) <hi rend="i">Personnel :</hi> baillis, sergents, etc.</p>
+          <p>b) <hi rend="i">Sièges :</hi> à Rouen, sous la porte d’Albane ; dans les justices rurales, pas de prétoire bien défini.</p>
+          <p>c) <hi rend="i">Périodicité :</hi> pas établie.</p>
+        </div>
+        <div>
+          <head rend="uc">C. – <hi rend="i">Appel des sentences</hi>.</head>
+          <p>Avant le régime de l’exemption, il était possible de recourir à l’archevêque. A partir de 1371, l’appel à l’archevêque ne fut admis qu’après accord préalable des deux parties ; sinon appel au pape ou à son légat.</p>
+          <p>Pour les justices locales, l’appel des sentences des baillis locaux se faisait devant la juridiction du Chapitre elle-même, constituée en <hi rend="i">échiquier</hi> ou <hi rend="i">hauts-<pb n="83" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_13.TIF/full/full/0/default.jpg"/>jours.</hi> Cette juridiction se prétendait souveraine. Elle se heurtait à de nombreuses contestations avec l’archevêque, avec la ville et avec les officiers royaux.</p>
+        </div>
+        <div>
+          <head rend="uc">D. – <hi rend="i">Juridictions spéciales du chapitre</hi>.</head>
+          <p>Sur les testaments : maître des testats et délégation de deux chanoines. Difficultés avec la juridiction similaire possédée par l’archevêque.</p>
+          <p>Droits spéciaux d’inhumation et d’administration des sacrements.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VIII
+         <lb/>La puissance sociale du chapitre de Rouen.</head>
+        <p>La conséquence de la haute autorité spirituelle et temporelle du Chapitre de Rouen apparaît dans son rôle social. Les différentes autorités civiles qui dominèrent sur Rouen recherchèrent la faveur du chapitre, pour contrebalancer l’influence de Philippe d’Alençon, partisan de Charles le Mauvais, roi de Navarre, et faciliter l’obtention de la bulle d’exemption. Le cœur de Charles V est conservé à la cathédrale.</p>
+        <p>Sous l’occupation anglaise, le Chapitre reçut les faveurs des conquérants. Au début, il avait résisté et soutenu les intérêts français (Robert de Livet).</p>
+        <p>Modifié quant à sa composition sous la pression de Henri V puis du régent Bedford (lui-même chanoine de Rouen), le Chapitre devint, en une vingtaine d’années, une assemblée à tendances anglo-bourguignonnes. C’est son excuse dans l’affaire du procès de condamnation de Jeanne d’Arc, auquel prirent part plusieurs de ses membres. Louable attitude dans l’affaire du patriote Jean de Saint-Avit, évêque d’Avranches.</p>
+        <p>Charles VII ferma les yeux sur le passé récent. Le Chapitre n’en refusa pas moins de contribuer pécu<pb n="84" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_08/ENCPOS_1930_08_14.TIF/full/full/0/default.jpg"/>niairement au siège d’Harfleur. Par contre, il institua une fête avec processions, destinée à commémorer la délivrance de la Normandie (<hi rend="i">Reductio Normanniæ</hi>).</p>
+        <p>Louis XI appelé à Rouen par les questions si délicates du gouvernement de Brézé et de l’éphémère rétablissement du duché de Normandie en faveur de Charles de France, eut fréquemment par la suite à se rendre en cette cité. Il ne manqua pas de se servir du Chapitre en toutes circonstances. Lors de ses nombreuses visites, Louis XI obséda le Chapitre par de menues et fréquentes libéralités.</p>
+        <p>Après Louis XI, le Chapitre cessa de compter comme puissance politique.</p>
+        <p>Il se soumit sans aucune difficulté au concordat de 1516.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Malgré les changements de régime qui mirent Rouen successivement entre les mains des Anglais et des Français, malgré les épreuves subies au cours de la Guerre de Cent ans par l’organisation financière du Chapitre métropolitain, celui-ci sut conserver son avoir foncier et même le développer. Sa position resta très importante jusqu’à la fin de l’Ancien Régime.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table alphabétique generale</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pieces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Carte des biens du chapitre</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

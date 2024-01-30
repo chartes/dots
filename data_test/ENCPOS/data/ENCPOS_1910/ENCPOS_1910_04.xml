@@ -1,0 +1,186 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_04" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les institutions municipales dans le Comté Venaissin des origines à 1790</title>
+        <author ref="https://www.idref.fr/033486646">Hyacinthe Chobaut</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_04.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 27-33</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="27" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les institutions municipales
+       <lb/>dans le comté Venaissin
+       <lb/>des origines à 1790</head>
+      <byline>
+        par
+        <forename>H.</forename>
+        <surname>Chobaut</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Sources ; renseignements sur les archives communales du département de Vaucluse ; travaux parus sur la question.</p>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Premiere partie
+         <lb/>Les consulats</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la société au <num>xii<hi rend="sup">e</hi></num> siècle et l’origine des consulats</head>
+          <p>Les Consulats, dans le Comtat comme dans la Provence, ont une origine purement féodale : leur apparition est le dernier terme de l’évolution décentralisatrice qui avait partagé le pouvoir unique des comtes entre les vicomtes, puis les viguiers et les châtelains.</p>
+          <p>Tandis que le mouvement communal a commencé vers <pb n="28" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_02.TIF/full/full/0/default.jpg"/>1130, dans les grandes villes du Midi, les quelques consulats, que nous rencontrons dans les bourgs comtadins, ne sont probablement guère antérieurs au <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les institutions consulaires</head>
+          <p>Nous n’avons, sur ces institutions, que bien peu de renseignements. Les consulats n’appartiennent pas aux mêmes classes dans toutes les localités : le consulat peut être un régime coseigneurial (l’Isle, Ménerbes) ; ailleurs, chevaliers ou prud’hommes le possèdent.</p>
+          <p>Ces communes avaient, à peu près, les mêmes institutions qu’Avignon, dont l’influence sur elles a été très grande (consuls, juges, notaires, bulles, juridiction gracieuse, podestats, etc.).</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Disparition des consulats</head>
+          <p>Les consulats comtadins disparaissent vers le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle, après une courte existence. Si les circonstances de cette chute varient, la cause primordiale est toujours la même : le commencement d’une évolution nouvelle vers la centralisation.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le « consulatus banni »</head>
+          <p>Contrairement à ce qui se passe dans le reste du pays, les habitants des villages de la région Est du Comtat ont le produit des amendes de police rurale (<hi rend="i">bannum</hi>) ; ils <pb n="29" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_03.TIF/full/full/0/default.jpg"/>nomment des consuls pour percevoir ces amendes ; c’est le « consulatus banni », qui se confond avec le syndicat dans ces localités. Plusieurs d’entr’elles conservent leurs droits sur le « bannum » jusqu’à 1790.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les syndicats</head>
+        <div>
+          <head rend="uc">Première section
+           <lb/>les institutions municipales</head>
+          <div>
+            <head rend="uc">Chapitre premier
+             <lb/>origine, expansion et caractère juridique du syndicat</head>
+            <p>Les origines du régime syndical sont féodales ; à partir de la chute des consulats, les communautés du Comtat peuvent élire des procureurs ou syndics : comme leur nom l’indique, le mandat qui leur est donné est une simple procuration juridique.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+             <lb/>Le parlement général</head>
+            <p>Le « parlement » est la base du régime : c’est l’assemblée générale des possesseurs, chefs de famille, d’une localité : les veuves, les juifs même, au <num>xiii<hi rend="sup">e</hi></num> siècle, en font partie. L’officier seigneurial le convoque et le préside toujours. Le parlement général nomme les syndics ; il disparaît devant les conseils étroits, d’abord dans les gros bourgs, puis, à peu près partout.</p>
+          </div>
+          <div>
+            <pb n="30" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_04.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre III
+             <lb/>Les syndics</head>
+            <p>Ce sont à l’origine les simples procureurs juridiques de l’assemblée générale des habitants ; nommés d’abord pour une affaire déterminée, ils obtiennent ensuite des mandats généraux, malgré quelques résistances seigneuriales ; devenus annuels, ils prennent des attributions administratives, qui n’étaient pas de leur ressort à l’origine : ils deviennent magistrats municipaux.</p>
+            <p>A partir du <num>xvi<hi rend="sup">e</hi></num> siècle, leur mode d’élection change ; leurs pouvoirs restent les mêmes ; ils obtiennent du gouvernement central quelques privilèges surtout honorifiques, parmi lesquels celui de se nommer consuls.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IV
+             <lb/>Le conseil</head>
+            <p>L’institution du conseil étroit se généralise au <num>xiv<hi rend="sup">e</hi></num> siècle. Cet organe, sorti du parlement et nommé par lui, le supplée pour l’expédition des affaires et seconde les syndics ; puis le parlement est supprimé et le conseil hérite de ses attributions. Le système des classes censitaires, ou « mains », rend le régime beaucoup plus fermé.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre V
+             <lb/>Les officiers municipaux</head>
+            <p>A partir de l’époque où ils acquièrent des pouvoirs administratifs, les syndics sont secondés par de nombreux officiers.</p>
+          </div>
+        </div>
+        <div>
+          <pb n="31" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Seconde section
+           <lb/>la vie municipale</head>
+          <div>
+            <head rend="uc">Chapitre premier
+             <lb/>les finances municipales</head>
+            <p>Dès le <num>xiv<hi rend="sup">e</hi></num> siècle, les communautés établissent de nombreux impôts directs ou indirects (taille, capage, vingtain, rêve, souquet). Pour lever une imposition, il faut toujours obtenir l’autorisation seigneuriale. A partir du <num>xvi<hi rend="sup">e</hi></num> siècle, le gouvernement central organise minutieusement la tutelle financière des communautés.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+             <lb/>Les biens communaux</head>
+            <p>Si leur origine reste obscure, ils nous apparaissent comme très développés, dans le Comtat ; outre de nombreux droits d’usage, les communautés possèdent aussi de vraies propriétés.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+             <lb/>Le socialisme municipal</head>
+            <p>Nous trouvons, dans ces villages, un protectionnisme local très développé. Les services publics, régis suivant les principes d’un véritable socialisme municipal, se transformèrent peu à peu en sources de revenus.</p>
+            <p>L’instruction publique, bien organisée, est un vrai service Communal.</p>
+          </div>
+          <div>
+            <pb n="32" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_06.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre IV
+             <lb/>Les statuts</head>
+            <p>Dès la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, les communautés du Comté Venaissin ont leurs statuts, qui ne concernent guère que la police rurale. Ces statuts sont rédigés par les mandataires des habitants et approuvés par le seigneur. Essai de synthèse de ces statuts.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre V
+             <lb/>Les privilèges</head>
+            <p>En obtenant des chartes de franchises ou en passant des transactions arbitrales, les communautés avaient acquis, souvent à prix d’argent, d’assez nombreux privilèges. Plusieurs chartes de franchises peuvent être réparties en familles. Essai de synthèse de ces chartes.</p>
+            <p>La dîme a été souvent réglée à un taux assez bas.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre VI
+             <lb/>L’état</head>
+            <p>Les communautés interviennent dans le gouvernement général par leur représentation aux Etats provinciaux.</p>
+            <p>Dès le <num>xvi<hi rend="sup">e</hi></num> siècle, les vice-légats établissent la tutelle administrative la plus complète.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre VII
+             <lb/>Les occupations françaises</head>
+            <p>Cette tutelle étant organisée en France à peu près de la même façon, les occupations temporaires de Louis XIV</p>
+            <pb n="33" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_07.TIF/full/full/0/default.jpg"/>
+            <p>LES INSTITUTIONS MUNICIPALES DANS LE COMTÉ VENAISSIN 33 et de Louis XV ne changeaient pour ainsi dire rien au régime municipal comtadin.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>L’histoire du régime municipal présente donc, dans le Comté Venaissin, deux périodes distinctes : celle des consulats, du reste peu répandus, qui dure à peu près un demi-siècle, et celle des syndicats, depuis 1250 environ. De la simple procuration juridique originelle, par une lente et pacifique évolution, les communautés rurales du Comtat en sont arrivées à obtenir, tout comme les grandes villes, un vrai régime municipal. Au <num>xviii<hi rend="sup">e</hi></num> siècle, leur situation semble meilleure qu’en France, les charges financières et militaires étant moins lourdes, et le rachat des offices n’existant pas. Jamais, du reste, ces communautés n’ont eu de sceau, ou de juridiction : elles n’ont pu arriver à se dégager complètement du pouvoir seigneurial.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>N° I. – Fastes consulaires.</p>
+        <p>N” II. – Statistique des syndics du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Table des noms de lieux et carte du Comtat</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table générale</head>
+        <pb n="34" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_04/ENCPOS_1910_04_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

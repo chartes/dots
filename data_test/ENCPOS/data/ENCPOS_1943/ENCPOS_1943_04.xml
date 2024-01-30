@@ -1,0 +1,128 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_04" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le temporel de l’Église cathédrale de Paris pendant les guerres de Religion (1560-1610)</title>
+        <author ref="https://www.idref.fr/254313914">Marie-Thérèse Chabord</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_04.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 37-40</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="37" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_04/ENCPOS_1943_04_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le temporel
+       <lb/>de
+       <lb/>l’église cathédrale de Paris
+       <lb/>pendant les guerres de religion
+       <lb/>(1560-1610)</head>
+      <byline>
+        par
+        <forename>Marie-Thérèse</forename>
+        <surname>Chabord</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>La période 1560-1610 a été choisie comme cadre chronologique de ce travail, parce qu’elle correspond à la lutte entre catholiques et protestants, dont nous avons voulu étudier les conséquences sur le temporel d’une riche communauté ecclésiastique.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction historique</head>
+        <p>Les événements de la région parisienne. L’attitude ligueuse du chapitre. Les dégâts survenus à ses propriétés du fait des guerres. Son œuvre de reconstruction.</p>
+        <div>
+          <pb n="38" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_04/ENCPOS_1943_04_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Constitution du temporel.</head>
+          <p>Localisation et caractères des immeubles de Paris, essai de délimitation du territoire sur lequel le chapitre était seigneur justicier et censier dans la capitale et sa banlieue immédiate.</p>
+          <p>Répartition géographique et description des biens ruraux.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>administration centrale.</head>
+        <p>Une partie des biens capitulaires sert d’assignation aux prébendes des chanoines, le reste alimente les caisses de divers offices, il existe probablement un fonds général. L’office de la chambre est chargé de la gestion de tous les biens sous le contrôle du chapitre. Les questions de tout ordre sont discutées dans les assemblées capitulaires qui ont lieu plusieurs fois par semaine. Les propriétés rurales sont régulièrement visitées par des chanoines spécialement délégués. A Paris, l’église est aidée dans son administration par un personnel laïque. Les contrats sont préparés par l’office de la chambre et passés devant notaires après avoir été approuvés par le chapitre.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Administration des immeubles parisiens.</head>
+        <p>Les immeubles sont loués en général pour neuf ans ; cette durée diminue pendant la crise de 1590. Les loyers sont en hausse régulière jusqu’à la fin de 1588, subissent une chute brutale de 1590 à 1594, puis remontent peu à peu. Pendant la crise qui suit le siège de Paris, les locataires paient des sommes minimes convenues verbalement avec les chanoines. Ils sont tenus au paiement des impôts et des menues réparations ; pas de règle fixe pour les travaux importants. La sous-location est en principe interdite. Des règlements spéciaux <pb n="39" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_04/ENCPOS_1943_04_03.TIF/full/full/0/default.jpg"/>sont appliqués aux maisons du cloître Notre-Dame et aux immeubles autres que les maisons d’habitation.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Administration des propriétés rurales.</head>
+        <p>Le chapitre baille à cens les terres incultes et les landes ; il n’utilise pas le faire-valoir direct. Ses propriétés sont affermées pour neuf ans ; les baux à longue durée sont exceptionnels. Le fermage est convenu en argent ou en nature, le chapitre préférant les redevances en grain, mais en fait celles-ci sont, la plupart du temps, transformées en argent à la requête des fermiers. La courbe des fermages est analogue à celle des loyers parisiens. L’entretien des bâtiments est à la charge du fermier ; le chapitre assume les réparations importantes, tente d’améliorer ses exploitations par de nouvelles constructions, surveille la mise en culture et avance des semences à ses fermiers ; il consent des diminutions les années de mauvaise récolte et surtout pendant les guerres.</p>
+        <p>Les chanoines afferment les bois taillis et vendent sur pied la futaie ; ils interdisent le pâturage dans leurs bois. Le droit de pêche est également affermé.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Administration des droits seigneuriaux.</head>
+        <p>La perception est tantôt baillée à ferme, tantôt confiée à un receveur. La justice est exercée par des officiers à gages : prévôt, lieutenant, procureur fiscal, sergents. Le greffe est parfois donné à ferme avec le tabellionnage. A Paris, la justice est rendue par le chambrier lai, assisté d’un lieutenant ; il juge en première instance au civil et au criminel dans la capitale et reçoit les appels des justices seigneuriales par un privilège spécial au chapitre ; il va aussi tenir des assises dans les prévôtés. Le droit de justice du chapitre a été respecté par le Parlement.</p>
+      </div>
+      <div>
+        <pb n="40" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_04/ENCPOS_1943_04_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre V
+         <lb/>Histoire financière.</head>
+        <p>Le chapitre, dès 1560, doit répondre aux exigences de la royauté ; en l’espace de vingt ans, il prête au roi 26,500 livres tournois ; en outre, il subvient aux taxes d’aliénations du temporel ecclésiastique en constituant des rentes ; sauf pour la première aliénation, en 1563, où plusieurs de ses propriétés sont vendues, il parvient à les racheter. Ses ressources tarissent à partir de 1587, en raison des guerres ; il doit recourir à nouveau aux constitutions de rente, puis à la vente des joyaux de l’église pour alimenter sa trésorerie. Ses revenus sont saisis par ses créanciers et par les donataires du roi. En 1594, il aliène une partie de son temporel et peut ainsi, au cours du règne d’Henri IV, racheter les rentes qu’il avait constituées et rétablir son équilibre financier.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <div>
+          <head rend="uc">I. Carte des domaines ruraux.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">II. Énumération des biens composant le temporel.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">III. Variations des loyers urbains.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">IV. Variations des fermages.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">V. Mouvement des biens de 1540 à 1610.</head>
+          <p/>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

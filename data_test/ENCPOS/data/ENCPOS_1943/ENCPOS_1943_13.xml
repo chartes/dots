@@ -1,0 +1,161 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’architecture militaire du <hi rend="sc">xi</hi><hi rend="sup">e</hi> au <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle dans la viguerie de Grasse et le bailliage de Saint-Paul-de-Vence</title>
+        <author ref="https://www.idref.fr/144485141">Denise Humbert</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_13.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 109-116</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="109" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’architecture militaire
+       <lb/>du <num>xi<hi rend="sup">e</hi></num> au <num>xvi<hi rend="sup">e</hi></num> siècle
+       <lb/>dans la Viguerie de Grasse
+       <lb/>et le bailliage de Saint-Paul-de-Vence</head>
+      <byline>
+        par
+        <forename>Denise</forename>
+        <surname>Humbert</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Sources – Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p><hi rend="i">Le cadre, géographique.</hi> – Viguerie et bailliage sont des subdivisions qui apparaissent dès le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle en Provence, se précisent sous les comtes angevins et se maintiennent pendant tout l’Ancien Régime. Dans la région de Grasse et de Saint-Paul, elles coïncident sensiblement avec les anciennes <hi rend="i">civitates</hi> et les évêchés d’Antibes et de Vence. Elles correspondent au pays limité par la Siagne à l’ouest, les montagnes de Thorenc et du Cheiron et le cours de l’Estéron au nord, et le cours inférieur du Var à l’est. Cette région présente une unité géologique certaine. Le terrain est principalement calcaire. Le relief est très accidenté ; pas de plaine. Les points fortifiés jalonnent les côtes et les vallées de la Siagne, du Loup, de la Cagne et du Var.</p>
+        <p><hi rend="i">Le cadre, historique.</hi> – La région est un pays de passage, fréquemment <pb n="110" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_02.TIF/full/full/0/default.jpg"/> envahi. Les Ligures. Les Phocéens. La conquête romaine. Lors des invasions barbares, le pays appartient d’abord aux Ostrogoths, puis aux Francs (536).</p>
+        <p>Au <num>viii<hi rend="sup">e</hi></num> siècle, début des invasions sarrasines, particulièrement violentes jusqu’en 975 (expulsion des Sarrasins fixés depuis un siècle sur la côte). Au <num>xi<hi rend="sup">e</hi></num> siècle, la féodalité s’organise ; au <num>xii<hi rend="sup">e</hi></num> paraissent les consulats. Le <num>xiii<hi rend="sup">e</hi></num> siècle. Interventions de Raimond Bérenger V et de Romée de Villeneuve dans le pays. Le <num>xiv<hi rend="sup">e</hi></num> siècle : guerres entre la reine Jeanne et les Duras, Grand Schisme, peste, brigandages. Le <num>xv<hi rend="sup">e</hi></num> siècle : luttes des Angevins contre l’Aragon, réunion de la Provence à la France. Au début du <num>xvi<hi rend="sup">e</hi></num> siècle, la Provence est deux fois envahie par les Impériaux (1524 et 1536). Les guerres de religion en Provence sont très violentes et de caractère plutôt politique. Carcistes et Razats. La Ligue appelle Charles-Emmanuel de Savoie (1592). Pacification du pays (1593). Les dernières alertes : 1635, 1707, 1746.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La défense des côtes</head>
+        <div>
+          <head rend="uc">Chapitre préliminaire
+           <lb/>l’enceinte romaine d’Antibes.</head>
+          <p>Antibes, colonie marseillaise, puis municipe romain, est la ville la plus considérable du pays pendant l’Antiquité. Son enceinte romaine lui a servi pendant le Moyen-Age. Très réduite, elle date du Bas-Empire. Son plan est rectangulaire ; on y voit encore des murs en petit appareil, une porte entre deux tours, une poterne, deux autres tours rondes et beaucoup de substructions.</p>
+        </div>
+        <div>
+          <pb n="111" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre premier
+           <lb/>la Renaissance de l’architecture militaire. Lérins.</head>
+          <p><hi rend="i">Histoire.</hi> – Le monastère de Lérins, fondé par saint Honorat vers 423, est le plus illustre de l’Occident pendant le Haut Moyen-Age. Puis, il tombe en décadence, sa mise en commende lui est fatale, et il est sécularisé (1788). Son château, élevé vers la fin du <num>xi<hi rend="sup">e</hi></num> siècle et considérablement agrandi au <num>xii<hi rend="sup">e</hi></num>, reçoit encore des perfectionnements aux <num>xiv<hi rend="sup">e</hi></num> et <num>xv<hi rend="sup">e</hi></num> siècles. Les attaques sur le château sont nombreuses : Sarrasins (1107), Génois (1400), Espagnols (1524, 1635), Anglais (1746).</p>
+          <p><hi rend="i">Etude archéologique.</hi> – Le noyau primitif du château, dû à l’abbé Aldebert II, est un gros donjon carré (fin du <num>viii<hi rend="sup">e</hi></num> siècle). Trois campagnes au <num>xii<hi rend="sup">e</hi></num> siècle y ajoutent une aile très importante à l’est et deux bâtiments au sud et à l’ouest. Il est bâti en calcaire blanc. Les reprises dans la construction sont marquées par des différences dans l’appareil : très grand dans l’aile primitive, moyen dans les autres, il présente partout des bossages. A l’intérieur, le château comprend des citernes, des magasins, des chapelles, quatre grandes salles, un réfectoire, deux cloîtres superposés, etc. Il est couvert d’une terrasse bordée de mâchicoulis. C’est un monument unique : le parti suivi a été d’installer toute une abbaye dans un donjon. C’est la première construction militaire médiévale de la région.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Cannes.</head>
+          <p><hi rend="i">Histoire.</hi> – Vassal de Lérins, Cannes fut un petit village à la croissance difficile. Rien ne faisait prévoir son importance actuelle.</p>
+          <p><hi rend="i">Etude archéologique.</hi> – Le château des abbés de Lérins <pb n="112" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_04.TIF/full/full/0/default.jpg"/>s’élevait au sommet de la vieille ville. 11 en reste un donjon carré, construit de 1070 à 1395, autrefois couronné de mâchicoulis, une chapelle du <num>xii<hi rend="sup">e</hi></num> siècle, transformée en ouvrage défensif au <num>xvi<hi rend="sup">e</hi></num> (établissement d’une terrasse et d’un crénelage), et le rez-de-chaussée défiguré de l’ancien château qui pouvait remonter au <num>xii<hi rend="sup">e</hi></num> siècle dans ses parties anciennes (il a été démoli en 1735). Le jardin du château présentait une enceinte fortifiée. La ville était entourée de remparts, dont il ne reste qu’un soubassement de tour.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Antibes.</head>
+          <p><hi rend="i">Histoire.</hi> – Antibes passa de la domination des Rodoard (<num>xi<hi rend="sup">e</hi></num> siècle) à celle de ses évêques, même après le transfert de l’évêché à Grasse. Le consulat apparaît en 1241. La seigneurie d’Antibes fut vendue par Clément VII aux Grimaldi, puis achetée par Henri IV en 1608. La ville, vu son importance, subit des sièges très durs lors de toutes les invasions de la Provence.</p>
+          <p><hi rend="i">Etude archéologique.</hi> – Le château d’Antibes, dû aux Grimaldi, est peu intéressant, sauf en ses fondations (murs romains, citerne). Son donjon carré date de la fin du <num>xi<hi rend="sup">e</hi></num> ou des premières années du <num>xii<hi rend="sup">e</hi></num> siècle. Un autre donjon, un peu plus important et de date imprécise, s’élève près de l’église. L’enceinte est toujours l’enceinte romaine, un peu remaniée.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Villeneuve-Loubet.</head>
+          <p><hi rend="i">Histoire.</hi> – Fief de Romée de Villeneuve, le château passe ensuite aux Lascaris de Tende. Abandonné au <num>xvii<hi rend="sup">e</hi></num> siècle, il tombe en ruines. Restauration radicale en 1887.</p>
+          <p><hi rend="i">Étude archéologique.</hi> – On a conservé le plan de l’ancien château ; il est unique dans la région (rectangle flanqué de <pb n="113" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_05.TIF/full/full/0/default.jpg"/>tours rondes, donjon pentagonal, qui est, lui, le donjon primitif). Ce plan s’explique si on l’attribue à la personnalité connue de Romée de Villeneuve.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Cagnes.</head>
+          <p><hi rend="i">Histoire.</hi> – Petit village à l’histoire obscure, fief des Grimaldi, depuis le <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Etude archéologique.</hi> – Cagnes conserve une enceinte sans flanquement, bâtie en blocage avec cailloux roulés. Le château des Grimaldi, fortin polygonal du <num>xiv<hi rend="sup">e</hi></num> siècle, a perdu à l’intérieur tout caractère militaire.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les fortifications de montagne</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>Grasse.</head>
+          <p><hi rend="i">Histoire.</hi> – La situation de Grasse est privilégiée ; elle bénéficie de tous les avantages de la plaine et de la montagne. Elle eut, du <num>xii<hi rend="sup">e</hi></num> siècle à 1227, un consulat puissant. A cette date, elle passe sous le pouvoir comtal. Elle se distingue par sa fidélité à la reine Jeanne. Malgré ses remparts, tous les envahisseurs de la Provence l’occupent facilement.</p>
+          <p><hi rend="i">Etude archéologique.</hi> – Le <hi rend="i">podium,</hi> au cœur de la ville, est le premier point fortifié, on y voit, attenant à l’évêché, un donjon qui existait déjà en 1166 et remplaçait une tour plus ancienne. Il ne reste rien de l’enceinte considérable, flanquée de huit tours, que Grasse présentait au <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <pb n="114" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_06.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Vence.</head>
+          <p><hi rend="i">Histoire.</hi> – La position excellente de Vence permet de croire que ce fut de toute antiquité un centre de peuplement. Au <num>xiii<hi rend="sup">e</hi></num> siècle, elle fit partie des fiefs de Romée de Villeneuve, dont les descendants partagèrent avec les évêques la juridiction sur la ville jusqu’en 1789. Elle subit des sièges nombreux : le plus mémorable est celui de 1592, où la ville repoussa les protestants.</p>
+          <p><hi rend="i">Etude archéologique.</hi> – La première défense de la ville semble être le clocher de la cathédrale, donjon carré qui remonte au <num>xii<hi rend="sup">e</hi></num> siècle. Un second donjon fut élevé par la commune au début du <num>xiii<hi rend="sup">e</hi></num> siècle. L’enceinte, propriété de la commune, date de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle. Elle n’offre pas de flanquement, mais deux portes ; l’une est percée dans un saillant du mur, l’autre était percée dans une tour carrée. Ces portes sont un peu plus récentes que les courtines.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Saint-Paul de Vence.</head>
+          <p><hi rend="i">Histoire.</hi> – Point stratégique de première importance, Saint-Paul ne fut jamais inféodé. Les comtes le comblèrent de faveurs. Sa faible résistance aux invasions du <num>xvi<hi rend="sup">e</hi></num> siècle amena les rois de France à le munir de remparts très forts.</p>
+          <p><hi rend="i">Etude archéologique.</hi> – Saint-Paul montre encore un donjon carré, construit par la commune au <num>xiii<hi rend="sup">e</hi></num> siècle. Ses dispositions sont un peu différentes de celles des autres donjons. L’enceinte antérieure au <num>xvi<hi rend="sup">e</hi></num> siècle n’existe plus. Il n’en subsiste qu’un témoin, une porte du <num>xv<hi rend="sup">e</hi></num> siècle, percée dans une tour, défendue par des mâchicoulis et des archères biaises. Une autre tour, plus grossière, peut avoir fait partie des défenses de la ville. On retrouve la ligne de l’ancien rem<pb n="115" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_07.TIF/full/full/0/default.jpg"/>part dans celle des maisons actuelles qui sont en retrait du mur du <num>xvi<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Villages de montagne.</head>
+          <p>Carros et Gréolières ont gardé leurs châteaux polygonaux sans donjon. Entre Cannes et Grasse, Mougins possède encore une porte du <num>xiv<hi rend="sup">e</hi></num> siècle. Tourrettes-sur-Loup présente le dernier donjon carré et deux portes assez récentes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les châteaux dits « des Templiers ».</head>
+          <p>Rien ne prouve l’attribution de certains châteaux aux Templiers, mais ils ont tous deux points communs : leur position forte et isolée et la présence d’une chapelle dans leur enceinte. Ce sont : le château de Saint-Martin, au-dessus de Vence, où l’on Irouve le seul mâchicoulis à grand arc de la région, le château de la Gaude, qui domine le passage du Var, et trois petits fortins placés sur des sommets, et comprenant une enceinte, un ou plusieurs bâtiments d’habitation et une chapelle : le Castellaras de Roquefort, qui est peut-être un prieuré fortifié de Lérins, le Castellaras d’Andon, presque entièrement détruit, et le Castellaras de Thorenc, dont les vestiges sont imposants. Ce dernier est le seul que l’on puisse attribuer avec vraisemblance aux Templiers.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Caractères généraux
+           <lb/>de l’architecture militaire du Moyen-Age
+           <lb/>entre Siagne et Var.</head>
+          <p>Les édifices étudiés sont tous d’une grande simplicité : enceintes sans tours, châteaux sans donjon, portes de villes percées dans des tours. Le second caractère est l’archaïsme, <pb n="116" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_13/ENCPOS_1943_13_08.TIF/full/full/0/default.jpg"/>attesté par la persistance des donjons carrés. Ces derniers sont l’édifice le plus caractéristique de la région ; leurs dispositions sont uniformes et invariables du <num>xi<hi rend="sup">e</hi></num> au <num>xiii<hi rend="sup">e</hi></num> siècle : plan carré, voûtes en berceau, escaliers sur corbeaux. Presque tous ces édifices sont construits en calcaire blanc ; les donjons offrent des bossages, peut-être imités de modèles romains. Ces bossages, « rustiques » au <num>xi<hi rend="sup">e</hi></num> siècle, évoluent et se rapprochent du type d’Aigues-Mortes à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Tables</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Photographies – Carte – Plans – Dessins</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,116 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai historique sur le cimetière des Saints-Innocents, depuis les origines jusqu’à 1786</title>
+        <author ref="https://www.idref.fr/122092171">Marcel Gastineau</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_10.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 73-79</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="73" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai historique
+       <lb/>sur
+       <lb/>le cimetière des Saints-Innocents
+       <lb/>depuis les origines jusqu’à 1786</head>
+      <byline>
+        par
+        <forename>Marcel</forename>
+        <surname>Gastineau</surname>
+        <roleName>Docteur en droit, Ancien élève de l’École des Hautes-Études</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction. – Sources et bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>origines du cimetière</head>
+        <p>Deux dénominations du cimetière : Cimetière de Saint-Innocent, cimetière des Saints-Innocents ; la dernière a prévalu à juste titre.</p>
+        <p>Les origines du cimetière des Innocents, très lointaines et très obscures, remontent, sans doute, au moins à l’époque carolingienne (<num>viii<hi rend="sup">e</hi></num> ou <num>ix<hi rend="sup">e</hi></num> siècle). – Son emplacement au lieu dit Champeaux. Ce fut originairement le cimetière plus spécialement du bourg Saint-Germain et de ses dépendances. Il ne fut englobé dans la ville que par l’enceinte de Philippe-Auguste (1190). Il fut clos de murs, en 1186, par mesure de police. – Donation de l’évêque de Paris, Pierre de Nemours (juin 1218), pour l’agrandissement du cimetière.</p>
+      </div>
+      <div>
+        <pb n="74" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Chapitre II
+         <lb/>Description du cimetière</head>
+        <p>Résumé iconographique.</p>
+        <p>Forme, délimitation et dimensions du cimetière. Celles-ci ont varié, notamment à la fin du <num>xvii<hi rend="sup">e</hi></num> siècle, par suite de l’élargissement de la rue de la Ferronnerie, qui en diminua l’étendue. – Portes du cimetière. Distinction des charniers et du parterre.</p>
+        <p>1. <hi rend="i">Charniers</hi>. – Les arcades en furent construites successivement, à partir du dernier tiers du <num>xiv<hi rend="sup">e</hi></num> siècle, aux frais de riches bourgeois de Paris. Le chapitre de Saint-Germain-l’Auxerrois en concédait la jouissance, à charge d’entretien, à des particuliers, pour y avoir leur sépulture.</p>
+        <p>Aspect des charniers et des galetas qui les surmontaient ; maisons construites au-dessus de certains des charniers et des portes du cimetière ; curiosités archéologiques sous les charniers : danse Macabré, « squelette d’albâtre », etc. ; clôture des charniers et des portes du cimetière, par mesure de police, notamment aux <num>xvi<hi rend="sup">e</hi></num> et <num>xvii<hi rend="sup">e</hi></num> siècles.</p>
+        <p>2. <hi rend="i">Parterre.</hi> – Divers petits monuments s’y élevaient : tombes, croix, prêchoir, tour Notre-Dame des Bois, cha pelles de Villeroy, d’Orgemont et de Pommereux, « reclusage ».</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Ayants droit au cimetière des Innocents</head>
+        <p>Le Chapitre de Saint-Germain-l’Auxerrois, l’Hôpital Sainte-Catherine, l’Hôtel-Dieu, la fabrique de l’église des <pb n="75" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_03.TIF/full/full/0/default.jpg"/>Saints-Innocents possédaient des droits au cimetière des Innocents.</p>
+        <p>1. <hi rend="i">Chapitre de Saint-Germain-l’Auxerrois</hi>. – En l’absence de titres d’origine, une longue tradition consacrée par plusieurs documents de différentes époques, tels que baux à cens, arrêts du Parlement, sentences du Prévôt de Paris, terriers, etc., permet de supposer que le Chapitre possédait la seigneurie foncière et la propriété du cimetière. Cependant l’arrêt du Conseil, du 25 octobre 1785, prononça en sens contraire.</p>
+        <p>Généralités historiques sur les droits qui découlaient, pour le Chapitre, de sa seigneurie foncière : pouvoirs d’administration, perception des droits d’inhumation, institution et destitution de fossoyeur. L’Evêque de Paris eut d’abord la jouissance de ces prérogatives, qui ne passèrent au Chapitre qu’au milieu du <num>xii<hi rend="sup">e</hi></num> siècle, sous l’épiscopat de Thibaud. L’évêque de Paris, Hugues II, prétendit, au <num>xiv<hi rend="sup">e</hi></num> siècle, faire revivre les anciens droits de l’évêque de Paris, particulièrement en ce qui concernait l’institution de fossoyeur ; solution du litige en faveur du Chapitre par sentence de l’official, du 16 mars 1329 n. st. : partage des droits d’inhumation entre le Chapitre et l’Hôpital Sainte-Catherine ; au Chapitre seul revenaient les émoluments des sépultures des paroissiens de Saint-Germain-l’Auxerrois, Saint-Eustache et Saint-Sauveur. Le Chapitre partageait avec l’Hôpital Sainte-Catherine les émoluments des sépultures relevant de toutes les autres paroisses qui inhumaient aux Innocents, excepté les trois précédentes et celles de Saint-Jacques de la Boucherie, Saint-Christophe, Sainte-Marine. L’arrêt du Parlement du 21 mars 1659 réduisit de la moitié au tiers la quotité de l’Hôpital Sainte-Catherine.</p>
+        <p>2. <hi rend="i">Hôpital Sainte-Catherine</hi>. – Incertitude sur l’origine et la date initiale de ses droits sur une zone mal délimitée du cimetière, où il inhumait ses morts, les paroissiens de <pb n="76" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_04.TIF/full/full/0/default.jpg"/>Saint-Jacques la Boucherie, les personnes décédées sur la voie publique ou dans les prisons du Châtelet. Difficulté de décider si c’était un droit de propriété ou une simple saisine. – Prétentions des Dames de Sainte-Catherine, à diverses époques, à la propriété de cette zone, et à la co-propriété et co-seigneurie de l’ensemble du cimetière et des charniers ; elles furent déboutées de leurs demandes sur ce dernier point, notamment par arrêts du Conseil du 14 juillet 1677 et du 16 mai 1684.</p>
+        <p>Les religieuses de Sainte-Catherine avaient droit d’instituer et de destituer un fossoyeur pour les inhumations relevant d’elles (document de 1247, sentence prévôtale de décembre 1371, confirmée par arrêt du Parlement du 29 janvier 1373 n. st., etc.), et percevaient, outre les émoluments des inhumations des paroissiens de Saint-Jacques de la Boucherie, la moitié jusqu’en 1659, le tiers à partir de cette date, des droits de sépulture afférents aux paroisses communes entre le Chapitre et l’Hôpital.</p>
+        <p>La zone de l’hôpital Sainte-Catherine fut diminuée d’étendue par l’élargissement de la rue de la Ferronnerie, décrété par arrêt du Conseil du 18 octobre 1669.</p>
+        <p>3. <hi rend="i">Hôtel-Dieu.</hi> – Ses droits sur une zone bien délimitée du cimetière (sentence des Maîtres des Requêtes, du 21 novembre 1442) : était-ce un droit de propriété ou une simple saisine ? même difficulté que pour l’Hôpital Sainte-Catherine, de résoudre ce problème, en l’absence de titres de propriété. Les prétentions de l’Hôtel-Dieu à la propriété de cette partie du cimetière durèrent jusqu’à sa suppression.</p>
+        <p>Droit de l’Hôtel-Dieu d’inhumer, en cette partie du cimetière, ses morts, les paroissiens de Saint-Christophe et de Sainte-Marine, les prisonniers du For-l’Evêque, et de percevoir les émoluments de ces inhumations. – Autonomie de l’Hôtel-Dieu dans l’administration de la portion du cimetière dont il avait la jouissance. Il nommait son <pb n="77" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_05.TIF/full/full/0/default.jpg"/>fossoyeur, délivrait les permis d’inhumation, d’érection de croix, etc. – Conflits et procès entre l’Hôtel-Dieu et le Chapitre de Saint-Germain, ou la fabrique des Saints-Innocents. – Diminution d’étendue de la portion de terrain de l’Hôtel-Dieu par l’élargissement de la rue de la Ferronnerie.</p>
+        <p>4. <hi rend="i">Fabrique de l’église des Saints-Innocents.</hi> – Son droit d’instituer un fossoyeur au cimetière (sentence prévôtale de 1371) ; sépulture gratuite de ses paroissiens aux Innocents. – Propriétés et revenus fonciers de la paroisse au cimetière des Innocents (lettres-patentes de 1385) ; ses prétentions injustifiées à la propriété du cimetière et des charniers fondées précisément sur un passage de ces lettres-patentes. – Multiples procès entre le Chapitre et la fabrique, notamment à propos de la statue dite « la mort Saint Innocent ».</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Administration du cimetière</head>
+        <p>1. <hi rend="i">Administration générale.</hi> – Elle appartenait au Chapitre de Saint-Germain-l’Auxerrois qui, à titre de seigneur spirituel et temporel, donnait les permissions d’ouverture de fosse et d’inhumation, de tombe, d’érection de croix, d’apposition d’épitaphe, et autres permissions secondaires, notamment celles d’exercer, sous les arcades des charniers, les professions d’écrivains ou d’imagiers ; l’Hôpital Sainte-Catherine exerçait-il cette administration conjointement avec le Chapitre ?</p>
+        <p>Délégations générales et délégations particulières de chanoines relatives à l’administration du cimetière. – Gestion financière du cimetière.</p>
+        <p>2. <hi rend="i">Fossoyage.</hi> – Chacune des collectivités ayant des droits au cimetière était en possession d’y avoir son fos<pb n="78" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_06.TIF/full/full/0/default.jpg"/>soyeur. – Nomination du fossoyeur du Chapitre par les doyen et chanoines, qui lui baillaient à ferme leurs droits au cimetière ; ses fonctions et ses charges ; son rôle de surveillance ; police intérieure du cimetière.</p>
+        <p><hi rend="i">Fosses.</hi> – Les fosses communes absorbaient la majeure partie du cimetière ; réglementation de cette matière (ordonnance prévôtale de novembre 1397, etc.).</p>
+        <p>3. <hi rend="i">Inhumations.</hi> – Paroisses et communautés qui inhumaient au cimetière ; il y en avait environ une trentaine. – – Quelques données statistiques sur le chiffre approximatif des inhumations. Exhaussement du sol du cimetière, provenant de leur nombre considérable. – Tarification et réglementation du fossoyage et des inhumations : tarifs du <num>xvi<hi rend="sup">e</hi></num> siècle, de 1715 à 1718 ; difficultés que souleva cette dernière tarification. – Evaluation du produit du cimetière : quelques chiffres de recettes et de dépenses.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Police du cimetière</head>
+        <p>Abus qui se commettaient au cimetière ; mesures prises pour y remédier, notamment clôture des portes, des arcades, des charniers, etc. – Commerces et métiers divers, particulièrement d’imagiers et d’écrivains publics, exercés sous les charniers ; réglementation de cette matière (sentences de l’Official et du Châtelet, arrêts du Parlement). – Répression de divers désordres.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>Suppression du cimetière</head>
+        <p>Réclamée depuis longtemps par l’opinion, le souci de l’hygiène publique l’imposait. – Mesures préalables à <pb n="79" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_07.TIF/full/full/0/default.jpg"/>cette suppression : cessation des inhumations en décembre 1780. – Procédure de suppression du cimetière : son terrain, réuni au domaine royal par arrêt du Conseil du 25 octobre 1785, est converti en marché aux herbes par arrêt du Conseil du 9 novembre 1785. Ces différentes mesures eurent lieu de concert entre le gouvernement royal et l’autorité ecclésiastique.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VII
+         <lb/>Menus faits et anecdotes</head>
+        <p>Renseignements divers, empruntés aux documents narratifs, notamment sur les « secrétaires de Saint-Innocent », sur les recluses du cimetière, sur les mouvements populaires dont il fut le théâtre, etc...</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <div>
+          <head rend="uc">Plan et dessins</head>
+          <pb n="80" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_10/ENCPOS_1910_10_08.TIF/full/full/0/default.jpg"/>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

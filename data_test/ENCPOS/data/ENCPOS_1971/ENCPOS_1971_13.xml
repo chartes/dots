@@ -1,0 +1,175 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les origines de l’abbaye de Saint-Florent-lès-Saumur ; histoire des monastères du Mont-Glonne et du château de Saumur (<hi rend="sc">v</hi><hi rend="sup">e</hi>-<hi rend="sc">vi</hi><hi rend="sup">e</hi> siècles-1026)</title>
+        <author ref="https://www.idref.fr/026913682">Maurice Hamon</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_13.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 95-102</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="95" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les origines
+       <lb/>de l’abbaye de Saint-Florent-lès-Saumur
+       <lb/>histoire des monastères du Mont-Glonne
+       <lb/>et du château de Saumur (<num>v<hi rend="sup">e</hi></num>-<num>vi<hi rend="sup">e</hi></num> siècles-1026)</head>
+      <byline>
+        par
+        <forename>Maurice</forename>
+        <surname>Hamon</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>L’abbaye de Saint-Florent a occupé trois sites successifs au cours de son histoire. Fondée en Poitou au Mont-Glonne, aujourd’hui Saint-Florent-le-Vieil en Maine-et-Loire, vers le <num>v<hi rend="sup">e</hi></num> siècle, elle fut détruite par les invasions normandes et reconstituée un siècle plus tard au château de Saumur, dans les états des comtes de Blois. La prise de Saumur et la conquête du Saumurois par les comtes d’Anjou (1026) contraignirent la nouvelle communauté à s’exiler ; elle se retira non loin de Saumur et y construisit un nouveau monastère. Ce troisième site prit le nom de Saint-Florent-le-Jeune ou Saint-Florent-lès-Saumur. Il s’y développa au Moyen Âge une puissante abbaye, qui était au <num>xiii<hi rend="sup">e</hi></num> siècle à la tête d’une centaine de prieurés, où résidaient trois cents moines. C’est l’histoire des deux premiers monastères du Mont-Glonne et du château de Saumur que nous évoquerons, car malgré la richesse de son fonds d’archives, l’abbaye n’a jamais fait l’objet d’une monographie et l’histoire de ses origines mérite une étude particulière.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Le fonds de Saint-Florent, conservé aux Archives départementales du Maine-et-Loire, a fourni la matière principale de cette étude. Il faut signaler particulièrement les cartulaires inédits de l’abbaye, le <hi rend="i">Livre blanc</hi> (H 3713), et le <hi rend="i">Livre d’argent</hi> (H 3714), tous deux du <num>xii<hi rend="sup">e</hi></num> siècle, le <hi rend="i">Livre rouge</hi> (H 3715), du xin<hi rend="sup">e </hi>siècle. Le <hi rend="i">Livre noir,</hi> du <num>xi<hi rend="sup">e</hi></num> siècle, conservé à la Bibliothèque Nationale (nouv. acq. lat. 1930), contient des pièces précieuses pour l’histoire de l’abbaye au <num>x<hi rend="sup">e</hi></num> siècle. Le premier historien de l’abbaye est le prieur de Saint-Florent-lès-Saumur, <pb n="96" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_02.TIF/full/full/0/default.jpg"/> dom Jean Huynes, qui écrivit vers 1647 son <hi rend="i">Histoire de Saint-Florent, </hi>dont on a conservé la première rédaction (Bibliothèque Nationale, fr. 19.862) et le manuscrit définitif (Archives du Maine-et-Loire, H 3716). Son œuvre permet de connaître des documents aujourd’hui disparus.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Histoire de l’abbaye jusqu’en 1026</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la vie de saint Florent</head>
+          <p>La <hi rend="i">Vita sancti Florentii,</hi> que les Bollandistes ont attribuée à un auteur anonyme du <num>ix<hi rend="sup">e</hi></num> siècle, est en fait l’œuvre de plusieurs auteurs et fut rédigée à la fin du <num>x<hi rend="sup">e</hi></num> ou au début du <num>xi<hi rend="sup">e</hi></num> siècle. Le moine Ingelbert rédigea vers 970 une première œuvre, à partir de laquelle fut composé un office sous l’abbé Robert (986-1011). Son œuvre fut remaniée entre 1011 environ et 1026 par un moine anonyme, lui aussi de Saumur, dont le récit compose l’essentiel de la <hi rend="i">Vie</hi> dans son état actuel, le prologue seul ayant subsisté de l’œuvre d’Ingelbert. Un troisième fragment, qui termine l’œuvre, pourrait remonter à une <hi rend="i">Vie </hi>plus ancienne, sans que le fait soit certain. Tout le détail du récit est de pure invention, de l’aveu même d’Ingelbert qui déclare vouloir pallier le manque de documents relatifs au saint fondateur de l’abbaye. Le récit des faits et gestes de saint Florent avant son arrivée en Gaule n’est qu’un plagiat pur et simple de la <hi rend="i">Vie</hi> de saint Florian, martyr authentique du <num>iv<hi rend="sup">e</hi></num> siècle, dont l’hagiographe a fait le frère de Florent. Ce dernier n’est donc pas né en Bavière, n’a pas été ordonné prêtre par saint Martin. On ne possède aucune trace authentique de sa retraite au Mont-Glonne.</p>
+          <p>C’est au <num>ix<hi rend="sup">e</hi></num> siècle qu’Usuard, dans son martyrologe, indique pour la première fois le décès de saint Florent, au 22 septembre. Une mention plus ancienne du martyrologe hiéronymien (vers 600), où un saint Florent est signalé le 30 décembre à l’île d’Yeu, pourrait contribuer à jeter quelque lumière sur le personnage. Mais elle reste unique et inexplicable. Saint Florent est un saint authentique, mais on peut douter légitimement de son rôle dans la fondation de l’abbaye du Mont-Glonne, dont les origines demeurent obscures.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le monastère aux <num>vii<hi rend="sup">e</hi></num> et <num>viii<hi rend="sup">e</hi></num> siècles</head>
+          <p>Il se peut que des ermites aient vécu au Mont-Glonne. Vers 700 une communauté y vit, sous l’autorité de l’abbé Mauron, premier abbé mentionné dans les documents. Dès cette époque l’abbaye possède des biens jusque dans le Cotentin. Une église monastique existe, dédiée au Sauveur, qui a supplanté un oratoire plus ancien, dédié à saint Pierre, devenu église paroissiale.</p>
+        </div>
+        <div>
+          <pb n="97" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Le monastère carolingien avant les invasions normandes</head>
+          <p>Contrairement à une légende tenace, Charlemagne n’a jamais été l’artisan d’un relèvement et d’une restauration du monastère au début du <num>ix<hi rend="sup">e</hi></num> siècle. Saint Benoît d’Aniane le réforma en 808 et y instaura la règle bénédictine, sous l’autorité de l’abbé Albaud. Cette réforme paraît avoir été éphémère. En 824, Louis le Pieux rappela d’Italie toute une communauté et son abbé pour leur confier le monastère du Mont-Glonne. L’adoption de la règle bénédictine fut confirmée et l’abbaye reçut le privilège d’immunité. En 849, le Breton révolté Nominoé attaqua le monastère et le pilla.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les invasions normandes et leurs conséquences</head>
+          <p>Depuis le sac de Nantes, en juin 843, les Normands étaient les maîtres de la Basse-Loire. En juin ou juillet 853 ils attaquèrent et incendièrent le monastère de Saint-Florent et s’installèrent au bas de la colline du Mont-Glonne, dans une île de la Loire. Les moines se retirèrent quelque temps dans une de leurs possessions du Saumurois, l’abbaye Saint-Jean. Charles le Chauve leur accorda, en outre, comme lieu de refuge, la <hi rend="i">cella</hi> de Saint-Gondon, en Berry. La communauté se maintint encore un temps au Mont-Glonne, sans doute en payant tribut aux Normands. Mais le pays devint inhabitable et, en 866, les moines se firent confirmer la donation de Saint-Gondon, où ils s’exilèrent. On les y trouve encore en 906. Après cette date, la dernière vague d’invasions les chassa du Berry et les fit se diriger vers la Bourgogne. Ils se fixèrent à Tournus, où les accueillirent les moines de Saint-Philibert, installés là depuis 875.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Le monastère du château de Saumur (vers 950-1026)</head>
+          <p>Vers 950 une communauté de moines se reconstitua au château de Saumur, sur l’initiative, semble-t-il, du comte Thibaud de Blois, maître du Saumurois. Le retour du corps de saint Florent en Anjou se fit dans des conditions qui restent mal connues. Les documents laissent deviner un âpre conflit avec les moines de Tournus pour la possession des reliques. Peut-être quelques moines de Saint-Florent regagnèrent-ils l’Anjou sans le corps de leur patron. L’abbaye possédait au <num>ix<hi rend="sup">e</hi></num> siècle d’importants biens dans le Saumurois. C’est sans doute ce qui décida les exilés à s’y fixer, le Mont-Glonne et la Basse-Loire étant trop peu sûrs encore.</p>
+          <p>Le nouveau monastère fut fondé dans l’enceinte du <hi rend="i">castrum</hi> de Saumur. A l’appel du comte Thibaud, des moines de Fleury vinrent l’habiter. L’un d’eux, Amalbert, devint abbé en 956, après la mort du premier abbé de Saumur, <pb n="98" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_04.TIF/full/full/0/default.jpg"/>Hélie, qui semble avoir été un prêtre de la région. Dès cette époque le corps de saint Florent est de retour à Saumur, où on le transféra, vers 950, dans une église provisoire, consacrée vers 970. Sous l’abbatiat d’Amalbert l’ancien site du Mont-Glonne fut réoccupé et transformé en dépendance du nouveau monastère de Saumur. Ce dernier prospéra jusqu’en 1026, sous l’autorité d’abbés zélés et, pour la plupart, remarquables.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>La prise de Saumur par Foulque Nerra (1026)</head>
+          <p>Dans la lutte qui, depuis plus de trente ans, les opposait aux comtes de Blois, les comtes d’Anjou prirent l’avantage en 1026. Foulque Nerra s’empara de Saumur et annexa le Saumurois. L’abbaye du château brûla dans l’incendie de la ville. Les moines durent rebâtir un nouveau monastère, non loin de Saumur, au confluent du Thouet et de la Loire. Les séquelles des événements de 1026 se firent longtemps sentir. Les comtes d’Anjou firent payer à l’abbaye sa fidélité inconditionnelle à la cause des comtes de Blois en la spoliant de ses biens et en multipliant les exactions. Ce n’est qu’à la fin du <num>xi<hi rend="sup">e</hi></num> siècle que les moines retrouvèrent l’entière possession de leurs biens du Saumurois.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Le gouvernement et l’organisation interne
+         <lb/>du monastère</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les relations avec le pouvoir temporel</head>
+          <p><hi rend="i">L’époque carolingienne.</hi> – Le monastère faisait partie du royaume d’Aquitaine, attribué à Louis le Pieux puis à Pépin I<hi rend="sup">er</hi> et à Charles le Chauve, contre qui Pépin II le revendiqua. Tous ces souverains accordèrent à l’abbaye leur protection et le privilège d’immunité, ainsi que le droit de faire gérer ses biens par des avoués. Pépin II l’exempta du paiement des tonlieux dans tout le royaume d’Aquitaine et Charles le Chauve augmenta ses possessions à plusieurs reprises.</p>
+          <p><hi rend="i">L’époque féodale.</hi> – Les comtes de Blois étaient les protecteurs attitrés de l’abbaye. Ils nommèrent les premiers abbés, après 950, et imposèrent par la suite aux élections le candidat de leur choix. Grâce à eux l’abbaye rentra en possession de la plupart de ses biens, tombés en des mains étrangères depuis le <num>ix<hi rend="sup">e</hi></num> siècle. Ils lui accordèrent en outre le droit de basse-justice sur ses domaines et l’exemption des tonlieux à Saumur et sur ses terres.</p>
+          <pb n="99" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_05.TIF/full/full/0/default.jpg"/>
+          <p>Les domaines que le monastère possédait dans le Saumurois étaient situés à la frontière de cette région et de l’Anjou. Ils furent l’objet, jusqu’en 1026, des invasions et des exactions incessantes de Foulque Nerra et de ses vassaux, en guerre avec la maison de Blois. Les relations furent donc très mauvaises avec les comtes d’Anjou, qui confisquèrent une grande partie des biens du monastère après la conquête du Saumurois. A l’ouest, dans les Mauges, leurs empiètements incessants aboutirent de même, vers 1030, à la conquête de la région, au détriment des possessions du monastère de Saint-Florent-le-Vieil. Les moines réagirent par la rédaction d’un faux acte de Charlemagne, composé à la fin du <num>xi<hi rend="sup">e</hi></num> siècle, qui leur octroyait la possession des Mauges.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les relations avec les évêques et le clergé séculier</head>
+          <p>L’abbaye de Saumur dépendait du diocèse d’Angers et celle du Mont-Glonne, jusqu’en 942, du diocèse de Poitiers. A cette date elle fut rattachée au diocèse de Nantes, jusqu’à la conquête des Mauges par les comtes d’Anjou, vers 1030, qui la rattacha au diocèse d’Angers. Mais l’assimilation complète n’eut lieu qu’après 1050.</p>
+          <p><hi rend="i">Rapports avec les évêques.</hi> – Au <num>ix<hi rend="sup">e</hi></num> siècle, les privilèges de l’abbaye vis-à-vis de l’autorité diocésaine étaient limités à l’autonomie temporelle et à la libre élection de l’abbé. Au <num>x<hi rend="sup">e</hi></num> siècle, l’abbaye de Saumur obtint de l’évêque d’Angers l’exemption des drois de gîte et de procuration. Mais elle s’acquittait des droits de synode. Le monastère de Saint-Florent-le-Vieil, qui jouissait d’une grande autonomie, usurpa, à la fin du <num>x<hi rend="sup">e</hi></num> siècle ou au début du <num>xi<hi rend="sup">e</hi></num> siècle, la juridiction épiscopale sur une grande partie des Mauges, qui lui appartenait, grâce au relâchement de l’autorité des comtes et des évêques de Nantes. La conquête angevine et le rattachement au diocèse d’Angers incitèrent les moines à rédiger une fausse bulle de Jean XVIII, peu après 1026, et un faux acte de Charles le Chauve, entre 1050 et 1070, pour affirmer leurs prétentions à être exemptés des coutumes épiscopales.</p>
+          <p><hi rend="i">Rapports avec le clergé.</hi> – Les moines possédaient une trentaine de paroisses dont ils confiaient la desserte au clergé séculier, avec qui ils partageaient les profits.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les possessions</head>
+          <p>Au <num>ix<hi rend="sup">e</hi></num> siècle les biens de l’abbaye étaient plus dispersés géographiquement qu’ils ne le seront au <num>x<hi rend="sup">e</hi></num> siècle. Le vieux fonds des Mauges et du Saumurois était déjà constitué. Au <num>x<hi rend="sup">e</hi></num> siècle, l’expansion se fit vers la Touraine et le Poitou. L’essentiel des domaines étaient regroupés dans les Mauges, sur le territoire de Saint-Florent-le-Vieil, dans l’arrière-pays de Saumur et, en face de la ville, sur la rive droite de la Loire, dont les moines défrichaient les forêts.</p>
+          <pb n="100" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_06.TIF/full/full/0/default.jpg"/>
+          <p>Il est difficile de fournir une estimation quantitative du temporel. On ne sait rien de la mense abbatiale et les actes du chartrier n’apportent que des renseignements fragmentaires sur l’étendue des possessions. Les dépendances du monastère, où résidaient quelques moines, constituaient des centres autonomes d’exploitation. L’abbaye employait ses serviteurs pour la mise en valeur des domaines, mais la majeure partie des terres étaient confiées à des tenanciers. Elle était exempte du paiement des tonlieux sur tous ses domaines du Saumurois et percevait ceux de Saint-Florent-le-Vieil. En outre, la trentaine de paroisses qu’elle possédait lui fournissaient des revenus substantiels.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les personnes</head>
+          <p>Les abbés du <num>ix<hi rend="sup">e</hi></num> siècle, comme ceux des siècles précédents, sont mal connus. Au <num>x<hi rend="sup">e</hi></num> siècle, ils étaient presque tous issus des familles nobles de la région. L’un d’eux cependant, Frédéric, était un serf affranchi. Ils étaient généralement choisis parmi la communauté ou dans les monastères du Val-de-Loire (Fleury, Marmoutier). Amalbert fut à la fois abbé de Saint-Florent et de Fleury, Robert gouvernait, en même temps que Saumur, Saint-Mesmin de Micy.</p>
+          <p>On comptait vingt à trente moines au <num>x<hi rend="sup">e</hi></num> siècle. Ils se répartissaient les différents offices. Les oblats, instruits enfants à l’abbaye, occupaient souvent plus tard les charges importantes. Deux d’entre eux, au moins, devinrent abbés. La <hi rend="i">familia</hi> monastique comprenait en outre les serviteurs et les serfs, attachés aux différents offices du monastère ou casés sur les terres de l’abbaye. Le terme <hi rend="i">famulus</hi> désigne aussi bien les serviteurs libres que les serfs. Les actes distinguent mal le <hi rend="i">colonus</hi> du <hi rend="i">servus.</hi> Quelques exemples montrent que les colons n’étaient pas toujours des libres.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Le rôle religieux de l’abbaye</head>
+          <p>Les moines abandonnaient le ministère paroissial de leurs églises au clergé séculier. L’abbaye a surtout joué un grand rôle dans la diffusion du culte de saint Florent, après 950. Les deux fêtes du décès du saint (22 septembre) et de la translation des reliques à Saumur (2 mai) étaient particulièrement solennelles. L’abbaye créa également, au <num>x<hi rend="sup">e</hi></num> siècle, des dépendances où résidaient quelques moines. Elle en possédait quatre, dont la plus importante, après Saint-Florent-le-Vieil, était celle de Saint-Louand, petite abbaye près de Chinon. Il faut mettre également à l’actif des moines le relèvement de quelques oratoires désertés depuis le début du <num>x<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="101" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_07.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+         <lb/>Sites et monuments</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le Mont-Glonne</head>
+          <p>Les traces préhistoriques, les voies romaines construites sur les deux rives de la Loire témoignent d’un habitat bien antérieur à la création d’une abbaye au Mont-Glonne.</p>
+          <p>Au <num>viii<hi rend="sup">e</hi></num> siècle, deux églises existaient, Saint-Pierre, la paroisse, et Saint-Sauveur. Le corps de saint Florent avait été transporté à cette époque de la première dans la seconde, où l’on avait placé son tombeau entre l’autel matutinal et le maître-autel. Le cloître carré s’étendait au sud de l’église.</p>
+          <p>Vers 1030 les comtes d’Anjou bâtirent à l’ouest du mont une tour en bois, dont il reste une partie de la motte, et ils entourèrent l’abbaye et le bourg monastique d’une enceinte. L’abbatiale actuelle occupe, selon toute vraisemblance, l’emplacement de l’ancienne église Saint-Sauveur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le château de Saumur</head>
+          <p>Au <num>x<hi rend="sup">e</hi></num> siècle, les comtes de Blois élevèrent une enceinte qui entourait le <hi rend="i">castrum</hi> de Saumur. L’abbaye, construite peu de temps auparavant, y fut englobée. A la même époque l’agglomération prit le nom de <hi rend="i">Salmurus,</hi> d’origine inconnue. Les origines de la ville sont antérieures à l’installation des moines dans le Saumurois, au <num>ix<hi rend="sup">e</hi></num> siècle, et remontent sans doute à un <hi rend="i">oppidum</hi> gaulois ou à un <hi rend="i">castrum</hi> gallo-romain.</p>
+          <p>L’enceinte des comtes de Blois enserrait le sommet de la colline, plus à l’ouest que l’actuel château et ses bastions. L’abbaye était située à l’est de cette enceinte. Seuls, le chœur et les transepts de l’église étaient voûtés en pierre. Sur la façade, une haute tour de bois contenait les cloches. Le cloître, splendide, était orné de peintures et de sculptures. Il existait, en outre, deux chapelles et divers bâtiments destinés aux officiers du monastère.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Saint-Florent-lès-Saumur</head>
+          <p>De l’abbaye construite entre 1026 et 1041 au bord du Thouet, il ne reste plus qu’une crypte très archaïque, voûtée d’arête, dont le mur ouest est percé <pb n="102" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_13/ENCPOS_1971_13_08.TIF/full/full/0/default.jpg"/>d’étroites ouvertures, qui permettaient de vénérer les corps qu’on déposait dans l’édifice. Cette crypte occupait le rond-point du chœur de l’église. Elle témoigne de l’art de bâtir aux environs de l’an mil.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Les origines de l’abbaye demeurent obscures, de même que le siècle d’exil des moines après les invasions normandes. En 1026, le monastère du château de Saumur avait retrouvé une prospérité enviable, qui faisait de lui à cette date l’égal, dans la région, de Marmoutier et de Saint-Julien de Tours. C’est elle qui a préparé l’essor de l’abbaye au Moyen âge.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>1. Édition des <hi rend="i">Versiculi de eversione monasterii Sancti Florentii,</hi> prose rythmée de la seconde moitié du <num>x<hi rend="sup">e</hi></num> siècle.</p>
+        <p>2. La valeur documentaire de l’<hi rend="i">Historia Sancti Florentii.</hi></p>
+        <p>3. Carte des possessions de Saint-Florent entre 950 et 1026.</p>
+      </div>
+      <div>
+        <head rend="uc">Catalogue d’actes</head>
+        <p>Catalogue de cent neuf actes relatifs à l’histoire de l’abbaye jusqu’en 1026, dont la moitié d’inédits.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

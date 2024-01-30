@@ -1,0 +1,101 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Étude critique de la Vie de Saint Eloi</title>
+        <author>Pierre Morel</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_13.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 129-133</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="129" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_13/ENCPOS_1930_13_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Étude critique
+       <lb/>de la <hi rend="i">vie de saint éloi</hi></head>
+      <byline>
+        par
+        <forename>Pierre</forename>
+        <surname>Morel</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>l’auteur.</head>
+        <p>Aucun passage de la <hi rend="i">Vita Eligii</hi> ne permet d’attribuer formellement l’œuvre à saint Ouen. Cependant cette attribution est ancienne ; on peut en suivre l’évolution d’après les <hi rend="i">præscriptiones</hi> des manuscrits : la moitié seulement donnent le nom d’Ouen ; les autres gardent l’anonymat. Les textes du moyen âge qui parlent de la <hi rend="i">Vita Eligii</hi> se partagent d’une manière semblable.</p>
+        <p>La critique, depuis le <num>xvii<hi rend="sup">e</hi></num> siècle, ignore cette incertitude et considère que l’auteur a voulu, à tort ou à raison, mettre son ouvrage sous le nom de saint Ouen. D’où deux courants d’opinion : les uns considèrent la <hi rend="i">Vita Eligii</hi> comme l’œuvre authentique de saint Ouen, les autres, devant les contradictions du texte, voient en lui, soit une vie écrite par saint Ouen et plus ou moins interpolée, soit un remaniement <pb n="130" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_13/ENCPOS_1930_13_02.TIF/full/full/0/default.jpg"/>complet du travail primitif, remaniement que l’auteur a fait passer sous le nom d’Ouen.</p>
+        <p>En réalité, l’auteur ne cherche nulle part à se faire passer pour saint Ouen : seules les <hi rend="i">præscriptiones</hi> des manuscrits, dues aux copistes, contiennent le nom d’Ouen. L’auteur dit au contraire qu’il s’est servi de la vie écrite par saint Ouen (1. I, c. 12) <note><p>Les chapitres sont indiqués par les numéros qui les désignent dans l’édition Ghesquière, <hi rend="i">Acta sanctorum Belgii selecta</hi>, t. III, Bruxelles, 1785.</p></note>. Dans la préface, il rappelle les termes d’un passage d’une lettre authentique de saint Ouen à l’évêque Robert ; « illi curis obligati sæcularibus, ut et ipsi profitentur » (<hi rend="i">Vita,</hi> 1. I, préface).</p>
+        <p>Donc l’auteur n’est pas un faussaire : les passages à la première personne que contient la <hi rend="i">Vita</hi> sont généralement les propres paroles de l’auteur ; quand ils se rapportent à saint Ouen, ils sont des fragments de la Vie primitive, conservés intacts par une erreur de l’auteur (1. I, c. 6, 11 et 22 ; 1. II, c. 2).</p>
+        <p>La personne de l’Auteur. M. Krusch en fait un clerc régulier de Saint-Eloi de Noyon, peut-être même un gardien du tombeau de saint Eloi. En réalité, c’est probablement un moine (1. II, c. 67), d’une abbaye autre que celle de Saint-Eloi, puisqu’il distingue sa propre abbaye de celle-ci (1. II, c. 66 et 69).</p>
+        <p>M. Krusch le croit de race franque. Ses sentiments sont, au contraire hostiles aux barbares et sont plutôt ceux d’un Romain (1. II, c. 9, 13, 32) ; les usages francs lui semblent étrangers (1. II, c. 57).</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Les sources.</head>
+        <p>Aux sources signalées par M. Krusch, il faut ajouter, l’<hi rend="i">Inventio sancti Quintini</hi> (1. II, c. 6), les actes du concile <pb n="131" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_13/ENCPOS_1930_13_03.TIF/full/full/0/default.jpg"/> de Latran de 649 (1. I, c. 33). Il faut par contre, en retrancher l’<hi rend="i">Historia Ecclesiastica,</hi> de Bède (<hi rend="i">Vita Eligii</hi> 1. I, c. 17 ; voir aussi 1. I, c. 15) ; c’est ce dernier ouvrage qui s’inspire de la <hi rend="i">Vita Eligii</hi> ou, plus probablement les deux ouvrages ont une source commune, probablement la Vie primitive écrite par saint Ouen. Cette constatation importe pour fixer la date de la <hi rend="i">Vita Eligii,</hi> qui peut être antérieure à l’œuvre de Bède.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Utilisation de l’« Inventio Quintini »
+         <lb/>par la « Vita Eligii »</head>
+        <p>Cet emprunt a été signalé par M. Van der Essen. L’étude des emprunts que lui fait la <hi rend="i">Vita Eligii</hi> nous permet de dégager les tendances de l’auteur : il copie scs sources de très près ; il fait néanmoins quelques omissions, des substitutions, et de nombreuses additions. Ces modifications sont dues au souci qu’il a de forcer l’apologie de son héros, et à une recherche constante d’élégance et de précision. Quelques différences entre la <hi rend="i">Vita,</hi> et l’<hi rend="i">Inventio</hi> font croire que celle-ci fut l’objet d’interpolations faites postérieurement à la date où la <hi rend="i">Vita</hi> l’a connue.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>La vie primitive de saint Eloi par saint Ouen.</head>
+        <p>Preuves que cette vie aujourd’hui perdue a existé.</p>
+        <p>Preuves de son utilisation par la <hi rend="i">Vita Eligii</hi>.</p>
+        <p>Ses traces dans la <hi rend="i">Vita Eligii :</hi> on les relève dans le livre I et les deux premiers chapitres du livre II. On trouve quatre passages à la première personne qui s’appliquent à saint Ouen et qui sont des emprunts <pb n="132" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_13/ENCPOS_1930_13_04.TIF/full/full/0/default.jpg"/>textuels à la vie primitive. (1. I, c. 6, c. 11, c. 22 ; 1. II, c. 2). Des analogies entre divers passages de la <hi rend="i">Vita </hi>prouvent l’existence d’une source commune, qui ne peut être que la vie primitive.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Œuvre propre a l’auteur de la « Vita Eligii »</head>
+        <p>Recherche de ce qui, dans la <hi rend="i">Vita Eligii</hi>, n’a pas été emprunté à une source antérieure. Il faut pour cela distinguer les passages à la première personne qui désignent l’auteur, de ceux qui, désignant saint Ouen, ont été pris à la vie primitive, et ont été reproduits textuellement par erreur. La langue de l’auteur et les sources qu’il utilise, permettent aussi de faire cette discrimination. On peut ainsi considérer comme son œuvre exclusive, notamment les passages suivants :</p>
+        <p>L. I, Préface c. 16, c. 33 à 35, c. 40.</p>
+        <p>L. II, Préface, c. 4, 8 à 10, 13, 16, 25, 32, 37, 79, 80.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre VI
+         <lb/>Valeur de la « Vita Eligii »</head>
+        <p>Très grande. Ses sources connues sont bonnes ; l’auteur les déforme légèrement dans un sens favorable à saint Eloi, mais il les fait entrer presque entièrement dans la <hi rend="i">Vita Eligii</hi>.</p>
+        <p>Les passages où l’auteur ne fait appel à aucune source, n’offrent en général aucun intérêt historique. Ce sont de simples développements littéraires sur des lieux communs. Les chapitres historiques qui se rap<pb n="133" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_13/ENCPOS_1930_13_05.TIF/full/full/0/default.jpg"/>portent à l’époque de saint Eloi (1. I, c. 32-33) sont sans valeur ; ceux qui traitent de l’époque de l’auteur sont une source intéressante de l’histoire du VIII<hi rend="sup">e </hi>siècle : la comparaison entre le chapitre 15 et le chapitre 16 du livre I montre l’évolution religieuse de la Gaule du <num>vii<hi rend="sup">e</hi></num> au <num>viii<hi rend="sup">e</hi></num> siècle.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendice
+         <lb/>la basilique de Saint-Denis
+         <lb/>à l’époque mérovingienne.</head>
+        <p>Les archéologues ont étudié la basilique mérovingienne de Saint-Denis d’après le chapitre 32 du livre I ; ils n’ont pas connu le chapitre 23 du même livre, qui donne quelques renseignements : la basilique était pourvue d’un atrium et n’avait pas d’autel <hi rend="i">ant sepulcrum.</hi></p>
+        <pb n="134" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_13/ENCPOS_1930_13_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

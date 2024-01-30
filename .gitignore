@@ -1,2 +1,5 @@
 .DS_Store
-/documentation
+/app
+venv/
+.idea/
+validation/

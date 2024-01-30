@@ -1,0 +1,165 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_13" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le développement historique de la ville d’Amboise des origines jusqu’à la fin du <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/02702203X">Jacqueline Melet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_13.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 107-113</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="107" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le développement historique
+       <lb/>de la ville d’Amboise
+       <lb/>des origines jusqu’à la fin du <num>xviii<hi rend="sup">e</hi></num> siècle</head>
+      <byline>
+        par
+        <forename>Jacqueline</forename>
+        <surname>Melet</surname>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les sources utilisées sont constituées essentiellement par les archives conservées à la mairie d’Amboise. Elles ont fourni une documentation extrêmement riche depuis 1421. Les Archives départementales d’Indre-et-Loire (séries C, G, H) et les Archives nationales (F<hi rend="sup">12</hi> et F<hi rend="sup">14</hi>) ont apporté un utile complément. La Bibliothèque nationale, la Bibliothèque Mazarine et la Bibliothèque municipale de Tours conservent quelques manuscrits qui intéressent plus particulièrement l’histoire d’Amboise.</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Située sur les bords de la Loire, presque à mi-chemin entre Blois et Tours, au pied d’un éperon rocheux, la ville d’Amboise offre une position privilégiée, tant sur le plan stratégique qu’économique. A ceci s’ajoute la douceur du climat, qui favorisa le séjour des grands personnages du royaume.</p>
+      </div>
+      <div>
+        <pb n="108" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Les conditions générales</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la situation géographique</head>
+          <p>Le fleuve, la vallée et les plateaux sont les trois éléments de la situation géographique d’Amboise. La vallée large, encadrée de plateaux plus abrupts sur la rive gauche que sur la rive droite, est le trait dominant du paysage dans lequel s’est développée la ville. Elle établit un lien permanent avec les régions situées sur les bords du fleuve. L’axe fluvial, en effet, est doublé d’un axe routier dont l’existence est facilitée par les levées qui endiguent le cours du fleuve. La ville profite ainsi largement de ces deux voies commerciales.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Le site</head>
+          <p>A cette situation géographique s’ajoute un site exceptionnel, où se mêlent éléments favorables et défavorables au développement d’une ville. L’existence à la hauteur d’Amboise d’une grande île, qui permettait de franchir le fleuve, a été particulièrement favorable à son essor. La présence d’un éperon rocheux que contourne une rivière, l’Amasse, a permis de renforcer une protection naturelle. En revanche, la zone inondable des bords de Loire et les marais qui s’étendaient au sud ont été des obstacles au libre épanouissement de la ville.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>L’habitat primitif et gallo-romain et le haut moyen âge</head>
+          <p>La découverte d’un matériel révèle l’existence d’un habitat préhistorique sur le promontoire. On constate d’ailleurs qu’au cours des périodes d’insécurité les hommes regagnent cet abri naturel. La conquête romaine favorisa le site de Tours au détriment d’Amboise. Dès la fin du <num>iv<hi rend="sup">e</hi></num> siècle, la fondation d’une église sur la rive gauche de l’Amasse permet d’affirmer l’existence d’une autre zone d’habitation à cet emplacement.</p>
+        </div>
+        <div>
+          <pb n="109" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre IV
+           <lb/>Amboise au moyen âge</head>
+          <p>Le changement d’axe du réseau routier favorisa le développement de la ville, ce qui explique l’intérêt que lui portèrent les comtes d’Anjou et les comtes de Blois, qui se la disputèrent. Les comtes d’Anjou finirent par l’emporter et firent d’Amboise un élément essentiel de leur système défensif. La ville s’étendait alors dans la vallée à l’abri d’une enceinte qui longeait le bras oriental de l’Amasse (<num>xi<hi rend="sup">e</hi></num> siècle). Son développement est étroitement lié à l’installation de couvents au cours du <num>xii<hi rend="sup">e</hi></num> siècle et d’un Hôtel-Dieu au début du <num>xiii<hi rend="sup">e</hi></num> siècle. A cette époque, la ville – autrefois au pied du promontoire – s’étendait sensiblement vers l’ouest.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Le développement de la ville
+         <lb/>aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la ville aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles</head>
+          <p>Dès le <num>xv<hi rend="sup">e</hi></num> siècle, la ville comporte une seconde enceinte qui englobe un îlot entre la Loire et le bras occidental de l’Amasse. L’habitat s’est plus particulièrement développé le long des routes pour former des faubourgs dans l’île, sur la rive droite de la Loire et au sud-est de la ville. En même temps, les quais et les ports connaissent une activité que favorise le passage de la grande route d’Espagne. Cette prospérité permet à la ville d’aménager les accès fluviaux et routiers. Les hôtelleries sont alors implantées dans le faubourg Saint-Denis et aux abords des ponts.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>La provenance des matériaux et
+           <lb/>l’emplacement des carrières</head>
+          <p>Les matériaux utilisés pour les constructions viennent principalement des carrières situées sur les bords de la Loire et du Cher, en raison de la grande commodité qu’offrait le transport par voie fluviale. On n’hésite pas à aller cher<pb n="110" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_04.TIF/full/full/0/default.jpg"/>cher de la pierre de bonne qualité jusqu’à Saumur. Les carrières de Lussault et de Malevau, proches d’Amboise, offrent des pierres de moellon ; celles de Bourré et de Saint-Aignan sont réservées à des éléments de décoration. Il va sans dire que la construction du château depuis Louis XI stimule plus particulièrement cette activité.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>La vie urbaine a Amboise
+           <lb/>aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles</head>
+          <p>La prospérité économique entraîne une intense modernisation de la ville. Le conseil de ville se soucie de mener à bien un certain nombre de travaux utilitaires. Des mesures d’alignement sont prises pour l’agrandissement des rues et des places, qui sont pavées. Pour lutter contre les épidémies, dont était responsable le mauvais entretien des rues et des lieux publics, le conseil de ville prend un certain nombre de mesures, qui sont d’ailleurs mal appliquées. L’approvisionnement de la ville est assuré par des marchés et des foires qui se tiennent régulièrement. Des halles ont été édifiées pour abriter des marchés quotidiens.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>L’accroissement de la ville
+           <lb/>aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles</head>
+          <p>La prospérité se manifeste également dans l’accroissement sensible de la population. Le quartier du Petit-Fort, enserré entre le promontoire et la Loire, est englobé dans la ville par la destruction du mur qui l’en séparait. On en profite pour le rénover. Une deuxième opération d’urbanisme affecte les marais, qui sont comblés et asséchés afin d’effectuer un lotissement général. Il a fallu, pour relier plus étroitement la ville et le nouveau quartier, ouvrir deux portes, la « porte Titry » et la « Porte neuve ». Un certain nombre de fondations religieuses caractérisent également cet accroissement : Notre-Dame-en-Grève, élevée pour les besoins des habitants de la ville, le couvent des Minimes, la chapelle Saint-Mamert ; enfin, Notre-Dame-en-Grâce, fondée sur la rive droite au débouché du pont, témoigne de l’extension du faubourg à la suite de la construction de la levée de la Cisse.</p>
+        </div>
+        <div>
+          <pb n="111" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre V
+           <lb/>L’habitat à Amboise
+           <lb/>aux <num>xv<hi rend="sup">e</hi></num> et <num>xvi<hi rend="sup">e</hi></num> siècles</head>
+          <p>La construction revêt deux aspects, d’une part les maisons particulières, le plus fréquemment en bois, d’autre part, les édifices publics, qui sont en pierre. Cependant les personnages qui fréquentaient la cour, firent construire des maisons de pierre, quelquefois même des hôtels particuliers, dont certains subsistent, tels l’hôtel Joyeuse, Château-Gaillard. Les maisons de bois restent extrêmement sobres alors que les maisons de pierre offrent déjà un décor sculpté où se fait jour le goût nouveau.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Le développement de la ville
+         <lb/>aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la ville aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles</head>
+          <p>Le <num>xvii<hi rend="sup">e</hi></num> siècle ne marque pas une rupture avec l’époque précédente. Le cadre urbain reste le même et il faut attendre 1643 pour que l’on commence à démolir une partie des murs. Les Ursulines s’installent en 1626 dans un quartier encore peu habité, situé sur la rive gauche de l’Amasse. Leur présence contribue à son développement.</p>
+          <p>Le <num>xviii<hi rend="sup">e</hi></num> siècle est marqué par un renouveau d’activité dans tous les domaines, imposé par Choiseul au cours de son exil.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Évolution des communications
+           <lb/>aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles</head>
+          <p>La route d’Espagne, qui jusque là traversait Amboise du nord au sud, passe à partir de 1753 sur la rive droite. Les conséquences de ce changement d’itinéraire furent particulièrement graves pour la rive gauche, mais permirent au <pb n="112" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_06.TIF/full/full/0/default.jpg"/>faubourg de la rive droite un développement considérable, que souligne le transfert des hôtelleries. En contrepartie, le trafic fluvial s’intensifie pour pallier la perte subie par le trafic routier.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les activités économiques
+           <lb/>aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles</head>
+          <p>Les industries traditionnelles, comme le textile et la tannerie, après avoir été florissantes au <num>xvii<hi rend="sup">e</hi></num> siècle, subissent un net déclin au <num>xviii<hi rend="sup">e</hi></num> siècle. En revanche, on voit naître d’autres industries qui travaillent le fer.</p>
+          <p>Le commerce local n’est nullement affecté par le changement d’axe, car c’est encore par voie d’eau que s’effectue l’essentiel du commerce. Amboise participe toujours au grand commerce grâce au fleuve dont elle reste tributaire.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les travaux d’urbanisme</head>
+          <p>Les travaux d’urbanisme, qui subissent une éclipse au cours du <num>xvii<hi rend="sup">e</hi></num> siècle, reprennent au <num>xviii<hi rend="sup">e</hi></num> siècle une très grande activité. On tente de supprimer l’Amasse en la couvrant. On établit des mails à l’ouest de la ville. On déplace les cimetières de l’intérieur de la ville pour des raisons de salubrité et pour gagner du terrain. C’est dans la même intention que la ville fait démolir des chapelles. Enfin et surtout on abat les murs de l’enceinte et les portes pour permettre à la ville de s’étendre plus largement. La plus grande partie de ces travaux a été effectuée dans la seconde moitié du <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>A l’époque révolutionnaire, la ville d’Amboise présentait les grands traits de sa physionomie actuelle, bien qu’elle n’ait pas totalement rempli l’espace que son site lui offrait.</p>
+      </div>
+      <div>
+        <pb n="113" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_07.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Atlas de cartes et plans</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <pb n="114" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_13/ENCPOS_1972_13_08.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

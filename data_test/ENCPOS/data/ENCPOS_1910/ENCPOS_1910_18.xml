@@ -1,0 +1,125 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1910_18" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai sur la politique religieuse de Philippe II dans les Pays-Bas</title>
+        <author ref="https://www.idref.fr/087213389">Georges Mazeran</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1910/ENCPOS_1910_18.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1910 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1910</date>, <biblScope>p. 147-151</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1910"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="147" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_18/ENCPOS_1910_18_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai
+       <lb/>sur la
+       <lb/>politique religieuse de Philippe le Bon
+       <lb/>dans les Pays-Bas</head>
+      <byline>
+        par
+        <forename>Georges</forename>
+        <surname>Mazeran</surname>
+        <roleName>Ancien élève de l’École des Hautes-Études, Licencié ès lettres et en droit</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction. – Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Première partie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la politique de Philippe le Bon dans les Pays-Bas</head>
+          <p>Philippe le Bon, conformément à la politique traditionnelle de la maison de Bourgogne, étend ses possessions dans les Pays-Bas : il acquiert successivement le comté de Namur, le Hainaut et la Hollande, le Brabant.</p>
+          <p>Sa politique religieuse est un chapitre de sa politique générale : elle consiste à utiliser ses bonnes relations avec la papauté pour faire passer, d’après un plan méthodique, tous les diocèses des Pays-Bas sous l’influence bourguignonne.</p>
+        </div>
+        <div>
+          <pb n="148" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_18/ENCPOS_1910_18_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Relations de Philippe le Bon avec la papauté</head>
+          <p>Influence de Philippe le Bon à la cour de Rome. – Le concile de Bâle. – Philippe soutient Eugène IV contre les « Bâlois » et obtient en échange diverses faveurs.</p>
+          <p>La question de la Croisade. Philippe eut-il réellement l’intention de combattre les Turcs ? Avantages qu’il pouvait espérer retirer d’une campagne contre les Infidèles. Ce qui est certain, c’est que Philippe le Bon profita de l’influence que ses promesses lui avaient acquise à Rome, pour obtenir du pape diverses nominations qui favorisaient ses desseins politiques.</p>
+          <p>Le vœu du Faisan. – Apogée de l’influence du duc de Bourgogne à la cour pontificale. – L’ambassade à Mantoue. – Alliance solennelle conclue avec Venise et la Papauté contre les Turcs. Enthousiasme provoqué par les nouvelles promesses du duc. Comment il ajourne indéfiniment la réalisation de ses engagements.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les résultats de la politique religieuse
+         <lb/>de Philippe le Bon</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>Philippe le Bon et l’évèché de Tournai</head>
+          <p>Importance de cet évêché pour le duc de Bourgogne. A la mort de Jean de Thoisi, le pape nomme Jacques d’Harcour, dont la candidature était patronnée par Charles VII. Philippe n’accepte pas cette nomination. <pb n="149" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_18/ENCPOS_1910_18_03.TIF/full/full/0/default.jpg"/>Mesures qu’il prend contre Jacques d’Harcour. 11 obtient enfin du pape la nomination de Jean Chevrot.</p>
+          <p>Intrigues menées par le roi de France et le duc de Bourgogne pendant l’épiscopat de Jean Chevrot. Philippe réussit à faire nommer Guillaume Fillastre pour succéder à Jean Chevrot. Vaines protestations du roi de France.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Philippe le Bon et l’évèché de Cambrai</head>
+          <p>Philippe le Hardi et Jean sans Peur avaient déjà tenté de faire nommer leurs créatures sur ce siège épiscopal, mais sans succès. Philippe le Bon obtient la nomination de Jean de Bourgogne, fils naturel de Jean sans Peur.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Philippe le Bon et l’évèché de térouanne</head>
+          <p>Nomination de David de Bourgogne, son fils naturel.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Philippe le Bon et l’évèché de Liège</head>
+          <p>Première intervention de Jean sans Peur. Bataille d’Othée. Ses conséquences pour l’influence bourguignonne.</p>
+          <p>Election de Jean de Heinsberg ; ses relations avec Philippe le Bon. Poussé par le peuple, Jean de Heinsberg est obligé d’entrer en lutte avec Philippe. La guerre liégeoise. « Haidroits » et « Vrais Liégeois ». Révolte des Datin. Philippe obtient la résignation de Jean de Heinsberg ; par quels moyens ? Pour le remplacer, le pape nomme le propre neveu de Philippe, Louis de Bourbon.</p>
+          <pb n="150" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_18/ENCPOS_1910_18_04.TIF/full/full/0/default.jpg"/>
+          <p>Louis de Bourbon et le peuple de Liège. – Philippe le Bon impose le clergé liégeois ; protestations de celui-ci.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Philippe le Bon et l’évèché d’Utrecht</head>
+          <p>Importance de l’évêché d’Utrecht. Philippe le Bon et l’évêque Rodolphe van Diepholt : il le soutient contre ses adversaires. En échange de l’appui qu’il lui donne, il obtient divers avantages.</p>
+          <p>Hoeks et Kabeljaws. Election de Ghisbert de Brederode. Philippe s’oppose à cette élection. Il réussit à faire nommer son fils naturel, David de Bourgogne.</p>
+          <p>David de Bourgogne et le peuple d’Utrecht. – Révolte de la population contre l’ingérence bourguignonne. – Philippe impose son fils par les armes.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>Philippe le Bon et les abbayes</head>
+          <p>Philippe veut réserver les abbayes à ses créatures ; il ne tient aucun compte des élections faites par les religieux. Un exemple caractéristique des procédés dont il use : une élection à Saint-Bertin. Election de Jean de Medon comme abbé. Le pape, sur les instances de Philippe, donne l’abbaye en commende à Guillaume Fillastre. Jean de Medon refuse de se soumettre. Ses démarches auprès de l’Université et du Parlement de Paris. Il est excommunié. Le pape, malgré sa résistance, cède enfin à Philippe, et nomme Fillastre abbé régulier. Compromis entre Jean de Medon et Guillaume Fillastre.</p>
+        </div>
+        <div>
+          <pb n="151" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_18/ENCPOS_1910_18_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre VII
+           <lb/>Conclusion</head>
+          <p>Philippe a lutté contre les dernières franchises cléricales, comme il a lutté contre les franchises urbaines. Il retire au haut clergé son ancien caractère provincial, mais, en échange, il augmente sa situation politique.</p>
+          <p>Philippe et le clergé régulier. – Il encourage la réforme des mœurs ecclésiastiques. Prédication de Nicolas de Cusa. Les Chartreux.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <pb n="152" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1910_18/ENCPOS_1910_18_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

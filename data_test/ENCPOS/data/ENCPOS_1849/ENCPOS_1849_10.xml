@@ -1,0 +1,69 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Examen des œuvres de Virgilius Maro, le grammairien</title>
+        <author ref="https://www.idref.fr/032166338">Charles Marty-Laveaux</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1849/ENCPOS_1849_10.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>, <biblScope>p. 19-20</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="19" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_10/ENCPOS_1849_10_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Examen des œuvres de Virgilius Maro le grammairien.</head>
+      <byline>
+        Thèse pour le diplôme d’archiviste paléographe, soutenue par
+        <forename>Ch.</forename>
+        <surname>Marty-Laveaux</surname>
+        <roleName rend="uc">Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Positions.</head>
+        <div>
+          <head rend="uc">I.</head>
+          <p>Certains grammairiens, que Virgilius Maro nous fait connaître, recherchaient les mots les moins usités, et en dérivaient de nouveaux termes auxquels ils attribuaient des significations tout à fait détournées ; en outre, ils employaient les prépositions les unes pour les autres.</p>
+        </div>
+        <div>
+          <head rend="uc">II.</head>
+          <p>Ils avaient des déclinaisons et des conjugaisons particulières, dont les formes étaient entièrement contraires au génie de la langue latine.</p>
+        </div>
+        <div>
+          <pb n="20" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_10/ENCPOS_1849_10_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">III.</head>
+          <p>Les plus subtils joignaient à ces procédés l’abus de l’hyperbate et de la tmèse, et l’usage des sigles, qui servaient alors, non pas à abréger l’écriture, mais à dérober la science aux profanes.</p>
+        </div>
+        <div>
+          <head rend="uc">IV.</head>
+          <p>Ce genre de style, dont les règles étaient enseignées dans les écoles, et qui se trouvait plus ou moins compliqué d’inventions bizarres et de précautions propres à rendre la science inabordable, fut en usage pendant une période dont il n’est pas possible de déterminer exactement la durée, mais qui comprend les huitième, neuvième et dixième siècles dans toute leur étendue.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

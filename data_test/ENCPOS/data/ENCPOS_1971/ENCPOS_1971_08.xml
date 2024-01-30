@@ -1,0 +1,118 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gervais de Tilbury et les <hi rend="i">Otia imperiala</hi> ; commentaire et édition critique de la <hi rend="i">tertia decisio</hi> dans les traductions françaises de Jean d’Antioche et de Jean de Vignay</title>
+        <author ref="https://www.idref.fr/032371837">Annie Duchesne</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 65-69</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="65" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_08/ENCPOS_1971_08_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Gervais de Tilbury et les <hi rend="i">Otia Imperialia :</hi>
+       <lb/>commentaire et édition critique
+       <lb/>de la <hi rend="i">tertia decisio</hi>
+       <lb/>dans les traductions françaises
+       <lb/>de Jean d’Antioche et de Jean de Vignay</head>
+      <byline>
+        par
+        <forename>Annie</forename>
+        <surname>Duchesne</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>La seule œuvre du clerc anglais Gervais de Tilbury qui soit parvenue jusqu’à nous, généralement connue sous le titre d’<hi rend="i">Otia Imperialia,</hi> apparaît comme une production typique du <num>xii<hi rend="sup">e</hi></num> siècle finissant et du début du <num>xiii<hi rend="sup">e</hi></num> siècle, époque marquée par une grande curiosité intellectuelle, qui met en œuvre des méthodes scientifiques nouvelles, et par une ardente soif de connaissances, qui se manifeste particulièrement en Angleterre, et en premier lieu à la cour d’Henri II Plantagenêt. Gervais de Tilbury la fréquenta dès sa jeunesse et demeura toute sa vie un écrivain de cour, tant en Italie et en Sicile, au service du roi Guillaume, qu’à Arles, où il représentait l’empereur Otton IV de Brunswick, L’expérience acquise tout au long d’une existence très riche, la curiosité intellectuelle et la rigueur d’un esprit critique qui caractérisent Gervais de Tilbury, confèrent toute leur originalité aux <hi rend="i">Otia Imperialia,</hi> fruit lentement mûri d’un travail incessant.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La vie et l’œuvre de Gervais de Tilbury</head>
+        <div>
+          <head rend="uc">Chapitre I
+           <lb/>La vie de Gervais de Tilbury</head>
+          <p>La vie de Gervais de Tilbury est presque exclusivement connue par ce qu’il en laisse savoir incidemment dans les <hi rend="i">Otia.</hi></p>
+          <pb n="66" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_08/ENCPOS_1971_08_02.TIF/full/full/0/default.jpg"/>
+          <p>Il naquit à Tilbury, dans l’Essex, sans doute quelques années après 1150 ; il ne semble pas qu’il ait été apparenté à la famille royale d’Angleterre, comme on l’a longtemps cru. Sa jeunesse s’écoula aux écoles et à la cour royale, où il eut pour ami Philippe, fils du comte de Salisbury, puis à l’étranger. Les <hi rend="i">Otia Imperialia</hi> permettent de deviner un premier séjour en Italie, à Rome, Naples, Venise (en 1177) et Bologne, où il étudia le droit romain puis le droit canon, qu’il enseignera plus tard. C’est également vers cette époque que se place son séjour à Reims auprès de l’archevêque Guillaume de Champagne, beau-frère de Louis VII ; il poursuivit là ses études et fut mêlé à une affaire d’hérésie qui nous est contée dans le <hi rend="i">Chronicon Anglicanum</hi> par Raoul de Coggeshall, qui l’entendit narrer par notre auteur devenu chanoine.</p>
+          <p>Gervais de Tilbury regagna ensuite l’Angleterre et s’attacha au fils aîné du roi, Henri le Jeune, pour qui il composa un <hi rend="i">Liber Facetiarum</hi> aujourd’hui perdu ; la mort prématurée du jeune prince, le 11 juin 1183, l’affecta beaucoup et il repartit en Italie. Il enseigna à Bologne, puis entra au service de Guillaume II le Bon, dernier roi de Sicile, comme juge résidant à Palerme, mais aussi à Salerne et Nola ; le roi mort, en novembre 1189, Gervais quitta l’Italie, qu’envahit dès 1194 l’empereur Henri VI, et gagna le royaume d’Arles, terre impériale assurant la liaison entre les pays rhénans et les conquêtes d’Italie et de Sicile. Gervais fut juge de l’archevêque d’Arles, Imbert d’Eyguières à partir de 1191, et sillonna la région en quête de <hi rend="i">mirabilia</hi> et de tout ce qui lui semblait digne d’être noté, interrogeant humbles et grands, élaborant peu à peu un dossier déjà riche de souvenirs personnels, du résultat d’observations faites en Angleterre, en Italie, en Sicile, et de faits qui lui avaient été contés par des voyageurs venant de Terre Sainte, de Catalogne, de Pologne, etc.</p>
+          <p>En 1196, Otton de Brunswick, petit-fils par sa mère de Henri II Plantagenêt, fut fait comte de Poitiers ; en 1198, les guelfes le proclamèrent roi contre le gibelin Philippe de Souabe, mais il n’accéda à la royauté véritable qu’en 1208, après l’assassinat de son rival. Ce fut le nouveau protecteur de Gervais de Tilbury, qui fut nommé maréchal de l’Empire dans le royaume d’Arles. Cette charge, de caractère militaire, était en fait honorifique, l’empereur n’exerçant aucun pouvoir effectif dans le royaume.</p>
+          <p>C’est à son nouveau maître que Gervais va dédier les <hi rend="i">Otia Imperialia, </hi>devenus un ouvrage composite dans le goût du temps. Les chapitres consacrés aux <hi rend="i">mirabilia,</hi> aux légendes locales, au folklore et aux traditions populaires voisinent avec des textes plus classiques et des réflexions sur le bon gouvernement et la bonne conduite des hommes, et en particulier de l’empereur. Gervais se pose en effet en conseiller politique, exhortant, avec beaucoup de clairvoyance et de courage, le jeune empereur à négocier la paix et à ne pas rallumer la guerre du Sacerdoce et de l’Empire ; mais cette voix sage ne fut guère entendue : Otton IV poursuivit la lutte contre le pape Innocent III, qui l’excommunia en 1211, puis se joignit à la coalition contre Philippe-Auguste qui aboutit au désastre de Bouvines.</p>
+          <p>On ignore la date exacte à laquelle Gervais de Tilbury termina et offrit son œuvre à Otton : peut-être voulut-il meubler les trop longs loisirs d’un homme déchu ; en effet, après un séjour misérable à Cologne, Otton se retira dans ses terres de Brunswick, où il mourut le 19 mai 1218. Il est fort possible que les <hi rend="i">Otia Imperialia</hi> ne lui soient jamais parvenus.</p>
+          <pb n="67" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_08/ENCPOS_1971_08_03.TIF/full/full/0/default.jpg"/>
+          <p>La même incertitude s’étend sur la vie de notre auteur à partir de cette date. On a pu supposer que les revers de l’empereur l’avaient forcé à quitter Arles et à se retirer en Angleterre, dans une maison de chanoines réguliers, peut-être dans l’Essex. Selon une autre tradition, peu vraisemblable, il aurait été notaire d’Otton de Lunebourg, neveu d’Otton IV, et il aurait eu également le titre de prêtre d’Ebstorf ; il aurait dressé, entre 1220 et 1225, la carte qui porte le nom de ce monastère.</p>
+          <p>Outre les <hi rend="i">Otia,</hi> Gervais composa le <hi rend="i">Liber Facetiarum,</hi> déjà cité, et un <hi rend="i">Liber de transitu beatae Virginis et gestis discipulorum</hi> aujourd’hui perdu. On lui a également attribué d’autres œuvres, dont certaines ne sont pas de lui, par exemple le <hi rend="i">Dialogus de Scacario,</hi> édité par Madox en 1711, et dont d’autres sont des parties des <hi rend="i">Otia</hi> éditées à part.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les <hi rend="i">Otia Imperialia</hi></head>
+          <p>L’idée de composer ce qui sera les <hi rend="i">Otia</hi> semble être venue à Gervais dès son séjour en Angleterre auprès de Henri le Jeune, devant la faveur rencontrée par le <hi rend="i">Liber Facetiarum.</hi></p>
+          <p>Les <hi rend="i">Otia</hi> se divisent en trois parties ou <hi rend="i">decisiones ;</hi> la première se compose de vingt-quatre chapitres et retrace la cosmogonie, l’histoire du péché originel, la création des éléments, des premiers hommes, leur généalogie, etc., et se termine par le récit du déluge ; la seconde, composée de vingt-trois chapitres dans l’édition de Leibniz, traite de la géographie, de l’histoire, ancienne et moderne, des pays, de leurs particularités. La troisième partie sera étudiée à part, plus loin.</p>
+          <p>Il est très difficile de donner une date précise à la rédaction des <hi rend="i">Otia Imperialia ;</hi> certaines mentions permettent d’avancer les années 1214-1216, mais Gervais y travailla sans doute dès les premières armées du <num>xiii<hi rend="sup">e</hi></num> siècle et jusqu’à la fin de 1213 ou le début de 1214, puis reprit et compléta son travail vers 1215-1216, avant de l’adresser à un empereur déchu et amer, dont la puissance passée est rappelée à chaque page.</p>
+          <p>Cette œuvre jouit rapidement d’un grand succès et il en existe encore vingt-neuf manuscrits latins. Elle fut particulièrement appréciée pour le panorama historique de la <hi rend="i">secunda decisio,</hi> édité à part par André Du Chesne et par Maderus, mais les <hi rend="i">mirabilia</hi> et les légendes, considérés comme les « aberrations systématiques » d’un esprit faible et crédule, furent sévèrement jugés jusqu’à la fin du <num>xix<hi rend="sup">e</hi></num> siècle. La seule édition intégrale a été faite par Leibniz (<hi rend="i">Scriptores rerum Brunsvicensium,</hi> Hanovre, 1707). Deux éditions partielles furent données par Félix Liebrecht (1856) et par R. Pauli (au tome XXVII des	<hi rend="i">M.G.H.,</hi> pp. 359-394) ; dès lors, la véritable valeur des <hi rend="i">Otia</hi> apparut clairement.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="68" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_08/ENCPOS_1971_08_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>Étude de la <hi rend="i">tertia decisio</hi> des <hi rend="i">Otia Imperialia</hi></head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>la <hi rend="i">tertia decisio</hi></head>
+          <p>La <hi rend="i">tertia decisio,</hi> fort longue, est formée de cent vingt-neuf chapitres d’une foisonnante richesse, fruit d’un travail ininterrompu pendant près de trente ans.</p>
+          <p>La matière en est, d’une part, les textes anciens et sacrés ainsi que les ouvrages d’auteurs médiévaux, dont la lecture est souvent le point de départ d’une réflexion originale, et, d’autre part, l’information personnelle de Gervais et les fruits d’une expérimentation directe vérifiant, lorsque cela est possible, ce qui lui a été conté.</p>
+          <p>Cette mosaïque de textes a une certaine unité et constitue une œuvre très originale, qui témoigne du grand intérêt que présente le <num>xii<hi rend="sup">e</hi></num> siècle pour le folklore : les phénomènes de culture populaire, jusque-là refoulés par l’Église, apparaissent.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Analyse et commentaire de la <hi rend="i">tertia decisio</hi></head>
+          <p>Les cent vingt-neuf chapitres de cette partie sont résumés brièvement, puis analysés et commentés. Chaque chapitre est annoncé par le numéro et le titre latin qu’il porte dans l’édition de Leibniz, afin de faciliter le recours à cette édition.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les traductions françaises des <hi rend="i">Otia</hi></head>
+          <p><hi rend="i">Jean d’Antioche et sa traduction des « Otia Imperialia » (troisième partie</hi>). – La plus ancienne des deux traductions françaises des <hi rend="i">Otia Imperialia </hi>a pour auteur Jean d’Antioche ; elle est conservée par un seul manuscrit, le manuscrit français 9113 de la Bibliothèque Nationale. Elle contient, dans la <hi rend="i">tertia decisio,</hi> deux chapitres supplémentaires, dus sans doute à Jean d’Antioche, et quelques lacunes. Jean d’Antioche, dont la vie est peu connue, est célèbre surtout par sa traduction nommée <hi rend="i">Rettorique de Marc Tulles Cyceron,</hi> qui témoigne d’un effort original d’exactitude et de style ; ces qualités se décèlent également dans la traduction des <hi rend="i">Otia Imperialia.</hi></p>
+          <pb n="69" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_08/ENCPOS_1971_08_05.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Jean de Vignay et sa traduction des « Otia Imperialia » (troisième partie). </hi>– La seconde traduction des <hi rend="i">Otia Imperialia</hi> est due à Jean de Vigray ; elle est conservée par un seul manuscrit, le numéro 3085 du fonds Rothschild de la Bibliothèque Nationale. Elle fait apparaître, dans la <hi rend="i">tertia decisio,</hi> quelques lacunes et trois chapitres supplémentaires dus sans doute à Jean de Vignay. En effet, deux d’entre eux mentionnent Bayeux, Sainte-Honorine-des-Pertes, Saint-Malo et la forêt de Brocéliande ; or Jean de Vignay était normand.</p>
+          <p>Jean de Vignay, dont la vie est mal connue, fut un traducteur particulièrement fécond ; on conserve onze traductions de lui, faites entre 1326 et 1341 ; celle des <hi rend="i">Otia</hi> fut sans doute exécutée vers 1331. Jean de Vignay ignorait certainement l’existence de la traduction de Jean d’Antioche, réalisée environ cinquante ans plus tôt. De même que dans ses autres traductions, Jean de Vignay se montre laborieux et maladroit, trop fidèle au latin ; son style français est lourd, ses phrases souvent incompréhensibles.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Édition de la <hi rend="i">tertia decisio</hi>
+         <lb/>dans les deux traductions françaises</head>
+        <p>L’édition est suivie de notes critiques et d’un glossaire.</p>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <pb n="70" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_08/ENCPOS_1971_08_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

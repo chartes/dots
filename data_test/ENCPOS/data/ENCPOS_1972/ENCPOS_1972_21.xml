@@ -1,0 +1,140 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_21" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les forges des princes de Condé en Bretagne aux <hi rend="sc">xvii</hi><hi rend="sup">e</hi> et <hi rend="sc">xviii</hi><hi rend="sup">e</hi> siècles</title>
+        <author ref="https://www.idref.fr/169373150">Perrine Ramin</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_21.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 167-172</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="167" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_21/ENCPOS_1972_21_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les forges des princes de Condé en Bretagne
+        <lb/>aux <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles</head>
+      <byline>
+        par
+        <forename>Perrine</forename>
+        <surname>Ramin</surname>
+        <roleName>diplômée de l’Institut d’études politiques de Paris, licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les principales sources de cette étude sont les comptes des forges de Bretagne conservés au Musée Condé, au château de Chantilly (série F), les registres des procès-verbaux des séances du conseil des princes de Condé de 1669 à 1788, les enquêtes de 1764, 1783 et 1788 (Archives départementales d’Ille-et-Vilaine, C 1474 et 1634), ainsi que les documents sur les forges de Condé, conservés aux Archives départementales de la Loire-Atlantique (E 1325, L 564, Q 127, Q 128 et 129). Ont également été consultés avec profit, aux Archives nationales, l’enquête de 1779 en Bretagne (F<hi rend="sup">12</hi> 1300) et des documents sur les forges des Condé Q<hi rend="sup">1</hi> 521, ainsi que les minutes des notaires des princes de Condé (étude XCII du Minutier central).</p>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Les princes de Condé étaient propriétaires de trois forges, toutes situées à une dizaine de kilomètres de Châteaubriant, dans les paroisses de Moisdon et de Sion. Cette région était privilégiée en raison de la présence de minerai, d’eau et de forêts.</p>
+        <p>La nature des documents utilisés, des comptes pour l’essentiel, explique que les aspects économiques aient été plus développés que les autres.</p>
+      </div>
+      <div>
+        <pb n="168" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_21/ENCPOS_1972_21_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+          <lb/>Histoire, droit, administration</head>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>historique des forges</head>
+          <p>Le prince Henri-Jules de Condé fit construire à Moisdon la forge Péan en 1668. Par la suite cette forge prit le nom de Forge Neuve. En 1723, une autre forge fut construite à Gravotel. La forge de la Hunaudière fut achetée en 1776 par Joseph de Bourbon-Condé.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+            <lb/>Régime juridique de l’exploitation des forges</head>
+          <p>Les forges de Moisdon et Gravotel furent d’abord louées, puis, à partir de 1742, exploitées directement par un régisseur. La Hunaudière fut toujours affermée. Les divers éléments des baux et des traités de régie ont été analysés. Les difficultés survenues à leur occasion sont rares. Elles sont nées généralement à propos des inondations et de l’affouage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+            <lb/>Administration et organisation</head>
+          <p>L’organisation était la suivante : à Paris, le conseil des princes surveillait la gestion des forges, l’administrateur général contrôlait l’action des agents locaux et le trésorier général se chargeait des opérations financières ; les correspondants de l’administration centrale, l’intendant, le receveur-régisseur des domaines, le procureur fiscal et la maîtrise particulière des eaux et forêts se trouvaient à Châteaubriant ; le régisseur était assisté de trois commis à la Forge Neuve, le commis de la forge, celui des fourneaux et celui des bois ; il disposait d’un seul commis à Gravotel.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="169" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_21/ENCPOS_1972_21_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+          <lb/>La technique</head>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>les moyens de production</head>
+          <p><hi rend="i">Description des installations.</hi> – La Forge Neuve comprenait deux fourneaux, deux affineries, une chaufferie, un marteau, une fenderie. A Gravotel il y avait une chaufferie, deux affineries et un marteau. A la Hunaudière, un fourneau, une forge, deux fenderies. Les inventaires et les plans des forges permettent de connaître les dimensions des bâtiments et donnent des précisions sur le matériel utilisé.</p>
+          <p><hi rend="i">Les effectifs.</hi> – Les effectifs internes et externes des forges de Moisdon, Forge Neuve et Gravotel, peuvent être évalués. En 1761, année étudiée en détail, ils ont varié entre cent cinquante ouvriers en été et cinq cent soixante-dix en hiver. Ces effectifs sont comparables à ceux d’autres forges françaises du même ordre.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+            <lb/>La production</head>
+          <p>Les productions de fonte en gueuse, de fonte moulée et de fer des forges de Moisdon de 1742 à 1789 sont présentées sous forme de tableau et graphique. En moyenne, les forges ont produit environ un million cinq cent mille livres de fonte et neuf cent mille livres de fer par an, Forge Neuve et Gravotel réunies. Les forges des Condé étaient parmi les plus importantes du royaume.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+            <lb/>Les consommations</head>
+          <p>Les comptes ne donnent qu’exceptionnellement les consommations, mais ils permettent de les dégager. En moyenne et par millier de livres, les consommations ont été, pour la fonte, de trois mille livres de minerai, quatre cent cinquante-six livres de castine et mille trois cents livres de charbon ; pour le fer, de mille cinq cents livres de fonte et deux mille livres de charbon. Un tableau donne les consommations unitaires de 1761 à 1789. Les consommations des forges de Moisdon étaient inférieures à la moyenne des autres forges.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="170" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_21/ENCPOS_1972_21_04.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Troisième partie
+          <lb/>L’économie</head>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>les débouchés commerciaux et le prix de vente</head>
+          <p><hi rend="i">Les débouchés commerciaux.</hi> – Les produits étaient vendus localement, dans la région de Châteaubriant, mais surtout à Nantes. Certains produits, comme la verge à fabriquer des clous et les fontes moulées, étaient vendus dans tout le royaume, dans divers pays d’Europe et en Amérique. Malheureusement, les documents ne permettent guère de chiffrer les quantités absorbées par les différents marchés.</p>
+          <p><hi rend="i">Le prix de vente.</hi> – Les prix de vente sont généralement connus par catégorie de produits pour la Forge Neuve, Gravotel et Nantes. On constate parfois de sensibles différences pour une même année d’un point de vente à un autre. Les prix ont augmenté de façon irrégulière mais continue, ainsi que le montrent un tableau et un graphique des prix de 1742 à 1789. La comparaison avec les prix pratiqués dans d’autres forges est approximative, car les qualités de fer sont rarement précisées ailleurs.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+            <lb/>Le prix de revient</head>
+          <p><hi rend="i">Les coûts unitaires des éléments du prix de revient.</hi> – Les coûts unitaires des éléments du prix de revient ont été dégagés des comptes : le minerai coûtait quarante-quatre sous la pipe (sept cent cinquante kg) ; la castine, six sous trois deniers le boisseau (quatre-vingt dix litres) ; le bois, cinq sous la corde (3,8 stères) ; le charbon, seize sous onze deniers la pipe (soixante-quinze kg). Ces coûts sont inférieurs à la majorité des prix payés en France. Le salaire du manœuvre était de dix à douze sous par jour, celui de l’ouvrier qualifié, de vingt sous. Les commis gagnaient de trois cents à six cents livres par an, le directeur, de trois mille à neuf mille livres. Les salaires n’ont pratiquement pas varié. Ils étaient inférieurs à ceux qui étaient généralement consentis dans le reste du royaume.</p>
+          <p><hi rend="i">Les prix de revient.</hi> – Les prix de revient aux forges et à Nantes, dépenses techniques et frais généraux compris, ont été calculés. A titre d’exemple, la verge revenait à soixante-neuf livres sept sous sept deniers à la Forge Neuve. Aucune comparaison n’est possible avec d’autres forges, faute d’éléments.</p>
+        </div>
+        <div>
+          <pb n="171" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_21/ENCPOS_1972_21_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+            <lb/>Les résultats financiers</head>
+          <p>Un tableau des recettes et dépenses annuelles de 1761 à 1789 et plusieurs tableaux de l’estimation des bénéfices des forges en 1759 et 1777 ont été établis. Les résultats financiers ont été très variables. En moyenne, de 1752 à 1789, les forges ont rapporté soixante mille livres par an. Leur revenu a sensiblement augmenté dans les dernières années qui précédèrent la Révolution. H a fallu apporter des correctifs à ces résultats pour tenir compte de l’affouage des bois des Condé, de l’amortissement et des frais financiers. Le rendement financier dans les deux cas de l’affermage et de l’exploitation directe était de 15 à 22,5 %.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Les forges des princes de Condé ont représenté pour leurs propriétaires un moyen d’assurer des débouchés pour leurs bois de Châteaubriant et une source de revenus substantielle.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Bail de la forge Péan du 30 octobre 1697. – Arrêt du Conseil d’État du 11 février 1716 permettant à Louis de Bourbon-Condé d’exploiter des mines pour sa forge. – Observations pour M. Jousselin (il s’agit d’un mémoire fait en 1787 à l’intention de l’intendant général de la baronnie de Châteaubriant, dans lequel les conditions d’exploitation de forges de Moisdon et de la Hunaudière font l’objet de comparaisons intéressantes). – Comptes résumés de l’année 1761 donnée à titre d’exemple.</p>
+      </div>
+      <div>
+        <head rend="uc">Lexique</head>
+        <p>Ce lexique est destiné à faciliter la compréhension des documents conservés à Chantilly, car la terminologie en usage aux forges des Condé diffère souvent de celle des autres forges françaises.</p>
+      </div>
+      <div>
+        <pb n="172" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_21/ENCPOS_1972_21_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Cartes et plans</head>
+        <p>Carte des forges de la Bretagne. – Carte au 1/50.000<hi rend="sup">e</hi> de la région de Châteaubriant. – Plan de masse de la Forge Neuve en 1772 (Archives nationales, Q<hi rend="sup">1</hi> 521). – Plan des installations de la Forge Neuve (Archives nationales, Q<hi rend="sup">1</hi> 521). – Plan de masse de Gravotel en 1723 (Archives départementales de la Loire-Atlantique, E 379). – Plan de la forge de Gravotel (1723, Archives départementales de la Loire-Atlantique, E 379). – Plan de la forge de la Hunaudière (1781, Minutier central, étude XCII-831).</p>
+      </div>
+    </body>
+  </text>
+</TEI>

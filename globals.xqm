@@ -8,20 +8,23 @@ module namespace G = 'https://github.com/chartes/dots/globals';
 : @author École nationale des chartes - Philippe Pons
 :)
 
-(:~ Variable pour accéder au nom de la base de données config :)
-declare variable $G:config := "config";
+(:~ Variable pour accéder au nom de la base de données dots :)
+declare variable $G:dots := "dots";
 
-(:~ Variable pour accéder au document "config.xml" d'un projet :)
-declare variable $G:configProject := "config.xml";
+declare variable $G:dbSwitcher := "dots_db_switcher.xml";
+
+declare variable $G:metadata := "metadata/";
+
+declare variable $G:metadataMapping := "dots_default_metadata_mapping.xml";
+
+(:~ Variable pour accéder au document "resources_register.xml" d'un projet :)
+declare variable $G:resourcesRegister := "dots/resources_register.xml";
 
 (:~ Variable pour accéder au document "declaration.xml" d'un projet :)
 declare variable $G:declaration := "declaration.xml";
 
-(:~ Variable pour accéder au répertoire "metadata" d'un projet :)
-declare variable $G:metadata := "metadata";
-
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
-declare variable $G:register := concat($G:metadata, "/documentRegister");
+declare variable $G:fragmentsRegister := "dots/fragments_register.xml";
 
 (:~ Variable pour accéder au dossier /static :)
 declare variable $G:static := concat($G:webapp, "static/");
@@ -32,3 +35,21 @@ declare variable $G:webapp := file:parent(file:base-dir());
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:xsl := "static/xsl/tei2html.xsl";
 
+declare variable $G:dbSwitchValidation := concat($G:webapp, "dots/schema/dots_db_switcher.rng");
+
+declare variable $G:resourcesValidation := concat($G:webapp, "dots/schema/resources_register.rng");
+
+declare variable $G:fragmentsValidation := concat($G:webapp, "dots/schema/fragments_register.rng");
+
+(: Variable pour déclarer le séparateur utilisé pour les documents CSV. Attention: un seul séparateur possible commun à tous les documents CSV :)
+declare variable $G:separator := "	";
+
+(: Code langue de la langue principale du corpus pour indexation
+: @todo: à conserver? utile?
+: @todo: le rendre facultatif
+:)
+declare variable $G:language := "fr";
+
+declare variable $G:root := "DoTS - Root";
+
+declare variable $G:rootTitle := "Collection de démonstration de DoTS";

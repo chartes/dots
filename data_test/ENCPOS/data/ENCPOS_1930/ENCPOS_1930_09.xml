@@ -1,0 +1,116 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1930_09" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La “Quevaise”. Contribution à l’histoire du régime des terres en Basse-Bretagne</title>
+        <author ref="https://www.idref.fr/026969440">Jeanne Laurent</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1930/ENCPOS_1930_09.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1930 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1930</date>, <biblScope>p. 85-92</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1930"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="85" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La quevaise
+       <lb/>Contribution à l’histoire
+       <lb/>du regime des terres en Basse-Bretagne</head>
+      <byline>
+        par
+        <forename>Jeanne</forename>
+        <surname>Laurent</surname>
+        <roleName>Licenciée ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Bibliographie</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">I
+         <lb/>étude étymologique</head>
+        <p>Réfutation des diverses hypothèses présentées jusqu’à présent. Le mot <hi rend="i">quevaise</hi> est la forme française du breton <hi rend="i">kevais</hi>, dont la forme primitive est* <hi rend="i">com</hi><hi rend="i">mæs</hi> (champ). Employé pour désigner la tenure, avant de désigner le droit qui la régissait, il s’est appliqué d’abord à toutes sortes de tenures.</p>
+      </div>
+      <div>
+        <head rend="uc">II
+         <lb/>l’aire géographique de la quevaise</head>
+        <p>D’une fausse interprétation d’un article de l’Usement de Cornouaille, divers érudits modernes ont conclu à tort, que le droit de quevaise était en usage <pb n="86" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_02.TIF/full/full/0/default.jpg"/>à Corlay ; il ne l’était pas davantage à Crozon. L’aire géographique où il s’observait était restreinte aux terres des abbayes cisterciennes de Bégard et du Relec et à celles des établissements hospitaliers de Basse-Bretagne. Enumération des terres de quevaise situées dans la zone où le domaine congéable était en vigueur, partie en Vannetais et en Cornouaille, la plupart dans le Trégorrois, très peu dans le Léon. Sur de vastes étendues, au long de l’arête montagneuse du Nord, la quevaise était le seul mode de tenure, ce qui semble indiquer qu’elle a été le mode d’exploitation employé pour le défrichement de ces terres. Sur les terres quevaisières, la population se trouve groupée en villages, contrairement aux habitudes bretonnes.</p>
+      </div>
+      <div>
+        <head rend="uc">III
+         <lb/>origine de la quevaise</head>
+        <p>La quevaise n’est ni un vestige des institutions bretonnes apportées en Armorique lors de l’émigration, ni une survivance des usages suivis dans les seigneuries laïques de la région. Au <num>xii<hi rend="sup">e</hi></num> siècle, lors de la fondation des abbayes de Bégard et du Relec et des établissements hospitaliers, les terres qui allaient être soumises au régime de la quevaise se trouvaient inexploitées et sans maître ; les religieux y acquirent tous les droits seigneuriaux au spirituel comme au temporel. Pour attirer les défricheurs, moines et hospitaliers durent leur offrir des conditions plus avantageuses que celles que leur faisaient leurs voisins. Sur le domaine congéable, la quevaise présente l’avantage d’une jouissance sans renvoi possible.</p>
+      </div>
+      <div>
+        <pb n="87" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">IV
+         <lb/>forme primitive de la quevaise</head>
+        <p>Primitivement la tenure à quevaise fut une hostise : un champ d’un journal de terre, était mis à la disposition de l’hôte défricheur moyennant une rente de 5 sous et une geline. Autour des quevaises, terres encloses et exemptes de champart, s’étendait la terre soumise au champart : la terre de la « dîme », partie du domaine restée indivise et sans clôtures et où tous avaient des droits égaux. Dans la quevaise, le fonds appartient au seigneur, les édifices et superfices appartiennent au tenancier. Le droit de juveignerie et la réversion en cas de mort du juveigneur sans enfant sont nés des circonstances où les premiers quevaisiers vécurent. Le droit de juveignerie est né de l’avantage qu’avaient les aînés à quitter la tenure paternelle ; la réversion, corollaire de ce droit, est, de fait, la reprise par le seigneur d’une quevaise abandonnée. Le quevaisier a la faculté de quitter librement son hostise ; les premiers quevaisiers furent le plus souvent, sans doute, des fils de domaniers congéables à la recherche d’un établissement. Le groupement en villages semble dû à la possibilité pour les enfants du quevaisier de rester auprès de lui et à l’avantage qu’ils y trouvaient.</p>
+      </div>
+      <div>
+        <head rend="uc">V
+         <lb/>transformation de la quevaise au <num>xv<hi rend="sup">e</hi></num> siècle</head>
+        <p>L’annexion aux hostises primitives d’une partie du domaine indivis entraîne au <num>xv<hi rend="sup">e</hi></num> siècle une transformation de la quevaise. Dès la première moitié du siècle, des clôtures s’étaient élevées sur la « terre de la dîme ». Effet de tendances anciennes, cette <pb n="88" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_04.TIF/full/full/0/default.jpg"/>construction de clôtures fut parfois autorisée par les abbés et les commandeurs, mais moyennant finance. Responsabilité des receveurs quevaisiers dans ce mouvement. Pratiquement les abbés et les commandeurs ne peuvent l’empêcher. Extension du nom et du droit de quevaise aux terres ainsi encloses et annexées aux quevaises primitives. Les nouvelles quevaises ont une étendue variable ; on y perçoit à la fois une rente et un champart ; les droits d’entrée deviennent considérables. Fixation de l’aspect géographique des terres quevaisières. Conséquences à prévoir de la transformation subie par la quevaise au <num>xv<hi rend="sup">e</hi></num> siècle ; arrêt du mouvement défricheur ; les nouvelles quevaises tendront à se rapprocher des censives ; des occasions de procès vont surgir ; multiplication des actes écrits. Conséquences sensibles dès la fin du siècle : augmentation des rentes ; variations du droit d’entrée suivant la valeur du fonds ; tentatives pour secouer les entraves résultant de l’origine domaniale de la quevaise.</p>
+      </div>
+      <div>
+        <head rend="uc">VI
+         <lb/>évolution de la quevaise
+         <lb/>et fixation du droit au <num>xvi<hi rend="sup">e</hi></num> siècle</head>
+        <p>Tenures domaniales, les quevaises en arrivent à ressembler aux tenures féodales. Obligation faite aux quevaisiers de fournir aveu comme les censitaires. Création en 1562 au Relec par l’abbé Louis Le Bouteiller de quevaises semblables à des censives ; le droit d’entrée acquitté pour elles représente le prix d’achat d’un droit de propriété sur le fonds ; différences entre ces quevaises et les quevaises primitives ; l’imposition du droit de quevaise à ces tenures fut un contre-sens ; cette création fut une opération <pb n="89" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_05.TIF/full/full/0/default.jpg"/>financière. Lettres royaux obtenues en 1575 par l’abbé Henri Le Deuff pour la conversion des quevaises en tenures à cens et à rachat. Peu d’empressement des quevaisiers à profiter de cette mesure. Continuation du mouvement à la fin du siècle : quevaises converties en censives quand elles tombent aux mains de l’abbé. Evolution de l’institution attestée par les nouveautés du vocabulaire : le terme « convenant » ne cesse et ne cessera pas d’être employé, mais on voit apparaître le terme « inféodation » pour exprimer le bail d’une quevaise et même celui de « censive » pour désigner la quevaise. Fixation du droit lors de la réformation de la coutume de Bretagne en 1580 ; officiellement toutefois il resta non rédigé, quoique les tribunaux n’aient pas tardé à se référer à la rédaction de 1580 et à lui donner pratiquement la valeur d’un texte officiel.</p>
+      </div>
+      <div>
+        <head rend="uc">VII
+         <lb/>étude juridique</head>
+        <p>La quevaise a été considérée à tort comme un tenement féodal. L’opinion commune attribuait la propriété au seigneur ; les quevaisiers le reconnaissaient eux-mêmes. La perpétuité assurée au quevaisier ne lui donnait pas d’autre droit qu’au domanier congéable, qui avait la propriété superficielle, considérée comme mobilière, sans aucun droit à la propriété foncière, seule immobilière. Il en était encore ainsi en 1580. Le quevaisier ne doit ni foi ni hommage, ni chambellenage, ni rachat ; il n’a que l’usufruit des bois qui sont du fonds ; il ne peut diviser, vendre, arrenter, hypothéquer, échanger sa tenure sans autorisation ; s’il jouit du droit de prémesse, applicable à certains biens meubles, en revanche les <pb n="90" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_06.TIF/full/full/0/default.jpg"/>droits de retrait lignager et de douaire lui sont refusés ; les redevances auxquelles il est soumis ont le caractère de rentes dues pour la jouissance du fonds et non d’un cens récognitif de seigneurie. Différences entre les lods et ventes véritables et le tiers ou quart denier payé lors de l’achat d’une quevaise. L’aveu exigé du quevaisier n’est qu’une déclaration par lettres récognitoires, nécessaire pour l’établissement de l’aveu du seigneur. La pratique du domaine congéable a pu contribuer à enrayer la transformation, sans cela inévitable, de la quevaise en censive.</p>
+        <p>Discussion de la doctrine d’après laquelle le quevaisier ne jouissait pas d’une liberté complète ; les corvées quevaisières ne comportent aucun asservissement de la personne ; les redevances caractéristiques du servage ne pèsent pas sur les quevaisiers.</p>
+      </div>
+      <div>
+        <head rend="uc">VIII
+         <lb/>Fonctionnement du régime de la quevaise</head>
+        <p>Grande diversité à tous égards suivant les seigneuries. Les règles observées pour la vente dans l’hostise primitive se maintiennent longtemps au Relec. La vente ne devient libre que très tard et seulement dans la Commanderie de La Feuillée, où la résidence personnelle n’était pas obligatoire et où le quevaisier pouvait affermer sans autorisation. Exploitation de plusieurs quevaises à la fois. Division d’une même quevaise. Application du droit de juveignerie différent de ce qu’il était dans le domaine congéable à Fusement de Rohan. En fait, frères et sœurs restaient souvent avec le juveigneur jusqu’à leur mariage et même après. La quevaise est parfois partagée entre les enfants. Cas des successions comportant plusieurs quevaises. Les meuniers délateurs dans <pb n="91" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_07.TIF/full/full/0/default.jpg"/>les cas de non-résidence. La justice chargée de maintenir le droit est mal faite, exercée presque partout par des juges de campagne. Administration dans les domaines quevaisiers : un procureur, receveur général pour l’ensemble de la seigneurie, un receveur particulier dans chaque membre. Dès le milieu du <num>xvi<hi rend="sup">e</hi></num> siècle les revenus sont affermés. Pourtant René de Rieux administra lui-même son abbaye du Relec au <num>xvii<hi rend="sup">e</hi></num> siècle. La perception des rentes est assez facile, mais non celle du champart ; difficultés notamment au Relec. La dîme ecclésiastique, jamais perçue dans l’ensemble de la Commanderie de La Feuillée, ne le fut que tardivement ailleurs. Variété en ce qui concerne l’étendue des quevaises et les droits d’entrée plus élevés que pour les domaines congéables. Mutineries des quevaisiers.</p>
+      </div>
+      <div>
+        <head rend="uc">IX
+         <lb/>les derniers temps de la quevaise</head>
+        <p>Désordres et relâchements résultant des troubles de la Ligue. Dans les domaines de Bégard le droit se maintient mal dans les parties éloignées. Dans la Commanderie, le droit n’est plus observé, semble-t-il. Le Commandeur René de Saint-Offange commence en 1614 une lutte pour le rétablir, dans la mesure du possible. Au Relec, les fermiers des revenus, pourvus de longs baux, agissent en propriétaires, non en usufruitiers. Réorganisation sous l’abbatiat de René de Rieux qui fait reconnaître le titre de quevaise là où il avait été remplacé par celui de censive et restaure le droit de quevaise dans toute sa rigueur. Son successeur, au contraire, favorise la conversion des quevaises en censives après obtention en 1659 de lettres royaux confirmant celles de 1575. A la veille de la Révolution, le droit de quevaise n’existait guère <pb n="92" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1930_09/ENCPOS_1930_09_08.TIF/full/full/0/default.jpg"/>plus que théoriquement dans la Commanderie de La Feuillée ; mal conservé à Bégard, il n’était effectivement en vigueur qu’au Relec.</p>
+        <p>A l’occasion du mouvement pour l’abolition de la mainmorte, Le Relec en 1781, La Feuillée en 1789 obtinrent des lettres royaux pour la conversion de la quevaise en censive. Les quevaisiers jouirent du droit commun en matière successorale en vertu de l’art. V du décret du 1<hi rend="sup">er</hi> mars 1790 ; puis le comité féodal, ayant adopté l’opinion de Baudouin de Maisonblanche sur la nature féodale des redevances quevaisières, celles-ci furent abolies sans indemnité et les quevaisiers devinrent propriétaires du fonds comme ils l’étaient des superfices.</p>
+      </div>
+      <div>
+        <head rend="uc">Pieces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Cartes</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

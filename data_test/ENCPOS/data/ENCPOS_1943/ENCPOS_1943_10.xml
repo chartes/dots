@@ -1,0 +1,163 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1943_10" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le testament dans la coutume de Paris au <hi rend="sc">xvi</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/035532831">Marie-Antoinette Fleury</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1943/ENCPOS_1943_10.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1943 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1943</date>, <biblScope>p. 81-88</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1943"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="81" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le testament
+       <lb/>dans la coutume de Paris
+       <lb/>au <num>xvi<hi rend="sup">e</hi></num>siècle</head>
+      <byline>
+        par
+        <forename>Marie-Antoinette</forename>
+        <surname>Fleury</surname>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie – Sources</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Nous nous proposons de montrer dans cette étude ce qu’était le testament au <num>xvi<hi rend="sup">e</hi></num> siècle, tant au point de vue du fond que de la forme. Nos sources sont presque uniquement des documents de la pratique : l’étude VIII du Minutier central des notaires, particulièrement riche pour cette époque, nous a fourni des testaments très variés, parce qu’ils émanent de personnes de toute condition. Pour les testaments passés devant curés, nos sources sont des registres paroissiaux de petites localités rurales des environs de Paris.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Différentes formes de testaments
+         <lb/>admises par la coutume</head>
+        <div>
+          <pb n="82" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre premier
+           <lb/>capacité pour tester.</head>
+          <p>D’après la coutume, il faut pour tester être « sain d’entendement, suffisamment âgé et jouissant de ses droits ». Les femmes peuvent tester sans l’autorisation de leur mari. Avant 1580, on rencontre quelques testaments de mineurs. Les personnes frappées de mort civile ne peuvent tester. Après la rédaction de la nouvelle coutume, la servitude n’est plus une incapacité. Les religieux testent avant leur profession. A Arcueil et à Pantin, on trouve des testaments de lépreux en très petit nombre. Quelques testaments d’étrangers nous sont fournis par l’étude VIII, certains testateurs mentionnent ou insèrent en entier leurs lettres de naturalité dans le testament.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Différentes formes de testaments.</head>
+          <p>Deux rubriques principales : le testament authentique et le testament sous seing privé, mais il y a flottement entre ces notions et pénétration réciproque.</p>
+          <p>Le testament authentique devant notaire nous est conservé surtout en minute. La confection de la minute donne lieu à l’établissement d’un projet ; ce projet est différent selon l’état de santé du testateur : hâtif et réduit à l’essentiel quand le testateur est à toute extrémité, il est plus complet et surchargé de corrections quand le testateur a du temps devant lui.</p>
+          <p>Le testament sous seing privé est en régression ; nous trouvons cependant des exemples exceptionnels de testaments passés en présence de sept témoins instrumentaires. On a recours de plus en plus au testament olographe pour remplacer ces formes vieillies. Le testament olographe parfait est celui qui est entièrement écrit et signé de la main du testateur, mais il arrive, au début du siècle, qu’on le fasse <pb n="83" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_03.TIF/full/full/0/default.jpg"/>écrire par une tierce personne et qu’on se contente de le signer. Il existe une forme intermédiaire, qui consiste à déposer chez le notaire un testament à la rédaction duquel il n’a point pris part.</p>
+          <p>Aux testaments ordinaires, il faut rattacher d’autres modalités d’actes à cause de mort, les codicilles, les dons mutuels et les testaments conjonctifs.</p>
+          <p>Les codicilles ne sont mis en forme que lorsqu’ils constituent un acte isolé du testament ; certains, comme celui de Salvador de Verio, revêtent une forme très semblable à celle d’un testament, d’autres sont faits en forme de codicille « en adjoustant à son testament » et peuvent, comme celui d’Antoine Duprat, comporter des dispositions importantes.</p>
+          <p>Les dons mutuels se présentent, en général, avec des caractères propres, d’autres reproduisent, au contraire, les formules du testament.</p>
+          <p>Il convient de distinguer entre le don mutuel et le testament conjonctif ; ce dernier ne contient pas de dispositions réciproques en faveur du survivant, mais des dispositions semblables au profit d’un tiers ; il se fait non seulement entre époux, mais entre frères et autres personnes.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Structure du testament</head>
+        <p>1. <hi rend="i">Le protocole initial : suscription, état de santé, invocation, préambule.</hi> – La suscription fournit des renseignements sur l’origine, la qualité, la profession, le domicile et plus rarement l’âge des testateurs. Une formule qui manque exceptionnellement dans les testaments est l’indication de l’état de santé. Elle nous apprend que c’est le plus souvent en état de maladie grave que l’on teste, quelquefois après avoir reçu les sacrements.</p>
+        <p>L’invocation subsiste ici, alors qu’elle disparaît dans les autres actes.</p>
+        <pb n="84" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_04.TIF/full/full/0/default.jpg"/>
+        <p>Le préambule des testaments authentiques est en général assez uniforme, mais l’intervention personnelle du testateur peut introduire, au milieu des formules les plus banales, la note vraie des sentiments dont il est animé.</p>
+        <p>2. <hi rend="i">Le protocole final : révocation des testaments antérieurs, clause codicillaire, soumission du compte d’exécution à une juridiction qualifiée, date et signatures.</hi> – La révocation des testaments est souvent omise par les personnes privées, mais les notaires y tiennent. La -clause codicillaire n’est pas constante. Les notaires du Châtelet font soumettre les comptes d’exécution de leurs testateurs « à la juridiction et contrainte de la Prévôté et Vicomté de Paris ».</p>
+        <p>La date ne manque jamais et constitue un élément essentiel du testament ; mais, à partir de 1580, elle se complique et la coutume exige qu’on y ajoute le lieu et la mention de la lecture du testament au testateur, par l’un des notaires en la présence de l’autre.</p>
+        <p>Pour la signature, il y a lieu de distinguer entre le testament authentique et le testament olographe. Avant 1580, la signature du disposant est exceptionnelle dans le testament authentique, mais ensuite elle devient de rigueur.</p>
+        <p>Dans les registres paroissiaux, il faut étudier l’annonce des témoins et leurs signatures. Il est à remarquer que les formules, très étendues chez les notaires, sont ici abrégées ou supprimées, et que les prescriptions de la coutume y sont assez mal observées.</p>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Contenu du testament</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les legs.</head>
+          <p>La plupart des testaments ne contiennent, encore au <pb n="85" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_05.TIF/full/full/0/default.jpg"/><num>xvi<hi rend="sup">e</hi></num> siècle, qu’un ensemble de legs. Les legs sont infiniment variés. Une certaine catégorie d’entre eux s’apparentent aux legs charitables ; la reconnaissance, la justice ou le désir de laisser une mémoire bénie les inspirent. Ils sont de peu d’importance ; on lègue à des parents ou amis une petite somme d’argent, des chevaux, des armes, des livres, des chemises en toile de Hollande. Les femmes se complaisent aux descriptions de vêtements. Les legs plus importants portent d’abord sur l’ensemble des meubles et sur les conquêts immeubles. Les legs de propres sont rares, et ils sont faits par des testateurs privés d’enfants. Les legs d’usufruit sont très nombreux ; ils semblent porter sur l’ensemble de tous les biens. On déroge à la coutume pour faire à son conjoint des libéralités en dehors du don mutuel. Dans les familles nobles, on trouve quelques exemples de legs préciputaires. Les legs en faveur des personnes frappées de mort civile sont permis sous forme de pension viagère. Les legs aux bâtards sont autorisés jusqu’à concurrence d’une « honnête pension d’aliment » ; un testateur, Pierre de Chaunoy, fait tous ses efforts pour assurer le sort de ses enfants illégitimes et de leur mère.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>L’institution d’héritier.</head>
+          <p>Dans la coutume de Paris, l’institution d’héritier est réduite à un simple legs universel portant sur la quotité disponible. Même sous cette forme, elle demeure exceptionnelle dans le cas de testateurs pourvus d’enfants. Souvent ils prennent dans leur testament, pour héritier institué, leur héritier <hi rend="i">ab intestat.</hi> Par contre, il y a des institutions d’héritiers très particulières : celle de Jacques Baron, qui institue sa femme son héritière universelle sur l’ensemble de tous ses biens, et celle des Aubert, qui disposent de toute la quotité disponible en faveur de cinq de leurs enfants et qui veulent, dans les dernières années du <num>xvi<hi rend="sup">e</hi></num> siècle, créer une communauté familiale entre ces cinq enfants,</p>
+          <pb n="86" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_06.TIF/full/full/0/default.jpg"/>
+          <p>Nous avons rencontré de nombreux exemples de substitutions. Les exemples d’exhérédation sont rares.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Règlement des dettes.</head>
+          <p>La clause des dettes et des torts laits n’est pas toujours de style. Les testateurs ont en vue des dettes précises ; ils peuvent insérer une liste de leurs dettes dans le testament, demander qu’on s’en rapporte à leur papier-journal ou charger une personne de les acquitter secrètement sans être tenue d’en rendre compte.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La tutelle testamentaire.</head>
+          <p>Dans la coutume de Paris, la tutelle était primitivement dative. Ensuite, le conseil de famille propose à la justice la personne qu’il convient de nommer ; aussi les tutelles testamentaires sont-elles assez rares. Pourtant, certains testateurs désignent au conseil de famille un tuteur de leur choix. D’autres s’adressent à la justice, dans leur testament, pour obtenir cette nomination ; d’autres, enfin, nomment un tuteur sans avoir recours à ces intermédiaires.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>L’exécution testamentaire.</head>
+          <p>Tous les testaments que nous avons vus contiennent nomination d’exécuteurs, mais en nombre variable, quelquefois un ou plusieurs, habituellement deux. Ils ne peuvent être légataires pour une portion importante des biens ; ils reçoivent seulement une légère récompense pour leur « salaire et vacation » ; par contre, on les choisit parmi les héritiers <hi rend="i">ab intestat</hi> et même parmi les héritiers institués. Les femmes <pb n="87" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_07.TIF/full/full/0/default.jpg"/>peuvent être exécutrices. Ils sont saisis de plein droit des meubles, mais le testateur peut étendre cette saisine aux conquêts immeubles et même à toute l’hérédité. Leur mandat dure, en principe, pendant l’an et jour. A la fin de l’exécution, ils doivent rendre compte.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Quatrième partie
+         <lb/>Le testament et la vie privée</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>l’inspiration des testaments.</head>
+          <p>L’inspiration des testaments est encore foncièrement religieuse, comme le prouvent les préambules si personnels des testaments olographes de la duchesse de Guise ou de Pierre de Chaunoy. Le nombre et l’importance des legs pitoyables tendent aussi à le démontrer. Du reste, même dans les dispositions profanes, les testateurs montrent la bénignité de leurs intentions ; ils ne font pas du testament un instrument de vengeance, sans motif grave.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les pompes funèbres.</head>
+          <p>Le convoi funèbre se fait avec un grand concours de prêtres et de pauvres en robe de deuil, à la lueur des torches. Le corps est assez souvent porté à l’église, mais il n’est pas présent lors des services. La sépulture dans les églises est très recherchée. Les services qui suivent le trépas sont nombreux. Le nombre ordinaire est de trois « services complets » à trois « haultes messes » et un nombre variable de basses qui peut aller jusqu’à cinq cents. Les fondations à perpétuité Comprennent au moins l’obit ou service annuel.</p>
+        </div>
+        <div>
+          <pb n="88" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1943_10/ENCPOS_1943_10_08.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Les bénéficiaires des legs pitoyables.</head>
+          <p>Les bénéficiaires des legs pitoyables sont les églises et fabriques, les quatre ordres mendiants. Puis les grands établissements de charité du temps, 1’1Hôtel-Dieu et les orphelinats qui en dépendent, les Enfants Rouges, les Enfants de la Trinité et du Saint-Esprit. Enfin, les pauvres, les prisonniers, les filles pénitentes sont l’objet de la sollicitude des testateurs. Ils adressent, en général, leurs aumônes au Bureau des pauvres, qui est chargé de les répartir entre les « pauvres honteux », les filles à marier et les veuves.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>Le testament, au <num>xvi<hi rend="sup">e</hi></num> siècle, semble être arrivé à une phase d’équilibre et de juste mesure. Il évolue vers un formalisme de plus en plus rigoureux, mais il n’est pas encore étouffé par lui. Au point de vue du fond, il y a équilibre entre les dispositions profanes et les dispositions religieuses, entre les notions coutumières et les notions romaines.</p>
+      </div>
+      <div>
+        <head rend="uc">Catalogue des testaments de l’étude VIII</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des noms de personne</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Table des professions des testateurs</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,76 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_11" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>De la négation dans les langues romanes du midi et du nord de la France</title>
+        <author ref="https://www.idref.fr/081799853">Alfred Schweighæuser</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1849/ENCPOS_1849_11.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>, <biblScope>p. 21-22</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="21" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_11/ENCPOS_1849_11_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">De la négation dans les langues romanes du midi et du nord de la France.</head>
+      <byline>
+        Thèse pour le diplôme d’archiviste paléographe, soutenue par
+        <forename>Alfred</forename>
+        <surname>Schweighæuser</surname>
+        <roleName rend="uc">Licencié ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Positions.</head>
+        <div>
+          <head rend="uc">I.</head>
+          <p>La théorie de la négation, en latin, repose sur ce principe fondamental, que deux négations se détruisent et valent une affirmation. L’ignorance et la barbarie du moyen âge ont profondément modifié ce principe dans les langues romanes.</p>
+        </div>
+        <div>
+          <head rend="uc">II.</head>
+          <p>L’accumulation des mots négatifs y est une condition indispensable à l’expression de la négation, sauf le cas où elle est exprimée par <hi rend="i">non</hi> ou par ses dérivés. Pris isolément, les autres termes négatifs ont, à peu de chose près, la valeur des termes positifs qui leur étaient corrélatifs en latin.</p>
+        </div>
+        <div>
+          <head rend="uc">III.</head>
+          <p>Certains mots affirmatifs dans l’origine, mais auxquels l’habitude de les construire avec la particule <hi rend="i">non</hi> ou <hi rend="i">ne</hi> a fait attribuer <pb n="22" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_11/ENCPOS_1849_11_02.TIF/full/full/0/default.jpg"/> communément une valeur négative en eux-mêmes (aucun,<hi rend="i">personne, jamais,</hi> etc.), n’ont jamais eu cette valeur. D’autres, en effet (comme <hi rend="i">rien</hi>), sont devenus quelquefois négatifs dès les premiers temps de la langue.</p>
+        </div>
+        <div>
+          <head rend="uc">IV.</head>
+          <p>L’usage multiplié que les langues romanes ont fait de certains substantifs destinés à renforcer l’expression de la négation, a fini par leur enlever la marque distinctive de leur nature, l’article, et les a réduits à peu près à l’état de simples adverbes.</p>
+        </div>
+        <div>
+          <head rend="uc">V.</head>
+          <p>Mais dans aucun cas ces prétendus adverbes n’ont une valeur négative par eux-mêmes.</p>
+        </div>
+        <div>
+          <head rend="uc">VI.</head>
+          <p>La plupart des règles posées après coup par les grammairiens, sur l’emploi de ceux d’entre eux qui se sont conservés dans la langue moderne, ne sont justifiées ni par leur signification étymologique, ni par l’histoire de la langue.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

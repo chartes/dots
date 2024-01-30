@@ -1,0 +1,158 @@
+<?xml-model href="../encpos.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/xsl" href="../../../hteiml/xsl/tei2html.xsl"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_18" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La vie économique et sociale à Ambert en Livradois de 1580 à 1661</title>
+        <author ref="https://www.idref.fr/029590140">Évelyne Morin</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_18.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 123-128</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc><encodingDesc><refsDecl><citeStructure unit="chapter" match="/TEI/text/body/div" use="position()"><citeData use="head" property="dc:title"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="123" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_18/ENCPOS_1971_18_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">La vie économique et sociale
+       <lb/>à Ambert en Livradois de 1580 à 1661</head>
+      <byline>
+        par
+        <forename>Évelyne</forename>
+        <surname>Morin</surname>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Ce travail est limité à la seule ville d’Ambert, mais il concerne, en fait, toute la région du Livradois. La pauvreté des sources n’a pas permis, cependant, de le développer davantage.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>Les sources principales sont les minutes des notaires d’Ambert, conservées aux Archives départementales du Puy-de-Dôme. Peu abondantes pour la fin du <num>xvi<hi rend="sup">e</hi></num> siècle, en raison des destructions diverses, elles se multiplient de 1628 à 1639. Il ne reste que peu de choses des archives municipales d’Ambert. Des recherches complémentaires ont été effectuées aux Archives départementales du Rhône, dans les minutes des notaires de Lyon, ainsi qu’à Paris, au Minutier central.</p>
+        <p>D’autre part, le livre de l’abbé Grivel, <hi rend="i">Chroniques du Livradois,</hi> publié à Ambert en 1852, peut être considéré comme une source. Il a, en effet, utilisé nombre de documents aujourd’hui disparus et pleins d’intérêt.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>Les cadres administratifs et religieux</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>le pays de Livradois et sa capitale</head>
+          <p><hi rend="i">Le pays.</hi> – Le Livradois est une vallée de l’Auvergne, délimitée à l’est par les monts du Forez et à l’ouest par ceux du Livradois. Le long de la rivière <pb n="124" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_18/ENCPOS_1971_18_02.TIF/full/full/0/default.jpg"/>de la Dore sont bâties trois villes, Ambert, Marsac et Ariane. Ambert est un point de passage vers Lyon et vers Le Puy.</p>
+          <p><hi rend="i">La ville et ses origines.</hi> – En 1239, le comte Guillaume de Baffie, seigneur d’Ambert, accorda à la ville ses privilèges.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Description de la ville</head>
+          <p><hi rend="i">Les rues.</hi> – La ville était divisée en trois quartiers, la Confrérie, la Grave et le Marché.</p>
+          <p><hi rend="i">Les puits et les fontaines.</hi> – Il y avait à Ambert trois fontaines et dix puits publics. Trois ruisseaux entouraient la ville. Une croix s’élevait à l’extérieur des remparts, devant chacune des quatre portes.</p>
+          <p><hi rend="i">Les édifices religieux.</hi> – L’église Saint-Jean, principale église d’Ambert, fut achevée en 1550. La petite église Notre-Dame, les chapelles Saint-Michel et Notre-Dame Marchadière ont toutes trois disparu.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les sièges d’Ambert</head>
+          <p>Ambert subit trois sièges pendant les guerres de Religion. Après la première prise d’Ambert en 1577 par le capitaine protestant Merle, le gouverneur de l’Auvergne tenta de reprendre la ville. Dès qu’il eut levé le siège, Merle partit à son tour. En 1591, le capitaine Basset, catholique, prit Ambert et y laissa une garnison. En 1592, la ville fut reprise par le duc de Nemours, chef de la Ligue en Auvergne. La Ligue y tint garnison jusqu’en 1598, où Gimel vendit la ville à Henri IV. En fait, Ambert ne semble pas s’être rangée du côté de quelque parti que ce soit.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>La ville et son administration</head>
+          <p><hi rend="i">Les bases.</hi> – Quatre consuls étaient élus, représentant deux des quartiers de la ville. Les faubourgs élisaient à part quatre « commis ». La seigneurie appartenait à la maison de Chalencon de Rochebaron.</p>
+          <p><hi rend="i">L’administration des églises et des établissements hospitaliers.</hi> – La fondation d’un « grenier des pauvres » et le déplacement de l’Hôtel-Dieu sont les seuls faits notables au <num>xvii<hi rend="sup">e</hi></num> siècle.</p>
+          <p><hi rend="i">Les changements.</hi> – Après plusieurs demandes infructueuses au cours du xvi<hi rend="sup">e</hi> siècle, Ambert fut agrégée aux « bonnes villes » de Basse-Auvergne en 1588. En 1656, après un long procès, les habitants des faubourgs furent séparés de la ville pour la levée des impositions.</p>
+        </div>
+        <div>
+          <pb n="125" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_18/ENCPOS_1971_18_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre V
+           <lb/>Le cadre religieux</head>
+          <p><hi rend="i">Les fondations anciennes.</hi> – Le couvent des Bénédictins de Chaumont, près d’Ambert, passa aux Minimes en 1607. Le prieur de Chaumont était curé primitif de l’église d’Ambert. La communauté des prêtres-filleuls d’Ambert (prêtres communalistes) était l’une des plus importantes de l’Auvergne.</p>
+          <p><hi rend="i">Un nouvel élan.</hi> – Un couvent d’Ursulines fut fondé à Ambert en 1613 sur l’initiative d’Antoinette Micolon. Elle fonda ensuite les couvents de Clermont, Tulle, Beaulieu, Espalion, Arlanc, où elle mourut en 1659. Après le départ de la Mère Micolon, le couvent d’Ambert continua à prospérer. C’est également la Mère Micolon qui favorisa l’installation à Ambert d’un couvent de Récollets en 1619. L’abbé Lhéritier, dont la personnalité est mal connue, ne fut pas étranger à cet élan religieux.</p>
+          <p><hi rend="i">L’évolution d’une confrérie.</hi> – La confrérie du Gonfalon était couramment connue à Ambert au <num>xvii<hi rend="sup">e</hi></num> siècle sous le nom de « confrérie Notre-Dame ». Elle avait un rôle social et économique important. Il est parfois difficile de distinguer la confrérie de la communauté des prêtres. En 1636, elle devint confrérie des Pénitents blancs, tout en conservant son nom de Gonfalon. De 1636 à 1640 elle se réunissait dans la chapelle des morts du cimetière Saint-Jean.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les activités commerciales
+         <lb/>et les groupes sociaux</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les papetiers</head>
+          <p><hi rend="i">Les moulins.</hi> – L’industrie du papier apparaît à Ambert de façon certaine en 1493. Puis, de 1573 à 1581, trente-deux papetiers d’Ambert ont fourni le libraire Simon Gault de Lyon. Il est vraisemblable qu’avant 1577 il y avait une cinquantaine de moulins à Ambert et dans les vallées de Chadernolles, Valeyre, La Forie. En 1591, il n’en restait plus que trente-cinq environ. Quatre moulins seulement travaillaient en 1596. La plupart des autres se trouvaient en partie en ruine et dans l’impossibilité momentanée de fonctionner. A partir de 1610, le travail reprit presque normalement, pour s’accroître entre 1630 et 1640. En 1665, cinquante et un moulins existaient dans les trois vallées, dont quarante-six travaillaient.</p>
+          <p><hi rend="i">L’exploitation.</hi> – Un moulin pouvait être affermé, soit lorsqu’il appartenait à une femme ou à un mineur, soit lorsque son propriétaire possédait plusieurs <pb n="126" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_18/ENCPOS_1971_18_04.TIF/full/full/0/default.jpg"/>moulins. Les baux étaient généralement de quatre ou cinq ans. Le moulin était parfois sous-affermé. L’association était fréquente entre papetiers apparentés.</p>
+          <p>Les papetiers étaient groupés dans la confrérie de Saint-Pierre. En 1639, l’évêché de Clermont considéra l’existence même de cette confrérie comme abusive et les droits levés sur les apprentis comme excessifs. Les statuts des papetiers furent complétés en 1636 en ce qui concerne les apprentis autres que les fils de maîtres, et le nombre des jours ouvrables.</p>
+          <p><hi rend="i">Le commerce.</hi> – Les balles de papier étaient convoyées à dos de mulet. Le commerce principal d’Ambert se faisait avec Lyon, où beaucoup d’Ambertois étaient établis. Les papetiers fréquentaient certaines auberges dont l’hôte pouvait servir de caution ou de dépositaire. A Paris, le marché du papier était moins important pour Ambert que pour Thiers. L’existence d’un commerce de papier entre l’Auvergne et l’Espagne ne repose actuellement sur aucune preuve.</p>
+          <p><hi rend="i">Les fortunes.</hi> – Les papetiers étaient très endettés. Peu de faillites se produisaient cependant. Les réussites les plus marquantes à cette époque furent celles des papetiers Martial Clouvet et Thomas Daurelle. Ce dernier fournissait l’Imprimerie royale en 1644.</p>
+          <p><hi rend="i">Les familles.</hi> – Dans la première moitié du <num>xvii<hi rend="sup">e</hi></num> siècle, les familles papetières les plus importantes étaient les Vimal et les Richard. La présence de nombreux enfants dans chaque famille donnait lieu à des partages fréquents et compliqués. Des procès s’élevaient à propos de l’écoulement des eaux et de la marque du papier. Les dots variaient entre 40 et 2.400 livres.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Les marchands</head>
+          <p><hi rend="i">Le commerce.</hi> – En dehors du papier, le commerce d’Ambert portait sur les produits fabriqués à Ambert ou dans la région : les burats (étoffes de laine grossière), les épingles ou les peaux tannées. Les fabricants de burats étaient qualifiés d’« entemeniers ». Il y avait en outre des « carteurs », c’est-à-dire des carriers ou fabricants de cartes.</p>
+          <p>Les muletiers du Languedoc apportaient à Ambert le sel, l’alun et les chiffons ou « pattes » nécessaires à la fabrication du papier.</p>
+          <p><hi rend="i">Les associations.</hi> – Les marchands d’Ambert s’associaient entre eux ou avec des marchands de Marsac, d’Arianc, de Saint-Amant-Roche-Savine. L’objet de leur commerce est rarement précisé.</p>
+          <p><hi rend="i">Les fortunes.</hi> – Les inventaires après décès des marchands révèlent de nombreuses créances, peu d’argent liquide, assez peu de marchandises en magasin.</p>
+          <p>Les <hi rend="i">hôtes et les bouchers.</hi> – Les aubergistes, en relation avec les muletiers, jouaient un rôle important dans la ville. Les bouchers étaient étroitement apparentés aux papetiers.</p>
+        </div>
+        <div>
+          <pb n="127" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_18/ENCPOS_1971_18_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Bourgeois et officiers</head>
+          <p>Les plus grandes familles d’Ambert étaient, outre celles des papetiers, les familles des avocats, des notaires et des drapiers. Tous les bourgeois possédaient des métairies aux environs d’Ambert. Ils s’y réfugièrent lors de la peste de 1628-1630. Par leurs mariages avec les filles des papetiers, les bourgeois héritaient parfois de moulins. Ils étaient ainsi amenés à s’intéresser au commerce du papier et, grâce à leur fortune, ils réussissaient mieux que les simples maîtres papetiers.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Les artisans</head>
+          <p>Les artisans étaient tous groupés en confréries de métier. L’apprentissage durait de deux à quatre ans. Les principaux métiers étaient les cordonniers, les chapeliers, les tailleurs et les forgerons. Les carriers et les teinturiers formaient parfois une communauté de deux familles habitant la même maison et travaillant ensemble.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>Les rentes</head>
+          <p>Les rentes constituées se sont multipliées à Ambert vers 1628. Les crédi-rentiers étaient le plus souvent la communauté des prêtres, puis les Ursulines.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>La population d’Ambert était composée de beaucoup de marchands et d’artisans, les papetiers étant à la fois l’un et l’autre. Il n’y avait pas d’autre noblesse que le seigneur d’Ambert, qui y résidait rarement. C’était une population active, qui devait voyager pour écouler les produits de son industrie dans les grands centres. La ville et son commerce ont beaucoup souffert des guerres de religion.</p>
+      </div>
+      <div>
+        <head rend="uc">Tableaux</head>
+        <p>Papetiers en relation avec Simon Gault. – Ventes de moulins. – Ventes de papier. – Les rentes. – Ventes de maisons de 1632 à 1648.</p>
+      </div>
+      <div>
+        <pb n="128" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_18/ENCPOS_1971_18_06.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Pièces justificatives</head>
+        <p>Divers types d’actes tirés des minutes des notaires d’Ambert (contrat de mariage, testament, associations, baux, etc.). – État des moulins à papier en 1665 (Bibliothèque Nationale, nouv. acq. fr. 7 455, fol. 42).</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <p>1. Liste des consuls d’Ambert de 1575 à 1661.</p>
+        <p>2. Glossaire de termes du dialecte d’oc d’Ambert extraits des minutes de notaires.</p>
+        <p>3. Bibliothèque du prêtre Jean Gallet (1618).</p>
+        <p>4. Liste alphabétique des papetiers de 1580 à 1661.</p>
+        <p>5. Plans et vue aérienne d’Ambert.</p>
+        <p>6. Carte des moulins.</p>
+        <p>7. Reproduction de filigranes choisis dans les minutes de notaires.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
