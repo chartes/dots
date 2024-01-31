@@ -2,7 +2,7 @@ xquery version "3.1";
 
 (:~  
 : Ce module permet à un utilisateur de DoTS de supprimer les registres DoTS du projet de son choix
-: @author École nationale des chartes - Philippe Pons
+: @author École nationale des chartes
 : @since 2023-10-12
 : @version  1.0
 :)
@@ -14,9 +14,9 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
-declare updating function dots.lib:handleDelete($dbName as xs:string) {
+declare updating function dots.lib:handleDelete($dbName as xs:string, $option as xs:string) {
   dots.lib:dbSwitchDelete($dbName),
-  dots.lib:registersDelete($dbName)
+  dots.lib:registersDelete($dbName, $option)
 };
 
 declare updating function dots.lib:dbSwitchDelete($dbName as xs:string) {
@@ -34,8 +34,12 @@ declare updating function dots.lib:dbSwitchDelete($dbName as xs:string) {
     )
 };
 
-declare updating function dots.lib:registersDelete($dots.lib:dbName as xs:string) {
-  db:delete($dots.lib:dbName, $G:resourcesRegister),
-  db:delete($dots.lib:dbName, $G:fragmentsRegister)
+declare updating function dots.lib:registersDelete($dots.lib:dbName as xs:string, $option as xs:string) {
+  if ($option = "true")
+  then
+    db:drop($dots.lib:dbName)
+  else
+    db:delete($dots.lib:dbName, $G:resourcesRegister),
+    db:delete($dots.lib:dbName, $G:fragmentsRegister)
   
 };
