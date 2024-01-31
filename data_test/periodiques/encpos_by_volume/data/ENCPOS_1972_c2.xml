@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_c2" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d'archiviste paléographe</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_06.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="position" match="/TEI/text/body/div[@type='position']" use="@xml:id">
+          <citeData use="head" property="dc:title"/>
+          <citeStructure unit="chapter" match="div" use="position()">
+            <citeData use="head" property="dc:title"/>
+          </citeStructure>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="position" xml:id="ENCPOS_1972_06">
+        <pb n="51" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Les plus anciennes chartes
+          <lb/>en langue française
+          <lb/>de l’aube et de la Seine-et-Marne</head>
+        <byline>
+          par
+          <forename>Dominique</forename>
+          <surname>Coq</surname>
+        </byline>
+        <p>À l’édition et au commentaire grammatical des plus anciennes chartes originales en langue française (antérieures à 1270) conservées dans les dépôts d’archives départementales, communales et hospitalières des départements de l’Aube et de la Seine-et-Marne, on a joint les chartes conservées dans les layettes du Trésor des Chartes des Archives nationales et au département des manuscrits de la Bibliothèque nationale qui émanent de la région correspondant au territoire actuel des deux départements envisagés et présentant les mêmes caractéristiques.</p>
+        <div>
+          <head rend="uc">Introduction</head>
+          <p>La connaissance de la langue médiévale, et en particulier des dialectes régionaux, s’appuie de plus en plus sur l’étude des documents d’archives, qui ont l’avantage sur les textes littéraires de pouvoir être localisés et datés de manière beaucoup plus précise. C’est dans le cadre de la publication systématique, département par département, des plus anciennes chartes en langue vulgaire antérieures à 1270 du domaine d’oïl qu’a entreprise M. Jacques Monfrin, que pourrait s’inscrire cette édition de cent dix-huit chartes françaises de la Champagne méridionale, dont la plus ancienne remonte à septembre 1230.</p>
+        </div>
+        <div>
+          <head rend="uc">Sources</head>
+          <p>La grande majorité des documents, les trois quarts environ, ont été fournis par la série H des Archives départementales de l’Aube. Les autres pièces se trouvent disséminées dans divers fonds d’archives conservés dans une dizaine de dépôts publics : aux Archives nationales, les layettes du Trésor des Chartes ; <pb n="52" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_02.TIF/full/full/0/default.jpg"/>à la Bibliothèque nationale, la collection de Champagne et la collection Clairambault ; aux Archives départementales de l’Aube, les fonds des séries E, G et 1 J (fonds des nouvelles acquisitions contenant quelques pièces originales isolées) ; aux Archives départementales de Seine-et-Marne, les archives du grand Hôtel-Dieu de Provins ; aux Archives communales de Troyes, le fonds Delion (layettes contenant les archives anciennes de la ville et notamment des chartes des comtes de Champagne) ; à la Bibliothèque municipale de Provins, le fonds Michelin (contenant des pièces originales isolées concernant la ville de Provins) ; à Bar-sur-Aube, les archives de l’hôpital Saint-Nicolas et, enfin, à Nemours, les archives de l’Hôtel-Dieu.</p>
+        </div>
+        <div>
+          <head rend="uc">Commentaires grammaticaux</head>
+          <p><hi rend="i">Morphologie.</hi> – On constate un maintien de la flexion classique des substantifs jusque vers 1265, date à partir de laquelle les manquements à la déclinaison deviennent de plus en plus fréquents, surtout dans la Brie. Une certaine tendance à la distinction entre les formes féminines et masculines des adjectifs relatifs et indéfinis <hi rend="i">quel</hi> et <hi rend="i">tel</hi> (par analogie avec les formes du type <hi rend="i">bon-bone) </hi>se manifeste généralement, sauf dans la région de Bar-sur-Aube et près des marges orientales. Pour ce qui est de la morphologie verbale, les particularités les plus remarquables sont le maintien des désinences dialectales <hi rend="i">-oiens</hi> pour la quatrième personne de l’imparfait de l’indicatif, et <hi rend="i">-iens</hi> pour la même personne du présent du subjonctif.</p>
+          <p><hi rend="i">Syntaxe.</hi> – La syntaxe, comme il est courant dans la langue diplomatique, n’offre pas de richesse suffisante pour permettre de dégager des caractéristiques particulières.</p>
+          <p><hi rend="i">Phonétique.</hi> – Il semble que les seuls traits phonétiques qu’on puisse considérer comme proprement champenois dans ces actes sont la diphtongaison de e fermé accentué devant <hi rend="i">l</hi> mouillé (type <hi rend="i">consoil</hi>) et l’évolution de la diphtongue romane <hi rend="i">eu</hi> provenant de la coalescence d’un <hi rend="i">e</hi> fermé et d’un <hi rend="i">l</hi> vocalisé, qui aboutit à <hi rend="i">au</hi> (type <hi rend="i">çaus, aus</hi>). Les autres traits dialectaux sont empruntés aux parlers voisins, le picard, le lorrain et le bourguignon, tandis que de nombreuses contaminations franciennes sont sensibles, surtout dans la Brie et le Gâtinais.</p>
+        </div>
+        <div>
+          <head rend="uc">Conclusion</head>
+          <p>La langue des chartes offre de grandes disparités entre l’ouest et l’est ; elle semble évoluer plus rapidement dans le Gâtinais et la Brie que dans la région de Bar-sur-Aube. Elle paraît en outre être le terrain de rencontre de quatre parlers voisins : picard au nord, lorrain à l’est, bourguignon au sud, Orléanais et francien à l’ouest. Peut-être est-ce là la caractéristique dominante des parlers champenois.</p>
+        </div>
+        <div>
+          <pb n="53" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Édition</head>
+          <p>Sur les cent dix-huit actes édités, une quarantaine avaient déjà fait l’objet d’une publication, en particulier ceux des layettes du Trésor des Chartes, quoique trois d’entre eux, postérieurs à la mort de saint Louis, n’eussent pas encore été publiés.</p>
+          <p>Un appendice regroupe huit documents non scellés, mais fort proches des originaux, ou non datés, mais dont on sait par ailleurs qu’ils s’inscrivent dans les limites chronologiques.</p>
+          <p>Les vidimus ont été placés en regard des originaux, dans la mesure où ils étaient antérieurs à 1270.</p>
+        </div>
+        <div>
+          <head rend="uc">Index</head>
+          <p>Index topo-onomastique avec référence à une carte de la Champagne méridionale au 1 350 000.</p>
+        </div>
+        <div>
+          <head rend="uc">Glossaire</head>
+          <pb n="54" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_04.TIF/full/full/0/default.jpg"/>
+        </div>
+      </div>
+      <div type="position" xml:id="ENCPOS_1972_09">
+        <pb n="73" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Les cartulaires de l’abbaye de Saint-Seine ;
+          <lb/>introduction historique et édition critique</head>
+        <byline>
+          par
+          <forename>Michel</forename>
+          <surname>de Lemps</surname>
+        </byline>
+        <div>
+          <head rend="uc">Introduction</head>
+          <p>De l’abbaye de Saint-Seine, l’une des trois plus anciennes de la Côte-d’Or, il reste essentiellement l’église des <num>xiii<hi rend="sup">e</hi></num>-<num>xv<hi rend="sup">e</hi></num> siècles, devenue l’église paroissiale du bourg qui s’est construit autour du monastère et qui en a gardé le nom, et des débris du chartrier, témoins des possessions du monastère dans les environs immédiats (terre de Saint-Seine) et à l’extérieur. Dans l’ensemble ces documents ont été utilisés et étudiés ; une partie d’entre eux a été publiée. Mais il reste encore des problèmes en suspens, notamment à propos des origines ; des actes anciens sont à éditer et des enseignements à en tirer, avant de songer à une synthèse d’ensemble.</p>
+        </div>
+        <div>
+          <head rend="uc">Sources</head>
+          <p><hi rend="i">Sources d’archives.</hi> – Pour faire l’histoire de l’abbaye depuis les origines jusqu’à 1271, on dispose principalement de son fonds d’archives, classé dans la sous-série 10 aux Archives de la Côte-d’Or. Le plus important des trois inventaires des titres dressés sous l’Ancien Régime (1774, avec supplément en 1787) permet de se faire une idée des destructions ou disparitions éprouvées à la Révolution, et en même temps de les pallier. Les documents subsistants consistent en dix-neuf actes originaux, encore inédits, et un cartulaire (cartulaire I) entièrement édité.</p>
+          <p>Au département des manuscrits de la Bibliothèque nationale, on trouve encore trois copies intégrales, ou presque, des <num>xvii<hi rend="sup">e</hi></num> et <num>xviii<hi rend="sup">e</hi></num> siècles (mss. lat. 17085, 12824, 9874) d’un second cartulaire disparu (cartulaire II). Des copies ou extraits de chartes, en général tirés de ce cartulaire, sont fournis par le <hi rend="i">Monasticon benedictinum</hi> (ms lat. 12696), et par les collections de Bourgogne (t. 9 et 93) et Baluze (t. 142 et 144). Les éditions ne couvrent qu’une partie de ce cartulaire.</p>
+          <pb n="74" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_02.TIF/full/full/0/default.jpg"/>
+          <p>Il existe aux Archives nationales sous la cote S* 3239<hi rend="sup">2</hi> un « État général des titres » de l’abbaye rangés par ordre chronologique, qui comporte la copie de toutes les chartes les plus anciennes, prises dans les deux cartulaires. Ce recueil est l’œuvre du dernier abbé de Saint-Seine en 1779.</p>
+          <p>Il reste un fonds secondaire de l’abbaye (prieuré de Saint-Martin de Langres) aux Archives départementales de la Haute-Marne (21 H), qui renferme un original.</p>
+          <p><hi rend="i">Sources narratives.</hi> – Pour entrevoir les origines et les débuts de l’abbaye de Saint-Seine, on ne peut faire fond sur la légendaire <hi rend="i">Vita sancti Sequani, </hi>dont la rédaction ne semble guère remonter avant la fin du <num>xi<hi rend="sup">e</hi></num> siècle – le premier des dix manuscrits subsistants est du début du <num>xii<hi rend="sup">e</hi></num> siècle (Dijon, Bibliothèque municipale 641), le style indique une époque postérieure à la renaissance carolingienne, la plupart des éléments du récit sont dénués de toute valeur historique – ni à plus forte raison sur les fresques peintes à l’intérieur de l’église abbatiale au début du <num>xvi<hi rend="sup">e</hi></num> siècle, qui montrent un état amplifié de la légende. Force est de recourir, sur le saint et la fondation qu’on lui attribue, à des documents hagiographiques plus brefs mais plus sûrs et aux textes liturgiques : Grégoire de Tours, les martyrologes, Jonas de Bobbio, Ardon (ou Smaragde). Sur le temporel de l’abbaye dans la période primitive, on n’a, de l’époque carolingienne, que deux textes très courts, l’un annalistique, l’autre législatif, mais ils permettent de faire le lien avec les textes plus anciens qui concernent l’abbaye. On regrette le caractère tardif, résumé et déformé d’une prétendue copie d’un diplôme de Gontran en faveur de Saint-Seine, retranscrite au <num>xiii<hi rend="sup">e</hi></num> siècle dans la <hi rend="i">Chronique des évêques de Lausanne</hi> par Conon d’Estavayer : ce document appuierait l’hypothèse d’une assez vaste dotation territoriale de l’abbaye de Saint-Seine à l’époque mérovingienne.</p>
+          <p>Les Bénédictins de la congrégation de Saint-Maur ont rédigé des histoires et descriptions, ou chroniques, de l’abbaye de Saint-Seine (<hi rend="i">Monasticon benedictinum, Monasticon gallicanum</hi>).</p>
+        </div>
+        <div>
+          <head rend="uc">Première partie
+            <lb/>Notice historique</head>
+          <div>
+            <head rend="uc">Chapitre premier
+              <lb/>fondation et débuts de l’abbaye</head>
+            <p><hi rend="i">La fondation ; les problèmes posés par l’identité du fondateur.</hi> – Réunissant les données de Grégoire de Tours, de la <hi rend="i">Vita sancti Sequani</hi> et de la <hi rend="i">Vita sancti Johannis Reomaensis,</hi> les historiens ont admis généralement que l’abbaye de Saint-Seine avait été fondée vers le milieu du <num>vi<hi rend="sup">e</hi></num> siècle ou même avant saint Seine lui-même.</p>
+            <pb n="75" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_03.TIF/full/full/0/default.jpg"/>
+            <p>L’abbaye porte en effet le nom d’un saint dont l’existence et la mort sur le territoire de Langres avant la fin du <num>vi<hi rend="sup">e</hi></num> siècle sont attestées par Grégoire de Tours dans le livre <hi rend="i">In gloria confessorum</hi> écrit vers 587. L’auteur emploie pour qualifier ce <hi rend="i">Sequanus</hi> le terme d’<hi rend="i">abbas,</hi> qui signifie le plus souvent dans ses livres « chef spirituel d’une communauté monastique plus ou moins groupée ».</p>
+            <p>Compilé vers l’an 600, le martyrologe hiéronymien mentionne au 19 septembre, dans le diocèse de Langres, au monastère de Cestre (<hi rend="i">monasterio Segestro</hi>), la <hi rend="i">depositio sancti Siggoni (Singoni, Sigonis</hi>) <hi rend="i">presbiteri (et confessons). </hi>Jusqu’au martyrologe d’Usuard (vers 870), c’est sous ces formes ou à peu près que l’on trouve écrit le nom du saint dans les martyrologes historiques qui le mentionnent. Usuard, corrigeant son propre martyrologe, remplace, à l’éloge du 19 septembre ce nom par celui de <hi rend="i">Sequanus,</hi> reconnaissant ainsi l’unicité du personnage. Mais les deux lignées de martyrologes issues l’une d’Usuard I, l’autre d’Usuard, II ou de ses prédécesseurs, transmirent le double nom à la postérité, sous la même date il est vrai, mais avec un décalage d’un jour chez certains, induisant ainsi plusieurs historiens en erreur. Une évolution phonétique parallèle à celle qui de <hi rend="i">Sequana</hi> a donné à l’époque mérovingienne <hi rend="i">Segona </hi>ou <hi rend="i">Sigona</hi> puis Seigne et enfin Seine, et influencée par l’analogie avec celle-ci, rend compte de la dualité morphologique du nom du saint.</p>
+            <p>Une soixantaine d’années plus tard, la <hi rend="i">Vita Johannis Reomaensis,</hi> œuvre de Jonas de Bobbio (659), parle de la visite faite au héros, fondateur du premier monastère connu de Bourgogne, par un <hi rend="i">vir venerabilis Segonus</hi> (les manuscrits, dès le <num>x<hi rend="sup">e</hi></num> siècle, transcrivent <hi rend="i">Sequanus</hi>), qualifié un peu plus loin de <hi rend="i">frater.</hi> Quoi qu’il en soit de l’époque exacte de la vie de ce Jean de Réomé (<num>v<hi rend="sup">e</hi></num> siècle ? VI<hi rend="sup">e </hi>siècle ?), que ne mentionnent ni Grégoire de Tours ni le martyrologe hiéronymien, le fait est que les informateurs de Jonas considéraient Seine comme un moine à peu près contemporain de leur premier abbé et sur un pied d’égalité avec lui.</p>
+            <p><hi rend="i">Les débuts ; problèmes posés par le culte de saint Seine.</hi> – On ne peut tenir grand compte de la mention d’un abbé de Saint-Seine dans la <hi rend="i">Vita Frodoberti,</hi> fondateur de Montier-la-Celle au milieu du <num>vii<hi rend="sup">e</hi></num> siècle, puisque l’hagiographe de Frodbert, Adson, écrivait au <num>x<hi rend="sup">e</hi></num> siècle. Par contre, en 822, Ardon (Smaragde), auteur de la <hi rend="i">Vita Benedicti Anianensis,</hi> qui a bien connu le saint durant sa vie, nous donne le premier témoignage explicite d’une <hi rend="i">domus Sancti-Sequani</hi> où vivait une communauté monastique (<hi rend="i">cœnobium</hi>) et où Benoît demeura près de six ans, de 773 à 778, avant d’aller fonder Aniane.</p>
+            <p>La <hi rend="i">notitia de servitio monasteriorum</hi> (817-8) et une mention des Annales de Flavigny en 816 montrent que <hi rend="i">Sanctus-Sequanus (Siquanus</hi>) était un monastère privilégié mais de moyenne grandeur. Les diplômes carolingiens qui forment les deux premiers actes du cartulaire I (816 ? et 886) et celui qui fut accordé à l’évêque Geilon de Langres en 887, qui désignent Saint-Seine sous le nom respectivement de <hi rend="i">monasterium (in honore)... sancti Sequani (constructum) </hi>et de <hi rend="i">abbatiam sancti Sequani confessons in pago Magnimontensis et in loco qui Siccaster antiquitus nuncupatus est,</hi> permettent d’établir que le <hi rend="i">monasterium Segestrum</hi> où fut enterré <hi rend="i">Sigonus,</hi> qui y était honoré le 19 septembre, est bien le même que celui qui devait déjà grouper des moines en 587 autour de la <hi rend="i">basilica</hi> abritant le tombeau de <hi rend="i">Sequanus.</hi> L’identification ne laisse plus <pb n="76" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_04.TIF/full/full/0/default.jpg"/>de doute quand on sait que, aujourd’hui encore, c’est le 19 septembre qu’on célèbre la fête de saint Seine.</p>
+            <p>Le culte de saint Seine est resté très local. La forme même du nom du personnage peut provoquer le doute ; une certaine succession du culte de saint Seine (<hi rend="i">Sequanus) à</hi> celui de la déesse <hi rend="i">Sequana,</hi> protectrice des sources de la Seine, assez proches, et patronne du temple qu’on a retrouvé à cet endroit, atteste certes la survivance de certaines pratiques païennes sous un revêtement chrétien. Mais ceci ne saurait cependant réduire l’existence du saint à une simple christianisation mythique de la déesse : l’épigraphie de la fin de l’époque romaine ne manque pas de noms d’hommes ou de femmes empruntés à des fleuves et atteste l’existence vers 500 d’autres <hi rend="i">Sequanus</hi> (comme de femmes nommées <hi rend="i">Sequana) ;</hi> d’autre part, toute substitution n’entraîne pas nécessairement la création de toutes pièces du terme final. L’extension du culte, très restreinte, a dû avoir lieu soit au <num>viii<hi rend="sup">e</hi></num> siècle, soit au <num>ix<hi rend="sup">e</hi></num> siècle, lors des déplacements auxquels les moines bourguignons furent contraints devant les incursions sarrasines ou normandes. On ne sait rien d’autre de l’abbaye à ces époques troublées que le martyre de deux religieux par les « Vandales ».</p>
+            <p>Il semble donc qu’on puisse conclure à l’existence réelle d’un prêtre nommé Seine, chef d’une communauté monastique fixée dès les premiers temps de l’époque mérovingienne (dans le voisinage de Cestre), dont les reliques ont été conservées dans le monastère qu’il avait sans doute fondé lui-même. A ces quelques éléments sûrs se réduit le fond réellement historique de la vie de saint Seine.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+              <lb/>L’évolution du statut juridique de l’abbaye
+              <lb/>et de son temporel jusqu’à la fin du <num>xi<hi rend="sup">e</hi></num> siècle</head>
+            <p>Même si l’on n’admet pas l’authenticité du « diplôme de Contran » d’après lequel Saint-Seine aurait eu au <num>vi<hi rend="sup">e</hi></num> siècle des possessions en Suisse romande, il est fort probable que l’abbaye, comme ses semblables à l’époque, eut de nombreuses propriétés, même assez loin de son centre. C’est de cette richesse initiale que témoignera sans doute, plus tard, la pancarte pontificale de 1179, qui fait état de plusieurs revendications de l’abbaye à côté des possessions effectives.</p>
+            <p>En 816 la mention concernant Saint-Seine dans les annales de Flavigny permet de préciser le caractère véritable de la « concession » de l’important domaine fiscal de <hi rend="i">Nova villa</hi> faite cette même année par Louis le Pieux à l’abbaye ; il s’agit d’une restitution. <hi rend="i">Nova villa</hi> est situé à peu de distance de Saint-Seine. Mais qu’en fut-il des domaines excentriques ? On peut supposer sans crainte d’erreur que l’ère des spoliations carolingiennes appauvrit aussi Saint-Seine, qui ne recouvrera jamais son domaine passé. Pourtant c’est à cette époque une abbaye royale et jouissant d’un statut privilégié tant au temporel (exemption de la milice) qu’au spirituel (libre élection de l’abbé).</p>
+            <pb n="77" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_05.TIF/full/full/0/default.jpg"/>
+            <p>Au moment où s’affaiblit le pouvoir carolingien, l’évêque de Langres ressaisit le temporel tombé en mains laïques, peut-être celles des comtes de Mémont, chefs du <hi rend="i">pagus Magnimontensis,</hi> dans le ressort desquels les diplômes de l’époque situent l’abbaye et à l’un desquels la tradition orale attribue même sa fondation, la légende écrite faisant naître le saint même, sinon du comte de Mémont, du moins dans son <hi rend="i">oppidum.</hi></p>
+            <p>Le relâchement des anciennes structures administratives de l’Empire joue d’abord en faveur des puissants évêques de Langres dont la seigneurie englobe Saint-Seine. Est-ce à ce fait que Saint-Seine devra d’être appelée, au <num>xii<hi rend="sup">e</hi></num> siècle encore, par l’un des prélats du siège langrois « sa chère fille et son trésor » (<hi rend="i">specialis filia et camera nostra</hi>) ?</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+              <lb/>L’abbaye d’après les cartulaires et les originaux
+              <lb/>aux <num>xii<hi rend="sup">e</hi></num> et <num>xiii<hi rend="sup">e</hi></num> siècles</head>
+            <p><hi rend="i">Une seigneurie assez indépendante.</hi> – Au moment où la puissance montante des ducs de Bourgogne limite et tend à faire reculer celle des évêques de Langres, Saint-Seine se trouve être l’objet des revendications des deux grandes principautés territoriales, qui peuvent chacune se réclamer d’une tradition antérieure ; le roi de France, dont le pouvoir se rétablit, a aussi des droits à faire valoir, mais il est plus lointain. Ces forces divergentes se neutralisent dans une certaine mesure. D’autre part, le mouvement qui porte les églises à s’émanciper des pouvoirs séculiers à la fin de l’époque carolingienne, transforme même des abbayes d’importance moyenne, comme Saint-Seine, en seigneuries indépendantes. Cependant l’ancienne abbaye épiscopale, si proche de Dijon, n’échappe pas à l’orbite ducale. En 1189 le duc précise qu’il y a les droits de garde et de régale, qui passera naturellement au roi lors du retour de la Bourgogne à la couronne à la fin du <num>xv<hi rend="sup">e</hi></num> siècle. Cette demi-indépendance est consacrée par la protection pontificale, qui apparaît en 1179, fruit tardif et indirect de la réforme monastique (Saint-Seine semble avoir échappé à la réforme clunisienne, même à celle de Guillaume de Volpiano).</p>
+            <p><hi rend="i">Un temporel qui s’accroît et se stabilise.</hi> – L’impulsion spirituelle donnée par la Réforme grégorienne joue en faveur de Saint-Seine comme des autres abbayes. On en voit des traces dès les premiers actes (1093) : des dons de biens, de dîmes, d’églises par le duc, les grands ou l’évêque, viennent arrondir le temporel qu’avaient dû entamer passablement les exactions des <hi rend="i">praedones </hi>aux siècles passés. Le domaine de l’abbaye s’affirme et se fixe pendant cette période. Les acquisitions ou pertes n’en changeront plus guère l’aspect.</p>
+            <p><hi rend="i">La « terre de Saint-Seine » et ses bornes.</hi> – Le domaine seigneurial de Saint-Seine nous apparaît à cette époque en pleine prospérité. Le noyau central a atteint son extension définitive ; n’étant plus l’objet d’usurpations, de transactions, de contestations, il apparaît très peu dans les actes conservés. Par <pb n="78" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_06.TIF/full/full/0/default.jpg"/>contre, on voit beaucoup mieux les biens marginaux ; ils sont inféodés à de petits seigneurs locaux, vassaux de l’abbé, héritiers certainement des « chasés » que devaient entretenir les abbayes pour leur défense à l’âge précédent : les biens sont donnés en fief, pris en gage, reçus en aumône ou, bientôt, achetés.</p>
+            <p>Au-delà de ces limites l’abbaye est en contact avec les autres seigneuries laïques et ecclésiastiques, domaine ducal au sud, Saint-Étienne au sud-est, Saint-Bénigne à l’est, les comtes de Saulx (mouvant de l’évêque de Langres), les abbayes d’Oigny et de Fontenay au nord, de Flavigny au nord-ouest, les seigneurs de Mont-Saint-Jean et de Sombemon à l’ouest et au sud-ouest. Les rapports semblent assez bons avec tous ces voisins, sauf à préciser les délimitations nécessaires des droits de chacun ; c’est au <num>xiii<hi rend="sup">e</hi></num> siècle que se font les premiers bornages connus de la « terre de Saint-Seine ». Il y a cependant des exactions ou empiètements aussi bien de la part du duc que de certains seigneurs, des contestations avec l’évêque ou son représentant ; d’où quelques procès. C’est avec Saint-Étienne de Dijon que la rivalité paraît avoir été la plus vive au début du <num>xii<hi rend="sup">e</hi></num> siècle.</p>
+            <p>Les possessions excentriques de Saint-Seine sont plus ou moins anciennes. On voit l’abbaye se défaire contre un cens de celles qui sont trop lointaines pour être rentables. Ces biens sont situés en Champagne, comté de Brienne, Lingonie au nord, Beaunois au sud, dans le Jura (salines) à l’est, et comptent en outre plusieurs églises dans le diocèse d’Autun.</p>
+            <p><hi rend="i">Une économie surtout terrienne.</hi> – On peut déduire de l’ensemble des actes que les moines pratiquaient sur leur domaine une économie reposant essentiellement sur la possession de la terre, principale richesse de l’époque. La toponymie, qui signale plusieurs « corvées » dans l’enceinte de la « terre de Saint-Seine », et la « charte de grâce » en 1324, qui affranchit les hommes de cette terre de la mainmorte, permettent de présumer jusqu’à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle une exploitation de faire-valoir direct pour une part (on trouve des <hi rend="i">villici </hi>jusqu’après cette période). Le reste était tenu pour leur propre compte, moyennant redevances, par les serfs, dont quelques-uns sont affranchis à titre personnel. Une petite industrie (moulins à grain et à drap dispersés sur les cours d’eau, tanneries à Saint-Seine même) a dû contribuer à la naissance d’une petite bourgeoisie locale. Elle a dû être favorisée aussi par le commerce, destiné à satisfaire les besoins de la communauté, de la <hi rend="i">familia,</hi> des habitants du bourg et des hôtes de passage. Situé sur le grand chemin de Dijon à Troyes, Saint-Seine est en effet un point de passage obligé quand on veut aller directement de Langres à Autun ou de Châtillon à Beaune en évitant Dijon. Plus localement, il faut également tenir compte de l’afflux des pèlerins de la « terre de Saint-Seine » pour les processions et la fête du saint patron de l’abbaye, des chalands pour la foire de Saint-Gilles.</p>
+            <p>Le sous-sol calcaire de la région ne prédispose pas à une culture très riche. Les bois qui entourent le bourg abbatial et les villages de la « terre » en une vaste ceinture et que le défrichement périodique entame semblent à peu près aussi développés à cette époque qu’aujourd’hui, et plus qu’à l’époque romaine. Ils servent à la pâture des bêtes aussi bien qu’à l’exploitation (construction, chauffage). Les cultures du froment, de l’avoine sont les plus courantes ; on trouve aussi de l’orge et du seigle. On peut déceler un élevage du <pb n="79" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_07.TIF/full/full/0/default.jpg"/>mouton, normal sur les chaumes du plateau, des vaches, notamment dans la zone touchant l’Auxois, l’utilisation des bœufs de labour et des ânes. La vigne pousse jusque sur les pentes du plateau (du côté de Savigny-sous-Mâlain par exemple), mais le plus gros et le meilleur de la récolte vient des vignes possédées ou accensées dans la Côte bourguignonne, en particulier autour de Serrigny, de Couchey, jusqu’à Fontaines-les-Chalon.</p>
+            <p>Les donations et offrandes manuelles des fidèles, la perception d’une part des <hi rend="i">sacerdotalia</hi> des paroisses complètent les revenus fonciers, notamment les dîmes et les cens, pour former la fortune monastique. Ce qui n’est pas consommé par les moines est employé à la construction d’édifices religieux – c’est sans doute au <num>xii<hi rend="sup">e</hi></num> siècle qu’on bâtit une nouvelle église paroissiale dans le bourg, c’est au début du <num>xiii<hi rend="sup">e</hi></num> siècle que s’élève la belle abbatiale – et utilitaires – les bâtiments des prieurés, par exemple, dont on compte une dizaine à l’époque – ou sert à alimenter le budget de charité ; l’aumône a dû être permanente à Saint-Seine dès les origines en raison de sa situation d’étape et les actes font allusion à la maladrerie édifiée près du bourg.</p>
+          </div>
+        </div>
+        <div>
+          <head rend="uc">Deuxième partie
+            <lb/>Notice descriptive et critique</head>
+          <div>
+            <head rend="uc">Chapitre premier
+              <lb/>histoire du chartrier</head>
+            <p>Les vicissitudes historiques générales ou régionales expliquent que dès le <num>xvii<hi rend="sup">e</hi></num> siècle on ne trouvait plus à Saint-Seine qu’un original ancien (887). D’autre part l’incendie de l’église en 1255 n’a pas dû être le premier, s’il a peut-être été le dernier. Il faut compter aussi les pertes et destructions de certains documents, les vols. L’inventaire de 1774-1787 ne pouvait donc recenser la totalité des titres que les moines détenaient encore à la fin du <num>xiii<hi rend="sup">e</hi></num> siècle. Après la Révolution, les trois quarts des pièces du fonds ayant été brûlées, il ne reste plus du chartrier de 1271 qu’une vingtaine d’originaux et le cartulaire I.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+              <lb/>Notice descriptive</head>
+            <p><hi rend="i">Le cartulaire I.</hi> – Le premier cartulaire de Saint-Seine, coté 10 H 6 aux Archives départementales de la Côte-d’Or et 165 dans la série spéciale des cartulaires, est un groupe de trente-deux feuillets en trois cahiers insérés dans <pb n="80" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_08.TIF/full/full/0/default.jpg"/>un volume de parchemin petit in-quarto à reliure de bois recouverte de cuir, en médiocre état. Les autres parties de ce volume montrent qu’il s’agit d’un recueil hétéroclite dont les éléments se rattachent plutôt à la liturgie qu’à la diplomatique, et qui dut être composé vers le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle. Le cartulaire proprement dit, qui commence à la page 245, est d’une écriture petite, fine et fracturée, gothique classique de lecture facile, qui s’étend à pleine page sur réglure au crayon, toujours de la même main. Il n’y a aucune ornementation. Ce cartulaire contient quatre-vingt-cinq actes compris entre 816 et 1204-1227 ; il a donc dû être rédigé sous l’abbatiat d’Olivier.</p>
+            <p><hi rend="i">Le cartulaire II.</hi> – Le supplément de 1787 de l’inventaire permet de se représenter le second cartulaire perdu. C’était un volume petit in-folio de présentation analogue au cartulaire I, portant la transcription en cent cinquante-deux pages de deux cent quarante-huit chartes écrites de plusieurs mains, et s’étageant de 1093 à 1265. Il fut sans doute rédigé sous l’abbatiat d’Hugues de La Porte.</p>
+            <p>Les copies précitées de la Bibliothèque nationale permettent d’en connaître la teneur, confirmée par les extraits et analyses.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+              <lb/>Étude critique</head>
+            <p><hi rend="i">Valeur textuelle et intérêt historique des cartulaires.</hi> – Le petit nombre des originaux conservés d’actes communs aux deux cartulaires (trois seulement) ne permet pas d’affirmer une plus grande fidélité chez l’un plutôt que chez l’autre. La transcription de onze autres actes dans le cartulaire II seul montre qu’il est assez exact. En complétant ces deux recueils par quelques originaux dont la transcription ne figure pas dans les cartulaires, soit au cours de la période qu’ils embrassent, soit dans les six années qui suivent, on peut préciser l’image qu’ils donnent d’une seigneurie ecclésiastique bourguignonne aux <num>xii<hi rend="sup">e</hi></num> et <num>xiii<hi rend="sup">e</hi></num> siècles ; on peut également constater, du point de vue diplomatique, la part croissante prise par les juridictions secondaires, notamment ecclésiastiques, dans l’expédition des actes et l’alourdissement du formulaire, surtout à partir de 1250 environ.</p>
+            <p><hi rend="i">Méthode suivie dans l’édition.</hi> – Tous les originaux (vingt) ont été édités pour la première fois. Sept actes déjà édités du cartulaire I (<hi rend="i">B</hi>) l’ont été à nouveau en raison de leur ancienneté ou de leur intérêt particulier. Le texte des cent trente-deux actes du cartulaire II qui ont fait l’objet d’une édition (et, pour l’un d’eux, d’une réédition) a été établi par comparaison des trois copies du <num>xvii<hi rend="sup">e</hi></num> siècle et du <num>xviii<hi rend="sup">e</hi></num> siècle (<hi rend="i">C D E</hi>). Tous ces actes, édités ou non, ont été analysés et classés par ordre chronologique de 816 à 1271.</p>
+          </div>
+        </div>
+        <div>
+          <pb n="81" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_09.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Catalogue des actes de l’abbaye
+            <lb/>jusqu’en 1271</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Édition</head>
+          <p>L’édition, qui suit les principes exposés dans le dernier chapitre, porte sur cent soixante-trois actes dont cent cinquante-deux inédits.</p>
+          <pb n="82" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_09/ENCPOS_1972_09_10.TIF/full/full/0/default.jpg"/>
+        </div>
+      </div>
+      <div type="position" xml:id="ENCPOS_1972_18">
+        <pb n="143" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Le bestiaire héraldique au moyen âge</head>
+        <byline>
+          par
+          <forename>Michel</forename>
+          <surname>Pastoureau</surname>
+          <roleName>maître ès lettres</roleName>
+        </byline>
+        <div>
+          <head rend="uc">Introduction</head>
+          <p>Le développement actuel des sciences sémiologiques permet d’envisager l’héraldique sous un jour nouveau et de la faire sortir du carcan de l’histoire généalogique et nobiliaire dans lequel elle a été jusqu’ici trop longtemps enfermée. Le choix du bestiaire comme sujet de notre étude, tout en facilitant un examen approfondi des problèmes techniques du blason, a permis, d’une part d’aborder ces problèmes sous l’angle, encore trop négligé, de l’héraldique comparée, d’autre part d’élargir considérablement les possibilités d’investigation offertes par l’étude des armoiries.</p>
+          <p>Nous avons limité notre travail à la période médiévale, parce que le <num>xvi<hi rend="sup">e</hi></num> siècle met fin à l’esprit « vivificateur » du bestiaire en faisant entrer dans l’écu tous les animaux et en les représentant d’une façon naturaliste tout à fait opposée aux créations graphiques de l’héraldique originelle.</p>
+          <p>Géographiquement nous avons envisagé les armoiries de l’Europe entière, mais nous avons donné la priorité à celles des pays d’héraldique classique (France, Angleterre, Écosse, Plats-Pays, Suisse et régions rhénanes de l’Empire) par rapport à celles des pays d’héraldique plus tardives (Espagne, Italie, Scandinavie) ou nettement marginale (Pologne, Hongrie).</p>
+        </div>
+        <div>
+          <pb n="144" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Première partie
+            <lb/>Les sources pour l’étude de l’héraldique
+            <lb/>médiévale</head>
+          <div>
+            <head rend="uc">Chapitre premier
+              <lb/>les armoriaux et les sceaux</head>
+            <p>Nous avons tenté une étude statistique des armoiries médiévales à partir d’une part des armoriaux et des copies d’armoriaux antérieurs à 1 500 conservés à la Bibliothèque nationale et au British Museum, et d’autre part des collections de sceaux Douët d’Arcq aux Archives nationales et Clairambault à la Bibliothèque nationale. Nous avons toujours essayé de donner la priorité aux armoriaux, jusqu’à présent injustement délaissés, sur les sceaux, déjà très étudiés. Quarante-sept armoriaux et vingt-et-un mille sceaux environ ont été examinés.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+              <lb/>Comparaison entre les sources sigillaires
+              <lb/>et les sources armoriales</head>
+            <p>Les sceaux présentent sur les armoriaux l’avantage de recenser des armoiries complètes et authentiques, et de pouvoir être datés avec une relative précision. Mais les armoriaux ont la très grande supériorité d’indiquer les émaux, sans lesquels il n’y a pas d’armoiries véritables.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+              <lb/>Les autres sources</head>
+            <p>Très peu de monuments proprement héraldiques (écus, cimiers, bannières) nous sont parvenus ; les pierres tombales, les vitraux, les manuscrits à peintures, les objets d’art (émaillerie, orfèvrerie, céramique, tapisserie), les monnaies, les mesures de poids, les documents diplomatiques, les romans courtois, les récits de tournois et les traités de blason sont les principales sources pour compléter les renseignements fournis par les sceaux et armoriaux.</p>
+          </div>
+        </div>
+        <div>
+          <pb n="145" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_03.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Deuxième partie
+            <lb/>La faune des armoiries médiévales</head>
+          <div>
+            <head rend="uc">Chapitre premier
+              <lb/>croissance de la faune des armoiries</head>
+            <p><hi rend="i">L’origine des armoiries.</hi> – Les armoiries sont le résultat de la fusion en un seul système de divers éléments empruntés aux arts décoratifs, aux sceaux, aux boucliers et surtout aux bannières. L’énigme de leur origine est double : il faut distinguer le problème, tout à fait obscur, de la transformation des motifs décoratifs fantaisistes peints sur les boucliers en des signes de reconnaissance individuels et permanents (entre 1080 et 1125), du problème, mieux connu, de l’évolution de ces signes vers des emblèmes héréditaires obéissant à des règles précises (entre 1125 et 1200).</p>
+            <p><hi rend="i">Les premiers animaux héraldiques.</hi> – Les dragons figurant sur certains écus de la tapisserie de Bayeux et « l’écu au lion » stéréotypé de la littérature contemporaine laissent à penser que les animaux furent, au même titre que les partitions et les pièces, les premières figures héraldiques. Après le lion et le dragon, ce sont l’aigle, le sanglier et le cerf qui entrèrent les premiers dans l’écu. Ils furent suivis par le corbeau, le léopard, la panthère, le bar, la merlette, le faucon, le griffon, le cygne, le brochet et le saumon. Au <num>xiii<hi rend="sup">e</hi></num> siècle la liste s’allonge dans de fortes proportions en raison de l’extension de l’usage des armoiries à l’ensemble de la société.</p>
+            <p><hi rend="i">Enrichissement et diversification de la faune.</hi> – La proportion des armoiries animalières par rapport à l’ensemble des armoiries est de 60 % au <num>xii<hi rend="sup">e</hi></num> siècle ; elle tombe à 40 % dans la première moitié du siècle suivant et à 35 % dans la seconde. Au <num>xiv<hi rend="sup">e</hi></num> siècle, elle est de 30 % et se maintiendra autour de ce chiffre jusqu’au <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+            <p>Le nombre des espèces figurant dans les armoiries va en augmentant : quinze vers 1200, trente vers 1300, cinquante vers 1450. Parallèlement à cet enrichissement de la faune, on assiste à un nivellement des proportions : vers 1200 le groupe lion-aigle-merlette représente 90 % des armoiries animalières ; il n’en représente plus que 70 % vers 1350 et 60 % seulement à la fin du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          </div>
+          <div>
+            <pb n="146" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_04.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre II
+              <lb/>Géographie de la faune des armoiries</head>
+            <p><hi rend="i">Proportion des armoiries animalières par rapport à l’ensemble des armoiries.</hi> – A une Europe germanique et celtique d’héraldique nettement animalière s’oppose une Europe latine d’héraldique plus linéaire. C’est en Écosse (40 %), dans les pays du Rhin et d’Europe centrale (35 %) que la proportion des armoiries animalières est la plus forte, et en Italie, Espagne, Savoie et Dauphiné qu’elle est la plus faible (moins de 20 %). Ailleurs elle se situe aux alentours de 30 %.</p>
+            <p><hi rend="i">Diversification de la faune.</hi> – Plus la proportion des armoiries animalières est forte, plus la faune du blason est diversifiée, sauf en Flandre, Brabant et Hollande, et plus ses relations avec la faune locale sont étroites (animaux aquatiques dans les régions de la mer du Nord et de la Baltique, gros gibier en Écosse, Suisse, Allemagne méridionale et Europe centrale). Le groupe lion-aigle-merlette constitue 85 % des armoiries animalières dans les Plats-Pays, 80 % en France, 75 % en Angleterre et 50 % seulement en Allemagne.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre III
+              <lb/>Le lion</head>
+            <p><hi rend="i">Fréquence générale et répartition géographique.</hi> – Le lion est de tous les meubles celui qui a été le plus employé par l’héraldique médiévale. L’« écu au lion », universel dans la littérature du <num>xii<hi rend="sup">e</hi></num> siècle, représente encore 60 % des armoiries animalières vers 1200, 55 % vers 1350, et 50 % à la fin du <num>xv<hi rend="sup">e</hi></num> siècle. Sur la totalité des armoiries médiévales, 15 % ont été chargées d’un lion.</p>
+            <p>C’est dans les territoires de l’actuelle Belgique que les armoiries au lion sont les plus nombreuses (70-80 % des armoiries animalières) et en Ile-de-France, en Suisse et en Autriche qu’elles sont les plus rares (moins de 35 %).</p>
+            <p><hi rend="i">Caractères du lion héraldique.</hi> – Environ 80 % des lions sont rampants ; les lions passants se rencontrent surtout en Angleterre, dans l’ouest de la France et en Allemagne du nord. Les lions couronnés (environ 15 % des lions) le sont presque toujours d’or. Dans les armoriaux, la mention d’un émail particulier pour la langue et les griffes dépend étroitement de l’application de l’auteur ; elle ne doit donc nullement être considérée comme un caractère héraldique fondamental. Mise à part la queue fourchée et passée en sautoir, les attributs du lion sont rarissimes.</p>
+            <p><hi rend="i">Émaux et dessin du lion.</hi> – Le gueules est l’émail le plus fréquent (30 %) ; ensuite viennent l’argent (21 %), le sable (20 %) et l’or (20 %). L’azur (4 %) et le sinople (2 %) sont très localisés : Angleterre et Italie pour l’azur, France de l’ouest pour le sinople.</p>
+            <pb n="147" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_05.TIF/full/full/0/default.jpg"/>
+            <p>De toutes les armoiries au lion, et, ce faisant, de toutes les armoiries médiévales, c’est l’écu « d’argent au lion de gueules » qui a été le plus porté.</p>
+            <p>Pour dessiner le lion, l’héraldique a repris une figure stylisée qui existait depuis la plus haute Antiquité. Des différences régionales de style apparaissent dès le début du <num>xiii<hi rend="sup">e</hi></num> siècle et vont en s’accentuant jusqu’aux années 1430-1450, à partir desquelles on assiste, au contraire, à une certaine uniformisation sur le type du lion flamand.</p>
+            <p><hi rend="i">La signification emblématique.</hi> – Le lion peut être parlant (Italie, Espagne, pays du Rhin), politique (surtout aux <num>xii<hi rend="sup">e</hi></num> et <num>xiii<hi rend="sup">e</hi></num> siècles) ou symbolique (force, courage, générosité). Dans les armoiries écclésiastiques, il a presque toujours une signification christologique.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IV
+              <lb/>Le léopard</head>
+            <p>Le léopard est né de la crise de croissance des armoiries de la famille Plantegenêt au <num>xii<hi rend="sup">e</hi></num> siècle et il faut davantage voir en lui un lion figuré dans une position particulière, comme le prouve son rôle de meuble parlant en Souabe, en Franconie, en Brabant et en Hollande dans les armes de familles dont le nom rappelle phonétiquement celui du lion, qu’un animal totalement différent, issu du dragon emblématique paien.</p>
+            <p>L’abondance des lions passants en Anjou, Maine et Normandie, berceaux de la famille Plantegenêt, et l’évolution des caractères graphiques et des attributs du léopard, tout à fait semblable à celle du lion, confirment pleinement que, du strict point de vue héradique, le lion et le léopard sont le même animal envisagé dans deux positions différentes.</p>
+            <p>Le léopard représente à peine 5 % des armoiries animalières ; c’est en Angleterre, en Guyenne, en Champagne et en Allemagne méridionale qu’il est le plus répandu ; ailleurs on lui préfère presque toujours le lion passant.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre V
+              <lb/>L’aigle</head>
+            <p><hi rend="i">Fréquence générale et répartition géographique.</hi> – L’aigle représente 12 % des armoiries animalières et 3 % seulement de l’ensemble des armoiries. C’est surtout sa rareté dans les armes roturières, cas unique parmi tous les animaux héraldiques, dont l’indice de fréquence est sensiblement le même dans les armes nobiliaires et les armes roturières, qui explique la faiblesse de ces pourcentages.</p>
+            <p>C’est en Autriche, en Bavière, en Franconie, en Savoie et en Italie du nord que les aigles sont les plus nombreuses ; d’une manière générale, les régions riches en lions sont pauvres en aigles, et réciproquement.</p>
+            <pb n="148" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_06.TIF/full/full/0/default.jpg"/>
+            <p><hi rend="i">Caractères héraldiques de l’aigle.</hi> – L’aigle bicéphale, inconnue des bestiaires est une création de l’imagination orientale ; elle ne s’est imposée que tardivement dans l’héraldique occidentale et n’a, à aucun moment ni dans aucun pays, représenté plus de 15 % des aigles des armoiries. Les aigles couronnées sont rares (5 %), et celles becquées et membrées d’un émail particulier ne le sont jamais de façon constante.</p>
+            <p><hi rend="i">Émaux et représentation graphique.</hi> – Les aigles de gueules (23 %), d’or (20 %) et de sable (20 %) sont les plus nombreuses et celles que l’on rencontre partout ; celle d’argent (17 %) est surtout anglaise et française, celle d’azur (10 %) française et italienne. Malgré l’influence très grande de l’écu impérial, il apparaît nettement que de toutes les armoiries à l’aigle c’est, comme pour le lion, la combinaison « d’argent à l’aigle de gueules » qui a été la plus portée.</p>
+            <p>L’aigle est l’animal héraldique le mieux dessiné et celui qui permet d’obserle mieux les différences de style régionales. Son dessin n’est nullement original puisqu’il existait déjà à Babylone au <num>iii<hi rend="sup">e</hi></num> millénaire avant notre ère ; il semble avoir pénétré en Occident par l’intermédiaire de l’orfèvrerie sassanide, des monnaies byzantines et des tissus orientaux.</p>
+            <p><hi rend="i">La signification emblématique.</hi> – L’aigle peut être politique (cas fréquent dans l’Empire, où elle est l’emblème du parti gibelin), parlante (Écosse, Bretagne, Italie du nord) ou symbolique (domination, victoire). Dans les armes ecclésiastiques, elle a deux significations christologiques précises, le baptême et le jugement dernier.</p>
+            <p><hi rend="i">L’alérion.</hi> – Pour les bestiaires, l’alérion est un aigle particulièrement grand et fort ; dans les armoiries c’est une petite aigle, d’abord dépourvue de pattes, puis de bec. Il n’est apparu que tardivement (fin du <num>xiv<hi rend="sup">e</hi></num> siècle) et semble devoir être une abstraction du dessin de l’aiglette, que son emploi en nombre dans certaines armoiries rendait méconnaissable.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre VI
+              <lb/>La merlette</head>
+            <p><hi rend="i">Place de la merlette dans les armoiries médiévales.</hi> – Par sa fréquence la merlette est le second animal héraldique ; elle charge 5 % de toutes les armoiries et 16 % des armoiries animalières. Mais son emploi est très nettement localisé et se limite à l’Europe du nord-ouest. C’est en Ile-de-France, en Picardie en Artois et en Hollande que les écus chargés de merlettes sont les plus nombreux.</p>
+            <p><hi rend="i">Caractères héraldiques de la merlette.</hi> – La merlette n’a jamais eu de pattes, mais jusqu’au milieu du <num>xv<hi rend="sup">e</hi></num> siècle elle a toujours un bec ; elle le perd entre 1460 et 1520, probablement afin de ne pas être confondue avec la canette, oiseau tout à fait différent dont l’importance grandit à cette époque.</p>
+            <pb n="149" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_07.TIF/full/full/0/default.jpg"/>
+            <p>L’étude de la disposition des merlettes dans l’écu est valable pour la plupart des autres petits meubles du blason ; les dispositions les plus fréquentes sont les merlettes en orle (33 %) et accompagnant une fasce (16 %) ou un chevron (12 %). Ce sont les merlettes de gueules (45 %) et de sable (23 %) qui sont au Moyen Âge les plus fréquentes.</p>
+            <p><hi rend="i">La signification emblématique.</hi> – La merlette est à l’origine un petit merle qui servit de meuble parlant à certaines familles du Beauvaisis, de Normandie et d’Angleterre ; au <num>xiii<hi rend="sup">e</hi></num> siècle elle perd son caractère animalier et parlant pour jouer un rôle tout à fait technique dans les armoiries : remplir les vides et équilibrer les figures. Au <num>xiv<hi rend="sup">e</hi></num> siècle elle est de nouveau parlante, mais désormais avec les noms phonétiquement apparentés à « oiseau » et non plus à « merle ».</p>
+            <p>La merlette n’a jamais joué le rôle de symbole, mais on peut parfois lui reconnaître une signification allégorique, sinon au moment du choix et de la formation des armoiries, du moins dans leurs interprétations postérieures.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre VII
+              <lb/>Le bar</head>
+            <p>Bien qu’il ne charge que 2 % des armoiries animalières, le bar est le poisson héraldique le plus fréquent. C’est dans l’est et le nord-est de la France, en Lorraine, en Comté (rôle politique lié aux armes de la puissante maison de Bar) et dans les basses vallées de la Meuse, du Rhin, de la Weser et de l’Elbe (emprunts à la faune aquatique locale) que les écus aux bars sont les plus répandus. Outre ces deux significations, il est possible que le bar soit devenu une sorte de poisson stéréotypé indéterminé et se soit chargé, après le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle, du contenu symbolique du poisson (signification christologique, vertu talismanique, insigne d’un rang supérieur).</p>
+            <p>Toujours très bien dessiné, le bar héraldique ressemble davantage aux brochets et aux barbeaux des rivières qu’aux bars proprement dits. 90 % des écus chargés de bars en portent deux adossés en pal, et la moitié sont des bars d’or.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre VIII
+              <lb/>Les quadrupèdes</head>
+            <p>Les quadrupèdes autres que le lion et le léopard chargent moins de 5 % des armoiries animalières ; parmi eux ce sont le sanglier, le loup, l’ours et le cerf qui sont les plus fréquents. Le sanglier constitue le plus souvent un emprunt à la faune locale ou un héritage de l’emblématique pré-héraldique, mais il peut aussi être parlant, et même symbolique (colère). Le loup, très fréquent en Espagne, est parlant ou allégorique, mais jamais symbolique, de même que l’ours, qui <pb n="150" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_08.TIF/full/full/0/default.jpg"/> doit à son ancien rôle de roi des animaux – au moins jusqu’à la fin du<num>xi<hi rend="sup">e</hi></num> siècle – d’être parlant avec des patronymes formés sur « König » en Allemagne. Le cerf, quand il ne fait pas allusion à la chasse, est symbolique (longévité, pureté).</p>
+            <p>Parmi les chiens l’héraldique médiévale distingue le lévrier (Angleterre) et le dogue (Flandre, Allemagne) d’une troisième espèce relativement indéterminée, que seul un collier permet de ne pas confondre avec le loup. Chez les bovins le bœuf n’est pas encore différencié du taureau. Parmi les autres quadrupèdes, les moins rares sont le bélier, l’agneau, la chèvre, le mouton, le bouc, le cheval, le renard (toujours de gueules), le porc, l’éléphant (qui porte très rarement une tour sur son dos), le chameau, l’écureuil et le castor, ce dernier étant totalement hybride.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IX
+              <lb/>Les oiseaux</head>
+            <p>Les oiseaux autres que l’aigle et la merlette occupent moins de 5 % des armoiries animalières ; parmi eux les plus fréquents sont le coq, presque toujours parlant, le corbeau, très apprécié dans les armes roturières, le cygne, réservé au contraire aux seules armoiries nobiliaires et chargé d’un fort contenu symbolique (pureté, fierté), et le perroquet, popularisé par le jeu du « papegay ».</p>
+            <p>La colombe et le pélican sont réservés aux armes ecclésiastiques ; le héron est surtout anglais, le paon et la grue, germaniques ; le canard, l’oie, la chouette, la cigogne, le pigeon, l’épervier, et l’autruche sont très rares, tout comme le faucon qui était pourtant au Moyen Âge l’animal le plus apprécié.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre X
+              <lb/>Les poissons et les animaux aquatiques</head>
+            <p>Dans les armoiries médiévales le dauphin est beaucoup plus rare que le bar ; néanmoins la flatteuse réputation que lui faisaient les bestiaires l’a rendu populaire et, alors qu’à l’origine il ne servait de meuble parlant qu’au dauphin d’Auvergne et à celui de Viennois, il figure à la fin du Moyen Âge dans les armes de plusieurs familles dont le nom évoque phonétiquement un quelconque nom de poisson. Jusqu’au milieu du <num>xiv<hi rend="sup">e</hi></num> siècle son dessin héraldique est particulièrement instable ; sa nageoire dorsale est souvent transformée en ailes, son nez en trompe et sa barbe en jabot.</p>
+            <p>Les autres poissons et animaux aquatiques sont très rares, sauf le brochet, fréquent en Angleterre où il joue le rôle du bar, le chabot (France), le saumon (Écosse), la truite (Allemagne) et le hareng (Scandinavie).</p>
+          </div>
+          <div>
+            <pb n="151" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_09.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre XI
+              <lb/>Les monstres</head>
+            <p>Les monstres et les animaux chimériques sont les parents pauvres du bestiaire héraldique, à la fois en nombre (moins de dix « espèces ») et en proportion (2 % des armoiries animalières).</p>
+            <p>Le griffon est le moins rare (surtout en Allemagne du nord, Pologne, Scandinavie) et le moins instable. Le dragon fut un des tout premiers meubles du blason au <num>xii<hi rend="sup">e</hi></num> siècle, mais il disparaît au siècle suivant et ne recommence une véritable carrière héraldique qu’au <num>xv<hi rend="sup">e</hi></num> siècle, après s’être totalement désacralisé. La licorne n’est entrée que tardivement dans les écus et appartient davantage à l’insignologie para-héraldique qu’à l’héraldique elle-même. Les autres animaux chimériques ayant servi de meubles sont la panthère, le basilic, la guivre, le phénix, la harpie et l’hydre. Dans le blason germanique on relève quelques exemples de créations grotesques associant pièces, meubles et éléments zoomorphes.</p>
+          </div>
+        </div>
+        <div>
+          <head rend="uc">Troisième partie
+            <lb/>Le bestiaire héraldique</head>
+          <p>Le terme « faune » évoque l’idée d’un répertoire exhaustif d’animaux qu’aucun lien particulier ne contribue à unir, tandis que celui de « bestiaire » implique l’idée d’un groupe homogène, limité et structuré, où chaque animal possède à la fois une signification autonome et une signification indissociable de celle de l’ensemble, et où le fantastique est nécessairement présent. Dans le cas des animaux du blason, c’est bien d’un « bestiaire » qu’il s’agit.</p>
+          <div>
+            <head rend="uc">Chapitre premier
+              <lb/>unité du thème animalier dans les armoiries médiévales :
+              <lb/>unité graphique</head>
+            <p><hi rend="i">Les sources et la réutilisation de modèles préexistants.</hi> – Le dessin héraldique de la plupart des animaux n’est pas original ; il trouve, pour une bonne part, sa source dans les arts décoratifs de la Mésopotamie ancienne et doit son introduction en Occident aux invasions germaniques et à l’arrivée régulière <pb n="152" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_10.TIF/full/full/0/default.jpg"/>des tissus, monnaies et objets d’art orientaux. Le grand mérite du blason fut d’avoir érigé en système des dispositifs et des caractères qui étaient « héraldiques » bien avant la lettre.</p>
+            <p><hi rend="i">Les règles du dessin héraldique : la fixité des types.</hi> – La stylisation héraldique repose sur une simplification des formes de l’animal et une exagération de toutes les parties pouvant servir à l’identifier. L’existence d’une expression typiquement héraldique provient du nombre très limité des gestes, des attitudes et de leur possibilité d’emploi. La composition héraldique obéit à des lois rigoureuses, dont les plus importantes sont celles de symétrie et de plénitude.</p>
+            <p><hi rend="i">La réalisation du dessin héraldique : la variété des figures.</hi> – On peut distinguer quatre grands styles nationaux : le style anglais est le plus sobre, le style français le plus construit, le style germanique le plus décoratif et le plus excessif ; le style bourguigno-flamand est une synthèse des trois autres, et celui sur lequel ils auront tendance à s’aligner à partir du milieu du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+            <p>A côté des styles nationaux on peut distinguer un style militaire et un style civil, bien qu’il y ait toujours eu dans le dessin héraldique des animaux un mélange de fierté et de gaucherie, de candeur et d’agressivité.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre II
+              <lb/>Unité du thème animalier dans les armoiries médiévales :
+              <lb/>unité chromatique</head>
+            <p>Fondée sur de réels problèmes de visibilité, la règle qui interdit de mettre métal sur métal ou couleur sur couleur, probablement héritée des anciennes bannières, fut respectée partout, sauf en Castille.</p>
+            <p>Indépendamment de leur signification politique, parlante, conventionnelle ou symbolique, les émaux et les combinaisons d’émaux ont suivi l’influence de la mode. Le gueules est l’émail le plus fréquent, aussi bien pour le champ que pour l’animal ; parmi les combinaisons, ce sont argent-gueules, or-gueules et argent-sable qui ont été les plus usitées. Par rapport à l’héraldique moderne il faut surtout mettre en valeur la rareté de l’azur et, au contraire, l’importance du sable.</p>
+            <p>D’une manière générale la palette héraldique est, dans chaque région et à chaque époque, en accord étroit avec celles de l’enluminure, du costume et de la décoration.</p>
+            <p>Le problème de la vogue des émaux héraldiques soulève celui, plus important, de la perception des couleurs à l’époque médiévale et de leur influence physiologique et psychologique sur les populations.</p>
+          </div>
+          <div>
+            <pb n="153" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_11.TIF/full/full/0/default.jpg"/>
+            <head rend="uc">Chapitre III
+              <lb/>Unité du thème animalier dans les armoiries médiévales :
+              <lb/>unité sémiologique et symbolique</head>
+            <p>L’usage de signes héraldiques permet de faire connaître aux autres son identité (armoiries entières) et sa personnalité (meubles, émaux, dispositions).</p>
+            <p><hi rend="i">La fonction sémiologique des armoiries.</hi> – Les armoiries sont des signes conventionnels, parce qu’elles résultent d’un accord entre ceux qui en font usage, sociaux, parce qu’elles ont pour objet la communication entre les individus, systématiques, parce qu’elles usent d’éléments stables et constants, syntaxiques, parce qu’elles sont soumises à des règles rigoureuses et hautement élaborées.</p>
+            <p><hi rend="i">La signification des animaux héraldiques.</hi> – Les animaux contenus dans les armoiries médiévales peuvent être parlants, soit par relation directe, phonétique, avec le patronyme, le sobriquet ou le vocable terrien, soit par rébus ; allégoriques, c’est-à-dire illustrant l’appartenance à un groupe, le souvenir d’un fait ou un certain aspect de la vie de celui qui en fait usage ; symboliques, c’est-à-dire évoquant une idée appartenant au monde non-sensible. H faut souligner que les armes pariantes ne sont pas toutes roturières – bien souvent des familles bourgeoises ne portent pas l’animal avec lequel leur nom s’associerait pourtant aisément, les armes allégoriques pas toutes nobiliaires, les armes symboliques pas toutes ecclésiastiques.</p>
+          </div>
+          <div>
+            <head rend="uc">Chapitre IV
+              <lb/>Le bestiaire médiéval</head>
+            <p>Le bestiaire héraldique n’est qu’un aspect particulier d’un « système » beaucoup plus vaste : le bestiaire médiéval.</p>
+            <p><hi rend="i">L’animal au Moyen Âge.</hi> – L’histoire des animaux, pris dans leurs rapports biologiques et passionnels avec l’homme, reste à faire. Comme en témoigne la littérature zoologique très abondante, les populations médiévales avaient une profonde curiosité, une grande connaissance et une réelle estime pour les animaux, même si leurs conceptions étaient, sur bien des points (domestication, alimentation, affectivité) tout à fait différentes des nôtres.</p>
+            <p><hi rend="i">Le bestiaire héraldique et les autres bestiaires.</hi> – Du point de vue graphique le bestiaire médiéval est fils de l’art antique et ses créations, qu’elles appartiennent à la sculpture, l’enluminure, l’orfèvrerie ou les armoiries, sont toujours tributaires des mêmes traditions. Outre une origine commune, on relève des influences réciproques, sinon dans le choix de thèmes, du moins dans l’utilisation de procédés conventionnels et routiniers qui, en permettant aux artistes de <pb n="154" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_12.TIF/full/full/0/default.jpg"/> pallier leurs insuffisances techniques, retardèrent l’avènement du naturalisme.</p>
+            <p>Bien qu’il ne faille pas voir des symboles partout, on distingue dans l’imagerie animale du Moyen Âge un triple apport symbolique, celui de la Bible, très esthétique et surtout important dans le bestiaire sculpté, celui du <hi rend="i">Physiologies,</hi> plus mécanique, présent dans les bestiaires littéraires, et celui d’un vieux fond de symbolique universelle, facilement accessible, que l’on retrouve souvent dans les armoiries.</p>
+          </div>
+        </div>
+        <div>
+          <head rend="uc">Conclusion</head>
+          <p>L’étude du bestiaire a permis de mettre en valeur ce que l’héraldique peut apporter, non seulement à l’historien et à l’archéologue, mais aussi au sociologue, au linguiste, au psychologue et au folkloriste. L’historien des mentalités, surtout, trouvera dans les armoiries une mine de renseignements – quantifiables et, en raison de la structure même des règles du blason, tout à fait aptes à être traités par des moyens informatiques – sur les croyances, la moralité, la culture, les aspirations et le niveau esthétique de ceux qui en ont fait usage.</p>
+        </div>
+        <div>
+          <head rend="uc">Cartes et tableaux statistiques</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Glossaire des principaux termes héraldiques utilisés</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Album de photographies de sceaux</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Album de dessins</head>
+          <p/>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

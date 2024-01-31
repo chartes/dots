@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_c2" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d'archiviste paléographe</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="position" match="/TEI/text/body/div[@type='position']" use="@xml:id">
+          <citeData use="head" property="dc:title"/>
+          <citeStructure unit="chapter" match="div" use="position()">
+            <citeData use="head" property="dc:title"/>
+          </citeStructure>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="position" xml:id="ENCPOS_1849_04">
+        <pb n="7" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_04/ENCPOS_1849_04_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Essai sur les revenus publics en Normandie, au <num>xii<hi rend="sup">e</hi></num>siècle.</head>
+        <byline>Thèse pour le diplôme d’archiviste paléographe, soutenue par <forename>Léopold</forename> <surname>Delisle</surname></byline>
+        <div>
+          <head rend="uc">I.</head>
+          <p>Depuis 1080 jusqu’en 1204, des deniers de Rouen ont circulé en Normandie. – Les roumois des Plantagenets ne différaient point des angevins.</p>
+        </div>
+        <div>
+          <head rend="uc">II.</head>
+          <p>Le règlement de Caen sur les monnaies, qu’on a jusqu’à présent rapporté à l’an 1158, est de 1204. Il avait pour but de substituer le système tournois à l’angevin.</p>
+        </div>
+        <div>
+          <head rend="uc">III.</head>
+          <p>Avant Henri I<hi rend="sup">er</hi>, on ne trouve point de mentions de l’échiquier ; mais l’institution, sous le nom de cour, existait auparavant. Elle est d’origine normande.</p>
+        </div>
+        <div>
+          <pb n="8" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_04/ENCPOS_1849_04_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">IV.</head>
+          <p>Le revenu des ducs de Normandie, au onzième siècle, consistait surtout dans leur domaine. Sous les Plantagenets, il se composait, en grande partie, d’impositions. Le désordre des finances fut une des causes de la chute de Jean sans Terre.</p>
+        </div>
+        <div>
+          <head rend="uc">V.</head>
+          <p>Les droits de justice, fins, promesses et mercis rapportaient énormément. – Les ducs de Normandie ont plusieurs fois aliéné leur haute justice. Dès le douzième et le treizième siècle, il y avait un greffe près de l’échiquier.</p>
+        </div>
+        <div>
+          <head rend="uc">VI.</head>
+          <p>Les Plantagenets, dans plusieurs circonstances, mirent un impôt sur le mobilier et sur le revenu de leurs sujets.</p>
+        </div>
+        <div>
+          <head rend="uc">VII.</head>
+          <p>Les principales dépenses des ducs de Normandie venaient de la construction et de l’entretien des places fortes. Ils avaient aussi des troupes soldées qui absorbaient des sommes considérables.</p>
+        </div>
+      </div>
+      <div type="position" xml:id="ENCPOS_1849_08">
+        <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_08/ENCPOS_1849_08_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Wala et Louis le Débonnaire.</head>
+        <byline>
+          Thèse pour le diplôme d’archiviste paléographe, soutenue par
+          <forename>Auguste</forename>
+          <surname>Himly</surname>
+          <roleName rend="uc">Licencié ès lettres, Professeur d’Histoire au collège Rollin</roleName>
+        </byline>
+        <div>
+          <head rend="uc">I.</head>
+          <p>Parmi les sources relatives à Wala et à Louis le Débonnaire, l’<hi rend="i">Epitaphium Arsenii</hi> est la plus importante, mais aussi la moins aisée à comprendre.</p>
+        </div>
+        <div>
+          <head rend="uc">II.</head>
+          <p>Wala se proposa pour but de continuer, sous Louis le Débonnaire, la double œuvre de Charlemagne, soumission de l’Europe occidentale sous la suprématie franque, et fusion des principes germaniques et romains dans l’intérieur de l’empire franc.</p>
+        </div>
+        <div>
+          <head rend="uc">III.</head>
+          <p>Louis le Débonnaire, comme l’avait prévu Wala, se trouva incapable de diriger l’empire franc par lui-même. Sous la direction de ses premiers favoris, il ne s’occupa que d’affaires religieuses ; sous l’influence de Judith, il bouleversa l’empire en s’attaquant à l’acte de partage de 817.</p>
+        </div>
+        <div>
+          <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_08/ENCPOS_1849_08_02.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">IV.</head>
+          <p>La charte de partage de 817 , rédigée par l’aristocratie franque dans un sens essentiellement unitaire, devint la grande charte de ses droits. Toutes ses révoltes postérieures eurent pour but de la maintenir contre les mauvais vouloirs de Louis et de Judith. Elles échouèrent par suite de l’attachement personnel des Germains pour Louis.</p>
+        </div>
+        <div>
+          <head rend="uc">V.</head>
+          <p>Le grand résultat du règne de Louis le Débonnaire fut la formation des nationalités modernes sur les ruines du grand empire carlovingien. Ce résultat ne fut acheté qu’au prix des calamités les plus grandes pour toute l’Europe occidentale.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
