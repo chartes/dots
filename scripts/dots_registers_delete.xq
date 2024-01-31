@@ -5,7 +5,7 @@ import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../
 declare variable $dbName external; 
 declare variable $option external; 
 
-dots.lib:handleDelete($dbName, "true"),
+dots.lib:handleDelete($dbName, $option),
   if ($option = "true")
   then
     update:output(concat("La base de données ", $dbName, " a été supprimée et le switcher DoTS mis à jour

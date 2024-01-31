@@ -49,6 +49,7 @@ declare function dots.lib:switcherDots($record as element(record)) {
 
 declare function dots.lib:collectionsInResourcesRegister($record as element(record)) {
   let $dtsResourceId := $record/collection_dtsResourceId
+  let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
   let $documents := 
     for $doc in tokenize($record/documents_dtsResourceId, "[\|]")
     return
@@ -59,7 +60,7 @@ declare function dots.lib:collectionsInResourcesRegister($record as element(reco
     then
       $record/parentIds
     else
-      $record/dbName
+      $projectId
   let $title := $record/dc_title
   let $metadata := dots.lib:getMetadata($record)
   return
@@ -109,7 +110,8 @@ declare updating function dots.lib:countResourcesToAddToCollections($source as e
   return
     for $parentId in $parentIds
     let $countResourcesInCollection := count($source/record[parentIds = $parentId])
-    let $getCollection := $getRegister/dots:collection[@dtsResourceId = (if ($parentId) then $parentId else $dbName)]
+    let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
+    let $getCollection := $getRegister/dots:collection[@dtsResourceId = (if ($parentId) then $parentId else $projectId)]
     let $totalChildren := $getCollection/@totalChildren
     let $newTotalChildren := $countResourcesInCollection + $totalChildren
     return
