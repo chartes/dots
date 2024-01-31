@@ -676,18 +676,15 @@ declare function utils:getResourceType($resource as element()) {
 declare function utils:getChildMembers($projectName as xs:string, $resourceId as xs:string) {
   for $child in db:get($projectName, $G:resourcesRegister)//dots:member/node()[contains(@parentIds, $resourceId)]
   return
-    if ($child)
+    if ($child[@parentIds = $resourceId])
     then $child
     else
-      let $candidatsMember := db:get($projectName, $G:resourcesRegister)//dots:member/node()[contains(@parentIds, $resourceId)]
-      return
-        for $parentIds in $candidatsMember
-        let $candidatParent := tokenize($parentIds/@parentIds)
-        where 
-          for $candidat in $candidatParent
-          where $candidat = $resourceId
-          return
-            $candidat
+      let $candidatParent := tokenize($child/@parentIds)
+      where 
+        for $candidat in $candidatParent
+        where $candidat = $resourceId
         return
-          $parentIds
+          <test>{$candidat}</test>
+      return 
+       $child
 };
