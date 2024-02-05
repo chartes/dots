@@ -50,7 +50,6 @@ declare updating function dots.lib:createDocumentRegister($bdd) {
 };
 
 (:~ 
-: @todo intégrer l'usage, en plus de cRefPattern, de citeStructure
 : @todo intégrer une fonction (récursive) pour le traitement de citeStructure
 :)
 declare function dots.lib:getFragments($bdd as xs:string) {
@@ -62,15 +61,21 @@ declare function dots.lib:getFragments($bdd as xs:string) {
     else functx:substring-after-last(db:path($resource), "/")
   let $maxCiteDepth := count($resource//tei:refsDecl//tei:citeStructure)
   return
-    dots.lib:handleCiteStructure($bdd, $resource, 1, $resourceId, "", "", $maxCiteDepth)
+    for $citeStructurePosition at $pos in $resource//tei:refsDecl/tei:citeStructure
+    return
+      dots.lib:handleCiteStructure($bdd, $resource, 1, $resourceId, "", "", $maxCiteDepth, $pos)
 };
 
-declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth as xs:integer) {
-  let $citeStructure := $resource//tei:refsDecl/descendant::tei:citeStructure[$level]
+declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth as xs:integer, $position as xs:integer) {
+  let $citeStructure :=
+    if ($position = 0)
+    then for $c in $resource//tei:refsDecl/descendant::tei:citeStructure[$level] return $c
+    else $resource//tei:refsDecl/tei:citeStructure[$position]
   let $xpath := normalize-space($citeStructure/@match)
   let $query := concat('
     declare default element namespace "http://www.tei-c.org/ns/1.0";',
     $xpath)
+  let $use := normalize-space($citeStructure/@use)
   let $citeType := normalize-unicode($citeStructure/@unit)
   return
     if ($xpath) then
@@ -81,8 +86,8 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
       else $pos
     let $node-id := db:node-id($fragment)
     let $ref :=
-      if ($fragment/@xml:id)
-      then normalize-space($fragment/@xml:id)
+      if ($use != "position()")
+      then normalize-space($fragment/@*[name() = substring-after($use, "@")])
       else $n
     return
       (
@@ -103,7 +108,8 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
           else ()
         }</fragment>,
         if ($citeStructure/tei:citeStructure)
-        then dots.lib:handleCiteStructure($bdd, $resource, $level + 1, $resourceId, $n, $node-id, $maxCiteDepth)
+        then 
+          dots.lib:handleCiteStructure($bdd, $resource, $level + 1, $resourceId, $n, $node-id, $maxCiteDepth, 0)
         else ()
       )
 };
