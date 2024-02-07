@@ -13,6 +13,8 @@ import module namespace functx = "http://www.functx.com";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
 
+import module namespace openapi="https://lab.sub.uni-goettingen.de/restxqopenapi" at "../../content/openapi.xqm";
+
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
@@ -107,7 +109,7 @@ declare
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $ref as xs:string, $start as xs:integer, $end as xs:integer, $format as xs:string) {
+function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
   let $ref := if ($ref) then $ref else ""
   let $start := if ($start) then $start else ""
   let $end := if ($end) then $end else ""
@@ -144,7 +146,3 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:integ
     else
       $result
 };
-
-(:  
-text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
-:)
