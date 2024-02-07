@@ -1,0 +1,27 @@
+name: DoTS XQuery CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout code
+
+    - name: Setup Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: '11' # BaseX requiert Java
+
+    - name: Download and Install BaseX
+      run: |
+        wget https://files.basex.org/releases/10.7/BaseX107.zip
+        unzip BaseX107.zip
+        cd basex
+        chmod +x bin/basex
+
+    - name: Run XQuery Tests
+      run: |
+        ./basex/bin/basex ./tests/launcher.xq
