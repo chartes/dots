@@ -19,7 +19,7 @@ declare function test:fixture-OK() {
 (: Documentation du test :)
 declare %unit:test function test:check-metadata-output() {
   let $expected := 
-    "vador"
+    "vadr"
   return
     unit:assert-equals(test:fixture-OK(), $expected)
 };
