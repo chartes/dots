@@ -102,12 +102,12 @@ declare
   %rest:GET
   %output:method("xml")
   %rest:produces("application/tei+xml")
-  %rest:query-param("id", "{$id}", "")
+  %rest:query-param("id", "{$id}")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
+function routes:document($id as xs:string, $ref as xs:string, $start as xs:integer, $end as xs:integer, $format as xs:string) {
   let $ref := if ($ref) then $ref else ""
   let $start := if ($start) then $start else ""
   let $end := if ($end) then $end else ""
@@ -145,4 +145,6 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
       $result
 };
 
-
+(:  
+text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+:)
