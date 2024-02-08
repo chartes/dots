@@ -58,9 +58,15 @@ declare
 function routes:collections($id as xs:string, $nav as xs:string) {
   if ($id)
   then
-    utils:collectionById($id, $nav)
-  else
-    utils:collections()
+    let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
+    return
+      if ($dbName != "") 
+      then 
+        utils:collectionById($id, $nav)
+      else
+        routes:badIdResource(xs:string($id))
+   else
+     utils:collections()
 };
 
 (:~  
@@ -87,7 +93,10 @@ declare
 function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
   let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
   return
-    utils:navigation($id, $ref, $start, $end, $down)
+    if ($dbName != "") 
+    then utils:navigation($id, $ref, $start, $end, $down) 
+    else
+      routes:badIdResource(xs:string($id))
 };
 
 (:~ 
@@ -113,40 +122,63 @@ declare
 function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
   let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
   return
-    let $ref := if ($ref) then $ref else ""
-    let $start := if ($start) then $start else ""
-    let $end := if ($end) then $end else ""
-    let $result := utils:document($id, $ref, $start, $end)
-    return
-      if ($format)
-      then 
-        let $f :=
-          switch ($format)
-          case ($format[. = "html"]) return "text/html;"
-          case ($format[. = "txt"]) return "text/plain"
-          default return "application/xml"
-        let $style := concat($G:webapp, $G:xsl)
-        let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
-        let $doc := 
-          if (db:get($project)/tei:TEI[@xml:id = $id])
-          then db:get($project)/tei:TEI[@xml:id = $id]
-          else 
-            db:get($project, $id)/tei:TEI
-        let $trans := 
-          if ($format = "html")
-          then
-            xslt:transform($result, $style)
-          else  $result
-        return
-          (
-            <rest:response>
-              <http:response status="200">
-                <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
-              </http:response>
-            </rest:response>,
-            $trans
-          )
-      else
-        $result
+    if ($dbName != "") 
+    then 
+      let $ref := if ($ref) then $ref else ""
+      let $start := if ($start) then $start else ""
+      let $end := if ($end) then $end else ""
+      let $result := utils:document($id, $ref, $start, $end)
+      return
+        if ($format)
+        then 
+          let $f :=
+            switch ($format)
+            case ($format[. = "html"]) return "text/html;"
+            case ($format[. = "txt"]) return "text/plain"
+            default return "application/xml"
+          let $style := concat($G:webapp, $G:xsl)
+          let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
+          let $doc := 
+            if (db:get($project)/tei:TEI[@xml:id = $id])
+            then db:get($project)/tei:TEI[@xml:id = $id]
+            else 
+              db:get($project, $id)/tei:TEI
+          let $trans := 
+            if ($format = "html")
+            then
+              xslt:transform($result, $style)
+            else  $result
+          return
+            (
+              <rest:response>
+                <http:response status="200">
+                  <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
+                </http:response>
+              </rest:response>,
+              $trans
+            )
+        else
+          $result
+    else
+      routes:badIdResource(xs:string($id))
+};
+
+declare 
+  %rest:error("err:badIdResource")
+  %rest:error-param("description", "{$id}")
+function routes:badIdResource($id) {
+  let $message :=
+    if ($id)
+    then concat("Error 404 : resource ID ", "'", $id, "' not found")
+    else "Error 404: no resource ID specified"
+  return
+    (
+      <rest:response>
+        <http:response status="404">
+          <http:header name="Content-Type" value="text/plain"/>
+        </http:response>
+      </rest:response>,
+      $message
+    )
 };
 
