@@ -13,6 +13,7 @@ import module namespace functx = "http://www.functx.com";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
 
+declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
@@ -58,8 +59,8 @@ function routes:collections($id as xs:string, $nav as xs:string) {
   if ($id)
   then
     utils:collectionById($id, $nav)
-   else
-     utils:collections()
+  else
+    utils:collections()
 };
 
 (:~  
@@ -84,7 +85,9 @@ declare
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("down", "{$down}", 0)
 function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
-  utils:navigation($id, $ref, $start, $end, $down)
+  let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
+  return
+    utils:navigation($id, $ref, $start, $end, $down)
 };
 
 (:~ 
@@ -107,44 +110,43 @@ declare
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $ref as xs:string, $start as xs:integer, $end as xs:integer, $format as xs:string) {
-  let $ref := if ($ref) then $ref else ""
-  let $start := if ($start) then $start else ""
-  let $end := if ($end) then $end else ""
-  let $result := utils:document($id, $ref, $start, $end)
+function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
+  let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
   return
-    if ($format)
-    then 
-      let $f :=
-        switch ($format)
-        case ($format[. = "html"]) return "text/html;"
-        case ($format[. = "txt"]) return "text/plain"
-        default return "xml"
-      let $style := concat($G:webapp, $G:xsl)
-      let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
-      let $doc := 
-        if (db:get($project)/tei:TEI[@xml:id = $id])
-        then db:get($project)/tei:TEI[@xml:id = $id]
-        else 
-          db:get($project, $id)/tei:TEI
-      let $trans := 
-        if ($format = "html")
-        then
-          xslt:transform($result, $style)
-        else  $result
-      return
-        (
-          <rest:response>
-            <http:response status="200">
-              <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
-            </http:response>
-          </rest:response>,
-          $trans
-        )
-    else
-      $result
+    let $ref := if ($ref) then $ref else ""
+    let $start := if ($start) then $start else ""
+    let $end := if ($end) then $end else ""
+    let $result := utils:document($id, $ref, $start, $end)
+    return
+      if ($format)
+      then 
+        let $f :=
+          switch ($format)
+          case ($format[. = "html"]) return "text/html;"
+          case ($format[. = "txt"]) return "text/plain"
+          default return "application/xml"
+        let $style := concat($G:webapp, $G:xsl)
+        let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
+        let $doc := 
+          if (db:get($project)/tei:TEI[@xml:id = $id])
+          then db:get($project)/tei:TEI[@xml:id = $id]
+          else 
+            db:get($project, $id)/tei:TEI
+        let $trans := 
+          if ($format = "html")
+          then
+            xslt:transform($result, $style)
+          else  $result
+        return
+          (
+            <rest:response>
+              <http:response status="200">
+                <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
+              </http:response>
+            </rest:response>,
+            $trans
+          )
+      else
+        $result
 };
 
-(:  
-text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
-:)
