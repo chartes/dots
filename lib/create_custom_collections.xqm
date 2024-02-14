@@ -42,23 +42,23 @@ declare updating function dots.lib:handle($srcPath) {
 
 declare function dots.lib:switcherDots($record as element(record)) {
   let $dbName := $record/dbName
-  let $collection_dtsResourceId := $record/collection_dtsResourceId
+  let $collectionId := $record/collectionId
   return
-    <collection dtsResourceId="{$collection_dtsResourceId}" dbName="{$dbName}"/>
+    <collection dtsResourceId="{$collectionId}" dbName="{$dbName}"/>
 };
 
 declare function dots.lib:collectionsInResourcesRegister($record as element(record)) {
-  let $dtsResourceId := $record/collection_dtsResourceId
+  let $dtsResourceId := $record/collectionId
   let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
   let $documents := 
-    for $doc in tokenize($record/documents_dtsResourceId, "[\|]")
+    for $doc in tokenize($record/documentIds, "[\|]")
     return
       $doc
   let $totalChildren := count($documents)
   let $parentIds :=
-    if ($record/parentIds != "")
+    if ($record/parentId != "")
     then
-      $record/parentIds
+      $record/parentId
     else
       $projectId
   let $title := $record/dc_title
@@ -72,14 +72,14 @@ declare function dots.lib:collectionsInResourcesRegister($record as element(reco
 
 declare updating function dots.lib:documentsInResourcesRegister($record as element(record)) {
   let $dbName := $record/dbName
-  let $collection_dtsResourceId := $record/collection_dtsResourceId
+  let $collectionId := $record/collectionId
   return
-    let $documents := $record/documents_dtsResourceId
+    let $documents := $record/documentIds
     return
       for $document in tokenize($documents, "[\|]")
       let $docInRegister := db:get($dbName, $G:resourcesRegister)//dots:member/dots:document[@dtsResourceId = normalize-space($document)]
       let $parentIds := $docInRegister/@parentIds
-      let $newParentIds := concat($docInRegister/@parentIds, " ", $collection_dtsResourceId)
+      let $newParentIds := concat($docInRegister/@parentIds, " ", $collectionId)
       return
         replace value of node $parentIds with $newParentIds
 };
@@ -93,7 +93,7 @@ declare function dots.lib:getMetadata($record as element(record)) {
 
 declare updating function dots.lib:countResourcesToAddToProject($source as element(csv)) {
   let $dbName := $source/record[1]/dbName
-  let $countResources := count($source/record[parentIds = ""])
+  let $countResources := count($source/record[parentId = ""])
   let $getProject := db:get($dbName, $G:resourcesRegister)//dots:member/dots:collection[@dtsResourceId = $dbName]
   let $totalChildren := $getProject/@totalChildren
   let $newTotalChildren := $totalChildren + $countResources
@@ -105,11 +105,11 @@ declare updating function dots.lib:countResourcesToAddToCollections($source as e
   let $dbName := $source/record[1]/dbName
   let $getRegister := db:get($dbName, $G:resourcesRegister)//dots:member
   for $record in $source/record
-  let $parentIds := $record/parentIds
+  let $parentIds := $record/parentId
   group by $parentIds
   return
     for $parentId in $parentIds
-    let $countResourcesInCollection := count($source/record[parentIds = $parentId])
+    let $countResourcesInCollection := count($source/record[parentId = $parentId])
     let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
     let $getCollection := $getRegister/dots:collection[@dtsResourceId = (if ($parentId) then $parentId else $projectId)]
     let $totalChildren := $getCollection/@totalChildren
