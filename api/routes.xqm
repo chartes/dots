@@ -48,7 +48,7 @@ function routes:entryPoint() {
 : @see utils.xqm;utils:collections
 :) 
 declare
-  %rest:path("/api/dts/collections")
+  %rest:path("/api/dts/collection")
   %rest:GET
   %output:method("json")
   %rest:produces("application/ld+json")
