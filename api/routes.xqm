@@ -22,7 +22,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see https://distributed-text-services.github.io/specifications/Entry.html#base-api-endpoint
 :)
 declare
-  %rest:path("/api/dts")
+  %rest:path("/dots/api/dts")
   %rest:GET
   %output:method("json")
   %rest:produces("application/ld+json")
@@ -48,7 +48,7 @@ function routes:entryPoint() {
 : @see utils.xqm;utils:collections
 :) 
 declare
-  %rest:path("/api/dts/collection")
+  %rest:path("/dots/api/dts/collection")
   %rest:GET
   %output:method("json")
   %rest:produces("application/ld+json")
@@ -74,7 +74,7 @@ function routes:collections($id as xs:string, $nav as xs:string) {
 : @see https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html
 :) 
 declare
-  %rest:path("/api/dts/navigation")
+  %rest:path("/dots/api/dts/navigation")
   %rest:GET
   %output:method("json")
   %rest:produces("application/ld+json")
@@ -101,7 +101,7 @@ function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:str
 : @see https://distributed-text-services.github.io/specifications/Documents-Endpoint.html
 :)
 declare
-  %rest:path("/api/dts/document")
+  %rest:path("/dots/api/dts/document")
   %rest:GET
   %output:method("xml")
   %rest:produces("application/tei+xml")
