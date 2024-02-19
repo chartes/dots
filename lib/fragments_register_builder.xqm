@@ -86,8 +86,11 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
       else $pos
     let $node-id := db:node-id($fragment)
     let $ref :=
-      if ($use != "position()")
-      then normalize-space($fragment/@*[name() = substring-after($use, "@")])
+      if ($use = "@xml:id")
+      then 
+        if ($fragment/@xml)
+        then normalize-space($fragment/@xml)
+        else $n
       else $n
     return
       (
