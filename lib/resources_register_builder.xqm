@@ -159,7 +159,7 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
       if (contains($path, "/"))
       then functx:substring-after-last($path, "/")
       else $path
-  let $maxCiteDepth := count($document//tei:refsDecl//tei:citeStructure)
+  let $maxCiteDepth := dots.fragments:getMaxCiteDepth($document//tei:refsDecl, 0)
   let $parentIds := 
     if (contains($path, "/"))
     then

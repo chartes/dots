@@ -49,9 +49,6 @@ declare updating function dots.lib:createDocumentRegister($bdd) {
       else ()
 };
 
-(:~ 
-: @todo intégrer une fonction (récursive) pour le traitement de citeStructure
-:)
 declare function dots.lib:getFragments($bdd as xs:string) {
   for $resource in db:get($bdd)/tei:TEI
   where $resource//tei:citeStructure
@@ -59,14 +56,64 @@ declare function dots.lib:getFragments($bdd as xs:string) {
     if ($resource/@xml:id)
     then normalize-space($resource/@xml:id)
     else functx:substring-after-last(db:path($resource), "/")
-  let $maxCiteDepth := dots.lib:getMaxCiteDepth($resource//tei:refsDecl/tei:citeStructure, 1)
+  let $maxCiteDepth := dots.lib:getMaxCiteDepth($resource//tei:refsDecl, 0)
   return
-    for $citeStructurePosition at $pos in $resource//tei:refsDecl/tei:citeStructure
+    for $citeStructurePosition in $resource//tei:refsDecl/tei:citeStructure
     return
-      dots.lib:handleCiteStructure($bdd, $resource, 1, $resourceId, "", "", $maxCiteDepth, $pos)
+      dots.lib:handleCiteStructure($bdd, $resource, $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
 };
 
-declare function dots.lib:getMaxCiteDepth($node as element(), $n as xs:integer) {
+declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
+  let $xpath := normalize-space($citeStructure/@match)
+  let $query := concat('
+    declare default element namespace "http://www.tei-c.org/ns/1.0";',
+    $xpath)
+  let $use := normalize-space($citeStructure/@use)
+  let $citeType := normalize-unicode($citeStructure/@unit)
+  return
+    if ($xpath)
+    then
+      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then $resource//db:get-id($bdd, $parentNodeId) else $resource})
+      let $n :=
+        if ($parentRef)
+        then concat($parentRef, ".", $pos)
+        else $pos
+      let $node-id := db:node-id($fragment)
+      let $ref :=
+        if ($use = "@xml:id")
+        then 
+          if ($fragment/@xml:id)
+          then normalize-space($fragment/@xml:id)
+          else $n
+        else $n
+      return
+        (
+          <fragment n="{$n}" node-id="{$node-id}" ref="{$ref}" level="{$level}" maxCiteDepth="{$maxCiteDepth}" resourceId="{$resourceId}">{
+            if ($citeType) then attribute {"citeType"} {normalize-unicode($citeType)} else (),
+            if ($parentNodeId) then attribute {"parentNodeId"} {$parentNodeId} else (),
+            if ($citeStructure/tei:citeData)
+            then
+              for $citeData in $citeStructure/tei:citeData
+              let $nameMetadata := normalize-space($citeData/@property)
+              let $xpath := $citeData/@use
+              let $query := concat('
+                declare default element namespace "http://www.tei-c.org/ns/1.0";',
+                $xpath)
+              let $valueQuery := xquery:eval($query, map {"": $fragment})
+              return
+                if ($valueQuery) then element {$nameMetadata} {normalize-space($valueQuery[1])} else ()
+            else ()
+          }</fragment>,
+          if ($citeStructure/tei:citeStructure)
+          then 
+            for $cite in $citeStructure/tei:citeStructure
+            return
+              dots.lib:handleCiteStructure($bdd, $resource, $cite, $level + 1, $resourceId, $n, $node-id, $maxCiteDepth)
+          else ()
+        )
+};
+
+declare function dots.lib:getMaxCiteDepth($node, $n as xs:integer) {
   let $levels :=
     for $level in $node
     return
@@ -77,59 +124,6 @@ declare function dots.lib:getMaxCiteDepth($node as element(), $n as xs:integer) 
   return
     max($levels)
 };
-
-declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth as xs:integer, $position as xs:integer) {
-  let $citeStructure :=
-    if ($position = 0)
-    then for $c in $resource//tei:refsDecl/descendant::tei:citeStructure[$level] return $c
-    else $resource//tei:refsDecl/tei:citeStructure[$position]
-  let $xpath := normalize-space($citeStructure/@match)
-  let $query := concat('
-    declare default element namespace "http://www.tei-c.org/ns/1.0";',
-    $xpath)
-  let $use := normalize-space($citeStructure/@use)
-  let $citeType := normalize-unicode($citeStructure/@unit)
-  return
-    if ($xpath) then
-    for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then $resource//db:get-id($bdd, $parentNodeId) else $resource})
-    let $n :=
-      if ($parentRef)
-      then concat($parentRef, ".", $pos)
-      else $pos
-    let $node-id := db:node-id($fragment)
-    let $ref :=
-      if ($use = "@xml:id")
-      then 
-        if ($fragment/@xml)
-        then normalize-space($fragment/@xml)
-        else $n
-      else $n
-    return
-      (
-        <fragment n="{$n}" node-id="{$node-id}" ref="{$ref}" level="{$level}" maxCiteDepth="{$maxCiteDepth}" resourceId="{$resourceId}">{
-          if ($citeType) then attribute {"citeType"} {normalize-unicode($citeType)} else (),
-          if ($parentNodeId) then attribute {"parentNodeId"} {$parentNodeId} else (),
-          if ($citeStructure/tei:citeData)
-          then
-            for $citeData in $citeStructure/tei:citeData
-            let $nameMetadata := normalize-space($citeData/@property)
-            let $xpath := $citeData/@use
-            let $query := concat('
-              declare default element namespace "http://www.tei-c.org/ns/1.0";',
-              $xpath)
-            let $valueQuery := xquery:eval($query, map {"": $fragment})
-            return
-              if ($valueQuery) then element {$nameMetadata} {normalize-space($valueQuery[1])} else ()
-          else ()
-        }</fragment>,
-        if ($citeStructure/tei:citeStructure)
-        then 
-          dots.lib:handleCiteStructure($bdd, $resource, $level + 1, $resourceId, $n, $node-id, $maxCiteDepth, 0)
-        else ()
-      )
-};
-
-
 
 
 
