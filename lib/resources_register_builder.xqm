@@ -199,9 +199,18 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
             declare default element namespace "http://www.tei-c.org/ns/1.0";',
             $xpath)
           let $valueQuery := xquery:eval($query, map {"": $doc})
+          let $type := $metadata/@type
+          let $key := $metadata/@key
           return
-            if (normalize-space($valueQuery) != "")
-            then element {$metadataName} {normalize-space($valueQuery)}
+            if ($valueQuery != "")
+            then 
+              for $value in $valueQuery
+              return
+                element {$metadataName} {
+                  if ($type) then attribute { "type" } { $type } else (),
+                  if ($key) then attribute { "key" } { $key } else (),
+                  concat($metadata/@prefix, $value, $metadata/@suffix)
+                }
             else ()
         else
           let $source := $metadata/@source
