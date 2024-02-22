@@ -4,7 +4,8 @@ import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
 if (db:exists($G:dots))
-then update:output("La base de données dots existe déjà. Commande non nécessaire.")
+then update:output("La base de données dots existe déjà. Commande non nécessaire.
+")
 else
   (
     dots.lib:dots_db_init(),

@@ -10,7 +10,7 @@ then update:output("Erreur: Renseigner les variables dbName (nom de la base de d
 ")
 else
   if (db:exists($dbName))
-  then update:output("")
+  then update:output(concat("La base de données ", $dbName, " existe déjà."))
   else
     (dots.lib:dbCreate($dbName, $projectDirPath),
     update:output(concat("La base de donnée projet: ", $dbName, " a été créée.
