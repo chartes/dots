@@ -59,11 +59,23 @@ declare function dots.lib:getFragments($bdd as xs:string) {
     if ($resource/@xml:id)
     then normalize-space($resource/@xml:id)
     else functx:substring-after-last(db:path($resource), "/")
-  let $maxCiteDepth := count($resource//tei:refsDecl//tei:citeStructure)
+  let $maxCiteDepth := dots.lib:getMaxCiteDepth($resource//tei:refsDecl/tei:citeStructure, 1)
   return
     for $citeStructurePosition at $pos in $resource//tei:refsDecl/tei:citeStructure
     return
       dots.lib:handleCiteStructure($bdd, $resource, 1, $resourceId, "", "", $maxCiteDepth, $pos)
+};
+
+declare function dots.lib:getMaxCiteDepth($node as element(), $n as xs:integer) {
+  let $levels :=
+    for $level in $node
+    return
+      if ($node/tei:citeStructure)
+      then
+        dots.lib:getMaxCiteDepth($node/tei:citeStructure, $n + 1)
+      else $n
+  return
+    max($levels)
 };
 
 declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth as xs:integer, $position as xs:integer) {
