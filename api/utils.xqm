@@ -561,6 +561,7 @@ declare function utils:getContext($response) {
         case ($namespace[. = "dct"]) return <pair name="dct">{"http://purl.org/dc/terms/"}</pair>
         case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
         default return ()
+        (: namespace-uri() :)
   }</pair>
 };
 

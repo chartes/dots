@@ -102,6 +102,10 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
               let $valueQuery := xquery:eval($query, map {"": $fragment})
               return
                 if ($valueQuery) then element {$nameMetadata} {normalize-space($valueQuery[1])} else ()
+            else (),
+            if ($fragment/@xml:id)
+            then
+              dots.lib:getFragmentMetadata($bdd, $ref)
             else ()
           }</fragment>,
           if ($citeStructure/tei:citeStructure)
@@ -111,6 +115,35 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
               dots.lib:handleCiteStructure($bdd, $resource, $cite, $level + 1, $resourceId, $n, $node-id, $maxCiteDepth)
           else ()
         )
+};
+
+declare function dots.lib:getFragmentMetadata($bdd as xs:string, $ref as xs:string) {
+  let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
+  return
+    let $metadatas := 
+    for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
+    let $getResourceId := $metadata/@resourceId
+    let $source := functx:substring-after-last($metadata/@source, "/")
+    let $csv := 
+      for $csvs in db:get($bdd)//*:csv
+      let $paths := db:path($csvs)
+      where contains($paths, $source)
+      return
+        $csvs[1]
+    let $findIdInCSV := normalize-space($metadata/@resourceId)
+    let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]       
+    return
+      if ($metadata/@resourceId = "all")
+      then 
+        let $key := $metadata/name()
+        return
+          element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+      else
+        if ($record and $metadata) 
+        then dots.lib:createContent($metadata, $record)
+        else ()
+  return
+    $metadatas
 };
 
 declare function dots.lib:getMaxCiteDepth($node, $n as xs:integer) {
