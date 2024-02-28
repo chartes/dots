@@ -24,7 +24,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @return document XML à ajouter à la db $bdd
 : @param $bdd chaîne de caractères qui correspond au nom de la base de données
 :)
-declare updating function dots.lib:createDocumentRegister($bdd) {
+declare updating function dots.lib:createFragmentsRegister($bdd) {
   if (db:exists($bdd, $G:fragmentsRegister))
   then 
     let $register := db:get($bdd, $G:fragmentsRegister)

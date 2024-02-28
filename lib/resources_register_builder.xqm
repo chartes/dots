@@ -29,7 +29,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see project.xql;cc:getMetadata
 : @see project.xql;cc:members
 :)
-declare updating function dots.lib:create_config($dbName as xs:string, $topCollectionId as xs:string) {
+declare updating function dots.lib:createResourcesRegister($dbName as xs:string, $topCollectionId as xs:string) {
   let $countChild := 
     let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
     let $count := count(db:dir($dbName, ""))
@@ -53,7 +53,6 @@ declare updating function dots.lib:create_config($dbName as xs:string, $topColle
     </resourcesRegister>
   return
     (
-      (: dots.switcher:switcher_update($dbName), :)
       if (db:exists($dbName, $G:resourcesRegister))
       then 
         let $dots := db:get($dbName, $G:resourcesRegister)
@@ -66,7 +65,7 @@ declare updating function dots.lib:create_config($dbName as xs:string, $topColle
           (
             db:put($dbName, $content, $G:resourcesRegister)
           ),
-      dots.fragments:createDocumentRegister($dbName)
+      dots.fragments:createFragmentsRegister($dbName)
     )
 };
 

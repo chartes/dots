@@ -542,7 +542,7 @@ declare function utils:getStringJson($key as xs:string, $metadata) {
 : Cette fonction permet de donner la liste des vocabulaires présents dans la réponse à la requête d'API
 : @return réponse XML, pour être ensuite sérialisées en JSON (format: attributes)
 : @param $response séquence XML pour trouver les namespaces présents (si nécessaire)
-: @todo revoir cette fonction et la gestion des namespace?
+: @todo utiliser la fonction namespace:uri() pour une meilleur gestion des namespaces?
 :)
 declare function utils:getContext($response) {
   <pair name="@context" type="object">

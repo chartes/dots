@@ -7,7 +7,7 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 declare variable $dbName external;
 declare variable $topCollectionId external;
 
-dots.lib:create_config($dbName, $topCollectionId),
+dots.lib:createResourcesRegister($dbName, $topCollectionId),
 if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister))
 then
   update:output(concat("Les registres dots pour la base de donnée ", $dbName, " ont été recréés.
