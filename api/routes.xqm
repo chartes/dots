@@ -169,12 +169,12 @@ declare
 function routes:badIdResource($id) {
   let $message :=
     if ($id)
-    then concat("Error 404 : resource ID ", "'", $id, "' not found")
-    else "Error 404: no resource ID specified"
+    then concat("Error 400 : resource ID ", "'", $id, "' not found")
+    else "Error 400 : no resource ID specified"
   return
     (
       <rest:response>
-        <http:response status="404">
+        <http:response status="400">
           <http:header name="Content-Type" value="text/plain"/>
         </http:response>
       </rest:response>,
