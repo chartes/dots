@@ -95,13 +95,17 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
             then
               for $citeData in $citeStructure/tei:citeData
               let $nameMetadata := normalize-space($citeData/@property)
-              let $xpath := $citeData/@use
+              let $xpathCiteData := $citeData/@use
               let $query := concat('
                 declare default element namespace "http://www.tei-c.org/ns/1.0";',
-                $xpath)
+                $xpathCiteData)
               let $valueQuery := xquery:eval($query, map {"": $fragment})
               return
-                if ($valueQuery) then element {$nameMetadata} {normalize-space($valueQuery[1])} else ()
+                if ($valueQuery) 
+                then 
+                  for $v in $valueQuery
+                  return
+                    element {$nameMetadata} {normalize-space($v)} else ()
             else (),
             if ($fragment/@xml:id)
             then

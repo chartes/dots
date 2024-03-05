@@ -32,15 +32,15 @@ function routes:entryPoint() {
    <pair name="@context">/api/dts/EntryPoint.jsonld</pair>
    <pair name="@id">/api/dts</pair>
    <pair name="@type">EntryPoint</pair>
-   <pair name="collections">/api/dts/collections</pair>
+   <pair name="collection">/api/dts/collection</pair>
    <pair name="documents">/api/dts/document</pair>
    <pair name="navigation">/api/dts/navigation</pair>
  </json>
 };
 
 (:~  
-: Cette fonction gère le endpoint Collections. Elle dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
-: @return réponse JSON pour le endpoints Collections de la spécification d'API DTS
+: Cette fonction gère le endpoint Collection. Elle dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
+: @return réponse JSON pour le endpoints Collection de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier une collection DTS
 : @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents. Ce paramètre permet de définir si les membres à lister sont les enfants ou les parents
 : @see https://distributed-text-services.github.io/specifications/Collections-Endpoint.html

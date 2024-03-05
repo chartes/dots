@@ -19,13 +19,13 @@ declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
-: Cette variable permet de choisir l'identifiant d'une collection "racine" (pour le endpoint Collections sans paramètre d'identifiant)
-: @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collections sans paramètres)
+: Cette variable permet de choisir l'identifiant d'une collection "racine" (pour le endpoint Collection sans paramètre d'identifiant)
+: @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collection sans paramètres)
 : à déplacer dans globals.xqm ou dans un CLI?
 :)
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-Fonctions d'entrée dans le endPoint "Collections" de l'API DTS
+Fonctions d'entrée dans le endPoint "Collection" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
 (:~ 
