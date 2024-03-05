@@ -13,7 +13,7 @@ module namespace dots.lib = "https://github.com/chartes/dots/lib";
 import module namespace functx = 'http://www.functx.com';
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace dots.fragments = "https://github.com/chartes/dots/lib" at "fragments_register_builder.xqm";
+import module namespace dots.fragments = "https://github.com/chartes/dots/lib/fragments" at "fragments_register_builder.xqm";
 
 declare default element namespace "https://github.com/chartes/dots/";
 

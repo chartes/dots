@@ -7,7 +7,7 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-module namespace dots.lib = "https://github.com/chartes/dots/lib";
+module namespace dots.lib = "https://github.com/chartes/dots/lib/fragments";
 
 import module namespace dots.resources = "https://github.com/chartes/dots/lib" at "resources_register_builder.xqm";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
@@ -39,7 +39,7 @@ declare updating function dots.lib:createDocumentRegister($bdd) {
     let $fragments := dots.lib:getFragments($bdd)
     let $content := 
       <fragmentsRegister>{
-        dots.lib:getMetadata(),
+        dots.resources:getMetadata(),
         <member>{$fragments}</member>
       }</fragmentsRegister>
     return

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_12" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Une ville et ses finances : Mâcon</title>
+        <author ref="https://www.idref.fr/026906724">Alain Guerreau</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_12.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 93-94</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="93" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_12/ENCPOS_1971_12_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Une ville et ses finances
+       <lb/>Mâcon (1360-1550)</head>
+      <byline>
+        par
+        <forename>Alain</forename>
+        <surname>Guerreau</surname>
+      </byline>
+      <div>
+        <head rend="uc">Bibliographie et sources</head>
+        <p>La grande richesse des archives communales de Mâcon est en contraste avec la pauvreté de la bibliographie. L’étude de l’historiographie locale fait apparaître de graves insuffisances, auxquelles il est maintenant possible de remédier, en utilisant notamment les registres de l’échevinat (trente de 1366 à 1550), qui fournissent une documentation abondante mais disparate. Les rôles de taille (CC 2 à CC 12) aussi ont été étudiés systématiquement.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+         <lb/>La ville</head>
+        <p>L’étude du commerce, grâce au tarif du péage de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, à l’analyse des origines de la population et à des mentions dispersées, montre la prédominance de l’axe nord-sud et l’importance des foires de Chalon, au moins au xiv<hi rend="sup">e</hi> siècle. Genève tint ce rôle de centre d’attraction entre 1420 et 1470. Puis ce fut Lyon. La production textile mâconnaise fut probablement très abondante aux xiv<hi rend="sup">e</hi> et <num>xv<hi rend="sup">e</hi></num> siècles, mais subit une crise dans le dernier quart du siècle. Au xvi<hi rend="sup">e</hi> siècle, les activités se diversifièrent davantage.</p>
+        <p>Une opposition très nette existait entre les deux catégories principales de la population : d’une part, l’oligarchie, composée d’hommes de loi et de marchands, d’autre part, une masse d’ouvriers et d’artisans plus ou moins prolétarisés. Cette opposition se traduit avec éclat dans la répartition sociale des possessions extérieures des bourgeois, dans la structure de la ville en quartiers différenciés, dans les structures démographiques : l’oligarchie se renouvelait relativement lentement, tandis que les couches les plus basses se renouvelaient bien plus rapidement, signe incontestable d’une mortalité plus précoce.</p>
+        <pb n="94" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_12/ENCPOS_1971_12_02.TIF/full/full/0/default.jpg"/>
+        <p>Les échevins, qui dirigèrent la ville après que celle-ci eut acquis ses privilèges politiques en 1347, étaient les représentants de l’oligarchie.</p>
+        <p>L’étude des événements politiques et militaires montre le caractère grave et violent des troubles qui secouèrent la région à quatre reprises (1360-1380, 1417-1424, 1430-1444, 1471-1473).</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+         <lb/>Les finances municipales</head>
+        <p>Les dépenses militaires n’eurent rien que de très classique. Une étude rapide des divers documents iconographiques et archéologiques permet de préciser un peu la chronologie de la construction des murailles. Au <hi rend="i">castrum </hi>du Bas Empire succéda une enceinte plus vaste au <num>xii<hi rend="sup">e</hi></num> siècle, qui fut agrandie au sud au milieu du <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+        <p>Le versement des impôts au roi suivit la chronologie générale jusqu’en 1417. La pression fiscale entre 1411 et 1417 contribua à favoriser le parti bourguignon à Mâcon. Les impôts furent assez vite remplacés par divers dons au duc. A partir de 1440 environ, les États du Mâçonnais nouvellement organisés servirent d’instrument aux échevins pour défendre la ville contre les exigences financières de Dijon.</p>
+        <p>Outre les dépenses normales de frais administratifs, judiciaires, de voyages et de gages, la ville prit à sa charge les dépenses d’entretien de l’église paroissiale Saint-Pierre, les dépenses pour l’école de la ville et divers travaux d’urbanisme (pavages, fontaines, puits, horloge).</p>
+        <p>Les ressources étaient très variables et diverses. Le seizième sur le vin était régulièrement affermé ; une rapide analyse permet d’émettre l’hypothèse que la demande de vin au détail était assez inélastique à Mâcon au début du <num>xv<hi rend="sup">e</hi></num> siècle. D’autres taxes indirectes furent levées, mais toujours pour de brèves périodes. Les tailles constituaient sans doute la ressource principale, mais leur levée était toujours assez délicate.</p>
+        <p>Les échevins qui gérèrent les finances de la ville un peu comme un bien patrimonial, firent preuve de prudence (peu d’emprunts) et de souplesse, ce qui leur permit d’éviter toute catastrophe, mais nous prive d’une documentation vraiment homogène.</p>
+      </div>
+      <div>
+        <head rend="uc">Pièces justificatives</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Fac-similés, photographies, graphiques</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Tableaux</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

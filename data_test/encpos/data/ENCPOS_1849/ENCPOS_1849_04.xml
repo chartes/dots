@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_04" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai sur les revenus publics en Normandie au <hi rend="sc">xii</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/026820897">Léopold Delisle</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1849/ENCPOS_1849_04.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>, <biblScope>p. 7-8</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="7" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_04/ENCPOS_1849_04_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai sur les revenus publics en Normandie, au <num>xii<hi rend="sup">e</hi></num>siècle.</head>
+      <byline>
+        Thèse pour le diplôme d’archiviste paléographe, soutenue par
+        <forename>Léopold</forename>
+        <surname>Delisle</surname>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>Depuis 1080 jusqu’en 1204, des deniers de Rouen ont circulé en Normandie. – Les roumois des Plantagenets ne différaient point des angevins.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>Le règlement de Caen sur les monnaies, qu’on a jusqu’à présent rapporté à l’an 1158, est de 1204. Il avait pour but de substituer le système tournois à l’angevin.</p>
+      </div>
+      <div>
+        <head rend="uc">III.</head>
+        <p>Avant Henri I<hi rend="sup">er</hi>, on ne trouve point de mentions de l’échiquier ; mais l’institution, sous le nom de cour, existait auparavant. Elle est d’origine normande.</p>
+      </div>
+      <div>
+        <pb n="8" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_04/ENCPOS_1849_04_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">IV.</head>
+        <p>Le revenu des ducs de Normandie, au onzième siècle, consistait surtout dans leur domaine. Sous les Plantagenets, il se composait, en grande partie, d’impositions. Le désordre des finances fut une des causes de la chute de Jean sans Terre.</p>
+      </div>
+      <div>
+        <head rend="uc">V.</head>
+        <p>Les droits de justice, fins, promesses et mercis rapportaient énormément. – Les ducs de Normandie ont plusieurs fois aliéné leur haute justice. Dès le douzième et le treizième siècle, il y avait un greffe près de l’échiquier.</p>
+      </div>
+      <div>
+        <head rend="uc">VI.</head>
+        <p>Les Plantagenets, dans plusieurs circonstances, mirent un impôt sur le mobilier et sur le revenu de leurs sujets.</p>
+      </div>
+      <div>
+        <head rend="uc">VII.</head>
+        <p>Les principales dépenses des ducs de Normandie venaient de la construction et de l’entretien des places fortes. Ils avaient aussi des troupes soldées qui absorbaient des sommes considérables.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

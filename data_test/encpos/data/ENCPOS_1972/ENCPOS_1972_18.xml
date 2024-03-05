@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_18" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le bestiaire héraldique au Moyen Âge</title>
+        <author ref="https://www.idref.fr/027059952">Michel Pastoureau</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_18.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 143-154</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="143" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le bestiaire héraldique au moyen âge</head>
+      <byline>
+        par
+        <forename>Michel</forename>
+        <surname>Pastoureau</surname>
+        <roleName>maître ès lettres</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>Le développement actuel des sciences sémiologiques permet d’envisager l’héraldique sous un jour nouveau et de la faire sortir du carcan de l’histoire généalogique et nobiliaire dans lequel elle a été jusqu’ici trop longtemps enfermée. Le choix du bestiaire comme sujet de notre étude, tout en facilitant un examen approfondi des problèmes techniques du blason, a permis, d’une part d’aborder ces problèmes sous l’angle, encore trop négligé, de l’héraldique comparée, d’autre part d’élargir considérablement les possibilités d’investigation offertes par l’étude des armoiries.</p>
+        <p>Nous avons limité notre travail à la période médiévale, parce que le <num>xvi<hi rend="sup">e</hi></num> siècle met fin à l’esprit « vivificateur » du bestiaire en faisant entrer dans l’écu tous les animaux et en les représentant d’une façon naturaliste tout à fait opposée aux créations graphiques de l’héraldique originelle.</p>
+        <p>Géographiquement nous avons envisagé les armoiries de l’Europe entière, mais nous avons donné la priorité à celles des pays d’héraldique classique (France, Angleterre, Écosse, Plats-Pays, Suisse et régions rhénanes de l’Empire) par rapport à celles des pays d’héraldique plus tardives (Espagne, Italie, Scandinavie) ou nettement marginale (Pologne, Hongrie).</p>
+      </div>
+      <div>
+        <pb n="144" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Première partie
+         <lb/>Les sources pour l’étude de l’héraldique
+         <lb/>médiévale</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>les armoriaux et les sceaux</head>
+          <p>Nous avons tenté une étude statistique des armoiries médiévales à partir d’une part des armoriaux et des copies d’armoriaux antérieurs à 1 500 conservés à la Bibliothèque nationale et au British Museum, et d’autre part des collections de sceaux Douët d’Arcq aux Archives nationales et Clairambault à la Bibliothèque nationale. Nous avons toujours essayé de donner la priorité aux armoriaux, jusqu’à présent injustement délaissés, sur les sceaux, déjà très étudiés. Quarante-sept armoriaux et vingt-et-un mille sceaux environ ont été examinés.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Comparaison entre les sources sigillaires
+           <lb/>et les sources armoriales</head>
+          <p>Les sceaux présentent sur les armoriaux l’avantage de recenser des armoiries complètes et authentiques, et de pouvoir être datés avec une relative précision. Mais les armoriaux ont la très grande supériorité d’indiquer les émaux, sans lesquels il n’y a pas d’armoiries véritables.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Les autres sources</head>
+          <p>Très peu de monuments proprement héraldiques (écus, cimiers, bannières) nous sont parvenus ; les pierres tombales, les vitraux, les manuscrits à peintures, les objets d’art (émaillerie, orfèvrerie, céramique, tapisserie), les monnaies, les mesures de poids, les documents diplomatiques, les romans courtois, les récits de tournois et les traités de blason sont les principales sources pour compléter les renseignements fournis par les sceaux et armoriaux.</p>
+        </div>
+      </div>
+      <div>
+        <pb n="145" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Deuxième partie
+         <lb/>La faune des armoiries médiévales</head>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>croissance de la faune des armoiries</head>
+          <p><hi rend="i">L’origine des armoiries.</hi> – Les armoiries sont le résultat de la fusion en un seul système de divers éléments empruntés aux arts décoratifs, aux sceaux, aux boucliers et surtout aux bannières. L’énigme de leur origine est double : il faut distinguer le problème, tout à fait obscur, de la transformation des motifs décoratifs fantaisistes peints sur les boucliers en des signes de reconnaissance individuels et permanents (entre 1080 et 1125), du problème, mieux connu, de l’évolution de ces signes vers des emblèmes héréditaires obéissant à des règles précises (entre 1125 et 1200).</p>
+          <p><hi rend="i">Les premiers animaux héraldiques.</hi> – Les dragons figurant sur certains écus de la tapisserie de Bayeux et « l’écu au lion » stéréotypé de la littérature contemporaine laissent à penser que les animaux furent, au même titre que les partitions et les pièces, les premières figures héraldiques. Après le lion et le dragon, ce sont l’aigle, le sanglier et le cerf qui entrèrent les premiers dans l’écu. Ils furent suivis par le corbeau, le léopard, la panthère, le bar, la merlette, le faucon, le griffon, le cygne, le brochet et le saumon. Au <num>xiii<hi rend="sup">e</hi></num> siècle la liste s’allonge dans de fortes proportions en raison de l’extension de l’usage des armoiries à l’ensemble de la société.</p>
+          <p><hi rend="i">Enrichissement et diversification de la faune.</hi> – La proportion des armoiries animalières par rapport à l’ensemble des armoiries est de 60 % au <num>xii<hi rend="sup">e</hi></num> siècle ; elle tombe à 40 % dans la première moitié du siècle suivant et à 35 % dans la seconde. Au <num>xiv<hi rend="sup">e</hi></num> siècle, elle est de 30 % et se maintiendra autour de ce chiffre jusqu’au <num>xviii<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Le nombre des espèces figurant dans les armoiries va en augmentant : quinze vers 1200, trente vers 1300, cinquante vers 1450. Parallèlement à cet enrichissement de la faune, on assiste à un nivellement des proportions : vers 1200 le groupe lion-aigle-merlette représente 90 % des armoiries animalières ; il n’en représente plus que 70 % vers 1350 et 60 % seulement à la fin du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        </div>
+        <div>
+          <pb n="146" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_04.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre II
+           <lb/>Géographie de la faune des armoiries</head>
+          <p><hi rend="i">Proportion des armoiries animalières par rapport à l’ensemble des armoiries.</hi> – A une Europe germanique et celtique d’héraldique nettement animalière s’oppose une Europe latine d’héraldique plus linéaire. C’est en Écosse (40 %), dans les pays du Rhin et d’Europe centrale (35 %) que la proportion des armoiries animalières est la plus forte, et en Italie, Espagne, Savoie et Dauphiné qu’elle est la plus faible (moins de 20 %). Ailleurs elle se situe aux alentours de 30 %.</p>
+          <p><hi rend="i">Diversification de la faune.</hi> – Plus la proportion des armoiries animalières est forte, plus la faune du blason est diversifiée, sauf en Flandre, Brabant et Hollande, et plus ses relations avec la faune locale sont étroites (animaux aquatiques dans les régions de la mer du Nord et de la Baltique, gros gibier en Écosse, Suisse, Allemagne méridionale et Europe centrale). Le groupe lion-aigle-merlette constitue 85 % des armoiries animalières dans les Plats-Pays, 80 % en France, 75 % en Angleterre et 50 % seulement en Allemagne.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+           <lb/>Le lion</head>
+          <p><hi rend="i">Fréquence générale et répartition géographique.</hi> – Le lion est de tous les meubles celui qui a été le plus employé par l’héraldique médiévale. L’« écu au lion », universel dans la littérature du <num>xii<hi rend="sup">e</hi></num> siècle, représente encore 60 % des armoiries animalières vers 1200, 55 % vers 1350, et 50 % à la fin du <num>xv<hi rend="sup">e</hi></num> siècle. Sur la totalité des armoiries médiévales, 15 % ont été chargées d’un lion.</p>
+          <p>C’est dans les territoires de l’actuelle Belgique que les armoiries au lion sont les plus nombreuses (70-80 % des armoiries animalières) et en Ile-de-France, en Suisse et en Autriche qu’elles sont les plus rares (moins de 35 %).</p>
+          <p><hi rend="i">Caractères du lion héraldique.</hi> – Environ 80 % des lions sont rampants ; les lions passants se rencontrent surtout en Angleterre, dans l’ouest de la France et en Allemagne du nord. Les lions couronnés (environ 15 % des lions) le sont presque toujours d’or. Dans les armoriaux, la mention d’un émail particulier pour la langue et les griffes dépend étroitement de l’application de l’auteur ; elle ne doit donc nullement être considérée comme un caractère héraldique fondamental. Mise à part la queue fourchée et passée en sautoir, les attributs du lion sont rarissimes.</p>
+          <p><hi rend="i">Émaux et dessin du lion.</hi> – Le gueules est l’émail le plus fréquent (30 %) ; ensuite viennent l’argent (21 %), le sable (20 %) et l’or (20 %). L’azur (4 %) et le sinople (2 %) sont très localisés : Angleterre et Italie pour l’azur, France de l’ouest pour le sinople.</p>
+          <pb n="147" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_05.TIF/full/full/0/default.jpg"/>
+          <p>De toutes les armoiries au lion, et, ce faisant, de toutes les armoiries médiévales, c’est l’écu « d’argent au lion de gueules » qui a été le plus porté.</p>
+          <p>Pour dessiner le lion, l’héraldique a repris une figure stylisée qui existait depuis la plus haute Antiquité. Des différences régionales de style apparaissent dès le début du <num>xiii<hi rend="sup">e</hi></num> siècle et vont en s’accentuant jusqu’aux années 1430-1450, à partir desquelles on assiste, au contraire, à une certaine uniformisation sur le type du lion flamand.</p>
+          <p><hi rend="i">La signification emblématique.</hi> – Le lion peut être parlant (Italie, Espagne, pays du Rhin), politique (surtout aux <num>xii<hi rend="sup">e</hi></num> et <num>xiii<hi rend="sup">e</hi></num> siècles) ou symbolique (force, courage, générosité). Dans les armoiries écclésiastiques, il a presque toujours une signification christologique.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le léopard</head>
+          <p>Le léopard est né de la crise de croissance des armoiries de la famille Plantegenêt au <num>xii<hi rend="sup">e</hi></num> siècle et il faut davantage voir en lui un lion figuré dans une position particulière, comme le prouve son rôle de meuble parlant en Souabe, en Franconie, en Brabant et en Hollande dans les armes de familles dont le nom rappelle phonétiquement celui du lion, qu’un animal totalement différent, issu du dragon emblématique paien.</p>
+          <p>L’abondance des lions passants en Anjou, Maine et Normandie, berceaux de la famille Plantegenêt, et l’évolution des caractères graphiques et des attributs du léopard, tout à fait semblable à celle du lion, confirment pleinement que, du strict point de vue héradique, le lion et le léopard sont le même animal envisagé dans deux positions différentes.</p>
+          <p>Le léopard représente à peine 5 % des armoiries animalières ; c’est en Angleterre, en Guyenne, en Champagne et en Allemagne méridionale qu’il est le plus répandu ; ailleurs on lui préfère presque toujours le lion passant.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+           <lb/>L’aigle</head>
+          <p><hi rend="i">Fréquence générale et répartition géographique.</hi> – L’aigle représente 12 % des armoiries animalières et 3 % seulement de l’ensemble des armoiries. C’est surtout sa rareté dans les armes roturières, cas unique parmi tous les animaux héraldiques, dont l’indice de fréquence est sensiblement le même dans les armes nobiliaires et les armes roturières, qui explique la faiblesse de ces pourcentages.</p>
+          <p>C’est en Autriche, en Bavière, en Franconie, en Savoie et en Italie du nord que les aigles sont les plus nombreuses ; d’une manière générale, les régions riches en lions sont pauvres en aigles, et réciproquement.</p>
+          <pb n="148" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_06.TIF/full/full/0/default.jpg"/>
+          <p><hi rend="i">Caractères héraldiques de l’aigle.</hi> – L’aigle bicéphale, inconnue des bestiaires est une création de l’imagination orientale ; elle ne s’est imposée que tardivement dans l’héraldique occidentale et n’a, à aucun moment ni dans aucun pays, représenté plus de 15 % des aigles des armoiries. Les aigles couronnées sont rares (5 %), et celles becquées et membrées d’un émail particulier ne le sont jamais de façon constante.</p>
+          <p><hi rend="i">Émaux et représentation graphique.</hi> – Les aigles de gueules (23 %), d’or (20 %) et de sable (20 %) sont les plus nombreuses et celles que l’on rencontre partout ; celle d’argent (17 %) est surtout anglaise et française, celle d’azur (10 %) française et italienne. Malgré l’influence très grande de l’écu impérial, il apparaît nettement que de toutes les armoiries à l’aigle c’est, comme pour le lion, la combinaison « d’argent à l’aigle de gueules » qui a été la plus portée.</p>
+          <p>L’aigle est l’animal héraldique le mieux dessiné et celui qui permet d’obserle mieux les différences de style régionales. Son dessin n’est nullement original puisqu’il existait déjà à Babylone au <num>iii<hi rend="sup">e</hi></num> millénaire avant notre ère ; il semble avoir pénétré en Occident par l’intermédiaire de l’orfèvrerie sassanide, des monnaies byzantines et des tissus orientaux.</p>
+          <p><hi rend="i">La signification emblématique.</hi> – L’aigle peut être politique (cas fréquent dans l’Empire, où elle est l’emblème du parti gibelin), parlante (Écosse, Bretagne, Italie du nord) ou symbolique (domination, victoire). Dans les armes ecclésiastiques, elle a deux significations christologiques précises, le baptême et le jugement dernier.</p>
+          <p><hi rend="i">L’alérion.</hi> – Pour les bestiaires, l’alérion est un aigle particulièrement grand et fort ; dans les armoiries c’est une petite aigle, d’abord dépourvue de pattes, puis de bec. Il n’est apparu que tardivement (fin du <num>xiv<hi rend="sup">e</hi></num> siècle) et semble devoir être une abstraction du dessin de l’aiglette, que son emploi en nombre dans certaines armoiries rendait méconnaissable.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VI
+           <lb/>La merlette</head>
+          <p><hi rend="i">Place de la merlette dans les armoiries médiévales.</hi> – Par sa fréquence la merlette est le second animal héraldique ; elle charge 5 % de toutes les armoiries et 16 % des armoiries animalières. Mais son emploi est très nettement localisé et se limite à l’Europe du nord-ouest. C’est en Ile-de-France, en Picardie en Artois et en Hollande que les écus chargés de merlettes sont les plus nombreux.</p>
+          <p><hi rend="i">Caractères héraldiques de la merlette.</hi> – La merlette n’a jamais eu de pattes, mais jusqu’au milieu du <num>xv<hi rend="sup">e</hi></num> siècle elle a toujours un bec ; elle le perd entre 1460 et 1520, probablement afin de ne pas être confondue avec la canette, oiseau tout à fait différent dont l’importance grandit à cette époque.</p>
+          <pb n="149" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_07.TIF/full/full/0/default.jpg"/>
+          <p>L’étude de la disposition des merlettes dans l’écu est valable pour la plupart des autres petits meubles du blason ; les dispositions les plus fréquentes sont les merlettes en orle (33 %) et accompagnant une fasce (16 %) ou un chevron (12 %). Ce sont les merlettes de gueules (45 %) et de sable (23 %) qui sont au Moyen Âge les plus fréquentes.</p>
+          <p><hi rend="i">La signification emblématique.</hi> – La merlette est à l’origine un petit merle qui servit de meuble parlant à certaines familles du Beauvaisis, de Normandie et d’Angleterre ; au <num>xiii<hi rend="sup">e</hi></num> siècle elle perd son caractère animalier et parlant pour jouer un rôle tout à fait technique dans les armoiries : remplir les vides et équilibrer les figures. Au <num>xiv<hi rend="sup">e</hi></num> siècle elle est de nouveau parlante, mais désormais avec les noms phonétiquement apparentés à « oiseau » et non plus à « merle ».</p>
+          <p>La merlette n’a jamais joué le rôle de symbole, mais on peut parfois lui reconnaître une signification allégorique, sinon au moment du choix et de la formation des armoiries, du moins dans leurs interprétations postérieures.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VII
+           <lb/>Le bar</head>
+          <p>Bien qu’il ne charge que 2 % des armoiries animalières, le bar est le poisson héraldique le plus fréquent. C’est dans l’est et le nord-est de la France, en Lorraine, en Comté (rôle politique lié aux armes de la puissante maison de Bar) et dans les basses vallées de la Meuse, du Rhin, de la Weser et de l’Elbe (emprunts à la faune aquatique locale) que les écus aux bars sont les plus répandus. Outre ces deux significations, il est possible que le bar soit devenu une sorte de poisson stéréotypé indéterminé et se soit chargé, après le milieu du <num>xiii<hi rend="sup">e</hi></num> siècle, du contenu symbolique du poisson (signification christologique, vertu talismanique, insigne d’un rang supérieur).</p>
+          <p>Toujours très bien dessiné, le bar héraldique ressemble davantage aux brochets et aux barbeaux des rivières qu’aux bars proprement dits. 90 % des écus chargés de bars en portent deux adossés en pal, et la moitié sont des bars d’or.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre VIII
+           <lb/>Les quadrupèdes</head>
+          <p>Les quadrupèdes autres que le lion et le léopard chargent moins de 5 % des armoiries animalières ; parmi eux ce sont le sanglier, le loup, l’ours et le cerf qui sont les plus fréquents. Le sanglier constitue le plus souvent un emprunt à la faune locale ou un héritage de l’emblématique pré-héraldique, mais il peut aussi être parlant, et même symbolique (colère). Le loup, très fréquent en Espagne, est parlant ou allégorique, mais jamais symbolique, de même que l’ours, qui <pb n="150" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_08.TIF/full/full/0/default.jpg"/> doit à son ancien rôle de roi des animaux – au moins jusqu’à la fin du<num>xi<hi rend="sup">e</hi></num> siècle – d’être parlant avec des patronymes formés sur « König » en Allemagne. Le cerf, quand il ne fait pas allusion à la chasse, est symbolique (longévité, pureté).</p>
+          <p>Parmi les chiens l’héraldique médiévale distingue le lévrier (Angleterre) et le dogue (Flandre, Allemagne) d’une troisième espèce relativement indéterminée, que seul un collier permet de ne pas confondre avec le loup. Chez les bovins le bœuf n’est pas encore différencié du taureau. Parmi les autres quadrupèdes, les moins rares sont le bélier, l’agneau, la chèvre, le mouton, le bouc, le cheval, le renard (toujours de gueules), le porc, l’éléphant (qui porte très rarement une tour sur son dos), le chameau, l’écureuil et le castor, ce dernier étant totalement hybride.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IX
+           <lb/>Les oiseaux</head>
+          <p>Les oiseaux autres que l’aigle et la merlette occupent moins de 5 % des armoiries animalières ; parmi eux les plus fréquents sont le coq, presque toujours parlant, le corbeau, très apprécié dans les armes roturières, le cygne, réservé au contraire aux seules armoiries nobiliaires et chargé d’un fort contenu symbolique (pureté, fierté), et le perroquet, popularisé par le jeu du « papegay ».</p>
+          <p>La colombe et le pélican sont réservés aux armes ecclésiastiques ; le héron est surtout anglais, le paon et la grue, germaniques ; le canard, l’oie, la chouette, la cigogne, le pigeon, l’épervier, et l’autruche sont très rares, tout comme le faucon qui était pourtant au Moyen Âge l’animal le plus apprécié.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre X
+           <lb/>Les poissons et les animaux aquatiques</head>
+          <p>Dans les armoiries médiévales le dauphin est beaucoup plus rare que le bar ; néanmoins la flatteuse réputation que lui faisaient les bestiaires l’a rendu populaire et, alors qu’à l’origine il ne servait de meuble parlant qu’au dauphin d’Auvergne et à celui de Viennois, il figure à la fin du Moyen Âge dans les armes de plusieurs familles dont le nom évoque phonétiquement un quelconque nom de poisson. Jusqu’au milieu du <num>xiv<hi rend="sup">e</hi></num> siècle son dessin héraldique est particulièrement instable ; sa nageoire dorsale est souvent transformée en ailes, son nez en trompe et sa barbe en jabot.</p>
+          <p>Les autres poissons et animaux aquatiques sont très rares, sauf le brochet, fréquent en Angleterre où il joue le rôle du bar, le chabot (France), le saumon (Écosse), la truite (Allemagne) et le hareng (Scandinavie).</p>
+        </div>
+        <div>
+          <pb n="151" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_09.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre XI
+           <lb/>Les monstres</head>
+          <p>Les monstres et les animaux chimériques sont les parents pauvres du bestiaire héraldique, à la fois en nombre (moins de dix « espèces ») et en proportion (2 % des armoiries animalières).</p>
+          <p>Le griffon est le moins rare (surtout en Allemagne du nord, Pologne, Scandinavie) et le moins instable. Le dragon fut un des tout premiers meubles du blason au <num>xii<hi rend="sup">e</hi></num> siècle, mais il disparaît au siècle suivant et ne recommence une véritable carrière héraldique qu’au <num>xv<hi rend="sup">e</hi></num> siècle, après s’être totalement désacralisé. La licorne n’est entrée que tardivement dans les écus et appartient davantage à l’insignologie para-héraldique qu’à l’héraldique elle-même. Les autres animaux chimériques ayant servi de meubles sont la panthère, le basilic, la guivre, le phénix, la harpie et l’hydre. Dans le blason germanique on relève quelques exemples de créations grotesques associant pièces, meubles et éléments zoomorphes.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Troisième partie
+         <lb/>Le bestiaire héraldique</head>
+        <p>Le terme « faune » évoque l’idée d’un répertoire exhaustif d’animaux qu’aucun lien particulier ne contribue à unir, tandis que celui de « bestiaire » implique l’idée d’un groupe homogène, limité et structuré, où chaque animal possède à la fois une signification autonome et une signification indissociable de celle de l’ensemble, et où le fantastique est nécessairement présent. Dans le cas des animaux du blason, c’est bien d’un « bestiaire » qu’il s’agit.</p>
+        <div>
+          <head rend="uc">Chapitre premier
+           <lb/>unité du thème animalier dans les armoiries médiévales :
+           <lb/>unité graphique</head>
+          <p><hi rend="i">Les sources et la réutilisation de modèles préexistants.</hi> – Le dessin héraldique de la plupart des animaux n’est pas original ; il trouve, pour une bonne part, sa source dans les arts décoratifs de la Mésopotamie ancienne et doit son introduction en Occident aux invasions germaniques et à l’arrivée régulière <pb n="152" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_10.TIF/full/full/0/default.jpg"/>des tissus, monnaies et objets d’art orientaux. Le grand mérite du blason fut d’avoir érigé en système des dispositifs et des caractères qui étaient « héraldiques » bien avant la lettre.</p>
+          <p><hi rend="i">Les règles du dessin héraldique : la fixité des types.</hi> – La stylisation héraldique repose sur une simplification des formes de l’animal et une exagération de toutes les parties pouvant servir à l’identifier. L’existence d’une expression typiquement héraldique provient du nombre très limité des gestes, des attitudes et de leur possibilité d’emploi. La composition héraldique obéit à des lois rigoureuses, dont les plus importantes sont celles de symétrie et de plénitude.</p>
+          <p><hi rend="i">La réalisation du dessin héraldique : la variété des figures.</hi> – On peut distinguer quatre grands styles nationaux : le style anglais est le plus sobre, le style français le plus construit, le style germanique le plus décoratif et le plus excessif ; le style bourguigno-flamand est une synthèse des trois autres, et celui sur lequel ils auront tendance à s’aligner à partir du milieu du <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>A côté des styles nationaux on peut distinguer un style militaire et un style civil, bien qu’il y ait toujours eu dans le dessin héraldique des animaux un mélange de fierté et de gaucherie, de candeur et d’agressivité.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+           <lb/>Unité du thème animalier dans les armoiries médiévales :
+           <lb/>unité chromatique</head>
+          <p>Fondée sur de réels problèmes de visibilité, la règle qui interdit de mettre métal sur métal ou couleur sur couleur, probablement héritée des anciennes bannières, fut respectée partout, sauf en Castille.</p>
+          <p>Indépendamment de leur signification politique, parlante, conventionnelle ou symbolique, les émaux et les combinaisons d’émaux ont suivi l’influence de la mode. Le gueules est l’émail le plus fréquent, aussi bien pour le champ que pour l’animal ; parmi les combinaisons, ce sont argent-gueules, or-gueules et argent-sable qui ont été les plus usitées. Par rapport à l’héraldique moderne il faut surtout mettre en valeur la rareté de l’azur et, au contraire, l’importance du sable.</p>
+          <p>D’une manière générale la palette héraldique est, dans chaque région et à chaque époque, en accord étroit avec celles de l’enluminure, du costume et de la décoration.</p>
+          <p>Le problème de la vogue des émaux héraldiques soulève celui, plus important, de la perception des couleurs à l’époque médiévale et de leur influence physiologique et psychologique sur les populations.</p>
+        </div>
+        <div>
+          <pb n="153" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_11.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Chapitre III
+           <lb/>Unité du thème animalier dans les armoiries médiévales :
+           <lb/>unité sémiologique et symbolique</head>
+          <p>L’usage de signes héraldiques permet de faire connaître aux autres son identité (armoiries entières) et sa personnalité (meubles, émaux, dispositions).</p>
+          <p><hi rend="i">La fonction sémiologique des armoiries.</hi> – Les armoiries sont des signes conventionnels, parce qu’elles résultent d’un accord entre ceux qui en font usage, sociaux, parce qu’elles ont pour objet la communication entre les individus, systématiques, parce qu’elles usent d’éléments stables et constants, syntaxiques, parce qu’elles sont soumises à des règles rigoureuses et hautement élaborées.</p>
+          <p><hi rend="i">La signification des animaux héraldiques.</hi> – Les animaux contenus dans les armoiries médiévales peuvent être parlants, soit par relation directe, phonétique, avec le patronyme, le sobriquet ou le vocable terrien, soit par rébus ; allégoriques, c’est-à-dire illustrant l’appartenance à un groupe, le souvenir d’un fait ou un certain aspect de la vie de celui qui en fait usage ; symboliques, c’est-à-dire évoquant une idée appartenant au monde non-sensible. H faut souligner que les armes pariantes ne sont pas toutes roturières – bien souvent des familles bourgeoises ne portent pas l’animal avec lequel leur nom s’associerait pourtant aisément, les armes allégoriques pas toutes nobiliaires, les armes symboliques pas toutes ecclésiastiques.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+           <lb/>Le bestiaire médiéval</head>
+          <p>Le bestiaire héraldique n’est qu’un aspect particulier d’un « système » beaucoup plus vaste : le bestiaire médiéval.</p>
+          <p><hi rend="i">L’animal au Moyen Âge.</hi> – L’histoire des animaux, pris dans leurs rapports biologiques et passionnels avec l’homme, reste à faire. Comme en témoigne la littérature zoologique très abondante, les populations médiévales avaient une profonde curiosité, une grande connaissance et une réelle estime pour les animaux, même si leurs conceptions étaient, sur bien des points (domestication, alimentation, affectivité) tout à fait différentes des nôtres.</p>
+          <p><hi rend="i">Le bestiaire héraldique et les autres bestiaires.</hi> – Du point de vue graphique le bestiaire médiéval est fils de l’art antique et ses créations, qu’elles appartiennent à la sculpture, l’enluminure, l’orfèvrerie ou les armoiries, sont toujours tributaires des mêmes traditions. Outre une origine commune, on relève des influences réciproques, sinon dans le choix de thèmes, du moins dans l’utilisation de procédés conventionnels et routiniers qui, en permettant aux artistes de <pb n="154" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_18/ENCPOS_1972_18_12.TIF/full/full/0/default.jpg"/> pallier leurs insuffisances techniques, retardèrent l’avènement du naturalisme.</p>
+          <p>Bien qu’il ne faille pas voir des symboles partout, on distingue dans l’imagerie animale du Moyen Âge un triple apport symbolique, celui de la Bible, très esthétique et surtout important dans le bestiaire sculpté, celui du <hi rend="i">Physiologies,</hi> plus mécanique, présent dans les bestiaires littéraires, et celui d’un vieux fond de symbolique universelle, facilement accessible, que l’on retrouve souvent dans les armoiries.</p>
+        </div>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>L’étude du bestiaire a permis de mettre en valeur ce que l’héraldique peut apporter, non seulement à l’historien et à l’archéologue, mais aussi au sociologue, au linguiste, au psychologue et au folkloriste. L’historien des mentalités, surtout, trouvera dans les armoiries une mine de renseignements – quantifiables et, en raison de la structure même des règles du blason, tout à fait aptes à être traités par des moyens informatiques – sur les croyances, la moralité, la culture, les aspirations et le niveau esthétique de ceux qui en ont fait usage.</p>
+      </div>
+      <div>
+        <head rend="uc">Cartes et tableaux statistiques</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Glossaire des principaux termes héraldiques utilisés</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies de sceaux</head>
+        <p/>
+      </div>
+      <div>
+        <head rend="uc">Album de dessins</head>
+        <p/>
+      </div>
+    </body>
+  </text>
+</TEI>

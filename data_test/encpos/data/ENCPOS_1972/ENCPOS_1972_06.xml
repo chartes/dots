@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1972_06" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Les plus anciennes chartes en langue française de l’Aube et de la Seine-et-Marne</title>
+        <author ref="https://www.idref.fr/026798441">Dominique Coq</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1972/ENCPOS_1972_06.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1972 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1972</date>, <biblScope>p. 51-53</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1972"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="51" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Les plus anciennes chartes
+       <lb/>en langue française
+       <lb/>de l’aube et de la Seine-et-Marne</head>
+      <byline>
+        par
+        <forename>Dominique</forename>
+        <surname>Coq</surname>
+      </byline>
+      <p>À l’édition et au commentaire grammatical des plus anciennes chartes originales en langue française (antérieures à 1270) conservées dans les dépôts d’archives départementales, communales et hospitalières des départements de l’Aube et de la Seine-et-Marne, on a joint les chartes conservées dans les layettes du Trésor des Chartes des Archives nationales et au département des manuscrits de la Bibliothèque nationale qui émanent de la région correspondant au territoire actuel des deux départements envisagés et présentant les mêmes caractéristiques.</p>
+      <div>
+        <head rend="uc">Introduction</head>
+        <p>La connaissance de la langue médiévale, et en particulier des dialectes régionaux, s’appuie de plus en plus sur l’étude des documents d’archives, qui ont l’avantage sur les textes littéraires de pouvoir être localisés et datés de manière beaucoup plus précise. C’est dans le cadre de la publication systématique, département par département, des plus anciennes chartes en langue vulgaire antérieures à 1270 du domaine d’oïl qu’a entreprise M. Jacques Monfrin, que pourrait s’inscrire cette édition de cent dix-huit chartes françaises de la Champagne méridionale, dont la plus ancienne remonte à septembre 1230.</p>
+      </div>
+      <div>
+        <head rend="uc">Sources</head>
+        <p>La grande majorité des documents, les trois quarts environ, ont été fournis par la série H des Archives départementales de l’Aube. Les autres pièces se trouvent disséminées dans divers fonds d’archives conservés dans une dizaine de dépôts publics : aux Archives nationales, les layettes du Trésor des Chartes ; <pb n="52" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_02.TIF/full/full/0/default.jpg"/>à la Bibliothèque nationale, la collection de Champagne et la collection Clairambault ; aux Archives départementales de l’Aube, les fonds des séries E, G et 1 J (fonds des nouvelles acquisitions contenant quelques pièces originales isolées) ; aux Archives départementales de Seine-et-Marne, les archives du grand Hôtel-Dieu de Provins ; aux Archives communales de Troyes, le fonds Delion (layettes contenant les archives anciennes de la ville et notamment des chartes des comtes de Champagne) ; à la Bibliothèque municipale de Provins, le fonds Michelin (contenant des pièces originales isolées concernant la ville de Provins) ; à Bar-sur-Aube, les archives de l’hôpital Saint-Nicolas et, enfin, à Nemours, les archives de l’Hôtel-Dieu.</p>
+      </div>
+      <div>
+        <head rend="uc">Commentaires grammaticaux</head>
+        <p><hi rend="i">Morphologie.</hi> – On constate un maintien de la flexion classique des substantifs jusque vers 1265, date à partir de laquelle les manquements à la déclinaison deviennent de plus en plus fréquents, surtout dans la Brie. Une certaine tendance à la distinction entre les formes féminines et masculines des adjectifs relatifs et indéfinis <hi rend="i">quel</hi> et <hi rend="i">tel</hi> (par analogie avec les formes du type <hi rend="i">bon-bone) </hi>se manifeste généralement, sauf dans la région de Bar-sur-Aube et près des marges orientales. Pour ce qui est de la morphologie verbale, les particularités les plus remarquables sont le maintien des désinences dialectales <hi rend="i">-oiens</hi> pour la quatrième personne de l’imparfait de l’indicatif, et <hi rend="i">-iens</hi> pour la même personne du présent du subjonctif.</p>
+        <p><hi rend="i">Syntaxe.</hi> – La syntaxe, comme il est courant dans la langue diplomatique, n’offre pas de richesse suffisante pour permettre de dégager des caractéristiques particulières.</p>
+        <p><hi rend="i">Phonétique.</hi> – Il semble que les seuls traits phonétiques qu’on puisse considérer comme proprement champenois dans ces actes sont la diphtongaison de e fermé accentué devant <hi rend="i">l</hi> mouillé (type <hi rend="i">consoil</hi>) et l’évolution de la diphtongue romane <hi rend="i">eu</hi> provenant de la coalescence d’un <hi rend="i">e</hi> fermé et d’un <hi rend="i">l</hi> vocalisé, qui aboutit à <hi rend="i">au</hi> (type <hi rend="i">çaus, aus</hi>). Les autres traits dialectaux sont empruntés aux parlers voisins, le picard, le lorrain et le bourguignon, tandis que de nombreuses contaminations franciennes sont sensibles, surtout dans la Brie et le Gâtinais.</p>
+      </div>
+      <div>
+        <head rend="uc">Conclusion</head>
+        <p>La langue des chartes offre de grandes disparités entre l’ouest et l’est ; elle semble évoluer plus rapidement dans le Gâtinais et la Brie que dans la région de Bar-sur-Aube. Elle paraît en outre être le terrain de rencontre de quatre parlers voisins : picard au nord, lorrain à l’est, bourguignon au sud, Orléanais et francien à l’ouest. Peut-être est-ce là la caractéristique dominante des parlers champenois.</p>
+      </div>
+      <div>
+        <pb n="53" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_03.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Édition</head>
+        <p>Sur les cent dix-huit actes édités, une quarantaine avaient déjà fait l’objet d’une publication, en particulier ceux des layettes du Trésor des Chartes, quoique trois d’entre eux, postérieurs à la mort de saint Louis, n’eussent pas encore été publiés.</p>
+        <p>Un appendice regroupe huit documents non scellés, mais fort proches des originaux, ou non datés, mais dont on sait par ailleurs qu’ils s’inscrivent dans les limites chronologiques.</p>
+        <p>Les vidimus ont été placés en regard des originaux, dans la mesure où ils étaient antérieurs à 1270.</p>
+      </div>
+      <div>
+        <head rend="uc">Index</head>
+        <p>Index topo-onomastique avec référence à une carte de la Champagne méridionale au 1 350 000.</p>
+      </div>
+      <div>
+        <head rend="uc">Glossaire</head>
+        <pb n="54" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1972_06/ENCPOS_1972_06_04.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>
