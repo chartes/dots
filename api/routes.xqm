@@ -56,17 +56,21 @@ declare
   %rest:query-param("id", "{$id}", "")
   %rest:query-param("nav", "{$nav}", "")
 function routes:collections($id as xs:string, $nav as xs:string) {
-  if ($id)
-  then
-    let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
-    return
-      if ($dbName != "") 
-      then 
-        utils:collectionById($id, $nav)
-      else
-        routes:badIdResource(xs:string($id))
-   else
-     utils:collections()
+  if (db:exists($G:dots))
+  then 
+    if ($id)
+    then
+      let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
+      return
+        if ($dbName != "") 
+        then 
+          utils:collectionById($id, $nav)
+        else
+          routes:badIdResource(xs:string($id))
+     else
+       utils:collections()
+  else
+    utils:noCollection()
 };
 
 (:~  

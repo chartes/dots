@@ -28,6 +28,16 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 Fonctions d'entrée dans le endPoint "Collection" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
+declare function utils:noCollection() {
+  <json type="object">
+    <pair name="@id">{$G:root}</pair>
+    <pair name="@type">collection</pair>
+    <pair name="title">{$G:rootTitle}</pair>
+    <pair name="totalItems" type="number">0</pair>
+    {utils:getContext("")}
+  </json>
+};
+
 (:~ 
 : Cette fonction permet de lister les collections DTS dépendant d'une collection racine $utils:root.
 : @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
