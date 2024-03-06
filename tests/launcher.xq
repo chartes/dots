@@ -4,5 +4,6 @@ import module namespace test = "https://github.com/chartes/dots/tests" at "utils
 
 
 (:  :)
-test:check-metadata-output()
+(: test:check-metadata-output() :)
+""
 
