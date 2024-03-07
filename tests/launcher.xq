@@ -7,6 +7,6 @@ import module namespace initTests = "https://github.com/chartes/dots/initTests" 
 (:  :)
 initTests:check-value-response200("https://dev.chartes.psl.eu/dots/api/dts/"),
 initTests:check-value-response200("https://dev.chartes.psl.eu/dots/api/dts/collection"),
-initTests:check-value-response200("https://dev.chartes.psl.eu/dots/api/dts/navigation"),
-initTests:check-value-response200("https://dev.chartes.psl.eu/dots/api/dts/document")
+initTests:check-value-response400("https://dev.chartes.psl.eu/dots/api/dts/navigation"),
+initTests:check-value-response400("https://dev.chartes.psl.eu/dots/api/dts/document")
 
