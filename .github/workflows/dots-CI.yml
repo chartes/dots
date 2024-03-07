@@ -29,9 +29,6 @@ jobs:
     - name: Start BaseX Server
       run: |
         ./basex/bin/basexhttp
-
-    - name: Stop BaseX Server
-      run: |
         ./basex/bin/basexhttpstop
 
 
