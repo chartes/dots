@@ -118,7 +118,7 @@ declare
   %rest:GET
   %output:method("xml")
   %rest:produces("application/tei+xml")
-  %rest:query-param("id", "{$id}")
+  %rest:query-param("id", "{$id}", "")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")

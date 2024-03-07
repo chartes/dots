@@ -26,5 +26,5 @@ jobs:
       run: |
         ./basex/bin/basexhttp &
         ./basex/bin/basex ./tests/launcher.xq
-        ./basex/bin/basexhttpstop &
+        ./basex/bin/basexhttpstop
 
