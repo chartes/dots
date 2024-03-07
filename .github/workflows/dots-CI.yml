@@ -22,13 +22,10 @@ jobs:
         cd basex
         chmod +x bin/basex
 
-    - name: Run DoTS XQuery Tests
-      run: |
-        ./basex/bin/basex ./tests/launcher.xq
-
-    - name: Start BaseX Server
+    - name: Start BaseX Server and Run Init Tests on Endpoints
       run: |
         ./basex/bin/basexhttp
+        ./basex/bin/basex ./tests/launcher.xq
         ./basex/bin/basexhttpstop
 
 
