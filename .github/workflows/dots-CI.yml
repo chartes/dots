@@ -22,7 +22,11 @@ jobs:
         cd basex
         chmod +x bin/basex
 
-    - name: Start BaseX Server and Run Init Tests on Endpoints
+    - name: Download and Install DoTS
+      run: |
+        cp . ./basex/webapp
+
+    - name: Start BaseX Server and Run Init Tests on DTS Endpoints
       run: |
         ./basex/bin/basexhttp &
         ./basex/bin/basex ./tests/launcher.xq
