@@ -22,6 +22,6 @@ jobs:
         cd basex
         chmod +x bin/basex
 
-    - name: Run Initial Test on DTS Endpoints
+    - name: Run DoTS XQuery Tests
       run: |
-        ./basex/bin/basex ./basexhttp
+        ./basex/bin/basex ./tests/launcher.xq
