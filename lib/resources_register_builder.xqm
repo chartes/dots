@@ -36,10 +36,26 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
     return
       $count - $countDotsData
   let $content :=
-    <resourcesRegister    
-      xmlns:dct="http://purl.org/dc/terms/"
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-    >
+    <resourcesRegister>
+      (: {
+        let $mapping := db:get($dbName, $G:metadata)/metadataMap
+        return
+          if ($mapping)
+          then 
+            for $prefix in in-scope-prefixes($mapping)
+            where $prefix != ""
+            where $prefix != "dc"
+            where $prefix != "dct"
+            where $prefix != "xml"
+            let $ns := namespace-uri-for-prefix($prefix, $mapping)
+            return
+              namespace {$prefix} {$ns}
+          else 
+            (
+              namespace {"dc"} {"http://purl.org/dc/elements/1.1/"},
+              namespace {"dct"} {"http://purl.org/dc/terms/"}
+            )
+      } :)
       {dots.lib:getMetadata()}
       <member>
         <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">{
@@ -188,7 +204,9 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
       then 
         let $key := $metadata/name()
         return
-          element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+          element {$key} { 
+            concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+          }
       else
         if ($metadata/@xpath)
         then
