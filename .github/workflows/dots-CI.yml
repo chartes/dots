@@ -24,4 +24,4 @@ jobs:
 
     - name: Run Initial Test on DTS Endpoints
       run: |
-        ./basex/bin/basex bash basexhttp
+        ./basex/bin/basex ./basexhttp
