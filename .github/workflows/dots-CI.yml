@@ -25,3 +25,8 @@ jobs:
     - name: Run DoTS XQuery Tests
       run: |
         ./basex/bin/basex ./tests/launcher.xq
+
+    - name: Start BaseX Server
+      run: |
+        ./basex/bin basexhttp
+
