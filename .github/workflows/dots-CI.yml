@@ -24,8 +24,6 @@ jobs:
 
     - name: Start BaseX Server and Run Init Tests on Endpoints
       run: |
-        ./basex/bin/basexhttp
         ./basex/bin/basex ./tests/launcher.xq
-        ./basex/bin/basexhttpstop
 
 
