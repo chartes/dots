@@ -13,8 +13,7 @@ import module namespace functx = "http://www.functx.com";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
 
-import module namespace openapi="https://lab.sub.uni-goettingen.de/restxqopenapi" at "../../content/openapi.xqm";
-
+declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
@@ -33,15 +32,15 @@ function routes:entryPoint() {
    <pair name="@context">/api/dts/EntryPoint.jsonld</pair>
    <pair name="@id">/api/dts</pair>
    <pair name="@type">EntryPoint</pair>
-   <pair name="collections">/api/dts/collections</pair>
+   <pair name="collection">/api/dts/collection</pair>
    <pair name="documents">/api/dts/document</pair>
    <pair name="navigation">/api/dts/navigation</pair>
  </json>
 };
 
 (:~  
-: Cette fonction gère le endpoint Collections. Elle dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
-: @return réponse JSON pour le endpoints Collections de la spécification d'API DTS
+: Cette fonction gère le endpoint Collection. Elle dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
+: @return réponse JSON pour le endpoints Collection de la spécification d'API DTS
 : @param $id chaîne de caractère qui permet d'identifier une collection DTS
 : @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents. Ce paramètre permet de définir si les membres à lister sont les enfants ou les parents
 : @see https://distributed-text-services.github.io/specifications/Collections-Endpoint.html
@@ -49,7 +48,7 @@ function routes:entryPoint() {
 : @see utils.xqm;utils:collections
 :) 
 declare
-  %rest:path("/api/dts/collections")
+  %rest:path("/api/dts/collection")
   %rest:GET
   %output:method("json")
   %rest:produces("application/ld+json")
@@ -57,11 +56,21 @@ declare
   %rest:query-param("id", "{$id}", "")
   %rest:query-param("nav", "{$nav}", "")
 function routes:collections($id as xs:string, $nav as xs:string) {
-  if ($id)
-  then
-    utils:collectionById($id, $nav)
-   else
-     utils:collections()
+  if (db:exists($G:dots))
+  then 
+    if ($id)
+    then
+      let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
+      return
+        if ($dbName != "") 
+        then 
+          utils:collectionById($id, $nav)
+        else
+          routes:badIdResource(xs:string($id))
+     else
+       utils:collections()
+  else
+    utils:noCollection()
 };
 
 (:~  
@@ -86,7 +95,12 @@ declare
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("down", "{$down}", 0)
 function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
-  utils:navigation($id, $ref, $start, $end, $down)
+  let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
+  return
+    if ($dbName != "") 
+    then utils:navigation($id, $ref, $start, $end, $down) 
+    else
+      routes:badIdResource(xs:string($id))
 };
 
 (:~ 
@@ -110,39 +124,57 @@ declare
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("format", "{$format}", "")
 function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
-  let $ref := if ($ref) then $ref else ""
-  let $start := if ($start) then $start else ""
-  let $end := if ($end) then $end else ""
-  let $result := utils:document($id, $ref, $start, $end)
+  let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
   return
-    if ($format)
+    if ($dbName != "") 
     then 
-      let $f :=
-        switch ($format)
-        case ($format[. = "html"]) return "text/html;"
-        case ($format[. = "txt"]) return "text/plain"
-        default return "xml"
-      let $style := concat($G:webapp, $G:xsl)
-      let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
-      let $doc := 
-        if (db:get($project)/tei:TEI[@xml:id = $id])
-        then db:get($project)/tei:TEI[@xml:id = $id]
-        else 
-          db:get($project, $id)/tei:TEI
-      let $trans := 
-        if ($format = "html")
-        then
-          xslt:transform($result, $style)
-        else  $result
+      let $ref := if ($ref) then $ref else ""
+      let $start := if ($start) then $start else ""
+      let $end := if ($end) then $end else ""
+      let $result := utils:document($id, $ref, $start, $end)
       return
-        (
-          <rest:response>
-            <http:response status="200">
-              <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
-            </http:response>
-          </rest:response>,
-          $trans
-        )
+        if ($format)
+        then 
+          let $f :=
+            switch ($format)
+            case ($format[. = "html"]) return "text/html;"
+            case ($format[. = "txt"]) return "text/plain"
+            default return "application/xml"
+          let $style := concat($G:webapp, $G:xsl)
+          let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
+          let $doc := 
+            if (db:get($project)/tei:TEI[@xml:id = $id])
+            then db:get($project)/tei:TEI[@xml:id = $id]
+            else 
+              db:get($project, $id)/tei:TEI
+          let $trans := 
+            if ($format = "html")
+            then
+              xslt:transform($result, $style)
+            else  $result
+          return
+            (
+              <rest:response>
+                <http:response status="200">
+                  <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
+                </http:response>
+              </rest:response>,
+              $trans
+            )
+        else
+          $result
     else
-      $result
+      routes:badIdResource(xs:string($id))
+};
+
+declare 
+  %rest:error("err:badIdResource")
+  %rest:error-param("description", "{$id}")
+function routes:badIdResource($id) {
+  let $message :=
+    if ($id)
+    then concat("Error 400 : resource ID ", "'", $id, "' not found")
+    else "Error 400 : no resource ID specified"
+  return
+    web:error(400, $message)
 };

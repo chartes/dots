@@ -19,14 +19,24 @@ declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
-: Cette variable permet de choisir l'identifiant d'une collection "racine" (pour le endpoint Collections sans paramètre d'identifiant)
-: @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collections sans paramètres)
+: Cette variable permet de choisir l'identifiant d'une collection "racine" (pour le endpoint Collection sans paramètre d'identifiant)
+: @todo pouvoir choisir l'identifiant de collection Route à un autre endroit? (le title du endpoint collection sans paramètres)
 : à déplacer dans globals.xqm ou dans un CLI?
 :)
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-Fonctions d'entrée dans le endPoint "Collections" de l'API DTS
+Fonctions d'entrée dans le endPoint "Collection" de l'API DTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
+
+declare function utils:noCollection() {
+  <json type="object">
+    <pair name="@id">{$G:root}</pair>
+    <pair name="@type">collection</pair>
+    <pair name="title">{$G:rootTitle}</pair>
+    <pair name="totalItems" type="number">0</pair>
+    {utils:getContext("")}
+  </json>
+};
 
 (:~ 
 : Cette fonction permet de lister les collections DTS dépendant d'une collection racine $utils:root.
@@ -542,7 +552,7 @@ declare function utils:getStringJson($key as xs:string, $metadata) {
 : Cette fonction permet de donner la liste des vocabulaires présents dans la réponse à la requête d'API
 : @return réponse XML, pour être ensuite sérialisées en JSON (format: attributes)
 : @param $response séquence XML pour trouver les namespaces présents (si nécessaire)
-: @todo revoir cette fonction et la gestion des namespace?
+: @todo utiliser la fonction namespace:uri() pour une meilleur gestion des namespaces?
 :)
 declare function utils:getContext($response) {
   <pair name="@context" type="object">
