@@ -30,3 +30,8 @@ jobs:
       run: |
         ./basex/bin/basexhttp
 
+    - name: Stop BaseX Server
+      run: |
+        ./basex/bin/basexhttpstop
+
+
