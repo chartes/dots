@@ -24,9 +24,8 @@ jobs:
 
     - name: Download and Install DoTS
       run: |
-        cd basex/webapp
-        git clone https://github.com/chartes/dots.git
-
+        cd basex/webapp/dots
+        
     - name: Start BaseX Server and Run Init Tests on DTS Endpoints
       run: |
         ./basex/bin/basexhttp &
