@@ -109,7 +109,7 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
             else (),
             if ($fragment/@xml:id)
             then
-              dots.lib:getFragmentMetadata($bdd, $ref)
+              dots.lib:getFragmentMetadata($bdd, xs:string($ref))
             else ()
           }</fragment>,
           if ($citeStructure/tei:citeStructure)

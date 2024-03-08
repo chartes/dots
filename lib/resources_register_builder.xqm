@@ -37,7 +37,7 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
       $count - $countDotsData
   let $content :=
     <resourcesRegister>
-      (: {
+      {
         let $mapping := db:get($dbName, $G:metadata)/metadataMap
         return
           if ($mapping)
@@ -55,7 +55,7 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
               namespace {"dc"} {"http://purl.org/dc/elements/1.1/"},
               namespace {"dct"} {"http://purl.org/dc/terms/"}
             )
-      } :)
+      }
       {dots.lib:getMetadata()}
       <member>
         <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">{
