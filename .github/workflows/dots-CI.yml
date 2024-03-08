@@ -24,7 +24,7 @@ jobs:
 
     - name: Download and Install DoTS
       run: |
-        cp . ./basex/webapp/
+        cp -r . ./basex/webapp/
         
     - name: Start BaseX Server and Run Init Tests on DTS Endpoints
       run: |
