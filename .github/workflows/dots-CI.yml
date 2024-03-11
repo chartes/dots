@@ -17,15 +17,7 @@ jobs:
 
     - name: Download and Install BaseX
       run: |
-        cd ..
-        wget https://files.basex.org/releases/10.7/BaseX107.zip
-        unzip BaseX107.zip
-        rm -r BaseX107.zip
-        cd ./basex/
-        chmod +x bin/basex
-        mv ../dots/ ./webapp/
-        cd ./webapp
-        ls -l
+        cd .. && wget https://files.basex.org/releases/10.7/BaseX107.zip && unzip BaseX107.zip && rm -r BaseX107.zip && cd ./basex/ && chmod +x bin/basex && mv ../dots/ ./webapp/ && cd ./webapp && ls -l
 
         
 
