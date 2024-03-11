@@ -17,11 +17,10 @@ jobs:
 
     - name: Download and Install BaseX
       run: |
-        cd .. 
-        ls -l
+        cd .. && ls -l
         wget https://files.basex.org/releases/10.7/BaseX107.zip
-        unzip BaseX107.zip && rm -r BaseX107.zip 
-        ls -l
+        unzip BaseX107.zip && rm -r BaseX107.zip && ls -l
+        cd ./basex && ls -l
 
         
 
