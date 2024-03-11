@@ -21,6 +21,9 @@ jobs:
         wget https://files.basex.org/releases/10.7/BaseX107.zip
         unzip BaseX107.zip && rm -r BaseX107.zip && ls -l
         cd ./basex && ls -l
+        chmod +x ./bin/basex 
+        cp -r ../dots/ ./webapp/ && cd ./webapp/ && ls -l
+        
 
         
 
