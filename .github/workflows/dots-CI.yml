@@ -28,6 +28,7 @@ jobs:
     - name: Launch Tests
       run : |
         pwd && ls -l
+        cd .. && ls -l
         
 
         
