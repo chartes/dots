@@ -24,7 +24,8 @@ jobs:
         cd ./basex && ls -l
         chmod +x ./bin/basex
         chmod +x ./bin/basexhttp
-        cp -r ../dots/ ./webapp/ && cd ./webapp/ && ls -l
+        # In place of "mv" can use "cp -r"
+        mv ../dots/ ./webapp/ && cd ./webapp/ && ls -l
 
     - name: Start BaseX backend
       run : |
