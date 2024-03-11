@@ -15,14 +15,19 @@ jobs:
       with:
         java-version: '11' # BaseX requiert Java
 
-    - name: Download and Install BaseX
+    - name: CI Init (Download & install BaseX, DoTS folder migration)
       run: |
+        # TODO: move everything in a init.sh script in the future
         cd .. && ls -l
         wget https://files.basex.org/releases/10.7/BaseX107.zip
         unzip BaseX107.zip && rm -r BaseX107.zip && ls -l
         cd ./basex && ls -l
         chmod +x ./bin/basex 
         cp -r ../dots/ ./webapp/ && cd ./webapp/ && ls -l
+    
+    - name: Launch Tests
+      run : |
+        pwd && ls -l
         
 
         
