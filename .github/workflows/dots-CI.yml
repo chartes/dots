@@ -22,13 +22,18 @@ jobs:
         wget https://files.basex.org/releases/10.7/BaseX107.zip
         unzip BaseX107.zip && rm -r BaseX107.zip && ls -l
         cd ./basex && ls -l
-        chmod +x ./bin/basex 
+        chmod +x ./bin/basex
+        chmod +x ./bin/basexhttp
         cp -r ../dots/ ./webapp/ && cd ./webapp/ && ls -l
     
     - name: Launch Tests
       run : |
-        pwd && ls -l
-        cd .. && ls -l
+        cd ../basex/
+        ./bin/basexhttp & 
+        BX=./bin/basex
+        BX ./webapp/dots/tests/launcher.xq 
+        
+        
         
 
         
