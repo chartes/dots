@@ -37,8 +37,8 @@ jobs:
       run : |
         cd ../basex/ &&
         ls -l &&
-        BX=./bin/basex &&
-        BX ./webapp/dots/tests/launcher.xq 
+        # TODO : refactoring generic command with variables loke ./bin/basex in the future
+        ./bin/basex ./webapp/dots/tests/launcher.xq 
         
         
         
