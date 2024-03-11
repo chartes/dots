@@ -25,12 +25,19 @@ jobs:
         chmod +x ./bin/basex
         chmod +x ./bin/basexhttp
         cp -r ../dots/ ./webapp/ && cd ./webapp/ && ls -l
+
+    - name: Start BaseX backend
+      run : |
+        cd ../basex/ &&
+        ./bin/basexhttp &
+        sleep 2 &&
+        curl http://localhost:8080 -I
     
     - name: Launch Tests
       run : |
-        cd ../basex/
-        ./bin/basexhttp & 
-        BX=./bin/basex
+        cd ../basex/ &&
+        ls -l &&
+        BX=./bin/basex &&
         BX ./webapp/dots/tests/launcher.xq 
         
         
