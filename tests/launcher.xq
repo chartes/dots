@@ -6,6 +6,12 @@ import module namespace initTests = "https://github.com/chartes/dots/initTests" 
 (: Deploiment Tests  :)
 "> Starting deploiment tests in progress...",
 
+"test init dots db...",
+(: create a specific function "checkDotsExists" in deploimentTests.xqm :)
+if (db:exists("dots")) 
+then "* ✅ DoTS Db created with success"
+else "* ❌ DoTS Db creation failed",
+
 (: 
 Check data in database 
 input:
