@@ -1,5 +1,7 @@
 # DoTS
 
+[![DoTS XQuery CI](https://github.com/chartes/dots/actions/workflows/dots-CI.yml/badge.svg)](https://github.com/chartes/dots/actions/workflows/dots-CI.yml)
+
 DoTS – BaseX DTS Tools
 
 ## Installation
