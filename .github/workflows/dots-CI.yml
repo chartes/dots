@@ -3,15 +3,18 @@ name: DoTS XQuery CI
 on: [push, pull_request]
 
 jobs:
-  CI-init-basex-dots:
+  tests:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
       name: Checkout code
+
     - name: Setup Java
       uses: actions/setup-java@v1
       with:
         java-version: '11' # BaseX requiert Java
+
     - name: CI Init (Download & install BaseX, DoTS folder migration)
       run: |
         # TODO: move everything in a init.sh script in the future
@@ -24,18 +27,20 @@ jobs:
         cp -r ../dots/ ./webapp/ &&
         ./bin/basex ./webapp/dots/scripts/dots_db_init.xq 
 
-  Start-basex-backend:
-      runs-on: ubuntu-latest
-      needs: CI-init-basex-dots
-      steps:
-        - name: Start BaseX backend
-          run : |
-            cd ../basex/ &&
-            ./bin/basexhttp &
-            sleep 2 &&
-            curl http://localhost:8080 -I
+    - name: Start BaseX backend
+      run : |
+        cd ../basex/ &&
+        ./bin/basexhttp &
+        sleep 2 &&
+        curl http://localhost:8080 -I
+    
+    - name: Launch Tests
+      run : |
+        cd ../basex/ && ls -l
+        # TODO : refactoring generic command with variables loke ./bin/basex in the future
+        ./bin/basex ./webapp/dots/tests/launcher.xq 
+        
         
         
 
         
-
