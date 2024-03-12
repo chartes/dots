@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+  <metadata>
+    <dct:created>2024-03-12T11:53:37.836+01:00</dct:created>
+    <dct:modified>2024-03-12T11:53:37.836+01:00</dct:modified>
+  </metadata>
+  <mapping><dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/><dc:creator xpath="//titleStmt/author" scope="document"/><dct:publisher xpath="//publicationStmt/publisher" scope="document"/></mapping>
+</metadataMap>

@@ -2,6 +2,8 @@ xquery version '3.0' ;
 
 module namespace initTests = "https://github.com/chartes/dots/initTests";
 
+declare default element namespace "https://github.com/chartes/dots/";
+
 declare function initTests:endpoint($url) {
   let $statutCode := http:send-request(<http:request method='get' status-only='true'/>, $url)
   return
