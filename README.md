@@ -1,5 +1,6 @@
 # DoTS
 
+[![Dots-badge](https://img.shields.io/badge/BaseX-DoTS-red)](https://img.shields.io/badge/BaseX-DoTS-red)
 [![DoTS XQuery CI](https://github.com/chartes/dots/actions/workflows/dots-CI.yml/badge.svg)](https://github.com/chartes/dots/actions/workflows/dots-CI.yml)
 
 DoTS – BaseX DTS Tools
