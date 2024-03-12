@@ -38,7 +38,7 @@ jobs:
         cd ../basex/ &&
         ls -l &&
         # init db dots
-        ./bin/basex ./webapp/dots/scripts/dots_db_init.xq
+        bash ./bin/basex ./webapp/dots/scripts/dots_db_init.xq &&
         # TODO : refactoring generic command with variables loke ./bin/basex in the future
         ./bin/basex ./webapp/dots/tests/launcher.xq 
         
