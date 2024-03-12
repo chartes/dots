@@ -345,7 +345,7 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : @see utils.xqm;utils:getFragmentsInRange
 : @todo revoir la gestion de start et end!
 :)
-declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string) {
+declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $citeType as xs:string) {
   let $project := utils:getDbName($resourceId)
   let $doc := 
     if (db:get($project)/tei:TEI[@xml:id = $resourceId])
@@ -376,7 +376,18 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
             <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$sequence}</dts:fragment>
           </TEI>
       else
-        $doc
+        if ($citeType)
+        then
+          <TEI xmlns="http://www.tei-c.org/ns/1.0">{
+            for $fragment in db:get($project, $G:fragmentsRegister)//dots:member/dots:fragment
+            where $fragment/@citeType = $citeType
+            where $fragment/@resourceId = $resourceId
+            let $node-id := $fragment/@node-id
+            return              
+              <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{db:get-id($project, $node-id)}</dts:fragment>
+          }</TEI>
+        else
+          $doc
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 

@@ -126,8 +126,9 @@ declare
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
+  %rest:query-param("citeType", "{$citeType}", "")
   %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $format as xs:string) {
+function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $citeType as xs:string, $format as xs:string) {
   if ($id != "")
   then
     let $dbName := db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName
@@ -137,7 +138,7 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
         let $ref := if ($ref) then $ref else ""
         let $start := if ($start) then $start else ""
         let $end := if ($end) then $end else ""
-        let $result := utils:document($id, $ref, $start, $end)
+        let $result := utils:document($id, $ref, $start, $end, $citeType)
         return
           if ($format)
           then 
