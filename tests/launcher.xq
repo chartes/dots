@@ -4,7 +4,7 @@ import module namespace test = "https://github.com/chartes/dots/tests" at "utils
 import module namespace initTests = "https://github.com/chartes/dots/initTests" at "initTestsEndpoint.xqm";
 
 (: Deploiment Tests  :)
-"Starting deploiment tests in progress...",
+"\t> Starting deploiment tests in progress...",
 
 (: 
 Check data in database 
@@ -16,10 +16,10 @@ return :
 
 (: ... :)
 
-"End deploiment tests",
+"\t> ✅ deploiment tests checked",
 
 (: Backend Tests  :)
-"Starting backend tests in progress...",
+"\t> Starting backend tests in progress...",
 
 (: ... :)
 
