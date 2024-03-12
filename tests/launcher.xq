@@ -25,7 +25,7 @@ return :
 "> ✅ deploiment tests checked",
 
 (: Backend Tests  :)
-"> Starting backend tests in progress...",
+"> Starting backend tests in progress..."
 
 (: ... :)
 
