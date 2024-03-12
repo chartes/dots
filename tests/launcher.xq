@@ -25,7 +25,7 @@ return :
 "> ✅ deploiment tests checked",
 
 (: Backend Tests  :)
-"> Starting backend tests in progress..."
+"> Starting backend tests in progress...",
 
 (: ... :)
 
@@ -40,5 +40,5 @@ initTests:check-value-response200("http://localhost:8080/api/dts/collection") (:
 
 (: TODO : create tests for 400 in the future :)
 
-"> ✅ API tests checked",
+"> ✅ API tests checked"
 
