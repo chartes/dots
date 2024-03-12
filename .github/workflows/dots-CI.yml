@@ -15,7 +15,7 @@ jobs:
       with:
         java-version: '11' # BaseX requiert Java
 
-    - name: CI Init (Download & install BaseX, DoTS folder migration)
+    - name: Create BaseX-DoTS test environment (Download & install BaseX, DoTS folder migration)
       run: |
         # TODO: move everything in a init.sh script in the future
         cd .. &&
@@ -37,7 +37,7 @@ jobs:
     - name: Launch Tests
       run : |
         cd ../basex/ && ls -l
-        # TODO : refactoring generic command with variables loke ./bin/basex in the future
+        # TODO : refactoring generic command with variables like ./bin/basex in the future
         ./bin/basex ./webapp/dots/tests/launcher.xq 
         
         
