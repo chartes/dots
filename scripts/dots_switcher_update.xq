@@ -1,4 +1,4 @@
-xquery version '3.0' ;
+xquery version '3.0';
 
 import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm";
 
