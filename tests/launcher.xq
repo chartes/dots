@@ -18,7 +18,7 @@ import module namespace deployTest = "https://github.com/chartes/dots/deploiment
 (: Compare new default mapping dots with deult mapping dots model :)
 (deployTest:check-boolean-response(deployTest:testMetadataMapping()), "* ✅ DoTS Db default metadata mapping created with success"),
 
-deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ total resources successfully counted",
+deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted",
 
 (: deployTest:check-boolean-response(deployTest:testDbSwitch()),
 deployTest:check-boolean-response(deployTest:testMetadataMapping()), :)

@@ -41,7 +41,6 @@ declare %unit:test function deployTest:check-boolean-response($returned) {
     unit:assert-equals($r, $expected) 
 };
 
-
 (: Tests de project_db_init :)
 declare function deployTest:getNumberResources() {
   let $collections :=
