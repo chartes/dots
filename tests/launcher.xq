@@ -10,9 +10,6 @@ import module namespace deployTest = "https://github.com/chartes/dots/deploiment
 
 "test init dots db...",
 (: create a specific function "checkDotsExists" in deploimentTests.xqm :)
-(: if (db:exists("dots")) 
-then "* ✅ DoTS Db created with success"
-else "* ❌ DoTS Db creation failed", :)
 
 (: Check if db dots exists :)
 (deployTest:check-boolean-response(db:exists($G:dots)), "* ✅ DoTS Db created with success"),
@@ -21,7 +18,7 @@ else "* ❌ DoTS Db creation failed", :)
 (: Compare new default mapping dots with deult mapping dots model :)
 (deployTest:check-boolean-response(deployTest:testMetadataMapping()), "* ✅ DoTS Db default metadata mapping created with success"),
 
-deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅",
+deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ total resources successfully counted",
 
 (: deployTest:check-boolean-response(deployTest:testDbSwitch()),
 deployTest:check-boolean-response(deployTest:testMetadataMapping()), :)

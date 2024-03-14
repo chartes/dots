@@ -26,6 +26,7 @@ jobs:
         chmod +x ./bin/basexhttp &&
         cp -r ../dots/ ./webapp/ &&
         ./bin/basex ./webapp/dots/scripts/dots_db_init.xq 
+        ./bin/basex -b dbName=encpos -b projectDirPath=./webapp/dots/tests/data_test/encpos ./webapp/dots/scripts/project_db_init.xq
 
     - name: Start BaseX backend
       run : |
