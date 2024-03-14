@@ -57,7 +57,7 @@ declare function deployTest:getNumberResources() {
 };
 
 declare %unit:test function deployTest:checkTotalResources($returned) {
-  let $collectionsExpected := 4
+  let $collectionsExpected := 3
   let $documentsExpected := 9
   return
     (
