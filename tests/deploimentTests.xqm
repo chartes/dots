@@ -6,11 +6,13 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 import module namespace functx = 'http://www.functx.com';
 
 declare default element namespace "https://github.com/chartes/dots/";
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $deployTest:dbSwitchModel := doc(concat($G:webapp, "dots/tests/data_model/dots_db_switcher.xml"));
+declare variable $deployTest:dbSwitchModel := doc(concat($G:webapp, "dots/tests/data_model/dots_db/dots_db_switcher.xml"));
 
-declare variable $deployTest:mappingModel := doc(concat($G:webapp, "dots/tests/data_model/dots_default_metadata_mapping.xml"));
+declare variable $deployTest:mappingModel := doc(concat($G:webapp, "dots/tests/data_model/dots_db/dots_default_metadata_mapping.xml"));
 
+(: Tests de dots_db_init :)
 declare function deployTest:testDbSwitch() {
   let $dots := db:get($G:dots)/dbSwitch
   let $totalProjects := $dots/metadata/totalProjects
@@ -38,3 +40,38 @@ declare %unit:test function deployTest:check-boolean-response($returned) {
   return
     unit:assert-equals($r, $expected) 
 };
+
+
+(: Tests de project_db_init :)
+declare function deployTest:getNumberResources() {
+  let $collections :=
+    for $collection in db:dir("encpos", "")
+    where $collection != "metadata"
+    return
+      $collection
+  let $documents := count(db:get("encpos")/tei:TEI)
+  return
+    (
+      count($collections),
+      $documents
+    )
+};
+
+declare %unit:test function deployTest:checkTotalResources($returned) {
+  let $collectionsExpected := 4
+  let $documentsExpected := 9
+  return
+    (
+      unit:assert-equals($returned[1], $collectionsExpected),
+      unit:assert-equals($returned[2], $documentsExpected)
+    ) 
+};
+
+
+
+
+
+
+
+
+

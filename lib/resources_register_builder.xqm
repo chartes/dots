@@ -156,9 +156,11 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
     if ($document/@xml:id)
     then $document/@xml:id
     else
-      if (contains($path, "/"))
-      then functx:substring-after-last($path, "/")
-      else $path
+      substring-before(
+        if (contains($path, "/"))
+        then functx:substring-after-last($path, "/")
+        else $path,
+       ".xml")
   let $maxCiteDepth := count($document//tei:refsDecl//tei:citeStructure)
   let $parentIds := 
     if (contains($path, "/"))
@@ -236,28 +238,6 @@ declare function dots.lib:createContent($itemDeclaration, $record) {
       } 
     else 
       ()
-};
-
-(:~ 
-: Cette fonction permet de construire l'élément <member/> correspondant à une collection, avec les métadonnées obligatoires: @id, @type, title, totalItems (à compléter probablement)
-: @param $path chaîne de caractères.
-: @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
-: @todo revoir l'ajout des métadonnées d'une collection. 
-:)
-declare function dots.lib:collection($bdd as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
-  let $totalItems := count(db:dir($bdd, $collection))
-  let $parent := 
-    if ($path = "") 
-    then $idProject 
-    else 
-      if (contains($path, "/"))
-      then
-        functx:substring-after-last($path, "/")
-      else $path
-  return
-    <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
-      dots.lib:getCollectionMetadata($bdd, $collection)
-    }</collection>
 };
 
 declare function dots.lib:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {

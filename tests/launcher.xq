@@ -17,9 +17,11 @@ else "* ❌ DoTS Db creation failed", :)
 (: Check if db dots exists :)
 (deployTest:check-boolean-response(db:exists($G:dots)), "* ✅ DoTS Db created with success"),
 (: Compare new switcher dots with switcher dots model :)
-(deployTest:check-boolean-response(deployTest:testDbSwitch()), "* ✅ DoTS Db switcher created with success"),
+(: (deployTest:check-boolean-response(deployTest:testDbSwitch()), "* ✅ DoTS Db switcher created with success"), :)
 (: Compare new default mapping dots with deult mapping dots model :)
 (deployTest:check-boolean-response(deployTest:testMetadataMapping()), "* ✅ DoTS Db default metadata mapping created with success"),
+
+deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅",
 
 (: deployTest:check-boolean-response(deployTest:testDbSwitch()),
 deployTest:check-boolean-response(deployTest:testMetadataMapping()), :)
