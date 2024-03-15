@@ -6,11 +6,13 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
-(: declare variable $dbName external; :)
-
 declare function dots.log:log($dbName) {
   let $project := db:get($dbName, $G:resourcesRegister)//collection[not(@parentIds)]
   let $log :=
+    let $mapping := 
+      if (db:get($dbName)/metadataMap/mapping)
+      then "user"
+      else "default"
     let $collections := db:get($dbName, $G:resourcesRegister)//collection[@parentIds]
     let $countCollections := count($collections)
     let $metadatasColl :=
@@ -38,6 +40,7 @@ declare function dots.log:log($dbName) {
     return
       <log>
         <project>{normalize-space($project)}</project>
+        <mapping>{$mapping}</mapping>
         <collections>{$countCollections}</collections>
         <collectionsMetadata>{$metadatasColl}</collectionsMetadata>
         <documents>{$countDocuments}</documents>
