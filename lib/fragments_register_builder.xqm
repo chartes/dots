@@ -101,12 +101,9 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
                 $xpathCiteData)
               let $valueQuery := xquery:eval($query, map {"": $fragment})
               return
-                if ($valueQuery) 
-                then 
-                  for $v in $valueQuery
-                  return
-                    element {$nameMetadata} {normalize-space($v)} else ()
-            else (),
+                for $v in $valueQuery
+                return
+                  element {$nameMetadata} {normalize-space($v)} else (),
             if ($fragment/@xml:id)
             then
               dots.lib:getFragmentMetadata($bdd, xs:string($ref))
