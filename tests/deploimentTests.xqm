@@ -67,6 +67,10 @@ declare %unit:test function deployTest:checkTotalResources($returned) {
     ) 
 };
 
+declare %unit:test function deployTest:check-N-Values($n as xs:integer) {
+  unit:assert-equals($n, 1)
+};
+
 declare %unit:test function deployTest:deepEqual($returned, $expected) {
   unit:assert-equals($returned, $expected)
 };

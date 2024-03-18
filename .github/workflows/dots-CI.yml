@@ -27,6 +27,8 @@ jobs:
         cp -r ../dots/ ./webapp/ &&
         ./bin/basex ./webapp/dots/scripts/dots_db_init.xq &&
         ./bin/basex -b dbName=encpos -b projectDirPath=/home/runner/work/dots/basex/webapp/dots/tests/data_test/encpos/ ./webapp/dots/scripts/project_db_init.xq
+        ./bin/basex -b dbName=encpos -b topCollectionId=ENCPOS ./webapp/dots/scripts/project_registers_create.xq
+
     - name: Start BaseX backend
       run : |
         cd ../basex/ &&

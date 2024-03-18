@@ -5,54 +5,57 @@ import module namespace test = "https://github.com/chartes/dots/tests" at "utils
 import module namespace initTests = "https://github.com/chartes/dots/initTests" at "initTestsEndpoint.xqm";
 import module namespace deployTest = "https://github.com/chartes/dots/deploimentTests" at "deploimentTests.xqm";
 
+declare default element namespace "https://github.com/chartes/dots/";
+
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (: Deploiment Tests  :)
-(: "> Starting deploiment tests in progress...",
+"> Starting deploiment tests in progress...",
 
-"test init dots db...",
-(: create a specific function "checkDotsExists" in deploimentTests.xqm :)
+deployTest:check-boolean-response(db:exists($G:dots)), 
 
-(: Check if db dots exists :)
-(deployTest:check-boolean-response(db:exists($G:dots)), "* ✅ DoTS Db created with success"),
-(: Compare new switcher dots with switcher dots model :)
-(: (deployTest:check-boolean-response(deployTest:testDbSwitch()), "* ✅ DoTS Db switcher created with success"), :)
-(: Compare new default mapping dots with default mapping dots model :)
-(deployTest:check-boolean-response(deployTest:testMetadataMapping()), "* ✅ DoTS Db default metadata mapping created with success"),
+"* ✅ DoTS Db created with success",
 
-deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted", :)
+deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted",
 
 for $encposDoc in db:get("encpos")/tei:TEI
 let $idDoc := $encposDoc/@xml:id
 let $path := concat($G:webapp, "dots/tests/data_model/encpos/data")
 let $coll := collection($path)/tei:TEI[@xml:id = $idDoc]
 return
+  deployTest:deepEqual($encposDoc, $coll),
+  
+"* ✅ TEI documents creation checked",
+ 
+let $resources_register := db:get("encpos", "dots/resources_register.xml")//member
+let $fragments_register := db:get("encpos", "dots/fragments_register.xml")//member
+let $model_register := concat($G:webapp, "dots/tests/data_model/encpos/dots_registers/")
+let $model_resources_register := doc(concat($model_register, "resources_register.xml"))//member
+let $model_fragments_register := doc(concat($model_register, "fragments_register.xml"))//member
+return
   (
-    deployTest:deepEqual($encposDoc, $coll),
-    "> ✅ deploiment tests checked"
-  )
- 
- 
+    deployTest:deepEqual($resources_register, $model_resources_register),
+    deployTest:deepEqual($fragments_register, $model_fragments_register)
+  ),
 
+"* ✅ DoTS registers creation checked",
 
-
-
-
-
-(: deployTest:check-boolean-response(deployTest:testDbSwitch()),
-deployTest:check-boolean-response(deployTest:testMetadataMapping()), :)
-
-(: 
-Check data in database 
-input:
-  XML from database ...
-return : 
-  OK (str)
-:)
+let $count_N :=
+  for $frag in db:get("encpos", "dots/fragments_register.xml")//member/fragment
+  let $n := $frag/@n
+  group by $n
+  let $count := count($n)
+  return
+    $count
+return
+  deployTest:check-N-Values(max($count_N)),
+  
+"* ✅ values of attributes '@n' for fragments checked",
+"> ✅ deploiment tests checked"
 
 (: ... :)
 
-(: "> ✅ deploiment tests checked",
+(: 
 
 (: Backend Tests  :)
 "> Starting backend tests in progress...",
