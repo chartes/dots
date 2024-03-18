@@ -23,13 +23,13 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted", :)
 
 for $encposDoc in db:get("encpos")/tei:TEI
-let $idDoc := $encposDoc/@xml:od
+let $idDoc := $encposDoc/@xml:id
 let $path := concat($G:webapp, "dots/tests/data_model/encpos/data")
 let $coll := collection($path)/tei:TEI[@xml:id = $idDoc]
 return
-  if ($encposDoc)
-  then deployTest:deepEqual($encposDoc, $coll)
-
+  deployTest:deepEqual($encposDoc, $coll)
+ 
+ 
 
 
 
