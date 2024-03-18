@@ -29,10 +29,21 @@ declare function dots.log:log($dbName) {
       order by $metadata
       return
         <metadata>{$metadata}</metadata>
-    let $fragments := db:get($dbName, $G:fragmentsRegister)//fragment
+    let $fragments := 
+      for $frag in db:get($dbName, $G:fragmentsRegister)//fragment
+      let $citeType := $frag/@citeType
+      group by $citeType 
+      let $countFrag := count($frag)
+      let $level := normalize-space($frag[1]/@level)
+      return
+        <fragment>
+          <citeType>{$citeType}</citeType>
+          <number>{$countFrag}</number>
+          <level>{$level}</level>
+        </fragment>
     let $countFragments := count($fragments)
     let $metadatasFrag :=
-      for $metadata in $fragments/node()/name()
+      for $metadata in db:get($dbName, $G:fragmentsRegister)//fragment/node()/name()
       group by $metadata
       order by $metadata
       return
@@ -45,7 +56,7 @@ declare function dots.log:log($dbName) {
         <collectionsMetadata>{$metadatasColl}</collectionsMetadata>
         <documents>{$countDocuments}</documents>
         <documentsMetadata>{$metadatasDoc}</documentsMetadata>
-        <fragments>{$countFragments}</fragments>
+        <fragments>{$fragments}</fragments>
         <fragmentsMetadata>{$metadatasFrag}</fragmentsMetadata>
       </log>
   return
