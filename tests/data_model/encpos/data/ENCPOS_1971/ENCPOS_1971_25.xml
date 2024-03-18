@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_25" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L’Église et les clercs face aux béguines et aux beghards du Rhin supérieur du <hi rend="sc">xiv</hi><hi rend="sup">e</hi> siècle au <hi rend="sc">xv</hi><hi rend="sup">e</hi> siècle</title>
+        <author ref="https://www.idref.fr/027127133">Jean-Claude Schmitt</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_25.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 171-174</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="171" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">L’église et les clercs face aux béguines
+        <lb/>et aux béghards du Rhin supérieur
+        <lb/>du xiv<hi rend="sup">e</hi> au xv<hi rend="sup">e</hi> siècle</head>
+      <byline>
+        par
+        <forename>Jean-Claude</forename>
+        <surname>Schmitt</surname>
+        <roleName>diplômé de maîtrise d’histoire</roleName>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Notre étude n’est pas une histoire des béguinages, mais un essai sur la manière dont la société se les représentait, sur le langage, le plus souvent hostile, qu’elle a tenu sur les béguines et les béghards pendant plus de deux siècles ; période longue sans doute, mais qui seule permet de saisir une évolution des mentalités dans ses relations avec les modifications des rapports sociaux.</p>
+        <p>Plus précisément, en raison de l’abondance de la documentation d’origine ecclésiastique, nous avons choisi les clercs et la hiérarchie de l’Église comme auteur collectif du langage à étudier. Parce que le mode de vie des béguines et des béghards, bien qu’ils fussent des laïcs, était proche de celui des clercs, ces derniers cherchèrent plus que d’autres à les définir pour s’en distinguer et s’efforcèrent de leur opposer les normes de la vie laïque idéale telle qu’ils l’entendaient. Parce que les habitants des béguinages, ni clercs, ni laïcs comme les autres, constituaient ce « Zwischenstand » dont parlent les historiens allemands, nous trouvons en eux un champ d’observation privilégié des rapports de la société laïque et de la société ecclésiastique, à la jonction de ces deux mondes. Mais cette ambiguïté des béguinages explique aussi l’hostilité des clercs : c’est sur le mode de la polémique que se déploya leur langage.</p>
+      </div>
+      <div>
+        <head rend="uc">Première partie
+          <lb/>L’hérétique</head>
+        <p>Condamnés pour hérésie par le concile de Vienne (1311), les béguines et les béghards n’ont pourtant pas cessé de se multiplier au xiv<hi rend="sup">e</hi> siècle ; s’ils étaient absents de Constance, ils se comptaient par centaines à Strasbourg et à Bâle. <pb n="172" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_02.TIF/full/full/0/default.jpg"/>A la suite du concile et de la papauté, la hiérarchie locale a sévèrement condamné les béguines et les béghards. Pour cette période, les documents non publiés sont rares, mais nous avons largement utilisé le fonds <hi rend="i">Predicatores N</hi> 5 du Staatsarchiv des Kantons Basel-Stadt, qui concerne le « Beginenstreit », la polémique contre les béguines de Bâle au début du <num>xv<hi rend="sup">e</hi></num> siècle ; il comprend des mandements des évêques de Bâle et de Constance, des procès-verbaux de jugements des légats pontificaux Oddon de Colonna et Jacobinus de Torso, des suppliques des parties en présence, un fragment de correspondance. Ces sources très précieuses sont inédites.</p>
+        <p>Jusqu’au début du <num>xv<hi rend="sup">e</hi></num> siècle, la béguine et le béghard étaient essentiellement, pour l’Église, des hérétiques. En réalité, ce grief nous apparaît peu fondé : la hiérarchie a étendu à tous les béguinages l’accusation que seule méritait une petite minorité hétérodoxe, liée à la secte des Frères du Libre Esprit. Mais tous formaient un groupe mal intégré à la communauté de l’Église, évoquaient par leur mode de vie l’activité des hérétiques, même s’ils étaient parfaitement orthodoxes. Tous étaient d’emblée soupçonnés d’hérésie, parce qu’ils semblaient menacer l’ordre de l’Église, assimilé par les clercs à l’ordre de la société tout entière. Sans être coupables d’hétérodoxie, ils se retrouvaient donc hérétiques.</p>
+      </div>
+      <div>
+        <head rend="uc">Deuxième partie
+          <lb/>Le « mendiant-valide »</head>
+        <p>Au début du <num>xv<hi rend="sup">e</hi></num> siècle, l’accusation d’hérésie ne fut plus proférée à l’encontre des béguines et des béghards ; désormais les clercs leur reprochèrent d’être des « mendiants-valides ». Ainsi, le Prêcheur bâlois Johannes Mülberg, vers 1405, dans ses traités inédits (<hi rend="i">Positio contra statum Beginarum et Lolhardorum,</hi> qui répond à la <hi rend="i">Positio pro defensione Beginarum</hi> du Mineur Rudolphe Buchsmann, et <hi rend="i">Materia contra Baghardos</hi>), et, peu après, le chanoine de Constance Félix Hemmerlin, dont les œuvres furent publiées en 1497 par Sébastien Brant (notamment le <hi rend="i">De valido mendicante</hi> et le <hi rend="i">Nota contra aliquos Lolhardos et Beghardos ac alios qui dicunt res Ecclesie esse elemosynas</hi>). A la fin du siècle, les incunables des humanistes alsaciens, tel Geiler de Kaisersberg, ou suisses, tel Thomas Murner, répandirent largement la nouvelle image polémique des béguines et des béghards.</p>
+        <p>Les traits qui composaient cette image étaient anciens et le grief de « mendicité-valide » même était emprunté explicitement à Guillaume de Saint-Amour. Mais l’utilisation de ce grief était nouveau dans la polémique et traduit une profonde modification des conditions dans lesquelles elle s’est déroulée au <num>xv<hi rend="sup">e</hi></num> siècle. De plus en plus, le « béghard-mendiant valide » fut présenté comme le type même du parasite social, niant les valeurs d’un monde qui, pour les clercs mêmes, n’étaient plus définies par l’Église seule, mais aussi par la bourgeoisie des villes, en fonction de son idéal d’austère labeur et de sa méfiance de la pauvreté, qu’elle assimilait à l’oisiveté. Cette attitude et ce <pb n="173" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_03.TIF/full/full/0/default.jpg"/>langage étaient déterminés par les inégalités sociales qui allaient croissantes parmi les laïcs, comme au sein même du clergé.</p>
+        <p>La modification du langage polémique, au début du <num>xv<hi rend="sup">e</hi></num> siècle, manifeste une prise de conscience, par les clercs, du monde urbain et de ses valeurs ; elle a peut-être été favorisée par la réunion, dans notre région, des conciles de Constance et de Bâle, où les laïcs firent entendre leurs récriminations contre une Église profondément divisée et affaiblie.</p>
+        <p>Au même moment s’arrêta aussi l’expansion des béguinages, que les condamnations du <num>xiv<hi rend="sup">e</hi></num> siècle avaient été incapables de freiner. Simultanément à Bâle et à Strasbourg, les nouvelles fondations cessèrent et les maisons existantes s’éteignirent les unes après les autres. Il semble que les bienfaiteurs traditionnels et les béguines mêmes aient alors compris que ce mode de vie était révolu : c’est l’époque où des béguinages se convertirent en hospices et des béguines en garde-malades, sacrifiant à l’idéal de travail de toute la société.</p>
+      </div>
+      <div>
+        <head rend="uc">Aperçus méthodologiques</head>
+        <p>Des problèmes posés à l’historien des mentalités, le moindre n’est pas l’inadaptation fréquente des formes d’expression, des instruments linguistiques, traditionnels et souvent figés, aux situations nouvelles auxquelles les hommes du Moyen âge étaient confrontés. Par exemple, il leur paraissait nécessaire de citer abondamment les « autorités » ; mais, pour nous, importe moins ce que disent ces citations que l’usage qui en a été fait à un moment donné, parce qu’il témoigne seul du rapport social dans lequel l’auteur se situe. C’est pourquoi nous croyons bon de distinguer le discours, qui est la forme traditionnelle mais nécessaire de l’expression, du langage, qu’il faut lire à travers et au-delà de ce discours, et qui est seul le produit des conditions historiques dans lesquelles a écrit l’auteur. Pour atteindre ce langage, divers moyens peuvent être mis en œuvre ; par exemple, l’étude statistique des citations employées sur un même sujet par des auteurs différents montre que l’utilisation des « autorités » n’est pas la même selon l’assise matérielle, la situation sociale de celui qui écrit.</p>
+      </div>
+      <div>
+        <head rend="uc">Tableaux, graphiques, illustrations</head>
+        <p>Par des tableaux statistiques et des graphiques nous avons voulu montrer tout le parti que l’historien des mentalités pouvait tirer de telles méthodes :</p>
+        <p>1. Graphique montrant la force des résistances à l’évolution dans le langage des bulles pontificales et des mandements épiscopaux dirigés contre les béguines et les béghards au <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+        <p>2. Graphique montrant l’évolution du nombre des béguinages fondés tous les dix ans, entre le milieu du xin<hi rend="sup">e</hi> siècle et le début du xvi<hi rend="sup">e</hi> siècle, dans les villes de Cologne, Mayence, Strasbourg et Bâle.</p>
+        <pb n="174" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_04.TIF/full/full/0/default.jpg"/>
+        <p>3. Graphique illustrant l’évolution numérique des béguinages de Strasbourg et de Bâle, du xiv<hi rend="sup">e</hi> au <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+        <p>4. Tableau statistique des citations bibliques et canoniques utilisées pour dépeindre le « béghard-mendiant-valide ».</p>
+        <p>5. Tableau statistique des citations bibliques et canoniques utilisées contre les béguines et les béghards par J. Mülberg, O.P., et F. Hemmerlin, chanoine de Zurich.</p>
+        <p>6. Graphique montrant comment ces deux clercs, disposant du même arsenal d’arguments, en ont fait un usage différent.</p>
+        <p>7. Trois illustrations satiriques, extraites de l’œuvre du Mineur Thomas Murner, au début du <num>xvi<hi rend="sup">e</hi></num> siècle, faisant apparaître la béguine sous les traits d’une « folle » inutile et perverse.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

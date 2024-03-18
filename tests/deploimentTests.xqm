@@ -46,6 +46,7 @@ declare function deployTest:getNumberResources() {
   let $collections :=
     for $collection in db:dir("encpos", "")
     where $collection != "metadata"
+    where $collection != "dots"
     return
       $collection
   let $documents := count(db:get("encpos")/tei:TEI)
@@ -66,7 +67,9 @@ declare %unit:test function deployTest:checkTotalResources($returned) {
     ) 
 };
 
-
+declare %unit:test function deployTest:deepEqual($returned, $expected) {
+  unit:assert-equals($returned, $expected)
+};
 
 
 

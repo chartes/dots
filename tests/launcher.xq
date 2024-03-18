@@ -5,8 +5,10 @@ import module namespace test = "https://github.com/chartes/dots/tests" at "utils
 import module namespace initTests = "https://github.com/chartes/dots/initTests" at "initTestsEndpoint.xqm";
 import module namespace deployTest = "https://github.com/chartes/dots/deploimentTests" at "deploimentTests.xqm";
 
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+
 (: Deploiment Tests  :)
-"> Starting deploiment tests in progress...",
+(: "> Starting deploiment tests in progress...",
 
 "test init dots db...",
 (: create a specific function "checkDotsExists" in deploimentTests.xqm :)
@@ -15,10 +17,24 @@ import module namespace deployTest = "https://github.com/chartes/dots/deploiment
 (deployTest:check-boolean-response(db:exists($G:dots)), "* ✅ DoTS Db created with success"),
 (: Compare new switcher dots with switcher dots model :)
 (: (deployTest:check-boolean-response(deployTest:testDbSwitch()), "* ✅ DoTS Db switcher created with success"), :)
-(: Compare new default mapping dots with deult mapping dots model :)
+(: Compare new default mapping dots with default mapping dots model :)
 (deployTest:check-boolean-response(deployTest:testMetadataMapping()), "* ✅ DoTS Db default metadata mapping created with success"),
 
-deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted",
+deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted", :)
+
+for $encposDoc in db:get("encpos")/tei:TEI
+let $idDoc := $encposDoc/@xml:od
+let $path := concat($G:webapp, "dots/tests/data_model/encpos/data")
+let $coll := collection($path)/tei:TEI[@xml:id = $idDoc]
+return
+  if ($encposDoc)
+  then deployTest:deepEqual($encposDoc, $coll)
+
+
+
+
+
+
 
 (: deployTest:check-boolean-response(deployTest:testDbSwitch()),
 deployTest:check-boolean-response(deployTest:testMetadataMapping()), :)
@@ -33,7 +49,7 @@ return :
 
 (: ... :)
 
-"> ✅ deploiment tests checked",
+(: "> ✅ deploiment tests checked",
 
 (: Backend Tests  :)
 "> Starting backend tests in progress...",
@@ -51,5 +67,5 @@ initTests:check-value-response200("http://localhost:8080/api/dts/collection"), (
 
 (: TODO : create tests for 400 in the future :)
 
-"> ✅ API tests checked"
+"> ✅ API tests checked" :)
 

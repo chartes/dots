@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1849_08" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wala et Louis le Débonnaire</title>
+        <author ref="https://www.idref.fr/030150086">Auguste Himly</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1849/ENCPOS_1849_08.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1849 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1849</date>, <biblScope>p. 15-16</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1849"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="15" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_08/ENCPOS_1849_08_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Wala et Louis le Débonnaire.</head>
+      <byline>
+        Thèse pour le diplôme d’archiviste paléographe, soutenue par
+        <forename>Auguste</forename>
+        <surname>Himly</surname>
+        <roleName rend="uc">Licencié ès lettres, Professeur d’Histoire au collège Rollin</roleName>
+      </byline>
+      <div>
+        <head rend="uc">I.</head>
+        <p>Parmi les sources relatives à Wala et à Louis le Débonnaire, l’<hi rend="i">Epitaphium Arsenii</hi> est la plus importante, mais aussi la moins aisée à comprendre.</p>
+      </div>
+      <div>
+        <head rend="uc">II.</head>
+        <p>Wala se proposa pour but de continuer, sous Louis le Débonnaire, la double œuvre de Charlemagne, soumission de l’Europe occidentale sous la suprématie franque, et fusion des principes germaniques et romains dans l’intérieur de l’empire franc.</p>
+      </div>
+      <div>
+        <head rend="uc">III.</head>
+        <p>Louis le Débonnaire, comme l’avait prévu Wala, se trouva incapable de diriger l’empire franc par lui-même. Sous la direction de ses premiers favoris, il ne s’occupa que d’affaires religieuses ; sous l’influence de Judith, il bouleversa l’empire en s’attaquant à l’acte de partage de 817.</p>
+      </div>
+      <div>
+        <pb n="16" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1849_08/ENCPOS_1849_08_02.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">IV.</head>
+        <p>La charte de partage de 817 , rédigée par l’aristocratie franque dans un sens essentiellement unitaire, devint la grande charte de ses droits. Toutes ses révoltes postérieures eurent pour but de la maintenir contre les mauvais vouloirs de Louis et de Judith. Elles échouèrent par suite de l’attachement personnel des Germains pour Louis.</p>
+      </div>
+      <div>
+        <head rend="uc">V.</head>
+        <p>Le grand résultat du règne de Louis le Débonnaire fut la formation des nationalités modernes sur les ruines du grand empire carlovingien. Ce résultat ne fut acheté qu’au prix des calamités les plus grandes pour toute l’Europe occidentale.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
