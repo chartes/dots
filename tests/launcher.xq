@@ -27,7 +27,10 @@ let $idDoc := $encposDoc/@xml:id
 let $path := concat($G:webapp, "dots/tests/data_model/encpos/data")
 let $coll := collection($path)/tei:TEI[@xml:id = $idDoc]
 return
-  deployTest:deepEqual($encposDoc, $coll)
+  (
+    deployTest:deepEqual($encposDoc, $coll),
+    "> ✅ deploiment tests checked"
+  )
  
  
 
