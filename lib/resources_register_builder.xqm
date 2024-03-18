@@ -45,15 +45,13 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
             for $prefix in in-scope-prefixes($mapping)
             where $prefix != ""
             where $prefix != "dc"
-            where $prefix != "dct"
             where $prefix != "xml"
             let $ns := namespace-uri-for-prefix($prefix, $mapping)
             return
               namespace {$prefix} {$ns}
           else 
             (
-              namespace {"dc"} {"http://purl.org/dc/elements/1.1/"},
-              namespace {"dct"} {"http://purl.org/dc/terms/"}
+              namespace {"dc"} {"http://purl.org/dc/elements/1.1/"}
             )
       }
       {dots.lib:getMetadata()}
@@ -235,7 +233,7 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
           let $SrcPath := db:list($bdd)[contains(., $SrcDocName)]
           let $csv := db:get($bdd, $SrcPath)/*:csv
           let $findIdInCSV := normalize-space($metadata/@resourceId)
-          let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]       
+          let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
           return
             if ($record and $metadata) 
             then dots.lib:createContent($metadata, $record)
