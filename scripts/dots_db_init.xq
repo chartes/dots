@@ -9,6 +9,6 @@ then update:output("* ✅ La base de données 'dots' existe déjà. Commande non
 else
   (
     dots.lib:dots_db_init(),
-    update:output("* ✅ La base de données 'dots' a été initialisée
+    update:output("* ✅ La base de données 'dots' a été initialisée.
 ")
   )

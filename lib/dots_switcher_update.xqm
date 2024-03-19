@@ -26,17 +26,25 @@ declare updating function dots.lib:switcher_update($dbName) {
 
 declare function dots.lib:getProject($dbName as xs:string) {
   let $dtsResourceId := db:get($dbName, $G:resourcesRegister)//member/collection[not(@parentIds)]/@dtsResourceId
+  let $projectInSwitcher := db:get($G:dots)//member/project[@dbName = $dbName]
   return
-    <project dtsResourceId="{$dtsResourceId}" dbName="{$dbName}"/>
+    if ($projectInSwitcher)
+    then ()
+    else 
+      <project dtsResourceId="{$dtsResourceId}" dbName="{$dbName}"/>
 };
 
 declare function dots.lib:getMembers($dbName as xs:string) {
   for $resources in db:get($dbName, $G:resourcesRegister)//member/node()[@parentIds]
   let $type := $resources/name()
   let $dtsResourceId := $resources/@dtsResourceId
+  let $resourceInSwitcher := db:get($G:dots)//member/node()[@dtsResourceId = $dtsResourceId][@dbName = $dbName]
   return
-    element {$type} {
-      attribute {"dtsResourceId"} {$dtsResourceId},
-      attribute {"dbName"} {$dbName}
-    }
+    if ($resourceInSwitcher)
+    then ()
+    else
+      element {$type} {
+        attribute {"dtsResourceId"} {$dtsResourceId},
+        attribute {"dbName"} {$dbName}
+      }
 };

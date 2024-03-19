@@ -4,4 +4,11 @@ import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../
 
 declare variable $srcPath external;
 
-dots.lib:handle($srcPath)
+if (file:exists($srcPath))
+then
+  (
+    dots.lib:handle($srcPath),
+    update:output("* ✅ les collections transverses ont été créées.")
+  )
+else
+  update:output("* ❌ Erreur : problème de chemin.")

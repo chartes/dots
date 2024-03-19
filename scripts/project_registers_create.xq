@@ -7,18 +7,27 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 declare variable $dbName external;
 declare variable $topCollectionId external;
 
-if (db:exists($dbName))
+if ($dbName = "" or $topCollectionId ="")
 then
-  (
-    dots.lib:createResourcesRegister($dbName, $topCollectionId),
-    if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister))
-    then
+  ()
+else
+  if (db:exists($dbName))
+  then
+    (
+      if ($topCollectionId = "")
+      then update:output("* ❌ Erreur : renseigner la variable topCollectionId (identifiant du projet)")
+      else
       (
-        update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été recréés.
+        dots.lib:createResourcesRegister($dbName, $topCollectionId),
+        if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister))
+        then
+          (
+            update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été recréés.
 "))
-      )
-    else 
-      (
-        update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été créés.
+          )
+        else 
+          (
+            update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été créés.
 ")))     
-  )
+      )
+    )

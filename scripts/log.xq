@@ -37,6 +37,8 @@ declare function dots.log:log($dbName) {
       }</metadatas>
     let $fragments := 
       <fragment>{
+        if (db:get($dbName, $G:fragmentsRegister)//fragment)
+        then
         for $frag at $pos in db:get($dbName, $G:fragmentsRegister)//fragment
         let $citeType := $frag/@citeType
         group by $citeType 
@@ -49,6 +51,7 @@ declare function dots.log:log($dbName) {
           else
             concat("
 - type '", $citeType, "' : ", $countFrag, " (level ", $level, ")")
+        else "0"
       }</fragment>
     let $countFragments := count($fragments)
     let $metadatasFrag :=
