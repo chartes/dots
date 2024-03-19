@@ -18,7 +18,6 @@ else
   "* ✅ DoTS Db created with success", 
 
 
-
 deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted",
 
 for $encposDoc in db:get("encpos")/tei:TEI
