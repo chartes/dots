@@ -196,12 +196,12 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($bdd)/metadataMap/mapping
   let $dcTitle :=
-    if ($externalMetadataMap/dc:title[@scope="document"])
+    if ($externalMetadataMap and $externalMetadataMap/dc:title[@scope="document"])
     then ()
     else <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
   return
     (
-      if ($dcTitle) 
+      (: if ($dcTitle) 
       then
         let $xpathTitle := $dcTitle/@xpath
         let $queryTitle := concat('
@@ -209,7 +209,7 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
           $xpathTitle)
         let $valueQueryTitle := xquery:eval($queryTitle, map {"": $doc})
         return
-          <dc:title>{$valueQueryTitle}</dc:title>,
+          <dc:title>{normalize-space($valueQueryTitle)}</dc:title>, :)
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
       return
         if ($metadata/@resourceId = "all")
