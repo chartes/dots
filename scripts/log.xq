@@ -16,40 +16,67 @@ declare function dots.log:log($dbName) {
     let $collections := db:get($dbName, $G:resourcesRegister)//collection[@parentIds]
     let $countCollections := count($collections)
     let $metadatasColl :=
-      for $metadata in $collections/node()/name()
-      group by $metadata
-      order by $metadata
-      return
-        <metadata>{$metadata}</metadata>
+      <metadatas>{
+        for $metadata at $pos in $collections/node()/name()
+        group by $metadata
+        return
+          if ($pos = 1)
+          then $metadata
+          else concat("| ", $metadata)
+      }</metadatas>
     let $documents := db:get($dbName, $G:resourcesRegister)//document
     let $countDocuments := count($documents)
     let $metadatasDoc :=
-      for $metadata in $documents/node()/name()
-      group by $metadata
-      order by $metadata
-      return
-        <metadata>{$metadata}</metadata>
+      <metadatas>{
+        for $metadata at $pos in $documents/node()/name()
+        group by $metadata
+        return
+          if ($pos = 1)
+          then $metadata
+          else concat("| ", $metadata)
+      }</metadatas>
     let $fragments := 
-      for $frag in db:get($dbName, $G:fragmentsRegister)//fragment
-      let $citeType := $frag/@citeType
-      group by $citeType 
-      let $countFrag := count($frag)
-      let $level := normalize-space($frag[1]/@level)
-      return
-        <fragment>
-          <citeType>{$citeType}</citeType>
-          <number>{$countFrag}</number>
-          <level>{$level}</level>
-        </fragment>
+      <fragment>{
+        for $frag at $pos in db:get($dbName, $G:fragmentsRegister)//fragment
+        let $citeType := $frag/@citeType
+        group by $citeType 
+        let $countFrag := count($frag)
+        let $level := normalize-space($frag[1]/@level)
+        return
+          if ($pos = 1)
+          then concat(
+"- type '", $citeType, "' : ", $countFrag, " (level ", $level, ")")
+          else
+            concat("
+- type '", $citeType, "' : ", $countFrag, " (level ", $level, ")")
+      }</fragment>
     let $countFragments := count($fragments)
     let $metadatasFrag :=
-      for $metadata in db:get($dbName, $G:fragmentsRegister)//fragment/node()/name()
-      group by $metadata
-      order by $metadata
-      return
-        <metadata>{$metadata}</metadata>
+      <metadata>{
+        for $metadata at $pos in db:get($dbName, $G:fragmentsRegister)//fragment/node()/name()
+        group by $metadata
+        return
+          if ($pos = 1)
+          then $metadata
+          else concat("| ", $metadata)
+      }</metadata>
     return
-      <log>
+      (concat("
+Votre projet DoTS :
+---------------
+Projet : ", normalize-space($project), "
+Nom de la base de données : ", $dbName, "
+Collections : ", $countCollections, "
+Métadonnées de collections : ", $metadatasColl, "
+Documents : ", $countDocuments, "
+Métadonnées de documents : ", <sequence>{$metadatasDoc}</sequence>, "
+Fragments :
+", $fragments, "
+Métadonnées de fragments : ", $metadatasFrag, "
+"
+))
+
+      (: <log>
         <project>{normalize-space($project)}</project>
         <mapping>{$mapping}</mapping>
         <collections>{$countCollections}</collections>
@@ -58,9 +85,10 @@ declare function dots.log:log($dbName) {
         <documentsMetadata>{$metadatasDoc}</documentsMetadata>
         <fragments>{$fragments}</fragments>
         <fragmentsMetadata>{$metadatasFrag}</fragmentsMetadata>
-      </log>
+      </log> :)
   return
-    let $path := concat($G:webapp, $G:dots, "/.log/")
+    $log
+    (: let $path := concat($G:webapp, $G:dots, "/.log/")
     let $logFileName := concat("log_", $project, "_", current-dateTime(), ".xml")
     return
       if (file:exists($path))
@@ -70,6 +98,22 @@ declare function dots.log:log($dbName) {
         (
           file:create-dir($path),
           file:write(concat($path, $logFileName), $log)
-        ) 
-};  
+        ) :) 
+};
+
+(: declare function dots.log:csvResume($dbName) {
+  let $project := db:get($dbName, $G:resourcesRegister)//*:collection[not(@parentIds)]
+  let $content :=
+    <csv>
+      <record>
+        <Project>{normalize-space($project)}</Project>
+        <DbName>{$dbName}</DbName>
+      </record>
+    </csv>
+  return
+    csv:serialize($content, map {"header": true(), "separator": "|"})
+}; :)
+
+
+  
   
