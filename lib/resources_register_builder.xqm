@@ -195,49 +195,63 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
 declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId as xs:string) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($bdd)/metadataMap/mapping
+  let $dcTitle :=
+    if ($externalMetadataMap/dc:title[@scope="document"])
+    then ()
+    else <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
   return
-    for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
-    return
-      if ($metadata/@resourceId = "all")
-      then 
-        let $key := $metadata/name()
+    (
+      if ($dcTitle) 
+      then
+        let $xpathTitle := $dcTitle/@xpath
+        let $queryTitle := concat('
+          declare default element namespace "http://www.tei-c.org/ns/1.0";',
+          $xpathTitle)
+        let $valueQueryTitle := xquery:eval($queryTitle, map {"": $doc})
         return
-          element {$key} { 
-            concat($metadata/@prefix, $metadata, $metadata/@suffix) 
-          }
-      else
-        if ($metadata/@xpath)
-        then
-          let $metadataName := $metadata/name()
-          let $xpath := $metadata/@xpath
-          let $query := concat('
-            declare default element namespace "http://www.tei-c.org/ns/1.0";',
-            $xpath)
-          let $valueQuery := xquery:eval($query, map {"": $doc})
-          let $type := $metadata/@type
-          let $key := $metadata/@key
+          <dc:title>{$valueQueryTitle}</dc:title>,
+      for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
+      return
+        if ($metadata/@resourceId = "all")
+        then 
+          let $key := $metadata/name()
           return
-            if ($valueQuery != "")
-            then 
-              for $value in $valueQuery
-              return
-                element {$metadataName} {
-                  if ($type) then attribute { "type" } { $type } else (),
-                  if ($key) then attribute { "key" } { $key } else (),
-                  concat($metadata/@prefix, $value, $metadata/@suffix)
-                }
-            else ()
+            element {$key} { 
+              concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+            }
         else
-          let $source := $metadata/@source
-          let $SrcDocName := functx:substring-after-last($source, "/")
-          let $SrcPath := db:list($bdd)[contains(., $SrcDocName)]
-          let $csv := db:get($bdd, $SrcPath)/*:csv
-          let $findIdInCSV := normalize-space($metadata/@resourceId)
-          let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
-          return
-            if ($record and $metadata) 
-            then dots.lib:createContent($metadata, $record)
-            else ()
+          if ($metadata/@xpath)
+          then
+            let $metadataName := $metadata/name()
+            let $xpath := $metadata/@xpath
+            let $query := concat('
+              declare default element namespace "http://www.tei-c.org/ns/1.0";',
+              $xpath)
+            let $valueQuery := xquery:eval($query, map {"": $doc})
+            let $type := $metadata/@type
+            let $key := $metadata/@key
+            return
+              if ($valueQuery != "")
+              then 
+                for $value in $valueQuery
+                return
+                  element {$metadataName} {
+                    if ($type) then attribute { "type" } { $type } else (),
+                    if ($key) then attribute { "key" } { $key } else (),
+                    concat($metadata/@prefix, $value, $metadata/@suffix)
+                  }
+              else ()
+          else
+            let $source := $metadata/@source
+            let $SrcDocName := functx:substring-after-last($source, "/")
+            let $SrcPath := db:list($bdd)[contains(., $SrcDocName)]
+            let $csv := db:get($bdd, $SrcPath)/*:csv
+            let $findIdInCSV := normalize-space($metadata/@resourceId)
+            let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
+            return
+              if ($record and $metadata) 
+              then dots.lib:createContent($metadata, $record)
+              else ())
 };
 
 declare function dots.lib:createContent($itemDeclaration, $record) {
