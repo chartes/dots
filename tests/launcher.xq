@@ -12,9 +12,12 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 (: Deploiment Tests  :)
 "> Starting deploiment tests in progress...",
 
-deployTest:check-boolean-response(db:exists($G:dots)), 
+if (deployTest:check-boolean-response(db:exists($G:dots)))
+then "* ❌ No Db DoTS"
+else
+  "* ✅ DoTS Db created with success", 
 
-"* ✅ DoTS Db created with success",
+
 
 deployTest:checkTotalResources(deployTest:getNumberResources()), "* ✅ Total resources successfully counted",
 
