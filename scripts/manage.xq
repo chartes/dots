@@ -7,7 +7,8 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-import module namespace switcher.lib = "https://github.com/chartes/dots/lib" at "../lib/db_switch_builder.xqm";
+import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm";
+(: import module namespace switcher.lib = "https://github.com/chartes/dots/lib" at "../lib/db_switch_builder.xqm"; :)
 (: import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 import module namespace multi = "https://github.com/chartes/dots/builder/multi" at "documents_in_multiple_collections.xqm";
@@ -20,7 +21,6 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: Exemple pour le registre ENDP 
 : /!\ Attention, les commandes doivent être lancées successivment.
 :)
-""
 
 (: 1. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
 : /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm :)
@@ -42,4 +42,9 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: 5. Supprimer  :)
 (: dbd:handleDelete() :)
  
+(: utils:collectionById("moliere", "") :)
+(: utils:getChildMembers("theatre", "moliere", "dc:date=1669") :)
 
+(: utils:refNavigation("moliere_avare", "a1", "", 1) :)
+
+utils:getFragment("theatre", "moliere_avare", map {"id": "moliere_avare"}, "")

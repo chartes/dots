@@ -55,7 +55,8 @@ declare
   %output:json("format=attributes")
   %rest:query-param("id", "{$id}", "")
   %rest:query-param("nav", "{$nav}", "")
-function routes:collections($id as xs:string, $nav as xs:string) {
+  %rest:query-param("filter", "{$filter}")
+function routes:collections($id as xs:string, $nav as xs:string, $filter) {
   if (db:exists($G:dots))
   then 
     if ($id)
@@ -64,7 +65,7 @@ function routes:collections($id as xs:string, $nav as xs:string) {
       return
         if ($dbName != "") 
         then 
-          utils:collectionById($id, $nav)
+          utils:collectionById($id, $nav, $filter)
         else
           routes:badIdResource(xs:string($id))
      else
@@ -94,13 +95,14 @@ declare
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("down", "{$down}", 0)
-function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
+  %rest:query-param("filter", "{$filter}", "")
+function routes:navigation($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $filter, $down as xs:integer) {
   if ($id != "")
   then
     let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
     return
       if ($dbName != "") 
-      then utils:navigation($id, $ref, $start, $end, $down) 
+      then utils:navigation($id, $ref, $start, $end, $filter, $down) 
       else
         routes:badIdResource(xs:string($id))
   else
@@ -127,8 +129,9 @@ declare
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("citeType", "{$citeType}", "")
+  %rest:query-param("filter", "{$filter}", "")
   %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $citeType as xs:string, $format as xs:string) {
+function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $citeType as xs:string, $filter, $format as xs:string) {
   if ($id != "")
   then
     let $dbName := db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName
@@ -138,7 +141,7 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
         let $ref := if ($ref) then $ref else ""
         let $start := if ($start) then $start else ""
         let $end := if ($end) then $end else ""
-        let $result := utils:document($id, $ref, $start, $end, $citeType)
+        let $result := utils:document($id, $ref, $start, $end, $citeType, $filter)
         return
           if ($format)
           then 
@@ -149,11 +152,6 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
               default return "application/xml"
             let $style := concat($G:webapp, $G:xsl)
             let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
-            let $doc := 
-              if (db:get($project)/tei:TEI[@xml:id = $id])
-              then db:get($project)/tei:TEI[@xml:id = $id]
-              else 
-                db:get($project, $id)/tei:TEI
             let $trans := 
               if ($format = "html")
               then
