@@ -12,6 +12,8 @@ module namespace utils = "https://github.com/chartes/dots/api/utils";
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 import module namespace routes = "https://github.com/chartes/dots/api/routes" at "routes.xqm";
 
+import module namespace functx = 'http://www.functx.com';
+
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dts = "https://w3id.org/dts/api#";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -367,7 +369,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     if (db:get($project)/tei:TEI[@xml:id = $resourceId])
     then db:get($project)/tei:TEI[@xml:id = $resourceId]
     else 
-      let $document := db:get($project)/tei:TEI
+      for $document in db:get($project)/tei:TEI
       where ends-with(db:path($document), $resourceId)
       return $document
   let $idRef := 
@@ -755,24 +757,38 @@ declare function utils:getChildMembers($projectName as xs:string, $resourceId as
 };
 
 declare function utils:filters($sequence, $filter) {
-  (: 
-    (dc:date=1669)
-    (tei:role=Tartuffe) 
-    (tei:role=Tartuffe AND ref=a5)
-    (dc:date>1680 AND dc:creator=moliere)
-  :)
+  let $numberOfMatch := functx:number-of-matches($filter, "=")
+  return
+    if ($numberOfMatch = 1) 
+    then utils:getResultFilter($sequence, $filter)
+    else 
+      if ($numberOfMatch > 1)
+      then
+        let $tokenizeFilter := tokenize($filter, "AND")
+        let $count := count($tokenizeFilter)
+        let $filter1 := $tokenizeFilter[1]
+        let $filtersToDo :=
+          if ($count > 2)
+          then 
+            substring-after(substring-after($filter, $filter1), "AND")
+          else $tokenizeFilter[2]
+        return
+          (
+            let $newSequence := utils:getResultFilter($sequence, $filter1)
+            return
+              utils:filters($newSequence, $filtersToDo)
+          )
+  };
+
+declare function utils:getResultFilter($sequence, $filter) {
   let $metadata := normalize-space(substring-before($filter, "="))
   let $value := normalize-space(substring-after($filter, "="))
   return
     for $element in $sequence
     where $element/node()[name() = $metadata] = $value
     return
-      if ($element)
-      then $element
-      else ()
+      $element
 };
-
-
 
 
 
