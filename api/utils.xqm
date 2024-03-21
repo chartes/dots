@@ -173,7 +173,7 @@ declare function utils:navigation($resourceId as xs:string, $ref as xs:string, $
   then utils:refNavigation($resourceId, $ref, $filter, $down)
   else
     if ($start and $end)
-    then utils:rangeNavigation($resourceId, $start, $end, $down)
+    then utils:rangeNavigation($resourceId, $start, $end, $down, $filter)
     else utils:idNavigation($resourceId, $down, $filter)
       
 };
@@ -327,7 +327,7 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
 : @see utils.xqm;utils:getFragment
 : @see utils.xqm;utils:getFragmentsInRange
 :)
-declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer) {
+declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer, $filter) {
   let $projectName := utils:getDbName($resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
   let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start}, "")
@@ -340,7 +340,7 @@ declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:st
       <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>
       <pair name="level" type="number">{$level}</pair>
       <pair name="member" type="array">{
-        utils:getFragmentsInRange($projectName, $resourceId, $start, $end, $down, "navigation")
+        utils:getFragmentsInRange($projectName, $resourceId, $start, $end, $down, "navigation", $filter)
       }</pair>
       <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
       <pair name="parent" type="null"></pair>
@@ -387,7 +387,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     else
       if ($start and $end)
       then
-        let $sequence := utils:getFragmentsInRange($project, $resourceId, $start, $end, 0, "document")
+        let $sequence := utils:getFragmentsInRange($project, $resourceId, $start, $end, 0, "document", $filter)
         return
           <TEI xmlns="http://www.tei-c.org/ns/1.0">
             <dts:fragment xmlns:dts="https://w3id.org/dts/api#">{$sequence}</dts:fragment>
@@ -681,7 +681,7 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
 : comment gérer ce cas de figure?
 : faut-il ajouter des métadonnées (utils:getMandatory(), etc.)?
 :)
-declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $context as xs:string) {
+declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $context as xs:string, $filter) {
   let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start}, "")
   let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end}, "")
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
@@ -689,11 +689,19 @@ declare function utils:getFragmentsInRange($projectName as xs:string, $resourceI
   let $s := xs:integer($firstFragment/@node-id)
   let $e := xs:integer($lastFragment/@node-id)
   return
-    for $fragment in db:get($projectName, $G:fragmentsRegister)//dots:fragment
-    where $fragment/@node-id >= $s and $fragment/@node-id <= $e
+    let $sequence :=
+      for $fragment in db:get($projectName, $G:fragmentsRegister)//dots:fragment
+      where $fragment/@node-id >= $s and $fragment/@node-id <= $e
+      return
+        $fragment
+    let $result :=
+      if ($filter)
+      then utils:filters($sequence, $filter)
+      else $sequence
+    return
+    for $fragment in $result
     let $ref := normalize-space($fragment/@ref)
     let $level := xs:integer($fragment/@level)
-    let $n := xs:integer($fragment/@n)
     where
       if ($firstFragmentLevel = $lastFragmentLevel and $down = 0) 
       then $level = $firstFragmentLevel
