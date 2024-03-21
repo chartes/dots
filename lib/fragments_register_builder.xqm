@@ -74,21 +74,17 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
     if ($xpath)
     then
       for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then $resource//db:get-id($bdd, $parentNodeId) else $resource})
-      let $n :=
-        if ($parentRef)
-        then concat($parentRef, ".", $pos)
-        else $pos
       let $node-id := db:node-id($fragment)
       let $ref :=
         if ($use = "@xml:id")
         then 
           if ($fragment/@xml:id)
           then normalize-space($fragment/@xml:id)
-          else $n
-        else $n
+          else $node-id
+        else $node-id
       return
         (
-          <fragment n="{$n}" node-id="{$node-id}" ref="{$ref}" level="{$level}" maxCiteDepth="{$maxCiteDepth}" resourceId="{$resourceId}">{
+          <fragment node-id="{$node-id}" ref="{$ref}" level="{$level}" maxCiteDepth="{$maxCiteDepth}" resourceId="{$resourceId}">{
             if ($citeType) then attribute {"citeType"} {normalize-unicode($citeType)} else (),
             if ($parentNodeId) then attribute {"parentNodeId"} {$parentNodeId} else (),
             if ($citeStructure/tei:citeData)
@@ -113,7 +109,7 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
           then 
             for $cite in $citeStructure/tei:citeStructure
             return
-              dots.lib:handleCiteStructure($bdd, $resource, $cite, $level + 1, $resourceId, $n, $node-id, $maxCiteDepth)
+              dots.lib:handleCiteStructure($bdd, $resource, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth)
           else ()
         )
 };

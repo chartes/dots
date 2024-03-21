@@ -681,19 +681,19 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
 : comment gérer ce cas de figure?
 : faut-il ajouter des métadonnées (utils:getMandatory(), etc.)?
 :)
-declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer, $context as xs:string) {
+declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $context as xs:string) {
   let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start}, "")
   let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end}, "")
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
-  let $s := normalize-space($firstFragment/@n)
-  let $e := normalize-space($lastFragment/@n)
-  let $lastFragmentNodeId := $lastFragment/@node-id
+  let $s := xs:integer($firstFragment/@node-id)
+  let $e := xs:integer($lastFragment/@node-id)
   return
-    for $fragment in db:attribute-range($projectName, $s, $e, "n")/parent::dots:fragment[@resourceId = $resourceId]
+    for $fragment in db:get($projectName, $G:fragmentsRegister)//dots:fragment
+    where $fragment/@node-id >= $s and $fragment/@node-id <= $e
     let $ref := normalize-space($fragment/@ref)
     let $level := xs:integer($fragment/@level)
-    let $n := normalize-space($fragment/@n)
+    let $n := xs:integer($fragment/@n)
     where
       if ($firstFragmentLevel = $lastFragmentLevel and $down = 0) 
       then $level = $firstFragmentLevel
@@ -706,9 +706,6 @@ declare function utils:getFragmentsInRange($projectName as xs:string, $resourceI
           return
             $level >= $minLevel and $level <= $maxLevel
     return
-      if ($fragment/@node-id > $lastFragmentNodeId)
-      then ()
-      else
         if ($context = "navigation")
         then
           <item type="object">
