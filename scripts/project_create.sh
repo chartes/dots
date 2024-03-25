@@ -18,7 +18,7 @@ function usage {
     echo ""
     echo "  --project_dir_path    absolute path to import folder"
     echo "          (example: /absolute/path/to/import/folder)"
-    echo "  --top_collection_id   tag of the image to deploy"
+    echo "  --top_collection_id   project root id"
     echo "          (example: theater)"
     echo "  --db_name     basex db project name"
     echo "          (example: theater)"
