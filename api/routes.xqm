@@ -22,7 +22,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @see https://distributed-text-services.github.io/specifications/Entry.html#base-api-endpoint
 :)
 declare
-  %rest:path("/dots/api/dts")
+  %rest:path("/api/dts")
   %rest:GET
   %output:method("json")
   %rest:produces("application/ld+json")
