@@ -7,7 +7,8 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm";
+import module namespace utils = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm";
+(: import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm"; :)
 (: import module namespace switcher.lib = "https://github.com/chartes/dots/lib" at "../lib/db_switch_builder.xqm"; :)
 (: import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
 import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
@@ -21,7 +22,7 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: Exemple pour le registre ENDP 
 : /!\ Attention, les commandes doivent être lancées successivment.
 :)
-""
+
 (: 1. Créer la base de données BaseX du projet à partir d'un fichier respectant l'ensemble des prérequis 
 : /!\ Attention: les arguments sont à renseigner dans le document /dots/db/db_creator.xqm :)
 (: dbc:dbCreate("ENCPOS", "/home/ppons/Bureau/basex/webapp/dots/data_test/ENCPOS/") :)
@@ -44,7 +45,7 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
   
   
   
-  
+  utils:switcher_update("encpos")
   
   
   

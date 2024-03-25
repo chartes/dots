@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_09" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Essai sur quelques actes normands de Richard Cœur-de-Lion</title>
+        <author ref="https://www.idref.fr/026856786">Claude Fagnen</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_09.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 71-75</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="71" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Essai sur quelques actes normands
+       <lb/>de Richard Cœur-de-Lion</head>
+      <byline>
+        par
+        <forename>Claude</forename>
+        <surname>Fagnen</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Nous n’avons retenu que les actes de Richard Cœur-de-Lion concernant des destinataires normands, qu’il s’agisse d’établissements ecclésiastiques ou de seigneurs laïcs. Nous avons laissé de côté les actes relatifs aux biens situés en Normandie d’établissements ou de seigneurs originaires d’Angleterre ou de toute autre région des domaines continentaux du roi d’Angleterre. Un peu plus de la moitié des actes publiés ici sont inédits.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>Richard Cœur-de-Lion et la Normandie</head>
+        <p>A la fin du <num>xii<hi rend="sup">e</hi></num> siècle, le duché de Normandie reste la pièce principale de l’empire plantegenêt.</p>
+        <p>Richard Cœur-de-Lion y passa la moitié de son règne, pour la protéger contre les fréquentes incursions du roi de France. Il réorganisa et compléta son réseau défensif en renforçant les forteresses de la ligne de l’Avre, Verneuil, Tillières et Nonancourt, en construisant les remparts d’Eu et surtout en élevant Château-Gaillard, pour interdire l’accès à la Normandie par la vallée de la Seine. Cette fortification fut rendue nécessaire par la perte de la « marche de défense » que constituait le Vexin normand, objet de tant de traités et de disputes, qui barrait la route de Rouen par le plateau.</p>
+        <p>Lieu de séjour favori du duc-roi, la Normandie fut aussi l’objet de son attention particulière pour l’administration. Richard confia les charges de sénéchal et de connétable de Normandie à des amis fidèles et capables, William Fitz Raoul et Guillaume du Hommet. C’est aussi à des Normands qu’il confia les plus hautes charges de son royaume et le soin de veiller au bon fonctionnement de sa chancellerie : Guillaume de Longchamp fut chancelier jusqu’à sa mort, à la fin du mois de septembre 1197, et Jean d’Alençon exerça longtemps les fonctions de vice-chancelier.</p>
+        <pb n="72" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_02.TIF/full/full/0/default.jpg"/>
+        <p>Richard combla de ses largesses les établissements monastiques et les églises de Normandie, confirmant les dons de ses prédécesseurs, les complétant avec générosité par des donations nouvelles et accordant avec libéralité les exemptions de toutes sortes. Il prit un grand nombre d’abbayes sous sa protection et fonda, sur la rive gauche de la Seine, la nouvelle abbaye de Notre-Dame de Bonport.</p>
+        <p>Mais il sut aussi trouver en Normandie les fonds nécessaires à sa politique, politique toute de batailles, de générosité, de grandeur et de rancune, à l’image de son personnage.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Classification des actes</head>
+        <p>Nous avons réuni cent trente-six actes de Richard Cœur-de-Lion concernant la Normandie, dont plus de la moitié ont été donnés pendant la première année du règne de ce prince. Une trentaine seulement de ces actes nous ont été conservés en originaux (soit une proportion très faible de 22 %). Un grand nombre nous ont été transmis par des cartulaires, écrits, pour la plupart, au <num>xiii<hi rend="sup">e</hi></num> siècle. Une autre source très précieuse pour l’étude des actes normands de l’avant-dernier duc de Normandie est constituée par les registres de la chancellerie française conservés au Trésor des Chartes. Les « rolls » de la chancellerie royale anglaise nous ont permis de sauver de l’oubli dix actes de Richard et nous ont fourni un appoint appréciable pour une quinzaine de chartes. Les copies des érudits du <num>xix<hi rend="sup">e</hi></num> siècle nous ont été souvent précieuses, surtout pour remplacer de nombreux actes disparus lors de la destruction des Archives départementales de la Manche.</p>
+        <p>Le plus souvent, Richard Cœur-de-Lion confirme les biens d’une abbaye ou des donations antérieures (dans une proportion d’un tiers des actes), mais il accorde aussi de nombreuses donations (trente-trois au total), exempte de ton-lieu ou de droits divers (dans une quinzaine d’actes) et prend sous sa protection des églises de Normandie (vingt-sept fois). Mais Richard ne vidime pas un acte antérieur, il le confirme.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>La chancellerie de Richard Cœur-de-Lion</head>
+        <p>Le règne de Richard I<hi rend="sup">er</hi> marque la transformation définitive de la chancellerie royale anglaise. Remarquablement organisée, une chancellerie qui semble être unique pour l’immense empire anglo-normand, expédie un nombre considérable d’actes de toutes sortes, brefs, lettres et chartes solennelles. La première année du règne est marquée par le renouvellement d’une grande partie des actes du règne précédent, opération qui deviendra désormais systématique et traditionnelle sous le règne de Jean sans Terre.</p>
+        <p>L’évêque d’Ely est alors choisi comme chancelier. Il n’y eut que deux chanceliers en titre pendant les dix années du règne, mais un certain nombre <pb n="73" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_03.TIF/full/full/0/default.jpg"/>de personnages agirent comme vice-chanceliers. Après la mort de Guillaume de Longchamp, évêque d’Ely et chancelier de 1189 à 1197, Eustache, archidiacre de Lisieux, lui succède dans ces deux fonctions. Jean d’Alençon, Roger Malcael, Eustache, archidiacre de Lisieux, Thomas de Haiden et Garin, prieur de Loches, scellent successivement les actes normands de Richard en tant que vice-chanceliers. Mais il arrive que le roi scelle les actes <hi rend="i">per manum nostram.</hi></p>
+        <p>Les pratiques de chancellerie et la rédaction des actes se régularisent, les formules employées pour les divers types d’actes deviennent strictes et presqu’invariables. Cependant, l’enrôlement n’est pas encore un usage courant ; il ne sera systématique qu’au début du <num>xiii<hi rend="sup">e</hi></num> siècle. La diversité des écritures prouve enfin l’existence de nombreux copistes, tous formés aux habitudes de la chancellerie.</p>
+        <p>Le règne de Richard Cœur-de-Lion voit apparaître des règles qui resteront en usage jusqu’à nos jours.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre IV
+         <lb/>Caractères diplomatiques des actes</head>
+        <p><hi rend="i">Caractères externes.</hi> – La plupart des chartes sont écrites dans le sens de la plus petite dimension ; les « writs » échappent le plus souvent à cette règle. Le parchemin n’est réglé que dans les grandes occasions, généralement à la mine de plomb. Seules, les chartes solennelles présentent un aspect soigné, les actes de l’administration proprement dite ainsi que les brefs d’exécution ayant un caractère plus négligé. L’initiale royale ne ressort que très rarement du corps même du texte, sauf pour un acte où, exceptionnellement, elle est rehaussée d’or fin. En général, la première ligne n’est pas mise en valeur par une écriture différente et les mots importants du texte sont très rarement d’un module apparent. Les écritures sont très diverses, mais les actes sont tous rédigés à la chancellerie ; le cas contraire serait, à cette époque, un critère de fausseté. Souvent, la dernière ligne de l’acte est écrite en caractères allongés, pour terminer la ligne sans laisser de place. Enfin, les dimensions mêmes des actes sont très variables, depuis le parchemin minuscule d’un « writ », jusqu’à la pleine peau de la charte solennelle.</p>
+        <p><hi rend="i">Caractères internes.</hi> – Le formulaire est désormais parfaitement au point et les divergences ne sont qu’exceptionnelles. L’invocation, que l’on rencontrait encore sous Henri II, a maintenant complètement disparu.</p>
+        <p>Richard introduit dès le début de son règne la suscription qui restera celle de la chancellerie royale anglaise à travers les siècles : <hi rend="i">Ricardus, Dei gratia rex Anglie, dux Normannie et Aquitanie, cornes Andegavie.</hi> Il substitue ainsi le génitif singulier au génitif pluriel <hi rend="i">Anglorum.</hi> L’adresse est soumise à un ordre hiérarchique immuable, les ecclésiastiques précédant toujours les laïcs. Le long préambule, tout aussi invariable, ne se rencontre plus qu’exceptionnellement dans certaines chartes des plus solennelles. La formule de notification suit une évolution semblable : les chartes porteront désormais les mots <hi rend="i">sciatis nos </hi>suivis d’un infinitif ; seuls, les traités et quelques lettres échapperont à cette règle.</p>
+        <p>La principale innovation de Richard Cœur-de-Lion, dans le domaine de la diplomatique, est la substitution de la première personne du pluriel à la première personne <pb n="74" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_04.TIF/full/full/0/default.jpg"/> du singulier encore usitée par son père. Dorénavant, l’emploi du pluriel de majesté sera usuel chez les rois d’Angleterre.</p>
+        <p>Les formules de ratification et l’annonce du sceau sont les seules à ne pas avoir subi de modifications définitives ; elles n’apparaissent encore que sporadiquement et n’ont pas acquis de forme stable. Les témoins gardent la place considérable qu’ils avaient obtenue dès les règnes précédents ; la liste de leurs noms est souvent longue et toujours ordonnée suivant une stricte hiérarchie. L’emploi de la formule <hi rend="i">teste me ipso</hi> est très fréquent, malgré l’usage du pluriel dans le texte des actes ; quelques actes, surtout lors du voyage vers la Terre Sainte, portent <hi rend="i">testibus nobis ipsis.</hi></p>
+        <p>Dès son couronnement, Richard date ses actes en fonction des années de son règne ; il fut le premier des rois anglo-normands à utiliser un système de datation aussi précis. Non seulement il mentionne l’année de son règne, mais encore il indique très souvent le mois et même le jour. Il n’utilise pas le millésime, sauf exception. Il introduit même une précision supplémentaire avec la date de lieu, qui s’ajoute dans la plupart des chartes à la date de temps.</p>
+        <p>Il semble bien que Richard Cœur-de-Lion soit le véritable fondateur de la diplomatique royale anglaise. Le règne de Jean sans Terre verra l’achèvement de transformations déjà fort avancées sous Richard.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre V
+         <lb/>Les sceaux de Richard Cœur-de-Lion</head>
+        <p>Éprouvant de sérieuses difficultés financières au sortir de sa captivité en terre d’Empire, Richard prétexta la perte du grand sceau royal lors de la croisade en Orient pour faire exécuter les matrices d’un nouveau sceau et déclara la nullité des actes expédiés jusqu’alors sous le premier. Toutes les anciennes chartes devaient être apportées à la chancellerie pour y recevoir confirmation sous le second sceau et, bien entendu, il fallait payer les taxes et les frais de cette nouvelle expédition.</p>
+        <p>Mais la pratique de la rénovation des actes sous le second sceau n’intervint pas avant le mois de mai 1198. Quatre actes seulement, parmi ceux concernant la Normandie, furent ainsi soumis à cette formalité, mais toutes les chartes datées de la fin du règne de Richard ont été données directement sous ce second sceau.</p>
+        <p>Chartes, lettres, mandements, sauf-conduits etc., sont tous scellés avec un sceau pendant, apposé sur double queue de parchemin (procédé le moins fréquent) ou sur lacs de soie de couleurs extrêmement variées. Seuls, les « writs » sont scellés sur simple queue de parchemin, une entaille étant pratiquée dans le bas de l’acte de manière à découper une lanière qui enserrera le parchemin une fois roulé et qui recevra le sceau. Les modes de scellement sont les mêmes dans toute l’étendue des territoires soumis à domination de Richard Cœur-de-Lion ; nous rencontrons donc des « writs » aussi bien en Normandie qu’en Angleterre.</p>
+        <p>La matière la plus usitée pour les sceaux est la cire verte, mais il y a aussi quelques sceaux de cire jaune ou marron.</p>
+      </div>
+      <div>
+        <pb n="75" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_05.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Les actes normands de Richard Cœur-de-Lion</head>
+        <p>Édition critique de tous les actes concernant la Normandie.</p>
+      </div>
+      <div>
+        <head rend="uc">Album de photographies</head>
+        <pb n="76" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_06.TIF/full/full/0/default.jpg"/>
+      </div>
+    </body>
+  </text>
+</TEI>

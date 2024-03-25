@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_14" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Le cartulaire de l’abbaye Notre-Dame de la Roë : édition critique</title>
+        <author ref="https://www.idref.fr/031346014">Marie Hamon-Jugnet</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_14.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>, <biblScope>p. 103-106</biblScope>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
+          <citeData use="head" property="dc:title"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="103" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_01.TIF/full/full/0/default.jpg"/>
+      <head rend="uc">Le cartulaire
+       <lb/>de l’abbaye Notre-Dame de la Roë
+       <lb/>édition critique</head>
+      <byline>
+        par
+        <forename>Marie</forename>
+        <surname>Hamon-Jugnet</surname>
+      </byline>
+      <div>
+        <head rend="uc">Avant-propos</head>
+        <p>Le fonds de l’abbaye Notre-Dame de la Roë constitue le dépôt le plus précieux des Archives départementales de la Mayenne. Malgré les pertes subies, un grand nombre de pièces anciennes subsistent, parmi lesquelles un cartulaire du <num>xii<hi rend="sup">e</hi></num> siècle (H 154). Celui-ci constitue un témoignage précieux sur le siècle qui suivit la fondation, par Robert d’Arbrissel, d’une communauté de chanoines réguliers dans la forêt de Craon.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre premier
+         <lb/>l’abbaye Notre-Dame de la Roë au <num>xii<hi rend="sup">e</hi></num> siècle</head>
+        <p>La fondation de l’abbaye de la Roë est le premier essai de vie érémitique tenté par Robert d’Arbrissel. Après ses séjours à Rennes et Angers, celui-ci se retira vers 1091 dans la forêt de Craon, où le rejoignirent bientôt quelques disciples qui vécurent en commun, constituant ainsi la communauté qui allait être à l’origine de l’abbaye de la Roë. Parmi ces premiers compagnons figuraient Bernard de Tiron et Vital de Mortain, le célèbre fondateur de l’abbaye de Savigny.</p>
+        <p>En 1096 la petite communauté adopta la règle des Chanoines Augustins réformée par Yves de Chartres. Le pape Urbain II, de passage à Angers, avait fait mander Robert pour prêcher à la dédicace de l’abbaye de Saint-Nicolas. Robert s’était donc rendu à Angers avec ses compagnons. Le lendemain de la dédicace, le 11 février, il eut une entrevue, ménagée par l’évêque d’Angers, avec Renaud, seigneur de Craon, et ses trois fils, qui concédèrent un bois proche <pb n="104" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_02.TIF/full/full/0/default.jpg"/> de Craon, alors au diocèse d’Angers, pour y édifier une église en l’honneur de Notre-Dame et y établir une communauté de Chanoines Augustins.</p>
+        <p>Cette création doit être replacée dans le contexte du début du <num>xii<hi rend="sup">e</hi></num> siècle, où se multiplient les fondations érémitiques. C’est l’époque des controverses entre les moines d’observance traditionnelle et les nouveaux ordres d’ermites.</p>
+        <p>En 1098, le 25 avril, on procéda à la bénédiction du cimetière et à la délimitation de la paroisse, dont un acte a conservé les limites précises. Les droits de synode et de visite furent fixés à trois sous, compte tenu de l’exiguïté de la paroisse. Robert d’Arbrissel quitta ses compagnons quelque temps après. En 1099, les bases de sa seconde fondation, appelée à une grande célébrité, étaient jetées dans le désert de Fontevraud.</p>
+        <p>L’abbaye se développa au cours du <num>xii<hi rend="sup">e</hi></num> siècle grâce à la protection des évêques d’Angers. Les comtes d’Anjou et les seigneurs de Craon manifestèrent également leur intérêt à la récente fondation. Celle-ci fut d’abord nommée Notre-Dame du Bois (<hi rend="i">de Bosco</hi>), puis elle prit à partir du milieu du siècle le nom de Roë (<hi rend="i">Rota</hi>), sans doute à cause du défrichement d’une clairière autour de l’abbaye. Les donations vinrent l’enrichir peu à peu. En 1136, Innocent II confirma une première fois les possessions du monastère, soit vingt et une églises et chapelles, réparties dans les diocèses du Mans, d’Angers et de Rennes. Une seconde confirmation des biens, par Lucius III, en 1184, permet de mesurer l’extension prise par l’abbaye durant la seconde moitié du siècle. A la même époque, les travaux de l’église, encore inachevée en 1138 lors de sa consécration, se poursuivirent sous l’abbé Michel (1148-1170).</p>
+        <p>La répartition des possessions, situées aux confins du Maine, de l’Anjou et de la Bretagne, révèle une expansion très limitée. L’abbaye fut d’ailleurs longtemps considérée comme la plus pauvre de l’Anjou.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre II
+         <lb/>Description, contenu et histoire du cartulaire</head>
+        <p>Le cartulaire se présente sous la forme d’un petit in-quarto de cent folios, écrits recto-verso sur une seule colonne. Il en comptait cent vingt-trois avant la Révolution. Le manuscrit comporte, en tête, une table des deux cent vingt-deux premières chartes. Dans son état actuel, il compte deux cent quarante-quatre actes, échelonnés entre 1096 et le début du <num>xiii<hi rend="sup">e</hi></num> siècle. La plupart d’entre eux se rapportent à des donations de laïcs, dont trois émanent des comtes d’Anjou, quatorze des seigneurs de Craon, quatre des seigneurs de Château-Gontier, trois de ceux de Laval. Vingt actes émanent des évêques de Rennes, Angers, Le Mans et Nantes. Trois diplômes sont des diplômes de papes.</p>
+        <p>Une douzaine de scribes ont participé à l’élaboration du recueil. Les brisures très nettes dans chacune des écritures les font dater de la seconde moitié du <num>xii<hi rend="sup">e</hi></num> siècle. Le cartulaire a été compilé selon toute vraisemblance sous l’abbatiat de Michel (1148-1170), au moins pour une bonne partie des actes. Les soixante premiers, environ, concernent l’histoire de l’abbaye jusqu’aux années 1150. Les notices semblent ensuite avoir été transcrites au fur et à mesure sous <pb n="105" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_03.TIF/full/full/0/default.jpg"/>l’abbé Michel et ses successeurs, jusqu’à l’abbé Thomas (1191-1212), dernier mentionné.</p>
+        <p>Après avoir échappé aux pillages de l’abbaye pendant la guerre de Cent ans et les guerres de Religion, le cartulaire faillit brûler en 1796, lors d’un autodafé des titres de l’abbaye. Un habitant du pays le sauva du feu. Après être passé en diverses mains au cours du <num>xix<hi rend="sup">e</hi></num> siècle, le volume fut donné aux Archives de la Mayenne, département dont la commune de la Roë fait partie depuis la Révolution. Il a perdu la reliure ancienne de parchemin blanc qui le recouvrait encore au <num>xviii<hi rend="sup">e</hi></num> siècle ; elle a été remplacée par une reliure moderne, pour laquelle on a réutilisé les anciens ais de chêne.</p>
+      </div>
+      <div>
+        <head rend="uc">Chapitre III
+         <lb/>Intérêt diplomatique et historique du cartulaire</head>
+        <p>Les copies fournies par le cartulaire sont presque toujours uniques. Des actes compilés dans le recueil, il ne reste plus que trois originaux conservés dans le fonds d’archives de l’abbaye. La majeure partie des chartes nous ont été conservées sous forme de notices, exceptées une quarantaine qui remontent à des diplômes délivrés par des chancelleries organisées (comtes, évêques, abbayes). Les notices ne sont parfois que des originaux remaniés par le scribe, comme le prouve l’acte de fondation. Mais de nombreux exemples montrent que la notice était la forme habituelle de rédaction des actes à l’abbaye. Les formules <hi rend="i">certum sit, notum sit, notum facimus omnibus filiis de Rota</hi> servent parfois de courte introduction aux actes. Les abbés n’ont pas de titulature particulière ; ils sont seulement nommés dans le cours de la notice.</p>
+        <p>Les actes permettent de connaître bien des aspects de l’activité des chanoines. Ils nous renseignent sur l’existence d’une léproserie et d’une école où les jeunes enfants reçus à l’abbaye apprenaient à lire et à chanter, sur les titulaires des différences offices du monastère. L’activité économique des religieux et de leurs serviteurs y est évoquée, notamment les défrichements de la forêt, l’assèchement des marais et les différentes occupations agricoles. On recueille au hasard des actes des précisions intéressantes sur les modes de tradition de la propriété, symbolisée par un couteau, un bâton, une branche ou les fruits d’un arbre situé à la limite des terres concédées.</p>
+        <p>Le latin des actes est souvent incorrect. Les formes vulgaires, plus ou moins latinisées, sont d’un emploi fréquent.</p>
+      </div>
+      <div>
+        <head rend="uc">Édition du cartulaire</head>
+        <p>Le cartulaire a été publié dans son état actuel. Il a été possible de reconstituer une partie des vingt-trois folios disparus, grâce aux copies des collections Baluze, Dupuy et Housseau à la Bibliothèque Nationale, et du manuscrit 865 (ancien 777) de la Bibliothèque municipale d’Angers. On y a ajouté des pièces <pb n="106" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_04.TIF/full/full/0/default.jpg"/>complémentaires concernant l’histoire de l’abbaye depuis sa fondation jusqu’en 1212, qui ne figurent pas dans le cartulaire. Ces titres originaux ont été tirés des quarante-six volumes conservés du chartrier de la Roë. Le tout est complété par des actes tirés des cartulaires de la Couture du Mans, de Solesmes, de la Trinité de Vendôme et de la cathédrale d’Angers. Toutes ces pièces complémentaires ont été classées dans l’ordre chronologique.</p>
+      </div>
+      <div>
+        <head rend="uc">Appendices</head>
+        <div>
+          <head rend="uc">1. Liste des dignitaires laïques et ecclésiastiques mentionnés
+           <lb/>dans le cartulaire.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">2. Index des noms de personne et des noms géographiques.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">3. Index rerum.</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">4. Cartes.</head>
+          <p/>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

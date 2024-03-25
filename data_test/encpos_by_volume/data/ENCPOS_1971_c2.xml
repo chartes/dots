@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENCPOS_1971_c2" xml:lang="fre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d'archiviste paléographe</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Rétroconversion de la publication imprimée</edition>
+        <funder ref="https://www.wikidata.org/wiki/Q273570">École des chartes</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher ref="https://www.wikidata.org/wiki/Q273570">École des chartes</publisher>
+        <date when="2021"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/"/>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>Positions des thèses</title>
+        <idno type="ISSN">0755-2076</idno>
+        <idno type="URI">http://www.sudoc.fr/013565311</idno>
+      </seriesStmt>
+      <sourceDesc facs="https://raw.githubusercontent.com/chartes/encpos/metadata/data/ENCPOS_1971/ENCPOS_1971_09.PDF">
+        <bibl><title>Positions des thèses soutenues par les élèves de la promotion de 1971 pour obtenir le diplôme d’archiviste paléographe</title>, <publisher>École des chartes</publisher>, <pubPlace>Paris</pubPlace>, <date>1971</date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <citeStructure unit="position" match="/TEI/text/body/div[@type='position']" use="@xml:id">
+          <citeData use="head" property="dc:title"/>
+          <citeStructure unit="chapter" match="div" use="position()">
+            <citeData use="head" property="dc:title"/>
+          </citeStructure>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1971"/>
+      </creation>
+      <langUsage>
+        <language ident="fre"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="position" xml:id="ENCPOS_1971_09">
+        <pb n="71" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Essai sur quelques actes normands
+          <lb/>de Richard Cœur-de-Lion</head>
+        <byline>
+          par
+          <forename>Claude</forename>
+          <surname>Fagnen</surname>
+        </byline>
+        <div>
+          <head rend="uc">Avant-propos</head>
+          <p>Nous n’avons retenu que les actes de Richard Cœur-de-Lion concernant des destinataires normands, qu’il s’agisse d’établissements ecclésiastiques ou de seigneurs laïcs. Nous avons laissé de côté les actes relatifs aux biens situés en Normandie d’établissements ou de seigneurs originaires d’Angleterre ou de toute autre région des domaines continentaux du roi d’Angleterre. Un peu plus de la moitié des actes publiés ici sont inédits.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>Richard Cœur-de-Lion et la Normandie</head>
+          <p>A la fin du <num>xii<hi rend="sup">e</hi></num> siècle, le duché de Normandie reste la pièce principale de l’empire plantegenêt.</p>
+          <p>Richard Cœur-de-Lion y passa la moitié de son règne, pour la protéger contre les fréquentes incursions du roi de France. Il réorganisa et compléta son réseau défensif en renforçant les forteresses de la ligne de l’Avre, Verneuil, Tillières et Nonancourt, en construisant les remparts d’Eu et surtout en élevant Château-Gaillard, pour interdire l’accès à la Normandie par la vallée de la Seine. Cette fortification fut rendue nécessaire par la perte de la « marche de défense » que constituait le Vexin normand, objet de tant de traités et de disputes, qui barrait la route de Rouen par le plateau.</p>
+          <p>Lieu de séjour favori du duc-roi, la Normandie fut aussi l’objet de son attention particulière pour l’administration. Richard confia les charges de sénéchal et de connétable de Normandie à des amis fidèles et capables, William Fitz Raoul et Guillaume du Hommet. C’est aussi à des Normands qu’il confia les plus hautes charges de son royaume et le soin de veiller au bon fonctionnement de sa chancellerie : Guillaume de Longchamp fut chancelier jusqu’à sa mort, à la fin du mois de septembre 1197, et Jean d’Alençon exerça longtemps les fonctions de vice-chancelier.</p>
+          <pb n="72" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_02.TIF/full/full/0/default.jpg"/>
+          <p>Richard combla de ses largesses les établissements monastiques et les églises de Normandie, confirmant les dons de ses prédécesseurs, les complétant avec générosité par des donations nouvelles et accordant avec libéralité les exemptions de toutes sortes. Il prit un grand nombre d’abbayes sous sa protection et fonda, sur la rive gauche de la Seine, la nouvelle abbaye de Notre-Dame de Bonport.</p>
+          <p>Mais il sut aussi trouver en Normandie les fonds nécessaires à sa politique, politique toute de batailles, de générosité, de grandeur et de rancune, à l’image de son personnage.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+            <lb/>Classification des actes</head>
+          <p>Nous avons réuni cent trente-six actes de Richard Cœur-de-Lion concernant la Normandie, dont plus de la moitié ont été donnés pendant la première année du règne de ce prince. Une trentaine seulement de ces actes nous ont été conservés en originaux (soit une proportion très faible de 22 %). Un grand nombre nous ont été transmis par des cartulaires, écrits, pour la plupart, au <num>xiii<hi rend="sup">e</hi></num> siècle. Une autre source très précieuse pour l’étude des actes normands de l’avant-dernier duc de Normandie est constituée par les registres de la chancellerie française conservés au Trésor des Chartes. Les « rolls » de la chancellerie royale anglaise nous ont permis de sauver de l’oubli dix actes de Richard et nous ont fourni un appoint appréciable pour une quinzaine de chartes. Les copies des érudits du <num>xix<hi rend="sup">e</hi></num> siècle nous ont été souvent précieuses, surtout pour remplacer de nombreux actes disparus lors de la destruction des Archives départementales de la Manche.</p>
+          <p>Le plus souvent, Richard Cœur-de-Lion confirme les biens d’une abbaye ou des donations antérieures (dans une proportion d’un tiers des actes), mais il accorde aussi de nombreuses donations (trente-trois au total), exempte de ton-lieu ou de droits divers (dans une quinzaine d’actes) et prend sous sa protection des églises de Normandie (vingt-sept fois). Mais Richard ne vidime pas un acte antérieur, il le confirme.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+            <lb/>La chancellerie de Richard Cœur-de-Lion</head>
+          <p>Le règne de Richard I<hi rend="sup">er</hi> marque la transformation définitive de la chancellerie royale anglaise. Remarquablement organisée, une chancellerie qui semble être unique pour l’immense empire anglo-normand, expédie un nombre considérable d’actes de toutes sortes, brefs, lettres et chartes solennelles. La première année du règne est marquée par le renouvellement d’une grande partie des actes du règne précédent, opération qui deviendra désormais systématique et traditionnelle sous le règne de Jean sans Terre.</p>
+          <p>L’évêque d’Ely est alors choisi comme chancelier. Il n’y eut que deux chanceliers en titre pendant les dix années du règne, mais un certain nombre <pb n="73" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_03.TIF/full/full/0/default.jpg"/>de personnages agirent comme vice-chanceliers. Après la mort de Guillaume de Longchamp, évêque d’Ely et chancelier de 1189 à 1197, Eustache, archidiacre de Lisieux, lui succède dans ces deux fonctions. Jean d’Alençon, Roger Malcael, Eustache, archidiacre de Lisieux, Thomas de Haiden et Garin, prieur de Loches, scellent successivement les actes normands de Richard en tant que vice-chanceliers. Mais il arrive que le roi scelle les actes <hi rend="i">per manum nostram.</hi></p>
+          <p>Les pratiques de chancellerie et la rédaction des actes se régularisent, les formules employées pour les divers types d’actes deviennent strictes et presqu’invariables. Cependant, l’enrôlement n’est pas encore un usage courant ; il ne sera systématique qu’au début du <num>xiii<hi rend="sup">e</hi></num> siècle. La diversité des écritures prouve enfin l’existence de nombreux copistes, tous formés aux habitudes de la chancellerie.</p>
+          <p>Le règne de Richard Cœur-de-Lion voit apparaître des règles qui resteront en usage jusqu’à nos jours.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre IV
+            <lb/>Caractères diplomatiques des actes</head>
+          <p><hi rend="i">Caractères externes.</hi> – La plupart des chartes sont écrites dans le sens de la plus petite dimension ; les « writs » échappent le plus souvent à cette règle. Le parchemin n’est réglé que dans les grandes occasions, généralement à la mine de plomb. Seules, les chartes solennelles présentent un aspect soigné, les actes de l’administration proprement dite ainsi que les brefs d’exécution ayant un caractère plus négligé. L’initiale royale ne ressort que très rarement du corps même du texte, sauf pour un acte où, exceptionnellement, elle est rehaussée d’or fin. En général, la première ligne n’est pas mise en valeur par une écriture différente et les mots importants du texte sont très rarement d’un module apparent. Les écritures sont très diverses, mais les actes sont tous rédigés à la chancellerie ; le cas contraire serait, à cette époque, un critère de fausseté. Souvent, la dernière ligne de l’acte est écrite en caractères allongés, pour terminer la ligne sans laisser de place. Enfin, les dimensions mêmes des actes sont très variables, depuis le parchemin minuscule d’un « writ », jusqu’à la pleine peau de la charte solennelle.</p>
+          <p><hi rend="i">Caractères internes.</hi> – Le formulaire est désormais parfaitement au point et les divergences ne sont qu’exceptionnelles. L’invocation, que l’on rencontrait encore sous Henri II, a maintenant complètement disparu.</p>
+          <p>Richard introduit dès le début de son règne la suscription qui restera celle de la chancellerie royale anglaise à travers les siècles : <hi rend="i">Ricardus, Dei gratia rex Anglie, dux Normannie et Aquitanie, cornes Andegavie.</hi> Il substitue ainsi le génitif singulier au génitif pluriel <hi rend="i">Anglorum.</hi> L’adresse est soumise à un ordre hiérarchique immuable, les ecclésiastiques précédant toujours les laïcs. Le long préambule, tout aussi invariable, ne se rencontre plus qu’exceptionnellement dans certaines chartes des plus solennelles. La formule de notification suit une évolution semblable : les chartes porteront désormais les mots <hi rend="i">sciatis nos </hi>suivis d’un infinitif ; seuls, les traités et quelques lettres échapperont à cette règle.</p>
+          <p>La principale innovation de Richard Cœur-de-Lion, dans le domaine de la diplomatique, est la substitution de la première personne du pluriel à la première personne <pb n="74" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_04.TIF/full/full/0/default.jpg"/> du singulier encore usitée par son père. Dorénavant, l’emploi du pluriel de majesté sera usuel chez les rois d’Angleterre.</p>
+          <p>Les formules de ratification et l’annonce du sceau sont les seules à ne pas avoir subi de modifications définitives ; elles n’apparaissent encore que sporadiquement et n’ont pas acquis de forme stable. Les témoins gardent la place considérable qu’ils avaient obtenue dès les règnes précédents ; la liste de leurs noms est souvent longue et toujours ordonnée suivant une stricte hiérarchie. L’emploi de la formule <hi rend="i">teste me ipso</hi> est très fréquent, malgré l’usage du pluriel dans le texte des actes ; quelques actes, surtout lors du voyage vers la Terre Sainte, portent <hi rend="i">testibus nobis ipsis.</hi></p>
+          <p>Dès son couronnement, Richard date ses actes en fonction des années de son règne ; il fut le premier des rois anglo-normands à utiliser un système de datation aussi précis. Non seulement il mentionne l’année de son règne, mais encore il indique très souvent le mois et même le jour. Il n’utilise pas le millésime, sauf exception. Il introduit même une précision supplémentaire avec la date de lieu, qui s’ajoute dans la plupart des chartes à la date de temps.</p>
+          <p>Il semble bien que Richard Cœur-de-Lion soit le véritable fondateur de la diplomatique royale anglaise. Le règne de Jean sans Terre verra l’achèvement de transformations déjà fort avancées sous Richard.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre V
+            <lb/>Les sceaux de Richard Cœur-de-Lion</head>
+          <p>Éprouvant de sérieuses difficultés financières au sortir de sa captivité en terre d’Empire, Richard prétexta la perte du grand sceau royal lors de la croisade en Orient pour faire exécuter les matrices d’un nouveau sceau et déclara la nullité des actes expédiés jusqu’alors sous le premier. Toutes les anciennes chartes devaient être apportées à la chancellerie pour y recevoir confirmation sous le second sceau et, bien entendu, il fallait payer les taxes et les frais de cette nouvelle expédition.</p>
+          <p>Mais la pratique de la rénovation des actes sous le second sceau n’intervint pas avant le mois de mai 1198. Quatre actes seulement, parmi ceux concernant la Normandie, furent ainsi soumis à cette formalité, mais toutes les chartes datées de la fin du règne de Richard ont été données directement sous ce second sceau.</p>
+          <p>Chartes, lettres, mandements, sauf-conduits etc., sont tous scellés avec un sceau pendant, apposé sur double queue de parchemin (procédé le moins fréquent) ou sur lacs de soie de couleurs extrêmement variées. Seuls, les « writs » sont scellés sur simple queue de parchemin, une entaille étant pratiquée dans le bas de l’acte de manière à découper une lanière qui enserrera le parchemin une fois roulé et qui recevra le sceau. Les modes de scellement sont les mêmes dans toute l’étendue des territoires soumis à domination de Richard Cœur-de-Lion ; nous rencontrons donc des « writs » aussi bien en Normandie qu’en Angleterre.</p>
+          <p>La matière la plus usitée pour les sceaux est la cire verte, mais il y a aussi quelques sceaux de cire jaune ou marron.</p>
+        </div>
+        <div>
+          <pb n="75" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_05.TIF/full/full/0/default.jpg"/>
+          <head rend="uc">Les actes normands de Richard Cœur-de-Lion</head>
+          <p>Édition critique de tous les actes concernant la Normandie.</p>
+        </div>
+        <div>
+          <head rend="uc">Album de photographies</head>
+          <pb n="76" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_09/ENCPOS_1971_09_06.TIF/full/full/0/default.jpg"/>
+        </div>
+      </div>
+      <div type="position" xml:id="ENCPOS_1971_12">
+        <pb n="93" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_12/ENCPOS_1971_12_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Une ville et ses finances
+          <lb/>Mâcon (1360-1550)</head>
+        <byline>
+          par
+          <forename>Alain</forename>
+          <surname>Guerreau</surname>
+        </byline>
+        <div>
+          <head rend="uc">Bibliographie et sources</head>
+          <p>La grande richesse des archives communales de Mâcon est en contraste avec la pauvreté de la bibliographie. L’étude de l’historiographie locale fait apparaître de graves insuffisances, auxquelles il est maintenant possible de remédier, en utilisant notamment les registres de l’échevinat (trente de 1366 à 1550), qui fournissent une documentation abondante mais disparate. Les rôles de taille (CC 2 à CC 12) aussi ont été étudiés systématiquement.</p>
+        </div>
+        <div>
+          <head rend="uc">Première partie
+            <lb/>La ville</head>
+          <p>L’étude du commerce, grâce au tarif du péage de la fin du <num>xiii<hi rend="sup">e</hi></num> siècle, à l’analyse des origines de la population et à des mentions dispersées, montre la prédominance de l’axe nord-sud et l’importance des foires de Chalon, au moins au xiv<hi rend="sup">e</hi> siècle. Genève tint ce rôle de centre d’attraction entre 1420 et 1470. Puis ce fut Lyon. La production textile mâconnaise fut probablement très abondante aux xiv<hi rend="sup">e</hi> et <num>xv<hi rend="sup">e</hi></num> siècles, mais subit une crise dans le dernier quart du siècle. Au xvi<hi rend="sup">e</hi> siècle, les activités se diversifièrent davantage.</p>
+          <p>Une opposition très nette existait entre les deux catégories principales de la population : d’une part, l’oligarchie, composée d’hommes de loi et de marchands, d’autre part, une masse d’ouvriers et d’artisans plus ou moins prolétarisés. Cette opposition se traduit avec éclat dans la répartition sociale des possessions extérieures des bourgeois, dans la structure de la ville en quartiers différenciés, dans les structures démographiques : l’oligarchie se renouvelait relativement lentement, tandis que les couches les plus basses se renouvelaient bien plus rapidement, signe incontestable d’une mortalité plus précoce.</p>
+          <pb n="94" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_12/ENCPOS_1971_12_02.TIF/full/full/0/default.jpg"/>
+          <p>Les échevins, qui dirigèrent la ville après que celle-ci eut acquis ses privilèges politiques en 1347, étaient les représentants de l’oligarchie.</p>
+          <p>L’étude des événements politiques et militaires montre le caractère grave et violent des troubles qui secouèrent la région à quatre reprises (1360-1380, 1417-1424, 1430-1444, 1471-1473).</p>
+        </div>
+        <div>
+          <head rend="uc">Deuxième partie
+            <lb/>Les finances municipales</head>
+          <p>Les dépenses militaires n’eurent rien que de très classique. Une étude rapide des divers documents iconographiques et archéologiques permet de préciser un peu la chronologie de la construction des murailles. Au <hi rend="i">castrum </hi>du Bas Empire succéda une enceinte plus vaste au <num>xii<hi rend="sup">e</hi></num> siècle, qui fut agrandie au sud au milieu du <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>Le versement des impôts au roi suivit la chronologie générale jusqu’en 1417. La pression fiscale entre 1411 et 1417 contribua à favoriser le parti bourguignon à Mâcon. Les impôts furent assez vite remplacés par divers dons au duc. A partir de 1440 environ, les États du Mâçonnais nouvellement organisés servirent d’instrument aux échevins pour défendre la ville contre les exigences financières de Dijon.</p>
+          <p>Outre les dépenses normales de frais administratifs, judiciaires, de voyages et de gages, la ville prit à sa charge les dépenses d’entretien de l’église paroissiale Saint-Pierre, les dépenses pour l’école de la ville et divers travaux d’urbanisme (pavages, fontaines, puits, horloge).</p>
+          <p>Les ressources étaient très variables et diverses. Le seizième sur le vin était régulièrement affermé ; une rapide analyse permet d’émettre l’hypothèse que la demande de vin au détail était assez inélastique à Mâcon au début du <num>xv<hi rend="sup">e</hi></num> siècle. D’autres taxes indirectes furent levées, mais toujours pour de brèves périodes. Les tailles constituaient sans doute la ressource principale, mais leur levée était toujours assez délicate.</p>
+          <p>Les échevins qui gérèrent les finances de la ville un peu comme un bien patrimonial, firent preuve de prudence (peu d’emprunts) et de souplesse, ce qui leur permit d’éviter toute catastrophe, mais nous prive d’une documentation vraiment homogène.</p>
+        </div>
+        <div>
+          <head rend="uc">Pièces justificatives</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Fac-similés, photographies, graphiques</head>
+          <p/>
+        </div>
+        <div>
+          <head rend="uc">Tableaux</head>
+          <p/>
+        </div>
+      </div>
+      <div type="position" xml:id="ENCPOS_1971_14">
+        <pb n="103" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">Le cartulaire
+          <lb/>de l’abbaye Notre-Dame de la Roë
+          <lb/>édition critique</head>
+        <byline>
+          par
+          <forename>Marie</forename>
+          <surname>Hamon-Jugnet</surname>
+        </byline>
+        <div>
+          <head rend="uc">Avant-propos</head>
+          <p>Le fonds de l’abbaye Notre-Dame de la Roë constitue le dépôt le plus précieux des Archives départementales de la Mayenne. Malgré les pertes subies, un grand nombre de pièces anciennes subsistent, parmi lesquelles un cartulaire du <num>xii<hi rend="sup">e</hi></num> siècle (H 154). Celui-ci constitue un témoignage précieux sur le siècle qui suivit la fondation, par Robert d’Arbrissel, d’une communauté de chanoines réguliers dans la forêt de Craon.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre premier
+            <lb/>l’abbaye Notre-Dame de la Roë au <num>xii<hi rend="sup">e</hi></num> siècle</head>
+          <p>La fondation de l’abbaye de la Roë est le premier essai de vie érémitique tenté par Robert d’Arbrissel. Après ses séjours à Rennes et Angers, celui-ci se retira vers 1091 dans la forêt de Craon, où le rejoignirent bientôt quelques disciples qui vécurent en commun, constituant ainsi la communauté qui allait être à l’origine de l’abbaye de la Roë. Parmi ces premiers compagnons figuraient Bernard de Tiron et Vital de Mortain, le célèbre fondateur de l’abbaye de Savigny.</p>
+          <p>En 1096 la petite communauté adopta la règle des Chanoines Augustins réformée par Yves de Chartres. Le pape Urbain II, de passage à Angers, avait fait mander Robert pour prêcher à la dédicace de l’abbaye de Saint-Nicolas. Robert s’était donc rendu à Angers avec ses compagnons. Le lendemain de la dédicace, le 11 février, il eut une entrevue, ménagée par l’évêque d’Angers, avec Renaud, seigneur de Craon, et ses trois fils, qui concédèrent un bois proche <pb n="104" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_02.TIF/full/full/0/default.jpg"/> de Craon, alors au diocèse d’Angers, pour y édifier une église en l’honneur de Notre-Dame et y établir une communauté de Chanoines Augustins.</p>
+          <p>Cette création doit être replacée dans le contexte du début du <num>xii<hi rend="sup">e</hi></num> siècle, où se multiplient les fondations érémitiques. C’est l’époque des controverses entre les moines d’observance traditionnelle et les nouveaux ordres d’ermites.</p>
+          <p>En 1098, le 25 avril, on procéda à la bénédiction du cimetière et à la délimitation de la paroisse, dont un acte a conservé les limites précises. Les droits de synode et de visite furent fixés à trois sous, compte tenu de l’exiguïté de la paroisse. Robert d’Arbrissel quitta ses compagnons quelque temps après. En 1099, les bases de sa seconde fondation, appelée à une grande célébrité, étaient jetées dans le désert de Fontevraud.</p>
+          <p>L’abbaye se développa au cours du <num>xii<hi rend="sup">e</hi></num> siècle grâce à la protection des évêques d’Angers. Les comtes d’Anjou et les seigneurs de Craon manifestèrent également leur intérêt à la récente fondation. Celle-ci fut d’abord nommée Notre-Dame du Bois (<hi rend="i">de Bosco</hi>), puis elle prit à partir du milieu du siècle le nom de Roë (<hi rend="i">Rota</hi>), sans doute à cause du défrichement d’une clairière autour de l’abbaye. Les donations vinrent l’enrichir peu à peu. En 1136, Innocent II confirma une première fois les possessions du monastère, soit vingt et une églises et chapelles, réparties dans les diocèses du Mans, d’Angers et de Rennes. Une seconde confirmation des biens, par Lucius III, en 1184, permet de mesurer l’extension prise par l’abbaye durant la seconde moitié du siècle. A la même époque, les travaux de l’église, encore inachevée en 1138 lors de sa consécration, se poursuivirent sous l’abbé Michel (1148-1170).</p>
+          <p>La répartition des possessions, situées aux confins du Maine, de l’Anjou et de la Bretagne, révèle une expansion très limitée. L’abbaye fut d’ailleurs longtemps considérée comme la plus pauvre de l’Anjou.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre II
+            <lb/>Description, contenu et histoire du cartulaire</head>
+          <p>Le cartulaire se présente sous la forme d’un petit in-quarto de cent folios, écrits recto-verso sur une seule colonne. Il en comptait cent vingt-trois avant la Révolution. Le manuscrit comporte, en tête, une table des deux cent vingt-deux premières chartes. Dans son état actuel, il compte deux cent quarante-quatre actes, échelonnés entre 1096 et le début du <num>xiii<hi rend="sup">e</hi></num> siècle. La plupart d’entre eux se rapportent à des donations de laïcs, dont trois émanent des comtes d’Anjou, quatorze des seigneurs de Craon, quatre des seigneurs de Château-Gontier, trois de ceux de Laval. Vingt actes émanent des évêques de Rennes, Angers, Le Mans et Nantes. Trois diplômes sont des diplômes de papes.</p>
+          <p>Une douzaine de scribes ont participé à l’élaboration du recueil. Les brisures très nettes dans chacune des écritures les font dater de la seconde moitié du <num>xii<hi rend="sup">e</hi></num> siècle. Le cartulaire a été compilé selon toute vraisemblance sous l’abbatiat de Michel (1148-1170), au moins pour une bonne partie des actes. Les soixante premiers, environ, concernent l’histoire de l’abbaye jusqu’aux années 1150. Les notices semblent ensuite avoir été transcrites au fur et à mesure sous <pb n="105" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_03.TIF/full/full/0/default.jpg"/>l’abbé Michel et ses successeurs, jusqu’à l’abbé Thomas (1191-1212), dernier mentionné.</p>
+          <p>Après avoir échappé aux pillages de l’abbaye pendant la guerre de Cent ans et les guerres de Religion, le cartulaire faillit brûler en 1796, lors d’un autodafé des titres de l’abbaye. Un habitant du pays le sauva du feu. Après être passé en diverses mains au cours du <num>xix<hi rend="sup">e</hi></num> siècle, le volume fut donné aux Archives de la Mayenne, département dont la commune de la Roë fait partie depuis la Révolution. Il a perdu la reliure ancienne de parchemin blanc qui le recouvrait encore au <num>xviii<hi rend="sup">e</hi></num> siècle ; elle a été remplacée par une reliure moderne, pour laquelle on a réutilisé les anciens ais de chêne.</p>
+        </div>
+        <div>
+          <head rend="uc">Chapitre III
+            <lb/>Intérêt diplomatique et historique du cartulaire</head>
+          <p>Les copies fournies par le cartulaire sont presque toujours uniques. Des actes compilés dans le recueil, il ne reste plus que trois originaux conservés dans le fonds d’archives de l’abbaye. La majeure partie des chartes nous ont été conservées sous forme de notices, exceptées une quarantaine qui remontent à des diplômes délivrés par des chancelleries organisées (comtes, évêques, abbayes). Les notices ne sont parfois que des originaux remaniés par le scribe, comme le prouve l’acte de fondation. Mais de nombreux exemples montrent que la notice était la forme habituelle de rédaction des actes à l’abbaye. Les formules <hi rend="i">certum sit, notum sit, notum facimus omnibus filiis de Rota</hi> servent parfois de courte introduction aux actes. Les abbés n’ont pas de titulature particulière ; ils sont seulement nommés dans le cours de la notice.</p>
+          <p>Les actes permettent de connaître bien des aspects de l’activité des chanoines. Ils nous renseignent sur l’existence d’une léproserie et d’une école où les jeunes enfants reçus à l’abbaye apprenaient à lire et à chanter, sur les titulaires des différences offices du monastère. L’activité économique des religieux et de leurs serviteurs y est évoquée, notamment les défrichements de la forêt, l’assèchement des marais et les différentes occupations agricoles. On recueille au hasard des actes des précisions intéressantes sur les modes de tradition de la propriété, symbolisée par un couteau, un bâton, une branche ou les fruits d’un arbre situé à la limite des terres concédées.</p>
+          <p>Le latin des actes est souvent incorrect. Les formes vulgaires, plus ou moins latinisées, sont d’un emploi fréquent.</p>
+        </div>
+        <div>
+          <head rend="uc">Édition du cartulaire</head>
+          <p>Le cartulaire a été publié dans son état actuel. Il a été possible de reconstituer une partie des vingt-trois folios disparus, grâce aux copies des collections Baluze, Dupuy et Housseau à la Bibliothèque Nationale, et du manuscrit 865 (ancien 777) de la Bibliothèque municipale d’Angers. On y a ajouté des pièces <pb n="106" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_14/ENCPOS_1971_14_04.TIF/full/full/0/default.jpg"/>complémentaires concernant l’histoire de l’abbaye depuis sa fondation jusqu’en 1212, qui ne figurent pas dans le cartulaire. Ces titres originaux ont été tirés des quarante-six volumes conservés du chartrier de la Roë. Le tout est complété par des actes tirés des cartulaires de la Couture du Mans, de Solesmes, de la Trinité de Vendôme et de la cathédrale d’Angers. Toutes ces pièces complémentaires ont été classées dans l’ordre chronologique.</p>
+        </div>
+        <div>
+          <head rend="uc">Appendices</head>
+          <div>
+            <head rend="uc">1. Liste des dignitaires laïques et ecclésiastiques mentionnés
+              <lb/>dans le cartulaire.</head>
+            <p/>
+          </div>
+          <div>
+            <head rend="uc">2. Index des noms de personne et des noms géographiques.</head>
+            <p/>
+          </div>
+          <div>
+            <head rend="uc">3. Index rerum.</head>
+            <p/>
+          </div>
+          <div>
+            <head rend="uc">4. Cartes.</head>
+            <p/>
+          </div>
+        </div>
+      </div>
+      <div type="position" xml:id="ENCPOS_1971_25">
+        <pb n="171" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_01.TIF/full/full/0/default.jpg"/>
+        <head rend="uc">L’église et les clercs face aux béguines
+          <lb/>et aux béghards du Rhin supérieur
+          <lb/>du xiv<hi rend="sup">e</hi> au xv<hi rend="sup">e</hi> siècle</head>
+        <byline>
+          par
+          <forename>Jean-Claude</forename>
+          <surname>Schmitt</surname>
+          <roleName>diplômé de maîtrise d’histoire</roleName>
+        </byline>
+        <div>
+          <head rend="uc">Avant-propos</head>
+          <p>Notre étude n’est pas une histoire des béguinages, mais un essai sur la manière dont la société se les représentait, sur le langage, le plus souvent hostile, qu’elle a tenu sur les béguines et les béghards pendant plus de deux siècles ; période longue sans doute, mais qui seule permet de saisir une évolution des mentalités dans ses relations avec les modifications des rapports sociaux.</p>
+          <p>Plus précisément, en raison de l’abondance de la documentation d’origine ecclésiastique, nous avons choisi les clercs et la hiérarchie de l’Église comme auteur collectif du langage à étudier. Parce que le mode de vie des béguines et des béghards, bien qu’ils fussent des laïcs, était proche de celui des clercs, ces derniers cherchèrent plus que d’autres à les définir pour s’en distinguer et s’efforcèrent de leur opposer les normes de la vie laïque idéale telle qu’ils l’entendaient. Parce que les habitants des béguinages, ni clercs, ni laïcs comme les autres, constituaient ce « Zwischenstand » dont parlent les historiens allemands, nous trouvons en eux un champ d’observation privilégié des rapports de la société laïque et de la société ecclésiastique, à la jonction de ces deux mondes. Mais cette ambiguïté des béguinages explique aussi l’hostilité des clercs : c’est sur le mode de la polémique que se déploya leur langage.</p>
+        </div>
+        <div>
+          <head rend="uc">Première partie
+            <lb/>L’hérétique</head>
+          <p>Condamnés pour hérésie par le concile de Vienne (1311), les béguines et les béghards n’ont pourtant pas cessé de se multiplier au xiv<hi rend="sup">e</hi> siècle ; s’ils étaient absents de Constance, ils se comptaient par centaines à Strasbourg et à Bâle. <pb n="172" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_02.TIF/full/full/0/default.jpg"/>A la suite du concile et de la papauté, la hiérarchie locale a sévèrement condamné les béguines et les béghards. Pour cette période, les documents non publiés sont rares, mais nous avons largement utilisé le fonds <hi rend="i">Predicatores N</hi> 5 du Staatsarchiv des Kantons Basel-Stadt, qui concerne le « Beginenstreit », la polémique contre les béguines de Bâle au début du <num>xv<hi rend="sup">e</hi></num> siècle ; il comprend des mandements des évêques de Bâle et de Constance, des procès-verbaux de jugements des légats pontificaux Oddon de Colonna et Jacobinus de Torso, des suppliques des parties en présence, un fragment de correspondance. Ces sources très précieuses sont inédites.</p>
+          <p>Jusqu’au début du <num>xv<hi rend="sup">e</hi></num> siècle, la béguine et le béghard étaient essentiellement, pour l’Église, des hérétiques. En réalité, ce grief nous apparaît peu fondé : la hiérarchie a étendu à tous les béguinages l’accusation que seule méritait une petite minorité hétérodoxe, liée à la secte des Frères du Libre Esprit. Mais tous formaient un groupe mal intégré à la communauté de l’Église, évoquaient par leur mode de vie l’activité des hérétiques, même s’ils étaient parfaitement orthodoxes. Tous étaient d’emblée soupçonnés d’hérésie, parce qu’ils semblaient menacer l’ordre de l’Église, assimilé par les clercs à l’ordre de la société tout entière. Sans être coupables d’hétérodoxie, ils se retrouvaient donc hérétiques.</p>
+        </div>
+        <div>
+          <head rend="uc">Deuxième partie
+            <lb/>Le « mendiant-valide »</head>
+          <p>Au début du <num>xv<hi rend="sup">e</hi></num> siècle, l’accusation d’hérésie ne fut plus proférée à l’encontre des béguines et des béghards ; désormais les clercs leur reprochèrent d’être des « mendiants-valides ». Ainsi, le Prêcheur bâlois Johannes Mülberg, vers 1405, dans ses traités inédits (<hi rend="i">Positio contra statum Beginarum et Lolhardorum,</hi> qui répond à la <hi rend="i">Positio pro defensione Beginarum</hi> du Mineur Rudolphe Buchsmann, et <hi rend="i">Materia contra Baghardos</hi>), et, peu après, le chanoine de Constance Félix Hemmerlin, dont les œuvres furent publiées en 1497 par Sébastien Brant (notamment le <hi rend="i">De valido mendicante</hi> et le <hi rend="i">Nota contra aliquos Lolhardos et Beghardos ac alios qui dicunt res Ecclesie esse elemosynas</hi>). A la fin du siècle, les incunables des humanistes alsaciens, tel Geiler de Kaisersberg, ou suisses, tel Thomas Murner, répandirent largement la nouvelle image polémique des béguines et des béghards.</p>
+          <p>Les traits qui composaient cette image étaient anciens et le grief de « mendicité-valide » même était emprunté explicitement à Guillaume de Saint-Amour. Mais l’utilisation de ce grief était nouveau dans la polémique et traduit une profonde modification des conditions dans lesquelles elle s’est déroulée au <num>xv<hi rend="sup">e</hi></num> siècle. De plus en plus, le « béghard-mendiant valide » fut présenté comme le type même du parasite social, niant les valeurs d’un monde qui, pour les clercs mêmes, n’étaient plus définies par l’Église seule, mais aussi par la bourgeoisie des villes, en fonction de son idéal d’austère labeur et de sa méfiance de la pauvreté, qu’elle assimilait à l’oisiveté. Cette attitude et ce <pb n="173" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_03.TIF/full/full/0/default.jpg"/>langage étaient déterminés par les inégalités sociales qui allaient croissantes parmi les laïcs, comme au sein même du clergé.</p>
+          <p>La modification du langage polémique, au début du <num>xv<hi rend="sup">e</hi></num> siècle, manifeste une prise de conscience, par les clercs, du monde urbain et de ses valeurs ; elle a peut-être été favorisée par la réunion, dans notre région, des conciles de Constance et de Bâle, où les laïcs firent entendre leurs récriminations contre une Église profondément divisée et affaiblie.</p>
+          <p>Au même moment s’arrêta aussi l’expansion des béguinages, que les condamnations du <num>xiv<hi rend="sup">e</hi></num> siècle avaient été incapables de freiner. Simultanément à Bâle et à Strasbourg, les nouvelles fondations cessèrent et les maisons existantes s’éteignirent les unes après les autres. Il semble que les bienfaiteurs traditionnels et les béguines mêmes aient alors compris que ce mode de vie était révolu : c’est l’époque où des béguinages se convertirent en hospices et des béguines en garde-malades, sacrifiant à l’idéal de travail de toute la société.</p>
+        </div>
+        <div>
+          <head rend="uc">Aperçus méthodologiques</head>
+          <p>Des problèmes posés à l’historien des mentalités, le moindre n’est pas l’inadaptation fréquente des formes d’expression, des instruments linguistiques, traditionnels et souvent figés, aux situations nouvelles auxquelles les hommes du Moyen âge étaient confrontés. Par exemple, il leur paraissait nécessaire de citer abondamment les « autorités » ; mais, pour nous, importe moins ce que disent ces citations que l’usage qui en a été fait à un moment donné, parce qu’il témoigne seul du rapport social dans lequel l’auteur se situe. C’est pourquoi nous croyons bon de distinguer le discours, qui est la forme traditionnelle mais nécessaire de l’expression, du langage, qu’il faut lire à travers et au-delà de ce discours, et qui est seul le produit des conditions historiques dans lesquelles a écrit l’auteur. Pour atteindre ce langage, divers moyens peuvent être mis en œuvre ; par exemple, l’étude statistique des citations employées sur un même sujet par des auteurs différents montre que l’utilisation des « autorités » n’est pas la même selon l’assise matérielle, la situation sociale de celui qui écrit.</p>
+        </div>
+        <div>
+          <head rend="uc">Tableaux, graphiques, illustrations</head>
+          <p>Par des tableaux statistiques et des graphiques nous avons voulu montrer tout le parti que l’historien des mentalités pouvait tirer de telles méthodes :</p>
+          <p>1. Graphique montrant la force des résistances à l’évolution dans le langage des bulles pontificales et des mandements épiscopaux dirigés contre les béguines et les béghards au <num>xiv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>2. Graphique montrant l’évolution du nombre des béguinages fondés tous les dix ans, entre le milieu du xin<hi rend="sup">e</hi> siècle et le début du xvi<hi rend="sup">e</hi> siècle, dans les villes de Cologne, Mayence, Strasbourg et Bâle.</p>
+          <pb n="174" facs="https://iiif.chartes.psl.eu/images/encpos/ENCPOS_1971_25/ENCPOS_1971_25_04.TIF/full/full/0/default.jpg"/>
+          <p>3. Graphique illustrant l’évolution numérique des béguinages de Strasbourg et de Bâle, du xiv<hi rend="sup">e</hi> au <num>xv<hi rend="sup">e</hi></num> siècle.</p>
+          <p>4. Tableau statistique des citations bibliques et canoniques utilisées pour dépeindre le « béghard-mendiant-valide ».</p>
+          <p>5. Tableau statistique des citations bibliques et canoniques utilisées contre les béguines et les béghards par J. Mülberg, O.P., et F. Hemmerlin, chanoine de Zurich.</p>
+          <p>6. Graphique montrant comment ces deux clercs, disposant du même arsenal d’arguments, en ont fait un usage différent.</p>
+          <p>7. Trois illustrations satiriques, extraites de l’œuvre du Mineur Thomas Murner, au début du <num>xvi<hi rend="sup">e</hi></num> siècle, faisant apparaître la béguine sous les traits d’une « folle » inutile et perverse.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
