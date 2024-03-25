@@ -1,0 +1,3 @@
+dbName	collectionId	dc:title	parentId	documentIds	dc:description
+theater	comedie	Les comédies		moliere_avare|moliere_tartuffe	Collection thématique des comédies
+theater	tragedie	Les tragédies		moliere_dom-juan|racine_phedre|racine_andromaque	Collection thématique des tragédies
