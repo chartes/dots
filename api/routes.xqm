@@ -29,12 +29,13 @@ declare
   %output:json("format=attributes")
 function routes:entryPoint() {
  <json type="object">
-   <pair name="@context">/api/dts/EntryPoint.jsonld</pair>
+   <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
+   <pair name="dtsVersion">1-alpha</pair>
    <pair name="@id">/api/dts</pair>
    <pair name="@type">EntryPoint</pair>
-   <pair name="collection">/api/dts/collection</pair>
-   <pair name="documents">/api/dts/document</pair>
-   <pair name="navigation">/api/dts/navigation</pair>
+   <pair name="collection">/api/dts/collection/{?id,nav}collection</pair>
+   <pair name="navigation">/api/dts/navigation/{?resource,ref,start,end,down,tree}</pair>
+   <pair name="documents">/api/dts/document/{?resource,ref,start,end,tree,mediaType}</pair>
  </json>
 };
 
