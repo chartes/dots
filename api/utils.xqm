@@ -170,7 +170,7 @@ Chacune de ces fonctions permet de construire la réponse pour le endpoint Navig
 :)
 declare function utils:navigation($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $filter, $down as xs:integer) {
   if ($ref)
-  then utils:refNavigation($resourceId, $ref, $filter, $down)
+  then utils:refNavigation($resourceId, $ref, $down, $filter)
   else
     if ($start and $end)
     then utils:rangeNavigation($resourceId, $start, $end, $down, $filter)
@@ -223,7 +223,7 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
     then <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
     else ()
   let $url := concat("/api/dts/navigation?id=", $resourceId)
-  let $maxCiteDepth := if ($resource/@maxCiteDepth) then xs:integer($resource/@maxCiteDepth) else ()
+  let $maxCiteDepth := if ($resource/@maxCiteDepth != "") then xs:integer($resource/@maxCiteDepth) else 0
   return
     <json type="object">{
       <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>,
@@ -252,7 +252,7 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
 : @todo revoir bug sur dts:extensions qui apparaît même si rien
 : @todo revoir <pair name="parent"></pair> => ajouter un attribut @parentResource sur les fragments
 :)
-declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string, $filter, $down as xs:integer) {
+declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string, $down as xs:integer, $filter) {
   let $projectName := utils:getDbName($resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
   let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref}, $filter)
@@ -267,7 +267,7 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
       $member
   let $membersFiltered :=
     if ($filter)
-    then utils:filters($members, $filter)
+    then $members(: utils:filters($members, $filter) :)
     else ()
   let $response :=
     for $item in if ($membersFiltered) then $membersFiltered else $members
