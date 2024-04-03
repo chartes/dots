@@ -193,7 +193,7 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
   let $projectName := utils:getDbName($resourceId) 
   let $resource := utils:getResource($projectName, $resourceId)
   let $members :=
-    for $fragment in utils:getFragment($projectName, $resourceId, map {"id": $resourceId}, $filter)
+    for $fragment in utils:getFragment($projectName, $resourceId, map {"id": $resourceId})
     let $level := xs:integer($fragment/@level)
     where if ($down) then xs:integer($level) = $down else xs:integer($level) = 1
     return
@@ -255,7 +255,7 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
 declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string, $down as xs:integer, $filter) {
   let $projectName := utils:getDbName($resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
-  let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref}, $filter)
+  let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref})
   let $level := normalize-space($fragment/@level)
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
   let $citeType := normalize-unicode($fragment/@citeType)
@@ -267,10 +267,10 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
       $member
   let $membersFiltered :=
     if ($filter)
-    then $members(: utils:filters($members, $filter) :)
+    then utils:filters($members, $filter)
     else ()
   let $response :=
-    for $item in if ($membersFiltered) then $membersFiltered else $members
+    for $item in if ($membersFiltered != "") then $membersFiltered else $members
     let $ref := normalize-space($item/@ref)
     let $levelMember :=xs:integer($item/@level)
     let $citeType := normalize-unicode($item/@citeType)
@@ -330,7 +330,7 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
 declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer, $filter) {
   let $projectName := utils:getDbName($resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
-  let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start}, "")
+  let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start})
   let $maxCiteDepth := normalize-space($frag1/@maxCiteDepth)
   let $level := normalize-space($frag1/@level)
   return
@@ -373,7 +373,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
       where ends-with(db:path($document), $resourceId)
       return $document
   let $idRef := 
-    let $fragment := utils:getFragment($project, $resourceId, map{"ref": $ref}, $filter)
+    let $fragment := utils:getFragment($project, $resourceId, map{"ref": $ref})
     return
       $fragment/@node-id
   let $ref := 
@@ -645,7 +645,7 @@ declare function utils:getResource($projectName as xs:string, $resourceId as xs:
 : @param $resourceId chaîne de caractère identifiant une resource
 : @param $options map réunissant les informations pour définir le(s) fragments à trouver
 :)
-declare function utils:getFragment($projectName as xs:string, $resourceId as xs:string, $options as map(*), $filter) {
+declare function utils:getFragment($projectName as xs:string, $resourceId as xs:string, $options as map(*)) {
   let $id := map:get($options, "id")
   let $ref := map:get($options, "ref")
   return
@@ -658,10 +658,7 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
         let $fragments :=
           db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId][@ref = $ref] 
           return
-            if ($filter)
-            then
-              utils:filters($fragments, $filter)
-            else $fragments
+            $fragments
       else ()
 };
 
@@ -682,22 +679,22 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
 : faut-il ajouter des métadonnées (utils:getMandatory(), etc.)?
 :)
 declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $context as xs:string, $filter) {
-  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start}, "")
-  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end}, "")
+  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
+  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
   let $s := xs:integer($firstFragment/@node-id)
   let $e := xs:integer($lastFragment/@node-id)
   return
-    let $sequence :=
+    let $members :=
       for $fragment in db:get($projectName, $G:fragmentsRegister)//dots:fragment
       where $fragment/@node-id >= $s and $fragment/@node-id <= $e
       return
         $fragment
     let $result :=
       if ($filter)
-      then utils:filters($sequence, $filter)
-      else $sequence
+      then utils:filters($members, $filter)
+      else $members
     return
     for $fragment in $result
     let $ref := normalize-space($fragment/@ref)
@@ -750,7 +747,7 @@ declare function utils:getChildMembers($projectName as xs:string, $resourceId as
           for $candidat in $candidatParent
           where $candidat = $resourceId
           return
-            <test>{$candidat}</test>
+            <candidat>{$candidat}</candidat>
         return 
          $child
   return
