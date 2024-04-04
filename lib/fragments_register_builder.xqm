@@ -133,8 +133,14 @@ declare function dots.lib:getFragmentMetadata($bdd as xs:string, $ref as xs:stri
       if ($metadata/@resourceId = "all")
       then 
         let $key := $metadata/name()
+        let $elem := if (contains($key, ":")) then substring-after($key, ":") else $key
+        let $prefix := if (contains($key, ":")) then substring-before($key, ":") else ()
+        let $ns := if ($prefix) then namespace-uri($metadata) else ()
         return
-          element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+          element {$elem} { 
+            if ($ns) then namespace {$prefix} {$ns} else (), 
+            concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+          }
       else
         if ($record and $metadata) 
         then dots.lib:createContent($metadata, $record)

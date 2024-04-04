@@ -37,23 +37,6 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
       $count - $countDotsData
   let $content :=
     <resourcesRegister>
-      {
-        let $mapping := db:get($dbName, $G:metadata)/metadataMap
-        return
-          if ($mapping)
-          then 
-            for $prefix in in-scope-prefixes($mapping)
-            where $prefix != ""
-            where $prefix != "dc"
-            where $prefix != "xml"
-            let $ns := namespace-uri-for-prefix($prefix, $mapping)
-            return
-              namespace {$prefix} {$ns}
-          else 
-            (
-              namespace {"dc"} {"http://purl.org/dc/elements/1.1/"}
-            )
-      }
       {dots.lib:getMetadata()}
       <member>
         <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">{
@@ -88,8 +71,8 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
 :)
 declare function dots.lib:getMetadata() {
   <metadata>
-    <dct:created>{current-dateTime()}</dct:created>
-    <dct:modified>{current-dateTime()}</dct:modified>
+    <dct:created xmlns:dct="http://purl.org/dc/terms/">{current-dateTime()}</dct:created>
+    <dct:modified xmlns:dct="http://purl.org/dc/terms/">{current-dateTime()}</dct:modified>
   </metadata>
 };
 
@@ -201,7 +184,7 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
     else <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
   return
     (
-      (: if ($dcTitle) 
+      if ($dcTitle) 
       then
         let $xpathTitle := $dcTitle/@xpath
         let $queryTitle := concat('
@@ -209,14 +192,29 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
           $xpathTitle)
         let $valueQueryTitle := xquery:eval($queryTitle, map {"": $doc})
         return
-          <dc:title>{normalize-space($valueQueryTitle)}</dc:title>, :)
+          <title xmlns:dc="http://purl.org/dc/elements/1.1/">{normalize-space($valueQueryTitle)}</title>
+      else (),
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
       return
         if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
+          let $elem := 
+            if (contains($key, ":"))
+            then substring-after($key, ":")
+            else $key
+          let $prefix :=
+            if (contains($key, ":"))
+            then substring-before($key, ":")
+            else ()
+          let $ns :=
+            if ($prefix)
+            then
+              namespace-uri($metadata)
+            else ()
           return
-            element {$key} { 
+            element {$elem} { 
+              if ($ns) then namespace {$prefix} {$ns} else (),
               concat($metadata/@prefix, $metadata, $metadata/@suffix) 
             }
         else
@@ -256,6 +254,9 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
 
 declare function dots.lib:createContent($itemDeclaration, $record) {
   let $key := $itemDeclaration/name()
+  let $elem := if (contains($key, ":")) then substring-after($key, ":") else $key
+  let $prefix := if (contains($key, ":")) then substring-before($key, ":") else ()
+  let $ns := if ($prefix) then namespace-uri($itemDeclaration) else ()
   let $element := $itemDeclaration/@value
   let $value := 
     if ($record/node()[name() = $element] != "")
@@ -267,7 +268,8 @@ declare function dots.lib:createContent($itemDeclaration, $record) {
   return
     if ($value) 
     then 
-      element {$key} {
+      element {$elem} { 
+        if ($ns) then namespace {$prefix} {$ns} else (),
         if ($type) then attribute { "type" } { $type } else (),
         if ($subKey) then attribute { "key" } { $subKey } else (),
         $value
@@ -330,10 +332,10 @@ declare function dots.lib:getCollectionMetadata($bdd as xs:string, $collection a
         then $metadatas
         else 
           (
-            <dc:title>{$collection}</dc:title>,
+            <title xmlns:dc="http://purl.org/dc/elements/1.1/">{$collection}</title>,
             $metadatas
           )
-    else <dc:title>{$collection}</dc:title>
+    else <title xmlns:dc="http://purl.org/dc/elements/1.1/">{$collection}</title>
 };
 
 

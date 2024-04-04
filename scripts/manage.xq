@@ -6,13 +6,13 @@ xquery version "3.1";
 : @since 2023-06-23
 : @version  1.0
 :)
- import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm";
+ (: import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm"; :)
 (: import module namespace utils = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm"; :)
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 (: import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm"; :)
 (: import module namespace switcher.lib = "https://github.com/chartes/dots/lib" at "../lib/db_switch_builder.xqm"; :)
-(: import module namespace cc = "https://github.com/chartes/dots/builder/cc" at "resources_register_builder.xqm";
-import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
+import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/resources_register_builder.xqm";
+(: import module namespace docR = "https://github.com/chartes/dots/builder/docR" at "fragments_register_builder.xqm";
 import module namespace multi = "https://github.com/chartes/dots/builder/multi" at "documents_in_multiple_collections.xqm";
 import module namespace dbc = "https://github.com/chartes/dots/db/dbc" at "../db/db_creator.xqm";
 import module namespace dbd = "https://github.com/chartes/dots/db/dbd" at "../db/dots_registers_delete.xqm";
@@ -43,7 +43,7 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: 5. Supprimer  :)
 (: dbd:handleDelete() :)
   
-""  
+""
   
   
   
