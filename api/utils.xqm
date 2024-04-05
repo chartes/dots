@@ -36,7 +36,7 @@ declare function utils:noCollection() {
     <pair name="@type">collection</pair>
     <pair name="title">{$G:rootTitle}</pair>
     <pair name="totalItems" type="number">0</pair>
-    {utils:getContext("")}
+    {utils:getContext("", "")}
   </json>
 };
 
@@ -70,7 +70,7 @@ declare function utils:collections() {
           else ()
       }</pair>
     )
-  let $context := utils:getContext($content)
+  let $context := utils:getContext("", $content)
   return
     <json type="object">{
       $content,
@@ -138,7 +138,7 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
           if ($members) then <pair name="member" type="array">{$members}</pair>,
           if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair> else ()
         )
-      let $context := utils:getContext($response)
+      let $context := utils:getContext($projectName, $response)
       return
         (
           $response,
@@ -439,7 +439,11 @@ Fonctions "utiles"
 declare function utils:getMandatory($resource as element(), $nav as xs:string) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
-  let $title := normalize-space($resource/dc:title)
+  let $title := 
+    let $t := $resource/*:title
+    where in-scope-prefixes($t)[1] = "dc"
+    return
+      normalize-space($t)
   let $totalParents := 
     if ($resource/@parentIds) 
     then 
@@ -490,23 +494,27 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
 : @see utils.xqm;utils:getStringJson
 :)
 declare function utils:getDublincore($resource as element()) {
-  let $dc := $resource/node()[starts-with(name(), "dc:")]
+  let $dc := $resource/node()[in-scope-prefixes(.)[1] = "dc"]
   return
     if ($dc)
     then
-      <pair name="dts:dublincore" type="object">{
+      <pair name="dublincore" type="object">{
         for $metadata in $dc
         let $key := $metadata/name()
+        let $elementName :=
+          if (starts-with($key, "dc:"))
+          then substring-after($key, "dc:")
+          else $key
         let $countKey := count($dc/name()[. = $key])
         group by $key
         order by $key
         return
           if ($countKey > 1)
           then
-            utils:getArrayJson($key, $metadata)
+            utils:getArrayJson($elementName, $metadata)
           else
             if ($key)
-            then utils:getStringJson($key, $metadata)
+            then utils:getStringJson($elementName, $metadata)
             else ()
       }</pair>
     else ()
@@ -529,19 +537,28 @@ declare function utils:getExtensions($resource as element()) {
       <pair name="dts:extensions" type="object">{
         for $metadata in $extensions
         let $key := $metadata/name()
+        let $prefix := in-scope-prefixes($metadata)[1]
+        where $prefix != "dc"
         where $key != ""
+        let $name := 
+          if (contains($key, ":")) 
+          then $key 
+          else
+            let $prefix := $prefix
+            return
+              concat($prefix, ":", $key)
         let $countKey := count($extensions/name()[. = $key])
         group by $key
         order by $key
         return
           if ($countKey > 1)
           then
-            utils:getArrayJson($key, $metadata)
+            utils:getArrayJson($name[1], $metadata)
           else
             if ($countKey = 0)
             then ()
             else
-             utils:getStringJson($key, $metadata)
+             utils:getStringJson($name, $metadata)
       }</pair>
     else ()
 };
@@ -553,7 +570,7 @@ declare function utils:getExtensions($resource as element()) {
 : @param $key chaîne de caractères qui servira de clef JSON
 : @param $metada séquence XML
 :)
-declare function utils:getArrayJson($key as xs:string, $metadata) {
+declare function utils:getArrayJson($key, $metadata) {
   <pair name="{$key}" type="array">{
     for $meta in $metadata
     return
@@ -597,23 +614,35 @@ declare function utils:getStringJson($key as xs:string, $metadata) {
 : @param $response séquence XML pour trouver les namespaces présents (si nécessaire)
 : @todo utiliser la fonction namespace:uri() pour une meilleur gestion des namespaces?
 :)
-declare function utils:getContext($response) {
+declare function utils:getContext($db as xs:string, $response) {
   <pair name="@context" type="object">
     <pair name="dts">https://w3id.org/dts/api#</pair>
-    <pair name="vocab">https://www.w3.org/ns/hydra/core#</pair>
+    {if ($response//*:pair[@name="dublincore"]) then <pair name="dc">http://purl.org/dc/elements/1.1/</pair> else ()}
     {if ($response = "")
     then ()
     else
-      for $name in $response//@name
-      where contains($name, ":")
-      let $namespace := substring-before($name, ":")
-      group by $namespace
-      return
-        switch ($namespace)
-        case ($namespace[. = "dc"]) return <pair name="dc">{"http://purl.org/dc/elements/1.1/"}</pair>
-        case ($namespace[. = "dct"]) return <pair name="dct">{"http://purl.org/dc/terms/"}</pair>
-        case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
-        default return ()
+      if ($db != "")
+      then
+        let $map := db:get($db, concat($G:metadata, "dots_metadata_mapping.xml"))/dots:metadataMap
+        return
+          for $name in $response//@name
+          where contains($name, ":")
+          let $namespace := substring-before($name, ":")
+          group by $namespace
+          return
+            if ($map)
+            then 
+              let $listPrefix := in-scope-prefixes($map)
+              where $namespace = $listPrefix
+              let $uri := namespace-uri-for-prefix($namespace, $map)
+              return
+                <pair name="{$namespace}">{$uri}</pair>
+            else
+              switch ($namespace)
+              case ($namespace[. = "dc"]) return <pair name="dc">{"http://purl.org/dc/elements/1.1/"}</pair>
+              case ($namespace[. = "dct"]) return <pair name="dct">{"http://purl.org/dc/terms/"}</pair>
+              case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
+              default return () 
   }</pair>
 };
 

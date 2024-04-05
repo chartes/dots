@@ -20,9 +20,6 @@ declare variable $G:metadataMapping := "dots_default_metadata_mapping.xml";
 (:~ Variable pour accéder au document "resources_register.xml" d'un projet :)
 declare variable $G:resourcesRegister := "dots/resources_register.xml";
 
-(:~ Variable pour accéder au document "declaration.xml" d'un projet :)
-declare variable $G:declaration := "declaration.xml";
-
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:fragmentsRegister := "dots/fragments_register.xml";
 
