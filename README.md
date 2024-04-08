@@ -83,7 +83,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 #### Propriétés JSON
 
-cf. Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
 
 | Nom            | Statut      | Implémentation |
 | -------------- | ----------- | -------------- |
