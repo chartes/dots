@@ -1,5 +1,7 @@
 ![](https://img.shields.io/badge/BaseX-10+-red)
 
+# DoTS
+
 DoTS - BaseX DTS Tools
 
 ## Documentation
