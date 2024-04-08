@@ -26,7 +26,7 @@ cd path/to/basex/webapp
 git clone https://github.com/chartes/dots.git
 ```
 
-## Lancer le résolveur DTS
+## Démarrer le résolveur DTS
 
 ```Bash
 cd path/to/basex/bin
@@ -35,7 +35,7 @@ cd path/to/basex/bin
 ```Bash
 bash basexhttp
 ```
-Par défaut, le point d'entrée de l'API DTS se fait à l'adresse suivante : <a href="http://localhost:8080/api/dts/" target="_blank">http://localhost:8080/api/dts/</a>.
+Par défaut, le point d'entrée de l'API DTS est disponible à <a href="http://localhost:8080/api/dts/" target="_blank">http://localhost:8080/api/dts/</a>.
 
 ## Documentation
 
@@ -45,11 +45,11 @@ L'installation et l'utilisation de DoTS sont documentées plus précisément ici
 
 Les différents tableaux rendent compte de l'implémentation actuelle de l'API DTS (version 1-draft2) de DoTS pour la méthode GET.
 
-### Endpoint Collections
+### Endpoint Collection
 
-#### Propriétées JSON
+#### Propriétés JSON
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Collections-Endpoint.html#scheme)
+cf. [Collection Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#collection-endpoint)
 
 | Nom             | Statut                           | Implémentation |
 | --------------- | -------------------------------- | -------------- |
@@ -81,7 +81,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 ### Endpoint Navigation
 
-#### Propriétées JSON
+#### Propriétés JSON
 
 cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#scheme-for-navigation-endpoint-responses)
 
@@ -95,7 +95,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `parent`       | obligatoire | ✅              |
 | `member`       |             | ✅              |
 
-#### Propriétées JSON des `members`
+#### Propriétés JSON des `members`
 
 cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#scheme-for-navigation-endpoint-responses)
 
@@ -110,7 +110,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Paramètres de requête
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#query-parameters)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
 
 | Nom     | Méthode | Implémentation |
 | ------- | ------- | -------------- |
@@ -127,7 +127,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Paramètres de requête
 
-cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Documents-Endpoint.html#uri)
+cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint)
 
 | Nom    | Méthode | Implémentation |
 | ------ | ------- | -------------- |
