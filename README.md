@@ -10,6 +10,8 @@ L'installation et l'utilisation de DoTS sont documentées plus précisément ici
 
 ## État d'avancement de l'implémentation de DTS dans DoTS
 
+Les différents tableaux rendent compte de l'implémentation de l'API DTS (version 1-draft2) pour la méthode GET.
+
 ### Endpoint Collections
 
 #### Propriétées JSON
