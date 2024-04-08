@@ -540,13 +540,14 @@ declare function utils:getExtensions($resource as element()) {
         let $prefix := in-scope-prefixes($metadata)[1]
         where $prefix != "dc"
         where $key != ""
+        let $ns := namespace-uri($metadata)
         let $name := 
           if (contains($key, ":")) 
           then $key 
-          else
-            let $prefix := $prefix
-            return
-              concat($prefix, ":", $key)
+          else 
+            if ($ns = "https://github.com/chartes/dots/")
+            then $key
+            else concat($prefix, ":", $key)
         let $countKey := count($extensions/name()[. = $key])
         group by $key
         order by $key
