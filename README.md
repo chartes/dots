@@ -1,9 +1,5 @@
 ![](https://img.shields.io/badge/BaseX-10+-red)
 
-<p align="right">
-    <img src="https://hackmd.io/_uploads/ByyOpEbxC.png" alt="dots logo" width="100"/>
-</p>
-
 DoTS - BaseX DTS Tools
 
 ## Documentation
