@@ -2,7 +2,40 @@
 
 ![](https://img.shields.io/badge/BaseX-10+-red)
 
-DoTS - BaseX DTS Tools
+## Description
+
+DoTS est une implémentation XQuery de la spécification d'API DTS (Distributed Text Services - <a href="https://distributed-text-services.github.io/specifications/" target="_blank">https://distributed-text-services.github.io/specifications/</a>)., adossé au logiciel de base de données XML BaseX (<a href="https://basex.org/" target="_blank">https://basex.org/</a>).
+
+## Installation
+
+### BaseX
+
+- télécharger et installer BaseX (>= 10.0)
+  - Prérequis : https://docs.basex.org/wiki/Startup#Startup
+  - Lien de téléchargement : https://basex.org/download/
+
+### DoTS
+
+DoTS doit être installé directement dans le dossier de BaseX.
+
+```bash
+cd path/to/basex/webapp
+```
+
+```bash
+git clone https://github.com/chartes/dots.git
+```
+
+## Lancer le résolveur DTS
+
+```Bash
+cd path/to/basex/bin
+```
+
+```Bash
+bash basexhttp
+```
+Par défaut, le point d'entrée de l'API DTS se fait à l'adresse suivante : <a href="http://localhost:8080/api/dts/" target="_blank">http://localhost:8080/api/dts/</a>.
 
 ## Documentation
 
