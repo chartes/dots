@@ -4,7 +4,7 @@
 
 ## Description
 
-DoTS est une implémentation XQuery de la spécification d'API DTS (Distributed Text Services - <a href="https://distributed-text-services.github.io/specifications/" target="_blank">https://distributed-text-services.github.io/specifications/</a>)., adossé au logiciel de base de données XML BaseX (<a href="https://basex.org/" target="_blank">https://basex.org/</a>).
+DoTS est une implémentation XQuery de la spécification d'API DTS (Distributed Text Services - <a href="https://distributed-text-services.github.io/specifications/" target="_blank">https://distributed-text-services.github.io/specifications/</a>), adossé au logiciel de base de données XML BaseX (<a href="https://basex.org/" target="_blank">https://basex.org/</a>).
 
 ## Installation
 
