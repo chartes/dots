@@ -1,121 +1,14 @@
-# DoTS
+![](https://img.shields.io/badge/BaseX-10+-red)
 
-DoTS – BaseX DTS Tools
+<p align="right">
+    <img src="https://hackmd.io/_uploads/ByyOpEbxC.png" alt="dots logo" width="100"/>
+</p>
 
-## Installation
+DoTS - BaseX DTS Tools
 
-- Télécharger et installer BaseX (https://basex.org/)
-- Télécharger DoTS (https://github.com/chartes/dots)
-- Trouver le chemin où BaseX a été installé
-- Copier le dossier DoTS dans /path/to/BaseX/webapp
+## Documentation
 
-## Prérequis DoTS
-
-### Arborescence des fichiers à fournir
-
-- un dossier `/TEI` regroupant tous les documents TEI du corpus
-- un dossier `/dots` regroupant les documents utiles au builder DoTS pour créer les registres DoTS (TSV et metadata_mapping.xml)
-- ces documents sont facultatifs
-
-#### Cas 1: Projet sans collection
-
-```
-Dir Project (exemple: ENDP)
-
-├── /theatre
-│    ├── /TEI
-│        ├── TEI1.xml
-│        ├── TEI2.xml
-│        ├── TEI3.xml
-│        ├── (...)
-
-│    ├── /dots
-│        ├── (metadata.tsv)
-│        ├── (dots_metadata_mapping.xml)
-```
-
-#### Cas 2: Projet avec collections
-
-```
-Dir Project (exemple: ENDP)
-
-├── /ENDP
-│    ├── /TEI
-│        ├── /id_collection1
-│            ├── TEI1.xml
-│            ├── TEI2.xml
-│            ├── TEI3.xml
-│            ├── (...)
-│        ├── /id_collection2
-│            ├── TEI1.xml
-│            ├── TEI2.xml
-│            ├── TEI3.xml
-│            ├── (...)
-│        ├── /id_collection3
-│            ├── TEI1.xml
-│            ├── TEI2.xml
-│            ├── TEI3.xml
-│            ├── (...)
-
-│    ├── /dots
-│        ├── (metadata.tsv)
-│        ├── (dots_metadata_mapping.xml)
-```
-Dans ce cas, un tableur TSV et un `m̀etadata_mapping.xml` sont obligatoires pour déclarer *a minima* les métadonnées des collections (au moins un **dc:title**).
-Le TSV doit disposer d'une colonne avec les identifiants des collections dont le nom est similaire à celui proposé dans l'arborescence des fichiers.
-
-
-### Prérequis des fichiers TEI
-
-- Le fichier TEI doit correspondre à l'unité documentaire que l'utilisateur souhaite éditer. Si le fichier TEI correspond à une collection regroupant plusieurs document, il est préconisé de séparer en amont le fichier TEI collection en autant de documents que nécessaire.
-- chaque fichier TEI doit disposer d'un attribut `@xml:id` sur l'élément racine `TEI`.
-- pour pouvoir lister des fragments sur les endpoints DTS **Navigation** (cf. https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html) et **Document** (cf. https://distributed-text-services.github.io/specifications/Documents-Endpoint.html), la structure hiérarchique doit être explicité dans le teiHeader dans `citeStructure` (cf. le modèle `dots_metadata_mapping.xml` dans `dots/data_test/endp/dots_metadata_mapping.xml` et dans les guidelines TEI  https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-citeStructure.html)
-
-### Modèle `dots_metadata_mapping.xml`
-
-cf. pour exemple: `/dots/data_test/endp/dots/endp_metadata_mapping.xml` ou `/dots/data_test/theatre/dots_metadata_mapping.xml`
-
-L'élément `mapping` contient toutes les métadonnées que l'utilisateur souhaite intégrer aux registres. 
-
-Le fonctionnement général est le suivant:
-- le nom de l'élément XML servira de clef json pour la réponse d'API.
-- un attribut `@scope` permet de spécifier la portée de la métadonnée, selon qu'elle concerne une **collection** (ressource de type collection) ou un **document** (ressource de type ressource).
-
-Dans le cas où les métadonnées sont issues d'un fichier TEI:
-- un attribut `@xpath` permet de spécifier où collecter la métadonnée.
-- un attribut `@scope` permet d'indiquer la portée. Logiquement, il s'agit ici plutôt des métadonnées des **documents**.
-
-Dans le cas où les métadonnées sont issues d'un document TSV:
-- pour l'instant, seul le cas des TSV est pris en charge.
-- l'attribut `@source` permet de trouver le document TSV à utiliser dans le dossier /dots (cf. arborescence des fichiers à fournir)
-- l'attribut `@resourceId` permet d'indiquer la colonne du TSV qui donne l'identifiant de la ressource
-- l'attribut `@content` permet d'indiquer le nom de la colonne qui contient la métadonnée à ajouter.
-
-### Modèle TSV
-
-Le document TSV doit simplement:
-- disposer d'une colonne pour renseigner l'identifiant de la ressource à laquelle appartiennent les métadonnées.
-
-
-## Utilisation
-
-- Dans BasexGui, créer une base de données TEI
-- Dans BasexGui, ouvrir `/dots/schema/manage.xq` et suivre les recommandations en commentaire.
-Pour tester, deux corpus d'essai sont disponibles dans `/dots/data_test`:
-	- **endp**: corpus avec deux collections des registres de Notre-Dame de Paris
-	- **theatre**: corpus "à plat"
-
-### Routeur DTS
-
-Utiliser les routes de l'API DTS disponibles:
-
-- http://localhost:8080/api/dts/collections
-- http://localhost:8080/api/dts/navigation
-- et http://localhost:8080/api/dts/document
-
-## Usage depuis d'autres applications
-
-En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut décommenter la partie CORS du fichier `basex/webapp/WEB-INF/web.xml`.
+L'installation et l'utilisation de DoTS sont documentées plus précisément ici : https://chartes.github.io/dots_documentation/.
 
 ## État d'avancement de l'implémentation de DTS dans DoTS
 
@@ -166,7 +59,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `citeType`     | optionnel   | ✅              |
 | `level`        | obligatoire | ✅              |
 | `passage`      | obligatoire | ✅              |
-| `parent`       | obligatoire | 🔄             |
+| `parent`       | obligatoire | ✅              |
 | `member`       |             | ✅              |
 
 #### Propriétées JSON des `members`
@@ -176,8 +69,8 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | Nom          | Statut                                    | Implémentation |
 | ------------ | ----------------------------------------- | -------------- |
 | `ref`        | obligatoire (sauf si `start` et `end`)    | ✅              |
-| `start`      | obligatoire avec `end` (sauf si `ref`)    | 🔄             |
-| `end`        | obligatoire avec `start`  (sauf si `ref`) | 🔄             |
+| `start`      | obligatoire avec `end` (sauf si `ref`)    | ✅              |
+| `end`        | obligatoire avec `start`  (sauf si `ref`) | ✅              |
 | `citeType`   | optionnel                                 | ✅              |
 | `dublincore` | optionnel                                 | ✅              |
 | `extensions` | optionnel                                 | ✅              |
@@ -190,9 +83,9 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | ------- | ------- | -------------- |
 | id      | GET     | ✅              |
 | ref     | GET     | ✅              |
-| start   | GET     | 🔄             |
-| end     | GET     | 🔄             |
-| down    | GET     | 🔄             |
+| start   | GET     | ✅              |
+| end     | GET     | ✅              |
+| down    | GET     | ✅              |
 | groupBy | GET     | 🚧             |
 | max     | GET     | 🚧             |
 | exclud` | GET     | 🚧             |
@@ -207,9 +100,13 @@ cf. [Document Endpoint - Distributed Text Services](https://distributed-text-ser
 | ------ | ------- | -------------- |
 | id     | GET     | ✅              |
 | ref    | GET     | ✅              |
-| start  | GET     | 🔄             |
-| end    | GET     | 🔄             |
+| start  | GET     | ✅              |
+| end    | GET     | ✅              |
 | after  |         | 🚧             |
 | before |         | 🚧             |
 | token  |         | 🚧             |
 | format |         | 🚧             |
+
+## Usage depuis d'autres applications
+
+En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut décommenter la partie CORS du fichier `basex/webapp/WEB-INF/web.xml`.
