@@ -71,7 +71,7 @@ cf. [Collection Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Paramètres de requête
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Collections-Endpoint.html#uri)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-collection-endpoint-request)
 
 | Nom  | Méthode | Implémentation |
 | ---- | ------- | -------------- |
@@ -83,7 +83,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 #### Propriétés JSON
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#scheme-for-navigation-endpoint-responses)
+cf. Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
 
 | Nom            | Statut      | Implémentation |
 | -------------- | ----------- | -------------- |
@@ -97,8 +97,6 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Propriétés JSON des `members`
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#scheme-for-navigation-endpoint-responses)
-
 | Nom          | Statut                                    | Implémentation |
 | ------------ | ----------------------------------------- | -------------- |
 | `ref`        | obligatoire (sauf si `start` et `end`)    | ✅              |
@@ -110,7 +108,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Paramètres de requête
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-navigation-endpoint-requests)
 
 | Nom     | Méthode | Implémentation |
 | ------- | ------- | -------------- |
