@@ -72,7 +72,7 @@ declare function utils:collections() {
           if ($resource) 
           then 
             <pair name="{$pos}" type="object">{
-              utils:getMandatory($resource, "")
+              utils:getMandatory("", $resource, "")
             }</pair> 
           else ()
       }</pair>
@@ -103,22 +103,11 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
   let $resource := utils:getResource($projectName, $resourceId)
   return
     <json type="object">{
-      let $mandatory := utils:getMandatory($resource, $nav)
+      let $mandatory := utils:getMandatory($projectName, $resource, $nav)
       let $type := utils:getResourceType($resource)
       let $dublincore := utils:getDublincore($resource)
       let $extensions := utils:getExtensions($resource)
       let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
-      let $citationTrees :=
-        if ($type = "resource")
-        then
-          let $document := db:get($projectName)/tei:TEI[@xml:id = $resourceId]
-          let $refsDecl := $document//tei:refsDecl
-          return
-            if ($refsDecl)
-            then 
-              utils:getCitationTrees($refsDecl)
-            else ()
-        else ()
       let $members :=
         if ($type = "collection" or $nav = "parents")
         then
@@ -136,7 +125,7 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
                 else
                   utils:getResource($projectName, $idParent) 
             else utils:getChildMembers($projectName, $resourceId, $filter) 
-          let $mandatoryMember := utils:getMandatory($member, "")
+          let $mandatoryMember := utils:getMandatory($projectName, $member, "")
           let $dublincoreMember := utils:getDublincore($member)
           let $extensionsMember := utils:getExtensions($member)
           return
@@ -151,14 +140,6 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
           $mandatory,
           $dublincore,
           if ($extensions/node()) then $extensions else (),
-          if ($citationTrees) 
-          then 
-            <pair name="citationTrees" type="object">
-              <pair name="@type">CitationTree</pair>
-              <pair name="maxCiteDepth"></pair>
-              {$citationTrees}
-            </pair>
-          else (),
           if ($members) then <pair name="member" type="array">{$members}</pair>,
           if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair> else ()
         )
@@ -460,7 +441,7 @@ Fonctions "utiles"
 : @see utils.xqm;utils:collectionById (fonction qui fait appel à la fonction ici présente)
 : @see utils.xqm;utils:getResourceType
 :)
-declare function utils:getMandatory($resource as element(), $nav as xs:string) {
+declare function utils:getMandatory($dbName as xs:string, $resource as element(), $nav as xs:string) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
   let $title := 
@@ -492,6 +473,17 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
     if ($type = "collection")
     then ()
     else <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{$ref,start,end,tree}")}</pair>
+  let $citationTrees :=
+    if ($type = "resource")
+    then
+      let $document := db:get($dbName)/tei:TEI[@xml:id = $resourceId]
+      let $refsDecl := $document//tei:refsDecl
+      return
+        if ($refsDecl)
+        then 
+          utils:getCitationTrees($refsDecl)
+        else ()
+    else ()
   return
     (
       <pair name="@id">{$resourceId}</pair>,
@@ -503,7 +495,14 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
       <pair name="totalChildren" type="number">{$totalChildren}</pair>,
       <pair name="totalParents" type="number">{$totalParents}</pair>,
       $passage,
-      $references
+      $references,
+      if ($citationTrees)
+      then
+        <pair name="citationTrees" type="object">
+          <pair name="@type">CitationTree</pair>
+          <pair name="maxCiteDepth" type="number">{normalize-space($resource/@maxCiteDepth)}</pair>
+          {$citationTrees}
+        </pair>
     )
 };
 
