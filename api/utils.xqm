@@ -77,11 +77,9 @@ declare function utils:collections() {
           else ()
       }</pair>
     )
-  let $context := utils:getContext($content)
   return
     <json type="object">{
-      $content,
-      $context
+      $content
     }</json>
 };
 
@@ -110,6 +108,17 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
       let $dublincore := utils:getDublincore($resource)
       let $extensions := utils:getExtensions($resource)
       let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
+      let $citationTrees :=
+        if ($type = "resource")
+        then
+          let $document := db:get($projectName)/tei:TEI[@xml:id = $resourceId]
+          let $refsDecl := $document//tei:refsDecl
+          return
+            if ($refsDecl)
+            then 
+              utils:getCitationTrees($refsDecl)
+            else ()
+        else ()
       let $members :=
         if ($type = "collection" or $nav = "parents")
         then
@@ -133,19 +142,27 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
           return
             <item type="object">{
               $mandatoryMember,
-              if ($extensionsMember/node()) then $extensionsMember else (),
-              $dublincoreMember
+              $dublincoreMember,
+              if ($extensionsMember/node()) then $extensionsMember else ()
             }</item>
         else ()
       let $response := 
         (
           $mandatory,
-          if ($extensions/node()) then $extensions else (),
           $dublincore,
+          if ($extensions/node()) then $extensions else (),
+          if ($citationTrees) 
+          then 
+            <pair name="citationTrees" type="object">
+              <pair name="@type">CitationTree</pair>
+              <pair name="maxCiteDepth"></pair>
+              {$citationTrees}
+            </pair>
+          else (),
           if ($members) then <pair name="member" type="array">{$members}</pair>,
           if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair> else ()
         )
-      let $context := utils:getContext($response)
+      let $context := utils:getContext($projectName, $response)
       return
         (
           $response,
@@ -317,7 +334,7 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
         else 
           (
             <pair name="@id">{$resourceId}</pair>,
-            <pair name="@type">resource</pair>
+            <pair name="@type">Resource</pair>
           )
       }</pair>
     </json>
@@ -446,7 +463,12 @@ Fonctions "utiles"
 declare function utils:getMandatory($resource as element(), $nav as xs:string) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
-  let $title := normalize-space($resource/dc:title)
+  let $title := 
+    let $t := $resource/*:title[1]
+    where in-scope-prefixes($t)[1] = "dc"
+    return
+      normalize-space($t)
+  let $desc := normalize-space($resource/description)
   let $totalParents := 
     if ($resource/@parentIds) 
     then 
@@ -458,33 +480,45 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
           $c
       else 1 
     else 0
-  let $totalItems := 
-    if ($nav = "parents")
-    then
-      $totalParents
-    else
-      if ($resource/@totalChildren) 
-      then normalize-space($resource/@totalChildren) 
-      else 0
+  let $totalChildren :=
+    if ($type = "resource")
+    then 0
+    else xs:integer($resource/@totalChildren)
   let $passage := 
     if ($type = "collection")
     then ()
-    else <pair name="passage">{concat("/api/dts/document?id=", $resourceId)}</pair>
+    else <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{$ref,start,end,tree,mediaType}")}</pair>
   let $references := 
     if ($type = "collection")
     then ()
-    else <pair name="references">{concat("/api/dts/navigation?id=", $resourceId)}</pair>
+    else <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{$ref,start,end,tree}")}</pair>
   return
     (
       <pair name="@id">{$resourceId}</pair>,
-      <pair name="@type">{$type}</pair>,
+      <pair name="@type">{functx:capitalize-first($type)}</pair>,
+      <pair name="dtsVersion">1-alpha</pair>,
       <pair name="title">{$title}</pair>,
-      <pair name="totalItems" type="number">{$totalItems}</pair>,
-      <pair name="totalChildren" type="number">{$totalItems}</pair>,
+      if ($desc) then <pair name="description">{$desc}</pair> else (),
+      <pair name="totalItems" type="number">{if ($nav) then $totalParents else $totalChildren}</pair>,
+      <pair name="totalChildren" type="number">{$totalChildren}</pair>,
       <pair name="totalParents" type="number">{$totalParents}</pair>,
       $passage,
       $references
     )
+};
+
+declare function utils:getCitationTrees($node) {
+  <pair name="citeStructure" type="object">{
+    for $cite in $node/node()
+    let $citeType := normalize-space($cite/@unit)
+    return
+      (
+        if ($citeType) then <pair name="citeType">{$citeType}</pair>,
+        if ($cite/tei:citeStructure)
+        then 
+          utils:getCitationTrees($cite)
+      )
+  }</pair>
 };
 
 (:~ 
@@ -497,23 +531,27 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
 : @see utils.xqm;utils:getStringJson
 :)
 declare function utils:getDublincore($resource as element()) {
-  let $dc := $resource/node()[starts-with(name(), "dc:")]
+  let $dc := $resource/node()[in-scope-prefixes(.)[1] = "dc"]
   return
     if ($dc)
     then
-      <pair name="dts:dublincore" type="object">{
+      <pair name="dublincore" type="object">{
         for $metadata in $dc
         let $key := $metadata/name()
+        let $elementName :=
+          if (starts-with($key, "dc:"))
+          then substring-after($key, "dc:")
+          else $key
         let $countKey := count($dc/name()[. = $key])
         group by $key
         order by $key
         return
           if ($countKey > 1)
           then
-            utils:getArrayJson($key, $metadata)
+            utils:getArrayJson($elementName, $metadata)
           else
             if ($key)
-            then utils:getStringJson($key, $metadata)
+            then utils:getStringJson($elementName, $metadata)
             else ()
       }</pair>
     else ()
@@ -533,22 +571,32 @@ declare function utils:getExtensions($resource as element()) {
   return
     if ($extensions)
     then
-      <pair name="dts:extensions" type="object">{
+      <pair name="extensions" type="object">{
         for $metadata in $extensions
         let $key := $metadata/name()
+        let $prefix := in-scope-prefixes($metadata)[1]
+        where $prefix != "dc"
         where $key != ""
+        let $ns := namespace-uri($metadata)
+        let $name := 
+          if (contains($key, ":")) 
+          then $key 
+          else 
+            if ($ns = "https://github.com/chartes/dots/")
+            then $key
+            else concat($prefix, ":", $key)
         let $countKey := count($extensions/name()[. = $key])
         group by $key
         order by $key
         return
           if ($countKey > 1)
           then
-            utils:getArrayJson($key, $metadata)
+            utils:getArrayJson($name[1], $metadata)
           else
             if ($countKey = 0)
             then ()
             else
-             utils:getStringJson($key, $metadata)
+             utils:getStringJson($name, $metadata)
       }</pair>
     else ()
 };
@@ -604,23 +652,35 @@ declare function utils:getStringJson($key as xs:string, $metadata) {
 : @param $response séquence XML pour trouver les namespaces présents (si nécessaire)
 : @todo utiliser la fonction namespace:uri() pour une meilleur gestion des namespaces?
 :)
-declare function utils:getContext($response) {
+declare function utils:getContext($db as xs:string, $response) {
   <pair name="@context" type="object">
-    <pair name="dts">https://w3id.org/dts/api#</pair>
-    <pair name="vocab">https://www.w3.org/ns/hydra/core#</pair>
+    <pair name="dts">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
+    {if ($response//*:pair[@name="dublincore"] or $response[@name="dublincore"]) then <pair name="dc">http://purl.org/dc/elements/1.1/</pair> else ()}
     {if ($response = "")
     then ()
     else
-      for $name in $response//@name
-      where contains($name, ":")
-      let $namespace := substring-before($name, ":")
-      group by $namespace
-      return
-        switch ($namespace)
-        case ($namespace[. = "dc"]) return <pair name="dc">{"http://purl.org/dc/elements/1.1/"}</pair>
-        case ($namespace[. = "dct"]) return <pair name="dct">{"http://purl.org/dc/terms/"}</pair>
-        case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
-        default return ()
+      if ($db != "")
+      then
+        let $map := db:get($db, concat($G:metadata, "dots_metadata_mapping.xml"))/dots:metadataMap
+        return
+          for $name in $response//@name
+          where contains($name, ":")
+          let $namespace := substring-before($name, ":")
+          group by $namespace
+          return
+            if ($map)
+            then 
+              let $listPrefix := in-scope-prefixes($map)
+              where $namespace = $listPrefix
+              let $uri := namespace-uri-for-prefix($namespace, $map)
+              return
+                <pair name="{$namespace}">{$uri}</pair>
+            else
+              switch ($namespace)
+              case ($namespace[. = "dc"]) return <pair name="dc">{"http://purl.org/dc/elements/1.1/"}</pair>
+              case ($namespace[. = "dct"]) return <pair name="dct">{"http://purl.org/dc/terms/"}</pair>
+              case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
+              default return () 
   }</pair>
 };
 
