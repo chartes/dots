@@ -38,6 +38,8 @@ declare function utils:noCollection() {
     <pair name="@type">Collection</pair>
     <pair name="title">{$G:rootTitle}</pair>
     <pair name="totalItems" type="number">0</pair>
+    <pair name="totalChildren" type="number">0</pair>
+    <pair name="totalParents" type="number">0</pair>
   </json>
 };
 
@@ -55,9 +57,11 @@ declare function utils:collections() {
       <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>,
       <pair name="dtsVersion">1-alpha</pair>,
       <pair name="@id">{$G:root}</pair>,
-      <pair name="@type">collection</pair>,
+      <pair name="@type">Collection</pair>,
       <pair name="title">{$G:rootTitle}</pair>,
       <pair name="totalItems" type="number">{$totalItems}</pair>,
+      <pair name="totalChildren" type="number">{$totalItems}</pair>,
+      <pair name="totalParents" type="number">0</pair>,
       <pair name="member" type="object">{
         for $project at $pos in db:get($G:dots)//dots:member/dots:project
         let $resourceId := normalize-space($project/@dtsResourceId)
@@ -76,7 +80,8 @@ declare function utils:collections() {
   let $context := utils:getContext($content)
   return
     <json type="object">{
-      $content
+      $content,
+      $context
     }</json>
 };
 
