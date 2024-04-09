@@ -440,7 +440,7 @@ declare function utils:getMandatory($resource as element(), $nav as xs:string) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
   let $title := 
-    let $t := $resource/*:title
+    let $t := $resource/*:title[1]
     where in-scope-prefixes($t)[1] = "dc"
     return
       normalize-space($t)
