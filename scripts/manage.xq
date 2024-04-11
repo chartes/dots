@@ -43,12 +43,9 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: 5. Supprimer  :)
 (: dbd:handleDelete() :)
   
-""  
+""
+
   
-  
-  
-  
-  
-  
+   
   
   

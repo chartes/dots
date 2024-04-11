@@ -125,36 +125,33 @@ declare
   %rest:GET
   %output:method("xml")
   %rest:produces("application/tei+xml")
-  %rest:query-param("id", "{$id}", "")
+  %rest:query-param("resource", "{$resource}", "")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
-  %rest:query-param("citeType", "{$citeType}", "")
+  %rest:query-param("tree", "{$tree}", "")
+  %rest:query-param("mediaType", "{$mediaType}", "")
   %rest:query-param("filter", "{$filter}", "")
-  %rest:query-param("format", "{$format}", "")
-function routes:document($id as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $citeType as xs:string, $filter, $format as xs:string) {
-  if ($id != "")
+function routes:document($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $mediaType as xs:string, $filter) {
+  if ($resource != "")
   then
-    let $dbName := db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName
+    let $dbName := db:get($G:dots)//dots:member/node()[@dtsResourceId = $resource]/@dbName
     return
       if ($dbName) 
       then 
-        let $ref := if ($ref) then $ref else ""
-        let $start := if ($start) then $start else ""
-        let $end := if ($end) then $end else ""
-        let $result := utils:document($id, $ref, $start, $end, $citeType, $filter)
+        let $result := utils:document($resource, $ref, $start, $end, $tree, $filter)
         return
-          if ($format)
+          if ($mediaType)
           then 
             let $f :=
-              switch ($format)
-              case ($format[. = "html"]) return "text/html;"
-              case ($format[. = "txt"]) return "text/plain"
-              default return "application/xml"
+              switch ($mediaType)
+              case ($mediaType[. = "html"]) return "text/html;"
+              case ($mediaType[. = "txt"]) return "text/plain"
+              default return "application/tei+xml"
             let $style := concat($G:webapp, $G:xsl)
-            let $project := db:get($G:dots)//node()[@dtsResourceId = $id]/@dbName
+            let $project := db:get($G:dots)//node()[@dtsResourceId = $resource]/@dbName
             let $trans := 
-              if ($format = "html")
+              if ($mediaType = "html")
               then
                 xslt:transform($result, $style)
               else  $result
@@ -170,9 +167,9 @@ function routes:document($id as xs:string, $ref as xs:string, $start as xs:strin
           else
             $result
       else
-        routes:badIdResource(xs:string($id))
+        routes:badIdResource(xs:string($resource))
   else
-    routes:badIdResource(xs:string($id))
+    routes:badIdResource(xs:string($resource))
 };
 
 declare 
