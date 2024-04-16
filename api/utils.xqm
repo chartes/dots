@@ -404,7 +404,7 @@ declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:st
     else $members
   let $treeMembers :=
     if ($tree)
-    then utils:tree($members, $tree)
+    then utils:tree($membersFiltered, $tree)
     else $membersFiltered
   let $response :=
     for $item in $treeMembers
