@@ -60,10 +60,10 @@ declare function dots.lib:getFragments($bdd as xs:string) {
   return
     for $citeStructurePosition in $resource//tei:refsDecl/tei:citeStructure
     return
-      dots.lib:handleCiteStructure($bdd, $resource, $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+      dots.lib:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
 };
 
-declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
+declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
   let $xpath := normalize-space($citeStructure/@match)
   let $query := concat('
     declare default element namespace "http://www.tei-c.org/ns/1.0";',
@@ -87,6 +87,7 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
           <fragment node-id="{$node-id}" ref="{$ref}" level="{$level}" maxCiteDepth="{$maxCiteDepth}" resourceId="{$resourceId}">{
             if ($citeType) then attribute {"citeType"} {normalize-unicode($citeType)} else (),
             if ($parentNodeId) then attribute {"parentNodeId"} {$parentNodeId} else (),
+            if ($parentNodeRef) then attribute {"parentNodeRef"} {$parentNodeRef} else (),
             if ($citeStructure/tei:citeData)
             then
               for $citeData in $citeStructure/tei:citeData
@@ -109,7 +110,7 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
           then 
             for $cite in $citeStructure/tei:citeStructure
             return
-              dots.lib:handleCiteStructure($bdd, $resource, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth)
+              dots.lib:handleCiteStructure($bdd, $resource, $ref, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth)
           else ()
         )
 };

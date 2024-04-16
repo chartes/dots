@@ -198,10 +198,17 @@ Cette fonction permet de construire la réponse d'API DTS pour le endpoint Navig
 declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
   let $projectName := utils:getDbName($resourceId) 
   let $resource := utils:getResource($projectName, $resourceId)
+  let $maxCiteDepth := if ($resource/@maxCiteDepth != "") then xs:integer($resource/@maxCiteDepth) else 0
   let $members :=
     for $fragment in utils:getFragment($projectName, $resourceId, map {"id": $resourceId})
     let $level := xs:integer($fragment/@level)
-    where if ($down) then xs:integer($level) = $down else xs:integer($level) = 1
+    where 
+      if ($down) 
+      then 
+        if ($down = -1)
+        then xs:integer($level) <= $maxCiteDepth
+        else xs:integer($level) <= $down 
+      else xs:integer($level) = 1
     return
       $fragment
   let $filteredMembers :=
@@ -209,39 +216,83 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
     then utils:filters($members, $filter)    
   let $response :=
     for $item in if ($filteredMembers) then $filteredMembers else $members
-    let $ref := normalize-space($item/@ref)
-    let $level := xs:integer($item/@level)
-    let $citeType := normalize-unicode($item/@citeType)
-    let $dc := utils:getDublincore($item)
-    let $extensions := utils:getExtensions($item)
+    let $fragInfo := utils:getFragmentInfo($item)
     return
-      <item type="object">
-        <pair name="ref">{$ref}</pair>
-        <pair name="level" type="number">{$level}</pair>
-        {
-          if ($citeType) then <pair name="citeType">{$citeType}</pair> else (),
-          $dc,
-          $extensions
-        }
-      </item>
-  let $passage := 
-    if ($resource/name() = "document")
-    then <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
-    else ()
+      <item type="object">{$fragInfo}</item>
   let $url := concat("/api/dts/navigation?id=", $resourceId)
-  let $maxCiteDepth := if ($resource/@maxCiteDepth != "") then xs:integer($resource/@maxCiteDepth) else 0
+  let $context := utils:getContext($projectName, $response)
   return
     <json type="object">{
-      <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>,
+      <pair name="dtsVersion">1-alpha</pair>,
       <pair name="@id">{$url}</pair>,
+      utils:getUriLinks(),
+      utils:getResourcesInfo($projectName, $resource),
       <pair name="level" type="number">0</pair>,
       <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>,
       if ($response)
       then
         <pair name="member" type="array">{$response}</pair> else (),
-        $passage,
-      <pair name="parent" type="null"></pair>
+      <pair name="parent" type="null"></pair>,
+      $context
     }</json>
+};
+
+declare function utils:getUriLinks() {
+  (
+    <pair name="passage">{string("/api/dts/document{?resource,ref,start,end,tree,mediaType}")}</pair>,
+    <pair name="collection">{string("/api/dts/collection{?id,nav}")}</pair>,
+    <pair name="navigation">{string("/api/dts/navigation{?resource,ref,start,end,down}")}</pair>
+  )
+};
+
+declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
+  let $resourceId := normalize-space($resource/@dtsResourceId)
+  let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
+  return
+    <pair name="resource" type="object">
+      <pair name="@id">{$resourceId}</pair>
+      <pair name="@type">Resource</pair>
+      <pair name="citationTrees" type="object">
+        <pair name="@type">CitationTree</pair>
+        <pair name="maxCiteDepth" type="number">{xs:integer($maxCiteDepth)}</pair>
+        {let $document := db:get($projectName)/tei:TEI[@xml:id = $resourceId]
+          let $refsDecl := $document//tei:refsDecl
+          return
+            if ($refsDecl)
+            then 
+              utils:getNavCitationTrees($refsDecl)
+            else ()
+        }
+      </pair>
+    </pair>
+};
+
+declare function utils:getFragmentInfo($item as element(dots:fragment)) {
+  let $ref := normalize-space($item/@ref)
+    let $level := xs:integer($item/@level)
+    let $parent := 
+      if ($level = 1)
+      then ""
+      else
+        normalize-space($item/@parentNodeRef)
+    let $citeType := normalize-unicode($item/@citeType)
+    let $dc := utils:getDublincore($item)
+    let $extensions := utils:getExtensions($item)
+    return
+      (
+        <pair name="identifier">{$ref}</pair>,
+        <pair name="@type">CitableUnit</pair>,
+        <pair name="level" type="number">{$level}</pair>,
+        <pair name="parent">{
+          if ($level = 1)
+          then 
+            (attribute {"type"} {"null"}, "")
+          else $parent
+        }</pair>,
+        if ($citeType) then <pair name="citeType">{$citeType}</pair> else (),
+        $dc,
+        $extensions
+      )
 };
 
 (:~ 
@@ -260,65 +311,52 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
 :)
 declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string, $down as xs:integer, $filter) {
   let $projectName := utils:getDbName($resourceId)
+  let $resource := utils:getResource($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
   let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref})
-  let $level := normalize-space($fragment/@level)
+  let $level := xs:integer($fragment/@level)
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
-  let $citeType := normalize-unicode($fragment/@citeType)
+  let $followingFrag := xs:integer($fragment/following::dots:fragment[@level = $level][@resourceId = $resourceId][1]/@node-id)
   let $parentNodeId := normalize-space($fragment/@parentNodeId)
-  let $nodeId := $fragment/@node-id
+  let $nodeId := xs:integer($fragment/@node-id)
+  let $refInfos :=
+    <pair name="ref" type="object">{utils:getFragmentInfo($fragment)}</pair>
   let $members :=
-    for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId][@parentNodeId=$nodeId]
+    for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
+    let $levelMember := xs:integer($member/@level)
+    where
+      if ($down)
+      then 
+        let $nodeIdMember := xs:integer($member/@node-id)
+        return
+          if ($down = -1)
+          then $nodeIdMember >= $nodeId and $nodeIdMember < $followingFrag 
+          else
+              $nodeIdMember >= $nodeId and $nodeId < $followingFrag and $levelMember <= $down + $level
+      else $member/@parentNodeId = $nodeId
     return
       $member
   let $membersFiltered :=
     if ($filter)
     then utils:filters($members, $filter)
-    else ()
+    else $members
   let $response :=
-    for $item in if ($membersFiltered != "") then $membersFiltered else $members
-    let $ref := normalize-space($item/@ref)
-    let $levelMember :=xs:integer($item/@level)
-    let $citeType := normalize-unicode($item/@citeType)
-    let $dc := utils:getDublincore($item)
-    let $extensions := utils:getExtensions($item)
+    for $item in $membersFiltered
+    let $itemInfo := utils:getFragmentInfo($item)
     return
-      <item type="object">
-        <pair name="ref">{$ref}</pair>
-        <pair name="level" type="number">{$levelMember}</pair>
-        {
-          if ($citeType) then <pair name="citeType">{$citeType}</pair> else (),
-          $dc,
-          $extensions
-        }
-        </item>
+      <item type="object">{$itemInfo}</item>
+  let $context := utils:getContext($projectName, $response)
   return
     <json type="object">
-      <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>
+      <pair name="dtsVersion">1-alpha</pair>
       <pair name="@id">{$url}</pair>
-      <pair name="level" type="number">{$level}</pair>
-      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>
+      {utils:getUriLinks(),
+      utils:getResourcesInfo($projectName, $resource),
+      $refInfos}
       {
-        if ($citeType)
-        then <pair name="citeType">{$citeType}</pair>,
         if ($response) then <pair name="member" type="array">{$response}</pair> else ()
       }
-      <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
-      <pair name="parent" type="object">{
-        if ($parentNodeId)
-        then 
-          let $parentRef := normalize-space(db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@node-id=$parentNodeId]/@ref)
-          return
-            (
-             <pair name="ref">{$parentRef}</pair>,
-             <pair name="@type">CitableUnit</pair>
-            )
-        else 
-          (
-            <pair name="@id">{$resourceId}</pair>,
-            <pair name="@type">Resource</pair>
-          )
-      }</pair>
+      {$context}
     </json>
 };
 
@@ -517,6 +555,21 @@ declare function utils:getCitationTrees($node) {
   }</pair>
 };
 
+declare function utils:getNavCitationTrees($node) {
+  <pair name="citeStructure" type="object">{
+    for $cite in $node/tei:citeStructure
+    let $citeType := normalize-space($cite/@unit)
+    return
+      (
+        <pair name="@type">CiteStructure</pair>,
+        if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType"/>,
+        if ($cite/tei:citeStructure)
+        then 
+          utils:getNavCitationTrees($cite)
+      )
+  }</pair>
+};
+
 (:~ 
 : Cette fonction permet de préparer les données en Dublincore pour décrire une collection ou une resource
 : @return séquence XML qui sera ensuite sérialisée en JSON selon le format "attributes" proposé par BaseX
@@ -710,16 +763,16 @@ declare function utils:getResource($projectName as xs:string, $resourceId as xs:
 :)
 declare function utils:getFragment($projectName as xs:string, $resourceId as xs:string, $options as map(*)) {
   let $id := map:get($options, "id")
-  let $ref := map:get($options, "ref")
+  let $identifier := map:get($options, "ref")
   return
     if ($id)
     then 
       db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
     else
-      if ($ref)
+      if ($identifier)
       then
         let $fragments :=
-          db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId][@ref = $ref] 
+          db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId][@ref = $identifier] 
           return
             $fragments
       else ()
