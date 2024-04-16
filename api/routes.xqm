@@ -95,9 +95,10 @@ declare
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
+  %rest:query-param("tree", "{$tree}", "")
   %rest:query-param("down", "{$down}", 0)
   %rest:query-param("filter", "{$filter}", "")
-function routes:navigation($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $filter, $down as xs:integer) {
+function routes:navigation($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter, $down as xs:integer) {
   if ($resource != "")
   then
     let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resource]/@dbName)
@@ -106,13 +107,13 @@ function routes:navigation($resource as xs:string, $ref as xs:string, $start as 
       then 
         if($down)
         then
-          utils:navigation($resource, $ref, $start, $end, $filter, $down) 
+          utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
         else
           let $query := request:query()
           return
             if (contains($query, "ref=") or contains($query, "start=") or contains($query, "filter="))
             then
-              utils:navigation($resource, $ref, $start, $end, $filter, $down) 
+              utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
             else
               web:redirect(concat("/api/dts/navigation?", request:query(), "&amp;down=1"))
       else

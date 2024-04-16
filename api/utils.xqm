@@ -174,13 +174,13 @@ Chacune de ces fonctions permet de construire la réponse pour le endpoint Navig
 : @see utils.xqm;utils:utils:rangeNavigation
 : @see utils.xqm;utils:utils:idNavigation
 :)
-declare function utils:navigation($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $filter, $down as xs:integer) {
+declare function utils:navigation($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter, $down as xs:integer) {
   if ($ref)
   then utils:refNavigation($resourceId, $ref, $down, $filter)
   else
     if ($start and $end)
-    then utils:rangeNavigation($resourceId, $start, $end, $down, $filter)
-    else utils:idNavigation($resourceId, $down, $filter)
+    then utils:rangeNavigation($resourceId, $start, $end, $down, $tree, $filter)
+    else utils:idNavigation($resourceId, $down, $tree, $filter)
       
 };
 
@@ -195,7 +195,7 @@ Cette fonction permet de construire la réponse d'API DTS pour le endpoint Navig
 : @see utils.xqm;utils:getDublincore
 : @see utils.xqm;utils:getExtensions
 :)
-declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
+declare function utils:idNavigation($resourceId as xs:string, $down, $tree, $filter) {
   let $projectName := utils:getDbName($resourceId) 
   let $resource := utils:getResource($projectName, $resourceId)
   let $maxCiteDepth := if ($resource/@maxCiteDepth != "") then xs:integer($resource/@maxCiteDepth) else 0
@@ -213,9 +213,15 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $filter) {
       $fragment
   let $filteredMembers :=
     if ($filter)
-    then utils:filters($members, $filter)    
+    then utils:filters($members, $filter)
+    else
+      $members
+  let $treeMembers :=
+    if ($tree)
+    then utils:tree($members, $tree)
+    else $filteredMembers
   let $response :=
-    for $item in if ($filteredMembers) then $filteredMembers else $members
+    for $item in $treeMembers
     let $fragInfo := utils:getFragmentInfo($item)
     return
       <item type="object">{$fragInfo}</item>
@@ -295,6 +301,13 @@ declare function utils:getFragmentInfo($item as element(dots:fragment)) {
       )
 };
 
+declare function utils:tree($sequence, $tree as xs:string) {
+  for $fragment in $sequence
+  where $fragment/@citeType = $tree
+  return
+    $fragment
+};
+
 (:~ 
 : Cette fonction permet de construire la réponse pour le endpoint Navigation de l'API DTS pour le passage identifié par $ref de la resource $resourceId
 : @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
@@ -317,11 +330,12 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
   let $level := xs:integer($fragment/@level)
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
   let $followingFrag := xs:integer($fragment/following::dots:fragment[@level = $level][@resourceId = $resourceId][1]/@node-id)
-  let $parentNodeId := normalize-space($fragment/@parentNodeId)
   let $nodeId := xs:integer($fragment/@node-id)
-  let $refInfos :=
-    <pair name="ref" type="object">{utils:getFragmentInfo($fragment)}</pair>
+  let $refInfos := utils:getFragmentInfo($fragment)
   let $members :=
+    if ($ref and not($down))
+    then ()
+    else
     for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
     let $levelMember := xs:integer($member/@level)
     where
@@ -332,7 +346,9 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
           if ($down = -1)
           then $nodeIdMember >= $nodeId and $nodeIdMember < $followingFrag 
           else
-              $nodeIdMember >= $nodeId and $nodeId < $followingFrag and $levelMember <= $down + $level
+            let $maxLevel := if ($down + $level > $maxCiteDepth) then $maxCiteDepth else $down + $level
+            return
+              $nodeIdMember >= $nodeId and $nodeIdMember < $followingFrag and $levelMember <= $maxLevel
       else $member/@parentNodeId = $nodeId
     return
       $member
@@ -352,9 +368,9 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
       <pair name="@id">{$url}</pair>
       {utils:getUriLinks(),
       utils:getResourcesInfo($projectName, $resource),
-      $refInfos}
+      <pair name="ref" type="object">{$refInfos}</pair>}
       {
-        if ($response) then <pair name="member" type="array">{$response}</pair> else ()
+        if ($response) then <pair name="member" type="array">{$response}</pair> else <pair name="member" type="array"><item type="object">{$refInfos}</item></pair>
       }
       {$context}
     </json>
@@ -371,23 +387,43 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
 : @see utils.xqm;utils:getFragment
 : @see utils.xqm;utils:getFragmentsInRange
 :)
-declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer, $filter) {
+declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:string, $end as xs:string, $down as xs:integer, $tree, $filter) {
   let $projectName := utils:getDbName($resourceId)
+  let $resource := utils:getResource($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
   let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start})
+  let $fragLast := utils:getFragment($projectName, $resourceId, map{"ref": $end})
   let $maxCiteDepth := normalize-space($frag1/@maxCiteDepth)
   let $level := normalize-space($frag1/@level)
+  let $startFrag := utils:getFragmentInfo($frag1) 
+  let $endFrag := utils:getFragmentInfo($fragLast) 
+  let $members := utils:getSequenceInRange($projectName, $resourceId, $start, $end, $down)
+  let $membersFiltered :=
+    if ($filter)
+    then utils:filters($members, $filter)
+    else $members
+  let $treeMembers :=
+    if ($tree)
+    then utils:tree($members, $tree)
+    else $membersFiltered
+  let $response :=
+    for $item in $treeMembers
+    let $itemInfo := utils:getFragmentInfo($item)
+    return
+      <item type="object">{$itemInfo}</item>
+  let $context := utils:getContext($projectName, $response)
   return
     <json type="object">
-      <pair name="@context">https://distributed-text-services.github.io/specifications/context/1.0.0draft-2.json</pair>
+      <pair name="dtsVersion">1-alpha</pair>
       <pair name="@id">{$url}</pair>
-      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>
-      <pair name="level" type="number">{$level}</pair>
+      {utils:getUriLinks(),
+      utils:getResourcesInfo($projectName, $resource)}
+      <pair name="start" type="object">{$startFrag}</pair>
+      <pair name="end" type="object">{$endFrag}</pair>
       <pair name="member" type="array">{
-        utils:getFragmentsInRange($projectName, $resourceId, $start, $end, $down, "navigation", $filter)
+      $response
       }</pair>
-      <pair name="passage">{concat("/api/dts/document?id=", $resourceId, "{&amp;ref}{&amp;start}{&amp;end}")}</pair>
-      <pair name="parent" type="null"></pair>
+      {$context}
     </json>
 };
 
@@ -413,22 +449,9 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     if (db:get($project)/tei:TEI[@xml:id = $resourceId])
     then db:get($project)/tei:TEI[@xml:id = $resourceId]
     else 
-      for $document in db:get($project)/tei:TEI
+      for $document in db:get($project)/node()
       where ends-with(db:path($document), $resourceId)
       return $document
-  (: 
-  Logique à mettre en place: on récupère une séquence de fragments issue du registre des fragments en s'appuyant sur @ref ou @start/@end.
-  /!\ paramètre $down à prendre en compte aussi. À quel moment dans la chaîne de traitement?
-  Ensuite, ce résultat peut être filtré:
-    - avec le paramètre tree s'il est présent
-    - avec le paramètre filter s'il est présent
-  Puis, pour chaque fragment, on renvoie: db:get-id($project, $fragment/@node-id)
-  Enfin, on regarde le paramètre mediaType pour connaître le format de réponse attendu.
-  let $fragments :=
-    if ($ref)
-    then  utils:getFragment($project, $resourceId, map{"ref": $ref})
-    else
-      utils:getFragmentsInRange($project, $resourceId, $start, $end, 0, "document", $filter) :)
   let $fragments := 
     if ($ref)
     then utils:getFragment($project, $resourceId, map{"ref": $ref})
@@ -794,7 +817,7 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
 : comment gérer ce cas de figure?
 : faut-il ajouter des métadonnées (utils:getMandatory(), etc.)?
 :)
-declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $context as xs:string, $filter) {
+declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $filter) {
   let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
   let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
@@ -827,13 +850,10 @@ declare function utils:getFragmentsInRange($projectName as xs:string, $resourceI
           return
             $level >= $minLevel and $level <= $maxLevel
     return
-        if ($context = "navigation")
-        then
-          <item type="object">
-            <pair name="ref">{$ref}</pair>
-            <pair name="level" type="number">{$level}</pair>
-          </item>
-        else db:get-id($projectName, $fragment/@node-id)
+      <item type="object">
+        <pair name="ref">{$ref}</pair>
+        <pair name="level" type="number">{$level}</pair>
+      </item>
 };
 
 declare function utils:getSequenceInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer) {
@@ -850,28 +870,22 @@ declare function utils:getSequenceInRange($projectName as xs:string, $resourceId
       return
         $fragment
     return
-    for $fragment in $members
-    let $ref := normalize-space($fragment/@ref)
-    let $level := xs:integer($fragment/@level)
-    where
-      if ($firstFragmentLevel = $lastFragmentLevel and $down = 0) 
-      then $level = $firstFragmentLevel
-      else 
-        if ($firstFragmentLevel = $lastFragmentLevel and $down > 0)
-        then $level = $firstFragmentLevel + $down
+      for $fragment in $members
+      let $ref := normalize-space($fragment/@ref)
+      let $level := xs:integer($fragment/@level)
+      where
+        if ($firstFragmentLevel = $lastFragmentLevel and $down = 0) 
+        then $level = $firstFragmentLevel
         else 
-          let $minLevel := min(($firstFragmentLevel, $lastFragmentLevel))
-          let $maxLevel := max(($firstFragmentLevel, $lastFragmentLevel))
-          return
-            $level >= $minLevel and $level <= $maxLevel
-    return
-        $fragment(: if ($context = "navigation")
-        then
-          <item type="object">
-            <pair name="ref">{$ref}</pair>
-            <pair name="level" type="number">{$level}</pair>
-          </item>
-        else db:get-id($projectName, $fragment/@node-id) :)
+          if ($firstFragmentLevel = $lastFragmentLevel and $down > 0)
+          then $level <= $firstFragmentLevel + $down
+          else 
+            let $minLevel := min(($firstFragmentLevel, $lastFragmentLevel))
+            let $maxLevel := max(($firstFragmentLevel, $lastFragmentLevel))
+            return
+              $level >= $minLevel and $level <= $maxLevel
+      return
+          $fragment
 };
 
 (:~  
