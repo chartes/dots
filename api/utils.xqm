@@ -442,6 +442,7 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : @see utils.xqm;utils:getFragment
 : @see utils.xqm;utils:getFragmentsInRange
 : @todo revoir la gestion de start et end!
+: @todo: revoir le résultat avec start et end sans aucun filtre!
 :)
 declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter) {
   let $project := utils:getDbName($resourceId)
@@ -457,7 +458,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     then utils:getFragment($project, $resourceId, map{"ref": $ref})
     else 
       if ($start and $end)
-      then utils:getSequenceInRange($project, $resourceId, $start, $end, 0)
+      then utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
       else ()
   let $treeResult :=
     if ($tree != "")
@@ -886,6 +887,38 @@ declare function utils:getSequenceInRange($projectName as xs:string, $resourceId
               $level >= $minLevel and $level <= $maxLevel
       return
           $fragment
+};
+
+declare function utils:getDocSequenceInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $tree, $filter) {
+  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
+  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  let $firstFragmentLevel := xs:integer($firstFragment/@level)
+  let $lastFragmentLevel := xs:integer($lastFragment/@level)
+  let $s := xs:integer($firstFragment/@node-id)
+  let $e := xs:integer($lastFragment/@node-id)
+  return
+    let $members := 
+      for $fragment in db:get($projectName, $G:fragmentsRegister)//dots:fragment
+      where $fragment/@node-id >= $s and $fragment/@node-id <= $e
+      return
+        $fragment
+    return
+      if ($tree or $filter)
+      then $members
+      else
+        for $fragment in $members
+        let $ref := normalize-space($fragment/@ref)
+        let $level := xs:integer($fragment/@level)
+        where
+          if ($firstFragmentLevel = $lastFragmentLevel) 
+          then $level = $firstFragmentLevel
+          else 
+            let $minLevel := min(($firstFragmentLevel, $lastFragmentLevel))
+            let $maxLevel := max(($firstFragmentLevel, $lastFragmentLevel))
+            return
+              $level >= $minLevel and $level <= $maxLevel
+        return
+            $fragment
 };
 
 (:~  
