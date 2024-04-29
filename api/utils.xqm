@@ -260,7 +260,11 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
       <pair name="@type">Resource</pair>
       <pair name="citationTrees" type="object">
         <pair name="@type">CitationTree</pair>
-        <pair name="maxCiteDepth" type="number">{xs:integer($maxCiteDepth)}</pair>
+        <pair name="maxCiteDepth" type="number">{
+          if ($maxCiteDepth)
+          then xs:integer($maxCiteDepth)
+          else 0
+        }</pair>
         {let $document := db:get($projectName)/tei:TEI[@xml:id = $resourceId]
           let $refsDecl := $document//tei:refsDecl
           return
@@ -327,7 +331,7 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
   let $resource := utils:getResource($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
   let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref})
-  let $level := xs:integer($fragment/@level)
+  let $level := xs:integer($fragment/@level[1])
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
   let $followingFrag := xs:integer($fragment/following::dots:fragment[@level = $level][@resourceId = $resourceId][1]/@node-id)
   let $nodeId := xs:integer($fragment/@node-id)

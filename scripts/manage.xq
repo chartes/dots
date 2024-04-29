@@ -6,6 +6,11 @@ xquery version "3.1";
 : @since 2023-06-23
 : @version  1.0
 :)
+
+(: import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/resources_register_builder.xqm"; :)
+
+import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm"; 
+
  import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm";
 (: import module namespace utils = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm"; :)
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
@@ -42,11 +47,5 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 
 (: 5. Supprimer  :)
 (: dbd:handleDelete() :)
-  
+
 ""
-
-
-  
-   
-  
-  
