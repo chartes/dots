@@ -12,6 +12,11 @@ xquery version "3.1";
 import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm"; 
 
  import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm";
+ import module namespace valid = "https://github.com/chartes/dots/validation" at "../schema/dots_validation.xqm";
+  import module namespace schem = "https://github.com/chartes/dots/validation/schema" at "../schema/dots_add_schema.xqm";
+
+ import module namespace validate = "https://github.com/chartes/dots/validation/validate" at "../schema/dots_resources_validation.xqm";
+ 
 (: import module namespace utils = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm"; :)
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 (: import module namespace utils = "https://github.com/chartes/dots/api/utils" at "../api/utils.xqm"; :)
@@ -48,4 +53,6 @@ import module namespace utils = "https://github.com/chartes/dots/api/utils" at "
 (: 5. Supprimer  :)
 (: dbd:handleDelete() :)
 
-""
+validate:resourcesValidation("encpos")
+
+

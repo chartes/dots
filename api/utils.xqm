@@ -532,11 +532,11 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
   let $passage := 
     if ($type = "collection")
     then ()
-    else <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{$ref,start,end,tree,mediaType}")}</pair>
+    else <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>
   let $references := 
     if ($type = "collection")
     then ()
-    else <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{$ref,start,end,tree,down}")}</pair>
+    else <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>
   let $citationTrees :=
     if ($type = "resource")
     then
