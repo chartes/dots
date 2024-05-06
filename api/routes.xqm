@@ -96,7 +96,7 @@ declare
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("tree", "{$tree}", "")
-  %rest:query-param("down", "{$down}", 0)
+  %rest:query-param("down", "{$down}", "-2")
   %rest:query-param("filter", "{$filter}", "")
 function routes:navigation($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter, $down as xs:integer) {
   if ($resource != "")
@@ -105,7 +105,7 @@ function routes:navigation($resource as xs:string, $ref as xs:string, $start as 
     return
       if ($dbName != "") 
       then 
-        if($down)
+        if($down != -2)
         then
           utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
         else
@@ -115,7 +115,7 @@ function routes:navigation($resource as xs:string, $ref as xs:string, $start as 
             then
               utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
             else
-              web:redirect(concat("/api/dts/navigation?", request:query(), "&amp;down=1"))
+             web:redirect(concat("/api/dts/navigation?", request:query(), "&amp;down=1"))
       else
         routes:badIdResource(xs:string($resource))
   else

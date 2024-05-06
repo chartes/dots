@@ -141,8 +141,7 @@ declare function utils:collectionById($resourceId as xs:string, $nav as xs:strin
           <pair name="dtsVersion">1-alpha</pair>,
           $dublincore,
           if ($extensions/node()) then $extensions else (),
-          if ($members) then <pair name="member" type="array">{$members}</pair>,
-          if ($maxCiteDepth) then <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair> else ()
+          if ($members) then <pair name="member" type="array">{$members}</pair>
         )
       let $context := utils:getContext($projectName, $response)
       return
@@ -258,6 +257,21 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
     <pair name="resource" type="object">
       <pair name="@id">{$resourceId}</pair>
       <pair name="@type">Resource</pair>
+      <pair name="collection">{
+        let $parentIds := $resource/@parentIds
+        return
+          if (contains($parentIds, " "))
+          then 
+            (
+              attribute {"type"} {"array"},
+              let $tokenize := tokenize($parentIds, " ")
+              for $coll in $tokenize
+              return
+                <item>{concat("/api/dts/collection?id=", $coll)}</item>
+            )
+          else
+            concat("/api/dts/collection?id=", $parentIds)
+      }</pair>
       <pair name="citationTrees" type="object">
         <pair name="@type">CitationTree</pair>
         <pair name="maxCiteDepth" type="number">{
@@ -273,6 +287,10 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
               utils:getNavCitationTrees($refsDecl)
             else ()
         }
+        <pair name="mediaTypes" type="array">
+          <item>xml</item>
+          <item>html</item>
+        </pair>
       </pair>
     </pair>
 };
@@ -337,14 +355,11 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
   let $nodeId := xs:integer($fragment/@node-id)
   let $refInfos := utils:getFragmentInfo($fragment)
   let $members :=
-    if ($ref and not($down))
-    then ()
-    else
-    for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
-    let $levelMember := xs:integer($member/@level)
-    where
-      if ($down)
-      then 
+    if ($down != -2)
+    then 
+      for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
+      let $levelMember := xs:integer($member/@level)
+      where
         let $nodeIdMember := xs:integer($member/@node-id)
         return
           if ($down = -1)
@@ -353,9 +368,20 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
             let $maxLevel := if ($down + $level > $maxCiteDepth) then $maxCiteDepth else $down + $level
             return
               $nodeIdMember >= $nodeId and $nodeIdMember < $followingFrag and $levelMember <= $maxLevel
-      else $member/@parentNodeId = $nodeId
-    return
-      $member
+      return
+        $member
+    else
+      if ($down = 0) 
+      then 
+        let $fragmentParent := $fragment/@parentNodeRef
+        for $member in db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment[@resourceId = $resourceId]
+        return
+          if ($fragmentParent)
+          then
+            $member[@parentNodeRef = $fragmentParent]
+          else 
+            $member[not(@parentNodeRef)]
+      else ()
   let $membersFiltered :=
     if ($filter)
     then utils:filters($members, $filter)
