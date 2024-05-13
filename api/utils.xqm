@@ -605,7 +605,11 @@ declare function utils:getCitationTrees($node) {
         if ($cite/tei:citeStructure)
         then 
           utils:getCitationTrees($cite)
-      )
+      ),
+    <pair name="mediaTypes" type="array">
+      <item>xml</item>
+      <item>html</item>
+    </pair>
   }</pair>
 };
 
