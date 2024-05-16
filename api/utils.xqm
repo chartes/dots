@@ -279,7 +279,7 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
           then xs:integer($maxCiteDepth)
           else 0
         }</pair>
-        {let $document := db:get($projectName)/tei:TEI[@xml:id = $resourceId]
+        {let $document := utils:getDocument($projectName, $resourceId)
           let $refsDecl := $document//tei:refsDecl
           return
             if ($refsDecl)
@@ -476,13 +476,7 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 :)
 declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter) {
   let $project := utils:getDbName($resourceId)
-  let $doc := 
-    if (db:get($project)/tei:TEI[@xml:id = $resourceId])
-    then db:get($project)/tei:TEI[@xml:id = $resourceId]
-    else 
-      for $document in db:get($project)/node()
-      where ends-with(db:path($document), $resourceId)
-      return $document
+  let $doc := utils:getDocument($project, $resourceId)
   let $fragments := 
     if ($ref)
     then utils:getFragment($project, $resourceId, map{"ref": $ref})
@@ -564,9 +558,9 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
     then ()
     else <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>
   let $citationTrees :=
-    if ($type = "resource")
-    then
-      let $document := db:get($dbName)/tei:TEI[@xml:id = $resourceId]
+    if ($type = "resource" or $type = "Resource")
+    then 
+      let $document := utils:getDocument($dbName, $resourceId)
       let $refsDecl := $document//tei:refsDecl
       return
         if ($refsDecl)
@@ -592,12 +586,17 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
           <pair name="maxCiteDepth" type="number">{normalize-space($resource/@maxCiteDepth)}</pair>
           {$citationTrees}
         </pair>
+      else (),
+      <pair name="mediaTypes" type="array">
+        <item>xml</item>
+        <item>html</item>
+    </pair>
     )
 };
 
 declare function utils:getCitationTrees($node) {
   <pair name="citeStructure" type="object">{
-    for $cite in $node/node()
+    for $cite in $node/tei:citeStructure
     let $citeType := normalize-space($cite/@unit)
     return
       (
@@ -605,11 +604,7 @@ declare function utils:getCitationTrees($node) {
         if ($cite/tei:citeStructure)
         then 
           utils:getCitationTrees($cite)
-      ),
-    <pair name="mediaTypes" type="array">
-      <item>xml</item>
-      <item>html</item>
-    </pair>
+      )
   }</pair>
 };
 
@@ -620,7 +615,7 @@ declare function utils:getNavCitationTrees($node) {
     return
       (
         <pair name="@type">CiteStructure</pair>,
-        if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType"/>,
+        if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
         if ($cite/tei:citeStructure)
         then 
           utils:getNavCitationTrees($cite)
@@ -1027,5 +1022,9 @@ declare function utils:getResultFilter($sequence, $filter) {
       $element
 };
 
-
+declare function utils:getDocument($dbName as xs:string, $resourceId as xs:string) {
+  if (db:get($dbName)/tei:TEI[@xml:id = $resourceId])
+  then db:get($dbName)/tei:TEI[@xml:id = $resourceId] 
+  else db:get($dbName)/node()[ends-with(db:path(.), $resourceId)]
+};
 

@@ -160,7 +160,11 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
               case ($mediaType[. = "html"]) return "text/html;"
               case ($mediaType[. = "txt"]) return "text/plain"
               default return "application/tei+xml"
-            let $style := concat($G:webapp, $G:xsl)
+            let $style := 
+              (: if (file:exists(concat($G:webapp, "/static/xsl/josticeetplet_html.xsl")))
+              then concat($G:webapp, "/static/xsl/josticeetplet_html.xsl")
+              else :)
+                concat($G:webapp, $G:xsl)
             let $project := db:get($G:dots)//node()[@dtsResourceId = $resource]/@dbName
             let $trans := 
               if ($mediaType = "html")

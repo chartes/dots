@@ -13,9 +13,8 @@ DoTS – BaseX DTS Tools
 
 ### Arborescence des fichiers à fournir
 
-- un dossier `/TEI` regroupant tous les documents TEI du corpus
-- un dossier `/dots` regroupant les documents utiles au builder DoTS pour créer les registres DoTS (TSV et metadata_mapping.xml)
-- ces documents sont facultatifs
+- un dossier `/data` regroupant tous les documents TEI du corpus
+- un dossier `/metadata` regroupant les documents utiles au builder DoTS pour créer les registres DoTS (TSV et dots_metadata_mapping.xml). Ces documents sont facultatifs.
 
 #### Cas 1: Projet sans collection
 
@@ -23,13 +22,13 @@ DoTS – BaseX DTS Tools
 Dir Project (exemple: ENDP)
 
 ├── /theatre
-│    ├── /TEI
+│    ├── /data
 │        ├── TEI1.xml
 │        ├── TEI2.xml
 │        ├── TEI3.xml
 │        ├── (...)
 
-│    ├── /dots
+│    ├── /metadata
 │        ├── (metadata.tsv)
 │        ├── (dots_metadata_mapping.xml)
 ```
@@ -40,7 +39,7 @@ Dir Project (exemple: ENDP)
 Dir Project (exemple: ENDP)
 
 ├── /ENDP
-│    ├── /TEI
+│    ├── /data
 │        ├── /id_collection1
 │            ├── TEI1.xml
 │            ├── TEI2.xml
@@ -57,23 +56,23 @@ Dir Project (exemple: ENDP)
 │            ├── TEI3.xml
 │            ├── (...)
 
-│    ├── /dots
+│    ├── /metadata
 │        ├── (metadata.tsv)
 │        ├── (dots_metadata_mapping.xml)
 ```
-Dans ce cas, un tableur TSV et un `m̀etadata_mapping.xml` sont obligatoires pour déclarer *a minima* les métadonnées des collections (au moins un **dc:title**).
+Dans ce cas, un tableur TSV et un `metadata_mapping.xml` sont obligatoires pour déclarer *a minima* les métadonnées des collections (au moins un **dc:title**).
 Le TSV doit disposer d'une colonne avec les identifiants des collections dont le nom est similaire à celui proposé dans l'arborescence des fichiers.
 
 
 ### Prérequis des fichiers TEI
 
 - Le fichier TEI doit correspondre à l'unité documentaire que l'utilisateur souhaite éditer. Si le fichier TEI correspond à une collection regroupant plusieurs document, il est préconisé de séparer en amont le fichier TEI collection en autant de documents que nécessaire.
-- chaque fichier TEI doit disposer d'un attribut `@xml:id` sur l'élément racine `TEI`.
-- pour pouvoir lister des fragments sur les endpoints DTS **Navigation** (cf. https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html) et **Document** (cf. https://distributed-text-services.github.io/specifications/Documents-Endpoint.html), la structure hiérarchique doit être explicité dans le teiHeader dans `citeStructure` (cf. le modèle `dots_metadata_mapping.xml` dans `dots/data_test/endp/dots_metadata_mapping.xml` et dans les guidelines TEI  https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-citeStructure.html)
+- il est aussi recommandé que chaque fichier TEI dispose d'un attribut `@xml:id` sur l'élément racine `TEI`.
+- pour pouvoir lister des fragments sur les endpoints DTS **Navigation** (cf. https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint) et **Document** (cf. https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint), la structure hiérarchique doit être explicité dans le teiHeader dans `citeStructure` (cf. le modèle `dots_metadata_mapping.xml` dans la documentation DoTS : https://chartes.github.io/dots_documentation/dots-project-folder/#surcharge-et-metadonnees-optionnelles et dans les guidelines TEI  https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-citeStructure.html)
 
 ### Modèle `dots_metadata_mapping.xml`
 
-cf. pour exemple: `/dots/data_test/endp/dots/endp_metadata_mapping.xml` ou `/dots/data_test/theatre/dots_metadata_mapping.xml`
+cf. pour exemple: `https://github.com/chartes/dots_documentation/blob/dev/data_test/periodiques/encpos_by_abstract/metadata/dots_metadata_mapping.xml` ou `https://github.com/chartes/dots_documentation/blob/dev/data_test/theatre/metadata/dots_metadata_mapping.xml`
 
 L'élément `mapping` contient toutes les métadonnées que l'utilisateur souhaite intégrer aux registres. 
 
