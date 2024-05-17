@@ -609,18 +609,18 @@ declare function utils:getCitationTrees($node) {
 };
 
 declare function utils:getNavCitationTrees($node) {
-  <pair name="citeStructure" type="object">{
-    for $cite in $node/tei:citeStructure
-    let $citeType := normalize-space($cite/@unit)
-    return
-      (
-        <pair name="@type">CiteStructure</pair>,
-        if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
+   <pair name="citeStructure" type="array">{
+  for $cite at $pos in $node/tei:citeStructure
+  let $citeType := normalize-space($cite/@unit)
+  return
+     <item type="object">
+        <pair name="@type">CiteStructure</pair>
+        {if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
         if ($cite/tei:citeStructure)
         then 
           utils:getNavCitationTrees($cite)
-      )
-  }</pair>
+    }</item>
+}</pair>
 };
 
 (:~ 
