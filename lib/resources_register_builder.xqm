@@ -104,7 +104,9 @@ declare function dots.lib:getMetadata() {
 declare function dots.lib:collections($bdd as xs:string, $idProject as xs:string) {
   let $list_collections :=
     let $collections :=
-      for $document in db:open($bdd)/tei:TEI 
+      for $document in db:get($bdd)/node()
+      let $filePath := db:path($document)
+      where not(contains($filePath, "metadata/"))
       let $dbPath := db:path($document)
       let $base_path := functx:substring-before-last($dbPath, "/") 
       group by $base_path 

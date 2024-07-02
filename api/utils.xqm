@@ -550,7 +550,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
     then 0
     else xs:integer($resource/@totalChildren)
   let $passage := 
-    if ($type = "collection")
+    if ($type = "Resource")
     then ()
     else <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>
   let $references := 
@@ -587,10 +587,13 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
           {$citationTrees}
         </pair>
       else (),
-      <pair name="mediaTypes" type="array">
-        <item>xml</item>
-        <item>html</item>
-    </pair>
+      if ($type = "resource" or $type = "Resource")
+      then
+        <pair name="mediaTypes" type="array">
+          <item>xml</item>
+          <item>html</item>
+        </pair>
+      else ()
     )
 };
 
