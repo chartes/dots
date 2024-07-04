@@ -651,7 +651,7 @@ declare function utils:getDublincore($resource as element()) {
         group by $key
         order by $key
         return
-          if ($countKey > 1)
+          if ($countKey > 1 or $metadata/@key)
           then
             utils:getArrayJson($elementName, $metadata)
           else
@@ -694,7 +694,7 @@ declare function utils:getExtensions($resource as element()) {
         group by $key
         order by $key
         return
-          if ($countKey > 1)
+          if ($countKey > 1 or $metadata/@key)
           then
             utils:getArrayJson($name[1], $metadata)
           else

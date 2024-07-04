@@ -165,8 +165,8 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
               if ($mediaType = "html")
               then
                 let $style :=
-                  if (file:exists(concat($G:xsl, $dbName, "/", $dbName, "2html.xsl")))
-                  then concat($G:xsl, $dbName, "/", $dbName, "2html.xsl")
+                  if (file:exists(concat($G:xsl, $dbName, "/", $dbName, ".xsl")))
+                  then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
                   else concat($G:xsl, "hteiml/tei2html.xsl")
                 return
                   xslt:transform($result, $style)
