@@ -244,7 +244,7 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $tree, $fil
 
 declare function utils:getUriLinks() {
   (
-    <pair name="passage">{string("/api/dts/document{?resource,ref,start,end,tree,mediaType}")}</pair>,
+    <pair name="document">{string("/api/dts/document{?resource,ref,start,end,tree,mediaType}")}</pair>,
     <pair name="collection">{string("/api/dts/collection{?id,nav}")}</pair>,
     <pair name="navigation">{string("/api/dts/navigation{?resource,ref,start,end,down}")}</pair>
   )
@@ -549,14 +549,15 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
     if ($type = "resource")
     then 0
     else xs:integer($resource/@totalChildren)
-  let $passage := 
-    if ($type = "Resource")
-    then ()
-    else <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>
-  let $references := 
-    if ($type = "collection")
-    then ()
-    else <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>
+  let $resourceLink :=
+    if ($type = "resource" or $type = "Resource")
+    then
+      (
+        <pair name="collection">{concat("/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
+        <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
+        <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>
+      )
+    else ()
   let $citationTrees :=
     if ($type = "resource" or $type = "Resource")
     then 
@@ -577,8 +578,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
       <pair name="totalItems" type="number">{if ($nav) then $totalParents else $totalChildren}</pair>,
       <pair name="totalChildren" type="number">{$totalChildren}</pair>,
       <pair name="totalParents" type="number">{$totalParents}</pair>,
-      $passage,
-      $references,
+      $resourceLink,
       if ($citationTrees)
       then
         <pair name="citationTrees" type="object">
