@@ -101,10 +101,7 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
                 for $v in $valueQuery
                 return
                   element {$nameMetadata} {normalize-space($v)} else (),
-            if ($fragment/@xml:id)
-            then
-              dots.lib:getFragmentMetadata($bdd, xs:string($ref))
-            else ()
+            dots.lib:getFragmentMetadata($bdd, xs:string($ref))
           }</fragment>,
           if ($citeStructure/tei:citeStructure)
           then 
