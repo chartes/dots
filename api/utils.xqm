@@ -653,7 +653,7 @@ declare function utils:getDublincore($resource as element()) {
         return
           if ($countKey > 1 or $metadata/@key)
           then
-            utils:getArrayJson($elementName, $metadata)
+            utils:getArrayJson($elementName[1], $metadata)
           else
             if ($key)
             then utils:getStringJson($elementName, $metadata)

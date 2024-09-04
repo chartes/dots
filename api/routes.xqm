@@ -169,7 +169,7 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
                   then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
                   else concat($G:xsl, "hteiml/tei2html.xsl")
                 return
-                  xslt:transform($result, $style)
+                  xslt:transform($result[name() = "TEI"], $style)
               else  $result
             return
               (
