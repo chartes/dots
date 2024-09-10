@@ -26,6 +26,7 @@ declare updating function dots.lib:dbCreate($dbName as xs:string, $projectDirPat
       order by $resource
       return
         concat($pathToData, $resource)
+    else()
   let $csvData := 
       if (file:exists($metadataPathFile))
       then 
