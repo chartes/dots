@@ -483,7 +483,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     else 
       if ($start and $end)
       then utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
-      else ()
+      else db:get($project, $G:fragmentsRegister)//dots:fragment
   let $treeResult :=
     if ($tree != "")
     then 
@@ -494,9 +494,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
   let $filterResult := 
     if ($filter) 
     then 
-      if ($treeResult)
-      then utils:filters($treeResult, $filter) 
-      else ()
+      utils:filters($treeResult, $filter)
     else $treeResult
   return
     if ($filterResult)
