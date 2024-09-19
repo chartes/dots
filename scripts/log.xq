@@ -4,6 +4,8 @@ module namespace dots.log = "https://github.com/chartes/dots/log";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
+declare namespace dc = "http://purl.org/dc/elements/1.1/";
+
 import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
 declare function dots.log:log($dbName) {
@@ -39,18 +41,16 @@ declare function dots.log:log($dbName) {
       <fragment>{
         if (db:get($dbName, $G:fragmentsRegister)//fragment)
         then
-        for $frag at $pos in db:get($dbName, $G:fragmentsRegister)//fragment
-        let $citeType := $frag/@citeType
-        group by $citeType 
-        let $countFrag := count($frag)
-        let $level := normalize-space($frag[1]/@level)
-        return
-          if ($pos = 1)
-          then concat(
-"- type '", $citeType, "' : ", $countFrag, " (level ", $level, ")")
-          else
-            concat("
-- type '", $citeType, "' : ", $countFrag, " (level ", $level, ")")
+          for $frag at $pos in db:get($dbName, $G:fragmentsRegister)//fragment
+          let $citeType := 
+            if ($frag/@citeType != "")
+            then $frag/@citeType
+            else "undefined citeType"
+          group by $citeType 
+          let $countFrag := count($frag)
+          let $level := normalize-space($frag[1]/@level)
+          return
+            concat("- type '", $citeType, "' : ", $countFrag, " (level ", $level, ")")
         else "0"
       }</fragment>
     let $countFragments := count($fragments)
@@ -67,7 +67,7 @@ declare function dots.log:log($dbName) {
       (concat("
 Votre projet DoTS :
 ---------------
-Projet : ", normalize-space($project), "
+Projet : ", normalize-space($project/dc:title), "
 Nom de la base de données : ", $dbName, "
 Collections : ", $countCollections, "
 Métadonnées de collections : ", $metadatasColl, "
@@ -78,45 +78,6 @@ Fragments :
 Métadonnées de fragments : ", $metadatasFrag, "
 "
 ))
-
-      (: <log>
-        <project>{normalize-space($project)}</project>
-        <mapping>{$mapping}</mapping>
-        <collections>{$countCollections}</collections>
-        <collectionsMetadata>{$metadatasColl}</collectionsMetadata>
-        <documents>{$countDocuments}</documents>
-        <documentsMetadata>{$metadatasDoc}</documentsMetadata>
-        <fragments>{$fragments}</fragments>
-        <fragmentsMetadata>{$metadatasFrag}</fragmentsMetadata>
-      </log> :)
   return
     $log
-    (: let $path := concat($G:webapp, $G:dots, "/.log/")
-    let $logFileName := concat("log_", $project, "_", current-dateTime(), ".xml")
-    return
-      if (file:exists($path))
-      then
-        file:write(concat($path, $logFileName), $log)
-      else
-        (
-          file:create-dir($path),
-          file:write(concat($path, $logFileName), $log)
-        ) :) 
 };
-
-(: declare function dots.log:csvResume($dbName) {
-  let $project := db:get($dbName, $G:resourcesRegister)//*:collection[not(@parentIds)]
-  let $content :=
-    <csv>
-      <record>
-        <Project>{normalize-space($project)}</Project>
-        <DbName>{$dbName}</DbName>
-      </record>
-    </csv>
-  return
-    csv:serialize($content, map {"header": true(), "separator": "|"})
-}; :)
-
-
-  
-  
