@@ -527,8 +527,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
   let $title := 
-    for $t in $resource/*:title[1]
-    where in-scope-prefixes($t)[1] = "dc"
+    for $t in $resource/dc:title[1]
     return
       normalize-space($t)
   let $desc := normalize-space($resource/description)
@@ -634,7 +633,7 @@ declare function utils:getNavCitationTrees($node) {
 : @see utils.xqm;utils:getStringJson
 :)
 declare function utils:getDublincore($resource as element()) {
-  let $dc := $resource/node()[in-scope-prefixes(.)[1] = "dc"]
+  let $dc := $resource/node()[namespace-uri(.) = "http://purl.org/dc/elements/1.1/"]
   return
     if ($dc)
     then

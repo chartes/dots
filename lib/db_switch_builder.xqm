@@ -28,7 +28,7 @@ declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
 (:~ 
-: Cette fonction permet d'ajouter ou modifier les deux documents XML à la db dots.
+: Cette fonction permet d'ajouter ou modifier les deux documents XML de la db dots.
 : @return 2 documents XML à ajouter à la db "dots"
 : @param $G:dots chaîne de caractère, variable globale pour accéder à la db dots
 : @param $dbName chaîne de caractère qui donne le nom de la db
