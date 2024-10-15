@@ -483,7 +483,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     else 
       if ($start and $end)
       then utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
-      else db:get($project, $G:fragmentsRegister)//dots:fragment
+      else ()
   let $treeResult :=
     if ($tree != "")
     then 
@@ -595,7 +595,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
 };
 
 declare function utils:getCitationTrees($node) {
-  <pair name="citeStructure" type="object">{
+  <pair name="citeStructure" type="array">{
     for $cite in $node/tei:citeStructure
     let $citeType := normalize-space($cite/@unit)
     return
