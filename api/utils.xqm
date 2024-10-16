@@ -471,8 +471,7 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : @see utils.xqm;utils:getDbName
 : @see utils.xqm;utils:getFragment
 : @see utils.xqm;utils:getFragmentsInRange
-: @todo revoir la gestion de start et end!
-: @todo: revoir le résultat avec start et end sans aucun filtre!
+: @todo revoir le paramètre "tree" qui n'est actuellement pas pris en charge
 :)
 declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter) {
   let $project := utils:getDbName($resourceId)
@@ -484,18 +483,38 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
       if ($start and $end)
       then utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
       else ()
-  let $treeResult :=
-    if ($tree != "")
+  (: let $treeResult :=
+    if ($tree)
     then 
       for $treeFragment in $fragments
       where $treeFragment/@citeType = $tree
       return $treeFragment
-    else $fragments
+    else $fragments :)
   let $filterResult := 
     if ($filter) 
     then 
-      utils:filters($treeResult, $filter)
-    else $treeResult
+      if ($fragments)
+      then 
+        if (count($fragments) > 1)
+        then
+          utils:filters($fragments, $filter)
+        else
+          let $level := $fragments/@level
+          let $currentFragId := xs:integer($fragments/@node-id)
+          let $nextFrag := db:get($project, $G:fragmentsRegister)//dots:fragment[@node-id = $currentFragId]/following::dots:fragment[@level = $level][1]
+          let $nextFragId := $nextFrag/@node-id
+          let $fragsInRef := 
+            for $frags in db:get($project, $G:fragmentsRegister)//dots:fragment[@resourceId = $resourceId][@level >= xs:integer($level)]
+            let $node-id := xs:integer($frags/@node-id)
+            where $node-id >= $currentFragId and $node-id < $nextFragId
+            return
+              utils:filters($frags, $filter)
+          return
+            $fragsInRef
+      else
+        let $fullFragments := db:get($project, $G:fragmentsRegister)//dots:fragment
+        return utils:filters($fullFragments, $filter)
+    else $fragments
   return
     if ($filterResult)
     then
@@ -506,7 +525,13 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
             db:get-id($project, $fragment/@node-id)
         }</dts:wrapper>
       </TEI>
-    else $doc
+    else 
+      if ($tree or $filter)
+      then
+        let $message := "Error 404 : no fragment available"
+        return
+          web:error(404, $message)
+      else $doc
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
