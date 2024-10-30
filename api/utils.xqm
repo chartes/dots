@@ -473,12 +473,16 @@ Fonctions d'entrée dans le endPoint "Document" de l'API DTS
 : @see utils.xqm;utils:getFragmentsInRange
 : @todo revoir le paramètre "tree" qui n'est actuellement pas pris en charge
 :)
-declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter) {
+declare function utils:document($resourceId as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter, $excludeFragments as xs:boolean) {
   let $project := utils:getDbName($resourceId)
   let $doc := utils:getDocument($project, $resourceId)
   let $fragments := 
+    if ($excludeFragments)
+    then ()
+    else
     if ($ref)
-    then utils:getFragment($project, $resourceId, map{"ref": $ref})
+    then 
+      utils:getFragment($project, $resourceId, map{"ref": $ref})
     else 
       if ($start and $end)
       then utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
@@ -515,23 +519,52 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
         let $fullFragments := db:get($project, $G:fragmentsRegister)//dots:fragment
         return utils:filters($fullFragments, $filter)
     else $fragments
+  let $excludeFrags := 
+    if ($excludeFragments)
+    then utils:excludeFragments($project, $resourceId, $ref)
+    else ()
   return
-    if ($filterResult)
+    if ($filterResult or $excludeFrags)
     then
-      <TEI xmlns="http://www.tei-c.org/ns/1.0">
-        <dts:wrapper xmlns:dts="https://w3id.org/dts/api#">{
-          for $fragment in $filterResult
-          return
-            db:get-id($project, $fragment/@node-id)
-        }</dts:wrapper>
-      </TEI>
+      if ($filterResult)
+      then
+        <TEI xmlns="http://www.tei-c.org/ns/1.0">
+          <dts:wrapper xmlns:dts="https://w3id.org/dts/api#">{
+            for $fragment in $filterResult
+            return
+              db:get-id($project, $fragment/@node-id)
+          }</dts:wrapper>
+        </TEI>
+      else $excludeFrags
     else 
       if ($tree or $filter)
       then
         let $message := "Error 404 : no fragment available"
         return
           web:error(404, $message)
-      else $doc
+      else 
+        $doc
+};
+
+declare function utils:excludeFragments($project as xs:string, $resourceId as xs:string, $ref as xs:string) {
+  let $register := db:get($project, $G:fragmentsRegister)
+  let $fragment := $register//dots:fragment[@resourceId = $resourceId][@ref = $ref]
+  let $node-id := $fragment/@node-id
+  let $node := db:get-id($project, $node-id)
+  return
+    <dts:wrapper xmlns:dts="https://w3id.org/dts/api#">{
+      for $child in $node/node()
+      let $id := $child/@xml:id
+      return
+        if ($id)
+        then 
+          let $node-id := db:node-id($child)
+          return
+            if (exists($register//dots:fragment[@node-id = $node-id]))
+            then ()
+            else $child
+        else $child
+  }</dts:wrapper>
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 

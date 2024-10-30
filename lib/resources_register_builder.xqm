@@ -337,9 +337,3 @@ declare function dots.lib:getCollectionMetadata($bdd as xs:string, $collection a
           )
     else <dc:title>{$collection}</dc:title>
 };
-
-
-
-
-
-

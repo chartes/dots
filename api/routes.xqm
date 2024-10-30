@@ -144,14 +144,15 @@ declare
   %rest:query-param("tree", "{$tree}", "")
   %rest:query-param("mediaType", "{$mediaType}", "")
   %rest:query-param("filter", "{$filter}", "")
-function routes:document($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $mediaType as xs:string, $filter) {
+  %rest:query-param("excludeFragments", "{$excludeFragments}", false())
+function routes:document($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $mediaType as xs:string, $filter, $excludeFragments as xs:boolean) {
   if ($resource != "")
   then
     let $dbName := db:get($G:dots)//dots:member/node()[@dtsResourceId = $resource]/@dbName
     return
       if ($dbName) 
       then 
-        let $result := utils:document($resource, $ref, $start, $end, $tree, $filter)
+        let $result := utils:document($resource, $ref, $start, $end, $tree, $filter, $excludeFragments)
         return
           if ($mediaType)
           then 
@@ -169,7 +170,7 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
                   then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
                   else concat($G:xsl, "hteiml/tei2html.xsl")
                 return
-                  xslt:transform($result[name() = "TEI"], $style)
+                  xslt:transform($result, $style)
               else  $result
             return
               (

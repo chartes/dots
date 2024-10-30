@@ -55,4 +55,5 @@ if [ $cleanOption ]; then
 fi
 bash basex -b dbName=$db_name -b projectDirPath=$project_dir_path ../webapp/dots/scripts/project_db_init.xq;
 bash basex -b dbName=$db_name -b topCollectionId=$top_collection_id ../webapp/dots/scripts/project_registers_create.xq;
+bash basex -b dbName=$db_name ../webapp/dots/scripts/TEI_add_id.xq;
 bash basex -b dbName=$db_name ../webapp/dots/scripts/dots_switcher_update.xq

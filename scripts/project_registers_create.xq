@@ -17,17 +17,17 @@ else
       if ($topCollectionId = "")
       then update:output("* ❌ Erreur : renseigner la variable topCollectionId (identifiant du projet)")
       else
-      (
-        dots.lib:createResourcesRegister($dbName, $topCollectionId),
-        if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister))
-        then
-          (
-            update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été recréés.
-"))
-          )
-        else 
-          (
-            update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été créés.
-")))     
-      )
+        (
+          dots.lib:createResourcesRegister($dbName, $topCollectionId),
+          if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister))
+          then
+            (
+              update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été recréés.
+  "))
+            )
+          else 
+            (
+              update:output(concat("* ✅ Les registres dots pour la base de donnée '", $dbName, "' ont été créés.
+  ")))
+        )
     )
