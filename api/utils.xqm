@@ -349,6 +349,13 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
   let $resource := utils:getResource($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
   let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref})
+  return
+    if (not($fragment))
+    then
+      let $message := "Error 404 : Not Found"
+      return
+        web:error(404, $message)
+    else
   let $level := xs:integer($fragment/@level[1])
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
   let $followingFrag := xs:integer($fragment/following::dots:fragment[@level = $level][@resourceId = $resourceId][1]/@node-id)
@@ -400,7 +407,12 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
       utils:getResourcesInfo($projectName, $resource),
       <pair name="ref" type="object">{$refInfos}</pair>}
       {
-        if ($response) then <pair name="member" type="array">{$response}</pair> else <pair name="member" type="array"><item type="object">{$refInfos}</item></pair>
+        if ($response) 
+        then <pair name="member" type="array">{$response}</pair> 
+        else 
+          <pair name="member" type="array">
+            <item type="object">{$refInfos}</item>
+          </pair>
       }
       {$context}
     </json>
@@ -423,6 +435,13 @@ declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:st
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
   let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start})
   let $fragLast := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  return
+    if (not($frag1) or not($fragLast))
+    then
+      let $message := "Error 404 : Not Found"
+      return
+        web:error(404, $message)
+    else
   let $maxCiteDepth := normalize-space($frag1/@maxCiteDepth)
   let $level := normalize-space($frag1/@level)
   let $startFrag := utils:getFragmentInfo($frag1) 

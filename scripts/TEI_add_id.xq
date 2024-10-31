@@ -7,5 +7,5 @@ import module namespace G = "https://github.com/chartes/dots/globals" at "../glo
 declare variable $dbName external;
 
 dots.update:addXmlIdToFragment($dbName),
-update:output(concat("* ✅ DoTS a intégré, le cas échéant, des attributs @xml:id aux fragments.
-  "))
+update:output("* ✅ DoTS a intégré, le cas échéant, des attributs @xml:id aux fragments.
+  ")
