@@ -1,214 +1,146 @@
 # DoTS
 
-DoTS – BaseX DTS Tools
+DoTS – BaseX DTS Tools est une implémentation en XQuery de la spécification d'API <a href="https://chartes.github.io/dots_documentation/" target="_blank">DTS</a> (Distributed Text Services), adossée au logiciel de base de données XML BaseX.
 
-## Installation
+## 1. Installation
 
-- Télécharger et installer BaseX (https://basex.org/)
+- Télécharger et installer BaseX (>= 11.XX) (https://basex.org/)
 - Télécharger DoTS (https://github.com/chartes/dots)
 - Trouver le chemin où BaseX a été installé
 - Copier le dossier DoTS dans /path/to/BaseX/webapp
 
-## Prérequis DoTS
+## 2. Utilisation de DoTS
 
-### Arborescence des fichiers à fournir
+Pour avoir plus d'informations sur l'installation et l'utilisation de DoTS, vous pouvez consulter la <a href="https://chartes.github.io/dots_documentation/" target="_blank">documentation</a>.
 
-- un dossier `/data` regroupant tous les documents TEI du corpus
-- un dossier `/metadata` regroupant les documents utiles au builder DoTS pour créer les registres DoTS (TSV et dots_metadata_mapping.xml). Ces documents sont facultatifs.
-
-#### Cas 1: Projet sans collection
-
-```
-Dir Project (exemple: ENDP)
-
-├── /theatre
-│    ├── /data
-│        ├── TEI1.xml
-│        ├── TEI2.xml
-│        ├── TEI3.xml
-│        ├── (...)
-
-│    ├── /metadata
-│        ├── (metadata.tsv)
-│        ├── (dots_metadata_mapping.xml)
-```
-
-#### Cas 2: Projet avec collections
-
-```
-Dir Project (exemple: ENDP)
-
-├── /ENDP
-│    ├── /data
-│        ├── /id_collection1
-│            ├── TEI1.xml
-│            ├── TEI2.xml
-│            ├── TEI3.xml
-│            ├── (...)
-│        ├── /id_collection2
-│            ├── TEI1.xml
-│            ├── TEI2.xml
-│            ├── TEI3.xml
-│            ├── (...)
-│        ├── /id_collection3
-│            ├── TEI1.xml
-│            ├── TEI2.xml
-│            ├── TEI3.xml
-│            ├── (...)
-
-│    ├── /metadata
-│        ├── (metadata.tsv)
-│        ├── (dots_metadata_mapping.xml)
-```
-Dans ce cas, un tableur TSV et un `metadata_mapping.xml` sont obligatoires pour déclarer *a minima* les métadonnées des collections (au moins un **dc:title**).
-Le TSV doit disposer d'une colonne avec les identifiants des collections dont le nom est similaire à celui proposé dans l'arborescence des fichiers.
-
-
-### Prérequis des fichiers TEI
-
-- Le fichier TEI doit correspondre à l'unité documentaire que l'utilisateur souhaite éditer. Si le fichier TEI correspond à une collection regroupant plusieurs document, il est préconisé de séparer en amont le fichier TEI collection en autant de documents que nécessaire.
-- il est aussi recommandé que chaque fichier TEI dispose d'un attribut `@xml:id` sur l'élément racine `TEI`.
-- pour pouvoir lister des fragments sur les endpoints DTS **Navigation** (cf. https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint) et **Document** (cf. https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint), la structure hiérarchique doit être explicité dans le teiHeader dans `citeStructure` (cf. le modèle `dots_metadata_mapping.xml` dans la documentation DoTS : https://chartes.github.io/dots_documentation/dots-project-folder/#passages et dans les guidelines TEI  https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-citeStructure.html)
-
-### Modèle `dots_metadata_mapping.xml`
-
-cf. pour exemple: `https://github.com/chartes/dots_documentation/blob/dev/data_test/periodiques/encpos_by_abstract/metadata/dots_metadata_mapping.xml` ou `https://github.com/chartes/dots_documentation/blob/dev/data_test/theatre/metadata/dots_metadata_mapping.xml`
-
-L'élément `mapping` contient toutes les métadonnées que l'utilisateur souhaite intégrer aux registres. 
-
-Le fonctionnement général est le suivant:
-- le nom de l'élément XML servira de clef json pour la réponse d'API.
-- un attribut `@scope` permet de spécifier la portée de la métadonnée, selon qu'elle concerne une **collection** (ressource de type collection) ou un **document** (ressource de type ressource).
-
-Dans le cas où les métadonnées sont issues d'un fichier TEI:
-- un attribut `@xpath` permet de spécifier où collecter la métadonnée.
-- un attribut `@scope` permet d'indiquer la portée. Logiquement, il s'agit ici plutôt des métadonnées des **documents**.
-
-Dans le cas où les métadonnées sont issues d'un document TSV:
-- pour l'instant, seul le cas des TSV est pris en charge.
-- l'attribut `@source` permet de trouver le document TSV à utiliser dans le dossier /dots (cf. arborescence des fichiers à fournir)
-- l'attribut `@resourceId` permet d'indiquer la colonne du TSV qui donne l'identifiant de la ressource
-- l'attribut `@content` permet d'indiquer le nom de la colonne qui contient la métadonnée à ajouter.
-
-### Modèle TSV
-
-Le document TSV doit simplement:
-- disposer d'une colonne pour renseigner l'identifiant de la ressource à laquelle appartiennent les métadonnées.
-
-
-## Utilisation
-
-- Dans BasexGui, créer une base de données TEI
-- Dans BasexGui, ouvrir `/dots/schema/manage.xq` et suivre les recommandations en commentaire.
-Pour tester, deux corpus d'essai sont disponibles dans `/dots/data_test`:
-	- **endp**: corpus avec deux collections des registres de Notre-Dame de Paris
-	- **theatre**: corpus "à plat"
-
-### Routeur DTS
-
-Utiliser les routes de l'API DTS disponibles:
-
-- http://localhost:8080/api/dts/collections
-- http://localhost:8080/api/dts/navigation
-- et http://localhost:8080/api/dts/document
-
-## Usage depuis d'autres applications
+## 3. Usage depuis d'autres applications
 
 En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut décommenter la partie CORS du fichier `basex/webapp/WEB-INF/web.xml`.
 
-## État d'avancement de l'implémentation de DTS dans DoTS
+## 4. État d'avancement de l'implémentation de DTS
 
-### Endpoint Collections
+L'implémentation actuelle est en accord avec la version **1-alpha** de la spécification DTS.
+
+### 4.1 Endpoint Collections
 
 #### Propriétées JSON
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Collections-Endpoint.html#scheme)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#collection-endpoint)
 
 | Nom             | Statut                           | Implémentation |
 | --------------- | -------------------------------- | -------------- |
-| `title`         | obligatoire                      | ✅              |
 | `@id`           | obligatoire                      | ✅              |
 | `@type`         | obligatoire                      | ✅              |
-| `totalItems`    | obligatoire                      | ✅              |
-| `totalChildren` | obligatoire                      | ✅              |
+| `dtsVersion`    | obligatoire                      | ✅              |
+| `title`         | obligatoire                      | ✅              |
 | `totalParents`  | obligatoire                      | ✅              |
+| `totalChildren` | obligatoire                      | ✅              |
+| `description`   | optionnel                        | ✅              |
 | `maxCiteDepth`  | obligatoire (pour les resources) | ✅              |
-| `description`   | optionnel                        | 🚧             |
 | `member`        | optionnel                        | ✅              |
 | `dublincore`    | optionnel                        | ✅              |
 | `extensions`    | optionnel                        | ✅              |
-| `references`    | optionnel                        | ✅              |
-| `passage`       | optionnel                        | ✅              |
-| download        | optionnel                        | 🚧          |
-| citeStructure   | optionnel                        | ✅             |
+| `collection`    | obligatoire                      | ✅              |
+| `navigation`    | obligatoire (pour les resources) | ✅              |
+| `document`      | obligatoire (pour les resources) | ✅              |
+| `download`      | optionnel                        | 🚧              |
+| `citationTrees` | optionnel                        | 🚧              |
+| `view`          | optionnel                        | 🚧              |
 
 #### Paramètres de requête
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Collections-Endpoint.html#uri)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#uri-for-collection-endpoint-request)
 
 | Nom  | Méthode | Implémentation |
 | ---- | ------- | -------------- |
-| id   | GET     | ✅              |
+| id   | GET     | ✅             |
 | page | GET     | 🚧             |
-| nav  | GET     | ✅              |
+| nav  | GET     | ✅             |
 
-### Endpoint Navigation
+### 4.2 Endpoint Navigation
 
 #### Propriétées JSON
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#scheme-for-navigation-endpoint-responses)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#navigation-endpoint)
 
-| Nom            | Statut      | Implémentation |
-| -------------- | ----------- | -------------- |
+| Nom            | Statut      | Implémentation  |
+| -------------- | ----------- | --------------- |
 | `@id`          | obligatoire | ✅              |
-| `maxCiteDepth` | obligatoire | ✅              |
-| `citeType`     | optionnel   | ✅              |
-| `level`        | obligatoire | ✅              |
-| `passage`      | obligatoire | ✅              |
-| `parent`       | obligatoire | 🔄             |
-| `member`       |             | ✅              |
+| `@type`        | obligatoire | ✅              |
+| `dtsVersion`   | obligatoire | ✅              |
+| `resource`     | obligatoire | ✅              |
+| `ref`          | optionnel   | ✅              |
+| `start`        | optionnel   | ✅              |
+| `end`          | optionnel   | ✅              |
+| `member`       | optionnel   | ✅              |
+| `view`         | optionnel   | 🚧              |
 
-#### Propriétées JSON des `members`
+#### Propriétées JSON de `resource`
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#scheme-for-navigation-endpoint-responses)
+| Nom            | Statut      | Implémentation  |
+| -------------- | ----------- | --------------- |
+| `@id`          | obligatoire | ✅              |
+| `@type`        | obligatoire | ✅              |
+| `collection`   | obligatoire | ✅              |
+| `navigation`   | obligatoire | ✅              |
+| `document`     | obligatoire | ✅              |
+| `citationTrees`| obligatoire | 🔄              |
 
-| Nom          | Statut                                    | Implémentation |
-| ------------ | ----------------------------------------- | -------------- |
-| `ref`        | obligatoire (sauf si `start` et `end`)    | ✅              |
-| `start`      | obligatoire avec `end` (sauf si `ref`)    | 🔄             |
-| `end`        | obligatoire avec `start`  (sauf si `ref`) | 🔄             |
-| `citeType`   | optionnel                                 | ✅              |
-| `dublincore` | optionnel                                 | ✅              |
-| `extensions` | optionnel                                 | ✅              |
+#### Propriétées JSON de `CitationTree`
+
+| Nom            | Statut      | Implémentation  |
+| -------------- | ----------- | --------------- |
+| `identifier`   | optionnel   | 🚧              |
+| `@type`        | obligatoire | ✅              |
+| `citeStructure`| optionnel   | ✅              |
+| `description`  | optionnel   | 🚧              |
+
+#### Propriétées JSON de `CiteStructure`
+
+| Nom            | Statut      | Implémentation  |
+| -------------- | ----------- | --------------- |
+| `@type`        | obligatoire | ✅              |
+| `citeType`     | obligatoire | ✅              |
+| `citeStructure`| optionnel   | ✅              |
+
+
+#### Propriétées JSON de `citableUnit`
+
+| Nom          | Statut      | Implémentation |
+| ------------ | ----------- | -------------- |
+| `identifier` | obligatoire | ✅             |
+| `@type`      | obligatoire | ✅             |
+| `level`      | obligatoire | ✅             |
+| `parent`     | obligatoire | ✅             |
+| `citeType`   | obligatoire | ✅             |
+| `dublincore` | optionnel   | ✅             |
+| `extensions` | optionnel   | ✅             |
 
 #### Paramètres de requête
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html#query-parameters)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#uri-for-navigation-endpoint-requests)
 
 | Nom     | Méthode | Implémentation |
 | ------- | ------- | -------------- |
-| id      | GET     | ✅              |
-| ref     | GET     | ✅              |
-| start   | GET     | 🔄             |
-| end     | GET     | 🔄             |
-| down    | GET     | 🔄             |
-| groupBy | GET     | 🚧             |
-| max     | GET     | 🚧             |
-| exclud` | GET     | 🚧             |
+| `resource`| GET     | ✅             |
+| `ref`     | GET     | ✅             |
+| `start`   | GET     | ✅             |
+| `end`     | GET     | ✅             |
+| `down`    | GET     | ✅             |
+| `tree`    | GET     | 🔄             |
+| `page`    | GET     | 🚧             |
 
-### Endpoint Document
+### 4.3 Endpoint Document
 
 #### Paramètres de requête
 
-cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/Documents-Endpoint.html#uri)
+cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#document-endpoint)
 
-| Nom    | Méthode | Implémentation |
-| ------ | ------- | -------------- |
-| id     | GET     | ✅              |
-| ref    | GET     | ✅              |
-| start  | GET     | 🔄             |
-| end    | GET     | 🔄             |
-| after  |         | 🚧             |
-| before |         | 🚧             |
-| token  |         | 🚧             |
-| format |         | 🚧             |
+| Nom      | Méthode | Implémentation |
+| ------   | ------- | -------------- |
+| resource | GET     | ✅             |
+| ref      | GET     | ✅             |
+| start    | GET     | ✅             |
+| end      | GET     | ✅             |
+| tree     | GET     | 🔄             |
+| mediaType| GET     | 🚧             |

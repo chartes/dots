@@ -230,24 +230,16 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $tree, $fil
     <json type="object">{
       <pair name="dtsVersion">1-alpha</pair>,
       <pair name="@id">{$url}</pair>,
-      utils:getUriLinks(),
+      <pair name="@type">Navigation</pair>,
       utils:getResourcesInfo($projectName, $resource),
-      <pair name="level" type="number">0</pair>,
-      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>,
+      (: <pair name="level" type="number">0</pair>,
+      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>, :)
       if ($response)
       then
         <pair name="member" type="array">{$response}</pair> else (),
       <pair name="parent" type="null"></pair>,
       $context
     }</json>
-};
-
-declare function utils:getUriLinks() {
-  (
-    <pair name="document">{string("/api/dts/document{?resource,ref,start,end,tree,mediaType}")}</pair>,
-    <pair name="collection">{string("/api/dts/collection{?id,nav}")}</pair>,
-    <pair name="navigation">{string("/api/dts/navigation{?resource,ref,start,end,down}")}</pair>
-  )
 };
 
 declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
@@ -257,6 +249,7 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
     <pair name="resource" type="object">
       <pair name="@id">{$resourceId}</pair>
       <pair name="@type">Resource</pair>
+      <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{&amp;ref,start,end,mediaType}")}</pair>
       <pair name="collection">{
         let $parentIds := $resource/@parentIds
         return
@@ -267,11 +260,12 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
               let $tokenize := tokenize($parentIds, " ")
               for $coll in $tokenize
               return
-                <item>{concat("/api/dts/collection?id=", $coll)}</item>
+                <item>{concat("/api/dts/collection?id=", $coll), "{&amp;nav}"}</item>
             )
           else
-            concat("/api/dts/collection?id=", $parentIds)
+            concat("/api/dts/collection?id=", $parentIds, "{&amp;nav}")
       }</pair>
+      <pair name="navigation">{concat("/api/dts/document?resource=", $resourceId, "{&amp;ref,down,start,end}")}</pair>
       <pair name="citationTrees" type="object">
         <pair name="@type">CitationTree</pair>
         <pair name="maxCiteDepth" type="number">{
@@ -403,8 +397,8 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
     <json type="object">
       <pair name="dtsVersion">1-alpha</pair>
       <pair name="@id">{$url}</pair>
-      {utils:getUriLinks(),
-      utils:getResourcesInfo($projectName, $resource),
+      <pair name="@type">Navigation</pair>
+      {utils:getResourcesInfo($projectName, $resource),
       <pair name="ref" type="object">{$refInfos}</pair>}
       {
         if ($response) 
@@ -465,8 +459,8 @@ declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:st
     <json type="object">
       <pair name="dtsVersion">1-alpha</pair>
       <pair name="@id">{$url}</pair>
-      {utils:getUriLinks(),
-      utils:getResourcesInfo($projectName, $resource)}
+      <pair name="@type">Navigation</pair>
+      {utils:getResourcesInfo($projectName, $resource)}
       <pair name="start" type="object">{$startFrag}</pair>
       <pair name="end" type="object">{$endFrag}</pair>
       <pair name="member" type="array">{
