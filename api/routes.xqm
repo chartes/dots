@@ -84,7 +84,7 @@ function routes:collections($id as xs:string, $nav as xs:string, $filter) {
 : @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
 : @param $down entier qui permet de spécifier la profondeur des membres descendant attendus dans la réponse d'API
 : @see https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html
-: @todo gérer les erreurs http 404 (pour les $ref, $start, $end qui n'existent pas)
+: @todo revoir la gestion des erreurs HTTP 4XX. Particulièrement après avoir mieux intégré le param 'tree'
 :) 
 declare
   %rest:path("/api/dts/navigation")
@@ -150,8 +150,12 @@ declare
   %rest:query-param("filter", "{$filter}", "")
   %rest:query-param("excludeFragments", "{$excludeFragments}", false())
 function routes:document($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $mediaType as xs:string, $filter, $excludeFragments as xs:boolean) {
-  if ($resource != "")
+  if (not($resource) or ($ref and ($start or $end)) or ($start and not($end)) or ($end and not($start)) or ($filter and $excludeFragments) )
   then
+    let $message := "Error 400 : Bad request"
+    return
+      web:error(400, $message)
+  else
     let $dbName := db:get($G:dots)//dots:member/node()[@dtsResourceId = $resource]/@dbName
     return
       if ($dbName) 
@@ -189,8 +193,6 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
             $result
       else
         routes:badIdResource(xs:string($resource))
-  else
-    routes:badIdResource(xs:string($resource))
 };
 
 declare 

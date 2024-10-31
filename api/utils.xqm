@@ -501,10 +501,25 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     else
     if ($ref)
     then 
-      utils:getFragment($project, $resourceId, map{"ref": $ref})
+      let $frag := utils:getFragment($project, $resourceId, map{"ref": $ref})
+      return
+        if ($frag)
+        then $frag
+        else
+          let $message := "Error 404 : Not Found"
+          return
+            web:error(400, $message)
     else 
       if ($start and $end)
-      then utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
+      then 
+        let $range := utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
+        return
+          if ($range)
+          then $range
+          else
+            let $message := "Error 404 : Not Found"
+            return
+              web:error(400, $message)
       else ()
   (: let $treeResult :=
     if ($tree)
