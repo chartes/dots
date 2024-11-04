@@ -580,19 +580,39 @@ declare function utils:excludeFragments($project as xs:string, $resourceId as xs
   let $node-id := $fragment/@node-id
   let $node := db:get-id($project, $node-id)
   return
+    <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <dts:wrapper xmlns:dts="https://w3id.org/dts/api#">{
-      for $child in $node/node()
-      let $id := $child/@xml:id
-      return
-        if ($id)
-        then 
-          let $node-id := db:node-id($child)
+      let $childs :=
+        for $child in $node/node()
+        let $id := $child/@xml:id
+        return
+          if ($id)
+          then 
+            let $node-id := db:node-id($child)
+            let $frag := $register//dots:fragment[@node-id = $node-id]
+            return
+              if ($frag)
+              then 
+                ()
+              else $child
+          else $child
+      let $childsFragment :=
+        <list>{
+          for $childFrag in $node/node()[@xml:id]
+          let $node-id := db:node-id($childFrag)
+          where $register//dots:fragment[@node-id = $node-id]
+          let $ref := $register//dots:fragment[@node-id = $node-id]/@ref
           return
-            if (exists($register//dots:fragment[@node-id = $node-id]))
-            then ()
-            else $child
-        else $child
+            <item xml:id="{$ref}">{normalize-space($register//dots:fragment[@node-id = $node-id]/dc:title)}</item>
+        }</list>
+      return
+        (
+          if ($childs) then $childs else (),
+          if ($childsFragment) then $childsFragment else ()
+        )
+        
   }</dts:wrapper>
+  </TEI>
 };
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
