@@ -15,7 +15,21 @@ Pour avoir plus d'informations sur l'installation et l'utilisation de DoTS, vous
 
 ## 3. Usage depuis d'autres applications
 
-En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut décommenter la partie CORS du fichier `basex/webapp/WEB-INF/web.xml`.
+En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut ajouter 
+
+```xml
+  !-- Set Access-Control-Allow-Origin: * -->
+  <filter>
+    <filter-name>cross-origin</filter-name>
+    <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>cross-origin</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+ ```
+
+ à la fin du fichier`basex/webapp/WEB-INF/web.xml`.
 
 ## 4. État d'avancement de l'implémentation de DTS
 
