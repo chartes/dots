@@ -18,12 +18,15 @@ declare updating function dots.update:addXmlIdToFragment($dbName as xs:string) {
   for $fragments in db:get($dbName, $G:fragmentsRegister)//fragment
   let $ref := $fragments/@ref
   let $node-id := $fragments/@node-id
+  let $parentNodeId := $fragments/@parentNodeId
+  let $parentNodeRef := $fragments/@parentNodeRef
   let $tei := db:get-id($dbName, $node-id)
   where not($tei/@xml:id)
   let $refValue := concat("r", $node-id)
   return
     (
       replace value of node $ref with $refValue,
+      replace value of node $parentNodeRef with concat("r", $parentNodeId),
       insert node attribute {"xml:id"} { $refValue } into $tei
     )
 };
