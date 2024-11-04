@@ -1,6 +1,6 @@
 # DoTS
 
-DoTS – BaseX DTS Tools est une implémentation en XQuery de la spécification d'API <a href="https://chartes.github.io/dots_documentation/" target="_blank">DTS</a> (Distributed Text Services), adossée au logiciel de base de données XML BaseX.
+DoTS – BaseX DTS Tools est une implémentation en XQuery de la spécification d'API <a href="https://distributed-text-services.github.io/specifications/" target="_blank">DTS</a> (Distributed Text Services), adossée au logiciel de base de données XML BaseX.
 
 ## 1. Installation
 
