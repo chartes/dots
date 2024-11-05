@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xrem/rng2html.xsl"?>
+<grammar
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  ns="https://github.com/chartes/dots/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns:h="http://www.w3.org/1999/xhtml" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" 
+  xml:lang="fr">
+  
+  <a:documentation>
+    <h:h1>Dots Fragments Register</h:h1>
+    <h:p>This register lists all the fragments of a DOTS project.</h:p>
+    <h:p>It is required for building responses to queries passed to the DTS <h:strong>Navigation</h:strong> and <h:strong>Document</h:strong> Endpoints.</h:p>
+  </a:documentation>
+  
+  <start>
+    <ref name="dbSwitch"/>
+  </start>
+  
+  <define name="dbSwitch">
+    <a:documentation>Dots Databases Switcher</a:documentation>
+    <element name="dbSwitch">
+      <ref name="metadata"/>
+      <ref name="member"/>
+    </element>
+  </define>
+  
+  <define name="metadata">
+    <a:documentation>TODO: les métadonnées du registre</a:documentation>
+    <element name="metadata">
+      <element name="dct:created">
+        <data type="dateTime"/>
+      </element>
+      <element name="dct:modified">
+        <data type="dateTime"/>
+      </element>
+      <element name="totalProjects">
+        <data type="integer"/>
+      </element>
+    </element>
+  </define>
+  
+  <define name="member">
+    <element name="member">
+      <oneOrMore>
+        <ref name="switcher_resource_item"/>
+      </oneOrMore>
+    </element>
+  </define>
+  
+  <define name="switcher_resource_item">
+    <choice>
+      <ref name="project"/>
+      <ref name="collection"/>
+      <ref name="document"/>
+    </choice>
+  </define>
+  
+  <define name="project">
+    <element name="project">
+      <ref name="resource-atts"/>
+    </element>
+  </define>
+  
+  <define name="collection">
+    <element name="collection">
+      <ref name="resource-atts"/>
+    </element>
+  </define>
+  
+  <define name="document">
+    <element name="document">
+      <ref name="resource-atts"/>
+    </element>
+  </define>
+  
+  <define name="resource-atts">
+    <attribute name="dtsResourceId">
+      <data type="ID"/>
+    </attribute>
+    <attribute name="dbName">
+      <data type="string"/>
+    </attribute>
+  </define>
+    
+  <define name="dcMetadata">
+    <a:documentation>TODO</a:documentation>
+    <choice>
+      <element name="dc:publisher"><text/></element>
+      <element name="dc:date"><text/></element>
+    </choice>
+  </define>
+  
+  <define name="dcTitle">
+    <a:documentation>TODO</a:documentation>
+    <element name="dc:title">
+      <text/>
+    </element>
+  </define>
+  
+</grammar>
