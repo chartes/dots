@@ -33,7 +33,7 @@ In a web context, if other applications need to call the DTS API routes, you sho
 
 ## 4. Progress of the DTS implementation
 
-The current implementation is compliant with version 1-alpha of the DTS specification.
+The current implementation is compliant with version **1-alpha** of the DTS specification.
 
 ### 4.1 Endpoint Collections
 
