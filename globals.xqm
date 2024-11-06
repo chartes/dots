@@ -32,8 +32,8 @@ declare variable $G:static := concat($G:webapp, "static/");
 (:~ Variable pour accéder au webapp :)
 declare variable $G:webapp := file:parent(file:base-dir());
 
-(:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
-(: ../../../../../transform/hteiml/tei2html.xsl :)
+(:~ Variable pour accéder aux feuilles de transformation XSLT :)
+(: "../../../../../../../transform/" :)
 declare variable $G:xsl := concat($G:webapp, "/static/transform/"); 
 
 declare variable $G:dbSwitchValidation := concat($G:webapp, "dots/schema/dots_db_switcher.rng");
