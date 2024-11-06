@@ -6,4 +6,4 @@ venv/
 validation/
 memo_cmd.md
 erreurs_basex115.txt
-scripts/manage.xq
+**/manage.xq
