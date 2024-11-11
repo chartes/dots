@@ -6,10 +6,9 @@ xquery version "3.1";
 : @since 2023-10-12
 : @version  1.0
 :)
+module namespace dots.lib = "dots_registers_delete";
 
-module namespace dots.lib = "https://github.com/chartes/dots/lib";
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
@@ -19,7 +18,7 @@ declare updating function dots.lib:handleDelete($dbName as xs:string, $option as
   dots.lib:registersDelete($dbName, $option)
 };
 
-declare updating function dots.lib:dbSwitchDelete($dbName as xs:string) {
+declare %private updating function dots.lib:dbSwitchDelete($dbName as xs:string) {
   let $dbDots := db:get($G:dots)/dbSwitch
   let $totalProjects := $dbDots//totalProjects
   let $modified := $dbDots//dct:modified
@@ -34,12 +33,11 @@ declare updating function dots.lib:dbSwitchDelete($dbName as xs:string) {
     )
 };
 
-declare updating function dots.lib:registersDelete($dots.lib:dbName as xs:string, $option as xs:string) {
+declare %private updating function dots.lib:registersDelete($dots.lib:dbName as xs:string, $option as xs:string) {
   if ($option = "true")
   then
     db:drop($dots.lib:dbName)
   else
     db:delete($dots.lib:dbName, $G:resourcesRegister),
-    db:delete($dots.lib:dbName, $G:fragmentsRegister)
-  
+    db:delete($dots.lib:dbName, $G:fragmentsRegister)  
 };

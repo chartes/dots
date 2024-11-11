@@ -7,10 +7,9 @@ xquery version "3.1";
 : @version  1.0
 : @todo revoir cette fonction si la valeur des attributs @ref est calculée (en s'apppuyant probablement sur la position du noeud dans le document)
 :)
+module namespace dots.update = "TEI_add_id";
 
-module namespace dots.update = "https://github.com/chartes/dots/lib";
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
@@ -30,6 +29,3 @@ declare updating function dots.update:addXmlIdToFragment($dbName as xs:string) {
       insert node attribute {"xml:id"} { $refValue } into $tei
     )
 };
-
-
-

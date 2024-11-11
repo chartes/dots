@@ -10,8 +10,7 @@ module namespace dots.validation = "https://github.com/chartes/dots/validation";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
-import module namespace functx = "http://www.functx.com";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare updating function dots.validation:resourcesSchema($dbName) {
   let $mapping := (db:get($dbName, concat($G:metadata, "dots_metadata_mapping.xml")))

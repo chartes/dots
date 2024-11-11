@@ -7,11 +7,9 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-module namespace utils = "https://github.com/chartes/dots/api/utils";
+module namespace utils = "utils";
 
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace routes = "https://github.com/chartes/dots/api/routes" at "routes.xqm";
-
+import module namespace G = "globals";
 import module namespace functx = 'http://www.functx.com';
 
 declare namespace dots = "https://github.com/chartes/dots/";

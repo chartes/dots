@@ -1,6 +1,6 @@
 xquery version "3.1";
 
-import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/dots_registers_delete.xqm";
+import module namespace dots.lib = "dots_registers_delete";
 
 declare variable $dbName external; 
 declare variable $option external; 

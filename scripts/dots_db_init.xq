@@ -1,7 +1,7 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/db_switch_builder.xqm";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace dots.lib = "db_switch_builder";
+import module namespace G = "globals";
 
 if (db:exists($G:dots))
 then update:output("* ✅ La base de données 'dots' existe déjà. Commande non nécessaire.

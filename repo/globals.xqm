@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-module namespace G = 'https://github.com/chartes/dots/globals';
+module namespace G = 'globals';
 (:~
 : Ce module regroupe les variables globales de DoTS
 : @version 1

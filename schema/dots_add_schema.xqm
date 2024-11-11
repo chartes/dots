@@ -6,8 +6,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-import module namespace functx = "http://www.functx.com";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare updating function dots.validation:addSchema($dbName as xs:string) {
   let $mapping := (db:get($dbName, concat($G:metadata, "dots_metadata_mapping.xml")))

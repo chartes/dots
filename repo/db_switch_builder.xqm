@@ -15,12 +15,9 @@ xquery version "3.1";
 : @since 2023-06-14
 : @version  1.0
 :)
+module namespace dots.lib = "db_switch_builder"; 
 
-module namespace dots.lib = "https://github.com/chartes/dots/lib"; 
-
-import module namespace functx = 'http://www.functx.com';
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
@@ -49,7 +46,7 @@ declare updating function dots.lib:dots_db_init() {
 : @return élément XML <metadata></metadata> avec son contenu
 : @param $option chaîne de caractère pour savoir si l'élément <totalProject/> doit être intégré au header
 :)
-declare function dots.lib:getHeaders($option as xs:string) {
+declare %private function dots.lib:getHeaders($option as xs:string) {
   <metadata>
     <dct:created>{current-dateTime()}</dct:created>
     <dct:modified>{current-dateTime()}</dct:modified>
@@ -57,14 +54,14 @@ declare function dots.lib:getHeaders($option as xs:string) {
   </metadata>
 };
 
-declare function dots.lib:switcher_init() {
+declare %private function dots.lib:switcher_init() {
   <dbSwitch xmlns="https://github.com/chartes/dots/">{
     dots.lib:getHeaders("dbSwitch"),
     <member/>
   }</dbSwitch>
 };
 
-declare function dots.lib:metadataMap_init() {
+declare %private function dots.lib:metadataMap_init() {
   <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">{
     dots.lib:getHeaders("metadataMap"),
     <mapping>
@@ -74,10 +71,3 @@ declare function dots.lib:metadataMap_init() {
     </mapping>
   }</metadataMap>
 };
-
-
-
-
-
-
-

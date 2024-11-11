@@ -6,15 +6,12 @@ xquery version "3.1";
 : @since 2023-05-15
 : @version  1.0
 :)
-
 module namespace routes="https://github.com/chartes/dots/api/routes";
 
-import module namespace functx = "http://www.functx.com";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace utils = "https://github.com/chartes/dots/api/utils" at "utils.xqm";
+import module namespace G = "globals";
+import module namespace utils = "utils";
 
 declare namespace dots = "https://github.com/chartes/dots/";
-declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~  
 : Cette fonction gère le point d'entrée de l'API DTS
@@ -28,26 +25,30 @@ declare
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
 function routes:entryPoint() {
- <json type="object">
-   <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
-   <pair name="dtsVersion">1-alpha</pair>
-   <pair name="@id">/api/dts</pair>
-   <pair name="@type">EntryPoint</pair>
-   <pair name="collection">{string("/api/dts/collection/{?id,nav}")}</pair>
-   <pair name="navigation">{string("/api/dts/navigation/{?resource,ref,start,end,down,tree}")}</pair>
-   <pair name="documents">{string("/api/dts/document/{?resource,ref,start,end,tree,mediaType}")}</pair>
- </json>
+  <json type="object">
+    <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
+    <pair name="dtsVersion">1-alpha</pair>
+    <pair name="@id">/api/dts</pair>
+    <pair name="@type">EntryPoint</pair>
+    <pair name="collection">{ string("/api/dts/collection/{?id,nav}") }</pair>
+    <pair name="navigation">{ string("/api/dts/navigation/{?resource,ref,start,end,down,tree}") }</pair>
+    <pair name="documents">{ string("/api/dts/document/{?resource,ref,start,end,tree,mediaType}") }</pair>
+  </json>
 };
 
 (:~  
-: Cette fonction gère le endpoint Collection. Elle dispatche vers les fonctions permettant de donner les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
-: @return réponse JSON pour le endpoints Collection de la spécification d'API DTS
-: @param $id chaîne de caractère qui permet d'identifier une collection DTS
-: @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents. Ce paramètre permet de définir si les membres à lister sont les enfants ou les parents
-: @see https://distributed-text-services.github.io/specifications/Collections-Endpoint.html
-: @see utils.xqm;utils:collectionById
-: @see utils.xqm;utils:collections
-:) 
+ : Cette fonction gère le endpoint Collection. Elle dispatche vers les fonctions permettant de donner
+ : les informations concernants la/les collection(s) DTS existante(s) si le paramètre $id n'est pas
+ : précisé. Sinon, les informations concernant la collection DTS identifiée par le paramètre $id
+ : @param $id chaîne de caractère qui permet d'identifier une collection DTS
+ : @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents.
+ :   Ce paramètre permet de définir si les membres à lister sont les enfants ou les parents
+ : @param  $filter .
+ : @return réponse JSON pour le endpoints Collection de la spécification d'API DTS
+ : @see https://distributed-text-services.github.io/specifications/Collections-Endpoint.html
+ : @see utils.xqm;utils:collectionById
+ : @see utils.xqm;utils:collections
+ :) 
 declare
   %rest:path("/api/dts/collection")
   %rest:GET
@@ -57,7 +58,11 @@ declare
   %rest:query-param("id", "{$id}", "")
   %rest:query-param("nav", "{$nav}", "")
   %rest:query-param("filter", "{$filter}")
-function routes:collections($id as xs:string, $nav as xs:string, $filter) {
+function routes:collections(
+  $id as xs:string,
+  $nav as xs:string,
+  $filter
+) {
   if (db:exists($G:dots))
   then 
     if ($id)
@@ -76,16 +81,20 @@ function routes:collections($id as xs:string, $nav as xs:string, $filter) {
 };
 
 (:~  
-: Cette fonction gère le endpoint Navigation. Elle dispatche vers les fonctions permettant de donner les informations du endpoint Navigation pour la collection $id
-: @return réponse JSON pour le endpoint Navigation de la spécification d'API DTS
-: @param $id chaîne de caractère qui permet d'identifier une collection DTS
-: @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
-: @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
-: @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
-: @param $down entier qui permet de spécifier la profondeur des membres descendant attendus dans la réponse d'API
-: @see https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html
-: @todo revoir la gestion des erreurs HTTP 4XX. Particulièrement après avoir mieux intégré le param 'tree'
-:) 
+ : Cette fonction gère le endpoint Navigation. Elle dispatche vers les fonctions permettant de donner
+ : les informations du endpoint Navigation pour la collection $id
+ : @param $resource .
+ : @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
+ : @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
+ : @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
+ : @param $tree .
+ : @param $filter .
+ : @param $down entier qui permet de spécifier la profondeur des membres descendant attendus dans la réponse d'API
+ : (@param $id chaîne de caractère qui permet d'identifier une collection DTS)
+ : @return réponse JSON pour le endpoint Navigation de la spécification d'API DTS
+ : @see https://distributed-text-services.github.io/specifications/Navigation-Endpoint.html
+ : @todo revoir la gestion des erreurs HTTP 4XX. Particulièrement après avoir mieux intégré le param 'tree'
+ :)
 declare
   %rest:path("/api/dts/navigation")
   %rest:GET
@@ -99,7 +108,15 @@ declare
   %rest:query-param("tree", "{$tree}", "")
   %rest:query-param("down", "{$down}", "-2")
   %rest:query-param("filter", "{$filter}", "")
-function routes:navigation($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $filter, $down as xs:integer) {
+function routes:navigation(
+  $resource as xs:string,
+  $ref as xs:string,
+  $start as xs:string,
+  $end as xs:string,
+  $tree as xs:string,
+  $filter,
+  $down as xs:integer
+) {
   if (not($resource) or ($ref and ($start or $end)) or ($start and not($end)) or ($end and not($start)) )
   then
     let $message := "Error 400 : Bad request"
@@ -123,19 +140,25 @@ function routes:navigation($resource as xs:string, $ref as xs:string, $start as 
              web:redirect(concat("/api/dts/navigation?", request:query(), "&amp;down=1"))
       else
         routes:badIdResource(xs:string($resource))
-
 };
 
 (:~ 
-: Cette fonction gère le endpoint Document. Elle permet de renvoyer un document ou un fragment du document XML identifié par le paramètre $id
-: @return réponse XML-TEI pour les endpoints Document de la spécification d'API DTS
-: @param $id chaîne de caractère qui permet d'identifier le document XML (obligatoire)
-: @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
-: @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
-: @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
-: @param $format chaîne de caractère pour spécifier le format de sortie attendu. Les formats possibles sont: XML (par défaut), html et txt.
-: @see https://distributed-text-services.github.io/specifications/Documents-Endpoint.html
-:)
+ : Cette fonction gère le endpoint Document. Elle permet de renvoyer un document ou un fragment du
+ : document XML identifié par le paramètre $id
+ : @param $resource .
+ : @param $ref chaîne de caractère qui permet d'identifier un élément citable dans le document
+ : @param $start chaîne de caractère. Identifiant du premier élément d'une séquence
+ : @param $end chaîne de caractère. Identifiant du dernier élément d'une séquence 
+ : @param $tree .
+ : @param $mediaType .
+ : @param $filter .
+ : @param $excludeFragments .
+ : (@param $id chaîne de caractère qui permet d'identifier le document XML (obligatoire))
+ : (@param $format chaîne de caractère pour spécifier le format de sortie attendu.
+    Les formats possibles sont: XML (par défaut), html et txt.)
+ : @return réponse XML-TEI pour les endpoints Document de la spécification d'API DTS
+ : @see https://distributed-text-services.github.io/specifications/Documents-Endpoint.html
+ :)
 declare
   %rest:path("/api/dts/document")
   %rest:GET
@@ -146,10 +169,19 @@ declare
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("tree", "{$tree}", "")
-  %rest:query-param("mediaType", "{$mediaType}", "")
+  %rest:query-param("mediaType", "{$media-type}", "")
   %rest:query-param("filter", "{$filter}", "")
   %rest:query-param("excludeFragments", "{$excludeFragments}", false())
-function routes:document($resource as xs:string, $ref as xs:string, $start as xs:string, $end as xs:string, $tree as xs:string, $mediaType as xs:string, $filter, $excludeFragments as xs:boolean) {
+function routes:document(
+  $resource as xs:string,
+  $ref as xs:string,
+  $start as xs:string,
+  $end as xs:string,
+  $tree as xs:string,
+  $media-type as xs:string,
+  $filter,
+  $excludeFragments as xs:boolean
+) {
   if (not($resource) or ($ref and ($start or $end)) or ($start and not($end)) or ($end and not($start)) or ($filter and $excludeFragments) )
   then
     let $message := "Error 400 : Bad request"
@@ -162,16 +194,16 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
       then 
         let $result := utils:document($resource, $ref, $start, $end, $tree, $filter, $excludeFragments)
         return
-          if ($mediaType)
+          if ($media-type)
           then 
             let $f :=
-              switch ($mediaType)
-              case ($mediaType[. = "html"]) return "text/html;"
-              case ($mediaType[. = "txt"]) return "text/plain"
+              switch ($media-type)
+              case ($media-type[. = "html"]) return "text/html;"
+              case ($media-type[. = "txt"]) return "text/plain"
               default return "application/tei+xml"
             let $project := db:get($G:dots)//node()[@dtsResourceId = $resource]/@dbName
             let $trans := 
-              if ($mediaType = "html")
+              if ($media-type = "html")
               then
                 let $style :=
                   if (file:exists(concat($G:xsl, $dbName, "/", $dbName, ".xsl")))
@@ -198,7 +230,9 @@ function routes:document($resource as xs:string, $ref as xs:string, $start as xs
 declare 
   %rest:error("err:badIdResource")
   %rest:error-param("description", "{$id}")
-function routes:badIdResource($id) {
+function routes:badIdResource(
+  $id
+) {
   let $message :=
     if ($id)
     then concat("Error 400 : resource ID ", "'", $id, "' not found")
@@ -206,4 +240,3 @@ function routes:badIdResource($id) {
   return
     web:error(400, $message)
 };
-
