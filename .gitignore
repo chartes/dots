@@ -6,4 +6,4 @@ venv/
 validation/
 memo_cmd.md
 erreurs_basex115.txt
-**/manage.xq
+lib/db_update_id.sample
