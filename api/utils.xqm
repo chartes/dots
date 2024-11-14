@@ -701,7 +701,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
 };
 
 declare function utils:getCitationTrees($node) {
-  <pair name="citeStructure" type="object">{
+  <pair name="citeStructure" type="array">{
     for $cite in $node/tei:citeStructure
     let $citeType := normalize-space($cite/@unit)
     return
@@ -715,18 +715,18 @@ declare function utils:getCitationTrees($node) {
 };
 
 declare function utils:getNavCitationTrees($node) {
-   <pair name="citeStructure" type="array">{
-  for $cite at $pos in $node/tei:citeStructure
-  let $citeType := normalize-space($cite/@unit)
-  return
-     <item type="object">
-        <pair name="@type">CiteStructure</pair>
-        {if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
-        if ($cite/tei:citeStructure)
-        then 
-          utils:getNavCitationTrees($cite)
-    }</item>
-}</pair>
+  <pair name="citeStructure" type="array">{
+    for $cite at $pos in $node/tei:citeStructure
+    let $citeType := normalize-space($cite/@unit)
+    return
+       <item type="object">
+          <pair name="@type">CiteStructure</pair>
+          {if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
+          if ($cite/tei:citeStructure)
+          then 
+            utils:getNavCitationTrees($cite)
+      }</item>
+  }</pair>
 };
 
 (:~ 
