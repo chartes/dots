@@ -701,7 +701,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
 };
 
 declare function utils:getCitationTrees($node) {
-  <pair name="citeStructure" type="array">{
+  <pair name="citeStructure" type="object">{
     for $cite in $node/tei:citeStructure
     let $citeType := normalize-space($cite/@unit)
     return
