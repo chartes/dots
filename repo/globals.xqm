@@ -51,6 +51,6 @@ declare variable $G:separator := "	";
 :)
 declare variable $G:language := "fr";
 
-declare variable $G:root := "DoTS - Root";
+declare variable $G:root := "dots_demo_root";
 
 declare variable $G:rootTitle := "Collection de démonstration de DoTS";

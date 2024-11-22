@@ -18,6 +18,6 @@ return (
   $eval('dots_db_init.xq'),
   $eval('project_db_init.xq'),
   $eval('project_registers_create.xq'),
-  $eval('TEI_add_id.xq'),
+  $eval('dots_registers_update.xq.xq'),
   $eval('dots_switcher_update.xq')
 )

@@ -276,7 +276,7 @@ declare function utils:getResourcesInfo($projectName as xs:string, $resource) {
           return
             if ($refsDecl)
             then 
-              utils:getNavCitationTrees($refsDecl)
+              utils:getCitationTrees($refsDecl)
             else ()
         }
         <pair name="mediaTypes" type="array">
@@ -699,34 +699,20 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
 };
 
 declare function utils:getCitationTrees($node) {
-  <pair name="citeStructure" type="object">{
+  <pair name="citeStructure" type="array">{
     for $cite in $node/tei:citeStructure
     let $citeType := normalize-space($cite/@unit)
     return
-      (
-        if ($citeType) then <pair name="citeType">{$citeType}</pair>,
-        if ($cite/tei:citeStructure)
-        then 
-          utils:getCitationTrees($cite)
-      )
+       <item type="object">
+          <pair name="@type">CiteStructure</pair>
+          {if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
+          if ($cite/tei:citeStructure)
+          then 
+            utils:getCitationTrees($cite)
+      }</item>
   }</pair>
 };
-
-declare function utils:getNavCitationTrees($node) {
-   <pair name="citeStructure" type="array">{
-  for $cite at $pos in $node/tei:citeStructure
-  let $citeType := normalize-space($cite/@unit)
-  return
-     <item type="object">
-        <pair name="@type">CiteStructure</pair>
-        {if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
-        if ($cite/tei:citeStructure)
-        then 
-          utils:getNavCitationTrees($cite)
-    }</item>
-}</pair>
-};
-
+  
 (:~ 
 : Cette fonction permet de préparer les données en Dublincore pour décrire une collection ou une resource
 : @return séquence XML qui sera ensuite sérialisée en JSON selon le format "attributes" proposé par BaseX
