@@ -10,25 +10,22 @@ xquery version "3.1";
 : @version  1.0
 : @todo: rédiger la documentation de ce module
 :)
+module namespace dots.lib = "create_custom_collections";
 
-module namespace dots.lib = "https://github.com/chartes/dots/lib";
+import module namespace G = "globals";
 
 declare namespace dots = "https://github.com/chartes/dots/";
-
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
 
 declare updating function dots.lib:handle($srcPath) {
   let $source := csv:doc($srcPath, map{
-        "header": true(),
-        "separator": $G:separator
-})
-  return
-    (
-      dots.lib:countResourcesToAddToCollections($source/csv),
-      for $collections in $source/csv/record
-      let $dbName := $collections/dbName
+    "header": true(),
+    "separator": $G:separator
+  })
+  return (
+    dots.lib:countResourcesToAddToProject($source/csv),
+    for $collections in $source/csv/record
+    let $dbName := $collections/dbName
       let $switcherDots := dots.lib:switcherDots($collections)
       let $collectionsInResourcesRegister := dots.lib:collectionsInResourcesRegister($collections)
       return
@@ -37,17 +34,17 @@ declare updating function dots.lib:handle($srcPath) {
           insert node $collectionsInResourcesRegister into db:get($dbName, $G:resourcesRegister)//dots:member, 
           dots.lib:documentsInResourcesRegister($collections)
         ) 
-    )
+  )
 };
 
-declare function dots.lib:switcherDots($record as element(record)) {
+declare %private function dots.lib:switcherDots($record as element(record)) {
   let $dbName := $record/dbName
   let $collectionId := $record/collectionId
   return
     <collection dtsResourceId="{$collectionId}" dbName="{$dbName}"/>
 };
 
-declare function dots.lib:collectionsInResourcesRegister($record as element(record)) {
+declare %private function dots.lib:collectionsInResourcesRegister($record as element(record)) {
   let $dtsResourceId := $record/collectionId
   let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
   let $documents := 
@@ -70,7 +67,7 @@ declare function dots.lib:collectionsInResourcesRegister($record as element(reco
     </collection>
 };
 
-declare updating function dots.lib:documentsInResourcesRegister($record as element(record)) {
+declare %private updating function dots.lib:documentsInResourcesRegister($record as element(record)) {
   let $dbName := $record/dbName
   let $collectionId := $record/collectionId
   return
@@ -84,14 +81,14 @@ declare updating function dots.lib:documentsInResourcesRegister($record as eleme
         replace value of node $parentIds with $newParentIds
 };
 
-declare function dots.lib:getMetadata($record as element(record)) {
+declare %private function dots.lib:getMetadata($record as element(record)) {
   for $metadata in $record/node()[position() > 5]
   let $elementName := $metadata/name()
   return
     element {$elementName} {normalize-space($metadata)}
 };
 
-declare updating function dots.lib:countResourcesToAddToProject($source as element(csv)) {
+declare %private updating function dots.lib:countResourcesToAddToProject($source as element(csv)) {
   let $dbName := $source/record[1]/dbName
   let $countResources := count($source/record[parentId = ""])
   let $getProject := db:get($dbName, $G:resourcesRegister)//dots:member/dots:collection[@dtsResourceId = $dbName]
@@ -101,7 +98,7 @@ declare updating function dots.lib:countResourcesToAddToProject($source as eleme
     replace value of node $totalChildren with $newTotalChildren
 };
 
-declare updating function dots.lib:countResourcesToAddToCollections($source as element(csv)) {
+declare %private updating function dots.lib:countResourcesToAddToCollections($source as element(csv)) {
   let $dbName := $source/record[1]/dbName
   let $getRegister := db:get($dbName, $G:resourcesRegister)//dots:member
   for $record in $source/record
@@ -120,5 +117,3 @@ declare updating function dots.lib:countResourcesToAddToCollections($source as e
         replace value of node $totalChildren with $newTotalChildren
       else ()
 };
-
-

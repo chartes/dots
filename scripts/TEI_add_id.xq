@@ -1,8 +1,7 @@
 xquery version '3.0' ;
 
-import module namespace dots.update = "https://github.com/chartes/dots/lib" at "../lib/TEI_add_id.xqm";
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace dots.update = "TEI_add_id";
+import module namespace G = "globals";
 
 declare variable $dbName external;
 

@@ -7,13 +7,11 @@ xquery version "3.1";
 : @version  1.0
 : @todo pour l'ajout de @citeType: utiliser la fonction fn:normalize-unicode() pour enlever les diacritics
 :)
-
-module namespace dots.lib = "https://github.com/chartes/dots/lib";
+module namespace resources = "resources_register_builder";
 
 import module namespace functx = 'http://www.functx.com';
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-import module namespace dots.fragments = "https://github.com/chartes/dots/lib" at "fragments_register_builder.xqm";
+import module namespace G = "globals";
+import module namespace fragments = "fragments_register_builder";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
@@ -24,12 +22,12 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 (:~  
 : Cette fonction permet de construire un document XML de configuration (servant ensuite au routeur DoTS) à ajouter à la base de données XML.
 : @return document XML
-: @param $path chaîne de caractères. Pour lancer cette fonction, la valeur de ce paramètre est vide ("") (cet argument est nécessaire pour d'autres fonctions appelés par dots.lib:create_config)
-: @param $counter nombre entier. Par défaut, ce nombre est de 0. Il est ensuite utilisé pour définir la valeur d'attribut @level d'un <member/> (cet argument est nécessaire pour d'autres fonctions appelés par dots.lib:create_config).
+: @param $path chaîne de caractères. Pour lancer cette fonction, la valeur de ce paramètre est vide ("") (cet argument est nécessaire pour d'autres fonctions appelés par resources:create_config)
+: @param $counter nombre entier. Par défaut, ce nombre est de 0. Il est ensuite utilisé pour définir la valeur d'attribut @level d'un <member/> (cet argument est nécessaire pour d'autres fonctions appelés par resources:create_config).
 : @see project.xql;cc:getMetadata
 : @see project.xql;cc:members
 :)
-declare updating function dots.lib:createResourcesRegister($dbName as xs:string, $topCollectionId as xs:string) {
+declare updating function resources:createResourcesRegister($dbName as xs:string, $topCollectionId as xs:string) {
   let $countChild := 
     let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
     let $count := count(db:dir($dbName, ""))
@@ -54,14 +52,14 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
               namespace {"dc"} {"http://purl.org/dc/elements/1.1/"}
             )
       }
-      {dots.lib:getMetadata()}
+      {resources:getMetadata()}
       <member>
         <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">{
-          dots.lib:getCollectionMetadata($dbName, $topCollectionId)
+          resources:getCollectionMetadata($dbName, $topCollectionId)
         }</collection>
         {
-          dots.lib:collections($dbName, $topCollectionId),
-          dots.lib:document($dbName, $topCollectionId)
+          resources:collections($dbName, $topCollectionId),
+          resources:document($dbName, $topCollectionId)
         }
       </member>
     </resourcesRegister>
@@ -79,14 +77,14 @@ declare updating function dots.lib:createResourcesRegister($dbName as xs:string,
           (
             db:put($dbName, $content, $G:resourcesRegister)
           ),
-      dots.fragments:createFragmentsRegister($dbName)
+      fragments:createFragmentsRegister($dbName)
     )
 };
 
 (:~ 
 : Cette fonction se contente de construire l'en-tête <configMetadata/> du fichier de configuration
 :)
-declare function dots.lib:getMetadata() {
+declare function resources:getMetadata() {
   <metadata>
     <dct:created>{current-dateTime()}</dct:created>
     <dct:modified>{current-dateTime()}</dct:modified>
@@ -101,7 +99,7 @@ declare function dots.lib:getMetadata() {
 : @see create_config.xql;cc:collection
 : @see create_config.xql;cc:resource
 :)
-declare function dots.lib:collections($bdd as xs:string, $idProject as xs:string) {
+declare %private function resources:collections($bdd as xs:string, $idProject as xs:string) {
   let $list_collections :=
     let $collections :=
       for $document in db:get($bdd)/node()
@@ -129,7 +127,7 @@ declare function dots.lib:collections($bdd as xs:string, $idProject as xs:string
           let $totalChildren := count(db:dir($bdd, $path))
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
-                dots.lib:getCollectionMetadata($bdd, $path)
+                resources:getCollectionMetadata($bdd, $path)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -149,7 +147,7 @@ declare function dots.lib:collections($bdd as xs:string, $idProject as xs:string
               else $idProject
             return
               <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
-                dots.lib:getCollectionMetadata($bdd, $dtsResourceId)
+                resources:getCollectionMetadata($bdd, $dtsResourceId)
               }</collection>
     return
       for $goodCollection in $collectionsWithDuplicate
@@ -164,7 +162,7 @@ declare function dots.lib:collections($bdd as xs:string, $idProject as xs:string
 : @param $path chaîne de caractères.
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 :)
-declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
+declare %private function resources:document($bdd as xs:string, $idProject as xs:string) {
   for $document in db:get($bdd)/tei:TEI
   let $path := db:path($document)
   let $dtsResourceId := 
@@ -174,7 +172,7 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
       if (contains($path, "/"))
       then functx:substring-after-last($path, "/")
       else $path
-  let $maxCiteDepth := dots.fragments:getMaxCiteDepth($document//tei:refsDecl, 0)
+  let $maxCiteDepth := fragments:getMaxCiteDepth($document//tei:refsDecl, 0)
   let $parentIds := 
     if (contains($path, "/"))
     then
@@ -189,12 +187,12 @@ declare function dots.lib:document($bdd as xs:string, $idProject as xs:string) {
     if ($document)
     then
       <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-        dots.lib:getDocumentMetadata($bdd, $document, $dtsResourceId)
+        resources:getDocumentMetadata($bdd, $document, $dtsResourceId)
       }</document>
     else ()
 };
 
-declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId as xs:string) {
+declare %private function resources:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId as xs:string) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($bdd)/metadataMap/mapping
   let $dcTitle :=
@@ -252,11 +250,11 @@ declare function dots.lib:getDocumentMetadata($bdd as xs:string, $doc, $dtsResou
             let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
             return
               if ($record and $metadata) 
-              then dots.lib:createContent($metadata, $record)
+              then resources:createContent($metadata, $record)
               else ())
 };
 
-declare function dots.lib:createContent($itemDeclaration, $record) {
+declare function resources:createContent($itemDeclaration, $record) {
   let $key := $itemDeclaration/name()
   let $element := $itemDeclaration/@value
   let $value := 
@@ -284,7 +282,7 @@ declare function dots.lib:createContent($itemDeclaration, $record) {
 : @param $counter nombre entier. Il est utilisé pour définir la valeur d'attribut @level d'un <member/>
 : @todo revoir l'ajout des métadonnées d'une collection. 
 :)
-declare function dots.lib:collection($bdd as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
+declare %private function resources:collection($bdd as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
   let $totalItems := count(db:dir($bdd, $collection))
   let $parent := 
     if ($path = "") 
@@ -296,11 +294,11 @@ declare function dots.lib:collection($bdd as xs:string, $idProject as xs:string,
       else $path
   return
     <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
-      dots.lib:getCollectionMetadata($bdd, $collection)
+      resources:getCollectionMetadata($bdd, $collection)
     }</collection>
 };
 
-declare function dots.lib:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
+declare %private function resources:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
   let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
     if ($metadataMap)
@@ -325,7 +323,7 @@ declare function dots.lib:getCollectionMetadata($bdd as xs:string, $collection a
               element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
           else
             if ($record and $metadata) 
-            then dots.lib:createContent($metadata, $record)
+            then resources:createContent($metadata, $record)
             else ()
       return
         if ($metadatas/name() = "dc:title")

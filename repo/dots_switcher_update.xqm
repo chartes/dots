@@ -1,8 +1,8 @@
 xquery version "3.1";
 
-module namespace dots.lib = "https://github.com/chartes/dots/lib"; 
+module namespace dots.lib = "dots_switcher_update"; 
 
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
@@ -24,7 +24,7 @@ declare updating function dots.lib:switcher_update($dbName) {
     )
 };
 
-declare function dots.lib:getProject($dbName as xs:string) {
+declare %private function dots.lib:getProject($dbName as xs:string) {
   let $dtsResourceId := db:get($dbName, $G:resourcesRegister)//member/collection[not(@parentIds)]/@dtsResourceId
   let $projectInSwitcher := db:get($G:dots)//member/project[@dbName = $dbName]
   return
@@ -34,7 +34,7 @@ declare function dots.lib:getProject($dbName as xs:string) {
       <project dtsResourceId="{$dtsResourceId}" dbName="{$dbName}"/>
 };
 
-declare function dots.lib:getMembers($dbName as xs:string) {
+declare %private function dots.lib:getMembers($dbName as xs:string) {
   for $resources in db:get($dbName, $G:resourcesRegister)//member/node()[@parentIds]
   let $type := $resources/name()
   let $dtsResourceId := $resources/@dtsResourceId

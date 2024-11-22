@@ -1,8 +1,7 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/resources_register_builder.xqm";
-
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace resources = "resources_register_builder";
+import module namespace G = "globals";
 
 declare variable $dbName external;
 declare variable $topCollectionId external;
@@ -18,7 +17,7 @@ else
       then update:output("* ❌ Erreur : renseigner la variable topCollectionId (identifiant du projet)")
       else
         (
-          dots.lib:createResourcesRegister($dbName, $topCollectionId),
+          resources:createResourcesRegister($dbName, $topCollectionId),
           if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister))
           then
             (

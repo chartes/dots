@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/db_creator.xqm";
+import module namespace dots.lib = "db_creator";
 
 declare variable $dbName external; 
 declare variable $projectDirPath external;

@@ -1,8 +1,8 @@
 xquery version '3.0';
 
-import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/dots_switcher_update.xqm";
-import module namespace dots.log = "https://github.com/chartes/dots/log" at "log.xq";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace dots.lib = "dots_switcher_update";
+import module namespace dots.log = "log";
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 

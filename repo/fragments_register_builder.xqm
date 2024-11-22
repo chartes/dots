@@ -6,16 +6,14 @@ xquery version "3.1";
 : @since 2023-07-26
 : @version  1.0
 :)
-
-module namespace dots.lib = "https://github.com/chartes/dots/lib";
-
-import module namespace dots.resources = "https://github.com/chartes/dots/lib" at "resources_register_builder.xqm";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+module namespace fragments = "fragments_register_builder";
 
 import module namespace functx = 'http://www.functx.com';
+import module namespace resources = "resources_register_builder";
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
+
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
@@ -24,7 +22,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @return document XML à ajouter à la db $bdd
 : @param $bdd chaîne de caractères qui correspond au nom de la base de données
 :)
-declare updating function dots.lib:createFragmentsRegister($bdd) {
+declare updating function fragments:createFragmentsRegister($bdd) {
   if (db:exists($bdd, $G:fragmentsRegister))
   then 
     let $register := db:get($bdd, $G:fragmentsRegister)
@@ -33,13 +31,13 @@ declare updating function dots.lib:createFragmentsRegister($bdd) {
     return
       (
         replace value of node $lastUpdate with current-dateTime(),
-        replace node $members with <member>{dots.lib:getFragments($bdd)}</member>
+        replace node $members with <member>{fragments:getFragments($bdd)}</member>
       )
   else
-    let $fragments := dots.lib:getFragments($bdd)
+    let $fragments := fragments:getFragments($bdd)
     let $content := 
       <fragmentsRegister>{
-        dots.lib:getMetadata(),
+        resources:getMetadata(),
         <member>{$fragments}</member>
       }</fragmentsRegister>
     return
@@ -49,21 +47,21 @@ declare updating function dots.lib:createFragmentsRegister($bdd) {
       else ()
 };
 
-declare function dots.lib:getFragments($bdd as xs:string) {
+declare %private function fragments:getFragments($bdd as xs:string) {
   for $resource in db:get($bdd)/tei:TEI
   where $resource//tei:citeStructure
   let $resourceId :=
     if ($resource/@xml:id)
     then normalize-space($resource/@xml:id)
     else functx:substring-after-last(db:path($resource), "/")
-  let $maxCiteDepth := dots.lib:getMaxCiteDepth($resource//tei:refsDecl, 0)
+  let $maxCiteDepth := fragments:getMaxCiteDepth($resource//tei:refsDecl, 0)
   return
     for $citeStructurePosition in $resource//tei:refsDecl/tei:citeStructure
     return
-      dots.lib:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+      fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
 };
 
-declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
+declare %private function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
   let $xpath := normalize-space($citeStructure/@match)
   let $query := concat('
     declare default element namespace "http://www.tei-c.org/ns/1.0";',
@@ -101,18 +99,18 @@ declare function dots.lib:handleCiteStructure($bdd as xs:string, $resource as el
                 for $v in $valueQuery
                 return
                   element {$nameMetadata} {normalize-space($v)} else (),
-            dots.lib:getFragmentMetadata($bdd, xs:string($ref))
+            fragments:getFragmentMetadata($bdd, xs:string($ref))
           }</fragment>,
           if ($citeStructure/tei:citeStructure)
           then 
             for $cite in $citeStructure/tei:citeStructure
             return
-              dots.lib:handleCiteStructure($bdd, $resource, $ref, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth)
+              fragments:handleCiteStructure($bdd, $resource, $ref, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth)
           else ()
         )
 };
 
-declare function dots.lib:getFragmentMetadata($bdd as xs:string, $ref as xs:string) {
+declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref as xs:string) {
   let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
     let $metadatas := 
@@ -135,24 +133,20 @@ declare function dots.lib:getFragmentMetadata($bdd as xs:string, $ref as xs:stri
           element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
       else
         if ($record and $metadata) 
-        then dots.lib:createContent($metadata, $record)
+        then resources:createContent($metadata, $record)
         else ()
   return
     $metadatas
 };
 
-declare function dots.lib:getMaxCiteDepth($node, $n as xs:integer) {
+declare function fragments:getMaxCiteDepth($node, $n as xs:integer) {
   let $levels :=
     for $level in $node
     return
       if ($node/tei:citeStructure)
       then
-        dots.lib:getMaxCiteDepth($node/tei:citeStructure, $n + 1)
+        fragments:getMaxCiteDepth($node/tei:citeStructure, $n + 1)
       else $n
   return
     max($levels)
 };
-
-
-
-

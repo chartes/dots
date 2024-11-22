@@ -4,8 +4,7 @@ module namespace dots.valide = "https://github.com/chartes/dots/validation/valid
 
 declare default element namespace "https://github.com/chartes/dots/";
 
-import module namespace functx = "http://www.functx.com";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace G = "globals";
 
 declare function dots.valide:resourcesValidation($dbName) {
   let $schema := db:get($dbName, "dots/schema/resources_register.rng")

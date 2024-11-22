@@ -1,14 +1,14 @@
 xquery version "3.1";
 
-module namespace dots.log = "https://github.com/chartes/dots/log";
+module namespace log = "log";
+
+import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
-
-declare function dots.log:log($dbName) {
+declare function log:log($dbName) {
   let $project := db:get($dbName, $G:resourcesRegister)//collection[not(@parentIds)]
   let $log :=
     let $mapping := 
