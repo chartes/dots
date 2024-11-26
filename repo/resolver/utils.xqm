@@ -594,21 +594,8 @@ declare function utils:excludeFragments($project as xs:string, $resourceId as xs
                 ()
               else $child
           else $child
-      let $childsFragment :=
-        <list>{
-          for $childFrag in $node/node()[@xml:id]
-          let $node-id := db:node-id($childFrag)
-          where $register//dots:fragment[@node-id = $node-id]
-          let $ref := $register//dots:fragment[@node-id = $node-id]/@ref
-          return
-            <item xml:id="{$ref}">{normalize-space($register//dots:fragment[@node-id = $node-id]/dc:title)}</item>
-        }</list>
       return
-        (
-          if ($childs) then $childs else (),
-          if ($childsFragment) then $childsFragment else ()
-        )
-        
+        $childs
   }</dts:wrapper>
   </TEI>
 };
