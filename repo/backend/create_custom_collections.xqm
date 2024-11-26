@@ -18,7 +18,7 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
 declare updating function dots.lib:handle($srcPath) {
-  let $source := csv:doc($srcPath, map{
+  let $source := csv:doc($srcPath, map {
     "header": true(),
     "separator": $G:separator
   })
@@ -26,31 +26,26 @@ declare updating function dots.lib:handle($srcPath) {
     dots.lib:countResourcesToAddToProject($source/csv),
     for $collections in $source/csv/record
     let $dbName := $collections/dbName
-      let $switcherDots := dots.lib:switcherDots($collections)
-      let $collectionsInResourcesRegister := dots.lib:collectionsInResourcesRegister($collections)
-      return
-        (
-          insert node $switcherDots as last into db:get($G:dots, $G:dbSwitcher)//dots:member,
-          insert node $collectionsInResourcesRegister into db:get($dbName, $G:resourcesRegister)//dots:member, 
-          dots.lib:documentsInResourcesRegister($collections)
-        ) 
+    let $switcherDots := dots.lib:switcherDots($collections)
+    let $collectionsInResourcesRegister := dots.lib:collectionsInResourcesRegister($collections)
+    return (
+      insert node $switcherDots as last into db:get($G:dots, $G:dbSwitcher)//dots:member,
+      insert node $collectionsInResourcesRegister into db:get($dbName, $G:resourcesRegister)//dots:member, 
+      dots.lib:documentsInResourcesRegister($collections)
+    ) 
   )
 };
 
 declare %private function dots.lib:switcherDots($record as element(record)) {
   let $dbName := $record/dbName
   let $collectionId := $record/collectionId
-  return
-    <collection dtsResourceId="{$collectionId}" dbName="{$dbName}"/>
+  return <collection dtsResourceId="{$collectionId}" dbName="{$dbName}"/>
 };
 
 declare %private function dots.lib:collectionsInResourcesRegister($record as element(record)) {
   let $dtsResourceId := $record/collectionId
   let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
-  let $documents := 
-    for $doc in tokenize($record/documentIds, "[\|]")
-    return
-      $doc
+  let $documents := tokenize($record/documentIds, "[\|]")
   let $totalChildren := count($documents)
   let $parentIds :=
     if ($record/parentId != "")
@@ -70,22 +65,18 @@ declare %private function dots.lib:collectionsInResourcesRegister($record as ele
 declare %private updating function dots.lib:documentsInResourcesRegister($record as element(record)) {
   let $dbName := $record/dbName
   let $collectionId := $record/collectionId
-  return
-    let $documents := $record/documentIds
-    return
-      for $document in tokenize($documents, "[\|]")
-      let $docInRegister := db:get($dbName, $G:resourcesRegister)//dots:member/dots:document[@dtsResourceId = normalize-space($document)]
-      let $parentIds := $docInRegister/@parentIds
-      let $newParentIds := concat($docInRegister/@parentIds, " ", $collectionId)
-      return
-        replace value of node $parentIds with $newParentIds
+  let $documents := $record/documentIds
+  for $document in tokenize($documents, "[\|]")
+  let $docInRegister := db:get($dbName, $G:resourcesRegister)//dots:member/dots:document[@dtsResourceId = normalize-space($document)]
+  let $parentIds := $docInRegister/@parentIds
+  let $newParentIds := concat($docInRegister/@parentIds, " ", $collectionId)
+  return replace value of node $parentIds with $newParentIds
 };
 
 declare %private function dots.lib:getMetadata($record as element(record)) {
   for $metadata in $record/node()[position() > 5]
   let $elementName := $metadata/name()
-  return
-    element {$elementName} {normalize-space($metadata)}
+  return element {$elementName} {normalize-space($metadata)}
 };
 
 declare %private updating function dots.lib:countResourcesToAddToProject($source as element(csv)) {
@@ -94,8 +85,7 @@ declare %private updating function dots.lib:countResourcesToAddToProject($source
   let $getProject := db:get($dbName, $G:resourcesRegister)//dots:member/dots:collection[@dtsResourceId = $dbName]
   let $totalChildren := $getProject/@totalChildren
   let $newTotalChildren := $totalChildren + $countResources
-  return
-    replace value of node $totalChildren with $newTotalChildren
+  return replace value of node $totalChildren with $newTotalChildren
 };
 
 declare %private updating function dots.lib:countResourcesToAddToCollections($source as element(csv)) {
@@ -111,9 +101,6 @@ declare %private updating function dots.lib:countResourcesToAddToCollections($so
     let $getCollection := $getRegister/dots:collection[@dtsResourceId = (if ($parentId) then $parentId else $projectId)]
     let $totalChildren := $getCollection/@totalChildren
     let $newTotalChildren := $countResourcesInCollection + $totalChildren
-    return
-      if ($getCollection)
-      then
-        replace value of node $totalChildren with $newTotalChildren
-      else ()
+    where $getCollection
+    return replace value of node $totalChildren with $newTotalChildren
 };

@@ -47,7 +47,7 @@ declare %private function dots.build:headers($option as xs:string) {
   <metadata>
     <dct:created>{ current-dateTime() }</dct:created>
     <dct:modified>{ current-dateTime() }</dct:modified>
-    { if ($option = "dbSwitch") then <totalProjects>0</totalProjects> else () }
+    { if ($option = "dbSwitch") then <totalProjects>0</totalProjects> }
   </metadata>
 };
 

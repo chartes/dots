@@ -311,16 +311,14 @@ declare %private function resources:getCollectionMetadata($bdd as xs:string, $co
           for $csvs in db:get($bdd)//*:csv
           let $paths := db:path($csvs)
           where contains($paths, $source)
-          return
-            $csvs[1]
+          return $csvs[1]
         let $findIdInCSV := normalize-space($metadata/@resourceId)
         let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
         return
           if ($metadata/@resourceId = "all")
           then 
             let $key := $metadata/name()
-            return
-              element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+            return element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
           else
             if ($record and $metadata) 
             then resources:createContent($metadata, $record)
@@ -328,10 +326,9 @@ declare %private function resources:getCollectionMetadata($bdd as xs:string, $co
       return
         if ($metadatas/name() = "dc:title")
         then $metadatas
-        else 
-          (
-            <dc:title>{$collection}</dc:title>,
-            $metadatas
-          )
+        else  (
+          <dc:title>{$collection}</dc:title>,
+          $metadatas
+        )
     else <dc:title>{$collection}</dc:title>
 };

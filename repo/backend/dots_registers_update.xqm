@@ -17,40 +17,33 @@ declare updating function dots.update:updateFragments_register($dbName as xs:str
   for $fragments in db:get($dbName, $G:fragmentsRegister)//fragment
   let $node-id := $fragments/@node-id
   let $teiNode := db:get-id($dbName, $node-id)
-  return
-    if ($teiNode/@xml:id)
-    then 
-      dots.update:updateParentNodeRef($dbName, $fragments)
-    else
-      (
-        dots.update:updateTEI_id($dbName, $fragments),
-        dots.update:updateFragmentAttributs($dbName, $fragments)
-      )
+  return if ($teiNode/@xml:id) then (
+    dots.update:updateParentNodeRef($dbName, $fragments)
+  ) else (
+    dots.update:updateTEI_id($dbName, $fragments),
+    dots.update:updateFragmentAttributs($dbName, $fragments)
+  )
 };
 
 declare updating function dots.update:updateTEI_id($dbName, $fragment) {
   let $node-id := $fragment/@node-id
   let $teiNode := db:get-id($dbName, $node-id)
   let $newRefValue := concat("r", $node-id)
-  return
-    insert node attribute {"xml:id"} { $newRefValue } into $teiNode
+  return insert node attribute {"xml:id"} { $newRefValue } into $teiNode
 };
 
 declare updating function dots.update:updateFragmentAttributs($dbName, $fragment) {
   let $ref := $fragment/@ref
   let $newRefValue := concat("r", $ref)
-  return
-    (
-      replace value of node $ref with $newRefValue,
-      dots.update:updateParentNodeRef($dbName, $fragment)
-    )
+  return (
+    replace value of node $ref with $newRefValue,
+    dots.update:updateParentNodeRef($dbName, $fragment)
+  )
 };
 
 declare updating function dots.update:updateParentNodeRef($dbName as xs:string, $fragment as element(fragment)) {
   let $parentNodeId := $fragment/@parentNodeId
   let $parentNodeRef := $fragment/@parentNodeRef
-  return
-    if ($parentNodeId = $parentNodeRef)
-    then
-      replace value of node $parentNodeRef with concat("r", $parentNodeId)
+  where $parentNodeId = $parentNodeRef
+  return replace value of node $parentNodeRef with concat("r", $parentNodeId)
 };

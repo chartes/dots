@@ -1,23 +1,28 @@
-declare variable $project_dir_path external;
-declare variable $top_collection_id external;
-declare variable $db_name external;
+import module namespace script = "script";
 
-let $eval := function($script) {
-  let $id := job:eval(
-    xs:anyURI($script),
-    map {
-      'dbName': $db_name,
-      'projectDirPath': $project_dir_path,
-      'topCollectionId': $top_collection_id
-    },
-    map { 'cache': true() }
+declare variable $projectDirPath external := ();
+declare variable $topCollectionId external := ();
+declare variable $dbName external := ();
+
+if (not($projectDirPath and $topCollectionId and $dbName)) then (
+  script:usage(
+    static-base-uri(),
+    "Load a project import folder in basex.",
+    ([ "projectDirPath", "absolute path to import folder", "/absolute/path/to/import/folder" ],
+     [ "topCollectionId", "project root id", "theater" ],
+     [ "dbName", "basex db project name", "theater" ])
   )
-  return (job:wait($id), job:result($id))
-}
-return (
-  $eval('dots_db_init.xq'),
-  $eval('project_db_init.xq'),
-  $eval('project_registers_create.xq'),
-  $eval('dots_registers_update.xq.xq'),
-  $eval('dots_switcher_update.xq')
+) else (
+  let $variables := map {
+    'dbName': $dbName,
+    'projectDirPath': $projectDirPath,
+    'topCollectionId': $topCollectionId
+  }
+  return (
+    script:execute('dots_db_init.xq', $variables),
+    script:execute('project_db_init.xq', $variables),
+    script:execute('project_registers_create.xq', $variables),
+    script:execute('dots_registers_update.xq.xq', $variables),
+    script:execute('dots_switcher_update.xq', $variables)
+  )
 )

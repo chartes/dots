@@ -28,23 +28,19 @@ declare updating function fragments:createFragmentsRegister($bdd) {
     let $register := db:get($bdd, $G:fragmentsRegister)
     let $lastUpdate := $register//dct:modified
     let $members := $register//member
-    return
-      (
-        replace value of node $lastUpdate with current-dateTime(),
-        replace node $members with <member>{fragments:getFragments($bdd)}</member>
-      )
+    return (
+      replace value of node $lastUpdate with current-dateTime(),
+      replace node $members with <member>{fragments:getFragments($bdd)}</member>
+    )
   else
     let $fragments := fragments:getFragments($bdd)
+    where $fragments
     let $content := 
       <fragmentsRegister>{
         resources:getMetadata(),
         <member>{$fragments}</member>
       }</fragmentsRegister>
-    return
-      if ($fragments)
-      then
-        db:add($bdd, $content, $G:fragmentsRegister)
-      else ()
+    return db:add($bdd, $content, $G:fragmentsRegister)
 };
 
 declare %private function fragments:getFragments($bdd as xs:string) {
@@ -55,10 +51,8 @@ declare %private function fragments:getFragments($bdd as xs:string) {
     then normalize-space($resource/@xml:id)
     else functx:substring-after-last(db:path($resource), "/")
   let $maxCiteDepth := fragments:getMaxCiteDepth($resource//tei:refsDecl, 0)
-  return
-    for $citeStructurePosition in $resource//tei:refsDecl/tei:citeStructure
-    return
-      fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+  for $citeStructurePosition in $resource//tei:refsDecl/tei:citeStructure
+  return fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
 };
 
 declare %private function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {

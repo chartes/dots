@@ -3,11 +3,12 @@ xquery version '3.0' ;
 import module namespace dots.create = "backend/db_create";
 import module namespace script = "script";
 
-declare variable $dbName external; 
-declare variable $projectDirPath external;
+declare variable $dbName external := (); 
+declare variable $projectDirPath external := ();
 
-if ($dbName = "" or $projectDirPath = "") then (
-  script:error("Renseigner les variables dbName (nom de la base de données) et / ou projectDirPath (chemin vers le dossier de dépôt.)")
+if (not($dbName and $projectDirPath)) then (
+  script:error("Renseigner les variables dbName (nom de la base de données) et / " ||
+    "ou projectDirPath (chemin vers le dossier de dépôt.)")
 ) else if (not(file:exists($projectDirPath || "/data/"))) then (
   script:error("Les données TEI doivent être dans un dossier data/")
 ) else if (db:exists($dbName)) then (

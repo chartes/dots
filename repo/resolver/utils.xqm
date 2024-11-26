@@ -340,7 +340,7 @@ declare function utils:refNavigation($resourceId as xs:string, $ref as xs:string
   let $projectName := utils:getDbName($resourceId)
   let $resource := utils:getResource($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
-  let $fragment :=  utils:getFragment($projectName, $resourceId, map{"ref": $ref})
+  let $fragment :=  utils:getFragment($projectName, $resourceId, map { "ref": $ref })
   return
     if (not($fragment))
     then
@@ -425,8 +425,8 @@ declare function utils:rangeNavigation($resourceId as xs:string, $start as xs:st
   let $projectName := utils:getDbName($resourceId)
   let $resource := utils:getResource($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
-  let $frag1 := utils:getFragment($projectName, $resourceId, map{"ref": $start})
-  let $fragLast := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  let $frag1 := utils:getFragment($projectName, $resourceId, map { "ref": $start })
+  let $fragLast := utils:getFragment($projectName, $resourceId, map { "ref": $end })
   return
     if (not($frag1) or not($fragLast))
     then
@@ -493,7 +493,7 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     else
     if ($ref)
     then 
-      let $frag := utils:getFragment($project, $resourceId, map{"ref": $ref})
+      let $frag := utils:getFragment($project, $resourceId, map { "ref": $ref })
       return
         if ($frag)
         then $frag
@@ -938,8 +938,8 @@ declare function utils:getFragment($projectName as xs:string, $resourceId as xs:
 : faut-il ajouter des métadonnées (utils:getMandatory(), etc.)?
 :)
 declare function utils:getFragmentsInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer, $filter) {
-  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
-  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  let $firstFragment := utils:getFragment($projectName, $resourceId, map { "ref": $start })
+  let $lastFragment := utils:getFragment($projectName, $resourceId, map { "ref": $end })
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
   let $s := xs:integer($firstFragment/@node-id)
@@ -977,8 +977,8 @@ declare function utils:getFragmentsInRange($projectName as xs:string, $resourceI
 };
 
 declare function utils:getSequenceInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $down as xs:integer) {
-  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
-  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  let $firstFragment := utils:getFragment($projectName, $resourceId, map { "ref": $start })
+  let $lastFragment := utils:getFragment($projectName, $resourceId, map { "ref": $end })
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
   let $s := xs:integer($firstFragment/@node-id)
@@ -1009,8 +1009,8 @@ declare function utils:getSequenceInRange($projectName as xs:string, $resourceId
 };
 
 declare function utils:getDocSequenceInRange($projectName as xs:string, $resourceId as xs:string, $start, $end, $tree, $filter) {
-  let $firstFragment := utils:getFragment($projectName, $resourceId, map{"ref": $start})
-  let $lastFragment := utils:getFragment($projectName, $resourceId, map{"ref": $end})
+  let $firstFragment := utils:getFragment($projectName, $resourceId, map { "ref": $start })
+  let $lastFragment := utils:getFragment($projectName, $resourceId, map { "ref": $end })
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
   let $s := xs:integer($firstFragment/@node-id)
