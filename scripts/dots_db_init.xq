@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "db_switch_builder";
+import module namespace dots.lib = "backend/db_switch_builder";
 import module namespace G = "globals";
 
 if (db:exists($G:dots))

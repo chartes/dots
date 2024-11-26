@@ -7,11 +7,11 @@ xquery version "3.1";
 : @version  1.0
 : @todo pour l'ajout de @citeType: utiliser la fonction fn:normalize-unicode() pour enlever les diacritics
 :)
-module namespace resources = "resources_register_builder";
+module namespace resources = "backend/resources_register_builder";
 
 import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
-import module namespace fragments = "fragments_register_builder";
+import module namespace fragments = "backend/fragments_register_builder";
 
 declare default element namespace "https://github.com/chartes/dots/";
 

@@ -7,7 +7,7 @@ xquery version "3.1";
 : @version  1.0
 : @todo revoir cette fonction si la valeur des attributs @ref est calculée (en s'apppuyant probablement sur la position du noeud dans le document)
 :)
-module namespace dots.update = "dots_registers_update";
+module namespace dots.update = "backend/dots_registers_update";
 
 import module namespace G = "globals";
 

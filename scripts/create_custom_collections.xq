@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "create_custom_collections";
+import module namespace dots.lib = "backend/create_custom_collections";
 
 declare variable $srcPath external;
 

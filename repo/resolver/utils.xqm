@@ -7,7 +7,7 @@ xquery version "3.1";
 : @version  1.0
 :)
 
-module namespace utils = "utils";
+module namespace utils = "resolver/utils";
 
 import module namespace G = "globals";
 import module namespace functx = 'http://www.functx.com';

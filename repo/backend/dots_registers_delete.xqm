@@ -6,7 +6,7 @@ xquery version "3.1";
 : @since 2023-10-12
 : @version  1.0
 :)
-module namespace dots.lib = "dots_registers_delete";
+module namespace dots.lib = "backend/dots_registers_delete";
 
 import module namespace G = "globals";
 

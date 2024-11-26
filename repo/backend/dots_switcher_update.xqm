@@ -1,6 +1,6 @@
 xquery version "3.1";
 
-module namespace dots.lib = "dots_switcher_update"; 
+module namespace dots.lib = "backend/dots_switcher_update"; 
 
 import module namespace G = "globals";
 

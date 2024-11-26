@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "db_creator";
+import module namespace dots.lib = "backend/db_creator";
 
 declare variable $dbName external; 
 declare variable $projectDirPath external;

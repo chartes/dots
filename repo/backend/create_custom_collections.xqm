@@ -10,7 +10,7 @@ xquery version "3.1";
 : @version  1.0
 : @todo: rédiger la documentation de ce module
 :)
-module namespace dots.lib = "create_custom_collections";
+module namespace dots.lib = "backend/create_custom_collections";
 
 import module namespace G = "globals";
 

@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-import module namespace dots.update = "dots_registers_update";
+import module namespace dots.update = "backend/dots_registers_update";
 import module namespace G = "globals";
 
 declare variable $dbName external;

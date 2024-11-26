@@ -1,7 +1,7 @@
 xquery version '3.0';
 
-import module namespace dots.lib = "dots_switcher_update";
-import module namespace dots.log = "log";
+import module namespace dots.lib = "backend/dots_switcher_update";
+import module namespace dots.report = "report";
 import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
@@ -23,5 +23,5 @@ else
           dots.lib:switcher_update($dbName),
   update:output(concat("* ✅ La liste des ressources de la db '", $dbName, "' a été ajouté au switcher dots.
   ")),
-          update:output(dots.log:log($dbName))
+          update:output(dots.report:log($dbName))
         )

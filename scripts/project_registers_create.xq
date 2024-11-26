@@ -1,6 +1,6 @@
 xquery version '3.0' ;
 
-import module namespace resources = "resources_register_builder";
+import module namespace resources = "backend/resources_register_builder";
 import module namespace G = "globals";
 
 declare variable $dbName external;

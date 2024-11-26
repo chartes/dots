@@ -15,7 +15,7 @@ xquery version "3.1";
 : @since 2023-06-14
 : @version  1.0
 :)
-module namespace dots.lib = "db_switch_builder"; 
+module namespace dots.lib = "backend/db_switch_builder"; 
 
 import module namespace G = "globals";
 

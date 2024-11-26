@@ -1,6 +1,6 @@
 xquery version "3.1";
 
-module namespace log = "log";
+module namespace report = "report";
 
 import module namespace G = "globals";
 
@@ -8,7 +8,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
-declare function log:log($dbName) {
+declare function report:log($dbName) {
   let $project := db:get($dbName, $G:resourcesRegister)//collection[not(@parentIds)]
   let $log :=
     let $mapping := 

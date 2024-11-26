@@ -6,10 +6,10 @@ xquery version "3.1";
 : @since 2023-07-26
 : @version  1.0
 :)
-module namespace fragments = "fragments_register_builder";
+module namespace fragments = "backend/fragments_register_builder";
 
 import module namespace functx = 'http://www.functx.com';
-import module namespace resources = "resources_register_builder";
+import module namespace resources = "backend/resources_register_builder";
 import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";

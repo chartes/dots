@@ -9,7 +9,7 @@ xquery version "3.1";
 module namespace routes="https://github.com/chartes/dots/api/routes";
 
 import module namespace G = "globals";
-import module namespace utils = "utils";
+import module namespace utils = "resolver/utils";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 

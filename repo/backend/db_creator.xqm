@@ -6,7 +6,7 @@ xquery version "3.1";
 : @since 2023-10-11
 : @version  1.0
 :)
-module namespace dots.lib = "db_creator";
+module namespace dots.lib = "backend/db_creator";
 
 import module namespace functx = "http://www.functx.com";
 import module namespace G = "globals";
