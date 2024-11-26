@@ -6,14 +6,14 @@ xquery version "3.1";
 : @since 2023-10-11
 : @version  1.0
 :)
-module namespace dots.lib = "backend/db_creator";
+module namespace dots.create = "backend/db_create";
 
 import module namespace functx = "http://www.functx.com";
 import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
-declare updating function dots.lib:dbCreate($dbName as xs:string, $projectDirPath as xs:string) {
+declare updating function dots.create:db($dbName as xs:string, $projectDirPath as xs:string) {
   let $metadataPathFile := concat($projectDirPath, "/metadata/")
   let $mappingPathFile := if (file:exists($metadataPathFile)) then concat($metadataPathFile, file:list($metadataPathFile, true())[ends-with(., ".xml")])
   let $resourcesXML :=

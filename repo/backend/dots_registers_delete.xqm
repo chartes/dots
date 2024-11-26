@@ -6,38 +6,35 @@ xquery version "3.1";
 : @since 2023-10-12
 : @version  1.0
 :)
-module namespace dots.lib = "backend/dots_registers_delete";
+module namespace dots.delete = "backend/dots_registers_delete";
 
 import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
-declare updating function dots.lib:handleDelete($dbName as xs:string, $option as xs:string) {
-  dots.lib:dbSwitchDelete($dbName),
-  dots.lib:registersDelete($dbName, $option)
+declare updating function dots.delete:handle($dbName as xs:string, $option as xs:string) {
+  dots.delete:dbSwitch($dbName),
+  dots.delete:registers($dbName, $option)
 };
 
-declare %private updating function dots.lib:dbSwitchDelete($dbName as xs:string) {
+declare %private updating function dots.delete:dbSwitch($dbName as xs:string) {
   let $dbDots := db:get($G:dots)/dbSwitch
   let $totalProjects := $dbDots//totalProjects
   let $modified := $dbDots//dct:modified
   let $member := $dbDots//member
-  return
-    (
-      replace value of node $modified with current-dateTime(),
-      replace value of node $totalProjects with xs:integer($totalProjects) - 1,
-      for $member in $member/node()[@dbName = $dbName]
-      return
-        delete node $member
-    )
+  return (
+    replace value of node $modified with current-dateTime(),
+    replace value of node $totalProjects with xs:integer($totalProjects) - 1,
+    delete nodes $member/*[@dbName = $dbName]
+  )
 };
 
-declare %private updating function dots.lib:registersDelete($dots.lib:dbName as xs:string, $option as xs:string) {
-  if ($option = "true")
-  then
-    db:drop($dots.lib:dbName)
-  else
-    db:delete($dots.lib:dbName, $G:resourcesRegister),
-    db:delete($dots.lib:dbName, $G:fragmentsRegister)  
+declare %private updating function dots.delete:registers($dbName as xs:string, $option as xs:string) {
+  if ($option = "true") then (
+    db:drop($dbName)
+  ) else (
+    db:delete($dbName, $G:resourcesRegister),
+    db:delete($dbName, $G:fragmentsRegister)  
+  )
 };

@@ -1,15 +1,14 @@
-declare variable $srcPath external;
+import module namespace script = "script";
 
-let $eval := function($script) {
-  let $id := job:eval(
-    xs:anyURI($script),
-    map {
-      'collections_tsv_path': $srcPath
-    },
-    map { 'cache': true() }
-  )
-  return (job:wait($id), job:result($id))
-}
-return (
-  $eval('create_custom_collections.xq')
+declare variable $srcPath external := ();
+
+if (not($srcPath)) then (
+  "Create new collections and associate documents with them.
+usage: basex -bsrcPath=... " || file:name(static-base-uri()) || "
+
+  srcPath  absolute path to collections metadata tsv file
+           (example: path/to/tsv/file)
+"
+) else (
+  script:run('create_custom_collections.xq', map { 'srcPath': $srcPath })
 )

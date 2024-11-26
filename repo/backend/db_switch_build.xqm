@@ -15,13 +15,11 @@ xquery version "3.1";
 : @since 2023-06-14
 : @version  1.0
 :)
-module namespace dots.lib = "backend/db_switch_builder"; 
+module namespace dots.build = "backend/db_switch_build";
 
 import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
-declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
 (:~ 
@@ -34,11 +32,10 @@ declare namespace dct = "http://purl.org/dc/terms/";
 : @see db_switch_builder.xqm;db.switcher:members
 : @see db_switch_builder.xqm;db.switcher:getHeaders
 :)
-declare updating function dots.lib:dots_db_init() {
-  let $dbSwitch := dots.lib:switcher_init()
-  let $metadataMap := dots.lib:metadataMap_init()
-  return
-    db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
+declare updating function dots.build:dots_db() {
+  let $dbSwitch := dots.build:switcher()
+  let $metadataMap := dots.build:metadataMap()
+  return db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
 };
 
 (:~ 
@@ -46,24 +43,25 @@ declare updating function dots.lib:dots_db_init() {
 : @return élément XML <metadata></metadata> avec son contenu
 : @param $option chaîne de caractère pour savoir si l'élément <totalProject/> doit être intégré au header
 :)
-declare %private function dots.lib:getHeaders($option as xs:string) {
+declare %private function dots.build:headers($option as xs:string) {
   <metadata>
-    <dct:created>{current-dateTime()}</dct:created>
-    <dct:modified>{current-dateTime()}</dct:modified>
-    {if ($option = "dbSwitch") then <totalProjects>0</totalProjects> else ()}  
+    <dct:created>{ current-dateTime() }</dct:created>
+    <dct:modified>{ current-dateTime() }</dct:modified>
+    { if ($option = "dbSwitch") then <totalProjects>0</totalProjects> else () }
   </metadata>
 };
 
-declare %private function dots.lib:switcher_init() {
+declare %private function dots.build:switcher() {
   <dbSwitch xmlns="https://github.com/chartes/dots/">{
-    dots.lib:getHeaders("dbSwitch"),
+    dots.build:headers("dbSwitch"),
     <member/>
   }</dbSwitch>
 };
 
-declare %private function dots.lib:metadataMap_init() {
-  <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">{
-    dots.lib:getHeaders("metadataMap"),
+declare %private function dots.build:metadataMap() {
+  <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dct="http://purl.org/dc/terms/">{
+    dots.build:headers("metadataMap"),
     <mapping>
       <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
       <dc:creator xpath="//titleStmt/author" scope="document"/>
