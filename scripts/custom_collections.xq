@@ -1,3 +1,7 @@
+(:  
+: Ce script me semble inutile. Il est redondant avec create_custom_collections.xq?
+:)
+
 import module namespace script = "script";
 
 declare variable $srcPath external := ();

@@ -14,6 +14,7 @@ import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
+declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 

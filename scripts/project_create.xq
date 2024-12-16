@@ -19,10 +19,10 @@ if (not($projectDirPath and $topCollectionId and $dbName)) then (
     'topCollectionId': $topCollectionId
   }
   return (
-    script:execute('dots_db_init.xq', $variables),
-    script:execute('project_db_init.xq', $variables),
-    script:execute('project_registers_create.xq', $variables),
-    script:execute('dots_registers_update.xq.xq', $variables),
-    script:execute('dots_switcher_update.xq', $variables)
+    script:execute('../scripts/dots_db_init.xq', $variables),
+    script:execute('../scripts/project_db_init.xq', $variables),
+    script:execute('../scripts/project_registers_create.xq', $variables),
+    script:execute('../scripts/dots_registers_update.xq', $variables),
+    script:execute('../scripts/dots_switcher_update.xq', $variables)
   )
 )

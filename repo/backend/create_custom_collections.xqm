@@ -91,16 +91,17 @@ declare %private updating function dots.lib:countResourcesToAddToProject($source
 declare %private updating function dots.lib:countResourcesToAddToCollections($source as element(csv)) {
   let $dbName := $source/record[1]/dbName
   let $getRegister := db:get($dbName, $G:resourcesRegister)//dots:member
-  for $record in $source/record
-  let $parentIds := $record/parentId
-  group by $parentIds
   return
-    for $parentId in $parentIds
-    let $countResourcesInCollection := count($source/record[parentId = $parentId])
-    let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
-    let $getCollection := $getRegister/dots:collection[@dtsResourceId = (if ($parentId) then $parentId else $projectId)]
-    let $totalChildren := $getCollection/@totalChildren
-    let $newTotalChildren := $countResourcesInCollection + $totalChildren
-    where $getCollection
-    return replace value of node $totalChildren with $newTotalChildren
+    for $record in $source/record
+    let $parentIds := $record/parentId
+    group by $parentIds
+    return
+      for $parentId in $parentIds
+      let $countResourcesInCollection := count($source/record[parentId = $parentId])
+      let $projectId := db:get($G:dots)//dots:project[@dbName = $record/dbName]/@dtsResourceId
+      let $getCollection := $getRegister/dots:collection[@dtsResourceId = (if ($parentId) then $parentId else $projectId)]
+      let $totalChildren := $getCollection/@totalChildren
+      let $newTotalChildren := $countResourcesInCollection + $totalChildren
+      where $getCollection
+      return replace value of node $totalChildren with $newTotalChildren
 };
