@@ -201,15 +201,6 @@ declare %private function resources:getDocumentMetadata($bdd as xs:string, $doc,
     else <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
   return
     (
-      (: if ($dcTitle) 
-      then
-        let $xpathTitle := $dcTitle/@xpath
-        let $queryTitle := concat('
-          declare default element namespace "http://www.tei-c.org/ns/1.0";',
-          $xpathTitle)
-        let $valueQueryTitle := xquery:eval($queryTitle, map {"": $doc})
-        return
-          <dc:title>{normalize-space($valueQueryTitle)}</dc:title>, :)
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
       return
         if ($metadata/@resourceId = "all")
