@@ -192,7 +192,7 @@ declare %private function resources:document($bdd as xs:string, $idProject as xs
     else ()
 };
 
-declare %private function resources:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId as xs:string) {
+declare function resources:getDocumentMetadata($bdd as xs:string, $doc, $dtsResourceId as xs:string) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($bdd)/metadataMap/mapping
   let $dcTitle :=

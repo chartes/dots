@@ -3,7 +3,7 @@ xquery version "3.1";
 (:~  
 : Ce module permet à un utilisateur de DoTS d'ajouter un ou plusieurs documents à une db
 : @author École nationale des chartes
-: @since 2024-10-16
+: @since 2024-12-16
 : @version  1.0
 :)
 module namespace dots.add_doc = "backend/project_add_document";

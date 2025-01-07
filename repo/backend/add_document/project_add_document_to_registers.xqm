@@ -6,7 +6,7 @@ xquery version "3.1";
 : @since 2024-10-16
 : @version  1.0
 :)
-(: module namespace dots.add_doc_to_registers = "backend/project_add_document_to_registers"; :)
+(: module namespace add_to_registers = "backend/add_document/project_add_document_to_registers"; :)
 
 import module namespace G = "globals";
 import module namespace fragments = "backend/fragments_register_builder";
@@ -83,5 +83,9 @@ let $dtsResourceId :=
 
 
 (: local:addToReg("encpos", "ENCPOS", "/home/ppons/Bureau/dots_encpos/dots_encpos_2024/encpos_data_2024/data/ENCPOS_2024", "", "\|") :)
-local:addToRegFromCSV("encpos", "ENCPOS", "/home/ppons/Bureau/dots_encpos/dots_encpos_2024/encpos_data_2024/data/ENCPOS_2024", "/home/ppons/Bureau/dots_encpos/dots_encpos_2024/add_doc.csv", "\|")
+local:addToRegFromCSV("encpos", "ENCPOS", "/home/ppons/Bureau/dots_encpos/dots_encpos_2024/encpos_data_2024/data/ENCPOS_2024", "/home/ppons/Bureau/dots_encpos/dots_encpos_2024/add_doc.csv", "\|") 
+
+
+
+
 
