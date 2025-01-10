@@ -99,7 +99,7 @@ declare function resources:getMetadata() {
 : @see create_config.xql;cc:collection
 : @see create_config.xql;cc:resource
 :)
-declare %private function resources:collections($bdd as xs:string, $idProject as xs:string) {
+declare function resources:collections($bdd as xs:string, $idProject as xs:string) {
   let $list_collections :=
     let $collections :=
       for $document in db:get($bdd)/node()
@@ -289,7 +289,7 @@ declare %private function resources:collection($bdd as xs:string, $idProject as 
     }</collection>
 };
 
-declare %private function resources:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
+declare function resources:getCollectionMetadata($bdd as xs:string, $collection as xs:string) {
   let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
     if ($metadataMap)
