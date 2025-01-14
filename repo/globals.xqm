@@ -8,6 +8,7 @@ module namespace G = 'globals';
 : @author École nationale des chartes - Philippe Pons
 :)
 
+declare default element namespace "https://github.com/chartes/dots/";
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le resolver 
@@ -59,7 +60,13 @@ declare variable $G:resourcesRegister := "dots/resources_register.xml";
 (:~ Variable pour accéder au registre (documentRegister)  qui liste les passages citables:)
 declare variable $G:fragmentsRegister := "dots/fragments_register.xml";
 
-
+(:~ This function allows retrieving the identifier ('topCollectionId') of a database based on its name.
+: @param $dbName name of the database
+: @return a string (identifier of a project)
+:)
+declare function G:getTopCollectionId($dbName as xs:string) {
+  normalize-space(db:get($dbName, $G:resourcesRegister)//collection[not(@parentIds)]/@dtsResourceId)
+};
 
 
 

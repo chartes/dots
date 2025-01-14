@@ -56,7 +56,7 @@ declare %private function fragments:getFragments($bdd as xs:string) {
   return fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
 };
 
-declare %private function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
+declare function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
   let $xpath := normalize-space($citeStructure/@match)
   let $query := concat('
     declare default element namespace "http://www.tei-c.org/ns/1.0";',
