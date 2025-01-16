@@ -1114,7 +1114,10 @@ declare function utils:getResultFilter($sequence, $filter) {
 
 declare function utils:getDocument($dbName as xs:string, $resourceId as xs:string) {
   if (db:get($dbName)/tei:TEI[@xml:id = $resourceId])
-  then db:get($dbName)/tei:TEI[@xml:id = $resourceId] 
+  then 
+    let $path := db:path(db:get($dbName)/tei:TEI[@xml:id = $resourceId] )
+    return
+      db:get($dbName, $path)
   else db:get($dbName)/node()[ends-with(db:path(.), $resourceId)]
 };
 
