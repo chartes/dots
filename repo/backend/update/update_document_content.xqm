@@ -11,6 +11,8 @@ xquery version "4.0";
 
 import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
+import module namespace utils = "resolver/utils";
+
 import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
 
@@ -32,7 +34,7 @@ Mais vérifier le path dans l'import folder pour s'assurer que le chemin est bie
 Question : comment changer la collection PAR DÉFAUT d'un document ?
 
 1. Retrouver le doc1 dans la db ($docId)
-2. Regarder s'il y a des id DoTS dans doc1
+2. Regarder s'il y a des id DoTS dans doc2
 3. Si oui essayer un deep-equal juste sur les id entre doc1 et doc2
 4. Si true, alors on passe à 6 ; si false alors 5
 5. Message indiquant que les id DoTS seront perdus et demander validation ?
@@ -48,24 +50,45 @@ Question : comment changer la collection PAR DÉFAUT d'un document ?
 15. On met à jour les attributs @maxCiteDepth, @citeStructure et le dc:title du document.
 :)
 
-(: $docId, $project_dir_path :)
 
-(:  
-Il me faut un premier test pour voir si le $docId = TEI/@xml:id (probablement le plus simple) ou alors $docId = document name.
+(:~ This function allows to retrieve the document with the $docId identifier in the import folder $project_dir_path
+: @param $docId             document identifier
+: @param $project_dir_path  absolute path to the data import folder
+: @return TEI document
 :)
-
-declare function local:findDoc($docId as xs:string, $path) {
-  if (collection($path)/tei:TEI[@xml:id = $docId])
-  then collection($path)/tei:TEI[@xml:id = $docId]
+declare function local:findDocInFolder($docId as xs:string, $project_dir_path) {
+  if (collection($project_dir_path)/tei:TEI[@xml:id = $docId])
+  then collection($project_dir_path)/tei:TEI[@xml:id = $docId]
   else 
-    let $listDoc := file:list($path, true())
+    let $listDoc := file:list($project_dir_path, true())
     for $docPath in $listDoc
     where ends-with($docPath, $docId)
     return
-      doc(concat($path, $docPath))
+      doc(concat($project_dir_path, $docPath))
 };
 
-let $docId := "ENCPOS_1972_01.xml"
+(:~  This function allows to find the document $docId in his db
+: @param document identifier
+: @return TEI document
+:)
+declare function local:findDocInDb($docId) {
+  let $db := normalize-space(db:get($G:dots)//dots:document[@dtsResourceId = $docId]/@dbName)
+  return
+    utils:getDocument($db, $docId)
+};
+
+(:~  This function allows to chech if the document $docId in the db has DoTS identifiers
+@param $docId document identifier
+@return boolean
+:)
+declare function local:CheckDotsIdinDocToUpdate($docId) {
+  let $doc := local:findDocInDb($docId)
+  return
+    some $ids in  $doc//node()/@xml:id
+    satisfies matches($ids, "r[0-9]+")
+};
+
+let $docId := "ENCPOS_1972_18"
 let $path := "/home/ppons/Bureau/basex_dots/update_issue/corpus/data/"
 let $doc := 
   some $d in file:list($path, true())
@@ -77,8 +100,10 @@ let $doc :=
   return
     $d :)
 return
-  local:findDoc($docId, $path)
-
+  (: local:findDoc($docId, $path) :)
+  if (local:CheckDotsIdinDocToUpdate($docId))
+  then 'toto'
+  else 'vador'
 
 
 

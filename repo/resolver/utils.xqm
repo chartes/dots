@@ -1118,6 +1118,10 @@ declare function utils:getDocument($dbName as xs:string, $resourceId as xs:strin
     let $path := db:path(db:get($dbName)/tei:TEI[@xml:id = $resourceId] )
     return
       db:get($dbName, $path)
-  else db:get($dbName)/node()[ends-with(db:path(.), $resourceId)]
+  else 
+    let $findDoc := db:get($dbName)/node()[ends-with(db:path(.), $resourceId)]
+    let $path := db:path($findDoc)
+    return
+      db:get($dbName, $path)
 };
 

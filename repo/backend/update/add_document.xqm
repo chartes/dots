@@ -11,6 +11,7 @@ module namespace add_doc = "backend/update/add_document";
 
 import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
+import module namespace dots_error = "error/dots_error";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
 
@@ -53,9 +54,11 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
       return
         let $collId := if (contains($path, "/")) then functx:substring-after-last($path, "/") else $path
         return
-          if (db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $collId])
-          then $collId
-          else "collection_error"
+          try {
+            dots_error:process(db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $collId])
+          } catch local:empty {
+            'Error: ' || $err:description
+          }
     else G:getTopCollectionId($dbName)
   return
     if ($document)
