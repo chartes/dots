@@ -56,7 +56,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
         return
           try {
             dots_error:process(db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $collId])
-          } catch local:empty {
+          } catch add_doc:empty {
             'Error: ' || $err:description
           }
     else G:getTopCollectionId($dbName)

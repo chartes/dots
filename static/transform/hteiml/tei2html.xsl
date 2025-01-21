@@ -2204,14 +2204,15 @@ Call that in
                 <xsl:call-template name="note"/>
               </xsl:for-each>
             </xsl:variable>
-            <xsl:if test="$notes4page != ''">
+            <!-- Commenter la condition suivante permet de corriger l'affichage en double des notes -->
+            <!--<xsl:if test="$notes4page != ''">
               <div class="page">
                 <div class="b note-page">
                   <xsl:call-template name="a"/>
                 </div>
                 <xsl:copy-of select="$notes4page"/>
               </div>
-            </xsl:if>
+            </xsl:if>-->
           </xsl:for-each>
         </xsl:when>
         <!-- handle notes by split sections ? -->
