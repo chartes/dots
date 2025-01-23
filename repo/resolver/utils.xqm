@@ -230,8 +230,6 @@ declare function utils:idNavigation($resourceId as xs:string, $down, $tree, $fil
       <pair name="@id">{$url}</pair>,
       <pair name="@type">Navigation</pair>,
       utils:getResourcesInfo($projectName, $resource),
-      (: <pair name="level" type="number">0</pair>,
-      <pair name="maxCiteDepth" type="number">{$maxCiteDepth}</pair>, :)
       if ($response)
       then
         <pair name="member" type="array">{$response}</pair> else (),
@@ -656,7 +654,8 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
       (
         <pair name="collection">{concat("/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
         <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
-        <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>
+        <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>,
+        if ($resource/dots:download) then <pair name="download">{normalize-space($resource/dots:download)}</pair>
       )
     else ()
   let $citationTrees :=
@@ -832,10 +831,13 @@ declare function utils:getArrayJson($key as xs:string, $metadata) {
 : @param $metada élément XML
 :)
 declare function utils:getStringJson($key as xs:string, $metadata) {
-  <pair name="{$key}">{
-    if ($metadata/@type) then attribute {"type"} {$metadata/@type} else (),
-    normalize-space($metadata)
-  }</pair>
+  if ($key = "download")
+  then ()
+  else
+    <pair name="{$key}">{
+      if ($metadata/@type) then attribute {"type"} {$metadata/@type} else (),
+      normalize-space($metadata)
+    }</pair>
 };
 
 (:~  
