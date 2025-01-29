@@ -60,7 +60,7 @@ declare function utils:collections() {
       <pair name="totalItems" type="number">{$totalItems}</pair>,
       <pair name="totalChildren" type="number">{$totalItems}</pair>,
       <pair name="totalParents" type="number">0</pair>,
-      <pair name="member" type="object">{
+      <pair name="member" type="array">{
         for $project at $pos in db:get($G:dots)//dots:member/dots:project
         let $resourceId := normalize-space($project/@dtsResourceId)
         let $dbName := $project/@dbName
@@ -69,9 +69,9 @@ declare function utils:collections() {
         return
           if ($resource) 
           then 
-            <pair name="{$pos}" type="object">{
+            <item type="object">{
               utils:getMandatory("", $resource, "")
-            }</pair> 
+            }</item> 
           else ()
       }</pair>
     )
@@ -592,21 +592,8 @@ declare function utils:excludeFragments($project as xs:string, $resourceId as xs
                 ()
               else $child
           else $child
-      let $childsFragment :=
-        <list>{
-          for $childFrag in $node/node()[@xml:id]
-          let $node-id := db:node-id($childFrag)
-          where $register//dots:fragment[@node-id = $node-id]
-          let $ref := $register//dots:fragment[@node-id = $node-id]/@ref
-          return
-            <item xml:id="{$ref}">{normalize-space($register//dots:fragment[@node-id = $node-id]/dc:title)}</item>
-        }</list>
       return
-        (
-          if ($childs) then $childs else (),
-          if ($childsFragment) then $childsFragment else ()
-        )
-        
+        if ($childs) then $childs else ()
   }</dts:wrapper>
   </TEI>
 };
@@ -624,6 +611,7 @@ Fonctions "utiles"
 : @see utils.xqm;utils:collections (fonction qui fait appel à la fonction ici présente)
 : @see utils.xqm;utils:collectionById (fonction qui fait appel à la fonction ici présente)
 : @see utils.xqm;utils:getResourceType
+: @todo "download" peut-être un array. Ce n'est actuellement pas pris en compte
 :)
 declare function utils:getMandatory($dbName as xs:string, $resource as element(), $nav as xs:string) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
@@ -655,7 +643,13 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
         <pair name="collection">{concat("/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
         <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
         <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>,
-        if ($resource/dots:download) then <pair name="download">{normalize-space($resource/dots:download)}</pair>
+        if ($resource/dots:download) 
+        then 
+          <pair name="download" type="object">{
+            for $download in $resource/dots:download
+            return
+              utils:getStringJson($download/@key, $download)
+          }</pair>
       )
     else ()
   let $citationTrees :=
@@ -765,6 +759,7 @@ declare function utils:getExtensions($resource as element()) {
       <pair name="extensions" type="object">{
         for $metadata in $extensions
         let $key := $metadata/name()
+        where $key != "download"
         let $prefix := in-scope-prefixes($metadata)[1]
         where $prefix != "dc"
         where $key != ""
@@ -1119,11 +1114,17 @@ declare function utils:getDocument($dbName as xs:string, $resourceId as xs:strin
   then 
     let $path := db:path(db:get($dbName)/tei:TEI[@xml:id = $resourceId] )
     return
-      db:get($dbName, $path)
+      (
+        db:get($dbName, $path)
+        update{delete nodes //processing-instruction()[name() = "xml-stylesheet"]}
+      )
   else 
     let $findDoc := db:get($dbName)/node()[ends-with(db:path(.), $resourceId)]
     let $path := db:path($findDoc)
     return
-      db:get($dbName, $path)
+      (
+        db:get($dbName, $path)
+        update{delete nodes //processing-instruction()[name() = "xml-stylesheet"]}
+      )
 };
 

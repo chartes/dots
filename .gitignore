@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 data/
 .basex
 .basexgui
 .idea/
-=======
-data/
-.basex
-.basexgui
->>>>>>> b5ea6e51b1bfa8203fa57d7beed01a472e8addfd
+webapp/restxq/home.xqm
+static/transform/hteiml/teiHeader2html.xsl
