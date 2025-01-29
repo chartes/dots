@@ -3,4 +3,3 @@ data/
 .basexgui
 .idea/
 webapp/restxq/home.xqm
-static/transform/hteiml/teiHeader2html.xsl
