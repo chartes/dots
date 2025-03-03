@@ -41,18 +41,18 @@ elif [[ -z $db_name ]]; then
     die "Missing parameter --db_name"
 fi
 
-bash basex /scripts/dots_db_init.xq;
+bash basex scripts/dots_db_init.xq;
 
 if [ $cleanOption ]; then
   if [ $delete ]; then
     if [ $delete == "true" ]; then
-      bash basex -b dbName=$db_name -b option=true /scripts/dots_registers_delete.xq
+      bash basex -b dbName=$db_name -b option=true scripts/dots_registers_delete.xq
     else
-      bash basex -b dbName=$db_name -b option=false /scripts/dots_registers_delete.xq
+      bash basex -b dbName=$db_name -b option=false scripts/dots_registers_delete.xq
     fi
   fi
 fi
-bash basex -b dbName=$db_name -b projectDirPath=$project_dir_path /scripts/project_db_init.xq;
-bash basex -b dbName=$db_name -b topCollectionId=$top_collection_id /scripts/project_registers_create.xq;
-bash basex -b dbName=$db_name /scripts/TEI_add_id.xq;
-bash basex -b dbName=$db_name /scripts/dots_switcher_update.xq
+bash basex -b dbName=$db_name -b projectDirPath=$project_dir_path scripts/project_db_init.xq;
+bash basex -b dbName=$db_name -b topCollectionId=$top_collection_id scripts/project_registers_create.xq;
+bash basex -b dbName=$db_name scripts/TEI_add_id.xq;
+bash basex -b dbName=$db_name scripts/dots_switcher_update.xq
