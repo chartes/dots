@@ -61,7 +61,7 @@ declare function utils:collections() {
       <pair name="totalChildren" type="number">{$totalItems}</pair>,
       <pair name="totalParents" type="number">0</pair>,
       <pair name="member" type="array">{
-        for $project at $pos in db:get($G:dots)//dots:member/dots:project
+        for $project in db:get($G:dots)//dots:member/dots:project
         let $resourceId := normalize-space($project/@dtsResourceId)
         let $dbName := $project/@dbName
         let $resourcesRegister := db:get($dbName, $G:resourcesRegister)
@@ -85,7 +85,7 @@ declare function utils:collections() {
 : Cette fonction permet de construire la réponse d'API d'une collection DTS identifiée par le paramètre $id
 : @return réponse donnée en XML pour être sérialisée en JSON selon le format "attributes" proposé par BaseX
 : @param $resourceId chaîne de caractère permettant d'identifier la collection ou le document concerné. Ce paramètre vient de routes.xqm;routes:collections
-: @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents. Ce paramètre permet de définir si les membres à lister sont les enfants ou les parents
+: @param $nav chaîne de caractère dont la valeur est children (par défaut) ou parents. Ce paramètre permet de définir si les membres à lister sont les enfants ou  les parents
 : @see https://docs.basex.org/wiki/JSON_Module#Attributes
 : @see utils.xqm;utils:getDbName
 : @see utils.xqm;utils:getResource

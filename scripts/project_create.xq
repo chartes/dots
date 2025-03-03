@@ -24,5 +24,5 @@ if (not($projectDirPath and $topCollectionId and $dbName)) then (
     script:execute('../scripts/project_registers_create.xq', $variables),
     script:execute('../scripts/dots_registers_update.xq', $variables),
     script:execute('../scripts/dots_switcher_update.xq', $variables)
-  )
+  ) 
 )

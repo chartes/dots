@@ -19,6 +19,14 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+declare updating function add_doc:handleAddition($dbName, $docPath) {
+  (
+    add_doc:addDocToDB($dbName, $docPath),
+    add_doc:addDocToResourcesReg($dbName, $docPath),
+    add_doc:addFragInReg($dbName, $docPath)
+  )
+};
+
 (:~ Update function to add a new document with a specific path
 : @param $dbName  db name
 : @param $docPath absolute path to the document to add
@@ -121,3 +129,13 @@ declare updating %private function add_doc:addDocToSwitcherDots($dbName as xs:st
   return
     insert node <document dtsResourceId="{$dtsResourceId}" dbName="{$dbName}"/> as last into $switcher
 };
+
+
+
+
+
+
+
+
+
+
