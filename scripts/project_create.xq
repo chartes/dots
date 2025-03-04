@@ -3,26 +3,14 @@ import module namespace script = "script";
 declare variable $projectDirPath external := ();
 declare variable $topCollectionId external := ();
 declare variable $dbName external := ();
+declare variable $option external := ();
 
-if (not($projectDirPath and $topCollectionId and $dbName)) then (
-  script:usage(
-    static-base-uri(),
-    "Load a project import folder in basex.",
-    ([ "projectDirPath", "absolute path to import folder", "/absolute/path/to/import/folder" ],
-     [ "topCollectionId", "project root id", "theater" ],
-     [ "dbName", "basex db project name", "theater" ])
-  )
-) else (
-  let $variables := map {
-    'dbName': $dbName,
-    'projectDirPath': $projectDirPath,
-    'topCollectionId': $topCollectionId
-  }
-  return (
-    script:execute('../scripts/dots_db_init.xq', $variables),
-    script:execute('../scripts/project_db_init.xq', $variables),
-    script:execute('../scripts/project_registers_create.xq', $variables),
-    script:execute('../scripts/dots_registers_update.xq', $variables),
-    script:execute('../scripts/dots_switcher_update.xq', $variables)
-  ) 
-)
+for $script in ('../scripts/dots_db_init.xq', if ($option) then '../scripts/dots_registers_delete.xq', '../scripts/project_db_init.xq', 
+  '../scripts/project_registers_create.xq', '../scripts/TEI_add_id.xq', '../scripts/dots_switcher_update.xq')
+return script:execute(xs:anyURI($script), map {
+  'dbName': $dbName,
+  'projectDirPath': $projectDirPath,
+  'topCollectionId': $topCollectionId,
+  'option' : $option
+})
+

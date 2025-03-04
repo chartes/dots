@@ -8,4 +8,4 @@ declare variable $dbName external;
 
 
 dots.update:addXmlIdToFragment($dbName),
-script:success(("DoTS a intégré, le cas échéant, des attributs @xml:id aux fragments."))
+script:success("DoTS a intégré, le cas échéant, des attributs @xml:id aux fragments.")
