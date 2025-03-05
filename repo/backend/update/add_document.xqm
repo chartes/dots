@@ -62,24 +62,31 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
       return
         let $collId := if (contains($path, "/")) then functx:substring-after-last($path, "/") else $path
         return
-          try {
-            dots_error:process(db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $collId])
-          } catch add_doc:empty {
-            'Error: ' || $err:description
-          }
+          (
+            $collId)
     else G:getTopCollectionId($dbName)
   return
     if ($document)
     then
       let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
+      let $doc_in_register := $resources_register/dots:document[@dtsResourceId = $dtsResourceId]
       return
-        (
-          insert node <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
+        if ($doc_in_register) 
+        then 
+          (
+            delete nodes $doc_in_register,
+            insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
           resources:getDocumentMetadata($dbName, $document, $dtsResourceId)
-        }</document> as last into $resources_register,
-        add_doc:updateMaxCiteDepthCollection($dbName, $parentIds),
-        add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)
-        )
+}</document> after $doc_in_register
+          )
+        else
+          (
+            insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
+            resources:getDocumentMetadata($dbName, $document, $dtsResourceId)
+  }</document> as last into $resources_register,
+            add_doc:updateMaxCiteDepthCollection($dbName, $parentIds),
+            add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)
+          )
     else ()
 };
 
