@@ -39,7 +39,6 @@ declare %unit:test function test_add:checkDocInDb() {
 (:  
 : This test ensures that the document's access path in the BaseX database matches the document's path in the repository folder.
 : This test is important because the path reflects the document's belonging to a collection, sub-collection, etc..
-: @todo vérifier que les collections / sous-collections existent bien ! Sinon, renvoyer un message d'erreur le signalant. => test à ajouter
 :)
 declare %unit:test function test_add:checkPaths() {
   let $pathDocInDb := utils_dots:findPathDoc($test_add:dbName, $test_add:docId)
@@ -48,18 +47,10 @@ declare %unit:test function test_add:checkPaths() {
     unit:assert-equals($pathDocInDb, $pathDocInFolder)
 };
 
-declare %unit:test function test_add:checkParentIds() {
-  let $docEntry := db:get($test_add:dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $test_add:docId]
-  for $parentIds in tokenize($docEntry/@parentIds, " ")
-  let $collection := db:get($test_add:dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
-  return
-    unit:assert($collection, concat("La collection", $parentIds,  "n'existe pas."))
-};
-
 (:  
 : This test verifies that the document is registered in the project's DoTS resource registry.
 : It also compares the value of the @maxCiteDepth attribute with the depth level of the <citeStructure/> elements in the TEI file. Both values must be identical.
-: Finally, it verifies that for each parent collection of the document, the number of documents in these collections matches the number displayed in the @totalChildren attribute.
+: Finally, it verifies that each parent collection exists in the resources register and that, for each parent collection of the document, the number of documents within these collections matches the value displayed in the @totalChildren attribute.
 :)
 declare %unit:test function test_add:checkDocInRegister() {
   let $docEntry := db:get($test_add:dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $test_add:docId]
@@ -74,7 +65,7 @@ declare %unit:test function test_add:checkDocInRegister() {
       let $countChildren := count(db:get($test_add:dbName, $G:resourcesRegister)//node()[contains(@parentIds, $collectionId)])
       return
         (
-          unit:assert($collection),
+          unit:assert($collection, concat("La collection '", $collectionId,  "' n'existe pas.")),
           unit:assert-equals(xs:integer($totalChildren), $countChildren)
         )
     )

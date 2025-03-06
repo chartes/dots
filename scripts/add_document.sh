@@ -19,6 +19,9 @@ function usage {
     echo "  --db_name string        basex project db name"
     echo "                          (example: theater)"
     echo "  --doc_path string       absolute path to the document to add"
+    echo "                          "
+    echo "  --basex_path string       absolute path to the basex folder 'bin'"
+    echo "                          (example: /absolute/path/to/basex/bin)"
     echo ""
 }
 
@@ -35,4 +38,4 @@ elif [[ -z $doc_path ]]; then
     die "Missing parameter --doc_path"
 fi
 
-bash $basex_path -b dbName=$db_name -b docPath=$doc_path scripts/add_document.xq
+bash "$basex_path/basex" -b dbName=$db_name -b docPath=$doc_path scripts/add_document.xq
