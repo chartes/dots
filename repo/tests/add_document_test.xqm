@@ -19,7 +19,9 @@ declare variable $test_add:document := utils:getDocument($test_add:dbName, $test
 (:~~~~~~~~~
 : Unit Tests 
 ~~~~~~~~~~:)
-
+(:  
+: Ce test permet de s'assurer que le nombre de fichiers TEI dans la base BaseX ET le nombre de document (c'est-à-dire le nombre d'élément <documen/>) dans le registre des ressources DoTS du projet sont concordants.
+:)
 declare %unit:test function test_add:checkDocumentNumber() {
   let $countTEIFile := count(db:get($test_add:dbName)/tei:TEI)
   let $countDocInRegister := count(db:get($test_add:dbName, $G:resourcesRegister)//dots:document)
@@ -27,10 +29,18 @@ declare %unit:test function test_add:checkDocumentNumber() {
     unit:assert-equals($countTEIFile, $countDocInRegister)
 };
 
+(:  
+: Ce test permet de s'assurer que le document est bien présent dans la db BaseX
+:)
 declare %unit:test function test_add:checkDocInDb() {
   unit:assert($test_add:document)
 };
 
+(:  
+: Ce test permet de s'assurer que le chemin d'accès au document dans la db BaseX correspond bien au chemin du document dans le dossier de dépôt.
+: Ce test est important dans la mesure où le chemin rend compte de l'appartenance d'un document à une collection / sous-collection, etc.
+: @todo vérifier que les collections / sous-collections existent bien ! Sinon, renvoyer un message d'erreur le signalant. => test à ajouter
+:)
 declare %unit:test function test_add:checkPaths() {
   let $pathDocInDb := utils_dots:findPathDoc($test_add:dbName, $test_add:docId)
   let $pathDocInFolder := substring-after(utils_dots:getPathInFolder($test_add:docId, $test_add:project_dir_path), "data/")
@@ -38,6 +48,11 @@ declare %unit:test function test_add:checkPaths() {
     unit:assert-equals($pathDocInDb, $pathDocInFolder)
 };
 
+(:  
+: Ce test permet de vérifier que le document est bien présent dans le registre des ressources DoTS du projet.
+: Il compare aussi la valeur de l'attribut @macCiteDepth avec le niveau de profondeur des éléments <citeStructure/> dans le fichier TEI
+: Il vérifie enfin que pour chaque collection parente du document, le nombre de documents dans ces collections correspond bien au nombre de document qu'il affiche (dans l'attribut @totalChildren).
+:)
 declare %unit:test function test_add:checkDocInRegister() {
   let $docEntry := db:get($test_add:dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $test_add:docId]
   let $maxCiteDepth := fragments:getMaxCiteDepth($test_add:document//tei:refsDecl, 0)
