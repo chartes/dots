@@ -30,15 +30,15 @@ declare %unit:test function test_add:checkDocumentNumber() {
 };
 
 (:  
-: Ce test permet de s'assurer que le document est bien présent dans la db BaseX
+: This test ensures that the document is properly present in the BaseX database
 :)
 declare %unit:test function test_add:checkDocInDb() {
   unit:assert($test_add:document)
 };
 
 (:  
-: Ce test permet de s'assurer que le chemin d'accès au document dans la db BaseX correspond bien au chemin du document dans le dossier de dépôt.
-: Ce test est important dans la mesure où le chemin rend compte de l'appartenance d'un document à une collection / sous-collection, etc.
+: This test ensures that the document's access path in the BaseX database matches the document's path in the repository folder.
+: This test is important because the path reflects the document's belonging to a collection, sub-collection, etc..
 : @todo vérifier que les collections / sous-collections existent bien ! Sinon, renvoyer un message d'erreur le signalant. => test à ajouter
 :)
 declare %unit:test function test_add:checkPaths() {
@@ -48,10 +48,18 @@ declare %unit:test function test_add:checkPaths() {
     unit:assert-equals($pathDocInDb, $pathDocInFolder)
 };
 
+declare %unit:test function test_add:checkParentIds() {
+  let $docEntry := db:get($test_add:dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $test_add:docId]
+  for $parentIds in tokenize($docEntry/@parentIds, " ")
+  let $collection := db:get($test_add:dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
+  return
+    unit:assert($collection, concat("La collection", $parentIds,  "n'existe pas."))
+};
+
 (:  
-: Ce test permet de vérifier que le document est bien présent dans le registre des ressources DoTS du projet.
-: Il compare aussi la valeur de l'attribut @macCiteDepth avec le niveau de profondeur des éléments <citeStructure/> dans le fichier TEI
-: Il vérifie enfin que pour chaque collection parente du document, le nombre de documents dans ces collections correspond bien au nombre de document qu'il affiche (dans l'attribut @totalChildren).
+: This test verifies that the document is registered in the project's DoTS resource registry.
+: It also compares the value of the @maxCiteDepth attribute with the depth level of the <citeStructure/> elements in the TEI file. Both values must be identical.
+: Finally, it verifies that for each parent collection of the document, the number of documents in these collections matches the number displayed in the @totalChildren attribute.
 :)
 declare %unit:test function test_add:checkDocInRegister() {
   let $docEntry := db:get($test_add:dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $test_add:docId]

@@ -5,6 +5,7 @@ xquery version "3.1";
 : @author École nationale des chartes - Philippe Pons
 : @since 2025-01-10
 : @version  1.0
+: @todo L'ajout d'un document dans une collection qui n'existe pas est possible. Comment remédier à cela ?
 :)
 
 module namespace add_doc = "backend/update/add_document";
