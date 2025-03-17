@@ -48,6 +48,7 @@ declare %private updating function add_doc:addDocToDB($dbName as xs:string, $doc
 :)
 declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:string, $docPath) {
   let $document := doc($docPath)/tei:TEI
+  let $projectName := G:getTopCollectionId($dbName)
   let $dtsResourceId := 
     if ($document/@xml:id)
     then $document/@xml:id
@@ -65,7 +66,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
         return
           (
             $collId)
-    else G:getTopCollectionId($dbName)
+    else $projectName
   return
     if ($document)
     then
@@ -77,13 +78,15 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
           (
             delete nodes $doc_in_register,
             insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-          resources:getDocumentMetadata($dbName, $document, $dtsResourceId)
+          resources:getDocumentMetadata($dbName, $document, $dtsResourceId),
+          resources:getDotsProjectName($projectName)
 }</document> after $doc_in_register
           )
         else
           (
             insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-            resources:getDocumentMetadata($dbName, $document, $dtsResourceId)
+            resources:getDocumentMetadata($dbName, $document, $dtsResourceId),
+            resources:getDotsProjectName($projectName)
   }</document> as last into $resources_register,
             add_doc:updateMaxCiteDepthCollection($dbName, $parentIds),
             add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)

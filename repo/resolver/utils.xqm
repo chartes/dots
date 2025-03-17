@@ -489,28 +489,28 @@ declare function utils:document($resourceId as xs:string, $ref as xs:string, $st
     if ($excludeFragments)
     then ()
     else
-    if ($ref)
-    then 
-      let $frag := utils:getFragment($project, $resourceId, map { "ref": $ref })
-      return
-        if ($frag)
-        then $frag
-        else
-          let $message := "Error 404 : Not Found"
-          return
-            web:error(400, $message)
-    else 
-      if ($start and $end)
+      if ($ref)
       then 
-        let $range := utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
+        let $frag := utils:getFragment($project, $resourceId, map { "ref": $ref })
         return
-          if ($range)
-          then $range
+          if ($frag)
+          then $frag
           else
             let $message := "Error 404 : Not Found"
             return
               web:error(400, $message)
-      else ()
+      else 
+        if ($start and $end)
+        then 
+          let $range := utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
+          return
+            if ($range)
+            then $range
+            else
+              let $message := "Error 404 : Not Found"
+              return
+                web:error(400, $message)
+        else ()
   (: let $treeResult :=
     if ($tree)
     then 
@@ -620,7 +620,7 @@ declare function utils:getMandatory($dbName as xs:string, $resource as element()
     for $t in $resource/dc:title[1]
     return
       normalize-space($t)
-  let $desc := normalize-space($resource/description)
+  let $desc := normalize-space($resource/dots:description)
   let $totalParents := 
     if ($resource/@parentIds) 
     then 

@@ -18,6 +18,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
+declare namespace dots = "http://www.tei-c.org/ns/1.0";
 
 (:~  
 : Cette fonction permet de construire un document XML de configuration (servant ensuite au routeur DoTS) à ajouter à la base de données XML.
@@ -55,7 +56,8 @@ declare updating function resources:createResourcesRegister($dbName as xs:string
       {resources:getMetadata()}
       <member>
         <collection dtsResourceId="{$topCollectionId}" totalChildren="{$countChild}">{
-          resources:getCollectionMetadata($dbName, $topCollectionId)
+          resources:getCollectionMetadata($dbName, $topCollectionId),
+          resources:getDotsProjectName($topCollectionId)
         }</collection>
         {
           resources:collections($dbName, $topCollectionId),
@@ -127,7 +129,8 @@ declare function resources:collections($bdd as xs:string, $idProject as xs:strin
           let $totalChildren := count(db:dir($bdd, $path))
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
-                resources:getCollectionMetadata($bdd, $path)
+                resources:getCollectionMetadata($bdd, $path),
+                resources:getDotsProjectName($idProject)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -187,7 +190,8 @@ declare %private function resources:document($bdd as xs:string, $idProject as xs
     if ($document)
     then
       <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-        resources:getDocumentMetadata($bdd, $document, $dtsResourceId)
+        resources:getDocumentMetadata($bdd, $document, $dtsResourceId),
+        resources:getDotsProjectName($idProject)
       }</document>
     else ()
 };
@@ -323,3 +327,9 @@ declare function resources:getCollectionMetadata($bdd as xs:string, $collection 
         )
     else <dc:title>{$collection}</dc:title>
 };
+
+declare function resources:getDotsProjectName($projectName as xs:string) {
+  <dots:dotsProjectId>{$projectName}</dots:dotsProjectId>
+};
+
+

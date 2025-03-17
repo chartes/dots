@@ -73,8 +73,8 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
         then 
           if ($fragment/@xml:id)
           then normalize-space($fragment/@xml:id)
-          else $node-id
-        else $node-id
+          else concat("r", $node-id)
+        else concat("r", $node-id)
       return
         (
           <fragment node-id="{$node-id}" ref="{$ref}" level="{$level}" maxCiteDepth="{$maxCiteDepth}" resourceId="{$resourceId}">{
