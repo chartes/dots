@@ -56,3 +56,18 @@ declare function utils_dots:getPathInFolder($docId as xs:string, $project_dir_pa
       return
         $docPath
 };
+
+(:~ This function allows finding the element <document/> with the $docId identifier in the resources register of the db $dbName
+: @param $dbName    database name
+: @param $docId    document identifier
+: @return <document/> element
+:)
+declare function utils_dots:getDocInRegister($dbName as xs:string, $docId as xs:string) {
+  db:get($dbName, $G:resourcesRegister)//dots:member/dots:document[@dtsResourceId = $docId]
+};
+
+declare function utils_dots:getParentIds($dbName as xs:string, $docInRegister as element(dots:document)) {
+  for $parentId in tokenize($docInRegister/@parentIds, " ")
+  return
+    $parentId
+};

@@ -1,0 +1,108 @@
+xquery version "4.0";
+
+
+import module namespace G = "globals";
+import module namespace utils_dots = "utils_dots";
+
+declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+declare namespace dc = "http://purl.org/dc/elements/1.1/";
+
+declare variable $dbName external;
+declare variable $docId external;
+
+(:~~~~~~~~~
+: Unit Tests 
+~~~~~~~~~~:)
+
+declare %unit:test function local:checkNoDoc() {
+  let $doc := 
+    if (db:get($dbName)/tei:TEI[@xml:id = $docId] or db:get($dbName)/node()[ends-with(db:path(.), $docId)])
+    then false()
+    else true()
+  return 
+    unit:assert($doc, concat("Le document TEI ", $docId, " est toujours présent dans la db ", $dbName, "."))
+};
+
+declare %unit:test function local:checkNoDocInRegister() {
+  let $docInReg := 
+    if (db:get($dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $docId]) 
+    then false()
+    else true()
+  return
+    unit:assert($docInReg, concat("Le document ", $docId, " est toujours mentionné dans le registre des ressources DoTS de la db ", $dbName, "."))
+};
+
+declare %unit:test function local:checkNoFragInRegister() {
+  let $fragInReg := 
+    if (db:get($dbName, $G:fragmentsRegister)//dots:fragment[@resourceId = $docId]) 
+    then false()
+    else true()
+  return
+    unit:assert($fragInReg, concat("Les fragments du document TEI ", $docId, " sont toujours présents dans le registre des fragments DoTS de la db ", $dbName))
+};
+
+declare %unit:test function local:checkTotalChildren() {
+  let $resourcesRegister := db:get($dbName, $G:resourcesRegister)
+  return
+    for $coll in $resourcesRegister//dots:collection[@dtsResourceId="ENCPOS_1972"]
+    let $id := $coll/@dtsResourceId
+    let $totalChildren := xs:integer($coll/@totalChildren)
+    let $count := count($resourcesRegister//dots:document[@parentIds = $id])
+    return
+      unit:assert-equals($totalChildren, $count, concat("La valeur de @totalChildren (", $totalChildren, ") de la collection ", $id, " ne coïncide pas avec le nombre de documents (", $count, ") appartenant à cette collection "))
+};
+
+local:checkTotalChildren()
+
+(: declare %unit:test function test_add:checkDocumentNumber() {
+  let $countTEIFile := count(db:get($test_add:dbName)/tei:TEI)
+  let $countDocInRegister := count(db:get($test_add:dbName, $G:resourcesRegister)//dots:document)
+  return
+    unit:assert-equals($countTEIFile, $countDocInRegister)
+};
+
+(:  
+: This test ensures that the document is properly present in the BaseX database
+:)
+declare %unit:test function test_add:checkDocInDb() {
+  unit:assert($test_add:document)
+};
+
+(:  
+: This test ensures that the document's access path in the BaseX database matches the document's path in the repository folder.
+: This test is important because the path reflects the document's belonging to a collection, sub-collection, etc..
+:)
+declare %unit:test function test_add:checkPaths() {
+  let $pathDocInDb := utils_dots:findPathDoc($test_add:dbName, $test_add:docId)
+  let $pathDocInFolder := substring-after(utils_dots:getPathInFolder($test_add:docId, $test_add:project_dir_path), "data/")
+  return
+    unit:assert-equals($pathDocInDb, $pathDocInFolder)
+};
+
+(:  
+: This test verifies that the document is registered in the project's DoTS resource registry.
+: It also compares the value of the @maxCiteDepth attribute with the depth level of the <citeStructure/> elements in the TEI file. Both values must be identical.
+: Finally, it verifies that each parent collection exists in the resources register and that, for each parent collection of the document, the number of documents within these collections matches the value displayed in the @totalChildren attribute.
+:)
+declare %unit:test function test_add:checkDocInRegister() {
+  let $docEntry := db:get($test_add:dbName, $G:resourcesRegister)//dots:document[@dtsResourceId = $test_add:docId]
+  let $maxCiteDepth := fragments:getMaxCiteDepth($test_add:document//tei:refsDecl, 0)
+  return
+    (
+      unit:assert($docEntry/dc:title),
+      unit:assert-equals(xs:integer($docEntry/@maxCiteDepth), xs:integer($maxCiteDepth)),
+      for $collectionId in tokenize($docEntry/@parentIds, " ")
+      let $collection := db:get($test_add:dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $collectionId]
+      let $totalChildren := $collection/@totalChildren
+      let $countChildren := count(db:get($test_add:dbName, $G:resourcesRegister)//node()[contains(@parentIds, $collectionId)])
+      return
+        (
+          unit:assert($collection, concat("La collection '", $collectionId,  "' n'existe pas.")),
+          unit:assert-equals(xs:integer($totalChildren), $countChildren)
+        )
+    )
+}; :)
+
+
+
