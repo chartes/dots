@@ -512,28 +512,28 @@ declare function utils:document(
     if ($excludeFragments)
     then ()
     else
-    if ($ref)
-    then 
-      let $frag := utils:getFragment($project, $resourceId, map { "ref": $ref })
-      return
-        if ($frag)
-        then $frag
-        else
-          let $message := "Error 404 : Not Found"
-          return
-            web:error(400, $message)
-    else 
-      if ($start and $end)
+      if ($ref)
       then 
-        let $range := utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
+        let $frag := utils:getFragment($project, $resourceId, map { "ref": $ref })
         return
-          if ($range)
-          then $range
+          if ($frag)
+          then $frag
           else
             let $message := "Error 404 : Not Found"
             return
               web:error(400, $message)
-      else ()
+      else 
+        if ($start and $end)
+        then 
+          let $range := utils:getDocSequenceInRange($project, $resourceId, $start, $end, $tree, $filter)
+          return
+            if ($range)
+            then $range
+            else
+              let $message := "Error 404 : Not Found"
+              return
+                web:error(400, $message)
+        else ()
   (: let $treeResult :=
     if ($tree)
     then 
@@ -620,7 +620,7 @@ declare function utils:excludeFragments(
               else $child
           else $child
       return
-        if ($childs) then $childs else ()
+        $childs
   }</dts:wrapper>
   </TEI>
 };
@@ -647,7 +647,7 @@ declare function utils:getMandatory(
 ) as element(pair)* {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
-  let $desc := normalize-space($resource/description)
+  let $desc := normalize-space($resource/*:description)
   let $totalParents := count(tokenize($resource/@parentIds))
   let $totalChildren := if ($type = ("resource", "Resource")) then (
     0
@@ -658,7 +658,7 @@ declare function utils:getMandatory(
     <pair name="collection">{concat("/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
     <pair name="document">{concat("/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
     <pair name="navigation">{concat("/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>,
-    let $downloads := $resource/dots:download
+    let $downloads := $resource/*:download
     where $downloads
     return
       <pair name="download" type="object">{
@@ -675,7 +675,7 @@ declare function utils:getMandatory(
   return (
     <pair name="@id">{$resourceId}</pair>,
     <pair name="@type">{functx:capitalize-first($type)}</pair>,
-    <pair name="title">{normalize-space($resource/dc:title[1])}</pair>,
+    <pair name="title">{normalize-space($resource/*:title[1])}</pair>,
     if ($desc) then <pair name="description">{$desc}</pair>,
     <pair name="totalItems" type="number">{if ($nav) then $totalParents else $totalChildren}</pair>,
     <pair name="totalChildren" type="number">{$totalChildren}</pair>,

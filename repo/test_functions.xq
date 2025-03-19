@@ -9,7 +9,7 @@ declare variable $resourceId := "cartulaires";
 : Exemple: `http://localhost:8080/api/dts/collection?id=cartulaires`
 : This is the response whose response time seems quite long to us.
 :)
-utils:collectionById($resourceId, "", "") => prof:track(),
+(: utils:collectionById($resourceId, "", "") => prof:track(), :)
 
 (:  
 : It seems to me that the calculation of the variables `$member`, `$mandatoryMember`, `$dublincoreMember`, and `$extensionsMember` is the most time-consuming.
@@ -18,22 +18,22 @@ utils:collectionById($resourceId, "", "") => prof:track(),
 let $resource := utils:getResource($projectName, $resourceId)
 return
   (
-    utils:getDbName($resourceId) => prof:track(),
-    $resource => prof:track(),
-    utils:getMandatory($projectName, $resource, "") => prof:track(),
-    utils:getResourceType($resource) => prof:track(),
-    utils:getDublincore($resource) => prof:track(),
-    utils:getExtensions($resource) => prof:track(),
+    utils:getDbName($resourceId),
+    $resource,
+    utils:getMandatory($projectName, $resource, "") ,
+    utils:getResourceType($resource),
+    utils:getDublincore($resource),
+    utils:getExtensions($resource),
     for $member in utils:getChildMembers($projectName, $resourceId, "") 
     let $mandatoryMember := utils:getMandatory($projectName, $member, "") 
     let $dublincoreMember := utils:getDublincore($member) 
     let $extensionsMember := utils:getExtensions($member)
     return 
       (
-        $member => prof:track(),
-        $mandatoryMember => prof:track(),
-        $dublincoreMember => prof:track(),
-        $extensionsMember  => prof:track()
+        $member,
+        $mandatoryMember,
+        $dublincoreMember,
+        $extensionsMember
       )
 )
 
