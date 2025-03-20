@@ -1,6 +1,7 @@
 xquery version '3.0' ;
 
 import module namespace utils = "resolver/utils";
+import module namespace utils_dots = "utils_dots";
 
 declare variable $projectName := "cartulaires";
 declare variable $resourceId := "cartulaires";
@@ -15,10 +16,10 @@ declare variable $resourceId := "cartulaires";
 : It seems to me that the calculation of the variables `$member`, `$mandatoryMember`, `$dublincoreMember`, and `$extensionsMember` is the most time-consuming.
 : (The list of functions below is not exhaustive. Other functions are called by `utils:collectionById()`, but they don't seem to cause any issues.) 
 :)
-let $resource := utils:getResource($projectName, $resourceId)
+let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
 return
   (
-    utils:getDbName($resourceId),
+    utils_dots:getDbName($resourceId),
     $resource,
     utils:getMandatory($projectName, $resource, "") ,
     utils:getResourceType($resource),

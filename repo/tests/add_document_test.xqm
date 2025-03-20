@@ -13,8 +13,8 @@ declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
 declare variable $test_add:docId external;
 declare variable $test_add:project_dir_path external;
-declare variable $test_add:dbName := utils_dots:findDbName($test_add:docId);
-declare variable $test_add:document := utils:getDocument($test_add:dbName, $test_add:docId);
+declare variable $test_add:dbName := utils_dots:getDbName($test_add:docId);
+declare variable $test_add:document := utils_dots:findPathDoc($test_add:dbName, $test_add:docId);
 
 (:~~~~~~~~~
 : Unit Tests 

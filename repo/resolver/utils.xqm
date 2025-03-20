@@ -10,6 +10,7 @@ xquery version "3.1";
 module namespace utils = "resolver/utils";
 
 import module namespace G = "globals";
+import module namespace utils_dots = "utils_dots";
 import module namespace functx = 'http://www.functx.com';
 
 declare namespace dots = "https://github.com/chartes/dots/";
@@ -98,10 +99,10 @@ declare function utils:collections() as element(json) {
 declare function utils:collectionById(
   $resourceId as xs:string,
   $nav as xs:string,
-  $filter as xs:string
+  $filter
 ) as element(json) {
-  let $projectName := utils:getDbName($resourceId)
-  let $resource := utils:getResource($projectName, $resourceId)
+  let $projectName := utils_dots:getDbName($resourceId)
+  let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
   return
     <json type="object">{
       let $mandatory := utils:getMandatory($projectName, $resource, $nav)
@@ -113,7 +114,7 @@ declare function utils:collectionById(
         for $member in (
           if ($nav = "parents") then (
             for $parent in tokenize(normalize-space($resource/@parentIds))
-            return utils:getResource($projectName, $parent) 
+            return utils_dots:getDocInRegister($projectName, $parent) 
           ) else (
             utils:getChildMembers($projectName, $resourceId, $filter)
           )
@@ -167,7 +168,7 @@ declare function utils:navigation(
   $start as xs:string,
   $end as xs:string,
   $tree as xs:string,
-  $filter as xs:string,
+  $filter,
   $down as xs:integer
 ) {
   if ($ref)
@@ -194,10 +195,10 @@ declare function utils:idNavigation(
   $resourceId as xs:string,
   $down,
   $tree,
-  $filter as xs:string
+  $filter
 ) {
-  let $projectName := utils:getDbName($resourceId) 
-  let $resource := utils:getResource($projectName, $resourceId)
+  let $projectName := utils_dots:getDbName($resourceId) 
+  let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
   let $maxCiteDepth := if ($resource/@maxCiteDepth != "") then xs:integer($resource/@maxCiteDepth) else 0
   let $members :=
     for $fragment in utils:getFragment($projectName, $resourceId, map {"id": $resourceId})
@@ -276,7 +277,7 @@ declare function utils:getResourcesInfo(
           else 0
         }</pair>
         {
-          let $document := utils:getDocument($projectName, $resourceId, false())
+          let $document := utils_dots:findPathDoc($projectName, $resourceId, false())
           let $refsDecl := $document//*:refsDecl
           where $refsDecl
           return utils:getCitationTrees($refsDecl)
@@ -343,10 +344,10 @@ declare function utils:refNavigation(
   $resourceId as xs:string,
   $ref as xs:string,
   $down as xs:integer,
-  $filter as xs:string
+  $filter
 ) {
-  let $projectName := utils:getDbName($resourceId)
-  let $resource := utils:getResource($projectName, $resourceId)
+  let $projectName := utils_dots:getDbName($resourceId)
+  let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
   let $fragment := utils:getFragment($projectName, $resourceId, map { "ref": $ref })
   return
@@ -433,10 +434,10 @@ declare function utils:rangeNavigation(
   $end as xs:string,
   $down as xs:integer,
   $tree,
-  $filter as xs:string
+  $filter
 ) {
-  let $projectName := utils:getDbName($resourceId)
-  let $resource := utils:getResource($projectName, $resourceId)
+  let $projectName := utils_dots:getDbName($resourceId)
+  let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
   let $url := concat("/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
   let $frag1 := utils:getFragment($projectName, $resourceId, map { "ref": $start })
   let $fragLast := utils:getFragment($projectName, $resourceId, map { "ref": $end })
@@ -503,11 +504,11 @@ declare function utils:document(
   $start as xs:string,
   $end as xs:string,
   $tree as xs:string,
-  $filter as xs:string,
-  $excludeFragments as xs:boolean
+  $filter,
+  $excludeFragments as xs:boolean := false()
 ) {
-  let $project := utils:getDbName($resourceId)
-  let $doc := utils:getDocument($project, $resourceId)
+  let $project := utils_dots:getDbName($resourceId)
+  let $doc := utils_dots:findPathDoc($project, $resourceId)
   let $fragments := 
     if ($excludeFragments)
     then ()
@@ -667,7 +668,7 @@ declare function utils:getMandatory(
       }</pair>
   )
   let $citationTrees := if ($type = ("resource", "Resource")) then (
-    let $document := utils:getDocument($dbName, $resourceId, false())
+    let $document := utils_dots:findPathDoc($dbName, $resourceId, false())
     let $refsDecl := $document//*:refsDecl
     where $refsDecl
     return utils:getCitationTrees($refsDecl)
@@ -675,7 +676,7 @@ declare function utils:getMandatory(
   return (
     <pair name="@id">{$resourceId}</pair>,
     <pair name="@type">{functx:capitalize-first($type)}</pair>,
-    <pair name="title">{normalize-space($resource/*:title[1])}</pair>,
+    <pair name="title">{normalize-space($resource/dc:title[1])}</pair>,
     if ($desc) then <pair name="description">{$desc}</pair>,
     <pair name="totalItems" type="number">{if ($nav) then $totalParents else $totalChildren}</pair>,
     <pair name="totalChildren" type="number">{$totalChildren}</pair>,
@@ -751,7 +752,6 @@ declare function utils:getDublincore(
         else
           if ($key)
           then utils:getStringJson($elementName, $metadata)
-          else ()
     }</pair>
 };
 
@@ -774,6 +774,7 @@ declare function utils:getExtensions(
       for $metadata in $extensions
       let $key := $metadata/name()
       where $key != "download"
+      where $key != "description"
       let $prefix := in-scope-prefixes($metadata)[1]
       where $prefix != "dc"
       where $key != ""
@@ -889,29 +890,18 @@ declare function utils:getContext(
   }</pair>
 };
 
-(:~  
- : Cette fonction permet de retrouver le nom de la base de données BaseX à laquelle appartient la resource $resourceId
- : @return réponse XML
- : @param $resourceId chaîne de caractère identifiant une resource
- :)
-declare function utils:getDbName(
-  $resourceId
-) {
-  normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resourceId]/@dbName)
-};
-
 (:~
  : Cette fonction permet de retrouver, dans la base de données BaseX $projectName, dans le registre DoTS "dots/resources_register.xml" la resource $resourceId
  : @return réponse XML
  : @param $projectName chaîne de caratère permettant de retrouver la base de données BaseX concernée
  : @param $resourceId chaîne de caractère identifiant une resource
  :)
-declare function utils:getResource(
+(: declare function utils:getResource(
   $projectName as xs:string,
   $resourceId as xs:string
 ) {
   db:get($projectName, $G:resourcesRegister)//dots:member/node()[@dtsResourceId = $resourceId]
-};
+}; :)
 
 (:~  
  : Cette fonction permet de retrouver, dans la base de données BaseX $projectName, dans le registre DoTS "dots/fragments_register.xml" le(s) fragment(s)  de la resource $resourceId
@@ -954,7 +944,7 @@ declare function utils:getFragmentsInRange(
   $start,
   $end,
   $down as xs:integer,
-  $filter as xs:string
+  $filter
 ) {
   let $firstFragment := utils:getFragment($projectName, $resourceId, map { "ref": $start })
   let $lastFragment := utils:getFragment($projectName, $resourceId, map { "ref": $end })
@@ -1030,7 +1020,7 @@ declare function utils:getDocSequenceInRange(
   $start,
   $end,
   $tree,
-  $filter as xs:string
+  $filter
 ) {
   let $firstFragment := utils:getFragment($projectName, $resourceId, map { "ref": $start })
   let $lastFragment := utils:getFragment($projectName, $resourceId, map { "ref": $end })
@@ -1079,7 +1069,7 @@ declare function utils:getResourceType(
 declare function utils:getChildMembers(
   $projectName as xs:string,
   $resourceId as xs:string,
-  $filter as xs:string
+  $filter
 ) {
   let $members :=
     for $child in db:get($projectName, $G:resourcesRegister)//dots:member/node()[contains(@parentIds, $resourceId)]
@@ -1103,7 +1093,7 @@ declare function utils:getChildMembers(
 
 declare function utils:filters(
   $elements as element()*,
-  $filter as xs:string
+  $filter
 ) as element()* {
   let $numberOfMatch := functx:number-of-matches($filter, "=")
   return if ($numberOfMatch = 1) then (
@@ -1131,26 +1121,4 @@ declare function utils:getResultFilter(
   for $element in $elements
   where $element/node()[name() = $key] = $value
   return $element
-};
-
-(:~
- : Retrieves the document with the specified id.
- : @param $dbName name of database
- : @param $resourceId resource ID
- : @param $strip strip processing instructions (by default true)
- :)
-declare function utils:getDocument(
-  $dbName as xs:string,
-  $resourceId as xs:string,
-  $strip as xs:boolean := true()
-) as document-node() {
-  let $path := head((
-    db:get($dbName)/*:TEI[@xml:id = $resourceId] ! db:path(.)
-  ) otherwise (
-    db:get($dbName)/node() ! db:path(.)[ends-with(., $resourceId)]
-  ))
-  let $doc := db:get($dbName, $path)
-  return if($strip) then $doc update {
-    delete nodes //processing-instruction()[name() = "xml-stylesheet"]
-  } else $doc
 };

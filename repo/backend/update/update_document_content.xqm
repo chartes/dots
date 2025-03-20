@@ -25,9 +25,9 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @return TEI document
 :)
 declare function update_doc_ctt:findDocInDb($docId) {
-  let $db := utils_dots:findDbName($docId)
+  let $db := utils_dots:getDbName($docId)
   return
-    utils:getDocument($db, $docId)
+    utils_dots:findPathDoc($db, $docId)
 };
 
 (:~  This function allows checking if the document $docId in the db has DoTS identifiers
@@ -98,7 +98,7 @@ declare updating function update_doc_ctt:handleUpdate($docId as xs:string, $proj
 : @return replace fragments[@dtsResourceId=$docId] into dots/fragments_register.xml ; replace the attribute @maxCiteDepth in dots/resources_register.xml
 :)
 declare updating function update_doc_ctt:updateRegisters($docId, $project_dir_path) {
-  let $dbName := utils_dots:findDbName($docId)
+  let $dbName := utils_dots:getDbName($docId)
   let $docInDb := update_doc_ctt:findDocInDb($docId)/tei:TEI
   let $docInFolder := utils_dots:findDocInFolder(concat($project_dir_path, utils_dots:getPathInFolder($docId, $project_dir_path)))
   let $compareDoc := update_doc_ctt:compareDocs($docInFolder, $docInDb)
