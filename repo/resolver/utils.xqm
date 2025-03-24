@@ -70,7 +70,9 @@ declare function utils:collections() as element(json) {
         if ($resource) 
         then 
           <item type="object">{
-            utils:getMandatory("", $resource, "")
+            utils:getMandatory("", $resource, ""),
+            utils:getDublincore($resource),
+            utils:getExtensions($resource)
           }</item> 
         else ()
     }</pair>
