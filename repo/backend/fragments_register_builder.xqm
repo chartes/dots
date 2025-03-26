@@ -24,24 +24,25 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @param $bdd chaîne de caractères qui correspond au nom de la base de données
 :)
 declare updating function fragments:createFragmentsRegister($bdd) {
-  if (db:exists($bdd, $G:fragmentsRegister))
-  then 
-    let $register := db:get($bdd, $G:fragmentsRegister)
-    let $lastUpdate := $register//dct:modified
-    let $members := $register//member
-    return (
-      replace value of node $lastUpdate with current-dateTime(),
-      replace node $members with <member>{fragments:getFragments($bdd)}</member>
-    )
-  else
-    let $fragments := fragments:getFragments($bdd)
-    where $fragments
-    let $content := 
-      <fragmentsRegister>{
-        resources:getMetadata(),
-        <member>{$fragments}</member>
-      }</fragmentsRegister>
-    return db:add($bdd, $content, $G:fragmentsRegister)
+  let $fragments := fragments:getFragments($bdd)
+  where $fragments
+  return
+    if (db:exists($bdd, $G:fragmentsRegister))
+    then 
+      let $register := db:get($bdd, $G:fragmentsRegister)
+      let $lastUpdate := $register//dct:modified
+      let $members := $register//member
+      return (
+        replace value of node $lastUpdate with current-dateTime(),
+        replace node $members with <member>{$fragments}</member>
+      )
+    else
+      let $content := 
+        <fragmentsRegister>{
+          resources:getMetadata(),
+          <member>{$fragments}</member>
+        }</fragmentsRegister>
+      return db:add($bdd, $content, $G:fragmentsRegister)
 };
 
 declare %private function fragments:getFragments($bdd as xs:string) {
