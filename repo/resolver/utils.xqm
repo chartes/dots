@@ -356,7 +356,6 @@ declare function utils:refNavigation(
     if (not($fragment))
     then web:error(404, "Error 404 : Not Found")
     else
-
   let $level := xs:integer($fragment/@level[1])
   let $maxCiteDepth := xs:integer($fragment/@maxCiteDepth)
   let $followingFrag := xs:integer($fragment/following::dots:fragment[@level = $level][@resourceId = $resourceId][1]/@node-id)
@@ -670,9 +669,9 @@ declare function utils:getMandatory(
       }</pair>
   )
   let $citationTrees := if ($type = ("resource", "Resource")) then (
-    let $document := utils_dots:findPathDoc($dbName, $resourceId, false())
-    let $refsDecl := $document//*:refsDecl
-    where $refsDecl
+  let $document := utils_dots:findPathDoc($dbName, $resourceId, false())
+  let $refsDecl := $document//*:refsDecl
+  where $refsDecl
     return utils:getCitationTrees($refsDecl)
   )
   return (

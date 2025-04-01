@@ -73,7 +73,7 @@ declare function local:handleCiteStructure($bdd as xs:string, $resource as eleme
   return
     if ($xpath)
     then
-      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then $resource//db:get-id($bdd, $parentNodeId) else $resource})
+      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then db:get-id($bdd, $parentNodeId) else $resource})
       let $node-id := db:node-id($fragment)
       let $ref :=
         if ($use = "@xml:id")

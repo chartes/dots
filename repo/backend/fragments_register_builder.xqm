@@ -19,6 +19,10 @@ declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~ 
+: The fragments registry built by the functions below optimizes DTS API responses, particularly for the Navigation endpoint. It provides a precomputed hierarchical structure of document fragments, enabling efficient exploration and retrieval of citable passages.
+:)
+
+(:~ 
 : Cette fonction permet de construire ou mettre à jour documentRegister.xml qui liste les fragments disponibles dans les documents
 : @return document XML à ajouter à la db $bdd
 : @param $bdd chaîne de caractères qui correspond au nom de la base de données
@@ -45,6 +49,11 @@ declare updating function fragments:createFragmentsRegister($bdd) {
       return db:add($bdd, $content, $G:fragmentsRegister)
 };
 
+(:~ 
+: This function retrieves all TEI documents stored in the specified database and processes their citation structures (if available). It determines the maximum citation depth and calls local:handleCiteStructure recursively to generate a structured representation of the fragments.
+: @param $bdd (xs:string): The name of the database to query.
+: @return A sequence of <fragment> elements, each representing a citational unit extracted from the TEI documents
+:)
 declare %private function fragments:getFragments($bdd as xs:string) {
   for $resource in db:get($bdd)/tei:TEI
   where $resource//tei:citeStructure
@@ -57,6 +66,19 @@ declare %private function fragments:getFragments($bdd as xs:string) {
   return fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
 };
 
+(:~ 
+: This function processes a given <tei:citeStructure> element, extracting fragment information and generating structured output. It evaluates XPath expressions dynamically and recursively processes nested structures.
+: @param $bdd (xs:string): The database name.
+: @param $resource (element()): The TEI document containing the citation structure.
+: @param $parentNodeRef (xs:string or empty): The reference of the parent node.
+: @param $citeStructure (element()): The <tei:citeStructure> element to process.
+: @param $level (xs:integer): The current depth level in the citation hierarchy.
+: @param $resourceId (xs:string): The identifier of the TEI resource.
+: @param $parentRef (xs:string or empty): The reference to the parent node (if applicable).
+: @param $parentNodeId (xs:string or empty): The node ID of the parent (if applicable).
+: @param $maxCiteDepth (xs:integer): The maximum citation depth, as determined by local:getMaxCiteDepth
+: @return a sequence of <fragment> elements, each representing a citation unit, with attributes for hierarchy and reference management.
+:)
 declare function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
   let $xpath := normalize-space($citeStructure/@match)
   let $query := concat('
@@ -67,7 +89,7 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
   return
     if ($xpath)
     then
-      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then $resource//db:get-id($bdd, $parentNodeId) else $resource})
+      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then db:get-id($bdd, $parentNodeId) else $resource})
       let $node-id := db:node-id($fragment)
       let $ref :=
         if ($use = "@xml:id")
@@ -135,6 +157,12 @@ declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref 
     $metadatas
 };
 
+(:~ 
+: This recursive function calculates the maximum depth of nested <tei:citeStructure> elements within a <tei:refsDecl>.
+: @param $node (element()): The root <tei:refsDecl> element or a <tei:citeStructure> node.
+: @param $n (xs:integer): The current depth level, initially set to 0.
+: @return xs:integer: The maximum citation depth found in the document.
+:)
 declare function fragments:getMaxCiteDepth($node, $n as xs:integer) {
   let $levels :=
     for $level in $node

@@ -13,6 +13,7 @@ xquery version "3.1";
 module namespace dots.lib = "backend/create_custom_collections";
 
 import module namespace G = "globals";
+import module namespace resources = "backend/resources_register_builder";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -58,7 +59,10 @@ declare %private function dots.lib:collectionsInResourcesRegister($record as ele
   return
     <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parentIds}">
       <dc:title>{normalize-space($title)}</dc:title>
-      {$metadata}
+      {
+        $metadata,
+        resources:getDotsProjectName($projectId)
+      }
     </collection>
 };
 
