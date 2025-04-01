@@ -23,35 +23,25 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 :)
 
 (:~ 
-: Cette fonction permet de construire ou mettre à jour documentRegister.xml qui liste les fragments disponibles dans les documents
-: @return document XML à ajouter à la db $bdd
-: @param $bdd chaîne de caractères qui correspond au nom de la base de données
+: This function generates and stores a fragment registry for the specified database. It collects fragment information from fragments:getFragments and combines it with metadata before saving it as a new document in the database.
+: @param $bdd (xs:string) The name of the database to query.
+: @return A new document named fragments_register.xml is added to the database
 :)
 declare updating function fragments:createFragmentsRegister($bdd) {
   let $fragments := fragments:getFragments($bdd)
   where $fragments
   return
-    if (db:exists($bdd, $G:fragmentsRegister))
-    then 
-      let $register := db:get($bdd, $G:fragmentsRegister)
-      let $lastUpdate := $register//dct:modified
-      let $members := $register//member
-      return (
-        replace value of node $lastUpdate with current-dateTime(),
-        replace node $members with <member>{$fragments}</member>
-      )
-    else
-      let $content := 
-        <fragmentsRegister>{
-          resources:getMetadata(),
-          <member>{$fragments}</member>
-        }</fragmentsRegister>
-      return db:add($bdd, $content, $G:fragmentsRegister)
+    let $content := 
+      <fragmentsRegister>{
+        resources:getMetadata(),
+        <member>{$fragments}</member>
+      }</fragmentsRegister>
+    return db:add($bdd, $content, $G:fragmentsRegister)
 };
 
 (:~ 
 : This function retrieves all TEI documents stored in the specified database and processes their citation structures (if available). It determines the maximum citation depth and calls local:handleCiteStructure recursively to generate a structured representation of the fragments.
-: @param $bdd (xs:string): The name of the database to query.
+: @param $bdd (xs:string) The name of the database to query.
 : @return A sequence of <fragment> elements, each representing a citational unit extracted from the TEI documents
 :)
 declare %private function fragments:getFragments($bdd as xs:string) {
@@ -68,15 +58,15 @@ declare %private function fragments:getFragments($bdd as xs:string) {
 
 (:~ 
 : This function processes a given <tei:citeStructure> element, extracting fragment information and generating structured output. It evaluates XPath expressions dynamically and recursively processes nested structures.
-: @param $bdd (xs:string): The database name.
-: @param $resource (element()): The TEI document containing the citation structure.
-: @param $parentNodeRef (xs:string or empty): The reference of the parent node.
-: @param $citeStructure (element()): The <tei:citeStructure> element to process.
-: @param $level (xs:integer): The current depth level in the citation hierarchy.
-: @param $resourceId (xs:string): The identifier of the TEI resource.
-: @param $parentRef (xs:string or empty): The reference to the parent node (if applicable).
-: @param $parentNodeId (xs:string or empty): The node ID of the parent (if applicable).
-: @param $maxCiteDepth (xs:integer): The maximum citation depth, as determined by local:getMaxCiteDepth
+: @param $bdd (xs:string) The database name.
+: @param $resource (element()) The TEI document containing the citation structure.
+: @param $parentNodeRef (xs:string or empty) The reference of the parent node.
+: @param $citeStructure (element()) The <tei:citeStructure> element to process.
+: @param $level (xs:integer) The current depth level in the citation hierarchy.
+: @param $resourceId (xs:string) The identifier of the TEI resource.
+: @param $parentRef (xs:string or empty) The reference to the parent node (if applicable).
+: @param $parentNodeId (xs:string or empty) The node ID of the parent (if applicable).
+: @param $maxCiteDepth (xs:integer) The maximum citation depth, as determined by local:getMaxCiteDepth
 : @return a sequence of <fragment> elements, each representing a citation unit, with attributes for hierarchy and reference management.
 :)
 declare function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
@@ -128,6 +118,12 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
         )
 };
 
+(:~  
+: This function retrieves metadata associated with a specific fragment in a given database. It looks up metadata mappings, cross-references CSV-based data, and constructs relevant metadata elements.
+: @param $bdd (xs:string) The name of the database where the fragment is stored.
+: @param $ref (xs:string) The reference identifier of the fragment whose metadata needs to be retrieved.
+: @return A sequence of metadata elements specific to the requested fragment
+:)
 declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref as xs:string) {
   let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
@@ -159,8 +155,8 @@ declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref 
 
 (:~ 
 : This recursive function calculates the maximum depth of nested <tei:citeStructure> elements within a <tei:refsDecl>.
-: @param $node (element()): The root <tei:refsDecl> element or a <tei:citeStructure> node.
-: @param $n (xs:integer): The current depth level, initially set to 0.
+: @param $node (element()) The root <tei:refsDecl> element or a <tei:citeStructure> node.
+: @param $n (xs:integer) The current depth level, initially set to 0.
 : @return xs:integer: The maximum citation depth found in the document.
 :)
 declare function fragments:getMaxCiteDepth($node, $n as xs:integer) {
