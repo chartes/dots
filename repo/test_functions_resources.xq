@@ -1,13 +1,4 @@
-xquery version "3.1";
-
-(:~  
-: The resources registry built by the functions below optimizes DTS API responses. It provides a precomputed hierarchical structure of collections and documents, facilitating efficient navigation and retrieval of textual resources. By organizing metadata and structural information in advance, it enhances the responsiveness and interoperability of the DTS implementation.
-: @author École nationale des chartes - Philippe Pons
-: @since 2023-05-25
-: @version  1.0
-: @todo pour l'ajout de @citeType: utiliser la fonction fn:normalize-unicode() pour enlever les diacritics
-:)
-module namespace resources = "backend/resources_register_builder";
+xquery version '4.0' ;
 
 import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
@@ -18,7 +9,9 @@ declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace dots = "http://www.tei-c.org/ns/1.0";
+
+declare variable $dbName := "cartulaires"; (: other possible values with your data :    "encpos", "theater", "cid" :)
+declare variable $idProject := "cartulaires"; (: other possible values with your data : "ENCPOS", "theater", "cid" :)
 
 (:~  
 : This function generates the document resources_register.xml document that inventories all collections and documents in the given database. It also adds metadata and invokes the fragment registry creation. 
@@ -26,7 +19,7 @@ declare namespace dots = "http://www.tei-c.org/ns/1.0";
 : @param $idProject (xs:string) The identifier of the project.
 : @return An XML document representing the resources register is stored in the database.
 :)
-declare updating function resources:createResourcesRegister($dbName as xs:string, $idProject as xs:string) {
+declare function local:createResourcesRegister($dbName as xs:string, $idProject as xs:string) {
   let $countChild := 
     let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
     let $count := count(db:dir($dbName, ""))
@@ -51,30 +44,28 @@ declare updating function resources:createResourcesRegister($dbName as xs:string
               namespace {"dc"} {"http://purl.org/dc/elements/1.1/"}
             )
       }
-      {resources:getMetadata()}
+      {local:getMetadata()}
       <member>
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">{
-          resources:getCollectionMetadata($dbName, $idProject),
-          resources:getDotsProjectName($idProject)
+          local:getCollectionMetadata($dbName, $idProject)
         }</collection>
         {
-          resources:collections($dbName, $idProject),
-          resources:document($dbName, $idProject)
+          local:collections($dbName, $idProject),
+          local:document($dbName, $idProject)
         }
       </member>
     </resourcesRegister>
   return
-    (
-      db:put($dbName, $content, $G:resourcesRegister),
-      fragments:createFragmentsRegister($dbName)
-    )
+    $content(: (
+      db:put($dbName, $content, $G:resourcesRegister)
+    ) :)
 };
 
 (:~ 
 : Generates a <metadata> element with creation and modification timestamps.
 : @return An XML fragment containing <dct:created> and <dct:modified> elements
 :)
-declare function resources:getMetadata() {
+declare function local:getMetadata() {
   <metadata>
     <dct:created>{current-dateTime()}</dct:created>
     <dct:modified>{current-dateTime()}</dct:modified>
@@ -87,7 +78,7 @@ declare function resources:getMetadata() {
 : @param $idProject (xs:string) The identifier of the project.
 : @return A sequence of <collection> elements
 :)
-declare function resources:collections($dbName as xs:string, $idProject as xs:string) {
+declare function local:collections($dbName as xs:string, $idProject as xs:string) {
   let $list_collections :=
     let $collections :=
       for $document in db:get($dbName)/node()
@@ -115,8 +106,7 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
           let $totalChildren := count(db:dir($dbName, $path))
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
-                resources:getCollectionMetadata($dbName, $path),
-                resources:getDotsProjectName($idProject)
+                local:getCollectionMetadata($dbName, $path)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -136,11 +126,12 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
               else $idProject
             return
               <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
-                resources:getCollectionMetadata($dbName, $dtsResourceId)
+                local:getCollectionMetadata($dbName, $dtsResourceId)
               }</collection>
     return
       for $goodCollection in $collectionsWithDuplicate
       let $id := $goodCollection/@dtsResourceId
+      where $id != "dots"
       group by $id
       return
         $goodCollection[1]
@@ -152,7 +143,7 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
 : @param $idProject (xs:string) The identifier of the project.
 : @return An XML fragment containing document metadata
 :)
-declare %private function resources:document($dbName as xs:string, $idProject as xs:string) {
+declare %private function local:document($dbName as xs:string, $idProject as xs:string) {
   for $document in db:get($dbName)/tei:TEI
   let $path := db:path($document)
   let $dtsResourceId := 
@@ -173,14 +164,11 @@ declare %private function resources:document($dbName as xs:string, $idProject as
         else 
           $path
     else $idProject
+  where $document
   return
-    if ($document)
-    then
-      <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-        resources:getDocumentMetadata($dbName, $document, $dtsResourceId),
-        resources:getDotsProjectName($idProject)
-      }</document>
-    else ()
+    <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
+      local:getDocumentMetadata($dbName, $document, $dtsResourceId)
+    }</document>
 };
 
 (:~  
@@ -190,7 +178,7 @@ declare %private function resources:document($dbName as xs:string, $idProject as
 : @param $dtsResourceId (xs:string) The document identifier.
 : @return A sequence containing document metadata elements
 :)
-declare function resources:getDocumentMetadata($dbName as xs:string, $doc as element(tei:TEI), $dtsResourceId as xs:string) {
+declare function local:getDocumentMetadata($dbName as xs:string, $doc as element(tei:TEI), $dtsResourceId as xs:string) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($dbName)/metadataMap/mapping
   let $dcTitle :=
@@ -239,7 +227,7 @@ declare function resources:getDocumentMetadata($dbName as xs:string, $doc as ele
             let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
             where ($record and $metadata)
             return
-              resources:createContent($metadata, $record)
+              local:createContent($metadata, $record)
             )
 };
 
@@ -251,7 +239,7 @@ declare function resources:getDocumentMetadata($dbName as xs:string, $doc as ele
 : @param $path (xs:string) The path of the collection.
 : @return An XML element representing the collection
 :)
-declare %private function resources:collection($dbName as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
+declare %private function local:collection($dbName as xs:string, $idProject as xs:string, $collection as xs:string, $path as xs:string) {
   let $totalItems := count(db:dir($dbName, $collection))
   let $parent := 
     if ($path = "") 
@@ -263,7 +251,7 @@ declare %private function resources:collection($dbName as xs:string, $idProject 
       else $path
   return
     <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
-      resources:getCollectionMetadata($dbName, $collection)
+      local:getCollectionMetadata($dbName, $collection)
     }</collection>
 };
 
@@ -273,7 +261,7 @@ declare %private function resources:collection($dbName as xs:string, $idProject 
 : @param $collection (xs:string) The collection identifier.
 : @return An XML fragment containing collection metadata.
 :)
-declare function resources:getCollectionMetadata($dbName as xs:string, $collection as xs:string) {
+declare function local:getCollectionMetadata($dbName as xs:string, $collection as xs:string) {
   let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap
   return
     if ($metadataMap)
@@ -296,7 +284,7 @@ declare function resources:getCollectionMetadata($dbName as xs:string, $collecti
             return element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
           else
             if ($record and $metadata) 
-            then resources:createContent($metadata, $record)
+            then local:createContent($metadata, $record)
             else ()
       return
         if ($metadatas/name() = "dc:title")
@@ -314,7 +302,7 @@ declare function resources:getCollectionMetadata($dbName as xs:string, $collecti
 : @param $record The corresponding record from the database.
 : @return An XML element with the extracted metadata value.
 :)
-declare function resources:createContent($itemDeclaration, $record) {
+declare function local:createContent($itemDeclaration, $record) {
   let $key := $itemDeclaration/name()
   let $element := $itemDeclaration/@value
   let $value := 
@@ -336,13 +324,32 @@ declare function resources:createContent($itemDeclaration, $record) {
       ()
 };
 
-(:~  
-: Creates a <dots:dotsProjectId> element for a given project.
-: @param $projectName (xs:string) The name of the project.
-: @return An XML element containing the project identifier.
-:)
-declare function resources:getDotsProjectName($projectName as xs:string) {
-  <dots:dotsProjectId>{$projectName}</dots:dotsProjectId>
-};
+(: local:createResourcesRegister($dbName, $idProject) => prof:track(), :)
+(: local:collections($dbName, $idProject) => prof:track(), :)
+local:document($dbName, $idProject) => prof:track()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
