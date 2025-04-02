@@ -4,4 +4,5 @@ data/
 .idea/
 webapp/restxq/home.xqm
 memo_cmd.md
-static/img
+webapp/static/img/*
+webapp/static/transform/*

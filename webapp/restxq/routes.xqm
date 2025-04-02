@@ -202,14 +202,13 @@ function routes:document(
               case ($media-type[. = "txt"]) return "text/plain"
               default return "application/tei+xml"
             let $project := db:get($G:dots)//node()[@dtsResourceId = $resource]/@dbName
-            let $trans := 
-              if ($media-type = "html")
-              then
-                let $style :=
+            let $style :=
                   if (file:exists(concat($G:xsl, $dbName, "/", $dbName, ".xsl")))
                   then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
                   else concat($G:xsl, "hteiml/tei2html.xsl")
-                return
+            let $trans := 
+              if ($media-type = "html")
+              then
                   xslt:transform($result, $style)
               else  $result
             return

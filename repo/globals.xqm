@@ -16,7 +16,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
 (: "../../../../../../../transform/" :)
-declare variable $G:xsl := concat($G:webapp, "static/transform/"); 
+declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); 
 
 declare variable $G:root := "dots_demo_root";
 
