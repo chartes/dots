@@ -1,23 +1,16 @@
-declare variable $project_dir_path external;
-declare variable $top_collection_id external;
-declare variable $db_name external;
+import module namespace script = "script";
 
-let $eval := function($script) {
-  let $id := job:eval(
-    xs:anyURI($script),
-    map {
-      'dbName': $db_name,
-      'projectDirPath': $project_dir_path,
-      'topCollectionId': $top_collection_id
-    },
-    map { 'cache': true() }
-  )
-  return (job:wait($id), job:result($id))
-}
-return (
-  $eval('dots_db_init.xq'),
-  $eval('project_db_init.xq'),
-  $eval('project_registers_create.xq'),
-  $eval('dots_registers_update.xq'),
-  $eval('dots_switcher_update.xq')
-)
+declare variable $projectDirPath external := ();
+declare variable $topCollectionId external := ();
+declare variable $dbName external := ();
+declare variable $option external := ();
+
+for $script in ('../scripts/dots_db_init.xq', if ($option) then '../scripts/dots_registers_delete.xq', '../scripts/project_db_init.xq', 
+  '../scripts/project_registers_create.xq', '../scripts/TEI_add_id.xq', '../scripts/dots_switcher_update.xq')
+return script:execute(xs:anyURI($script), map {
+  'dbName': $dbName,
+  'projectDirPath': $projectDirPath,
+  'topCollectionId': $topCollectionId,
+  'option' : $option
+})
+

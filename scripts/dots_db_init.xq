@@ -1,14 +1,12 @@
 xquery version '3.0' ;
 
-import module namespace dots.lib = "https://github.com/chartes/dots/lib" at "../lib/db_switch_builder.xqm";
-import module namespace G = "https://github.com/chartes/dots/globals" at "../globals.xqm";
+import module namespace dots.build = "backend/db_switch_build";
+import module namespace G = "globals";
+import module namespace script = "script";
 
-if (db:exists($G:dots))
-then update:output("* ✅ La base de données 'dots' existe déjà. Commande non nécessaire.
-")
-else
-  (
-    dots.lib:dots_db_init(),
-    update:output("* ✅ La base de données 'dots' a été initialisée.
-")
-  )
+if (db:exists($G:dots)) then (
+  script:success("La base de données 'dots' existe déjà. Commande non nécessaire.")
+) else (
+  dots.build:dots_db(),
+  script:success("La base de données 'dots' a été initialisée.")
+)
