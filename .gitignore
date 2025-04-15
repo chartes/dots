@@ -1,9 +1,8 @@
-.DS_Store
-/app
-/.log
-venv/
+data/
+doc/
+.basex
+.basexgui
 .idea/
-validation/
+webapp/restxq/home.xqm
 memo_cmd.md
-erreurs_basex115.txt
-lib/db_update_id.sample
+static/img
