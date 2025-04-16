@@ -162,14 +162,12 @@ function routes:navigation(
 declare
   %rest:path("/api/dts/document")
   %rest:GET
-  %output:method("xml")
-  %rest:produces("application/tei+xml")
   %rest:query-param("resource", "{$resource}", "")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
   %rest:query-param("end", "{$end}", "")
   %rest:query-param("tree", "{$tree}", "")
-  %rest:query-param("mediaType", "{$media-type}", "")
+  %rest:query-param("mediaType", "{$media-type}", "application/tei+xml")
   %rest:query-param("filter", "{$filter}", "")
   %rest:query-param("excludeFragments", "{$excludeFragments}", false())
 function routes:document(
@@ -194,34 +192,32 @@ function routes:document(
       then 
         let $result := utils:document($resource, $ref, $start, $end, $tree, $filter, $excludeFragments)
         return
-          if ($media-type)
-          then 
-            let $f :=
-              switch ($media-type)
-              case ($media-type[. = "html"]) return "text/html;"
-              case ($media-type[. = "txt"]) return "text/plain"
-              default return "application/tei+xml"
-            let $project := db:get($G:dots)//node()[@dtsResourceId = $resource]/@dbName
-            let $style :=
-                  if (file:exists(concat($G:xsl, $dbName, "/", $dbName, ".xsl")))
-                  then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
-                  else concat($G:xsl, "hteiml/tei2html.xsl")
-            let $trans := 
-              if ($media-type = "html")
-              then
-                  xslt:transform($result, $style)
-              else  $result
-            return
-              (
-                <rest:response>
-                  <http:response status="200">
-                    <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
-                  </http:response>
-                </rest:response>,
-                $trans
-              )
-          else
-            $result
+          let $f :=
+            switch ($media-type)
+            case ($media-type[contains(., "tei")]) return xs:string("application/xml")
+            case ($media-type[. = "xml"]) return xs:string("application/xml")
+            case ($media-type[. = "html"]) return xs:string("text/html")
+            default return $media-type
+          let $trans := 
+            switch ($media-type)
+            case ($media-type[. = "html"]) return
+              let $style :=
+                if (file:exists(concat($G:xsl, $dbName, "/", $dbName, ".xsl")))
+                then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
+                else concat($G:xsl, $G:defaultXslEnginePath)
+              return
+                xslt:transform($result, $style)
+            default return $result
+          return
+            (
+              <rest:response>
+                <http:response status="200">
+                  <http:header name="Content-Type" value="{concat($f, ' charset=utf-8')}"/>
+                  {if ($media-type = 'application/tei+xml') then <http:header name="Accept" value="application/tei+xml"/>}
+                </http:response>
+              </rest:response>,
+              $trans
+            ) 
       else
         routes:badIdResource(xs:string($resource))
 };

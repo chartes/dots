@@ -100,7 +100,7 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
               let $nameMetadata := normalize-space($citeData/@property)
               let $xpathCiteData := $citeData/@use
               let $query := concat('
-                declare default element namespace "http://www.tei-c.org/ns/1.0";',
+                declare default element namespace "http://www.tei-c.org/ns/1.0"; declare namespace functx = "http://www.functx.com";',
                 $xpathCiteData)
               let $valueQuery := xquery:eval($query, map {"": $fragment})
               return
