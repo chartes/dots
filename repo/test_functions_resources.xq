@@ -330,12 +330,14 @@ declare function local:createContent($itemDeclaration, $record) {
 
 (: local:collections($dbName, $idProject) => prof:time() :)
 
-for $doc in db:get($dbName)/*:TEI
+(: Check this function on all documents (more than 3000) :)
+(: for $doc in db:get($dbName)/*:TEI
 let $id := $doc/@xml:id
 return
-  local:getDocumentMetadata($dbName, $doc, $id) => prof:time()
+  local:getDocumentMetadata($dbName, $doc, $id) => prof:time() :)
 
-
+(: Check the same function only on one document :)
+local:getDocumentMetadata($dbName, db:get($dbName)/*:TEI[@xml:id="ENCPOS_1972_18"], "ENCPOS_1972_18") => prof:time()
 
 
 
