@@ -10,8 +10,8 @@ declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $dbName := "cartulaires"; (: other possible values with your data :    "encpos", "theater", "cid" :)
-declare variable $idProject := "cartulaires"; (: other possible values with your data : "ENCPOS", "theater", "cid" :)
+declare variable $dbName := "encpos"; (: other possible values with your data :    "encpos", "theater", "cid" :)
+declare variable $idProject := "encpos"; (: other possible values with your data : "ENCPOS", "theater", "cid" :)
 
 (:~  
 : This function generates the document resources_register.xml document that inventories all collections and documents in the given database. It also adds metadata and invokes the fragment registry creation. 
@@ -326,9 +326,14 @@ declare function local:createContent($itemDeclaration, $record) {
 
 (: local:createResourcesRegister($dbName, $idProject) => prof:track(), :)
 (: local:collections($dbName, $idProject) => prof:track(), :)
-local:document($dbName, $idProject) => prof:track()
+(: local:document($dbName, $idProject) => prof:track() :)
 
+(: local:collections($dbName, $idProject) => prof:time() :)
 
+for $doc in db:get($dbName)/*:TEI
+let $id := $doc/@xml:id
+return
+  local:getDocumentMetadata($dbName, $doc, $id) => prof:time()
 
 
 
