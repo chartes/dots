@@ -97,6 +97,7 @@ declare function local:collections($dbName as xs:string, $idProject as xs:string
       $collections
   return
     let $collectionsWithDuplicate :=
+      let $csv-map := local:getCSV-map($dbName)
       for $collection in $list_collections
       let $nbre_collection := $collection/nbre_collection
       return
@@ -106,7 +107,7 @@ declare function local:collections($dbName as xs:string, $idProject as xs:string
           let $totalChildren := count(db:dir($dbName, $path))
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
-                local:getCollectionMetadata($dbName, $path)
+                local:getCollectionMetadata($dbName, $path, $csv-map)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -126,7 +127,7 @@ declare function local:collections($dbName as xs:string, $idProject as xs:string
               else $idProject
             return
               <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
-                local:getCollectionMetadata($dbName, $dtsResourceId)
+                local:getCollectionMetadata($dbName, $dtsResourceId, $csv-map)
               }</collection>
     return
       for $goodCollection in $collectionsWithDuplicate
@@ -259,23 +260,20 @@ declare %private function local:collection($dbName as xs:string, $idProject as x
 : Retrieves metadata for a collection from the metadata map
 : @param $dbName (xs:string) The name of the XML database.
 : @param $collection (xs:string) The collection identifier.
+: @param $csv-map (map(*)) Map with CSV contents
 : @return An XML fragment containing collection metadata.
 :)
-declare function local:getCollectionMetadata($dbName as xs:string, $collection as xs:string) {
+declare function local:getCollectionMetadata($dbName as xs:string, $collection as xs:string, $csv-map as map(*)? := ()) {
   let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap
   return
     if ($metadataMap)
     then
       let $metadatas := 
+        let $csv-map := $csv-map otherwise local:getCSV-map($dbName)
         for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
-        let $getResourceId := $metadata/@resourceId
         let $source := functx:substring-after-last($metadata/@source, "/")
-        let $csv := 
-          for $csvs in db:get($dbName)//*:csv
-          let $paths := db:path($csvs)
-          where contains($paths, $source)
-          return $csvs[1]
         let $findIdInCSV := normalize-space($metadata/@resourceId)
+        let $csv := $csv-map($source)
         let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
         return
           if ($metadata/@resourceId = "all")
@@ -294,6 +292,24 @@ declare function local:getCollectionMetadata($dbName as xs:string, $collection a
           $metadatas
         )
     else <dc:title>{$collection}</dc:title>
+};
+
+(:~  
+ : Returns a map with all CSV contents from the specified database for which source paths exist.
+ : @param $dbName (xs:string) The name of the XML database.
+ : @return map
+ :)
+declare function local:getCSV-map($dbName as xs:string) as map(*) {
+  map:merge(
+    let $sources := distinct-values(
+      let $metadataMap := db:get($dbName, $G:metadata)//metadataMap
+      for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
+      return functx:substring-after-last($metadata/@source, "/")
+    )
+    for $source in $sources
+    let $csv := head(db:get($dbName)//*:csv[contains(db:path(.), $source)])
+    return map:entry($source, $csv)
+  )
 };
 
 (:~ 
@@ -325,7 +341,7 @@ declare function local:createContent($itemDeclaration, $record) {
 };
 
 (: local:createResourcesRegister($dbName, $idProject) => prof:track(), :)
-(: local:collections($dbName, $idProject) => prof:track(), :)
+local:collections($dbName, $idProject)
 (: local:document($dbName, $idProject) => prof:track() :)
 
 (: local:collections($dbName, $idProject) => prof:time() :)
@@ -337,26 +353,4 @@ return
   local:getDocumentMetadata($dbName, $doc, $id) => prof:time() :)
 
 (: Check the same function only on one document :)
-local:getDocumentMetadata($dbName, db:get($dbName)/*:TEI[@xml:id="ENCPOS_1972_18"], "ENCPOS_1972_18") => prof:time()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(: local:getDocumentMetadata($dbName, db:get($dbName)/*:TEI[@xml:id="ENCPOS_1972_18"], "ENCPOS_1972_18") => prof:time() :)
