@@ -952,7 +952,7 @@ declare function utils:getFragmentsInRange(
   let $s := xs:integer($firstFragment/@node-id)
   let $e := xs:integer($lastFragment/@node-id)
 
-  let $members := db:get($projectName, $G:fragmentsRegister)//dots:fragment[@node-id = $s to $e]
+  let $members := db:get($projectName, $G:fragmentsRegister)//dots:fragment[@node-id[. >= $s and . <= $e]]
   let $result :=
     if ($filter)
     then utils:filters($members, $filter)
@@ -994,7 +994,7 @@ declare function utils:getSequenceInRange(
   let $s := xs:integer($firstFragment/@node-id)
   let $e := xs:integer($lastFragment/@node-id)
 
-  let $members := db:get($projectName, $G:fragmentsRegister)//dots:fragment[@node-id = $s to $e]
+  let $members := db:get($projectName, $G:fragmentsRegister)//dots:fragment[@node-id[. >= $s and . <= $e]]
   let $firstFragmentLevel := xs:integer($firstFragment/@level)
   let $lastFragmentLevel := xs:integer($lastFragment/@level)
   for $fragment in $members
@@ -1028,7 +1028,7 @@ declare function utils:getDocSequenceInRange(
   let $s := xs:integer($firstFragment/@node-id)
   let $e := xs:integer($lastFragment/@node-id)
 
-  let $members := db:get($projectName, $G:fragmentsRegister)//dots:fragment[@node-id = $s to $e]
+  let $members := db:get($projectName, $G:fragmentsRegister)//dots:fragment[@node-id[. >= $s and . <= $e]]
   return if ($tree or $filter) then (
     $members
   ) else (
