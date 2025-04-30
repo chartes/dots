@@ -97,7 +97,7 @@ declare function local:collections($dbName as xs:string, $idProject as xs:string
       $collections
   return
     let $collectionsWithDuplicate :=
-      let $csv-map := local:getCSV-map($dbName)
+      let $csv-map := local:getCSV-map($dbName, "collection")
       for $collection in $list_collections
       let $nbre_collection := $collection/nbre_collection
       return
@@ -269,7 +269,7 @@ declare function local:getCollectionMetadata($dbName as xs:string, $collection a
     if ($metadataMap)
     then
       let $metadatas := 
-        let $csv-map := $csv-map otherwise local:getCSV-map($dbName)
+        let $csv-map := $csv-map otherwise local:getCSV-map($dbName, "collection")
         for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
         let $source := functx:substring-after-last($metadata/@source, "/")
         let $findIdInCSV := normalize-space($metadata/@resourceId)
@@ -299,11 +299,11 @@ declare function local:getCollectionMetadata($dbName as xs:string, $collection a
  : @param $dbName (xs:string) The name of the XML database.
  : @return map
  :)
-declare function local:getCSV-map($dbName as xs:string) as map(*) {
+declare function local:getCSV-map($dbName as xs:string, $type as xs:string) as map(*) {
   map:merge(
     let $sources := distinct-values(
-      let $metadataMap := db:get($dbName, $G:metadata)//metadataMap
-      for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
+      let $metadataMap := db:get($dbName, $G:metadata)/metadataMap/mapping
+      for $metadata in $metadataMap/node()[@source][@scope = $type]
       return functx:substring-after-last($metadata/@source, "/")
     )
     for $source in $sources
@@ -340,8 +340,10 @@ declare function local:createContent($itemDeclaration, $record) {
       ()
 };
 
+let $x := local:getCSV-map("theater", "collection")
+return $x
 (: local:createResourcesRegister($dbName, $idProject) => prof:track(), :)
-local:collections($dbName, $idProject)
+(: local:collections($dbName, $idProject) :)
 (: local:document($dbName, $idProject) => prof:track() :)
 
 (: local:collections($dbName, $idProject) => prof:time() :)
