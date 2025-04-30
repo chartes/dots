@@ -106,6 +106,7 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
       $collections
   return
     let $collectionsWithDuplicate :=
+      let $csv-map := resources:getCSV-map($dbName, "collection")
       for $collection in $list_collections
       let $nbre_collection := $collection/nbre_collection
       return
@@ -115,8 +116,7 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
           let $totalChildren := count(db:dir($dbName, $path))
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
-                resources:getCollectionMetadata($dbName, $path),
-                resources:getDotsProjectName($idProject)
+                resources:getCollectionMetadata($dbName, $path, $csv-map)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -136,11 +136,12 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
               else $idProject
             return
               <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
-                resources:getCollectionMetadata($dbName, $dtsResourceId)
+                resources:getCollectionMetadata($dbName, $dtsResourceId, $csv-map)
               }</collection>
     return
       for $goodCollection in $collectionsWithDuplicate
       let $id := $goodCollection/@dtsResourceId
+      where $id != "dots"
       group by $id
       return
         $goodCollection[1]
@@ -206,6 +207,7 @@ declare function resources:getDocumentMetadata($dbName as xs:string, $doc as ele
           let $key := $metadata/name()
           return
             element {$key} { 
+              if ($metadata/@key) then attribute {"key"} {$metadata/@key},
               concat($metadata/@prefix, $metadata, $metadata/@suffix) 
             }
         else
@@ -231,10 +233,9 @@ declare function resources:getDocumentMetadata($dbName as xs:string, $doc as ele
                   }
               else ()
           else
-            let $source := $metadata/@source
-            let $SrcDocName := functx:substring-after-last($source, "/")
-            let $SrcPath := db:list($dbName)[contains(., $SrcDocName)]
-            let $csv := db:get($dbName, $SrcPath)/*:csv
+            let $csv-map := resources:getCSV-map($dbName, "document")
+            let $source := functx:substring-after-last($metadata/@source, "/")
+            let $csv := $csv-map($source)
             let $findIdInCSV := normalize-space($metadata/@resourceId)
             let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
             where ($record and $metadata)
@@ -271,29 +272,29 @@ declare %private function resources:collection($dbName as xs:string, $idProject 
 : Retrieves metadata for a collection from the metadata map
 : @param $dbName (xs:string) The name of the XML database.
 : @param $collection (xs:string) The collection identifier.
+: @param $csv-map (map(*)) Map with CSV contents
 : @return An XML fragment containing collection metadata.
 :)
-declare function resources:getCollectionMetadata($dbName as xs:string, $collection as xs:string) {
+declare function resources:getCollectionMetadata($dbName as xs:string, $collection as xs:string, $csv-map as map(*)? := ()) {
   let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap
   return
     if ($metadataMap)
     then
       let $metadatas := 
+        let $csv-map := $csv-map otherwise resources:getCSV-map($dbName, "collection")
         for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
-        let $getResourceId := $metadata/@resourceId
         let $source := functx:substring-after-last($metadata/@source, "/")
-        let $csv := 
-          for $csvs in db:get($dbName)//*:csv
-          let $paths := db:path($csvs)
-          where contains($paths, $source)
-          return $csvs[1]
         let $findIdInCSV := normalize-space($metadata/@resourceId)
+        let $csv := $csv-map($source)
         let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
         return
           if ($metadata/@resourceId = "all")
           then 
             let $key := $metadata/name()
-            return element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+            return element {$key} { 
+              if ($metadata/@key) then attribute {"key"} {$metadata/@key},
+              concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+            }
           else
             if ($record and $metadata) 
             then resources:createContent($metadata, $record)
@@ -306,6 +307,24 @@ declare function resources:getCollectionMetadata($dbName as xs:string, $collecti
           $metadatas
         )
     else <dc:title>{$collection}</dc:title>
+};
+
+(:~  
+ : Returns a map with all CSV contents from the specified database for which source paths exist.
+ : @param $dbName (xs:string) The name of the XML database.
+ : @return map
+ :)
+declare function resources:getCSV-map($dbName as xs:string, $type as xs:string) as map(*) {
+  map:merge(
+    let $sources := distinct-values(
+      let $metadataMap := db:get($dbName, $G:metadata)/metadataMap/mapping
+      for $metadata in $metadataMap/node()[@source][@scope = $type]
+      return functx:substring-after-last($metadata/@source, "/")
+    )
+    for $source in $sources
+    let $csv := head(db:get($dbName)//*:csv[contains(db:path(.), $source)])
+    return map:entry($source, $csv)
+  )
 };
 
 (:~ 

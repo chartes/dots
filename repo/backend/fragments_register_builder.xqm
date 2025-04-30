@@ -128,27 +128,25 @@ declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref 
   let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
     let $metadatas := 
-    for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
-    let $getResourceId := $metadata/@resourceId
-    let $source := functx:substring-after-last($metadata/@source, "/")
-    let $csv := 
-      for $csvs in db:get($bdd)//*:csv
-      let $paths := db:path($csvs)
-      where contains($paths, $source)
+      let $csv-map := resources:getCSV-map($bdd, "fragment")
+      for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
+      let $source := functx:substring-after-last($metadata/@source, "/")
+      let $csv := $csv-map($source)
+      let $findIdInCSV := normalize-space($metadata/@resourceId)
+      let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]       
       return
-        $csvs[1]
-    let $findIdInCSV := normalize-space($metadata/@resourceId)
-    let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]       
-    return
-      if ($metadata/@resourceId = "all")
-      then 
-        let $key := $metadata/name()
-        return
-          element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
-      else
-        if ($record and $metadata) 
-        then resources:createContent($metadata, $record)
-        else ()
+        if ($metadata/@resourceId = "all")
+        then 
+          let $key := $metadata/name()
+          return
+            element {$key} { 
+            if ($metadata/@key) then attribute {"key"} {$metadata/@key},
+            concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+            }
+        else
+          if ($record and $metadata) 
+          then resources:createContent($metadata, $record)
+          else ()
   return
     $metadatas
 };
