@@ -79,7 +79,7 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
   return
     if ($xpath)
     then
-      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then db:get-id($bdd, $parentNodeId) else $resource})
+      for $fragment in xquery:eval($query, map {"": if ($parentNodeId) then db:get-id($bdd, $parentNodeId) else $resource})
       let $node-id := db:node-id($fragment)
       let $ref :=
         if ($use = "@xml:id")
@@ -100,7 +100,7 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
               let $nameMetadata := normalize-space($citeData/@property)
               let $xpathCiteData := $citeData/@use
               let $query := concat('
-                declare default element namespace "http://www.tei-c.org/ns/1.0";',
+                declare default element namespace "http://www.tei-c.org/ns/1.0"; declare namespace functx = "http://www.functx.com";',
                 $xpathCiteData)
               let $valueQuery := xquery:eval($query, map {"": $fragment})
               return
@@ -131,22 +131,22 @@ declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref 
     for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
     let $getResourceId := $metadata/@resourceId
     let $source := functx:substring-after-last($metadata/@source, "/")
-    let $csv := 
+    let $csv :=
       for $csvs in db:get($bdd)//*:csv
       let $paths := db:path($csvs)
       where contains($paths, $source)
       return
         $csvs[1]
     let $findIdInCSV := normalize-space($metadata/@resourceId)
-    let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]       
+    let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]
     return
       if ($metadata/@resourceId = "all")
-      then 
+      then
         let $key := $metadata/name()
         return
           element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
       else
-        if ($record and $metadata) 
+        if ($record and $metadata)
         then resources:createContent($metadata, $record)
         else ()
   return

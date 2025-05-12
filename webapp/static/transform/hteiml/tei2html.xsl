@@ -90,12 +90,15 @@ absence de déclaration de DTD.
             <!-- à travailler
             <xsl:apply-templates select="/*/tei:teiHeader/tei:encodingDesc/tei:tagsDecl"/>
             -->
-            <link rel="stylesheet" type="text/css" href="{$theme}html.css"/>
-            <link rel="stylesheet" type="text/css" href="{$theme}teipub.css"/>
+            <!--<link rel="stylesheet" type="text/css" href="{$theme}html.css"/>
+            <link rel="stylesheet" type="text/css" href="{$theme}teipub.css"/>-->
+            <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/html.css"/>
+            <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/teipub.css"/>
             <xsl:if test="$customCSS">
               <link rel="stylesheet" type="text/css" href="{$customCSS}"/>
             </xsl:if>
-            <script type="text/javascript" src="{$theme}Tree.js">//</script>
+           <!-- <script type="text/javascript" src="{$theme}Tree.js">//</script>-->
+            <script type="text/javascript" src="/static/transform/hteiml/Tree.js">//</script>
           </head>
           <body class="{$corpusid}">
             <div id="center">

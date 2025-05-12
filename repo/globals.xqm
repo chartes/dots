@@ -16,13 +16,17 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
 (: "../../../../../../../transform/" :)
-declare variable $G:xsl := concat($G:webapp, "static/transform/"); 
+declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); 
+
+(: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/html/html.xsl"; :)
+
+declare variable $G:defaultXslEnginePath := "hteiml/tei2html.xsl";
+(: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/txt/tei-to-text.xsl"; :)
+(: declare variable $G:defaultXslEnginePath := "TEI-Boilerplate/src/content/teibp.xsl"; :)
 
 declare variable $G:root := "dots_demo_root";
 
 declare variable $G:rootTitle := "Collection de démonstration de DoTS";
-
-
 
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

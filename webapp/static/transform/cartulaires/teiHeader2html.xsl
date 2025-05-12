@@ -20,12 +20,26 @@
   
   <xsl:template match="tei:TEI">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
-      <div id="aside">to delete</div>
-      <div id="center">
-        <div id="main">
-          <div id="articel"><xsl:apply-templates select="tei:text"/></div>
+      <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <!-- déclaration classes css locale (permettre la surcharge si généralisation) -->
+        <!-- à travailler
+            <xsl:apply-templates select="/*/tei:teiHeader/tei:encodingDesc/tei:tagsDecl"/>
+            -->
+        <!--<link rel="stylesheet" type="text/css" href="{$theme}html.css"/>
+            <link rel="stylesheet" type="text/css" href="{$theme}teipub.css"/>-->
+        <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/html.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/teipub.css"/>
+        <script type="text/javascript" src="/static/transform/hteiml/Tree.js">//</script>
+      </head>
+      <body>
+        <div id="aside">to delete</div>
+        <div id="center">
+          <div id="main">
+            <div id="articel"><xsl:apply-templates select="tei:text"/></div>
+          </div>
         </div>
-      </div>
+      </body>
     </html>
   </xsl:template>
   
@@ -61,7 +75,7 @@
   
   <xsl:template match="tei:graphic">
     <xsl:param name="desc"><xsl:value-of select='tei:desc'/></xsl:param>
-    <img src="{@url}" alt="{$desc}"/>
+    <img src="/static/img/{@url}" alt="{$desc}"/>
   </xsl:template>
   
   <xsl:template match="tei:byline">

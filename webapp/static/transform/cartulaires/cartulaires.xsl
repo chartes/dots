@@ -1,6 +1,7 @@
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:functx="http://www.functx.com"
   exclude-result-prefixes="tei"
 >
   <!-- Keep this import order  -->
@@ -70,5 +71,15 @@
         <meta name="end" content="{$notAfter}"/>
       </xsl:when>
     </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="tei:item/tei:ref">
+    <xsl:variable name="idDoc" select="substring-after( substring-before(@target, '_'), '#' )"/>
+    <xsl:variable name="idFrag" select="substring-after(@target, '#')"/>
+    <a href="{concat('/cartulaires/document/', $idDoc, '?refId=', $idFrag)}"><xsl:apply-templates/></a>
+  </xsl:template>
+  
+  <xsl:template match="tei:text//tei:persName">
+    
   </xsl:template>
 </xsl:transform>

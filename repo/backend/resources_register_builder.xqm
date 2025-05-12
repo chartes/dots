@@ -141,6 +141,7 @@ declare function resources:collections($dbName as xs:string, $idProject as xs:st
     return
       for $goodCollection in $collectionsWithDuplicate
       let $id := $goodCollection/@dtsResourceId
+      where $id != "dots"
       group by $id
       return
         $goodCollection[1]
@@ -206,6 +207,7 @@ declare function resources:getDocumentMetadata($dbName as xs:string, $doc as ele
           let $key := $metadata/name()
           return
             element {$key} { 
+              if ($metadata/@key) then attribute {"key"} {$metadata/@key},
               concat($metadata/@prefix, $metadata, $metadata/@suffix) 
             }
         else
@@ -282,18 +284,21 @@ declare function resources:getCollectionMetadata($dbName as xs:string, $collecti
         for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
         let $getResourceId := $metadata/@resourceId
         let $source := functx:substring-after-last($metadata/@source, "/")
-        let $csv := 
+        let $csv :=
           for $csvs in db:get($dbName)//*:csv
           let $paths := db:path($csvs)
           where contains($paths, $source)
           return $csvs[1]
         let $findIdInCSV := normalize-space($metadata/@resourceId)
-        let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
+        let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]
         return
           if ($metadata/@resourceId = "all")
           then 
             let $key := $metadata/name()
-            return element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
+            return element {$key} { 
+              if ($metadata/@key) then attribute {"key"} {$metadata/@key},
+              concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+            }
           else
             if ($record and $metadata) 
             then resources:createContent($metadata, $record)
@@ -308,7 +313,7 @@ declare function resources:getCollectionMetadata($dbName as xs:string, $collecti
     else <dc:title>{$collection}</dc:title>
 };
 
-(:~ 
+(:~
 : Generates a metadata element based on a given declaration and record.
 : @param $itemDeclaration The XML node describing the metadata structure.
 : @param $record The corresponding record from the database.

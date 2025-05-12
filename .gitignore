@@ -4,5 +4,7 @@ doc/
 .basexgui
 .idea/
 webapp/restxq/home.xqm
+webapp/restxq/ladam_test.xqm
 memo_cmd.md
-static/img
+webapp/static/img/
+webapp/static/transform/
