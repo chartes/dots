@@ -16,21 +16,22 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare updating %private function del_doc:handleDelete($dbName, $docId) {
-  let $docPath := utils_dots:findPathDoc($dbName, $docId)
+declare updating function del_doc:handleDelete($dbName, $docId) {
   let $docInRegister := utils_dots:getDocInRegister($dbName, $docId)
   let $parentIds := utils_dots:getParentIds($dbName, $docInRegister) 
   return
     (
-      del_doc:deleteDocInDb($dbName, $docPath),
+      del_doc:deleteDocInDb($dbName, $docId),
       delete node $docInRegister, 
-      del_doc:deleteFragments($dbName, $docInRegister),
+      del_doc:deleteFragments($dbName, $docId),
       del_doc:changeTotalChildren($dbName, $parentIds)
     )
 };
 
-declare updating %private function del_doc:deleteDocInDb($dbName as xs:string, $docPath as xs:string) {
-  db:delete($dbName, $docPath) 
+declare updating %private function del_doc:deleteDocInDb($dbName as xs:string, $docId) {
+  let $path := utils_dots:findPath($dbName, $docId)
+  return
+    db:delete($dbName, $path)
 };
 
 declare updating %private function del_doc:deleteFragments($dbName as xs:string, $docId as xs:string) {

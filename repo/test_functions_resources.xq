@@ -51,7 +51,9 @@ declare function local:createResourcesRegister($dbName as xs:string, $idProject 
         }</collection>
         {
           local:collections($dbName, $idProject),
-          local:document($dbName, $idProject)
+          let $csv := local:getCSV-map($dbName, "document") 
+          return
+            local:document($dbName, $idProject, $csv)
         }
       </member>
     </resourcesRegister>
@@ -144,8 +146,9 @@ declare function local:collections($dbName as xs:string, $idProject as xs:string
 : @param $idProject (xs:string) The identifier of the project.
 : @return An XML fragment containing document metadata
 :)
-declare %private function local:document($dbName as xs:string, $idProject as xs:string) {
-  for $document in db:get($dbName)/tei:TEI
+declare %private function local:document($dbName as xs:string, $idProject as xs:string, $csv) {
+  for $document at $pos in db:get($dbName)/tei:TEI
+  where $pos <= 500
   let $path := db:path($document)
   let $dtsResourceId := 
     if ($document/@xml:id)
@@ -168,7 +171,7 @@ declare %private function local:document($dbName as xs:string, $idProject as xs:
   where $document
   return
     <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-      local:getDocumentMetadata($dbName, $document, $dtsResourceId)
+      local:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv)
     }</document>
 };
 
@@ -179,7 +182,7 @@ declare %private function local:document($dbName as xs:string, $idProject as xs:
 : @param $dtsResourceId (xs:string) The document identifier.
 : @return A sequence containing document metadata elements
 :)
-declare function local:getDocumentMetadata($dbName as xs:string, $doc as element(tei:TEI), $dtsResourceId as xs:string) {
+declare function local:getDocumentMetadata($dbName as xs:string, $doc as element(tei:TEI), $dtsResourceId as xs:string, $csv) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($dbName)/metadataMap/mapping
   let $dcTitle :=
@@ -190,7 +193,7 @@ declare function local:getDocumentMetadata($dbName as xs:string, $doc as element
     (
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
       return
-        if ($metadata/@resourceId = "all")
+        (: if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
           return
@@ -219,17 +222,18 @@ declare function local:getDocumentMetadata($dbName as xs:string, $doc as element
                     concat($metadata/@prefix, $value, $metadata/@suffix)
                   }
               else ()
-          else
-            let $source := $metadata/@source
-            let $SrcDocName := functx:substring-after-last($source, "/")
+          else :)
+            let $source := functx:substring-after-last($metadata/@source, "/") 
+            let $c := $csv
+            (: let $SrcDocName := functx:substring-after-last($source, "/")
             let $SrcPath := db:list($dbName)[contains(., $SrcDocName)]
-            let $csv := db:get($dbName, $SrcPath)/*:csv
+            let $csv := db:get($dbName, $SrcPath[1])/*:csv :)
             let $findIdInCSV := normalize-space($metadata/@resourceId)
-            let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
-            where ($record and $metadata)
+            let $record := $c/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
+            (: where ($record and $metadata) :)
             return
-              local:createContent($metadata, $record)
-            )
+              $c(: local:createContent($metadata, $record) :) 
+          )
 };
 
 (:~ 
@@ -343,7 +347,11 @@ declare function local:createContent($itemDeclaration, $record) {
 (: let $x := local:getCSV-map("theater", "collection")
 return $x :)
 
-local:createResourcesRegister($dbName, $idProject) => prof:track()
+(: local:getCSV-map($dbName, "document") :)
+            
+(: db:get($dbName)/metadataMap/mapping/node()[@scope = "document"][@source] :)
+local:document($dbName, $idProject, db:get($dbName, "metadata/encpos.tsv")) => prof:time()
+(: local:createResourcesRegister($dbName, $idProject) => prof:track() :)
 
 (: local:createResourcesRegister($dbName, $idProject) => prof:track(), :)
 (: local:collections($dbName, $idProject) :)

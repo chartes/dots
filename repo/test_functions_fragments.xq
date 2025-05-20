@@ -21,7 +21,8 @@ declare variable $bdd := "cartulaires"; (: other possible values with your dataÂ
 : @return A sequence of <fragment> elements, each representing a citational unit extracted from the TEI documents
 :)
 declare function local:getFragments($bdd as xs:string) {
-  for $resource in db:get($bdd)/tei:TEI
+  for $resource at $pos in db:get($bdd)/tei:TEI
+  where $pos <= 10 
   where $resource//tei:citeStructure
   let $resourceId :=
     if ($resource/@xml:id)
@@ -73,7 +74,7 @@ declare function local:handleCiteStructure($bdd as xs:string, $resource as eleme
   return
     if ($xpath)
     then
-      for $fragment at $pos in xquery:eval($query, map {"": if ($parentNodeId) then db:get-id($bdd, $parentNodeId) else $resource})
+      for $fragment in xquery:eval($query, map {"": if ($parentNodeId) then db:get-id($bdd, $parentNodeId) else $resource})
       let $node-id := db:node-id($fragment)
       let $ref :=
         if ($use = "@xml:id")
