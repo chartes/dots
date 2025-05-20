@@ -15,6 +15,7 @@ import module namespace G = "globals";
 import module namespace dots_error = "error/dots_error";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
+import module namespace script = "script";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -63,9 +64,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
       let $path := functx:substring-before-last($docPath, "/")
       return
         let $collId := if (contains($path, "/")) then functx:substring-after-last($path, "/") else $path
-        return
-          (
-            $collId)
+        return $collId
     else $projectName
   return
     if ($document)
@@ -111,8 +110,15 @@ declare updating %private function add_doc:addFragInReg($dbName as xs:string, $d
   return 
     let $fragments_register := db:get($dbName, $G:fragmentsRegister)//dots:member
     let $fragment := fragments:handleCiteStructure($dbName, $document, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+    let $oldFragments := $fragments_register/dots:fragment[@resourceId = $resourceId]
     return
-      insert node $fragment as last into $fragments_register
+      if ($oldFragments)
+      then
+        (
+          delete nodes $oldFragments,
+          insert node $fragment as last into $fragments_register
+        )
+      else insert node $fragment as last into $fragments_register
 };
 
 
@@ -125,9 +131,10 @@ declare updating %private function add_doc:updateMaxCiteDepthCollection($dbName 
   let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
   let $totalChildren := $parent/@totalChildren
   return
-     if ($parentIds = "collection_error")
-     then update:output("Collection does not exist !")
-     else replace value of node $totalChildren with xs:integer($parent/@totalChildren) + 1
+     if ($parent != "")
+     then replace value of node $totalChildren with xs:integer($parent/@totalChildren) + 1
+     else 
+       update:output("La collection parente n'existe pas.")
 };
 
 (:~ Updat function to add the documet to the switcher dots
