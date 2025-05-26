@@ -19,7 +19,12 @@ declare variable $idProject := "ENCPOS"; (: other possible values with your data
 : @param $idProject (xs:string) The identifier of the project.
 : @return An XML document representing the resources register is stored in the database.
 :)
-declare function local:createResourcesRegister($dbName as xs:string, $idProject as xs:string) {
+declare function local:createResourcesRegister(
+  $dbName as xs:string,
+  $idProject as xs:string
+) {
+  let $csv := local:getCSV-map($dbName, "document")
+
   let $countChild := 
     let $countDotsData := if (db:get($dbName, $G:metadata)) then 1 else 0
     let $count := count(db:dir($dbName, ""))
@@ -47,13 +52,10 @@ declare function local:createResourcesRegister($dbName as xs:string, $idProject 
       {local:getMetadata()}
       <member>
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">{
-          local:getCollectionMetadata($dbName, $idProject)
+          local:getCollectionMetadata($dbName, $idProject, $csv)
         }</collection>
         {
-          local:collections($dbName, $idProject),
-          let $csv := local:getCSV-map($dbName, "document") 
-          return
-            local:document($dbName, $idProject, $csv)
+          local:document($dbName, $idProject, $csv)
         }
       </member>
     </resourcesRegister>
@@ -146,9 +148,12 @@ declare function local:collections($dbName as xs:string, $idProject as xs:string
 : @param $idProject (xs:string) The identifier of the project.
 : @return An XML fragment containing document metadata
 :)
-declare %private function local:document($dbName as xs:string, $idProject as xs:string, $csv) {
-  for $document at $pos in db:get($dbName)/tei:TEI
-  where $pos <= 500
+declare %private function local:document(
+  $dbName as xs:string,
+  $idProject as xs:string,
+  $csv
+) {
+  for $document in db:get($dbName)/tei:TEI
   let $path := db:path($document)
   let $dtsResourceId := 
     if ($document/@xml:id)
@@ -182,7 +187,12 @@ declare %private function local:document($dbName as xs:string, $idProject as xs:
 : @param $dtsResourceId (xs:string) The document identifier.
 : @return A sequence containing document metadata elements
 :)
-declare function local:getDocumentMetadata($dbName as xs:string, $doc as element(tei:TEI), $dtsResourceId as xs:string, $csv) {
+declare function local:getDocumentMetadata(
+  $dbName as xs:string,
+  $doc as element(tei:TEI),
+  $dtsResourceId as xs:string,
+  $csv-map
+) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($dbName)/metadataMap/mapping
   let $dcTitle :=
@@ -193,7 +203,7 @@ declare function local:getDocumentMetadata($dbName as xs:string, $doc as element
     (
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
       return
-        (: if ($metadata/@resourceId = "all")
+        if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
           return
@@ -222,18 +232,27 @@ declare function local:getDocumentMetadata($dbName as xs:string, $doc as element
                     concat($metadata/@prefix, $value, $metadata/@suffix)
                   }
               else ()
-          else :)
-            let $source := functx:substring-after-last($metadata/@source, "/") 
-            let $c := $csv
-            (: let $SrcDocName := functx:substring-after-last($source, "/")
+          else
+            let $source := replace($metadata/@source, '\./', '')
+            let $csv-source := $csv-map($source)
+            (:
+            let $SrcDocName := functx:substring-after-last($source, "/")
             let $SrcPath := db:list($dbName)[contains(., $SrcDocName)]
-            let $csv := db:get($dbName, $SrcPath[1])/*:csv :)
-            let $findIdInCSV := normalize-space($metadata/@resourceId)
-            let $record := $c/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
-            (: where ($record and $metadata) :)
+            let $csv := db:get($dbName, $SrcPath)/*:csv
+            :)
+            (: let $findIdInCSV := normalize-space($metadata/@resourceId) :)
+             
+            for $record in $csv-source($dtsResourceId)
             return
-              $c(: local:createContent($metadata, $record) :) 
-          )
+              local:createContent($metadata, $record)
+
+            (: let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $dtsResourceId]]
+
+            where ($record and $metadata)
+            return
+              local:createContent($metadata, $record) :)
+
+   )
 };
 
 (:~ 
@@ -303,7 +322,10 @@ declare function local:getCollectionMetadata($dbName as xs:string, $collection a
  : @param $dbName (xs:string) The name of the XML database.
  : @return map
  :)
-declare function local:getCSV-map($dbName as xs:string, $type as xs:string) as map(*) {
+declare function local:getCSV-map(
+  $dbName as xs:string,
+  $type as xs:string
+) as map(*) {
   map:merge(
     let $sources := distinct-values(
       let $metadataMap := db:get($dbName, $G:metadata)/metadataMap/mapping
@@ -312,7 +334,16 @@ declare function local:getCSV-map($dbName as xs:string, $type as xs:string) as m
     )
     for $source in $sources
     let $csv := head(db:get($dbName)//*:csv[contains(db:path(.), $source)])
-    return map:entry($source, $csv)
+    return map:entry(
+      $source,
+      map:merge(
+        for $record in $csv/*:record
+        return map:entry(
+          $record/*:id,
+          map:merge($record/* ! map:entry(name(.), data(.)))
+        )
+      )
+    )
   )
 };
 
@@ -322,14 +353,16 @@ declare function local:getCSV-map($dbName as xs:string, $type as xs:string) as m
 : @param $record The corresponding record from the database.
 : @return An XML element with the extracted metadata value.
 :)
-declare function local:createContent($itemDeclaration, $record) {
+declare function local:createContent(
+  $itemDeclaration,
+  $csv-record as map(*)
+) {
   let $key := $itemDeclaration/name()
   let $element := $itemDeclaration/@value
-  let $value := 
-    if ($record/node()[name() = $element] != "")
-    then
-      concat($itemDeclaration/@prefix, $record/node()[name() = $element], $itemDeclaration/@suffix)
-    else ()
+  let $value := (
+    for $v in $csv-record($element)
+    return concat($itemDeclaration/@prefix, $v, $itemDeclaration/@suffix)
+  )
   let $subKey := $itemDeclaration/@key
   let $type := $itemDeclaration/@type
   return
@@ -347,11 +380,7 @@ declare function local:createContent($itemDeclaration, $record) {
 (: let $x := local:getCSV-map("theater", "collection")
 return $x :)
 
-(: local:getCSV-map($dbName, "document") :)
-            
-(: db:get($dbName)/metadataMap/mapping/node()[@scope = "document"][@source] :)
-local:document($dbName, $idProject, db:get($dbName, "metadata/encpos.tsv")) => prof:time()
-(: local:createResourcesRegister($dbName, $idProject) => prof:track() :)
+local:createResourcesRegister($dbName, $idProject)
 
 (: local:createResourcesRegister($dbName, $idProject) => prof:track(), :)
 (: local:collections($dbName, $idProject) :)

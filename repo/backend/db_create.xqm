@@ -1,7 +1,7 @@
-xquery version "3.1";
+xquery version "4.0";
 
 (:~  
-: Ce module permet à un utilisateur de DoTS de créer sa base de données BaseX
+: This module provides a function to initialize a BaseX database for a DoTS project. It automates the loading of XML resources and associated metadata (e.g., mapping files and CSV/TSV tables), and configures the database with appropriate indexing and language settings.
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-10-11
 : @version  1.0
@@ -13,6 +13,12 @@ import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
+(:~  
+: This function creates a database for a DoTS project, loading XML sources and metadata files.
+: @param $dbName (xs:string) The name of the XML database to be created.
+: @param $projectDirPath (xs:string) The path to the root directory of the DoTS project (containing /data/ and /metadata/).
+: @return A new database with the given resources.
+:)
 declare updating function dots.create:db($dbName as xs:string, $projectDirPath as xs:string) {
   let $metadataPathFile := concat($projectDirPath, "/metadata/")
   let $mappingPathFile := if (file:exists($metadataPathFile)) then

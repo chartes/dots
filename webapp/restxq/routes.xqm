@@ -13,6 +13,8 @@ import module namespace utils = "resolver/utils";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
+declare variable $routes:test := "demo";
+
 (:~  
 : Cette fonction gère le point d'entrée de l'API DTS
 : @return réponse JSON pour le endpoint EntryPoint
@@ -24,7 +26,7 @@ declare
   %output:method("json")
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
-function routes:entryPoint() {
+function routes:entryPoint($project) {
   <json type="object">
     <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
     <pair name="dtsVersion">1-alpha</pair>

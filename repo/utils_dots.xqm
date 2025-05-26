@@ -7,6 +7,10 @@ import module namespace G = "globals";
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+declare function utils_dots:getIdProject($dbName as xs:string) {
+  normalize-space(db:get($dbName, $G:resourcesRegister)//dots:collection[not(@parentIds)]/@dtsResourceId)
+};
+
 (:~ This function retrieves the name of the database to which the document identified by $resourceId belongs 
 : @param $resourceId document identifier
 : @return db name
