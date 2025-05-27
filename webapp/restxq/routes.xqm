@@ -26,7 +26,7 @@ declare
   %output:method("json")
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
-function routes:entryPoint($project) {
+function routes:entryPoint() {
   <json type="object">
     <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
     <pair name="dtsVersion">1-alpha</pair>

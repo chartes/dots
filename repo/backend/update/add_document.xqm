@@ -23,11 +23,12 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare updating function add_doc:handleAddition($dbName, $docPath) {
   let $csv := resources:getCSV-map($dbName, "document")
+  let $csv-frag := resources:getCSV-map($dbName, "fragment")
   return
   (
     add_doc:addDocToDB($dbName, $docPath),
     add_doc:addDocToResourcesReg($dbName, $docPath, $csv),
-    add_doc:addFragInReg($dbName, $docPath)
+    add_doc:addFragInReg($dbName, $docPath, $csv-frag)
   )
 };
 
@@ -100,7 +101,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
 : @param $docPath absolute path to the document to add
 : @return sequence of <fragment/> nodes
 :)
-declare updating %private function add_doc:addFragInReg($dbName as xs:string, $docPath) {
+declare updating %private function add_doc:addFragInReg($dbName as xs:string, $docPath, $csv) {
   let $pathToDoc := functx:substring-after-last($docPath, "data/")
   let $document := db:get($dbName, $pathToDoc)/tei:TEI
   let $resourceId :=
@@ -111,7 +112,7 @@ declare updating %private function add_doc:addFragInReg($dbName as xs:string, $d
   for $citeStructurePosition in $document//tei:refsDecl/tei:citeStructure
   return 
     let $fragments_register := db:get($dbName, $G:fragmentsRegister)//dots:member
-    let $fragment := fragments:handleCiteStructure($dbName, $document, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+    let $fragment := fragments:handleCiteStructure($dbName, $document, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth, $csv)
     let $oldFragments := $fragments_register/dots:fragment[@resourceId = $resourceId]
     return
       if ($oldFragments)
