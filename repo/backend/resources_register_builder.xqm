@@ -209,9 +209,10 @@ declare function resources:getDocumentMetadata(
   let $dcTitle :=
     if ($externalMetadataMap and $externalMetadataMap/dc:title[@scope="document"])
     then ()
-    else <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
+    else <dc:title>{normalize-space($doc//tei:titleStmt/tei:title[@type = 'main' or position() = 1])}</dc:title>
   return
     (
+      $dcTitle,
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
       return
         if ($metadata/@resourceId = "all")
