@@ -11,9 +11,9 @@
   xml:lang="fr">
   
   <a:documentation>
-    <h:h1>Dots Fragments Register</h:h1>
-    <h:p>This register lists all the fragments of a DOTS project.</h:p>
-    <h:p>It is required for building responses to queries passed to the DTS <h:strong>Navigation</h:strong> and <h:strong>Document</h:strong> Endpoints.</h:p>
+    <h:h1>Switcher DoTS</h:h1>
+    <h:p>This register lists all the projects and ressources of a DOTS portal.</h:p>
+    <h:p>It is required for building responses to queries passed to the DTS <h:strong>Collection</h:strong>, <h:strong>Navigation</h:strong> and <h:strong>Document</h:strong> Endpoints.</h:p>
   </a:documentation>
   
   <start>
@@ -45,60 +45,49 @@
   
   <define name="member">
     <element name="member">
-      <oneOrMore>
-        <ref name="switcher_resource_item"/>
-      </oneOrMore>
+      <ref name="switcher_resource_item"/>
     </element>
   </define>
   
   <define name="switcher_resource_item">
-    <choice>
-      <ref name="project"/>
-      <ref name="collection"/>
-      <ref name="document"/>
-    </choice>
+    <interleave>  
+      <oneOrMore>
+        <ref name="project"/>
+      </oneOrMore>
+      <zeroOrMore>
+        <ref name="collection"/>
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="document"/>
+      </zeroOrMore>
+    </interleave>
   </define>
   
   <define name="project">
-    <element name="project">
-      <ref name="resource-atts"/>
-    </element>
+      <element name="project">
+        <ref name="resource-atts"/>
+      </element>
   </define>
   
   <define name="collection">
-    <element name="collection">
-      <ref name="resource-atts"/>
-    </element>
+      <element name="collection">
+        <ref name="resource-atts"/>
+      </element>
   </define>
   
   <define name="document">
-    <element name="document">
-      <ref name="resource-atts"/>
-    </element>
+      <element name="document">
+        <ref name="resource-atts"/>
+      </element>
   </define>
   
   <define name="resource-atts">
     <attribute name="dtsResourceId">
-      <data type="ID"/>
+      <data type="string"/>
     </attribute>
     <attribute name="dbName">
       <data type="string"/>
     </attribute>
-  </define>
-    
-  <define name="dcMetadata">
-    <a:documentation>TODO</a:documentation>
-    <choice>
-      <element name="dc:publisher"><text/></element>
-      <element name="dc:date"><text/></element>
-    </choice>
-  </define>
-  
-  <define name="dcTitle">
-    <a:documentation>TODO</a:documentation>
-    <element name="dc:title">
-      <text/>
-    </element>
   </define>
   
 </grammar>
