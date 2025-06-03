@@ -27,8 +27,9 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @param $bdd (xs:string) The name of the database to query.
 : @return A new document named fragments_register.xml is added to the database
 :)
-declare updating function fragments:createFragmentsRegister($bdd) {
-  let $fragments := fragments:getFragments($bdd)
+declare updating function fragments:createFragmentsRegister($dbName as xs:string) {
+  let $csv := resources:getCSV-map($dbName, "fragment")
+  let $fragments := fragments:getFragments($dbName, $csv)
   where $fragments
   return
     let $content := 
@@ -36,7 +37,7 @@ declare updating function fragments:createFragmentsRegister($bdd) {
         resources:getMetadata(),
         <member>{$fragments}</member>
       }</fragmentsRegister>
-    return db:add($bdd, $content, $G:fragmentsRegister)
+    return db:add($dbName, $content, $G:fragmentsRegister)
 };
 
 (:~ 
@@ -44,7 +45,7 @@ declare updating function fragments:createFragmentsRegister($bdd) {
 : @param $bdd (xs:string) The name of the database to query.
 : @return A sequence of <fragment> elements, each representing a citational unit extracted from the TEI documents
 :)
-declare %private function fragments:getFragments($bdd as xs:string) {
+declare %private function fragments:getFragments($bdd as xs:string, $csv) {
   for $resource in db:get($bdd)/tei:TEI
   where $resource//tei:citeStructure
   let $resourceId :=
@@ -53,7 +54,7 @@ declare %private function fragments:getFragments($bdd as xs:string) {
     else functx:substring-after-last(db:path($resource), "/")
   let $maxCiteDepth := fragments:getMaxCiteDepth($resource//tei:refsDecl, 0)
   for $citeStructurePosition in $resource//tei:refsDecl/tei:citeStructure
-  return fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+  return fragments:handleCiteStructure($bdd, $resource, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth, $csv)
 };
 
 (:~ 
@@ -69,7 +70,7 @@ declare %private function fragments:getFragments($bdd as xs:string) {
 : @param $maxCiteDepth (xs:integer) The maximum citation depth, as determined by local:getMaxCiteDepth
 : @return a sequence of <fragment> elements, each representing a citation unit, with attributes for hierarchy and reference management.
 :)
-declare function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth) {
+declare function fragments:handleCiteStructure($bdd as xs:string, $resource as element(), $parentNodeRef, $citeStructure as element(), $level as xs:integer, $resourceId, $parentRef, $parentNodeId, $maxCiteDepth, $csv) {
   let $xpath := normalize-space($citeStructure/@match)
   let $query := concat('
     declare default element namespace "http://www.tei-c.org/ns/1.0";',
@@ -107,13 +108,13 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
                 for $v in $valueQuery
                 return
                   element {$nameMetadata} {normalize-space($v)} else (),
-            fragments:getFragmentMetadata($bdd, xs:string($ref))
+            fragments:getFragmentMetadata($bdd, xs:string($ref), $csv)
           }</fragment>,
           if ($citeStructure/tei:citeStructure)
           then 
             for $cite in $citeStructure/tei:citeStructure
             return
-              fragments:handleCiteStructure($bdd, $resource, $ref, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth)
+              fragments:handleCiteStructure($bdd, $resource, $ref, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth, $csv)
           else ()
         )
 };
@@ -124,33 +125,51 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
 : @param $ref (xs:string) The reference identifier of the fragment whose metadata needs to be retrieved.
 : @return A sequence of metadata elements specific to the requested fragment
 :)
-declare %private function fragments:getFragmentMetadata($bdd as xs:string, $ref as xs:string) {
-  let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
+declare %private function fragments:getFragmentMetadata($dbName as xs:string, $ref as xs:string, $csv-map) {
+  (: let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
   return
     let $metadatas := 
-    for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
-    let $getResourceId := $metadata/@resourceId
-    let $source := functx:substring-after-last($metadata/@source, "/")
-    let $csv :=
-      for $csvs in db:get($bdd)//*:csv
-      let $paths := db:path($csvs)
-      where contains($paths, $source)
+      let $csv-map := resources:getCSV-map($bdd, "fragment")
+      for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
+      let $source := functx:substring-after-last($metadata/@source, "/")
+      let $csv := $csv-map($source)
+      let $findIdInCSV := normalize-space($metadata/@resourceId)
+      let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]       
       return
-        $csvs[1]
-    let $findIdInCSV := normalize-space($metadata/@resourceId)
-    let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]
+        if ($metadata/@resourceId = "all")
+        then 
+          let $key := $metadata/name()
+          return
+            element {$key} { 
+            if ($metadata/@key) then attribute {"key"} {$metadata/@key},
+            concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+            }
+        else
+          if ($record and $metadata) 
+          then resources:createContent($metadata, $record)
+          else ()
+  return
+    $metadatas :)
+    
+let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap/mapping
+return
+  if ($metadataMap)
+  then
+    for $metadata in $metadataMap/node()[@scope = "fragment"]
     return
       if ($metadata/@resourceId = "all")
-      then
+      then 
         let $key := $metadata/name()
+        return element {$key} { 
+          if ($metadata/@key) then attribute {"key"} {$metadata/@key},
+          concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+        }
+      else 
+        let $source := functx:substring-after-last($metadata/@source, '/')
+        let $csv-source := $csv-map($source)
+        for $record in $csv-source($ref)
         return
-          element {$key} { concat($metadata/@prefix, $metadata, $metadata/@suffix) }
-      else
-        if ($record and $metadata)
-        then resources:createContent($metadata, $record)
-        else ()
-  return
-    $metadatas
+          resources:createContent($metadata, $record)
 };
 
 (:~ 
