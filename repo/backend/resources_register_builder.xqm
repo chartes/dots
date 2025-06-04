@@ -18,7 +18,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace dots = "http://www.tei-c.org/ns/1.0";
+declare namespace dots = "https://github.com/chartes/dots/";
 
 (:~  
 : This function generates the document resources_register.xml document that inventories all collections and documents in the given database. It also adds metadata and invokes the fragment registry creation. 

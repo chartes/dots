@@ -17,16 +17,17 @@ import module namespace dots_error = "error/dots_error";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
-declare variable $dbName external := "test";
-declare variable $projectDirPath external := "";
-declare variable $topCollectionId external := "test";
+declare variable $dbName external := "clem";
+declare variable $projectDirPath external := "/home/ppons/Documents/Work/clem";
+declare variable $topCollectionId external := "clem";
+declare variable $options external := false();
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
 :)
 declare %updating %unit:before function local:createProjectTest() {
-  dots.create:db($dbName, $projectDirPath)
+  if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
 };
 
 (:~
@@ -100,7 +101,7 @@ declare %unit:test function local:assertCorrectTotalChildren() {
 : @return The database is removed from the system.
 :)
 declare %updating %unit:after function local:deleteProjectTest() {
-  dots.delete:handle($dbName, "true")
+  if ($options = true()) then dots.delete:handle($dbName, "true")
 }; 
 
 ()
