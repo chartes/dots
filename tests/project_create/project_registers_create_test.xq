@@ -17,16 +17,19 @@ import module namespace dots_error = "error/dots_error";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
-declare variable $dbName external := "clem";
-declare variable $projectDirPath external := "/home/ppons/Documents/Work/clem";
-declare variable $topCollectionId external := "clem";
+declare variable $defaultProjectDirPath :=
+  ""
+;
+declare variable $dbName external := "test";
+declare variable $projectDirPath external := "";
+declare variable $topCollectionId external := "test";
 declare variable $options external := false();
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
 :)
-declare %updating %unit:before function local:createProjectTest() {
+declare %updating %unit:before-module function local:createProjectTest() {
   if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
 };
 
@@ -34,8 +37,10 @@ declare %updating %unit:before function local:createProjectTest() {
 : This function runs before the test suite and creates the necessary registers for DoTS.
 : @return resources_register.xml and fragments_register.xml are created.
 :)
-declare %updating %unit:before function local:createRegisters() {
-  resources:createResourcesRegister($dbName, $topCollectionId)
+declare %updating %unit:before-module function local:createRegisters() {
+  if (db:get($dbName, $G:resourcesRegister)) 
+  then () 
+  else resources:createResourcesRegister($dbName, $topCollectionId)
 };
 
 (:~
@@ -66,10 +71,9 @@ declare %unit:test function local:assertProjectIsUnique() {
  : @return Success if no duplicate identifiers are found.
 :)
 declare %unit:test function local:assertUniqueResourcesIdentifiers() {
-  let $countDistinctIdentifier := count(distinct-values(db:get($dbName, $G:resourcesRegister)//dots:member/node()/@dtsResourceId))
-  let $countAllIdentifier := count(db:get($dbName, $G:resourcesRegister)//dots:member/node()/@dtsResourceId)
+  let $dtsResourceId := db:get($dbName, $G:resourcesRegister)//dots:member/node()/@dtsResourceId
   return
-    unit:assert-equals($countDistinctIdentifier, $countAllIdentifier)
+    unit:assert(empty(duplicate-values($dtsResourceId)))
 };
 
 (:~
@@ -77,10 +81,9 @@ declare %unit:test function local:assertUniqueResourcesIdentifiers() {
  : @return Success if all fragment references are distinct.
 :)
 declare %unit:test function local:assertUniqueFragmentsIdentifiers() {
-  let $countDistinctIdentifier := count(distinct-values(db:get($dbName, $G:fragmentsRegister)//dots:member/dots:fragment/@ref))
-  let $countAllIdentifier := count(db:get($dbName, $G:fragmentsRegister)//dots:member/dots:fragment/@ref)
+  let $ref := db:get($dbName, $G:fragmentsRegister)//dots:member/dots:fragment/@ref
   return
-    unit:assert-equals($countDistinctIdentifier, $countAllIdentifier)
+    unit:assert(empty(duplicate-values($ref)))
 };
 
 (:~
@@ -100,8 +103,8 @@ declare %unit:test function local:assertCorrectTotalChildren() {
 : This function is executed after the test suite. It deletes the BaseX database created for testing.
 : @return The database is removed from the system.
 :)
-declare %updating %unit:after function local:deleteProjectTest() {
+declare %updating %unit:after-module function local:deleteProjectTest() {
   if ($options = true()) then dots.delete:handle($dbName, "true")
 }; 
 
-()
+local:assertUniqueResourcesIdentifiers()
