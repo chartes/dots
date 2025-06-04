@@ -55,7 +55,6 @@
   <define name="collection">
     <a:documentation>Ressource de type collection</a:documentation>
     <element name="collection">
-      <ref name="dcTitle"/>
       <ref name="dtsResourceId-att"/>
       <attribute name="totalChildren">
         <a:documentation>Nombre d'enfant(s) direct(s) de la collection</a:documentation>
@@ -66,6 +65,10 @@
           <text/>
         </attribute>
       </optional>
+      <ref name="dcTitle"/>
+      <zeroOrMore>
+        <ref name="anyElement"/>
+      </zeroOrMore>
     </element>
   </define>
   
@@ -76,11 +79,14 @@
       <ref name="dtsResourceId-att"/>
       <attribute name="maxCiteDepth">
         <a:documentation>Profondeur maximale des passages citables</a:documentation>
-        <data type="integer"/>
+        <data type="int"/>
       </attribute>
       <attribute name="parentIds">
         <text/>
       </attribute>
+      <zeroOrMore>
+        <ref name="anyElement"/>
+      </zeroOrMore>
     </element>
   </define>
   
@@ -98,5 +104,27 @@
     </element>
   </define>
   
+  <define name="anyElement">
+    <element>
+      <anyName/>
+      <zeroOrMore>
+        <text/>
+      </zeroOrMore>
+      <optional>
+        <attribute name="key">
+          <text/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="type">
+          <choice>
+            <value>boolean</value>
+            <value>number</value>
+            <value>null</value>
+          </choice>
+        </attribute>
+      </optional>
+    </element>
+  </define>
   
 </grammar>

@@ -15,8 +15,9 @@ import module namespace dots_error = "error/dots_error";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $dbName external;
-declare variable $projectDirPath external;
+declare variable $dbName external := "test";
+declare variable $projectDirPath external := "/home/ppons/Bureau/dots_documentation/data_test/periodiques/encpos_by_abstract";
+declare variable $options external := map {};
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
@@ -97,7 +98,7 @@ declare %unit:test function local:checkMetadataMapping() {
 : @return The database is removed from the system.
 :)
 declare %updating %unit:after function local:deleteProjectTest() {
-  dots.delete:handle($dbName, "true")
+  if (map:contains($options, true())) then () else dots.delete:handle($dbName, "true")
 };
 
 ()

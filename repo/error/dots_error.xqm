@@ -53,5 +53,3 @@ declare function dots_error:metadata_mapping($dbName, $projectDirPath ) {
 
 
 
-
-

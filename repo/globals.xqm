@@ -87,11 +87,11 @@ declare function G:getTopCollectionId($dbName as xs:string) {
     Variables pour le module Validate (à reprendre)
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :) 
    
-declare variable $G:dbSwitchValidation := concat($G:webapp, "dots/schema/dots_db_switcher.rng");
+declare variable $G:dbSwitchValidation := concat($G:webapp, "/schema/dots_db_switcher.rng");
 
-declare variable $G:resourcesValidation := concat($G:webapp, "dots/schema/resources_register.rng");
+declare variable $G:resourcesValidation := concat($G:webapp, "/schema/resources_register.rng");
 
-declare variable $G:fragmentsValidation := concat($G:webapp, "dots/schema/fragments_register.rng");
+declare variable $G:fragmentsValidation := concat($G:webapp, "/schema/fragments_register.rng");
 
 
 (:~ Variable pour accéder au webapp :)

@@ -164,6 +164,8 @@ function routes:navigation(
 declare
   %rest:path("/api/dts/document")
   %rest:GET
+  %output:method("xml")
+  %rest:produces("application/tei+xml")
   %rest:query-param("resource", "{$resource}", "")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
