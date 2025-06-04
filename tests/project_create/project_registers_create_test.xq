@@ -18,7 +18,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
 declare variable $dbName external := "test";
-declare variable $projectDirPath external := "/home/ppons/Bureau/dots_documentation/data_test/periodiques/encpos_by_abstract";
+declare variable $projectDirPath external := "";
 declare variable $topCollectionId external := "test";
 
 (:~
