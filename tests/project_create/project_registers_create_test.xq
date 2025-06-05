@@ -105,4 +105,4 @@ declare %updating %unit:after-module function local:deleteProjectTest() {
   if ($options = true()) then dots.delete:handle($dbName, "true")
 }; 
 
-local:assertUniqueResourcesIdentifiers()
+()

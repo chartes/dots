@@ -16,15 +16,15 @@ import module namespace dots_error = "error/dots_error";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare variable $dbName external := "test";
-declare variable $projectDirPath external;
+declare variable $projectDirPath external := "";
 declare variable $options external := map {};
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
 :)
-declare %updating %unit:before-module function local:createProjectTest() {
-  dots.create:db($dbName, $projectDirPath)
+declare %updating %unit:before function local:createProjectTest() {
+  if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
 };
 
 (:~
