@@ -13,6 +13,8 @@ import module namespace utils = "resolver/utils";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
+declare variable $routes:test := "demo";
+
 (:~  
 : Cette fonction gère le point d'entrée de l'API DTS
 : @return réponse JSON pour le endpoint EntryPoint
@@ -162,6 +164,8 @@ function routes:navigation(
 declare
   %rest:path("/api/dts/document")
   %rest:GET
+  %output:method("xml")
+  %rest:produces("application/tei+xml")
   %rest:query-param("resource", "{$resource}", "")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
@@ -202,9 +206,11 @@ function routes:document(
             switch ($media-type)
             case ($media-type[. = "html"]) return
               let $style :=
-                if (file:exists(concat($G:xsl, $dbName, "/", $dbName, ".xsl")))
-                then concat($G:xsl, $dbName, "/", $dbName, ".xsl")
-                else concat($G:xsl, $G:defaultXslEnginePath)
+                let $xsl := G:linkToXsl($dbName)
+                return
+                  if (file:exists(concat($xsl, $dbName, "/", $dbName, ".xsl")))
+                  then concat($xsl, $dbName, "/", $dbName, ".xsl")
+                  else concat($xsl, $G:defaultXslEnginePath)
               return
                 xslt:transform($result, $style)
             default return $result

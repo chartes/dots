@@ -9,7 +9,7 @@ declare variable $topCollectionId external := ();
 
 if ($dbName and db:exists($dbName)) then (
   if (not($topCollectionId)) then (
-    script:error("renseigner la variable topCollectionId (identifiant du projet)")
+    script:error("Renseigner la variable topCollectionId (identifiant du projet)")
   ) else (
     resources:createResourcesRegister($dbName, $topCollectionId),
     if (db:get($dbName, $G:resourcesRegister) or db:get($dbName, $G:fragmentsRegister)) then (

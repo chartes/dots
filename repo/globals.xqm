@@ -16,7 +16,14 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
 (: "../../../../../../../transform/" :)
-declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); 
+declare function G:linkToXsl($dbName as xs:string) {
+  let $specificLink := db:get($dbName, $G:metadata)//settings/linkXSL
+  return
+    if ($specificLink)
+    then if (ends-with($specificLink, "/")) then $specificLink else concat($specificLink, "/")
+    else concat($G:webapp, "/webapp/static/transform/")
+};
+(: declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); :) 
 
 (: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/html/html.xsl"; :)
 
@@ -80,11 +87,11 @@ declare function G:getTopCollectionId($dbName as xs:string) {
     Variables pour le module Validate (à reprendre)
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :) 
    
-declare variable $G:dbSwitchValidation := concat($G:webapp, "dots/schema/dots_db_switcher.rng");
+declare variable $G:dbSwitchValidation := concat($G:webapp, "/schema/dots_db_switcher.rng");
 
-declare variable $G:resourcesValidation := concat($G:webapp, "dots/schema/resources_register.rng");
+declare variable $G:resourcesValidation := concat($G:webapp, "/schema/resources_register.rng");
 
-declare variable $G:fragmentsValidation := concat($G:webapp, "dots/schema/fragments_register.rng");
+declare variable $G:fragmentsValidation := concat($G:webapp, "/schema/fragments_register.rng");
 
 
 (:~ Variable pour accéder au webapp :)

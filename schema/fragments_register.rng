@@ -53,26 +53,54 @@
   
   <define name="fragment">
     <element name="fragment">
-      <attribute name="n">
+      <ref name="attr_fragment"/>
+      <zeroOrMore>
+        <ref name="anyElement"/>
+      </zeroOrMore>
+    </element>
+  </define>
+  
+  <define name="attr_fragment">
+    <attribute name="node-id">
+      <data type="integer"/>
+    </attribute>
+    <attribute name="ref">
+      <text/>
+    </attribute>
+    <attribute name="level">
+      <data type="integer"/>
+    </attribute>
+    <attribute name="maxCiteDepth">
+      <data type="integer"/>
+    </attribute>
+    <attribute name="resourceId">
+      <text/>
+    </attribute>
+    <optional>
+      <attribute name="citeType">
         <text/>
       </attribute>
-      <attribute name="node-id">
+    </optional>
+    <optional>
+      <attribute name="parentNodeId">
         <data type="integer"/>
       </attribute>
-      <attribute name="ref">
+    </optional>
+    <optional>
+      <attribute name="parentNodeRef">
         <text/>
       </attribute>
-      <attribute name="level">
-        <data type="integer"/>
-      </attribute>
-      <attribute name="maxCiteDepth">
-        <data type="integer"/>
-      </attribute>
-      <attribute name="resourceId">
+    </optional>
+  </define>
+  
+  <define name="anyElement">
+    <element>
+      <anyName/>
+      <zeroOrMore>
         <text/>
-      </attribute>
+      </zeroOrMore>
       <optional>
-        <attribute name="citeType">
+        <attribute name="key">
           <text/>
         </attribute>
       </optional>

@@ -90,8 +90,8 @@ absence de déclaration de DTD.
             <!-- à travailler
             <xsl:apply-templates select="/*/tei:teiHeader/tei:encodingDesc/tei:tagsDecl"/>
             -->
-            <!--<link rel="stylesheet" type="text/css" href="{$theme}html.css"/>
-            <link rel="stylesheet" type="text/css" href="{$theme}teipub.css"/>-->
+            <link rel="stylesheet" type="text/css" href="{$theme}html.css"/>
+            <link rel="stylesheet" type="text/css" href="{$theme}teipub.css"/>
             <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/html.css"/>
             <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/teipub.css"/>
             <xsl:if test="$customCSS">

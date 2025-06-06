@@ -15,16 +15,20 @@ import module namespace G = "globals";
 import module namespace dots_error = "error/dots_error";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
+import module namespace script = "script";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare updating function add_doc:handleAddition($dbName, $docPath) {
+  let $csv := resources:getCSV-map($dbName, "document")
+  let $csv-frag := resources:getCSV-map($dbName, "fragment")
+  return
   (
     add_doc:addDocToDB($dbName, $docPath),
-    add_doc:addDocToResourcesReg($dbName, $docPath),
-    add_doc:addFragInReg($dbName, $docPath)
+    add_doc:addDocToResourcesReg($dbName, $docPath, $csv),
+    add_doc:addFragInReg($dbName, $docPath, $csv-frag)
   )
 };
 
@@ -46,7 +50,7 @@ declare %private updating function add_doc:addDocToDB($dbName as xs:string, $doc
 : @return a complete <document/> node
 : @todo The script using this function MUST check, if a metadata TSV is called, whether information about the document is found in the TSV. If not, it should send a message specifying this.
 :)
-declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:string, $docPath) {
+declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:string, $docPath, $csv) {
   let $document := doc($docPath)/tei:TEI
   let $projectName := G:getTopCollectionId($dbName)
   let $dtsResourceId := 
@@ -63,9 +67,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
       let $path := functx:substring-before-last($docPath, "/")
       return
         let $collId := if (contains($path, "/")) then functx:substring-after-last($path, "/") else $path
-        return
-          (
-            $collId)
+        return $collId
     else $projectName
   return
     if ($document)
@@ -78,14 +80,14 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
           (
             delete nodes $doc_in_register,
             insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-          resources:getDocumentMetadata($dbName, $document, $dtsResourceId),
+          resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
           resources:getDotsProjectName($projectName)
 }</document> after $doc_in_register
           )
         else
           (
             insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-            resources:getDocumentMetadata($dbName, $document, $dtsResourceId),
+            resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
             resources:getDotsProjectName($projectName)
   }</document> as last into $resources_register,
             add_doc:updateMaxCiteDepthCollection($dbName, $parentIds),
@@ -99,7 +101,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
 : @param $docPath absolute path to the document to add
 : @return sequence of <fragment/> nodes
 :)
-declare updating %private function add_doc:addFragInReg($dbName as xs:string, $docPath) {
+declare updating %private function add_doc:addFragInReg($dbName as xs:string, $docPath, $csv) {
   let $pathToDoc := functx:substring-after-last($docPath, "data/")
   let $document := db:get($dbName, $pathToDoc)/tei:TEI
   let $resourceId :=
@@ -110,9 +112,16 @@ declare updating %private function add_doc:addFragInReg($dbName as xs:string, $d
   for $citeStructurePosition in $document//tei:refsDecl/tei:citeStructure
   return 
     let $fragments_register := db:get($dbName, $G:fragmentsRegister)//dots:member
-    let $fragment := fragments:handleCiteStructure($dbName, $document, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth)
+    let $fragment := fragments:handleCiteStructure($dbName, $document, "", $citeStructurePosition, 1, $resourceId, "", "", $maxCiteDepth, $csv)
+    let $oldFragments := $fragments_register/dots:fragment[@resourceId = $resourceId]
     return
-      insert node $fragment as last into $fragments_register
+      if ($oldFragments)
+      then
+        (
+          delete nodes $oldFragments,
+          insert node $fragment as last into $fragments_register
+        )
+      else insert node $fragment as last into $fragments_register
 };
 
 
@@ -125,9 +134,10 @@ declare updating %private function add_doc:updateMaxCiteDepthCollection($dbName 
   let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
   let $totalChildren := $parent/@totalChildren
   return
-     if ($parentIds = "collection_error")
-     then update:output("Collection does not exist !")
-     else replace value of node $totalChildren with xs:integer($parent/@totalChildren) + 1
+     if ($parent != "")
+     then replace value of node $totalChildren with xs:integer($parent/@totalChildren) + 1
+     else 
+       update:output("La collection parente n'existe pas.")
 };
 
 (:~ Updat function to add the documet to the switcher dots

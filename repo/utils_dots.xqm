@@ -7,6 +7,10 @@ import module namespace G = "globals";
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+declare function utils_dots:getIdProject($dbName as xs:string) {
+  normalize-space(db:get($dbName, $G:resourcesRegister)//dots:collection[not(@parentIds)]/@dtsResourceId)
+};
+
 (:~ This function retrieves the name of the database to which the document identified by $resourceId belongs 
 : @param $resourceId document identifier
 : @return db name
@@ -24,6 +28,14 @@ declare function utils_dots:findDocInFolder($docPath) {
   doc($docPath)
 };
 
+declare function utils_dots:findPath($dbName as xs:string, $resourceId as xs:string) {
+  head((
+    db:get($dbName)/*:TEI[@xml:id = $resourceId] ! db:path(.)
+  ) otherwise (
+    db:get($dbName)/node() ! db:path(.)[ends-with(., $resourceId)]
+  ))
+};
+
 (:~
  : Retrieves the document with the specified id.
  : @param $dbName name of database
@@ -34,11 +46,7 @@ declare function utils_dots:findPathDoc($dbName as xs:string,
   $resourceId as xs:string,
   $strip as xs:boolean := true()
 ) as document-node() {
-  let $path := head((
-    db:get($dbName)/*:TEI[@xml:id = $resourceId] ! db:path(.)
-  ) otherwise (
-    db:get($dbName)/node() ! db:path(.)[ends-with(., $resourceId)]
-  ))
+  let $path := utils_dots:findPath($dbName, $resourceId)
   let $doc := db:get($dbName, $path)
   return if($strip) then $doc update {
     delete nodes //processing-instruction()[name() = "xml-stylesheet"]

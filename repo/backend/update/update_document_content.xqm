@@ -13,7 +13,7 @@ import module namespace G = "globals";
 import module namespace dots_error = "error/dots_error";
 import module namespace utils = "resolver/utils";
 import module namespace utils_dots = "utils_dots";
-
+import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
 
 declare namespace dots = "https://github.com/chartes/dots/";
@@ -99,6 +99,7 @@ declare updating function update_doc_ctt:handleUpdate($docId as xs:string, $proj
 :)
 declare updating function update_doc_ctt:updateRegisters($docId, $project_dir_path) {
   let $dbName := utils_dots:getDbName($docId)
+  let $csv := resources:getCSV-map($dbName, "fragment")
   let $docInDb := update_doc_ctt:findDocInDb($docId)/tei:TEI
   let $docInFolder := utils_dots:findDocInFolder(concat($project_dir_path, utils_dots:getPathInFolder($docId, $project_dir_path)))
   let $compareDoc := update_doc_ctt:compareDocs($docInFolder, $docInDb)
@@ -113,19 +114,10 @@ declare updating function update_doc_ctt:updateRegisters($docId, $project_dir_pa
       return 
         (
           delete nodes $fragments,
-          insert nodes fragments:handleCiteStructure($dbName, $docInDb, "", $citeStructurePosition, 1, $docId, "", "", $maxCiteDepth) after db:get($dbName, $G:fragmentsRegister)//dots:fragment[@resourceId = $docId][1],
+          insert nodes fragments:handleCiteStructure($dbName, $docInDb, "", $citeStructurePosition, 1, $docId, "", "", $maxCiteDepth, $csv) after db:get($dbName, $G:fragmentsRegister)//dots:fragment[@resourceId = $docId][1],
           replace value of node $docRegister/@maxCiteDepth with $maxCiteDepth
         )
 };
-
-
-(: let $docId := "ENCPOS_1972_18"
-let $path := "/home/ppons/Bureau/basex_dots/update_issue/corpus/data/"
-return
-  (
-    update_doc_ctt:handleUpdate($docId, $path),
-    update_doc_ctt:updateRegisters($docId, $path)
-  ) :)
   
 
 

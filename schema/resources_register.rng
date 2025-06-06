@@ -7,6 +7,7 @@
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
   xmlns:h="http://www.w3.org/1999/xhtml" 
+  xmlns:dots="https://github.com/chartes/dots/"
   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" 
   xml:lang="fr">
   
@@ -55,7 +56,6 @@
   <define name="collection">
     <a:documentation>Ressource de type collection</a:documentation>
     <element name="collection">
-      <ref name="dcTitle"/>
       <ref name="dtsResourceId-att"/>
       <attribute name="totalChildren">
         <a:documentation>Nombre d'enfant(s) direct(s) de la collection</a:documentation>
@@ -66,23 +66,35 @@
           <text/>
         </attribute>
       </optional>
+      <ref name="dcTitle"/>
+      <zeroOrMore>
+        <ref name="anyElement"/>
+      </zeroOrMore>
+      <ref name="dotsProjectId"/>
     </element>
   </define>
   
   <define name="document">
     <a:documentation>Ressource de type ressource (un document)</a:documentation>
     <element name="document">
-      <ref name="dcTitle"/>
       <ref name="dtsResourceId-att"/>
       <attribute name="maxCiteDepth">
         <a:documentation>Profondeur maximale des passages citables</a:documentation>
-        <data type="integer"/>
+        <data type="int"/>
       </attribute>
       <attribute name="parentIds">
         <text/>
       </attribute>
+      <interleave>
+        <ref name="dcTitle"/>
+        <ref name="dotsProjectId"/>
+        <zeroOrMore>
+          <ref name="anyElement"/>
+        </zeroOrMore>
+      </interleave>
     </element>
   </define>
+  
   
   <define name="dtsResourceId-att">
     <attribute name="dtsResourceId">
@@ -98,5 +110,36 @@
     </element>
   </define>
   
+  <define name="dotsProjectId">
+    <element name="dots:dotsProjectId">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="anyElement">
+    <element>
+      <anyName>
+        <except>
+          <name>dc:title</name>
+          <name>dots:dotsProjectId</name>
+        </except>
+      </anyName>
+      <optional>
+        <attribute name="key">
+          <text/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="type">
+          <choice>
+            <value>boolean</value>
+            <value>number</value>
+            <value>null</value>
+          </choice>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
   
 </grammar>

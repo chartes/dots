@@ -838,7 +838,7 @@ declare function utils:getArrayJson(
  : @param $metada élément XML
  :)
 declare function utils:getStringJson(
-  $key as xs:string,
+  $key,
   $metadata
 ) {
   if ($key = "download")
