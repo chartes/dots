@@ -1,7 +1,10 @@
 xquery version "4.0";
 
 (:~  
-: This module contains unit tests to verify the correct initialization of a DoTS BaseX database from a project directory.
+: This module contains unit tests to verify the validity of a DoTS BaseX database. 
+: It checks that the total number of declared projects matches the number of actual project elements, 
+: that the project switcher resource conforms to its Relax NG schema,
+: and that each attribute @dtsResourceId is unique.
 : @author École nationale des chartes - Philippe Pons
 : @since 2025-06-10
 : @version  1.0
@@ -28,7 +31,37 @@ declare %updating %unit:before function local:createProjectTest() {
   if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
 };
 
+(:~
+: This test verifies that the declared total number of projects in the DoTS metadata 
+: matches the actual number of <project> elements present in the database.
+: @return An assertion that the count of <project> elements equals the declared total.
+:)
+declare %unit:test function local:checkTotalProject() {
+  let $totalProjects := xs:integer(db:get($G:dots)//totalProjects)
+  let $countProject := count(db:get($G:dots, $G:dbSwitcher)//project)
+  return
+    unit:assert-equals($totalProjects, $countProject)
+};
 
+(:~
+ : This test verifies that the DoTS database switcher file conforms to its Relax NG schema.
+ : @return An assertion that the resource passes RNG validation.
+:)
+declare %unit:test function local:validateRng() {
+  let $switcher := db:get($G:dots, $G:dbSwitcher)
+  return
+    unit:assert(validate:rng-report($switcher, $G:dbSwitchValidation))
+};
+
+(:~
+ : This test verifies that each attribute @dtsResourceId in the resources register is unique.
+ : @return Success if no duplicate identifiers are found.
+:)
+declare %unit:test function local:assertUniqueIdentifiers() {
+  let $dtsResourceId := db:get($G:dots, $G:dbSwitcher)//member/node()/@dtsResourceId
+  return
+    unit:assert(empty(duplicate-values($dtsResourceId)))
+};
 
 (:~
 : This function is executed after the test suite. It deletes the BaseX database created for testing.

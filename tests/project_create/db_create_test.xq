@@ -17,7 +17,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare variable $dbName external := "test";
 declare variable $projectDirPath external := "";
-declare variable $options external := map {};
+declare variable $options external := false();
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
@@ -98,7 +98,7 @@ declare %unit:test function local:checkMetadataMapping() {
 : @return The database is removed from the system.
 :)
 declare %updating %unit:after function local:deleteProjectTest() {
-  if (map:contains($options, true())) then () else dots.delete:handle($dbName, "true")
+  if ($options = true()) then dots.delete:handle($dbName, "true")
 };
 
 ()

@@ -1,7 +1,9 @@
 xquery version "4.0";
 
 (:~  
-: This module contains unit tests to verify the correct initialization of a DoTS BaseX database from a project directory.
+: This module contains unit tests to check that all fragments in the DoTS fragment register 
+: with a reference of the form "r[0-9]*" are correctly associated with a target node 
+: that has an @xml:id attribute.
 : @author École nationale des chartes - Philippe Pons
 : @since 2025-06-10
 : @version  1.0
@@ -16,7 +18,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $dbName external := "comptes";
+declare variable $dbName external := "";
 declare variable $projectDirPath external := "";
 declare variable $options external := false();
 
@@ -28,6 +30,11 @@ declare %updating %unit:before function local:createProjectTest() {
   if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
 };
 
+(:~
+: This test verifies that all <fragment> elements with a @ref matching "r[0-9]*" 
+: are correctly linked to an existing node in the database via their @node-id.
+: @return An assertion that each referenced node exists and has an @xml:id attribute.
+:)
 declare %unit:test function local:checkIdsCreated() {
   for $fragment in db:get($dbName, $G:fragmentsRegister)//fragment
   let $ref := $fragment/@ref
