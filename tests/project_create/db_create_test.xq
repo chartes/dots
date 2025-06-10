@@ -7,7 +7,6 @@ xquery version "4.0";
 : @version  1.0
 :)
 
-
 import module namespace G = 'globals';
 import module namespace dots.create = "backend/db_create";
 import module namespace dots.delete = "backend/dots_registers_delete";
@@ -15,8 +14,22 @@ import module namespace dots_error = "error/dots_error";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+declare function local:downloadDefaultData() {
+  let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
+  let $zip := fetch:binary($url)
+  let $entries  := archive:entries($zip)
+  let $contents := archive:extract-binary($zip)
+  return 
+    for-each-pair($entries, $contents, fn($entry, $content) {
+      file:create-dir(replace($entry, "[^/]+$", "")),
+      file:write-binary($entry, $content)
+    })
+};
+
+declare variable $defaultProjectDirPath := concat(file:current-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
+
 declare variable $dbName external := "test";
-declare variable $projectDirPath external := "";
+declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
 declare variable $options external := false();
 
 (:~
@@ -98,7 +111,16 @@ declare %unit:test function local:checkMetadataMapping() {
 : @return The database is removed from the system.
 :)
 declare %updating %unit:after function local:deleteProjectTest() {
-  if ($options = true()) then dots.delete:handle($dbName, "true")
+  if ($options = true()) 
+  then 
+    dots.delete:handle($dbName, "true")
+}; 
+
+declare %unit:after function local:deleteDefaultDataFile() {
+  let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
+  where file:exists($defaultDataFile)
+  return
+    file:delete($defaultDataFile, true())
 };
 
 ()

@@ -17,11 +17,24 @@ import module namespace dots_error = "error/dots_error";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
+declare function local:downloadDefaultData() {
+  let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
+  let $zip := fetch:binary($url)
+  let $entries  := archive:entries($zip)
+  let $contents := archive:extract-binary($zip)
+  return 
+    for-each-pair($entries, $contents, fn($entry, $content) {
+      file:create-dir(replace($entry, "[^/]+$", "")),
+      file:write-binary($entry, $content)
+    })
+};
+
+declare variable $defaultProjectDirPath := concat(file:current-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
 
 declare variable $dbName external := "test";
-declare variable $projectDirPath external := "";
+declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
 declare variable $topCollectionId external := "test";
-declare variable $options external := false();
+declare variable $options external := true();
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
@@ -102,7 +115,16 @@ declare %unit:test function local:assertCorrectTotalChildren() {
 : @return The database is removed from the system.
 :)
 declare %updating %unit:after-module function local:deleteProjectTest() {
-  if ($options = true()) then dots.delete:handle($dbName, "true")
+  if ($options = true()) 
+  then 
+    dots.delete:handle($dbName, "true")
 }; 
+
+declare %unit:after-module function local:deleteDefaultDataFile() {
+  let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
+  where file:exists($defaultDataFile)
+  return
+    file:delete($defaultDataFile, true())
+};
 
 ()

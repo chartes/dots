@@ -25,7 +25,7 @@ declare %private updating function dots.delete:dbSwitch($dbName as xs:string) {
   let $member := $dbDots//member
   return (
     replace value of node $modified with current-dateTime(),
-    replace value of node $totalProjects with xs:integer($totalProjects) - 1,
+    replace value of node $totalProjects with count($dbDots//project) - 1,
     delete nodes $member/*[@dbName = $dbName]
   )
 };
@@ -34,7 +34,7 @@ declare %private updating function dots.delete:registers($dbName as xs:string, $
   if ($option = "true") then (
     db:drop($dbName)
   ) else (
-    db:delete($dbName, $G:resourcesRegister),
-    db:delete($dbName, $G:fragmentsRegister)  
+      db:delete($dbName, $G:resourcesRegister),
+      db:delete($dbName, $G:fragmentsRegister)  
   )
 };

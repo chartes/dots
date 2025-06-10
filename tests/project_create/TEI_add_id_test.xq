@@ -13,27 +13,62 @@ import module namespace G = 'globals';
 import module namespace dots.create = "backend/db_create";
 import module namespace dots.delete = "backend/dots_registers_delete";
 import module namespace dots_error = "error/dots_error"; 
+import module namespace resources = "backend/resources_register_builder";
+import module namespace dots.update = "backend/TEI_add_id";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare variable $dbName external := "";
-declare variable $projectDirPath external := "";
-declare variable $options external := false();
+declare function local:downloadDefaultData() {
+  let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
+  let $zip := fetch:binary($url)
+  let $entries  := archive:entries($zip)
+  let $contents := archive:extract-binary($zip)
+  return 
+    for-each-pair($entries, $contents, fn($entry, $content) {
+      file:create-dir(replace($entry, "[^/]+$", "")),
+      file:write-binary($entry, $content)
+    })
+};
+
+declare variable $defaultProjectDirPath := concat(file:current-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
+
+declare variable $dbName external := "test";
+declare variable $topCollectionId external := "test";
+declare variable $projectDirPath external := "(local:downloadDefaultData(), $defaultProjectDirPath)";
+declare variable $options external := true();
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
 :)
-declare %updating %unit:before function local:createProjectTest() {
+declare %updating %unit:before-module function local:createProjectTest() {
   if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
+};
+
+(:~
+: This function runs before the test suite and creates the necessary registers for DoTS.
+: @return resources_register.xml and fragments_register.xml are created.
+:)
+declare %updating %unit:before-module function local:createRegisters() {
+  if (db:get($dbName, $G:resourcesRegister)) 
+  then () 
+  else resources:createResourcesRegister($dbName, $topCollectionId)
+};
+
+declare %updating %unit:before-module function local:addTeiIds() {
+  let $nodeIdToTest := db:get($dbName, $G:fragmentsRegister)//fragment[matches(@ref, "r[0-9]*")][1]/@node-id
+  where not(db:get-id($dbName, $nodeIdToTest)/@xml:id)
+  return
+    dots.update:addXmlIdToFragment($dbName)
 };
 
 (:~
 : This test verifies that all <fragment> elements with a @ref matching "r[0-9]*" 
 : are correctly linked to an existing node in the database via their @node-id.
 : @return An assertion that each referenced node exists and has an @xml:id attribute.
+: @todo add a function to check if fragments list is correct ?
 :)
 declare %unit:test function local:checkIdsCreated() {
   for $fragment in db:get($dbName, $G:fragmentsRegister)//fragment
@@ -48,8 +83,17 @@ declare %unit:test function local:checkIdsCreated() {
 : This function is executed after the test suite. It deletes the BaseX database created for testing.
 : @return The database is removed from the system.
 :)
-declare %updating %unit:after-module function local:deleteProjectTest() {
-  if ($options = true()) then dots.delete:handle($dbName, "true")
+declare %updating %unit:after function local:deleteProjectTest() {
+  if ($options = true()) 
+  then 
+    dots.delete:handle($dbName, "true")
 }; 
+
+declare %unit:after function local:deleteDefaultDataFile() {
+  let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
+  where file:exists($defaultDataFile)
+  return
+    file:delete($defaultDataFile, true())
+};
 
 ()
