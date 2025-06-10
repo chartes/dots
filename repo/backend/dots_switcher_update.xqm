@@ -1,4 +1,4 @@
-xquery version "3.1";
+xquery version "4.0";
 
 module namespace dots.update = "backend/dots_switcher_update"; 
 
