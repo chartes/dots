@@ -25,12 +25,12 @@ declare function local:downloadDefaultData() {
   let $contents := archive:extract-binary($zip)
   return 
     for-each-pair($entries, $contents, fn($entry, $content) {
-      file:create-dir(replace($entry, "[^/]+$", "")),
-      file:write-binary($entry, $content)
+      file:create-dir(file:temp-dir() || replace($entry, "[^/]+$", "")),
+      file:write-binary(file:temp-dir() || $entry, $content)
     })
 };
 
-declare variable $defaultProjectDirPath := concat(file:current-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
+declare variable $defaultProjectDirPath := concat(file:temp-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
 
 declare variable $dbName external := "test";
 declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
@@ -40,7 +40,7 @@ declare variable $options external := false();
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
 :)
-declare %updating %unit:before function local:createProjectTest() {
+declare %updating %unit:before-module function local:createProjectTest() {
   if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
 };
 
@@ -114,7 +114,7 @@ declare %unit:test function local:checkMetadataMapping() {
 : This function is executed after the test suite. It deletes the BaseX database created for testing.
 : @return The database is removed from the system.
 :)
-declare %updating %unit:after function local:deleteProjectTest() {
+declare %updating %unit:after-module function local:deleteProjectTest() {
   if ($options = true()) 
   then 
     dots.delete:handle($dbName, "true")
@@ -124,8 +124,8 @@ declare %updating %unit:after function local:deleteProjectTest() {
 : This function deletes the default test data if it exists.
 : @return The default test data directory is removed from the current directory.
 :)
-declare %unit:after function local:deleteDefaultDataFile() {
-  let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
+declare %unit:after-module function local:deleteDefaultDataFile() {
+  let $defaultDataFile := concat(file:temp-dir(), "dots_documentation-dev")
   where file:exists($defaultDataFile)
   return
     file:delete($defaultDataFile, true())
