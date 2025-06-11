@@ -34,7 +34,7 @@ declare variable $defaultProjectDirPath := concat(file:current-dir(), "dots_docu
 declare variable $dbName external := "test";
 declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
 declare variable $topCollectionId external := "test";
-declare variable $options external := true();
+declare variable $options external := false();
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.

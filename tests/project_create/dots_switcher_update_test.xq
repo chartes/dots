@@ -26,7 +26,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare variable $dbName external := "test";
 declare variable $topCollectionId external := "test";
 declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
-declare variable $options external := true();
+declare variable $options external := false();
 
 declare function local:downloadDefaultData() {
   let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
