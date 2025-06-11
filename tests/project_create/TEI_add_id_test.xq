@@ -20,6 +20,10 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+(:~
+: Downloads the default test data if no `$projectDirPath` is provided by the user.
+: @return The default test data is downloaded and extracted into the current directory.
+:)
 declare function local:downloadDefaultData() {
   let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
   let $zip := fetch:binary($url)
@@ -57,6 +61,10 @@ declare %updating %unit:before-module function local:createRegisters() {
   else resources:createResourcesRegister($dbName, $topCollectionId)
 };
 
+(:~
+: This function adds missing `xml:id` attributes to TEI fragments before running module tests.
+: @return Updates fragments in the database by assigning `xml:id` attributes when they are missing.
+:)
 declare %updating %unit:before-module function local:addTeiIds() {
   let $nodeIdToTest := db:get($dbName, $G:fragmentsRegister)//fragment[matches(@ref, "r[0-9]*")][1]/@node-id
   where not(db:get-id($dbName, $nodeIdToTest)/@xml:id)
@@ -68,7 +76,6 @@ declare %updating %unit:before-module function local:addTeiIds() {
 : This test verifies that all <fragment> elements with a @ref matching "r[0-9]*" 
 : are correctly linked to an existing node in the database via their @node-id.
 : @return An assertion that each referenced node exists and has an @xml:id attribute.
-: @todo add a function to check if fragments list is correct ?
 :)
 declare %unit:test function local:checkIdsCreated() {
   for $fragment in db:get($dbName, $G:fragmentsRegister)//fragment
@@ -89,6 +96,10 @@ declare %updating %unit:after function local:deleteProjectTest() {
     dots.delete:handle($dbName, "true")
 }; 
 
+(:~
+: This function deletes the default test data if it exists.
+: @return The default test data directory is removed from the current directory.
+:)
 declare %unit:after function local:deleteDefaultDataFile() {
   let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
   where file:exists($defaultDataFile)

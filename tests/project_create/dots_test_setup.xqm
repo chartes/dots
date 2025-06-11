@@ -12,26 +12,6 @@ module namespace test.setup = "test_setup";
 import module namespace dots.create = "backend/db_create";
 import module namespace dots.delete = "backend/dots_registers_delete"; 
 
-(: declare function test.setup:downloadDefaultData() {
-  let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
-  let $zip := fetch:binary($url)
-  let $entries  := archive:entries($zip)
-  let $contents := archive:extract-binary($zip)
-  return 
-    for-each-pair($entries, $contents, fn($entry, $content) {
-      file:create-dir(replace($entry, "[^/]+$", "")),
-      file:write-binary($entry, $content)
-    })
-}; :)
-
-(: declare variable $test.setup:defaultProjectDirPath := concat(file:current-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract"); :)
-
-(: declare variable $test.setup:dbName external := "test";
-declare variable $test.setup:projectDirPath external := (test.setup:downloadDefaultData(), $test.setup:defaultProjectDirPath);
-declare variable $test.setup:options external := map {
-  "dbCreate": true()
-}; :)
-
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
@@ -50,6 +30,10 @@ declare %updating %unit:after function test.setup:deleteProjectTest($dbName as x
     dots.delete:handle($dbName, "true")
 }; 
 
+(:~
+: This function deletes the default test data if it exists.
+: @return The default test data directory is removed from the current directory.
+:)
 declare %unit:after function test.setup:deleteDefaultDataFile() {
   let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
   where file:exists($defaultDataFile)

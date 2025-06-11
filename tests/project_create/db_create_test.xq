@@ -14,6 +14,10 @@ import module namespace dots_error = "error/dots_error";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
+(:~
+: This function downloads the default test data if no `$projectDirPath` is provided by the user.
+: @return The default test data is downloaded and extracted into the current directory.
+:)
 declare function local:downloadDefaultData() {
   let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
   let $zip := fetch:binary($url)
@@ -116,6 +120,10 @@ declare %updating %unit:after function local:deleteProjectTest() {
     dots.delete:handle($dbName, "true")
 }; 
 
+(:~
+: This function deletes the default test data if it exists.
+: @return The default test data directory is removed from the current directory.
+:)
 declare %unit:after function local:deleteDefaultDataFile() {
   let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
   where file:exists($defaultDataFile)
