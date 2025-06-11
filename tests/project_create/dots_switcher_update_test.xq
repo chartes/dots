@@ -2,8 +2,9 @@ xquery version "4.0";
 
 (:~  
 : This module contains unit tests to verify the validity of a DoTS BaseX database. 
-: It checks that the total number of declared projects matches the number of actual project elements, 
-: that the project switcher resource conforms to its Relax NG schema,
+: It checks that the project switcher resource conforms to its Relax NG schema,
+: that the total number of declared projects matches the number of actual project elements,
+: that each project databalse exists,
 : and that each attribute @dtsResourceId is unique.
 : @author École nationale des chartes - Philippe Pons
 : @since 2025-06-10
@@ -25,9 +26,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare variable $dbName external := "test";
 declare variable $topCollectionId external := "test";
 declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
-declare variable $options external := map {
-  "dbDelete": true()
-};
+declare variable $options external := true();
 
 declare function local:downloadDefaultData() {
   let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
@@ -96,6 +95,12 @@ declare %unit:test function local:validateRng() {
     unit:assert(validate:rng-report($switcher, $G:dbSwitchValidation))
 };
 
+declare %unit:test function local:checkDbExists() {
+  for $project in db:get($G:dots)//member/project/@dbName
+  return
+    unit:assert(db:exists($project), dots_error:dbError($dbName))
+};
+
 (:~
  : This test verifies that each attribute @dtsResourceId in the resources register is unique.
  : @return Success if no duplicate identifiers are found.
@@ -111,7 +116,7 @@ declare %unit:test function local:assertUniqueIdentifiers() {
 : @return The database is removed from the system.
 :)
 declare %updating %unit:after-module function local:deleteProjectTest() {
-  if (map:get($options, "dbDelete") = true()) 
+  if ($options = true()) 
   then 
     dots.delete:handle($dbName, "true")
 }; 
