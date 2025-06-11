@@ -71,7 +71,11 @@ declare updating %private function del_doc:changeTotalChildren($dbName as xs:str
     replace value of node $totalChildren with (xs:integer($totalChildren) - 1)
 };
 
-
+declare updating function del_doc:updateSwitcherDots($dbName as xs:string, $resourceId as xs:string){
+  let $resource := db:get($G:dots)/dots:dbSwitch/dots:member/node()[@dtsResourceId = $resourceId]
+  return
+    delete node $resource
+};
 
 
 
