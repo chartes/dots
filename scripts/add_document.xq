@@ -1,3 +1,4 @@
+xquery version '4.0' ;
 
 import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";

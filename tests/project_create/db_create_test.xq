@@ -36,6 +36,11 @@ declare variable $dbName external := "test";
 declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
 declare variable $options external := false();
 
+
+declare %unit:test function local:test() {
+  unit:assert-equals(1, 2)
+};
+
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.

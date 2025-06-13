@@ -1,3 +1,4 @@
+xquery version '4.0' ;
 
 import module namespace G = "globals";
 import module namespace script = "script";
