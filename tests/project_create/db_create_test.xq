@@ -18,7 +18,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : This function downloads the default test data if no `$projectDirPath` is provided by the user.
 : @return The default test data is downloaded and extracted into the current directory.
 :)
-declare function local:downloadDefaultData() {
+(: declare function local:downloadDefaultData() {
   let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
   let $zip := fetch:binary($url)
   let $entries  := archive:entries($zip)
@@ -30,24 +30,19 @@ declare function local:downloadDefaultData() {
     })
 };
 
-declare variable $defaultProjectDirPath := concat(file:temp-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
+declare variable $defaultProjectDirPath := concat(file:temp-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract"); :)
 
-declare variable $dbName external := "test";
-declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
-declare variable $options external := false();
-
-
-declare %unit:test function local:test() {
-  unit:assert-equals(1, 2)
-};
+declare variable $dbName external;
+declare variable $projectDirPath external (: (local:downloadDefaultData(), $defaultProjectDirPath) :);
+declare variable $options external ;
 
 (:~
 : This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
 : @return The database is created in BaseX.
 :)
-declare %updating %unit:before-module function local:createProjectTest() {
+(: declare %updating %unit:before-module function local:createProjectTest() {
   if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
-};
+}; :)
 
 (:~
 : This test checks whether the BaseX database has been created successfully.
@@ -74,7 +69,7 @@ declare %unit:test function local:checkNumberDocs() {
 :)
 declare %unit:test function local:checkNumberColls() {
   let $collsInDir := count(file:descendants(concat($projectDirPath, "/data"))[not(ends-with(., ".xml"))])
-  let $collsInDb := count(db:dir($dbName, "")[. != "metadata"])
+  let $collsInDb := count(db:dir($dbName, "")[. != "metadata"][. != "dots"])
   return
     unit:assert-equals($collsInDir, $collsInDb, dots_error:numberColls($collsInDir, $collsInDb))
 };
@@ -119,22 +114,22 @@ declare %unit:test function local:checkMetadataMapping() {
 : This function is executed after the test suite. It deletes the BaseX database created for testing.
 : @return The database is removed from the system.
 :)
-declare %updating %unit:after-module function local:deleteProjectTest() {
+(: declare %updating %unit:after-module function local:deleteProjectTest() {
   if ($options = true()) 
   then 
     dots.delete:handle($dbName, "true")
-}; 
+}; :) 
 
 (:~
 : This function deletes the default test data if it exists.
 : @return The default test data directory is removed from the current directory.
 :)
-declare %unit:after-module function local:deleteDefaultDataFile() {
+(: declare %unit:after-module function local:deleteDefaultDataFile() {
   let $defaultDataFile := concat(file:temp-dir(), "dots_documentation-dev")
   where file:exists($defaultDataFile)
   return
     file:delete($defaultDataFile, true())
-};
+}; :)
 
 ()
 

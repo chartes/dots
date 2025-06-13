@@ -17,46 +17,20 @@ import module namespace dots_error = "error/dots_error";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
-(:~
-: Downloads the default test data if no `$projectDirPath` is provided by the user.
-: @return The default test data is downloaded and extracted into the current directory.
-:)
-declare function local:downloadDefaultData() {
-  let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
-  let $zip := fetch:binary($url)
-  let $entries  := archive:entries($zip)
-  let $contents := archive:extract-binary($zip)
-  return 
-    for-each-pair($entries, $contents, fn($entry, $content) {
-      file:create-dir(replace($entry, "[^/]+$", "")),
-      file:write-binary($entry, $content)
-    })
-};
-
-declare variable $defaultProjectDirPath := concat(file:current-dir(), "dots_documentation-dev/data_test/periodiques/encpos_by_abstract");
-
 declare variable $dbName external := "test";
-declare variable $projectDirPath external := (local:downloadDefaultData(), $defaultProjectDirPath);
+declare variable $projectDirPath external := ();
 declare variable $topCollectionId external := "test";
 declare variable $options external := false();
-
-(:~
-: This function is executed before the test suite. It creates the BaseX database tailored to the needs of DoTS for testing.
-: @return The database is created in BaseX.
-:)
-declare %updating %unit:before-module function local:createProjectTest() {
-  if (db:exists($dbName)) then () else dots.create:db($dbName, $projectDirPath)
-};
 
 (:~
 : This function runs before the test suite and creates the necessary registers for DoTS.
 : @return resources_register.xml and fragments_register.xml are created.
 :)
-declare %updating %unit:before-module function local:createRegisters() {
+(: declare %updating %unit:before-module function local:createRegisters() {
   if (db:get($dbName, $G:resourcesRegister)) 
   then () 
   else resources:createResourcesRegister($dbName, $topCollectionId)
-};
+}; :)
 
 (:~
  : This test function validates all TEI documents in the database against the RNG schemas for both resources and fragments registers.
@@ -112,27 +86,6 @@ declare %unit:test function local:assertCorrectTotalChildren() {
   let $countMembersCollection := count(db:get($dbName, $G:resourcesRegister)//dots:member/node()[tokenize(@parentIds) = $idCollection])
   return
     unit:assert-equals($n, $countMembersCollection)
-};
-
-(:~
-: This function is executed after the test suite. It deletes the BaseX database created for testing.
-: @return The database is removed from the system.
-:)
-declare %updating %unit:after-module function local:deleteProjectTest() {
-  if ($options = true()) 
-  then 
-    dots.delete:handle($dbName, "true")
-}; 
-
-(:~
-: This function deletes the default test data if it exists.
-: @return The default test data directory is removed from the current directory.
-:)
-declare %unit:after-module function local:deleteDefaultDataFile() {
-  let $defaultDataFile := concat(file:current-dir(), "dots_documentation-dev")
-  where file:exists($defaultDataFile)
-  return
-    file:delete($defaultDataFile, true())
 };
 
 ()
