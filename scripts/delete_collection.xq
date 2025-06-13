@@ -8,7 +8,7 @@ declare namespace dots = "https://github.com/chartes/dots/";
 
 declare variable $dbName external := ();
 declare variable $resourceId external := ();
-declare variable $option external := false();
+declare variable $option external := false;
 
 let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $resourceId]
 return
