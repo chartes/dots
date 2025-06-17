@@ -69,7 +69,7 @@ declare %unit:test function local:checkNumberDocs() {
 :)
 declare %unit:test function local:checkNumberColls() {
   let $collsInDir := count(file:descendants(concat($projectDirPath, "/data"))[not(ends-with(., ".xml"))])
-  let $collsInDb := count(db:dir($dbName, "")[. != "metadata"][. != "dots"])
+  let $collsInDb := count(db:dir($dbName, "")[. != "metadata"][. != "dots"][./name() != "resource"])
   return
     unit:assert-equals($collsInDir, $collsInDb, dots_error:numberColls($collsInDir, $collsInDb))
 };

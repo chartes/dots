@@ -90,6 +90,8 @@ absence de déclaration de DTD.
             <!-- à travailler
             <xsl:apply-templates select="/*/tei:teiHeader/tei:encodingDesc/tei:tagsDecl"/>
             -->
+            
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"/>
             <link rel="stylesheet" type="text/css" href="{$theme}html.css"/>
             <link rel="stylesheet" type="text/css" href="{$theme}teipub.css"/>
             <link rel="stylesheet" type="text/css" href="/static/transform/hteiml/html.css"/>
@@ -101,12 +103,12 @@ absence de déclaration de DTD.
             <script type="text/javascript" src="/static/transform/hteiml/Tree.js">//</script>
           </head>
           <body class="{$corpusid}">
-            <div id="center">
-              <div id="main">
-                <div id="article">
+            <article id="center">
+              <article id="main">
+                <article id="article">
                   <xsl:apply-templates/>
-                </div>
-              </div>
+                </article>
+              </article>
               <aside id="aside">
                 <nav>
                   <header>
@@ -134,7 +136,7 @@ absence de déclaration de DTD.
                   <xsl:call-template name="toc"/>
                 </nav>
               </aside>
-            </div>
+            </article>
             <xsl:if test="count(key('prettify', 1))">
               <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">//</script>   
             </xsl:if>
@@ -982,14 +984,14 @@ Tables
         </xsl:element>
       </xsl:when>
       <xsl:when test="starts-with($rend, 'it')">
-        <i>
+        <em><!-- Modification PP. changement de <i> en <em> pour être plus conforme avec du HTML5  -->
           <xsl:apply-templates/>
-        </i>
+        </em>
       </xsl:when>
       <xsl:when test="contains($rend, 'bold') or contains($rend, 'gras')">
-        <b>
+        <strong><!-- Modification PP. changement de <b> en <strong> pour être plus conforme avec du HTML5  -->
           <xsl:apply-templates/>
-        </b>
+        </strong>
       </xsl:when>
       <xsl:when test="starts-with($rend, 'ind')">
         <sub>

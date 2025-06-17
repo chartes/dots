@@ -34,7 +34,6 @@ declare updating function del_coll:handleDeleteColl($dbName as xs:string, $colle
     (
       delete node $collection,
       del_coll:changeParentTotalChildren($dbName, $parentId, count($docInColl)),
-      del_coll:handleDocInColl($dbName, $collection, $docInColl, $option),
       del_doc:updateSwitcherDots($dbName, $collectionId)
     )
 };
@@ -63,9 +62,19 @@ declare updating %private function del_coll:changeParentTotalChildren($dbName as
  : @param $option        boolean: true = delete documents; false = reassign to parent
  : @return database updates (delete or reassign documents)
 :)
-declare updating %private function del_coll:handleDocInColl($dbName as xs:string, $collection as element(collection), $docInColl, $option as xs:boolean) {
-  for $document in $docInColl
-  let $countDoc := count($docInColl)
+declare updating function del_coll:handleDocInColl($dbName as xs:string, $collectionId as xs:string, $option as xs:boolean) {
+  for $document in db:get($dbName, $G:resourcesRegister)//document[tokenize(@parentIds) = $collectionId]
+  let $resourceId := $document/@dtsResourceId
+  let $pathDoc := utils_dots:findPath($dbName, $resourceId)
+  let $parentDoc := $document/@parentIds
+  let $parentCollId := db:get($dbName, $G:resourcesRegister)//collection[@dtsResourceId = $collectionId]/@parentIds
+  return
+    (
+      replace value of node $parentDoc with replace($parentDoc, $collectionId, $parentCollId),
+      db:delete($dbName, $pathDoc),
+      db:put($dbName, $document, replace($pathDoc, concat($collectionId, "/"), "/"))
+    )
+  (: for $document in $docInColl
   let $docId := $document/@dtsResourceId
   return
     if ($option)
@@ -80,8 +89,8 @@ declare updating %private function del_coll:handleDocInColl($dbName as xs:string
         (
           replace value of node $parentDoc with replace($parentDoc, $collId, $parentCollId),
           db:delete($dbName, $pathDoc),
-          db:put($dbName, $document, if (db:get($G:dots)/project[@dtsResourceId = $parentCollId]) then "" else $parentCollId)
-        )
+          db:put($dbName, $document, replace($pathDoc, concat($collId, "/"), "/"))
+        ) :)
 };
 
 
