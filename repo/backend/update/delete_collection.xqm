@@ -74,23 +74,6 @@ declare updating function del_coll:handleDocInColl($dbName as xs:string, $collec
       db:delete($dbName, $pathDoc),
       db:put($dbName, $document, replace($pathDoc, concat($collectionId, "/"), "/"))
     )
-  (: for $document in $docInColl
-  let $docId := $document/@dtsResourceId
-  return
-    if ($option)
-    then 
-      del_doc:handleDelete($dbName, $docId)
-    else
-      let $parentDoc := $document/@parentIds
-      let $parentCollId := $collection/@parentIds
-      let $collId := $collection/@dtsResourceId
-      let $pathDoc := utils_dots:findPath($dbName, $docId)
-      return
-        (
-          replace value of node $parentDoc with replace($parentDoc, $collId, $parentCollId),
-          db:delete($dbName, $pathDoc),
-          db:put($dbName, $document, replace($pathDoc, concat($collId, "/"), "/"))
-        ) :)
 };
 
 

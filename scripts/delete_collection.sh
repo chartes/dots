@@ -18,11 +18,16 @@ function usage {
     echo ""
     echo "  --basex_path string   absolute path to the basex folder 'bin'"
     echo "          (example: /absolute/path/to/basex/bin)"
+    echo ""
     echo "  --db_name string        basex project db name"
     echo "                          (example: theater)"
+    echo ""
     echo "  --resource_id string    identifier of the collection to delete"
-    echo "                          "
+    echo ""
     echo "  --option boolean        option to delete documents that belongs to the collection"
+    echo "                          (default: false())"
+    echo ""
+    echo "  --unit_test             choice to launch unit tests"
     echo "                          (default: false)"
     echo ""
 }
@@ -44,3 +49,4 @@ elif [[ -z $option ]]; then
 fi
 
 bash "$basex_path/basex" -b dbName=$db_name -b resourceId=$resource_id -b option=$option scripts/delete_collection.xq
+

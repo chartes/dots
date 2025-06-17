@@ -14,12 +14,16 @@ let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResource
 return
   if ($coll)
   then 
-    (
-      del_coll:handleDeleteColl($dbName, $resourceId, $option),
-      script:success(concat("La collection '", $resourceId, "' a bien été supprimée de la base '", $dbName, "'.")),
-      del_coll:handleDocInColl($dbName, $resourceId, $option),
-      if ($option) then script:success(concat("Le(s) documents de la collection '", $resourceId, "' ont bien été supprimés."))
-    )
+    if (db:get($G:dots)//dots:project[@dtsResourceId = $resourceId])
+    then
+      script:error(concat("Pour supprimer le projet DoTS '", $resourceId, "', utiliser le script `scripts/project_delete.sh`"))
+    else
+      (
+        del_coll:handleDeleteColl($dbName, $resourceId, xs:boolean($option)),
+        script:success(concat("La collection '", $resourceId, "' a bien été supprimée de la base '", $dbName, "'.")),
+        del_coll:handleDocInColl($dbName, $resourceId, xs:boolean($option)),
+        if (xs:boolean($option)) then script:success(concat("Le(s) document(s) de la collection '", $resourceId, "' ont bien été supprimés."))
+      )
   else script:error(concat("La collection '", $resourceId, "' n'existe pas."))
   
   
