@@ -14,6 +14,6 @@ if (not($dbName and $projectDirPath)) then (
 ) else if (db:exists($dbName)) then (
   script:success(("La base de données '", $dbName, "' existe déjà et n'a pas été modifiée."))
 ) else (
-  dots.create:db($dbName, $projectDirPath),
+  dots.create:db($dbName, file:resolve-path($projectDirPath, file:current-dir())),
   script:success(("La base de donnée '", $dbName, "' a été créée."))
 )
