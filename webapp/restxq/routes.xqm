@@ -208,9 +208,12 @@ function routes:document(
               let $style :=
                 let $xsl := G:linkToXsl($dbName)
                 return
-                  if (file:exists(concat($xsl, $dbName, "/", $dbName, ".xsl")))
-                  then concat($xsl, $dbName, "/", $dbName, ".xsl")
-                  else concat($xsl, $G:defaultXslEnginePath)
+                  if (file:exists(concat($xsl, $dbName, "/", $resource, ".xsl")))
+                  then concat($xsl, $dbName, "/", $resource, ".xsl")
+                  else 
+                    if (file:exists(concat($xsl, $dbName, "/", $dbName, ".xsl")))
+                    then concat($xsl, $dbName, "/", $dbName, ".xsl")
+                    else concat($xsl, $G:defaultXslEnginePath)
               return
                 xslt:transform($result, $style)
             default return $result

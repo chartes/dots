@@ -2,6 +2,7 @@ data/
 doc/
 .basex
 .basexgui
+.basexhistory
 .idea/
 webapp/restxq/home.xqm
 webapp/restxq/ladam_test.xqm
