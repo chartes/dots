@@ -1,0 +1,24 @@
+name: XQUnit Tests
+on:
+  push:
+    branches:
+      - unit-test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Install BaseX
+      run: |
+        wget https://files.basex.org/releases/11.9/BaseX119.zip
+        unzip BaseX119.zip
+    - name: Run tests
+      run: |
+        ./basex/bin/basex -W -o xqunit.xml -t tests/project_create/
+    - name: Upload results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: xqunit
+        path: xqunit.xml
