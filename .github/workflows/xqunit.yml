@@ -1,5 +1,8 @@
 name: XQUnit Tests
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches: [ unit-test ]
 jobs:
