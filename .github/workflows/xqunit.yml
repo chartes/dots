@@ -16,7 +16,7 @@ jobs:
 
     - name: Prepare test
       run: |
-        bash scripts/project_create.sh --basex_path './bsx/bin' --project_dir_path 'data_test/encpos_by_abstract' --top_collection_id 'test' --db_name 'test'
+        bash scripts/project_create.sh --basex_path './basex/bin' --project_dir_path 'data_test/encpos_by_abstract' --top_collection_id 'test' --db_name 'test'
     - name: Run tests
       run: |
         ./basex/bin/basex -b dbName=$db_name -b projectDirPath=$project_dir_path -b topCollectionId=$top_collection_id -b option='false()' -W -o xqunit.xml -t tests/project_create/
