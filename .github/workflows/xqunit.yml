@@ -13,6 +13,10 @@ jobs:
       run: |
         wget https://files.basex.org/releases/11.9/BaseX119.zip
         unzip BaseX119.zip
+
+    - name: Prepare test
+      run: |
+        ./scripts/project_create.sh --basex_path './basex/bin' --project_dir_path 'data_test/encpos_by_abstract' --top_collection_id 'test' --db_name 'test'
     - name: Run tests
       run: |
         ./basex/bin/basex -W -o xqunit.xml -t tests/project_create/
