@@ -49,7 +49,7 @@ elif [[ -z $db_name ]]; then
     die "Missing parameter --db_name"
 fi
 
-bash basex scripts/dots_db_init.xq;
+bash "$basex_path/basex" scripts/dots_db_init.xq;
 
 if [ $cleanOption ]; then
   if [ $delete ]; then
