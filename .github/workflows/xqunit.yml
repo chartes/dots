@@ -2,9 +2,10 @@ name: XQUnit Tests
 on:
   push:
     branches:
-      - main
+      - unit-test
   pull_request:
-    branches: [ unit-test ]
+    branches:
+      - unit-test
 jobs:
   test:
     runs-on: ubuntu-latest
