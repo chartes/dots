@@ -26,6 +26,12 @@ declare %updating function script:success(
   update:output(concat("* ✅ ", $info, '&#10;'))
 };
 
+declare %updating function script:warning(
+  $info  as xs:string*
+) {
+  update:output(concat("* ⚠ ", $info, '&#10;'))
+};
+
 (:~ 
  : Returns an error message.
  : @param  $info  message parts

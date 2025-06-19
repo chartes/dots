@@ -34,5 +34,11 @@ declare updating function update_metadata:addNewMetadataDocument($dbName as xs:s
       return db:add($dbName, $csv, $pathInMetadata) 
     else db:add($dbName, concat($metadataPath, "/", $d), $pathInMetadata) 
 };
-
+  
+  
+  
+  
+  
+  
+  
 
