@@ -14,18 +14,20 @@ declare variable $docPath external := ();
 if (file:exists($docPath))
 then
   let $parentIds := 
-    let $path := substring-after($docPath, "data/")
+    let $pathInData := substring-after($docPath, "data/")
+    let $pathCollection := functx:substring-before-last($pathInData, "/")
+    let $collectionId := if (contains($pathCollection, "/")) then functx:substring-after-last($pathCollection, "/") else $pathCollection
     return
-      let $collId := if (contains($path, "/")) then functx:substring-after-last(replace($path, "/", ""), "/") else "project"
-      return $collId
-  let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
+      $collectionId 
   return
-    if ($parentIds = "project" or $coll)
-    then
-      (
-        add_doc:handleAddition($dbName, $docPath),
-        script:success(("Le document a bien été ajouté à la base ", $dbName, ".")) 
-      )
+    let $coll := if ($parentIds = "") then "project" else db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
+    return
+      if ($parentIds = "project" or $coll)
+      then
+        (
+          add_doc:handleAddition($dbName, $docPath),
+          script:success(("Le document a bien été ajouté à la base ", $dbName, ".")) 
+        )
      else script:error("La collection n'existe pas.")
 else
   script:error("Le fichier n'existe pas.")

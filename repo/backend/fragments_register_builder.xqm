@@ -115,7 +115,6 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
             for $cite in $citeStructure/tei:citeStructure
             return
               fragments:handleCiteStructure($bdd, $resource, $ref, $cite, $level + 1, $resourceId, $node-id, $node-id, $maxCiteDepth, $csv)
-          else ()
         )
 };
 

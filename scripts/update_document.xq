@@ -30,7 +30,7 @@ then
             return
               $collectionId 
           return 
-              let $coll := if ($parentIds = "") then $parentIds else db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
+              let $coll := if ($parentIds = "") then "project" else db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
               return
                 if ($parentIds = "project" or $coll)
                 then
