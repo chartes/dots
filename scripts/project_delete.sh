@@ -42,7 +42,7 @@ elif [[ -z $db_name ]]; then
 fi
 
 
-if [ $db_delete == "false" ]; then
+if [[ $db_delete == "false" ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -b option=false scripts/dots_registers_delete.xq
 else
   bash "$basex_path/basex" -b dbName=$db_name -b option=true scripts/dots_registers_delete.xq

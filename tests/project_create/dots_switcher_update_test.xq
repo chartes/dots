@@ -77,4 +77,4 @@ declare %unit:test function local:assertUniqueIdentifiers() {
     unit:assert(empty(duplicate-values($dtsResourceId)))
 };
 
-()
+() 
