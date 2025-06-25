@@ -22,13 +22,13 @@ return
         if ($collParent)
         then
           (
-            add_coll:addCollToResourcesReg($dbName, $resourceId, $parentId),
+            add_coll:handleAddition($dbName, $resourceId),
             script:success(concat("La collection '", $resourceId, "', sous-collection de '", $parentId, "', a bien été ajouté à la db ", $dbName, "."))
           )
         else script:error(concat("La collection parente '", $parentId, "' n'existe pas."))
     else 
       (
-        add_coll:addCollToResourcesReg($dbName, $resourceId),
+        add_coll:handleAddition($dbName, $resourceId),
         script:success(concat("La collection '", $resourceId, "' a bien été ajouté à la db ", $dbName, "."))
       )
   

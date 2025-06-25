@@ -69,10 +69,5 @@ declare %unit:test function local:checkDocInRegister() {
     )
 };
 
-(
-  local:checkDocumentNumber(),
-  local:checkDocInDb(),
-  local:checkPaths(),
-  local:checkDocInRegister()
-)
+()
 

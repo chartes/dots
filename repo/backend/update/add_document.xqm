@@ -15,6 +15,7 @@ import module namespace G = "globals";
 import module namespace dots_error = "error/dots_error";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
+import module namespace dots.update = "backend/TEI_add_id";
 import module namespace script = "script";
 
 declare namespace dots = "https://github.com/chartes/dots/";
@@ -28,7 +29,8 @@ declare updating function add_doc:handleAddition($dbName, $docPath) {
   (
     add_doc:addDocToDB($dbName, $docPath),
     add_doc:addDocToResourcesReg($dbName, $docPath, $csv),
-    add_doc:addFragInReg($dbName, $docPath, $csv-frag)
+    add_doc:addFragInReg($dbName, $docPath, $csv-frag),
+    dots.update:addXmlIdToFragment($dbName)
   )
 };
 

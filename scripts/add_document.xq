@@ -14,13 +14,10 @@ declare variable $docPath external := ();
 if (file:exists($docPath))
 then
   let $parentIds := 
-    if (contains($docPath, "/"))
-    then
-      let $path := functx:substring-before-last($docPath, "/")
-      return
-        let $collId := if (contains($path, "/")) then functx:substring-after-last($path, "/") else $path
-        return $collId
-    else "project"
+    let $path := substring-after($docPath, "data/")
+    return
+      let $collId := if (contains($path, "/")) then functx:substring-after-last(replace($path, "/", ""), "/") else "project"
+      return $collId
   let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
   return
     if ($parentIds = "project" or $coll)

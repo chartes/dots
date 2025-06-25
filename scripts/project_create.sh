@@ -65,7 +65,7 @@ bash "$basex_path/basex" -b dbName=$db_name -b topCollectionId=$top_collection_i
 bash "$basex_path/basex" -b dbName=$db_name scripts/TEI_add_id.xq;
 bash "$basex_path/basex" -b dbName=$db_name scripts/dots_switcher_update.xq;
 
-if [ $unit_test == 'true()' ]; then
+if [[ $unit_test == 'true' ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path -b topCollectionId=$top_collection_id -b option='false()' -t tests/project_create
 fi
   

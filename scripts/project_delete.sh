@@ -22,6 +22,9 @@ function usage {
     echo "                          (example: theater)"
     echo "  [--db_delete] boolean   by default delete (true) or keep (false) project db"
     echo "                          (example: false)"
+    echo "  [--unit_test] boolean   by default (false) true: launch unit tests"
+    echo "                          (example: false)"
+    echo ""
     echo ""
 }
 
@@ -30,7 +33,10 @@ function die {
     exit 1
 }
 
-if [[ -z $db_name ]]; then
+if [[ -z $basex_path ]]; then
+    usage
+    die "Missing parameter --basex_path"
+elif [[ -z $db_name ]]; then
     usage
     die "Missing parameter --db_name"
 fi
@@ -40,4 +46,10 @@ if [ $db_delete == "false" ]; then
   bash "$basex_path/basex" -b dbName=$db_name -b option=false scripts/dots_registers_delete.xq
 else
   bash "$basex_path/basex" -b dbName=$db_name -b option=true scripts/dots_registers_delete.xq
+fi
+
+if [[ $unit_test == 'true' ]]; then
+  bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/project_registers_create_test.xq;
+  bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/TEI_add_id_test.xq;
+  bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/dots_switcher_update_test.xq;
 fi

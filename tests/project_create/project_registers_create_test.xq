@@ -18,9 +18,6 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
 declare variable $dbName external := "test";
-declare variable $projectDirPath external := ();
-declare variable $topCollectionId external := "test";
-declare variable $options external := false();
 
 (:~
 : This function runs before the test suite and creates the necessary registers for DoTS.

@@ -19,6 +19,22 @@ declare function utils_dots:getDbName($resourceId as xs:string) {
   normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resourceId]/@dbName)
 };
 
+declare function utils_dots:getDocument($dbName as xs:string, $resourceId as xs:string) {
+  if (db:get($dbName)/tei:TEI[@xml:id = $resourceId])
+  then db:get($dbName)/tei:TEI[@xml:id = $resourceId]
+  else 
+    db:get($dbName)/node() ! db:path(.)[ends-with(., $resourceId)]
+};
+
+declare function utils_dots:findDocId($docPath) {
+  let $document := utils_dots:findDocInFolder($docPath) 
+  let $resourceId := $document/tei:TEI/@xml:id
+  return
+    if ($resourceId)
+    then $resourceId
+    else file:name($docPath)
+};
+
 (:~ This function allows retrieving the document with the $resourceId identifier in the import folder $project_dir_path
 : @param $resourceId             document identifier
 : @param $project_dir_path  absolute path to the data import folder

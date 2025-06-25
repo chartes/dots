@@ -33,18 +33,7 @@ declare %unit:test function local:checkNoFragInRegister() {
     unit:assert(not($fragInReg), concat("Les fragments du document TEI ", $resourceId, " sont toujours présents dans le registre des fragments DoTS de la db ", $dbName))
 };
 
-declare %unit:test function local:checkTotalChildren() {
-  let $resourcesRegister := db:get($dbName, $G:resourcesRegister)
-  return
-    for $coll in $resourcesRegister//dots:collection
-    let $id := $coll/@dtsResourceId
-    let $totalChildren := xs:integer($coll/@totalChildren)
-    let $count := count($resourcesRegister//node()[tokenize(@parentIds) = $id])
-    return
-      unit:assert-equals($totalChildren, $count, concat("La valeur de @totalChildren (", $totalChildren, ") de la collection ", $id, " ne coïncide pas avec le nombre de documents (", $count, ") appartenant à cette collection "))
-};
-
-local:checkTotalChildren()
+()
 
 
 

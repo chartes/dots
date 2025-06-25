@@ -21,9 +21,6 @@ declare default element namespace "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare variable $dbName external := "test";
-declare variable $topCollectionId external := "test";
-declare variable $projectDirPath external := ();
-declare variable $options external := false();
 
 (:~
 : This function adds missing `xml:id` attributes to TEI fragments before running module tests.

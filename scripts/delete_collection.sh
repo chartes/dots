@@ -14,7 +14,7 @@ function usage {
     echo ""
     echo "Delete a collection from an existing DoTS project"
     echo ""
-    echo "usage: $program name --db_name string --doc_id string "
+    echo "usage: $program name --basex_path string --db_name string --resource_id string "
     echo ""
     echo "  --basex_path string   absolute path to the basex folder 'bin'"
     echo "          (example: /absolute/path/to/basex/bin)"
@@ -24,10 +24,10 @@ function usage {
     echo ""
     echo "  --resource_id string    identifier of the collection to delete"
     echo ""
-    echo "  --option boolean        option to delete documents that belongs to the collection"
+    echo "  [--option boolean]      option to delete documents that belongs to the collection"
     echo "                          (default: false())"
     echo ""
-    echo "  --unit_test             choice to launch unit tests"
+    echo "  [--unit_test]             choice to launch unit tests"
     echo "                          (default: false)"
     echo ""
 }
@@ -40,13 +40,18 @@ function die {
 if [[ -z $db_name ]]; then
     usage
     die "Missing parameter --db_name"
+elif [[ -z $basex_path ]]; then
+    usage
+    die "Missing parameter --basex_path"
 elif [[ -z $resource_id ]]; then
     usage
     die "Missing parameter --resource_id"
-elif [[ -z $option ]]; then
-    usage
-    die "Missing parameter --option"  
 fi
 
 bash "$basex_path/basex" -b dbName=$db_name -b resourceId=$resource_id -b option=$option scripts/delete_collection.xq
 
+if [[ $unit_test == 'true' ]]; then
+  bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/project_registers_create_test.xq;
+  bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/TEI_add_id_test.xq;
+  bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/dots_switcher_update_test.xq;
+fi

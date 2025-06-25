@@ -8,7 +8,7 @@ declare namespace dots = "https://github.com/chartes/dots/";
 
 declare variable $dbName external := ();
 declare variable $resourceId external := ();
-declare variable $option external := false();
+declare variable $option external := false;
 
 let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $resourceId]
 return
@@ -19,10 +19,10 @@ return
       script:error(concat("Pour supprimer le projet DoTS '", $resourceId, "', utiliser le script `scripts/project_delete.sh`"))
     else
       (
-        del_coll:handleDeleteColl($dbName, $resourceId, xs:boolean($option)),
+        del_coll:handleDeleteColl($dbName, $resourceId, $option),
         script:success(concat("La collection '", $resourceId, "' a bien été supprimée de la base '", $dbName, "'.")),
-        del_coll:handleDocInColl($dbName, $resourceId, xs:boolean($option)),
-        if (xs:boolean($option)) then script:success(concat("Le(s) document(s) de la collection '", $resourceId, "' ont bien été supprimés."))
+        del_coll:handleDocInColl($dbName, $resourceId, $option),
+        if ($option) then script:success(concat("Le(s) document(s) de la collection '", $resourceId, "' ont bien été supprimés."))
       )
   else script:error(concat("La collection '", $resourceId, "' n'existe pas."))
   
