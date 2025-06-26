@@ -50,7 +50,6 @@ declare %private updating function add_doc:addDocToDB($dbName as xs:string, $doc
 : @param $dbName  db name
 : @param $docPath absolute path to the document to add
 : @return a complete <document/> node
-: @todo The script using this function MUST check, if a metadata TSV is called, whether information about the document is found in the TSV. If not, it should send a message specifying this.
 :)
 declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:string, $docPath, $csv) {
   let $document := doc($docPath)/tei:TEI

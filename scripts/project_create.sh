@@ -41,6 +41,9 @@ function die {
 if [[ -z $project_dir_path ]]; then
     usage
     die "Missing parameter --project_dir_path"
+elif [[ -z $basex_path ]]; then
+    usage
+    die "Missing parameter --basex_path"
 elif [[ -z $top_collection_id ]]; then
     usage
     die "Missing parameter --top_collection_id"
