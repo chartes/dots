@@ -4,10 +4,7 @@ DoTS – BaseX DTS Tools est une implémentation en XQuery de la spécification 
 
 ## 1. Installation
 
-- Télécharger et installer BaseX (>= 11.XX) (https://basex.org/)
-- Télécharger DoTS (https://github.com/chartes/dots)
-- Trouver le chemin où BaseX a été installé
-- Copier le dossier DoTS dans /path/to/BaseX/webapp
+La procédure d'installation est documentée <a href="https://chartes.github.io/dots_documentation/installation/" target="_blank">ici</a>.
 
 ## 2. Utilisation de DoTS
 
@@ -33,37 +30,38 @@ En contexte Web, si d'autres applications ont besoin de faire appel aux routes d
 
 ## 4. État d'avancement de l'implémentation de DTS
 
-L'implémentation actuelle est en accord avec la version **1-alpha** de la spécification DTS.
+L'implémentation actuelle est conforme à la version <a href="https://distributed-text-services.github.io/specifications/versions/1-alpha/" target="_blank">1-alpha</a> de la spécification DTS.
 
 ### 4.1 Endpoint Collections
 
 #### Propriétées JSON
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#collection-endpoint)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#collection-endpoint)
 
 | Nom             | Statut                           | Implémentation |
 | --------------- | -------------------------------- | -------------- |
-| `@id`           | obligatoire                      | ✅              |
-| `@type`         | obligatoire                      | ✅              |
-| `dtsVersion`    | obligatoire                      | ✅              |
-| `title`         | obligatoire                      | ✅              |
-| `totalParents`  | obligatoire                      | ✅              |
-| `totalChildren` | obligatoire                      | ✅              |
-| `description`   | optionnel                        | ✅              |
-| `maxCiteDepth`  | obligatoire (pour les resources) | ✅              |
-| `member`        | optionnel                        | ✅              |
-| `dublincore`    | optionnel                        | ✅              |
-| `extensions`    | optionnel                        | ✅              |
-| `collection`    | obligatoire                      | ✅              |
-| `navigation`    | obligatoire (pour les resources) | ✅              |
-| `document`      | obligatoire (pour les resources) | ✅              |
-| `download`      | optionnel                        | 🚧              |
-| `citationTrees` | optionnel                        | 🚧              |
-| `view`          | optionnel                        | 🚧              |
+| `@id`           | obligatoire                      | ✅             |
+| `@type`         | obligatoire                      | ✅             |
+| `dtsVersion`    | obligatoire                      | ✅             |
+| `title`         | obligatoire                      | ✅             |
+| `totalItems`    | obligatoire                      | ✅             |
+| `totalChildren` | obligatoire                      | ✅             |
+| `totalParents`  | obligatoire                      | ✅             |
+| `maxCiteDepth`  | obligatoire (pour les resources) | ✅             |
+| `description`   | optionnel                        | ✅             |
+| `member`        | optionnel                        | ✅             |
+| `dublincore`    | optionnel                        | ✅             |
+| `extensions`    | optionnel                        | ✅             |
+| `collection`    | obligatoire (pour les resources) | ✅             |
+| `navigation`    | obligatoire (pour les resources) | ✅             |
+| `document`      | obligatoire (pour les resources) | ✅             |
+| `download`      | optionnel                        | 🚧             |
+| `citationTrees` | optionnel                        | 🚧             |
+| `mediaTypes`    | optionnel (pour les resources)   | ✅             |
 
 #### Paramètres de requête
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#uri-for-collection-endpoint-request)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-collection-endpoint-request)
 
 | Nom  | Méthode | Implémentation |
 | ---- | ------- | -------------- |
@@ -75,7 +73,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 #### Propriétées JSON
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#navigation-endpoint)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
 
 | Nom            | Statut      | Implémentation  |
 | -------------- | ----------- | --------------- |
@@ -87,7 +85,6 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `start`        | optionnel   | ✅              |
 | `end`          | optionnel   | ✅              |
 | `member`       | optionnel   | ✅              |
-| `view`         | optionnel   | 🚧              |
 
 #### Propriétées JSON de `resource`
 
@@ -99,6 +96,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `navigation`   | obligatoire | ✅              |
 | `document`     | obligatoire | ✅              |
 | `citationTrees`| obligatoire | 🔄              |
+| `mediaTypes`    | optionnel  | ✅              |
 
 #### Propriétées JSON de `CitationTree`
 
@@ -107,14 +105,15 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `identifier`   | optionnel   | 🚧              |
 | `@type`        | obligatoire | ✅              |
 | `citeStructure`| optionnel   | ✅              |
+| `maxCiteDepth` | obligatoire | ✅              |
 | `description`  | optionnel   | 🚧              |
 
 #### Propriétées JSON de `CiteStructure`
 
 | Nom            | Statut      | Implémentation  |
 | -------------- | ----------- | --------------- |
-| `@type`        | obligatoire | ✅              |
-| `citeType`     | obligatoire | ✅              |
+| `@type`        |             | ✅              |
+| `citeType`     | optionnel   | ✅              |
 | `citeStructure`| optionnel   | ✅              |
 
 
@@ -126,16 +125,16 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `@type`      | obligatoire | ✅             |
 | `level`      | obligatoire | ✅             |
 | `parent`     | obligatoire | ✅             |
-| `citeType`   | obligatoire | ✅             |
+| `citeType`   | optionnel   | ✅             |
 | `dublincore` | optionnel   | ✅             |
 | `extensions` | optionnel   | ✅             |
 
 #### Paramètres de requête
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#uri-for-navigation-endpoint-requests)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-navigation-endpoint-requests)
 
-| Nom     | Méthode | Implémentation |
-| ------- | ------- | -------------- |
+| Nom       | Méthode | Implémentation |
+| -------   | ------- | -------------- |
 | `resource`| GET     | ✅             |
 | `ref`     | GET     | ✅             |
 | `start`   | GET     | ✅             |
@@ -148,7 +147,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Paramètres de requête
 
-cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#document-endpoint)
+cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint)
 
 | Nom        | Méthode | Implémentation |
 | ------     | ------- | -------------- |
@@ -157,7 +156,7 @@ cf. [Document Endpoint - Distributed Text Services](https://distributed-text-ser
 | `start`    | GET     | ✅             |
 | `end`      | GET     | ✅             |
 | `tree`     | GET     | 🔄             |
-| `mediaType`| GET     | 🚧             |
+| `mediaType`| GET     | ✅             |
 
 
 #######################
@@ -170,10 +169,7 @@ DoTS – BaseX DTS Tools is an XQuery implementation of the <a href="https://dis
 
 ## 1. Installation
 
-- Download and install BaseX (>= 11.XX) (https://basex.org/)
-- Download DoTS (https://github.com/chartes/dots)
-- Find the installation path of BaseX
-- Copy the DoTS folder into /path/to/BaseX/webapp
+The installation procedure is documented <a href="https://chartes.github.io/dots_documentation/installation/" target="_blank">here</a>.
 
 ## 2. Using DoTS
 
@@ -199,37 +195,38 @@ In a web context, if other applications need to call the DTS API routes, you sho
 
 ## 4. Progress of the DTS implementation
 
-The current implementation is compliant with version **1-alpha** of the DTS specification.
+The current implementation is compliant with version <a href="https://distributed-text-services.github.io/specifications/versions/1-alpha/" target="_blank">1-alpha</a> of the DTS specification.
 
 ### 4.1 Endpoint Collections
 
 #### JSON properties
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#collection-endpoint)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#collection-endpoint)
 
 | Name            | Statut                           | Implementation |
 | --------------- | -------------------------------- | -------------- |
-| `@id`           | mandatory                        | ✅              |
-| `@type`         | mandatory                        | ✅              |
-| `dtsVersion`    | mandatory                        | ✅              |
-| `title`         | mandatory                        | ✅              |
-| `totalParents`  | mandatory                        | ✅              |
-| `totalChildren` | mandatory                        | ✅              |
-| `description`   | optional                         | ✅              |
-| `maxCiteDepth`  | mandatory (for resources)        | ✅              |
-| `member`        | optional                         | ✅              |
-| `dublincore`    | optional                         | ✅              |
-| `extensions`    | optional                         | ✅              |
-| `collection`    | obligatoire                      | ✅              |
-| `navigation`    | mandatory (for resources)        | ✅              |
-| `document`      | mandatory (for resources)        | ✅              |
-| `download`      | optional                         | 🚧              |
-| `citationTrees` | optional                         | 🚧              |
-| `view`          | optional                         | 🚧              |
+| `@id`           | mandatory                        | ✅             |
+| `@type`         | mandatory                        | ✅             |
+| `dtsVersion`    | mandatory                        | ✅             |
+| `title`         | mandatory                        | ✅             |
+| `totalItems`    | mandatory                        | ✅             |
+| `totalChildren` | mandatory                        | ✅             |
+| `totalParents`  | mandatory                        | ✅             |
+| `maxCiteDepth`  | mandatory (for resources)        | ✅             |
+| `description`   | optional                         | ✅             |
+| `member`        | optional                         | ✅             |
+| `dublincore`    | optional                         | ✅             |
+| `extensions`    | optional                         | ✅             |
+| `collection`    | mandatory (for resources)        | ✅             |
+| `navigation`    | mandatory (for resources)        | ✅             |
+| `document`      | mandatory (for resources)        | ✅             |
+| `download`      | optional                         | 🚧             |
+| `citationTrees` | optional                         | 🚧             |
+| `mediaTypes`    | optional (for resources)         | ✅             |
 
 #### Request parameters
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#uri-for-collection-endpoint-request)
+cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-collection-endpoint-request)
 
 | Name | Method  | Implementation |
 | ---- | ------- | -------------- |
@@ -241,9 +238,9 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 #### JSON properties
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#navigation-endpoint)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
 
-| Name           | Statut     | Implementation  |
+| Name           | Statut      | Implementation  |
 | -------------- | ----------- | --------------- |
 | `@id`          | mandatory   | ✅              |
 | `@type`        | mandatory   | ✅              |
@@ -253,11 +250,10 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `start`        | optional    | ✅              |
 | `end`          | optional    | ✅              |
 | `member`       | optional    | ✅              |
-| `view`         | optional    | 🚧              |
 
 #### JSON Properties of `resource`
 
-| Name           | Statut     | Implementation  |
+| Name           | Statut      | Implementation  |
 | -------------- | ----------- | --------------- |
 | `@id`          | mandatory   | ✅              |
 | `@type`        | mandatory   | ✅              |
@@ -265,6 +261,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `navigation`   | mandatory   | ✅              |
 | `document`     | mandatory   | ✅              |
 | `citationTrees`| mandatory   | 🔄              |
+| `mediaTypes`   | optional    | ✅              |
 
 #### JSON Properties of `CitationTree`
 
@@ -273,16 +270,16 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `identifier`   | optional    | 🚧              |
 | `@type`        | mandatory   | ✅              |
 | `citeStructure`| optional    | ✅              |
+| `maxCiteDepth` | mandatory   | ✅              |
 | `description`  | optional    | 🚧              |
 
 #### JSON Properties of `CiteStructure`
 
 | Name           | Statut      | Implementation  |
 | -------------- | ----------- | --------------- |
-| `@type`        | mandatory   | ✅              |
-| `citeType`     | mandatory   | ✅              |
+| `@type`        |             | ✅              |
+| `citeType`     | optional    | ✅              |
 | `citeStructure`| optional    | ✅              |
-
 
 #### JSON Properties of `citableUnit`
 
@@ -292,13 +289,13 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `@type`      | mandatory   | ✅             |
 | `level`      | mandatory   | ✅             |
 | `parent`     | mandatory   | ✅             |
-| `citeType`   | mandatory   | ✅             |
+| `citeType`   | optional    | ✅             |
 | `dublincore` | optional    | ✅             |
 | `extensions` | optional    | ✅             |
 
 #### Request parameters
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#uri-for-navigation-endpoint-requests)
+cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-navigation-endpoint-requests)
 
 | Name      | Method  | Implementation |
 | -------   | ------- | -------------- |
@@ -314,7 +311,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 
 #### Request parameters
 
-cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/unstable/#document-endpoint)
+cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint)
 
 | Name       | Method  | Implementation |
 | ------     | ------- | -------------- |
@@ -323,4 +320,4 @@ cf. [Document Endpoint - Distributed Text Services](https://distributed-text-ser
 | `start`    | GET     | ✅             |
 | `end`      | GET     | ✅             |
 | `tree`     | GET     | 🔄             |
-| `mediaType`| GET     | 🚧             |
+| `mediaType`| GET     | ✅             |
