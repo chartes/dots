@@ -2,7 +2,7 @@ name: XQUnit Tests
 on:
   push:
     branches:
-      - unit-test
+      - dev
 jobs:
   test:
     runs-on: ubuntu-latest
