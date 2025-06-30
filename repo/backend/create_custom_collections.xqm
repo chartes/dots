@@ -1,4 +1,4 @@
-xquery version "3.1";
+xquery version "4.0";
 
 (:~  
 : Ce module permet, au besoin, de mettre à jour le registre "/dots/resources_register.xml" pour:
@@ -13,6 +13,7 @@ xquery version "3.1";
 module namespace dots.lib = "backend/create_custom_collections";
 
 import module namespace G = "globals";
+import module namespace utils_dots = "utils_dots"; 
 import module namespace resources = "backend/resources_register_builder";
 
 declare namespace dots = "https://github.com/chartes/dots/";
@@ -85,8 +86,9 @@ declare %private function dots.lib:getMetadata($record as element(record)) {
 
 declare %private updating function dots.lib:countResourcesToAddToProject($source as element(csv)) {
   let $dbName := $source/record[1]/dbName
+  let $idProject := utils_dots:getIdProject($dbName)
   let $countResources := count($source/record[parentId = ""])
-  let $getProject := db:get($dbName, $G:resourcesRegister)//dots:member/dots:collection[@dtsResourceId = $dbName]
+  let $getProject := db:get($dbName, $G:resourcesRegister)//dots:member/dots:collection[@dtsResourceId = $idProject]
   let $totalChildren := $getProject/@totalChildren
   let $newTotalChildren := $totalChildren + $countResources
   return replace value of node $totalChildren with $newTotalChildren

@@ -25,9 +25,9 @@ declare function G:linkToXsl($dbName as xs:string) {
 };
 (: declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); :) 
 
-(: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/html/html.xsl"; :)
+declare variable $G:defaultXslEnginePath := "Stylesheets/html/html.xsl";
 
-declare variable $G:defaultXslEnginePath := "hteiml/tei2html.xsl";
+(: declare variable $G:defaultXslEnginePath := "hteiml/tei2html.xsl"; :)
 (: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/txt/tei-to-text.xsl"; :)
 (: declare variable $G:defaultXslEnginePath := "TEI-Boilerplate/src/content/teibp.xsl"; :)
 
