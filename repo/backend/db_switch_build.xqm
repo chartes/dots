@@ -1,4 +1,4 @@
-xquery version "3.1";
+xquery version "4.0";
 
 (:~  
 : Ce module permet d'initialiser la base de données "dots" et y ajoute les deux documents XML: "dots_db_switcher.xml" et "dots_default_metadata_mapping.xml".
@@ -15,6 +15,21 @@ xquery version "3.1";
 : @since 2023-06-14
 : @version  1.0
 :)
+(:~
+ : Module to initialize the "dots" database with two XML documents:
+ : "dots_db_switcher.xml": lists available resources and specifies:
+ :  - the resource type ("project", "collection", or "document"),
+ :  - its unique identifier (@dtsResourceId),
+ :  - and the corresponding BaseX database (@dbName).
+ : Initially empty, this file is later populated with resource entries.
+ : It is used by the DTS router to locate metadata for each resource.
+ :
+ : "dots_default_metadata_mapping.xml": default metadata mapping applied when no custom mapping is available. It extracts key metadata (title, creator, publisher) using XPath expressions.
+ :
+ : Author: École nationale des chartes  
+ : Since: 2023-06-14  
+ : Version: 1.0
+:)
 module namespace dots.build = "backend/db_switch_build";
 
 import module namespace G = "globals";
@@ -22,15 +37,9 @@ import module namespace G = "globals";
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
 
-(:~ 
-: Cette fonction permet d'ajouter ou modifier les deux documents XML de la db dots.
-: @return 2 documents XML à ajouter à la db "dots"
-: @param $G:dots chaîne de caractère, variable globale pour accéder à la db dots
-: @param $dbName chaîne de caractère qui donne le nom de la db
-: @param $topCollectionId chaîne de caractère correspondant à l'identifiant du projet (qui peut être différent du nom de la db)
-: @see db_switch_builder.xqm;db.switcher:getTopCollection
-: @see db_switch_builder.xqm;db.switcher:members
-: @see db_switch_builder.xqm;db.switcher:getHeaders
+(:~
+ : Creates or updates the two XML documents in the "dots" database.
+ : @return  The two documents to be added to the "dots" database.
 :)
 declare updating function dots.build:dots_db() {
   let $dbSwitch := dots.build:switcher()
@@ -38,10 +47,10 @@ declare updating function dots.build:dots_db() {
   return db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
 };
 
-(:~ 
-: Cette fonction prépare l'en-tête des deux documents XML à créer pour la db dots
-: @return élément XML <metadata></metadata> avec son contenu
-: @param $option chaîne de caractère pour savoir si l'élément <totalProject/> doit être intégré au header
+(:~
+: Generates the <metadata> header for each XML document.
+: @param   $option a string flag to indicate if the <totalProjects/> tag should be added.
+: @return  a <metadata> element with creation and modification timestamps.
 :)
 declare %private function dots.build:headers($option as xs:string) {
   <metadata>
@@ -51,6 +60,10 @@ declare %private function dots.build:headers($option as xs:string) {
   </metadata>
 };
 
+(:~
+: Creates the initial, "dots_db_switcher.xml" document.
+: @return a <dbSwitch/> element, with <metadata/> and empty <member/> childs.
+:)
 declare %private function dots.build:switcher() {
   <dbSwitch xmlns="https://github.com/chartes/dots/">{
     dots.build:headers("dbSwitch"),
@@ -58,6 +71,10 @@ declare %private function dots.build:switcher() {
   }</dbSwitch>
 };
 
+(:~
+ : Creates the "dots_default_metadata_mapping.xml" document.
+ : @return a <metadataMap/> element with XPath-based mappings for title, creator, and publisher metadata.
+:)
 declare %private function dots.build:metadataMap() {
   <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/"
       xmlns:dct="http://purl.org/dc/terms/">{
