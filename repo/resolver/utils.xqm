@@ -36,6 +36,7 @@ declare function utils:noCollection() as element(json) {
     <pair name="@id">{$G:root}</pair>
     <pair name="@type">Collection</pair>
     <pair name="title">{$G:rootTitle}</pair>
+    {if ($G:rootDescription) then <pair name="description">{$G:rootDescription}</pair>}
     <pair name="totalItems" type="number">0</pair>
     <pair name="totalChildren" type="number">0</pair>
     <pair name="totalParents" type="number">0</pair>
@@ -57,6 +58,7 @@ declare function utils:collections() as element(json) {
     <pair name="@id">{$G:root}</pair>,
     <pair name="@type">Collection</pair>,
     <pair name="title">{$G:rootTitle}</pair>,
+    if ($G:rootDescription) then <pair name="description">{$G:rootDescription}</pair>,
     <pair name="totalItems" type="number">{$totalItems}</pair>,
     <pair name="totalChildren" type="number">{$totalItems}</pair>,
     <pair name="totalParents" type="number">0</pair>,
