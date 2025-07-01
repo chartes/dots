@@ -36,6 +36,7 @@ declare variable $G:root := "dots_cookbook";
 declare variable $G:rootTitle := "Collection de démonstration de DoTS";
 
 declare variable $G:rootDescription := "Le livre de recettes DoTS est conçu pour apprendre à publier une collection de textes avec DoTS, pour différents types de publication et genres littéraires, et selon différentes logiques éditoriales.";
+
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le DoTS Project Manager 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :) 

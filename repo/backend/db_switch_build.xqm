@@ -1,20 +1,5 @@
 xquery version "4.0";
 
-(:~  
-: Ce module permet d'initialiser la base de données "dots" et y ajoute les deux documents XML: "dots_db_switcher.xml" et "dots_default_metadata_mapping.xml".
-: "dots_db_switcher.xml" permet:
-: - de recenser toutes les ressources disponibles
-: - de préciser le type de ressource ('project' pour une collection de niveau 1, 'collection' ou 'document') 
-: - d'indiquer pour chaque ressource son identifiant (@dtsResourceId)
-: - et d'indiquer le nom de la db BaseX à laquelle appartient la ressource (@dbName)
-: Ce document lors de son initialisation, ne liste aucune ressource. Cette étape est opérée ultérieurement.
-: Ces informations servent au routeur DTS pour savoir pour chaque ressource dans quelle db trouver les registres DoTS qui la concerne.
-: "dots_default_metadata_mapping.xml" est un document pour déclarer par défaut des métadonnées de description des documents.
-: Il n'est utilisé que si aucun autre document "metadata_mapping" n'est disponible
-: @author École nationale des chartes
-: @since 2023-06-14
-: @version  1.0
-:)
 (:~
  : Module to initialize the "dots" database with two XML documents:
  : "dots_db_switcher.xml": lists available resources and specifies:
@@ -30,6 +15,7 @@ xquery version "4.0";
  : Since: 2023-06-14  
  : Version: 1.0
 :)
+
 module namespace dots.build = "backend/db_switch_build";
 
 import module namespace G = "globals";
