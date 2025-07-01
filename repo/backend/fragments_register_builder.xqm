@@ -177,9 +177,9 @@ return
 : @param $n (xs:integer) The current depth level, initially set to 0.
 : @return xs:integer: The maximum citation depth found in the document.
 :)
-declare function fragments:getMaxCiteDepth($node, $n as xs:integer) {
+declare function fragments:getMaxCiteDepth($nodes, $n as xs:integer) as xs:integer {
   let $levels :=
-    for $level in $node
+    for $node in $nodes
     return
       if ($node/tei:citeStructure)
       then

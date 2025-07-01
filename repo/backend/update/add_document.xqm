@@ -28,10 +28,14 @@ declare updating function add_doc:handleAddition($dbName, $docPath) {
   return
   (
     add_doc:addDocToDB($dbName, $docPath),
-    add_doc:addDocToResourcesReg($dbName, $docPath, $csv),
-    add_doc:addFragInReg($dbName, $docPath, $csv-frag),
-    dots.update:addXmlIdToFragment($dbName)
+    add_doc:addDocToResourcesReg($dbName, $docPath, $csv)
   )
+};
+
+declare updating function add_doc:handleFragmentsAddition($dbName as xs:string, $docPath) {
+  let $csv-frag := resources:getCSV-map($dbName, "fragment")
+  return
+    add_doc:addFragInReg($dbName, $docPath, $csv-frag)
 };
 
 (:~ Update function to add a new document with a specific path
@@ -91,7 +95,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
             resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
             resources:getDotsProjectName($projectName)
   }</document> as last into $resources_register,
-            add_doc:updateMaxCiteDepthCollection($dbName, $parentIds),
+            add_doc:updateTotalChildrenCollection($dbName, $parentIds),
             add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)
           )
     else ()
@@ -131,7 +135,7 @@ declare updating %private function add_doc:addFragInReg($dbName as xs:string, $d
 : @param $parentIds  identifier of the collection to update
 : @return updating the value of the @totalChildren attribute in a <collection/> node.
 :)
-declare updating %private function add_doc:updateMaxCiteDepthCollection($dbName as xs:string, $parentIds as xs:string) {
+declare updating %private function add_doc:updateTotalChildrenCollection($dbName as xs:string, $parentIds as xs:string) {
   let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
   let $totalChildren := $parent/@totalChildren
   return

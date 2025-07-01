@@ -5,7 +5,6 @@ xquery version "3.1";
 : @author École nationale des chartes - Philippe Pons
 : @since 2024-10-29
 : @version  1.0
-: @todo revoir cette fonction si la valeur des attributs @ref est calculée (en s'apppuyant probablement sur la position du noeud dans le document)
 :)
 
 module namespace dots.update = "backend/TEI_add_id";
@@ -16,15 +15,15 @@ declare default element namespace "https://github.com/chartes/dots/";
 
 declare updating function dots.update:addXmlIdToFragment($dbName as xs:string) {
   for $fragments in db:get($dbName, $G:fragmentsRegister)//fragment
-  let $ref := $fragments/@ref
   let $node-id := $fragments/@node-id
   let $tei := db:get-id($dbName, $node-id)
   where not($tei/@xml:id)
+  let $ref := $fragments/@ref
   let $refValue := concat("r", $node-id)
   return
     (
-      replace value of node $ref with $refValue,
-      insert node attribute {"xml:id"} { $refValue } into $tei
+      insert node attribute {"xml:id"} { $refValue } into $tei,
+      replace value of node $ref with $refValue 
     )
 };
 
