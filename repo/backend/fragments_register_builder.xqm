@@ -1,7 +1,7 @@
-xquery version "3.1";
+xquery version "4.0";
 
 (:~  
-: Ce module permet de lister tous les fragments disponibles dans les documents
+: The fragments registry built by the functions below optimizes DTS API responses, particularly for the Navigation endpoint. It provides a precomputed hierarchical structure of document fragments, enabling efficient exploration and retrieval of citable passages.
 : @author École nationale des chartes - Philippe Pons
 : @since 2023-07-26
 : @version  1.0
@@ -17,10 +17,6 @@ declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-
-(:~ 
-: The fragments registry built by the functions below optimizes DTS API responses, particularly for the Navigation endpoint. It provides a precomputed hierarchical structure of document fragments, enabling efficient exploration and retrieval of citable passages.
-:)
 
 (:~ 
 : This function generates and stores a fragment registry for the specified database. It collects fragment information from fragments:getFragments and combines it with metadata before saving it as a new document in the database.
@@ -124,51 +120,26 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
 : @param $ref (xs:string) The reference identifier of the fragment whose metadata needs to be retrieved.
 : @return A sequence of metadata elements specific to the requested fragment
 :)
-declare %private function fragments:getFragmentMetadata($dbName as xs:string, $ref as xs:string, $csv-map) {
-  (: let $metadataMap :=  db:get($bdd, $G:metadata)//metadataMap
+declare %private function fragments:getFragmentMetadata($dbName as xs:string, $ref as xs:string, $csv-map) {   
+  let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap/mapping
   return
-    let $metadatas := 
-      let $csv-map := resources:getCSV-map($bdd, "fragment")
-      for $metadata in $metadataMap//mapping/node()[@scope = "fragment"]
-      let $source := functx:substring-after-last($metadata/@source, "/")
-      let $csv := $csv-map($source)
-      let $findIdInCSV := normalize-space($metadata/@resourceId)
-      let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $ref]]       
+    if ($metadataMap)
+    then
+      for $metadata in $metadataMap/node()[@scope = "fragment"]
       return
         if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
-          return
-            element {$key} { 
+          return element {$key} { 
             if ($metadata/@key) then attribute {"key"} {$metadata/@key},
             concat($metadata/@prefix, $metadata, $metadata/@suffix) 
-            }
-        else
-          if ($record and $metadata) 
-          then resources:createContent($metadata, $record)
-          else ()
-  return
-    $metadatas :)
-    
-let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap/mapping
-return
-  if ($metadataMap)
-  then
-    for $metadata in $metadataMap/node()[@scope = "fragment"]
-    return
-      if ($metadata/@resourceId = "all")
-      then 
-        let $key := $metadata/name()
-        return element {$key} { 
-          if ($metadata/@key) then attribute {"key"} {$metadata/@key},
-          concat($metadata/@prefix, $metadata, $metadata/@suffix) 
-        }
-      else 
-        let $source := functx:substring-after-last($metadata/@source, '/')
-        let $csv-source := $csv-map($source)
-        for $record in $csv-source($ref)
-        return
-          resources:createContent($metadata, $record)
+          }
+        else 
+          let $source := functx:substring-after-last($metadata/@source, '/')
+          let $csv-source := $csv-map($source)
+          for $record in $csv-source($ref)
+          return
+            resources:createContent($metadata, $record)
 };
 
 (:~ 

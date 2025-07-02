@@ -254,34 +254,6 @@ declare function resources:getDocumentMetadata(
    )
 };
 
-(:~ 
-: Creates a <collection> element with metadata, parent relationships, and child count.
-: @param $dbName (xs:string) The name of the XML database.
-: @param $idProject (xs:string) The identifier of the project.
-: @param $collection (xs:string) The collection identifier.
-: @param $path (xs:string) The path of the collection.
-: @return An XML element representing the collection
-:)
-(: declare %private function resources:collection(
-  $dbName as xs:string, 
-  $idProject as xs:string, 
-  $collection as xs:string, 
-  $path as xs:string) {
-  let $totalItems := count(db:dir($dbName, $collection))
-  let $parent := 
-    if ($path = "") 
-    then $idProject 
-    else 
-      if (contains($path, "/"))
-      then
-        functx:substring-after-last($path, "/")
-      else $path
-  return
-    <collection dtsResourceId="{$collection}" totalChildren="{$totalItems}" parentIds="{$parent}">{
-      resources:getCollectionMetadata($dbName, $collection, $csv)
-    }</collection>
-}; :)
-
 (:~  
 : Retrieves metadata for a collection from the metadata map
 : @param $dbName (xs:string) The name of the XML database.
@@ -312,31 +284,6 @@ declare function resources:getCollectionMetadata(
           for $record in $csv-source($collection)
           return
             resources:createContent($metadata, $record)
-        (: let $metadatas := 
-        for $metadata in $metadataMap//mapping/node()[@scope = "collection"]
-        let $source := functx:substring-after-last($metadata/@source, "/")
-        let $findIdInCSV := normalize-space($metadata/@resourceId)
-        let $csv := $csv-map($source)
-        let $record := $csv/*:record[node()[name() = $findIdInCSV][. = $collection]]       
-        return
-          if ($metadata/@resourceId = "all")
-          then 
-            let $key := $metadata/name()
-            return element {$key} { 
-              if ($metadata/@key) then attribute {"key"} {$metadata/@key},
-              concat($metadata/@prefix, $metadata, $metadata/@suffix) 
-            }
-          else
-            if ($record and $metadata) 
-            then resources:createContent($metadata, $record)
-            else ()
-      return
-        if ($metadatas/name() = "dc:title")
-        then $metadatas
-        else  (
-          <dc:title>{$collection}</dc:title>,
-          $metadatas
-        ) :)
     else <dc:title>{$collection}</dc:title>
 };
 
