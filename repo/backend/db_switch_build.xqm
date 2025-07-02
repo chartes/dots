@@ -1,19 +1,17 @@
 xquery version "4.0";
 
 (:~
- : Module to initialize the "dots" database with two XML documents:
- : "dots_db_switcher.xml": lists available resources and specifies:
- :  - the resource type ("project", "collection", or "document"),
- :  - its unique identifier (@dtsResourceId),
- :  - and the corresponding BaseX database (@dbName).
- : Initially empty, this file is later populated with resource entries.
- : It is used by the DTS router to locate metadata for each resource.
- :
- : "dots_default_metadata_mapping.xml": default metadata mapping applied when no custom mapping is available. It extracts key metadata (title, creator, publisher) using XPath expressions.
- :
- : Author: École nationale des chartes  
- : Since: 2023-06-14  
- : Version: 1.0
+: Module to initialize the "dots" database with two XML documents:
+: "dots_db_switcher.xml": lists available resources and specifies:
+:  - the resource type ("project", "collection", or "document"),
+:  - its unique identifier (@dtsResourceId),
+:  - and the corresponding BaseX database (@dbName).
+: Initially empty, this file is later populated with resource entries.
+: It is used by the DTS router to locate metadata for each resource.
+: "dots_default_metadata_mapping.xml": default metadata mapping applied when no custom mapping is available. It extracts key metadata (title, creator, publisher) using XPath expressions.
+: Author: École nationale des chartes  
+: Since: 2023-06-14  
+: Version: 1.0
 :)
 
 module namespace dots.build = "backend/db_switch_build";
