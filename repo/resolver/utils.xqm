@@ -33,10 +33,15 @@ declare function utils:noCollection() as element(json) {
   <json type="object">
     <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
     <pair name="dtsVersion">1-alpha</pair>
-    <pair name="@id">{$G:root}</pair>
+    <pair name="@id">{utils_dots:getRootId()}</pair>
     <pair name="@type">Collection</pair>
-    <pair name="title">{$G:rootTitle}</pair>
-    {if ($G:rootDescription) then <pair name="description">{$G:rootDescription}</pair>}
+    <pair name="title">{utils_dots:getRootTitle()}</pair>
+    {
+      let $desc := utils_dots:getRootDescription()
+      where $desc
+      return 
+        <pair name="description">{$desc}</pair>
+    }
     <pair name="totalItems" type="number">0</pair>
     <pair name="totalChildren" type="number">0</pair>
     <pair name="totalParents" type="number">0</pair>
@@ -55,10 +60,13 @@ declare function utils:collections() as element(json) {
   let $content := (
     <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>,
     <pair name="dtsVersion">1-alpha</pair>,
-    <pair name="@id">{$G:root}</pair>,
+    <pair name="@id">{utils_dots:getRootId()}</pair>,
     <pair name="@type">Collection</pair>,
-    <pair name="title">{$G:rootTitle}</pair>,
-    if ($G:rootDescription) then <pair name="description">{$G:rootDescription}</pair>,
+    <pair name="title">{utils_dots:getRootTitle()}</pair>,
+    let $desc := utils_dots:getRootDescription()
+    where $desc
+    return 
+      <pair name="description">{$desc}</pair>,
     <pair name="totalItems" type="number">{$totalItems}</pair>,
     <pair name="totalChildren" type="number">{$totalItems}</pair>,
     <pair name="totalParents" type="number">0</pair>,

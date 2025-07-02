@@ -31,11 +31,7 @@ declare variable $G:defaultXslEnginePath := "Stylesheets/html/html.xsl";
 (: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/txt/tei-to-text.xsl"; :)
 (: declare variable $G:defaultXslEnginePath := "TEI-Boilerplate/src/content/teibp.xsl"; :)
 
-declare variable $G:root := "dots_cookbook";
-
-declare variable $G:rootTitle := "Collection de démonstration de DoTS";
-
-declare variable $G:rootDescription := "Le livre de recettes DoTS est conçu pour apprendre à publier une collection de textes avec DoTS, pour différents types de publication et genres littéraires, et selon différentes logiques éditoriales.";
+(: declare variable $G:rootDescription := "Le livre de recettes DoTS est conçu pour apprendre à publier une collection de textes avec DoTS, pour différents types de publication et genres littéraires, et selon différentes logiques éditoriales."; :)
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le DoTS Project Manager 

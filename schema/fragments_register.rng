@@ -104,6 +104,15 @@
           <text/>
         </attribute>
       </optional>
+      <optional>
+        <attribute name="type">
+          <choice>
+            <value>number</value>
+            <value>boolean</value>
+            <value>null</value>
+          </choice>
+        </attribute>
+      </optional>
     </element>
   </define>
   

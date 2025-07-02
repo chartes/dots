@@ -24,6 +24,12 @@ function usage {
     echo "          (example: theater)"
     echo "  --db_name             basex db project name"
     echo "          (example: theater)"
+    echo "  --root_id             option for default root identifier"
+    echo "          (default: 'default')"
+    echo "  --root_title          option for default root title"
+    echo "          "
+    echo "  --root_description    option for default root description"
+    echo "          (default: '')"
     echo "  --cleanOption         option to delete previous DoTS project"
     echo "          (default: false)"
     echo "  --delete              choice to delete only registers or all the database"
@@ -52,7 +58,7 @@ elif [[ -z $db_name ]]; then
     die "Missing parameter --db_name"
 fi
 
-bash "$basex_path/basex" scripts/dots_db_init.xq;
+bash "$basex_path/basex" -b rootId=$root_id -b rootTitle="$root_title" -b rootDescription="$root_description" scripts/dots_db_init.xq;
 
 if [ $cleanOption ]; then
   if [ $delete ]; then

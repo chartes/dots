@@ -106,3 +106,17 @@ declare function utils_dots:getParentIds($dbName as xs:string, $docInRegister as
   return
     $parentId
 };
+
+declare function utils_dots:getRootId() {
+  normalize-space(db:get($G:dots)/dots:metadataMap/dots:root/dots:id)
+};
+
+declare function utils_dots:getRootTitle() {
+  normalize-space(db:get($G:dots)/dots:metadataMap/dots:root/dots:title)
+};
+
+declare function utils_dots:getRootDescription() {
+  let $desc := db:get($G:dots)/dots:metadataMap/dots:root/dots:description
+  return
+    normalize-space($desc)
+};
