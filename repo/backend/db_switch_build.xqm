@@ -25,9 +25,9 @@ declare namespace dct = "http://purl.org/dc/terms/";
  : Creates or updates the two XML documents in the "dots" database.
  : @return  The two documents to be added to the "dots" database.
 :)
-declare updating function dots.build:dots_db($rootId := "", $rootTitle := "", $rootDescription := "") {
+declare updating function dots.build:dots_db($rootId := "", $rootTitle := "", $rootDescription := "", $linkXSL := "", $defaultEngine := "") {
   let $dbSwitch := dots.build:switcher()
-  let $metadataMap := dots.build:metadataMap($rootId, $rootTitle, $rootDescription)
+  let $metadataMap := dots.build:metadataMap($rootId, $rootTitle, $rootDescription, $linkXSL, $defaultEngine)
   return db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
 };
 
@@ -59,7 +59,7 @@ declare %private function dots.build:switcher() {
  : Creates the "dots_default_metadata_mapping.xml" document.
  : @return a <metadataMap/> element with XPath-based mappings for title, creator, and publisher metadata.
 :)
-declare %private function dots.build:metadataMap($rootId as xs:string := "", $rootTitle as xs:string := "", $rootDescription as xs:string := "") {
+declare %private function dots.build:metadataMap($rootId as xs:string := "", $rootTitle as xs:string := "", $rootDescription as xs:string := "", $linkXSL as xs:string := "", $defaultEngine as xs:string := "") {
   <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/"
       xmlns:dct="http://purl.org/dc/terms/">{
     dots.build:headers("metadataMap"),
@@ -72,6 +72,10 @@ declare %private function dots.build:metadataMap($rootId as xs:string := "", $ro
       <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
       <dc:creator xpath="//titleStmt/author" scope="document"/>
       <dct:publisher xpath="//publicationStmt/publisher" scope="document"/>
-    </mapping>
+    </mapping>,
+    <settings>
+      <linkXSL>{$linkXSL}</linkXSL>
+      <defaultEngine>{$defaultEngine}</defaultEngine>
+    </settings>
   }</metadataMap>
 };

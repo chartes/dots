@@ -7,10 +7,12 @@ import module namespace script = "script";
 declare variable $rootId external := ();
 declare variable $rootTitle external := ();
 declare variable $rootDescription external := ();
+declare variable $linkXSL external := ();
+declare variable $defaultEngine external := (); 
 
 if (db:exists($G:dots)) then (
   script:success("La base de données 'dots' existe déjà. Commande non nécessaire.")
 ) else (
-  dots.build:dots_db($rootId, $rootTitle, $rootDescription),
+  dots.build:dots_db($rootId, $rootTitle, $rootDescription, $linkXSL, $defaultEngine),
   script:success("La base de données 'dots' a été initialisée.")
 )

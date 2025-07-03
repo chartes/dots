@@ -206,14 +206,14 @@ function routes:document(
             switch ($media-type)
             case ($media-type[. = "html"]) return
               let $style :=
-                let $xsl := G:linkToXsl($dbName)
+                let $xsl := G:linkToXsl()
                 return
                   if (file:exists(concat($xsl, $dbName, "/", $resource, ".xsl")))
                   then concat($xsl, $dbName, "/", $resource, ".xsl")
                   else 
                     if (file:exists(concat($xsl, $dbName, "/", $dbName, ".xsl")))
                     then concat($xsl, $dbName, "/", $dbName, ".xsl")
-                    else concat($xsl, $G:defaultXslEnginePath)
+                    else concat($xsl, G:defaultXslEnginePath())
               return
                 xslt:transform($result, $style)
             default return $result

@@ -15,9 +15,9 @@ declare default element namespace "https://github.com/chartes/dots/";
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :) 
 
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
-(: "../../../../../../../transform/" :)
-declare function G:linkToXsl($dbName as xs:string) {
-  let $specificLink := db:get($dbName, $G:metadata)//settings/linkXSL
+(: "/srv/transform/" :)
+declare function G:linkToXsl() {
+  let $specificLink := db:get($G:dots)//settings/linkXSL
   return
     if ($specificLink)
     then if (ends-with($specificLink, "/")) then $specificLink else concat($specificLink, "/")
@@ -25,7 +25,13 @@ declare function G:linkToXsl($dbName as xs:string) {
 };
 (: declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); :) 
 
-declare variable $G:defaultXslEnginePath := "Stylesheets/html/html.xsl";
+declare function G:defaultXslEnginePath() {
+  let $defaultEngine := db:get($G:dots)//settings/defaultEngine
+  where $defaultEngine
+  return
+    normalize-space($defaultEngine)
+};
+(: "hteiml/tei2html.xsl" :)
 
 (: declare variable $G:defaultXslEnginePath := "hteiml/tei2html.xsl"; :)
 (: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/txt/tei-to-text.xsl"; :)

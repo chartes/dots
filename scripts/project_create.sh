@@ -34,6 +34,10 @@ function usage {
     echo "          (default: false)"
     echo "  --delete              choice to delete only registers or all the database"
     echo "          (default: false)"
+    echo "  --link_XSL             option for the default path to the XSLTs directory"
+    echo "          (default: '')   "
+    echo "  --default_engine       option for the default Engine XSLT"
+    echo "          (default: '')   "
     echo "  --unit_test           choice to launch unit tests"
     echo "          (default: false)"
     echo ""
@@ -58,7 +62,7 @@ elif [[ -z $db_name ]]; then
     die "Missing parameter --db_name"
 fi
 
-bash "$basex_path/basex" -b rootId=$root_id -b rootTitle="$root_title" -b rootDescription="$root_description" scripts/dots_db_init.xq;
+bash "$basex_path/basex" -b rootId=$root_id -b rootTitle="$root_title" -b rootDescription="$root_description" -b linkXSL=$link_XSL -b defaultEngine=$default_engine scripts/dots_db_init.xq;
 
 if [ $cleanOption ]; then
   if [ $delete ]; then
