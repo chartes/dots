@@ -1,3 +1,5 @@
+xquery version '4.0' ;
+
 import module namespace script = "script";
 
 declare variable $projectDirPath external := ();

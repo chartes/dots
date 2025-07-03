@@ -48,7 +48,13 @@ declare function dots_error:metadata_mapping($dbName, $projectDirPath ) {
   )
 };
 
+declare function dots_error:fileProblem() {
+  error(xs:QName('fileProblem'), "* ❌ Error : file does not exist.")
+};
 
+declare function dots_error:noDocument($resourceId) {
+  error(xs:QName('noDocument'), concat("* ❌ Error : the document '", $resourceId, "' does not exist."))
+};
 
 
 

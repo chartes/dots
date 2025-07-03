@@ -1,4 +1,4 @@
-xquery version "3.1";
+xquery version "4.0";
 
 (:~  
 : This module allows deleting a document to an existing collection.
