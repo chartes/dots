@@ -149,13 +149,16 @@ declare %private function fragments:getFragmentMetadata($dbName as xs:string, $r
 : @return xs:integer: The maximum citation depth found in the document.
 :)
 declare function fragments:getMaxCiteDepth($nodes, $n as xs:integer) as xs:integer {
-  let $levels :=
-    for $node in $nodes
+  if ($nodes)
+  then
+    let $levels :=
+      for $node in $nodes
+      return
+        if ($node/tei:citeStructure)
+        then
+          fragments:getMaxCiteDepth($node/tei:citeStructure, $n + 1)
+        else $n
     return
-      if ($node/tei:citeStructure)
-      then
-        fragments:getMaxCiteDepth($node/tei:citeStructure, $n + 1)
-      else $n
-  return
-    max($levels)
+      max($levels)
+  else 0
 };
