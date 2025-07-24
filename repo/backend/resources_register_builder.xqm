@@ -213,7 +213,7 @@ declare function resources:getDocumentMetadata(
   return
     (
       $dcTitle,
-      for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"]
+      for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"][name() != "dc:title"]
       return
         if ($metadata/@resourceId = "all")
         then 
