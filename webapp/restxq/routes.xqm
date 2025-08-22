@@ -24,6 +24,7 @@ declare
   %rest:path("/api/dts")
   %rest:GET
   %output:method("json")
+  %output:media-type("application/ld+json")
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
 function routes:entryPoint() {
@@ -55,6 +56,7 @@ declare
   %rest:path("/api/dts/collection")
   %rest:GET
   %output:method("json")
+  %output:media-type("application/ld+json")
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
   %rest:query-param("id", "{$id}", "")
@@ -101,6 +103,7 @@ declare
   %rest:path("/api/dts/navigation")
   %rest:GET
   %output:method("json")
+  %output:media-type("application/ld+json")
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
   %rest:query-param("resource", "{$resource}", "")
