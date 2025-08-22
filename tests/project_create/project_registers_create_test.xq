@@ -67,10 +67,34 @@ declare %unit:test function local:assertUniqueResourcesIdentifiers() {
  : @return Success if all fragment references are distinct.
 :)
 declare %unit:test function local:assertUniqueFragmentsIdentifiers() {
-  let $ref := db:get($dbName, $G:fragmentsRegister)//dots:member/dots:fragment/@ref
+  let $reg := db:get($dbName, $G:fragmentsRegister)
   return
-    unit:assert(empty(duplicate-values($ref)))
+    for $fragments in $reg//dots:fragment
+    let $resourceId := $fragments/@resourceId
+    group by $resourceId
+    return
+      let $ref :=
+        for $fragment in $fragments
+        let $ref := $fragment/@ref
+        return normalize-space($ref)
+      return
+        unit:assert(empty(duplicate-values($ref)))
 };
+
+(: let $reg := db:get("theater", "dots/fragments_register.xml")
+return
+  for $fragments in $reg//*:fragment
+  let $resourceId := $fragments/@resourceId
+  group by $resourceId
+  return
+    <resource id="{$resourceId}">{
+      let $ref :=
+        for $fragment in $fragments
+        let $ref := $fragment/@ref
+        return normalize-space($ref)
+      return
+        duplicate-values($ref)
+    }</resource> :)
 
 (:~
  : This test verifies that the value of @totalChildren for each collection matches the number of members referring to it as a parent.
