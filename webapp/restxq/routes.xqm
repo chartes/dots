@@ -28,14 +28,16 @@ declare
   %rest:produces("application/ld+json")
   %output:json("format=attributes")
 function routes:entryPoint() {
+  let $base-uri := substring-before(request:uri(), "/api")
+  return
   <json type="object">
     <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
     <pair name="dtsVersion">1-alpha</pair>
     <pair name="@id">/api/dts</pair>
     <pair name="@type">EntryPoint</pair>
-    <pair name="collection">{ string("/api/dts/collection/{?id,nav}") }</pair>
-    <pair name="navigation">{ string("/api/dts/navigation/{?resource,ref,start,end,down,tree}") }</pair>
-    <pair name="documents">{ string("/api/dts/document/{?resource,ref,start,end,tree,mediaType}") }</pair>
+    <pair name="collection">{ concat($base-uri, "/api/dts/collection/{?id,nav}") }</pair>
+    <pair name="navigation">{ concat($base-uri, "/api/dts/navigation/{?resource,ref,start,end,down,tree}") }</pair>
+    <pair name="document">{ concat($base-uri, "/api/dts/document/{?resource,ref,start,end,tree,mediaType}") }</pair>
   </json>
 };
 
