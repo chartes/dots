@@ -21,7 +21,7 @@ declare %unit:test function local:checkStatus() {
   return
     (
       unit:assert-equals($status, "200"), 
-      unit:assert-equals($mediaType, "application/json")
+      unit:assert-equals($mediaType, "application/ld+json")
     )
 };
 
@@ -31,6 +31,7 @@ declare function local:json() {
     $json
 };
 
+(: () :)
 http:send-request(<http:request method='get' status-only='true'/>, $baseUri)
 
 
