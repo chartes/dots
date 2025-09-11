@@ -281,9 +281,10 @@ declare function resources:getCollectionMetadata(
         else 
           let $source := functx:substring-after-last($metadata/@source, '/')
           let $csv-source := $csv-map($source)
-          for $record in $csv-source($collection)
           return
-            resources:createContent($metadata, $record)
+            for $record in $csv-source($collection)
+            return
+              resources:createContent($metadata, $record)
     else <dc:title>{$collection}</dc:title>
 };
 
