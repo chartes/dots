@@ -24,7 +24,7 @@ then
         for $document in file:list($metadataPathFile, true())
         where not(file:is-dir(concat($metadataPathFile, "/", $document)))
         return
-          update_metadata:addNewMetadataDocument($dbName, $metadataPathFile, $document),
+          update_metadata:addNewMetadataDocument($dbName, $metadataPathFile),
         if ($checkMetadataInDb)
         then script:success(concat("The 'metadata/' directory of the database '", $dbName, "' has been updated.")) 
         else script:success(concat("The 'metadata/' directory has been added to the database '", $dbName, "'."))
