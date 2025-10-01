@@ -30,7 +30,7 @@ declare function G:defaultXslEnginePath() {
   return
     if ($defaultEngine != "")
     then normalize-space($defaultEngine)
-    else "hteiml/tei2html.xsl"
+    else "tei-xsl-7.58.0/xml/tei/stylesheet/html/html.xsl"
 };
 (: "hteiml/tei2html.xsl" :)
 
