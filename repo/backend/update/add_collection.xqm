@@ -9,19 +9,35 @@ import module namespace resources = "backend/resources_register_builder";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
+(:~ Main function to handle the addition of a collection to the database.
+: It updates the resources register, the MaxCiteDepth of the parent collection, and the switcher dots.
+: @param $dbName      Name of the database
+: @param $resourceId  Identifier of the collection to add
+: @param $parentId    Identifier of the parent collection (optional)
+:)
 declare updating function add_coll:handleAddition($dbName as xs:string, $resourceId as xs:string, $parentId as xs:string := "") {
-  add_coll:addCollToResourcesReg($dbName, $resourceId, $parentId),
-  add_coll:updateMaxCiteDepthCollection($dbName, $parentId),
-  add_coll:addCollToSwitcherDots($dbName, $resourceId)
+  let $parent := if ($parentId) then $parentId else utils_dots:getIdProject($dbName)
+  return
+    (
+      add_coll:addCollToResourcesReg($dbName, $resourceId, $parent),
+      add_coll:updateMaxCiteDepthCollection($dbName, $parent),
+      add_coll:addCollToSwitcherDots($dbName, $resourceId)
+    )
 };
 
-declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $resourceId as xs:string, $parentId as xs:string := "") {
-  let $csv := resources:getCSV-map($dbName, $resourceId)
-  let $parent := if ($parentId) then $parentId else utils_dots:getIdProject($dbName)
+(:~ Function to add a collection to the resources register.
+: It inserts a new <collection/> node with metadata and updates the parent relationship.
+: @param $dbName      Name of the database
+: @param $resourceId  Identifier of the collection to add
+: @param $parentId    Identifier of the parent collection (optional)
+: @return Inserts a new <collection/> node into the resources register.
+:)
+declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $resourceId as xs:string, $parentId as xs:string) {
+  let $csv := resources:getCSV-map($dbName, "collection")
   let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
   return
     insert node 
-      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parent}">{
+      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parentId}">{
         resources:getCollectionMetadata($dbName, $resourceId, $csv)
       }</collection> as last into $resources_register
 };
@@ -31,9 +47,8 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
 : @param $parentIds  identifier of the collection to update
 : @return updating the value of the @totalChildren attribute in a <collection/> node.
 :)
-declare updating %private function add_coll:updateMaxCiteDepthCollection($dbName as xs:string, $parentIds as xs:string) {
-  let $idParentColl := if ($parentIds = "") then utils_dots:getIdProject($dbName) else $parentIds
-  let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $idParentColl]
+declare updating %private function add_coll:updateMaxCiteDepthCollection($dbName as xs:string, $parentId as xs:string) {
+  let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentId]
   let $totalChildren := $parent/@totalChildren
   return
      if ($parent != "")
