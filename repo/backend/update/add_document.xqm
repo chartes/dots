@@ -5,7 +5,6 @@ xquery version "3.1";
 : @author École nationale des chartes - Philippe Pons
 : @since 2025-01-10
 : @version  1.0
-: @todo L'ajout d'un document dans une collection qui n'existe pas est possible. Comment remédier à cela ?
 :)
 
 module namespace add_doc = "backend/update/add_document";
@@ -17,45 +16,54 @@ import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
 import module namespace dots.update = "backend/TEI_add_id";
 import module namespace script = "script";
+import module namespace utils_dots = "utils_dots"; 
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-declare updating function add_doc:handleAddition($dbName, $docPath) {
+(:~ Update function to handle the addition of a new document and its fragments to the database and registers.
+: @param $dbName   db name
+: @param $docPath  absolute path to the document to add
+: @return updates the database and registers with the new document and its fragments
+:)
+declare updating function add_doc:handleAddition($dbName as xs:string, $docPath as xs:string, $parentId as xs:string) {
   let $csv := resources:getCSV-map($dbName, "document")
-  let $csv-frag := resources:getCSV-map($dbName, "fragment")
   return
   (
-    add_doc:addDocToDB($dbName, $docPath),
+    add_doc:addDocToDB($dbName, $docPath, $parentId),
     add_doc:addDocToResourcesReg($dbName, $docPath, $csv)
   )
 };
 
-declare updating function add_doc:handleFragmentsAddition($dbName as xs:string, $docPath) {
-  let $csv-frag := resources:getCSV-map($dbName, "fragment")
-  return
-    add_doc:addFragInReg($dbName, $docPath, $csv-frag)
-};
+
+(:~~~~~~~~~~~~~~~
+Update database
+~~~~~~~~~~~~~~~~~:)
 
 (:~ Update function to add a new document with a specific path
 : @param $dbName  db name
 : @param $docPath absolute path to the document to add
+: @param $parentId identifier of the parent collection. By default, the project identifier.
 : @return add the document at the path $docPath to the db $dbName 
-: @todo the script using this function MUST check if contains($docPath, "data/").
 :)
-declare %private updating function add_doc:addDocToDB($dbName as xs:string, $docPath) {
-  let $path := substring-after($docPath, "data/")
+declare %private updating function add_doc:addDocToDB($dbName as xs:string, $docPath as xs:string, $path as xs:string) {
+  let $docName := functx:substring-after-last($docPath, "/")
   return
-    db:put($dbName, $docPath, $path)
+    db:put($dbName, $docPath, concat($path, "/", $docName))
 };
+
+(:~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Update resources_register.xml
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
 (:~ Update function to add a `<document/>` element to dots resources register (`dots/resources_register.xml`)
 : @param $dbName  db name
 : @param $docPath absolute path to the document to add
+: @param $csv map of the csv metadata
 : @return a complete <document/> node
 :)
-declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:string, $docPath, $csv) {
+declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:string, $docPath as xs:string, $csv) {
   let $document := doc($docPath)/tei:TEI
   let $projectName := G:getTopCollectionId($dbName)
   let $dtsResourceId := 
@@ -75,30 +83,46 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
         return $collId
     else $projectName
   return
-    if ($document)
-    then
-      let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
-      let $doc_in_register := $resources_register/dots:document[@dtsResourceId = $dtsResourceId]
-      return
-        if ($doc_in_register) 
-        then 
-          (
-            delete nodes $doc_in_register,
-            insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-          resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
-          resources:getDotsProjectName($projectName)
-}</document> after $doc_in_register
-          )
-        else
-          (
-            insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-            resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
-            resources:getDotsProjectName($projectName)
+    let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
+    return
+      (
+        insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
+        resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
+        resources:getDotsProjectName($projectName)
   }</document> as last into $resources_register,
-            add_doc:updateTotalChildrenCollection($dbName, $parentIds),
-            add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)
-          )
-    else ()
+        add_doc:updateTotalChildrenCollection($dbName, $parentIds),
+        add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)
+      )
+};
+
+(:~ Update function to increment the number of documents in the parent collection
+: @param $dbName     db name
+: @param $parentIds  identifier of the collection to update
+: @return updating the value of the @totalChildren attribute in a <collection/> node.
+:)
+declare updating %private function add_doc:updateTotalChildrenCollection($dbName as xs:string, $parentIds as xs:string) {
+  let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
+  let $totalChildren := $parent/@totalChildren
+  return
+     if ($parent != "")
+     then replace value of node $totalChildren with xs:integer($parent/@totalChildren) + 1
+     else 
+       update:output("La collection parente n'existe pas.")
+};
+
+(:~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Update fragments_register.xml
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
+
+(:~ Update function to handle the addition of fragments from a new document to the fragments register.
+: @param $dbName   db name
+: @param $docPath  absolute path to the document containing the fragments to add
+: @return updates the fragments register with the new fragments
+:)
+declare updating function add_doc:handleFragmentsAddition($dbName as xs:string, $docPath) {
+  let $csv-frag := resources:getCSV-map($dbName, "fragment")
+  return
+    add_doc:addFragInReg($dbName, $docPath, $csv-frag)
 };
 
 (:~  Update function to add `<fragment/>` nodes to the fragments register (`dots/fragments_register`).
@@ -106,13 +130,12 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
 : @param $docPath absolute path to the document to add
 : @return sequence of <fragment/> nodes
 :)
-declare updating %private function add_doc:addFragInReg($dbName as xs:string, $docPath, $csv) {
-  let $pathToDoc := functx:substring-after-last($docPath, "data/")
-  let $document := db:get($dbName, $pathToDoc)/tei:TEI
+declare updating %private function add_doc:addFragInReg($dbName as xs:string, $docPath, $csv) { 
   let $resourceId :=
-    if ($document/@xml:id)
-    then normalize-space($document/@xml:id)
-    else functx:substring-after-last($pathToDoc, "/")
+    if (doc($docPath)/*:TEI/@xml:id)
+    then normalize-space(doc($docPath)/*:TEI//@xml:id)
+    else functx:substring-after-last($docPath, "/")
+  let $document := utils_dots:getDocument($dbName, $resourceId)
   let $maxCiteDepth := fragments:getMaxCiteDepth($document//tei:refsDecl, 0)
   for $citeStructurePosition in $document//tei:refsDecl/tei:citeStructure
   return 
@@ -129,21 +152,9 @@ declare updating %private function add_doc:addFragInReg($dbName as xs:string, $d
       else insert node $fragment as last into $fragments_register
 };
 
-
-(:~ Update function to increment the number of documents in a collection
-: @param $dbName     db name
-: @param $parentIds  identifier of the collection to update
-: @return updating the value of the @totalChildren attribute in a <collection/> node.
-:)
-declare updating %private function add_doc:updateTotalChildrenCollection($dbName as xs:string, $parentIds as xs:string) {
-  let $parent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentIds]
-  let $totalChildren := $parent/@totalChildren
-  return
-     if ($parent != "")
-     then replace value of node $totalChildren with xs:integer($parent/@totalChildren) + 1
-     else 
-       update:output("La collection parente n'existe pas.")
-};
+(:~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Update switcher DoTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~:)
 
 (:~ Updat function to add the documet to the switcher dots
 : @param  $dbName         db name
