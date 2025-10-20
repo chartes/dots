@@ -1,6 +1,7 @@
 xquery version '4.0' ;
 
 import module namespace script = "script";
+import module namespace utils_dots = "utils_dots"; 
 
 declare variable $dbName external := ();
 declare variable $docPath external := ();

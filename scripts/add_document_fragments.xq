@@ -6,5 +6,7 @@ declare variable $dbName external := ();
 declare variable $docPath external := ();
 declare variable $parentId external := ();
 
-
-add_doc:handleFragmentsAddition($dbName, $docPath)
+(: if ($docExists)
+then script:error("Le document existe déjà dans la db")
+else :)
+  add_doc:handleFragmentsAddition($dbName, $docPath)

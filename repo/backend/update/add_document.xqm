@@ -28,14 +28,19 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @return updates the database and registers with the new document and its fragments
 :)
 declare updating function add_doc:handleAddition($dbName as xs:string, $docPath as xs:string, $parentId as xs:string) {
-  let $csv := resources:getCSV-map($dbName, "document")
+  let $resourceId := utils_dots:findDocId($docPath)
+  let $docInRegister := utils_dots:getDocInRegister($dbName, $resourceId) 
   return
-  (
-    add_doc:addDocToDB($dbName, $docPath, $parentId),
-    add_doc:addDocToResourcesReg($dbName, $docPath, $csv)
+    if ($docInRegister)
+    then script:error(dots_error:documentExists())
+    else
+      let $csv := resources:getCSV-map($dbName, "document")
+      return
+      (
+        add_doc:addDocToDB($dbName, $docPath, $parentId),
+        add_doc:addDocToResourcesReg($dbName, $docPath, $csv)
   )
 };
-
 
 (:~~~~~~~~~~~~~~~
 Update database

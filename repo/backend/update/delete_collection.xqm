@@ -80,7 +80,8 @@ declare updating function del_coll:handleDocInColl($dbName as xs:string, $collec
       (
         delete node $document,
         delete nodes db:get($dbName, $G:fragmentsRegister)//fragment[@resourceId = $resourceId],
-        db:delete($dbName, $pathDoc)
+        db:delete($dbName, $pathDoc),
+        del_doc:updateSwitcherDots($dbName, $resourceId)
       )
     else
       (
