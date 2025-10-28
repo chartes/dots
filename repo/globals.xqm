@@ -17,7 +17,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
 (: "/srv/transform/" :)
 declare function G:linkToXsl() {
-  let $specificLink := db:get($G:dots)//settings/linkXSL[. != ""]
+  let $specificLink := db:get($G:dots)//settings/linkXSL
   return
     if ($specificLink != "")
     then if (ends-with($specificLink, "/")) then $specificLink else concat($specificLink, "/")
