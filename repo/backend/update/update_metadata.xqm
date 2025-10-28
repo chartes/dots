@@ -19,26 +19,31 @@ declare updating function update_metadata:deleteMetadata($dbName as xs:string) {
       db:delete($dbName, $resource)
 };
 
-declare updating function update_metadata:addNewMetadataDocument($dbName as xs:string, $metadataPath as xs:string, $d) {
-  let $pathInMetadata := concat("metadata/", $d)
-  return
-    if (ends-with($d, ".tsv") or ends-with($d, ".csv")) 
-    then 
-      let $csv := csv:doc(
-        concat("/", $metadataPath, "/", $d),
+declare updating function update_metadata:addNewMetadataDocument(
+  $dbName as xs:string,
+  $metadataPath as xs:string
+) {
+  let $metadata := concat($metadataPath, '/dots_metadata_mapping.xml')
+  return (
+    if (not(file:exists($metadata))) then
+      error((), $metadata || ' is missing') else
+
+    for $file in file:list($metadataPath)
+    let $pathInMetadata := concat("metadata/", $file)
+    let $suffix := lower-case(replace($file, '^.*\.', ''))
+    let $input := if ($suffix = ('tsv', 'csv')) then (
+      csv:doc(
+        concat("/", $metadataPath, "/", $file),
         map {
           "header": true(),
           "separator": if ($G:separator != "") then $G:separator else "	"
         }
       )
-      return db:add($dbName, $csv, $pathInMetadata) 
-    else db:add($dbName, concat($metadataPath, "/", $d), $pathInMetadata) 
+    ) else if ($suffix = ('xml')) then (
+      fetch:doc(concat($metadataPath, "/", $file))
+    ) else (
+      error((), 'Unknown file type: ' || $suffix)
+    )
+    return db:add($dbName, $input, $pathInMetadata)
+  )
 };
-  
-  
-  
-  
-  
-  
-  
-

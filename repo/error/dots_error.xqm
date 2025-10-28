@@ -56,6 +56,10 @@ declare function dots_error:noDocument($resourceId) {
   error(xs:QName('noDocument'), concat("* ❌ Error : the document '", $resourceId, "' does not exist."))
 };
 
+declare function dots_error:documentExists() {
+  error(xs:QName('documentExists'), concat("* ❌ Error : the document is already in the db."))
+};
+
 
 
 

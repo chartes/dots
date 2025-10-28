@@ -325,7 +325,7 @@ declare function utils:getFragmentInfo(
       then (attribute {"type"} {"null"}, "")
       else $parent
     }</pair>,
-    if ($citeType) then <pair name="citeType">{$citeType}</pair> else (),
+    if ($citeType) then <pair name="citeType">{$citeType}</pair> else <pair name="citeType" type="null"/>,
     $dc,
     $extensions
   )
@@ -678,9 +678,12 @@ declare function utils:getMandatory(
     let $downloads := $resource/*:download
     where $downloads
     return
-      <pair name="download" type="object">{
+      (: PP. Attention: correction de download pour en faire un tableau, selon la spéc DTS.
+      Mais, cela va poser un problème pour DoTS-vue qui attend ici un objet. Voir avec Victor :)
+      <pair name="download" type="array">{
         for $download in $downloads
-        return utils:getStringJson($download/@key, $download)
+        return 
+          <item>{normalize-space($download)}</item>(: utils:getStringJson($download/@key, $download) :)
       }</pair>
   )
   let $citationTrees := if ($type = ("resource", "Resource")) then (
@@ -717,22 +720,18 @@ declare function utils:getMandatory(
 declare function utils:getCitationTrees(
   $node as element()
 ) as element(pair) {
-  <pair name="citeStructure" type="array">{
+  <pair name="citeStructure" type="object">{
     for $cite in $node/*:citeStructure
     let $citeType := normalize-space($cite/@unit)
     return
-      <item type="object">
-        <pair name="@type">CiteStructure</pair>
-        {
-          if ($citeType) then (
-            <pair name="citeType">{$citeType}</pair>
-          ) else (
-            <pair name="citeType" type="null"/>
-          ),
-          if ($cite/*:citeStructure)
-          then utils:getCitationTrees($cite)
-       }
-     </item>
+      (
+        <pair name="@type">CiteStructure</pair>,
+        if ($citeType) 
+        then <pair name="citeType">{$citeType}</pair>
+        else <pair name="citeType" type="null"/>,
+        if ($cite/*:citeStructure)
+        then utils:getCitationTrees($cite)
+      )
   }</pair>
 };
   
@@ -905,19 +904,6 @@ declare function utils:getContext(
               default return () 
   }</pair>
 };
-
-(:~
- : Cette fonction permet de retrouver, dans la base de données BaseX $projectName, dans le registre DoTS "dots/resources_register.xml" la resource $resourceId
- : @return réponse XML
- : @param $projectName chaîne de caratère permettant de retrouver la base de données BaseX concernée
- : @param $resourceId chaîne de caractère identifiant une resource
- :)
-(: declare function utils:getResource(
-  $projectName as xs:string,
-  $resourceId as xs:string
-) {
-  db:get($projectName, $G:resourcesRegister)//dots:member/node()[@dtsResourceId = $resourceId]
-}; :)
 
 (:~  
  : Cette fonction permet de retrouver, dans la base de données BaseX $projectName, dans le registre DoTS "dots/fragments_register.xml" le(s) fragment(s)  de la resource $resourceId

@@ -31,7 +31,8 @@ declare updating function del_doc:handleDelete($dbName, $docId) {
       del_doc:deleteDocInDb($dbName, $docId),
       delete node $docInRegister, 
       del_doc:deleteFragments($dbName, $docId),
-      del_doc:changeTotalChildren($dbName, $parentIds)
+      del_doc:changeTotalChildren($dbName, $parentIds),
+      del_doc:updateSwitcherDots($dbName, $docId)
     )
 };
 

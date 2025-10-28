@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xrem/rng2html.xsl"?>
+<grammar 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:h="http://www.w3.org/1999/xhtml" 
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  xml:lang="en">
+  <start>
+    
+    <a:documentation>
+      <h:h1>Switcher DoTS</h:h1>
+      <h:p>This register lists all the projects and ressources of a DOTS portal.</h:p>
+      <h:p>It is required for building responses to queries passed to the DTS <h:strong>Collection</h:strong>, <h:strong>Navigation</h:strong> and <h:strong>Document</h:strong> Endpoints.</h:p>
+    </a:documentation>
+    
+    <ref name="json"/>
+    
+  </start>
+  
+  <define name="json">
+    <a:documentation>Dots Databases Switcher</a:documentation>
+    <element name="json">
+      <attribute name="type">
+        <value>object</value>
+      </attribute>
+    </element>
+  </define>
+</grammar>

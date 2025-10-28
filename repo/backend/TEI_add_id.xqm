@@ -25,7 +25,8 @@ declare default element namespace "https://github.com/chartes/dots/";
 : @return         a sequence of update operations inserting `@xml:id` attributes and replacing `@ref` values.
 :)
 declare updating function dots.update:addXmlIdToFragment($dbName as xs:string) {
-  for $fragments in db:get($dbName, $G:fragmentsRegister)//fragment
+  let $fragmentsRegister := if (db:get($dbName, $G:fragmentsRegister)) then db:get($dbName, $G:fragmentsRegister) else db:get($dbName, concat("/", $G:fragmentsRegister))
+  for $fragments in $fragmentsRegister//fragment
   let $node-id := $fragments/@node-id
   let $tei := db:get-id($dbName, $node-id)
   where not($tei/@xml:id)

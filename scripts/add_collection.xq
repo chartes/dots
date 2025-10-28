@@ -19,10 +19,10 @@ return
     then
       let $collParent := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $parentId]
       return
-        if ($collParent)
+        if ($collParent != "")
         then
           (
-            add_coll:handleAddition($dbName, $resourceId),
+            add_coll:handleAddition($dbName, $resourceId, $parentId),
             script:success(concat("La collection '", $resourceId, "', sous-collection de '", $parentId, "', a bien été ajouté à la db ", $dbName, "."))
           )
         else script:error(concat("La collection parente '", $parentId, "' n'existe pas."))
@@ -31,7 +31,6 @@ return
         add_coll:handleAddition($dbName, $resourceId),
         script:success(concat("La collection '", $resourceId, "' a bien été ajouté à la db ", $dbName, "."))
       )
-  
   
   
 

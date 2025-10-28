@@ -269,22 +269,29 @@ declare function resources:getCollectionMetadata(
   return
     if ($metadataMap)
     then
-      for $metadata in $metadataMap/node()[@scope = "collection"]
-      return
-        if ($metadata/@resourceId = "all")
-        then 
-          let $key := $metadata/name()
-          return element {$key} { 
-            if ($metadata/@key) then attribute {"key"} {$metadata/@key},
-            concat($metadata/@prefix, $metadata, $metadata/@suffix) 
-          }
-        else 
-          let $source := functx:substring-after-last($metadata/@source, '/')
-          let $csv-source := $csv-map($source)
-          return
-            for $record in $csv-source($collection)
+      let $metadatas :=
+        for $metadata in $metadataMap/node()[@scope = "collection"]
+        return
+          if ($metadata/@resourceId = "all")
+          then 
+            let $key := $metadata/name()
+            return element {$key} { 
+              if ($metadata/@key) then attribute {"key"} {$metadata/@key},
+              concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+            }
+          else 
+            let $source := functx:substring-after-last($metadata/@source, '/')
+            let $csv-source := $csv-map($source)
             return
-              resources:createContent($metadata, $record)
+              if (exists(map:get($csv-source, $collection)))
+              then
+                for $record in $csv-source($collection)
+                return
+                  resources:createContent($metadata, $record) 
+              else
+                ()
+        let $title := if ($metadatas/descendant-or-self::dc:title) then () else <dc:title>{$collection}</dc:title>
+        return ($title, $metadatas)
     else <dc:title>{$collection}</dc:title>
 };
 
