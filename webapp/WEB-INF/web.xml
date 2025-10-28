@@ -56,7 +56,6 @@
     <url-pattern>/static/*</url-pattern>
   </servlet-mapping>
   
-  <!-- Set Access-Control-Allow-Origin: * -->
   <filter>
     <filter-name>cross-origin</filter-name>
     <filter-class>org.eclipse.jetty.ee9.servlets.CrossOriginFilter</filter-class>

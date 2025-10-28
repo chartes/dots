@@ -672,9 +672,9 @@ declare function utils:getMandatory(
   )
   let $uri := substring-before(request:uri(), "/api")
   let $resourceLink := if ($type = ("resource", "Resource")) then (
-    <pair name="collection">{concat($uri, "/api/dts/collection?id=", $resourceId, "{&amp;nav}")}</pair>,
-    <pair name="document">{concat($uri, "/api/dts/document?resource=", $resourceId, "{&amp;ref,start,end,tree,mediaType}")}</pair>,
-    <pair name="navigation">{concat($uri, "/api/dts/navigation?resource=", $resourceId, "{&amp;ref,start,end,tree,down}")}</pair>,
+    <pair name="collection">{concat($uri, "/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
+    <pair name="document">{concat($uri, "/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
+    <pair name="navigation">{concat($uri, "/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>,
     let $downloads := $resource/*:download
     where $downloads
     return

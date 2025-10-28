@@ -6,6 +6,7 @@ import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots"; 
 import module namespace resources = "backend/resources_register_builder";
+declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
@@ -35,10 +36,18 @@ declare updating function add_coll:handleAddition($dbName as xs:string, $resourc
 declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $resourceId as xs:string, $parentId as xs:string) {
   let $csv := resources:getCSV-map($dbName, "collection")
   let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
+  let $metadata := resources:getCollectionMetadata($dbName, $resourceId, $csv)
   return
     insert node 
-      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parentId}">{
-        resources:getCollectionMetadata($dbName, $resourceId, $csv)
+      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parent}">{
+        if ($metadata/descendant-or-self::*:title)
+        then
+          $metadata
+        else
+          (
+            <dc:title>{$resourceId}</dc:title>,
+            $metadata
+          )
       }</collection> as last into $resources_register
 };
 
