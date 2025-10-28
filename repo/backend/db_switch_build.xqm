@@ -58,15 +58,16 @@ declare %private function dots.build:switcher() {
 (:~
  : Creates the "dots_default_metadata_mapping.xml" document.
  : @return a <metadataMap/> element with XPath-based mappings for title, creator, and publisher metadata.
+ : @todo vérifier que cette fonction fonctionne correctement. Et comment gérer l'ajout d'un nouveau projet ? Comment faire un update de ces paramètres ?
 :)
 declare %private function dots.build:metadataMap($rootId as xs:string := "", $rootTitle as xs:string := "", $rootDescription as xs:string := "", $linkXSL as xs:string := "", $defaultEngine as xs:string := "") {
   <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/"
       xmlns:dct="http://purl.org/dc/terms/">{
     dots.build:headers("metadataMap"),
     <root>
-      <id>{if ($rootId) then $rootId else "default"}</id>
-      <title>{if ($rootTitle) then $rootTitle else "default title"}</title>
-      {if ($rootDescription) then <description>{$rootDescription}</description>}
+      <id>{if ($rootId != "") then $rootId else "default"}</id>
+      <title>{if ($rootTitle != "") then $rootTitle else "default title"}</title>
+      {if ($rootDescription != "") then <description>{$rootDescription}</description>}
     </root>,
     <mapping>      
       <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
