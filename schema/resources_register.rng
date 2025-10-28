@@ -8,6 +8,7 @@
   xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
   xmlns:h="http://www.w3.org/1999/xhtml" 
   xmlns:dots="https://github.com/chartes/dots/"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron"
   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" 
   xml:lang="fr">
   
@@ -106,7 +107,7 @@
   <define name="dcTitle">
     <a:documentation>Titre de la ressource</a:documentation>
     <element name="dc:title">
-      <text/>
+      <data type="string"/>
     </element>
   </define>
   
@@ -141,5 +142,15 @@
       <text/>
     </element>
   </define>
+  
+  <div xmlns="http://purl.oclc.org/dsdl/schematron">
+    <sch:pattern>
+      <sch:rule context="dc:title">
+        <sch:assert test="normalize-space(.) != ''">
+          L'élément dc:title ne doit pas être vide.
+        </sch:assert>
+      </sch:rule>
+    </sch:pattern>
+  </div>
   
 </grammar>
