@@ -39,7 +39,7 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
   let $metadata := resources:getCollectionMetadata($dbName, $resourceId, $csv)
   return
     insert node 
-      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parent}">{
+      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parentId}">{
         if ($metadata/descendant-or-self::*:title)
         then
           $metadata

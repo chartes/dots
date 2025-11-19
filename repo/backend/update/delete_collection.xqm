@@ -17,6 +17,7 @@ import module namespace G = "globals";
 import module namespace del_doc = "backend/update/delete_document";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
+import module namespace update_metadata = "backend/update/update_metadata"; 
 
 declare default element namespace "https://github.com/chartes/dots/";
 
@@ -31,7 +32,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 :                         if false, reassign them to the parent collection
 : @return database updates (delete node, update attributes, trigger document deletion or reassignment)
 :)
-declare updating function del_coll:handleDeleteColl($dbName as xs:string, $collectionId as xs:string, $option) {
+declare updating function del_coll:handleDeleteColl($dbName as xs:string, $collectionId as xs:string, $projectDirPath as xs:string, $option) {
   let $collection := db:get($dbName, $G:resourcesRegister)//member/collection[@dtsResourceId = $collectionId]
   let $docInColl := db:get($dbName, $G:resourcesRegister)//member/document[tokenize(@parentIds) = $collectionId]
   let $parentId := $collection/@parentIds
@@ -39,6 +40,8 @@ declare updating function del_coll:handleDeleteColl($dbName as xs:string, $colle
     (
       delete node $collection,
       del_coll:changeParentTotalChildren($dbName, $parentId, if ($option ="true") then 0 else count($docInColl)),
+      update_metadata:deleteMetadata($dbName),
+      update_metadata:addNewMetadataDocument($dbName, concat($projectDirPath, "/metadata")),
       del_doc:updateSwitcherDots($dbName, $collectionId)
     )
 };
@@ -86,10 +89,10 @@ declare updating function del_coll:handleDocInColl($dbName as xs:string, $collec
     else
       (
         delete nodes db:get($dbName, $G:fragmentsRegister)//fragment[@resourceId = $resourceId],
-        replace value of node $parentDoc with replace($parentDoc, $collectionId, $parentCollId),
+        replace value of node $parentDoc with replace($parentDoc, $collectionId, $parentCollId), (: /!\ tokenize pour s'assurer de bien remplacer la bonne valeur :)
         db:delete($dbName, $pathDoc),
-        db:put($dbName, utils_dots:findPathDoc($dbName, $resourceId), replace($pathDoc, concat($collectionId, "/"), "/")),
-        del_coll:addFragInReg($dbName, $resourceId, utils_dots:getDocument($dbName, $resourceId), $csv)
+        db:put($dbName, utils_dots:findPathDoc($dbName, $resourceId), replace($pathDoc, concat($collectionId, "/"), "/")), (: utiliser db:rename à la place :)
+        del_coll:addFragInReg($dbName, $resourceId, utils_dots:getDocument($dbName, $resourceId), $csv) (: avec db:rename, cette étape n'est plus nécessaire a priori. À vérifier :)
       )
 };
 

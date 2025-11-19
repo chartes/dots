@@ -169,8 +169,6 @@ function routes:navigation(
 declare
   %rest:path("/api/dts/document")
   %rest:GET
-  %output:method("xml")
-  %rest:produces("application/tei+xml")
   %rest:query-param("resource", "{$resource}", "")
   %rest:query-param("ref", "{$ref}", "")
   %rest:query-param("start", "{$start}", "")
@@ -220,8 +218,10 @@ function routes:document(
                     then concat($xsl, $dbName, "/", $dbName, ".xsl")
                     else concat($xsl, G:defaultXslEnginePath())
               return
-                xslt:transform($result, $style)
-            default return $result
+                let $trans := xslt:transform($result, $style)
+                return
+                  serialize($trans, map {"method": "html"})
+            default return serialize($result, map {"method": "xml"})
           return
             (
               <rest:response>
