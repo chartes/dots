@@ -34,6 +34,16 @@ declare function utils_dots:getDbName($resourceId as xs:string) {
   normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resourceId]/@dbName)
 };
 
+(:~ TODO: This function indicates if a resource is to be cached.
+: @param $resourceId document identifier
+: @return result of check
+:)
+declare function utils_dots:cache(
+  $resourceId as xs:string
+) as xs:boolean {
+  true()
+};
+
 (:~
  : This function retrieves a TEI document from the database using its xml:id.
  : @param $dbName the name of the database

@@ -1,5 +1,6 @@
 xquery version "3.1";
 
+
 (:~ 
 : Ce module regroupe les urls à servir pour la mise en oeuvre de l'API DTS
 : @author École nationale des chartes - Philippe Pons
@@ -8,6 +9,7 @@ xquery version "3.1";
 :)
 module namespace routes="https://github.com/chartes/dots/api/routes";
 
+import module namespace cache = 'cache';
 import module namespace G = "globals";
 import module namespace utils = "resolver/utils";
 
@@ -218,9 +220,16 @@ function routes:document(
                     then concat($xsl, $dbName, "/", $dbName, ".xsl")
                     else concat($xsl, G:defaultXslEnginePath())
               return
-                let $trans := xslt:transform($result, $style)
-                return
-                  serialize($trans, map {"method": "html"})
+                let $code := fn() {
+                  xslt:transform($result, $style)
+                  => serialize(map {"method": "html"})
+                }
+                let $key := string-join(
+                  ('xslt', $ref, $start, $end, $tree, $filter, $excludeFragments),
+                  '/'
+                )
+                return cache:cache($resource, $key, $code)
+
             default return serialize($result, map {"method": "xml"})
           return
             (
