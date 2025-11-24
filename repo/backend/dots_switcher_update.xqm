@@ -24,12 +24,12 @@ declare namespace dct = "http://purl.org/dc/terms/";
 : @param $dbName  the name of the database containing the new project's data.
 : @return a sequence of update expressions: updating the date, the total project count, and inserting new elements.
 :)
-declare updating function dots.update:switcher($dbName) {
+declare updating function dots.update:switcher($dbName as xs:string, $cacheOption as xs:boolean := false() ) {
   let $switcher := db:get($G:dots, $G:dbSwitcher)/dbSwitch
   let $dateModified := $switcher/metadata/dct:modified
   let $totalProject := $switcher/metadata/totalProjects
   let $members := (
-    dots.update:project($dbName),
+    dots.update:project($dbName, $cacheOption),
     dots.update:members($dbName)
   )
   return (
@@ -44,11 +44,11 @@ declare updating function dots.update:switcher($dbName) {
 : @param $dbName  the name of the project's database to register.
 : @return         a `<project>` element, or an empty sequence if the project is already registered.
 :)
-declare %private function dots.update:project($dbName as xs:string) {
+declare %private function dots.update:project($dbName as xs:string, $cacheOption as xs:boolean := false()) {
   let $dtsResourceId := db:get($dbName, $G:resourcesRegister)//member/collection[not(@parentIds)]/@dtsResourceId
   let $projectInSwitcher := db:get($G:dots)//member/project[@dbName = $dbName]
   where not($projectInSwitcher)
-  return <project dtsResourceId="{ $dtsResourceId }" dbName="{$dbName}"/>
+  return <project dtsResourceId="{ $dtsResourceId }" dbName="{$dbName}" cacheOption="{$cacheOption}"/>
 };
 
 (:~

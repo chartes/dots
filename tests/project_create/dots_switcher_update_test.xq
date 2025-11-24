@@ -53,8 +53,9 @@ declare %unit:test function local:checkTotalProject() {
 :)
 declare %unit:test function local:validateRng() {
   let $switcher := db:get($G:dots, $G:dbSwitcher)
+  let $validateSwitcher := validate:rng($switcher, $G:dbSwitchValidation)
   return
-    unit:assert(validate:rng-report($switcher, $G:dbSwitchValidation))
+    unit:assert-equals($validateSwitcher, (), $validateSwitcher)
 };
 
 (:~

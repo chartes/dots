@@ -68,8 +68,26 @@ declare %unit:test function local:checkNumberDocs() {
 : @return An assertion that the number of collections matches between the /data directory and the database (excluding "metadata").
 :)
 declare %unit:test function local:checkNumberColls() {
-  let $collsInDir := count(file:descendants(concat($projectDirPath, "/data"))[not(ends-with(., ".xml"))])
-  let $collsInDb := count(db:dir($dbName, "")[. != "metadata"][. != "dots"][./name() != "resource"])
+  let $collsInDir := count(file:descendants(concat($projectDirPath, "/data"))[ends-with(., "/")])
+  let $collsInDb := 
+    let $items :=
+      for $items in db:list($dbName)
+      where not(starts-with($items, "dots"))
+      where not(starts-with($items, "metadata"))
+      let $tokenize := tokenize($items, "/")
+      return
+        $tokenize
+    return
+      let $dir := count(
+        for $i in $items
+        where not(ends-with($i, ".xml"))
+        group by $i
+        return
+          $i
+        )
+      return
+        $dir
+    (: count(db:dir($dbName, "")[. != "metadata"][. != "dots"][./name() != "resource"]) :)
   return
     unit:assert-equals($collsInDir, $collsInDb, dots_error:numberColls($collsInDir, $collsInDb))
 };

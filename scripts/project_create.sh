@@ -38,6 +38,8 @@ function usage {
     echo "          (default: '')   "
     echo "  --default_engine       option for the default Engine XSLT"
     echo "          (default: '')   "
+    echo "  --cache_option          boolean to choose if cache result is needeed"
+    echo "          (default: false())   "
     echo "  --unit_test           choice to launch unit tests"
     echo "          (default: false)"
     echo ""
@@ -76,7 +78,7 @@ fi
 bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path scripts/project_db_init.xq;
 bash "$basex_path/basex" -b dbName=$db_name -b topCollectionId=$top_collection_id scripts/project_registers_create.xq;
 bash "$basex_path/basex" -b dbName=$db_name scripts/TEI_add_id.xq;
-bash "$basex_path/basex" -b dbName=$db_name scripts/dots_switcher_update.xq;
+bash "$basex_path/basex" -b dbName=$db_name -b cacheOption=$cache_option scripts/dots_switcher_update.xq;
 
 if [[ $unit_test == 'true' ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path -b topCollectionId=$top_collection_id -b option='false()' -t tests/project_create

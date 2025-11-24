@@ -18,6 +18,8 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
 
 declare variable $dbName external := "test";
+declare variable $resourcesRegister := db:get($dbName, $G:resourcesRegister);
+declare variable $fragmentsRegister := db:get($dbName, $G:fragmentsRegister);
 
 (:~
 : This function runs before the test suite and creates the necessary registers for DoTS.
@@ -34,12 +36,13 @@ declare variable $dbName external := "test";
  : @return Success if each TEI document is valid according to the expected schemas.
 :)
 declare %unit:test function local:validateRng() {
-  for $TEI in db:get($dbName)/tei:TEI
+  let $validateResources := validate:rng($resourcesRegister, $G:resourcesValidation)
+  let $validateFragments := validate:rng($fragmentsRegister, $G:fragmentsValidation)
   return
     (
-      unit:assert(validate:rng-report($TEI, $G:resourcesValidation)),
-      unit:assert(validate:rng-report($TEI, $G:fragmentsValidation))
-    )
+    unit:assert-equals($validateResources, (), $validateResources),
+    unit:assert-equals($validateFragments, (), $validateFragments)
+  )
 };
 
 (:~

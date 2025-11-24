@@ -66,6 +66,11 @@
   <define name="project">
       <element name="project">
         <ref name="resource-atts"/>
+        <optional>
+          <attribute name="cacheOption">
+            <data type="boolean"/>
+          </attribute>
+        </optional>
       </element>
   </define>
   

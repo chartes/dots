@@ -11,6 +11,7 @@ declare variable $rootTitle external := "";
 declare variable $rootDescription external := "";
 declare variable $linkXSL external := "";
 declare variable $defaultEngine external := ""; 
+declare variable $cacheOption external := false();
 
 for $script in ('../scripts/dots_db_init.xq', if ($option) then '../scripts/dots_registers_delete.xq', '../scripts/project_db_init.xq', 
   '../scripts/project_registers_create.xq', '../scripts/TEI_add_id.xq', '../scripts/dots_switcher_update.xq')
@@ -23,6 +24,7 @@ return script:execute(xs:anyURI($script), map {
   'rootTitle': $rootTitle,
   'rootDescription': $rootDescription,
   'linkXSL': $linkXSL,
-  'defaultEngine': $defaultEngine
+  'defaultEngine': $defaultEngine,
+  'cacheOption': $cacheOption
 })
 

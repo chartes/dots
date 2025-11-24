@@ -224,10 +224,10 @@ function routes:document(
                   xslt:transform($result, $style)
                   => serialize(map {"method": "html"})
                 }
-                let $key := string-join(
+                let $key := request:query()(: string-join(
                   ('xslt', $ref, $start, $end, $tree, $filter, $excludeFragments),
                   '/'
-                )
+                ) :)
                 return cache:cache($resource, $key, $code)
 
             default return serialize($result, map {"method": "xml"})

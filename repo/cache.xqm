@@ -12,7 +12,7 @@ declare function cache:cache(
 ) as item()* {
   (: check if we want to cache results for this resource :)
   let $db := utils_dots:getDbName($resourceId)
-  return if(utils_dots:cache($resourceId)) then (
+  return if(utils_dots:cache($db, $resourceId)) then (
     let $cache-key := $db || ':' || $name
     let $entry := store:get($cache-key)
     let $entry-ts := $entry?timestamp

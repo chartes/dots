@@ -39,9 +39,12 @@ declare function utils_dots:getDbName($resourceId as xs:string) {
 : @return result of check
 :)
 declare function utils_dots:cache(
+  $dbName as xs:string,
   $resourceId as xs:string
 ) as xs:boolean {
-  true()
+  let $project := db:get($G:dots)//dots:project[@dbName = $dbName]
+  return
+    xs:boolean($project/@cacheOption)
 };
 
 (:~
