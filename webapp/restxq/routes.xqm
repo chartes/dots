@@ -85,7 +85,7 @@ function routes:collections(
             routes:badIdResource(xs:string($id))
   }
       let $key := request:query()
-      return cache:cache("", $key, $code)
+      return cache:cache($id, $key, $code)
     else
       utils:collections()
   else

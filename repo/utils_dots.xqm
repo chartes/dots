@@ -43,8 +43,9 @@ declare function utils_dots:cache(
   $resourceId as xs:string
 ) as xs:boolean {
   let $project := db:get($G:dots)//dots:project[@dbName = $dbName]
+  let $cacheOption := $project/@cacheOption
   return
-    xs:boolean($project/@cacheOption)
+    xs:boolean($cacheOption)
 };
 
 (:~

@@ -17,6 +17,8 @@ declare function cache:cache(
     let $entry := store:get($cache-key)
     let $entry-ts := $entry?timestamp
     let $db-ts := db:property($db, 'timestamp')
+    (: Check in the switcher dots the timestamp of the resource :)
+                  (: db:get("dots")//*:document[@dtsResourceId = $resourceId]/@timeStamp :)
     
     return if(exists($entry) and $entry-ts = $db-ts) then (
       $entry?contents
