@@ -2,8 +2,6 @@ module namespace cache = 'cache';
 
 import module namespace utils_dots = "utils_dots"; 
 
-(: BaseX 12.1: cache entries will expire in 1 hours :)
-declare variable $cache:OPTIONS := { 'expiry': xs:dayTimeDuration('PT1H') };
 (:~ Single cache entry. :)
 declare variable $cache:VALUE := 'value';
 
