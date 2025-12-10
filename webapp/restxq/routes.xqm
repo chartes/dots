@@ -228,7 +228,8 @@ function routes:document(
                   ('xslt', $ref, $start, $end, $tree, $filter, $excludeFragments),
                   '/'
                 ) :)
-                return cache:cache($resource, $key, $code)
+                return cache:cache($resource, $key, $code
+                  (: , fn() { contains($key, '......') } :))
 
             default return serialize($result, map {"method": "xml"})
           return
