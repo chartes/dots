@@ -75,17 +75,16 @@ function routes:collections(
   then 
     if ($id)
     then
+      let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
       let $code := fn() {
-        let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
-        return
-          if ($dbName != "") 
-          then 
-            utils:collectionById($id, $nav, $filter)
-          else
-            routes:badIdResource(xs:string($id))
+        if ($dbName != "") 
+        then 
+          utils:collectionById($id, $nav, $filter)
+        else
+          routes:badIdResource(xs:string($id))
   }
       let $key := request:query()
-      return cache:cache($id, $key, $code)
+      return cache:cache($dbName, $id, $key, $code)
     else
       utils:collections()
   else
@@ -136,27 +135,26 @@ function routes:navigation(
     return
       web:error(400, $message)
   else
+    let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resource]/@dbName)
     let $code := fn() {
-      let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resource]/@dbName)
-      return
-        if ($dbName != "") 
-        then 
-          if($down != -2)
-          then
-            utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
-          else
-            let $query := request:query()
-            return
-              if (contains($query, "ref=") or contains($query, "start=") or contains($query, "filter="))
-              then
-                utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
-              else
-               web:redirect(concat("/api/dts/navigation?", request:query(), "&amp;down=1"))
+      if ($dbName != "") 
+      then 
+        if($down != -2)
+        then
+          utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
         else
-          routes:badIdResource(xs:string($resource))    
+          let $query := request:query()
+          return
+            if (contains($query, "ref=") or contains($query, "start=") or contains($query, "filter="))
+            then
+              utils:navigation($resource, $ref, $start, $end, $tree, $filter, $down) 
+            else
+              web:redirect(concat("/api/dts/navigation?", request:query(), "&amp;down=1"))
+      else
+        routes:badIdResource(xs:string($resource))    
 }
     let $key := request:query()
-    return cache:cache($resource, $key, $code)
+    return cache:cache($dbName, $resource, replace($key, '\W', '_'), $code)
 };
 
 (:~ 
@@ -232,11 +230,9 @@ function routes:document(
                   xslt:transform($result, $style)
                   => serialize(map {"method": "html"})
                 }
-                let $key := request:query()(: string-join(
-                  ('xslt', $ref, $start, $end, $tree, $filter, $excludeFragments),
-                  '/'
-                ) :)
-                return cache:cache($resource, $key, $code)
+                let $key := request:query()
+                return cache:cache($dbName, $resource, $key, $code
+                  (: , fn() { contains($key, '......') } :))
 
             default return serialize($result, map {"method": "xml"})
           return
