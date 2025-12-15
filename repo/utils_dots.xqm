@@ -45,7 +45,9 @@ declare function utils_dots:cache(
   let $project := db:get($G:dots)//dots:project[@dbName = $dbName]
   let $cacheOption := $project/@cacheOption
   return
-    xs:boolean($cacheOption)
+    if ($cacheOption)
+    then xs:boolean($cacheOption)
+    else false()
 };
 
 (:~

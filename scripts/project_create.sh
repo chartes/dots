@@ -30,10 +30,8 @@ function usage {
     echo "          "
     echo "  --root_description    option for default root description"
     echo "          (default: '')"
-    echo "  --cleanOption         option to delete previous DoTS project"
-    echo "          (default: false)"
-    echo "  --delete              choice to delete only registers or all the database"
-    echo "          (default: false)"
+    echo "  --clean_option         option to delete previous DoTS project"
+    echo "          (options: |register|all. Default: '')"
     echo "  --link_XSL             option for the default path to the XSLTs directory"
     echo "          (default: '')   "
     echo "  --default_engine       option for the default Engine XSLT"
@@ -66,14 +64,13 @@ fi
 
 bash "$basex_path/basex" -b rootId=$root_id -b rootTitle="$root_title" -b rootDescription="$root_description" -b linkXSL=$link_XSL -b defaultEngine=$default_engine scripts/dots_db_init.xq;
 
-if [ $cleanOption ]; then
-  if [ $delete ]; then
-    if [ $delete == "true" ]; then
+if [ $clean_option ]; then
+  if [ $clean_option == "all" ]; 
+  then
       bash "$basex_path/basex" -b dbName=$db_name -b option=true scripts/dots_registers_delete.xq
-    else
+  else
       bash "$basex_path/basex" -b dbName=$db_name -b option=false scripts/dots_registers_delete.xq
     fi
-  fi
 fi
 bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path scripts/project_db_init.xq;
 bash "$basex_path/basex" -b dbName=$db_name -b topCollectionId=$top_collection_id scripts/project_registers_create.xq;
