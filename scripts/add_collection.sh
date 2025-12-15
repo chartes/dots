@@ -25,7 +25,7 @@ function usage {
     echo "                          "
     echo "  [--parent_id] string    by default (top_collection_id) : identifier of the parent collection"
     echo "                          " 
-    echo "  [--project_dir_path]    string    by default (null) : p"
+    echo "  [--project_dir_path]    string    by default (null)"
     echo "                          "
     echo "  [--unit_test] boolean   by default (false) true: launch unit tests"
     echo "                          (example: false)"

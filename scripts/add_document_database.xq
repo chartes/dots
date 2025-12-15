@@ -10,7 +10,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare variable $dbName external;
 declare variable $docPath external;
-declare variable $parentId external := ();
+declare variable $parentId external := "";
 
 if (doc($docPath)/tei:TEI)
   then
@@ -18,7 +18,7 @@ if (doc($docPath)/tei:TEI)
       if ($parentId = "") 
       then G:getTopCollectionId($dbName) 
       else 
-        db:list($dbName)[contains(., concat($parentId, "/"))][1]
+        db:get($dbName)//*:collection[@dtsResourceId = $parentId]
     return
       if ($parent)
       then 

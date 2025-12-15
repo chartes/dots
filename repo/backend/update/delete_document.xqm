@@ -27,7 +27,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare updating function del_doc:handleDelete(
   $dbName               as xs:string, 
   $docId                as xs:string, 
-  $changeTotalChildren  as xs:boolean := true
+  $changeTotalChildren  as xs:boolean := true()
 ) {
   let $docInRegister := utils_dots:getDocInRegister($dbName, $docId)
   let $parentIds := utils_dots:getParentIds($dbName, $docInRegister) 
