@@ -25,6 +25,6 @@ return script:execute(xs:anyURI($script), map {
   'rootDescription': $rootDescription,
   'linkXSL': $linkXSL,
   'defaultEngine': $defaultEngine,
-  'cacheOption': $cacheOption
+  'cacheOption': xs:boolean($cacheOption)
 })
 

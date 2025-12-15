@@ -17,6 +17,8 @@ import module namespace fragments = "backend/fragments_register_builder";
 import module namespace dots.update = "backend/TEI_add_id";
 import module namespace script = "script";
 import module namespace utils_dots = "utils_dots"; 
+import module namespace update_metadata = "backend/update/update_metadata"; 
+import module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -27,7 +29,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @param $docPath  absolute path to the document to add
 : @return updates the database and registers with the new document and its fragments
 :)
-declare updating function add_doc:handleAddition($dbName as xs:string, $docPath as xs:string, $parentId as xs:string) {
+declare updating function add_doc:handleAddition($dbName as xs:string, $docPath as xs:string, $parentId as xs:string, $projectDirPath as xs:string := ()) {
   let $resourceId := utils_dots:findDocId($docPath)
   let $docInRegister := utils_dots:getDocInRegister($dbName, $resourceId) 
   return
@@ -37,8 +39,17 @@ declare updating function add_doc:handleAddition($dbName as xs:string, $docPath 
       let $csv := resources:getCSV-map($dbName, "document")
       return
       (
+        if ($projectDirPath) 
+        then 
+          (
+            update_metadata:deleteMetadata($dbName),
+            update_metadata:addNewMetadataDocument($dbName, concat($projectDirPath, "/metadata"))
+          ),
         add_doc:addDocToDB($dbName, $docPath, $parentId),
-        add_doc:addDocToResourcesReg($dbName, $docPath, $csv)
+        add_doc:addDocToResourcesReg($dbName, $docPath, $csv),
+        store_clear:clear($dbName, $dbName),
+        if ($parentId) 
+        then store_clear:clear($dbName, $parentId)
   )
 };
 

@@ -15,6 +15,7 @@ import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots"; 
 import module namespace del_doc = "backend/update/delete_document";
+import module namespace store_clear = "backend/update/store_clear";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
@@ -27,6 +28,7 @@ declare updating function remove_coll:remove_collection(
   let $parentId := $coll/@parentIds
   return
     (
+      store_clear:clear($dbName, $parentId),
       remove_coll:remove_collection_from_resources_register($dbName, $coll),
       if ($deleteResources)
       then 

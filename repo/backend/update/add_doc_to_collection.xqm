@@ -10,12 +10,15 @@ xquery version "4.0";
 module namespace doc_to_coll = "backend/update/add_doc_to_collection"; 
 
 import module namespace G = "globals";
+import module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
 declare updating function doc_to_coll:handleAddition($dbName as xs:string, $document as element(dots:document), $collection as element(dots:collection)) {
   doc_to_coll:updateDocumentElement($dbName, $document, $collection),
-  doc_to_coll:incrementTotalChildren($dbName, $collection)
+  doc_to_coll:incrementTotalChildren($dbName, $collection),
+  store_clear:clear($dbName, $document/@dtsResourceId),
+  store_clear:clear($dbName, $collection/@dtsResourceId)
 };
 
 declare updating function doc_to_coll:updateDocumentElement($dbName as xs:string, $document as element(dots:document), $collection as element(dots:collection)) {

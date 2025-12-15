@@ -11,12 +11,14 @@ module namespace delete_doc_from_coll = "backend/update/delete_doc_from_collecti
 
 import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots"; 
+import module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
 declare updating function delete_doc_from_coll:handleDeletion($dbName as xs:string, $document as element(dots:document), $collection as element(dots:collection)) {
   delete_doc_from_coll:updateDocumentElement($dbName, $document, $collection),
-  delete_doc_from_coll:decreaseTotalChildren($dbName, $collection)
+  delete_doc_from_coll:decreaseTotalChildren($dbName, $collection),
+  store_clear:clear($dbName, $document/@dtsResourceId)
 };
 
 declare updating function delete_doc_from_coll:updateDocumentElement($dbName as xs:string, $document as element(dots:document), $collection as element(dots:collection)) {

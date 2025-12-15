@@ -22,6 +22,8 @@ function usage {
     echo "                          "
     echo "  --basex_path string     absolute path to the basex folder 'bin'"
     echo "                          (example: /absolute/path/to/basex/bin)"
+    echo "  [--parent_id]           identifier of the parent collection"
+    echo ""
     echo "  [--unit_test] boolean   by default (false) true: launch unit tests"
     echo "                          (example: false)"
     echo ""
@@ -43,7 +45,7 @@ elif [[ -z $basex_path ]]; then
     die "Missing parameter --basex_path"
 fi
 
-bash "$basex_path/basex" -b dbName=$db_name -b docPath=$doc_path scripts/add_document.xq
+bash "$basex_path/basex" -b dbName=$db_name -b docPath=$doc_path -b parentId=parent_id scripts/add_document.xq
 
 if [[ $unit_test == 'true' ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/project_registers_create_test.xq;

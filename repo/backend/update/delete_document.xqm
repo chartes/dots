@@ -11,6 +11,7 @@ module namespace del_doc = "backend/update/delete_document";
 
 import module namespace utils_dots = "utils_dots"; 
 import module namespace G = "globals";
+import module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -36,7 +37,8 @@ declare updating function del_doc:handleDelete(
       delete node $docInRegister, 
       del_doc:deleteFragments($dbName, $docId),
       if ($changeTotalChildren) then del_doc:changeTotalChildren($dbName, $parentIds),
-      del_doc:updateSwitcherDots($dbName, $docId)
+      del_doc:updateSwitcherDots($dbName, $docId),
+      store_clear:clear($dbName, $docId)
     )
 };
 
