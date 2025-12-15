@@ -6,6 +6,8 @@ import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots"; 
 import module namespace resources = "backend/resources_register_builder";
+import module namespace update_metadata = "backend/update/update_metadata"; 
+
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
 declare namespace dots = "https://github.com/chartes/dots/";
@@ -16,10 +18,20 @@ declare namespace dots = "https://github.com/chartes/dots/";
 : @param $resourceId  Identifier of the collection to add
 : @param $parentId    Identifier of the parent collection (optional)
 :)
-declare updating function add_coll:handleAddition($dbName as xs:string, $resourceId as xs:string, $parentId as xs:string := "") {
+declare updating function add_coll:handleAddition(
+  $dbName          as xs:string, 
+  $resourceId      as xs:string, 
+  $parentId        as xs:string := "", 
+  $projectDirPath  as xs:string := "") {
   let $parent := if ($parentId) then $parentId else utils_dots:getIdProject($dbName)
   return
     (
+      if ($projectDirPath)
+      then
+        (
+          update_metadata:deleteMetadata($dbName),
+          update_metadata:addNewMetadataDocument($dbName, concat($projectDirPath, "/metadata"))
+        ),
       add_coll:addCollToResourcesReg($dbName, $resourceId, $parent),
       add_coll:updateMaxCiteDepthCollection($dbName, $parent),
       add_coll:addCollToSwitcherDots($dbName, $resourceId)
