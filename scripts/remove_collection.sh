@@ -24,10 +24,13 @@ function usage {
     echo ""
     echo "  --resource_id string    identifier of the collection to delete"
     echo ""
-    echo "  [--option boolean]      option to delete documents that belongs to the collection"
+    echo "  [--project_dir_path]      absolute path to import folder"
+    echo "          (example: /absolute/path/to/import/folder)"
+    echo ""
+    echo "  [--delete_resources boolean]      option to delete documents that belongs to the collection"
     echo "                          (default: false())"
     echo ""
-    echo "  [--unit_test]             choice to launch unit tests"
+    echo "  [--unit_test]           choice to launch unit tests"
     echo "                          (default: false)"
     echo ""
 }
@@ -48,7 +51,7 @@ elif [[ -z $resource_id ]]; then
     die "Missing parameter --resource_id"
 fi
 
-bash "$basex_path/basex" -b dbName=$db_name -b resourceId=$resource_id -b option=$option scripts/delete_collection.xq
+bash "$basex_path/basex" -b dbName=$db_name -b resourceId=$resource_id -b projectDirPath=$project_dir_path -b deleteResources=$delete_resources scripts/remove_collection.xq
 
 if [[ $unit_test == 'true' ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/project_registers_create_test.xq;

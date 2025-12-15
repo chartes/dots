@@ -10,7 +10,7 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare variable $dbName external;
 declare variable $resourceId external;
 declare variable $projectDirPath external := "";
-declare variable $option external := false;
+declare variable $deleteResources external := false();
 
 let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $resourceId]
 return
@@ -21,12 +21,12 @@ return
       script:error(concat("Pour supprimer le projet DoTS '", $resourceId, "', utiliser le script `scripts/project_delete.sh`"))
     else
       (
-        remove_coll:remove_collection($dbName, $resourceId),
-        let $docs := db:list($dbName)[ends-with(functx:substring-before-last(., "/"), $coll)]
+        remove_coll:remove_collection($dbName, $resourceId, $deleteResources),
+        let $docs := db:list($dbName)[ends-with(functx:substring-before-last(., "/"), $resourceId)]
         let $source := functx:substring-before-last($docs[1], "/")
-        let $target :=  if (matches($source, "\*/")) then functx:substring-before-last($source, "/") else "" 
+        let $target :=  if (contains($source, "/")) then functx:substring-before-last($source, "/") else "/" 
         return
-          remove_coll:move_documents($dbName, $source, $coll),
+          if ($docs != "") then (db:rename($dbName, $source, $target)),
         script:success(concat("La collection '", $resourceId, "' a bien été supprimée de la base '", $dbName, "'."))
         (: del_coll:handleDeleteColl($dbName, $resourceId, $projectDirPath, $option),
         script:success(concat("La collection '", $resourceId, "' a bien été supprimée de la base '", $dbName, "'.")),

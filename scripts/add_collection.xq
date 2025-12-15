@@ -9,6 +9,7 @@ declare namespace dots = "https://github.com/chartes/dots/";
 declare variable $dbName external := ();
 declare variable $resourceId external := ();
 declare variable $parentId external := ();
+declare variable $projectDirPath external := "";
 
 let $coll := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $resourceId]
 return
@@ -22,7 +23,7 @@ return
         if ($collParent != "")
         then
           (
-            add_coll:handleAddition($dbName, $resourceId, $parentId),
+            add_coll:handleAddition($dbName, $resourceId, $parentId, $projectDirPath),
             script:success(concat("La collection '", $resourceId, "', sous-collection de '", $parentId, "', a bien été ajouté à la db ", $dbName, "."))
           )
         else script:error(concat("La collection parente '", $parentId, "' n'existe pas."))

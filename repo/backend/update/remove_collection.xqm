@@ -10,32 +10,57 @@ import module namespace del_doc = "backend/update/delete_document";
 declare default element namespace "https://github.com/chartes/dots/";
 
 declare updating function remove_coll:remove_collection(
-  $dbName as xs:string,
-  $collId as xs:string
+  $dbName            as xs:string,
+  $collId            as xs:string,
+  $deleteResources
 ) {
   let $coll := db:get($dbName, $G:resourcesRegister)//collection[@dtsResourceId = $collId]
   let $parentId := $coll/@parentIds
   return
     (
       remove_coll:remove_collection_from_resources_register($dbName, $coll),
-      let $subColls := db:get($dbName, $G:resourcesRegister)//collection[@parentIds = $collId]
-      let $countSubColls := count($subColls)
-      let $countDocs := count(db:list($dbName)[ends-with(functx:substring-before-last(., "/"), $collId)])
-      return
-        (remove_coll:increment_totalChildren($dbName, $parentId, ($countSubColls + $countDocs)),
-        for $subColl in $subColls
-        let $resourceId := $subColl/@dtsResourceId
+      if ($deleteResources)
+      then 
+        (
+          remove_coll:increment_totalChildren($dbName, $parentId),
+          let $descendants := remove_coll:findDescendants($dbName, $collId)
+          return
+            (
+              remove_coll:updateTotalChildrenValue($dbName, $descendants),
+              for $resourceKey in map:keys($descendants)
+              let $type := map:get($descendants, $resourceKey)?type
+              return
+                if ($type = "document")
+                then del_doc:handleDelete($dbName, $resourceKey, false())
+                else 
+                  let $coll := db:get($dbName, $G:resourcesRegister)//collection[@dtsResourceId = $resourceKey]
+                  return
+                    (
+                      remove_coll:remove_collection_from_resources_register($dbName, $coll),
+                      del_doc:updateSwitcherDots($dbName, $resourceKey)  
+                    )
+            )
+        )
+      else
+        let $subColls := db:get($dbName, $G:resourcesRegister)//collection[@parentIds = $collId]
+        
+        let $countSubColls := count($subColls)
+        let $countDocs := count(db:list($dbName)[ends-with(functx:substring-before-last(., "/"), $collId)])
         return
-          remove_coll:update_resource_parentIds($dbName, $resourceId, $collId, $parentId)
-        ),
-      remove_coll:handle_documents_in_collection($dbName, $collId, $parentId)    ,
-      del_doc:updateSwitcherDots($dbName, $collId)  
+          (remove_coll:increment_totalChildren($dbName, $parentId, ($countSubColls + $countDocs)),
+          for $subColl in $subColls
+          let $resourceId := $subColl/@dtsResourceId
+          return
+            remove_coll:update_resource_parentIds($dbName, $resourceId, $collId, $parentId)
+          ),
+        remove_coll:handle_documents_in_collection($dbName, $collId, $parentId),
+        del_doc:updateSwitcherDots($dbName, $collId)  
     )
 };
 
 declare updating function remove_coll:remove_collection_from_resources_register(
-  $dbName as xs:string,
-  $coll as element(collection)
+  $dbName           as xs:string,
+  $coll             as element(collection)
 ) {
  delete node $coll
 };
@@ -103,13 +128,45 @@ declare updating function remove_coll:handle_documents_in_collection(
        remove_coll:update_resource_parentIds($dbName, $resourceId, $collId, "") 
 };
 
-declare updating function remove_coll:move_documents(
-  $dbName as xs:string,
-  $source as xs:string,
-  $target as xs:string
+declare function remove_coll:findDescendants(
+  $dbName  as xs:string,
+  $collId  as xs:string
 ) {
-  db:rename($dbName, $source, $target)
+  map:merge((
+    for $resource in db:get($dbName, $G:resourcesRegister)//node()[tokenize(@parentIds) = $collId]
+    let $resourceType := $resource/name()
+    let $resourceId := normalize-space($resource/@dtsResourceId)
+    let $parentIds := $resource/@parentIds
+    return
+      (
+        map:entry(
+        $resourceId, 
+        map:merge((
+          map:entry("type", $resourceType  ),
+          map:entry("parentIds", normalize-space($parentIds))
+        ))
+        ),
+        if ($resourceType = "collection")
+        then remove_coll:findDescendants($dbName, $resourceId)
+      )
+  ))
 };
 
-(: remove_coll:remove_collection("encpos", "ENCPOS_1972") :)
+declare updating function remove_coll:updateTotalChildrenValue(
+  $dbName as xs:string,
+  $map
+) {
+  let $all-tokens := 
+    for $entry in map:keys($map)
+    let $parentIds := $map($entry)("parentIds")
+    return tokenize($parentIds, '\s+')
+  return 
+    for $token in distinct-values($all-tokens)
+    where not(exists(map:get($map, $token)))
+    let $countToken := count($all-tokens[. = $token])
+    let $coll := db:get($dbName, $G:resourcesRegister)//*:collection[@dtsResourceId = $token]
+    let $totalChildren := $coll/@totalChildren
+    return 
+      replace value of node $totalChildren with xs:integer($coll/@totalChildren - $countToken)
+};
 

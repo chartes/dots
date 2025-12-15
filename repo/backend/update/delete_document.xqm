@@ -23,7 +23,11 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
  : @param $docId the identifier of the document to delete
  : @return an updating sequence of operations for deletion and metadata update
 :)
-declare updating function del_doc:handleDelete($dbName, $docId) {
+declare updating function del_doc:handleDelete(
+  $dbName               as xs:string, 
+  $docId                as xs:string, 
+  $changeTotalChildren  as xs:boolean := true
+) {
   let $docInRegister := utils_dots:getDocInRegister($dbName, $docId)
   let $parentIds := utils_dots:getParentIds($dbName, $docInRegister) 
   return
@@ -31,7 +35,7 @@ declare updating function del_doc:handleDelete($dbName, $docId) {
       del_doc:deleteDocInDb($dbName, $docId),
       delete node $docInRegister, 
       del_doc:deleteFragments($dbName, $docId),
-      del_doc:changeTotalChildren($dbName, $parentIds),
+      if ($changeTotalChildren) then del_doc:changeTotalChildren($dbName, $parentIds),
       del_doc:updateSwitcherDots($dbName, $docId)
     )
 };
