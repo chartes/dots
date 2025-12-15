@@ -1,5 +1,14 @@
 xquery version "4.0";
 
+(:~ This module provides functions to remove a collection from the DoTS resource registry 
+ : stored in a BaseX database. It ensures proper update of the parent collection, 
+ : handles documents within the deleted collection (either by deleting or reassigning them), 
+ : and keeps the DTS switching mechanism consistent.
+ : @author École nationale des chartes – Philippe Pons
+ : @since 2025-10-12
+ : @version 1.0
+:)
+
 module namespace remove_coll = "backend/update/remove_collection"; 
 
 import module namespace functx = 'http://www.functx.com';
@@ -69,9 +78,6 @@ declare updating function remove_coll:remove_collection_from_resources_register(
 Update des sous-collections (le cas échéant)
 ~~~~~~~~~~~~~~~~:)
 
-(:  
-: @todo ajouter une option pour spécifier, selon le type de collection, s'il faut SUPPRIMER ou REMPLACER la valeur de @parentIds
-:)
 declare updating function remove_coll:update_resource_parentIds(
   $dbName as xs:string,
   $resourceId as xs:string, 
