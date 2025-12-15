@@ -8,7 +8,7 @@ import module namespace script = "script";
 declare default element namespace "https://github.com/chartes/dots/";
 
 declare variable $dbName external := ();
-declare variable $cacheOption external := false();
+declare variable $cacheOption external := "";
 
 if ($dbName and db:exists($dbName) and db:get($dbName, $G:resourcesRegister)) 
 then (
