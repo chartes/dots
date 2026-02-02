@@ -18,7 +18,7 @@ import module namespace dots.update = "backend/TEI_add_id";
 import module namespace script = "script";
 import module namespace utils_dots = "utils_dots"; 
 import module namespace store_clear = "backend/update/store_clear";
-import module namespace update_metadata = "backend/update/update_metadata";
+import module namespace update_metadata = "backend/update/update_metadata_dir";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -33,7 +33,7 @@ declare updating function add_doc:handleAddition($dbName as xs:string, $docPath 
   if ($projectDirPath)
       then
         (
-          update_metadata:deleteMetadata($dbName),
+          db:delete($dbName, "metadata"),
           update_metadata:addNewMetadataDocument($dbName, concat($projectDirPath, "/metadata"))
         ),
   let $resourceId := utils_dots:findDocId($docPath)

@@ -25,6 +25,7 @@ function usage {
     echo "  [--parent_id]           identifier of the parent collection"
     echo ""
     echo "  [--project_dir_path]    string  "
+    echo "                          "
     echo "  [--unit_test] boolean   by default (false) true: launch unit tests"
     echo "                          (example: false)"
     echo ""
@@ -44,6 +45,10 @@ elif [[ -z $doc_path ]]; then
 elif [[ -z $basex_path ]]; then
     usage
     die "Missing parameter --basex_path"
+fi
+
+if [[ -n $project_dir_path ]]; then
+ bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path  scripts/update_metadata_dir.xq;
 fi
 
 bash "$basex_path/basex" -b dbName=$db_name -b docPath=$doc_path -b parentId=$parent_id -b projectDirPath=$project_dir_path scripts/add_document.xq

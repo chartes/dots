@@ -37,7 +37,7 @@ if [[ -z $db_name ]]; then
     die "Missing parameter --db_name"
 fi
 
-bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path scripts/update_metadata.xq
+bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path scripts/update_metadata_dir.xq
 
 if [[ $unit_test == 'true' ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/project_registers_create_test.xq;

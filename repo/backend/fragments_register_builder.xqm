@@ -42,7 +42,8 @@ declare updating function fragments:createFragmentsRegister($dbName as xs:string
 : @return A sequence of <fragment> elements, each representing a citational unit extracted from the TEI documents
 :)
 declare %private function fragments:getFragments($bdd as xs:string, $csv) {
-  for $resource in db:get($bdd)/tei:TEI
+  let $allResources := db:get($bdd)/*:TEI[.//*:citeStructure]
+  for $resource in $allResources
   where $resource//tei:citeStructure
   let $resourceId :=
     if ($resource/@xml:id)
@@ -120,7 +121,7 @@ declare function fragments:handleCiteStructure($bdd as xs:string, $resource as e
 : @param $ref (xs:string) The reference identifier of the fragment whose metadata needs to be retrieved.
 : @return A sequence of metadata elements specific to the requested fragment
 :)
-declare %private function fragments:getFragmentMetadata($dbName as xs:string, $ref as xs:string, $csv-map) {   
+declare function fragments:getFragmentMetadata($dbName as xs:string, $ref as xs:string, $csv-map) {   
   let $metadataMap :=  db:get($dbName, $G:metadata)//metadataMap/mapping
   return
     if ($metadataMap)

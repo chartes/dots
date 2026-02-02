@@ -48,7 +48,11 @@ elif [[ -z $resource_id ]]; then
     die "Missing parameter --resource_id"
 fi
 
-bash "$basex_path/basex" -b dbName=$db_name -b resourceId=$resource_id -b parentId=$parent_id  scripts/add_collection.xq;
+if [[ -n $project_dir_path ]]; then
+ bash "$basex_path/basex" -b dbName=$db_name -b projectDirPath=$project_dir_path  scripts/update_metadata_dir.xq;
+fi
+
+bash "$basex_path/basex" -b dbName=$db_name -b resourceId=$resource_id -b parentId=$parent_id scripts/add_collection.xq;
 
 if [[ $unit_test == 'true' ]]; then
   bash "$basex_path/basex" -b dbName=$db_name -t tests/project_create/project_registers_create_test.xq;

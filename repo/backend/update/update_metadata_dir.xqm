@@ -7,17 +7,9 @@ xquery version "4.0";
 : @version  1.0
 :)
 
-module namespace update_metadata = "backend/update/update_metadata"; 
+module namespace update_metadata = "backend/update/update_metadata_dir"; 
 
 import module namespace G = "globals";
-
-declare updating function update_metadata:deleteMetadata($dbName as xs:string) {
-  let $metadataResources := db:list($dbName, $G:metadata)
-  return
-    for $resource in $metadataResources
-    return
-      db:delete($dbName, $resource)
-};
 
 declare updating function update_metadata:addNewMetadataDocument(
   $dbName as xs:string,
@@ -28,8 +20,9 @@ declare updating function update_metadata:addNewMetadataDocument(
     if (not(file:exists($metadata))) then
       error((), $metadata || ' is missing') else
 
-    for $file in file:list($metadataPath)
+    for $file in file:list($metadataPath, true())
     let $pathInMetadata := concat("metadata/", $file)
+    where not(file:is-dir(concat($metadataPath, "/", $file)))
     let $suffix := lower-case(replace($file, '^.*\.', ''))
     let $input := if ($suffix = ('tsv', 'csv')) then (
       csv:doc(
@@ -44,6 +37,6 @@ declare updating function update_metadata:addNewMetadataDocument(
     ) else (
       error((), 'Unknown file type: ' || $suffix)
     )
-    return db:add($dbName, $input, $pathInMetadata)
+    return db:put($dbName, $input, $pathInMetadata)
   )
 };

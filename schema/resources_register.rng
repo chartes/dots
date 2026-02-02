@@ -86,13 +86,11 @@
       <attribute name="parentIds">
         <text/>
       </attribute>
-      <interleave>
-        <ref name="dcTitle"/>
-        <ref name="dotsProjectId"/>
-        <zeroOrMore>
-          <ref name="anyElement"/>
-        </zeroOrMore>
-      </interleave>
+      <ref name="dcTitle"/>
+      <zeroOrMore>
+        <ref name="anyElement"/>
+      </zeroOrMore>
+      <ref name="dotsProjectId"/>
     </element>
   </define>
   
@@ -107,6 +105,11 @@
   <define name="dcTitle">
     <a:documentation>Titre de la ressource</a:documentation>
     <element name="dc:title">
+      <optional>
+        <attribute name="key">
+          <text/>
+        </attribute>
+      </optional>
       <data type="string"/>
     </element>
   </define>

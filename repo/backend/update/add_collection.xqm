@@ -6,7 +6,6 @@ import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots"; 
 import module namespace resources = "backend/resources_register_builder";
-import module namespace update_metadata = "backend/update/update_metadata"; 
 import module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
@@ -27,12 +26,6 @@ declare updating function add_coll:handleAddition(
   let $parent := if ($parentId) then $parentId else utils_dots:getIdProject($dbName)
   return
     (
-      if ($projectDirPath)
-      then
-        (
-          update_metadata:deleteMetadata($dbName),
-          update_metadata:addNewMetadataDocument($dbName, concat($projectDirPath, "/metadata"))
-        ),
       add_coll:addCollToResourcesReg($dbName, $resourceId, $parent),
       add_coll:updateMaxCiteDepthCollection($dbName, $parent),
       add_coll:addCollToSwitcherDots($dbName, $resourceId),
