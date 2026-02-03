@@ -25,25 +25,28 @@ declare variable $resourceId external := ();
 if (db:exists($dbName))
 then
   let $tokenizeResourceId := tokenize($resourceId)
-  return
+  
   let $idProject := utils_dots:getIdProject($dbName)
   let $resources_register := db:get($dbName, $G:resourcesRegister)//member
   let $fragments_register := db:get($dbName, $G:fragmentsRegister)//member
+  
+  let $csv-coll := resources:getCSV-map($dbName, "collection")
+  let $csv-doc := resources:getCSV-map($dbName, "document")
+  let $csv-frag := resources:getCSV-map($dbName, "fragment")
+  
+  let $dotsProjectName := resources:getDotsProjectName($idProject)
+  
   let $resources := 
     if ($resourceId)
     then 
       for $tokenizeId in $tokenizeResourceId
-      let $collection := $resources_register/node()[@dtsResourceId = $tokenizeId]
-      return
-        $collection
+      return $resources_register/node()[@dtsResourceId = $tokenizeId]
     else $resources_register/node()
   let $fragments :=
     if ($resourceId)
     then
       for $tokenizeId in $tokenizeResourceId
-      let $fragment := $fragments_register/fragment
-      return
-        $fragment
+      return $fragments_register/fragment
     else
       $fragments_register/fragment
   return
@@ -56,28 +59,25 @@ then
       return
         if ($el = "collection")
         then
-          let $csv-coll := resources:getCSV-map($dbName, "collection")
-          return
-            replace node $resource with element {$el} {
-              $el/@*,
-              resources:getCollectionMetadata($dbName, $resourceId, $csv-coll),
-              resources:getDotsProjectName($idProject)
+          replace node $resource with element {$el} {
+            $el/@*,
+            resources:getCollectionMetadata($dbName, $resourceId, $csv-coll),
+            $dotsProjectName
             }
         else
-          let $csv-doc := resources:getCSV-map($dbName, "document")
-          return
-            replace node $resource with element {$el} {
-              $el/@*,
-              resources:getDocumentMetadata($dbName, utils_dots:getDocument($dbName, $resourceId), $resourceId, $csv-doc),
-              resources:getDotsProjectName($idProject)
-            },
-      let $csv-frag := resources:getCSV-map($dbName, "fragment")
+          replace node $resource with element {$el} {
+            $el/@*,
+            resources:getDocumentMetadata($dbName, utils_dots:getDocument($dbName, $resourceId), $resourceId, $csv-doc),
+            $dotsProjectName
+          },
       for $fragment in $fragments
       let $meta := fragments:getFragmentMetadata($dbName, $fragment/@ref, $csv-frag)
       where $meta
       let $old_metadata := $fragment/node()[name() = $meta/name()]
       return
-        replace node $old_metadata with $meta
+        if ($old_metadata)
+        then replace node $old_metadata with $meta
+        else insert node $meta as last into $fragment
     )
 else
   update:output(dots_error:dbError($dbName))
