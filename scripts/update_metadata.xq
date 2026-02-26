@@ -9,6 +9,7 @@ Ce script permet de mettre à jour les métadonnées dans les registres DoTS :
 Seules les métadonnées qui viennent des documents CSV / TSV du dossier metadata/ sont rechargées. Pour les fragments, les métadonnées qui viennent des <citeData/> dans les fichiers TEI ne sont pas modifiées. Cela n'aurait pas de sens puisque ni les documents TEI, ni l'organisation des ressources en collection ne sont modifiés ici.
 : @todo ajouter des contrôles pour vérifier que la db, les resourcesId et le projectDirPath existent !
 : @remarque ce script doit logiquement être lancé après avoir rechargé le dossier metadata/ du dossier de dépôt.
+: @todo /!\ Attention, il faut s'assurer que les ressources sont bien dans le switcher DoTS
 :)
 
 import module namespace G = "globals";
