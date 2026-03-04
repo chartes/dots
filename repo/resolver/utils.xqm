@@ -761,7 +761,7 @@ declare function utils:getDublincore(
       group by $key
       order by $key
       return
-        if ($countKey > 1 or $metadata/@key)
+        if ($countKey > 1 or $metadata/@key or $metadata[@type = "array"])
         then
           utils:getArrayJson($elementName[1], $metadata)
         else
@@ -805,7 +805,7 @@ declare function utils:getExtensions(
       group by $key
       order by $key
       return
-        if ($countKey > 1 or $metadata/@key)
+        if ($countKey > 1 or $metadata/@key or $metadata[@type="array"])
         then
           utils:getArrayJson($name[1], $metadata)
         else
@@ -837,7 +837,7 @@ declare function utils:getArrayJson(
           utils:getStringJson($key, $meta)
         ) else (
           let $type := $meta/@type
-          where $type
+          where $type and $type != "array"
           return attribute {"type"} {$type},
           normalize-space($meta)
         )
