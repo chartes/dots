@@ -277,7 +277,7 @@ declare function resources:getCollectionMetadata(
             let $key := $metadata/name()
             return element {$key} { 
               if ($metadata/@key) then attribute {"key"} {$metadata/@key},
-              concat($metadata/@prefix, $metadata, $metadata/@suffix) 
+              if ($metadata != "") then concat($metadata/@prefix, $metadata, $metadata/@suffix) 
             }
           else 
             let $source := functx:substring-after-last($metadata/@source, '/')
@@ -339,6 +339,7 @@ declare function resources:createContent(
   let $element := $itemDeclaration/@value
   let $value := (
     for $v in $csv-record($element)
+    where $v
     return concat($itemDeclaration/@prefix, $v, $itemDeclaration/@suffix)
   )
   let $subKey := $itemDeclaration/@key

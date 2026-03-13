@@ -761,7 +761,7 @@ declare function utils:getDublincore(
       group by $key
       order by $key
       return
-        if ($countKey > 1 or $metadata/@key or $metadata[@type = "array"])
+        if ($countKey > 1 or $metadata[@type = "array"])
         then
           utils:getArrayJson($elementName[1], $metadata)
         else

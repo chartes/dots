@@ -21,14 +21,17 @@ declare function G:linkToXsl() {
   return
     if ($specificLink != "")
     then if (ends-with($specificLink, "/")) then $specificLink else concat($specificLink, "/")
-    else concat($G:webapp, "/webapp/static/transform/")
+    else 
+      if (environment-variable("xsl_path"))
+      then environment-variable("xsl_path")
+      else concat($G:webapp, "/webapp/static/transform/")
 };
 (: declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); :) 
 
 declare function G:defaultXslEnginePath() {
   let $defaultEngine := db:get($G:dots)//settings/defaultEngine
   return
-    if ($defaultEngine != "") then normalize-space($defaultEngine) else "html_reader/tei2html.xsl"
+    if ($defaultEngine != "") then normalize-space($defaultEngine) else "hteiml/tei2html.xsl"
 };
 (: "hteiml/tei2html.xsl" :)
 
