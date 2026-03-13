@@ -107,6 +107,7 @@
       <optional>
         <attribute name="type">
           <choice>
+            <value>array</value>
             <value>number</value>
             <value>boolean</value>
             <value>null</value>
