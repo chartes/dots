@@ -12,5 +12,11 @@ if (not($dbName and $option)) then (
   dots.delete:handle($dbName, $option),
   if ($option = "true") 
   then script:success(concat("La base de données '", $dbName, "' a été supprimée et le switcher DoTS mis à jour"))
-  else script:success(concat("Les registres dots de la base de donnée ", $dbName, " ont été supprimés"))
+  else script:success(concat("Les registres dots de la base de donnée ", $dbName, " ont été supprimés")),
+  if (db:get("dots")//*:project[@dbName = $dbName][@cacheOption = "true"])
+  then 
+    (
+      store:delete($dbName),
+      script:success(concat("Le cache de la db ", $dbName, " a été supprimé"))
+    )
 )

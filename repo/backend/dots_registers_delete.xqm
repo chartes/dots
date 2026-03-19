@@ -14,6 +14,7 @@ xquery version "4.0";
 module namespace dots.delete = "backend/dots_registers_delete";
 
 import module namespace G = "globals";
+import module namespace script = "script";
 
 declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dct = "http://purl.org/dc/terms/";
@@ -27,7 +28,12 @@ declare namespace dct = "http://purl.org/dc/terms/";
 :)
 declare updating function dots.delete:handle($dbName as xs:string, $option as xs:string) {
   dots.delete:dbSwitch($dbName),
-  dots.delete:registers($dbName, $option)
+  dots.delete:registers($dbName, $option),
+  if (db:get("dots")//*:project[@dbName = $dbName][@cacheOption = "true"])
+  then 
+    (
+      store:delete($dbName),
+      script:success(concat("Le cache de la db ", $dbName, " a été supprimé.")))
 };
 
 (:~
