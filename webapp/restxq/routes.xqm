@@ -227,7 +227,7 @@ function routes:document(
                     else concat($xsl, G:defaultXslEnginePath())
               return
                 let $code := fn() {
-                  xslt:transform($result, $style)
+                  xslt:transform($result, $style, map {"static_path": $G:static_path})
                   => serialize(map {"method": "html"})
                 }
                 let $key := request:query()

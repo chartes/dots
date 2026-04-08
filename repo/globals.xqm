@@ -13,6 +13,10 @@ declare default element namespace "https://github.com/chartes/dots/";
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le resolver 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :) 
+declare variable $G:static_path := 
+  if (environment-variable("static_path"))
+  then environment-variable("static_path")
+  else "/static/transform/hteiml/xsl/";
 
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
 (: "/srv/transform/" :)
@@ -31,7 +35,7 @@ declare function G:linkToXsl() {
 declare function G:defaultXslEnginePath() {
   let $defaultEngine := db:get($G:dots)//settings/defaultEngine
   return
-    if ($defaultEngine != "") then normalize-space($defaultEngine) else "hteiml/tei2html.xsl"
+    if ($defaultEngine != "") then normalize-space($defaultEngine) else "hteiml/xsl/tei2html.xsl"
 };
 (: "hteiml/tei2html.xsl" :)
 
