@@ -31,7 +31,7 @@ Fonctions d'entrée dans le endPoint "Collection" de l'API DTS
 
 declare function utils:noCollection() as element(json) {
   <json type="object">
-    <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
+    <pair name="@context">https://dtsapi.org/context/v1.0.json</pair>
     <pair name="dtsVersion">1-alpha</pair>
     <pair name="@id">{utils_dots:getRootId()}</pair>
     <pair name="@type">Collection</pair>
@@ -58,7 +58,7 @@ declare function utils:noCollection() as element(json) {
 declare function utils:collections() as element(json) {
   let $totalItems := xs:integer(db:get($G:dots)/dots:dbSwitch/dots:metadata/dots:totalProjects)
   let $content := (
-    <pair name="@context">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>,
+    <pair name="@context">https://dtsapi.org/context/v1.0.json</pair>,
     <pair name="dtsVersion">1-alpha</pair>,
     <pair name="@id">{utils_dots:getRootId()}</pair>,
     <pair name="@type">Collection</pair>,
@@ -680,10 +680,13 @@ declare function utils:getMandatory(
     return
       (: PP. Attention: correction de download pour en faire un tableau, selon la spéc DTS.
       Mais, cela va poser un problème pour DoTS-vue qui attend ici un objet. Voir avec Victor :)
-      <pair name="download" type="array">{
+      <pair name="download" type="object">{
         for $download in $downloads
         return 
-          <item>{normalize-space($download)}</item>(: utils:getStringJson($download/@key, $download) :)
+          switch ($download)
+          case ($download[ends-with(., "html")]) return <pair name="text/html">{normalize-space($download)}</pair>
+          default return <pair name="application/tei+xml">{normalize-space($download)}</pair>
+          (: utils:getStringJson($download/@key, $download) :)
       }</pair>
   )
   let $citationTrees := if ($type = ("resource", "Resource")) then (
@@ -750,7 +753,7 @@ declare function utils:getDublincore(
   let $dc := $resource/node()[namespace-uri(.) = "http://purl.org/dc/elements/1.1/"]
   where $dc
   return
-    <pair name="dublincore" type="object">{
+    <pair name="dublinCore" type="object">{
       for $metadata in $dc
       let $key := $metadata/name()
       let $elementName :=
@@ -874,9 +877,9 @@ declare function utils:getContext(
   $db as xs:string,
   $response
 ) {
-  <pair name="@context" type="object">
-    <pair name="dts">https://distributed-text-services.github.io/specifications/context/1-alpha1.json</pair>
-    {if ($response//*:pair[@name="dublincore"] or $response[@name="dublincore"]) then <pair name="dc">http://purl.org/dc/elements/1.1/</pair> else ()}
+  <pair name="@context" type="array">
+    <item>https://dtsapi.org/context/v1.0.json</item>
+    <item type="object">
     {if ($response = "")
     then ()
     else
@@ -898,11 +901,12 @@ declare function utils:getContext(
                 <pair name="{$namespace}">{$uri}</pair>
             else
               switch ($namespace)
-              case ($namespace[. = "dc"]) return <pair name="dc">{"http://purl.org/dc/elements/1.1/"}</pair>
               case ($namespace[. = "dct"]) return <pair name="dct">{"http://purl.org/dc/terms/"}</pair>
               case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
               default return () 
-  }</pair>
+  }
+   </item>
+</pair>
 };
 
 (:~  

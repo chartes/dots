@@ -18,7 +18,7 @@ declare default element namespace "https://github.com/chartes/dots/";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace dts = "https://distributed-text-services.github.io/specifications/context/1-alpha1.json";
+declare namespace dts = "https://dtsapi.org/context/v1.0.json";
 declare namespace dcat = "http://www.w3.org/ns/dcat";
 declare namespace dots = "https://github.com/chartes/dots/";
 
