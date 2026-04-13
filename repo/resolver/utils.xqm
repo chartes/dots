@@ -713,8 +713,8 @@ declare function utils:getMandatory(
     ),
     if ($type = ("resource", "Resource")) then (
       <pair name="mediaTypes" type="array">
-        <item>xml</item>
-        <item>html</item>
+        <item>application/tei+xml</item>
+        <item>text/html</item>
       </pair>
     )
   )
