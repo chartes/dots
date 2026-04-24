@@ -750,26 +750,22 @@ declare function utils:getCitationTrees(
 declare function utils:getDublincore(
   $resource as element()
 ) {
-  let $dc := $resource/node()[namespace-uri(.) = "http://purl.org/dc/elements/1.1/"]
+  let $dc := $resource/node()[namespace-uri(.) = "http://purl.org/dc/elements/1.1/" or namespace-uri(.) = "http://purl.org/dc/terms/"]
   where $dc
   return
     <pair name="dublinCore" type="object">{
       for $metadata in $dc
       let $key := $metadata/name()
-      let $elementName :=
-        if (starts-with($key, "dc:"))
-        then substring-after($key, "dc:")
-        else $key
       let $countKey := count($dc/name()[. = $key])
       group by $key
       order by $key
       return
         if ($countKey > 1 or $metadata[@type = "array"])
         then
-          utils:getArrayJson($elementName[1], $metadata)
+          utils:getArrayJson($key[1], $metadata)
         else
           if ($key)
-          then utils:getStringJson($elementName, $metadata)
+          then utils:getStringJson($key, $metadata)
     }</pair>
 };
 
@@ -785,7 +781,7 @@ declare function utils:getDublincore(
 declare function utils:getExtensions(
   $resource as element()
 ) {
-  let $extensions := $resource/node()[not(starts-with(name(), "dc:"))]
+  let $extensions := $resource/node()[not(starts-with(name(), "dc:")) and not(starts-with(name(), "dct:"))]
   where $extensions
   return
     <pair name="extensions" type="object">{
