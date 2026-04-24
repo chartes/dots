@@ -7,7 +7,7 @@ import module namespace fragments = "backend/fragments_register_builder";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
+declare namespace dct = "http://purl.org/dc/terms/";
 
 declare variable $docId external;
 declare variable $project_dir_path external;
@@ -55,7 +55,7 @@ declare %unit:test function local:checkDocInRegister() {
   let $maxCiteDepth := fragments:getMaxCiteDepth($document//tei:refsDecl, 0)
   return
     (
-      unit:assert($docEntry/dc:title),
+      unit:assert($docEntry/dct:title),
       unit:assert-equals(xs:integer($docEntry/@maxCiteDepth), xs:integer($maxCiteDepth)),
       for $collectionId in tokenize($docEntry/@parentIds, " ")
       let $collection := db:get($dbName, $G:resourcesRegister)//dots:collection[@dtsResourceId = $collectionId]

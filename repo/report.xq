@@ -6,7 +6,7 @@ import module namespace G = "globals";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
+declare namespace dct = "http://purl.org/dc/terms/";
 
 declare function report:log($dbName) {
   let $project := db:get($dbName, $G:resourcesRegister)//collection[not(@parentIds)]
@@ -67,7 +67,7 @@ declare function report:log($dbName) {
       (concat("
 Votre projet DoTS :
 ---------------
-Projet : ", normalize-space($project/dc:title), "
+Projet : ", normalize-space($project/dct:title), "
 Nom de la base de données : ", $dbName, "
 Collections : ", $countCollections, "
 Métadonnées de collections : ", $metadatasColl, "

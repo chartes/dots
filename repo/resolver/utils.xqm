@@ -15,7 +15,6 @@ import module namespace functx = 'http://www.functx.com';
 
 declare namespace dots = "https://github.com/chartes/dots/";
 declare namespace dts = "https://w3id.org/dts/api#";
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
@@ -698,7 +697,7 @@ declare function utils:getMandatory(
   return (
     <pair name="@id">{$resourceId}</pair>,
     <pair name="@type">{functx:capitalize-first($type)}</pair>,
-    <pair name="title">{normalize-space($resource/dc:title[1])}</pair>,
+    <pair name="title">{normalize-space($resource/dct:title[1])}</pair>,
     if ($desc) then <pair name="description">{$desc}</pair>,
     <pair name="totalItems" type="number">{if ($nav) then $totalParents else $totalChildren}</pair>,
     <pair name="totalChildren" type="number">{$totalChildren}</pair>,
@@ -750,22 +749,23 @@ declare function utils:getCitationTrees(
 declare function utils:getDublincore(
   $resource as element()
 ) {
-  let $dc := $resource/node()[namespace-uri(.) = "http://purl.org/dc/elements/1.1/" or namespace-uri(.) = "http://purl.org/dc/terms/"]
-  where $dc
+  let $dct := $resource/node()[namespace-uri(.) = "http://purl.org/dc/terms/"]
+  where $dct
   return
     <pair name="dublinCore" type="object">{
-      for $metadata in $dc
+      for $metadata in $dct
       let $key := $metadata/name()
-      let $countKey := count($dc/name()[. = $key])
+      let $elementName := substring-after($key, "dct:")
+      let $countKey := count($dct/name()[. = $key])
       group by $key
       order by $key
       return
         if ($countKey > 1 or $metadata[@type = "array"])
         then
-          utils:getArrayJson($key[1], $metadata)
+          utils:getArrayJson($elementName[1], $metadata)
         else
           if ($key)
-          then utils:getStringJson($key, $metadata)
+          then utils:getStringJson($elementName, $metadata)
     }</pair>
 };
 
@@ -781,7 +781,7 @@ declare function utils:getDublincore(
 declare function utils:getExtensions(
   $resource as element()
 ) {
-  let $extensions := $resource/node()[not(starts-with(name(), "dc:")) and not(starts-with(name(), "dct:"))]
+  let $extensions := $resource/node()[not(starts-with(name(), "dct:"))]
   where $extensions
   return
     <pair name="extensions" type="object">{

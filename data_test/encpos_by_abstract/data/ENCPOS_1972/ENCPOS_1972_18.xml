@@ -31,9 +31,9 @@
     <encodingDesc>
       <refsDecl>
         <citeStructure unit="part" match="/TEI/text/body/div[p/text() or div]" use="position()">
-          <citeData use="head" property="dc:title"/>
+          <citeData use="head" property="dct:title"/>
           <citeStructure unit="chapter" match="div[p/text() or div]" use="position()">
-            <citeData use="head" property="dc:title"/>
+            <citeData use="head" property="dct:title"/>
           </citeStructure>
         </citeStructure>
       </refsDecl>

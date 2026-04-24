@@ -70,8 +70,8 @@ declare %private function dots.build:metadataMap($rootId as xs:string := "", $ro
       {if ($rootDescription != "") then <description>{$rootDescription}</description>}
     </root>,
     <mapping>      
-      <dc:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
-      <dc:creator xpath="//titleStmt/author" scope="document"/>
+      <dct:title xpath="//titleStmt/title[@type = 'main' or position() = 1]" scope="document"/>
+      <dct:creator xpath="//titleStmt/author" scope="document"/>
       <dct:publisher xpath="//publicationStmt/publisher" scope="document"/>
     </mapping>,
     <settings>

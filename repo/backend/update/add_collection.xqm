@@ -8,7 +8,7 @@ import module namespace utils_dots = "utils_dots";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace store_clear = "backend/update/store_clear";
 
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
+declare namespace dct = "http://purl.org/dc/terms/";
 
 declare namespace dots = "https://github.com/chartes/dots/";
 
@@ -52,7 +52,7 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
           $metadata
         else
           (
-            <dc:title>{$resourceId}</dc:title>,
+            <dct:title>{$resourceId}</dct:title>,
             $metadata
           )
       }</collection> as last into $resources_register

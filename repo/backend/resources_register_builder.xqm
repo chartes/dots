@@ -15,7 +15,6 @@ import module namespace fragments = "backend/fragments_register_builder";
 
 declare default element namespace "https://github.com/chartes/dots/";
 
-declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dts = "https://dtsapi.org/context/v1.0.json";
@@ -209,13 +208,13 @@ declare function resources:getDocumentMetadata(
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($dbName)/metadataMap/mapping
   let $dcTitle :=
-    if ($externalMetadataMap and $externalMetadataMap/dc:title[@scope="document"])
+    if ($externalMetadataMap and $externalMetadataMap/dct:title[@scope="document"])
     then ()
-    else <dc:title>{normalize-space($doc//tei:titleStmt/tei:title[@type = 'main' or position() = 1])}</dc:title>
+    else <dct:title>{normalize-space($doc//tei:titleStmt/tei:title[@type = 'main' or position() = 1])}</dct:title>
   return
     (
       $dcTitle,
-      for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"][name() != "dc:title"]
+      for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"][name() != "dct:title"]
       return
         if ($metadata/@resourceId = "all")
         then 
@@ -292,9 +291,9 @@ declare function resources:getCollectionMetadata(
                   resources:createContent($metadata, $record) 
               else
                 ()
-        let $title := if ($metadatas/descendant-or-self::dc:title) then () else <dc:title>{$collection}</dc:title>
+        let $title := if ($metadatas/descendant-or-self::dct:title) then () else <dct:title>{$collection}</dct:title>
         return ($title, $metadatas)
-    else <dc:title>{$collection}</dc:title>
+    else <dct:title>{$collection}</dct:title>
 };
 
 (:~  

@@ -31,7 +31,7 @@
     <encodingDesc>
       <refsDecl>
         <citeStructure unit="chapter" match="/TEI/text/body/div" use="position()">
-          <citeData use="head" property="dc:title"/>
+          <citeData use="head" property="dct:title"/>
         </citeStructure>
       </refsDecl>
     </encodingDesc>
