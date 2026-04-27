@@ -207,13 +207,13 @@ declare function resources:getDocumentMetadata(
 ) {
   let $metadataMap := db:get($G:dots, $G:metadataMapping)//mapping
   let $externalMetadataMap := db:get($dbName)/metadataMap/mapping
-  let $dcTitle :=
+  let $dctTitle :=
     if ($externalMetadataMap and $externalMetadataMap/dct:title[@scope="document"])
     then ()
     else <dct:title>{normalize-space($doc//tei:titleStmt/tei:title[@type = 'main' or position() = 1])}</dct:title>
   return
     (
-      $dcTitle,
+      $dctTitle,
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"][name() != "dct:title"]
       return
         if ($metadata/@resourceId = "all")
