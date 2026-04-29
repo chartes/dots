@@ -20,6 +20,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dts = "https://dtsapi.org/context/v1.0.json";
 declare namespace dcat = "http://www.w3.org/ns/dcat";
 declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace schema = "https://schema.org/";
 
 (:~  
 : This function generates the document resources_register.xml document that inventories all collections and documents in the given database. It also adds metadata and invokes the fragment registry creation. 

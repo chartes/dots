@@ -44,6 +44,7 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
   let $csv := resources:getCSV-map($dbName, "collection")
   let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
   let $metadata := resources:getCollectionMetadata($dbName, $resourceId, $csv)
+  let $idProject := utils_dots:getIdProject($dbName)
   return
     insert node 
       <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parentId}">{
@@ -54,7 +55,8 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
           (
             <dct:title>{$resourceId}</dct:title>,
             $metadata
-          )
+          ),
+        resources:getDotsProjectName($idProject)
       }</collection> as last into $resources_register
 };
 

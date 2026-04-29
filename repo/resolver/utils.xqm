@@ -786,7 +786,9 @@ declare function utils:getExtensions(
   let $extensions := $resource/node()[not(starts-with(name(), "dct:"))]
   where $extensions
   return
-    <pair name="extensions" type="object">{
+    <pair name="extensions" type="object">
+    {
+      utils:extensionsContext(),
       for $metadata in $extensions
       let $key := $metadata/name()
       where $key != "download"
@@ -1125,4 +1127,26 @@ declare function utils:getResultFilter(
   for $element in $elements
   where $element/node()[name() = $key] = $value
   return $element
+};
+
+declare function utils:extensionsContext() {
+<pair name="@context" type="object">
+  <pair name="schema">https://schema.org/</pair>
+  <pair name="Book">schema:Book</pair>
+  <pair name="Organization">schema:Organization</pair>
+  <pair name="Person">schema:Person</pair>
+  <pair name="contributor">schema:contributor</pair>
+  <pair name="creator">schema:creator</pair>
+  <pair name="dateCreated">schema:dateCreated</pair>
+  <pair name="datePublished">schema:datePublished</pair>
+  <pair name="inLanguage">schema:inLanguage</pair>
+  <pair name="isBasedOn">schema:isBasedOn</pair>
+  <pair name="isVersionOf">schema:isVersionOf</pair>
+  <pair name="name">schema:name</pair>
+  <pair name="publisher">schema:publisher</pair>
+  <pair name="relatedLink">schema:relatedLink</pair>
+  <pair name="roleName">schema:roleName</pair>
+  <pair name="sameAs">schema:sameAs</pair>
+  <pair name="temporalCoverage">schema:temporalCoverage</pair>
+</pair>
 };
