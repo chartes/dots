@@ -684,6 +684,7 @@ declare function utils:getMandatory(
         return 
           switch ($download)
           case ($download[ends-with(., "html")]) return <pair name="text/html">{normalize-space($download)}</pair>
+          case ($download[ends-with(., "pdf")]) return <pair name="application/pdf">{normalize-space($download)}</pair>
           default return <pair name="application/tei+xml">{normalize-space($download)}</pair>
           (: utils:getStringJson($download/@key, $download) :)
       }</pair>
@@ -875,7 +876,9 @@ declare function utils:getContext(
 ) {
   <pair name="@context" type="array">
     <item>https://dtsapi.org/context/v1.0.json</item>
-    <item type="object">
+  </pair>
+};
+(: <item type="object">
     {if ($response = "")
     then ()
     else
@@ -901,10 +904,8 @@ declare function utils:getContext(
               case ($namespace[. = "html"]) return <pair name="html">{"http://www.w3.org/1999/xhtml"}</pair>
               default return () 
   }
-   </item>
-</pair>
-};
-
+   </item> :)
+   
 (:~  
  : Cette fonction permet de retrouver, dans la base de données BaseX $projectName, dans le registre DoTS "dots/fragments_register.xml" le(s) fragment(s)  de la resource $resourceId
  : @return réponse XML
