@@ -685,6 +685,7 @@ declare function utils:getMandatory(
           switch ($download)
           case ($download[ends-with(., "html")]) return <pair name="text/html">{normalize-space($download)}</pair>
           case ($download[ends-with(., "pdf")]) return <pair name="application/pdf">{normalize-space($download)}</pair>
+          case ($download[ends-with(., "PDF")]) return <pair name="application/pdf">{normalize-space($download)}</pair>
           default return <pair name="application/tei+xml">{normalize-space($download)}</pair>
           (: utils:getStringJson($download/@key, $download) :)
       }</pair>
