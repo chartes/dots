@@ -217,7 +217,10 @@ declare function resources:getDocumentMetadata(
       $dctTitle,
       for $metadata in if ($externalMetadataMap) then $externalMetadataMap/node()[@scope = "document"] else $metadataMap/node()[@scope = "document"][name() != "dct:title"]
       return
-        if ($metadata/@resourceId = "all")
+        if ($metadata/@type = "object")
+        then
+          resources:getObjectMetadata($doc, $metadata)
+        else if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
           return
@@ -367,4 +370,54 @@ declare function resources:getDotsProjectName($projectName as xs:string) {
   <dots:dotsProjectId>{$projectName}</dots:dotsProjectId>
 };
 
+(:~
+: Traite une déclaration d'objet JSON-LD (type="object") dans le
+: dots_metadata_mapping.xml et génère les éléments pré-assemblés
+: correspondants dans le resources_register.xml.
+: Chaque instance est délimitée par le nœud retourné par le XPath
+: générique (@xpath sur l'élément conteneur). Les dots:field sont
+: résolus par XPath relatif dans ce nœud de contexte.
+:
+: @param $doc     le document TEI source (element(tei:TEI))
+: @param $mapping l'élément de mapping portant type="object"
+:                 (ex: <schema:creator type="object" xpath="...">)
+: @return         séquence d'éléments pré-assemblés, un par instance
+:)
+declare function resources:getObjectMetadata(
+  $doc     as element(tei:TEI),
+  $mapping as element()
+) as element()* {
 
+  let $elementName := $mapping/name()
+
+  (: 1. Résolution du XPath générique : liste des nœuds racines des instances :)
+  let $genericQuery := concat(
+    'declare default element namespace "http://www.tei-c.org/ns/1.0";',
+    string($mapping/@xpath)
+  )
+  let $contextNodes := xquery:eval($genericQuery, map {"": $doc})
+
+  (: 2. Une instance par nœud de contexte :)
+  for $node in $contextNodes
+  return
+    element {$elementName} {
+      attribute {"type"} {"object"},
+
+      (: Résolution de chaque dots:field par XPath relatif sur $node :)
+      for $field in $mapping/dots:field
+      let $fieldName  := string($field/@name)
+      return
+        if ($field/@resourceId = "all")
+        then <dots:field name="{$fieldName}">{$field/text()}</dots:field>
+        else
+          let $fieldQuery := concat(
+            'declare default element namespace "http://www.tei-c.org/ns/1.0";',
+            string($field/@xpath)
+          )
+          let $values := xquery:eval($fieldQuery, map {"": $node})
+          for $value in $values
+          let $strValue := normalize-space($value)
+          return
+            <dots:field name="{$fieldName}">{$strValue}</dots:field>
+    }
+};

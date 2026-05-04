@@ -789,26 +789,47 @@ declare function utils:getExtensions(
     <pair name="extensions" type="object">
     {
       utils:extensionsContext(),
-      for $metadata in $extensions
+      let $objects      := $extensions[@type = "object"]
+      let $objectNames  := distinct-values($objects/name())
+      for $oName in $objectNames
+      let $oNameChanges :=
+        switch ($oName)
+        case ($oName[starts-with(., "schema")]) return replace($oName, "schema:", "")
+        default return $oName
+      let $instances := $objects[name() = $oName]
+      return
+        if (count($instances) > 1)
+        then
+          (: Plusieurs instances → array JSON-LD :)
+          <pair name="{$oNameChanges}" type="array">{
+            for $inst in $instances
+            return
+              <item type="object">{
+                utils:getObjectJson($inst)
+              }</item>
+          }</pair>
+        else
+          (: Instance unique → objet JSON-LD :)
+          <pair name="{$oNameChanges}" type="object">{
+            utils:getObjectJson($instances[1])
+          }</pair>,
+          
+      let $scalars := $extensions[not(@type = "object")]
+      for $metadata in $scalars
       let $key := $metadata/name()
       where $key != "download"
       where $key != "description"
-      let $prefix := in-scope-prefixes($metadata)[1]
-      where $prefix != "dc"
-      where $key != ""
       let $ns := namespace-uri($metadata)
       let $name := 
-        if (contains($key, ":")) 
-        then $key 
-        else 
-          if ($ns = "https://github.com/chartes/dots/")
-          then $key
-          else concat($prefix, ":", $key)
+        if (starts-with($key, "schema:")) 
+        then 
+          if ($key = "schema:type") then "@type" else substring-after($key, ":")
+        else $key
       let $countKey := count($extensions/name()[. = $key])
       group by $key
       order by $key
       return
-        if ($countKey > 1 or $metadata/@key or $metadata[@type="array"])
+        if ($metadata[@type="array"])
         then
           utils:getArrayJson($name[1], $metadata)
         else
@@ -819,6 +840,25 @@ declare function utils:getExtensions(
     }</pair>
 };
 
+declare function utils:getObjectJson(
+  $element as element()
+) as element()* {
+
+  let $fieldNames := distinct-values($element/dots:field/@name/string())
+  for $name in $fieldNames
+  let $fields := $element/dots:field[@name = $name]
+  return
+    if (count($fields) > 1)
+    then
+      (: Champ multi-valué → array JSON :)
+      <pair name="{$name}" type="array">{
+        for $f in $fields
+        return <item>{normalize-space($f)}</item>
+      }</pair>
+    else
+      (: Champ scalaire → paire simple :)
+      <pair name="{$name}">{normalize-space($fields[1])}</pair>
+};
 
 (:~ 
  : Cette fonction permet de construire un tableau XML de métadonnées
@@ -1131,6 +1171,7 @@ declare function utils:getResultFilter(
 
 declare function utils:extensionsContext() {
 <pair name="@context" type="object">
+  <pair name="dots">https://github.com/chartes/dots/</pair>
   <pair name="schema">https://schema.org/</pair>
   <pair name="Book">schema:Book</pair>
   <pair name="Organization">schema:Organization</pair>
