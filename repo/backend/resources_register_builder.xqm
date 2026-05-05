@@ -375,7 +375,7 @@ declare function resources:getDotsProjectName($projectName as xs:string) {
 : dots_metadata_mapping.xml et génère les éléments pré-assemblés
 : correspondants dans le resources_register.xml.
 : Chaque instance est délimitée par le nœud retourné par le XPath
-: générique (@xpath sur l'élément conteneur). Les dots:field sont
+: générique (@xpath sur l'élément conteneur). Les dots:objectProperty sont
 : résolus par XPath relatif dans ce nœud de contexte.
 :
 : @param $doc     le document TEI source (element(tei:TEI))
@@ -403,12 +403,12 @@ declare function resources:getObjectMetadata(
     element {$elementName} {
       attribute {"type"} {"object"},
 
-      (: Résolution de chaque dots:field par XPath relatif sur $node :)
-      for $field in $mapping/dots:field
+      (: Résolution de chaque dots:objectProperty par XPath relatif sur $node :)
+      for $field in $mapping/dots:objectProperty
       let $fieldName  := string($field/@name)
       return
         if ($field/@resourceId = "all")
-        then <dots:field name="{$fieldName}">{$field/text()}</dots:field>
+        then <dots:objectProperty name="{$fieldName}">{$field/text()}</dots:objectProperty>
         else
           let $fieldQuery := concat(
             'declare default element namespace "http://www.tei-c.org/ns/1.0";',
@@ -418,6 +418,6 @@ declare function resources:getObjectMetadata(
           for $value in $values
           let $strValue := normalize-space($value)
           return
-            <dots:field name="{$fieldName}">{$strValue}</dots:field>
+            <dots:objectProperty name="{$fieldName}">{$strValue}</dots:objectProperty>
     }
 };

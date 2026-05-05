@@ -844,9 +844,9 @@ declare function utils:getObjectJson(
   $element as element()
 ) as element()* {
 
-  let $fieldNames := distinct-values($element/dots:field/@name/string())
+  let $fieldNames := distinct-values($element/dots:objectProperty/@name/string())
   for $name in $fieldNames
-  let $fields := $element/dots:field[@name = $name]
+  let $fields := $element/dots:objectProperty[@name = $name]
   return
     if (count($fields) > 1)
     then
