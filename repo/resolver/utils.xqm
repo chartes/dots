@@ -788,7 +788,7 @@ declare function utils:getExtensions(
   return
     <pair name="extensions" type="object">
     {
-      utils:extensionsContext(),
+      utils:extensionsContext($extensions),
       let $objects      := $extensions[@type = "object"]
       let $objectNames  := distinct-values($objects/name())
       for $oName in $objectNames
@@ -1169,25 +1169,52 @@ declare function utils:getResultFilter(
   return $element
 };
 
-declare function utils:extensionsContext() {
-<pair name="@context" type="object">
-  <pair name="dots">https://github.com/chartes/dots/</pair>
-  <pair name="schema">https://schema.org/</pair>
-  <pair name="Book">schema:Book</pair>
-  <pair name="Organization">schema:Organization</pair>
-  <pair name="Person">schema:Person</pair>
-  <pair name="contributor">schema:contributor</pair>
-  <pair name="creator">schema:creator</pair>
-  <pair name="dateCreated">schema:dateCreated</pair>
-  <pair name="datePublished">schema:datePublished</pair>
-  <pair name="inLanguage">schema:inLanguage</pair>
-  <pair name="isBasedOn">schema:isBasedOn</pair>
-  <pair name="isVersionOf">schema:isVersionOf</pair>
-  <pair name="name">schema:name</pair>
-  <pair name="publisher">schema:publisher</pair>
-  <pair name="relatedLink">schema:relatedLink</pair>
-  <pair name="roleName">schema:roleName</pair>
-  <pair name="sameAs">schema:sameAs</pair>
-  <pair name="temporalCoverage">schema:temporalCoverage</pair>
-</pair>
+declare function utils:extensionsContext(
+  $response
+) {
+  <pair name="@context" type="object">
+    <pair name="dots">https://github.com/chartes/dots/</pair>
+    
+    {if ($response = "")
+      then ()
+      else
+        let $context :=
+          map:merge((
+            (: Source 1 : éléments avec préfixe :)
+            for $node in $response/descendant-or-self::*
+            let $prefix := prefix-from-QName(node-name($node))
+            let $local  := local-name($node)
+            where $prefix = "schema" and $local != "type"
+            where $prefix != ""
+            return map:entry($local, concat($prefix, ":", $local)),
+            
+            (: Source 2 : @name des dots:objectProperty :)
+            for $prop in $response/descendant-or-self::*:objectProperty[@name]
+            let $name          := string($prop/@name)
+            let $parent-prefix := prefix-from-QName(node-name($prop/parent::*))
+            (: Si @name contient déjà "prefix:local", on garde tel quel,
+               sinon on hérite du préfixe parent :)
+            let $value :=
+              if (contains($name, ":"))
+              then $name
+              else concat($parent-prefix, ":", $name)
+            (: La clé est toujours la partie locale :)
+            let $key := tokenize($name, ":")[last()]
+            return 
+              if (substring-before($value, ":") = "schema" and starts-with(substring-after($value, ":"), "@"))
+              then ()
+              else map:entry($key, $value)
+          ), 
+          map{"duplicates": "use-first"})
+        return
+          (
+            if (exists(contains($context, "schema")))
+            then <pair name="schema">https://schema.org/</pair>,
+            for $key in sort(map:keys($context))
+            return 
+              <pair name="{$key}">{$context($key)}</pair>)
+    }
+  </pair>
 };
+
+
