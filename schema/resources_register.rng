@@ -143,6 +143,7 @@
             <value>boolean</value>
             <value>number</value>
             <value>null</value>
+            <value>object</value>
           </choice>
         </attribute>
       </optional>

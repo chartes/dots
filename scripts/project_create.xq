@@ -13,9 +13,7 @@ declare variable $linkXSL external := "";
 declare variable $defaultEngine external := ""; 
 declare variable $cacheOption external := false();
 
-for $script in ('../scripts/dots_db_init.xq', if ($option) then '../scripts/dots_registers_delete.xq', '../scripts/project_db_init.xq', 
-  '../scripts/project_registers_create.xq', '../scripts/TEI_add_id.xq', '../scripts/dots_switcher_update.xq')
-return script:execute(xs:anyURI($script), map {
+let $params := map {
   'dbName': $dbName,
   'projectDirPath': $projectDirPath,
   'topCollectionId': $topCollectionId,
@@ -26,5 +24,20 @@ return script:execute(xs:anyURI($script), map {
   'linkXSL': $linkXSL,
   'defaultEngine': $defaultEngine,
   'cacheOption': xs:boolean($cacheOption)
-})
+}
 
+let $scripts := (
+  '../scripts/dots_db_init.xq',
+  if ($option) then '../scripts/dots_registers_delete.xq' else (),
+  '../scripts/project_db_init.xq',
+  '../scripts/project_registers_create.xq',
+  '../scripts/TEI_add_id.xq',
+  '../scripts/dots_switcher_update.xq'
+)
+
+return try {
+  for $script in $scripts
+  return script:execute(xs:anyURI($script), $params)
+} catch * {
+  error($err:code)
+}
