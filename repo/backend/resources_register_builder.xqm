@@ -61,8 +61,8 @@ declare updating function resources:createResourcesRegister(
       {resources:getMetadata()}
       <member>
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">{
-          resources:getCollectionMetadata($dbName, $idProject, $csv-coll),
-          resources:getDotsProjectName($idProject)
+          resources:getCollectionMetadata($dbName, $idProject, $csv-coll)
+          (: resources:getDotsProjectName($idProject) :)
         }</collection>
         {
           resources:collections($dbName, $idProject, $csv-coll),
@@ -121,8 +121,8 @@ declare function resources:collections(
           let $totalChildren := count(db:dir($dbName, $path))
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
-                resources:getCollectionMetadata($dbName, $path, $csv),
-                resources:getDotsProjectName($idProject)
+                resources:getCollectionMetadata($dbName, $path, $csv)
+                (: resources:getDotsProjectName($idProject) :)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -142,8 +142,8 @@ declare function resources:collections(
               else $idProject
             return
               <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
-                resources:getCollectionMetadata($dbName, $dtsResourceId, $csv),
-                resources:getDotsProjectName($idProject)
+                resources:getCollectionMetadata($dbName, $dtsResourceId, $csv)
+                (: resources:getDotsProjectName($idProject) :)
               }</collection>
     return
       for $goodCollection in $collectionsWithDuplicate
@@ -188,8 +188,8 @@ declare %private function resources:document(
   where $document
   return
     <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-      resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
-      resources:getDotsProjectName($idProject)
+      resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv)
+      (: resources:getDotsProjectName($idProject) :)
     }</document>
 };
 
@@ -366,9 +366,9 @@ declare function resources:createContent(
 : @param $projectName (xs:string) The name of the project.
 : @return An XML element containing the project identifier.
 :)
-declare function resources:getDotsProjectName($projectName as xs:string) {
+(: declare function resources:getDotsProjectName($projectName as xs:string) {
   <dots:dotsProjectId>{$projectName}</dots:dotsProjectId>
-};
+}; :)
 
 (:~
 : Traite une déclaration d'objet JSON-LD (type="object") dans le

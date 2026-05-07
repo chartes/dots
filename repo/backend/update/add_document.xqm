@@ -99,8 +99,8 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
     return
       (
         insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
-        resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv),
-        resources:getDotsProjectName($projectName)
+        resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv)
+        (: resources:getDotsProjectName($projectName) :)
   }</document> as last into $resources_register,
         add_doc:updateTotalChildrenCollection($dbName, $parentIds),
         add_doc:addDocToSwitcherDots($dbName, $dtsResourceId)

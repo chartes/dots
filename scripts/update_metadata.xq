@@ -35,7 +35,7 @@ then
   let $csv-doc := resources:getCSV-map($dbName, "document")
   let $csv-frag := resources:getCSV-map($dbName, "fragment")
   
-  let $dotsProjectName := resources:getDotsProjectName($idProject)
+  (: let $dotsProjectName := resources:getDotsProjectName($idProject) :)
   
   let $resources := 
     if ($resourceId)
@@ -62,14 +62,14 @@ then
         then
           replace node $resource with element {$el} {
             $el/@*,
-            resources:getCollectionMetadata($dbName, $resourceId, $csv-coll),
-            $dotsProjectName
+            resources:getCollectionMetadata($dbName, $resourceId, $csv-coll)
+            (: $dotsProjectName :)
             }
         else
           replace node $resource with element {$el} {
             $el/@*,
-            resources:getDocumentMetadata($dbName, utils_dots:getDocument($dbName, $resourceId), $resourceId, $csv-doc),
-            $dotsProjectName
+            resources:getDocumentMetadata($dbName, utils_dots:getDocument($dbName, $resourceId), $resourceId, $csv-doc)
+            (: $dotsProjectName :)
           },
       for $fragment in $fragments
       let $meta := fragments:getFragmentMetadata($dbName, $fragment/@ref, $csv-frag)

@@ -55,8 +55,8 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
           (
             <dct:title>{$resourceId}</dct:title>,
             $metadata
-          ),
-        resources:getDotsProjectName($idProject)
+          )
+        (: resources:getDotsProjectName($idProject) :)
       }</collection> as last into $resources_register
 };
 
