@@ -48,21 +48,20 @@ declare updating function resources:createResourcesRegister(
           then 
             for $prefix in in-scope-prefixes($mapping)
             where $prefix != ""
-            where $prefix != "dc"
+            where $prefix != "dct"
             where $prefix != "xml"
             let $ns := namespace-uri-for-prefix($prefix, $mapping)
             return
               namespace {$prefix} {$ns}
           else 
             (
-              namespace {"dc"} {"http://purl.org/dc/elements/1.1/"}
+              namespace {"dct"} {"http://purl.org/dc/terms/"}
             )
       }
       {resources:getMetadata()}
       <member>
         <collection dtsResourceId="{$idProject}" totalChildren="{$countChild}">{
           resources:getCollectionMetadata($dbName, $idProject, $csv-coll)
-          (: resources:getDotsProjectName($idProject) :)
         }</collection>
         {
           resources:collections($dbName, $idProject, $csv-coll),
@@ -122,7 +121,6 @@ declare function resources:collections(
           return
             <collection dtsResourceId="{$path}" totalChildren="{$totalChildren}" parentIds="{$idProject}">{
                 resources:getCollectionMetadata($dbName, $path, $csv)
-                (: resources:getDotsProjectName($idProject) :)
               }</collection>
         else
           let $splitCollections := tokenize($collection/complet_path, "/")
@@ -143,7 +141,6 @@ declare function resources:collections(
             return
               <collection dtsResourceId="{$dtsResourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
                 resources:getCollectionMetadata($dbName, $dtsResourceId, $csv)
-                (: resources:getDotsProjectName($idProject) :)
               }</collection>
     return
       for $goodCollection in $collectionsWithDuplicate
@@ -189,7 +186,6 @@ declare %private function resources:document(
   return
     <document dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
       resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv)
-      (: resources:getDotsProjectName($idProject) :)
     }</document>
 };
 
@@ -219,7 +215,7 @@ declare function resources:getDocumentMetadata(
       return
         if ($metadata/@type = "object")
         then
-          resources:getObjectMetadata($doc, $metadata)
+          resources:getObjectMetadata($doc, $metadata, $dtsResourceId, $csv-map)
         else if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
@@ -374,50 +370,119 @@ declare function resources:createContent(
 : Traite une déclaration d'objet JSON-LD (type="object") dans le
 : dots_metadata_mapping.xml et génère les éléments pré-assemblés
 : correspondants dans le resources_register.xml.
-: Chaque instance est délimitée par le nœud retourné par le XPath
-: générique (@xpath sur l'élément conteneur). Les dots:objectProperty sont
-: résolus par XPath relatif dans ce nœud de contexte.
+: Supporte trois modes de résolution pour chaque dots:objectProperty :
+:   1. @resourceId="all"  → valeur littérale du mapping
+:   2. @xpath             → XPath relatif dans le nœud de contexte TEI
+:   3. @value             → lookup dans un CSV (via $csv-map)
 :
-: @param $doc     le document TEI source (element(tei:TEI))
-: @param $mapping l'élément de mapping portant type="object"
-:                 (ex: <schema:creator type="object" xpath="...">)
-: @return         séquence d'éléments pré-assemblés, un par instance
+: Quand le mapping porte @source (CSV), les nœuds de contexte sont les
+: enregistrements CSV filtrés par $dtsResourceId. Sinon ce sont les nœuds
+: TEI retournés par @xpath sur l'élément conteneur.
+:
+: @param $doc           le document TEI source (element(tei:TEI))
+: @param $mapping       l'élément de mapping portant type="object"
+: @param $dtsResourceId identifiant de la ressource courante
+: @param $csv-map       map dont les clés sont les noms de fichiers CSV
+:                       et les valeurs des fonctions record-lookup
+: @return               séquence d'éléments pré-assemblés, un par instance
 :)
 declare function resources:getObjectMetadata(
-  $doc     as element(tei:TEI),
-  $mapping as element()
+  $doc           as element(tei:TEI),
+  $mapping       as element(),
+  $dtsResourceId as xs:string := (),
+  $csv-map := ()
 ) as element()* {
 
   let $elementName := $mapping/name()
+  let $hasCsvSource := boolean($mapping/@source)
 
-  (: 1. Résolution du XPath générique : liste des nœuds racines des instances :)
-  let $genericQuery := concat(
-    'declare default element namespace "http://www.tei-c.org/ns/1.0";',
-    string($mapping/@xpath)
-  )
-  let $contextNodes := xquery:eval($genericQuery, map {"": $doc})
-
-  (: 2. Une instance par nœud de contexte :)
-  for $node in $contextNodes
   return
-    element {$elementName} {
-      attribute {"type"} {"object"},
+    if ($hasCsvSource)
+    then
+      (:
+        Mode CSV : les "nœuds de contexte" sont les enregistrements
+        CSV correspondant à $dtsResourceId
+      :)
+      let $source     := functx:substring-after-last($mapping/@source, '/')
+      let $csv-source := $csv-map($source)
+      let $records    := $csv-source($dtsResourceId)  (: séquence de map(*) :)
 
-      (: Résolution de chaque dots:objectProperty par XPath relatif sur $node :)
-      for $field in $mapping/dots:objectProperty
-      let $fieldName  := string($field/@name)
+      for $record in $records
       return
-        if ($field/@resourceId = "all")
-        then <dots:objectProperty name="{$fieldName}">{$field/text()}</dots:objectProperty>
-        else
-          let $fieldQuery := concat(
-            'declare default element namespace "http://www.tei-c.org/ns/1.0";',
-            string($field/@xpath)
-          )
-          let $values := xquery:eval($fieldQuery, map {"": $node})
-          for $value in $values
-          let $strValue := normalize-space($value)
+        element {$elementName} {
+          attribute {"type"} {"object"},
+
+          for $field in $mapping/dots:objectProperty
+          let $fieldName := string($field/@name)
           return
-            <dots:objectProperty name="{$fieldName}">{$strValue}</dots:objectProperty>
-    }
+            if ($field/@resourceId = "all")
+            then
+              <dots:objectProperty name="{$fieldName}">{string($field)}</dots:objectProperty>
+
+            else if ($field/@xpath)
+            then
+              (:
+                XPath relatif dans le TEI — peu probable en mode CSV
+                mais supporté par cohérence
+              :)
+              let $fieldQuery := concat(
+                'declare default element namespace "http://www.tei-c.org/ns/1.0";',
+                string($field/@xpath)
+              )
+              let $values := xquery:eval($fieldQuery, map {"": $doc})
+              for $value in $values
+              return
+                <dots:objectProperty name="{$fieldName}">{normalize-space($value)}</dots:objectProperty>
+
+            else if ($field/@value)
+            then
+              (:
+                Mode CSV pur : on va chercher la colonne @value
+                dans l'enregistrement courant
+              :)
+              let $col := string($field/@value)
+              for $v in $record($col)
+              where normalize-space($v) != ""
+              return
+                <dots:objectProperty name="{$fieldName}">{
+                  concat($field/@prefix, normalize-space($v), $field/@suffix)
+                }</dots:objectProperty>
+
+            else ()
+        }
+
+    else
+      (:
+        Mode TEI (comportement original) : nœuds de contexte = résultat
+        du XPath générique sur le document TEI
+      :)
+      let $genericQuery := concat(
+        'declare default element namespace "http://www.tei-c.org/ns/1.0";',
+        string($mapping/@xpath)
+      )
+      let $contextNodes := xquery:eval($genericQuery, map {"": $doc})
+
+      for $node in $contextNodes
+      return
+        element {$elementName} {
+          attribute {"type"} {"object"},
+
+          for $field in $mapping/dots:objectProperty
+          let $fieldName := string($field/@name)
+          return
+            if ($field/@resourceId = "all")
+            then
+              <dots:objectProperty name="{$fieldName}">{string($field)}</dots:objectProperty>
+
+            else
+              let $fieldQuery := concat(
+                'declare default element namespace "http://www.tei-c.org/ns/1.0";',
+                string($field/@xpath)
+              )
+              let $values := xquery:eval($fieldQuery, map {"": $node})
+              for $value in $values
+              let $strValue := normalize-space($value)
+              return
+                <dots:objectProperty name="{$fieldName}">{$strValue}</dots:objectProperty>
+        }
 };
