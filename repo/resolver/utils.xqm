@@ -677,8 +677,6 @@ declare function utils:getMandatory(
     let $downloads := $resource/*:download
     where $downloads
     return
-      (: PP. Attention: correction de download pour en faire un tableau, selon la spéc DTS.
-      Mais, cela va poser un problème pour DoTS-vue qui attend ici un objet. Voir avec Victor :)
       <pair name="download" type="object">{
         for $download in $downloads
         return 

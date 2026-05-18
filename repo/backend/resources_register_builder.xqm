@@ -408,49 +408,50 @@ declare function resources:getObjectMetadata(
       let $records    := $csv-source($dtsResourceId)  (: séquence de map(*) :)
 
       for $record in $records
-      return
-        element {$elementName} {
-          attribute {"type"} {"object"},
-
-          for $field in $mapping/dots:objectProperty
-          let $fieldName := string($field/@name)
-          return
-            if ($field/@resourceId = "all")
-            then
-              <dots:objectProperty name="{$fieldName}">{string($field)}</dots:objectProperty>
-
-            else if ($field/@xpath)
-            then
-              (:
-                XPath relatif dans le TEI — peu probable en mode CSV
-                mais supporté par cohérence
-              :)
-              let $fieldQuery := concat(
-                'declare default element namespace "http://www.tei-c.org/ns/1.0";',
-                string($field/@xpath)
-              )
-              let $values := xquery:eval($fieldQuery, map {"": $doc})
-              for $value in $values
-              return
-                <dots:objectProperty name="{$fieldName}">{normalize-space($value)}</dots:objectProperty>
-
-            else if ($field/@value)
-            then
-              (:
-                Mode CSV pur : on va chercher la colonne @value
-                dans l'enregistrement courant
-              :)
-              let $col := string($field/@value)
-              for $v in $record($col)
-              where normalize-space($v) != ""
-              return
-                <dots:objectProperty name="{$fieldName}">{
-                  concat($field/@prefix, normalize-space($v), $field/@suffix)
-                }</dots:objectProperty>
-
-            else ()
+      let $el :=
+          element {$elementName} {
+            attribute {"type"} {"object"},
+  
+            for $field in $mapping/dots:objectProperty
+            let $fieldName := string($field/@name)
+            return
+              if ($field/@resourceId = "all")
+              then
+                <dots:objectProperty name="{$fieldName}">{string($field)}</dots:objectProperty>
+  
+              else if ($field/@xpath)
+              then
+                (:
+                  XPath relatif dans le TEI — peu probable en mode CSV
+                  mais supporté par cohérence
+                :)
+                let $fieldQuery := concat(
+                  'declare default element namespace "http://www.tei-c.org/ns/1.0";',
+                  string($field/@xpath)
+                )
+                let $values := xquery:eval($fieldQuery, map {"": $doc})
+                for $value in $values
+                return
+                  <dots:objectProperty name="{$fieldName}">{normalize-space($value)}</dots:objectProperty>
+  
+              else if ($field/@value)
+              then
+                (:
+                  Mode CSV pur : on va chercher la colonne @value
+                  dans l'enregistrement courant
+                :)
+                let $col := string($field/@value)
+                for $v in $record($col)
+                where normalize-space($v)
+                return
+                  <dots:objectProperty name="{$fieldName}">{
+                    concat($field/@prefix, normalize-space($v), $field/@suffix)
+                  }</dots:objectProperty>
+  
+              else ()
         }
-
+      where $el/node()
+      return $el
     else
       (:
         Mode TEI (comportement original) : nœuds de contexte = résultat
