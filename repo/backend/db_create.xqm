@@ -63,10 +63,11 @@ declare updating function dots.create:db($dbName as xs:string, $projectDirPath a
     else ()
   )
   return db:create($dbName, $resources, $paths, map {
-    "ftindex": true(),
     "updindex": true(),
     "tokenindex": true(),
-    "stemming": true(),
+    "attrindex": true(),  
+    "textindex": true(),  
+    "autooptimize": true(),
     "language": if ($G:language) then $G:language else "fr"
   })
 };
