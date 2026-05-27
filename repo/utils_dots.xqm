@@ -147,9 +147,7 @@ declare function utils_dots:getPathInFolder($resourceId as xs:string, $project_d
 : @todo: à terme, ne garder que la fonction db:attribute!!!! /!\
 :)
 declare function utils_dots:getDocInRegister($dbName as xs:string, $resourceId as xs:string) {
-  if (db:info($dbName)//attrindex = "true")
-  then db:attribute($dbName, $resourceId, "dtsResourceId")/parent::node()
-  else db:get($dbName, $G:resourcesRegister)//dots:member/node()[@dtsResourceId = $resourceId]
+  db:attribute($dbName, $resourceId, "dtsResourceId")/parent::node()
 };
 
 (:~

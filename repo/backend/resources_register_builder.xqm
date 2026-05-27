@@ -215,7 +215,7 @@ declare function resources:getDocumentMetadata(
       return
         if ($metadata/@type = "object")
         then
-          resources:getObjectMetadata($doc, $metadata, $dtsResourceId, $csv-map)
+          resources:getObjectMetadata($metadata, $dtsResourceId, $doc, $csv-map)
         else if ($metadata/@resourceId = "all")
         then 
           let $key := $metadata/name()
@@ -273,6 +273,9 @@ declare function resources:getCollectionMetadata(
       let $metadatas :=
         for $metadata in $metadataMap/node()[@scope = "collection"]
         return
+          if ($metadata/@type = "object")
+          then resources:getObjectMetadata($metadata, $collection, "", $csv-map)
+          else
           if ($metadata/@resourceId = "all")
           then 
             let $key := $metadata/name()
@@ -338,6 +341,7 @@ declare function resources:createContent(
 ) {
   let $key := $itemDeclaration/name()
   let $element := $itemDeclaration/@value
+  where $element
   let $value := (
     for $v in $csv-record($element)
     where $v
@@ -387,10 +391,10 @@ declare function resources:createContent(
 : @return               séquence d'éléments pré-assemblés, un par instance
 :)
 declare function resources:getObjectMetadata(
-  $doc           as element(tei:TEI),
   $mapping       as element(),
   $dtsResourceId as xs:string := (),
-  $csv-map := ()
+  $doc           := "",
+  $csv-map       := ()
 ) as element()* {
 
   let $elementName := $mapping/name()

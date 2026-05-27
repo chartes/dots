@@ -662,7 +662,7 @@ declare function utils:getMandatory(
 ) as element(pair)* {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $type := utils:getResourceType($resource)
-  let $desc := normalize-space($resource/*:description)
+  let $desc := normalize-space($resource/*:description[1])
   let $totalParents := count(tokenize($resource/@parentIds))
   let $totalChildren := if ($type = ("resource", "Resource")) then (
     0
@@ -685,7 +685,6 @@ declare function utils:getMandatory(
           case ($download[ends-with(., "pdf")]) return <pair name="application/pdf">{normalize-space($download)}</pair>
           case ($download[ends-with(., "PDF")]) return <pair name="application/pdf">{normalize-space($download)}</pair>
           default return <pair name="application/tei+xml">{normalize-space($download)}</pair>
-          (: utils:getStringJson($download/@key, $download) :)
       }</pair>
   )
   let $citationTrees := if ($type = ("resource", "Resource")) then (

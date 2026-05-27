@@ -72,7 +72,6 @@
           <ref name="anyElement"/>
         </zeroOrMore>
       </interleave>
-      <ref name="dotsProjectId"/>
     </element>
   </define>
   
@@ -93,7 +92,6 @@
           <ref name="anyElement"/>
         </zeroOrMore>
       </interleave>
-      <ref name="dotsProjectId"/>
     </element>
   </define>
   
@@ -117,8 +115,18 @@
     </element>
   </define>
   
-  <define name="dotsProjectId">
-    <element name="dots:dotsProjectId">
+  <define name="objectProperty">
+    <element name="dots:objectProperty">
+      <attribute name="name">
+        <choice>
+          <value>@type</value>
+          <value>@id</value>
+          <value>name</value>
+          <value>sameAs</value>
+          <value>encodingFormat</value>
+          <value>contentUrl</value>
+        </choice>
+      </attribute>
       <text/>
     </element>
   </define>
@@ -128,7 +136,6 @@
       <anyName>
         <except>
           <name>dct:title</name>
-          <name>dots:dotsProjectId</name>
         </except>
       </anyName>
       <optional>
@@ -147,7 +154,12 @@
           </choice>
         </attribute>
       </optional>
-      <text/>
+      <choice>
+        <oneOrMore>
+          <ref name="objectProperty"/>
+        </oneOrMore>
+        <text/>
+      </choice>
     </element>
   </define>
   
@@ -156,6 +168,13 @@
       <sch:rule context="dct:title">
         <sch:assert test="normalize-space(.) != ''">
           L'élément dct:title ne doit pas être vide.
+        </sch:assert>
+      </sch:rule>
+    </sch:pattern>
+    <sch:pattern>
+      <sch:rule context="*[dots:objectProperty]">
+        <sch:assert test="@type = 'object'">
+          Un élément contenant dots:objectProperty doit avoir @type="object".
         </sch:assert>
       </sch:rule>
     </sch:pattern>
