@@ -13,6 +13,12 @@ declare default element namespace "https://github.com/chartes/dots/";
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le resolver 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :) 
+
+declare variable $G:base_uri :=
+  if (environment-variable("base_uri"))
+  then environment-variable("base_uri")
+  else substring-before(request:uri(), "/api");
+
 declare variable $G:static_path := 
   if (environment-variable("static_path"))
   then environment-variable("static_path")

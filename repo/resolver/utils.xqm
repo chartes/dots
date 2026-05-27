@@ -237,8 +237,7 @@ declare function utils:idNavigation(
     let $fragInfo := utils:getFragmentInfo($item)
     return
       <item type="object">{$fragInfo}</item>
-  let $base-uri := substring-before(request:uri(), "/api")
-  let $url := concat($base-uri, "/api/dts/navigation?id=", $resourceId)
+  let $url := concat($G:base_uri, "/api/dts/navigation?id=", $resourceId)
   let $context := utils:getContext($projectName, $response)
   return
     <json type="object">{
@@ -260,12 +259,11 @@ declare function utils:getResourcesInfo(
 ) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
   let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
-  let $uri := substring-before(request:uri(), "/api")
   return
     <pair name="resource" type="object">
       <pair name="@id">{$resourceId}</pair>
       <pair name="@type">Resource</pair>
-      <pair name="document">{concat($uri, "/api/dts/document?resource=", $resourceId, "{&amp;ref,start,end,mediaType}")}</pair>
+      <pair name="document">{concat($G:base_uri, "/api/dts/document?resource=", $resourceId, "{&amp;ref,start,end,mediaType}")}</pair>
       <pair name="collection">{
         let $parentIds := $resource/@parentIds
         return
@@ -276,12 +274,12 @@ declare function utils:getResourcesInfo(
               let $tokenize := tokenize($parentIds, " ")
               for $coll in $tokenize
               return
-                <item>{concat($uri, "/api/dts/collection?id=", $coll), "{&amp;nav}"}</item>
+                <item>{concat($G:base_uri, "/api/dts/collection?id=", $coll), "{&amp;nav}"}</item>
             )
           else
-            concat($uri, "/api/dts/collection?id=", $parentIds, "{&amp;nav}")
+            concat($G:base_uri, "/api/dts/collection?id=", $parentIds, "{&amp;nav}")
       }</pair>
-      <pair name="navigation">{concat($uri, "/api/dts/document?resource=", $resourceId, "{&amp;ref,down,start,end}")}</pair>
+      <pair name="navigation">{concat($G:base_uri, "/api/dts/document?resource=", $resourceId, "{&amp;ref,down,start,end}")}</pair>
       <pair name="citationTrees" type="object">
         <pair name="@type">CitationTree</pair>
         <pair name="maxCiteDepth" type="number">{
@@ -361,8 +359,7 @@ declare function utils:refNavigation(
 ) {
   let $projectName := utils_dots:getDbName($resourceId)
   let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
-  let $base-uri := substring-before(request:uri(), "/api")
-  let $url := concat($base-uri, "/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
+  let $url := concat($G:base_uri, "/api/dts/navigation?id=", $resourceId, "&amp;ref=", $ref)
   let $fragment := utils:getFragment($projectName, $resourceId, map { "ref": $ref })
   return
     if (not($fragment))
@@ -451,8 +448,7 @@ declare function utils:rangeNavigation(
 ) {
   let $projectName := utils_dots:getDbName($resourceId)
   let $resource := utils_dots:getDocInRegister($projectName, $resourceId)
-  let $base-uri := substring-before(request:uri(), "/api")
-  let $url := concat($base-uri, "/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
+  let $url := concat($G:base_uri, "/api/dts/navigation?id=", $resourceId, "&amp;start=", $start, "&amp;end=", $end, if ($down) then (concat("&amp;down=", $down)) else ())
   let $frag1 := utils:getFragment($projectName, $resourceId, map { "ref": $start })
   let $fragLast := utils:getFragment($projectName, $resourceId, map { "ref": $end })
   return
@@ -669,11 +665,10 @@ declare function utils:getMandatory(
   ) else (
     xs:integer($resource/@totalChildren)
   )
-  let $uri := substring-before(request:uri(), "/api")
   let $resourceLink := if ($type = ("resource", "Resource")) then (
-    <pair name="collection">{concat($uri, "/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
-    <pair name="document">{concat($uri, "/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
-    <pair name="navigation">{concat($uri, "/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>,
+    <pair name="collection">{concat($G:base_uri, "/api/dts/collection?id=", $resourceId, "{?nav}")}</pair>,
+    <pair name="document">{concat($G:base_uri, "/api/dts/document?resource=", $resourceId, "{?ref,start,end,tree,mediaType}")}</pair>,
+    <pair name="navigation">{concat($G:base_uri, "/api/dts/navigation?resource=", $resourceId, "{?ref,start,end,tree,down}")}</pair>,
     let $downloads := $resource/*:download
     where $downloads
     return
