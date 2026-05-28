@@ -821,7 +821,7 @@ declare function utils:getExtensions(
       group by $key
       order by $key
       return
-        if ($metadata[@type="array"])
+        if ($metadata[@type="array"] or $countKey > 1)
         then
           utils:getArrayJson($name[1], $metadata)
         else
