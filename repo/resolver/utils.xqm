@@ -31,7 +31,7 @@ Fonctions d'entrée dans le endPoint "Collection" de l'API DTS
 declare function utils:noCollection() as element(json) {
   <json type="object">
     <pair name="@context">https://dtsapi.org/context/v1.0.json</pair>
-    <pair name="dtsVersion">1-alpha</pair>
+    <pair name="dtsVersion">1.0</pair>
     <pair name="@id">{utils_dots:getRootId()}</pair>
     <pair name="@type">Collection</pair>
     <pair name="title">{utils_dots:getRootTitle()}</pair>
@@ -41,7 +41,6 @@ declare function utils:noCollection() as element(json) {
       return 
         <pair name="description">{$desc}</pair>
     }
-    <pair name="totalItems" type="number">0</pair>
     <pair name="totalChildren" type="number">0</pair>
     <pair name="totalParents" type="number">0</pair>
   </json>
@@ -58,7 +57,7 @@ declare function utils:collections() as element(json) {
   let $totalItems := xs:integer(db:get($G:dots)/dots:dbSwitch/dots:metadata/dots:totalProjects)
   let $content := (
     <pair name="@context">https://dtsapi.org/context/v1.0.json</pair>,
-    <pair name="dtsVersion">1-alpha</pair>,
+    <pair name="dtsVersion">1.0</pair>,
     <pair name="@id">{utils_dots:getRootId()}</pair>,
     <pair name="@type">Collection</pair>,
     <pair name="title">{utils_dots:getRootTitle()}</pair>,
@@ -66,7 +65,6 @@ declare function utils:collections() as element(json) {
     where $desc
     return 
       <pair name="description">{$desc}</pair>,
-    <pair name="totalItems" type="number">{$totalItems}</pair>,
     <pair name="totalChildren" type="number">{$totalItems}</pair>,
     <pair name="totalParents" type="number">0</pair>,
     <pair name="member" type="array">{
@@ -120,7 +118,6 @@ declare function utils:collectionById(
       let $type := utils:getResourceType($resource)
       let $dublincore := utils:getDublincore($resource)
       let $extensions := utils:getExtensions($resource)
-      let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
       let $members := if ($type = "collection" or $nav = "parents") then (
         for $member in (
           if ($nav = "parents") then (
@@ -142,7 +139,7 @@ declare function utils:collectionById(
       )
       let $response := (
         $mandatory,
-        <pair name="dtsVersion">1-alpha</pair>,
+        <pair name="dtsVersion">1.0</pair>,
         $dublincore,
         $extensions[node()],
         if ($members) then <pair name="member" type="array">{$members}</pair>
@@ -241,7 +238,7 @@ declare function utils:idNavigation(
   let $context := utils:getContext($projectName, $response)
   return
     <json type="object">{
-      <pair name="dtsVersion">1-alpha</pair>,
+      <pair name="dtsVersion">1.0</pair>,
       <pair name="@id">{$url}</pair>,
       <pair name="@type">Navigation</pair>,
       utils:getResourcesInfo($projectName, $resource),
@@ -258,7 +255,6 @@ declare function utils:getResourcesInfo(
   $resource
 ) {
   let $resourceId := normalize-space($resource/@dtsResourceId)
-  let $maxCiteDepth := normalize-space($resource/@maxCiteDepth)
   return
     <pair name="resource" type="object">
       <pair name="@id">{$resourceId}</pair>
@@ -282,11 +278,6 @@ declare function utils:getResourcesInfo(
       <pair name="navigation">{concat($G:base_uri, "/api/dts/document?resource=", $resourceId, "{&amp;ref,down,start,end}")}</pair>
       <pair name="citationTrees" type="object">
         <pair name="@type">CitationTree</pair>
-        <pair name="maxCiteDepth" type="number">{
-          if ($maxCiteDepth)
-          then xs:integer($maxCiteDepth)
-          else 0
-        }</pair>
         {
           let $document := utils_dots:findPathDoc($projectName, $resourceId, false())
           let $refsDecl := $document//*:refsDecl
@@ -410,7 +401,7 @@ declare function utils:refNavigation(
   let $context := utils:getContext($projectName, $response)
   return
     <json type="object">
-      <pair name="dtsVersion">1-alpha</pair>
+      <pair name="dtsVersion">1.0</pair>
       <pair name="@id">{$url}</pair>
       <pair name="@type">Navigation</pair>
       {utils:getResourcesInfo($projectName, $resource),
@@ -458,7 +449,6 @@ declare function utils:rangeNavigation(
       return
         web:error(404, $message)
     else
-  let $maxCiteDepth := normalize-space($frag1/@maxCiteDepth)
   let $level := normalize-space($frag1/@level)
   let $startFrag := utils:getFragmentInfo($frag1) 
   let $endFrag := utils:getFragmentInfo($fragLast) 
@@ -479,7 +469,7 @@ declare function utils:rangeNavigation(
   let $context := utils:getContext($projectName, $response)
   return
     <json type="object">
-      <pair name="dtsVersion">1-alpha</pair>
+      <pair name="dtsVersion">1.0</pair>
       <pair name="@id">{$url}</pair>
       <pair name="@type">Navigation</pair>
       {utils:getResourcesInfo($projectName, $resource)}
@@ -693,14 +683,12 @@ declare function utils:getMandatory(
     <pair name="@type">{functx:capitalize-first($type)}</pair>,
     <pair name="title">{normalize-space($resource/dct:title[1])}</pair>,
     if ($desc) then <pair name="description">{$desc}</pair>,
-    <pair name="totalItems" type="number">{if ($nav) then $totalParents else $totalChildren}</pair>,
     <pair name="totalChildren" type="number">{$totalChildren}</pair>,
     <pair name="totalParents" type="number">{$totalParents}</pair>,
     $resourceLink,
     if ($citationTrees) then (
       <pair name="citationTrees" type="object">
         <pair name="@type">CitationTree</pair>
-        <pair name="maxCiteDepth" type="number">{normalize-space($resource/@maxCiteDepth)}</pair>
         {$citationTrees}
       </pair>
     ),
