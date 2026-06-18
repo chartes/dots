@@ -207,7 +207,7 @@ declare function resources:getDocumentMetadata(
   let $dctTitle :=
     if ($externalMetadataMap and $externalMetadataMap/dct:title[@scope="document"])
     then ()
-    else <dct:title>{normalize-space($doc//tei:titleStmt/tei:title[@type = 'main' or position() = 1])}</dct:title>
+    else <dct:title>{$doc//tei:titleStmt/normalize-space(tei:title[1])}</dct:title>
   return
     (
       $dctTitle,
