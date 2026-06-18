@@ -75,6 +75,9 @@ function routes:collections(
   then 
     if ($id)
     then
+      if (db:get($G:dots)/dots:metadataMap/dots:root/dots:id = $id)
+      then utils:collections()
+      else
       let $dbName := normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $id]/@dbName)
       let $code := fn() {
         if ($dbName != "") 
