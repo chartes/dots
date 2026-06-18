@@ -9,10 +9,19 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 24
+    
     - name: Install BaseX
       run: |
-        wget https://files.basex.org/releases/11.9/BaseX119.zip
+        wget https://files.basex.org/releases/12.4/BaseX124.zip
         unzip BaseX119.zip
+
+    - name: Start BaseX HTTP Server
+      run: |
+        ./basex/bin/basexhttp &
 
     - name: Prepare test
       run: |
