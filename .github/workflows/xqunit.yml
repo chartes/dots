@@ -17,7 +17,7 @@ jobs:
     - name: Install BaseX
       run: |
         wget https://files.basex.org/releases/12.4/BaseX124.zip
-        unzip BaseX119.zip
+        unzip BaseX124.zip
 
     - name: Start BaseX HTTP Server
       run: |
