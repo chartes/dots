@@ -4,11 +4,11 @@ DoTS – BaseX DTS Tools est une implémentation en XQuery de la spécification 
 
 ## 1. Installation
 
-La procédure d'installation est documentée <a href="https://chartes.github.io/dots_documentation/installation/" target="_blank">ici</a>.
+La procédure d'installation est documentée <a href="https://dots-suite.github.io/dots_documentation/installation/" target="_blank">ici</a>.
 
 ## 2. Utilisation de DoTS
 
-Pour avoir plus d'informations sur l'installation et l'utilisation de DoTS, vous pouvez consulter la <a href="https://chartes.github.io/dots_documentation/" target="_blank">documentation</a>.
+Pour avoir plus d'informations sur l'installation et l'utilisation de DoTS, vous pouvez consulter la <a href="https://dots-suite.github.io/dots_documentation/" target="_blank">documentation</a>.
 
 ## 3. Usage depuis d'autres applications
 
@@ -169,11 +169,11 @@ DoTS – BaseX DTS Tools is an XQuery implementation of the <a href="https://dis
 
 ## 1. Installation
 
-The installation procedure is documented <a href="https://chartes.github.io/dots_documentation/installation/" target="_blank">here</a>.
+The installation procedure is documented <a href="https://dots-suite.github.io/dots_documentation/installation/" target="_blank">here</a>.
 
 ## 2. Using DoTS
 
-For more details on installing and using DoTS, see the <a href="https://chartes.github.io/dots_documentation/" target="_blank">documentation</a>.
+For more details on installing and using DoTS, see the <a href="https://dots-suite.github.io/dots_documentation/" target="_blank">documentation</a>.
 
 ## 3. Usage depuis d'autres applications
 
