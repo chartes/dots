@@ -1,3 +1,8 @@
+<p>
+  <img src="enc-logo.svg" alt="École nationale des chartes – PSL" height="75" />
+  <img src="biblissima-logo.png" alt="Biblissima+" height="100" />
+</p>
+
 # DoTS
 
 DoTS est une implémentation en XQuery de la spécification d'API <a href="https://distributed-text-services.github.io/specifications/" target="_blank">DTS</a> (Distributed Text Services), adossée au logiciel de base de données XML BaseX.
@@ -286,5 +291,4 @@ cf. [Document Endpoint - Distributed Text Services](https://dtsapi.org/specifica
 | `tree`     | GET     | 🔄             |
 | `mediaType`| GET     | ✅             |
 
-<img src="enc-logo.svg" alt="École nationale des chartes – PSL" height="75" /><br>
-<img src="biblissima-logo.png" alt="Biblissima+" height="100" />
+
