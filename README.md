@@ -1,6 +1,6 @@
 # DoTS
 
-DoTS – BaseX DTS Tools est une implémentation en XQuery de la spécification d'API <a href="https://distributed-text-services.github.io/specifications/" target="_blank">DTS</a> (Distributed Text Services), adossée au logiciel de base de données XML BaseX.
+DoTS est une implémentation en XQuery de la spécification d'API <a href="https://distributed-text-services.github.io/specifications/" target="_blank">DTS</a> (Distributed Text Services), adossée au logiciel de base de données XML BaseX.
 
 ## 1. Installation
 
@@ -10,33 +10,15 @@ La procédure d'installation est documentée <a href="https://dots-suite.github.
 
 Pour avoir plus d'informations sur l'installation et l'utilisation de DoTS, vous pouvez consulter la <a href="https://dots-suite.github.io/dots_documentation/" target="_blank">documentation</a>.
 
-## 3. Usage depuis d'autres applications
+## 3. État d'avancement de l'implémentation de DTS
 
-En contexte Web, si d'autres applications ont besoin de faire appel aux routes de l'API DTS, il faut ajouter 
+L'implémentation actuelle est conforme à la version <a href="https://dtsapi.org/specifications/versions/v1.0/" target="_blank">v1.0</a> de la spécification DTS.
 
-```xml
-  !-- Set Access-Control-Allow-Origin: * -->
-  <filter>
-    <filter-name>cross-origin</filter-name>
-    <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>cross-origin</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
- ```
-
- à la fin du fichier`basex/webapp/WEB-INF/web.xml`.
-
-## 4. État d'avancement de l'implémentation de DTS
-
-L'implémentation actuelle est conforme à la version <a href="https://distributed-text-services.github.io/specifications/versions/1-alpha/" target="_blank">1-alpha</a> de la spécification DTS.
-
-### 4.1 Endpoint Collections
+### 3.1 Endpoint Collections
 
 #### Propriétées JSON
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#collection-endpoint)
+cf. [Collection Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#collection-endpoint)
 
 | Nom             | Statut                           | Implémentation |
 | --------------- | -------------------------------- | -------------- |
@@ -44,24 +26,24 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 | `@type`         | obligatoire                      | ✅             |
 | `dtsVersion`    | obligatoire                      | ✅             |
 | `title`         | obligatoire                      | ✅             |
-| `totalItems`    | obligatoire                      | ✅             |
-| `totalChildren` | obligatoire                      | ✅             |
 | `totalParents`  | obligatoire                      | ✅             |
+| `totalChildren` | obligatoire                      | ✅             |
 | `maxCiteDepth`  | obligatoire (pour les resources) | ✅             |
 | `description`   | optionnel                        | ✅             |
 | `member`        | optionnel                        | ✅             |
-| `dublincore`    | optionnel                        | ✅             |
+| `dublinCore`    | optionnel                        | ✅             |
 | `extensions`    | optionnel                        | ✅             |
 | `collection`    | obligatoire (pour les resources) | ✅             |
 | `navigation`    | obligatoire (pour les resources) | ✅             |
 | `document`      | obligatoire (pour les resources) | ✅             |
-| `download`      | optionnel                        | 🚧             |
-| `citationTrees` | optionnel                        | 🚧             |
+| `download`      | optionnel                        | ✅             |
+| `citationTrees` | optionnel                        | 🔄             |
+| `view`          | optionnel                        | 🚧             |
 | `mediaTypes`    | optionnel (pour les resources)   | ✅             |
 
 #### Paramètres de requête
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-collection-endpoint-request)
+cf. [Collections Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#uri-for-collection-endpoint-request)
 
 | Nom  | Méthode | Implémentation |
 | ---- | ------- | -------------- |
@@ -73,7 +55,7 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 
 #### Propriétées JSON
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
+cf. [Navigation Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#navigation-endpoint)
 
 | Nom            | Statut      | Implémentation  |
 | -------------- | ----------- | --------------- |
@@ -85,6 +67,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `start`        | optionnel   | ✅              |
 | `end`          | optionnel   | ✅              |
 | `member`       | optionnel   | ✅              |
+| `view`         | optionnel   | 🚧              |
 
 #### Propriétées JSON de `resource`
 
@@ -96,7 +79,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `navigation`   | obligatoire | ✅              |
 | `document`     | obligatoire | ✅              |
 | `citationTrees`| obligatoire | 🔄              |
-| `mediaTypes`    | optionnel  | ✅              |
+| `mediaTypes`   | optionnel   | ✅              |
 
 #### Propriétées JSON de `CitationTree`
 
@@ -105,16 +88,14 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `identifier`   | optionnel   | 🚧              |
 | `@type`        | obligatoire | ✅              |
 | `citeStructure`| optionnel   | ✅              |
-| `maxCiteDepth` | obligatoire | ✅              |
 | `description`  | optionnel   | 🚧              |
 
 #### Propriétées JSON de `CiteStructure`
 
 | Nom            | Statut      | Implémentation  |
 | -------------- | ----------- | --------------- |
-| `@type`        |             | ✅              |
-| `citeType`     | optionnel   | ✅              |
 | `citeStructure`| optionnel   | ✅              |
+| `citeType`     | obligatoire | ✅              |
 
 
 #### Propriétées JSON de `citableUnit`
@@ -125,13 +106,14 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `@type`      | obligatoire | ✅             |
 | `level`      | obligatoire | ✅             |
 | `parent`     | obligatoire | ✅             |
+| `@id`        | optionnel   | 🚧             |
 | `citeType`   | optionnel   | ✅             |
-| `dublincore` | optionnel   | ✅             |
+| `dublinCore` | optionnel   | ✅             |
 | `extensions` | optionnel   | ✅             |
 
 #### Paramètres de requête
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-navigation-endpoint-requests)
+cf. [Navigation Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#uri-for-navigation-endpoint-requests)
 
 | Nom       | Méthode | Implémentation |
 | -------   | ------- | -------------- |
@@ -143,11 +125,11 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `tree`    | GET     | 🔄             |
 | `page`    | GET     | 🚧             |
 
-### 4.3 Endpoint Document
+### 3.3 Endpoint Document
 
 #### Paramètres de requête
 
-cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint)
+cf. [Document Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#document-endpoint)
 
 | Nom        | Méthode | Implémentation |
 | ------     | ------- | -------------- |
@@ -165,7 +147,7 @@ cf. [Document Endpoint - Distributed Text Services](https://distributed-text-ser
 
 # DoTS
 
-DoTS – BaseX DTS Tools is an XQuery implementation of the <a href="https://distributed-text-services.github.io/specifications/" target="_blank">DTS</a> (Distributed Text Services) API specification, integrated with the XML database software BaseX.
+DoTS is an XQuery implementation of the <a href="https://distributed-text-services.github.io/specifications/" target="_blank">DTS</a> (Distributed Text Services) API specification, integrated with the XML database software BaseX.
 
 ## 1. Installation
 
@@ -175,33 +157,15 @@ The installation procedure is documented <a href="https://dots-suite.github.io/d
 
 For more details on installing and using DoTS, see the <a href="https://dots-suite.github.io/dots_documentation/" target="_blank">documentation</a>.
 
-## 3. Usage depuis d'autres applications
+## 3. Progress of the DTS implementation
 
-In a web context, if other applications need to call the DTS API routes, you should add : 
+The current implementation is compliant with version <a href="https://dtsapi.org/specifications/versions/v1.0/" target="_blank">v1.0</a> of the DTS specification.
 
-```xml
-  !-- Set Access-Control-Allow-Origin: * -->
-  <filter>
-    <filter-name>cross-origin</filter-name>
-    <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>cross-origin</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
- ```
-
- at the end of the file `basex/webapp/WEB-INF/web.xml`.
-
-## 4. Progress of the DTS implementation
-
-The current implementation is compliant with version <a href="https://distributed-text-services.github.io/specifications/versions/1-alpha/" target="_blank">1-alpha</a> of the DTS specification.
-
-### 4.1 Endpoint Collections
+### 3.1 Endpoint Collections
 
 #### JSON properties
 
-cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#collection-endpoint)
+cf. [Collection Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#collection-endpoint)
 
 | Name            | Statut                           | Implementation |
 | --------------- | -------------------------------- | -------------- |
@@ -209,19 +173,19 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 | `@type`         | mandatory                        | ✅             |
 | `dtsVersion`    | mandatory                        | ✅             |
 | `title`         | mandatory                        | ✅             |
-| `totalItems`    | mandatory                        | ✅             |
-| `totalChildren` | mandatory                        | ✅             |
 | `totalParents`  | mandatory                        | ✅             |
+| `totalChildren` | mandatory                        | ✅             |
 | `maxCiteDepth`  | mandatory (for resources)        | ✅             |
 | `description`   | optional                         | ✅             |
 | `member`        | optional                         | ✅             |
-| `dublincore`    | optional                         | ✅             |
+| `dublinCore`    | optional                         | ✅             |
 | `extensions`    | optional                         | ✅             |
 | `collection`    | mandatory (for resources)        | ✅             |
 | `navigation`    | mandatory (for resources)        | ✅             |
 | `document`      | mandatory (for resources)        | ✅             |
-| `download`      | optional                         | 🚧             |
-| `citationTrees` | optional                         | 🚧             |
+| `download`      | optional                         | ✅             |
+| `citationTrees` | optional                         | 🔄             |
+| `view`          | optional (for resources)         | 🚧             |
 | `mediaTypes`    | optional (for resources)         | ✅             |
 
 #### Request parameters
@@ -234,11 +198,11 @@ cf. [Collections Endpoint - Distributed Text Services](https://distributed-text-
 | page | GET     | 🚧             |
 | nav  | GET     | ✅             |
 
-### 4.2 Endpoint Navigation
+### 3.2 Endpoint Navigation
 
 #### JSON properties
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#navigation-endpoint)
+cf. [Navigation Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#navigation-endpoint)
 
 | Name           | Statut      | Implementation  |
 | -------------- | ----------- | --------------- |
@@ -250,6 +214,7 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `start`        | optional    | ✅              |
 | `end`          | optional    | ✅              |
 | `member`       | optional    | ✅              |
+| `view`         | optional    | 🚧              |
 
 #### JSON Properties of `resource`
 
@@ -270,16 +235,14 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `identifier`   | optional    | 🚧              |
 | `@type`        | mandatory   | ✅              |
 | `citeStructure`| optional    | ✅              |
-| `maxCiteDepth` | mandatory   | ✅              |
 | `description`  | optional    | 🚧              |
 
 #### JSON Properties of `CiteStructure`
 
 | Name           | Statut      | Implementation  |
 | -------------- | ----------- | --------------- |
-| `@type`        |             | ✅              |
-| `citeType`     | optional    | ✅              |
 | `citeStructure`| optional    | ✅              |
+| `citeType`     | mandatory   | ✅              |
 
 #### JSON Properties of `citableUnit`
 
@@ -289,13 +252,14 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `@type`      | mandatory   | ✅             |
 | `level`      | mandatory   | ✅             |
 | `parent`     | mandatory   | ✅             |
+| `@id`        | optional    | 🚧             |
 | `citeType`   | optional    | ✅             |
-| `dublincore` | optional    | ✅             |
+| `dublinCore` | optional    | ✅             |
 | `extensions` | optional    | ✅             |
 
 #### Request parameters
 
-cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#uri-for-navigation-endpoint-requests)
+cf. [Navigation Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#uri-for-navigation-endpoint-requests)
 
 | Name      | Method  | Implementation |
 | -------   | ------- | -------------- |
@@ -307,11 +271,11 @@ cf. [Navigation Endpoint - Distributed Text Services](https://distributed-text-s
 | `tree`    | GET     | 🔄             |
 | `page`    | GET     | 🚧             |
 
-### 4.3 Endpoint Document
+### 3.3 Endpoint Document
 
 #### Request parameters
 
-cf. [Document Endpoint - Distributed Text Services](https://distributed-text-services.github.io/specifications/versions/1-alpha/#document-endpoint)
+cf. [Document Endpoint - Distributed Text Services](https://dtsapi.org/specifications/versions/v1.0/#document-endpoint)
 
 | Name       | Method  | Implementation |
 | ------     | ------- | -------------- |
@@ -321,3 +285,4 @@ cf. [Document Endpoint - Distributed Text Services](https://distributed-text-ser
 | `end`      | GET     | ✅             |
 | `tree`     | GET     | 🔄             |
 | `mediaType`| GET     | ✅             |
+
