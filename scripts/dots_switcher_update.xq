@@ -17,7 +17,7 @@ then (
     script:error("La liste des ressources est déjà présente dans le switcher dots et n'a pas été mis à jour.")
   ) 
   else (
-    let $cache := if ($cacheOption = "") then false() else $cacheOption
+    let $cache := if ($cacheOption = "" or $cacheOption = false()) then false() else $cacheOption
     return
       dots.update:switcher($dbName, $cache),
       script:success(("La liste des ressources de la db '", $dbName, "' a été ajouté au switcher dots.")),
