@@ -25,6 +25,7 @@ declare variable $routes:test := "demo";
 declare
   %rest:path("/api/dts")
   %rest:GET
+  %output:encoding("UTF-8")
   %output:method("json")
   %output:media-type("application/ld+json")
   %rest:produces("application/ld+json")
@@ -59,6 +60,7 @@ function routes:entryPoint() {
 declare
   %rest:path("/api/dts/collection")
   %rest:GET
+  %output:encoding("UTF-8")
   %output:method("json")
   %output:media-type("application/ld+json")
   %rest:produces("application/ld+json")
@@ -112,6 +114,7 @@ function routes:collections(
 declare
   %rest:path("/api/dts/navigation")
   %rest:GET
+  %output:encoding("UTF-8")
   %output:method("json")
   %output:media-type("application/ld+json")
   %rest:produces("application/ld+json")
