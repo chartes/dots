@@ -18,6 +18,7 @@ declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace schema = "https://schema.org/";
 
 (:~ 
 : This function generates and stores a fragment registry for the specified database. It collects fragment information from fragments:getFragments and combines it with metadata before saving it as a new document in the database.

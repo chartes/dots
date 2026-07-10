@@ -41,7 +41,7 @@ declare function G:linkToXsl() {
 declare function G:defaultXslEnginePath() {
   let $defaultEngine := db:get($G:dots)//settings/defaultEngine
   return
-    if ($defaultEngine != "") then normalize-space($defaultEngine) else "/tei-xsl-7.58.0/xml/tei/stylesheet/html/html.xsl"
+    if ($defaultEngine != "") then normalize-space($defaultEngine) else "hteiml/xsl/tei2html.xsl"
 };
 (: "hteiml/tei2html.xsl" :)
 
