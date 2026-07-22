@@ -599,10 +599,9 @@ declare function utils:excludeFragments(
   $resourceId as xs:string,
   $ref as xs:string
 ) {
-  let $register := db:get($project, $G:fragmentsRegister)
-  let $fragment := $register//dots:fragment[@resourceId = $resourceId][@ref = $ref]
-  let $node-id := $fragment/@node-id
-  let $node := db:get-id($project, $node-id)
+  let $byRef := db:attribute($project, $ref, 'ref')/parent::dots:fragment
+  let $fragment := $byRef[@resourceId = $resourceId] 
+  let $node := db:get-id($project, $fragment/@node-id)
   return
     <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <dts:wrapper xmlns:dts="https://w3id.org/dts/api#">{
@@ -613,7 +612,7 @@ declare function utils:excludeFragments(
           if ($id)
           then 
             let $node-id := db:node-id($child)
-            let $frag := $register//dots:fragment[@node-id = $node-id]
+            let $frag := db:attribute($project, normalize-space($node-id))/parent::dots:fragment
             return
               if ($frag)
               then 
@@ -943,9 +942,12 @@ declare function utils:getFragment(
 ) {
   let $id := map:get($options, "id")
   let $ref := map:get($options, "ref")
-  return db:get($projectName, $G:fragmentsRegister)//dots:member/dots:fragment
-    [@resourceId = $resourceId]
-    [$id or @ref = $ref]
+  let $fragments := db:attribute($projectName, $resourceId, "resourceId")/parent::dots:fragment
+  return
+    if ($id) then
+      $fragments
+    else
+      $fragments intersect db:attribute($projectName, $ref, "ref")/parent::dots:fragment
 };
 
 (:~
