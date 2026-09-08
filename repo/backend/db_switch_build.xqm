@@ -28,7 +28,13 @@ declare namespace dct = "http://purl.org/dc/terms/";
 declare updating function dots.build:dots_db($rootId := "", $rootTitle := "", $rootDescription := "", $linkXSL := "", $defaultEngine := "") {
   let $dbSwitch := dots.build:switcher()
   let $metadataMap := dots.build:metadataMap($rootId, $rootTitle, $rootDescription, $linkXSL, $defaultEngine)
-  return db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping))
+  return db:create($G:dots, ($dbSwitch, $metadataMap), ($G:dbSwitcher, $G:metadataMapping), map{
+    "updindex": true(),
+    "tokenindex": true(),
+    "attrindex": true(),  
+    "textindex": true(),  
+    "autooptimize": true()
+  })
 };
 
 (:~

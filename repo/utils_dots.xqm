@@ -31,7 +31,15 @@ declare function utils_dots:getIdProject($dbName as xs:string) {
 : @return db name
 :)
 declare function utils_dots:getDbName($resourceId as xs:string) {
-  normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resourceId]/@dbName)
+  let $attr := try {
+  db:attribute($G:dots, $resourceId, "dtsResourceId")/parent::node()/@dbName
+} catch * {
+  ()
+}
+return
+  if (exists($attr))
+  then $attr
+  else normalize-space(db:get($G:dots)//dots:member/node()[@dtsResourceId = $resourceId]/@dbName)
 };
 
 (:~ TODO: This function indicates if a resource is to be cached.
