@@ -4,7 +4,7 @@ xquery version "4.0";
 import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 

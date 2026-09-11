@@ -5,7 +5,7 @@ import module namespace utils_dots = "utils_dots";
 import module namespace utils = "resolver/utils";
 import module namespace fragments = "backend/fragments_register_builder";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dct = "http://purl.org/dc/terms/";
 

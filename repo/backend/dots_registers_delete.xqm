@@ -16,7 +16,7 @@ module namespace dots.delete = "backend/dots_registers_delete";
 import module namespace G = "globals";
 import module namespace script = "script";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 declare namespace dct = "http://purl.org/dc/terms/";
 
 (:~

@@ -13,7 +13,7 @@ import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots";
 import module namespace functx = 'http://www.functx.com';
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace dts = "https://w3id.org/dts/api#";
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
@@ -1155,7 +1155,7 @@ declare function utils:extensionsContext(
   $response
 ) {
   <pair name="@context" type="object">
-    <pair name="dots">https://github.com/chartes/dots/</pair>
+    <pair name="dots">https://github.com/dots-suite/dots</pair>
     
     {if ($response = "")
       then ()

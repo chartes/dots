@@ -13,13 +13,13 @@ import module namespace functx = 'http://www.functx.com';
 import module namespace G = "globals";
 import module namespace fragments = "backend/fragments_register_builder";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare namespace dct = "http://purl.org/dc/terms/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace dts = "https://dtsapi.org/context/v1.0.json";
 declare namespace dcat = "http://www.w3.org/ns/dcat";
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace schema = "https://schema.org/";
 
 (:~  
@@ -40,7 +40,7 @@ declare updating function resources:createResourcesRegister(
     return
       $count - $countDotsData
   let $content :=
-    <resourcesRegister>
+    <resourcesRegister xmlns="https://github.com/dots-suite/dots">
       {
         let $mapping := db:get($dbName, $G:metadata)/metadataMap
         return

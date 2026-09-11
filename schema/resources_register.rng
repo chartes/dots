@@ -2,11 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="../xrem/rng2html.xsl"?>
 <grammar
   xmlns="http://relaxng.org/ns/structure/1.0" 
-  ns="https://github.com/chartes/dots/"
+  ns="https://github.com/dots-suite/dots"
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
   xmlns:h="http://www.w3.org/1999/xhtml" 
-  xmlns:dots="https://github.com/chartes/dots/"
+  xmlns:dots="https://github.com/dots-suite/dots"
   xmlns:sch="http://purl.oclc.org/dsdl/schematron"
   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" 
   xml:lang="fr">

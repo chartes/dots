@@ -8,7 +8,7 @@ module namespace G = 'globals';
 : @author École nationale des chartes - Philippe Pons
 :)
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le resolver 
@@ -19,37 +19,35 @@ declare variable $G:base_uri :=
   then environment-variable("base_uri")
   else substring-before(request:uri(), "/api");
 
-declare variable $G:static_path := 
-  if (environment-variable("static_path"))
-  then environment-variable("static_path")
-  else "/static/transform/hteiml/xsl/";
-
 (:~ Variable pour accéder aux feuilles de transformation XSLT :)
-(: "/srv/transform/" :)
-declare function G:linkToXsl() {
+declare function G:linkToRenderer() {
+  concat($G:webapp, "webapp/static/renderers/")
+};
+
+declare function G:linkToTransform() {
   let $specificLink := db:get($G:dots)//settings/linkXSL
   return
     if ($specificLink != "")
     then if (ends-with($specificLink, "/")) then $specificLink else concat($specificLink, "/")
     else 
-      if (environment-variable("xsl_path"))
-      then environment-variable("xsl_path")
-      else concat($G:webapp, "/webapp/static/transform/")
+      if (environment-variable("transform_path"))
+      then environment-variable("transform_path")
+      else concat($G:webapp, "webapp/static/transform/")
 };
-(: declare variable $G:xsl := concat($G:webapp, "/webapp/static/transform/"); :) 
 
 declare function G:defaultXslEnginePath() {
   let $defaultEngine := db:get($G:dots)//settings/defaultEngine
   return
-    if ($defaultEngine != "") then normalize-space($defaultEngine) else "hteiml/xsl/tei2html.xsl"
+    if ($defaultEngine != "") 
+    then normalize-space($defaultEngine) 
+    else 
+      if (environment-variable("xsl_path"))
+      then environment-variable("xsl_path")
+      else concat(G:linkToRenderer(), "html/teic/teic.xsl")
 };
 (: "hteiml/tei2html.xsl" :)
 
 (: declare variable $G:defaultXslEnginePath := "hteiml/tei2html.xsl"; :)
-(: declare variable $G:defaultXslEnginePath := "tei-xsl-7.58.0/xml/tei/stylesheet/txt/tei-to-text.xsl"; :)
-(: declare variable $G:defaultXslEnginePath := "TEI-Boilerplate/src/content/teibp.xsl"; :)
-
-(: declare variable $G:rootDescription := "Le livre de recettes DoTS est conçu pour apprendre à publier une collection de textes avec DoTS, pour différents types de publication et genres littéraires, et selon différentes logiques éditoriales."; :)
 
 (: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Variables pour le DoTS Project Manager 

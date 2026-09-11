@@ -13,7 +13,7 @@ module namespace dots.update = "backend/dots_registers_update";
 
 import module namespace G = "globals";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 (:~ 
 : Updates all `<fragment>` elements in the DoTS register of the given database.

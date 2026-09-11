@@ -5,7 +5,7 @@ import module namespace G = "globals";
 import module namespace script = "script";
 import module namespace add_doc = "backend/update/add_document";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 declare variable $dbName external;

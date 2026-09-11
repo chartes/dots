@@ -18,7 +18,7 @@ import module namespace resources = "backend/resources_register_builder";
 import module namespace fragments = "backend/fragments_register_builder";
 import module namespace dots_error = "error/dots_error"; 
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare variable $dbName external;
 declare variable $resourceId external := ();

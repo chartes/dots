@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dots:renderers
+  xmlns:dots="https://github.com/dots-suite/dots">
+  <dots:renderer name="teic-oxygen" mediaType="tei" path="tei.css" default="true"/>
+  <dots:renderer name="teic" mediaType="html" path="teic_html.xsl" default="true"/>
+  <dots:renderer name="teic" mediaType="txt" path="Stylesheets/txt/tei-to-text.xsl" default="true"/>
+</dots:renderers>

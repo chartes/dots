@@ -5,7 +5,7 @@ import module namespace dots.report = "report";
 import module namespace G = "globals";
 import module namespace script = "script";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := ();
 declare variable $cacheOption external := false();

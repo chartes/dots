@@ -20,7 +20,7 @@ import module namespace utils_dots = "utils_dots";
 import module namespace store_clear = "backend/update/store_clear";
 import module namespace update_metadata = "backend/update/update_metadata_dir";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
@@ -98,7 +98,7 @@ declare updating %private function add_doc:addDocToResourcesReg($dbName as xs:st
     let $resources_register := db:get($dbName, $G:resourcesRegister)//dots:member
     return
       (
-        insert node <document xmlns="https://github.com/chartes/dots/" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
+        insert node <document xmlns="https://github.com/dots-suite/dots" dtsResourceId="{$dtsResourceId}" maxCiteDepth="{$maxCiteDepth}" parentIds="{$parentIds}">{
         resources:getDocumentMetadata($dbName, $document, $dtsResourceId, $csv)
         (: resources:getDotsProjectName($projectName) :)
   }</document> as last into $resources_register,

@@ -13,7 +13,7 @@ module namespace dots.update = "backend/dots_switcher_update";
 
 import module namespace G = "globals";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 declare namespace dct = "http://purl.org/dc/terms/";
 
 (:~

@@ -11,7 +11,7 @@ module namespace dots.create = "backend/db_create";
 import module namespace functx = "http://www.functx.com";
 import module namespace G = "globals";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 (:~  
 : This function creates a database for a DoTS project, loading XML sources and metadata files.

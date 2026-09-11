@@ -13,7 +13,7 @@ import module namespace G = "globals";
 import module namespace utils_dots = "utils_dots"; 
 import module namespace store_clear = "backend/update/store_clear";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare updating function delete_doc_from_coll:handleDeletion($dbName as xs:string, $document as element(dots:document), $collection as element(dots:collection)) {
   delete_doc_from_coll:updateDocumentElement($dbName, $document, $collection),

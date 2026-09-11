@@ -17,7 +17,7 @@ import module namespace utils_dots = "utils_dots";
 import module namespace del_doc = "backend/update/delete_document";
 import module namespace store_clear = "backend/update/store_clear";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare updating function remove_coll:remove_collection(
   $dbName            as xs:string,

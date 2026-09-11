@@ -4,7 +4,7 @@ module namespace report = "report";
 
 import module namespace G = "globals";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare namespace dct = "http://purl.org/dc/terms/";
 

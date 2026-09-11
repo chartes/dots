@@ -4,7 +4,7 @@ import module namespace G = "globals";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace script = 'script';
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := ();
 declare variable $resourceId external := ();
@@ -19,7 +19,7 @@ then
   return
     (
       replace node $collection with
-        <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
+        <collection xmlns="https://github.com/dots-suite/dots" dtsResourceId="{$resourceId}" totalChildren="{$totalChildren}" parentIds="{$parent}">{
           resources:getCollectionMetadata($dbName, $resourceId, $csv)
         }</collection> 
     )

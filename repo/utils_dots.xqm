@@ -14,7 +14,7 @@ module namespace utils_dots = "utils_dots";
 
 import module namespace G = "globals";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (:~

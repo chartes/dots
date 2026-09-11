@@ -5,7 +5,7 @@ import module namespace script = "script";
 import module namespace remove_coll = "backend/update/remove_collection";
 import module namespace functx = 'http://www.functx.com';
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external;
 declare variable $resourceId external;

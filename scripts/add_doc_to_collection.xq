@@ -4,7 +4,7 @@ import module namespace G = "globals";
 import module namespace script = "script";
 import module namespace doc_to_coll = "backend/update/add_doc_to_collection"; 
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := ();
 declare variable $docId external := ();

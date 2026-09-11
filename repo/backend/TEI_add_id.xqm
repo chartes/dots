@@ -14,7 +14,7 @@ module namespace dots.update = "backend/TEI_add_id";
 
 import module namespace G = "globals";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 (:~
 : This function adds missing `@xml:id` attributes to TEI fragments and synchronizes references in the DoTS fragment register.

@@ -19,7 +19,7 @@ import module namespace resources = "backend/resources_register_builder";
 import module namespace dots.addTeiId = "backend/TEI_add_id";
 import module namespace dots.update = "backend/dots_switcher_update";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 

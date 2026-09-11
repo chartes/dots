@@ -15,7 +15,7 @@ import module namespace dots.delete = "backend/dots_registers_delete";
 import module namespace dots_error = "error/dots_error"; 
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := "test";
 declare variable $resourcesRegister := db:get($dbName, $G:resourcesRegister);

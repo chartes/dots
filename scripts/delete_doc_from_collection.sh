@@ -12,7 +12,7 @@ done
 programname=$0
 function usage {
     echo ""
-    echo "Rely an existing document to an existing collection"
+    echo "Delete an existing document to an existing collection"
     echo ""
     echo "usage: $programname --basex_path string --db_name string --doc_id string --collection_id string"
     echo ""

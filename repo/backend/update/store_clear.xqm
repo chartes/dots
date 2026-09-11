@@ -4,7 +4,7 @@ module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare updating function store_clear:clear(
   $dbName as xs:string,

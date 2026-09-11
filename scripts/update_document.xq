@@ -5,7 +5,7 @@ import module namespace utils_dots = "utils_dots";
 import module namespace script = "script";
 import module namespace dots_error = "error/dots_error"; 
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := ();
 declare variable $docPath external := ();

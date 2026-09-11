@@ -5,7 +5,7 @@ import module namespace script = "script";
 import module namespace add_coll = "backend/update/add_collection";
 import module namespace update_metadata = "backend/update/update_metadata_dir"; 
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := ();
 declare variable $resourceId external := ();

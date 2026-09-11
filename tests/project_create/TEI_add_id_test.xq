@@ -16,7 +16,7 @@ import module namespace dots_error = "error/dots_error";
 import module namespace resources = "backend/resources_register_builder";
 import module namespace dots.update = "backend/TEI_add_id";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 

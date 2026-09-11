@@ -10,7 +10,7 @@ import module namespace store_clear = "backend/update/store_clear";
 
 declare namespace dct = "http://purl.org/dc/terms/";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 (:~ Main function to handle the addition of a collection to the database.
 : It updates the resources register, the MaxCiteDepth of the parent collection, and the switcher dots.
@@ -47,7 +47,7 @@ declare updating function add_coll:addCollToResourcesReg($dbName as xs:string, $
   let $idProject := utils_dots:getIdProject($dbName)
   return
     insert node 
-      <collection xmlns="https://github.com/chartes/dots/" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parentId}">{
+      <collection xmlns="https://github.com/dots-suite/dots" dtsResourceId="{$resourceId}" totalChildren="0" parentIds="{$parentId}">{
         if ($metadata/descendant-or-self::*:title)
         then
           $metadata

@@ -4,7 +4,7 @@ import module namespace G = "globals";
 import module namespace script = "script";
 import module namespace update_metadata = "backend/update/update_metadata_dir";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 
 declare variable $dbName external := ();
 declare variable $projectDirPath external := ();

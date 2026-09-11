@@ -10,6 +10,23 @@
 /webapp/restxq/ladam_test.xqm
 /webapp/static/img/
 /webapp/static/transform/
+
+# Tout ignorer par défaut dans renderers/
+renderers/*
+
+# Sauf le template de config
+!renderers/renderer_config_template.xml
+
+# teic-oxygen/ : ne garder que son README.md
+!renderers/teic-oxygen/
+renderers/teic-oxygen/*
+!renderers/teic-oxygen/README.md
+
+# teic/ : ne garder que son README.md
+!renderers/teic/
+renderers/teic/*
+!renderers/teic/README.md
+
 /tests/project_create/dots_test_setup.old
 /webapp/restxq/schema.xqm
 /webapp/restxq/xsl.xqm

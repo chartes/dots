@@ -19,7 +19,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 : @return The default test data is downloaded and extracted into the current directory.
 :)
 (: declare function local:downloadDefaultData() {
-  let $url := "https://github.com/chartes/dots_documentation/archive/refs/heads/dev.zip"
+  let $url := "https://github.com/dots-suite/dots_documentation/archive/refs/heads/dev.zip"
   let $zip := fetch:binary($url)
   let $entries  := archive:entries($zip)
   let $contents := archive:extract-binary($zip)

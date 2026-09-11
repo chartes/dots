@@ -18,7 +18,7 @@ module namespace dots.build = "backend/db_switch_build";
 
 import module namespace G = "globals";
 
-declare default element namespace "https://github.com/chartes/dots/";
+declare default element namespace "https://github.com/dots-suite/dots";
 declare namespace dct = "http://purl.org/dc/terms/";
 
 (:~
@@ -55,7 +55,7 @@ declare %private function dots.build:headers($option as xs:string) {
 : @return a <dbSwitch/> element, with <metadata/> and empty <member/> childs.
 :)
 declare %private function dots.build:switcher() {
-  <dbSwitch xmlns="https://github.com/chartes/dots/">{
+  <dbSwitch xmlns="https://github.com/dots-suite/dots">{
     dots.build:headers("dbSwitch"),
     <member/>
   }</dbSwitch>
@@ -67,8 +67,7 @@ declare %private function dots.build:switcher() {
  : @todo vérifier que cette fonction fonctionne correctement. Et comment gérer l'ajout d'un nouveau projet ? Comment faire un update de ces paramètres ?
 :)
 declare %private function dots.build:metadataMap($rootId as xs:string := "", $rootTitle as xs:string := "", $rootDescription as xs:string := "", $linkXSL as xs:string := "", $defaultEngine as xs:string := "") {
-  <metadataMap xmlns="https://github.com/chartes/dots/" xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:dct="http://purl.org/dc/terms/">{
+  <metadataMap>{
     dots.build:headers("metadataMap"),
     <root>
       <id>{if ($rootId != "") then $rootId else "default"}</id>

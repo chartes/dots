@@ -13,7 +13,7 @@ import module namespace utils_dots = "utils_dots";
 import module namespace G = "globals";
 import module namespace store_clear = "backend/update/store_clear";
 
-declare namespace dots = "https://github.com/chartes/dots/";
+declare namespace dots = "https://github.com/dots-suite/dots";
 declare namespace dc = "http://purl.org/dc/elements/1.1/";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
