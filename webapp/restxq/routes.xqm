@@ -307,8 +307,10 @@ declare function routes:transform-serialize($dbName, $resource, $result) {
     let $code := fn() {
       if ($style)
       then 
-        xslt:transform($result, $style)
-        => serialize(map {"method": "html"})
+        let $staticPath := environment-variable("static_path")
+        return
+          xslt:transform($result, $style, map { "static_path": $staticPath })
+          => serialize(map {"method": "html"})
       else routes:renderer-serialize($dbName, $resource, $result, "html")
     }
     let $key := request:query()
@@ -364,9 +366,13 @@ declare function routes:renderer-serialize(
               http_error:errorInternalServerError(
                 concat("Error 500: no default renderer configured for the '", $format, "' format")
               )
-          else
+          else           
+            let $staticPath := environment-variable("static_path")
+            let $htmlTransform := function($content, $fullPath) {
+              xslt:transform($content, $fullPath, map { "static_path": $staticPath })
+            }
             let $transformFunctions := map {
-              "html": xslt:transform#2,
+              "html": $htmlTransform,
               "txt": xslt:transform-text#2
             }
             let $serializeMethods := map { "html": "html", "txt": "text" }
@@ -387,4 +393,5 @@ declare function routes:renderer-serialize(
       }
   return cache:cache($dbName, $resource, $key, $code)
 };
+
 
